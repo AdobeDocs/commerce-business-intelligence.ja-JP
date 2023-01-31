@@ -1,0 +1,45 @@
+---
+title: データと更新情報
+description: 更新サイクルのステータスを確認する方法を説明します。
+exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
+source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 0%
+
+---
+
+# データと更新情報
+
+* [データが変更された理由](#datachange)
+* [通常の更新と強制更新の違いは何ですか？](#regularforcedupdates)
+* [更新サイクルに長い時間がかかるのはなぜですか？](#updatecycletime)
+* [更新サイクルが完了したら通知を受け取ることはできますか？](#notifyupdate)
+* [の理由 [!DNL Google ECommerce] データベースに異なるデータがある場合](#ecommdatabase)
+* [データの相違をトラブルシューティングする方法を教えてください。](#datadiscrepancy)
+
+## データが変更された理由 {#datachange}
+
+グラフの値は、新しいデータが Data Warehouse に同期されるので、1 日を通じて変化する可能性があります。 また、既存のデータ列の値は、 [再チェック](../data-warehouse-mgr/cfg-data-rechecks.md). 再確認とは、データ列で変更された値（注文ステータスが次の場所から移動した場合など）を検索するプロセスです。 `open` から `shipped`.
+
+いくつかの異なる方法があります [更新サイクルのステータスを確認するには](../../best-practices/check-update-cycle.md)に設定されます。
+
+## 通常の更新と強制更新の違いは何ですか？ {#regularforcedupdates}
+
+定期的な更新は次のとおりです **予定** 強制更新中のプロセス **自分が開始した手動プロセス**. ブラックアウト時間がある場合、または [!DNL MBI] はデータを更新しないでください。更新を強制すると、ブラックアウト期間の制限を考慮しないサイクルが開始されます。
+
+## 更新サイクルに長い時間がかかるのはなぜですか？ {#updatecycletime}
+
+多くの要因が、既に長時間の更新時間を増やす可能性があります。 特定 [レプリケーションメソッド](../data-warehouse-mgr/cfg-replication-methods.md), [再検査頻度の増加](../data-warehouse-mgr/cfg-data-rechecks.md)ダッシュボードとグラフの数はほんの数の寄稿者に過ぎません。 推奨 [設定の一部の再設定](../../best-practices/reduce-update-cycle-time.md) および [分析用にデータベースを最適化中](../../best-practices/opt-db-analysis.md) 更新時間を短縮する。
+
+## 更新サイクルが完了したら通知を受け取ることはできますか？ {#notifyupdate}
+
+絶対に！ 更新が現在進行中の場合、 `Connections` サイクルが完了した後に電子メール通知をリクエストするために使用できるページ。
+
+## の理由[!DNL Google ECommerce]データベースに異なるデータがある場合 {#ecommdatabase}
+
+の不一致 [!DNL Google Analytics] そしてデータベースは様々な理由で生じる可能性があります トラッキングが適切に有効になっていない場合、匿名を訪問し、クリックイベントが正しく機能しない場合の例はいくつかあります。 売上高と注文件数が正しく表示されない場合、 [この記事を使用](https://support.magento.com/hc/en-us/articles/360016505232) 問題を診断する。
+
+## データの相違をトラブルシューティングする方法を教えてください。 {#datadiscrepancy}
+
+データに一貫性がない場合、不満が生じる可能性があります。 ぜひ、 [データ不一致チェックリスト](https://support.magento.com/hc/en-us/articles/360016731271) または [データ書き出しのチュートリアル](https://support.magento.com/hc/en-us/articles/360016730631) 問題を診断する。 もしまだつまずいていれば [連絡先サポート](../../guide-overview.md).
