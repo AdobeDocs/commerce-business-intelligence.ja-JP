@@ -2,9 +2,9 @@
 title: 広告キャンペーンの ROI の向上
 description: キャンペーンのパフォーマンスを評価する様々な方法について説明します。
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ MBI を使用すると、 [広告コストデータと売上高データの結�
 >
 >特定の製品の購入を生み出すために、すべてのキャンペーンコストが排他的に使用されたと仮定します。 すべてのコストが購入の生成に費やされたと仮定すると、結果の ROI は最悪のケースシナリオ（購入あたりの最大コスト）を考慮するので、実際の ROI がこの計算よりも高いことを確認できます。 例：新規ユーザー 10 人と購入 10 人を生み出したキャンペーンに$20 を費やした場合、実際の購入あたりのコストは$1 ですが、すべてのコストで新規ユーザーを獲得したと仮定すると、購入あたりのコストは$2 です。)*
 
-始める前に [サポートチケットを提出する](../../guide-overview.md) 次のディメンションを行項目テーブルに結合するには (`sales\_flat\_order\_item, order\_item`):
+始める前に [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 次のディメンションを行項目テーブルに結合するには (`sales\_flat\_order\_item, order\_item`):
 
 * 注文のソース（ユーザーレベルで紹介ソースのみを追跡し、ユーザーのソースに参加する場合）
 * 注文のキャンペーン（ユーザーレベルで紹介ソースのみを追跡し、ユーザーのキャンペーンに参加する場合）

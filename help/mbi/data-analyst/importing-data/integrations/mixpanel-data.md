@@ -2,9 +2,9 @@
 title: 予期される Mixpanel データ
 description: Mixpanel から [!DNL MBI] アカウント
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ ht-degree: 0%
 ## 関連ドキュメント
 
 * [接続中 [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

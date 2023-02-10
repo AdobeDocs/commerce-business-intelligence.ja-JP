@@ -2,9 +2,9 @@
 title: セグメント化およびフィルタリングに推奨されるデータDimension
 description: セグメント化とフィルタリングのベストプラクティスについて説明します。
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 上記のディメンションで指標をセグメント化する最初の手順は、データベースでこのデータをトラッキングしていることを確認することです。 追跡されていない場合は、テクニカルチームに問い合わせて、このデータの追跡を開始する方法を見つけてください。
 
-データがデータベースで追跡されていることを確認したら、 [サポートチームに連絡する](../guide-overview.md) 次元を [!DNL MBI] 指標やグラフを使用するか、単にフィールド管理ツールを使用して [!DNL MBI].
+データがデータベースで追跡されていることを確認したら、 [サポートチームに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 次元を [!DNL MBI] 指標やグラフを使用するか、単にフィールド管理ツールを使用して [!DNL MBI].
 
 ## 関連
 

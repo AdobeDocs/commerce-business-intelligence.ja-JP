@@ -2,9 +2,9 @@
 title: Google Adwords を接続
 description: キャンペーンから取得したユーザーの広告コストと顧客のライフタイムバリュー (CLV) を結び付け、キャンペーンの ROI を測定する方法を説明します。
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,9 @@ ht-degree: 0%
 
 ## 関連
 
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [経由で注文のリファラルソースを追跡 [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [データベース内のユーザー参照元を追跡する](../../analysis/google-track-user-acq.md)
-* [データベース内のユーザーデバイス、ブラウザー、OS データを追跡する](https://support.magento.com/hc/en-us/articles/360016732911)
 * [最も価値のある獲得ソースとチャネルを見つける](../../analysis/most-value-source-channel.md)
 * [広告キャンペーンの ROI の向上](../../analysis/roi-ad-camp.md)
 * [方法 [!DNL Google Analytics] UTM 属性は機能しますか？](../../analysis/utm-attributes.md)

@@ -2,9 +2,9 @@
 title: Zendesk のヘルプデスクレポート
 description: 最も重要な参照チャネルについて学びます。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これは、 `Pro` 新しいアーキテクチャを計画および使用します。 あなたは [新しいアーキテクチャ](https://support.magento.com/hc/en-us/articles/360016503052-New-Architecture-FAQ) もし `Data Warehouse Views` 選択後に使用可能なセクション `Manage Data` を選択します。
+>これは、 `Pro` 新しいアーキテクチャを計画および使用します。 新しいアーキテクチャを使用している場合、 `Data Warehouse Views` 選択後に使用可能なセクション `Manage Data` を選択します。
 
 統合 [!DNL Zendesk] トランザクションデータベースのデータは、顧客がセールスチームや顧客の成功チームとどのようにやり取りしているか、およびサポートプラットフォームをどのような種類の顧客が活用しているかをより深く理解する優れた方法です。 この記事では、ダッシュボードを設定して、 [!DNL Zendesk] パフォーマンスを向上させ、トランザクションの顧客と結び付ける。
 
@@ -196,7 +196,7 @@ ht-degree: 0%
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` - `String`
+      *`Datatype` – `String`
 
 
 * **`customer_entity`** 表
@@ -221,7 +221,7 @@ ht-degree: 0%
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` - `String`
+      * `Datatype` – `String`
 
 * **`[Zendesk] Tickets`** 表
    * 定義を選択します。 `Joined Column`

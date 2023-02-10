@@ -2,16 +2,16 @@
 title: 在庫レベルの分析
 description: 在庫レベルの分析方法を説明します。
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # 在庫レベルの分析
 
-このトピックでは、現在の在庫に関するインサイトを提供するダッシュボードの設定方法を説明します。 このトピックでは、レガシーアーキテクチャと新しいアーキテクチャの両方のクライアントに対する手順について説明します。 既存のアーキテクチャを使用している ( **[!UICONTROL Data Warehouse Views]** オプションを **[!UICONTROL Manage Data]** メニュー )。 レガシーアーキテクチャを使用している場合は、 [新しいサポートリクエスト](../../guide-overview.md) 件名 **[!UICONTROL INVENTORY ANALYSIS]** 次に、 _計算列_ 以下の手順を参照してください。
+このトピックでは、現在の在庫に関するインサイトを提供するダッシュボードの設定方法を説明します。 このトピックでは、レガシーアーキテクチャと新しいアーキテクチャの両方のクライアントに対する手順について説明します。 既存のアーキテクチャを使用している ( **[!UICONTROL Data Warehouse Views]** オプションを **[!UICONTROL Manage Data]** メニュー )。 レガシーアーキテクチャを使用している場合は、 [新しいサポートリクエスト](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 件名 **[!UICONTROL INVENTORY ANALYSIS]** 次に、 _計算列_ 以下の手順を参照してください。
 
 ## 追跡する列：
 
@@ -240,4 +240,4 @@ ht-degree: 0%
       [!UICONTROL Chart type]: `Table`
 
 
-この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームを引き込みたい場合、 [連絡先サポート](../../guide-overview.md).
+この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームを引き込みたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

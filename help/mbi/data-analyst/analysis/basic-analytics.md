@@ -2,9 +2,9 @@
 title: 基本的な分析の理解と構築
 description: 基本的な分析を理解し、構築する方法を学びます。
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3153'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 **ゲストによる注文を受け入れますか？**
 
-*その場合、顧客の一部がこのテーブルに含まれていない可能性があります。 お問い合わせ [サポートチーム](https://support.magento.com/hc/en-us/articles/360016503692) 顧客分析にすべての顧客が含まれるようにします。*
+*その場合、顧客の一部がこのテーブルに含まれていない可能性があります。 お問い合わせ [サポートチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 顧客分析にすべての顧客が含まれるようにします。*
 
 *ゲストによる注文を受け入れるかどうか不明な場合は、 参照： [このトピック](../data-warehouse-mgr/guest-orders.md) 詳細情報：*
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**:注文が作成または配置された日付。
 * **[!UICONTROL Customer_email]**:注文をした顧客の電子メールアドレス。 また、顧客の一意の ID である場合もあります。
 * **[!UICONTROL Customer's lifetime number of orders]**:同じ名前の列のコピーが `Customers` 表。
-* **[!UICONTROL Customer's order number]**:注文に関連付けられた顧客の順次注文番号。 例えば、見ている行が顧客の最初の注文の場合、この列は「1」です。ただし、これが顧客の 15 番目のオーダーの場合、この列にはこのオーダーの「15」と表示されます。 このディメンションが `Customers` テーブルを開け、 [サポートチーム](https://support.magento.com/hc/en-us/articles/360016503692) を使用して、ビルドを支援します。
+* **[!UICONTROL Customer's order number]**:注文に関連付けられた顧客の順次注文番号。 例えば、見ている行が顧客の最初の注文の場合、この列は「1」です。ただし、これが顧客の 15 番目のオーダーの場合、この列にはこのオーダーの「15」と表示されます。 このディメンションが `Customers` テーブルを開け、 [サポートチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) を使用して、ビルドを支援します。
 * **[!UICONTROL Customer's order number (previous-current)]**:2 つの値を **[!UICONTROL Customer's order number]** 列。 これは、2 つの注文の間の経過時間を表示するために、以下のサンプルレポートで使用されます。 例えば、顧客の最初の注文日から 2 番目の注文日までの時間は、この計算では「1-2」と表されます。
 * **[!UICONTROL Coupon_code]**:各注文で使用されたクーポンを表示します。
 * **[!UICONTROL Seconds since previous order]**:顧客の注文間隔（秒）。
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 ## マーケティング費用テーブル
 
-マーケティング費用を分析する際に、次の項目を含めることができます。 [!DNL Facebook], [!DNL Google AdWords]または分析内の他のソース。 複数のマーケティング費用源がある場合は、 [サービスチーム](https://business.adobe.com/products/magento/fully-managed-service.html) を参照して、マーケティングキャンペーン用の統合テーブルの設定に役立ちます。
+マーケティング費用を分析する際に、次の項目を含めることができます。 [!DNL Facebook], [!DNL Google AdWords]または分析内の他のソース。 複数のマーケティング費用源がある場合は、 [Managed Services Team](https://business.adobe.com/products/magento/fully-managed-service.html) を参照して、マーケティングキャンペーン用の統合テーブルの設定に役立ちます。
 
 **Dimension**
 
@@ -535,7 +535,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->数式に「ROI」とタイトルを付け、すべての指標を非表示にすることができます。 さらに、指標のフィルターを調整して、代替ソースとメディアを分析できます。 また、 [この記事](../analysis/roi-ad-camp.md) を参照してください。
+>数式に「ROI」とタイトルを付け、すべての指標を非表示にすることができます。 さらに、指標のフィルターを調整して、代替ソースとメディアを分析できます。 また、 [このトピック](../analysis/roi-ad-camp.md) を参照してください。
 
 ![ROI 1](../../assets/ROI_1.png)<!--{: width="929"}-->
 

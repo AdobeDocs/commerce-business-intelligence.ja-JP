@@ -2,10 +2,10 @@
 title: クーポン影響の分析
 description: 顧客の獲得と維持に与えるクーポンの影響を分析する方法を説明します。
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 0%
+source-wordcount: '1392'
+ht-degree: 2%
 
 ---
 
@@ -149,4 +149,4 @@ ht-degree: 0%
 
 ## 折り返し {#wrapup}
 
-顧客がクーポンをどのように使用するかをより深く理解するために、様々な分析を作成できます。 顧客がクーポンをどのように使用するか、またはクーポンを使用するのにかかる時間を分析することを考えたことはありますか？ 最適な割引額を見つけ出す方法は何ですか。どの額がリピート購入者を促し、平均注文額が高く、全期間での売上高が高くなるのでしょうか。 これらの質問に関するヘルプは、 [連絡先サポート](../../guide-overview.md).
+顧客がクーポンをどのように使用するかをより深く理解するために、様々な分析を作成できます。 顧客がクーポンをどのように使用するか、またはクーポンを使用するのにかかる時間を分析することを考えたことはありますか？ 最適な割引額を見つけ出す方法は何ですか。どの額がリピート購入者を促し、平均注文額が高く、全期間での売上高が高くなるのでしょうか。 これらの質問に関するヘルプは、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

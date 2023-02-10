@@ -2,9 +2,9 @@
 title: のアクティブ化 [!DNL MBI] オンプレミスサブスクリプション用アカウント
 description: のアクティベートについて [!DNL MBI] アカウントをオンプレミスサブスクリプション用に作成します。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 1. を [!DNL MBI] アカウント。
 
-   - に移動します。 [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - 次に移動： [Adobe Commerceアカウントログイン](https://account.magento.com/customer/account/login)
 
    - に移動します。 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
    ![](../assets/create-account-2.png)
 
-   - インボックスに移動し、メールアドレスを確認します。 電子メールを受信していない場合は、 [連絡先サポート](../guide-overview.md).
+   - インボックスに移動し、メールアドレスを確認します。 電子メールを受信していない場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
    - パスワードを作成します。
 

@@ -2,9 +2,9 @@
 title: 顧客の集中度を定義
 description: 顧客ベース間での合計売上高の分布を測定するのに役立つダッシュボードを設定する方法を説明します。
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -31,51 +31,51 @@ ht-degree: 0%
 
 * `Sales_flat_order/customer_entity` 表
 * （入力） `reference`
-* [!UICONTROL Column type]:- `Same table > Calculation`
-* [!UICONTROL Inputs]:- `entity_id`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `entity_id`
 * [!UICONTROL Calculation]:- **A が null の場合は Null の場合、それ以外の場合は 1 の終わり**
-* [!UICONTROL Datatype]:- `Integer`
+* [!UICONTROL Datatype]: – `Integer`
 
 * `Customer concentration` テーブル ( これは、アップロードしたファイルの番号 `1`)
 * 顧客数
-* [!UICONTROL Column type]:- `Many to One > Count Distinct`
+* [!UICONTROL Column type]: – `Many to One > Count Distinct`
 * パス — `sales_flat_order.(input) reference > Customer Concentration.Primary Key` または `customer_entity.(input)reference > Customer Concentration.Primary Key`
 * 選択された列 — `sales_flat_order.customer_email` または `customer_entity.entity_id`
 
 * `customer_entity` 表
 * 顧客数
-* [!UICONTROL Column type]:- `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
 * パス — `customer_entity.(input) reference > Customer Concentration. Primary Key`
 * 選択された列 — `Number of customers`
 
 * （入力） `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]:- `Same table > Event Number`
+* [!UICONTROL Column type]: – `Same table > Event Number`
 * イベント所有者 — `Number of customers`
 * イベントのランク — `Customer's lifetime revenue`
 
 * 顧客の売上高の百分位
-* [!UICONTROL Column type]:- `Same table > Calculation`
-* [!UICONTROL Inputs]:- `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]:- **A が null の場合は Null を、それ以外の場合 (A/B)* 100 終了&#x200B;**
-* [!UICONTROL Datatype]:- `Decimal`
+* [!UICONTROL Datatype]: – `Decimal`
 
 * `Sales_flat_order` 表
 * 顧客数
-* [!UICONTROL Column type]:- `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
 * パス — `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
 * 選択された列 — `Number of customers`
 
 * （入力）顧客のライフタイム売上高別のランキング
-* [!UICONTROL Column type]:- `Same table > Event Number`
+* [!UICONTROL Column type]: – `Same table > Event Number`
 * イベント所有者 — `Number of customers`
 * イベントランク — `Customer's lifetime revenue`
 * フィルター — `Customer's order number = 1`
 
 * 顧客の売上高の百分位
-* [!UICONTROL Column type]:- `Same table > Calculation`
-* [!UICONTROL Inputs]:- `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]:- **A が null の場合は Null を、それ以外の場合 (A/B)* 100 終了&#x200B;**
-* [!UICONTROL Datatype]:- `Decimal`
+* [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
 >
@@ -158,4 +158,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 最終結果は、上記のサンプルダッシュボードのようになります。
 
-この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームを引き込みたい場合、 [連絡先サポート](../../guide-overview.md).
+この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームを引き込みたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

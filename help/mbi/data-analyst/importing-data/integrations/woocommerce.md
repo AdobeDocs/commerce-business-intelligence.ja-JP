@@ -2,9 +2,9 @@
 title: WooCommerce を接続
 description: ビジネスのパフォーマンスを確認する方法、または最も価値のある獲得ソースやチャネルを見つける方法を学びます。
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
@@ -23,5 +23,5 @@ ht-degree: 0%
 
 ## 関連：
 
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [セグメント化およびフィルタリングに推奨されるデータディメンション](../../../best-practices/segment-filter.md)

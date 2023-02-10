@@ -2,9 +2,9 @@
 title: 更新サイクルのステータスの確認
 description: 更新サイクルのステータスを確認する方法を説明します。
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 更新サイクルのステータスを確認する必要があるのはなぜですか？
 
-ステータスの更新サイクルを確認すると、 [!DNL MBI] アカウント もし [期待を満たさない結果](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)例： [!DNL MBI] が、e コマースプラットフォームまたは [[!DNL Google] e コマース売上高](https://support.magento.com/hc/en-us/articles/360016505232) 最後のデータポイントを調べて、更新が完了した後に問題が解決するかどうかを確認できます。
+ステータスの更新サイクルを確認すると、 [!DNL MBI] アカウント もし [期待を満たさない結果](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)例： [!DNL MBI] が、e コマースプラットフォームまたは [[!DNL Google] e コマース売上高](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) 最後のデータポイントを調べて、更新が完了した後に問題が解決するかどうかを確認できます。
 
 ## [!UICONTROL Read-Only] および [!UICONTROL Standard]**ユーザー
 

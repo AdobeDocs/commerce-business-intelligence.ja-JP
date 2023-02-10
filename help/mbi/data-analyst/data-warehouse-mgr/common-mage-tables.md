@@ -2,7 +2,7 @@
 title: 共通コマーステーブル
 description: より一般的なテーブルのいくつかを説明します。 [!DNL MBI] のお客様はを利用します。
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -31,4 +31,4 @@ ht-degree: 0%
 
 ## 関連ドキュメント
 
-[[!DNL Magento] エンティティ関係図](../data-warehouse-mgr/entity-rel-diag.md)
+[エンティティ関係図](../data-warehouse-mgr/entity-rel-diag.md)

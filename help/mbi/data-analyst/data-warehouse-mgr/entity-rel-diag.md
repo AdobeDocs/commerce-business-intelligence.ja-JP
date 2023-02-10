@@ -2,9 +2,9 @@
 title: エンティティ関係図
 description: いくつかの一般的な Commerce データベーステーブル間の関係を視覚化するのに役立つ、いくつかの ER 図について説明します。
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->`customer\_entity.entity\_id` 次と等しくない `sales\_flat\_order.entity\_id`. 1 つ目は、 `customer\_id` そして二番目は `order\_id.` 詳しくは、 [`entity\_id` セクション](https://support.magento.com/hc/en-us/articles/360016729951) の _[!DNL Magento]:一般的な誤解_ 記事。
+>`customer\_entity.entity\_id` 次と等しくない `sales\_flat\_order.entity\_id`. 1 つ目は、 `customer\_id` そして二番目は `order\_id.`
 
 内 [!DNL MBI]で指定した 2 つのテーブル間のパスがまだ存在しない場合は、 [パスを作成](../data-warehouse-mgr/create-paths-calc-columns.md) を「Data Warehouse」タブ内に入力します。 パスを作成する準備が整ったら、次のように定義されます。
 

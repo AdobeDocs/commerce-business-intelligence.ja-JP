@@ -2,9 +2,9 @@
 title: データベースと SQL エディタの間の結果の理解
 description: データベースと SQL エディターの間の結果を理解する方法を説明します。
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ ht-degree: 0%
 からのデータの鮮度を確認するには *特定のテーブル*&#x200B;クイック [SQL レポート](../../dev-reports/sql-rpt-bldr.md) が `MAX(timestamp)` アカウントで最も重要な表で このタイムスタンプと `Last Data Point` は、問題がアカウント全体に影響を与えたか、テーブルのサブセットに影響を与えたかを示します。 一般的に使用される重要なテーブルを 3 ～ 4 つに対してこの操作をお勧めします。
 
 - この `MAX(timestamp)` の値が `Last Data Point Received`つまり、テーブルのサブセットは影響を受けましたが、アカウント全体の更新サイクルは安定しています。
-- この `MAX(timestamp)` 値が次の値と等しいかそれ以前 `Last Data Point Received`の場合は、アカウントの更新サイクルが影響を受けたことを意味します。 この状況では、 [サポートチケットを提出する](../../../guide-overview.md).
+- この `MAX(timestamp)` 値が次の値と等しいかそれ以前 `Last Data Point Received`の場合は、アカウントの更新サイクルが影響を受けたことを意味します。 この状況では、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

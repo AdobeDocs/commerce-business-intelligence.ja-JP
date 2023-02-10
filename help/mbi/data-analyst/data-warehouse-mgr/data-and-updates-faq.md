@@ -2,9 +2,9 @@
 title: データと更新情報
 description: 更新サイクルのステータスを確認する方法を説明します。
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ ht-degree: 0%
 
 ## の理由[!DNL Google ECommerce]データベースに異なるデータがある場合 {#ecommdatabase}
 
-の不一致 [!DNL Google Analytics] そしてデータベースは様々な理由で生じる可能性があります トラッキングが適切に有効になっていない場合、匿名を訪問し、クリックイベントが正しく機能しない場合の例はいくつかあります。 売上高と注文件数が正しく表示されない場合、 [この記事を使用](https://support.magento.com/hc/en-us/articles/360016505232) 問題を診断する。
+の不一致 [!DNL Google Analytics] そしてデータベースは様々な理由で生じる可能性があります トラッキングが適切に有効になっていない場合、匿名を訪問し、クリックイベントが正しく機能しない場合の例はいくつかあります。 売上高と注文件数が正しく表示されない場合、 [この記事を使用](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) 問題を診断する。
 
 ## データの相違をトラブルシューティングする方法を教えてください。 {#datadiscrepancy}
 
-データに一貫性がない場合、不満が生じる可能性があります。 ぜひ、 [データ不一致チェックリスト](https://support.magento.com/hc/en-us/articles/360016731271) または [データ書き出しのチュートリアル](https://support.magento.com/hc/en-us/articles/360016730631) 問題を診断する。 もしまだつまずいていれば [連絡先サポート](../../guide-overview.md).
+データに一貫性がない場合、不満が生じる可能性があります。 ぜひ、 [データ不一致チェックリスト](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=en) または [データ書き出しのチュートリアル](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en) 問題を診断する。 もしまだつまずいていれば [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

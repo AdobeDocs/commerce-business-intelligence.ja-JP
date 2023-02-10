@@ -2,9 +2,9 @@
 title: 直接接続を介した MySQL の接続
 description: 接続方法の詳細 [!DNL MongoDB] 直接接続を介して。
 exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -65,4 +65,4 @@ ht-degree: 0%
 
 ## 関連ドキュメント
 
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

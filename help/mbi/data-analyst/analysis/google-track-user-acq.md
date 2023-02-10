@@ -2,10 +2,10 @@
 title: Google Analytics — ユーザー獲得ソースデータの追跡の概要
 description: ユーザーの獲得ソース別にデータをセグメント化する方法を説明します。
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +93,6 @@ SQL データベースを使用していて、 `users` 次の構造を持つテ�
 
 ### 関連
 
-* **[データベース内のユーザーデバイス、ブラウザー、OS データを追跡する](https://support.magento.com/hc/en-us/articles/360016732911)**
 * **[最も価値のある獲得ソースとチャネルを見つける](../analysis/most-value-source-channel.md)**
 * **[接続 [!DNL Google Adwords] アカウント](../importing-data/integrations/google-adwords.md)**
 * **[広告キャンペーンの ROI の向上](../analysis/roi-ad-camp.md)**

@@ -2,9 +2,9 @@
 title: クーポン効果
 description: クーポン効果の分析について説明します。
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -512,4 +512,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 最終的な結果は、ページ上部の画像のように見える場合があります。
 
-この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームを引き込みたい場合、 [連絡先サポート](../../guide-overview.md).
+この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームを引き込みたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

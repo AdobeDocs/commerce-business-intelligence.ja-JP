@@ -2,9 +2,9 @@
 title: Zendesk データを監査
 description: Zendesk データを書き出す手順を説明します。
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## データエクスポートの有効化
 
-データの書き出しは、現在、すべてに対して有効になっていません [!DNL Zendesk] アカウント。 この機能を有効にするには、 [サポートチケットを提出する](../../../guide-overview.md)で、 [!DNL Zendesk] サブドメイン名。
+データの書き出しは、現在、すべてに対して有効になっていません [!DNL Zendesk] アカウント。 この機能を有効にするには、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)で、 [!DNL Zendesk] サブドメイン名。
 
 >[!NOTE]
 >
@@ -36,6 +36,6 @@ ht-degree: 0%
 
    このダウンロードリンクは 3 日以上有効です。
 
-このプロセスは、現在の [!DNL Zendesk] チケットデータ（コメント付き）、ユーザーデータ、アカウントデータを含むアカウント。 この時点で、次の操作を実行できます。 [サポートチケットを提出する](../../../guide-overview.md) （このファイルを必ず添付してください。） データを詳しく見てみましょう ファイルが大きすぎる場合は、 [!DNL MBI] チーム経由で [!DNL Dropbox] または [!DNL Google Drive].
+このプロセスは、現在の [!DNL Zendesk] チケットデータ（コメント付き）、ユーザーデータ、アカウントデータを含むアカウント。 この時点で、次の操作を実行できます。 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) （このファイルを必ず添付してください。） データを詳しく見てみましょう ファイルが大きすぎる場合は、 [!DNL MBI] チーム経由で [!DNL Dropbox] または [!DNL Google Drive].
 
-詳しくは、 [!DNL Zendesk] ファイルのエクスポート（公式を参照） [[!DNL Zendesk] 書き出しドキュメント](https://support.zendesk.com/entries/23002207-Exporting-data-to-a-CSV-or-XML-file-Plus-and-Enterprise-).
+詳しくは、 [!DNL Zendesk] ファイルのエクスポート（公式を参照） [[!DNL Zendesk] 書き出しドキュメント](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

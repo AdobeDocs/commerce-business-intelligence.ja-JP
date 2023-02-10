@@ -2,9 +2,9 @@
 title: ファイルアップローダを使用
 description: すべてのデータを単一のデータウェアハウスに配置する方法を説明します。
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 ## 制限事項と要件 {#require}
 
 1. **ファイルのアップロードでサポートされる形式は、次のとおりです。 `CSV` または`comma separated values`**. Excel で作業している場合は、「名前を付けて保存」機能を使用して、ファイルをに保存できます。 `.csv` 形式
-1. **`CSV`ファイルは`UTF-8 encoding`**. ほとんどの場合、これは問題にはなりません。 ファイルのアップロード中にこのエラーが発生した場合は、 [このサポート記事を参照してください。](https://support.magento.com/hc/en-us/articles/360016730591).
+1. **`CSV`ファイルは`UTF-8 encoding`**. ほとんどの場合、これは問題にはなりません。 ファイルのアップロード中にこのエラーが発生した場合は、 [このサポート記事を参照してください。](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
 1. **100 MB を超えるファイルは使用できません**. ファイルがこれより大きい場合は、テーブルをチャンクに分割し、個々のファイルとして保存します。 最初のファイルの読み込み後に、を使用してデータを追加できます。
 1. **すべてのテーブルには`primary key`**. テーブル内に、 `primary key`、またはテーブル内の各行の一意の ID。 次に指定された列： `primary key` can *なし* が null の場合に限ります。 A `primary key` は、各行に数値を与える列を追加するのと同じくらい簡単にできます。また、2 つの列を連結して一意の値の列を作成することもできます ( 例： `campaign name` および `date`) をクリックします。
 

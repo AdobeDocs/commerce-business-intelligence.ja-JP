@@ -2,10 +2,10 @@
 title: 高度な計算列のタイプ
 description: ほとんどの使用例に関する基本事項を説明します。ただし、Data Warehouseマネージャで作成できるものよりも少し複雑な計算列が必要な場合もあります。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 4%
 
 ---
 
@@ -159,7 +159,7 @@ A **タイムゾーン変換** 計算列は、特定のデータソースのタ�
 
 心配しないで。 ここに記載されていないので、実行できないとは限りません。 当社のData Warehouseアナリストチームが対象です。
 
-新しい計算列を定義するには、次の手順を実行します。 [サポートチケットを提出する](../../guide-overview.md) に、作成する内容の詳細を示します。
+新しい計算列を定義するには、次の手順を実行します。 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) に、作成する内容の詳細を示します。
 
 ## 関連ドキュメント
 

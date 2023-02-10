@@ -2,9 +2,9 @@
 title: SQL クエリの最適化
 description: SQL クエリを最適化する方法を説明します。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 SQLReport Builderを使用すると、クエリを実行し、これらのクエリをいつでも繰り返し実行できます。 これは、更新が必要な列やレポートを確認する前に、更新サイクルが完了するのを待たずにクエリを変更する必要がある場合に役立ちます。
 
-クエリを実行する前に、 [[!DNL MBI] 費用を見積もる](https://support.magento.com/hc/en-us/articles/360016730391). コストでは、クエリの実行に必要な時間とリソースの数が考慮されます。 そのコストが高すぎると見なされた場合、または返される行の数が制限を超えた場合、クエリは実行されません。 Data Warehouse に対するクエリに関する推奨事項のリストをまとめました。これにより、できるだけ効率的なクエリを記述できます。
+クエリを実行する前に、 [[!DNL MBI] 費用を見積もる](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). コストでは、クエリの実行に必要な時間とリソースの数が考慮されます。 そのコストが高すぎると見なされた場合、または返される行の数が制限を超えた場合、クエリは実行されません。 Data Warehouse に対するクエリに関する推奨事項のリストをまとめました。これにより、できるだけ効率的なクエリを記述できます。
 
 ## SELECT またはすべての列の選択の使用
 

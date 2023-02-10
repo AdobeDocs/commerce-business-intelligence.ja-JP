@@ -2,16 +2,16 @@
 title: コマースへのデータの格納
 description: データの生成方法、新しい行がコアコマーステーブルの 1 つに正確に挿入される原因、および購入やアカウントの作成などのアクションが Commerce データベースに記録される方法について説明します。
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 0%
+source-wordcount: '960'
+ht-degree: 3%
 
 ---
 
-# データの格納先 [!DNL Magento]
+# データの格納先 [!DNL Adobe Commerce]
 
-コマースプラットフォームは、数百のテーブルにわたって様々な価値のあるコマースデータを記録し、整理します。 このトピックでは、データの生成方法と、新しい行がいずれかの [コアコマーステーブル](../data-warehouse-mgr/common-mage-tables.md)、および購入やアカウントの作成などのアクションを Commerce データベースに記録する方法を説明します。 これらの概念について説明するには、次の例を参照してください。
+Adobe Commerceプラットフォームは、数百のテーブルにわたって様々な価値のあるコマースデータを記録し、まとめています。 このトピックでは、データの生成方法と、新しい行がいずれかの [コアコマーステーブル](../data-warehouse-mgr/common-mage-tables.md)、および購入やアカウントの作成などのアクションを Commerce データベースに記録する方法を説明します。 これらの概念について説明するには、次の例を参照してください。
 
 `Clothes4U` は、オンラインで、レンガとモルタルの両方を備えた衣料品店です。 Web サイトの背後にMagento Open Sourceを使用して、データを収集および整理します。
 
@@ -23,22 +23,22 @@ ht-degree: 0%
 
 | **`entity\_id`** | **`entity\_type\_id`** | **`attribute\_set\_id`** | **`sku`** | **`created\_at`** |
 |---|---|---|---|---|
-| 205 | 4 | 8 | パンツ 10 | 2016/09/22 09:15:43 |
-| 206 | 4 | 8 | パンツ 11 | 2016/09/22 09:18:17 |
-| 207 | 4 | 12 | シャツ 6 | 2016/09/22 09:24:02 |
+| 205 | 4 | 8 | Pants10 | 2016/09/22 09:15:43 |
+| 206 | 4 | 8 | Pants11 | 2016/09/22 09:18:17 |
+| 207 | 4 | 12 | Shirts6 | 2016/09/22 09:24:02 |
 
 * `entity_id`  — これは、 `catalog_product_entity` テーブル ( テーブルの各行に異なる `entity_id`. 各 `entity_id` このテーブルで関連付けることができる製品は 1 つだけで、各製品を関連付けることができる製品は 1 つだけです `entity_id`
    * 上の表の上の行 `entity_id` = 205 は、「Throwback Bellbottoms」用に作成された新しい行です。 場所 `entity_id` = 205 はコマースプラットフォームに表示され、製品「Throwback Bellbottoms」を参照します。
 * `entity_type_id`  — コマースには、複数のカテゴリのオブジェクト（顧客、住所、製品など）があり、この列は、この特定の行が該当するカテゴリを示すために使用されます。
-   * これは `catalog_product_entity` テーブルの場合、各行のエンティティタイプは同じになります。製品。 Magentoでは、 `entity_type_id` 製品が 4 の場合、新しく作成された 3 つの製品はすべて、この列に 4 を返すのです。
+   * これは `catalog_product_entity` テーブルの場合、各行のエンティティタイプは同じになります。製品。 Adobe Commerceでは、 `entity_type_id` 製品が 4 の場合、新しく作成された 3 つの製品はすべて、この列に 4 を返すのです。
 * `attribute_set_id`  — 属性セットは、記述子と同じ製品を識別するために使用されます。
    * テーブルの上の 2 行は、 `Throwback Bellbottoms` および `Straight Leg Jeans` 両方ともズボンの製品。 これらの製品は同じ記述子（名前、縫い目、胴回りなど）を持つので、同じ記述子を持ちます `attribute_set_id`. 3 つ目の項目は、 `V-Neck T-Shirt` が異なる `attribute_set_id` ズボンと同じ説明を持たないからだ。シャツに胴回りや縫い目がない。
-* `sku`  — ユーザーがMagentoで新しい製品を作成する際に各製品に割り当てられる一意の値。
+* `sku` - Adobe Commerceで新しい製品を作成する際にユーザーが各製品に割り当てる一意の値です。
 * `created_at`  — この列は、各製品が作成された日時のタイムスタンプを返します
 
 ## `customer\_entity`
 
-3 つの新しい製品が追加された直後に、新しいお客様が `Sammy Customer`，訪問 `Clothes4U`初めてのウェブサイト。 次以降 `Clothes4U` 次の値と等しくない [ゲストの注文を許可](https://support.magento.com/hc/en-us/articles/360016729951-Common-Magento-Misconceptions), `Sammy Customer` まず、web サイト上にアカウントを作成する必要があります。 Sarah が資格情報を入力し、「 submit 」をクリックすると、 [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
+3 つの新しい製品が追加された直後に、新しいお客様が `Sammy Customer`，訪問 `Clothes4U`初めてのウェブサイト。 次以降 `Clothes4U` ゲストによる注文を許可しません。 `Sammy Customer` まず、web サイト上にアカウントを作成する必要があります。 Sarah が資格情報を入力し、「 submit 」をクリックすると、 [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
 
 | **`entity id`** | **`entity type id`** | **`email`** | **`created at`** |
 |---|---|---|---|

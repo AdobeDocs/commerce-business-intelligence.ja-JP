@@ -2,16 +2,16 @@
 title: 生データを書き出し
 description: レコードを [!DNL MBI] Data Warehouseを参照して、ダッシュボードの機能を詳しく確認してください。
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
 
 # 生データを書き出し
 
-生データのエクスポートを使用して、 [!DNL MBI] Data Warehouseを参照して、ダッシュボードの機能を詳しく確認してください。 また、生データの書き出しは [データの相違を正確に示す](https://support.magento.com/hc/en-us/articles/360016730631).
+生データのエクスポートを使用して、 [!DNL MBI] Data Warehouseを参照して、ダッシュボードの機能を詳しく確認してください。 また、生データの書き出しは [データの相違を正確に示す](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
 
 生データのエクスポートでは、関連する指標の正規化および事前集計を解除して生成された追加の列およびディメンションにアクセスできます。 例： `User's first order date` は、 [!DNL MBI]の代わりに使用できます。
 

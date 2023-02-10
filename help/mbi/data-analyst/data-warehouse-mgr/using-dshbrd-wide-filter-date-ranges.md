@@ -2,9 +2,9 @@
 title: ダッシュボード全体のフィルタリング
 description: 特定のダッシュボードですべてのレポートを一括編集する方法を説明します。
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ストアフィルターは、 [!DNL MBI] アカウント コマースデータに基づいて構築されていないレポートなど、フィルタの影響を受けないレポートがダッシュボードに含まれている場合、ストアフィルタが適用されても、それらのレポートは更新されません。 以下が可能です。 [連絡先サポート](../../guide-overview.md) ストアの選択に基づいてレポートを更新すると思われる場合や、アカウントストアのフィルターが誤って無効になっていると思われる場合。
+>ストアフィルターは、 [!DNL MBI] アカウント コマースデータに基づいて構築されていないレポートなど、フィルタの影響を受けないレポートがダッシュボードに含まれている場合、ストアフィルタが適用されても、それらのレポートは更新されません。 以下が可能です。 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) ストアの選択に基づいてレポートを更新すると思われる場合や、アカウントストアのフィルターが誤って無効になっていると思われる場合。
 
 ストアを `Store Filter`を使用すると、ダッシュボード間を移動する際にフィルターで選択内容が保持されます。 選択を維持すると、選択したストアのデータを、選択した `All Stores`.
 

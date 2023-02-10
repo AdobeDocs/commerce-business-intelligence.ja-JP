@@ -2,9 +2,9 @@
 title: Report Builder内の数式
 description: 数式をReport Builderで使用する方法を説明します。
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 上記の例で、数式の `timestamp`, `groupings`, `perspectives`、および `filters` は、入力指標から継承されますか。 数式は `perspectives` および [独立時間オプション](../../tutorials/time-options-visual-rpt-bldr.md){:target=&quot;_blank&quot;} は、指標と同様です。
 
-また、 `Report Builder`, [連絡先サポート](../../guide-overview.md).
+また、 `Report Builder`, [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

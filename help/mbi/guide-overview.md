@@ -5,9 +5,9 @@ breadcrumb-title: ガイドの概要
 seo-title: MBI User Guide
 seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 ### サービスポリシー
 
-参照先 [カスタマーサポートチームが提供するサービスのリスト](https://support.magento.com/hc/en-us/articles/360016730811).
+参照先 [カスタマーサポートチームが提供するサービスのリスト](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### サポートチケットの送信
 
-高度な計算列の作成に役立つ情報が必要な場合は、 欠陥または接続に問題が発生したか。 アドビのサポートチームに連絡が必要な場合は、 [サポートチケットのガイドライン](https://support.magento.com/hc/en-us/articles/360016730351). これらのガイドラインは、問題を解決するためにAdobeが必要とする情報の概要を示しています。
+高度な計算列の作成に役立つ情報が必要な場合は、 欠陥または接続に問題が発生したか。 アドビのサポートチームに連絡が必要な場合は、 [サポートチケットのガイドライン] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)。 これらのガイドラインは、問題を解決するためにAdobeが必要とする情報の概要を示しています。
 
 ## 利用可能なドキュメント
 

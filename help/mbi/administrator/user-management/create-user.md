@@ -2,9 +2,9 @@
 title: 新しいユーザーの追加/編集
 description: 新しい [!DNL MBI] ユーザーと、ユーザー名またはパスワードの更新方法を説明します。
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 0%
    >アカウントの請求情報を表示、追加、変更するには、 `Billing` 権限。 [権限はユーザーごとに設定されます](../../administrator/user-management/user-management.md) ユーザーアカウントの作成時。 必要に応じて `Billing` 権限については、アカウントの管理者にお問い合わせください。
 
 1. クリック **[!UICONTROL Save]**.
-1. 新しいユーザーには、ログインとパスワードの詳細が記載された電子メールが送信されます。
+
+新しいユーザーには、ログインとパスワードの詳細が記載された電子メールが送信されます。
 
 >[!NOTE]
 >
@@ -37,4 +38,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->各アカウントには、契約済みのライセンス数（シート数）があります。 制限に達した場合や、詳細を知りたい場合は、 [サポートチケットを提出する](../../guide-overview.md).
+>各アカウントには、契約済みのライセンス数（シート数）があります。 制限に達した場合や、詳細を知りたい場合は、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

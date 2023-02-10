@@ -2,9 +2,9 @@
 title: SQLReport Builderの使用
 description: SQLReport Builderの使用方法を学びます。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1501'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 >
 >必要 [管理者権限](../../administrator/user-management/user-management.md) をクリックし、SQL チャートを作成および編集します。 `Standard` ユーザーは、ダッシュボードでこれらのグラフを並べ替えることができます。 `Read-only` ユーザーは、従来のグラフと同じエクスペリエンスを得ることができます。 さらに、 `Read-only` ユーザーはクエリのテキストにアクセスできません。
 
-詳しくは、 [トレーニングビデオ](https://support.magento.com/hc/en-us/articles/360016730131) を参照してください。
+詳しくは、 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) を参照してください。
 
 `SQL`(Structured Query Language) は、データベースとの通信に使用されるプログラミング言語です。 In [!DNL MBI]の場合、SQL を使用して、Data Warehouse からデータをクエリしたり、取得したりします。 ダッシュボード上のレポートを見てみましょう。バックグラウンドで、各レポートは SQL クエリによって実行されます。
 
 以下を使用して、 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) data warehouse に直接問い合わせ、結果を表示し、グラフに変換します。 レポートの作成を開始するには、 `SQL Report Builder` 移動して **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
-詳しくは、 [トレーニングビデオ](https://support.magento.com/hc/en-us/articles/360016730131-Training-Video-SQL-Report-Builder) を参照してください。
+詳しくは、 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) を参照してください。
 
-この `SQL Report Builder` では、Data Warehouse に直接問い合わせ、結果を表示し、すばやくグラフに変換できます。 SQL を使用してレポートを作成する最善の方法は、 [列で反復する更新サイクルを待つ必要はありません](https://support.magento.com/hc/en-us/articles/360016506212) 自分で作成します。 結果が正しく表示されない場合は、クエリをすばやく編集し、期待どおりに実行できます。
+この `SQL Report Builder` では、Data Warehouse に直接問い合わせ、結果を表示し、すばやくグラフに変換できます。 SQL を使用してレポートを作成する最善の点は、作成する列を繰り返す更新サイクルを待つ必要がないことです。 結果が正しく表示されない場合は、クエリをすばやく編集し、期待どおりに実行できます。
 
 この記事では、 `SQL Report Builder`. 使い方がわかったら、ビジュアライゼーションに関する SQL のチュートリアルを確認するか、記述したクエリの一部を最適化してみてください。
 
@@ -131,9 +131,9 @@ SQL を使用して作成された計算列は更新サイクルに依存しな�
 
 時間の大部分は、結果の違いは、更新サイクルに起因する可能性があります。 If [!DNL MBI] は、データベースからData Warehouseにデータをレプリケートするプロセス中で、同じクエリを使用している場合でも、異なる結果が表示される場合があります。
 
-接続の問題によって不整合が生じる場合もあります。 次に移動： `Connections` ページをクリック **[!DNL Manage Data** > **Connections]**) を使用してチェックアウトします。問題のデータベース統合にエラーはありますか。 その場合は、 [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations) もう一度動かすために
+接続の問題によって不整合が生じる場合もあります。 次に移動： `Connections` ページをクリック **[!DNL Manage Data** > **Connections]**) を使用してチェックアウトします。問題のデータベース統合にエラーはありますか。 その場合は、 [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en) もう一度動かすために
 
-すべての統合が正常に接続され、更新サイクルの途中にない場合は、他に何か問題が発生する可能性があります。 その場合は、 [データ相違トラブルシューティングガイド](https://support.magento.com/hc/en-us/sections/360003074492) サポートサイトで問題を特定できます。
+すべての統合が正常に接続され、更新サイクルの途中にない場合は、他に何か問題が発生する可能性があります。
 
 #### SQL レポートを削除すると、基になる列もData Warehouseから削除されますか。
 

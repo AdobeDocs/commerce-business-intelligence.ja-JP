@@ -2,9 +2,9 @@
 title: Zendesk データが期待されます
 description: Zendesk から MBI に読み込むことができる主なデータテーブルについて説明します。このテーブルには、Zendesk データに関する追加ドキュメントへのリンクも含まれます。
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ ht-degree: 0%
 ## 関連
 
 * [Zendesk の接続](../integrations/zendesk.md)
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

@@ -2,9 +2,9 @@
 title: 接続Google Analytics
 description: Google Analyticsの接続方法 [!DNL MBI].
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -51,8 +51,7 @@ ht-degree: 0%
 
 ## 関連：
 
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [接続中 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Web サイトのアクティビティと顧客コンバージョン率の分析](../../analysis/web-act-cust-conversion.md)
 * [を使用したユーザー獲得データの追跡 [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)
-* [を使用してユーザーデバイスとブラウザーデータを追跡する [!DNL Google Analytics] cookie](https://support.magento.com/hc/en-us/articles/360016732911)

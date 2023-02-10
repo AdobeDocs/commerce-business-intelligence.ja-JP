@@ -2,10 +2,10 @@
 title: 顧客の再購入行動の分析
 description: 顧客の再購入行動の分析方法を説明します。
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
@@ -80,4 +80,4 @@ ht-degree: 0%
 
 チャーンが発生している理由を特定したら、分析を使用して `reactivation` キャンペーン。 このデータを使用して、非アクティブになったユーザー、最後の訪問からの経過時間、最後の購入の内容などを識別できます。 これにより、顧客の再来訪を促す、実用的な決定を下すことができます。
 
-分析に関するヘルプが必要な場合は、 [連絡先サポート](../../guide-overview.md).
+分析に関するヘルプが必要な場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

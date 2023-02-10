@@ -2,9 +2,9 @@
 title: 指標の操作可能テーブルの変更
 description: 指標が操作の実行に使用するデータテーブルを変更する方法を説明します。
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ ht-degree: 0%
 
    ![](../../assets/change-metrics-2.png)
 
-1. 新しいテーブルに一致する列がない場合は、次のいずれかを実行できます。 **データテーブルに作成** または [連絡先サポート](../../guide-overview.md) が次の方法で作成された計算列または次元の場合 [!DNL MBI])、または単に **指標からディメンションを削除**. 不要になったディメンションを削除するには、指標のエディターに戻って、削除するディメンションを「 」の下で選択します `Dimensions`.
+1. 新しいテーブルに一致する列がない場合は、次のいずれかを実行できます。 **データテーブルに作成** または [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) が次の方法で作成された計算列または次元の場合 [!DNL MBI])、または単に **指標からディメンションを削除**. 不要になったディメンションを削除するには、指標のエディターに戻って、削除するディメンションを「 」の下で選択します `Dimensions`.
 
    ![](../../assets/change-metrics-3.png)

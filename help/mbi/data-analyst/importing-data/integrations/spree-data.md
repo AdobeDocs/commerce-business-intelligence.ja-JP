@@ -2,9 +2,9 @@
 title: 予想される空きデータ
 description: Spree から [!DNL MBI] アカウント
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 | `Users` | この `users` この表には、個人の E メール、名前、登録日など、登録ユーザーのアカウントの詳細が含まれます。 これにより、様々な顧客セグメントとその購入行動を分析できます。 |
 | [`Orders`](https://guides.spreecommerce.org/developer/orders.html#overview) | この `orders` この表は、すべての注文レベルの指標の基礎となります。 ここには、お客様の購入の注文の詳細がすべて記録されます [!DNL Spree] ストア（次を含む） `completed\_at` （注文のタイムスタンプ）、 `user\_id` （注文した登録ユーザーの id）。 注文が登録ユーザーによって行われた場合、 `user\_id` 次にリンク： `users` テーブルを使用して、ユーザーの購入行動を分析できます。 |
 | `Line items` | この `line\_items` テーブルは、 `orders` テーブルまたは `subscriptions`. 注文または購読の品目の詳細を記録します。 複数の製品を含む注文の場合、このテーブルには各製品に固有のデータ行があり、 `product\_id` それを結ぶ事が出来る `Products` 表。 |
-| [`Products`](https://guides.spreecommerce.com/developer/products.html#overview) | この `products` テーブルには、Spree カタログの販売可能品目のすべての製品詳細が記録されます。 これにより、製品属性別に行項目レベルの指標をセグメント化できます。 |
+| `Products` | この `products` テーブルには、Spree カタログの販売可能品目のすべての製品詳細が記録されます。 これにより、製品属性別に行項目レベルの指標をセグメント化できます。 |
 | `Subscriptions` | 次の場合、 [!DNL Spree] subscriptions 拡張機能 `subscriptions` テーブルには、 `created\_at` （開始日） `cancelled\_at` （配信登録がキャンセルされた日付） `interval` 購読の |
 
 {style=&quot;table-layout:auto&quot;}
@@ -28,4 +28,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続中 [!DNL Spree]](../integrations/spree.md)
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

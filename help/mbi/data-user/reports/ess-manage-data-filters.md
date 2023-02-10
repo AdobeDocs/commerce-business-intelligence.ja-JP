@@ -2,9 +2,9 @@
 title: 指標のフィルターセットの作成
 description: 保存済みフィルターセットを作成し、指標に適用する方法を説明します。
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 に複数の指標がある場合 [!DNL MBI] 同様の方法でフィルタリングする必要がある（テスト注文をフィルタリングするなど）場合は、保存済みのフィルターセットを作成して指標に適用できます。 指標を作成または編集する際に個々のフィルターを追加する必要がないので、時間を節約できます。
 
-詳しくは、 [トレーニングビデオ](https://support.magento.com/hc/en-us/articles/360016730151) を参照してください。
+詳しくは、 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) を参照してください。
 
 >[!NOTE]
 >

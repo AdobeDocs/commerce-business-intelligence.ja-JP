@@ -2,9 +2,9 @@
 title: SSH トンネルを介した PostgreSQL の接続
 description: PostgreSQL データベースをに接続する方法を説明します。 [!DNL MBI] SSH トンネルを介して送信されます。
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 0%
 * `Username`:RJMetrics Postgres ユーザー名（rjmetric である必要があります）
 * `Password`:RJMetrics Postgres パスワード
 * `Port`:サーバー上の PostgreSQL ポート（デフォルトは 5432）
-* `Host`:127.0.0.1
+* `Host`: 127.0.0.1
 
 の下 `SSH Connection`:
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 関連
 
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

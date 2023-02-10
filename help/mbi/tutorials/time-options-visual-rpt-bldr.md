@@ -2,9 +2,9 @@
 title: ビジュアルReport Builderの [ 時間オプションを使用 ]
 description: 特定の期間のレポート内のデータを分析する方法を学びます。
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ## 異なる時間範囲での同じ指標の比較 {#difftimerange}
 
-この例では、という名前のカスタムディメンションを使用します。 `Day number of the month`. このレポートを作成し、Data Warehouseにこのディメンションがない場合は、 [連絡先サポート](../guide-overview.md) 助けを求めて
+この例では、という名前のカスタムディメンションを使用します。 `Day number of the month`. このレポートを作成し、Data Warehouseにこのディメンションがない場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 助けを求めて
 
 このカテゴリの最も一般的な例は、(1) 成長指標（前年比または前月比）と (2) 最近の在庫または品目の販売傾向をより深く把握できる、という 2 つです。
 
@@ -143,4 +143,3 @@ ht-degree: 0%
 
 顧客の行動は時間の経過と共に異なるので、分析の実行時にデータの相違を確認できます。 カスタム時間オプションを設定すると、複雑な分析をすばやく作成でき、履歴トレンドを考慮したデータ主導型の決定を可能にします。
 
-詳しくは、 [トレーニングビデオ](https://support.magento.com/hc/en-us/articles/360016730071-Training-Video-Time-Options-in-the-Visual-Report-Builder) を参照してください。

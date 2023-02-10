@@ -2,9 +2,9 @@
 title: 定性コホート分析の作成
 description: 定性コホートとは何か、この分析の構築に興味を持つ理由、およびでの作成方法を説明します。 [!DNL MBI].
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 の作成 `qualitative cohort` レポート `Report Builder` アナリストチームがいくつかを作り出す [高度な計算列](../data-warehouse-mgr/creating-calculated-columns.md) を必要なテーブルに追加します。
 
-これらを作成するには、 [サポートチケット](../../guide-overview.md) （およびこの記事を参照してください。） 以下に知っておく必要がある情報を示します。
+これらを作成するには、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) （およびこの記事を参照してください。） 以下に知っておく必要がある情報を示します。
 
 * この `metric` コホート分析を、その分析で使用するテーブル ( 例： `Revenue`( `orders` 表 )。
 

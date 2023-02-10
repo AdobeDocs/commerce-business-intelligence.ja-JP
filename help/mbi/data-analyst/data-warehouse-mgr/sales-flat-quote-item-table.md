@@ -2,16 +2,16 @@
 title: quote_item テーブル
 description: quote_item テーブルの操作方法を説明します。
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # quote_item テーブル
 
-この `quote_item` テーブル (`sales_flat_quote_item` オン [!DNL Magento] 1) には、買い物かごに追加された各品目のレコードが含まれます。買い物かごが破棄されたか、購入に変換されたかに関わらずです。 各行は 1 つの買い物かご項目を表します。 このテーブルの潜在的なサイズにより、60 日を超える未変換の買い物かごがある場合など、特定の条件を満たしている場合は、定期的にレコードを削除することをお勧めします。
+この `quote_item` テーブル (`sales_flat_quote_item` M1) 1) には、買い物かごに追加された各品目のレコードが含まれます。買い物かごが破棄されたか、購入に変換されたかに関わらずです。 各行は 1 つの買い物かご項目を表します。 このテーブルの潜在的なサイズにより、60 日を超える未変換の買い物かごがある場合など、特定の条件を満たしている場合は、定期的にレコードを削除することをお勧めします。
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 `quote_item`
 
-* 結合先 `quote_item` 親の設定可能な SKU またはバンドル SKU の詳細をシンプルな製品に関連付ける新しい列を作成します。 なお、 [連絡先サポート](../../guide-overview.md) を参照してください。
+* 結合先 `quote_item` 親の設定可能な SKU またはバンドル SKU の詳細をシンプルな製品に関連付ける新しい列を作成します。 なお、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) を参照してください。
    * パス： `quote_item.parent_item_id` （多数） => `quote_item.item_id` (1)
 
 `store`

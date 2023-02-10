@@ -2,16 +2,16 @@
 title: sales_order_item テーブル
 description: sales_order_item テーブルの操作方法を説明します。
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: c0892aa046c80f90561b4a178525ef9ed05b435a
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # `sales_order_item` テーブル
 
-この `sales_order_item` テーブル (`sales_flat_order_item` オン [!DNL Magento] 1) には、注文で購入されたすべての製品のレコードが含まれます。 各行は、 `sku` を注文に含めます。 特定ののの購入数量 `sku` は、 `qty_ordered` フィールドに入力します。
+この `sales_order_item` テーブル (`sales_flat_order_item` M1 1) には、注文で購入されたすべての製品のレコードが含まれます。 各行は、 `sku` を注文に含めます。 特定ののの購入数量 `sku` は、 `qty_ordered` フィールドに入力します。
 
 ## 製品タイプ
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 `sales_order_item`
 
-* 結合先 `sales_order_item` 親の設定可能な SKU またはバンドル SKU の詳細をシンプルな製品に関連付ける新しい列を作成します。 なお、 [連絡先サポート](../../guide-overview.md) を参照してください。
+* 結合先 `sales_order_item` 親の設定可能な SKU またはバンドル SKU の詳細をシンプルな製品に関連付ける新しい列を作成します。 なお、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) を参照してください。
    * パス： `sales_order_item.parent_item_id` （多数） => `sales_order_item.item_id` (1)
 
 `store`

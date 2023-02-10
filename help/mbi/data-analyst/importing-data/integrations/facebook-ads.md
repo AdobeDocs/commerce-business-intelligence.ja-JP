@@ -2,9 +2,9 @@
 title: facebook Ads の接続
 description: 広告費用のデータを分析し、お金が効果的に使われているかどうかを確認する方法を学びます。
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ facebook広告データのへの接続 [!DNL MBI] は、次の 3 つの手順で
 
 ## 次の手順 {#next}
 
-追跡していることを確認します。 [!DNL Facebook] キャンペーン [!DNL Google Analytics] これに従って [チュートリアル](https://www.facebook.com/business/google-analytics). これにより、 `utm\_campaign` ～に入る [!DNL Google Analytics] が [!DNL Facebook] キャンペーン。
+追跡していることを確認します。 [!DNL Facebook] キャンペーン [!DNL Google Analytics]. これにより、 `utm\_campaign` ～に入る [!DNL Google Analytics] が [!DNL Facebook] キャンペーン。
 
 ## 関連
 
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [接続 [!DNL Google Adwords] アカウント](../integrations/google-ecommerce.md)
 * [経由で注文のリファラルソースを追跡 [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [データベース内のユーザー参照元を追跡する](../../analysis/google-track-user-acq.md)

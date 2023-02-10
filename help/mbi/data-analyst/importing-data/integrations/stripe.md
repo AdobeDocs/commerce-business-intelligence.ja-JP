@@ -2,9 +2,9 @@
 title: ストライプを接続
 description: ビジネスの支払いと請求書データを管理し、追跡する方法を学びます。
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ ht-degree: 0%
 もう少し技術に詳しい人は、 [[!DNL Stripe] API ドキュメント](https://stripe.com/docs/api) は、 [!DNL Stripe] が [!DNL MBI].
 
 * [予測 [!DNL Stripe] データ](../integrations/stripe-data.md)
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

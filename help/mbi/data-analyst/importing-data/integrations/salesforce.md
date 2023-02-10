@@ -2,9 +2,9 @@
 title: Salesforce の連携
 description: スコア付けや最適化のリードからコンバージョンに至る機会に対する目標を達成するまで、Salesforce データが様々な分析を可能にする方法を説明します。
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,4 @@ ht-degree: 0%
 もう少し技術に詳しい人は、 [[!DNL Salesforce] API ドキュメント](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) は、Salesforce との統合方法に関する詳細を学ぶのに役立つリソースです。 [!DNL MBI].
 
 * [予測 [!DNL Salesforce] データ](../integrations/salesforce-data.md)
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

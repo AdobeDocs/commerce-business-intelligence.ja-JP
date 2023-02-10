@@ -2,9 +2,9 @@
 title: ユーザーの削除または再アクティブ化
 description: 以下を削除する方法を説明します。 [!DNL MBI] ユーザー。
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -24,5 +24,5 @@ ht-degree: 0%
 別のユーザーのアカウントにプッシュしたユーザーのダッシュボードのみが必要な場合は、次の操作を行います。
 
 1. 削除したユーザーの電子メールアドレスを使用して、新しい [!DNL MBI] ユーザー。
-1. [サポートに通知](../../guide-overview.md) ユーザーを作成した後。 サポートがダッシュボードをアカウントに転送します。
+1. [サポートに通知](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) ユーザーを作成した後。 サポートがダッシュボードをアカウントに転送します。
 1. サポートから転送が通知されたら、ユーザーを再度削除できます。

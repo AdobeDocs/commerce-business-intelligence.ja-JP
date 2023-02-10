@@ -2,9 +2,9 @@
 title: sales_order テーブル
 description: sales_order テーブルの操作方法を説明します。
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 73373924b7adaffabf643b65bd290ce2d9408574
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 | `customer_group_id` | に関連付けられた外部キー `customer_group` 表。 結合先 `customer_group.customer_group_id` オーダーに関連付けられた顧客グループを特定するには、以下を実行します。 |
 | `customer_id` | `Foreign key` ～と関連している `customer_entity` 顧客が登録されている場合は、テーブル。 結合先 `customer_entity.entity_id` を使用して、注文に関連付けられている顧客属性を特定します。 注文がゲストによるチェックアウトを通じておこなわれた場合、このフィールドは `NULL` |
 | `entity_id` (PK) | テーブルの一意の識別子。Commerce インスタンス内の他のテーブルへの結合で一般的に使用されます |
-| `increment_id` | 注文の一意の識別子 ( 一般的に `order_id` Magento内 この `increment_id` は、外部ソースへの結合に最も多く使用されます。 [!DNL Google Ecommerce] |
+| `increment_id` | 注文の一意の識別子 ( 一般的に `order_id` Adobe Commerceの この `increment_id` は、外部ソースへの結合に最も多く使用されます。 [!DNL Google Ecommerce] |
 | `shipping_address_id` | に関連付けられた外部キー `sales_order_address` 表。 結合先 `sales_order_address.entity_id` 注文に関連付けられた配送先住所の詳細を決定するには |
 | `status` | 注文のステータス。 「complete」、「processing」、「cancelled」、「refunded」などの値や、Commerce インスタンスに実装されているカスタムステータスを返すことができます。 オーダーの処理時に変更される場合があります |
 | `store_id` | `Foreign key` ～と関連している `store` 表。 結合先 `store`.`store_id` 注文に関連付けられているコマースストア表示を特定するには |

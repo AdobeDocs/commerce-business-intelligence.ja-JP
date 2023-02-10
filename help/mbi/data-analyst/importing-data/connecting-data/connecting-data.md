@@ -2,9 +2,9 @@
 title: データを接続
 description: 同期マネージャーで同期可能なテーブルを参照するData Warehouseを説明します。
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,6 @@ API を使用するには、多くの技術的な専門知識が必要です。�
 * [テーブルの統合](../../../best-practices/consolidating-your-tables.md)
 * [データベースへのアクセスの制限](../../../administrator/account-management/restrict-db-access.md)
 
-**目的の統合が表示されていない場合は、** 一部の統合は、アカウントで表示されるように、有効化する必要があります。 例えば、 [!DNL Facebook]  — が、リストには表示されていない。 [サポートチケットを提出する](../../../guide-overview.md).
+**目的の統合が表示されていない場合は、** 一部の統合は、アカウントで表示されるように、有効化する必要があります。 例えば、 [!DNL Facebook]  — が、リストには表示されていない。 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 **統合のエラーステータスが表示される場合**、パニックに陥らない — [トラブルシューティング節](https://support.magento.com/hc/en-us/sections/360003078151) を参照してください。

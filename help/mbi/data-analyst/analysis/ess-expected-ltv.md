@@ -2,9 +2,9 @@
 title: 全期間値 (LTV) 分析（基本）
 description: 分析を作成して、現在の顧客のライフタイム値を把握し、注文件数が増えるにつれてライフタイム値が増加する方法を予測する方法を説明します。
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,6 @@ ht-degree: 0%
 * ここで、すべてのレポートを作成して追加します。
 
 ## レポートの作成
-
-* まだお持ちでない場合は、 [このビデオ](https://fast.wistia.net/embed/iframe/24zz7wmjrt) **[!UICONTROL Visual Report Builder] チャート、テーブル、スカラー値を作成します。
 
 >[!NOTE]
 >

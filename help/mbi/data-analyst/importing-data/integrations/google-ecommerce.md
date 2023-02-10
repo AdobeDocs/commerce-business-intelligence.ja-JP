@@ -2,9 +2,9 @@
 title: Google E コマースを接続
 description: 最も重要な参照チャネルについて学びます。
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 ## 関連：
 
 * [予測 [!DNL Google ECommerce] データ](../integrations/google-ecommerce-data.md)
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [設定 [!DNL Google ECommerce] tracking](https://support.google.com/analytics/answer/1009612?hl=en)
 * [最も価値のある獲得ソースとチャネルを見つける](../../analysis/most-value-source-channel.md)
 * [広告キャンペーンの ROI の向上](../../analysis/roi-ad-camp.md)

@@ -2,10 +2,10 @@
 title: MBI Essentials と Pro
 description: MBI Essentials とMBI Proの違いを学ぶ
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: 1703e469e245629797bbe08d691d7f8e816a4019
+source-git-commit: dcd02693b3ca060ecdc47cbee189428ce157dd58
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 0%
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 | `Pre-Defined Reports` | 最大 100 | カスタム |
 | `Pre-Defined Dashboards` | 5-6 | カスタム |
 | `New Custom Report Creation` | はい | はい |
-| `Magento Commerce Tables` | 4-6 | 無制限 |
+| `Commerce Tables` | 4-6 | 無制限 |
 | `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | はい | はい |
 | `Data Warehouse Manager` | 使用不可 | 利用可能 |
@@ -152,7 +152,3 @@ ht-degree: 0%
    * `store_id`
    * `name`
 
-次のビデオシリーズを参照して、 [!DNL MBI Essentials] および [!DNL MBI Pro].
-
-* [`Essentials`](https://support.magento.com/hc/en-us/articles/360005305614)
-* [`Pro`](https://support.magento.com/hc/en-us/articles/360005373453)

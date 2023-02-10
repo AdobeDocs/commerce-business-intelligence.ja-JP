@@ -2,9 +2,9 @@
 title: QuickBooks に接続
 description: 財務状況が売上高やマーケティングデータと共にどのように生きられるかを学び、費用を迅速かつ簡単に把握し、過剰支出を特定するなどの方法を学びます。
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
@@ -38,4 +38,4 @@ ht-degree: 0%
 ## 関連
 
 * [予測 [!DNL QuickBooks] データ](../integrations/quickbooks-data.md)
-* [統合の再認証](https://support.magento.com/hc/en-us/articles/360016733151)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
