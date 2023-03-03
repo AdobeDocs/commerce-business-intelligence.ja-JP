@@ -2,7 +2,7 @@
 title: 次にアクセス： [!DNL MBI] アカウント
 description: ログインの詳細 [!DNL MBI] アカウント
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # アクティベート済みにアクセス [!DNL MBI] アカウント
 
-次をアクティブ化した後： [!DNL MBI] 次のいずれかを考慮する [オンプレミス](../getting-started/onpremise-activation.md) または [クラウド](../getting-started/cloud-activation.md) およびは、カスタマーサクセスマネージャーと連携して設定手順を完了し、アカウントにログインできるようになりました。
+次をアクティブ化した後： [!DNL MBI] 次のいずれかを考慮する [オンプレミス](../getting-started/onpremise-activation.md) または [クラウド](../getting-started/cloud-activation.md) およびは、Adobeアカウントチームと連携して設定手順を完了し、アカウントにログインできます。
 
 以下を使用して、 [!DNL Adobe ID] または [!DNL MBI] 電子メールアドレスとパスワード。
 

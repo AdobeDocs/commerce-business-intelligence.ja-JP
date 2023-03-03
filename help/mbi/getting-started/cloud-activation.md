@@ -2,7 +2,7 @@
 title: のアクティブ化 [!DNL MBI] クラウドスターターサブスクリプション用アカウント
 description: 有効化する方法を説明します [!DNL MBI] クラウドスタータープロジェクト用。
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有効化に関するヘルプ [!DNL MBI] 対象 `Cloud Pro` プロジェクトに関しては、カスタマーサクセスマネージャーまたはカスタマーテクニカルアドバイザーにお問い合わせください。
+>有効化に関するヘルプ [!DNL MBI] 対象 `Cloud Pro` プロジェクトに関しては、Adobeアカウントチームまたはカスタマーテクニカルアドバイザーにお問い合わせください。
 
 1. を [!DNL MBI] アカウント。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
    - に移動します。 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
-   - クリック **[!UICONTROL Create Instance]**. このボタンが表示されない場合は、カスタマーサクセスマネージャーまたはカスタマーテクニカルアドバイザーにお問い合わせください。
+   - クリック **[!UICONTROL Create Instance]**. このボタンが表示されない場合は、担当のAdobeアカウントチームまたはカスタマーテクニカルアドバイザーにお問い合わせください。
 
    - を選択します。 `Cloud Starter` 購読。 次の条件を満たす `cloud starter` 配信登録が自動的に選択されます。
 
@@ -198,6 +198,6 @@ ht-degree: 0%
 
 1. これで、 [!DNL MBI] アカウント
 
-1. 接続が完了したら、 [!DNL MBI] コマースデータベースに問い合わせて、カスタマーサクセスマネージャーに連絡し、統合の設定や他の設定手順など、次の手順を調整してもらいます。
+1. 接続が完了したら、 [!DNL MBI] コマースデータベースに問い合わせて、Adobeアカウントチームに連絡し、統合の設定や他の設定手順など、次の手順を調整してもらいます。
 
 1. 設定が完了したら、次の操作を実行できます。 [サインイン](../getting-started/sign-in.md) を [!DNL MBI] アカウント

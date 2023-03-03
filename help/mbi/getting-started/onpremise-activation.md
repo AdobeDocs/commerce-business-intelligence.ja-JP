@@ -2,7 +2,7 @@
 title: のアクティブ化 [!DNL MBI] オンプレミスサブスクリプション用アカウント
 description: のアクティベートについて [!DNL MBI] アカウントをオンプレミスサブスクリプション用に作成します。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
    - に移動します。 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
-   - クリック **[!UICONTROL Create Instance]**. このボタンが表示されない場合は、カスタマーサクセスマネージャーまたはカスタマーテクニカルアドバイザーにお問い合わせください。
+   - クリック **[!UICONTROL Create Instance]**. このボタンが表示されない場合は、担当のAdobeアカウントチームまたはカスタマーテクニカルアドバイザーにお問い合わせください。
 
    - アカウントを作成するには、情報を入力します。
 
@@ -43,6 +43,6 @@ ht-degree: 0%
 
    Commerce では、 [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md). ただし、これがオプションでない場合、 [!DNL MBI] を使用してデータベースに追加する [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md).
 
-1. 接続が完了したら、 [!DNL MBI] コマースデータベースに問い合わせて、カスタマーサクセスマネージャーに連絡し、統合の設定や他の設定手順など、次の手順を調整してもらいます。
+1. 接続が完了したら、 [!DNL MBI] コマースデータベースに問い合わせて、Adobeアカウントチームに連絡し、統合の設定や他の設定手順など、次の手順を調整してもらいます。
 
 1. 設定が完了したら、次の操作を実行できます。 [サインイン](../getting-started/sign-in.md) を [!DNL MBI] アカウント

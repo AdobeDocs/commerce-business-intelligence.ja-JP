@@ -2,9 +2,9 @@
 title: Amazon RDS の接続
 description: RDS インスタンスを接続する手順を説明します。
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ RDS インスタンスを接続する手順は、使用しているデータベ�
 
 君が許した後 [!DNL MBI] インスタンスにアクセスしてユーザーを作成しました。最後に、次の場所に接続情報を入力する必要があります。 [!DNL MBI].
 
-次の資格情報ページ： `MySQL`, `Microsoft SQL`、および `PostgreSQL` が `Integrations` ページ (**[!UICONTROL Manage Data** > **Integrations]**) をクリックして **[!UICONTROL Add Integration]**. 統合のリストが表示されたら、使用しているデータベースのアイコンをクリックして資格情報ページに移動します。 現在、必要な統合にアクセスできない場合は、CSM に問い合わせてください。
+次の資格情報ページ： `MySQL`, `Microsoft SQL`、および `PostgreSQL` が `Integrations` ページ (**[!UICONTROL Manage Data** > **Integrations]**) をクリックして **[!UICONTROL Add Integration]**. 統合のリストが表示されたら、使用しているデータベースのアイコンをクリックして資格情報ページに移動します。 現在、必要な統合にアクセスできない場合は、Adobeアカウントチームにお問い合わせください。
 
 接続の作成を完了するには、次の情報が必要です。
 
