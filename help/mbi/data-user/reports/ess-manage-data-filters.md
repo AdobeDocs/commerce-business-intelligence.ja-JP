@@ -2,7 +2,7 @@
 title: 指標のフィルターセットの作成
 description: 保存済みフィルターセットを作成し、指標に適用する方法を説明します。
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%

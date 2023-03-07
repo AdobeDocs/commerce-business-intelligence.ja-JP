@@ -2,16 +2,16 @@
 title: クーポン効果
 description: クーポン効果の分析について説明します。
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
 
 # 高度なクーポンコード分析
 
-ビジネスのクーポンパフォーマンスを理解することは、注文をセグメント化し、顧客をより深く理解するための興味深い方法です。 この記事では、分析を作成する手順を説明し、クーポンの使用を通じて取得した顧客と、その顧客がどのように実行し、一般的なクーポン使用状況を追跡するかを把握します。
+ビジネスのクーポンパフォーマンスを理解することは、注文をセグメント化し、顧客をより深く理解するための興味深い方法です。 この記事では、分析を作成する手順を説明し、クーポンを使用して取得した顧客と、その顧客がどのように実行し、一般的なクーポン使用状況を追跡するかを把握します。
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -34,8 +34,9 @@ ht-degree: 0%
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * [!UICONTROL Datatype]:: `String`
-   * [!UICONTROL Calculation]::例 `A` が null の場合は `No coupon` else `Coupon` 終了
+   * 
+      [!UICONTROL データ型]: `String`
+   * [!UICONTROL Calculation]:例 `A` が null の場合は `No coupon` else `Coupon` 終了
 
 
 * **\[INPUT\] customer\_id — クーポンコード**
@@ -43,8 +44,8 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
-   * [!UICONTROL Datatype]::文字列
-   * [!UICONTROL Calculation]:: `concat(A,' - ',B)`
+   * [!UICONTROL Datatype] 文字列
+   * [!UICONTROL Calculation]: `concat(A,' - ',B)`
 
 
 * **このクーポンを持つ注文の数**
@@ -76,25 +77,28 @@ ht-degree: 0%
       * [!UICONTROL Filter]:
          * `A`: `Orders we count`
          * `B`: `Order has coupon applied? (Coupon/No coupon) = Coupon`
-   * **クーポン獲得顧客またはクーポン獲得顧客以外**
+   * **クーポン獲得顧客またはクーポン獲得顧客**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-      * [!UICONTROL Datatype]:: `String`
-      * [!UICONTROL Calculation]:: **A=&#39;クーポン&#39;、「クーポン獲得顧客」、「クーポン獲得顧客」の場合、それ以外の場合、「非クーポン獲得顧客」の終了**
+      * 
+         [!UICONTROL データ型]: `String`
+      * [!UICONTROL Calculation]: **A=&#39;クーポン&#39;、「クーポン獲得顧客」、「クーポン獲得顧客」の場合、それ以外の場合、「非クーポン獲得顧客」の終了**
    * **顧客の注文の割合（クーポンあり）**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
-      * [!UICONTROL Datatype]:: `Decimal`
-      * [!UICONTROL Calculation]:: **A が null または B が null または B が 0 の場合は null を、それ以外の場合は A/B の終わり**
+      * 
+         [!UICONTROL データ型]: `Decimal`
+      * [!UICONTROL Calculation]: **A が null または B が null または B が 0 の場合は null を、それ以外の場合は A/B の終わり**
    * **顧客のクーポン使用状況**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
-      * [!UICONTROL Datatype]:: `String`
-      * [!UICONTROL Calculation]:: **A が null の場合は null、Null の場合は null、A が 0 の場合は「クーポンを使用しない」、A が 0.5 の場合は「全体価格」、A が 0.5 の場合は「50/50」、A が 0.5 の場合は「クーポンのみ」、それ以外の場合は「未定義」の場合**
+      * 
+         [!UICONTROL データ型]: `String`
+      * [!UICONTROL Calculation]: **A が null の場合は null、Null の場合は null、A が 0 の場合は「クーポンを使用しない」、A が 0.5 の場合は「全体価格」、A が 0.5 の場合は「50/50」、A が 0.5 の場合は「クーポンのみ」、それ以外の場合は「未定義」の場合**
 
 
 
@@ -123,12 +127,13 @@ ht-degree: 0%
    * **顧客の初回注文のクーポン**{::}**-** \[COUPON ANALYSIS\] チケットの一部としてアナリストが作成しました
 
 * **使用した顧客のライフタイムクーポン数**{::}**-** \[COUPON ANALYSIS\] チケットの一部としてアナリストが作成しました
-* **クーポン獲得顧客またはクーポン獲得顧客以外**
+* **クーポン獲得顧客またはクーポン獲得顧客**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * [!UICONTROL Datatype]:: `String`
-   * [!UICONTROL Calculation]:: **A=&#39;クーポン&#39;、「クーポン獲得顧客」、「クーポン獲得顧客」の場合、それ以外の場合、「非クーポン獲得顧客」の終了**
+   * 
+      [!UICONTROL データ型]: `String`
+   * [!UICONTROL Calculation]: **A=&#39;クーポン&#39;、「クーポン獲得顧客」、「クーポン獲得顧客」の場合、それ以外の場合、「非クーポン獲得顧客」の終了**
 
 
 * **顧客の注文の割合（クーポンあり）**
@@ -136,16 +141,18 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * [!UICONTROL Datatype]:: `Decimal`
-   * [!UICONTROL Calculation]:: **A が null または B が null または B が 0 の場合は null を、それ以外の場合は A/B の終わり**
+   * 
+      [!UICONTROL データ型]: `Decimal`
+   * [!UICONTROL Calculation]: **A が null または B が null または B が 0 の場合は null を、それ以外の場合は A/B の終わり**
 
 
 * **顧客のクーポン使用状況**
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * [!UICONTROL Datatype]:: `String`
-   * [!UICONTROL Calculation]:: **A が null の場合は null、Null の場合は null、A が 0 の場合は「クーポンを使用しない」、A が 0.5 の場合は「全体価格」、A が 0.5 の場合は「50/50」、A が 0.5 の場合は「クーポンのみ」、それ以外の場合は「未定義」の場合**
+   * 
+      [!UICONTROL データ型]: `String`
+   * [!UICONTROL Calculation]: **A が null の場合は null、Null の場合は null、A が 0 の場合は「クーポンを使用しない」、A が 0.5 の場合は「全体価格」、A が 0.5 の場合は「50/50」、A が 0.5 の場合は「クーポンのみ」、それ以外の場合は「未定義」の場合**
 
 
 ## 指標
@@ -237,7 +244,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->多数のクーポンコードがある場合は、多くの顧客と同様に、トップ/ボトムを適用する必要があります。例えば、トップ 10 を平均全期間売上高で並べ替えた場合などです。
+>多くのクーポンコードがある場合、多くの顧客と同様に、トップ 10 を平均ライフタイム売上高で並べ替えた場合など、トップ/ボトムを適用する必要があります
 
 * **繰り返し順序の可能性：クーポン獲得**
    * [!UICONTROL Metric]: `Number of orders`
@@ -251,7 +258,7 @@ ht-degree: 0%
       [!UICONTROL 数式]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
-   * 統計的に有意な数を次の中から選択 `Customer's by lifetime orders` グラフ。 グラフを見ると、通常は 30 人以上の顧客がグループに含まれる注文番号を調べます。 データセットによっては、この数が多い場合があるので、1 ～ 10 を自由に追加できます。
+   * 統計的に有意な数を次の中から選択 `Customer's by lifetime orders` グラフ。 グラフを見るとき、30 人以上の顧客がグループに含まれる注文番号を探すのが適切です。 データセットによっては、この数が多い場合があるので、1 ～ 10 を自由に追加できます。
 
 
 * 指標 `A`: `Number of orders`
@@ -291,7 +298,7 @@ ht-degree: 0%
 * **クーポン取得済み顧客のクーポン使用率（リピート注文）**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
-      * クーポン獲得顧客または非クーポン獲得顧客=クーポン獲得
+      * クーポン獲得顧客またはクーポン獲得顧客=クーポン獲得
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 顧客の注文番号 > 1
@@ -510,6 +517,6 @@ ht-degree: 0%
 >
 >「このクーポンを使用した注文数」の数量 10 は任意です。 このフィルターに最も適した数量を自由に使用できます。
 
-すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 最終的な結果は、ページ上部の画像のように見える場合があります。
+すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、ページ上部の画像のようになる場合があります。
 
-この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームを引き込みたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

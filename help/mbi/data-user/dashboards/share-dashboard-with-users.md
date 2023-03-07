@@ -2,7 +2,7 @@
 title: ダッシュボードを他のユーザーと共有する
 description: ダッシュボードを他のユーザーと共有する方法を説明します。
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # ダッシュボードを他のユーザーと共有する
 
-ダッシュボードの共有は、チームをループ状態に保ち、協調ディスカッションを促進する優れた方法です。 中央のダッシュボードを作成して共有することで、管理を維持しながら、必要な情報をチームに提供できます。 [推奨](../../best-practices/share-dashboard-best-practice.md){:許可する target=&quot;_blank&quot;} `Edit` 選択した一部に対する権限で、誤った変更を最小限に抑えることができます。
+ダッシュボードの共有は、チームをループ状態に保ち、協調ディスカッションを促進する優れた方法です。 中央のダッシュボードを作成して共有することで、管理を維持しながら、必要な情報をチームに提供できます。 [Adobeが推奨](../../best-practices/share-dashboard-best-practice.md){:許可する target=&quot;_blank&quot;} `Edit` 選択した一部に対する権限で、誤った変更を最小限に抑えることができます。
 
 >[!NOTE]
 >

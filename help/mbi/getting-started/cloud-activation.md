@@ -2,9 +2,9 @@
 title: のアクティブ化 [!DNL MBI] クラウドスターターサブスクリプション用アカウント
 description: 有効化する方法を説明します [!DNL MBI] クラウドスタータープロジェクト用。
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有効化に関するヘルプ [!DNL MBI] 対象 `Cloud Pro` プロジェクトに関しては、Adobeアカウントチームまたはカスタマーテクニカルアドバイザーにお問い合わせください。
+>アクティベーションに関するヘルプが必要な場合 [!DNL MBI] 対象 `Cloud Pro` プロジェクトに関しては、Adobeアカウントチームまたはカスタマーテクニカルアドバイザーにお問い合わせください。
 
 1. を [!DNL MBI] アカウント。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
    - クリック **[!UICONTROL Create Instance]**. このボタンが表示されない場合は、担当のAdobeアカウントチームまたはカスタマーテクニカルアドバイザーにお問い合わせください。
 
-   - を選択します。 `Cloud Starter` 購読。 次の条件を満たす `cloud starter` 配信登録が自動的に選択されます。
+   - を選択します。 `Cloud Starter` 購読。 次の条件を満たす `cloud starter` subscription（デフォルト）。
 
    - クリック **[!UICONTROL Continue]**.
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
    ![](../assets/create-account-4.png)
 
-   - アカウントを作成したら、新しいアカウントにユーザーを追加するオプションが表示されます。 技術管理者を追加して、次の手順を実行できるようになりました。
+   - アカウントを作成したら、新しいアカウントにユーザーを追加できます。 技術管理者を追加して、次の手順を実行できるようになりました。
 
    ![](../assets/create-account-5.png)
 
@@ -49,13 +49,13 @@ ht-degree: 0%
 
    ![](../assets/create-account-6.png)
 
-   オンボーディングフローの 3 番目の手順でデータベースに接続する前に、収集する必要がある情報がいくつかあります。 次の項目を記入します。 `Connect your database` 手順 9 のページ
+   オンボーディングフローの 3 番目の手順でデータベースに接続する前に、情報を収集します。 次の項目を完了： `Connect your database` 手順 9 のページ
 
 1. 専用を作成 [!DNL MBI] ユーザー。
 
-   - 新しいユーザーを [Adobe Commerceアカウント](https://accounts.magento.com).
+   - ユーザーを [Adobe Commerceアカウント](https://account.magento.com/customer/account/login).
 
-   - _新しいユーザーがいる理由_ [!DNL MBI] アカウントのに転送する新しいデータを継続的に取得するには、プロジェクトに追加されたユーザーが必要です [!DNL MBI] data warehouse を使用します。 このユーザーがその接続の役割を果たします。 このユーザーをプロジェクトに追加するには、手順 4 を実行します。
+   - _新しいユーザーがいる理由_ [!DNL MBI] アカウントのに転送する新しいデータを継続的に取得するには、プロジェクトに追加されたユーザーが必要です [!DNL MBI] Data Warehouse。 このユーザーがその接続の役割を果たします。 このユーザーをプロジェクトに追加する場合は、手順 4 で説明します。
 
    - 専用の [!DNL MBI] ユーザーは、追加したユーザーが誤って無効化または削除されて停止するのを防ぐことができます [!DNL MBI] 接続。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 1. 新しい [!DNL MBI] `Public key` から [!DNL MBI] ユーザーが手順 5 で作成されました。
 
-   - に移動します。 [お使いの cloud Adobe Commerceアカウント](https://accounts.magento.cloud/). 新しい [!DNL MBI] ユーザーが作成されました。 その後、 `Account Settings` タブをクリックします。
+   - に移動します。 [お使いの cloud Adobe Commerceアカウント](https://account.magento.com/cloud/customer/login/). 新しい [!DNL MBI] ユーザーが作成されました。 その後、 `Account Settings` タブをクリックします。
 
    - ページを下にスクロールし、のドロップダウンを展開します。 `SSH` キー。 次に、 **[!UICONTROL Add a public key]**.
 
@@ -174,7 +174,7 @@ ht-degree: 0%
 
 1. 暗号化設定の情報を取得します。
 
-   - プロジェクト UI には、 `SSH` アクセス文字列。 この文字列は、 `Remote Address` および `Username` を `Encryption` 設定。 以下を使用： `SSH Access` 文字列を検索するには、プロジェクト UI のマスターブランチで「サイトにアクセス」ボタンをクリックし、 `User Name` および `Remote Address` 以下に示すように。
+   - プロジェクト UI には、 `SSH` アクセス文字列。 この文字列は、 `Remote Address` および `Username` を `Encryption` 設定。 以下を使用： `SSH Access` 文字列を検索するには、プロジェクト UI のプライマリブランチで「サイトにアクセス」ボタンをクリックし、 `User Name` および `Remote Address` 以下に示すように。
 
    ![](../assets/create-account-13.png)
 

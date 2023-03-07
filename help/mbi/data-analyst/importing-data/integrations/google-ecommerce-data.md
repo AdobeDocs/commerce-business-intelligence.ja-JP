@@ -2,16 +2,16 @@
 title: 予測[!DNL Google ECommerce]データ
 description: Google E コマースと共有されるデータの種類を説明します。
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
 
 # 予測[!DNL Google ECommerce] データ
 
-次に [!DNL Google ECommerce] アカウントが次に正常に接続されました： [!DNL MBI]を指定した場合、システムは「 」というタイトルのテーブルへのデータのインポートを開始します `ecommerce`. このテーブルには、トランザクションごとにデータ行が記録されます。 これには、次の順序レベルのデータ列が含まれます。
+次に [!DNL Google ECommerce] アカウントが次に正常に接続されました： [!DNL MBI]を指定した場合、システムは「 」というタイトルのテーブルへのデータのインポートを開始します `ecommerce`. このテーブルには、トランザクションごとに 1 つのデータ行が記録されます。 これには、次の順序レベルのデータ列が含まれます。
 
 | 列名 | 説明 |
 |-----|-----|
@@ -27,4 +27,4 @@ ht-degree: 0%
 | `transactionId` | この列には、注文 ID が含まれます。 これは、紹介データを注文データに結合するために使用されます。 |
 | `updated\_at` | この列には、データ行が最後に更新された日時が含まれます。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

@@ -1,10 +1,10 @@
 ---
 title: 予想されるFacebook Ads データ
-description: Data Warehouse との同期が推奨されるテーブルの概要を説明します
+description: Data Warehouseとの同期が推奨されるテーブルの概要を説明します
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -15,27 +15,27 @@ ht-degree: 0%
 
 次の条件が満たされた後 [接続済み [!DNL Facebook Ads] アカウント](../integrations/facebook-ads.md)を使用する場合、 [Data Warehouse管理](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 分析に関連するデータフィールドを容易に追跡する。
 
-この記事では、Data Warehouse と同期することをお勧めするテーブルの概要について説明します。 サブテーブルがかなり多いので、完全なリストではありません。 コアテーブルのみがハイライト表示されます。
+この記事では、AdobeがData Warehouseに同期することを推奨するテーブルの概要を簡単に説明します。 サブテーブルがかなり多いので、完全なリストではありません。 コアテーブルのみがハイライト表示されます。
 
 ## コア広告キャンペーンの表
 
 これらの表には、コア広告キャンペーンコンポーネントに関するデータが含まれています。
 
-### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcampaign/)
+### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
 次の表は、 [!DNL Facebook Ads] アカウント 列の内容 `campaign id`, `name`, `status (active/paused)`, `objective`.
 
 ### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
-このテーブルレコードは、 [!DNL Facebook Ads] のセット [!DNL Facebook Ads] アカウント 広告を含む列 `Campaign id/name` 広告セットは、予算設定、入札タイプ、スケジュール設定、オーディエンスのターゲティング情報に属します。
+このテーブルレコードは、 [!DNL Facebook Ads] のセット [!DNL Facebook Ads] アカウント 広告を含む列 `Campaign id/name` 広告セットは、予算設定、入札タイプ、スケジュール設定およびオーディエンスのターゲティング情報に属します。
 
-### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adgroup/)
+### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-このテーブルでは、 [!DNL Facebook Ads] アカウント 列には、広告が属する広告セットや広告キャンペーン、広告入札、広告のターゲティング、広告が使用する特定のクリエイティブ（画像/テキスト）への参照を含む広告情報が含まれます。
+このテーブルでは、 [!DNL Facebook Ads] アカウント 列には、広告が属する広告セットおよび広告キャンペーン、広告入札、広告のターゲティング、広告が使用する特定のクリエイティブ（画像/テキスト）への参照を含む広告情報が含まれます。
 
-### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcreative/)
+### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
-このテーブルには、 [!DNL Facebook Ads]. クリエイティブ名、説明、必要に応じて関連する画像 URL が含まれます。
+このテーブルには、 [!DNL Facebook Ads]. クリエイティブには、クリエイティブ名、説明、適切な場合は関連する画像 URL が含まれます。
 
 ## セグメント化キャンペーンテーブル
 

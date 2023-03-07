@@ -2,9 +2,9 @@
 title: cPanel を使用した MySQL の接続
 description: cPanel を使用して MySQL を接続する方法を説明します。
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: e4ac176492913623ae461484c8ef2abe034e5f62
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->データの保護には、SSH などの暗号化を使用することを強くお勧めします。 これがオプションでない場合、直接接続できます [!DNL MBI] をデータベースに追加する場合は、この記事の手順を使用します。
+>Adobeでは、データを保護するために SSH などの暗号化を使用することをお勧めします。 これがオプションでない場合、直接接続できます [!DNL MBI] をデータベースに追加する場合は、この記事の手順を使用します。
 
-この記事では、MySQL データベースを [!DNL MBI] cPanel を使用」と表示されます。 このプロセスは、接続にも使用できます [!DNL Adobe Commerce] 、およびその他の MySQL ベースの e コマースデータベースを [!DNL MBI].
+この記事では、MySQL データベースを [!DNL MBI] using `cPanel`. このプロセスは、接続にも使用できます [!DNL Adobe Commerce] 、およびその他の MySQL ベースの e コマースデータベースを [!DNL MBI].
 
 1. の作成 [!DNL MBI] の MySQL ユーザー `cPanel`
 1. 次の場所に接続とユーザー情報を入力 [!DNL MBI]
@@ -34,14 +34,14 @@ ht-degree: 0%
 
 ## の作成 [!DNL MBI] の MySQL ユーザー `cPanel` {#cpanel}
 
-1. ログイン先 [`cPanel`](../../../data-analyst/importing-data/integrations/mysql-via-cpanel.md) ホスティングプロバイダー経由。
+1. にログインします。 [`cPanel`](../../../data-analyst/importing-data/integrations/mysql-via-cpanel.md) ホスティングプロバイダー経由。
 1. クリック **[!UICONTROL MySQL Databases]**( `Database` 」セクションに入力します。
 1. 下にスクロールして `Add New User` セクションを開き、次の用のユーザーを作成します。 [!DNL MBI]:
 
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
 
 1. クリック **[!UICONTROL Create User]**.
-1. ユーザーを作成したら、そのユーザーをデータベースに関連付ける必要があります。 に戻ります。 `Add New User` セクション — 設定を参照 `Add User to Database?` それが私たちに必要なことです。
+1. ユーザーを作成したら、そのユーザーをデータベースに関連付ける必要があります。 に戻ります。 `Add New User` セクション — 設定を参照 `Add User to Database?` それがあなたの必要な物です。
 1. 内 `User` このセクションのドロップダウンで、作成したユーザーを選択します。
 1. 内 `Database` このセクションのドロップダウンで、接続先のデータベースを選択します [!DNL MBI].
 1. クリック **[!UICONTROL Add]**.
@@ -56,9 +56,9 @@ ht-degree: 0%
 * `Username`:のユーザー名 [!DNL MBI] MySQL ユーザー
 * `Password`:のパスワード [!DNL MBI] MySQL ユーザー
 * `Port`:サーバー上の MySQL のポート (`3306` （デフォルト）
-* `Host`:のパブリックアドレス `MySQL` server [!DNL MBI] がに接続します。 これは通常、ログインに使用する URL です `cPanel`.
+* `Host`:のパブリックアドレス `MySQL` server [!DNL MBI] に接続します。 これは通常、ログインに使用する URL です `cPanel`.
 
-を使用している場合、 [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)を使用する場合は、暗号化情報も入力する必要があります。 を `Encrypted` 切り替える `Yes` をクリックしてフォームを表示します。
+を使用している場合、 [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)を使用する場合は、暗号化情報を入力する必要があります。 を `Encrypted` 切り替える `Yes` をクリックしてフォームを表示します。
 
 * `Connection Type`:これを `SSH Tunnel`
 * `Remote Address`:サーバーの IP アドレスまたはホスト名 [!DNL MBI] ～に通じる

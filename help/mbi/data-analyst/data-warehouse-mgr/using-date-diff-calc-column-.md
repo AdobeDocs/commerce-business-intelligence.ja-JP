@@ -2,9 +2,9 @@
 title: 日付差の計算列の使用
 description: 日付の差異の計算列の目的と用途について説明します。
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ A `date difference` 計算列は、顧客登録と初回注文の間の平均時
 | `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
 | `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 
 上記の例では、 `Date Difference` 列は `Seconds between timestamp_2 and timestamp_1` 列。 計算を実行します `timestamp_2 minus timestamp_1`.

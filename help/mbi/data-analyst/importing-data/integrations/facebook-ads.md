@@ -1,10 +1,10 @@
 ---
 title: facebook Ads の接続
-description: 広告費用のデータを分析し、お金が効果的に使われているかどうかを確認する方法を学びます。
+description: 広告費用のデータを分析し、お金が効果的に使われているかどうかを確認する方法を説明します。
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ facebook広告データのへの接続 [!DNL MBI] は、次の 3 つの手順で
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-次の手順に従って、 [!DNL MBI] 公開プロファイルからデータにアクセスするには [!DNL Facebook Ads] および関連する統計。 クリック **[!UICONTROL OK]** をクリックして続行します。
+一連の手順に従って、 [!DNL MBI] 公開プロファイルからデータにアクセスするには [!DNL Facebook Ads] および、関連する統計。 クリック **[!UICONTROL OK]** をクリックして続行します。
 
 ## 選択 [!DNL Facebook Ads] データを取り込むためのアカウント {#stepthree}
 

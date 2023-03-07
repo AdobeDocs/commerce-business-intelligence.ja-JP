@@ -2,9 +2,9 @@
 title: SSH トンネルを介した MySQL の接続
 description: SSH トンネルを介した MySQL の接続方法を説明します。
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 * [の取得 [!DNL MBI] 公開鍵](#retrieve)
 * [次へのアクセスを許可： [!DNL MBI] IP アドレス](#allowlist)
-* [用の Linux ユーザーの作成 [!DNL MBI]](#linux)
+* [Linux の作成](#linux)
 * [MySQL ユーザーの作成 [!DNL MBI]](#mysql)
 * [接続とユーザー情報をに入力します。 [!DNL MBI]](#finish)
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 * [&#39;MySQL&#39;](../integrations/mysql-via-a-direct-connection.md)
 * [&#39;MySQL&#39;](../integrations/mysql-via-cpanel.md)
 
-次の手順で `MySQL` データベースへ [!DNL MBI] 経由 `SSH tunnel`を使用する場合、あなた（または技術を持っていない場合はチーム）は、次のいくつかの操作を実行する必要があります。
+次の手順で `MySQL` データベースへ [!DNL MBI] 経由 `SSH tunnel`を使用する場合は、自分（または技術を持っていない場合はチーム）が次のいくつかの操作を実行する必要があります。
 
 1. の取得 [!DNL MBI] `public key`
 1. 次へのアクセスを許可： [!DNL MBI] `IP address`
@@ -31,7 +31,7 @@ ht-degree: 0%
 1. の作成 `MySQL` のユーザー [!DNL MBI]
 1. 接続とユーザー情報をに入力します。 [!DNL MBI]
 
-それは聞こえるほど複雑ではない。 始めましょう。
+はじめに。
 
 ## の取得 [!DNL MBI] 公開鍵 {#retrieve}
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 1. に移動します。 **[!UICONTROL Manage Data** > **Connections]** をクリックし、 **[!UICONTROL Add New Data Source]**.
 1. 次をクリック： `MySQL` アイコン
-1. 次の期間の後 `MySQL credentials` ページを開く、 `Encrypted` 切り替える `Yes`. これにより、SSH セットアップフォームが表示されます。
+1. 次の期間の後 `MySQL credentials` ページを開く、 `Encrypted` 切り替える `Yes`. SSH セットアップフォームが表示されます。
 1. この `public key` はこのフォームの下に配置されています。
 
 このページはチュートリアル全体で開いたままにしておきます。次のセクションで、最後にこのページを開く必要があります。
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->この `sshd\_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL MBI]. このような場合、 `AllowUsers` 許す `rjmetric` ユーザーがサーバーにアクセスできること。
+>この `sshd\_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合は、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL MBI]. このような場合、 `AllowUsers` 許す `rjmetric` ユーザーがサーバーにアクセスできること。
 
 ## の作成 `MySQL` のユーザー [!DNL MBI] {#mysql}
 
@@ -106,14 +106,14 @@ ht-degree: 0%
 * `Username`:のユーザー名 [!DNL MBI] MySQL ユーザー
 * `Password`:のパスワード [!DNL MBI] MySQL ユーザー
 * `Port`:サーバー上の MySQL のポート（デフォルトでは 3306）
-* `Host` デフォルトでは、localhost になります。 一般的に、MySQL サーバーのバインドアドレスの値になります（デフォルトはです）。 `127.0.0.1 (localhost)`は、一部のローカルネットワークアドレス ( 例： `192.168.0.1`) またはサーバーのパブリック IP アドレス。
+* `Host` デフォルトでは、localhost です。 一般的に、MySQL サーバーのバインドアドレスの値です。デフォルトではですが、 `127.0.0.1 (localhost)`は、一部のローカルネットワークアドレス ( 例： `192.168.0.1`) またはサーバーのパブリック IP アドレス。
 
-   この値は、 `my.cnf` ファイル ( 通常は `/etc/my.cnf`) を `\[mysqld\]`. バインドアドレス行がそのファイルでコメントアウトされている場合、外部接続の試行からサーバーが保護されます。
+   この値は、 `my.cnf` 次の場所にあるファイル： `/etc/my.cnf`) を `\[mysqld\]`. バインドアドレス行がそのファイルでコメントアウトされている場合、外部接続の試行からサーバーが保護されます。
 
 内 `SSH Connection` セクション：
 
 * `Remote Address`:サーバーの IP アドレスまたはホスト名 [!DNL MBI] ～に通じる
-* `Username`:のユーザー名 [!DNL MBI] SSH(Linux) ユーザー
+* `Username`:のユーザー名 [!DNL MBI] SSH(Linux®) ユーザー
 * `SSH Port`:サーバー上の SSH ポート（デフォルトでは 22）
 
 それだ！ 完了したら、「 **[!UICONTROL Save & Test]** をクリックして設定を完了します。

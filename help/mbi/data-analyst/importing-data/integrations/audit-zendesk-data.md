@@ -2,16 +2,16 @@
 title: Zendesk データを監査
 description: Zendesk データを書き出す手順を説明します。
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
 
 # Zendesk データを監査
 
-あなたの中に何か奇妙なものが見つかりました [[!DNL Zendesk] データ](../integrations/exp-zendesk-data.md)? 問題を特定するには、お客様のデータを調べる必要があります。 これは、 [!DNL Zendesk] データをダウンロード可能なファイルに書き出します。
+あなたの中に何か奇妙なものが見つかりました [[!DNL Zendesk] データ](../integrations/exp-zendesk-data.md)? 問題を特定するには、データを調査する必要があります。 これは、 [!DNL Zendesk] データをダウンロード可能なファイルに書き出します。
 
 ## データエクスポートの有効化
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 1. 次をクリック： **[!UICONTROL Export]** タブをクリックします。
 1. クリック **[!UICONTROL Request file]** をクリックします。
 
-   この時点で、ビルドが開始されます。完了時に電子メールで通知されます。
+   この時点で、ビルドが開始されます。完了時に電子メールで通知が届きます。
    ![reports_export_new.png](../../../assets/reports_export_new.png)
 
 1. 電子メール通知のリンクをクリックして、レポートを含む zip ファイルをダウンロードします。

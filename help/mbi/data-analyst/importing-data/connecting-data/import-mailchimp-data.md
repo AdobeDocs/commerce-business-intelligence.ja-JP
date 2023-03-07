@@ -2,9 +2,9 @@
 title: MailChimp データをインポート
 description: MailChimp データをにインポートする方法を説明します。 [!DNL MBI].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Export]** をクリックし、 `.csv` ファイル。
 
-   次を追加する必要があります： `primary key`, `date (mm/dd/yyyy)`、および `campaign name` 列をこのファイルに追加します。 次を確認します。 `primary keys` は、各行に固有です。
+   を追加する必要があります `primary key`, `date (mm/dd/yyyy)`、および `campaign name` 列をこのファイルに追加します。 次を確認します。 `primary keys` は、各行に固有です。
 
    ![mailchimp 4 をインポート](../../../assets/import-mailchimp-4.png)
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Export]** をクリックし、 `.csv` ファイル。
 
-   次を追加する必要があります： `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`、および `URL` 列をこのファイルに追加します。 完全な URL を追加する必要はありません。何がクリックされたかを知らせる単なる情報です。
+   を追加する必要があります `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`、および `URL` 列をこのファイルに追加します。 完全な URL を追加する必要はありません。何がクリックされたかを知らせる単なる手段です。
 
    ![mailchimp 7 をインポート](../../../assets/import-mailchimp-7.png)
 
@@ -65,12 +65,12 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Export]** をクリックし、 `.csv` ファイル。
 
-   次を追加する必要があります： `Primary Key`, `date (mm/dd/yyyy)`、および `campaign name` 列をこのファイルに追加します。
+   を追加する必要があります `Primary Key`, `date (mm/dd/yyyy)`、および `campaign name` 列をこのファイルに追加します。
 
    ![mailchimp 9 をインポート](../../../assets/import-mailchimp-9.png)
 
 ## へのアップロード用ファイルの準備 [!DNL MBI] {#upload}
 
-各ファイル — `Opens`, `Clicks`、および `Sent`  — にアップロードする必要があります [!DNL MBI] を別のファイルとして指定します。 また、この命名規則を使用してファイルに名前を付けることをお勧めします。 `MailChimp\_ACTION\_DATE`. 置換 `ACTION` と `Open`, `Click`または `Sent`、および `DATE` をエクスポート日付と共に追加します。
+各ファイル — `Opens`, `Clicks`、および `Sent`  — にアップロードする必要があります [!DNL MBI] を別のファイルとして指定します。 Adobeでは、次の命名規則を使用してファイルに名前を付けることをお勧めします。 `MailChimp\_ACTION\_DATE`. 置換 `ACTION` と `Open`, `Click`または `Sent`、および `DATE` をエクスポート日付と共に追加します。
 
-ファイルをアップロードする準備が整ったら、 [`File Upload` 機能](../connecting-data/using-file-uploader.md) をクリックして、データを data warehouse に取り込みます。
+ファイルをアップロードする準備が整ったら、 [`File Upload` 機能](../connecting-data/using-file-uploader.md) データをData Warehouseに取り込む

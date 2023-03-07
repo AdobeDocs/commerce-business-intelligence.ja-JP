@@ -2,9 +2,9 @@
 title: WooCommerce を接続
 description: ビジネスのパフォーマンスを確認する方法、または最も価値のある獲得ソースやチャネルを見つける方法を学びます。
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ![](../../../assets/WooCommerce-Logo.jpg)
 
-ビジネスのパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを見つけたりしたい場合は、 接続 [!DNL WooCommerce] データを [!DNL MBI] では、これらの質問などに回答できます。
+ビジネスのパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを見つけたりしたい場合は、 接続 [!DNL WooCommerce] データを [!DNL MBI] では、これらの質問などに答えることができます。
 
-この [!DNL WooCommerce] データベースの基準 `MySQL`を使用する場合、 [!DNL MBI] 経由 [直接接続](../integrations/mysql-via-a-direct-connection.md), [`cPanel`](../integrations/mysql-via-cpanel.md)または [経由 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). アドビではデータの安全性が高いので、SSH 方式を使用することをお勧めします。
+この [!DNL WooCommerce] データベースの基準 `MySQL`を使用する場合、 [!DNL MBI] 経由 [直接接続](../integrations/mysql-via-a-direct-connection.md), [`cPanel`](../integrations/mysql-via-cpanel.md)または [経由 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobeでは最も安全な SSH 方式の使用をお勧めします。
 
 ## 関連：
 

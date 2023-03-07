@@ -2,9 +2,9 @@
 title: Zendesk データが期待されます
 description: Zendesk から MBI に読み込むことができる主なデータテーブルについて説明します。このテーブルには、Zendesk データに関する追加ドキュメントへのリンクも含まれます。
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 後 [接続しました [!DNL Zendesk] アカウント](../integrations/zendesk.md)を使用する場合、 [Data Warehouse管理](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 分析に関連するデータフィールドを容易に追跡する。
 
-この記事では、インポート元となる主なデータテーブルを確認します。 [!DNL Zendesk] into [!DNL MBI]（に関する追加ドキュメントへのリンクを含む） [!DNL Zendesk] データ。
+この記事では、読み込み元となる主なデータテーブルについて説明します。 [!DNL Zendesk] into [!DNL MBI]（に関する追加ドキュメントへのリンクを含む） [!DNL Zendesk] データ。
 
 | テーブル名 | 説明 |
 |-----|-----|
@@ -21,14 +21,14 @@ ht-degree: 0%
 | [`Audit_~\_Events`](https://developer.zendesk.com/rest_api/docs/core/ticket_audits#audit-events) | この `audit_~\_events` テーブルは `audits` の表に、チケットイベントの追加の詳細を記録します。 |
 | [`Organizations`](https://developer.zendesk.com/rest_api/docs/core/organizations) | この `Organizations` テーブルには、名前、ID、関連するドメイン名、タグ、カスタムフィールドなど、エンドユーザーに関する会社情報が記録されます。 |
 | [`Tickets`](https://developer.zendesk.com/rest_api/docs/core/tickets) | この `Tickets` テーブルには、次を含むすべてのチケットの詳細が記録されます。 `created_at` タイムスタンプと `requester\_id` および `assignee\_id`: `Users` 表に含まれます。 |
-| [`Ticket_~\_Fields`](https://developer.zendesk.com/rest_api/docs/core/ticket_fields) | この `ticket fields` 「 」の表には、基本的なテキストフィールドと、アカウント内のカスタムチケットフィールドに関する情報が含まれています。 このテーブルの属性には、フィールドが含まれます `ID`, `URL`, `type`, `title`, `description`, `position`, `requirement setting`、エージェントおよびエンドユーザー固有の情報、および情報の作成と更新。 |
+| [`Ticket_~\_Fields`](https://developer.zendesk.com/rest_api/docs/core/ticket_fields) | この `ticket fields` 「 」の表には、アカウントの基本的なテキストフィールドとカスタムチケットフィールドに関する情報が含まれています。 このテーブルの属性には、フィールドが含まれます `ID`, `URL`, `type`, `title`, `description`, `position`, `requirement setting`、エージェントおよびエンドユーザー固有の情報、および情報の作成と更新。 |
 | [`Users`](https://developer.zendesk.com/rest_api/docs/core/users) | この `Users` この表には、個人の名前や E メールなど、エンドユーザーとエージェントに関するすべての詳細が含まれています。 これにより、エンドユーザーの関与とエージェントのパフォーマンスの両方を分析できます。 |
 | [`Zendesk\_Groups`](https://developer.zendesk.com/rest_api/docs/core/groups) | グループとは、Zendesk アカウントでエージェントがどのように整理されるかを指します。 この `Groups` テーブルには、次のような情報が記録されます。 `group ID`, `URL`, `name`、および情報の作成と更新。 |
 | [`Zendesk\_Macro`](https://developer.zendesk.com/rest_api/docs/core/macros) | マクロは、チケットのフィールドの値を変更するユーザーが定義するアクションです。 このテーブルには、マクロのタイトル、ID、アクション、制限、作成および更新情報などの属性が含まれます。 |
 | [`Zendesk\_Tags`](https://developer.zendesk.com/rest_api/docs/core/tags) | この `Tags` 表には、アカウントのすべてのタグのリストが含まれます。 |
 | [`Zendesk\_Ticket\_Metrics`](https://developer.zendesk.com/rest_api/docs/core/ticket_metrics#ticket-metrics) | この表には、チケット指標に関するデータが含まれています。 フィールドには `ticket ID`, `URL`、およびグループ、担当者、再開、返信、返信時間（分単位）、全解決時間、最終更新（ステータス、担当者、要求者など）の情報の数です。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 関連
 

@@ -2,9 +2,9 @@
 title: 次にアクセス： [!DNL MBI] アカウント
 description: ログインの詳細 [!DNL MBI] アカウント
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
    ![サインイン — アドビ](../assets/sign-in-adobe.png)
 
-1. 作成時に使用した電子メールアドレスを入力します。 [!DNL MBI] アカウント まだAdobeアカウントを持っていない場合は、 **[!UICONTROL Create an account]** 情報を入力します。 忘れずに、 [!DNL MBI] アカウント 電子メールアドレスは、Adobeアカウントにアクセスするための鍵です。
+1. 自分が [!DNL MBI] アカウント まだAdobeアカウントを持っていない場合は、 **[!UICONTROL Create an account]** 情報を入力します。 忘れずに、 [!DNL MBI] アカウント 電子メールアドレスは、Adobeアカウントにアクセスするための鍵です。
 
 >[!NOTE]
 >

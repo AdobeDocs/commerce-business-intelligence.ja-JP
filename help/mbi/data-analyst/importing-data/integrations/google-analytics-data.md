@@ -2,24 +2,24 @@
 title: 予想されるGoogle Analyticsデータ
 description: Google Analytics指標の操作について説明します。
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 # 予測 [!DNL Google Analytics] データ
 
-接続後 [!DNL Google Analytics] 統合を使用すると、 [!DNL Google Analytics] 指標 *すぐに`Visual Report Builder`*. 次に `Visual Report Builder`をクリックした場合、 **[!UICONTROL Add a Metric]**( [!DNL Google Analytics] プロファイルは、data warehouse の指標のすぐ下のドロップダウンに表示されます。
+接続後 [!DNL Google Analytics] 統合を使用すると、 [!DNL Google Analytics] 指標 *すぐに`Visual Report Builder`*. 次に `Visual Report Builder`をクリックした場合、 **[!UICONTROL Add a Metric]**( [!DNL Google Analytics] プロファイルは、Data Warehouseの指標のすぐ下にドロップダウンに表示されます。
 
 この [!DNL Google Analytics] 統合は *live*  — つまり、 `Report Builder` からデータをリクエスト [!DNL Google Analytics] *即時* レポートに指標を追加する場合。 また、アクセスできる指標は、 [!DNL Google Analytics]を参照し、これらの値が *倉庫に入った* の [!DNL MBI] アカウント — レポートにのみ視覚的に表示されます。
 
-[!DNL Google Analytics] の統合 [!DNL MBI] 利用する [!DNL Google Analytics] [コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/)は、次の指標およびディメンションをサポートしています。
+[!DNL Google Analytics] の統合 [!DNL MBI] を使用します。 [!DNL Google Analytics] [コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/)は、次の指標およびディメンションをサポートしています。
 
 >[!NOTE]
 >
->予期しない結果や無意味な結果を避けるには、使用するディメンションが、 `Report Builder`. 次の項目を確認できます。 [ここ](https://developers.google.com/analytics/devguides/reporting/core/dimsmets).
+>予期しない結果や無意味な結果を避けるには、使用するディメンションと、 `Report Builder`. 次の項目を確認できます。 [ここ](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## サポートされる指標
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 | `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
 | `Total Goal Value` | `ga:goal1ValueAll` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## サポートされるDimension
 
@@ -142,4 +142,4 @@ ht-degree: 0%
 | `Custom (User Defined) Value` | `ga:userDefinedValue` | `Yes` |
 | `Year` | `ga:year` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

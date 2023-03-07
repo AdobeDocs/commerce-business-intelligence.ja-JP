@@ -2,9 +2,9 @@
 title: ダッシュボードを管理
 description: 自分が所有するダッシュボードのユーザー権限を管理する方法、不要になったダッシュボードを削除する方法、およびデフォルトのダッシュボードを設定する方法について説明します。
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >必要 [管理者権限](../../administrator/user-management/user-management.md).
 
-In **[!DNL Manage Data** > **Dashboards]**&#x200B;を使用すると、自分が所有するダッシュボードのユーザー権限を管理したり、不要になったダッシュボードを削除したり、デフォルトのダッシュボードを設定したりできます。 この記事で取り上げる内容を簡単に見てみましょう。
+In **[!DNL Manage Data** > **Dashboards]**&#x200B;を使用すると、自分が所有するダッシュボードのユーザー権限を管理したり、不要になったダッシュボードを削除したり、デフォルトのダッシュボードを設定したりできます。 この記事では、次の内容を説明します。
 
 1. [ダッシュボード名の変更](#rename)
 

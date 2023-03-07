@@ -2,9 +2,9 @@
 title: enterprise_rma 表
 description: 特定のリターンリクエストに関する情報を分析する方法を説明します。
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 | `order\_id` | に関連付けられた外部キー `sales\_flat\_order` 表。 |
 | `customer\_id` | に関連付けられた外部キー `customer\_entity` 表。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 共通の計算列
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 | `Order's created\_at` | これは元の注文日です。 これは、注文から返品リクエストまでの時間を取得するために使用できます。 |
 | `Customer's order number` | これは、元の注文に関連付けられた顧客の注文番号です。 |
 | `Seconds between order's created\_at and return's date\_requested` | 注文日から返品リクエストまでの秒数。 |
-| `Return's total value` | これは、返却される合計金額です。 これは、各返品品目の個々の返品額の合計です。 |
+| `Return's total value` | これは、返却される合計金額です。 各返品品目の個々の返品額の合計です。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 一般的な指標
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 | `Average returned amount` | 返された平均金額。 | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 列： `date requested` |
 | `Average time to return` | 注文から返品までの平均時間。 | `Operation` 列：注文が作成されてからリターンがリクエストされた日までの秒数<br>`Operation`: `Average`<br>`Timestamp` 列： `date requested` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 他のテーブルへの接続
 

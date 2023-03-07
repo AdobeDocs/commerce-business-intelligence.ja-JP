@@ -2,9 +2,9 @@
 title: Google Analytics — ユーザー獲得ソースデータの追跡の概要
 description: ユーザーの獲得ソース別にデータをセグメント化する方法を説明します。
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: ad95a03193853eebf2b695cd6f5c3cb5a9837f93
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '815'
 ht-degree: 1%
 
 ---
@@ -21,19 +21,19 @@ ht-degree: 1%
 
 ## ユーザーの獲得ソースの追跡
 
-設定に基づいてリファラルソースデータを追跡するには、次の 2 つの方法をお勧めします。
+Adobeは、設定に基づいてリファラルソースデータを追跡する 2 つの方法を推奨します。
 
 ### （オプション 1）を介して注文の紹介元データを追跡する [!DNL Google Analytics E-Commerce] ( [!DNL Shopify] ストア )
 
-次を [!DNL Google Analytics E-Commerce] ご注文や販売データを追跡するには、 [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) 各注文のリファラルソースデータを同期する。 これにより、紹介ソース ( 例えば、 `utm_source` または `utm_medium`) や、 [!DNL MBI] カスタムディメンション： `User's first order source`.
+次を使用する場合、 [!DNL Google Analytics E-Commerce] 注文と販売のデータを追跡するには、 [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) 各注文のリファラルソースデータを同期する。 これにより、紹介ソース ( 例えば、 `utm_source` または `utm_medium`) をクリックします。 また、 [!DNL MBI] カスタムディメンション： `User's first order source`.
 
 >[!NOTE]
 >
->Shopify ユーザーの場合**:オンにする [!DNL [Google Analytics E-Commerce] tracking in Shopify](http://docs.shopify.com/manual/settings/general/google-analytics#ecommerce-tracking) 接続する前に [!DNL Google Analytics E-Commerce] アカウント [!DNL MBI].
+>Shopify ユーザーの場合**:オンにする [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) 接続する前に [!DNL Google Analytics E-Commerce] アカウント [!DNL MBI].
 
 ### （オプション 2）保存 [!DNL Google Analytics]データベース内の&#39;獲得ソースデータ
 
-この記事では、保存方法を説明します。 [!DNL Google Analytics] 獲得チャネル情報を独自のデータベース ( つまり、 `source`, `medium`, `term`, `content`, `campaign`、および `gclid` ユーザーが Web サイトに初めてアクセスする際に使用したパラメーター。 これらのパラメーターの説明については、 [!DNL [Google Analytics] documentation](http://support.google.com/analytics/bin/answer.py?hl=en&amp;answer=1191184). 次に、この情報を使用して実行できる、強力なマーケティング分析の一部を [!DNL MBI].
+この記事では、保存方法を説明します [!DNL Google Analytics] 獲得チャネル情報を独自のデータベース ( つまり、 `source`, `medium`, `term`, `content`, `campaign`、および `gclid` ユーザーが Web サイトに初めてアクセスする際に使用したパラメーター。 これらのパラメーターの説明については、 [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). 次に、この情報を使用して実行できる、強力なマーケティング分析の一部を [!DNL MBI].
 
 #### なぜ？
 
@@ -41,9 +41,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[!DNL [Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) トランザクションデータをに保存することで、この問題を軽減します。 [!DNL Google Analytics]ですが、このソリューションは e コマース以外のサイトでは機能しません。また、コホート分析などの特定のツールは、 [!DNL Google Analytics] インターフェイス。
+>[!DNL [Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) トランザクションデータを次の場所に保存することで、この問題を軽減します。 [!DNL Google Analytics]ですが、このソリューションは e コマース以外のサイトでは機能しません。 また、コホート分析などの特定のツールは、 [!DNL Google Analytics] インターフェイス。
 
-特定のメールキャンペーンから取得したすべての顧客にフォローアップ契約をメールで送信する場合はどうすればよいですか。 または、獲得データを CRM システムと統合しますか？ これは～では不可能だ [!DNL Google Analytics]  — 実際、これは、のサービス利用規約に反しています [!DNL Google Analytics] 個人を識別するデータを保存する。  しかし、それは、このデータを自分で保存できないという意味ではありません。
+特定のメールキャンペーンから取得したすべての顧客にフォローアップ契約をメールで送信する場合はどうすればよいですか。 または、獲得データを CRM システムと統合しますか？ これは～では不可能だ [!DNL Google Analytics]  — 実際、これは、のサービス利用規約に反しています [!DNL Google Analytics] 個人を識別するデータを保存する。 しかし、このデータは自分で保存できます。
 
 #### メソッド
 
@@ -51,19 +51,19 @@ ht-degree: 1%
 
 > `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 
-文字列にエンコードされた獲得ソースデータが明確に一部存在し、これが訪問者の最新の獲得ソースおよび関連するキャンペーンデータであることを確認するためにテストしました。 次に、データの抽出方法を知る必要があります。 幸いにも、Justin Cutroni はこのエンコーディングの仕組みを以前に説明し、重要な情報を抽出するためのいくつかの JavaScript コードを共有しました。
+文字列にエンコードされた獲得ソースデータが明らかに一部存在します。 これが訪問者の最新の獲得ソースおよび関連するキャンペーンデータであることを確認するためにテストされます。 次に、データの抽出方法を知っておく必要があります。 幸いにも、Justin Cutroni はこのエンコーディングの仕組みを以前に説明し、重要な情報を抽出する JavaScript コードを共有していました。
 
-このコードを取り出し、 [github でホストされる PHP ライブラリ](https://github.com/RJMetrics/referral-grabber-php).   ライブラリを使用するには、 `include` ～への言及 `ReferralGrabber.php` その後、
+このコードは、 [github でホストされる PHP ライブラリ](https://github.com/RJMetrics/referral-grabber-php). ライブラリを使用するには、 `include` ～への言及 `ReferralGrabber.php` その後、
 
 > `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 
-返された `$data` 配列はキーのマップになります `source`, `medium`, `term`, `content`, `campaign`, `gclid` そしてそれぞれの値
+返された `$data` 配列はキーのマップです `source`, `medium`, `term`, `content`, `campaign`, `gclid`、およびそれぞれの値。
 
-データベースに、という名前の新しいテーブルを追加することをお勧めします。例： `user_referral`を作成し、次のような列を含めます。 `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. ユーザーがサインアップするたびに、紹介情報を取得してこのテーブルに保存します。
+Adobeでは、という名前のテーブルをデータベースに追加することをお勧めします。 `user_referral`を作成し、次のような列を含めます。 `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. ユーザーがサインアップするたびに、紹介情報を取得してこのテーブルに保存します。
 
 #### このデータの使用方法
 
-ユーザーの獲得ソースを保存したので、どうすれば使用できますか？
+ユーザーの獲得ソースを保存したので、どのように使用できますか？
 
 SQL データベースを使用していて、 `users` 次の構造を持つテーブル：
 
@@ -76,7 +76,7 @@ SQL データベースを使用していて、 `users` 次の構造を持つテ�
 | 5 | jen@ghi.net | 2012-01-30 | その他 | 有機 |
 | ... | ... | ... | ... | ... |
 
-まず、データベースに対して次のクエリを実行することで、各紹介チャネルからのユーザー数をカウントできます。
+まず、データベースに対して次のクエリを実行して、各リファラルチャネルからのユーザー数をカウントできます。
 
 > `SELECT acq_source, COUNT(id) as user_count FROM users GROUP BY acq_source;`
 
@@ -89,7 +89,14 @@ SQL データベースを使用していて、 `users` 次の構造を持つテ�
 | リファラル | 55 |
 | その他 | 16 |
 
-これは面白いが、限られた使い方だ。 実際に知りたいのは、これらの数値の経時的な伸び率、各獲得ソースが生み出す売上高、 [コホート分析](http://cohortanalysis.com/) 各ソースからのユーザー数、およびこれらのチャネルのいずれかからのユーザーが将来顧客として返される確率。 これらの分析を行うために必要なクエリは複雑なので、このために [!DNL MBI]. この情報を活用して、最も収益性の高い獲得チャネルを特定し、それに応じてマーケティングの時間とお金に焦点を当てることができます。
+これは面白いが、限られた使い方だ。 実際に知りたいことは次のとおりです。
+
+* これらの数の経時的な成長率
+* 各獲得ソースが生み出す売上高
+* a [コホート分析](https://en.wikipedia.org/wiki/Cohort_analysis) 各ソースから来るユーザーの
+* これらのチャネルの 1 つからのユーザーが将来顧客として返される確率。
+
+これらの分析の実行に必要なクエリは複雑です。 この情報を活用すると、最も収益性の高い獲得チャネルを特定し、それに応じてマーケティングの時間とお金に焦点を当てることができます。
 
 ### 関連
 

@@ -2,9 +2,9 @@
 title: QuickBooks に接続
 description: 財務状況が売上高やマーケティングデータと共にどのように生きられるかを学び、費用を迅速かつ簡単に把握し、過剰支出を特定するなどの方法を学びます。
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---

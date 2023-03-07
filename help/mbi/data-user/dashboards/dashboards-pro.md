@@ -2,9 +2,9 @@
 title: 標準のダッシュボード
 description: ビジネスを把握するための標準のダッシュボードについて説明します。
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2240'
 ht-degree: 0%
 
 ---
@@ -33,10 +33,10 @@ ht-degree: 0%
 | `Orders by Existing Customers (Past 30 Days)` | 過去 30 日間に 1 つ以上の注文をした顧客からの注文。 |
 | `Total Unique Customers (Past 30 Days)` | 過去 30 日間に注文をしたユニーク顧客の数。 |
 | `Orders by New vs Existing Customers` | 1 つ以上の前の注文を持つ顧客に対する、以前の注文を持たない顧客による注文数。 |
-| `Subsequent Order Probability (All Time)` | 注文をした顧客が別の注文をする可能性。 |
+| `Subsequent Order Probability (All Time)` | 注文をした顧客が別の顧客を発注する可能性。 |
 | `% of Customers with Multiple Orders (All Time)` | 複数の注文をしたすべての顧客の割合。 |
 | `Median Time Between Orders (All Time)` | 各顧客が 1 回の注文から次の注文までに要する時間の中央値。 |
-| `Subsequent Order Probability` | 注文をした顧客が別の顧客を配置する可能性は、注文番号別に分類されます（つまり、1 つの注文をした顧客の割合が 2 つ目を配置した顧客の割合、2 つの注文を 3 つ目に配置した顧客の割合など）。 |
+| `Subsequent Order Probability` | 注文をした顧客が別の注文を行う可能性。注文番号別に分類されます。 つまり、1 つの注文で 2 つ目の注文をした顧客の割合、2 つ目の注文で 3 つ目の注文をした顧客の割合などです。 |
 | `Time Between Orders` | 顧客が注文間で取る平均時間と中央値（注文回数別に分類した、注文 1 ～ 2 、 2 、 3 などの間の時間）。 |
 | `Number of Customers - Lifetime Orders` | 顧客の全期間において、所定の数の注文に対して、その数の注文をした顧客の数と、その数が表す顧客ベース全体の割合。 |
 | `One-Time Customers who Bought 3-6 Months Ago` | 3 ～ 6 ヶ月前に初めて購入したお客様。 |
@@ -56,10 +56,10 @@ ht-degree: 0%
 | %登録から初回注文へのコンバージョン（過去 30 日間） | 過去 30 日間に登録され、注文をしたアカウントの割合。 |
 | 登録から受注へのコンバージョン率 | 注文をした登録口座の割合（登録月単位）。 |
 | 新規顧客と既存顧客別の購入回数 | 1 つ以上の前の注文を持つ顧客に対する、以前の注文を持たない顧客による注文数。 |
-| 後続の注文の確率（全期間） | 注文をした顧客が別の注文をする可能性。 |
+| 後続の注文の確率（全期間） | 注文をした顧客が別の顧客を発注する可能性。 |
 | 複数の注文を持つ顧客の割合（全期間） | 複数の注文をしたすべての顧客の割合。 |
 | 注文間の中央値時間（全時間） | 各顧客が 1 回の注文から次の注文までに要する時間の中央値。 |
-| 後続の注文の確率 | 注文をした顧客が別の顧客を配置する可能性は、注文番号別に分類されます（つまり、1 つの注文をした顧客の割合が 2 つ目を配置した顧客の割合、2 つの注文を 3 つ目に配置した顧客の割合など）。 |
+| 後続の注文の確率 | 注文をした顧客が別の注文を配置する可能性（注文番号別）。 つまり、1 回の注文で 2 回目の注文をした顧客の割合、2 回目の注文で 3 回目の注文をした顧客の割合などです。 |
 | 注文間隔 | 顧客が注文間で取る平均時間と中央値（注文回数別に分類した、注文 1 ～ 2 、 2 、 3 などの間の時間）。 |
 | 顧客数 — 全期間注文件数 | 顧客の全期間において、所定の数の注文に対して、その数の注文をした顧客の数と、その数が表す顧客ベース全体の割合。 |
 | 3 ～ 6 ヶ月前に購入した 1 回限りの顧客 | 3 ～ 6 ヶ月前に初めて購入したお客様。 |
@@ -131,7 +131,7 @@ ht-degree: 0%
 
 ## 製品
 
-製品ダッシュボードには、注文した製品、GMV(Gross Murchandise Value)、および購入および返金されたトップ製品に関する一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、製品の成功と人気度を判断するのに役立ちます。 ストアは [払い戻しを追跡するように設定されている](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) を設定します。
+「製品」ダッシュボードには、注文した製品、GMV(Gross Murchandise Value)、購入および返金されたトップ製品に関する一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、製品の成功と人気度を判断するのに役立ちます。 ストアは [払い戻しを追跡するように設定されている](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) を設定します。
 
 >[!NOTE]
 >

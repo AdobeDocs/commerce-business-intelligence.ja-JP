@@ -2,9 +2,9 @@
 title: Google Adwords データの監査
 description: Google Adwords データを書き出す手順を説明します。
 exl-id: f619801f-e789-44ad-945e-268d430bf583
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 これにより、 `.csv` 現在の [!DNL Google Adwords] アカウント この時点で、サポートチケットを送信します（このファイルを必ず添付してください）。 データを詳しく見てみましょう ファイルが大きすぎる場合は、 [!DNL MBI] チーム経由で [!DNL Dropbox] または [!DNL Google Drive].
 
-詳しくは、 [!DNL Google Adwords] `.csv` ファイルのエクスポート（公式を参照） [[!DNL Google Adwords] ドキュメント](https://support.google.com/adwords/editor/answer/38657?hl=en).
+詳しくは、 [!DNL Google Adwords] `.csv` ファイルのエクスポート（公式を参照） [[!DNL Google Adwords] ドキュメント](https://support.google.com/google-ads/editor/answer/38657?hl=en).

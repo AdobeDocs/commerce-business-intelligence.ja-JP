@@ -2,9 +2,9 @@
 title: Google Adwords を接続
 description: キャンペーンから取得したユーザーの広告コストと顧客のライフタイムバリュー (CLV) を結び付け、キャンペーンの ROI を測定する方法を説明します。
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 1. の下の接続ページに移動します。 **データを管理/統合**.
 1. クリック **統合を追加**：画面の右上にあります。
 1. 次をクリック： **[!DNL Google Adwords]** アイコン これにより、 [!DNL Google Adwords] 認証情報ページ。
-1. を入力します。 [!DNL Google Analytics] 資格情報。 認証プロセスが完了すると、次の場所にリダイレクトされます： [!DNL MBI].
+1. を入力します。 [!DNL Google Analytics] 資格情報。 認証プロセスが完了すると、にリダイレクトされます。 [!DNL MBI].
 1. プロファイル ID のリストが表示されます。 接続先のプロファイルを確認してください [!DNL MBI].
 
    ![](../../../assets/cnnct-profile.png)
@@ -35,19 +35,19 @@ ht-degree: 0%
 
 ## `Connecting multiple Google Analytics profiles`
 
-1 つのに複数の Web サイトを接続している場合があります [!DNL Google Analytics] 独自のアカウントで識別 [!DNL Google Analytics] プロファイル ID。 この場合、すべてのプロファイル ID を [!DNL MBI]. プロファイル選択手順で、含めるプロファイル ID を確認します。
+1 つのに複数の Web サイトを接続している場合があります [!DNL Google Analytics] 独自のアカウントで識別 [!DNL Google Analytics] プロファイル ID。 この場合、すべてのプロファイル ID を [!DNL MBI]. プロファイル選択手順で含めるプロファイル ID を確認します。
 
 **特定の Web サイトのGoogle Analyticsプロファイル ID を識別するには：**
 
 1. ログイン [!DNL Google Analytics]
 1. 特定の Web サイトの [!DNL Google Analytics] dashboard
-1. URL を見る — プロファイル ID は次の 8 つの数に対応します `p` 行末：
+1. URL を見る — プロファイル ID は次の 8 つの数に対応しています `p` 行末：
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**`
 
 ## 切断中 [!DNL Google Adwords]
 
-1. 次のサイトにアクセス： [!DNL Google] [アカウント設定](https://www.google.com/accounts/) ページ。
+1. 次のサイトにアクセス： [!DNL Google] [アカウント設定](https://www.google.com/account/about/?hl=en) ページ。
 1. 以下 `Security` セクションで、 **[!UICONTROL edit]** 次の `Authorizing` アプリケーションとサイト。
 1. クリック **[!UICONTROL revoke access]** 次の [!DNL MBI].
 

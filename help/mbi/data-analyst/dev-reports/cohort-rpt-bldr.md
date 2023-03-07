@@ -2,22 +2,22 @@
 title: コホートReport Builder
 description: ライフサイクルにわたって同様の特性を共有するユーザーグループの分析について説明します。
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
 
 # コホートReport Builder
 
-ユーザーの様々なサブセットの時間の経過に伴う動作を調べたいと思ったことはありますか？ 例えば、プロモーション期間中に登録したユーザーの平均ライフタイム売上高は、登録していないユーザーの平均ライフタイム売上高よりも高いのかと疑問に思ったことはありますか？ 答えが `Yes`、 `Cohort Report Builder` は、お客様に最適なツールです。 [!DNL MBI] は、この分析の実行とビジネスに合わせた関連性を持たせるために特別に最適化されています。
+ユーザーの様々なサブセットの時間の経過に伴う動作を調べたいと思ったことはありますか？ 例えば、プロモーション期間中に登録したユーザーの平均ライフタイム売上高は、登録していないユーザーの平均ライフタイム売上高よりも高いのかと疑問に思ったことはありますか？ 答えが `Yes`、 `Cohort Report Builder` は、お客様に最適なツールです。 [!DNL MBI] は、この分析の実行とビジネスに関連するように最適化されています。
 
 ## コホート分析とは {#what}
 
 `Cohort` 解析は、ライフサイクルにわたって同じ特性を共有するユーザーグループの解析として広く定義できます。 異なるユーザーグループにわたる行動傾向を識別できます。
 
-詳しくは、 `cohort` 分析、 [ここを見る](https://www.cohortanalysis.com/) 私たちはそのサイトを書きました！
+詳しくは、 `cohort` 分析、 [ここを見る](https://www.cohortanalysis.com/).
 
 を [!DNL MBI] ダッシュボードを使用すると、簡単にユーザーを作成できます `cohorts` に基づく `cohort` アカウントの日付と指標。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 **指標の追加**
 
-これで、 `Report Builder`分析を実行する指標を追加します ( 例： `Revenue` または `Orders`) をクリックします。
+これで、 `Report Builder`で、分析を実行する指標を追加します ( 例： `Revenue` または `Orders`) をクリックします。
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ![](../../assets/visual-report-builder-cohort-toggle.png)
 
-新しいウィンドウが開き、このウィンドウで `Cohort` レポート。
+新しいウィンドウが開き、 `Cohort` レポート。
 
 ### を構築するには、5 つの仕様が必要です。 `Cohort` レポート：
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 #### 1.グループ化 `cohorts`
 
-`Cohorts` は、 **登録日** または **初回注文日**.
+`Cohorts` は、のようにタイムスタンプでグループ化されます。 **登録日** または **初回注文日**.
 
 >[!NOTE]
 >
@@ -67,13 +67,13 @@ ht-degree: 0%
 
 #### 2. `Cohort` 期間
 
-グループ化する期間を選択 `cohorts` 作成者： つまり、上で選択したタイムスタンプのどの部分が最も重要かを示します。の `week`, `month`, `quarter`または `year`?  レポートには、ここで選択した間隔に応じてデータが表示されます
+グループ化する期間を選択 `cohorts` 作成者： つまり、上で選択したタイムスタンプのどの部分が最も重要かを示します。の `week`, `month`, `quarter`または `year`? レポートには、ここで選択した間隔に応じてデータが表示されます
 
 #### 3.4. 次の数を設定： `cohorts` 各データの表示と量 `cohort` は、
 
 これらのパラメーターは、 `cohorts` 君が興味を持っているのはその役に立つ `Preview` ボックスの下部に、レポートに表示されるコホートが正確に表示されます。
 
-デフォルトでは、現在の `cohort` は、各 `cohort` から `0`. この場合、 `cohort` 現在の期間の場合、部分的なデータのみが含まれます。
+デフォルトでは、現在の `cohort` が含まれるのは、各 `cohort` から `0`. この場合、 `cohort` 現在の期間のデータには、部分的なデータのみが含まれます。
 
 #### 5.次の時間範囲 `Cohort` 発生件数
 
@@ -85,13 +85,13 @@ ht-degree: 0%
 
 #### その他のメモ
 
-* [!UICONTROL Filters]:を `Standard` および `Cohort` ビュー。
+* [!UICONTROL Filters]:を切り替えても、指標はそのまま残ります。 `Standard` および `Cohort` ビュー。
 
 * 詳しくは、 [`Perspectives`](#perspectives).
 
 #### 例
 
-ここでは、すべてをまとめる例を示します。 この例では、 `cohort`の初回購入。今後 6 ヶ月間に同じコホートが再度訪問するかどうかを確認します。
+ここでは、すべてをまとめる例を示します。 この例では、 `cohort`の最初の購入。今後 6 ヶ月間に同じコホートが再び購入するかどうかを確認します。
 
 ![注文コホート](../../assets/crb_example.gif)
 
@@ -105,9 +105,9 @@ ht-degree: 0%
 
 ![](../../assets/create-cohort-analysis.png)
 
-`Cohort` アクション分析！ ここでは、累積的およびユーザーごとの売上高が、時間の経過と共に増加している様子を見ることができます。
+`Cohort` アクション分析！ ここでは、累積的およびユーザーごとの売上高が、時間の経過と共に増加している様子を確認できます。
 
-この節では、独自の `cohort` 分析。 例 ( およびプロセスを示すアニメーションGIF) については、 [「例」セクション](#examples) 」を参照してください。
+ここでは、独自の `cohort` 分析。 例 ( プロセスを示すアニメーションGIF) については、 [「例」セクション](#examples) 」を参照してください。
 
 1. クリック **[!UICONTROL Report Builder]** ( 左側のタブまたは **[!UICONTROL Add Report** > **Create Report]** （任意のダッシュボード）
 
@@ -123,7 +123,7 @@ ht-degree: 0%
 
 #### コホート日の選択 {#date}
 
-次に、 `cohort date`. ユーザーがグループ化される日付です。 例えば、次のような場合があります。 `User's first order date` または `User's registration date`.
+次に、 `cohort date`. ユーザーがグループ化された日付です。 例えば、次のような場合があります。 `User's first order date` または `User's registration date`.
 
 >[!NOTE]
 >
@@ -134,16 +134,16 @@ ht-degree: 0%
 次に、 `Interval` および `Time Period`.
 
 `Interval`
-この `Interval` オプションを使用すると、 `length` の `cohorts`. 例えば、 `Month`に設定すると、レポートは月単位で測定されます。
+この `Interval` オプションを使用すると、 `length` の `cohorts`. 例えば、 `Month`」と入力すると、レポートは月単位で測定されます。
 
 X 軸上でのこれらの間隔の表示方法は、 **期間** メニュー
 
 `Time Period`
-以下を使用： `Time Period` 特定のユーザーを選択するメニュー `cohorts` をクリックして分析します。 次の項目を `cohort`、リストから選択、時間範囲の指定、または `cohorts` を含めます。 例えば、 `Specific Cohorts` 」オプションを使用する場合、分析に含める月を選択できます。
+以下を使用： `Time Period` 特定のユーザーを選択するメニュー `cohorts` をクリックして分析します。 次の項目を `cohort`、リストから選択、時間範囲の指定、または `cohorts` を含めます。 例えば、 `Specific Cohorts` 」オプションを選択すると、分析に含める月を選択できます。
 
 ![の使用 `Time Period` 特定の `Cohorts`](../../assets/Cohort_Time_Period.gif)
 
-もし我々がグループ化していれば `cohorts` 登録日に基づいて、 `Specific Cohorts` リストに含まれる場合、その月に登録したユーザーが含まれます。
+グループ化する場合は、 `cohorts` 登録日に基づいて、 `Specific Cohorts` リストに含まれる場合、その月に登録したユーザーが含まれます。
 
 #### X 軸の定義
 
@@ -155,7 +155,7 @@ X 軸上でのこれらの間隔の表示方法は、 **期間** メニュー
 
 ![](../../assets/Cohort_Counting_Members_option.png)
 
-この設定を理解するための例を見てみましょう。 例えば、 `Revenue` 指標別 `Customer's registration date`. また、パースペクティブを使用したいと考えました `Average value per cohort member` を参照してください。 購入者ごとの平均値を見つけるには、除算する購入者の数を決定する必要があります。 これは、 `customers` テーブル、またはお客様の個別購入者の数 `orders table` 同じ期間で？
+この設定を理解するには、例を見てください。 例えば、 `Revenue` 指標別 `Customer's registration date`. また、パースペクティブを使用したいと考えました `Average value per cohort member` を参照してください。 購入者ごとの平均値を見つけるには、除算する購入者の数を決定する必要があります。 これは、 `customers` テーブル、またはお客様の個別購入者の数 `orders table` 同じ期間？
 
 この設定はその質問に対する回答を示します。 でのメンバーのカウント `customers` テーブルには、（購入を行ったかどうかに関わらず）すべての顧客が平均で含まれます。 でのメンバーのカウント `orders` テーブルには、購入をおこなった顧客のみが含まれます。
 
@@ -171,13 +171,13 @@ X 軸上でのこれらの間隔の表示方法は、 **期間** メニュー
 
 ## コホート分析の例 {#examples}
 
-これで、 `cohort` 分析、いくつか例を見てみましょう。
+これで、 `cohort` 分析、いくつかの例を見てみましょう。
 
 ### 自分のユーザーが `cohorts` は、時間の経過と共に増加しています。
 
 ![ユーザー `cohorts` 時間の経過と共に増え続ける](../../assets/cohort1.gif)
 
-この例では、 `Revenue` 指標を使用する場合、コホートを `customer's first order date`、および最新の 8 つの `cohorts` ( `Time Period` メニュー ) をクリックして、分析に含めます。 コホートが時間の経過と共にどのように成長していくかを見るために、 `Cumulative Average Value per Cohort Member` `perspective`.
+この例では、 `Revenue` 指標を使用する場合、コホートを `customer's first order date`、および最新の 8 つの `cohorts` ( `Time Period` メニュー ) をクリックして、分析に含めます。 時間の経過と共にコホートがどのように成長したかを確認するために、 `Cumulative Average Value per Cohort Member` `perspective`.
 
 ### ユーザーの全期間の異なる時点でのユーザーの注文件数の平均を知りたい。
 
@@ -211,4 +211,4 @@ X 軸上でのこれらの間隔の表示方法は、 **期間** メニュー
 
 ## 折り返し {#finish}
 
-この `Cohort Report Builder` は、現在、共通のユーザーをグループ化するために最適化されています `cohort date`. 類似のアクティビティまたは属性によるユーザーのグループ化に興味がある場合は、ぜひお役に立ててください。 チェックアウトをお勧めします [定性コホートに関するこのチュートリアル](../dev-reports/create-qual-cohort-analysis.md) をクリックして開始します。
+この `Cohort Report Builder` は、共通のユーザーをグループ化するために最適化されています `cohort date`. 類似のアクティビティや属性によるユーザーのグループ化に興味を持つ場合があります。 Adobeが推奨するチェックアウト [定性コホートに関するこのチュートリアル](../dev-reports/create-qual-cohort-analysis.md) をクリックして開始します。

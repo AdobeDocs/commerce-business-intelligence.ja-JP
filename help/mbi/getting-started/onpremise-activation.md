@@ -2,9 +2,9 @@
 title: のアクティブ化 [!DNL MBI] オンプレミスサブスクリプション用アカウント
 description: のアクティベートについて [!DNL MBI] アカウントをオンプレミスサブスクリプション用に作成します。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    ![](../assets/create-account-4.png)
 
-   - アカウントを作成したら、新しいアカウントにユーザーを追加することができます。 技術管理者を追加して、次の手順を実行できるようになりました。
+   - アカウントを作成したら、新しいアカウントにユーザーを追加できます。 技術管理者を追加して、次の手順を実行できるようになりました。
 
    ![](../assets/create-account-5.png)
 

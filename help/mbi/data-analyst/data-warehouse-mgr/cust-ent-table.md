@@ -2,16 +2,16 @@
 title: customer_entity テーブル
 description: すべての登録済みアカウントのレコードにアクセスする方法を説明します。
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
 # customer_entity テーブル
 
-この `customer_entity` テーブルには、すべての登録済みアカウントのレコードが含まれます。 アカウントがアカウントに新規登録された場合、購入を完了したかどうかに関係なく、そのアカウントが登録済みと見なされます。 各行は、そのアカウントの `entity_id`.
+この `customer_entity` テーブルには、すべての登録済みアカウントのレコードが含まれます。 アカウントが購入に成功したかどうかに関係なく、アカウントに新規登録した場合、そのアカウントは登録済みと見なされます。 各行は、そのアカウントの `entity_id`.
 
 このテーブルには、ゲストチェックアウトで注文をした顧客のレコードは含まれません。 ストアがゲストによるチェックアウトを受け入れる場合、 [アカウント方法を学ぶ](../data-warehouse-mgr/guest-orders.md) を設定します。
 
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |---|---|
-| `created_at` | アカウントの登録日に対応するタイムスタンプ。通常はローカルの UTC に保存されます。 の設定に応じて、 [!DNL MBI]の場合、このタイムスタンプは [!DNL MBI] データベースのタイムゾーンと異なる |
+| `created_at` | アカウントの登録日に対応するタイムスタンプ。ローカルの UTC に保存されます。 の設定に応じて、 [!DNL MBI]の場合、このタイムスタンプは [!DNL MBI] データベースのタイムゾーンと異なる |
 | `email` | アカウントに関連付けられた電子メールアドレス |
 | `entity_id` (PK) | テーブルの一意の識別子（ID の結合で一般的に使用） `customer_id` インスタンス内の他のテーブル内 |
 | `group_id` | に関連付けられた外部キー `customer_group` 表。 結合先 `customer_group.customer_group_id` 登録済みアカウントに関連付けられている顧客グループを特定するには |
 | `store_id` | に関連付けられた外部キー `store` 表。 結合先 `store`.`store_id` 登録されたアカウントに関連付けられているコマースストア表示を特定するには |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 共通の計算列
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 | `Seconds since customer's first order date` | 顧客の最初の注文日から今までの経過時間。 減算で計算 `Customer's first order date` クエリの実行時のサーバータイムスタンプから、整数の秒数で返されます。 |
 | `Store name` | この登録済みアカウントに関連付けられたコマースストアの名前。 結合によって計算 `customer_entity.store_id` から `store.store_id` そして `name` フィールド |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 一般的な指標
 
@@ -53,18 +53,18 @@ ht-degree: 0%
 | `Avg lifetime orders` | 顧客の全期間における顧客あたりの平均注文数 | 操作：平均<br/>オペランド： `Customer's lifetime number of orders`<br/>タイムスタンプ： `created_at` |
 | `Avg lifetime revenue` | 全期間におこなわれたすべての注文に対する、顧客あたりの平均合計売上高 | 操作：平均<br/>オペランド： `Customer's lifetime revenue`<br/>タイムスタンプ： `created_at` |
 | `New customers` | 1 つ以上の注文を持つ顧客の数。最初の注文日にカウントされます。 登録したが決して注文しなかったアカウントを除外 | 操作：カウント<br/>オペランド： `entity_id`<br/>タイムスタンプ： `Customer's first order date` |
-| `Registered accounts` | 登録されたアカウントの数。 アカウントが注文したかどうかに関係なく、すべての登録済みアカウントが含まれます | 操作：カウント<br/>オペランド： `entity_id`<br/>タイムスタンプ： `created_at` |
+| `Registered accounts` | 登録されたアカウントの数。 アカウントが注文をしたかどうかに関係なく、すべての登録済みアカウントが含まれます | 操作：カウント<br/>オペランド： `entity_id`<br/>タイムスタンプ： `created_at` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 外部キー結合パス
 
 `customer_group`
 
-* 結合先 `customer_group` 登録済みアカウントの顧客グループ名を返す新しい列を作成するテーブル。
+* 結合先 `customer_group` 登録済みアカウントの顧客グループ名を返す列を作成するテーブル。
    * パス： `customer_entity.group_id` （多数） => `customer_group.customer_group_id` (1)
 
 `store`
 
-* 結合先 `store` 登録済みアカウントに関連付けられたストアに関連する詳細を返す新しい列を作成するためのテーブル。
+* 結合先 `store` 登録済みアカウントに関連付けられたストアに関連する詳細を返す列を作成するテーブル。
    * パス： `customer_entity.store_id` （多数） => `store.store_id` (1)

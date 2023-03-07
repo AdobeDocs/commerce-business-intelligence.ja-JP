@@ -1,17 +1,17 @@
 ---
 title: 顧客チャーンを定義
-description: トランザクション顧客のチャーンを定義するのに役立つダッシュボードを設定する方法を説明します。
+description: トランザクション顧客のチャーンを定義するのに役立つダッシュボードを設定する方法について説明します。
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
 # トランザクション顧客チャーン
 
-この記事では、トランザクション顧客のチャーンを定義するのに役立つダッシュボードを設定する方法を示します。
+この記事では、トランザクション顧客のチャーンを定義するのに役立つダッシュボードを設定する方法について説明します。
 
 ![](../../assets/churn-deashboard.png)
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 * を選択します。 [!UICONTROL column]: **`entity_id`**
 * [!UICONTROL Path]:sales_flat_order.customer_id = customer_entity.entity_id
 * [!UICONTROL Filter]:
-* カウントする注文
+* カウントされる注文
 
 * `sales_flat_order` 表
 * `Customer's lifetime number of orders`
@@ -59,11 +59,11 @@ ht-degree: 0%
 ## レポート
 
 * **最初の繰り返し順序の確率**
-* 指標 A:すべての繰り返し注文
+* 指標 A:全期間リピート注文
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* 指標 B:すべての注文
+* 指標 B:常勤の注文
 * [!UICONTROL Metric]:注文数
 
 * [!UICONTROL Formula]:最初の繰り返し順序の確率
@@ -93,7 +93,7 @@ ht-degree: 0%
    [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* 指標 C:すべての繰り返し注文（非表示）
+* 指標 C:全期間繰り返し注文（非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
    [!UICONTROL グループ化基準]: `Independent`
 
-* 指標 D:前回の注文をすべて（非表示）
+* 指標 D:前回の注文をすべて無視（非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -128,12 +128,12 @@ ht-degree: 0%
 
 最初の繰り返し注文の確率レポートは、「繰り返し注文の合計/合計注文件数」を表します。 すべての注文は、繰り返し注文をする機会です。繰り返し注文の数は、実際に実行する順序のサブセットです。
 
-使用する式は、（X ヶ月後に発生した繰り返し注文の合計）/（少なくとも X ヶ月後の注文の合計）に簡素化します。 これは、過去に、注文から X ヶ月が経過していたので、ユーザーが別の注文をする可能性が Y%あることを示しています。
+使用する式は、（X ヶ月後に発生した繰り返し注文の合計）/（少なくとも X ヶ月前の注文の合計）に簡素化します。 これは、過去に、注文から X ヶ月が経過した場合に、ユーザーが別の注文をする可能性が Y%あることを示しています。
 
-ダッシュボードを構築した後に受け取る最も一般的な質問は、次のとおりです。これを使用してチャーンしきい値を決定する方法を教えてください。
+ダッシュボードを構築した後、最も一般的な質問は次のとおりです。これを使用してチャーンしきい値を決定する方法を教えてください。
 
-**これに対する「一つの正しい答え」はありません。** ただし、線が最初の繰り返し確率率の半分の値と交差する点を見つけることをお勧めします。 ここで、「ユーザーが繰り返し注文をするなら、おそらく今までには完了していただろう」と言えるポイントです。 最終的な目標は、「リテンション」から「再アクティブ化」への切り替えが意味を持つしきい値を選択することです。
+**これに対する「一つの正しい答え」はありません。** ただし、Adobeでは、線が最初の繰り返し確率の半分の値と交差する点を見つけることをお勧めします。 ここで、「ユーザーが繰り返し注文をする場合は、おそらく今までに完了していたでしょう」と言えるポイントです。 最終的な目標は、「リテンション」から「再アクティブ化」への切り替えが意味を持つしきい値を選択することです。
 
-すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 最終的な結果は、ページ上部の画像のように見える場合があります
+すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、ページ上部の画像のように表示される場合があります
 
-この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームを引き込みたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

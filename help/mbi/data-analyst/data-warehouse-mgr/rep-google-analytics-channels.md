@@ -2,9 +2,9 @@
 title: 獲得ソースを使用したGoogle Analyticsチャネルのレプリケーション
 description: 獲得ソースを使用してGoogle Analyticsチャネルをレプリケートする方法について説明します。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 ## チャネルとは {#channels}
 
-様々なトラフィックのパフォーマンスを確認するカスタムセグメントを作成し、（改善または悪化のために）トレンドを観察します。 は、  [!DNL Google Analytics ]. デフォルトでに存在するセグメントの 1 つのクラス [!DNL Google Analytics ] が `Channels`. チャネルは、訪問者がサイトに来訪する一般的な方法のグループです。  [!DNL Google Analytics ] ユーザーの取得方法（ソーシャルメディア、クリック課金、電子メール、紹介リンクなど）を自動的に並べ替え、バケットまたはチャネルにまとめます。
+様々なトラフィックのパフォーマンスを確認し、トレンドを観察するためのカスタムセグメントを作成することは、  [!DNL Google Analytics ]. デフォルトでに存在するセグメントの 1 つのクラス [!DNL Google Analytics ] が `Channels`. チャネルは、訪問者がサイトに来訪する一般的な方法のグループです。  [!DNL Google Analytics ] ユーザーを取得した様々な方法（ソーシャルメディア、クリック課金、電子メール、紹介リンクなど）を自動的に並べ替え、バケットまたはチャネルにまとめます。
 
 ## 表示されない理由 `channels` MBI で？ {#nochannels}
 
 `Channels` は単純で、データの集計グループです。 獲得をチャネルグループに分類するために、Googleでは、特定のパラメーターを使用して個別のルールと定義を設定しています。獲得の組み合わせ [ソース](https://support.google.com/analytics/answer/1033173?hl=en) （トラフィックの発生元）と獲得 [中](https://support.google.com/analytics/answer/6099206?hl=en) （ソースの一般的なカテゴリ）。
 
-これらのバケットを使用すると、トラフィックの発生元を把握できますが、このデータは、実際にはチャネルによってタグ付けされるのではなく、ソースとメディアを組み合わせてタグ付けされます。 Googleはチャネル情報を 2 つの異なるデータポイントとして送信するので、チャネルのグループ化が [!DNL MBI].
+これらのバケットを使用すると、トラフィックの発生元を把握できますが、このデータはチャネルでタグ付けされるのではなく、ソースとメディアを組み合わせてタグ付けされます。 Googleはチャネル情報を 2 つの異なるデータポイントとして送信するので、チャネルのグループ化が [!DNL MBI].
 
 ## デフォルトのチャネルグループ化とは何ですか？ 作成方法
 
-デフォルトでは、Googleは 8 つの異なるチャネルを使用して設定します。 ルールの作成方法を決定する方法を見てみましょう。
+デフォルトでは、Googleは 8 つの異なるチャネルを使用して設定します。 作成方法を決定するルールを確認します。
 
 | チャネル | 何だ？ | 作成方法 |
 |---|---|---|
@@ -34,9 +34,9 @@ ht-degree: 0%
 | Social | ほぼいずれかの [400 のソーシャルネットワーク](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) およびは、広告としてタグ付けされていません。 | ソーシャルソースの参照元= `Yes`<br>OR 中= `^(social|social-network|social-media|sm|social network|social media)$` |
 | 電子メール | 「E メール」のメディアでタグ付けされたセッションからのトラフィック。 | メディアの UTM トラッキングコード= `email` |
 | 表示 | メディアが表示または cpm の UTM トラッキングコードを持つトラフィック。 また、広告配信ネットワークが「コンテンツ」に一致する AdWords インタラクションも含まれます | 中= `^(display|cpm|banner)$`<br>OR 広告配信ネットワーク= `Content`<br>AND 広告形式≠ `Text` |
-| その他 | 「cpc」、「ppc」、「cpv」、「cpa」、「cpp」、「cpp」、「cpp」、「affiliete」のメディアでタグ付けされた、有料検索を含む他の広告チャネルからのセッション。 | 中= `^(cpv|cpa|cpp|content-text)$` |
+| その他 | 「cpc」、「ppc」、「cpv」、「cpa」、「cpp」、「cpp」、「cpp」、「アフィリエイト」のメディアでタグ付けされた他の広告チャネル（有料検索を除く）からのセッション。 | 中= `^(cpv|cpa|cpp|content-text)$` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## これらのチャネルのグループ化をData Warehouseで再作成する方法 {#recreate}
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 1. **A と B の間に関係を築く[!DNL Google ECommerce]およびマッピングファイルのアップロード**
 
-   次の間に関係を確立するには[!DNL Google ECommerce]マッピング・テーブル [サポートリクエストを送信](../../guide-overview.md) を Data Analyst チームに連絡し、この記事を参照してください。 アナリストは、「 **チャネル** （e コマーステーブル） **完全な更新サイクルの後**&#x200B;の場合、この列は、フィルターまたはグループ化基準で使用する準備が整います。
+   次の間に関係を確立するには[!DNL Google ECommerce]マッピング・テーブル [サポートリクエストを送信](../../guide-overview.md) を Data Analyst チームに連絡し、この記事を参照します。 アナリストが、「 **チャネル** （e コマーステーブル） **完全な更新サイクルの後**&#x200B;の場合、この列は、フィルターまたはグループ化基準で使用する準備が整います。
 
 おめでとうございます。 Data WarehouseにGoogle Analyticsチャネルのグループ化が追加されました。つまり、新しい視点でデータを分析できます。
 

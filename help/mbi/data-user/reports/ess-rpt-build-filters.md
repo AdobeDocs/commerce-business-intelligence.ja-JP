@@ -2,9 +2,9 @@
 title: フィルター
 description: フィルターの使用方法を説明します。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ MBI には、「標準 (OOTB)」を使用したり、必要に応じて変更し
 
    * フィルターが完了したら、 **[!UICONTROL Apply]**.
 
-      レポートにリピート客のみが含まれるようになり、レポートに対して取得した顧客レコードの数が 33,000 件から 12,600 件に減りました。
+      レポートにリピート客のみが含まれるようになり、レポートに対して取得した顧客レコードの数が 33,000 から 12,600 に減りました。
 
       ![フィルター済みレポート](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 

@@ -2,9 +2,9 @@
 title: ダッシュボード全体のフィルタリング
 description: 特定のダッシュボードですべてのレポートを一括編集する方法を説明します。
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 ダッシュボードのレポートの日付範囲や間隔を変更するには、右上隅にあるカレンダーアイコン (![カレンダー](../../assets/calendar-button.png)) をクリックします。
 
-データの表示は、 `Fixed Date Range` または事前に計算された様々な `Moving Date Ranges`:
+データの表示は、 `Fixed Date Range` または様々な事前計算済み `Moving Date Ranges`:
 
 ![日付範囲の移動](../../assets/moving_date_ranges.png)
 
-この `Last Full...` 移動範囲オプションは、最後に完了した範囲を表します。 `This...` が現在の進行中の範囲になります。 例えば、現在 6 月の場合、 `Last Full Month` が _5 月 1 日～5 月 31 日_、 `This Month` が _6 月 1 日～今すぐ_.
+この `Last Full...` 移動範囲オプションは、最後に完了した範囲を表します。 `This...` は、現在進行中の範囲です。 例えば、6 月の場合、 `Last Full Month` が _5 月 1 日～5 月 31 日_、 `This Month` が _6 月 1 日～今すぐ_.
 
 または、独自の `Custom Moving Range`\:
 
 ![カスタム移動範囲](../../assets/custom-moving-range.png)
 
-間隔も変更します。 デフォルトのボタン (![時間間隔のデフォルト](../../assets/time_interval_default.png)) の場合は、日付範囲のみが変更されます。
+間隔も変更します。 デフォルトのボタン (![時間間隔のデフォルト](../../assets/time_interval_default.png)) は、日付範囲のみが変更されることを意味します。
 
 ![時間間隔](../../assets/time_interval.png)
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この時 `Cohort Reports` および `SQL Reports` ダッシュボードレベルで変更を適用する際には、が含まれません。
+>現在、 `Cohort Reports` および `SQL Reports` ダッシュボードレベルで変更を適用する際には、が含まれません。
 
 ## ストアフィルター
 
@@ -45,10 +45,10 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ストアフィルターは、 [!DNL MBI] アカウント コマースデータに基づいて構築されていないレポートなど、フィルタの影響を受けないレポートがダッシュボードに含まれている場合、ストアフィルタが適用されても、それらのレポートは更新されません。 以下が可能です。 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) ストアの選択に基づいてレポートを更新すると思われる場合や、アカウントストアのフィルターが誤って無効になっていると思われる場合。
+>ストアフィルターは、 [!DNL MBI] アカウント ダッシュボードにフィルターの影響を受けないレポート ( コマースデータ () に基づいて作成されていないレポートなど ) が含まれている場合、ストアフィルターが適用されても、これらのレポートは更新されません。 以下が可能です。 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) ストアの選択に基づいてレポートを更新すると思われる場合や、アカウントストアのフィルターが誤って無効になっていると思われる場合。
 
 ストアを `Store Filter`を使用すると、ダッシュボード間を移動する際にフィルターで選択内容が保持されます。 選択を維持すると、選択したストアのデータを、選択した `All Stores`.
 
 ## 共有ダッシュボードのフィルター
 
-共有ダッシュボードの場合、あるユーザーが日付フィルターを設定すると、そのダッシュボードへのアクセス権を持つ他のユーザーにも、同じフィルターが適用されます。 ただし、この場合、ストアフィルターは適用されません。 ダッシュボードの所有者がストアフィルターを設定し、ダッシュボードを共有した場合、設定されたストアフィルターは別のユーザーに対して保持されません。 ユーザーが [アクセスを編集](../../data-user/dashboards/share-dashboard-with-users.md) をダッシュボードに追加して、ダッシュボードのフィルターを調整します。
+共有ダッシュボードの場合、あるユーザーが日付フィルターを設定すると、そのダッシュボードへのアクセス権を持つ他のユーザーに同じフィルターが適用されて表示されます。 ただし、この場合、ストアフィルターは適用されません。 ダッシュボードの所有者がストアフィルターを設定し、ダッシュボードを共有した場合、設定されたストアフィルターは別のユーザーに対して保持されません。 ユーザーが [アクセスを編集](../../data-user/dashboards/share-dashboard-with-users.md) をダッシュボードに追加して、ダッシュボードのフィルターを調整します。

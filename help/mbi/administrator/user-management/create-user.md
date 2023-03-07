@@ -2,14 +2,14 @@
 title: 新しいユーザーの追加/編集
 description: 新しい [!DNL MBI] ユーザーと、ユーザー名またはパスワードの更新方法を説明します。
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
 
 ---
 
-# 新しいユーザーを追加
+# ユーザーの追加
 
 1. 右上隅の会社名をクリックし、「 **[!UICONTROL Invite User]** をドロップダウンから選択します。
 1. ユーザー名と E メールを入力します。
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Save]**.
 
-新しいユーザーには、ログインとパスワードの詳細が記載された電子メールが送信されます。
+新しいユーザーに、ログインとパスワードの詳細が記載された電子メールが送信されます。
 
 >[!NOTE]
 >
->新しいユーザーには、デフォルトでダッシュボードはありません。 お勧めは [共有](../../data-user/dashboards/share-dashboard-with-users.md) 新しいユーザーにすぐに必要なダッシュボード。
+>新しいユーザーには、デフォルトでダッシュボードがありません。 Adobeが推奨する [共有](../../data-user/dashboards/share-dashboard-with-users.md) 新しいユーザーにすぐに必要なダッシュボード。
 
 ## 電子メールアドレスまたはパスワードを更新する
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 招待状の再送信
 
-新しいユーザーに招待状を再送信する必要がある場合は、 [ログインページ](https://dashboard.rjmetrics.com)をクリックし、 **[!UICONTROL Forgot?]**&#x200B;をクリックし、新しいユーザーの電子メールアドレスを入力して、 **[!UICONTROL Reset Password]**. これにより、招待が再送され、ユーザーがログインできるようになります。
+新しいユーザーに招待状を再送信する必要がある場合は、 [ログインページ](https://dashboard.rjmetrics.com/v2/session/create)をクリックし、 **[!UICONTROL Forgot?]**&#x200B;をクリックし、新しいユーザーの電子メールアドレスを入力して、 **[!UICONTROL Reset Password]**. これにより、招待が再送され、ユーザーがログインできるようになります。
 
 >[!IMPORTANT]
 >

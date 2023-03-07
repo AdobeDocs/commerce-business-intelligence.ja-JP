@@ -2,9 +2,9 @@
 title: クーポンコード分析（基本）
 description: ビジネスのクーポンパフォーマンスについて学ぶと、注文をセグメント化し、顧客の習慣をより深く理解する興味深い方法です。
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ビジネスのクーポンパフォーマンスを理解することは、注文をセグメント化し、顧客の習慣をより深く理解するための興味深い方法です。
 
-この分析を作成するために必要な手順を文書化し、クーポンを取得した顧客がどのように実行し、トレンドを確認し、個々のクーポンコードの使用を追跡するかを理解しました。
+この記事では、この分析を作成するために必要な手順を説明し、クーポンを取得した顧客がどのように実行し、トレンドを確認し、個々のクーポンコードの使用を追跡するかを理解します。
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この [!UICONTROL Time Period]**レポートごとに、 `All-time`. 分析のニーズに合わせて自由に変更できます。 このダッシュボードのすべてのレポートは、次のように同じ期間に対応することをお勧めします。 `All time`, `Year-to-date`または `Last 365 days`.
+>この [!UICONTROL Time Period]**レポートごとに、 `All-time`. 分析のニーズに合わせて自由に変更できます。 Adobeでは、このダッシュボード上のすべてのレポートが、次のように同じ期間に対応していることを推奨します。 `All time`, `Year-to-date`または `Last 365 days`.
 
 * **クーポンを含む注文**
    * 
@@ -129,15 +129,15 @@ ht-degree: 0%
       * フィルターを追加：
          * [`A`] `coupon_code` **IS NOT**`[NULL]`
          * [`B`] `Customer's order number` **次と等しい** `1`
-   * 新しい数式を作成： `Gross revenue`
+   * 数式を作成： `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
       * 
          [!UICONTROL Format]: `Currency`
-   * 新しい数式を作成：**割引率**
+   * 数式を作成：**割引率**
       * 数式： `(C / (B - C))`
       * 
          [!UICONTROL Format]: `Percentage`
-   * 新しい数式を作成： `Average order discount`
+   * 数式を作成： `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
       * 
          [!UICONTROL Format]: `Percentage`

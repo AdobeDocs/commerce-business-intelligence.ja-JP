@@ -2,9 +2,9 @@
 title: Zendesk のヘルプデスクレポート
 description: 最も重要な参照チャネルについて学びます。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >これは、 `Pro` 新しいアーキテクチャを計画および使用します。 新しいアーキテクチャを使用している場合、 `Data Warehouse Views` 選択後に使用可能なセクション `Manage Data` を選択します。
 
-統合 [!DNL Zendesk] トランザクションデータベースのデータは、顧客がセールスチームや顧客の成功チームとどのようにやり取りしているか、およびサポートプラットフォームをどのような種類の顧客が活用しているかをより深く理解する優れた方法です。 この記事では、ダッシュボードを設定して、 [!DNL Zendesk] パフォーマンスを向上させ、トランザクションの顧客と結び付ける。
+統合 [!DNL Zendesk] トランザクションデータベースのデータは、お客様のセールスまたは顧客の成功チームとの関わり方をより深く理解するための優れた方法です。 また、サポートプラットフォームを使用している顧客の種類を知るのに役立ちます。 この記事では、 [!DNL Zendesk] パフォーマンスを向上させ、トランザクションの顧客と結び付ける。
 
 開始する前に、 [[!DNL Zendesk]](../integrations/zendesk.md). この分析に含まれる内容 [高度な計算列](../../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -272,7 +272,7 @@ ht-degree: 0%
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]最初の応答までの平均時間/中央値**
-   * 数えるチケット
+   * カウントされるチケット
    * ステータス IN クローズ、解決済み
 
 * 内 **`[Zendesk] tickets`** 表

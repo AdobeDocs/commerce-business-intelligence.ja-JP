@@ -2,9 +2,9 @@
 title: 在庫レベルの分析
 description: 在庫レベルの分析方法を説明します。
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ ht-degree: 0%
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Avg products sold per week (all time)`**
-      * ファイルを送信する際にアナリストが作成します **[在庫分析]** サポートリクエスト
+      * ファイル送信時にアナリストが作成 **[在庫分析]** サポートリクエスト
 
 
 
@@ -183,7 +183,7 @@ ht-degree: 0%
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * を選択します。 [!UICONTROL column]: `Avg products sold per week (all time)`
    * **`Weeks on hand`**
-      * ファイルを送信する際にアナリストが作成します **[!UICONTROL INVENTORY ANALYSIS]** サポートリクエスト
+      * ファイル送信時にアナリストが作成 **[!UICONTROL INVENTORY ANALYSIS]** サポートリクエスト
 
 
 
@@ -240,4 +240,4 @@ ht-degree: 0%
       [!UICONTROL Chart type]: `Table`
 
 
-この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームを引き込みたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

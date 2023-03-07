@@ -2,9 +2,9 @@
 title: sales_order_item テーブル
 description: sales_order_item テーブルの操作方法を説明します。
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -29,19 +29,19 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |----|----|
-| `base_price` | 販売時以降の製品の個々の単位の価格 [カタログ価格ルール、階層型割引、特別価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) が適用され、税、送料、買い物かごの割引が適用される前に、店舗の基準通貨で表されます。 |
-| `created_at` | 注文項目の作成タイムスタンプ（通常は UTC でローカルに保存）。 の設定に応じて、 [!DNL MBI]の場合、このタイムスタンプは [!DNL MBI] データベースのタイムゾーンと異なる |
+| `base_price` | 販売時以降の製品の個々の単位の価格 [カタログ価格ルール、階層型割引、特別価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) が適用され、税、送料、買い物かごの割引が適用される前に、 これは、ストアのベース通貨で表されます。 |
+| `created_at` | 注文項目の作成タイムスタンプ（ローカルの UTC に保存）。 の設定に応じて、 [!DNL MBI]の場合、このタイムスタンプは [!DNL MBI] データベースのタイムゾーンと異なる |
 | `item_id` (PK) | テーブルの一意の ID |
 | `name` | 注文項目のテキスト名 |
 | `order_id` | `Foreign key` ～と関連している `sales_order` 表。 結合先 `sales_order.entity_id` 受注品目に関連付けられた受注属性を決定する手順は、次のとおりです。 |
-| `parent_item_id` | `Foreign key` シンプルな製品をその親バンドルまたは設定可能な製品に関連付けます。 結合先 `sales_order_item.item_id` を使用して、単純な製品に関連付けられた親製品属性を特定します。 親の注文品目（バンドルまたは設定可能な製品タイプ）の場合、 `parent_item_id` は `NULL` |
+| `parent_item_id` | `Foreign key` シンプルな製品をその親バンドルまたは設定可能な製品に関連付けます。 結合先 `sales_order_item.item_id` を使用して、単純な製品に関連付けられた親製品属性を特定します。 親の注文品目（バンドルまたは設定可能な製品タイプ）の場合、 `parent_item_id` が `NULL` |
 | `product_id` | `Foreign key` ～と関連している `catalog_product_entity` 表。 結合先 `catalog_product_entity.entity_id` 注文品目に関連付けられた製品属性を決定するには |
 | `product_type` | 販売された製品のタイプ。 潜在的な [製品タイプ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) 次を含む：シンプル、構成可能、グループ化、仮想、バンドル、ダウンロード可能 |
 | `qty_ordered` | 販売時に特定の注文項目の買い物かごに含まれる数量 |
 | `sku` | 購入された注文品目の一意の識別子 |
 | `store_id` | `Foreign key` ～と関連している `store` 表。 結合先 `store.store_id` 注文項目に関連付けられたコマースストア表示を特定するには |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 共通の計算列
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 | `Order's status` | オーダーのステータス。 結合によって計算 `sales_order_item.order_id` から `sales_order.entity_id` そして `status` フィールド |
 | `Store name` | 注文項目に関連付けられたコマースストアの名前。 結合によって計算 `sales_order_item.store_id` から `store.store_id` そして `name` フィールド |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 一般的な指標
 
@@ -66,13 +66,13 @@ ht-degree: 0%
 | `Products ordered` | 販売時に買い物かごに含まれる製品の合計数量 | `Operation: Sum`<br>`Operand: qty_ordered`<br>`Timestamp: created_at` |
 | `Revenue by products ordered` | カタログ価格ルール、階層割引、特別価格が適用され、税、送料、買い物かご割引が適用される前の販売時に買い物かごに含まれる製品の合計値 | `Operation: Sum`<br>`Operand: Order item total value (quantity * price)`<br>`Timestamp: created_at` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## `Foreign Key` パスの結合
 
 `catalog_product_entity`
 
-* 結合先 `catalog_product_entity` 注文品目に関連付けられた製品属性を返す新しい列を作成するテーブル。
+* 結合先 `catalog_product_entity` 注文項目に関連付けられた製品属性を返す列を作成するテーブル。
    * パス： `sales_order_item.product_id` （多数） => `catalog_product_entity.entity_id` (1)
 
 `sales_order`
@@ -82,10 +82,10 @@ ht-degree: 0%
 
 `sales_order_item`
 
-* 結合先 `sales_order_item` 親の設定可能な SKU またはバンドル SKU の詳細をシンプルな製品に関連付ける新しい列を作成します。 なお、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) を参照してください。
+* 結合先 `sales_order_item` 親の設定可能な SKU またはバンドル SKU の詳細をシンプルな製品に関連付ける列を作成する場合。 [サポートに連絡](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) を参照してください。
    * パス： `sales_order_item.parent_item_id` （多数） => `sales_order_item.item_id` (1)
 
 `store`
 
-* 結合先 `store` 注文項目に関連付けられたコマースストアに関連する詳細を返す新しい列を作成するためのテーブル。
+* 結合先 `store` 注文項目に関連付けられたコマースストアに関連する詳細を返す列を作成するテーブル。
    * パス： `sales_order_item.store_id` （多数） => `store.store_id` (1)

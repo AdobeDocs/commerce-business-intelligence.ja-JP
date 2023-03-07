@@ -1,10 +1,10 @@
 ---
 title: 全期間値 (LTV) 分析（基本）
-description: 分析を作成して、現在の顧客のライフタイム値を把握し、注文件数が増えるにつれてライフタイム値が増加する方法を予測する方法を説明します。
+description: 分析を作成して、現在の顧客のライフタイム値を把握し、より多くの注文でライフタイム値が増加する方法を予測する方法を説明します。
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 顧客がより多くの注文をする際に、顧客のライフタイム値を予測することは、あらゆる規模のあらゆるビジネスの最も重要な側面の 1 つです。
 
-次に、現在の顧客のライフタイム値を把握し、より多くの注文でライフタイム値が増加する方法を予測するための分析を作成する手順を示します。
+次に、現在の顧客のライフタイム値を把握し、より多くの注文でライフタイム値がどの程度増加するかを予測するための分析を作成する手順を示します。
 
 ![期待されるライフタイム値](../../assets/expected_ltv_720.png)
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->オン **[!UICONTROL Time Period:]**&#x200B;を指定する場合、各レポートの期間は `All-time`. 分析のニーズに合わせて自由に変更できます。 このダッシュボードのすべてのレポートは、次のように同じ期間に対応することをお勧めします。 `All time`, `Year-to-date`または `Last 365 days`.
+>オン **[!UICONTROL Time Period:]**&#x200B;を指定する場合、各レポートの期間は `All-time`. 分析のニーズに合わせて自由に変更できます。 Adobeでは、このダッシュボード上のすべてのレポートが、次のように同じ期間に対応していることを推奨します。 `All time`, `Year-to-date`または `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
@@ -88,7 +88,7 @@ ht-degree: 0%
       [!UICONTROL グラフの種類]: `Line`
    >[!NOTE]
    >
-   >すべての値を `Customer's lifetime number of orders`ではなく、新規顧客の数が少ない時点を見て、各顧客の全期間注文額をその時点に手動で追加します。 例えば、1 回の注文で 200 人の顧客、2 回に 75 人、3 回に 15 人、4 回に 3 人の顧客がある場合、 *1、2、3*.
+   >すべての値を `Customer's lifetime number of orders`. 代わりに、新規顧客の数が少ない数に達した時点を見て、各顧客の全期間の注文数値をその時点に手動で追加します。 例えば、1 回の注文で 200 人の顧客、2 回に 75 人、3 回に 15 人、4 回に 3 人の顧客がある場合、 *1、2、3*.
 
 * 既存の [!UICONTROL Avg customer lifetime revenue by cohort] レポート。
 

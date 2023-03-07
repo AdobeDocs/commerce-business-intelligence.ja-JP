@@ -2,16 +2,16 @@
 title: 非日付ベースのコホートのコホートReport Builder
 description: 類似のアクティビティまたは属性でユーザーをグループ化する方法を説明します。
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
 
 # `Cohort Report Builder for Non-Date-Based Cohorts`
 
-アドビの [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) は、時間の経過と共に様々なユーザーサブセットがどのように動作するかを商人が調べるのに役立ちました。 以前は、 `Cohort Report Builder` は、主に、共通の `cohort date` （例えば、特定の月に初めて購入したすべての顧客のセット）。 この `Non-Date Based Cohort` 機能を使用すると、類似のアクティビティや属性でユーザーをグループ化できます。 この機能の使用例をいくつか見てみましょう。
+この [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) は、時間の経過と共に様々なユーザーサブセットがどのように動作するかを商人が調べるのに役立ちました。 以前は、 `Cohort Report Builder` は、共通のユーザーのグループ化用に最適化されています `cohort date` （例えば、特定の月に初めて購入したすべての顧客のセット）。 この `Non-Date Based Cohort` 機能を使用すると、類似のアクティビティや属性でユーザーをグループ化できます。 この機能の使用例をいくつか見てみましょう。
 
 ## 使用例
 
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 ### 指標の追加
 
-これで、 `Report Builder`分析を実行する指標を追加します ( 例： `Revenue` または `Orders`) をクリックします。
+これで、 `Report Builder`に値を入力する場合は、分析を実行する指標を追加します ( 例： `Revenue` または `Orders`) をクリックします。
 
 >[!NOTE]
 >
->ネイティブ [!DNL Google Analytics] 指標は `Cohort Report Builder`. この例の目標は、異なる GA ソースから獲得したファーストオーダー顧客の売上高の推移を見ることです。
+>ネイティブ [!DNL Google Analytics] 指標は `Cohort Report Builder`. この例の目標は、様々な GA ソースから獲得したファーストオーダー顧客の売上高の推移を見ることです。
 
 ### 切り替え `Metric View` から `Cohort`
 
@@ -55,11 +55,11 @@ ht-degree: 0%
 
 #### 1.グループ化 `cohorts`
 
-`Cohorts` は、動作特性別にグループ化されています ( この例では `Customer's first order GA source`. ここで使用できるオプションは、 `groupable` を参照してください。
+`Cohorts` は、動作特性別にグループ化されています ( この例では `Customer's first order GA source`. ここで使用できるオプションは、既に `groupable` を参照してください。
 
 #### 2.コホートの選択
 
-指定した特性のすべての結果を表示するオプションがあります。 この結果、 `cohorts`を選択すると、特定の `cohorts` ( これは、 `Customer's first order GA source`) をクリックします。
+指定した特性のすべての結果を表示できます。 これは多くの結果を招く可能性があるので `cohorts`を選択すると、特定の `cohorts` ( これは、 `Customer's first order GA source`) をクリックします。
 
 ![コホートグループ](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
 
@@ -73,11 +73,11 @@ ht-degree: 0%
 
 #### 5. `Time range after cohort occurrence`
 
-次の項目を表示しますか： `cohorts` 月別、週別、年別に ここで選択を行います。 このセクションの下で、 `time range` 後 `cohort action timestamp` が発生しました。 例えば、アクション期間中に最初の注文をした顧客の 12 か月分のデータが表示されます。
+次の項目を表示しますか： `cohorts` 月別、週別、年別に ここで選択を行います。 このセクションの下で、 `time range` 後 `cohort action timestamp` が発生しました。 例えば、この例では、アクション期間内に最初の注文をした顧客の 12 ヶ月分のデータが表示されます。
 
 ![コホート — 最初のアクション — 時間範囲](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 ### その他のメモ
 
-* [!UICONTROL Filters]:を `Standard` および `Cohort` ビュー
+* [!UICONTROL Filters]:を切り替えても、指標はそのまま残ります。 `Standard` および `Cohort` ビュー
 * 詳しくは、 [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).

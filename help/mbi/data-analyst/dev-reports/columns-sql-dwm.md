@@ -2,16 +2,16 @@
 title: SQL とData Warehouse・マネージャの違い
 description: SQL とData Warehouse・マネージャの違いを説明します。
 exl-id: 31dd7a04-5c03-4399-b67e-f51703eb9fea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # SQL とData Warehouse・マネージャの違い
 
-列には、 [SQLReport Builder](../dev-reports/sql-rpt-bldr.md) また、 [Data Warehouse管理](../data-warehouse-mgr/creating-calculated-columns.md):1 つは更新サイクルに依存し、もう 1 つはアカウントでの列の保存方法です。
+列には、 [SQLReport Builder](../dev-reports/sql-rpt-bldr.md) また、 [Data Warehouse管理](../data-warehouse-mgr/creating-calculated-columns.md). 1 つは更新サイクルへの依存性で、もう 1 つはアカウントでの列の保存方法です。
 
 ## 列 `SQL Report Builder`
 

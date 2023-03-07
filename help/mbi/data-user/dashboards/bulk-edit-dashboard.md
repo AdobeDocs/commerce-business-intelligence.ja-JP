@@ -2,9 +2,9 @@
 title: ダッシュボードでのグラフの一括編集
 description: の一括編集機能の使用方法を説明します。 [!DNL MBI].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->多数のレポートに変更を加える場合、更新プロセスに少し時間がかかる場合があります。
+>多数のレポートを変更する場合は、更新プロセスに少し時間がかかる可能性があります。
 
 ## 使用 `Find/Replace` {#findreplace}
 

@@ -2,9 +2,9 @@
 title: 直接接続を介した MySQL の接続
 description: 接続方法の詳細 [!DNL MongoDB] 直接接続を介して。
 exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->次を使用することを強くお勧めします。 [SSH](../integrations/mysql-via-ssh-tunnel.md) または、データを保護するための他の暗号化の形式を使用できます。 これがオプションでない場合、直接接続できます [!DNL MBI] をデータベースに追加する場合は、この記事の手順を使用します。
+>Adobeでは、 [SSH](../integrations/mysql-via-ssh-tunnel.md) または、データを保護するための他の暗号化の形式を使用できます。 これがオプションでない場合、直接接続できます [!DNL MBI] をデータベースに追加する場合は、この記事の手順を使用します。
 
 この記事では、MySQL データベースを [!DNL MBI]. これらの設定は、MySQL を使用する Commerce またはその他の e コマースデータベースでも使用できます。
 
@@ -57,9 +57,9 @@ ht-degree: 0%
 * `Username`:のユーザー名 [!DNL MBI] MySQL ユーザー
 * `Password`:のパスワード [!DNL MBI] MySQL ユーザー
 * `Port`:サーバー上の MySQL のポート (`3306` （デフォルト）
-* `Host`:デフォルトでは、localhost になります。 一般的に、MySQL サーバーのバインドアドレスの値になります（デフォルトはです）。 `127.0.0.1 (localhost)`は、一部のローカルネットワークアドレス ( 例： `192.168.0.1`) またはサーバーのパブリック IP アドレス。
+* `Host`:デフォルトでは、localhost です。 一般的に、MySQL サーバーのバインドアドレスの値です。デフォルトではですが、 `127.0.0.1 (localhost)`は、一部のローカルネットワークアドレス ( 例： `192.168.0.1`) またはサーバーのパブリック IP アドレス。
 
-   この値は、 `my.cnf` ファイル ( 通常は `/etc/my.cnf`) を `\[mysqld\]`. バインドアドレス行がそのファイルでコメントアウトされている場合、外部接続の試行からサーバーが保護されます。
+   この値は、 `my.cnf` 次の場所にあるファイル： `/etc/my.cnf`) を `\[mysqld\]`. バインドアドレス行がそのファイルでコメントアウトされている場合、外部接続の試行からサーバーが保護されます。
 
 それだ！ 完了したら、「 **[!UICONTROL Save & Test]** をクリックして設定を完了します。
 

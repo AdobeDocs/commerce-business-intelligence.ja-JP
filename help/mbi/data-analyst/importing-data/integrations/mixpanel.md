@@ -1,10 +1,10 @@
 ---
 title: Mixpanel を接続
-description: ユーザーが Web サイトやアプリをどのようにナビゲートし利用しているかを分析する方法を学びます。
+description: ユーザーが Web サイトやアプリをどのようにナビゲートし、使用しているかを分析する方法について説明します。
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../../assets/Mixpanel_logo.png)
 
-を使用 [!DNL Mixpanel]を使用すると、ユーザーがどのように web サイトやアプリをナビゲートし、利用しているかを分析できます。 ユーザーの行動データを詳しく見ると、よりスマートな設計と開発の意思決定がおこなわれ、製品全体がより良くなります。 接続中 [!DNL Mixpanel] から [!DNL MBI] では、ユーザーの行動と、その行動が売上高にどのように影響するかを分析できます。
+を使用 [!DNL Mixpanel]を使用すると、ユーザーが web サイトやアプリをどのようにナビゲートし、使用しているかを分析できます。 ユーザーの行動データを詳しく見ると、よりスマートな設計と開発の意思決定がおこなわれ、製品全体がより良くなります。 接続中 [!DNL Mixpanel] から [!DNL MBI] では、ユーザーの行動と、その行動が売上高にどのように影響するかを分析できます。
 
 接続 [!DNL Mixpanel] データを [!DNL MBI] 簡単な 3 ステップのプロセス：
 
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 ## を開く [!DNL Mixpanel] 資格情報ページ {#stepone}
 
-まず始めましょう。
+はじめに：
 
 1. 次に移動： `Connections` 下のページ **[!DNL Manage Data** > **Connections]**.
 1. クリック **[!UICONTROL Add a New Source]**( 画面の右側、上の `Data Sources` 表。
-1. 次をクリック： [!DNL Mixpanel] アイコンが表示され、認証情報ページが開きます。
+1. 次をクリック： [!DNL Mixpanel] アイコンと資格情報ページが開きます。
 
 このページを開いたまま、 [!DNL Mixpanel] アカウント
 

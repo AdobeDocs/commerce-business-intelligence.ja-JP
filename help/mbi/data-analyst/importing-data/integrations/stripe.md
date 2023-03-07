@@ -1,10 +1,10 @@
 ---
 title: ストライプを接続
-description: ビジネスの支払いと請求書データを管理し、追跡する方法を学びます。
+description: ビジネスの支払いと請求書データを管理および追跡する方法を説明します。
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../../assets/stripe-logo.png)
 
-[!DNL Stripe] では、ビジネスの支払いと請求書のデータを管理し、追跡できます。 接続 [!DNL Stripe] アカウント [!DNL MBI] は、簡単な 2 段階のプロセスです。
+[!DNL Stripe] では、ビジネスの支払いと請求書データを管理および追跡できます。 接続 [!DNL Stripe] アカウント [!DNL MBI] は、簡単な 2 段階のプロセスです。
 
 1. [追加 [!DNL Stripe] を [!DNL MBI]](#stepone)
 1. [許可 [!DNL MBI] の [!DNL Stripe] データ](#steptwo)

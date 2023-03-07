@@ -2,9 +2,9 @@
 title: 財務データのフォーマットとインポート
 description: 財務データのフォーマットとインポートの方法を説明します。
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 このトピックでは、分析用に財務データをインポートする最適な方法について説明します。 [!DNL MBI].
 
-2 次元のクロスタブデータテーブルは、多くの場合、財務データに使用される形式です。 列と行の両方のラベルで分類された値を使用すると、このタイプのレイアウトは、人間の目やスプレッドシートツールで簡単に表示できますが、データベースに対してはあまりわかりにくくなります。
+2 次元のクロスタブデータテーブルは、多くの場合、財務データに使用される形式です。 列と行の両方のラベルで分類された値を使用すると、このタイプのレイアウトは、人間の目やスプレッドシートツールで簡単に表示できますが、データベースにはわかりにくくなります。
 
 ![](../../mbi/assets/crosstab.png)
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 Excel のピボットテーブルを使用して 2 次元テーブルを統合するには、次の手順に従います。
 
 1. 2 次元のデータテーブルを含んだファイルを開きます。
-1. ピボットテーブルウィザードを開きます。 Windows では、ショートカットは次のようになります。 `Alt-D`. Mac OSX で、 `Command-Option-P`.
+1. ピボットテーブルウィザードを開きます。 Windows では、ショートカットは次のようになります。 `Alt-D`. Mac OS で、 `Command-Option-P`.
 1. 選択 **[!UICONTROL Multiple consolidated ranges]** をクリックし、 **[!UICONTROL Next]**.
 1. 選択 **[!UICONTROL I will create the page fields]** をクリックし、 **[!UICONTROL Next]**.
 1. ラベルを含む 2 次元テーブルのデータセット全体を選択します。 以下を確認します。 `0` を選択し、「 **[!UICONTROL Next]**.

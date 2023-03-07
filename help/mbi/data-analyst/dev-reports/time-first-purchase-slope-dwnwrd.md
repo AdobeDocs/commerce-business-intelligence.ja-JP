@@ -2,16 +2,16 @@
 title: 初回購入までの平均時間レポート
 description: 平均初回購入時間レポートの使用方法を説明します。
 exl-id: c18734ce-0ae0-4e84-b9d0-eb2c21a5c3a5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 # 初回購入までの平均時間レポート
 
-多くのお客様には、 `Average time to first purchase`：ユーザーのグループ登録日から初回購入日までの平均時間を表示します。 時間が現在に近づくにつれ、データはほぼ常に下方に傾く。
+多くのAdobeのお客様には、 `Average time to first purchase`：ユーザーのグループ登録日から初回購入日までの平均時間を表示します。 時間が現在に近づくにつれ、データはほぼ常に下方に傾く。
 
 ![初回注文までの平均時間](../../assets/average-time-to-first-order.png)
 

@@ -2,9 +2,9 @@
 title: 増分レプリケーションをサポートするためのデータベースの変更
 description: 増分レプリケーションをサポートするためにデータベースを変更する方法を説明します。
 exl-id: c9a38892-6096-4eb5-8a53-35b8b7b083dc
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ ht-degree: 0%
 
 ## 折り返し
 
-テーブルに小さな変更を加えることで、より高速で効率的な増分レプリケーションメソッドを利用できます。ただし、これがまだ不可能な場合は、次の手順を実行できます。 [更新時間を短縮する](../best-practices/reduce-update-cycle-time.md) および [データベースの最適化](../best-practices/opt-db-analysis.md).
+テーブルに小さな変更を加えることで、より高速で効率的な増分レプリケーションメソッドを利用できます。 ただし、これが不可能な場合は、次の手順を実行できます。 [更新時間を短縮する](../best-practices/reduce-update-cycle-time.md) および [データベースの最適化](../best-practices/opt-db-analysis.md).

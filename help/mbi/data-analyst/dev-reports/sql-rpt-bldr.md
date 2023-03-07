@@ -2,9 +2,9 @@
 title: SQLReport Builderの使用
 description: SQLReport Builderの使用方法を学びます。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1461'
 ht-degree: 0%
 
 ---
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者権限](../../administrator/user-management/user-management.md) をクリックし、SQL チャートを作成および編集します。 `Standard` ユーザーは、ダッシュボードでこれらのグラフを並べ替えることができます。 `Read-only` ユーザーは、従来のグラフと同じエクスペリエンスを得ることができます。 さらに、 `Read-only` ユーザーはクエリのテキストにアクセスできません。
+>必要 [管理者権限](../../administrator/user-management/user-management.md) をクリックし、SQL チャートを作成および編集します。 `Standard` ユーザーは、ダッシュボードでこれらのグラフを並べ替えることができます。 `Read-only` ユーザーは、従来のグラフと同じエクスペリエンスを持ちます。 さらに、 `Read-only` ユーザーはクエリのテキストにアクセスできません。
 
 詳しくは、 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) を参照してください。
 
-`SQL`(Structured Query Language) は、データベースとの通信に使用されるプログラミング言語です。 In [!DNL MBI]の場合、SQL を使用して、Data Warehouse からデータをクエリしたり、取得したりします。 ダッシュボード上のレポートを見てみましょう。バックグラウンドで、各レポートは SQL クエリによって実行されます。
+`SQL`(Structured Query Language) は、データベースとの通信に使用されるプログラミング言語です。 In [!DNL MBI]の場合、SQL を使用して、データをクエリまたは取得します。 ダッシュボード上のレポートを確認します。バックグラウンドで、各レポートは SQL クエリによって実行されます。
 
-以下を使用して、 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) data warehouse に直接問い合わせ、結果を表示し、グラフに変換します。 レポートの作成を開始するには、 `SQL Report Builder` 移動して **[!UICONTROL Report Builder** > **SQL Report Builder]**.
+以下を使用して、 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) を使用して、Data Warehouseに直接問い合わせ、結果を表示し、グラフに変換します。 レポートの作成を開始するには、 `SQL Report Builder` 移動して **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
 詳しくは、 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) を参照してください。
 
-この `SQL Report Builder` では、Data Warehouse に直接問い合わせ、結果を表示し、すばやくグラフに変換できます。 SQL を使用してレポートを作成する最善の点は、作成する列を繰り返す更新サイクルを待つ必要がないことです。 結果が正しく表示されない場合は、クエリをすばやく編集し、期待どおりに実行できます。
+この `SQL Report Builder` を使用すると、Data Warehouseに直接問い合わせ、結果を表示し、すばやくグラフに変換できます。 SQL を使用してレポートを作成する最善の点は、作成する列を繰り返す更新サイクルを待つ必要がないことです。 結果が正しく表示されない場合は、クエリをすばやく編集し、期待どおりに実行できます。
 
-この記事では、 `SQL Report Builder`. 使い方がわかったら、ビジュアライゼーションに関する SQL のチュートリアルを確認するか、記述したクエリの一部を最適化してみてください。
+この記事では、 `SQL Report Builder`. 使い方がわかったら、ビジュアライゼーションの SQL チュートリアルを確認するか、記述したクエリの一部を最適化してみてください。
 
-この記事で取り上げる内容の概要を次に示します。
+この記事では、次の内容を説明します。
 
 1. [クエリの作成](#writing)
 
@@ -39,9 +39,9 @@ ht-degree: 0%
 
 ## SQLReport Builderの統合
 
-世界の現在の状態では [[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) は、と共に使用できない唯一の統合です。 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md). この機能は、今後のリリースで追加する予定です。
+世界の現在の状態では [[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) は、と共に使用できない唯一の統合です。 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md). この機能は開発中です。
 
-新しい SQL レポートの作成を開始するには、 **[!UICONTROL Report Builder]** または **[!UICONTROL Add Report]** をクリックします。 内 `Report Picker` 画面、クリック **[!UICONTROL SQL Report Builder]** をクリックして SQL エディタを開きます。
+SQL レポートの作成を開始するには、 **[!UICONTROL Report Builder]** または **[!UICONTROL Add Report]** をクリックします。 内 `Report Picker` 画面、クリック **[!UICONTROL SQL Report Builder]** をクリックして SQL エディタを開きます。
 
 ## はじめに
 
@@ -57,9 +57,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->**SQL レポートの指標** - SQL レポートに指標を挿入すると、 `current definition` 」と入力します。
+>**SQL レポートの指標** - SQL レポートに指標を挿入すると、 `current definition` の値が使用されます。
 
-指標が将来更新される場合、SQL レポート *次の条件を満たさない* 変更が反映されます。 変更を反映させるには、レポートを手動で編集する必要があります。
+指標が将来更新される場合、SQL レポート *次の値と等しくない* 変更が反映されます。 変更を有効にするには、レポートを手動で編集する必要があります。
 
 サイドバーの上部にあるボタンを使用して、テーブルのリストと、 `SQL Report Builder`. リストに何を探しているかが表示されない場合は、サイドバーの上部にある検索バーを使用して検索してみてください。
 
@@ -71,15 +71,15 @@ SQL エディターのサイドバーを使用して、指標、テーブルお�
 >
 >任意 [SELECT 関数](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST)、または PostgreSQL でサポートされるデータを変更しない関数は、SQLReport Builderでサポートされます。 これには、AVG、COUNT、COUNT DISTINCT、MIN/MAX、SUM などが該当しますが、これらに限定されません。
 
-また、JOIN タイプもサポートされていますが、JOIN タイプのコストが最も低いので、INNER JOIN のみを使用することをお勧めします。
+また、JOIN タイプもサポートされていますが、JOIN タイプのコストが最も低いので、Adobeでは INNER JOIN のみを使用することをお勧めします。
 
 ## クエリの実行と結果の表示 {#runquery}
 
-クエリの記述が完了したら、「 **[!UICONTROL Run Query]**. 結果は、SQL エディターの下の表に表示されます。
+クエリの記述が完了したら、「 **[!UICONTROL Run Query]**. 結果は、SQL エディタの下の表に表示されます。
 
 ![クエリを実行し、結果を表示する。](../../assets/SQL_Run_Query.gif)
 
-結果に何か問題があるように見える場合は、問題が発生するまでクエリを編集し、クエリを再実行できます。
+結果に何か問題があるように見える場合は、クエリを編集し、問題が解決するまで再実行できます。
 
 時々、 [エディタの下に EXPLAIN を含むメッセージ](../../best-practices/optimizing-your-sql-queries.md). これらのいずれかが表示される場合は、クエリが実行されておらず、微調整が必要です。
 
@@ -87,7 +87,7 @@ SQL エディターのサイドバーを使用して、指標、テーブルお�
 
 ## ビジュアライゼーションの作成 {#createviz}
 
-クエリ結果を使用してビジュアライゼーションを作成するには、 **[!UICONTROL Chart]** 」タブをクリックします。 `Results` ウィンドウ このタブでは、次の項目を選択します。
+クエリ結果を使用してビジュアライゼーションを作成するには、 **[!UICONTROL Chart]** 」タブをクリックします。 `Results` ウィンドウ このタブで、次を選択します。
 
 * この `Series`または、測定する列（例： ） **販売済みアイテム**.
 * この `Category`または、データのセグメント化に使用する列 ( 例： **獲得ソース**.
@@ -103,7 +103,7 @@ SQL エディターのサイドバーを使用して、指標、テーブルお�
 
 作業内容を保存する前に、レポートに名前を付ける必要があります。 忘れずに [命名に関するベストプラクティスのガイドライン](../../best-practices/naming-elements.md){:target=&quot;_blank&quot;} を選択し、レポートの内容を明確に伝えるものを選択します。
 
-クリック **[!UICONTROL Save]** をクリックし、SQL エディターの右上隅にあるレポートを選択します。 `Type` (`Chart` または `Table`) をクリックします。 まとめるには、レポートの保存先となるダッシュボードを選択し、「 **[!UICONTROL Save to Dashboard]**.
+クリック **[!UICONTROL Save]** をクリックし、SQL エディタの右上隅にあるレポートを選択します。 `Type` (`Chart` または `Table`) をクリックします。 まとめるには、レポートの保存先となるダッシュボードを選択し、「 **[!UICONTROL Save to Dashboard]**.
 
 ![](../../assets/SQL_Save_Report.gif)
 
@@ -111,9 +111,9 @@ SQL エディターのサイドバーを使用して、指標、テーブルお�
 
 #### `SQL Report Builder`
 
-[`The SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) では、Data Warehouse に直接問い合わせ、結果を表示し、それらをレポートにすばやく変換できます。 SQL を使用すると、 [使用できない SQL 関数を使用するには](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) 内 `Visual` または `Cohort` Report Builderを使用して、データをより詳細に制御できます。
+[`The SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) を使用すると、Data Warehouseに直接問い合わせ、結果を表示し、すばやくレポートに変換できます。 SQL を使用すると、 [使用できない SQL 関数を使用するには](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) 内 `Visual` または `Cohort` Report Builderを使用して、データをより詳細に制御できます。
 
-SQL を使用して作成された計算列は更新サイクルに依存しないので、好きなように繰り返し実行し、すぐに結果を確認できます。
+SQL を使用して作成された計算列は、更新サイクルに依存しません。つまり、必要に応じて繰り返し実行し、即座に結果を確認できます。
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ SQL を使用して作成された計算列は更新サイクルに依存しな�
 
 #### データベースと SQL エディタの結果
 
-時間の大部分は、結果の違いは、更新サイクルに起因する可能性があります。 If [!DNL MBI] は、データベースからData Warehouseにデータをレプリケートするプロセス中で、同じクエリを使用している場合でも、異なる結果が表示される場合があります。
+ほとんどの時間、結果の違いは、更新サイクルに起因する可能性があります。 If [!DNL MBI] は、データベースからData Warehouseにデータをレプリケートするプロセス中で、同じクエリを使用している場合でも、異なる結果が表示される場合があります。
 
 接続の問題によって不整合が生じる場合もあります。 次に移動： `Connections` ページをクリック **[!DNL Manage Data** > **Connections]**) を使用してチェックアウトします。問題のデータベース統合にエラーはありますか。 その場合は、 [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en) もう一度動かすために
 
@@ -146,7 +146,7 @@ SQL を使用して作成された計算列は更新サイクルに依存しな�
 
 #### `Report Builder` 対比 `SQL Report Builder`
 
-この `SQL Report Builder` を使用すると、グラフを作成および構造化する際に柔軟性が高まります。例えば、表示する値を選択できます `X` および `Y` 軸 グラフの作成について詳しくは、 `SQL Report Builder`以下をご確認ください。 [SQL クエリからのビジュアライゼーションの作成](../../tutorials/create-visuals-from-sql.md) チュートリアル
+この `SQL Report Builder` を使用すると、グラフを作成および構造化する際に柔軟性が高まります。例えば、表示する値を選択できます `X` および `Y` 軸 グラフの作成について詳しくは、 `SQL Report Builder`、 [SQL クエリからのビジュアライゼーションの作成](../../tutorials/create-visuals-from-sql.md) チュートリアル
 
 #### `Cohort Report Builder` {#cohortrb}
 
@@ -154,12 +154,12 @@ SQL を使用して作成された計算列は更新サイクルに依存しな�
 
 | **これは…に最適です。** | **これは…** |
 |---|---|
-| 中級アナリスト/上級アナリスト | 初心者 — コホートを定義する練習が必要です。 |
-| 経時的な行動トレンドの特定 | 定性分析 — 可能 [完了](../dev-reports/create-qual-cohort-analysis.md)ですが、サポートが必要です。 |
+| 中級アナリスト/上級アナリスト | 初心者 — 練習用のコホートが必要です。 |
+| 経時的な行動トレンドの特定 | 定性分析 — 可能 [完了](../dev-reports/create-qual-cohort-analysis.md)を使用するには、Adobeの支援が必要です。 |
 
 ## 更新サイクル後の問合せの再構築
 
-クエリを再構築する必要はありません。 を使用して作成されたレポート [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) は、従来の `Report Builder`. SQL グラフの更新プロセスはまったく同じです。データが更新されると、グラフの値が再計算され、再表示されます。
+クエリを再構築する必要はありません。 を使用して作成されたレポート [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) は、従来の `Report Builder`. SQL グラフの更新プロセスは同じです。データが更新されると、グラフの値が再計算され、再表示されます。
 
 >[!NOTE]
 >
@@ -171,4 +171,4 @@ SQL を使用して作成された計算列は更新サイクルに依存しな�
 
 ## 折り返し {#wrapup}
 
-もう少し難しいことを試したい場合は、ビジュアライゼーション用に最適化されたクエリを記述してみてはどうですか。 以下をご確認ください。 [SQL クエリからのビジュアライゼーションの作成のチュートリアル](../../tutorials/create-visuals-from-sql.md){:target=&quot;_blank&quot;} をクリックして開始します。
+もう少し難しいことを試したい場合は、ビジュアライゼーション用に最適化されたクエリを記述してみてはどうですか。 以下を確認します。 [SQL クエリからのビジュアライゼーションの作成のチュートリアル](../../tutorials/create-visuals-from-sql.md){:target=&quot;_blank&quot;} をクリックして開始します。

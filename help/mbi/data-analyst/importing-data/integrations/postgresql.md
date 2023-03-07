@@ -2,20 +2,20 @@
 title: SSH トンネルを介した PostgreSQL の接続
 description: PostgreSQL データベースをに接続する方法を説明します。 [!DNL MBI] SSH トンネルを介して送信されます。
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
 
 # 接続 `PostgreSQL` 経由 `SSH` トンネル
 
-次の手順で `PostgreSQL` データベースへ [!DNL MBI] 経由 `SSH tunnel`を使用する場合、あなた（または技術を持っていない場合はチーム）は、次のいくつかの操作を実行する必要があります。
+次の手順で `PostgreSQL` データベースへ [!DNL MBI] 経由 `SSH tunnel`を使用する場合は、自分（または技術を持っていない場合はチーム）が次のいくつかの操作を実行する必要があります。
 
 1. [の取得 [!DNL MBI] 公開鍵](#retrieve)
 1. [次へのアクセスを許可： [!DNL MBI] IP アドレス](#allowlist)
-1. [用の Linux ユーザーの作成 [!DNL MBI] ](#linux)
+1. [Linux の作成](#linux)
 1. [用の Postgres ユーザーの作成 [!DNL MBI] ](#postgres)
 1. [MBI に接続とユーザー情報を入力](#finish)
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## の取得 [!DNL MBI] `public key` {#retrieve}
 
-この `public key` は、 [!DNL MBI] Linux ユーザー。 次の節では、ユーザーを作成し、キーをインポートします。
+この `public key` は、 [!DNL MBI] Linux®ユーザー。 次の節では、ユーザーを作成し、キーをインポートします。
 
 1. に移動します。 **[!UICONTROL Manage Data** > **Connections]** をクリックし、 **[!UICONTROL Add a Data Source]**.
 1. 次をクリック： `PostgreSQL` アイコン
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 次へのアクセスを許可： [!DNL MBI] IP アドレス {#allowlist}
 
-接続が成功するには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 それは `54.88.76.97/32`ですが、それはまた、 `PostgreSQL` 認証情報ページ。 上のGIFの青いボックスが見える それだ！
+接続が成功するには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 これは `54.88.76.97/32`ですが、それはまた、 `PostgreSQL` 認証情報ページ。 上のGIFの青いボックスが見える それだ！
 
 ## の作成 `Linux` のユーザー [!DNL MBI] {#linux}
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->この `sshd\_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL MBI]. このような場合、 `AllowUsers` rjmetric ユーザーにサーバーへのアクセスを許可する。
+>この `sshd\_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合は、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL MBI]. このような場合、 `AllowUsers` rjmetric ユーザーにサーバーへのアクセスを許可する。
 
 ## の作成 [!DNL MBI] Postgres ユーザー {#postgres}
 
@@ -80,7 +80,7 @@ ht-degree: 0%
     GRANT CONNECT ON DATABASE <database name> TO rjmetric WITH PASSWORD <secure password>;GRANT USAGE ON SCHEMA <schema name> TO rjmetric;GRANT SELECT ON ALL TABLES IN SCHEMA <schema name> TO rjmetric;ALTER DEFAULT PRIVILEGES IN SCHEMA <schema name> GRANT SELECT ON TABLES TO rjmetric;
 ```
 
-置換 `secure password` SSH パスワードとは異なるパスワードを使用できます。 さらに、必ず `database name` および `schema name` を、データベース内の適切な名前に置き換えます。
+置換 `secure password` セキュリティで保護された独自のパスワードを使用します。SSH パスワードとは異なる場合があります。 また、 `database name` および `schema name` を、データベース内の適切な名前に置き換えます。
 
 複数のデータベースまたはスキーマを接続する場合は、必要に応じてこのプロセスを繰り返します。
 

@@ -2,9 +2,9 @@
 title: ダッシュボードにグラフを追加
 description: 「レポートの追加」機能を使用してグラフをダッシュボードに追加する方法を説明します。
 exl-id: 4a4f14c3-a6ab-4abc-9451-2a0f2fcf06a2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '120'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->クリック **[!UICONTROL Add Report]** は、クリックとは異なります **[!UICONTROL Save As]** をクリックします。 `Add Report` はグラフをダッシュボードに追加するだけで、 `Save As` 既存のグラフの新しいバージョンを作成します。
+>クリック **[!UICONTROL Add Report]** は、クリックとは異なります **[!UICONTROL Save As]** をクリックします。 `Add Report` はグラフをダッシュボードに追加するだけで、 `Save As` 既存のグラフのバージョンを作成します。
 
 ## グラフを追加
 

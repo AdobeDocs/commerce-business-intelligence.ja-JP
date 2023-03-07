@@ -2,38 +2,36 @@
 title: VPN 経由でデータベースに接続
 description: SSH トンネルではなく VPN 経由でデータベースに接続する方法を説明します。
 exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # VPN 経由でデータベースに接続
 
-SSH トンネルを使用してデータベースを接続することをお勧めしますが、暗号化された VPN 接続を使用して、データベースのセキュリティを確保することもできます。 A `VPN` は、任意のデータベース統合に使用でき、物事を簡単にするために、プロセスは `SSH tunnel`:
+Adobeでは、SSH トンネルを使用してデータベースに接続することを推奨しますが、暗号化された VPN 接続を使用して、セキュリティを確保することもできます。 A `VPN` は、任意のデータベース統合に使用でき、操作を簡単にするために、プロセスは `SSH tunnel`:
 
 1. [の作成 [!DNL MBI] データベースユーザ](#database)
 1. [の作成 [!DNL MBI] VPN ユーザ](#vpn)
 1. [次へのアクセスを許可： [!DNL MBI] IP アドレス](#allowlist)
 1. [MBI に接続と VPN ユーザー情報を入力します](#finish)
 
-データベースの資格情報に加えて、VPN ユーザーの資格情報を入力して、情報をまとめる必要があります。 VPN ユーザーはすべて機能しますが、 [!DNL MBI] ユーザー — アカウント上のユーザーを簡単に追跡できます。
-
-始めましょう。
+データベースの資格情報に加えて、VPN ユーザーが情報をラップするための資格情報を入力する必要があります。 VPN ユーザはすべて機能しますが、Adobeは、 [!DNL MBI] ユーザー — アカウントでのユーザーの追跡が容易になります。
 
 ## 用のデータベースユーザーの作成 [!DNL MBI] {#database}
 
 データベースユーザーを作成するプロセスは、接続するデータベースの種類に応じて異なります。 各データベースタイプの手順を確認するには、以下のリンクをクリックします。
 
-* [Microsoft SQL](../integrations/microsoft-sql-server.md)
+* [Microsoft](../integrations/microsoft-sql-server.md)
 * [MongoDB](../integrations/databases-via-a-vpn.md)
 * [MySQL](../integrations/mysql-via-a-direct-connection.md)
 * [PostgreSQL](../integrations/postgresql.md)
 
 ## の作成 `VPN` のユーザー [!DNL MBI] {#vpn}
 
-前に述べたように、任意の有効な `VPN` ユーザーは機能しますが、 [!DNL MBI] を使用します。
+前述のように、任意の有効な `VPN` ユーザーは機能しますが、Adobeでは、 [!DNL MBI] を使用します。
 
 ## 次へのアクセスを許可： [!DNL MBI] IP アドレス {#allowlist}
 
@@ -54,7 +52,7 @@ SSH トンネルを使用してデータベースを接続することをお勧�
 * `MongoDB`: `27017`
 * `MySQL`: `3306`
 * `PostgreSQL`: `5432`
-* `Host`:デフォルトでは、localhost になります。 `127.0.0.1`が含まれますが、サーバーのパブリック IP アドレスまたはローカルエリアネットワークアドレスの場合もあります。
+* `Host`:デフォルトでは localhost です。 `127.0.0.1`が含まれますが、サーバーのパブリック IP アドレスまたはローカルエリアネットワークアドレスの場合もあります。
 * `Database Name (optional)`:1 つのデータベースへのアクセスのみを許可する場合は（これはデータベースユーザーの作成手順で指定します）、ここにそのデータベースの名前を入力します。
 
 以下 `Encryption Connection` セクション：

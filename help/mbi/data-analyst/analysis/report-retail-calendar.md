@@ -2,26 +2,26 @@
 title: 小売カレンダーのレポート
 description: 内で4-5-4小売業用カレンダーを使用する構造を設定する方法を説明します [!DNL MBI] アカウント
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
 
 # 小売カレンダーのレポート
 
-この記事では、 [4-5-4小売業用カレンダー](https://nrf.com/resources/4-5-4-calendar) の [!DNL MBI] アカウント Visual Report Builder は、非常に柔軟な時間範囲、間隔、独立した設定を提供します。 また、当社のチームは、お客様のビジネス環境に合わせて週の開始日を変更するお手伝いもできます。 ただし、これらの設定はすべて、従来の月次カレンダーを使用して動作します。
+この記事では、 [4-5-4小売業用カレンダー](https://nrf.com/resources/4-5-4-calendar) の [!DNL MBI] アカウント Visual Report Builder は、非常に柔軟な時間範囲、間隔、独立した設定を提供します。 ただし、これらの設定はすべて、従来の月次カレンダーを使用して動作します。
 
-多くのお客様は、カレンダーを小売または会計日に変更しているので、以下の手順では、データを扱い、小売日を使用してレポートを作成する方法を説明します。 以下の手順は4-5-4小売業用カレンダーを参照しますが、財務用かカスタムの期間かに関わらず、チームが使用する特定のカレンダーに対して変更できます。
+多くのお客様がカレンダーを変更して小売または会計日を使用するので、次の手順では、データを使用し、小売日を使用してレポートを作成する方法を示します。 以下の手順は4-5-4小売業用カレンダーを参照していますが、財務用かカスタムの期間かに関わらず、チームが使用する特定のカレンダーに対して変更できます。
 
-使用を開始する前に、 [ファイルアップローダ](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) そして、長くしてあることを確認します。 `.csv` ファイルを作成し、日付を将来の日付にプッシュするだけでなく、すべての履歴データを対象にします。
+使い始める前に、 [ファイルアップローダ](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) そして、長くしてあることを確認します。 `.csv` ファイル。 これにより、日付はすべての履歴データをカバーし、日付を将来の日付にプッシュします。
 
 この分析に含まれる内容 [高度な計算列](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## はじめに
 
-以下が可能です。 [ダウンロード](../../assets/454-calendar.csv) a `.csv` 2014 年～2017 年の4-5-4小売年度用カレンダーのバージョン。 内部の小売カレンダーに従ってこのファイルを調整し、履歴および現在の期間に対応するように日付範囲を拡張する必要が生じる場合があります。 ファイルをダウンロードした後、ファイルアップローダを使用して、 [!DNL MBI] data warehouse を使用します。 変更されていないバージョンの4-5-4小売業用カレンダーを使用している場合は、このテーブルのフィールドの構造とデータ型が次のものと一致していることを確認してください。
+以下が可能です。 [ダウンロード](../../assets/454-calendar.csv) a `.csv` 2014 年～2017 年の4-5-4小売年度用カレンダーのバージョン。 内部の小売業用カレンダーに従ってこのファイルを調整し、履歴と現在の期間に対応するように日付範囲を拡張する必要が生じる場合があります。 ファイルをダウンロードした後、ファイルアップローダを使用して、 [!DNL MBI] Data Warehouse。 変更されていないバージョンの4-5-4小売業用カレンダーを使用している場合は、このテーブルのフィールドの構造とデータ型が次のものと一致していることを確認してください。
 
 | 列名 | 列のデータタイプ | プライマリキー |
 | --- | --- | --- |
@@ -33,7 +33,7 @@ ht-degree: 0%
 | `Month Name Retail` | `Text` （最大 255 文字） | `No` |
 | `Week Number of Month Retail` | `Whole Number` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 作成する列
 
@@ -92,7 +92,7 @@ ht-degree: 0%
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
       * パス —
          * [!UICONTROL Many]:sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00):00:00
-         * [!UICONTROL One]：小売業用カレンダー.Date Retai
+         * [!UICONTROL One]:小売業用カレンダー。日付 — 小売
       * を選択します。 [!UICONTROL table]: `Retail Calendar`
       * を選択します。 [!UICONTROL column]: `Week Retail`
    * **作成日\_at（小売月）**
@@ -199,8 +199,8 @@ ht-degree: 0%
 
 ## 次の手順
 
-上記では、 `sales\_order` テーブル ( 例：`Revenue` および `Orders`を参照 ) できますが、任意のテーブルに作成された指標の小売カレンダーに対応するように拡張することもできます。 唯一の要件は、このテーブルに、小売カレンダーテーブルへの結合に使用できる有効な datetime フィールドがあることです。
+上記では、 `sales\_order` テーブル ( `Revenue` または `Orders`) をクリックします。 また、任意のテーブルに作成された指標の小売カレンダーをサポートするように拡張することもできます。 唯一の要件は、このテーブルに、小売カレンダーテーブルへの結合に使用できる有効な datetime フィールドがあることです。
 
-例えば、4-5-4小売業用カレンダーに顧客レベルの指標を表示するには、新しい `Same Table` 計算 `customer\_entity` テーブル、次に類似 `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` 上記の説明。 その後、この列を使用して、 `One to Many` JOINED\_COLUMN の計算 ( `Created_at (retail year)` および `Include in previous retail year? (Yes/No)` ～に加わることで `customer\_entity` テーブルから `Retail Calendar` 表。
+例えば、4-5-4の小売カレンダーに顧客レベルの指標を表示するには、 `Same Table` 計算 `customer\_entity` テーブル、次に類似 `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` 上記の説明。 この列を使用して、 `One to Many` JOINED\_COLUMN の計算 ( `Created_at (retail year)` および `Include in previous retail year? (Yes/No)` ～に加わることで `customer\_entity` テーブルから `Retail Calendar` 表。
 
 忘れずに [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に

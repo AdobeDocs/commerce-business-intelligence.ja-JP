@@ -2,16 +2,16 @@
 title: 生データを書き出し
 description: レコードを [!DNL MBI] Data Warehouseを参照して、ダッシュボードの機能を詳しく確認してください。
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
 
 # 生データを書き出し
 
-生データのエクスポートを使用して、 [!DNL MBI] Data Warehouseを参照して、ダッシュボードの機能を詳しく確認してください。 また、生データの書き出しは [データの相違を正確に示す](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
+生データのエクスポートを使用して、 [!DNL MBI] Data Warehouseを参照して、ダッシュボードの機能を詳しく確認してください。 また、生データの書き出しは、 [データの相違を正確に示す](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
 
 生データのエクスポートでは、関連する指標の正規化および事前集計を解除して生成された追加の列およびディメンションにアクセスできます。 例： `User's first order date` は、 [!DNL MBI]の代わりに使用できます。
 
@@ -27,13 +27,13 @@ ht-degree: 0%
 
 ### テーブルレベルでのエクスポート `Manage Data` タブ
 
-からテーブルをエクスポートする場合 `Manage Data` タブをクリックし、 [管理者](../administrator/user-management/user-management.md) 権限。
+からテーブルをエクスポートする場合 `Manage Data` タブ、 [管理者](../administrator/user-management/user-management.md) 権限。
 
 1. クリック **[!UICONTROL Manage Data** > **&#x200B;データを書き出し&#x200B;**> **生データの書き出し]** をクリックして開始します。
-1. 次の項目が表示されます。 `Export List` 最近作成したデータの書き出し（存在する場合） クリック **[!UICONTROL Add Export]** をクリックして、新しいエクスポートを作成します。
+1. 表示される `Export List` 最近作成したデータの書き出し（存在する場合） クリック **[!UICONTROL Add Export]** エクスポートを作成します。
 1. この `New Raw Data Export` ダイアログが表示されます。 ここでは、列とフィルターを選択または選択解除することで、エクスポートをカスタマイズできます。
 
-   * `Table` - `Table` field は、データの書き出し元のテーブルを選択します。 デフォルトでは、これには移動先のテーブルが表示されます。
+   * `Table` - `Table` field データのエクスポート元のテーブルを選択します。 デフォルトでは、ナビゲート先のテーブルが表示されます。
    * `Export Name`  — このフィールドに、エクスポートの名前を入力します。 例： `Philadelphia - Daily Revenue`.
    * `Available Columns`  — このフィールドには、エクスポートに含めることができる列（ディメンション）がデータベースに表示されます。 列を追加するには、列の名前をクリックします。
    * `Selected Columns`  — このフィールドには、現在エクスポートに含まれている列（ディメンション）が一覧表示されます。 列を削除するには、その名前をクリックします。
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 1. 終了したら、 **[!UICONTROL Export Data]**.
 
-グラフレベルでプロセス全体を見てみましょう。
+グラフレベルでプロセス全体を確認します。
 
 ![](../assets/Chart-level_export.gif)
 

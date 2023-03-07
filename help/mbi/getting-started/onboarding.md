@@ -2,16 +2,16 @@
 title: オンボーディング
 description: オンボーディングについて説明します。
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
 # オンボーディング
 
-以下に関するオンボーディングに関する質問： `store` および `database` 設定により、レポートが正しく設定されていることを確認します。 これらの回答を活用して、お客様の店舗の設定に合わせて適切にカスタマイズされたレポートを配信します。
+以下に関するオンボーディングに関する質問： `store` および `database` を設定することで、レポートが正しく設定されていることを確認します。 Adobeは、これらの回答を使用して、お客様の店舗の設定に合わせて正確にカスタマイズされたレポートを提供します。
 
 ## ストア設定
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 - *使用する Commerce のバージョンを教えてください。* - `currency` お客様の店が運営する
 
-- *あなたの店は EU に本拠を置いていますか？*  — 答えた場合 `Yes` この質問に対しては、GDPR に準拠して、お客様のData Warehouseとすべてのデータを欧州連合でホストします。
+- *あなたの店は EU に本拠を置いていますか？*  — 答えた場合 `Yes` この質問に対して、Adobeは、GDPR に準拠して、Data Warehouseと EU 内のすべてのデータをホストします。
 
 ## データベース設定
 

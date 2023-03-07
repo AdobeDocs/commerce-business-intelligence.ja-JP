@@ -2,9 +2,9 @@
 title: 年別、月別、週別のレポート
 description: 経時的なトレンドの確認方法と、比較する期間のパースペクティブの変更方法を説明します。
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 
 ![](../../assets/Wow__mom__yoy.png)
 
-開始する前に、より詳細に分析を行うためのパースペクティブについて理解しておく必要があります [ここ](../../tutorials/using-visual-report-builder.md) 独立した時間オプション [ここ](../../tutorials/time-options-visual-rpt-bldr.md).
+開始する前に、より詳細に分析を行うためのパースペクティブについて理解しておく必要があります [ここ](../../tutorials/using-visual-report-builder.md) および独立時間オプション [ここ](../../tutorials/time-options-visual-rpt-bldr.md).
 
 この分析に含まれる内容 [高度な計算列](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## 計算列
 
 * **`Sales_flat_order`** 表
-* **元のアーキテクチャ：** 以下の列は、アナリストによって、 `[YoY WoW MoM ANALYSIS]` チケット
+* **元のアーキテクチャ：** 以下の列は、 `[YoY WoW MoM ANALYSIS]` チケット
 * `created_at (month-day)`
 * `created_at (month)`
 * `created_at (day of the month)`
@@ -34,11 +34,11 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * `created_at (hour of the day)`
 
 * **新しいアーキテクチャ：** 次に、この計算の作成方法の例を示す SQL を示します
-   * `created_at (month-day)` [!UICONTROL Calculation]:: **to_char(A, &#39;mm-dd&#39;)**
+   * `created_at (month-day)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-dd&#39;)**
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]:: **to_char(A, &#39;hh24&#39;)**
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
 
       ![](../../assets/new-arch-create-calc.png)
 
@@ -120,4 +120,4 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 
    [!UICONTROL Chart Type]: `Line`
 
-すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 最終的な結果は、このページの上部にある画像のように見える場合があります。
+すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、このページの上部にある画像のようになります。

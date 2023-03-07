@@ -1,19 +1,19 @@
 ---
 title: ゲストによる注文
-description: ゲストによる注文がデータに与える影響と、お客様のデータ内のゲストによる注文を適切に考慮するために必要なオプションについて説明します [!DNL MBI] data warehouse を使用します。
+description: ゲストによる注文がデータに与える影響と、お客様のデータ内のゲストによる注文を適切に考慮するために必要なオプションについて説明します [!DNL MBI] Data Warehouse。
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
 
 # ゲストによる注文
 
-注文を確認中に、多数の注文に気づいた場合 `customer\_id` 値が null であるか、 `customers` 表に示すように、これは通常、お客様の店舗がゲストによる注文を許可していることを示します。 これは、 `customers` テーブルには、すべての顧客が含まれているとは限りません。
+注文を確認中に、多数の注文に気づいた場合 `customer\_id` 値が null であるか、 `customers` 表に示すように、お客様のストアがゲストによる注文を許可していることを示します。 これは、 `customers` テーブルには、すべての顧客が含まれているとは限りません。
 
-このトピックでは、ゲストによる注文がデータに与える影響と、お客様のデータ内のゲストによる注文を適切に考慮するために必要なオプションについて説明します [!DNL MBI] data warehouse を使用します。
+このトピックでは、ゲストによる注文がデータに与える影響と、お客様のデータ内のゲストによる注文を適切に考慮する必要があるオプションについて説明します [!DNL MBI] Data Warehouse。
 
 ## ゲストによる注文がデータに与える影響
 
@@ -29,13 +29,13 @@ ht-degree: 0%
    >
    >注文をおこなった一意の個人を識別するには、の横に別の一意のユーザー属性が必要です `customer\_id` 注文に添付されています。 通常は、顧客の E メールアドレスが使用されます。
 
-## Data Warehouse 設定でゲスト注文を考慮する方法
+## ゲスト設定でのゲスト注文のData Warehouse方法
 
-通常、アカウントを実装するセールスエンジニアは、データウェアハウスの基盤を構築する際にゲストによる注文を考慮に入れます。
+通常、アカウントを実装するセールスエンジニアは、Data Warehouseの基盤を構築する際にゲストの注文を考慮に入れます。
 
-ゲストによる注文を考慮する最も最適な方法は、 `orders` 表。 この設定では、すべての顧客が持つ一意の顧客 ID（通常、顧客の電子メールが使用されます）を使用します。 これにより、 `customers` 表。 このオプションを選択した場合、少なくとも 1 回購入した顧客のみが顧客レベルのレポートに含まれます。 まだ 1 回の購入を行っていない登録ユーザーは含まれません。 このオプションを使用すると、 `New customer` 指標は、 `orders` 表。
+ゲストによる注文を考慮する最も最適な方法は、 `orders` 表。 この設定では、すべての顧客が持つ一意の顧客 ID（通常、顧客の E メールが使用されます）を使用します。 これにより、 `customers` 表。 このオプションを選択した場合、少なくとも 1 回購入した顧客のみが顧客レベルのレポートに含まれます。 まだ 1 回の購入を行っていない登録ユーザーは含まれません。 このオプションを使用すると、 `New customer` 指標は、 `orders` 表。
 
-君は気づくだろう `Customers we count` このタイプの設定で設定されたフィルターには、次のフィルターが含まれています： `Customer's order number = 1`. これがなぜなのか考えてみましょう
+君は気づくだろう `Customers we count` このタイプの設定で設定されたフィルターには、次のフィルターが含まれています： `Customer's order number = 1`. これがなぜであるかを考えてみましょう。
 
 ![](../../assets/guest-orders-filter-set.png)
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 すべての顧客指標が `orders` ゲストによる注文を考慮するテーブルで、次の条件を満たしていることを確認する必要があります。 `not counting customers twice`. 注文テーブルの ID をカウントする場合は、すべての注文をカウントします。 代わりに、 `orders` テーブルを作成し、フィルターを使用します。 `Customer's order number = 1`に設定した場合、個別の顧客ごとにカウントします `only one time`. これは、 `Customer's lifetime revenue` または `Customer's lifetime number of orders`.
 
-上の画像 2 では、null が表示されています `customer\_ids` 内 `orders` 表。 この `customer\_email` 個別顧客を識別するには、 `erin@test.com` は 3 件の注文をしています。 したがって、 `New customers` 指標 `orders` 次の条件に基づくテーブル：
+上の画像 2 では、null が表示されています `customer\_ids` 内 `orders` 表。 次の `customer\_email` 個別顧客を識別するには、 `erin@test.com` は 3 件の注文をしています。 したがって、 `New customers` 指標 `orders` 次の条件に基づくテーブル：
 
 * `Operation table = orders`
 * `Operation column = id`

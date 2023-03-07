@@ -2,9 +2,9 @@
 title: Zendesk を接続
 description: ヘルプデスクのレポートをに統合する方法を説明します。 [!DNL MBI].
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 1. 次の場合に `Settings` メニュー表示、 `Channels` 」セクションに入力します。 クリック **[!UICONTROL API]** （この節を参照）。
 1. 内 `Token Access` このページの「 」セクションで、「 」の横にあるチェックボックスをクリックします。 `Enabled`. アクティブな API トークンのリストが表示されます。
 1. クリック **[!UICONTROL Add New Token]**.
-1. プロンプトが表示されたら、トークンのラベルを入力します。 次を使用することをお勧めします。 `MBI`したがって、トークンを使用しているアプリケーションは一目でわかります。
+1. プロンプトが表示されたら、トークンのラベルを入力します。 Adobeは、 `MBI`つまり、トークンを使用しているアプリケーションは一目でわかります。
 1. クリック **[!UICONTROL Create]**.
 1. API トークンが作成されます。 このトークンをコピーする。次の手順で使用します。
 

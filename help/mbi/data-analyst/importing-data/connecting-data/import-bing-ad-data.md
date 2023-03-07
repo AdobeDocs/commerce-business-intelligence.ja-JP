@@ -2,9 +2,9 @@
 title: Bing 広告費用データのインポート
 description: Bing 広告費用データの読み込み方法を説明します。 [!DNL MBI] 分析用。
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## [!DNL Bing] 広告エディター
 
-Bing Ads データを書き出すには、Bing Ads Editor をインストールする必要があります。 以下を無料でダウンロードできます： [Bing Ads エディター](https://advertise.bingads.microsoft.com/en-us/bingads-editor).
+Bing Ads データを書き出すには、Bing Ads Editor がインストールされている必要があります。 以下を無料でダウンロードできます： [Bing Ads エディター](https://about.ads.microsoft.com/en-us/solutions/tools/editor).
 
 ## [!DNL Bing] 広告データのエクスポート
 
@@ -24,4 +24,4 @@ Bing Ads データを書き出すには、Bing Ads Editor をインストール�
 1. 内 `Save As` ダイアログボックスで、書き出しファイルを保存するフォルダをクリックします。
 1. 内 `File name` 「 」ボックスで、ファイルエクスポートの名前を選択します。
 1. クリック **[!UICONTROL Save]**.
-1. ファイルのダウンロード後、  [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)お客様に代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。
+1. ファイルのダウンロード後、  [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) を使用して、お客様に代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。

@@ -2,16 +2,20 @@
 title: 最新性、頻度、通貨 (RFM) 分析
 description: 最新性、頻度、および金額のランク付けによって顧客をセグメント化できるダッシュボードを設定する方法を説明します。
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # RFM 分析
 
-この記事では、最新性、頻度、金額のランク付けによって顧客をセグメント化できるダッシュボードを設定する方法を示します。 RFM 分析は、顧客行動を考慮に入れてアウトリーチのセグメント化を決定するマーケティング手法です。 次の 3 つの側面を考慮します。顧客が最近店舗から購入した最新性、顧客が自分から購入した頻度、顧客がどの程度購入したかに関する通貨。
+この記事では、最新性、頻度、および金額のランク付けを使用して顧客をセグメント化できるダッシュボードを設定する方法について説明します。 RFM 分析は、顧客行動を考慮に入れてアウトリーチのセグメント化を決定するマーケティング手法です。 これは、次の 3 つの側面を考慮します。
+
+* 顧客が最近店舗から購入した最新性
+* 購入頻度
+* 顧客がどれくらいの額を支払ったかを示す金額
 
 ![](../../assets/blobid0.png)
 
@@ -19,9 +23,9 @@ RFM 分析は、 [!DNL MBI] 新しいアーキテクチャの計画を立てま�
 
 ## はじめに
 
-最初に、値が 1 のプライマリキーのみを含むファイルをアップロードする必要があります。 これにより、分析に必要な計算列を作成できます。
+最初に、値が 1 のプライマリキーのみを含むファイルをアップロードする必要があります。 これにより、解析に必要な計算列を作成できます。
 
-この [ヘルプセンター記事](../importing-data/connecting-data/using-file-uploader.md) および以下の画像でファイルの形式を設定してください。
+この [ヘルプセンター記事](../importing-data/connecting-data/using-file-uploader.md) および以下の画像を使用して、ファイルの形式を設定します。
 
 ## 計算列
 
@@ -51,7 +55,7 @@ RFM 分析は、 [!DNL MBI] 新しいアーキテクチャの計画を立てま�
 
    [!UICONTROL データ型]: `Integer`
 
-* **カウントの参照** テーブル（数字が「1」のファイル）
+* **カウントの参照** テーブル（数字「1」でアップロードしたファイル）
 * 顧客数
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` または `customer_entity.(input)reference > Count Reference`. `Primary Key`
@@ -196,7 +200,7 @@ RFM 分析は、 [!DNL MBI] 新しいアーキテクチャの計画を立てま�
 
    [!UICONTROL Chart type]: `Table`
 
-* **最新性スコアが 5 回の顧客**
+* **最新性スコアが 5 つある顧客**
 * 指標 `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
@@ -214,7 +218,7 @@ RFM 分析は、 [!DNL MBI] 新しいアーキテクチャの計画を立てま�
 
    [!UICONTROL Chart type]: `Table`
 
-* **最新性スコアが 1 の顧客**
+* **最新性スコアが 1 つの顧客**
 * 指標 `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
@@ -232,4 +236,4 @@ RFM 分析は、 [!DNL MBI] 新しいアーキテクチャの計画を立てま�
 
    [!UICONTROL Chart type]: `Table`
 
-すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 最終結果は上記のサンプルダッシュボードのようになりますが、3 つの生成されたテーブルは、実行できる顧客セグメントのタイプの例に過ぎません。
+すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は上記のサンプルダッシュボードのようになりますが、3 つの生成されたテーブルは、実行できる顧客セグメントのタイプの例に過ぎません。

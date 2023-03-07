@@ -2,9 +2,9 @@
 title: Enterprise_Rma_Item_Entity テーブル
 description: リクエストされた返品から特定の品目に関する情報を分析する方法を説明します。
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ ht-degree: 0%
 |---|---|
 | `entity\_id` | テーブルの一意の ID。 各 `entity\_id` は、返却をリクエストされた項目を表します。 |
 | `rma\_entity\_id` | に関連付けられた外部キー `enterprise\_rma` 表。 |
-| `status` | 品目の返品のステータス。 値には、「received」、「pending」、「authorized」などが含まれます。 このステータスの値は、必ずしも戻り値全体のステータスの値と一致しません。 |
+| `status` | 品目の返品のステータス。 値には、「received」、「pending」、「authorized」などが含まれます。 このステータスの値は、戻り値全体のステータスの値と一致しない場合があります。 |
 | `qty\_requested` | 顧客が返品を要求する数量。 |
 | `qty\_approved` | 返品の承認済数量。 |
-| `qty\_returned` | 実際に返品された数量。 |
+| `qty\_returned` | 返された数量。 |
 | `order\_item\_id` | に関連付けられた外部キー `sales\_flat\_order\_item` 表。 |
 | `product\_sku` | 返される sku。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 共通の計算列
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 | `Item price` | 品目の価格。 |
 | `Return item's total value (qty\_returned * price)` | これは、返される項目の合計金額です。 これは、 `enterprise\_rma` 表。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 一般的な指標
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 | `Number of items returned` | 返される項目の数。 | 工程列：返品数量<br>操作：合計<br>タイムスタンプ列：リクエストされた返却日 |
 | `Returned items' total value` | 返された金額。 | 操作列：返品品目の合計値（返品数量*価格）<br>操作：合計<br>タイムスタンプ列：リクエストされた返却日 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 他のテーブルへの接続
 

@@ -2,40 +2,39 @@
 title: 接続 [!DNL MongoDB] SSH トンネル経由
 description: 接続方法の詳細 [!DNL MongoDB] SSH トンネル経由。
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
 
 # 接続 [!DNL MongoDB] SSH トンネル経由
 
-
-次の手順で [!DNL MongoDB] データベースへ [!DNL MBI] SSH トンネルを通じて、ユーザー（または技術者でない場合はチーム）は、次の操作を行う必要があります。
+次の手順で [!DNL MongoDB] データベースへ [!DNL MBI] SSH トンネルを通じて、ユーザー（または技術者でない場合はチーム）は次の操作を行う必要があります。
 
 1. [の取得 [!DNL MBI] 公開鍵](#retrieve)
 1. [次へのアクセスを許可： [!DNL MBI] IP アドレス](#allowlist)
-1. [MBI 用の Linux ユーザーの作成](#linux)
+1. [Linux の作成](#linux)
 1. [の作成 [!DNL MongoDB] MBI のユーザー](#mongodb)
 1. [接続とユーザー情報をに入力します。 [!DNL MBI]](#finish)
 
 >[!NOTE]
 >
->この設定は技術的な性質上、開発者に繰り返し実行してもらうことをお勧めします。
+>この設定は技術的な性質上、Adobeでは、開発者をループして、これをおこなったことがない場合に役立てることをお勧めします。
 
 ## の取得 [!DNL MBI] 公開鍵 {#retrieve}
 
-この `public key` は、 [!DNL MBI] `Linux` ユーザー。 次の節では、ユーザーを作成し、キーをインポートします。
+この `public key` は、 [!DNL MBI] `Linux` ユーザー。 次の節では、ユーザーの作成とキーの読み込みの手順を説明します。
 
 1. に移動します。 **[!UICONTROL Data** > **Connections]** をクリックし、 **[!UICONTROL Add New Data Source]**.
 1. 次をクリック： [!DNL MONGODB] アイコン
-1. 次の期間の後 [!DNL MongoDB] 認証情報ページが開きます。 `Encrypted` 切り替える `Yes`. これにより、SSH セットアップフォームが表示されます。
+1. 次の期間の後 [!DNL MongoDB] 認証情報ページが開きます。 `Encrypted` 切り替える `Yes`. SSH セットアップフォームが表示されます。
 1. この `public key` はこのフォームの下に配置されています。
 
 このページはチュートリアル全体で開いたままにしておきます。次のセクションで、最後にこのページを開く必要があります。
 
-少し迷ったら、次の操作を行います [!DNL MBI] キーを取得するには：
+少し迷ったら、次の操作を実行します [!DNL MBI] キーを取得するには：
 
 ![RJMetrics 公開鍵の取得](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
 
@@ -49,7 +48,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->この `sshd_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL MBI]. このような場合、 `AllowUsers` 許す `rjmetric` ユーザーがサーバーにアクセスできること。
+>この `sshd_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合は、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL MBI]. このような場合、 `AllowUsers` 許す `rjmetric` ユーザーがサーバーにアクセスできること。
 
 リアルタイム（または頻繁に更新される）データが含まれる限り、実稼動マシンまたはセカンダリマシンにすることができます。 このユーザーは、 [!DNL MongoDB] サーバー。
 
@@ -77,7 +76,7 @@ ht-degree: 0%
 
 ## の作成 [!DNL MBI] [!DNL MongoDB] ユーザー {#mongodb}
 
-[!DNL MongoDB] サーバは 2 つの実行モードを持つ — [1 つは「auth」オプションを持つもの](#auth) `(mongod -- auth)` 一人はいなかった [これはデフォルトの](#default). の作成手順 [!DNL MongoDB] ユーザーは、サーバーが使用しているモードに応じて少し異なるので、続行する前にモードを確認してください。
+[!DNL MongoDB] サーバは 2 つの実行モードを持つ — [1 つは「auth」オプションを持つもの](#auth) `(mongod -- auth)` 一人はいなかった [これはデフォルトの](#default). の作成手順 [!DNL MongoDB] ユーザーは、サーバーが使用しているモードによって異なります。 続行する前に、モードを確認してください。
 
 ### サーバーが `Auth` オプション： {#auth}
 
@@ -87,7 +86,7 @@ ht-degree: 0%
 >
 >使用可能なすべてのデータベースを表示するには、 [!DNL MBI] ユーザーはを実行する権限が必要です `listDatabases.`
 
-このコマンドは [!DNL MBI] ユーザーアクセス `to all databases`:
+このコマンドは、 [!DNL MBI] ユーザーアクセス `to all databases`:
 
 ```bash
     use admin
@@ -101,7 +100,7 @@ ht-degree: 0%
     db.createUser('rjmetric', '< secure password here >', true)
 ```
 
-これにより、次のような応答が印刷されます。
+これにより、次のような応答が出力されます。
 
 ```bash
     {
@@ -114,7 +113,7 @@ ht-degree: 0%
 
 ### サーバーがデフォルトのオプションを使用している場合 {#default}
 
-サーバーが `auth` モード、 [!DNL MongoDB] ユーザー名とパスワードがなくても、サーバーは引き続きアクセス可能です。 ただし、 `mongodb.conf` ファイル `(/etc/mongodb.conf)` には次の行があります。追加しない場合は、サーバーを追加した後で再起動します。
+サーバーが `auth` モード、 [!DNL MongoDB] ユーザー名やパスワードがなくても、サーバーにアクセスできます。 ただし、 `mongodb.conf` ファイル `(/etc/mongodb.conf)` には次の行があります。追加しない場合は、サーバーを追加した後で再起動します。
 
 ```bash
     bind_ip = 127.0.0.1
@@ -138,7 +137,7 @@ ht-degree: 0%
 以下 `SSH Connection` セクション：
 
 * `Remote Address`:SSH で接続するサーバーの IP アドレスまたはホスト名
-* `Username`:この [!DNL MBI] Linux(SSH) ユーザー名 (rjmetric)
+* `Username`:この [!DNL MBI] Linux® (SSH) ユーザー名（rjmetric である必要があります）
 * `SSH Port`:サーバー上の SSH ポート（デフォルトは 22）
 
 それだ！ 完了したら、「 **[!UICONTROL Save Test]** をクリックして設定を完了します。

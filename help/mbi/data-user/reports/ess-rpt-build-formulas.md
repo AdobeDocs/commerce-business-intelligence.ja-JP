@@ -2,9 +2,9 @@
 title: 数式
 description: 数式の使用方法を説明します。
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    * 内 `Enter your Formul` 入力ボックスに、 `A/B`.
 
-      これにより、売上高を新規顧客数で並べた製品で除算します。
+      これにより、売上高が新規顧客数で並べ替えられた製品数で割られます。
 
    * 設定 `Select format` から `123Number`.
 

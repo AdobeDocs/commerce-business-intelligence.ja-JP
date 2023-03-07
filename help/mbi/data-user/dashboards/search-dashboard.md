@@ -2,9 +2,9 @@
 title: ダッシュボードの検索
 description: グローバル検索機能を使用してダッシュボードを検索する方法、および他のユーザーが所有するダッシュボードを検索する方法について説明します。
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
