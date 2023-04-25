@@ -2,9 +2,9 @@
 title: 予想されるGoogle Analyticsデータ
 description: Google Analytics指標の操作について説明します。
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 0e9d30155432a29cf67d29a10646a2971ea0382f
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 接続後 [!DNL Google Analytics] 統合を使用すると、 [!DNL Google Analytics] 指標 *すぐに`Visual Report Builder`*. 次に `Visual Report Builder`をクリックした場合、 **[!UICONTROL Add a Metric]**( [!DNL Google Analytics] プロファイルは、Data Warehouseの指標のすぐ下にドロップダウンに表示されます。
 
 この [!DNL Google Analytics] 統合は *live*  — つまり、 `Report Builder` からデータをリクエスト [!DNL Google Analytics] *即時* レポートに指標を追加する場合。 また、アクセスできる指標は、 [!DNL Google Analytics]を参照し、これらの値が *倉庫に入った* の [!DNL MBI] アカウント — レポートにのみ視覚的に表示されます。
+
++++サポートされる指標とDimension(Google Analytics3 または Universal Analytics)
+
+>[!NOTE]
+>
+>2023 年 7 月 1 日、標準ユニバーサル分析 ([!DNL Google Analytics] 3) プロパティはデータを処理しなくなります。 2023 年 7 月 1 日以降、一定の期間、ユニバーサル分析レポートを表示できるようになります。 ただし、新しいデータは [!DNL Google Analytics] 4 つのプロパティ。
 
 [!DNL Google Analytics] の統合 [!DNL MBI] を使用します。 [!DNL Google Analytics] [コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/)は、次の指標およびディメンションをサポートしています。
 
@@ -143,3 +149,17 @@ ht-degree: 0%
 | `Year` | `ga:year` | `No` |
 
 {style="table-layout:auto"}
+
++++
+
++++サポートされる指標とDimension(Google Analytics4)
+
+[!DNL Google Analytics] の統合 [!DNL MBI] を使用します。 [!DNL Google Analytics] [データ API v1(GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+
+>[!NOTE]
+>
+> MBI は次のディメンションをサポートしていません。 `cohort`, `cohortNthDay`, `cohortNthMonth`、および `cohortNthWeek`.
+>
+>予期しない結果や無意味な結果を避けるには、使用するディメンションと、 `Visual Report Builder`. 次の項目を確認できます。 [GA4Dimensionおよび指標エクスプローラー](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+
++++
