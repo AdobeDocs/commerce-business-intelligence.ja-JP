@@ -2,9 +2,9 @@
 title: MBI
 description: 使用方法を学ぶ [!DNL MBI] Adobe Commerceで使用できる機能です。
 breadcrumb-title: MBI ユーザーガイド
-source-git-commit: 807ad89d38ab6c6dfb05afb3b1b9c09947633efa
+source-git-commit: be09d288755ea32eddf62b1eaf26ce586017320f
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
    - [オンボーディング](getting-started/onboarding.md)
    - [のアクティブ化 [!DNL MBI] アカウント](getting-started/onpremise-activation.md)
    - [ログイン先 [!DNL MBI] アカウント](getting-started/sign-in.md)
+   - [MBI Essentials とMBI Pro](getting-started/essentials-vs-pro.md)
 - 管理者 {#administrator}
    - アカウント管理 {#acct-mgmt}
       - [のメリット [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)
