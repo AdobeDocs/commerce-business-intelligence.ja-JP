@@ -2,20 +2,16 @@
 title: MBI Essentials と Pro
 description: MBI Essentials とMBI Proの違いを学ぶ
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: f358f11586e4b7c44e9192584ea0fdeff5526287
+source-git-commit: 23177d8235987354e17cca72d753b5c4afa0dcc9
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '86'
 ht-degree: 4%
 
 ---
 
 # [!DNL MBI Essentials] vs [!DNL MBI Pro]
 
->[!NOTE]
->
->これは次のアーカイブドキュメントです： [!DNL MBI].
-
-次の表に、Essentials と Pro に含まれる機能を示します。
+レガシーの `Essentials` アカウントと現在の MBI アカウントの違いを確認してください。 Adobeのオファー廃止 `Essentials`.
 
 |  | **`MBI Essentials`** | **`MBI Pro`** |
 |-----|-----|-----|
