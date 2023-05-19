@@ -2,7 +2,7 @@
 title: 繰り返し確率減衰とチャーンの分析
 description: 注文と顧客がチャーンすると予想されるタイミングとの間の時間の経過を把握します。
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 今日の例
 
-一般的な e コマースビジネスの繰り返しの確率減衰を見てみましょう。
+典型的な e コマースビジネスの繰り返しの確率減衰を見てみましょう。
 
 ![注文から数か月後に指定された最初の繰り返し注文確率繰り返し注文確率。](../../assets/Order_probability_reports.png)
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 複数の製品を提供する場合、特定の製品を購入した顧客の行動が、他の顧客と比べて時間の経過と共にどのように異なるのか疑問に思うかもしれません。 詳しく知りたい場合は、 このチュートリアルを調べて、購入した特定の製品に基づく、顧客コホートのライフタイム購入行動を調べます。
 
-このベストプラクティスは、次の URL で提供されます。 [!DNL MBI] データ分析サービス (DAS)。 [サポートに連絡](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 詳しくは、を参照してください。
+このベストプラクティスは、次の URL で提供されます。 [!DNL Adobe Commerce Intelligence] データ分析サービス (DAS)。 [サポートに連絡](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 詳しくは、を参照してください。
 
 ### 関連
 

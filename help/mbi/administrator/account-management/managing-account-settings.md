@@ -2,9 +2,9 @@
 title: アカウント設定の管理
 description: Data Warehouseのアカウント設定をカスタマイズする方法を説明します。
 exl-id: 847d51b1-287e-4c14-b64e-0bd9bfcccedc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >必要 [管理者権限。](../../administrator/user-management/user-management.md)
 
-を [!DNL MBI] アカウントを使用すると、Data Warehouseのアカウント設定をカスタマイズできます。 これらにアクセスするには、任意の画面の右上隅で組織名を選択し、「 」を選択します。 **[!UICONTROL Account Settings]** をドロップダウンから選択します。
+を [!DNL Commerce Intelligence] アカウントを使用すると、Data Warehouseのアカウント設定をカスタマイズできます。 これらにアクセスするには、任意の画面の右上隅で組織名を選択し、「 」を選択します。 **[!UICONTROL Account Settings]** をドロップダウンから選択します。
 
 * **[!UICONTROL Client Name:]** この設定は、すべてのダッシュボードとアカウント全体の他の場所の右上隅に表示されます。 変更する場合 **[!UICONTROL "Vandelay Industries Co., Ltd]** ただの **[!UICONTROL "Vandelay]**&#x200B;の場合は、ここで設定を行います。
 

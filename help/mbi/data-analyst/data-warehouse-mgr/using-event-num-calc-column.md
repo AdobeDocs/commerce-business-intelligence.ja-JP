@@ -2,7 +2,7 @@
 title: イベント番号計算列
 description: イベント番号計算列の目的と用途について説明します。
 exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 **説明**
 
-この `Event Number` 列タイプ：特定の **イベント所有者**、 `customer` または `user`. SQL に詳しい場合、この列のタイプは `RANK` 関数に置き換えます。 この関数を使用して、データ内の初回イベント、繰り返しイベント、n 番目のイベントの動作の違いを観察できます。
+この `Event Number` 列タイプは、特定の **イベント所有者**、 `customer` または `user`. SQL に詳しい場合、この列のタイプは `RANK` 関数に置き換えます。 この関数を使用して、データ内の初回イベント、繰り返しイベント、n 番目のイベントの動作の違いを観察できます。
 
 結び付けの場合、この列には同じ値が含まれます **rank** 結び付けられたイベントに対して実行し、後続の数値をスキップします。 例えば、5、8、10、10、12 という数値をランク付けしている場合、ランクは 1、2、3、3、5 になります。
 
@@ -40,10 +40,17 @@ ht-degree: 3%
 以下に、 `Event Number` 列：
 
 1. 次に移動： **[!UICONTROL Manage Data > Data Warehouse]** ページ。
+
 1. この列を作成するテーブルに移動します。
+
 1. クリック **[!UICONTROL Create a Column]** を選択し、 `EVENT_NUMBER (…)` 列タイプ：の下に `Same Table` 」セクションに入力します。
+
 1. 最初のドロップダウン `Event Owner` ランクを決定するエンティティを指定します。 例えば、 `Customer's order number`、顧客識別子（例： ） `customer_id` または `customer_email` は `Event Owner`.
+
 1. 2 番目のドロップダウン `Event Rank` 行のランクを決定する順序を強制する列を指定します。 例えば、 `Customer's order number`、 `created_at` timestamp は `Event Rank`.
+
 1. 以下 `Options` ドロップダウンで、フィルターを追加して、考慮しない行を除外できます。 除外された行には、 `NULL` の値を指定します。
+
 1. 列に名前を付け、「 **[!UICONTROL Save]**.
+
 1. この列は、 _すぐに_

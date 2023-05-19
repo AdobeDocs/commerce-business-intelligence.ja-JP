@@ -2,16 +2,16 @@
 title: 予想される Salesforce データ
 description: Salesforce データでサポートされるオブジェクトとサポートされないオブジェクトについて説明します。
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
 # 予測 [!DNL Salesforce] データ
 
-[次の期間の後 [!DNL Salesforce] 設定が完了しました](../integrations/salesforce.md)、各クエリ可能なテーブル [object](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm)  — 名前 `sf_/\{sobject-name}`  — がData Warehouseに作成されました。
+次の期間の後 [[!DNL Salesforce] 設定](../integrations/salesforce.md) が完了し、各クエリ可能なテーブル [object](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm)  — 名前 `sf_/\{sobject-name}`  — がData Warehouseに作成されました。
 
 >[!NOTE]
 >
@@ -48,4 +48,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続中 [!DNL Salesforce]](../integrations/salesforce.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

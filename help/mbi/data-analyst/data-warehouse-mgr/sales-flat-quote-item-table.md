@@ -2,16 +2,16 @@
 title: quote_item テーブル
 description: quote_item テーブルの操作方法を説明します。
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
 # quote_item テーブル
 
-この `quote_item` テーブル (`sales_flat_quote_item` M1) 1) には、買い物かごに追加された各品目のレコードが含まれます。買い物かごが破棄されたか、購入に変換されたかに関わらずです。 各行は 1 つの買い物かご項目を表します。 このテーブルの潜在的なサイズにより、Adobeでは、60 日を超える未変換の買い物かごがある場合など、特定の条件を満たした場合に、レコードを定期的に削除することをお勧めします。
+この `quote_item` テーブル (`sales_flat_quote_item` (M1) には、買い物かごに追加された各品目のレコードが含まれます。買い物かごが破棄されたか、購入に変換されたかに関わらずです。 各行は 1 つの買い物かご項目を表します。 このテーブルの潜在的なサイズにより、Adobeでは、60 日を超える未変換の買い物かごがある場合など、特定の条件を満たした場合に、レコードを定期的に削除することをお勧めします。
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ ht-degree: 0%
 | **列名** | **説明** |
 |---|---|
 | `base_price` | 品目が買い物かごに追加された時点での商品の個々の単位の価格（後） [カタログ価格ルール、階層型割引、特別価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) が適用され、税、送料、買い物かごの割引が適用される前に、 これは、ストアのベース通貨で表されます。 |
-| `created_at` | 買い物かご項目の作成タイムスタンプ（UTC でローカルに保存）。 の設定に応じて、 [!DNL MBI]の場合、このタイムスタンプは [!DNL MBI] データベースのタイムゾーンと異なる |
+| `created_at` | 買い物かご項目の作成タイムスタンプ（UTC でローカルに保存）。 の設定に応じて、 [!DNL Commerce Intelligence]の場合、このタイムスタンプは [!DNL Commerce Intelligence] データベースのタイムゾーンと異なる |
 | `item_id` (PK) | テーブルの一意の ID |
 | `name` | 注文項目のテキスト名 |
 | `parent_item_id` | `Foreign key` シンプルな製品をその親バンドルまたは設定可能な製品に関連付けます。 結合先 `quote_item.item_id` を使用して、単純な製品に関連付けられた親製品属性を特定します。 親買い物かごの品目（つまり、バンドルまたは設定可能な製品タイプ）の場合、 `parent_item_id` が `NULL` |
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 `quote_item`
 
-* 結合先 `quote_item` 親の設定可能な SKU またはバンドル SKU の詳細をシンプルな製品に関連付ける列を作成する場合。 [サポートに連絡](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) を参照してください。
+* 結合先 `quote_item` 親の設定可能な SKU またはバンドル SKU の詳細をシンプルな製品に関連付ける列を作成する場合。 [サポートに連絡](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を参照してください。
    * パス： `quote_item.parent_item_id` （多数） => `quote_item.item_id` (1)
 
 `store`

@@ -1,10 +1,10 @@
 ---
 title: 予期される Mixpanel データ
-description: Mixpanel から [!DNL MBI] アカウント
+description: Mixpanel から [!DNL Commerce Intelligence] アカウント
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 後 [接続しました [!DNL Mixpanel] アカウント](../integrations/mixpanel.md)を使用する場合、 [Data Warehouse管理](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 分析に関連するデータフィールドを容易に追跡する。
 
-この記事では、読み込み元となる主なデータテーブルについて説明します。 [!DNL Mixpanel] を [!DNL MBI] アカウント 次の表は、Mixpanel を接続した後にData Warehouseで作成されます。 追跡に使用できるすべてのフィールドを表示するには、テーブル名列でリンクをクリックします。
+このトピックでは、からインポートできる主なデータテーブルについて説明します。 [!DNL Mixpanel] を [!DNL Commerce Intelligence] アカウント 次の表は、接続後にData Warehouseに作成されます [!DNL Mixpanel]. 追跡に使用できるすべてのフィールドを表示するには、テーブル名列でリンクをクリックします。
 
 >[!NOTE]
 >
->の制限により [!DNL Mixpanel] API、履歴データ — 接続日から 7 日を経過したデータ [!DNL MBI]  — はレプリケートされていません。
+>の制限により [!DNL Mixpanel] API、履歴データ — 接続日から 7 日を経過したデータ [!DNL Commerce Intelligence]  — はレプリケートされていません。
 
 | **テーブル名** | **説明** |
 |-----|-----|
@@ -30,4 +30,4 @@ ht-degree: 0%
 ## 関連ドキュメント
 
 * [接続中 [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

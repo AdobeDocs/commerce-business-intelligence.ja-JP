@@ -1,17 +1,17 @@
 ---
-title: のアクティブ化 [!DNL MBI] アカウント
-description: 担当者に連絡して、 [!DNL MBI] アカウント
+title: のアクティブ化 [!DNL Commerce Intelligence] アカウント
+description: 担当者に連絡して、 [!DNL Commerce Intelligence] アカウント
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 434539f1c0cc5455db7f1998347fa65eb8a6d39f
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '32'
+source-wordcount: '36'
 ht-degree: 0%
 
 ---
 
-# のアクティブ化 [!DNL MBI] アカウント
+# のアクティブ化 [!DNL Commerce Intelligence] アカウント
 
-有効化するには [!DNL MBI] （オンプレミスまたはの場合） `Cloud Pro` 購読の場合は、担当のAdobeカスタマーサクセスマネージャーにお問い合わせください。
+有効化するには [!DNL Commerce Intelligence] （オンプレミスまたはの場合） `Cloud Pro` 購読、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

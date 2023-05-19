@@ -2,9 +2,9 @@
 title: ビルド[!DNL Google ECommerce]寸法
 description: e コマースデータを注文件数や顧客データとリンクするディメンションの作成について説明します。
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 >
 >必要 [管理者権限](../../administrator/user-management/user-management.md).
 
-これで完了です [接続[!DNL Google ECommerce]アカウント](../../data-analyst/importing-data/integrations/google-ecommerce.md)で、そのデータを使用して何ができるかを [!DNL MBI]? この記事では、e コマースデータを注文件数および顧客データとリンクするディメンションの構築に関する手順を説明します。
+これで完了です [接続[!DNL Google ECommerce] アカウント](../../data-analyst/importing-data/integrations/google-ecommerce.md)で、そのデータを使用して何ができるかを [!DNL Commerce Intelligence]? このトピックでは、e コマースデータを注文および顧客データとリンクするディメンションの構築に関する手順を説明します。
 
-対象となるディメンションを使用すると、分析を構築できます。 [マーケティングチャネルとキャンペーンに関する重要な質問に回答する](../../data-analyst/analysis/most-value-source-channel.md). 各ソースから得られる売上の割合 facebookが獲得した顧客のライフタイム値と、 [!DNL Google]?
+対象となるディメンションを使用すると、分析を構築できます。 [マーケティングチャネルとキャンペーンに関する重要な質問に回答する](../../data-analyst/analysis/most-value-source-channel.md). 各ソースから得られる売上の割合 のライフタイム値はどのように計算されますか？ [!DNL Facebook] ～と比較して獲得した顧客 [!DNL Google]?
 
 ## 前提条件と概要
 
-この記事でディメンションを作成するには、次の条件を満たす必要があります： [!DNL Google ECommerce] テーブル、 `orders` テーブル、および `customers` 表。 それらのテーブルは、 [Data Warehouseに同期済み](../../data-analyst/data-warehouse-mgr/tour-dwm.md) ディメンションを作成する前に 同期されたテーブルは、 `Synced Tables` セクション `Data Warehouse Manager`.
+このトピックでディメンションを作成するには、 [!DNL Google ECommerce] テーブル、 `orders` テーブル、および `customers` 表。 それらのテーブルは、 [Data Warehouseに同期済み](../../data-analyst/data-warehouse-mgr/tour-dwm.md) ディメンションを作成する前に 同期されたテーブルは、 `Synced Tables` セクション `Data Warehouse Manager`.
 
 リフレッシャーが必要な場合の、テーブルと列の同期の概要を以下に示します。
 
@@ -121,12 +121,12 @@ ht-degree: 0%
 
 ディメンションの作成が完了したので、様々なチャネルやキャンペーンのパフォーマンスを追跡する強力な分析を作成できます。 次の点に注意してください。 **新しい列は、次の更新が完了するまで使用できません**.
 
-より人気のあるディメンションのいくつかは、この記事でカバーされていますが、空は制限です — 独自のを作成するか、他のオプションを調べるのに役立つ場合は、自由に ping を実行してください。 
+より人気のあるディメンションのいくつかはこのトピックでカバーされていますが、空は制限です — 独自のを作成するか、他のオプションを調べるのに役立つ場合は、自由に ping を試してみてください。 
 
-### 行き詰まった！ 何が違うの？ {#stuck}
+### 追加情報
 
-**`Orders`テーブル#1:** を作成する際に `Order's [!DNL Google Analytics]` 中 `campaign` ディメンションの場合、差は手順 12 で選択した列です。 この例では、列は `Source`.
+**`Orders`テーブル#1**:を作成する際に `Order's [!DNL Google Analytics]` 中 `campaign` ディメンションの場合、差は手順 12 で選択した列です。 この例では、列は `Source`.
 
-**`Customers`テーブル：** を作成する際に `Customer's first order's [!DNL Google Analytics]` 中 `campaign` ディメンションの場合、差は手順 5 で選択した列です。 この例では、列は `Order's [!DNL Google Analytics]` ソース。
+**`Customers`表**:を作成する際に `Customer's first order's [!DNL Google Analytics]` 中 `campaign` ディメンションの場合、差は手順 5 で選択した列です。 この例では、列は `Order's [!DNL Google Analytics]` ソース。
 
-**`Orders`テーブル#2:** を結合する場合 `Customer's first order's [!DNL Google Analytics]` 中 `campaign` 列を `orders` 表の値が異なるのは、手順 5 で選択した列です。 この例では、列は `Customer's first order's [!DNL Google Analytics]` ソース。
+**`Orders`テーブル#2**:を結合する場合 `Customer's first order's [!DNL Google Analytics]` 中 `campaign` 列を `orders` 表の値が異なるのは、手順 5 で選択した列です。 この例では、列は `Customer's first order's [!DNL Google Analytics]` ソース。

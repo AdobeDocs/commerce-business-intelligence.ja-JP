@@ -1,19 +1,19 @@
 ---
-title: SQL クエリのへの変換 [!DNL MBI] レポート
-description: SQL クエリを、 [!DNL MBI].
+title: SQL クエリの Commerce Intelligence レポートへの変換
+description: SQL クエリを Commerce Intelligence で使用する計算列、指標に変換する方法を説明します。
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
-# MBI での SQL クエリの翻訳
+# Commerce Intelligence での SQL クエリの翻訳
 
-SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.md), [指標](../../data-user/reports/ess-manage-data-metrics.md)、および [レポート](../../tutorials/using-visual-report-builder.md) を使用している [!DNL MBI]・ SQL を使用している場合は、 [!DNL MBI] を使用すると、 [Data Warehouse管理](../data-warehouse-mgr/tour-dwm.md) そして、 [!DNL MBI] プラットフォーム。
+SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.md), [指標](../../data-user/reports/ess-manage-data-metrics.md)、および [レポート](../../tutorials/using-visual-report-builder.md) を使用している [!DNL Commerce Intelligence]・ SQL を使用している場合は、 [!DNL Commerce Intelligence] を使用すると、 [Data Warehouse管理](../data-warehouse-mgr/tour-dwm.md) そして、 [!DNL Commerce Intelligence] プラットフォーム。
 
-この記事の最後に、 **翻訳マトリックス** SQL クエリ句の場合は、 [!DNL MBI] 要素。
+このトピックの最後に、 **翻訳マトリックス** SQL クエリ句の場合は、 [!DNL Commerce Intelligence] 要素。
 
 まず、一般的なクエリを確認します。
 
@@ -32,7 +32,7 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 
 ## 集計関数
 
-集計関数 ( 例： `count`, `sum`, `average`, `max`, `min`) をクエリで使用する場合は、次の形式を使用します。 **指標の集計** または **列の集計** in [!DNL MBI]. 差分係数は、集計を実行するために結合が必要かどうかです。
+集計関数 ( 例： `count`, `sum`, `average`, `max`, `min`) をクエリで使用する場合は、次の形式を使用します。 **指標の集計** または **列の集計** in [!DNL Commerce Intelligence]. 差分係数は、集計を実行するために結合が必要かどうかです。
 
 上記のそれぞれの例を見てみましょう。
 
@@ -40,7 +40,7 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 
 集計には指標が必要です `within a single table`. 例えば、 `SUM(b)` 上記のクエリの集計関数は、列を合計した指標で表される可能性が最も高くなります `B`. 
 
-特定の例を見てみましょう。 `Total Revenue` 指標は [!DNL MBI]. 翻訳を試みる以下のクエリを確認します。
+特定の例を見てみましょう。 `Total Revenue` 指標は [!DNL Commerce Intelligence]. 翻訳を試みる以下のクエリを確認します。
 
 |  |  |
 |--- |--- |
@@ -51,7 +51,7 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 | `email NOT LIKE '%@magento.com'` | 指標 `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | 指標 `timestamp` ( およびレポート `time range`) |
 
-「 **[!UICONTROL Manage Data** > **&#x200B;指標&#x200B;**> **新しい指標を作成]**&#x200B;の場合、最初に適切な `source` 表 ( この場合は `orders` 表。 次に、指標が次のように設定されます。
+クリックして指標ビルダーに移動します **[!UICONTROL Manage Data** > **&#x200B;指標&#x200B;**> **新しい指標を作成]**&#x200B;の場合、最初に適切な `source` 表 ( この場合は `orders` 表。 次に、指標が次のように設定されます。
 
 ![指標の集計](../../assets/Metric_aggregation.png)
 
@@ -71,7 +71,7 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 | `ON c.customer_id = o.customer_id` | パス |
 | `WHERE o.status = 'success'` | 集計フィルター |
 
-で設定します。 [!DNL MBI] を使用するには、Data Warehouseマネージャーを使用し、 `orders` および `customers` テーブルを作成し、 `Customer LTV` を設定します。
+で設定します。 [!DNL Commerce Intelligence] を使用するには、Data Warehouseマネージャーを使用し、 `orders` および `customers` テーブルを作成し、 `Customer LTV` を設定します。
 
 次の `customers` および `orders`. 目標は、 `customers` テーブルに移動し、最初に `customers` Data Warehouseの表を開き、 **[!UICONTROL Create a Column** > **&#x200B;定義を選択&#x200B;**> **SUM]**.
 
@@ -83,9 +83,9 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 
 >[!NOTE]
 >
->In [!DNL MBI], a *パス* は、 `Join` SQL の
+>In [!DNL Commerce Intelligence], a `path` は、 `Join` SQL の
 
-パスを保存したら、 `Customer LTV` 列！ 以下を見てください。
+パスを保存したら、 `Customer LTV` 列！ 以下を参照してください。
 
 ![](../../assets/Customer_LTV.gif)
 
@@ -95,11 +95,11 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 >
 >後者の場合は、新しい計算列を作成する際は常に、 [既存の指標にディメンションを追加する](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 以前は `filter` または `group by`.
 
-詳しくは、 [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) をData Warehouseマネージャーに追加します。
+詳しくは、 [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) をData Warehouseマネージャに追加します。
 
 ## `Group By` 句
 
-`Group By` クエリ内の関数は、 [!DNL MBI] ビジュアルレポートのセグメント化またはフィルタリングに使用する列。 例として、 `Total Revenue` 以前に確認したクエリですが、今回は売上高を `coupon\_code` を使用して、どのクーポンが最も高い売上高を生み出しているかをより深く理解できます。
+`Group By` クエリ内の関数は、 [!DNL Commerce Intelligence] ビジュアルレポートのセグメント化またはフィルタリングに使用する列。 例として、 `Total Revenue` 以前に確認したクエリですが、今回は売上高を `coupon\_code` を使用して、どのクーポンが最も高い売上高を生み出しているかをより深く理解できます。
 
 まず、次のクエリを使用します。
 
@@ -149,10 +149,10 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 
 ## 折り返し
 
-SQL の負荷が高いユーザーの場合は、クエリが [!DNL MBI] では、計算列、指標およびレポートを作成できます。
+SQL の負荷が高いユーザーの場合は、クエリが [!DNL Commerce Intelligence] では、計算列、指標およびレポートを作成できます。
 
-クイックリファレンスについては、以下のマトリックスを参照してください。 これは、SQL 句の同等の値を示します [!DNL MBI] 要素と、クエリでの使用方法に応じて、複数の要素にどのようにマッピングできるかを指定できます。
+クイックリファレンスについては、以下のマトリックスを参照してください。 これは、SQL 句の同等の値を示します [!DNL Commerce Intelligence] 要素と、クエリでの使用方法に応じて、複数の要素にどのようにマッピングできるかを指定できます。
 
-## MBI 要素
+## Commerce インテリジェンス要素
 
 |**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|-|X|-|-| |`FROM`|-|-|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-|-|-|-| |`WHERE` （時間要素を含む）|-|-|-|X|-|-|-|-| |`JOIN...ON`|-|X|-|-|X|X|-| |`GROUP BY`|-|-|X|-|-|-|-|-|-|

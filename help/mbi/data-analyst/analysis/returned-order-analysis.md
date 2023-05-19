@@ -2,16 +2,16 @@
 title: 返品注文の分析
 description: ストアの返品状況を詳細に分析できるダッシュボードの設定方法を説明します。
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
 # 返された注文
 
-この記事では、ストアの返品状況を詳細に分析できるダッシュボードを設定する方法について説明します。
+このトピックでは、店舗の返品状況を詳細に分析できるダッシュボードの設定方法を説明します。
 
 ![](../../assets/detailed-returns-dboard.png)
 
@@ -248,4 +248,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 
-この分析の構築中に質問が発生した場合や、Professional Services チームを関与させたい場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+この分析の構築中に質問が発生した場合や、Professional Services チームを関与させたい場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

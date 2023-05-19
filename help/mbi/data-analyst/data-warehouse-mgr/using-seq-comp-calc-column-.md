@@ -2,16 +2,16 @@
 title: 順次比較計算列
 description: 順次比較計算列の目的と用途について説明します。
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 1%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
 # 順次比較計算列
 
-このトピックでは、 `Sequential Comparison` 計算列は **[!DNL Manage Data > Data Warehouse]** ページ。 その動作の説明と、その後に例と、それを作る仕組みを示します。
+このトピックでは、 `Sequential Comparison` 計算列は **[!DNL Manage Data > Data Warehouse]** ページ。 次に、その動作の説明と、それを作成する手法の例を示します。
 
 **説明**
 
@@ -39,17 +39,25 @@ ht-degree: 1%
 
 次の手順で **イベント番号** 列：
 
-1. 次に移動： **[!DNL Manage Data** > **Data Warehouse]** ページ。
+1. 次に移動： **[!DNL Manage Data > Data Warehouse]** ページ。
+
 1. この列を作成するテーブルに移動します。
+
 1. クリック **[!UICONTROL Create New Column]** をクリックします。
+
 1. 選択 `Same Table` を `Definition Type` （比較する列が同じテーブル上にない場合は、その列を再配置する必要がある場合があります）。
+
 1. 選択 `SEQUENTIAL_COMPARISON` を `Column Definition Equation`.
+
 1. 上記の説明に従って、入力を選択します。
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
-1. また、フィルターを追加して、行が考慮されないようにします。 除外された行には、この列の NULL 値が設定されます。
-1. ページ上部の列の名前を指定し、「 **[!UICONTROL Save]**.
+
+1. また、フィルターを追加して、行が考慮されないようにします。 除外された行には、 `NULL` の値を指定します。
+
+1. ページ上部の列の名前を指定し、 **[!UICONTROL Save]**.
+
 1. この列は、 *即時*.
 
 ![秒](../../assets/SEC_new.png)

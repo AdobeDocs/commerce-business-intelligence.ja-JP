@@ -2,16 +2,16 @@
 title: 新しいアーキテクチャ
 description: 新しいアーキテクチャに移行する利点について説明します。
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
 # 新しいアーキテクチャ
 
-MBI の製品チームとエンジニアリングチームは、昨年において、最も大規模で要望のある改善を可能にすることに焦点を当てています。 Adobeが新しい [!DNL MBI] これらの改善を実現する製品アーキテクチャ。
+[!DNL Adobe Commerce Intelligence] 製品およびエンジニアリングチームは、昨年において、最も大規模で要望の高い改善を可能にすることに焦点を当ててきました。 Adobeが新しい [!DNL Commerce Intelligence] これらの改善を実現する製品アーキテクチャ。
 
 ## 新しいアーキテクチャのメリット
 
@@ -43,7 +43,7 @@ MBI の製品チームとエンジニアリングチームは、昨年におい�
 
 ### ヘルプの表示
 
-この [!DNL MBI] サービスチームが再実装を実行して、追加費用をかけることができます。 お問い合わせ [Adobeアカウントチーム](../../guide-overview.md) 新しいアカウントでの作成を優先するダッシュボード/レポートのリストを提供する準備をします。
+この [!DNL Adobe Commerce Intelligence] [サービスチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を使用して再実装を実行し、追加コストをかけることができます。 お問い合わせ [Adobeアカウントチーム](../../guide-overview.md#Submitting-a-Support-Ticket) 新しいアカウントでの作成を優先するダッシュボード/レポートのリストを提供する準備をします。
 
 ### 既存のアーキテクチャの使用
 

@@ -2,30 +2,30 @@
 title: 接続 [!DNL MongoDB] SSH トンネル経由
 description: 接続方法の詳細 [!DNL MongoDB] SSH トンネル経由。
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
 
 # 接続 [!DNL MongoDB] SSH トンネル経由
 
-次の手順で [!DNL MongoDB] データベースへ [!DNL MBI] SSH トンネルを通じて、ユーザー（または技術者でない場合はチーム）は次の操作を行う必要があります。
+次の手順で [!DNL MongoDB] データベースへ [!DNL Commerce Intelligence] SSH トンネルを介して、次の操作を行う必要があります。
 
-1. [の取得 [!DNL MBI] 公開鍵](#retrieve)
-1. [次へのアクセスを許可： [!DNL MBI] IP アドレス](#allowlist)
-1. [Linux の作成](#linux)
-1. [の作成 [!DNL MongoDB] MBI のユーザー](#mongodb)
-1. [接続とユーザー情報をに入力します。 [!DNL MBI]](#finish)
+1. [の取得 [!DNL Commerce Intelligence] 公開鍵](#retrieve)
+1. [次へのアクセスを許可： [!DNL Commerce Intelligence] IP アドレス](#allowlist)
+1. [Commerce Intelligence 用の Linux ユーザーの作成](#linux)
+1. [の作成 [!DNL MongoDB] コマースインテリジェンス用のユーザー](#mongodb)
+1. [接続とユーザー情報をに入力します。 [!DNL Commerce Intelligence]](#finish)
 
 >[!NOTE]
 >
 >この設定は技術的な性質上、Adobeでは、開発者をループして、これをおこなったことがない場合に役立てることをお勧めします。
 
-## の取得 [!DNL MBI] 公開鍵 {#retrieve}
+## の取得 [!DNL Commerce Intelligence] 公開鍵 {#retrieve}
 
-この `public key` は、 [!DNL MBI] `Linux` ユーザー。 次の節では、ユーザーの作成とキーの読み込みの手順を説明します。
+この `public key` は、 [!DNL Commerce Intelligence] `Linux` ユーザー。 次の節では、ユーザーの作成とキーの読み込みの手順を説明します。
 
 1. に移動します。 **[!UICONTROL Data** > **Connections]** をクリックし、 **[!UICONTROL Add New Data Source]**.
 1. 次をクリック： [!DNL MONGODB] アイコン
@@ -34,21 +34,21 @@ ht-degree: 0%
 
 このページはチュートリアル全体で開いたままにしておきます。次のセクションで、最後にこのページを開く必要があります。
 
-少し迷ったら、次の操作を実行します [!DNL MBI] キーを取得するには：
+少し迷ったら、次の操作を実行します [!DNL Commerce Intelligence] キーを取得するには：
 
 ![RJMetrics 公開鍵の取得](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
 
-## 次へのアクセスを許可： [!DNL MBI] IP アドレス {#allowlist}
+## 次へのアクセスを許可： [!DNL Commerce Intelligence] IP アドレス {#allowlist}
 
 接続が成功するには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 これらは `54.88.76.97` および `34.250.211.151`ですが、それはまた、 [!DNL MongoDB] 認証情報ページ：
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## の作成 `Linux` のユーザー [!DNL MBI] {#linux}
+## の作成 `Linux` のユーザー [!DNL Commerce Intelligence] {#linux}
 
 >[!IMPORTANT]
 >
->この `sshd_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合は、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL MBI]. このような場合、 `AllowUsers` 許す `rjmetric` ユーザーがサーバーにアクセスできること。
+>この `sshd_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合は、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL Commerce Intelligence]. このような場合、 `AllowUsers` 許す `rjmetric` ユーザーがサーバーにアクセスできること。
 
 リアルタイム（または頻繁に更新される）データが含まれる限り、実稼動マシンまたはセカンダリマシンにすることができます。 このユーザーは、 [!DNL MongoDB] サーバー。
 
@@ -74,7 +74,7 @@ ht-degree: 0%
     chmod -R 700 /home/rjmetric/.ssh
 ```
 
-## の作成 [!DNL MBI] [!DNL MongoDB] ユーザー {#mongodb}
+## の作成 [!DNL Commerce Intelligence] [!DNL MongoDB] ユーザー {#mongodb}
 
 [!DNL MongoDB] サーバは 2 つの実行モードを持つ — [1 つは「auth」オプションを持つもの](#auth) `(mongod -- auth)` 一人はいなかった [これはデフォルトの](#default). の作成手順 [!DNL MongoDB] ユーザーは、サーバーが使用しているモードによって異なります。 続行する前に、モードを確認してください。
 
@@ -84,16 +84,16 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->使用可能なすべてのデータベースを表示するには、 [!DNL MBI] ユーザーはを実行する権限が必要です `listDatabases.`
+>使用可能なすべてのデータベースを表示するには、 [!DNL Commerce Intelligence] ユーザーはを実行する権限が必要です `listDatabases.`
 
-このコマンドは、 [!DNL MBI] ユーザーアクセス `to all databases`:
+このコマンドは、 [!DNL Commerce Intelligence] ユーザーアクセス `to all databases`:
 
 ```bash
     use admin
     db.createUser('rjmetric', '< secure password here >', true)
 ```
 
-次のコマンドを使用して [!DNL MBI] ユーザーアクセス `to a single database`:
+次のコマンドを使用して [!DNL Commerce Intelligence] ユーザーアクセス `to a single database`:
 
 ```bash
     use < database name >
@@ -122,26 +122,26 @@ ht-degree: 0%
 
 バインドするには [!DNL MongoDB] サーバーを別のアドレスに変更する場合は、次の手順でデータベースのホスト名を調整します。
 
-## 次の場所に接続とユーザー情報を入力 [!DNL MBI] {#finish}
+## 次の場所に接続とユーザー情報を入力 [!DNL Commerce Intelligence] {#finish}
 
-まとめるには、接続とユーザー情報を次のように入力する必要があります。 [!DNL MBI]. あなたは [!DNL MongoDB] 認証情報ページを開きますか？ そうでない場合は、に移動します。 **[!UICONTROL Data > Connections]** をクリックし、 **[!UICONTROL Add New Data Source]**、 [!DNL MongoDB] アイコン 忘れずに `Encrypted` 切り替える `Yes`.
+まとめるには、接続とユーザー情報を次のように入力する必要があります。 [!DNL Commerce Intelligence]. あなたは [!DNL MongoDB] 認証情報ページを開きますか？ そうでない場合は、に移動します。 **[!UICONTROL Data > Connections]** をクリックし、 **[!UICONTROL Add New Data Source]**、 [!DNL MongoDB] アイコン 忘れずに `Encrypted` 切り替える `Yes`.
 
 このページに、以下の情報を入力します。 `Database Connection` セクション：
 
 * `Host`: `127.0.0.1`
-* `Username`:この [!DNL MBI] [!DNL MongoDB] ユーザー名 ( `rjmetric`)
-* `Password`:この [!DNL MBI] [!DNL MongoDB] パスワード
+* `Username`:この [!DNL Commerce Intelligence] [!DNL MongoDB] ユーザー名 ( `rjmetric`)
+* `Password`:この [!DNL Commerce Intelligence] [!DNL MongoDB] パスワード
 * `Port`:サーバー上の MongoDB のポート (`27017` （デフォルト）
 * `Database Name` （オプション）:1 つのデータベースへのアクセスのみを許可する場合は、ここでそのデータベースの名前を指定します。
 
 以下 `SSH Connection` セクション：
 
 * `Remote Address`:SSH で接続するサーバーの IP アドレスまたはホスト名
-* `Username`:この [!DNL MBI] Linux® (SSH) ユーザー名（rjmetric である必要があります）
+* `Username`:この [!DNL Commerce Intelligence] Linux(SSH) ユーザー名 (rjmetric)
 * `SSH Port`:サーバー上の SSH ポート（デフォルトは 22）
 
-それだ！ 完了したら、「 **[!UICONTROL Save Test]** をクリックして設定を完了します。
+完了したら、「 **[!UICONTROL Save Test]** をクリックして設定を完了します。
 
 ### 関連
 
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

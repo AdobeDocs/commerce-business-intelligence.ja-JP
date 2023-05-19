@@ -1,23 +1,23 @@
 ---
-title: コマースに接続
+title: Connect Adobe Commerce
 description: 最も価値のある獲得ソースとチャネルを見つける方法を学びます。
 exl-id: c20e7673-9aa3-4e5e-979c-6adaa4164793
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
 
-# コマースに接続
+# 接続 [!DNL Adobe Commerce]
 
 >[!NOTE]
 >
 >必要 [管理者権限](../../../administrator/user-management/user-management.md).
 
-ビジネスのパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを見つけたりしたい場合は、 コマースデータの接続先 [!DNL MBI] では、これらの質問などに答えることができます。
+ビジネスのパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを見つけたりしたい場合は、 接続 [!DNL Adobe Commerce] データを [!DNL Commerce Intelligence] では、これらの質問などに答えることができます。
 
-コマースデータベースは MySQL に基づいているので、次の場所に接続できます。 [!DNL MBI] 経由 [直接接続](../integrations/mysql-via-a-direct-connection.md), [cPanel](../integrations/mysql-via-cpanel.md)または [SSH トンネル経由](../integrations/mysql-via-ssh-tunnel.md). SSH は最も安全なので、SSH 方式をお勧めします。
+を [!DNL Adobe Commerce] データベースは MySQL に基づいているので、次の場所に接続できます。 [!DNL Commerce Intelligence] 経由 [直接接続](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)または [SSH トンネル経由](../integrations/mysql-via-ssh-tunnel.md). SSH は最も安全なので、SSH 方式をお勧めします。
 
 ## 関連情報
 

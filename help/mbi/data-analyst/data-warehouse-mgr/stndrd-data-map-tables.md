@@ -2,16 +2,16 @@
 title: マッピングテーブルを使用してデータを標準化します
 description: マッピングテーブルの操作方法を説明します。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
 # マッピング・テーブルを使用したデータの標準化
 
-次の画像を表示：あなたは `Report Builder`、 `Revenue by State` レポート。 あなたはゾーンにいます。 追加するまで、すべて正常に動作します `billing state` グループ化を使用して次の情報を確認できます。
+自分が `Report Builder` 建物 `Revenue by State` レポート。 を追加しようとするまで、すべて正常に動作します。 `billing state` グループ化を使用して次の情報を確認できます。
 
 ![](../../assets/Messy_State_Segments.png)
 
@@ -45,9 +45,9 @@ ht-degree: 0%
 
 ![](../../assets/Mapping_table_examples.jpg)
 
-## 必要な操作 [!DNL MBI] 使用するには？ {#use}
+## 必要な操作 [!DNL Commerce Intelligence] 使用するには？ {#use}
 
-マッピングテーブルの作成が完了したら、次の操作を行う必要があります。 [ファイルをアップロード](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) into [!DNL MBI] および [結合された列を作成](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 新しいフィールドを目的のテーブルに再配置します。 これは、ファイルがData Warehouseに同期された後で実行できます。
+マッピングテーブルの作成が完了したら、 [ファイルをアップロード](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) into [!DNL Commerce Intelligence] および [結合された列を作成](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 新しいフィールドを目的のテーブルに再配置します。 これは、ファイルがData Warehouseに同期された後で実行できます。
 
 次の使用例は、 `mapping_state` テーブル (`state_input`) を `customer_address` 結合された列を使用するテーブル。 これにより、クリーンでグループ化できます `state_input` 」列を使用します。 `state` 列。
 
@@ -70,15 +70,13 @@ ht-degree: 0%
 1. 保存後すぐにパスが設定されない場合があります。この場合、 `Path` ボックスをクリックし、作成したパスを選択します。
 1. クリック **[!UICONTROL Save]** をクリックして列を作成します。
 
-それだ！
-
 ## どうすればいい？ {#wrapup}
 
 更新サイクルが完了したら、新しい結合列を使用して、データベースの messy 列ではなく、データを適切にセグメント化できます。 グループ化のオプションを今すぐ確認してください — ストレスの混乱はなく：
 
 ![](../../assets/Clean_State_Segments.png)
 
-マッピングテーブルは、Data Warehouse内の不正な可能性のあるデータをクリーンアップする場合に便利です。 ただし、マッピングテーブルは、他のクールな使用例（例： ）にも使用できます [MBI でのGoogle Analyticsチャネルのレプリケート](../data-warehouse-mgr/rep-google-analytics-channels.md).
+マッピングテーブルは、Data Warehouse内の不正な可能性のあるデータをクリーンアップする場合に便利です。 ただし、マッピングテーブルは、他のクールな使用例（例： ）にも使用できます [レプリケート中 [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### 関連
 

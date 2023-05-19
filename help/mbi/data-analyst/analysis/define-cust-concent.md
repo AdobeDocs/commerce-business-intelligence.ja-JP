@@ -2,16 +2,16 @@
 title: 顧客の集中度を定義
 description: 顧客ベース間での合計売上高の分散を測定するのに役立つダッシュボードを設定する方法について説明します。
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
 
 # 顧客の集中
 
-この記事では、顧客ベース間での合計売上高の分布を測定する際に役立つダッシュボードの設定方法について説明します。 どの割合の顧客が売上高に貢献しているかを把握し、最適なマーケットに最適なセグメント化リストを作成して、貢献度の高い顧客を維持します。
+このトピックでは、顧客ベース間での合計売上高の分布を測定するのに役立つダッシュボードの設定方法について説明します。 どの割合の顧客が売上高に貢献しているかを把握し、最適なマーケットに最適なセグメント化リストを作成して、貢献度の高い顧客を維持します。
 
 この分析に含まれる内容 [高度な計算列](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -158,4 +158,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 
-この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -1,14 +1,14 @@
 ---
-title: MySQL データベースに接続
-description: MySQL データベースとの接続方法を見る [!DNL MBI].
+title: 接続 [!DNL MySQL] データベース
+description: 接続方法を見る [!DNL MySQL] データベース [!DNL Commerce Intelligence].
 exl-id: 22632cab-3c44-4a1b-8809-ac6cba5f655a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '18'
+source-wordcount: '15'
 ht-degree: 0%
 
 ---
 
 # 接続 `MySQL` データベース
 
-情報はまもなく公開されます。
+情報を受け取ります。

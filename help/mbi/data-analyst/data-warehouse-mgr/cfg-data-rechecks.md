@@ -2,31 +2,32 @@
 title: データチェックの設定
 description: 変更可能な値を持つデータ列を設定する方法を説明します。
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
 # データチェックの設定
 
-データベーステーブルには、値が変更可能なデータ列が存在する場合があります。 例えば、 `orders`) テーブルには、 `status`. 注文が最初にデータベースに書き込まれるとき、ステータス列に値が含まれている場合があります _保留中_. 注文が [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) この `pending` の値です。
+データベーステーブルには、値が変更可能なデータ列が存在する場合があります。 例えば、 `orders` という列があるかもしれないテーブル `status`. 注文が最初にデータベースに書き込まれるとき、ステータス列に値が含まれている場合があります _保留中_. 注文が [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) この `pending` の値です。
 
-ただし、注文のステータスは、必ずしも `pending` ステータス。 最終的には `complete` または `cancelled`. Data Warehouseがこの変更を確実に同期するには、列で新しい値を再度チェックする必要があります。
+注文のステータスは、必ずしも `pending` ステータス。 最終的には `complete` または `cancelled`. Data Warehouseがこの変更を確実に同期するには、列で新しい値を再度チェックする必要があります。
 
 これは、 [レプリケーションメソッド](../data-warehouse-mgr/cfg-replication-methods.md) それは話し合われましたか？ 再チェックの処理は、選択したレプリケーション方法に応じて異なります。 この `Modified\_At` 再チェックを設定する必要がないので、変更する値を処理するにはレプリケーション方法が最適です。 この `Auto-Incrementing Primary Key` および `Primary Key Batch Monitoring` メソッドでは再確認の設定が必要です。
 
 これらの方法のいずれかを使用する場合は、変更可能な列に再チェック用のフラグを設定する必要があります。 これをおこなう方法は 3 つあります。
 
-* 再確認する更新フラグ列の一部として実行される監査プロセス。
+1. 再確認する更新フラグ列の一部として実行される監査プロセス。
 
    >[!NOTE]
    >
    >監査はサンプリングプロセスに依存しており、変更される列がすぐに取り込まれない場合があります。
 
-* 自分で設定するには、Data Warehouseマネージャの列の横にあるチェックボックスをオンにして、 **[!UICONTROL Set Recheck Frequency]**&#x200B;を選択し、変更を確認する必要がある場合に適した時間間隔を選択します。
-* のメンバー [!DNL MBI] Data Warehouseチームは、列を手動でマークして、Data Warehouseを再確認できます。 変更可能な列がわかっている場合は、チームに連絡して、再チェックが設定されていることを要求します。 リクエストと共に、列のリストと頻度を含めます。
+1. 自分で設定するには、Data Warehouseマネージャの列の横にあるチェックボックスをオンにして、 **[!UICONTROL Set Recheck Frequency]**&#x200B;を選択し、変更を確認する必要がある場合に適した時間間隔を選択します。
+
+1. のメンバー [!DNL Adobe Commerce Intelligence] Data Warehouseチームは、列を手動でマークして、Data Warehouseを再確認できます。 変更可能な列がわかっている場合は、チームに連絡して、再チェックが設定されていることを要求します。 リクエストと共に、列のリストと頻度を含めます。
 
 ## 頻度を再確認 {#frequency}
 
@@ -55,7 +56,7 @@ ht-degree: 0%
 
 時々、 `Paused` 内 `Changes?` 列。 この値は、テーブルの [複製法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) が `Paused`.
 
-Adobeでは、更新内容を最適化するために、これらの列を確認し、変更可能な列が再度チェックされるようにすることをお勧めします。 データの変更頻度が高い列の再確認頻度が高い場合は、Adobeで更新を最適化するために、値を小さくすることをお勧めします。
+[!DNL Adobe] では、これらの列を確認して更新内容を最適化し、変更可能な列が再度チェックされるようにすることをお勧めします。 データの変更頻度が高い列の再確認頻度が高い場合は、Adobeで更新を最適化するために、値を小さくすることをお勧めします。
 
 現在のレプリケーション方法や再確認についてのご質問やご質問は、お問い合わせください。
 

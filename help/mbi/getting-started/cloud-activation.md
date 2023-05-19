@@ -1,204 +1,204 @@
 ---
-title: のアクティブ化 [!DNL MBI] クラウドスターターサブスクリプション用アカウント
-description: 有効化する方法を説明します [!DNL MBI] クラウドスタータープロジェクト用。
+title: クラウドスターターサブスクリプション用のコマースインテリジェンスアカウントを有効化します
+description: Commerce Intelligence for Cloud Starter プロジェクトをアクティブ化する方法を説明します。
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
 redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/start/onpremise-activation.html
-source-git-commit: f358f11586e4b7c44e9192584ea0fdeff5526287
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '19'
 ht-degree: 0%
 
 ---
 
-# のアクティブ化 [!DNL MBI] アカウント `Cloud Starter` 購読
+<!---# Activate your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions
 
-有効化するには [!DNL MBI] 対象 `Cloud Starter` プロジェクト、最初に [!DNL MBI] アカウントを作成し、 `SSH` キーを押し、最後にコマースデータベースに接続します。 詳しくは、 [オンプレミスサブスクリプションのアクティブ化](../getting-started/onpremise-activation.md).
+To activate [!DNL Commerce Intelligence] for `Cloud Starter` projects, first create an [!DNL Commerce Intelligence] account, then create a `SSH` key, then finally connect to your Commerce database. See [activating on-premise subscriptions](../getting-started/onpremise-activation.md).
 
 >[!NOTE]
 >
->アクティベーションに関するヘルプが必要な場合 [!DNL MBI] 対象 `Cloud Pro` プロジェクトに関しては、Adobeアカウントチームまたはカスタマーテクニカルアドバイザーにお問い合わせください。
+>For help with activation [!DNL Commerce Intelligence] for `Cloud Pro` projects, contact your Adobe Account Team or Customer Technical Advisor.
 
-1. を [!DNL MBI] アカウント。
+1. Create your [!DNL Commerce Intelligence] Account.
 
-   - に移動します。 [Adobe Commerceアカウントログイン](https://account.magento.com/customer/account/login)
+    - Go to [Adobe Commerce account login](https://account.magento.com/customer/account/login)
 
-   - に移動します。 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
+    - Go to **[!UICONTROL My Account** > **My [!DNL Commerce Intelligence] Instances]**.
 
-   - クリック **[!UICONTROL Create Instance]**. このボタンが表示されない場合は、担当のAdobeアカウントチームまたはカスタマーテクニカルアドバイザーにお問い合わせください。
+    - Click **[!UICONTROL Create Instance]**. If you do not see this button, contact your Adobe Account Team or Customer Technical Advisor.
 
-   - を選択します。 `Cloud Starter` 購読。 次の条件を満たす `cloud starter` subscription（デフォルト）。
+    - Select your `Cloud Starter` subscription. If you only have a `cloud starter` subscription, this is the default selection.
 
-   - クリック **[!UICONTROL Continue]**.
+    - Click **[!UICONTROL Continue]**.
 
-   - アカウントを作成するには、情報を入力します。
+    - Input your information to create your account.
 
-   ![](../assets/create-account-2.png)
+     ![](../assets/create-account-2.png)
 
-   - インボックスに移動し、メールアドレスを確認します。
+    - Go to your inbox and verify your email address.
 
-   ![](../assets/create-account-3.png)
+    ![](../assets/create-account-3.png)
 
-   - パスワードを作成します。
+    - Create your password.
 
-   ![](../assets/create-account-4.png)
+    ![](../assets/create-account-4.png)
 
-   - アカウントを作成したら、新しいアカウントにユーザーを追加できます。 技術管理者を追加して、次の手順を実行できるようになりました。
+    - After creating your account, you can add users to your new account. Technical admins can now be added to carry out the following steps.
 
-   ![](../assets/create-account-5.png)
+     ![](../assets/create-account-5.png)
 
-1. 環境設定を指定するストアに関する情報を入力します。
+1. Input information about your store to set your preferences.
 
-   ![](../assets/create-account-6.png)
+    ![](../assets/create-account-6.png)
 
-   オンボーディングフローの 3 番目の手順でデータベースに接続する前に、情報を収集します。 次の項目を完了： `Connect your database` 手順 9 のページ
+    Gather some information before you can connect your database for the third step in the onboarding flow. You complete the `Connect your database` page in Step 9.
 
-1. 専用を作成 [!DNL MBI] ユーザー。
+1. Create dedicated [!DNL Commerce Intelligence] User.
 
-   - ユーザーを [Adobe Commerceアカウント](https://account.magento.com/customer/account/login).
+    - Create a user in your [Adobe Commerce account](https://account.magento.com/customer/account/login).
 
-   - _新しいユーザーがいる理由_ [!DNL MBI] アカウントのに転送する新しいデータを継続的に取得するには、プロジェクトに追加されたユーザーが必要です [!DNL MBI] Data Warehouse。 このユーザーがその接続の役割を果たします。 このユーザーをプロジェクトに追加する場合は、手順 4 で説明します。
+    - _Why a new user?_ [!DNL Commerce Intelligence] needs a user added to the project to continuously fetch new data to be transferred to the account's [!DNL Commerce Intelligence] Data Warehouse. This user serves as that connection. Adding this user to the project is covered in Step 4.
 
-   - 専用の [!DNL MBI] ユーザーは、追加したユーザーが誤って無効化または削除されて停止するのを防ぐことができます [!DNL MBI] 接続。
+    - The reason for having a dedicated [!DNL Commerce Intelligence] user is to prevent the added user from inadvertently being deactivated or deleted and stopping the [!DNL Commerce Intelligence] connection.
 
-1. 新しく作成したユーザーを、 `Contributor`.
+1. Add the newly created user to the project's primary environment as a `Contributor`.
 
-   ![](../assets/create-account-7.png)
+    ![](../assets/create-account-7.png)
 
-1. ダウンロード [!DNL MBI] `SSH` キー。
+1. Get your [!DNL Commerce Intelligence] `SSH` keys.
 
-   - 次に移動： `Connect your database` ページ [!DNL MBI] ユーザーインターフェイスを設定し、下にスクロールして `Encryption settings`.
+    - Go to the `Connect your database` page of the [!DNL Commerce Intelligence] setup user interface and scroll down to `Encryption settings`.
 
-   - の `Encryption Type` フィールド、選択 `SSH Tunnel`.
+    - For the `Encryption Type` field, choose `SSH Tunnel`.
 
-   - ドロップダウンから、提供されたをコピーして貼り付けることができます [!DNL MBI] `Public Key`.
+    - From the dropdown, you can copy and paste the provided [!DNL Commerce Intelligence] `Public Key`.
 
-   ![](../assets/create-account-8.png)
+    ![](../assets/create-account-8.png)
 
-1. 新しい [!DNL MBI] `Public key` から [!DNL MBI] ユーザーが手順 5 で作成されました。
+1. Add your new [!DNL Commerce Intelligence] `Public key` to the [!DNL Commerce Intelligence] user created in Step 5.
 
-   - に移動します。 [お使いの cloud Adobe Commerceアカウント](https://account.magento.com/cloud/customer/login/). 新しい [!DNL MBI] ユーザーが作成されました。 その後、 `Account Settings` タブをクリックします。
+    - Go to [your cloud Adobe Commerce account](https://account.magento.com/cloud/customer/login/). Sign in with your account login information for the new [!DNL Commerce Intelligence] user created. Then go to the `Account Settings` tab.
 
-   - ページを下にスクロールし、のドロップダウンを展開します。 `SSH` キー。 次に、 **[!UICONTROL Add a public key]**.
+    - Scroll down the page and expand the dropdown for `SSH` keys. Then click **[!UICONTROL Add a public key]**.
 
-   ![](../assets/create-account-9.png)
+    ![](../assets/create-account-9.png)
 
-   - を [!DNL MBI] `SSH Public Key` 上から。
+    - Add the [!DNL Commerce Intelligence] `SSH Public Key` from above.
 
-   ![](../assets/create-account-10.png)
+    ![](../assets/create-account-10.png)
 
-1. 提供 [!DNL MBI] MySQL の資格情報。
+1. Provide [!DNL Commerce Intelligence] [!DNL MySQL] credentials.
 
-   - の更新 `.magento/services.yaml`
+    - Update your `.magento/services.yaml`
 
-   ```sql
-   mysql:
-       type: mysql:10.0
-       disk: 2048
-       configuration:
-           schemas:
-               - main
-           endpoints:
-               mysql:
-                   default_schema: main
-                   privileges:
-                       main: admin
-               mbi:
-                   default_schema: main
-                   privileges:
-                       main: ro
-   ```
+    ```sql
+    mysql:
+        type: mysql:10.0
+        disk: 2048
+        configuration:
+            schemas:
+                - main
+            endpoints:
+                mysql:
+                    default_schema: main
+                    privileges:
+                        main: admin
+                mbi:
+                    default_schema: main
+                    privileges:
+                        main: ro
+    ```
 
-   - の更新 `.magento.app.yaml`
+    - Update your `.magento.app.yaml`
 
-   ```sql
-           relationships:
-               database: "mysql:mysql"
-               mbi: "mysql:mbi"
-               redis: "redis:redis"
-   ```
+    ```sql
+            relationships:
+                database: "mysql:mysql"
+                mbi: "mysql:mbi"
+                redis: "redis:redis"
+    ```
 
-1. データベースの接続先の情報を取得します [!DNL MBI].
+1. Get information for connecting your database to [!DNL Commerce Intelligence].
 
-   実行
-   `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 --decode | json_pp`
+    Run
+    `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 --decode | json_pp`
 
-   をクリックして、データベースへの接続に関する情報を取得します。
+    to get information on connecting your database.
 
-   次の出力のような情報を受け取る必要があります。
+    You should receive information similar to the output below:
 
-   ```json
-           "mbi" : [
-                 {
-                    "scheme" : "mysql",
-                    "rel" : "mbi",
-                    "cluster" : "vfbfui4vmfez6-master-7rqtwti",
-                    "query" : {
-                       "is_master" : true
-                    },
-                    "ip" : "169.254.169.143",
-                    "path" : "main",
-                    "host" : "[!DNL MBI].internal",
-                    "hostname" : "3m7xizydbomhnulyglx2ku4wpq.mysql.service._.magentosite.cloud",
-                    "username" : "mbi",
-                    "service" : "mysql",
-                    "port" : 3306,
-                    "password" : "[password]"
-                 }
-              ],
-   ```
+    ```json
+            "mbi" : [
+                  {
+                     "scheme" : "mysql",
+                     "rel" : "mbi",
+                     "cluster" : "vfbfui4vmfez6-master-7rqtwti",
+                     "query" : {
+                        "is_master" : true
+                     },
+                     "ip" : "169.254.169.143",
+                     "path" : "main",
+                     "host" : "[!DNL Commerce Intelligence].internal",
+                     "hostname" : "3m7xizydbomhnulyglx2ku4wpq.mysql.service._.magentosite.cloud",
+                     "username" : "mbi",
+                     "service" : "mysql",
+                     "port" : 3306,
+                     "password" : "[password]"
+                  }
+               ],
+    ```
 
-1. コマースデータベースを接続
+1. Connect your Commerce Database
 
    ![](../assets/create-account-11.png)
 
-   - `Integration Name`: [統合の名前を選択します。]
+    - `Integration Name`: [Choose a name for your integration.]
 
-   - `Host`: `[!DNL MBI].internal`
+    - `Host`: `[!DNL Commerce Intelligence].internal`
 
-   - `Port`: `3306`
+    - `Port`: `3306`
 
-   - `Username`: `mbi`
+    - `Username`: `mbi`
 
-   - `Password`: [手順 8 の出力で入力したパスワード。]
+    - `Password`: [input password provided in the output for Step 8.]
 
-   - `Database Name`: `main`
+    - `Database Name`: `main`
 
-   - `Table Prefixes`: [テーブルのプレフィックスがない場合は空白のままにします]
+    - `Table Prefixes`: [leave blank if there are no table prefixes]
 
-1. タイムゾーン設定を指定します。
+1. Set your Timezone Settings.
 
-   ![入力](../assets/create-account-12.png)
+    ![Inputs](../assets/create-account-12.png)
 
-   - `Database`: `Timezone: UTC`
+     - `Database`: `Timezone: UTC`
 
-   - `Desired Timezone`: [データを表示するタイムゾーンを選択します。]
+     - `Desired Timezone`: [Choose the time zone for which you want your data to display in.]
 
-1. 暗号化設定の情報を取得します。
+1. Get information for your encryption settings.
 
-   - プロジェクト UI には、 `SSH` アクセス文字列。 この文字列は、 `Remote Address` および `Username` を `Encryption` 設定。 以下を使用： `SSH Access` 文字列を検索するには、プロジェクト UI のプライマリブランチで「サイトにアクセス」ボタンをクリックし、 `User Name` および `Remote Address` 以下に示すように。
+    - The project UI provides an `SSH` access string. This string can be used for gathering the information needed for `Remote Address` and `Username` in setting up your `Encryption` settings. Use the `SSH Access` string found by clicking the access site button on your Primary branch of your Project UI and find your `User Name` and `Remote Address` as shown below.
 
-   ![](../assets/create-account-13.png)
+    ![](../assets/create-account-13.png)
 
-   ![](../assets/create-account-14.png)
+    ![](../assets/create-account-14.png)
 
-1. 次の情報を入力： `Encryption` 設定
+1. Input information for your `Encryption` settings
 
-   ![](../assets/create-account-15.png)
+    ![](../assets/create-account-15.png)
 
-   **入力**
+    **Inputs**
 
-   - `Encryption Type`: `SSH Tunnel`
+     - `Encryption Type`: `SSH Tunnel`
 
-   - `Remote Address`: `ssh.us-3.magento.cloud`
+     - `Remote Address`: `ssh.us-3.magento.cloud`
 
-   - `Username`: `vfbfui4vmfez6-master-7rqtwti--mymagento`
+     - `Username`: `vfbfui4vmfez6-master-7rqtwti--mymagento`
 
-   - `Port`: `22`
+     - `Port`: `22`
 
-1. クリック **[!UICONTROL Save Integration]**.
+1. Click **[!UICONTROL Save Integration]**.
 
-1. これで、 [!DNL MBI] アカウント
+1. You have now successfully connected to your [!DNL Commerce Intelligence] account.
 
-1. 接続が完了したら、 [!DNL MBI] コマースデータベースに問い合わせて、Adobeアカウントチームに連絡し、統合の設定や他の設定手順など、次の手順を調整してもらいます。
+1. After you have successfully connected [!DNL Commerce Intelligence] to your Commerce database, contact your Adobe Account Team to coordinate the next steps, such as setting up integrations and other configuration steps.
 
-1. 設定が完了したら、次の操作を実行できます。 [サインイン](../getting-started/sign-in.md) を [!DNL MBI] アカウント
+1. When you finish configuration, you can [sign in](../getting-started/sign-in.md) to your [!DNL Commerce Intelligence] account.--->

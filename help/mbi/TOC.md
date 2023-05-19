@@ -1,24 +1,24 @@
 ---
-title: MBI
-description: 使用方法を学ぶ [!DNL MBI] Adobe Commerceで使用できる機能です。
-breadcrumb-title: MBI ユーザーガイド
-source-git-commit: be09d288755ea32eddf62b1eaf26ce586017320f
+title: Commerce Intelligence
+description: 使用方法を学ぶ [!DNL Commerce Intelligence] Adobe Commerceで使用できる機能です。
+breadcrumb-title: Commerce Intelligence ユーザーガイド
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
 
 
-# [!DNL MBI] ユーザーガイド {#mbi}
+# [!DNL Commerce Intelligence] ユーザーガイド {#mbi}
 
-- [[!DNL MBI] ユーザーガイドの概要](guide-overview.md)
-- [[!DNL MBI] はじめに](getting-started/getting-started.md)
+- [[!DNL Commerce Intelligence] ユーザーガイド](guide-overview.md)
+- [[!DNL Commerce Intelligence] はじめに](getting-started/getting-started.md)
 - はじめに {#start}
    - [オンボーディング](getting-started/onboarding.md)
-   - [のアクティブ化 [!DNL MBI] アカウント](getting-started/onpremise-activation.md)
-   - [ログイン先 [!DNL MBI] アカウント](getting-started/sign-in.md)
-   - [MBI Essentials とMBI Pro](getting-started/essentials-vs-pro.md)
+   - [のアクティブ化 [!DNL Commerce Intelligence] アカウント](getting-started/onpremise-activation.md)
+   - [ログイン先 [!DNL Commerce Intelligence] アカウント](getting-started/sign-in.md)
+   - [Commerce Intelligence Essentials と Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - 管理者 {#administrator}
    - アカウント管理 {#acct-mgmt}
       - [のメリット [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)
@@ -53,7 +53,7 @@ ht-degree: 0%
       - [[!DNL MongoDB] データモデリングガイド](data-analyst/data-warehouse-mgr/mongodb-data-modeling.md)
       - [レプリケート中 [!DNL Google Analytics] チャネル](data-analyst/data-warehouse-mgr/rep-google-analytics-channels.md)
       - [マッピングテーブルを使用したデータの標準化](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
-      - [SQL クエリのへの変換 [!DNL MBI] レポート](data-analyst/dev-reports/sql-queries-reports.md)
+      - [SQL クエリのへの変換 [!DNL Commerce Intelligence] レポート](data-analyst/dev-reports/sql-queries-reports.md)
       - [テーブルの関係の理解と評価](data-analyst/data-warehouse-mgr/table-relationships.md)
       - [計算された日付差異の使用](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
       - [ダッシュボード全体でのフィルタリングの使用](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
@@ -74,7 +74,7 @@ ht-degree: 0%
       - [定性コホート分析の作成](data-analyst/dev-reports/create-qual-cohort-analysis.md)
       - [特別なフィルター演算子の参照](data-analyst/dev-reports/explr-special-filter-ops.md)
       - [クエリの結果をエクスポート](data-analyst/dev-reports/export-query-results.md)
-      - [での数式の使用 [!DNL Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
+      - [[Report Builder] での数式の使用](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [作成 [!DNL Google Analytics] グラフ](data-analyst/dev-reports/google-analytics-charts-regex.md)
       - [の重要性 [!DNL Lifetime Revenue Cohort Analysis]](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
       - [を使用したデータの並べ替え [!DNL Show Top/Bottom] 機能](data-analyst/dev-reports/order-data-top-bottom-feat.md)
@@ -129,8 +129,8 @@ ht-degree: 0%
    - データベースの統合 {#integration}
       - [接続中 [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [VPN を介したデータベースの接続](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
-      - [接続 [!DNL MySQL Database] から [!DNL MBI]](data-analyst/importing-data/integrations/db-to-mbi.md)
-      - [コマースに接続中](data-analyst/importing-data/integrations/magento.md)
+      - [接続 [!DNL MySQL Database] から [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
+      - [接続Adobe Commerce](data-analyst/importing-data/integrations/magento.md)
       - [予想されるコマースデータ](data-analyst/importing-data/integrations/magento-data.md)
       - [接続中 [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
       - [接続中 [!DNL MongoDB] 経由 [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
@@ -221,11 +221,11 @@ ht-degree: 0%
       - [増分レプリケーションをサポートするようにデータベースを変更する](best-practices/mod-db-inc-replication.md)
       - [分析用にデータベースを最適化中](best-practices/opt-db-analysis.md)
       - [の最適化 [!DNL SQL] クエリ](best-practices/optimizing-your-sql-queries.md)
-      - [詳細 [!DNL MBI] 環境](best-practices/understanding-magento.md)
+      - [詳細 [!DNL Commerce Intelligence] 環境](best-practices/understanding-magento.md)
    - プロジェクト組織 {#project}
-      - [でのレポートおよび要素の命名 [!DNL MBI]](best-practices/naming-elements.md)
+      - [でのレポートおよび要素の命名 [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [テーブルの統合](best-practices/consolidating-your-tables.md)
-      - [デクリター [!DNL MBI] アカウント](best-practices/declutter-account.md)
+      - [デクリター [!DNL Commerce Intelligence] アカウント](best-practices/declutter-account.md)
    - ダッシュボードの操作 {#working-dashboards}
       - [ダッシュボードの共有](best-practices/share-dashboard-best-practice.md)
       - [投資家ダッシュボードの作成](best-practices/build-investor-dashboard.md)

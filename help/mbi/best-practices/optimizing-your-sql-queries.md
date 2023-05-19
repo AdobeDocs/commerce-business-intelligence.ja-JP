@@ -2,18 +2,18 @@
 title: SQL クエリの最適化
 description: SQL クエリを最適化する方法を説明します。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
 
 # SQL クエリの最適化
 
-SQLReport Builderを使用すると、クエリを実行し、これらのクエリをいつでも繰り返し実行できます。 これは、更新が必要な列やレポートを確認する前に、更新サイクルが完了するのを待たずにクエリを変更する必要がある場合に役立ちます。
+この [!DNL SQL Report Builder] を使用すると、任意の時点でこれらのクエリをクエリし、繰り返し実行できます。 これは、更新が必要な列やレポートを確認する前に、更新サイクルが完了するのを待たずにクエリを変更する必要がある場合に役立ちます。
 
-クエリを実行する前に、 [[!DNL MBI] 費用を見積もる](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). コストでは、クエリの実行に必要な時間とリソースの数が考慮されます。 そのコストが高すぎると見なされた場合、または返される行の数が MBI 制限を超える場合、クエリは失敗します。 Data Warehouseに対するクエリを実行する場合は、最も効率的なクエリを記述できるよう、Adobeでは次の操作をお勧めします。
+クエリを実行する前に、 [[!DNL Commerce Intelligence] 費用を見積もる](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). コストでは、クエリの実行に必要な時間とリソースの数が考慮されます。 そのコストが高すぎると見なされた場合、または返される行の数が [!DNL Commerce Intelligence] 制限を満たさない場合、クエリは失敗します。 のクエリ [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用すると、可能な限り効率的なクエリを記述できます。Adobeでは、次の操作をお勧めします。
 
 ## SELECT またはすべての列の選択の使用
 

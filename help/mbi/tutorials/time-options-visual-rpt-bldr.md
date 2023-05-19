@@ -2,16 +2,16 @@
 title: ビジュアルReport Builderの [ 時間オプションを使用 ]
 description: 特定の期間のレポート内のデータを分析する方法を学びます。
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
 
-# 用途 `Time` のオプション `Visual Report Builder`
+# 用途 [!DNL Time] のオプション [!DNL Visual Report Builder]
 
-の機能の 1 つ `Visual Report Builder` グローバル `Time Range` および `Interval` 設定。 これらの設定を使用すると、特定の期間のレポート内のデータを分析できます。
+の機能の 1 つ [!DNL Visual Report Builder] グローバル `Time Range` および `Interval` 設定。 これらの設定を使用すると、特定の期間のレポート内のデータを分析できます。
 
 ただし、分析によっては、同じレポート内で異なる時間範囲や時間間隔を考慮する必要が生じる場合があります。 そこにある `Time` オプションが用意されています。 より良い使用方法をお知らせします `Time` レポートのオプションについては、このチュートリアルで次の使用例を扱います。
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 * [1 つの指標に独立した時間間隔を設定する](#independenttimeinterval)
 * [異なる時間範囲での同じ指標の比較](#difftimerange)
 
-このトピックで取り上げたサンプルレポートの一部に従う場合は、 [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) 続行する前に
+このトピックで取り上げたサンプルレポートの一部に従う場合は、 [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) 続行する前に
 
 ## タイムスタンプを使用しない指標の分析 {#notimestamp}
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ## 異なる時間範囲での同じ指標の比較 {#difftimerange}
 
-この例では、という名前のカスタムディメンションを使用します。 `Day number of the month`. このレポートを作成し、Data Warehouseにこのディメンションがない場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 助けを求めて
+この例では、という名前のカスタムディメンションを使用します。 `Day number of the month`. このレポートを作成し、Data Warehouseにこのディメンションがない場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 助けを求めて
 
 このカテゴリの最も一般的な例は、(1) 成長指標（前年比または前月比）と (2) 最近の在庫または品目の販売傾向をより深く把握できる、という 2 つです。
 

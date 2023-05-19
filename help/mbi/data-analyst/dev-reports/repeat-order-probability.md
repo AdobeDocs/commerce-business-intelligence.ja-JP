@@ -2,7 +2,7 @@
 title: 繰り返し注文の確率レポート
 description: 繰り返し注文の確率レポートの詳細と理解。
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## が `Incremental Event Probability` パースペクティブを利用できますか？
 
-この `incremental event probability` パースペクティブは、フィルターがすべての注文 ( ユーザーの `gender`、ユーザーの `age` またはユーザーの `source`)
+この `incremental event probability` パースペクティブは、フィルターがすべての注文 ( ユーザーの `gender`、ユーザーの `age` またはユーザーの `source`) をクリックします。
 
 これは、このパースペクティブが「 」と呼ばれるディメンションに依存するためです `User's order number` セグメントの場合。これは、ユーザーの購入数（ジョンの 1 回目、2 回目、3 回目の注文など）を表します。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 場合によっては、 `order-specific` 次元を `user-specific` フィルターとして追加するディメンション `Repeat Order Probability` グラフ。 この場合、ユーザーの最初の注文または最新の注文の注文属性（ユーザーの最初の注文地域名など）を返します。
 
-このような新しいディメンションを作成する場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+このような新しいディメンションを作成する場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## 異なる属性の注文の繰り返し確率の比較
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### 例：
 
-|  |  |
+| カテゴリ | 値 |
 |---|---|
 | 生涯に 1 回購入した顧客の数 | `90` |
 | 全期間に 2 回購入した顧客の数 | `30` |

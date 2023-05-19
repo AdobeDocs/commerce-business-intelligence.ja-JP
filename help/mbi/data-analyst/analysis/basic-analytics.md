@@ -2,16 +2,16 @@
 title: 基本的な分析の理解と構築
 description: 基本的な分析を理解し、構築する方法を学びます。
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3113'
 ht-degree: 0%
 
 ---
 
 # 基本分析
 
-以前、 [!DNL MBI] プラットフォームを使用し、ツールの基本を理解している場合は、レポートの作成を開始します。 最も一般的な質問の 1 つは、「何を見るべきか」です。
+以前、 [!DNL Adobe Commerce Intelligence] プラットフォームを使用し、ツールの基本を理解している場合は、レポートの作成を開始します。 最も一般的な質問の 1 つは、「何を見るべきか」です。
 
 次の情報は、価値のある一般的な指標とレポートの一部を示しています。 これらのレポートの一部はアカウント内に存在するので、重複が発生しないように、アカウント内に存在する指標とレポートを確認してください。
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 **ゲストによる注文を受け入れますか？**
 
-*その場合、顧客の一部がこのテーブルに含まれていない可能性があります。 に連絡する [サポートチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 顧客分析にすべての顧客が含まれるようにします。*
+*その場合、顧客の一部がこのテーブルに含まれていない可能性があります。 に連絡する [サポートチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 顧客分析にすべての顧客が含まれるようにします。*
 
 *ゲストによる注文を受け入れるかどうか不明な場合は、 参照： [このトピック](../data-warehouse-mgr/guest-orders.md) 詳細情報：*
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**:注文が作成または配置された日付。
 * **[!UICONTROL Customer_email]**:注文をした顧客の電子メールアドレス。 また、顧客の一意の ID である場合もあります。
 * **[!UICONTROL Customer's lifetime number of orders]**:同じ名前の列のコピーが `Customers` 表。
-* **[!UICONTROL Customer's order number]**:注文に関連付けられた顧客の順次注文番号。 例えば、見ている行が顧客の最初の注文の場合、この列は「1」です。ただし、これが顧客の 15 番目のオーダーの場合、この列にはこのオーダーの「15」と表示されます。 このディメンションが `Customers` テーブルで、質問する [サポートチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) を使用して、ビルドを支援します。
+* **[!UICONTROL Customer's order number]**:注文に関連付けられた顧客の順次注文番号。 例えば、見ている行が顧客の最初の注文の場合、この列は「1」です。ただし、これが顧客の 15 番目のオーダーの場合、この列にはこのオーダーの「15」と表示されます。 このディメンションが `Customers` テーブルで、質問する [サポートチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を使用して、ビルドを支援します。
 * **[!UICONTROL Customer's order number (previous-current)]**:2 つの値を **[!UICONTROL Customer's order number]** 列。 これは、2 つの注文の間の経過時間を表示するために、以下のサンプルレポートで使用されます。 例えば、顧客の最初の注文日から 2 番目の注文日までの時間は、この計算では「1-2」と表されます。
 * **[!UICONTROL Coupon_code]**:各注文で使用されたクーポンを表示します。
 * **[!UICONTROL Seconds since previous order]**:顧客の注文間隔（秒）。

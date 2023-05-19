@@ -1,27 +1,27 @@
 ---
-title: ユーザーと権限の管理
-description: 管理方法 [!DNL MBI] ユーザー。
+title: Adobe Commerceユーザーと権限の管理
+description: Commerce Intelligence ユーザーの管理方法を説明します。
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # ユーザー権限の管理
 
-MBI は、組織全体の単一の情報源となることを目的としています。 各ユーザーは、独自のダッシュボードセットを持ち、これを実行できます [他のユーザーと共有する](../../data-user/dashboards/share-dashboard-with-users.md).
+[!DNL Adobe Commerce Intelligence] は、組織全体の単一の情報源となることを意図しています。 各ユーザーは、独自のダッシュボードセットを持ち、これを実行できます [他のユーザーと共有する](../../data-user/dashboards/share-dashboard-with-users.md).
 
 ## ユーザー権限レベル
 
-In [!DNL MBI]には、ユーザーに適用される次の 3 つの一般的な権限レベルがあります。これらはアカウントの作成時に選択されます。
+In [!DNL Commerce Intelligence]には、ユーザーに適用される次の 3 つの一般的な権限レベルがあります。これらはアカウントの作成時に選択されます。
 
 * `Admin`
 * `Standard`
 * `Read-Only`
 
-これらの権限を使用すると、ユーザーは特定のアクションを実行したり、 [!DNL MBI]. 次に、MBI で各権限レベルで実行できる操作の表を示します。
+これらの権限を使用すると、ユーザーは特定のアクションを実行したり、 [!DNL Commerce Intelligence]. 次に、各権限レベルで実行できる操作の表を示します。 [!DNL Commerce Intelligence]:
 
 |  | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
@@ -52,7 +52,7 @@ In [!DNL MBI]には、ユーザーに適用される次の 3 つの一般的な�
 >
 >**[!UICONTROL Standard] _ユーザーは、追加の権限設定で請求にアクセスできます。_
 >
->**[!UICONTROL Read-Only]** ユーザーは次のみを実行できます _表示_ ダッシュボードが共有されていること。内で何も作成または編集できない [!DNL MBI]また、アカウントで新しいダッシュボードを検索して追加することもできません。 Adobeは、特定のダッシュボードセットをと共有することをお勧めします。 **[!UICONTROL Read-Only]** 自分やチームの他のメンバーが管理するユーザー ダッシュボードのセットを複製しないでください。
+>**[!UICONTROL Read-Only]** ユーザーは次のみを実行できます _表示_ ダッシュボードが共有されていること。内で何も作成または編集できない [!DNL Commerce Intelligence]また、アカウントで新しいダッシュボードを検索して追加することもできません。 Adobeは、特定のダッシュボードセットをと共有することをお勧めします。 **[!UICONTROL Read-Only]** 自分やチームの他のメンバーが管理するユーザー ダッシュボードのセットを複製しないでください。
 
 ## 追加の権限：請求と技術 {#billingtech}
 
@@ -70,6 +70,6 @@ In [!DNL MBI]には、ユーザーに適用される次の 3 つの一般的な�
 
 `Technical` ユーザーに固有の権限がありません。この設定は、組織内の技術的な連絡先を示すだけです。 これらのユーザーは、技術的な質問に対してAdobeから連絡を受ける場合があります。
 
-`Admin` ユーザーは、 **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** プロンプトに従って ユーザーが [!DNL MBI]招待しているラッキーな人には、アカウント設定プロセスの完了方法に関する電子メールの指示が届きます。
+`Admin` ユーザーは、 **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** プロンプトに従って ユーザーが [!DNL Commerce Intelligence]招待しているラッキーな人には、アカウント設定プロセスの完了方法に関する電子メールの指示が届きます。
 
 いつでも `Admins` は、 **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. このページには、ユーザーの権限と、ユーザーがアクセスできる指標およびダッシュボードが表示されます。

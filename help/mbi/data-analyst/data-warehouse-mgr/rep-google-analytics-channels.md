@@ -2,30 +2,30 @@
 title: 獲得ソースを使用したGoogle Analyticsチャネルのレプリケーション
 description: 獲得ソースを使用してGoogle Analyticsチャネルをレプリケートする方法について説明します。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
-# 獲得ソースを使用したGoogle Analytics
+# [!DNL Google Analytics] 獲得ソースの使用
 
 ## チャネルとは {#channels}
 
-様々なトラフィックのパフォーマンスを確認し、トレンドを観察するためのカスタムセグメントを作成することは、  [!DNL Google Analytics ]. デフォルトでに存在するセグメントの 1 つのクラス [!DNL Google Analytics ] が `Channels`. チャネルは、訪問者がサイトに来訪する一般的な方法のグループです。  [!DNL Google Analytics ] ユーザーを取得した様々な方法（ソーシャルメディア、クリック課金、電子メール、紹介リンクなど）を自動的に並べ替え、バケットまたはチャネルにまとめます。
+様々なトラフィックのパフォーマンスを確認し、トレンドを観察するためのカスタムセグメントを作成することは、 [!DNL Google Analytics]. デフォルトでに存在するセグメントの 1 つのクラス [!DNL Google Analytics] が `Channels`. チャネルは、訪問者がサイトに来訪する一般的な方法のグループです。  [!DNL Google Analytics] ユーザーを取得した様々な方法（ソーシャルメディア、クリック課金、電子メール、紹介リンクなど）を自動的に並べ替え、バケットまたはチャネルにまとめます。
 
-## 表示されない理由 `channels` MBI で？ {#nochannels}
+## 表示されない理由 `channels` Commerce Intelligence の場合 {#nochannels}
 
-`Channels` は単純で、データの集計グループです。 獲得をチャネルグループに分類するために、Googleでは、特定のパラメーターを使用して個別のルールと定義を設定しています。獲得の組み合わせ [ソース](https://support.google.com/analytics/answer/1033173?hl=en) （トラフィックの発生元）と獲得 [中](https://support.google.com/analytics/answer/6099206?hl=en) （ソースの一般的なカテゴリ）。
+`Channels` は単純で、データの集計グループです。 獲得をチャネルグループに分類するには、 [!DNL Google] は、特定のパラメーターを使用して、個別のルールと定義を設定します。獲得の組み合わせ [ソース](https://support.google.com/analytics/answer/1033173?hl=en) （トラフィックの発生元）と獲得 [中](https://support.google.com/analytics/answer/6099206?hl=en) （ソースの一般的なカテゴリ）。
 
-これらのバケットを使用すると、トラフィックの発生元を把握できますが、このデータはチャネルでタグ付けされるのではなく、ソースとメディアを組み合わせてタグ付けされます。 Googleはチャネル情報を 2 つの異なるデータポイントとして送信するので、チャネルのグループ化が [!DNL MBI].
+これらのバケットを使用すると、トラフィックの発生元を把握できますが、このデータはチャネルでタグ付けされるのではなく、ソースとメディアを組み合わせてタグ付けされます。 理由： [!DNL Google] では、チャネル情報が 2 つの異なるデータポイントとして送信され、チャネルグループはで自動的には表示されません [!DNL Commerce Intelligence].
 
 ## デフォルトのチャネルグループ化とは何ですか？ 作成方法
 
-デフォルトでは、Googleは 8 つの異なるチャネルを使用して設定します。 作成方法を決定するルールを確認します。
+デフォルトでは、 [!DNL Google] は 8 つの異なるチャネルを設定します。 チャネルの作成方法を決定するルールを以下に示します。
 
-| チャネル | 何だ？ | 作成方法 |
+| **チャネル** | **何だ？** | **作成方法** |
 |---|---|---|
 | 直接 | サイトに直接アクセスするユーザー。 | ソース= `Direct`<br>AND 中= `(not set); OR Medium = (none)` |
 | オーガニック検索 | 未払いの検索エンジンでオーガニックランク付けされたトラフィック。 | 中= `organic` |
@@ -44,13 +44,13 @@ ht-degree: 0%
 
 1. **を有効にします。[!DNL Google ECommerce]統合**
 
-   [有効化後](../importing-data/integrations/google-ecommerce.md)、必ず [同期](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **中** および **ソース** フィールドをData Warehouseに追加します。 この作業が完了すると、中規模およびソースの獲得データがData Warehouseに取り込まれます。
+   [有効な場合](../importing-data/integrations/google-ecommerce.md)、必ず [同期](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) **中** および **ソース** フィールドをData Warehouseに追加します。 この作業が完了すると、中規模およびソースの獲得データがData Warehouseに取り込まれます。
 
 1. **Googleチャネルグループ化のマッピングをアップロード**
 
-   時間を節約するために、Commerce は既にデフォルトのグループをファイルとしてマッピングしたテーブルを作成しています。このテーブルは、 [ダウンロード](../../assets/ga-channel-mapping.csv).
+   Adobe Commerceは、デフォルトのグループをファイルとしてマッピングしたテーブルを作成します。このテーブルは、 [ダウンロード](../../assets/ga-channel-mapping.csv).
 
-   Google Analyticsプロが独自のチャネルを作成した場合は、にファイルをアップロードする前に、特定のルールをマッピングテーブルに追加する必要があります。 [!DNL MBI].
+   次の場合、 [!DNL Google Analytics] 独自のチャネルを作成した場合、にファイルをアップロードする前に、特定のルールをマッピングテーブルに追加する必要があります。 [!DNL Commerce Intelligence].
 
    Adobe Campaign を、 [ファイルのアップロード](../importing-data/connecting-data/using-file-uploader.md).
 
@@ -58,13 +58,13 @@ ht-degree: 0%
 
 1. **A と B の間に関係を築く[!DNL Google ECommerce]およびマッピングファイルのアップロード**
 
-   次の間に関係を確立するには[!DNL Google ECommerce]マッピング・テーブル [サポートリクエストを送信](../../guide-overview.md) を Data Analyst チームに連絡し、この記事を参照します。 アナリストが、「 **チャネル** （e コマーステーブル） **完全な更新サイクルの後**&#x200B;の場合、この列は、フィルターまたはグループ化基準で使用する準備が整います。
+   次の間に関係を確立するには[!DNL Google ECommerce] マッピング・テーブル [サポートリクエストを送信](../../guide-overview.md#Submitting-a-Support-Ticket) を Data Analyst チームに追加し、このトピックを参照します。 アナリストが、「 **チャネル** （e コマーステーブル） **完全な更新サイクルの後**&#x200B;の場合、この列を `Filter` または `Group by`.
 
-おめでとうございます。 Data WarehouseにGoogle Analyticsチャネルのグループ化が追加されました。つまり、新しい視点でデータを分析できます。
+これで、 [!DNL Google Analytics Channel] Data Warehouseでのグループ化。つまり、新しい観点からデータを分析できます。
 
 ![チャネル別の注文件数指標のセグメント化](../../assets/GA_Channel_Gif.gif)
 
-この例では、単純なセグメント化を開始しました。 **注文数** 指標別 **チャネル**. 今度は、あなたのターンです — 新しい列をテストし、Google Analyticsチャネルデータで特定できるトレンドを確認してください。
+この例では、 **注文数** 指標別 **チャネル**. 新しい列をテストし、 [!DNL Google Analytics Channel] データ！
 
 ## 関連ドキュメント
 

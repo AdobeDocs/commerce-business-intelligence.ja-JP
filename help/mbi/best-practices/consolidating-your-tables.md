@@ -2,7 +2,7 @@
 title: テーブルの統合
 description: テーブルとデータベースを統合する方法を説明します。
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # テーブルの統合
 
-複数の店舗を運営している場合や、複数の市場で運用している場合は、類似のデータベースが別々に保存されている可能性があります。 In [!DNL MBI]を使用すると、異なるデータベースの類似したテーブルを簡単に統合できます。
+複数の店舗を運営している場合や、複数の市場で運用している場合は、類似のデータベースが別々に保存されている可能性があります。 In [!DNL Adobe Commerce Intelligence]を使用すると、異なるデータベースの類似したテーブルを簡単に統合できます。
 
-例えば、 `orders` ～のテーブル `Market A`、および類似 `orders` ～のテーブル `Market B`. [!DNL MBI] 両方のテーブルを統合し、 `Market A` および `B`特定の市場によるセグメント化に加えて、
+例えば、 `orders` ～のテーブル `Market A`、および類似 `orders` ～のテーブル `Market B`. [!DNL Commerce Intelligence] 両方のテーブルを統合し、 `Market A` および `B`特定の市場によるセグメント化に加えて、
 
 テーブルの統合を機能させるには、入力テーブルを **同様に構造化された**. つまり、すべての入力テーブルには、統合テーブルで必要なデータ列が含まれている必要があります。
 
@@ -43,8 +43,8 @@ Data Warehouse内の他のすべてのテーブルと同様に、列を追加し
 
 ## 統合テーブルの作成、表示、更新
 
-統合テーブルをData Warehouseに追加する場合は、 [!DNL MBI] [サポート](../guide-overview.md).
+統合テーブルをData Warehouseに追加する場合は、 [!DNL Commerce Intelligence] [サポート](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >
->統合テーブルは `Data Warehouse Manager`、これらのテーブルの表示と更新は、 [!DNL MBI] サポート。
+>統合テーブルは `Data Warehouse Manager`、これらのテーブルの表示と更新は、 [!DNL Commerce Intelligence] サポート。

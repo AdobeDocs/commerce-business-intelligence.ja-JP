@@ -1,8 +1,8 @@
 ---
 title: 予期されるストライプ・データ
-description: Stripe からにインポートできる主なデータ・テーブルの参照 [!DNL MBI].
+description: Stripe から Commerce Intelligence にインポートできる主なデータ・テーブルを参照します。
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 後 [接続しました [!DNL Stripe] アカウント](../integrations/stripe.md)を使用する場合、 [Data Warehouse管理](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 分析に関連するデータフィールドを容易に追跡する。
 
-この記事では、読み込み元となる主なデータテーブルについて説明します。 [!DNL Stripe] into [!DNL MBI]. 設定が完了すると、次のテーブルがData Warehouseに作成されます。 各テーブルの属性の詳細を表示するには、「テーブル名」列のリンクをクリックします。
+このトピックでは、からインポートできる主なデータテーブルについて説明します。 [!DNL Stripe] into [!DNL Commerce Intelligence]. 設定が完了すると、次のテーブルがData Warehouseに作成されます。 各テーブルの属性の詳細を表示するには、「テーブル名」列のリンクをクリックします。
 
 | **テーブル名** | **説明** |
 |-----|-----|
@@ -34,4 +34,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続中 [!DNL Stripe]](../integrations/stripe.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

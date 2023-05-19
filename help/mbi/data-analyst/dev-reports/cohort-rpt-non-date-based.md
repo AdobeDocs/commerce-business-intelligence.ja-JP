@@ -2,20 +2,20 @@
 title: 非日付ベースのコホートのコホートReport Builder
 description: 類似のアクティビティまたは属性でユーザーをグループ化する方法を説明します。
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
-# `Cohort Report Builder for Non-Date-Based Cohorts`
+# [!DNL Cohort Report Builder] （日付ベース以外のコホート）
 
-この [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) は、時間の経過と共に様々なユーザーサブセットがどのように動作するかを商人が調べるのに役立ちました。 以前は、 `Cohort Report Builder` は、共通のユーザーのグループ化用に最適化されています `cohort date` （例えば、特定の月に初めて購入したすべての顧客のセット）。 この `Non-Date Based Cohort` 機能を使用すると、類似のアクティビティや属性でユーザーをグループ化できます。 この機能の使用例をいくつか見てみましょう。
+この [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) は、時間の経過と共に異なるユーザーのサブセットがどのように動作するかを商人が調べるのに役立ちます。 以前は、 `Cohort Report Builder` は、共通のユーザーのグループ化用に最適化されています `cohort date` （例えば、特定の月に初めて購入したすべての顧客のセット）。 この `Non-Date Based Cohort` 機能を使用すると、類似のアクティビティや属性でユーザーをグループ化できます。 この機能の使用例をいくつか見てみましょう。
 
 ## 使用例
 
-これは包括的なリストではありませんが、この機能で実行できる潜在的な分析を次に示します。
+これは包括的なリストではありませんが、この機能で実行できる潜在的な分析を以下に示します。
 
 * ～から得た顧客の収益の調査 [!DNL Google] 対比 [!DNL Facebook]
 * 米国とカナダで初めて購入した顧客の分析
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ネイティブ [!DNL Google Analytics] 指標は `Cohort Report Builder`. この例の目標は、様々な GA ソースから獲得したファーストオーダー顧客の売上高の推移を見ることです。
+>ネイティブ [!DNL Google Analytics] 指標は `Cohort Report Builder`. この例の目標は、異なる方法で獲得したファーストオーダー顧客の売上高の推移を見ることです [!DNL Google Analytics] ソース。
 
 ### 切り替え `Metric View` から `Cohort`
 
@@ -49,9 +49,9 @@ ht-degree: 0%
 1. コホートの最初のアクションの時間範囲
 1. コホート発生後の時間範囲
 
-![コホートグループ](../../assets/2-cohort-groups.png){:width=&quot;200&quot; height=&quot;224&quot;}
+![コホートグループ](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
 
-![コホート — 最初のアクション — 時間範囲](../../assets/3-cohort-first-action-time-range.png){:width=&quot;400&quot; height=&quot;554&quot;}
+!![cohort-first-action-time-range]<!--(../../assets/3-cohort-first-action-time-range.png){: width="400" height="554"}-->
 
 #### 1.グループ化 `cohorts`
 
@@ -77,7 +77,10 @@ ht-degree: 0%
 
 ![コホート — 最初のアクション — 時間範囲](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
-### その他のメモ
+>[!NOTE]
+>
+>[!UICONTROL Filters] を切り替えても、指標はそのまま残ります。 `Standard` および `Cohort` ビュー。
 
-* [!UICONTROL Filters]:を切り替えても、指標はそのまま残ります。 `Standard` および `Cohort` ビュー
-* 詳しくは、 [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+### 関連
+
+詳しくは、 [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).

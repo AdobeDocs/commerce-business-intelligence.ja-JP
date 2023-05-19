@@ -2,9 +2,9 @@
 title: 数式
 description: 数式の使用方法を説明します。
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
    次の操作を実行します。
 
-   * 内 `Enter your Formul` 入力ボックスに、 `A/B`.
+   * 内 `Enter your Formula` 入力ボックスに、 `A/B`.
 
       これにより、売上高が新規顧客数で並べ替えられた製品数で割られます。
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
    * カレンダーで、日付範囲を選択します。
 
-      この例では、ホリデーシーズンは 11 月 1 日から 12 月 31 日までです。
+      この例では、ホリデーシーズンは `November 1` 経由 `December 31`.
 
    * の下 `Select Time Interval`選択 `Day`.
 

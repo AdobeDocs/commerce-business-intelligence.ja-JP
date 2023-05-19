@@ -2,9 +2,9 @@
 title: Google Analytics — ユーザー獲得ソースデータの追跡の概要
 description: ユーザーの獲得ソース別にデータをセグメント化する方法を説明します。
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: ad95a03193853eebf2b695cd6f5c3cb5a9837f93
+source-git-commit: af1e3839839b4c419beabb0cc666c996ea2179d4
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -13,27 +13,27 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->以下のプロセスはをサポートしていません [!DNL GoogleUniversal Analytics].
+>以下のプロセスはをサポートしていません [!DNL Google Universal Analytics].
 
 マーケティングプランを効果的に管理するには、ユーザーの獲得ソースごとにデータをセグメント化する機能が重要です。 新しいユーザーの獲得ソースを把握することで、どのチャネルが最も高い収益率をもたらすかを示し、チームが自信を持ってマーケティングドルを割り当てることができます。
 
-データベース内のユーザー獲得ソースをまだ追跡していない場合は、 [!DNL MBI] では、以下の作業を開始できます。
+データベース内のユーザー獲得ソースをまだ追跡していない場合は、 [!DNL Adobe Commerce Intelligence] では、以下の作業を開始できます。
 
 ## ユーザーの獲得ソースの追跡
 
-Adobeは、設定に基づいてリファラルソースデータを追跡する 2 つの方法を推奨します。
+[!DNL Adobe] では、の設定に基づいてリファラルソースデータを追跡する 2 つの方法を推奨しています。
 
 ### （オプション 1）を介して注文の紹介元データを追跡する [!DNL Google Analytics E-Commerce] ( [!DNL Shopify] ストア )
 
-次を使用する場合、 [!DNL Google Analytics E-Commerce] 注文と販売のデータを追跡するには、 [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) 各注文のリファラルソースデータを同期する。 これにより、紹介ソース ( 例えば、 `utm_source` または `utm_medium`) をクリックします。 また、 [!DNL MBI] カスタムディメンション： `User's first order source`.
+次を使用する場合、 [!DNL Google Analytics E-Commerce] 注文と販売のデータを追跡するには、 [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) 各注文のリファラルソースデータを同期する。 これにより、紹介ソース ( 例えば、 `utm_source` または `utm_medium`) をクリックします。 また、 [!DNL Commerce Intelligence] カスタムディメンション： `User's first order source`.
 
 >[!NOTE]
 >
->Shopify ユーザーの場合**:オンにする [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) 接続する前に [!DNL Google Analytics E-Commerce] アカウント [!DNL MBI].
+>**Shopify ユーザーの場合**:オンにする [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) 接続する前に [!DNL Google Analytics E-Commerce] アカウント [!DNL Commerce Intelligence].
 
 ### （オプション 2）保存 [!DNL Google Analytics]データベース内の&#39;獲得ソースデータ
 
-この記事では、保存方法を説明します [!DNL Google Analytics] 獲得チャネル情報を独自のデータベース ( つまり、 `source`, `medium`, `term`, `content`, `campaign`、および `gclid` ユーザーが Web サイトに初めてアクセスする際に使用したパラメーター。 これらのパラメーターの説明については、 [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). 次に、この情報を使用して実行できる、強力なマーケティング分析の一部を [!DNL MBI].
+このトピックでは、保存方法を説明します [!DNL Google Analytics] 獲得チャネル情報を独自のデータベース ( つまり、 `source`, `medium`, `term`, `content`, `campaign`、および `gclid` ユーザーが Web サイトに初めてアクセスする際に使用したパラメーター。 これらのパラメーターの説明については、 [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). 次に、この情報を使用して実行できる、強力なマーケティング分析の一部を [!DNL Commerce Intelligence].
 
 #### なぜ？
 
@@ -51,7 +51,7 @@ Adobeは、設定に基づいてリファラルソースデータを追跡する
 
 > `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 
-文字列にエンコードされた獲得ソースデータが明らかに一部存在します。 これが訪問者の最新の獲得ソースおよび関連するキャンペーンデータであることを確認するためにテストされます。 次に、データの抽出方法を知っておく必要があります。 幸いにも、Justin Cutroni はこのエンコーディングの仕組みを以前に説明し、重要な情報を抽出する JavaScript コードを共有していました。
+文字列にエンコードされた獲得ソースデータが明らかに一部存在します。 これが訪問者の最新の獲得ソースおよび関連するキャンペーンデータであることを確認するためにテストされます。 次に、データの抽出方法を知っておく必要があります。
 
 このコードは、 [github でホストされる PHP ライブラリ](https://github.com/RJMetrics/referral-grabber-php). ライブラリを使用するには、 `include` ～への言及 `ReferralGrabber.php` その後、
 
@@ -59,7 +59,7 @@ Adobeは、設定に基づいてリファラルソースデータを追跡する
 
 返された `$data` 配列はキーのマップです `source`, `medium`, `term`, `content`, `campaign`, `gclid`、およびそれぞれの値。
 
-Adobeでは、という名前のテーブルをデータベースに追加することをお勧めします。 `user_referral`を作成し、次のような列を含めます。 `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. ユーザーがサインアップするたびに、紹介情報を取得してこのテーブルに保存します。
+[!DNL Adobe] では、という名前のテーブルをデータベースに追加することをお勧めします。 `user_referral`を作成し、次のような列を含めます。 `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. ユーザーがサインアップするたびに、紹介情報を取得してこのテーブルに保存します。
 
 #### このデータの使用方法
 

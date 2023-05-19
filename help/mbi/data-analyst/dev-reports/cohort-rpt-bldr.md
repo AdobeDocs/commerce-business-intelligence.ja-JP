@@ -2,7 +2,7 @@
 title: コホートReport Builder
 description: ライフサイクルにわたって同様の特性を共有するユーザーグループの分析について説明します。
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # コホートReport Builder
 
-ユーザーの様々なサブセットの時間の経過に伴う動作を調べたいと思ったことはありますか？ 例えば、プロモーション期間中に登録したユーザーの平均ライフタイム売上高は、登録していないユーザーの平均ライフタイム売上高よりも高いのかと疑問に思ったことはありますか？ 答えが `Yes`、 `Cohort Report Builder` は、お客様に最適なツールです。 [!DNL MBI] は、この分析の実行とビジネスに関連するように最適化されています。
+ユーザーの様々なサブセットの時間の経過に伴う動作を調べたいと思ったことはありますか？ 例えば、プロモーション期間中に登録したユーザーの平均ライフタイム売上高は、登録していないユーザーの平均ライフタイム売上高よりも高いのかと疑問に思ったことはありますか？ 答えが `Yes`、 `Cohort Report Builder` は、お客様に最適なツールです。 [!DNL Adobe Commerce Intelligence] は、この分析の実行とビジネスに関連するように最適化されています。
 
 ## コホート分析とは {#what}
 
 `Cohort` 解析は、ライフサイクルにわたって同じ特性を共有するユーザーグループの解析として広く定義できます。 異なるユーザーグループにわたる行動傾向を識別できます。
 
-詳しくは、 `cohort` 分析、 [ここを見る](https://www.cohortanalysis.com/).
+詳細な入門ガイド `cohort` 分析、レビュー [このページ](https://www.cohortanalysis.com/).
 
-を [!DNL MBI] ダッシュボードを使用すると、簡単にユーザーを作成できます `cohorts` に基づく `cohort` アカウントの日付と指標。
+を [!DNL Commerce Intelligence] ダッシュボードを使用すると、簡単にユーザーを作成できます `cohorts` に基づく `cohort` アカウントの日付と指標。
 
 ## コホート分析が重要なのはなぜでしょうか？ {#important}
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 #### レガシーアーキテクチャ {#personalinfo}
 
-以下に、旧バージョンの `Cohort Report Builder`. 新しいバージョンの使用に関心がある場合は、 [新しいアーキテクチャ](../../administrator/account-management/new-architecture.md) への移行の詳細 [!DNL MBI] 新しいアーキテクチャアカウント。
+以下に、旧バージョンの `Cohort Report Builder`. 新しいバージョンの使用に関心がある場合は、 [新しいアーキテクチャ](../../administrator/account-management/new-architecture.md) への移行の詳細 [!DNL Commerce Intelligence] 新しいアーキテクチャアカウント。
 
 #### 独自の作成方法 `cohort` 分析？ {#create}
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 `Cohort` アクション分析！ ここでは、累積的およびユーザーごとの売上高が、時間の経過と共に増加している様子を確認できます。
 
-ここでは、独自の `cohort` 分析。 例 ( プロセスを示すアニメーションGIF) については、 [「例」セクション](#examples) 」を参照してください。
+ここでは、独自の `cohort` 分析。 例 ( プロセスを示すアニメーションGIF) については、 [「例」セクション](#examples) を参照してください。
 
 1. クリック **[!UICONTROL Report Builder]** ( 左側のタブまたは **[!UICONTROL Add Report** > **Create Report]** （任意のダッシュボード）
 

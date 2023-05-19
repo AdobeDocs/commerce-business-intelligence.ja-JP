@@ -2,9 +2,9 @@
 title: ダッシュボードの削除
 description: ダッシュボードを削除する方法を説明します。
 exl-id: 27482dea-0593-46d6-8310-ad505ff9436a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 1. [を使用 `Account Settings` ページ](#account)  — このメソッドにはが必要です [管理者権限](../../administrator/user-management/user-management.md).
 
-1. [を使用 `Dashboard Options` メニュー](#do) ：このメソッドを使用するには、ダッシュボードを所有しているか、編集権限が必要です。
+1. [を使用 `Dashboard Options` メニュー](#do)  — このメソッドを使用するには、ダッシュボードを所有しているか、 `Edit` 権限。
 
 ## でダッシュボードを削除 `Account Settings` ページ {#account}
 

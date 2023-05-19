@@ -2,9 +2,9 @@
 title: 指標アクセスの制限
 description: 指標のアクセスと制限の操作方法について説明します。
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 1. に移動します。 **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
 1. 目的のユーザーアカウントを選択します。
-1. この **[!UICONTROL Metrics]** 「 」タブに、使用可能な指標のリストが表示されます。 ユーザーにアクセスを許可する指標を確認します。ユーザーがアクセスできないアセットの選択を解除します。
-1. [!DNL MBI] は変更を自動的に保存します。 変更が成功した場合、 [!DNL MBI] 表示 **[!UICONTROL Saved!]** をクリックします。
+1. この **[!UICONTROL Metrics]** 「 」タブに、使用可能な指標のリストが表示されます。 ユーザーにアクセス権を付与する指標を選択し、ユーザーがアクセス権を付与しない指標の選択を解除します。
+1. [!DNL Adobe Commerce Intelligence] は変更を自動的に保存します。 変更が成功した場合、 [!DNL Commerce Intelligence] 表示 **[!UICONTROL Saved!]** をクリックします。
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->指標を複製する場合、 [!DNL MBI] 元の指標に設定されたユーザー権限をコピーします。
+>指標を複製する場合、 [!DNL Commerce Intelligence] 元の指標に設定されたユーザー権限をコピーします。

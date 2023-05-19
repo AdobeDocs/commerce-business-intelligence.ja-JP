@@ -2,16 +2,16 @@
 title: Google Analyticsでの UTM トラッキング
 description: Google Analyticsでの UTM トラッキング（タグ付け）のベストプラクティスについて説明します。
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
 # UTM トラッキング
 
-`UTM` トラッキングは、ユーザーの来訪元を分析できる URL のタグ付け規則です。 ほとんどのマーケティング用電子メールまたはバナー広告からクリックした URL を見ると、UTM タグが表示されます。 その長いリンクは、次のようなもので終わる `utm\_source` および `utm\_medium`.
+`UTM` トラッキングは、ユーザーの送信元を分析できる、URL のタグ付け規則です。 ほとんどのマーケティング用電子メールまたはバナー広告からクリックした URL を見ると、UTM タグが表示されます。 その長いリンクは、次のようなもので終わる `utm\_source` および `utm\_medium`.
 
 [!DNL Google Analytics] uses `UTM` タグを使用して、トラフィックの送信元を確認します。 この情報の一部は、 [HTTP リファラー](https://en.wikipedia.org/wiki/HTTP_referer) しかし残りの部分は自分で提供しなければなりません `UTM` パラメーター。 見た時 `google adwords` または `email marketing`つまり、 `UTM` 元のリンクから記録されるパラメーターをクリックして、ユーザーの cookie に保存します。 そこから [!DNL Google Analytics] はそのデータを使用して [興味のある行動を引き起こす](../data-analyst/analysis/google-track-user-acq.md) を選択します。 これらのパラメーターの内容を理解すると、UTM タグの設定と使用の最善の方法を理解できます。
 

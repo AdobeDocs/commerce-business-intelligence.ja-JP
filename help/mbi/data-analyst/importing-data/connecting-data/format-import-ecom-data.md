@@ -2,7 +2,7 @@
 title: e コマースデータのフォーマットとインポート
 description: e コマースデータのアップロードに使用する最適なデータ形式について説明します。
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # データのフォーマットとインポート
 
-現在、でサポートされていない統合を使用している場合 [!DNL MBI]を使用する場合、 [ファイルのアップロード機能](using-file-uploader.md) データをData Warehouseに取り込む この記事では、e コマースデータのアップロードに使用する最適なデータ形式について説明します。
+現在、でサポートされていない統合を使用している場合 [!DNL Adobe Commerce Intelligence]を使用する場合、 [ファイルのアップロード機能](using-file-uploader.md) データをData Warehouseに取り込む このトピックでは、e コマースデータのアップロードに使用する理想的なデータ形式について説明します。
 
 ## `Orders` 表
 

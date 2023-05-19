@@ -2,24 +2,24 @@
 title: ビジュアルReport Builder
 description: ビジュアルReport Builderの使用方法
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# `Visual Report Builder`
+# [!DNL Visual Report Builder]
 
-`Visual Report Builder` では、事前定義された指標に基づくクイックレポートを簡単に作成できます。 各指標には、レポートのデータのセットを定義するクエリが含まれます。
+[!DNL Visual Report Builder] では、事前定義された指標に基づくクイックレポートを簡単に作成できます。 各指標には、レポートのデータのセットを定義するクエリが含まれます。
 
 次の例では、シンプルなレポートの作成、追加のディメンションでのデータのグループ化、日付と時間間隔の設定、グラフタイプの変更、レポートのダッシュボードへの保存を行う方法を示します。
 
 ## シンプルなレポートを作成するには：
 
-1. 内 [!DNL MBI] メニュー、クリック **[!UICONTROL Report Builder]**.
+1. 内 [!DNL Commerce Intelligence] メニュー、クリック **[!UICONTROL Report Builder]**.
 
-1. の下 `Visual Report Builder`をクリックし、 **[!UICONTROL Create Report]** 次の操作を実行します。
+1. の下 [!UICONTROL Visual Report Builder]をクリックし、 **[!UICONTROL Create Report]** 次の操作を実行します。
 
    * クリック **[!UICONTROL Add Metric]**.
 
@@ -68,7 +68,7 @@ ht-degree: 0%
       ![転送されたデータ](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
    **`Date Range`**
 
-   この `Date Range` コントロールは、現在の日付範囲と時間間隔の設定を表示し、右側のグラフのすぐ上にあります。
+   この `Date Range` コントロールは、現在の日付範囲と時間間隔の設定を表示し、右側のグラフのすぐ上に配置されます。
 
    * 次をクリック： `Date Range` コントロール ( この例では `All-Time by Month`.
 

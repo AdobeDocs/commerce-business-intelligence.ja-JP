@@ -2,20 +2,20 @@
 title: enterprise_rma 表
 description: 特定のリターンリクエストに関する情報を分析する方法を説明します。
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # enterprise_rma 表
 
-各行 ( `enterprise_rma` テーブル ( `magento_rma` Commerce 2.x では、名前はカスタマイズ可能です )、特定の返却リクエストに関する情報が含まれます。
+各行 ( `enterprise_rma` テーブル ( `magento_rma` Adobe Commerce 2.x では（名前はカスタマイズ可能）、特定の返却リクエストに関する情報が含まれます。
 
 >[!NOTE]
 >
->このテーブルは、ユーザーが `Enterprise Edition` または `Enterprise Cloud Edition` 顧客。
+>この表は、Adobe Commerceアカウントに標準で用意されている `Enterprise Edition` または `Enterprise Cloud Edition` 顧客。
 
 ## 共通のネイティブ列
 

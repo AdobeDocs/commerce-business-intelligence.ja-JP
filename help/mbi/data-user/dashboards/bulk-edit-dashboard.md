@@ -1,23 +1,23 @@
 ---
 title: ダッシュボードでのグラフの一括編集
-description: の一括編集機能の使用方法を説明します。 [!DNL MBI].
+description: の一括編集機能の使用方法を説明します。 [!DNL Commerce Intelligence].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 # ダッシュボードでのグラフの一括編集
 
-一括編集機能を使用すると、ダッシュボードでグラフの名前や日付を簡単に変更できます。 例えば、特定のダッシュボード上のすべてのグラフで、四半期ごとではなく、1 つの店舗を参照し、月単位でレポートを作成するとします。 すべてを手動で変更するのではなく、 `bulk-editing` 機能を使用して作業を行います。 この記事では、次の使用方法を学びます。
+一括編集機能を使用すると、ダッシュボードでグラフの名前や日付を簡単に変更できます。 例えば、特定のダッシュボード上のすべてのグラフで、四半期ごとではなく、1 つの店舗を参照し、月単位でレポートを作成するとします。 すべてを手動で変更するのではなく、 `bulk-editing` 機能を使用して作業を行います。 このトピックでは、以下の使用方法を学びます。
 
-* [この ](#findreplace)
+* [この [!DNL Find/Replace] 機能](#findreplace)
 
-* [この ](#prepend)
+* [この [!DNL Prepend Name] 機能](#prepend)
 
-* [この ](#dates)
+* [この [!DNL Change Dates] 機能](#dates)
 
 とはいえ、この点を考えてみましょう。 *これらの変更は永続的に行う必要がありますか？* そうでない場合は、ダッシュボードのクローンを作成し、新しいダッシュボードで日付を変更することを検討してください。 これにより、元のダッシュボードを保持したまま、必要な変更を加えることができます。
 
@@ -25,11 +25,11 @@ ht-degree: 0%
 >
 >多数のレポートを変更する場合は、更新プロセスに少し時間がかかる可能性があります。
 
-## 使用 `Find/Replace` {#findreplace}
+## 使用 [!DNL Find/Replace] {#findreplace}
 
 1. 歯車 (![](../../assets/gear-icon.png)) アイコンをクリックし、 [!UICONTROL Bulk Edit Reports] ウィンドウ
 
-1. クリック **[!UICONTROL Chart Title Find and Replace]** をクリックします。
+1. クリック **[!UICONTROL Chart Title Find and Replace]** を選択します。
 
 1. 内 `Chart Title Find` フィールドに、検索する単語または文字を入力します。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. 歯車 (![](../../assets/gear-icon.png)) アイコンをクリックし、 [!UICONTROL Bulk Edit Reports] ウィンドウ
 
-1. クリック **[!UICONTROL Prepend Report Names]** をクリックします。
+1. クリック **[!UICONTROL Prepend Report Names]** を選択します。
 
 1. グラフの前に付ける単語または文字を入力します。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 変更 `Dates` {#dates}
 
-1. 歯車 (![](../../assets/gear-icon.png)) アイコンをクリックし、 `!UICONTROL Bulk Edit Reports` ウィンドウ
+1. 歯車 (![](../../assets/gear-icon.png)) アイコンをクリックし、 [!UICONTROL Bulk Edit Reports] ウィンドウ
 
 1. クリック **[!UICONTROL Change Dates]** をクリックします。
 

@@ -2,22 +2,22 @@
 title: 含まれるダッシュボード
 description: ユーザーの全期間売上高、再購入回数など、重要な指標の正常性を確認し、将来の調査のための強固な基盤を作成する方法を説明します。
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
 # 含まれるダッシュボード
 
-Adobeオファー e コマースおよび `SaaS` スターターパッケージ。 これらのパッケージは、Adobeアナリストが作成し、データセット用にカスタマイズされた一連のダッシュボードとレポートを含んでいます。 これらのパッケージに含まれる分析を使用すると、ユーザーの全期間売上高、再購入回数など、重要な指標の状態を確認でき、将来の調査に向けた基盤を確立できます。
+[!DNL Adobe] オファー `eCommerce` および `SaaS` スターターパッケージ。 これらのパッケージは、Adobeアナリストが作成し、データセット用にカスタマイズされた一連のダッシュボードとレポートを含んでいます。 これらのパッケージに含まれる分析を使用すると、ユーザーの全期間売上高、再購入回数など、重要な指標の状態を確認でき、将来の調査に向けた基盤を確立できます。
 
 >[!NOTE]
 >
 >一部のダッシュボードが使用できるかどうかは、データセットによって異なります。
 
-ご質問がある場合や、アカウントへのパッケージの追加に関心がある場合は、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) を参照してください。
+ご質問がある場合や、アカウントへのパッケージの追加に関心がある場合は、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を参照してください。
 
 ## エグゼクティブの概要
 

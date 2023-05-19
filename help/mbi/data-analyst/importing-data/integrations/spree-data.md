@@ -1,10 +1,10 @@
 ---
 title: 予想される空きデータ
-description: Spree から [!DNL MBI] アカウント
+description: Spree から [!DNL Commerce Intelligence] アカウント
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 次の条件が満たされた後 [接続済み [!DNL Spree] ストア](../../../data-analyst/importing-data/integrations/spree.md)を使用する場合、 [Data Warehouse管理](../../data-warehouse-mgr/tour-dwm.md) 関連するデータフィールドを簡単に追跡するには [!DNL Spree] プラットフォームを使用して分析できます。
 
-この記事では、読み込み元となる主なデータテーブルについて説明します。 [!DNL Spree] を [!DNL MBI] アカウント（次へのリンクを含む） [追加ドキュメント](https://guides.spreecommerce.org/developer/addresses.html#address) について [!DNL Spree] データ。
+このトピックでは、からインポートできる主なデータテーブルについて説明します。 [!DNL Spree] を [!DNL Commerce Intelligence] アカウント（次へのリンクを含む） [追加ドキュメント](https://guides.spreecommerce.org/developer/addresses.html#address) について [!DNL Spree] データ。
 
 | **テーブル名** | **説明** |
 |-----|-----|
@@ -28,4 +28,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続中 [!DNL Spree]](../integrations/spree.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

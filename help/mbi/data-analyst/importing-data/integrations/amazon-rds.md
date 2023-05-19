@@ -2,53 +2,57 @@
 title: Amazon RDS の接続
 description: RDS インスタンスを接続する手順を説明します。
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
-# Amazon RDS の接続
+# 接続 [!DNL Amazon RDS]
 
-Amazon Relational Database Services (RDS) は、既にご存知のデータベースエンジンで動作する管理データベースサービスです。 [[!DNL MySQL]](../integrations/mysql-via-a-direct-connection.md), [[!DNL Microsoft® SQL]](../integrations/microsoft-sql-server.md)、および [[!DNL PostgreSQ]](../integrations/postgresql.md).
+[!DNL Amazon Relational Database Services (RDS)] は、おそらく既にご存知のデータベースエンジン上で動作する、管理対象のデータベースサービスです。
 
-RDS インスタンスを接続する手順は、使用しているデータベースの種類と、暗号化された接続 ( [`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)) ですが、次に基本事項を示します。
+* [[!DNL MySQL]](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL Microsoft SQL]](../integrations/microsoft-sql-server.md)
+* [[!DNL PostgreSQL]](../integrations/postgresql.md)
 
-## 許可 [!DNL MBI] データベースにアクセスするには
+接続の手順 [!DNL RDS] インスタンスは、使用しているデータベースの種類と、暗号化された接続 ( [`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)) ですが、以下が基本です。
 
-資格情報ページ (**[!UICONTROL Manage Data** > **Integrations]**) をクリックすると、RDS を MBI に接続するために承認する必要がある IP アドレスが含まれているボックスが表示されます。 `54.88.76.97` および `34.250.211.151`. 以下に、 `MySQL credentials` 「IP アドレス」ボックスがハイライト表示されたページ
+## 許可 [!DNL Commerce Intelligence] データベースにアクセスするには
+
+資格情報ページ (**[!UICONTROL Manage Data** > **Integrations]**) をクリックすると、R への接続を許可する必要がある IP アドレスが記載されたボックスが表示されます[!DNL RDS] から [!DNL Commerce Intelligence]: `54.88.76.97` および `34.250.211.151`. 以下に、 `MySQL credentials` 「IP アドレス」ボックスがハイライト表示されたページ
 
 ![](../../../assets/RDS_IP.png)
 
-の場合 [!DNL MBI] RDS インスタンスに正常に接続するには、AWS管理コンソールから、これらの IP アドレスを適切なデータベースセキュリティグループに追加する必要があります。 これらの IP アドレスは、既存のグループに追加することも、既存のグループを作成することもできます。重要なのは、接続先のインスタンスへのアクセスがグループに許可されていることです [!DNL MBI].
+の場合 [!DNL Commerce Intelligence] を [!DNL RDS] 例えば、AWS管理コンソールから、これらの IP アドレスを適切なデータベースセキュリティグループに追加する必要があります。 これらの IP アドレスは、既存のグループに追加することも、既存のグループを作成することもできます。重要なのは、接続先のインスタンスへのアクセスがグループに許可されていることです [!DNL Commerce Intelligence].
 
-を [!DNL MBI] IP アドレス、必ず `/32` を指定し、Amazonに対して、正確な IP アドレスであることを示します。 心配するな。AWSのインターフェイスでは、これが必要であることが明確になっています。
+を [!DNL Commerce Intelligence] IP アドレス、必ず `/32` 指定するアドレスの末尾に [!DNL Amazon] 正確な IP アドレスであることを示します。 心配するな。AWSのインターフェイスでは、これが必要であることが明確になっています。
 
-## の作成 `Linux` のユーザー [!DNL MBI] {#linux}
+## の作成 `Linux` のユーザー [!DNL Commerce Intelligence] {#linux}
 
 >[!NOTE]
 >
->この手順は、暗号化された接続を使用する場合にのみ必要です。 この方法の手順については、使用しているデータベースの設定に関する記事を参照してください ( 例：MySQL)。 この `Linux` ユーザーが `SSH tunnel`：インターネット経由でデータを送信する最も安全な方法です。
+>この手順は、暗号化された接続を使用する場合にのみ必要です。 この方法の手順については、使用しているデータベースの設定トピックを参照してください ( 例：MySQL)。 この `Linux` ユーザーが `SSH tunnel`：インターネット経由でデータを送信する最も安全な方法です。
 
-## MBI 用のデータベースユーザーの作成
+## のデータベースユーザーを作成します。 [!DNL Commerce Intelligence]
 
-これは、使用しているデータベースに応じて、手順が異なるプロセスの一部です。 でも、アイデアは同じです。次のユーザーを作成します。 [!DNL MBI] データベースへのアクセスに使用する データベースの作成手順 [!DNL MBI] ユーザーは、使用しているデータベースの設定記事に記載されています。
+これは、使用しているデータベースに応じて、手順が異なるプロセスの一部です。 ただし、ユーザーを作成して [!DNL Commerce Intelligence] データベースへのアクセスに使用する データベースの作成手順 [!DNL Commerce Intelligence] 使用しているデータベースの設定トピックに「 」というユーザーが表示されます。
 
-## MBI に接続情報を入力
+## 次の場所に接続情報を入力 [!DNL Commerce Intelligence]
 
-君が許した後 [!DNL MBI] インスタンスにアクセスしてユーザーを作成しました。最後に、次の場所に接続情報を入力する必要があります。 [!DNL MBI].
+君が許した後 [!DNL Commerce Intelligence] インスタンスにアクセスしてユーザーを作成しました。最後に、次の場所に接続情報を入力する必要があります。 [!DNL Commerce Intelligence].
 
 次の資格情報ページ： `MySQL`, `Microsoft SQL`、および `PostgreSQL` が `Integrations` ページ (**[!UICONTROL Manage Data** > **Integrations]**) をクリックして **[!UICONTROL Add Integration]**. 統合のリストが表示されたら、使用しているデータベースのアイコンをクリックして資格情報ページに移動します。 現在、必要な統合にアクセスできない場合は、Adobeアカウントチームにお問い合わせください。
 
 接続の作成を完了するには、次の情報が必要です。
 
-* RDS インスタンスのパブリックアドレス：これは、AWS管理コンソールで確認できます。
+* RDS インスタンスのパブリックアドレス：これは、 [!DNL AWS] 管理コンソール。
 * データベースインスタンスが使用するポート：一部のデータベースにはデフォルトポートがあり、これにより `Port` フィールドに入力します。 この情報は、データベースのセットアップドキュメントにも記載されています。
-* 作成したユーザーのユーザー名とパスワード [!DNL MBI].
+* 作成したユーザーのユーザー名とパスワード [!DNL Commerce Intelligence].
 
 暗号化された接続を使用している場合は、 `Encrypted` データベース資格情報ページをに切り替えます。 `Yes`. 暗号化を設定するための追加のフォームが表示されます。
 
 ![](../../../assets/sql-integration-encrypted-yes.png)
 
-それだけだ！ RDS インスタンスの接続が完了しました。
+

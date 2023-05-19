@@ -2,7 +2,7 @@
 title: 複数の画面でのダッシュボードの表示
 description: オフィス内でダッシュボードを表示する方法を説明します。
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # オフィスの周りにダッシュボードを表示
 
-の場合 [!DNL MBI] オフィス全体でダッシュボードとレポートを画面に表示したい場合は、様々なハードウェアオプションを使用して、この設定を簡単に有効にできます。
+の場合 [!DNL Commerce Intelligence] オフィス全体でダッシュボードとレポートを画面に表示したい場合は、様々なハードウェアオプションを使用して、この設定を簡単に有効にできます。
 
 オプションに必要な事項の推奨リストを次に示します。
 

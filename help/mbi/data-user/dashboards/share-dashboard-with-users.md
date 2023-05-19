@@ -2,16 +2,16 @@
 title: ダッシュボードを他のユーザーと共有する
 description: ダッシュボードを他のユーザーと共有する方法を説明します。
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
 # ダッシュボードを他のユーザーと共有する
 
-ダッシュボードの共有は、チームをループ状態に保ち、協調ディスカッションを促進する優れた方法です。 中央のダッシュボードを作成して共有することで、管理を維持しながら、必要な情報をチームに提供できます。 [Adobeが推奨](../../best-practices/share-dashboard-best-practice.md){:許可する target=&quot;_blank&quot;} `Edit` 選択した一部に対する権限で、誤った変更を最小限に抑えることができます。
+ダッシュボードの共有は、チームをループ状態に保ち、協調ディスカッションを促進する優れた方法です。 中央のダッシュボードを作成して共有することで、管理を維持しながら、必要な情報をチームに提供できます。 [[!DNL Adobe] 推奨](../../best-practices/share-dashboard-best-practice.md){:許可する target=&quot;_blank&quot;} `Edit` 選択した一部に対する権限で、誤った変更を最小限に抑えることができます。
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Share Dashboard]** をクリックします。
 
-   次の [!DNL MBI] アカウントが表示されます。
+   次の [!DNL Commerce Intelligence] アカウントが表示されます。
 
 1. ダッシュボードを共有するユーザーを選択するには、名前の左側にあるボックスをオンにします。
 

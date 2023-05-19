@@ -1,23 +1,23 @@
 ---
 title: SQL 計算列の作成と使用
-description: 新しい MBI アーキテクチャで、SQL 計算列の形式で高度な列を作成する方法を説明します。
+description: 新しいAdobe Commerce Intelligence アーキテクチャで、SQL 計算列の形式で高度な列を作成する方法を説明します。
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
 # SQL 計算列の作成
 
-このトピックでは、 `Calculation` 列タイプ：を使用してテーブルに追加できる [Data Warehouse管理](../data-warehouse-mgr/tour-dwm.md). 以下に、SQL 計算の動作、使用理由、SQL 計算の作成プロセス、2 つの例を示します。
+このトピックでは、 `Calculation` 列タイプ（を使用してテーブルに追加できます） [Data Warehouse管理](../data-warehouse-mgr/tour-dwm.md). 以下に、SQL 計算の動作、使用理由、SQL 計算の作成プロセスを示します。2 つの例があります。
 
 **説明**
 
-過去に、みなされた列 `advanced` ここでおこなえるのは、カスタマーサクセスチームのアナリストのみです。 [!DNL MBI]. これで、すべての機能がエンドユーザーに提供され、高度な列は `SQL Calculation` 新しい列 [!DNL MBI] アーキテクチャ。
+過去に、みなされた列 `advanced` ここでおこなえるのは、カスタマーサクセスチームのアナリストのみです。 [!DNL Adobe Commerce Intelligence]. これで、すべての機能がエンドユーザーに提供され、高度な列は `SQL Calculation` 新しい列 [!DNL Commerce Intelligence] アーキテクチャ。
 
-この `Calculation` 列タイプは、Data Warehouseマネージャのオプションとして使用できるようになりましたが、同じテーブル操作で、PostgreSQL ロジックを使用してテーブルの列を変換できます。 で使用できる関数と演算子に関するドキュメント `Calculatio`n 列の型は PostgreSQL の Web サイトで見つかります [ここ](https://www.postgresql.org/docs/9.6/functions.html).
+この `Calculation` 列タイプは、Data Warehouseマネージャのオプションとして使用できるようになりましたが、同じテーブル操作で、PostgreSQL ロジックを使用してテーブルの列を変換できます。 で使用できる関数と演算子に関するドキュメント `Calculation` 列の型は PostgreSQL の Web サイトで見つかります [ここ](https://www.postgresql.org/docs/9.6/functions.html).
 
 を使用して作成できる様々な列 `Calculation` 列はほとんど無制限ですが、ほとんどの列は、次の例で使用される IF-THEN 文と基本的な算術演算を使用して作成できます。
 
@@ -73,4 +73,5 @@ ht-degree: 0%
    * `Datetime` - yyyy-MM-dd hh:mm:ss 形式
 
 1. クリック **[!UICONTROL test column]**. これにより、各入力に対して 5 つのテスト値のリストが生成され、テスト値の各セットに対して手順 6 のロジックの結果が表示されます。 SQL のいずれかの部分でエラーが生成された場合は、適切なエラーメッセージが返されます。 サンプル結果は、すべての入力列がネイティブフィールドの場合にのみ生成できます。 いずれかの入力列が計算列である場合は、指標に列を追加し、ビジュアルReport Builderで表示して、結果を検証する必要があります
-1. 結果に満足したら、 **[!UICONTROL Save]**. この列は使用可能です。
+
+1. 結果に問題がなければ、 **[!UICONTROL Save]**. この列は使用可能です。

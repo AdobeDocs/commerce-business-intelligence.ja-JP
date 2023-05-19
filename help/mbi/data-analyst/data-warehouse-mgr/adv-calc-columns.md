@@ -2,16 +2,16 @@
 title: 高度な計算列のタイプ
 description: ほとんどの使用例に関する基本事項を説明します。ただし、Data Warehouseマネージャーで作成できるものよりも少し複雑な計算列が必要な場合もあります。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 4%
 
 ---
 
 # 高度な計算列のタイプ
 
-作成しようとする多くの分析には、 **新しい列** を `group by` または `filter by`. この [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルではほとんどの使用例について基本的な説明をしますが、Data Warehouseマネージャーで作成できるものよりも少し複雑な計算列が必要な場合があります。
+作成したい分析の多くには、 **新しい列** を `group by` または `filter by`. この [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルではほとんどの使用例について基本的な説明をしますが、Data Warehouseマネージャーで作成できるものよりも少し複雑な計算列が必要な場合があります。
 {:#top}
 
 これらのタイプの列は、Data WarehouseアナリストのAdobeチームが作成できます。 新しい計算列を定義するには、次の情報を入力します。
@@ -159,7 +159,7 @@ A **タイムゾーン変換** 計算列は、特定のデータソースのタ�
 
 心配しないで。 ここに記載されていないので、実行できないとは限りません。 AdobeアナリストのData Warehouseチームがお手伝いします。
 
-新しい計算列を定義するには、次の手順を実行します。 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) に、作成する内容の詳細を示します。
+新しい計算列を定義するには、次の手順を実行します。 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) に、作成する内容の詳細を示します。
 
 ## 関連ドキュメント
 

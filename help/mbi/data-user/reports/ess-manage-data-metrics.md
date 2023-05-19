@@ -2,9 +2,9 @@
 title: 指標の作成
 description: 指標を使用してグラフを作成する方法を説明します。
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >必要 [管理者権限](../../administrator/user-management/user-management.md).
 
-つまり、指標は測定です。 SQL およびデータベース構造では、指標は、変数期間にわたって保存されたクエリのようなものです。
+指標は測定です。 SQL およびデータベース構造では、指標は、変数期間にわたって保存されたクエリのようなものです。
 
-In [!DNL MBI]を使用する場合、指標を [グラフを作成](../../data-user/reports/ess-rpt-build-visual.md). 例えば、指標 `revenue` は、注文の合計数です。 指標 `average customer revenue per order` は、顧客が注文あたりに費やす平均値です。
+In [!DNL Commerce Intelligence]を使用する場合、指標を [グラフを作成](../../data-user/reports/ess-rpt-build-visual.md). 例えば、指標 `revenue` は、注文の合計数です。 指標 `average customer revenue per order` は、顧客が注文あたりに費やす平均値です。
 
 レポートで使用すると、指標を指定した期間にわたって分析でき、 [フィルターまたはセグメント化済み](../../best-practices/segment-filter.md) 異なるカテゴリ別。 性別でグループ化した平均顧客売上高の分析を検討します。この場合、 `average customer revenue per order` は指標で、性別はグループ化です。
 
@@ -68,7 +68,7 @@ In [!DNL MBI]を使用する場合、指標を [グラフを作成](../../data-u
 
 この [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 「 」セクションには、フィルタリングまたはグループ化に使用可能なすべてのデータディメンションが表示されます。デフォルトでは、使用可能なすべてのデータ列がディメンションとして表示されます。 この例では、紹介元別に売上高をセグメント化する場合は、ここでそれを実行できます。
 
-使用可能なすべてのデータ列をディメンションとして表示する以外に、 [!DNL MBI] 列がグループ化可能な場所です。 *レポートでデータをセグメント化またはグループ化するには*、列はグループ化可能としてマークする必要があります。
+使用可能なすべてのデータ列をディメンションとして表示する以外に、 [!DNL Commerce Intelligence] 列がグループ化可能な場所です。 *レポートでデータをセグメント化またはグループ化するには*、列はグループ化可能としてマークする必要があります。
 
 ## 終了中 {#finish}
 

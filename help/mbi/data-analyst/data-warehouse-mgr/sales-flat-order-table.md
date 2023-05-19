@@ -2,9 +2,9 @@
 title: sales_order テーブル
 description: sales_order テーブルの操作方法を説明します。
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 | `base_tax_amount` | 注文に適用される税額 |
 | `billing_address_id` | `Foreign key` ～と関連している `sales_order_address` 表。 結合先 `sales_order_address.entity_id` 注文に関連付けられた請求先住所の詳細を決定するには |
 | `coupon_code` | 注文に適用されたクーポン。 クーポンが適用されていない場合、このフィールドは「 `NULL` |
-| `created_at` | 注文の作成タイムスタンプ。ローカルの UTC に保存されます。 の設定に応じて、 [!DNL MBI]の場合、このタイムスタンプは [!DNL MBI] データベースのタイムゾーンと異なる |
+| `created_at` | 注文の作成タイムスタンプ。ローカルの UTC に保存されます。 の設定に応じて、 [!DNL Commerce Intelligence]の場合、このタイムスタンプは [!DNL Commerce Intelligence] データベースのタイムゾーンと異なる |
 | `customer_email` | 注文をする顧客の電子メールアドレス。 これは、ゲストによるチェックアウトで処理される注文を含め、すべての状況で設定されます |
 | `customer_group_id` | に関連付けられた外部キー `customer_group` 表。 結合先 `customer_group.customer_group_id` オーダーに関連付けられた顧客グループを特定するには、以下を実行します。 |
 | `customer_id` | `Foreign key` ～と関連している `customer_entity` 顧客が登録されている場合は、テーブル。 結合先 `customer_entity.entity_id` を使用して、注文に関連付けられている顧客属性を特定します。 注文がゲストによるチェックアウトを通じておこなわれた場合、このフィールドは `NULL` |
@@ -55,7 +55,7 @@ ht-degree: 0%
 | `Customer's lifetime revenue` | この顧客が行ったすべての注文に関する売上高の合計。 計算方法は `base_grand_total` 各ユニーク顧客のすべての注文のフィールド |
 | `Customer's order number` | この顧客の注文の順次注文ランク。 顧客が発注したすべての注文を識別し、 `created_at` タイムスタンプを設定し、各注文に増分整数値を割り当てます。 例えば、顧客の最初の注文では、 `Customer's order number` が 1 の場合、顧客の 2 番目の注文は `Customer's order number` 2 など。 |
 | `Customer's order number (previous-current)` | 顧客の前のオーダーのランクとこのオーダーのランクを連結したもので、 `-` 文字。 連結 (&quot;`Customer's order number` - 1&quot;) を&quot;`-`&quot;の後に&quot;`Customer's order number`&quot;. 例えば、顧客の 2 回目の購入に関連付けられた注文の場合、この列は、 `1-2`. 最も頻繁に使用されるのは、2 つの注文イベントの間の時間を表す場合です（つまり、「注文間の時間」グラフ）。 |
-| `Is customer's last order?` | 注文が顧客の最後の注文に対応するか、最新の注文に対応するかを決定します。 比較によって計算される `Customer's order number` 値 `Customer's lifetime number of orders`. これら 2 つのフィールドが指定された順序に等しい場合、この列は「はい」を返します。それ以外の場合は、「No」を返します。 |
+| `Is customer's last order?` | 注文が顧客の最後の注文に対応するか、最新の注文に対応するかを決定します。 比較によって計算される `Customer's order number` 値 `Customer's lifetime number of orders`. これら 2 つのフィールドが指定された順序に等しい場合、この列は `Yes`;それ以外の場合は `No` |
 | `Number of items in order` | 注文に含まれる品目の合計数量。 結合によって計算 `sales_order`.`entity_id` から `sales_order_item`.`order_id` そして要約すると `sales_order_item`.`qty_ordered` フィールド |
 | `Seconds between customer's first order date and this order` | この注文から顧客の最初の注文までの経過時間。 減算で計算 `Customer's first order date` から `created_at` 各注文に対して、秒数の整数で返されます。 |
 | `Seconds since previous order` | この注文から顧客の直前の注文までの経過時間。 計算には `created_at` 以前の `created_at` の値を返します。 例えば、顧客の 3 番目の注文に対応する注文レコードの場合、この列は顧客の 2 番目の注文から 3 番目の注文までの秒数を返します。 顧客の最初の注文に対して、このフィールドは `NULL` |

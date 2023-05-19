@@ -2,7 +2,7 @@
 title: 広告キャンペーンの ROI の向上
 description: キャンペーンのパフォーマンスを評価する様々な方法について説明します。
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # 広告キャンペーンと ROI
 
-MBI を使用すると、 [広告コストデータと売上高データの結婚](../../data-analyst/importing-data/integrations/google-adwords.md) をデータベースから削除します。 これにより、ROI が最も高いキャンペーンを特定できます。 この記事では、キャンペーンのパフォーマンスを評価する様々な方法を説明します。
+[!DNL Adobe Commerce Intelligence] 簡単に [広告コストデータと売上高データの結婚](../../data-analyst/importing-data/integrations/google-adwords.md) をデータベースから削除します。 これにより、どのキャンペーンが最も高い投資利益率 (ROI) を獲得しているかを特定できます。 このトピックでは、キャンペーンのパフォーマンスを評価する様々な方法について説明します。
 
 ## 前提条件
 
 * 広告コストデータを読み込む：
-   * [接続 [!DNL Google AdWords] から [!DNL MBI]](../importing-data/integrations/google-adwords.md):これにより、 [!DNL Adwords] ～に費やす [!DNL MBI]
-   * [他の広告コストデータをアップロード](../importing-data/connecting-data/import-offline-ad-data.md):これは、への直接コネクタのないチャネルの場合に推奨されます。 [!DNL MBI]
-   * 複数のソースからコストデータをインポートする場合、 [統合](../../best-practices/consolidating-your-tables.md) のデータ [!DNL MBI]. 簡単に [サポートチケットを提出する](../../guide-overview.md).
+   * [接続 [!DNL Google AdWords] から [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md):これにより、 [!DNL Adwords] ～に費やす [!DNL Commerce Intelligence]
+   * [他の広告コストデータをアップロード](../importing-data/connecting-data/import-offline-ad-data.md):これは、への直接コネクタのないチャネルの場合に推奨されます。 [!DNL Commerce Intelligence]
+   * 複数のソースからコストデータをインポートする場合、 [統合](../../best-practices/consolidating-your-tables.md) のデータ [!DNL Commerce Intelligence]. 簡単に [サポートチケットを提出する](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [ユーザー獲得チャネルデータの追跡](../analysis/google-track-user-acq.md)
 
 ## ユーザー獲得キャンペーン
@@ -35,7 +35,7 @@ MBI を使用すると、 [広告コストデータと売上高データの結�
 >
 >この例では、すべてのキャンペーンコストが新規ユーザーの獲得にのみ使用されていることを前提としています。 実際には、キャンペーンのコストは、コンバージョンされていない訪問、リピート購入者の獲得とも共有されます。 すべてのコストが新規登録ユーザーの獲得に使用されると仮定すると、結果として生じる ROI は最悪のケースシナリオ（獲得あたりの最も高いコスト）を考慮に入れます。 実際の ROI が計算よりも高いことを確認できます。
 >
->例：新規ユーザー 10 人とリピート購入者 10 人を生み出したキャンペーンに$20 を費やしたと仮定すると、新規ユーザーあたりの実際のコストは$1 です。 ただし、すべてのコストが新しいユーザーを獲得することを前提としている場合、獲得あたりのコストは$2 です )。
+>例：新規ユーザー 10 人とリピート購入者 10 人を生み出したキャンペーンに$20 を費やしたと仮定すると、新規ユーザーあたりの実際のコストは$1 です。 ただし、すべてのコストが新しいユーザーを獲得すると仮定した場合、1 回の獲得あたりのコストは$2 になります。
 
 **1. まず、広告コストをキャンペーン別にセグメント化するグラフを作成します。**
 
@@ -95,9 +95,9 @@ MBI を使用すると、 [広告コストデータと売上高データの結�
 
 >[!NOTE]
 >
->この例では、キャンペーンのすべてのコストが特定の製品の購入を生成する目的でのみ使用されていることを前提としています。 すべてのコストが購入の生成に費やされたと仮定すると、結果として生じる ROI は、最悪のケースのシナリオ（購入あたりの最も高いコスト）を考慮に入れます。 実際の ROI がこの計算よりも高いことを確認できます。 例：新規ユーザー 10 人と購入 10 人を生み出したキャンペーンに$20 を費やしたと仮定すると、購入あたりの実際のコストは$1 です。 すべてのコストが新しいユーザーを獲得したと仮定した場合、購入あたりのコストは$2 です。)*
+>この例では、キャンペーンのすべてのコストが特定の製品の購入を生成する目的でのみ使用されていることを前提としています。 すべてのコストが購入の生成に費やされたと仮定すると、結果として生じる ROI は、最悪のケースのシナリオ（購入あたりの最も高いコスト）を考慮に入れます。 実際の ROI がこの計算よりも高いことを確認できます。 例：新規ユーザー 10 人と購入 10 人を生み出したキャンペーンに$20 を費やしたと仮定すると、購入あたりの実際のコストは$1 です。 すべてのコストが新しいユーザーを獲得したと仮定した場合、購入あたりのコストは$2 です。
 
-開始する前に、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 次のディメンションを行項目テーブルに結合するには (`sales\_flat\_order\_item, order\_item`):
+開始する前に、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 次のディメンションを行項目テーブルに結合するには (`sales\_flat\_order\_item, order\_item`):
 
 * 注文のソース（ユーザーレベルで紹介ソースのみを追跡し、ユーザーのソースに参加する場合）
 * 注文のキャンペーン（ユーザーレベルで紹介ソースのみを追跡し、ユーザーのキャンペーンに参加する場合）

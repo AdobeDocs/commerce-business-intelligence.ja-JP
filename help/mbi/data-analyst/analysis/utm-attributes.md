@@ -2,16 +2,16 @@
 title: Google Analyticsと UTM 属性
 description: Google Analyticsソースの属性設定プロセスについて説明します。
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Google Analyticsと UTM 属性
+# [!DNL Google Analytics] および UTM 属性
 
-～することが極めて重要である。 [ユーザー獲得ソースの追跡](../../data-analyst/analysis/google-track-user-acq.md) から [最も効果の高い広告キャンペーンの特定](../../data-analyst/analysis/most-value-source-channel.md). この記事では、Google Analyticsソースの属性設定プロセスについて説明します。 つまり、どの情報が記録されたときか。
+～することが極めて重要である。 [ユーザー獲得ソースの追跡](../../data-analyst/analysis/google-track-user-acq.md) から [最も効果の高い広告キャンペーンの特定](../../data-analyst/analysis/most-value-source-channel.md). このトピックでは、 [!DNL Google Analytics] ソース属性プロセス。 つまり、どの情報が記録されたときか。
 
 ## 属性とは
 
@@ -31,11 +31,11 @@ UTM パラメーターが URL で指定されると、それらは解析され�
 
 最後のクリックのアトリビューションは、 [!DNL Google Analytics]. この場合、 [!DNL Google Analytics] cookie は、コンバージョンイベントの前の最新のソースの UTM パラメーターを表し、これは [データベースに記録される](../../data-analyst/analysis/google-track-user-acq.md). この [!DNL Google Analytics] ユーザーが新しい UTM パラメーターのセットを含む新しい URL をクリックすると、cookie は以前の UTM パラメーターのみを上書きします。
 
-例えば、ユーザーがを通じて最初に Web サイトにアクセスしたとします。 [!DNL Google Analytics][!DNL Google Analytics][!DNL Google Analytics] *有料検索*&#x200B;を返し、 *オーガニック検索*&#x200B;最後に、に戻ります。 *web サイトを直接* または経由 *電子メールリンク* **UTM パラメーターなし** コンバージョンイベントの前に配置されます。 この例では、 [!DNL Google Analytics] cookie には、ユーザーのソースが「オーガニック」と表示されます。これは、変換前の最後のソースを表すからです。 この *パス* の値は、その最終的なコンバージョンイベントの前のユーザーに対しては無視されます。 ユーザーが UTM を含む電子メールリンクから Web サイトに訪問した場合、 [!DNL Google Analytics] Cookie の場合、ソースは「email」となります。 したがって、cookie に既存の UTM パラメーターが存在し、ユーザーが直接アクセスする場合、 [!DNL Google Analytics] cookie には、「直接」ではなく UTM パラメーターが表示されます。
+例えば、ユーザーがを通じて最初に Web サイトにアクセスしたとします。 [!DNL Google Analytics] *有料検索*&#x200B;を返し、 *オーガニック検索*&#x200B;最後に、に戻ります。 *web サイトを直接* または経由 *電子メールリンク* **UTM パラメーターなし** コンバージョンイベントの前に配置されます。 この例では、 [!DNL Google Analytics] cookie には、ユーザーのソースが「オーガニック」と表示されます。これは、変換前の最後のソースを表すからです。 この *パス* の値は、その最終的なコンバージョンイベントの前のユーザーに対しては無視されます。 ユーザーが UTM を含む電子メールリンクから Web サイトに訪問した場合、 [!DNL Google Analytics] Cookie の場合、ソースは「email」となります。 したがって、cookie に既存の UTM パラメーターが存在し、ユーザーが直接アクセスする場合、 [!DNL Google Analytics] cookie には、「直接」ではなく UTM パラメーターが表示されます。
 
 >[!NOTE]
 >
->特定のユーザーの [!DNL Google Analytics] cookie のパラメーターは、cookie の作成時に消去されます [有効期限](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)または、ユーザーがブラウザーで cookie をクリアした場合に発生します。*)
+>特定のユーザーの [!DNL Google Analytics] cookie のパラメーターは、cookie の作成時に消去されます [有効期限](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)、またはユーザーがブラウザーで Cookie をクリアした場合に発生します。*
 
 ### 最初のクリック属性
 
@@ -45,10 +45,10 @@ UTM パラメーターが URL で指定されると、それらは解析され�
 
 [!DNL Google Analytics] には、Web インターフェイスに 4 つの異なるアトリビューションモデルを実行できるいくつかの堅牢な機能があります。
 
-* 最初のクリック
-* 最後のクリック
-* 線形（売上高をパスのすべてのソースに均等に配分）
-* 重み付け（カスタマイズされたアトリビューション）
+1. 最初のクリック
+1. 最後のクリック
+1. 線形（売上高をパスのすべてのソースに均等に配分）
+1. 重み付け（カスタマイズされたアトリビューション）
 
 これで、各マイクロコンバージョンまたはマクロコンバージョンのアトリビューションモデルを理解したので、質問は「ユーザーのコンバージョンの全体をどのように扱うのか」になります。  例えば、GA のラストクリックロジックに基づいて記録される UTM を見てみましょう。
 

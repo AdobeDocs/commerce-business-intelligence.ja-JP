@@ -1,17 +1,17 @@
 ---
 title: 全期間売上高コホート分析
-description: の力を探る [!DNL MBI] コホート分析。
+description: Commerce Intelligence コホート分析の機能を調べます。
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
-# `Lifetime Revenue Cohort` 分析
+# [!DNL Lifetime Revenue Cohort] 分析
 
-でデータを確認する方法は多数あります。 [!DNL MBI]解釈と理解は計算と視覚化と同じくらい重要です この記事では、 [!DNL MBI] `cohort` 分析。
+でデータを確認する方法は多数あります。 [!DNL Adobe Commerce Intelligence]解釈と理解は計算と視覚化と同じくらい重要です このトピックでは、 [!DNL Commerce Intelligence] `cohort` 分析。
 
 ## 機能 `lifetime revenue cohort` 分析が意味する？
 

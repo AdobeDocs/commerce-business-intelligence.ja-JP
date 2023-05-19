@@ -2,7 +2,7 @@
 title: ファイルアップローダを使用
 description: すべてのデータを 1 つのData Warehouseに配置する方法を説明します。
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >必要 [管理者権限](../../../administrator/user-management/user-management.md).
 
-[!DNL MBI] は、ビジュアライゼーション機能だけでなく、すべてのデータを単一のData Warehouseに配置できるので、強力です。 データベースや統合の外部に存在するデータも、に取り込むことができます。 [!DNL MBI] Data Warehouse・マネージャのファイル・アップロード・ツールを使用して
+[!DNL Adobe Commerce Intelligence] は、ビジュアライゼーション機能だけでなく、すべてのデータを単一のData Warehouseに配置できるので、強力です。 データベースや統合の外部に存在するデータも、に取り込むことができます。 [!DNL Commerce Intelligence] Data Warehouse・マネージャのファイル・アップロード・ツールを使用して
 
 例として広告キャンペーンを使用します。 オンラインとオフラインの両方のキャンペーンを実行している場合、オンライン統合からのデータの分析のみを行っている場合は、全体像を把握することはできません。 オフラインキャンペーンデータを使用してスプレッドシートをアップロードすると、両方のデータセットを分析し、キャンペーンのパフォーマンスをより詳細に把握できます。
 
 ## 制限事項と要件 {#require}
 
 1. **ファイルのアップロードでサポートされる形式は、次のとおりです。 `CSV` または`comma separated values`**. Excel で作業している場合は、「名前を付けて保存」機能を使用して、ファイルをに保存できます。 `.csv` 形式
-1. **`CSV`ファイルは`UTF-8 encoding`**. ほとんどの場合、これは問題ではありません。 ファイルのアップロード中にこのエラーが発生した場合は、 [このサポート記事を参照してください。](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
+1. **`CSV`ファイルは`UTF-8 encoding`**. ほとんどの場合、これは問題ではありません。 ファイルのアップロード中にこのエラーが発生した場合は、 [このサポート記事を参照してください。](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **100 MB を超えるファイルは使用できません**. ファイルがこれより大きい場合は、テーブルをチャンクに分割し、個々のファイルとして保存します。 最初のファイルの読み込み後に、データを追加できます。
 1. **すべてのテーブルには`primary key`**. テーブル内に、 `primary key`、またはテーブル内の各行の一意の ID。 次に指定された列： `primary key` can *なし* が null の場合に限ります。 A `primary key` は、各行に数値を与える列を追加するのと同じくらい簡単にできます。また、2 つの列を連結して一意の値の列を作成することもできます ( 例： `campaign name` および `date`) をクリックします。
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## アップロード用のデータの形式設定 {#formatting}
 
-データをにアップロードする前に [!DNL MBI]の場合は、この節のガイドラインに従って形式が設定されていることを確認します。
+データをにアップロードする前に [!DNL Commerce Intelligence]の場合は、この節のガイドラインに従って形式が設定されていることを確認します。
 
 ### ヘッダー行 {#header}
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 ## データのアップロード {#uploading}
 
-これで、スプレッドシートが正しくフォーマットされ、 [!DNL MBI]-friendly、Data Warehouseに追加します。
+これで、スプレッドシートが正しくフォーマットされ、 [!DNL Commerce Intelligence]-friendly、Data Warehouseに追加します。
 
 1. 利用を開始するには、に移動します。 **[!UICONTROL Data** > **File Uploads]**.
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Choose File]** ファイルを選択します。 クリック **[!UICONTROL Open]** をクリックしてアップロードを開始します。
 
-   アップロードが完了した後、列のリスト [!DNL MBI] がファイルディスプレイに表示されます。
+   アップロードが完了した後、列のリスト [!DNL Commerce Intelligence] がファイルディスプレイに表示されます。
 
 1. 列名とデータタイプが正しいことを確認します。 特に、日付列が数値ではなく日付として読み取られていることを確認します。
 
@@ -111,7 +111,7 @@ A *成功！* テーブルを保存すると、画面の上部にメッセージ
 
 ## 既存のテーブルへのデータの更新または追加 {#appending}
 
-既にアップロード済みのファイルに追加する新しいデータがありますか？ 問題なし — で簡単にデータを更新および追加できます [!DNL MBI].
+既にアップロード済みのファイルに追加する新しいデータがありますか？ 問題なし — で簡単にデータを更新および追加できます [!DNL Commerce Intelligence].
 
 1. 利用を開始するには、に移動します。 **[!UICONTROL Manage Data** > **File Uploads]**.
 
@@ -121,7 +121,7 @@ A *成功！* テーブルを保存すると、画面の上部にメッセージ
 
 1. ドロップダウンを使用して、重複行を処理するオプションを選択します。
 
-   |  |  |
+   | オプション | 説明 |
    |---|---|
    | `Overwrite old row with new row` | 既存のテーブルと新しいファイルの両方で行の主キーが同じ場合、既存のデータが新しいデータで上書きされます。 これは、時間の経過と共に変化する値を持つ列（「ステータス」列など）に使用するメソッドです。 既存のデータは上書きされ、新しいデータで更新されます。 既存のテーブルにない主キーを持つ行は、新しい行として追加されます。 |
    | `Retain old row; discard new row` | 既存のテーブルと新しいファイルの両方で行のプライマリキーが同じ場合、新しいデータは無視されます。 |
@@ -131,7 +131,7 @@ A *成功！* テーブルを保存すると、画面の上部にメッセージ
 
 1. クリック **[!UICONTROL Open]** をクリックしてアップロードを開始します。
 
-   アップロードが完了したら、 [!DNL MBI] はファイル内のデータ構造を検証します。 A *成功！* テーブルを保存すると、画面の上部にメッセージが表示されます。
+   アップロードが完了したら、 [!DNL Commerce Intelligence] はファイル内のデータ構造を検証します。 A *成功！* テーブルを保存すると、画面の上部にメッセージが表示されます。
 
 ## データの可用性 {#availability}
 
@@ -139,9 +139,9 @@ A *成功！* テーブルを保存すると、画面の上部にメッセージ
 
 ## 折り返し {#wrapup}
 
-この記事では、データのインポートの基本についてのみ説明しますが、より高度な操作を行うことをお勧めします。 金融、e コマース、広告費用、その他のデータのフォーマットとインポートに関するガイダンスについては、関連記事を参照してください。
+このトピックでは、データのインポートの基本についてのみ説明しましたが、より高度な操作を行うこともできます。 金融、e コマース、広告費用、その他のデータのフォーマットとインポートに関するガイダンスについては、関連記事を参照してください。
 
-また、データをに送信する方法は、ファイルのアップロードだけではありません [!DNL MBI]. この [データインポート API](https://developer.adobe.com/commerce/services/reporting/import-api/) 関数を使用すると、任意のデータを [!DNL MBI] Data Warehouse。
+また、データをに送信する方法は、ファイルのアップロードだけではありません [!DNL Commerce Intelligence]. この [データインポート API](https://developer.adobe.com/commerce/services/reporting/import-api/) 関数を使用すると、任意のデータを [!DNL Commerce Intelligence] Data Warehouse。
 
 ## 関連 {#related}
 

@@ -2,7 +2,7 @@
 title: Zendesk のヘルプデスクレポート
 description: 最も重要な参照チャネルについて学びます。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >これは、 `Pro` 新しいアーキテクチャを計画および使用します。 新しいアーキテクチャを使用している場合、 `Data Warehouse Views` 選択後に使用可能なセクション `Manage Data` を選択します。
 
-統合 [!DNL Zendesk] トランザクションデータベースのデータは、お客様のセールスまたは顧客の成功チームとの関わり方をより深く理解するための優れた方法です。 また、サポートプラットフォームを使用している顧客の種類を知るのに役立ちます。 この記事では、 [!DNL Zendesk] パフォーマンスを向上させ、トランザクションの顧客と結び付ける。
+統合 [!DNL Zendesk] トランザクションデータベースのデータは、お客様のセールスまたは顧客の成功チームとの関わり方をより深く理解するための優れた方法です。 また、サポートプラットフォームを使用している顧客の種類を知るのに役立ちます。 このトピックでは、 [!DNL Zendesk] パフォーマンスを向上させ、トランザクションの顧客と結び付ける。
 
 開始する前に、 [[!DNL Zendesk]](../integrations/zendesk.md). この分析に含まれる内容 [高度な計算列](../../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -86,34 +86,34 @@ ht-degree: 0%
 
       * `Datatype` - `String`
 
-* **`[Zendesk] audits_~_events`** 表
+* **`[!DNL Zendesk] audits_~_events`** 表
    * 定義を選択します。 `Joined Column`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] audits_~_events.author_id8`
-   * [!UICONTROL One]: `[Zendesk] users.id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events.author_id8`
+   * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * を選択します。 [!UICONTROL table]: `[Zendesk] users`
+   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] users`
    * を選択します。 [!UICONTROL column]: `User is agent? (Yes/No)`
-   * [!UICONTROL Path]: `[Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
 
 * **`Author is agent? (Yes/No)`**
 
-* **`[Zendesk] audits`** 表
+* **`[!DNL Zendesk] audits`** 表
    * 定義を選択します。 `Exists`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] audits_~_events._id_of_parent`
-   * [!UICONTROL One]: `[Zendesk] audits._id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events._id_of_parent`
+   * [!UICONTROL One]: `[!DNL Zendesk] audits._id`
 
-   * を選択します。 [!UICONTROL table]: `[Zendesk] audits_~_events`
-   * [!UICONTROL Path]: `[Zendesk] audits_~_events._id_of_parent = [Zendesk] audits._id`
+   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]:
    * `field_name` = `status`
    * `type` = `Change`
    * `value` = `solved`
 
    * 定義を選択します。 `Exists`
-   * を選択します。 [!UICONTROL table]: `[Zendesk] audits_~_events`
-   * [!UICONTROL Path]: `[Zendesk] audits_~_events._id_of_parent = [Zendesk] audits._id`
+   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]: `Author is agent? (Yes/No)`
    * `type` = `Comment`
    * `public` = `1`
@@ -121,36 +121,36 @@ ht-degree: 0%
 * **`Status changes to solved? (1/0)`**
 * **`Is agent comment? (1/0)`**
 
-* **`[Zendesk] Tickets`** 表
+* **`[!DNL Zendesk] Tickets`** 表
    * 定義を選択します。 `Joined Column`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] tickets.requester_id`
-   * [!UICONTROL One]: `[Zendesk] users.id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] tickets.requester_id`
+   * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * を選択します。 [!UICONTROL table]: `[Zendesk] users`
+   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] users`
    * を選択します。 [!UICONTROL column]: `email`
-   * [!UICONTROL Path]: `[Zendesk] tickets.requester_id = [Zendesk] users.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
    * 定義を選択します。 `Joined Column`
-   * を選択します。 [!UICONTROL table]: `[Zendesk] users`
+   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] users`
    * を選択します。 [!UICONTROL column]: `role`
-   * [!UICONTROL Path]: `[Zendesk] tickets.requester_id = [Zendesk] users.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
    * 定義を選択します。 `Max`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] audits.ticket_id`
-   * [!UICONTROL One]: `[Zendesk] tickets.id`
+   * [!UICONTROL Many]: `[!DNL Zendesk] audits.ticket_id`
+   * [!UICONTROL One]: `[!DNL Zendesk] tickets.id`
 
-   * を選択します。 [!UICONTROL table]: `[Zendesk] audits`
+   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] audits`
    * を選択します。 [!UICONTROL column]: `created_at`
-   * [!UICONTROL Path]: `[Zendesk] audits.ticket_id = [Zendesk] tickets.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
    * `status` 次に変更： `solved = 1`
 
    * 定義を選択します。 `Min`
-   * を選択します。 [!UICONTROL table]: `[Zendesk] audits`
+   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] audits`
    * を選択します。 [!UICONTROL column]: `created_at`
-   * [!UICONTROL Path]: `[Zendesk] audits.ticket_id = [Zendesk] tickets.id`
+   * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
    * `Is agent comment? = 1`
 
@@ -202,13 +202,13 @@ ht-degree: 0%
 * **`customer_entity`** 表
    * 定義を選択します。 `Count`
    * [!UICONTROL Create Path]:
-   * [!UICONTROL Many]: `[Zendesk] tickets.email`
+   * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
    * 
 
       [!UICONTROL One]: `customer_entity.email`
 
-   * を選択します。 [!UICONTROL table]: `[Zendesk] tickets`
-   * [!UICONTROL Path]: `[Zendesk] tickets.email = customer_entity.email`
+   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] tickets`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
    * [!UICONTROL Filter]:
    * `Tickets we count`
 
@@ -223,11 +223,11 @@ ht-degree: 0%
 
       * `Datatype` – `String`
 
-* **`[Zendesk] Tickets`** 表
+* **`[!DNL Zendesk] Tickets`** 表
    * 定義を選択します。 `Joined Column`
    * を選択します。 [!UICONTROL table]: `customer_entity`
    * を選択します。 [!UICONTROL column]: `User's lifetime number of support tickets requested`
-   * [!UICONTROL Path]: `[Zendesk] tickets.email = customer_entity.email`
+   * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
 
 * **`Requester's lifetime number of support tickets`**
 
@@ -236,7 +236,7 @@ ht-degree: 0%
 * **[!DNL Zendesk]新しいチケット**
    * `Tickets we count`
 
-* 内 **`[Zendesk] tickets`** 表
+* 内 **`[!DNL Zendesk] tickets`** 表
 * この指標では **カウント**
 * の **`id`** 列
 * 発注元： **`created_at`** timestamp
@@ -246,7 +246,7 @@ ht-degree: 0%
    * `Tickets we count`
    * ステータス IN `closed, solved`
 
-* 内 **`[Zendesk] tickets`** 表
+* 内 **`[!DNL Zendesk] tickets`** 表
 * この指標では **カウント**
 * の **`id`** 列
 * 発注元： **`created_at`** timestamp
@@ -255,7 +255,7 @@ ht-degree: 0%
 * **[!DNL Zendesk]チケットを申し込むユニークユーザー**
    * `Tickets we count`
 
-* 内 **`[Zendesk] tickets`** 表
+* 内 **`[!DNL Zendesk] tickets`** 表
 * この指標では **個別カウント**
 * の **`requester_id`** 列
 * 発注元： **`created_at`** timestamp
@@ -265,7 +265,7 @@ ht-degree: 0%
    * `Tickets we count`
    * ステータス IN `closed, solved`
 
-* 内 **`[Zendesk] tickets`** 表
+* 内 **`[!DNL Zendesk] tickets`** 表
 * この指標では **平均（中央値）**
 * の **`Seconds to resolution`** 列
 * 発注元： **`created_at`** timestamp
@@ -275,7 +275,7 @@ ht-degree: 0%
    * カウントされるチケット
    * ステータス IN クローズ、解決済み
 
-* 内 **`[Zendesk] tickets`** 表
+* 内 **`[!DNL Zendesk] tickets`** 表
 * この指標では **平均（中央値）**
 * の **`Seconds to first response`** 列
 * 発注元： **`created_at`** timestamp

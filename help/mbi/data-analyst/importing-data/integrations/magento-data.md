@@ -1,19 +1,19 @@
 ---
 title: 予想されるコマースデータ
-description: Commerce ユーザーが MBI にインポートするメインデータテーブルの調査
+description: Commerce ユーザーが Commerce Intelligence にインポートするメインデータテーブルを調べる
 exl-id: b481c8fc-41b6-4094-8901-17d57f26bfc0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
 
-# 予想されるコマースデータ
+# 予測 [!DNL Adobe Commerce] データ
 
-次の条件が満たされた後 [コマースストアを接続しました](../../../data-analyst/importing-data/integrations/magento.md)を使用すると、Data Warehouseマネージャーを使用して、コマースデータベースから関連するデータフィールドを簡単に追跡し、分析することができます。
+次の条件が満たされた後 [接続済み [!DNL Adobe Commerce] ストア](../../../data-analyst/importing-data/integrations/magento.md)を使用すると、Data Warehouseマネージャーを使用して、コマースデータベースから関連するデータフィールドを簡単に追跡し、分析することができます。
 
-この記事では、Commerce ユーザーが読み込む主なデータテーブルを調べます。 [!DNL MBI].
+このトピックでは、Commerce ユーザーが読み込む主なデータテーブルを調べます。 [!DNL Commerce Intelligence].
 
 | **テーブル名** | **説明** |
 |-----|-----|
@@ -28,4 +28,4 @@ ht-degree: 0%
 ## 関連
 
 * [接続中 [!DNL Adobe Commerce]](../integrations/magento.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

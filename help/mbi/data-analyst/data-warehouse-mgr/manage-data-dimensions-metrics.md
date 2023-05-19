@@ -2,9 +2,9 @@
 title: データディメンションの管理
 description: ディメンションとは何かを説明し、指標に基づいてグラフのフィルタリングやセグメント化に使用できます。
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 1 つ以上のディメンションを複数の指標に一度に追加するには：
 
-1. メインナビゲーションバーで、に移動します。 **[!UICONTROL Manage Data > Metrics]**.
+1. に移動します。 **[!UICONTROL Manage Data > Metrics]**.
 
-1. ページ上部で、「 **[!UICONTROL Add Dimensions To Metric(s)]**.
+1. クリック **[!UICONTROL Add Dimensions To Metric(s)]**.
 
 1. ディメンションを含むテーブルを選択します。
 
@@ -39,9 +39,9 @@ ht-degree: 0%
 
 複数の指標から 1 つ以上のディメンションを削除するには：
 
-1. メインナビゲーションバーで、に移動します。 **[!UICONTROL Data > Metrics]**.
+1. に移動します。 **[!UICONTROL Data > Metrics]**.
 
-1. ページ上部で、「 **[!UICONTROL Remove Dimensions From Metric(s)]**.
+1. クリック **[!UICONTROL Remove Dimensions From Metric(s)]**.
 
 1. ディメンションを含むテーブルを選択します。
 
@@ -49,26 +49,26 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Remove]**.
 
-1. ディメンションがレポートで使用されている場合は、警告と、そのディメンションを使用しているグラフのリストが表示されます。 クリック **[!UICONTROL Delete]** ：チェック済みのディメンションとすべての依存（レポートを含む）を削除します。
+1. ディメンションがレポートで使用中の場合は、警告が表示され、ディメンションを使用しているグラフのリストが表示されます。 クリック **[!UICONTROL Delete]** ：チェック済みのディメンションとすべての依存（レポートを含む）を削除します。
 
 ## 指標でのディメンションの管理
 
 **指標にディメンションを追加するには：**
 
-1. メインナビゲーションバーで、に移動します。 **[!UICONTROL Data > Metrics]**.
+1. に移動します。 **[!UICONTROL Data > Metrics]**.
 
 1. クリック **[!UICONTROL Edit]** 新しいディメンションを追加する指標です。
 
-1. 以下 `Dimensions` セクションで、 `Add a dimension` 追加するディメンションを選択するドロップダウン。
+1. 内 `Dimensions` セクションで、 `Add a dimension` 追加するディメンションを選択するドロップダウン。
 
 >[!NOTE]
 >
->フィルターまたはグループ化に使用するディメンションは、で既に追跡されている必要があります。 [!DNL MBI]. 目的のディメンションが見つからない場合は、 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページ。
+>フィルターまたはグループ化に使用するディメンションは、で既に追跡されている必要があります。 [!DNL Commerce Intelligence]. 目的のディメンションが見つからない場合は、 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページ。
 
 
 **指標からディメンションを削除するには：**
 
-1. メインナビゲーションバーで、に移動します。 **[!UICONTROL Manage Data > Metrics]**.
+1. に移動します。 **[!UICONTROL Manage Data > Metrics]**.
 
 1. クリック **[!UICONTROL Edit]** 新しいディメンションを追加する指標です。
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ディメンションを削除しても、そのディメンションはData Warehouseのテーブルの列として存在します。 任意の指標にその指標を再度追加し、これらのディメンションを使用して新しい指標を作成できます。 ディメンションが対応するデータ列をから削除するには [!DNL MBI]を使用する場合は、 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページ。
+>ディメンションを削除しても、そのディメンションはData Warehouseのテーブルの列として存在します。 任意の指標にその指標を再度追加し、これらのディメンションを使用して新しい指標を作成できます。 ディメンションが対応するデータ列をから削除するには [!DNL Commerce Intelligence]を使用する場合は、 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページ。
 
 ## 関連ドキュメント
 

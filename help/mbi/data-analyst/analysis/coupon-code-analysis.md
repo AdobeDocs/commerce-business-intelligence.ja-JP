@@ -2,16 +2,16 @@
 title: クーポン効果
 description: クーポン効果の分析について説明します。
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
 # 高度なクーポンコード分析
 
-ビジネスのクーポンパフォーマンスを理解することは、注文をセグメント化し、顧客をより深く理解するための興味深い方法です。 この記事では、分析を作成する手順を説明し、クーポンを使用して取得した顧客と、その顧客がどのように実行し、一般的なクーポン使用状況を追跡するかを把握します。
+ビジネスのクーポンパフォーマンスを理解することは、注文をセグメント化し、顧客をより深く理解するための興味深い方法です。 このトピックでは、分析を作成する手順を説明し、クーポンを使用して取得した顧客と、その顧客がどのように実行し、一般的なクーポン使用状況を追跡するかを把握します。
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## はじめに
 
-最初の手順として、次の列がData Warehouseと同期されていることを確認する必要があります。 存在しない場合は、先に進み、データを追跡します。それには、「データを管理」/「Data Warehouse」に移動し、以下を同期します。
+最初の手順として、次の列がData Warehouseと同期されていることを確認する必要があります。 存在しない場合は、次の場所に移動して、それらを追跡します。 `Manage Data` > `Data Warehouse`、以下の同期：
 
 * **sales\_flat\_order** 表
 * **coupon\_code**
@@ -519,4 +519,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、ページ上部の画像のようになる場合があります。
 
-この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

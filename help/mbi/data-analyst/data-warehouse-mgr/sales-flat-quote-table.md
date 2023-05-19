@@ -2,7 +2,7 @@
 title: 見積表
 description: 見積もり表の使用方法を説明します。
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 | `base_currency_code` | で取り込まれるすべての値の通貨 `base_*` フィールド ( `base_grand_total`, `base_subtotal`など )。 これは、通常、コマースストアのデフォルトの通貨を反映します |
 | `base_grand_total` | すべての税金、送料、割引が適用された後、買い物かごに対する顧客に引用された最終価格。 正確な計算はカスタマイズできますが、一般に、 `base_grand_total` は次のように計算されます。 `base_subtotal` + `base_tax_amount` + `base_shipping_amount` + `base_discount_amount` - `base_gift_cards_amount` - `base_customer_balance_amount` |
 | `base_subtotal` | 買い物かごに含まれるすべての品目の総商品価格。 税、送料、割引などは含まれません |
-| `created_at` | 買い物かごの作成タイムスタンプ（UTC でローカルに保存）。 の設定に応じて、 [!DNL MBI]の場合、このタイムスタンプは [!DNL MBI] データベースのタイムゾーンと異なる |
+| `created_at` | 買い物かごの作成タイムスタンプ（UTC でローカルに保存）。 の設定に応じて、 [!DNL Commerce Intelligence]の場合、このタイムスタンプは [!DNL Commerce Intelligence] データベースのタイムゾーンと異なる |
 | `customer_email` | 買い物かごを作成した顧客の電子メールアドレス |
 | `customer_id` | `Foreign key` ～と関連している `customer_entity` 顧客が登録されている場合は、テーブル。 結合先 `customer_entity.entity_id` を使用して、買い物かごを作成したユーザーに関連付けられている顧客属性を特定します。 買い物かごがゲストによるチェックアウトで作成された場合、このフィールドは `NULL` |
 | `entity_id` (PK) | テーブルの一意の識別子。Commerce インスタンス内の他のテーブルへの結合で一般的に使用されます |

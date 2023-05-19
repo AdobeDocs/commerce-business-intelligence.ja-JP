@@ -2,9 +2,9 @@
 title: マーケティング ROI
 description: 総合的な ROI やキャンペーン別の ROI など、チャネル分析をトラッキングするダッシュボードを設定する方法を説明します。
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事では、元のアーキテクチャと新しいアーキテクチャを使用しているお客様向けの手順について説明します。 あなたは [新しいアーキテクチャ](../../administrator/account-management/new-architecture.md) メインツールバーから「Data Warehouseを管理」を選択した後で「データビュー」セクションを使用できる場合。
+>このトピックでは、元のアーキテクチャと新しいアーキテクチャを使用しているお客様向けの手順について説明します。 あなたは [新しいアーキテクチャ](../../administrator/account-management/new-architecture.md) メインツールバーから「Data Warehouseを管理」を選択した後で「データビュー」セクションを使用できる場合。
 
-オンライン広告にお金を費やしている場合は、この支出に対する収益を追跡し、さらなる投資に関するデータ主導型の決定を下す必要があります。 この記事では、ROI の集計やキャンペーン別を含む、チャネル分析をトラッキングするダッシュボードの設定方法について説明します。
+オンライン広告にお金を費やしている場合は、この支出に対する収益を追跡し、さらなる投資に関するデータ主導型の決定を下す必要があります。 このトピックでは、総合的な ROI やキャンペーン別の ROI など、チャネル分析を追跡するダッシュボードの設定方法について説明します。
 
 ![](../../assets/Marketing_dashboard_example.png)
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 統合テーブル
 
-**元のアーキテクチャ：** 様々なソースから支出を集める ( 例えば [!DNL Facebook Ads] または [!DNL Google Adwords])、Adobeは、 **連結表** のすべての広告費用。 この手順を完了するには、アナリストが必要です。 もしそうでなければ [支援要請を行う](../../guide-overview.md) 件名 `[MARKETING ROI ANALYSIS]`をクリックし、アナリストがこのテーブルを作成します。
+**元のアーキテクチャ：** 様々なソースから支出を集めるために、 [!DNL Facebook Ads] または [!DNL Google Adwords]Adobeでは、 **連結表** のすべての広告費用。 この手順を完了するには、アナリストが必要です。 もしそうでなければ [支援要請を行う](../../guide-overview.md#Submitting-a-Support-Ticket) 件名 `[MARKETING ROI ANALYSIS]`をクリックし、アナリストがこのテーブルを作成します。
 
 **新しいアーキテクチャ：** 次の例は、 [この分析ライブラリ](../../data-analyst/data-warehouse-mgr/create-dw-views.md) トピック。 統合テーブルは、新しいアーキテクチャのData Warehouse・ビューと呼ばれるようになりました。
 
@@ -32,11 +32,7 @@ ht-degree: 0%
 作成する列
 
 * **`Consolidated Digital Ad Spend`** 表
-* **`Campaign name`** は、 **[マーケティング ROI 分析]** チケット
-
->[!NOTE]
->
->新しいアーキテクチャの違いについては、上記を参照してください。
+* **`Campaign name`** は、Adobeアナリストによって **[マーケティング ROI 分析]** チケット
 
 **オリジナルおよび新しいアーキテクチャ：**
 
@@ -63,7 +59,6 @@ ht-degree: 0%
       * を選択します。 [!UICONTROL table]: `ecommerce####`
       * を選択します。 [!UICONTROL column]: `source`
       * [!UICONTROL Path]:sales_flat_order.increment_id = ecommerce###.transactionId ^
-
 
 
 
@@ -295,7 +290,7 @@ ht-degree: 0%
 
    [!UICONTROL Chart Type]: `Table`
 
-この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### 関連
 

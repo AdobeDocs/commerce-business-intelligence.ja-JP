@@ -2,7 +2,7 @@
 title: データを管理
 description: データの管理の使用方法を説明します。
 exl-id: 6274eda4-d3ff-47b6-81d9-06ad4f150ef7
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 「データを管理」を使用すると、統合、レポートおよびグラフのデータ、ダッシュボード、エクスポートを管理するための様々なツールにアクセスできます。
 
-## アクセスするには `Manage Data`:
+## アクセスするには [!DNL Manage Data]:
 
 1. メニューで、 **[!DNL Manage Data]**.
 

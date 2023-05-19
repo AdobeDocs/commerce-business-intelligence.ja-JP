@@ -2,9 +2,9 @@
 title: 最も価値のあるマーケティングソースとチャネルの特定
 description: 最も価値の高いマーケティングチャネルを明らかにするために使用できるレポートの一部について説明します。
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 オーディエンスを調べ、キャンペーンを作り、いくつかのマーケティングチャネルに投資しました。 しばらく経った今、これらのチャネルはどのように動いているのでしょうか。 最も新しいユーザーを導いたチャネルは何ですか？ 合計売上高に最も貢献したのは、どのソースですか？
 
-を使用 [!DNL MBI]を使用すると、リファラルソース ( [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) またはカスタムデータフィールド。 このセグメント化により、最もパフォーマンスの高いチャネルを見つけ、マーケティング予算に投資することができます。
+を使用 [!DNL Adobe Commerce Intelligence]を使用すると、リファラルソース ( [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) またはカスタムデータフィールド。 このセグメント化により、最もパフォーマンスの高いチャネルを見つけ、マーケティング予算に投資することができます。
 
-この記事では、最も価値のあるマーケティングチャネルを明らかにするために使用できるレポートをいくつか紹介します。
+このトピックでは、最も価値のあるマーケティングチャネルを明らかにするために使用できるレポートをいくつか紹介します。
 
 * [ソース別の新規ユーザー](#newusersbysource)
 * [ユーザーソース別の平均ライフタイム売上高](#avglifetimerev)
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 前提条件 {#prereqs}
 
-この記事の分析を作成するには、マーケティング獲得/参照元データにアクセスする必要があります。 まだ追跡していない場合は、 [紹介元のデータを注文 [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) into [!DNL MBI] をクリックしてください。 また、分析にユーザーデバイス情報を追加すると、紹介で使用されているテクノロジーを確認できます。
+このトピックの分析を作成するには、マーケティング獲得/参照元データにアクセスする必要があります。 まだ追跡していない場合は、 [紹介元のデータを注文 [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) into [!DNL Adobe Commerce Intelligence] をクリックしてください。 また、分析にユーザーデバイス情報を追加すると、紹介で使用しているテクノロジーを確認できます。
 
 ## ソース別の新規ユーザー {#newusersbysource}
 
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 ## 折り返し {#wrapup}
 
-この記事では、獲得とマーケティングチャネルの価値を分析するために使用できるいくつかの分析に触れましたが、これは氷山の一角にすぎません。
+このトピックでは、獲得やマーケティングチャネルの価値を分析するために使用できる分析をいくつか紹介しましたが、これは氷山の一角にすぎません。
 
 ## 関連 {#related}
 

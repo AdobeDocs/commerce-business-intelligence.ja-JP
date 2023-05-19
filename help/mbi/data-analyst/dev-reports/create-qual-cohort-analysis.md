@@ -1,19 +1,19 @@
 ---
 title: 定性コホート分析の作成
-description: 定性コホートとは何か、この分析の構築に興味を持つ理由、およびでの作成方法を説明します。 [!DNL MBI].
+description: 定性コホートとは何か、この分析の構築に興味を持つ理由、および Commerce Intelligence での作成方法を説明します。
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
 
 # の作成 `Qualitative Cohort Analysis`
 
-あなたは、 [!DNL Adwords] — 獲得した顧客セグメントは、オーガニック検索から獲得した顧客と比べて、LTV が成長しているか。 今までに、 `cohort` 同じレポート内で異なる顧客セグメントを並べて分析した場合、 その場合、 `qualitative cohort analysis` は、これらの質問に答えるのに役立ちます。
+あなたは、 [!DNL Google Adwords] — 獲得した顧客セグメントは、オーガニック検索から獲得した顧客と比べて、LTV が成長しているか。 今までに、 `cohort` 同じレポート内で異なる顧客セグメントを並べて分析した場合、 その場合、 `qualitative cohort analysis` は、これらの質問に答えるのに役立ちます。
 
-この記事では、定性コホートとは何か、この分析の構築に興味を持つ理由と、での分析の作成方法について説明します。 [!DNL MBI].
+このトピックでは、定性コホートとは何か、この分析の作成に興味を持つ理由と、での分析の作成方法について説明します。 [!DNL Commerce Intelligence].
 
 ## 説明 `qualitative cohorts`それでも？ {#whatare}
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 詳しくは、 [コホート分析](https://www.cohortanalysis.com/).
 
-最も多い `cohort` 分析 [!DNL MBI] 共通の日付（特定の月に初めて購入したすべての顧客のセットなど）でユーザーをグループ化します。 A `qualitative cohort` は少し異なります。時間ベースではない特性によって定義されるユーザーグループです。 以下に例を示します。
+最も多い `cohort` 分析 [!DNL Commerce Intelligence] 共通の日付（特定の月に初めて購入したすべての顧客のセットなど）でユーザーをグループ化します。 A `qualitative cohort` は少し異なります。時間ベースではない特性によって定義されるユーザーグループです。 以下に例を示します。
 
 * 広告キャンペーンから取得されたすべてのユーザーのセット
 * 最初の購入にクーポンが含まれている（または含まれていない）すべてのユーザーのセット
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 の作成 `qualitative cohort` レポート `Report Builder` Adobe・アナリスト・チームが [高度な計算列](../data-warehouse-mgr/creating-calculated-columns.md) を必要なテーブルに追加します。
 
-これらを作成するには、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) （およびこの記事を参照してください。） 次の情報が必要です。
+これらを作成するには、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （およびこの記事を参照してください。） 次の情報が必要です。
 
 * この `metric` コホート分析を、その分析で使用するテーブル ( 例： `Revenue`( `orders` 表 )。
 

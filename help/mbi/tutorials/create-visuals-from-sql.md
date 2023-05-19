@@ -2,18 +2,18 @@
 title: SQL クエリからのビジュアライゼーションの作成
 description: SQLReport Builderで使用される用語を理解し、SQL ビジュアライゼーションを作成するための基盤を確立する方法を説明します。
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
 
 # SQL クエリからのビジュアライゼーションの作成
 
-このチュートリアルの目的は、 `SQL Report Builder` を作成するための確固たる基盤を提供します。 `SQL visualizations`.
+このチュートリアルの目的は、 [!DNL SQL Report Builder] を作成するための確固たる基盤を提供します。 `SQL visualizations`.
 
-この [`SQL Report Builder`](../data-analyst/dev-reports/sql-rpt-bldr.md) は、次のオプションを含む Report Builder です。クエリは、データのテーブルを取得する目的でのみ実行できます。また、その結果をレポートに変換することもできます。 このチュートリアルでは、SQL クエリからビジュアライゼーションを作成する方法を説明します。
+この [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) は、次のオプションを含む Report Builder です。クエリは、データのテーブルを取得する目的でのみ実行できます。また、その結果をレポートに変換することもできます。 このチュートリアルでは、SQL クエリからビジュアライゼーションを作成する方法を説明します。
 
 ## 用語
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 次の点に注意してください。
 
-- この `SQL Report Builder` uses [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
+- この [!DNL SQL Report Builder] uses [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
 
 - 時系列を含むレポートを作成する場合は、必ず `ORDER BY` タイムスタンプ列。 これにより、タイムスタンプがレポート上で適切な順序でプロットされます。
 
 - この `EXTRACT` 関数は、タイムスタンプの日、週、月または年を解析するために使用するのに最適です。 これは、 `time interval` レポートに使用するのは、 `daily`, `weekly`, `monthly`または `yearly`.
 
-利用を開始するには、 `SQL Report Builder` クリックして **[!UICONTROL Report Builder** > **SQL Report Builder]**.
+利用を開始するには、 [!DNL SQL Report Builder] クリックして **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
 例として、各製品の販売品目の月別合計数を返すクエリを考えてみましょう。
 
@@ -94,6 +94,6 @@ ht-degree: 0%
 
 ドロップダウンで、 `Chart` を `Type` 次に、レポートの保存先のダッシュボードを開きます。
 
-## おめでとうございます。 完了しました。
+## 折り返し
 
 もう少し踏み込みたい？ 以下を確認します。 [クエリ最適化のベストプラクティス](../best-practices/optimizing-your-sql-queries.md).

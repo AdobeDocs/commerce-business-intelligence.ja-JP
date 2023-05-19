@@ -2,9 +2,9 @@
 title: フィルター
 description: フィルターの使用方法を説明します。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >1 つのレポートに設定できるデータポイントは最大 3,500 個です。 データポイントの数を減らすには、フィルターを使用して、レポートの生成に使用するデータの量を減らします。
 
-MBI には、「標準 (OOTB)」を使用したり、必要に応じて変更したりできる、様々なフィルターが含まれています。 作成できるフィルターの数に制限はありません。
+[!DNL Adobe Commerce Intelligence] には、「標準 (OOTB)」を使用したり、必要に応じて変更したりできるフィルターの選択が含まれています。 作成できるフィルターの数に制限はありません。
 
 ## フィルターを追加するには、次の手順に従います。
 

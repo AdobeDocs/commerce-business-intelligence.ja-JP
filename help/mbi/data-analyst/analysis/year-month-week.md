@@ -2,9 +2,9 @@
 title: 年別、月別、週別のレポート
 description: 経時的なトレンドの確認方法と、比較する期間のパースペクティブの変更方法を説明します。
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事では、元のアーキテクチャと新しいアーキテクチャを使用しているお客様向けの手順について説明します。 あなたは [新しいアーキテクチャ](../../administrator/account-management/new-architecture.md) もし _Data Warehouseビュー_ 選択後に使用可能なセクション `Manage Data` を選択します。
+>このトピックでは、元のアーキテクチャと新しいアーキテクチャを使用しているお客様向けの手順について説明します。 あなたは [新しいアーキテクチャ](../../administrator/account-management/new-architecture.md) もし [!DNL _Data Warehouseビュー_] 選択後に使用可能なセクション [!DNL Manage Data] を選択します。
 
-Report Builder を使用すると、経時的なトレンドを簡単に確認でき、比較する期間のパースペクティブを変更できます。 この記事では、ダッシュボードを設定して、前週比、前月比、前年比の分析用のレポートを作成できるようにする方法を説明します。
+Report Builder を使用すると、経時的なトレンドを簡単に確認でき、比較する期間のパースペクティブを変更できます。 このトピックでは、ダッシュボードを設定して、前週比、前月比、前年比の分析用のレポートを作成できるようにする方法を説明します。
 
 ![](../../assets/Wow__mom__yoy.png)
 
-開始する前に、より詳細に分析を行うためのパースペクティブについて理解しておく必要があります [ここ](../../tutorials/using-visual-report-builder.md) および独立時間オプション [ここ](../../tutorials/time-options-visual-rpt-bldr.md).
+開始する前に、より詳細なパースペクティブの調査を確認する必要があります [ここ](../../tutorials/using-visual-report-builder.md) および独立時間オプション [ここ](../../tutorials/time-options-visual-rpt-bldr.md).
 
 この分析に含まれる内容 [高度な計算列](../data-warehouse-mgr/adv-calc-columns.md).
 

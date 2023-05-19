@@ -2,9 +2,9 @@
 title: Data Warehouse管理
 description: テーブルと列の同期設定の管理、テーブルのスキーマへのドリルダウン、レポートで使用する計算列の作成方法を説明します。
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >必要 [管理者権限](../../administrator/user-management/user-management.md)
 
-Data Warehouseマネージャ ( **[!UICONTROL Manage Data > Data Warehouse]** サイドバーで、は [!DNL MBI] Data Warehouse。 Data Warehouse・マネージャを使用すると、テーブルと列の同期設定の管理、テーブルのスキーマへのドリルダウン、レポートで使用する計算列の作成が可能です。
+Data Warehouseマネージャ ( **[!UICONTROL Manage Data > Data Warehouse]**&#x200B;は、 [!DNL Adobe Commerce Intelligence] Data Warehouse。 Data Warehouse・マネージャを使用すると、テーブルと列の同期設定の管理、テーブルのスキーマへのドリルダウン、レポートで使用する計算列の作成が可能です。
 
-この記事では、以下について説明します。
+このトピックでは、以下について説明します。
 
 * [道を学ぶ](#learning)
 * [テーブルと列の同期](#syncing)
@@ -39,7 +39,7 @@ Data Warehouseマネージャ ( **[!UICONTROL Manage Data > Data Warehouse]** �
 探しているテーブルが `All Tables` リスト？ これには、いくつかの理由が考えられます。
 
 * データソースはまだ追加されていません
-* データソースはデータベースで、 [!DNL MBI] 作成したユーザーにはアクセス権がありません。 この場合、ユーザーまたはデータベース管理者がアクセス権を付与する必要があります。
+* データソースはデータベースで、 [!DNL Commerce Intelligence] 作成したユーザーにはアクセス権がありません。 この場合、ユーザーまたはデータベース管理者がアクセス権を付与する必要があります。
 * データソースまたはテーブルは最近追加され、まだ同期されていません
 
 ## テーブルと列の同期 {#syncing}
@@ -61,7 +61,7 @@ Data Warehouseマネージャを使用すると、データソースを簡単に
    データベースから直接取得したテーブルを同期する場合は、 `Primary Keys` は指定できません。 この場合は、データベース管理者に問い合わせて、プライマリキーまたはキーをテーブルに追加するように依頼します。
 1. 終了したら、 ![ボタン](../../assets/button.png) 」ボタンをクリックします。
 
-A *成功！* メッセージが表示され、ステータスが次のように変わります。 `Pending` 選択した列に対して。 次回の完全更新が完了すると、新しく同期されたテーブルと列をレポートで使用できるようになります。新しい [レプリケーションメソッド](./cfg-replication-methods.md) 初回同期後。
+A *成功！* メッセージが表示され、ステータスが次のように変わります。 `Pending` 選択した列に対して。 次回の完全更新が完了すると、新しく同期されたテーブルと列をレポートで使用できるようになります。 新しい [レプリケーションメソッド](./cfg-replication-methods.md) 初回同期後。
 
 プロセス全体を簡単に見てみましょう。
 
@@ -119,6 +119,6 @@ Data Warehouseに同期するテーブルと列を選択できるのと同様に
 
 ## 折り返し
 
-このチュートリアルでは、多くの資料を扱いました。 ここまででは、Data Warehouseの内容、データの編成方法、テーブルの相互関係、データマネージャを使用した操作について、十分に理解する必要があります。
+この記事は多くの資料をカバーした。 ここまででは、Data Warehouseの内容、データの編成方法、テーブルの相互関係、データマネージャを使用した操作について、十分に理解する必要があります。
 
-素晴らしい！ 次の方法で新しい知識をテストします。 [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) または [興味深いレポートをいくつか作成する](../../tutorials/using-visual-report-builder.md).
+次の方法で知識をテストします。 [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) または [興味深いレポートをいくつか作成する](../../tutorials/using-visual-report-builder.md).

@@ -2,31 +2,31 @@
 title: 財務データのフォーマットとインポート
 description: 財務データのフォーマットとインポートの方法を説明します。
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 # 財務データのフォーマットとインポート
 
-このトピックでは、分析用に財務データをインポートする最適な方法について説明します。 [!DNL MBI].
+このトピックでは、分析用に財務データをインポートする最適な方法について説明します。 [!DNL Adobe Commerce Intelligence].
 
 2 次元のクロスタブデータテーブルは、多くの場合、財務データに使用される形式です。 列と行の両方のラベルで分類された値を使用すると、このタイプのレイアウトは、人間の目やスプレッドシートツールで簡単に表示できますが、データベースにはわかりにくくなります。
 
 ![](../../mbi/assets/crosstab.png)
 
-でこのデータをインポートおよび分析するには [!DNL MBI]の場合、テーブルは 1 次元のリストにフラット化する必要があります。 統合する場合、各データ値は、1 つの行にすべて含まれる複数のラベルで分類されます。各行は一意であるか、一意の識別子（例：プライマリキー列）を持ちます。
+でこのデータをインポートおよび分析するには [!DNL Commerce Intelligence]の場合、テーブルは 1 次元のリストにフラット化する必要があります。 統合する場合、各データ値は、1 つの行にすべて含まれる複数のラベルで分類されます。各行は一意であるか、一意の識別子（例：プライマリキー列）を持ちます。
 
 ![](../../mbi/assets/flattened.png)
 
 ## 読み込む Excel ファイルの形式設定
 
-Excel のピボットテーブルを使用して 2 次元テーブルを統合するには、次の手順に従います。
+2 次元テーブルを統合するには、 [!DNL Excel] ピボットテーブル：
 
 1. 2 次元のデータテーブルを含んだファイルを開きます。
-1. ピボットテーブルウィザードを開きます。 Windows では、ショートカットは次のようになります。 `Alt-D`. Mac OS で、 `Command-Option-P`.
+1. ピボットテーブルウィザードを開きます。 In [!DNL Windows]の場合、ショートカットは `Alt-D`. In [!DNL Mac OS]を入力して、 `Command-Option-P`.
 1. 選択 **[!UICONTROL Multiple consolidated ranges]** をクリックし、 **[!UICONTROL Next]**.
 1. 選択 **[!UICONTROL I will create the page fields]** をクリックし、 **[!UICONTROL Next]**.
 1. ラベルを含む 2 次元テーブルのデータセット全体を選択します。 以下を確認します。 `0` を選択し、「 **[!UICONTROL Next]**.
@@ -36,4 +36,6 @@ Excel のピボットテーブルを使用して 2 次元テーブルを統合�
    ![](../../mbi/assets/pivot-table-double-click.png)
 1. 名前を付けて保存 `CSV` ファイル。
 
-それだ！ データテーブルはリスト形式に変換され、元の情報はすべて保持されました。 [読み込み先： [!DNL MBI]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) 分析用。
+## 折り返し
+
+データテーブルはリスト形式に変換され、元の情報はすべて保持されました。 [読み込み先： [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) 分析用。

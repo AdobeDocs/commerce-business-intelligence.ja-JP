@@ -1,21 +1,21 @@
 ---
 title: MailChimp データをインポート
-description: MailChimp データをにインポートする方法を説明します。 [!DNL MBI].
+description: MailChimp データをにインポートする方法を説明します。 [!DNL Commerce Intelligence].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
-# インポート `MailChimp` データ
+# インポート [!DNL Mailchimp] データ
 
-キャンペーンの取り組みの包括的な状況を把握するには、 `MailChimp` キャンペーンデータをメールで送る [!DNL MBI]. インポートを完了するには、それぞれに対して次の操作を実行する必要があります `MailChimp` 以下のキャンペーンがあります。
+キャンペーンの取り組みの包括的な状況を把握するには、 [!DNL Mailchimp] キャンペーンデータをメールで送る [!DNL Commerce Intelligence]. インポートを完了するには、それぞれに対して次の操作を実行する必要があります [!DNL Mailchimp] 以下のキャンペーンがあります。
 
 ## 開封数データのエクスポート {#opens}
 
-1. へのログイン後 `MailChimp`、 `Campaigns` タブをクリックします。
+1. へのログイン後 [!DNL Mailchimp]、 `Campaigns` タブをクリックします。
 
    ![mailchimp 1 をインポート](../../../assets/import-mailchimp-1.png)
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
    ![mailchimp 5 をインポート](../../../assets/import-mailchimp-5.png)
 
-1. 次のいずれかの番号をクリックします。 `Total Clicks` または `Unique Clicks` 列。
+1. 次のいずれかの数値をクリックします： `Total Clicks` または `Unique Clicks` 列。
 
    ![mailchimp 6 をインポート](../../../assets/import-mailchimp-6.png)
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ## 送信済みデータのエクスポート {#sent}
 
-1. を `Campaigns` MailChimp のタブ
+1. を `Campaigns` タブ [!DNL Mailchimp].
 
 1. クリック **[!UICONTROL View Report]** をクリックします。
 
@@ -69,8 +69,8 @@ ht-degree: 0%
 
    ![mailchimp 9 をインポート](../../../assets/import-mailchimp-9.png)
 
-## へのアップロード用ファイルの準備 [!DNL MBI] {#upload}
+## へのアップロード用ファイルの準備 [!DNL Commerce Intelligence] {#upload}
 
-各ファイル — `Opens`, `Clicks`、および `Sent`  — にアップロードする必要があります [!DNL MBI] を別のファイルとして指定します。 Adobeでは、次の命名規則を使用してファイルに名前を付けることをお勧めします。 `MailChimp\_ACTION\_DATE`. 置換 `ACTION` と `Open`, `Click`または `Sent`、および `DATE` をエクスポート日付と共に追加します。
+各ファイル — `Opens`, `Clicks`、および `Sent`  — にアップロードする必要があります [!DNL Commerce Intelligence] を別のファイルとして指定します。 Adobeでは、次の命名規則を使用してファイルに名前を付けることをお勧めします。 `MailChimp\_ACTION\_DATE`. 置換 `ACTION` と `Open`, `Click`または `Sent`、および `DATE` をエクスポート日付と共に追加します。
 
 ファイルをアップロードする準備が整ったら、 [`File Upload` 機能](../connecting-data/using-file-uploader.md) データをData Warehouseに取り込む

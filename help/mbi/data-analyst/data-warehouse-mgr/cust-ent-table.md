@@ -2,9 +2,9 @@
 title: customer_entity テーブル
 description: すべての登録済みアカウントのレコードにアクセスする方法を説明します。
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 この `customer_entity` テーブルには、すべての登録済みアカウントのレコードが含まれます。 アカウントが購入に成功したかどうかに関係なく、アカウントに新規登録した場合、そのアカウントは登録済みと見なされます。 各行は、そのアカウントの `entity_id`.
 
-このテーブルには、ゲストチェックアウトで注文をした顧客のレコードは含まれません。 ストアがゲストによるチェックアウトを受け入れる場合、 [アカウント方法を学ぶ](../data-warehouse-mgr/guest-orders.md) を設定します。
+このテーブルには、ゲストチェックアウトで注文をした顧客のレコードは含まれません。 ストアがゲストによるチェックアウトを受け入れる場合は、 [ゲストによる注文を考慮する方法](../data-warehouse-mgr/guest-orders.md) 注文に対して
 
 ## 共通列
 
 | **列名** | **説明** |
 |---|---|
-| `created_at` | アカウントの登録日に対応するタイムスタンプ。ローカルの UTC に保存されます。 の設定に応じて、 [!DNL MBI]の場合、このタイムスタンプは [!DNL MBI] データベースのタイムゾーンと異なる |
+| `created_at` | アカウントの登録日に対応するタイムスタンプ。ローカルの UTC に保存されます。 の設定に応じて、 [!DNL Commerce Intelligence]の場合、このタイムスタンプは [!DNL Commerce Intelligence] データベースのタイムゾーンと異なる |
 | `email` | アカウントに関連付けられた電子メールアドレス |
 | `entity_id` (PK) | テーブルの一意の識別子（ID の結合で一般的に使用） `customer_id` インスタンス内の他のテーブル内 |
 | `group_id` | に関連付けられた外部キー `customer_group` 表。 結合先 `customer_group.customer_group_id` 登録済みアカウントに関連付けられている顧客グループを特定するには |

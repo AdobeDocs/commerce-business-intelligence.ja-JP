@@ -2,16 +2,16 @@
 title: 顧客チャーンを定義
 description: トランザクション顧客のチャーンを定義するのに役立つダッシュボードを設定する方法について説明します。
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # トランザクション顧客チャーン
 
-この記事では、トランザクション顧客のチャーンを定義するのに役立つダッシュボードを設定する方法について説明します。
+このトピックでは、トランザクション顧客のチャーンを定義するのに役立つダッシュボードを設定する方法について説明します。
 
 ![](../../assets/churn-deashboard.png)
 
@@ -136,4 +136,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、ページ上部の画像のように表示される場合があります
 
-この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

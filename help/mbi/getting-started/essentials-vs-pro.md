@@ -1,19 +1,19 @@
 ---
-title: MBI Essentials と Pro
-description: MBI Essentials とMBI Proの違いを学ぶ
+title: Commerce Intelligence Essentials と Pro
+description: Commerce Intelligence Essentials と Commerce Intelligence Pro の違いについて説明します。
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: c403d28392d781f0e897b937d00dfe0cfe35ea4d
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '74'
 ht-degree: 5%
 
 ---
 
-# [!DNL MBI Essentials] vs [!DNL MBI Pro]
+# [!DNL Commerce Intelligence Essentials] vs [!DNL Commerce Intelligence Pro]
 
-レガシーの `Essentials` アカウントと現在の MBI アカウントの違いを確認してください。 Adobeのオファー廃止 `Essentials`.
+レガシーの `Essentials` アカウントと現在の Commerce Intelligence アカウントの違いについて説明します。 Adobeのオファー廃止 `Essentials`.
 
-|  | **`MBI Essentials`** | **`MBI Pro`** |
+|  | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
 | `Pre-Defined Reports` | 最大 100 | カスタム |
 | `Pre-Defined Dashboards` | 5-6 | カスタム |

@@ -1,25 +1,25 @@
 ---
-title: コマースへのデータの格納
-description: データの生成方法、新しい行の挿入原因、アクションの Commerce データベースへの記録方法について説明します。
+title: Adobe Commerceへのデータの格納
+description: データの生成方法、新しい行の挿入原因、アクションのAdobe Commerceデータベースへの記録方法について説明します。
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '928'
 ht-degree: 3%
 
 ---
 
 # データの格納先 [!DNL Adobe Commerce]
 
-Adobe Commerceプラットフォームは、数百のテーブルにわたって様々な価値のあるコマースデータを記録し、まとめています。 ここでは、以下について説明します。
+この [!DNL Adobe Commerce] プラットフォームは、数百のテーブルにわたって様々な貴重なコマースデータを記録し、整理します。 ここでは、以下について説明します。
 
 * データの生成方法
-* その結果、新しい行が [コアコマーステーブル](../data-warehouse-mgr/common-mage-tables.md)
-* 購入やアカウントの作成などのアクションを Commerce データベースに記録する方法
+* 新しい行を [コアコマーステーブル](../data-warehouse-mgr/common-mage-tables.md)
+* 購入やアカウントの作成などのアクションを [!DNL Adobe Commerce] データベース
 
-これらの概念について説明するには、次の例を参照してください。
+これらの概念については、次の例を参照してください。
 
-`Clothes4U` は、オンラインで、レンガとモルタルの両方を備えた衣料品店です。 Web サイトの背後にMagento Open Sourceを使用して、データを収集および整理します。
+`Clothes4U` は、オンラインとレンガとモルタルの両方のプレゼンスを持つ衣料品店です。 次を使用します。 [!DNL Magento Open Source] データを収集および整理するために、Web サイトの背後に配置されている。
 
 ## `catalog\_product\_entity`
 
@@ -57,7 +57,7 @@ Adobe Commerceプラットフォームは、数百のテーブルにわたって
 * `email`  — このフィールドは、新規顧客がアカウントを作成する際に入力する E メールによって設定されます
 * `created_at`  — この列は、各ユーザーが参加した際のタイムスタンプを返します
 
-## `sales\_flat\_order (or Sales\_order` （Commerce 2.0 以降を使用している場合）
+## `sales\_flat\_order (or Sales\_order` もし [!DNL Adobe Commerce 2.x]
 
 アカウントの作成が完了したら、 `Sammy Customer` は、購入を開始する準備が整っています。 Web サイトで、顧客が `Throwback Bellbottoms` 一つ `V-Neck T-Shirt` を買い物かごに追加します。 選択に満足した顧客はチェックアウトに移動し、注文を送信し、次のエントリを [販売フラット注文テーブル](../data-warehouse-mgr/sales-flat-order-table.md):
 
@@ -73,7 +73,9 @@ Adobe Commerceプラットフォームは、数百のテーブルにわたって
    * 「Throwback Bellbottoms」と「V-Neck T-Shirt」の 2 組のペアは、合計 94.85 ドルでした
 * `created_at`  — この列は、各注文が作成された際のタイムスタンプを返します
 
-## `sales\_flat\_order\_item ( or Sales\_order\_item` （Commerce 2.0 以降を使用している場合）
+## `sales\_flat\_order\_item ( or Sales\_order\_item`
+
+（Commerce 2.0 以降を使用している場合）
 
 また、 `Sales\_flat\_order` 表、場合 `Sammy Customer` オーダーを送信し、そのオーダーの一意のアイテムごとに行が [`sales\_flat\_order\_item` 表](../data-warehouse-mgr/sales-flat-order-item-table.md):
 

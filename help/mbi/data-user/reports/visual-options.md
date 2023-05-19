@@ -2,9 +2,9 @@
 title: ビジュアルReport Builderのビジュアライゼーションオプション
 description: ビジュアルReport Builderのビジュアライゼーションオプションの使用方法を説明します。
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 特定のデータセットに対して適切なビジュアライゼーションを選択することは、分析プロセスの重要な要素です。 どのデータセットにも伝えるべきストーリーがありますが、そのストーリーの効果は視覚的な影響と読みやすさによって強調されます。
 
-この [!DNL MBI] `Visual Report Builder` には、それぞれ独自の利点と使用例を持つ 12 の異なるビジュアライゼーションオプションが用意されています。 この記事では、 [!DNL MBI]（該当する場合は必要なレポート設定や使用例を含む） MBI では、次のビジュアライゼーションを使用できます。
+この [!DNL Commerce Intelligence] [!DNL Visual Report Builder] には、それぞれ独自の利点と使用例を持つ 12 の異なるビジュアライゼーションオプションが用意されています。 このトピックでは、 [!DNL Commerce Intelligence]（該当する場合は必要なレポート設定や使用例を含む） 以下のビジュアライゼーションを [!DNL Commerce Intelligence]:
 
 * `Scalar`
 * `Table`

@@ -1,19 +1,19 @@
 ---
 title: 生データを書き出し
-description: レコードを [!DNL MBI] Data Warehouseを参照して、ダッシュボードの機能を詳しく確認してください。
+description: レコードを [!DNL Commerce Intelligence] Data Warehouseを参照して、ダッシュボードの機能を詳しく確認してください。
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
 # 生データを書き出し
 
-生データのエクスポートを使用して、 [!DNL MBI] Data Warehouseを参照して、ダッシュボードの機能を詳しく確認してください。 また、生データの書き出しは、 [データの相違を正確に示す](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
+生データの書き出しを使用して、Data Warehouseからレコードを書き出し、ダッシュボードの機能を詳しく確認できます。 また、生データの書き出しは、 [データの相違を正確に示す](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
-生データのエクスポートでは、関連する指標の正規化および事前集計を解除して生成された追加の列およびディメンションにアクセスできます。 例： `User's first order date` は、 [!DNL MBI]の代わりに使用できます。
+生データのエクスポートでは、関連する指標の正規化および事前集計を解除して生成された追加の列およびディメンションにアクセスできます。 例： `User's first order date` は、 [!DNL Commerce Intelligence]の代わりに使用できます。
 
 このチュートリアルでは、次の内容について説明します。
 
@@ -23,13 +23,16 @@ ht-degree: 0%
 
 ## 手順 1:エクスポートするデータの選択 {#select}
 
-に生データを書き出すには、次の 2 つの方法があります。 [!DNL MBI]:グラフレベルまたはテーブルレベルで、
+に生データを書き出すには、次の 2 つの方法があります。 [!DNL Commerce Intelligence]:
 
-### テーブルレベルでのエクスポート `Manage Data` タブ
+1. グラフレベルで
+1. テーブルレベルで
 
-からテーブルをエクスポートする場合 `Manage Data` タブ、 [管理者](../administrator/user-management/user-management.md) 権限。
+### テーブルレベルでのエクスポート [!UICONTROL Manage Data] タブ
 
-1. クリック **[!UICONTROL Manage Data** > **&#x200B;データを書き出し&#x200B;**> **生データの書き出し]** をクリックして開始します。
+からテーブルをエクスポートする場合 [!UICONTROL Manage Data] タブ、 [管理者](../administrator/user-management/user-management.md) 権限。
+
+1. クリック **[!UICONTROL Manage Data** > **&#x200B;データを書き出し&#x200B;**> **生データの書き出し]**.
 1. 表示される `Export List` 最近作成したデータの書き出し（存在する場合） クリック **[!UICONTROL Add Export]** エクスポートを作成します。
 1. この `New Raw Data Export` ダイアログが表示されます。 ここでは、列とフィルターを選択または選択解除することで、エクスポートをカスタマイズできます。
 
@@ -43,8 +46,11 @@ ht-degree: 0%
 ### ダッシュボードからのグラフレベルでのエクスポート
 
 1. グラフの右上隅にある歯車アイコンをクリックします。
+
 1. 選択 `Raw Export` ドロップダウンから `Raw Export` ダイアログ。
+
 1. 「 `table`, `columns`、および `filters` をクリックします。 このモジュールのフィールドの詳細については、前の節を参照してください。
+
    >[!NOTE]
    >
    >次に表示するテーブル： `Table` フィールドは、デフォルトで、グラフの基になるテーブルです。
@@ -66,5 +72,3 @@ ht-degree: 0%
 ## 手順 3:履歴エクスポートへのアクセス {#historical}
 
 過去のエクスポートを表示するには、 **[!UICONTROL Raw Data Export]** をクリックします。 保留中のレポートと完了したレポートには、最大 7 日間アクセスできます。
-
-おめでとうございます。 完了しました。

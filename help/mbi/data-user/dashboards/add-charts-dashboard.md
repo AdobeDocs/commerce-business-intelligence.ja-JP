@@ -2,7 +2,7 @@
 title: ダッシュボードにグラフを追加
 description: 「レポートの追加」機能を使用してグラフをダッシュボードに追加する方法を説明します。
 exl-id: 4a4f14c3-a6ab-4abc-9451-2a0f2fcf06a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # ダッシュボードにグラフを追加
 
-既存のグラフは、 `Add Report` 関数内に配置します。 同じグラフを複数のダッシュボードに追加できます。つまり、グラフを編集すると、このグラフを持つすべてのダッシュボードに変更が反映されます。
+既存のグラフは、 [!UICONTROL Add Report] 関数内に配置します。 同じグラフを複数のダッシュボードに追加できます。つまり、グラフを編集すると、このグラフを持つすべてのダッシュボードに変更が反映されます。
 
 >[!NOTE]
 >

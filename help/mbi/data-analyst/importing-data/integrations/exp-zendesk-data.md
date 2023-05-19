@@ -1,19 +1,19 @@
 ---
 title: Zendesk データが期待されます
-description: Zendesk から MBI に読み込むことができる主なデータテーブルについて説明します。このテーブルには、Zendesk データに関する追加ドキュメントへのリンクも含まれます。
+description: Zendesk から Commerce Intelligence に読み込むことができる主なデータテーブルについて説明します。Zendesk データに関する追加ドキュメントへのリンクも含まれます。
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
-# Zendesk データが期待されます
+# 予測 [!DNL Zendesk] データ
 
 後 [接続しました [!DNL Zendesk] アカウント](../integrations/zendesk.md)を使用する場合、 [Data Warehouse管理](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 分析に関連するデータフィールドを容易に追跡する。
 
-この記事では、読み込み元となる主なデータテーブルについて説明します。 [!DNL Zendesk] into [!DNL MBI]（に関する追加ドキュメントへのリンクを含む） [!DNL Zendesk] データ。
+このトピックでは、からインポートできる主なデータテーブルについて説明します。 [!DNL Zendesk] into [!DNL Adobe Commerce Intelligence]（に関する追加ドキュメントへのリンクを含む） [!DNL Zendesk] データ。
 
 | テーブル名 | 説明 |
 |-----|-----|
@@ -33,4 +33,4 @@ ht-degree: 0%
 ## 関連
 
 * [Zendesk の接続](../integrations/zendesk.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

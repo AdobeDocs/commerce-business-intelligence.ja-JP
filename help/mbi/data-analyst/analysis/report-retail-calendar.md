@@ -1,17 +1,17 @@
 ---
 title: 小売カレンダーのレポート
-description: 内で4-5-4小売業用カレンダーを使用する構造を設定する方法を説明します [!DNL MBI] アカウント
+description: 内で4-5-4小売業用カレンダーを使用する構造を設定する方法を説明します [!DNL Commerce Intelligence] アカウント
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
 # 小売カレンダーのレポート
 
-この記事では、 [4-5-4小売業用カレンダー](https://nrf.com/resources/4-5-4-calendar) の [!DNL MBI] アカウント Visual Report Builder は、非常に柔軟な時間範囲、間隔、独立した設定を提供します。 ただし、これらの設定はすべて、従来の月次カレンダーを使用して動作します。
+このトピックでは、 [4-5-4小売業用カレンダー](https://nrf.com/resources/4-5-4-calendar) の [!DNL Adobe Commerce Intelligence] アカウント Visual Report Builder は、非常に柔軟な時間範囲、間隔、独立した設定を提供します。 ただし、これらの設定はすべて、従来の月次カレンダーを使用して動作します。
 
 多くのお客様がカレンダーを変更して小売または会計日を使用するので、次の手順では、データを使用し、小売日を使用してレポートを作成する方法を示します。 以下の手順は4-5-4小売業用カレンダーを参照していますが、財務用かカスタムの期間かに関わらず、チームが使用する特定のカレンダーに対して変更できます。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## はじめに
 
-以下が可能です。 [ダウンロード](../../assets/454-calendar.csv) a `.csv` 2014 年～2017 年の4-5-4小売年度用カレンダーのバージョン。 内部の小売業用カレンダーに従ってこのファイルを調整し、履歴と現在の期間に対応するように日付範囲を拡張する必要が生じる場合があります。 ファイルをダウンロードした後、ファイルアップローダを使用して、 [!DNL MBI] Data Warehouse。 変更されていないバージョンの4-5-4小売業用カレンダーを使用している場合は、このテーブルのフィールドの構造とデータ型が次のものと一致していることを確認してください。
+以下が可能です。 [ダウンロード](../../assets/454-calendar.csv) a `.csv` 2014 年～2017 年の4-5-4小売年度用カレンダーのバージョン。 内部の小売業用カレンダーに従ってこのファイルを調整し、履歴と現在の期間に対応するように日付範囲を拡張する必要が生じる場合があります。 ファイルをダウンロードした後、ファイルアップローダを使用して、 [!DNL Commerce Intelligence] Data Warehouse。 変更されていないバージョンの4-5-4小売業用カレンダーを使用している場合は、このテーブルのフィールドの構造とデータ型が次のものと一致していることを確認してください。
 
 | 列名 | 列のデータタイプ | プライマリキー |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ ht-degree: 0%
 
          >[!NOTE]
          >
-         >この `now()` 上記の関数は、PostgreSQL に固有です。 ただし、 [!DNL MBI] データウェアハウスは PostgreSQL でホストされ、一部は Redshift でホストされる場合があります。 上記の計算でエラーが返された場合は、 Redshift 関数を使用する必要がある場合があります `getdate()` の代わりに `now()`.
+         >この `now()` 上記の関数は、PostgreSQL に固有です。 ただし、 [!DNL Commerce Intelligence] データウェアハウスは PostgreSQL でホストされ、一部は Redshift でホストされる場合があります。 上記の計算でエラーが返された場合は、 Redshift 関数を使用する必要がある場合があります `getdate()` の代わりに `now()`.
    * **現在の小売年** （サポートアナリストが作成する必要があります）
       * [!UICONTROL Column type]:E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
@@ -201,6 +201,6 @@ ht-degree: 0%
 
 上記では、 `sales\_order` テーブル ( `Revenue` または `Orders`) をクリックします。 また、任意のテーブルに作成された指標の小売カレンダーをサポートするように拡張することもできます。 唯一の要件は、このテーブルに、小売カレンダーテーブルへの結合に使用できる有効な datetime フィールドがあることです。
 
-例えば、4-5-4の小売カレンダーに顧客レベルの指標を表示するには、 `Same Table` 計算 `customer\_entity` テーブル、次に類似 `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` 上記の説明。 この列を使用して、 `One to Many` JOINED\_COLUMN の計算 ( `Created_at (retail year)` および `Include in previous retail year? (Yes/No)` ～に加わることで `customer\_entity` テーブルから `Retail Calendar` 表。
+例えば、4-5-4小売業用カレンダーに顧客レベルの指標を表示するには、 `Same Table` 計算 `customer\_entity` テーブル、次に類似 `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` 上記の説明。 この列を使用して、 `One to Many` JOINED\_COLUMN の計算 ( `Created_at (retail year)`) および `Include in previous retail year? (Yes/No)` ～に加わることで `customer\_entity` テーブルから `Retail Calendar` 表。
 
 忘れずに [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に

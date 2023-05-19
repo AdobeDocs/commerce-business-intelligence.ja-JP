@@ -2,18 +2,18 @@
 title: 指標のフィルターセットの作成
 description: 保存済みフィルターセットを作成し、指標に適用する方法を説明します。
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 # フィルターセットの作成
 
-に複数の指標がある場合 [!DNL MBI] 同様の方法でフィルタリングする必要がある（テスト注文をフィルタリングするなど）場合は、保存済みのフィルターセットを作成して指標に適用できます。 指標を作成または編集する際に個々のフィルターを追加する必要がないので、時間を節約できます。
+に複数の指標がある場合 [!DNL Commerce Intelligence] 同様の方法でフィルタリングする必要がある（テスト注文をフィルタリングするなど）場合は、保存済みのフィルターセットを作成して指標に適用できます。 指標を作成または編集する際に個々のフィルターを追加する必要がないので、時間を節約できます。
 
-詳しくは、 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) を参照してください。
+詳しくは、 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) を参照してください。
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 1. フィルターロジックを検証し、括弧および演算子が正しく配置されていることを確認します。例： `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
-   誤ったフィルターは、多くの場合、 [!DNL MBI] レポートおよび期待される結果。
+   誤ったフィルターは、多くの場合、 [!DNL Commerce Intelligence] レポートおよび期待される結果。
 
 1. 保存する `Filter Set`.
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->`Filter Sets` また、 [!DNL MBI]. フィルターセットを [!DNL MBI] を介して、サポートに連絡します。
+>`Filter Sets` また、 [!DNL Commerce Intelligence]. フィルターセットを [!DNL Commerce Intelligence] を介して、サポートに連絡します。
 
 ## 関連
 

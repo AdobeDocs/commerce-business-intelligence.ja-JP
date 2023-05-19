@@ -1,19 +1,19 @@
 ---
 title: 共通コマーステーブル
-description: より一般的なテーブルのいくつかを説明します。 [!DNL MBI] のお客様はを使用します。
+description: より一般的なテーブルのいくつかを説明します。 [!DNL Commerce Intelligence] のお客様はを使用します。
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
 # 共通コマーステーブル
 
-コマースインスタンスを初めて次に接続したとき [[!DNL MBI]](../importing-data/integrations/magento.md), [!DNL MBI] 一部のコマーステーブル（通常は 4 ～ 6 個のテーブル）からデータを自動的にレプリケートして、ダッシュボードとレポートの初期セットを設定します。 これは非常に優れた出発点ですが、ほとんどのストアインスタンスでは、数百ものテーブルを追加しない場合に数十を生成し、ビジネスのパフォーマンスに関する重要なインサイトを提供できます。
+最初に [!DNL Adobe Commerce] インスタンスから [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] 一部のコマーステーブル（通常は 4 ～ 6 個のテーブル）からデータを自動的にレプリケートして、ダッシュボードとレポートの初期セットを設定します。 これは非常に優れた出発点ですが、ほとんどのストアインスタンスでは、数百ものテーブルを追加しない場合に数十を生成し、ビジネスのパフォーマンスに関する重要なインサイトを提供できます。
 
-以下に、より一般的なテーブルの一覧を示します。 [!DNL MBI] のお客様はを使用します。 後 [コマースインスタンスを MBI に接続する](../../data-analyst/importing-data/integrations/magento.md)を使用する場合、 [Data Warehouse管理](../../data-analyst/data-warehouse-mgr/tour-dwm.md) をクリックして、関連するデータフィールドを追跡します。
+以下に、より一般的なテーブルの一覧を示します。 [!DNL Commerce Intelligence] のお客様はを使用します。 後 [コマースインスタンスを Commerce Intelligence に接続](../../data-analyst/importing-data/integrations/magento.md)を使用する場合、 [Data Warehouse管理](../../data-analyst/data-warehouse-mgr/tour-dwm.md) をクリックして、関連するデータフィールドを追跡します。
 
 | テーブル名 | 説明 |
 |---|---|

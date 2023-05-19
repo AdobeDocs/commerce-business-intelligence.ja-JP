@@ -1,17 +1,17 @@
 ---
-title: 新しいユーザーの追加/編集
-description: 新しい [!DNL MBI] ユーザーと、ユーザー名またはパスワードの更新方法を説明します。
+title: 新しいAdobe Commerce Intelligence ユーザーの追加
+description: 新しい [!DNL Commerce Intelligence] ユーザーと、ユーザー名またはパスワードの更新方法を説明します。
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-# ユーザーの追加
+# 新しい [!DNL Adobe Commercer Intelligence] ユーザー
 
-1. 右上隅の会社名をクリックし、「 **[!UICONTROL Invite User]** をドロップダウンから選択します。
+1. 右上隅で会社の名前をクリックし、「 」を選択します。 **[!UICONTROL Invite User]** をドロップダウンから選択します。
 1. ユーザー名と E メールを入力します。
 1. ユーザーの **[!UICONTROL general permission level]**: `Admin`, `Standard`または `Read Only`.
 1. この新しいユーザーが、 **[!UICONTROL billing]** または **[!UICONTROL technical]** の問題を修正するには、該当するボックスをオンにします。
@@ -30,12 +30,12 @@ ht-degree: 0%
 
 ## 電子メールアドレスまたはパスワードを更新する
 
-右上隅の会社名をクリックし、「 **[!UICONTROL Edit Profile]**.
+右上隅の会社名をクリックし、次に「 **[!UICONTROL Edit Profile]**.
 
 ## 招待状の再送信
 
-新しいユーザーに招待状を再送信する必要がある場合は、 [ログインページ](https://dashboard.rjmetrics.com/v2/session/create)をクリックし、 **[!UICONTROL Forgot?]**&#x200B;をクリックし、新しいユーザーの電子メールアドレスを入力して、 **[!UICONTROL Reset Password]**. これにより、招待が再送され、ユーザーがログインできるようになります。
+招待状を再送信する必要がある場合は、 [ログインページ](https://dashboard.rjmetrics.com/v2/session/create)をクリックし、 **[!UICONTROL Forgot?]**&#x200B;をクリックし、新しいユーザーの電子メールアドレスを入力して、 **[!UICONTROL Reset Password]**. これにより、招待メールが再送信され、ユーザーがログインできるようになります。
 
 >[!IMPORTANT]
 >
->各アカウントには、契約済みのライセンス数（シート数）があります。 制限に達した場合や、詳細を知りたい場合は、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+>各アカウントには、契約済みのライセンス数（シート数）があります。 制限に達した場合や、詳細を知りたい場合は、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

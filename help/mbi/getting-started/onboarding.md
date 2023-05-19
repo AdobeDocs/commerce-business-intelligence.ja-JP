@@ -1,15 +1,15 @@
 ---
-title: オンボーディング
-description: オンボーディングについて説明します。
+title: オンボーディングAdobe Commerce Intelligence
+description: Adobe Commerce Intelligence のオンボーディングについて説明します。
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# オンボーディング
+# オンボーディング [!DNL Adobe Commerce Intelligence]
 
 以下に関するオンボーディングに関する質問： `store` および `database` を設定することで、レポートが正しく設定されていることを確認します。 Adobeは、これらの回答を使用して、お客様の店舗の設定に合わせて正確にカスタマイズされたレポートを提供します。
 
@@ -29,6 +29,6 @@ ht-degree: 0%
 
 ## データベース設定
 
-- `Database name`  — とは *MySQL データベースの名前* コマーストランザクションデータはどこにありますか。
+- `Database name`  — とは *名前 [!DNL MySQL] データベース* コマーストランザクションデータはどこにありますか。
 
 - `Table prefix (optional)` - Commerce データベースに含まれるテーブルの先頭には何かが付いています ( 例： `store_`)? これは通常はそうではありませんが、カスタマイズが可能です。

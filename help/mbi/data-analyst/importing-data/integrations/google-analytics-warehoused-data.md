@@ -2,14 +2,14 @@
 title: 予想されるGoogle Analyticsウェアストアドデータ
 description: 倉庫内のデータを使用してGoogle Analyticsとやり取りする方法を学びます。
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
-# 予測 [!DNL Google Analytics] 倉庫内データ
+# 予測 [!DNL Google Analytics Warehoused] データ
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >一部の情報は、次の場所であなたの友人から許可を得て使用されました： [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
 
-[!DNL Google Analytics Warehoused] 統合 [!DNL MBI] は [!DNL Google Analytics] [コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
+[!DNL Google Analytics Warehoused] 統合 [!DNL Commerce Intelligence] は [!DNL Google Analytics] [コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
 
 >[!NOTE]
 >
@@ -39,8 +39,8 @@ ht-degree: 0%
 | **列名** | **説明** |
 |-----|-----|
 | `\_id` | この列は `primary key`. |
-| `\_rjm\_record\_hash` | [!DNL MBI] 一意の ID。 この列は次のユーザーによって作成されます： [!DNL MBI]. |
-| `\_updated\_at` | この列には、データ行が最後に更新された日時が含まれます。 この列は次のユーザーによって作成されます： [!DNL MBI]. |
+| `\_rjm\_record\_hash` | [!DNL Commerce Intelligence] 一意の ID。 この列は次のユーザーによって作成されます： [!DNL Commerce Intelligence]. |
+| `\_updated\_at` | この列には、データ行が最後に更新された日時が含まれます。 この列は次のユーザーによって作成されます： [!DNL Commerce Intelligence]. |
 | `start-date` | 行の対象日を示す ID。 |
 | `end-date` | 行の対象日を示す ID。 |
 | `month` | 選択したディメンション：セッションの月で、01 ～ 12 の 2 桁の整数。 |
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-## リマインダー：倉庫内Google Analyticsとライブ統合の違い
+## ～の違いは何か [!DNL Google Analytics Warehoused] および [!DNL Live Integration]
 
 主な差別化要因は、1 つの統合が保存されることです ([!DNL Google Analytics Warehoused])、それ以外は ([!DNL Google Analytics Live]) をクリックします。 の場合 [!DNL Google Analytics Warehoused]を使用すると、 [!DNL Google Analytics] データを取得し、 [!DNL Google Analytics] と、洞察に富んだレポートを作成するその他のデータソース。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 組み合わせの側面により、 [!DNL Google Analytics] 分析を行うために他のデータに結合するデータ。 例えば、次のようにします。 `Total Time On Site By Ad Campaign` からのデータ [!DNL Google Analytics] そしてそれを仲間に入れ `Total Spent Per Campaign` からのデータ [!DNL Facebook Ads] エンゲージメントに費やされたコストの全体像を把握するために。
 
-を使用 [!DNL Google Analytics Live] 一方で、 [!DNL Google Analytics] グラフは、 [!DNL MBI] Data Warehouse。
+を使用 [!DNL Google Analytics Live] 一方で、 [!DNL Google Analytics] グラフは、 [!DNL Commerce Intelligence] Data Warehouse。
 
 ## 関連：
 

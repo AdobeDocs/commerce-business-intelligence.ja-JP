@@ -1,5 +1,5 @@
 ---
-source-git-commit: 84182bc922e95cf066675af936add7ca7b82bfae
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ## Adobeオープンソース行動規範
 
-このプロジェクトでは、 [Adobeオープンソース行動規範](../code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct). 詳しくは、 [貢献](../contributing.md) 記事。
+このプロジェクトでは、 [Adobeオープンソース行動規範](../code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct). 詳しくは、 [貢献](../contributing.md) トピック。
 
 ## Adobeコンテンツへの投稿について
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ### 軽微な変更
 
-善意でマイナーな更新を行う場合は、記事にアクセスし、 **編集** 記事の GitHub ソースに移動する記事内のリンク。 その後、GitHub UI を使用して更新をおこないます。 一般 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
+善意でマイナーな更新を行う場合は、記事にアクセスし、 **編集** トピックの GitHub ソースに移動する記事内のリンク。 その後、GitHub UI を使用して更新をおこないます。 一般 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
 
 このリポジトリのドキュメントおよびコード例について送信したマイナーな修正や説明は、Adobe利用条件の適用を受けます。
 

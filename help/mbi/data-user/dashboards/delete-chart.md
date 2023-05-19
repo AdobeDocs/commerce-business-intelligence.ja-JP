@@ -2,7 +2,7 @@
 title: グラフを完全に削除する
 description: グラフを完全に削除する方法を説明します。
 exl-id: 34234ff6-b258-4369-9774-946d8423d4da
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # グラフを完全に削除する
 
-たとえあなたが [ダッシュボードからグラフを削除する](../../data-user/dashboards/remove-charts-dashboard.md)」内に、 [!DNL MBI] アカウント
+たとえあなたが [ダッシュボードからグラフを削除する](../../data-user/dashboards/remove-charts-dashboard.md)」内に、 [!DNL Commerce Intelligence] アカウント
 
 グラフを完全に削除するには、次の手順に従います。
 

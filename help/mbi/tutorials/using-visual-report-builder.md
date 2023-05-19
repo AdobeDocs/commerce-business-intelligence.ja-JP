@@ -2,16 +2,16 @@
 title: ビジュアルReport Builderを使用
 description: 特定の期間のレポート内のデータを分析する方法を学びます。
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# 以下を使用： `Visual Report Builder`
+# 以下を使用： [!DNL Visual Report Builder]
 
-この [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) では、データを視覚的に調べてインサイトを引き出し、ビジネス上の意思決定を促進できます。 このチュートリアルでは、基本レポートの作成手順を説明します。
+この [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) では、データを視覚的に調べてインサイトを引き出し、ビジネス上の意思決定を促進できます。 このチュートリアルでは、基本レポートの作成手順を説明します。
 
 >[!NOTE]
 >
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ## 手順 1:レポートの作成
 
-レポートの作成を開始するには、 **[!UICONTROL Report Builder]** サイドバーまたは **[!UICONTROL Add Report]** をクリックします。 次の場合に `Report Builder` 選択ページが表示されたら、 **[!UICONTROL Visual Report Builder]** オプション。
+レポートの作成を開始するには、 **[!UICONTROL Report Builder]** サイドバーまたは **[!UICONTROL Add Report]** をクリックします。 次の場合に `Report Builder` ページが表示されたら、 **[!UICONTROL Visual Report Builder]** オプション。
 
-レポートを編集するには、 `Visual Report Builder`をクリックし、グラフの右上隅にある歯車（オプション）アイコンをクリックして、 **[!UICONTROL Edit]**.
+レポートを編集するには、 [!DNL Visual Report Builder]をクリックし、グラフの右上隅にある歯車（オプション）アイコンをクリックして、 **[!UICONTROL Edit]**.
 
 ## 手順 2:指標の追加
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 期間に特定の日付範囲を設定する場合は、開始日が間隔の開始日で、終了日が間隔の終了日であることを確認します。
 
-例えば、 `January 1st to March 1st` そして、 `monthly` 間隔表示 `March` データポイントとして使用しますが、 `March` 例外 `March 1`. その場合、 `Time Period` から `January 1 to March 31`.
+例えば、 `January 1st` から `March 1st` そして、 `monthly` 間隔表示 `March` データポイントとして使用しますが、 `March` 例外 `March 1`. その場合、 `Time Period` から `January 1 to March 31`.
 
 ## 手順 5: `Group by` / `Segmenting the Analysis` {#groupby}
 

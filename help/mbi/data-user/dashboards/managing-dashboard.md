@@ -2,9 +2,9 @@
 title: ダッシュボードを管理
 description: 自分が所有するダッシュボードのユーザー権限を管理する方法、不要になったダッシュボードを削除する方法、およびデフォルトのダッシュボードを設定する方法について説明します。
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >必要 [管理者権限](../../administrator/user-management/user-management.md).
 
-In **[!DNL Manage Data** > **Dashboards]**&#x200B;を使用すると、自分が所有するダッシュボードのユーザー権限を管理したり、不要になったダッシュボードを削除したり、デフォルトのダッシュボードを設定したりできます。 この記事では、次の内容を説明します。
+In **[!DNL Manage Data** > **Dashboards]**&#x200B;を使用すると、自分が所有するダッシュボードのユーザー権限を管理したり、不要になったダッシュボードを削除したり、デフォルトのダッシュボードを設定したりできます。 このトピックでは、以下について説明します。
 
 1. [ダッシュボード名の変更](#rename)
 
@@ -35,7 +35,7 @@ In **[!DNL Manage Data** > **Dashboards]**&#x200B;を使用すると、自分が
 
 ## ユーザー権限の管理 {#userperm}
 
-には 3 つのレベルのアクセス権が存在します [!DNL MBI] （ダッシュボードの場合） `View`, `Edit`、および `None`.
+には 3 つのレベルのアクセス権が存在します [!DNL Commerce Intelligence] （ダッシュボードの場合） `View`, `Edit`、および `None`.
 
 * `View` 選択したユーザーがダッシュボードを表示できますが、編集はできません。 また、Standard または管理者権限を持っている場合は、「名前を付けて保存」機能を使用して、グラフのサイズ変更、データの書き出し、グラフを独自のダッシュボードにコピーすることもできます。
 

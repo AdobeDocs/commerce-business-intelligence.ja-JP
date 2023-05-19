@@ -1,17 +1,17 @@
 ---
-title: 詳細 [!DNL MBI] 環境
-description: の操作と改善について [!DNL MBI] 環境。
+title: 詳細 [!DNL Commerce Intelligence] 環境
+description: の操作と改善について [!DNL Commerce Intelligence] 環境。
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
 
-# お使いの [!DNL MBI] 環境
+# お使いの [!DNL Adobe Commerce Intelligence] 環境
 
-コマースデータを分析する際は、これらの要因と一般的な誤解に注意してください。 コマーススキーマを正しく使用するためにサポートが必要な場合は、次の点に気を配らずにお使いください。 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+コマースデータを分析する際は、これらの要因と一般的な誤解に注意してください。 コマーススキーマを正しく使用するためにサポートが必要な場合は、次の点に気を配らずにお使いください。 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## [!DNL entity\_id]
 

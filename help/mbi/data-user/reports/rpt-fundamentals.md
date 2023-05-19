@@ -2,7 +2,7 @@
 title: レポートの使用
 description: レポートデータの使用方法を説明します。
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # レポートの使用
 
-でのレポートの使用 [!DNL MBI] 今月の売上高を前年と比較して簡単に表示するか、最新の獲得コストを把握するかに関わらず、ビジネスの質問に答えるのに役立ちます。 [!DNL Google AdWords] キャンペーン。
+でのレポートの使用 [!DNL Adobe Commerce Intelligence] 今月の売上高を前年と比較して簡単に表示するか、最新の獲得コストを把握するかに関わらず、ビジネスの質問に答えるのに役立ちます。 [!DNL Google AdWords] キャンペーン。
 
 質問から答えへの道は、正確にどのように見えますか？
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 これらのフィールドは両方とも、ユーザーレベル ( `user` 表 )。 これにより、平均分析をユーザーごとに正規化できます（つまり、この平均計算での分母はユーザー数です）。
 
-ここで [!DNL MBI] ステップイン！ 次の項目を使用して、 [!DNL MBI] 上の列を作成するData Warehouse。 Adobeアナリストチームに連絡し、作成用の新しい列の具体的な定義をお知らせください。 また、 [列エディタ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+ここで [!DNL Commerce Intelligence] ステップイン！ 次の項目を使用して、 [!DNL Commerce Intelligence] 上の列を作成するData Warehouse。 Adobeアナリストチームに連絡し、作成用の新しい列の具体的な定義をお知らせください。 また、 [列エディタ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 ベストプラクティスは、これらの計算データフィールドをデータベースで直接作成することです。実稼動サーバーに不要な負担がかかるので、このような計算データフィールドを直接作成しないことです。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 _[合計 `Time between a customer's registration date and first purchase date`] / [登録および購入した顧客の合計数]_
 
-この計算を、顧客の登録日に従って、時間やトレンドの変化に基づいてグラフ化したいと考えます。 そして、次の方法を実行します。 [この指標を作成](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL MBI]:
+この計算を、顧客の登録日に従って、時間やトレンドの変化に基づいてグラフ化したいと考えます。 そして、次の方法を実行します。 [この指標を作成](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
 
 1. に移動します。 **[!UICONTROL Data]** をクリックし、 `Metrics` タブをクリックします。
 1. クリック **[!UICONTROL Add New Metric]** をクリックし、 `user` テーブル（上記のディメンションを作成した場所）

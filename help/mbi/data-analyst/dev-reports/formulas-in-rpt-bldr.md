@@ -2,16 +2,16 @@
 title: Report Builder内の数式
 description: 数式をReport Builderで使用する方法を説明します。
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # 内の数式 `Report Builder`
 
-内 [`Report Builder`](../../tutorials/using-visual-report-builder.md)を使用すると、 [定義済み指標](../../data-user/reports/ess-manage-data-metrics.md) 」と入力します。 これらの指標を数式で組み合わせると、データから追加のインサイトを収集できます。 この記事では、 `Report Builder`  — 飛び込みましょう！
+内 [`Report Builder`](../../tutorials/using-visual-report-builder.md)を使用すると、 [定義済み指標](../../data-user/reports/ess-manage-data-metrics.md) 」と入力します。 これらの指標を数式で組み合わせると、データから追加のインサイトを収集できます。 このトピックでは、 `Report Builder`  — 飛び込みましょう！
 
 ## とは `formula`? {#what}
 
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 上記の例で、数式の `timestamp`, `groupings`, `perspectives`、および `filters` は、入力指標から継承されますか。 数式は `perspectives` および [独立時間オプション](../../tutorials/time-options-visual-rpt-bldr.md){:target=&quot;_blank&quot;} は、指標と同様です。
 
-また、 `Report Builder`, [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+また、 `Report Builder`, [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

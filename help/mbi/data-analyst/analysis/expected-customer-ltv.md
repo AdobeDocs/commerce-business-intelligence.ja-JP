@@ -2,16 +2,16 @@
 title: Pro 向けの予想ライフタイム値 (LTV) 分析
 description: 顧客のライフタイムバリューの増加と、顧客の予想されるライフタイムバリューを理解するのに役立つダッシュボードを設定する方法を説明します。
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
 # ライフタイム値の予測分析
 
-この記事では、顧客のライフタイム値の伸びと、顧客の予想されるライフタイム値を把握できるダッシュボードを設定する方法について説明します。
+このトピックでは、顧客のライフタイム値の増加と、顧客の予想されるライフタイム値を把握できるダッシュボードを設定する方法について説明します。
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
@@ -153,4 +153,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、ページ上部の画像のようになる場合があります。
 
-この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
