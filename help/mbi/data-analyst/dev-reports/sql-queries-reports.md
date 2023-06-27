@@ -2,7 +2,7 @@
 title: SQL クエリの Commerce Intelligence レポートへの変換
 description: SQL クエリを Commerce Intelligence で使用する計算列、指標に変換する方法を説明します。
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: fa65bd909495d4d73cabbc264e9a47b3e0a0da3b
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -17,7 +17,7 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 
 まず、一般的なクエリを確認します。
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `a,` | レポート `group by` |
@@ -42,7 +42,7 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 
 特定の例を見てみましょう。 `Total Revenue` 指標は [!DNL Commerce Intelligence]. 翻訳を試みる以下のクエリを確認します。
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation` （列） |
@@ -63,7 +63,7 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 
 |  |  |
 |--- |--- |
-| `Select` |  |
+| `Select` | |
 | `c.customer_id` | 所有者を集計 |
 | `SUM(o.order_total) as "Customer LTV"` | 集計操作（列） |
 | `FROM customers c` | 集計所有者テーブル |
@@ -103,7 +103,7 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 
 まず、次のクエリを使用します。
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT coupon_code,` | レポート `group by` |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation`（列） |
@@ -132,7 +132,7 @@ SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.m
 
 少し戻って、クエリ全体を見てみましょう。 `Average order value`:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | 指標 `operation` （列） |
@@ -155,4 +155,11 @@ SQL の負荷が高いユーザーの場合は、クエリが [!DNL Commerce Int
 
 ## Commerce インテリジェンス要素
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|-|X|-|-| |`FROM`|-|-|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-|-|-|-| |`WHERE` （時間要素を含む）|-|-|-|X|-|-|-|-| |`JOIN...ON`|-|X|-|-|X|X|-| |`GROUP BY`|-|-|X|-|-|-|-|-|-|
+| **`SQL Clause`** | **`Metric`** | **`Filter`** | **`Report group by`** | **`Report time frame`** | **`Path`** | **`Calculated column inputs`** | **`Source table`** |
+|---|---|---|---|---|---|---|---|
+| `SELECT` | X | - | X | - | - | X | - |
+| `FROM` | - | - | - | - | - | - | X |
+| `WHERE` | - | X | - | - | - | - | - |
+| `WHERE` （時間要素を使用） | - | - | - | X | - | - | - |
+| `JOIN...ON` | - | X | - | - | X | X | - |
+| `GROUP BY` | - | - | X | - | - | - | - |
