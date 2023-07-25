@@ -2,7 +2,9 @@
 title: 詳細 [!DNL Commerce Intelligence] 環境
 description: の操作と改善について [!DNL Commerce Intelligence] 環境。
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -19,7 +21,7 @@ ht-degree: 0%
 
 例えば、 `sales\_order` テーブルは一意の順序です。 このテーブルのプライマリキーは、と呼ばれます。 `entity\_id`. この列は、 `order\_id`. 別のテーブルで、 `customer\_entity`の各行は、個別の顧客を表します。 このテーブルのプライマリキーは、 `entity\_id`は、 `customer\_id`.
 
-この表では `sales\_order.entity\_id` 次と等しくない `customer\_entity.entity\_id`. これは、を含むすべてのテーブルセットに対して当てはまります。 `entity\_id`: `table\_A.entity\_id` 次と等しくない `table\_B.entity\_id`.
+この表では `sales\_order.entity\_id` 次と等しくない `customer\_entity.entity\_id`. これは、を含むすべてのテーブルセットに対して当てはまります。 `entity\_id`: `table\_A.entity\_id` 次と等しくない `table\_B.entity\_id`.
 
 ## [!DNL Guest orders]
 

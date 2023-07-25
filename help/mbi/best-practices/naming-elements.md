@@ -2,7 +2,9 @@
 title: Commerce Intelligence のレポートおよび要素に名前を付ける
 description: レポートおよび要素に名前を付ける際のベストプラクティスについては、 [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +13,7 @@ ht-degree: 0%
 
 # レポートおよび要素に名前を付ける
 
-での構築を開始する前に[!DNL Adobe Commerce Intelligence]では、Adobeが成功のための秘密を共有したいと考えています。 指標やフィルターなどの作成方法を知ることは重要ですが、必要なものが見つからない場合や、曖昧な場合は、すべての作業が無駄になる可能性があります。
+での構築を開始する前に [!DNL Adobe Commerce Intelligence]では、Adobeが成功のための秘密を共有したいと考えています。 指標やフィルターなどの作成方法を知ることは重要ですが、必要なものが見つからない場合や、曖昧な場合は、すべての作業が無駄になる可能性があります。
 
 ## 命名が重要な理由は何ですか？ {#why}
 
@@ -55,7 +57,7 @@ ht-degree: 0%
 
 ### スペルと文法 {#spelling}
 
-必ずあなたのスペルを再確認し、それらの厄介なポッセスを忘れないでください！
+必ずあなたのスペルを再確認し、その厄介なポッセスを忘れないでください！
 
 ## グラフ {#charts}
 

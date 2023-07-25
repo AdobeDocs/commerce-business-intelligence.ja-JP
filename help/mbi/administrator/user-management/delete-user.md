@@ -2,7 +2,9 @@
 title: Adobe Commerce Intelligence ユーザーの削除または再アクティブ化
 description: 以下を削除する方法を説明します。 [!DNL Commerce Intelligence] ユーザー。
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%

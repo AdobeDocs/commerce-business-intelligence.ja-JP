@@ -2,7 +2,7 @@
 title: Mixpanel でのデータの検証
 description: Mixpanel 内で直接使用できる同じデータをすべて同期したことを確認する方法を説明します。
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 条件 [!DNL Adobe Commerce Intelligence] 最初に [!DNL Mixpanel] データを使用する場合、アカウントマネージャーまたはアナリストは、次の場所からデータエクスポートを提供するように要求できます： [!DNL Mixpanel] 検証の目的で使用します。 これにより、内で直接使用可能な同じデータをすべて同期したことを確認できます [!DNL Mixpanel].
 
-## データの書き出しプロセス： `Events`
+## データの書き出しプロセス： `Events`
 
 1. 次のサイトにアクセス： `Segmentation` セクションとビュー `Your Top Events`.
 

@@ -2,7 +2,9 @@
 title: データチェックの設定
 description: 変更可能な値を持つデータ列を設定する方法を説明します。
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%

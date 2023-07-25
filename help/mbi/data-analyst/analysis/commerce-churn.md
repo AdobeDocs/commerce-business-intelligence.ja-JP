@@ -2,7 +2,9 @@
 title: コマースチャーン
 description: コマースチャーンレートを生成および分析する方法を説明します。
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -55,9 +57,9 @@ ht-degree: 2%
 * **新規顧客（最終注文日別）**
    * カウントされる顧客
 
-   >[!NOTE]
-   >
-   >この指標は、お使いのアカウントに存在する場合があります。
+  >[!NOTE]
+  >
+  >この指標は、お使いのアカウントに存在する場合があります。
 
 * 内 **`customer_entity`** 表
 * この指標では **カウント**
@@ -75,7 +77,7 @@ ht-degree: 2%
    * [!UICONTROL Metric]:新規顧客（初回注文日別）
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: `Cumulative`
+     [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
    * 顧客の最終注文日以降の経過秒数 >= [チャーン顧客に対する自己定義の期限&#x200B;]**`^`**
@@ -84,11 +86,10 @@ ht-degree: 2%
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: Cumulative
+     [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
    * 
-
-      [!UICONTROL Format]: Percentage
+     [!UICONTROL Format]: Percentage
 
 * *指標 `A`:`New customers cumulative`*
 * *指標 `B`:`Churned customers by last order date`*

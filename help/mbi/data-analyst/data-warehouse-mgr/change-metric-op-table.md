@@ -2,7 +2,9 @@
 title: 指標の操作可能テーブルの変更
 description: 指標が操作の実行に使用するデータテーブルを変更する方法を説明します。
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%

@@ -1,8 +1,10 @@
 ---
 title: 全期間値 (LTV) 分析（基本）
-description: 分析を作成して、現在の顧客のライフタイム値を把握し、より多くの注文でライフタイム値が増加する方法を予測する方法を説明します。
+description: 分析を作成して、現在の顧客のライフタイム値を把握し、購入回数が増えるにつれてライフタイム値が増加する方法を予測する方法を説明します。
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -23,17 +25,16 @@ ht-degree: 0%
 * に移動します。 **[!UICONTROL Manage Data > Metrics]**
    * 既存の **[!UICONTROL Avg lifetime revenue]**.
 
-   >[!NOTE]
-   >
-   >この指標が構築されるテーブル ( おそらく `customer_entity` または `sales_order` ストアがゲストのチェックアウトを受け入れる機能に応じて異なります )。
+  >[!NOTE]
+  >
+  >この指標が構築されるテーブル ( おそらく `customer_entity` または `sales_order` ストアがゲストのチェックアウトを受け入れる機能に応じて異なります )。
 
    * クリック **[!UICONTROL Create New Metric]** 上からテーブルを選択します。
    * この指標では **中央値** の `Customer's lifetime revenue` 列、並べ替え順 `created_at`.
       * [!UICONTROL Filters]:
          * を `Customers we count (Saved Filter Set)` ( または `Registered accounts we count`)
+
    * 指標に名前を付けます（例： ）。 `Median lifetime revenue`.
-
-
 
 ## ダッシュボードの作成
 
@@ -53,7 +54,7 @@ ht-degree: 0%
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL 間隔]: `None`
+     [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -61,11 +62,11 @@ ht-degree: 0%
       * 追加 [!UICONTROL filters]:
          * [`A`] `Customer's group code` **次と等しくない** `Not Logged In`
          * [`B`] `Customer's lifetime number of orders` **より大きい**`0`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL 間隔]: `None`
+     [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
-
 
 * **[!UICONTROL Average and Median LTV]**
    * 指標 `1`: `Avg lifetime revenue`
@@ -73,7 +74,7 @@ ht-degree: 0%
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
    * 
-      [!UICONTROL グラフの種類]: `Line`
+     [!UICONTROL グラフの種類]: `Line`
    * オフ `Multiple Y-Axes`
 
 * **全期間注文数別の LTV**
@@ -81,14 +82,14 @@ ht-degree: 0%
    * 指標 `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL 間隔]: `None`
+     [!UICONTROL 間隔]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
    * 
+     [!UICONTROL グラフの種類]: `Line`
 
-      [!UICONTROL グラフの種類]: `Line`
-   >[!NOTE]
-   >
-   >すべての値を `Customer's lifetime number of orders`. 代わりに、新規顧客の数が少ない数に達した時点を見て、各顧客の全期間の注文数値をその時点に手動で追加します。 例えば、1 回の注文で 200 人の顧客、2 回に 75 人、3 回に 15 人、4 回に 3 人の顧客がある場合、 *1、2、3*.
+  >[!NOTE]
+  >
+  >すべての値を `Customer's lifetime number of orders`. 代わりに、新規顧客の数が少ない数に達した時点を見て、各顧客の全期間の注文数値をその時点に手動で追加します。 例えば、1 回の注文で 200 人の顧客、2 回に 75 人、3 回に 15 人、4 回に 3 人の顧客がある場合、 *1、2、3*.
 
 * 既存の [!UICONTROL Avg customer lifetime revenue by cohort] レポート。
 

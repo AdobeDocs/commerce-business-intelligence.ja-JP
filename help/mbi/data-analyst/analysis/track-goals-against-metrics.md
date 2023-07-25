@@ -2,7 +2,9 @@
 title: 指標に対する目標の追跡
 description: 売上高、新規登録ユーザー、注文件数など、実際のデータに基づいてビジネス目標を追跡するのに役立つダッシュボードを設定する方法を説明します。
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -54,51 +56,46 @@ ht-degree: 0%
 * **目標達成に残る収益**
 * 指標 `A`: `Revenue`
 * 
-
-   [!UICONTROL 指標]: `Revenue`
+  [!UICONTROL 指標]: `Revenue`
 
 * 指標 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
 * 
-   [!UICONTROL 数式]: `(B-A)`
+  [!UICONTROL 数式]: `(B-A)`
 * 
-
-   [!UICONTROL Format]: `Number`
+  [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]:（任意の期間）
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * 
-
-   [!UICONTROL グラフの種類]: `Scalar`
+  [!UICONTROL グラフの種類]: `Scalar`
 
 * **収益目標**
 * 指標 `A`: `Revenue`
 * 
-
-   [!UICONTROL 指標]: `Revenue`
+  [!UICONTROL 指標]: `Revenue`
 
 * 指標 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * 指標 `C`: `Revenue (amount change since previous year)` （非表示）
 * 
-   [!UICONTROL 指標]: `Revenue`
+  [!UICONTROL 指標]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]:（今月前年）
 * 
-   [!UICONTROL 数式]: `(A-C)`
+  [!UICONTROL 数式]: `(A-C)`
 * 
-
-   [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]: `Currency`
 
 * オフにする `Multiple Y-Axes`
 * [!UICONTROL Time period]:（任意の関連期間）*
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
 上記の売上高目標レポートを完了したら、注文、登録済みアカウント、または目標ファイルのアップロードに含めたその他の値に関する目標に関して、同じレポートを作成できます。

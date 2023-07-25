@@ -2,7 +2,9 @@
 title: ゲストによる注文
 description: ゲストによる注文がデータに与える影響と、お客様のデータ内のゲストによる注文を適切に考慮するために必要なオプションについて説明します [!DNL Commerce Intelligence] Data Warehouse。
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -21,13 +23,13 @@ ht-degree: 0%
 
 * **すべての顧客が登録されている場合** とのゲストによる注文は許可されていません。つまり、 `orders` テーブルの `customer\_id` 列。 その結果、すべての注文が `customers` 表。
 
-   ![](../../assets/guest-orders-4.png)
+  ![](../../assets/guest-orders-4.png)
 
 * **ゲストによる注文が許可されている場合**&#x200B;の場合、一部の注文の値が `customer\_id` 列。 の値が与えられるのは、登録された顧客のみです `customer\_id` 列 `orders` 表。 登録されていないお客様には、 `NULL` （または空白）この列の値。 その結果、すべての注文レコードが、 `customers` 表。
 
-   >[!NOTE]
-   >
-   >注文をおこなった一意の個人を識別するには、の横に別の一意のユーザー属性が必要です `customer\_id` 注文に添付されています。 通常は、顧客の E メールアドレスが使用されます。
+  >[!NOTE]
+  >
+  >注文をおこなった一意の個人を識別するには、の横に別の一意のユーザー属性が必要です `customer\_id` 注文に添付されています。 通常は、顧客の E メールアドレスが使用されます。
 
 ## ゲスト設定でのゲスト注文のData Warehouse方法
 

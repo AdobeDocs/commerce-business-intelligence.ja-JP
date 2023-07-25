@@ -2,7 +2,9 @@
 title: Adobe Commerceへのデータの格納
 description: データの生成方法、新しい行の挿入原因、アクションのAdobe Commerceデータベースへの記録方法について説明します。
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -44,7 +46,7 @@ ht-degree: 3%
 
 ## `customer\_entity`
 
-3 つの新しい製品が追加された直後に、新しい顧客が `Sammy Customer`，訪問 `Clothes4U`初めてのウェブサイト。 次以降 `Clothes4U` ゲストによる注文を許可しません。 `Sammy Customer` まず、web サイト上にアカウントを作成する必要があります。 顧客が必要な資格情報を入力し、「送信」をクリックすると、 [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
+3 つの新しい製品が追加された直後に、新しいお客様が `Sammy Customer`，訪問 `Clothes4U`初めてのウェブサイト。 次以降 `Clothes4U` ゲストによる注文を許可しません。 `Sammy Customer` まず、web サイト上にアカウントを作成する必要があります。 顧客が必要な資格情報を入力し、「送信」をクリックすると、 [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
 
 | **`entity id`** | **`entity type id`** | **`email`** | **`created at`** |
 |---|---|---|---|
@@ -61,7 +63,7 @@ ht-degree: 3%
 
 アカウントの作成が完了したら、 `Sammy Customer` は、購入を開始する準備が整っています。 Web サイトで、顧客が `Throwback Bellbottoms` 一つ `V-Neck T-Shirt` を買い物かごに追加します。 選択に満足した顧客はチェックアウトに移動し、注文を送信し、次のエントリを [販売フラット注文テーブル](../data-warehouse-mgr/sales-flat-order-table.md):
 
-| **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
+| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 

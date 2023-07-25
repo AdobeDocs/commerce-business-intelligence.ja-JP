@@ -2,7 +2,9 @@
 title: 計算列のタイプ
 description: 列を作成して、データを拡張し分析用に最適化する方法を説明します。
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 0%
@@ -91,7 +93,7 @@ ht-degree: 0%
 
 ## ハンディリファレンスマップ {#map}
 
-計算列を作成する際に、すべての入力値を覚えるのに問題が発生した場合は、作成時にこのリファレンスマップを手元に用意してください。
+計算列を作成する際に、すべての入力値を記憶するのに問題が生じる場合は、次のリファレンスマップを作成時に手元に用意しておいてください。
 
 ![](../../assets/merged_reference_map.png)
 

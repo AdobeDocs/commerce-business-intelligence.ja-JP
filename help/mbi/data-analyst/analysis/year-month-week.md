@@ -2,7 +2,9 @@
 title: 年別、月別、週別のレポート
 description: 経時的なトレンドの確認方法と、比較する期間のパースペクティブの変更方法を説明します。
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -39,8 +41,7 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
    * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
-
-      ![](../../assets/new-arch-create-calc.png)
+     ![](../../assets/new-arch-create-calc.png)
 
 ## 指標
 
@@ -64,10 +65,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **MoM グラフ**
    * [!UICONTROL Metric]: `Number of orders`
@@ -81,10 +82,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `B`:先月*
 * [!UICONTROL Time period]:1 か月前～ 0 か月前
 * 
-   [!UICONTROL Interval]: None
+  [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
 * 
-   [!UICONTROL Chart Type]: Line
+  [!UICONTROL Chart Type]: Line
 
 * **WoW グラフ**
    * [!UICONTROL Metric]: `Number of orders`
@@ -98,10 +99,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **DoD グラフ**
    * [!UICONTROL Metric]: `Number of orders`
@@ -115,9 +116,9 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、このページの上部にある画像のようになります。

@@ -2,7 +2,9 @@
 title: 計算列のパスの作成または削除
 description: 列を作成するテーブルと、情報を取り込むテーブルとの関連を示すパスを定義する方法を説明します。
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%

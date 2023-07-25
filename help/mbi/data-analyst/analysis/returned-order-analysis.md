@@ -2,7 +2,9 @@
 title: 返品注文の分析
 description: ストアの返品状況を詳細に分析できるダッシュボードの設定方法を説明します。
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -60,10 +62,9 @@ ht-degree: 0%
 * 定義を選択します。 `Joined Column`
 * [!UICONTROL Create Path]:
 * 
-   [!UICONTROL Many]: `enterprise_rma.order_id`
+  [!UICONTROL Many]: `enterprise_rma.order_id`
 * 
-
-   [!UICONTROL One]: `sales_flat_order.entity_id`
+  [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * を選択します。 [!UICONTROL table]: `sales_flat_order`
 * を選択します。 [!UICONTROL column]: `created_at`
@@ -82,10 +83,9 @@ ht-degree: 0%
 * 定義を選択します。 `Joined Column`
 * [!UICONTROL Create Path]:
    * 
-      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
+     [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
    * 
-
-      [!UICONTROL One]: `enterprise_rma.entity_id`
+     [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * を選択します。 [!UICONTROL table]: `enterprise_rma`
 * を選択します。 [!UICONTROL column]: `date_requested`
@@ -158,15 +158,14 @@ ht-degree: 0%
 * 数式：繰り返し注文の確率
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 間隔]: `None`
+  [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * 
-   [!UICONTROL グラフの種類]: `Bar`
+  [!UICONTROL グラフの種類]: `Bar`
 
 * **平均戻り時間（全時間）**
 * 指標 `A`: `Avg time between order and return`
@@ -174,10 +173,9 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 間隔]: `None`
+  [!UICONTROL 間隔]: `None`
 * 
-
-   [!UICONTROL グラフの種類]: `Number`
+  [!UICONTROL グラフの種類]: `Number`
 
 * **返品のある注文の割合**
 * 指標 `A`: `Number of orders`
@@ -191,12 +189,11 @@ ht-degree: 0%
 * 数式：返品のある注文の割合
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 間隔]: `None`
+  [!UICONTROL 間隔]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
 * **月別の収益**
@@ -206,8 +203,7 @@ ht-degree: 0%
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
 * 
-
-   [!UICONTROL グラフの種類]: `Line`
+  [!UICONTROL グラフの種類]: `Line`
 
 * **再度購入せずに返品を行った顧客**
 * 指標 `A`: `Number of orders with returns`
@@ -218,12 +214,11 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 間隔]: `None`
+  [!UICONTROL 間隔]: `None`
 * 
-   [!UICONTROL グループ化基準]: `Customer_email`
+  [!UICONTROL グループ化基準]: `Customer_email`
 * 
-
-   [!UICONTROL グラフの種類]: `Table`
+  [!UICONTROL グラフの種類]: `Table`
 
 * **品目別の返品率**
 * 指標 `A`: `Returned items` （非表示）
@@ -236,15 +231,14 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 間隔]: `None`
+  [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
 * 
-   [!UICONTROL グラフの種類]: `Table`
+  [!UICONTROL グラフの種類]: `Table`
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 

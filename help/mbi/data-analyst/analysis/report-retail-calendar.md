@@ -2,7 +2,9 @@
 title: 小売カレンダーのレポート
 description: 内で4-5-4小売業用カレンダーを使用する構造を設定する方法を説明します [!DNL Commerce Intelligence] アカウント
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -49,18 +51,19 @@ ht-degree: 0%
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
       * 
-         [!UICONTROL データ型]: `Datetime`
+        [!UICONTROL データ型]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
-         >[!NOTE]
-         >
-         >この `now()` 上記の関数は、PostgreSQL に固有です。 ただし、 [!DNL Commerce Intelligence] データウェアハウスは PostgreSQL でホストされ、一部は Redshift でホストされる場合があります。 上記の計算でエラーが返された場合は、 Redshift 関数を使用する必要がある場合があります `getdate()` の代わりに `now()`.
+        >[!NOTE]
+        >
+        >この `now()` 上記の関数は、PostgreSQL に固有です。 ただし、 [!DNL Commerce Intelligence] データウェアハウスは PostgreSQL でホストされ、一部は Redshift でホストされる場合があります。 上記の計算でエラーが返された場合は、 Redshift 関数を使用する必要がある場合があります `getdate()` の代わりに `now()`.
+
    * **現在の小売年** （サポートアナリストが作成する必要があります）
       * [!UICONTROL Column type]:E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
       * 
-         [!UICONTROL Operation]: `Max`
+        [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **現在の小売年度に含まれますか？ （はい/いいえ）**
       * [!UICONTROL Column type]: `Same table > Calculation`
@@ -68,7 +71,7 @@ ht-degree: 0%
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [!UICONTROL データ型]: `String`
+        [!UICONTROL データ型]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **前の小売年度に含まれますか？ （はい/いいえ）**
       * [!UICONTROL Column type]: `Same table > Calculation`
@@ -76,9 +79,8 @@ ht-degree: 0%
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [!UICONTROL データ型]: String
+        [!UICONTROL データ型]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
-
 
 * **sales\_order** 表
    * **作成日\_at （小売年度）**
@@ -138,64 +140,62 @@ ht-degree: 0%
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail week)
+     [!UICONTROL Group by]: `Created\_at` (retail week)
    * 
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
       * オフにする `multiple Y-axes`
 
 * **小売カレンダーの概要（現在の小売年度 — 月別）**
    * 指標 `A`: `Revenue`
       * 
-         [!UICONTROL 指標]: `Revenue`
+        [!UICONTROL 指標]: `Revenue`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail month)
+     [!UICONTROL Group by]: `Created\_at` (retail month)
    * 
-
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
 
 * **小売カレンダーの概要（前の小売年度 — 月別）**
    * 指標 `A`: `Revenue`
       * 
-         [!UICONTROL 指標]: `Revenue`
+        [!UICONTROL 指標]: `Revenue`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `B`: `Orders`
       * [!UICONTROL Metric]:注文数
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail month)
+     [!UICONTROL Group by]: `Created\_at` (retail month)
    * 
-
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
 
 ## 次の手順
 

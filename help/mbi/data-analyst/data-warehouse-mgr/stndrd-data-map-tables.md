@@ -2,7 +2,9 @@
 title: マッピングテーブルを使用してデータを標準化します
 description: マッピングテーブルの操作方法を説明します。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -64,7 +66,7 @@ ht-degree: 0%
    * の `One` サイド、 `mapping` テーブルと `Primary key` 列。 この場合、「 `state_input` 列 `mapping_state` 表。
    * パスがどのように表示されるかを以下に示します。
 
-      ![](../../assets/State_Mapping_Path.png)
+     ![](../../assets/State_Mapping_Path.png)
 
 1. 終了したら、「 **[!UICONTROL Save]** をクリックしてパスを作成します。
 1. 保存後すぐにパスが設定されない場合があります。この場合、 `Path` ボックスをクリックし、作成したパスを選択します。

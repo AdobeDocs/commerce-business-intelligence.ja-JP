@@ -2,7 +2,9 @@
 title: テーブルの関係の理解と評価
 description: あるテーブル内の可能な回数を、別のテーブル内のエンティティに属させることができる回数を理解する方法を説明します。
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -120,7 +122,7 @@ Data Warehouse内の特定のテーブルのペアの関係を評価する方法
 次のいずれかが true の場合、関係は `many-to-many`:
 
 * `Non-primary key` 列は、2 つのテーブルをリンクするために使用されています
-   ![](../../assets/many-to-many1.png)
+  ![](../../assets/many-to-many1.png)
 * 複合の一部 `primary key` は、2 つのテーブルをリンクするために使用します
 
 ![](../../assets/many-to-mnay2.png)

@@ -2,7 +2,9 @@
 title: 顧客チャーンを定義
 description: トランザクション顧客のチャーンを定義するのに役立つダッシュボードを設定する方法について説明します。
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -68,29 +70,27 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]:最初の繰り返し順序の確率
 * 
-   [!UICONTROL 数式]: `A/B`
+  [!UICONTROL 数式]: `A/B`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]: `Scalar`
 
 * **注文から指定された月の繰り返し注文の確率**
 * 指標 A:前の注文からの注文を月単位で繰り返す（非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 指標 B:注文からの最終注文を月単位で表示（非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 指標 C:全期間繰り返し注文（非表示）
@@ -98,33 +98,29 @@ ht-degree: 0%
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
-
-   [!UICONTROL グループ化基準]: `Independent`
+  [!UICONTROL グループ化基準]: `Independent`
 
 * 指標 D:前回の注文をすべて無視（非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 
-
-   [!UICONTROL グループ化基準]: `Independent`
+  [!UICONTROL グループ化基準]: `Independent`
 
 * [!UICONTROL Formula]:最初の繰り返し順序の確率
 * 
-   [!UICONTROL 数式]: `(C-A)/(C+D-A-B)`
+  [!UICONTROL 数式]: `(C-A)/(C+D-A-B)`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * top.bottom を表示：上位 24 カテゴリ（カテゴリ名で並べ替え）
 
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 最初の繰り返し注文の確率レポートは、「繰り返し注文の合計/合計注文件数」を表します。 すべての注文は、繰り返し注文をする機会です。繰り返し注文の数は、実際に実行する順序のサブセットです。
 

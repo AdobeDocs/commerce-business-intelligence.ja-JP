@@ -2,7 +2,9 @@
 title: quote_item テーブル
 description: quote_item テーブルの操作方法を説明します。
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -51,8 +53,8 @@ ht-degree: 0%
 
 | **指標名** | **説明** | **構築** |
 |---|---|---|
-| `Number of abandoned cart items` | 特定の「放棄」条件を満たす買い物かごに追加された品目の合計数 | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>フィルター：<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x(「x」は、買い物かごが破棄されたと見なされる、買い物かごが作成されてからの経過時間（秒）) です。 |
-| `Abandoned cart item value` | 特定の「放棄」条件を満たす買い物かごに関連付けられた合計売上高の合計 | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>フィルター：<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x(「x」は、買い物かごが破棄されたと見なされる、買い物かごが作成されてからの経過時間（秒）) です。 |
+| `Number of abandoned cart items` | 特定の「放棄」条件を満たす買い物かごに追加された品目の合計数 | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>フィルター：<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x(「x」は、買い物かごが破棄されたと見なされる、買い物かごが作成されてからの経過時間（秒）) です。 |
+| `Abandoned cart item value` | 特定の「放棄」条件を満たす買い物かごに関連付けられた合計売上高の合計 | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>フィルター：<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x(「x」は、買い物かごが破棄されたと見なされる、買い物かごが作成されてからの経過時間（秒）) です。 |
 
 {style="table-layout:auto"}
 

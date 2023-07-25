@@ -2,7 +2,9 @@
 title: マーケティング ROI
 description: 総合的な ROI やキャンペーン別の ROI など、チャネル分析をトラッキングするダッシュボードを設定する方法を説明します。
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin,  User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
@@ -41,26 +43,25 @@ ht-degree: 0%
       * 定義を選択します。 `Joined Column`
       * [!UICONTROL Create Path]:
       * 
-         [!UICONTROL Many]: `sales_flat_order.increment_id`
+        [!UICONTROL Many]: `sales_flat_order.increment_id`
       * 
-
-         [!UICONTROL One]: `ecommerce####.transaction_id`
+        [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * を選択します。 [!UICONTROL table]: `ecommerce####`
       * を選択します。 [!UICONTROL column]: `campaign`
       * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
+
    * **`Order's GA medium`**
       * 定義を選択します。結合列
       * を選択します。 [!UICONTROL table]: `ecommerce####`
       * を選択します。 [!UICONTROL column]: `medium`
       * [!UICONTROL Path]:sales_flat_order.increment_id = ecommerce####.transactionId
+
    * **`Order's GA source`**
       * 定義を選択します。結合列
       * を選択します。 [!UICONTROL table]: `ecommerce####`
       * を選択します。 [!UICONTROL column]: `source`
       * [!UICONTROL Path]:sales_flat_order.increment_id = ecommerce###.transactionId ^
-
-
 
 * **`customer_entity`** 表
 * **`Customer's first order GA campaign`**
@@ -141,10 +142,9 @@ ht-degree: 0%
 * 指標 `A`:広告費用
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 間隔]: `None`
+  [!UICONTROL 間隔]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **広告顧客獲得（常時）**
    * [!UICONTROL Metric]: `New customers`
@@ -158,10 +158,9 @@ ht-degree: 0%
 * 指標 `A`: `Ad customer acquisitions`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 間隔]: `None`
+  [!UICONTROL 間隔]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **広告 ROI**
    * [!UICONTROL Metric]:広告費用
@@ -173,6 +172,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 論理のフィルター：([`A`] または [`B`] または [`C`]) および [`D`]
+
    * [!UICONTROL Metric]:平均ライフタイム売上高
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -180,12 +180,10 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 論理のフィルター：([`A`] または [`B`] または [`C`]) および [`D`]
+
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
    * 
-
-      [!UICONTROL Format]: `Percentage`
-
-
+     [!UICONTROL Format]: `Percentage`
 
 * 指標 `A`: `Ad Spend (hide)`
 * 指標 `B`: `Ad customer acquisitions (hide)`
@@ -193,23 +191,20 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `Ads ROI`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 間隔]: `None`
+  [!UICONTROL 間隔]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **Ga メディア別の注文件数**
    * 
-
-      [!UICONTROL 指標]: `Orders`
+     [!UICONTROL 指標]: `Orders`
 
 * 指標 `A`: `Orders`
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By Month`
 * [!UICONTROL Group by]: `Order's medium`
 * 
-
-   [!UICONTROL Chart Type]: `Area`
+  [!UICONTROL Chart Type]: `Area`
 
 * **キャンペーン別広告 ROI**
    * [!UICONTROL Metric]: `Ad Spend`
@@ -221,6 +216,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 論理のフィルター：([`A`] または [`B`] または [`C`]) および [`D`]
+
    * [!UICONTROL Metric]:平均ライフタイム売上高
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -228,6 +224,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 論理のフィルター：([`A`] または [`B`] または [`C`]) および [`D`]
+
    * [!UICONTROL Metric]:平均ライフタイム注文数
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -235,20 +232,18 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 論理のフィルター：([`A`] または [`B`] または [`C`]) および [`D`]
+
    * [!UICONTROL Formula]: `(A / B)`
    * 
-
-      [!UICONTROL Format]: `Currency`
+     [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `(C - (A / B))`
    * 
-
-      [!UICONTROL Format]: `Currency`
+     [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
    * 
-
-      [!UICONTROL Format]: `Percentage`
+     [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]: `Ad Clicks`
 
@@ -256,39 +251,33 @@ ht-degree: 0%
 
    * [!UICONTROL Formula]: `(H / I)`
    * 
-
-      [!UICONTROL Format]: `Percentage`
+     [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula]: `(A / H)`
    * 
-
-      [!UICONTROL Format]: `Currency`
-
-
-
+     [!UICONTROL Format]: `Currency`
 
 * 指標 `A`: `Ad Spend` （非表示）
 * 指標 `B`: `Ad customer acquisitions`
 * 指標 `C`: `Average LTV`
 * 指標 `D`: `Average lifetime # of orders`
 * 
-   [!UICONTROL 数式]: `CAC`
+  [!UICONTROL 数式]: `CAC`
 * [!UICONTROL Formula]: `Avg return`
 * [!UICONTROL Formula]: `Ads ROI`
 * 指標 `H`: `adClicks`
 * 指標 `I`: `Impressions`
 * 
-   [!UICONTROL 数式]: `CTR`
+  [!UICONTROL 数式]: `CTR`
 * 
-   [!UICONTROL 数式]: `CPC`
+  [!UICONTROL 数式]: `CPC`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL 間隔]: `None`
+  [!UICONTROL 間隔]: `None`
 * 
-   [!UICONTROL グループ化基準]: `campaign` (非広告費用テーブル指標に対して「顧客の最初の注文」キャンペーンを使用する)
+  [!UICONTROL グループ化基準]: `campaign` (非広告費用テーブル指標に対して「顧客の最初の注文」キャンペーンを使用する)
 * 
-
-   [!UICONTROL Chart Type]: `Table`
+  [!UICONTROL Chart Type]: `Table`
 
 この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 

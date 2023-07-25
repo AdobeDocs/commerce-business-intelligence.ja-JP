@@ -2,9 +2,11 @@
 title: 送料無料しきい値
 description: 送料無料しきい値のパフォーマンスを追跡するダッシュボードを設定する方法を説明します。
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin,  User
+feature: Data Warehouse Manager, Dashboards, Reports
+source-git-commit: 6bdbdbcc652d476fa2a22589ac99678d5855e6fe
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -33,19 +35,19 @@ ht-degree: 0%
 * **`Order subtotal (buckets)`** 元のアーキテクチャ：アナリストが、 `[FREE SHIPPING ANALYSIS]` チケット
 * **`Order subtotal (buckets)`** 新しいアーキテクチャ：
    * 前述のように、この計算では通常の買い物かごサイズに対する増分でグループが作成されます。 ネイティブの小計列 ( `base_subtotal`（この新しい列の基礎として使用できます） そうでない場合は、送料と割引を売上高から除外する計算列を指定できます。
-   >[!NOTE]
-   >
-   >「バケット」のサイズは、クライアントとして適したサイズによって異なります。 まず、 `average order value` そして、その量より少なく、大きい数のバケットを作成します。 以下の計算を見ると、クエリの一部を簡単にコピーし、編集し、追加のバケットを作成する方法がわかります。 例は 50 単位で増分されます。
+
+  >[!NOTE]
+  >
+  >「バケット」のサイズは、クライアントとして適したサイズによって異なります。 まず、 `average order value` そして、その量より少なく、大きい数のバケットを作成します。 以下の計算を見ると、クエリの一部を簡単にコピーし、編集し、追加のバケットを作成する方法がわかります。 例は 50 単位で増分されます。
 
    * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`または `calculated column`, `Datatype`: `Integer`
    * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
-タイミング `A< 200` および `A <= 250` その後 `201 - 250`
+when `A< 200` および `A <= 250` その後 `201 - 250`
 when `A<251` および `A<= 300` その後 `251 - 300`
 when `A<301` および `A<= 350` その後 `301 - 350`
 when `A<351` および `A<=400` その後 `351 - 400`
 when `A<401` および `A<=450` その後 `401 - 450`
 それ以外の場合は「450 を超える」で終了
-
 
 
 ## 指標
@@ -64,75 +66,67 @@ when `A<401` および `A<=450` その後 `401 - 450`
 * 指標 `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **出荷ルール A を含む小計グループ別の注文数**
    * [!UICONTROL Metric]: `Number of orders`
 
-   >[!NOTE]
-   >
-   >上部を表示することで、尾の端を切り落とすことができます `X` `sorted by` `Order subtotal` （バケット） `Show top/bottom`.
+  >[!NOTE]
+  >
+  >上部を表示することで、尾の端を切り落とすことができます `X` `sorted by` `Order subtotal` （バケット） `Show top/bottom`.
 
 * 指標 `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Column`
+  [!UICONTROL Chart Type]: `Column`
 
 * **出荷ルール A による小計別の注文の割合**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * 
-      [!UICONTROL グループ化基準]: `Independent`
+     [!UICONTROL グループ化基準]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
    * 
-
-      [!UICONTROL Format]: `%`
+     [!UICONTROL Format]: `%`
 
 * 指標 `A`: `Number of orders by subtotal (hide)`
 * 指標 `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **小計が出荷ルール A を超える注文の割合**
    * [!UICONTROL Metric]: `Number of orders`
    * 
-
-      [!UICONTROL Perspective]: `Cumulative`
+     [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
    * 
-
-      [!UICONTROL グループ化基準]: `Independent`
+     [!UICONTROL グループ化基準]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
    * 
-
-      [!UICONTROL Format]: `%`
+     [!UICONTROL Format]: `%`
 
 * 指標 `A`: `Number of orders by subtotal`
 * 指標 `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 
 上記の手順とレポートを、出荷 B と出荷ルール B の期間に対して繰り返します。

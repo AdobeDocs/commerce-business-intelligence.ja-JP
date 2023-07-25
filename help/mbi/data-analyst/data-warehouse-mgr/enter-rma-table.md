@@ -2,7 +2,9 @@
 title: enterprise_rma 表
 description: 特定のリターンリクエストに関する情報を分析する方法を説明します。
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -44,10 +46,10 @@ ht-degree: 0%
 
 | **指標名** | **説明** | **構築** |
 |---|---|---|
-| `Number of returns` | リクエストされた返品数。 | `Operation` 列： `entity id`<br>`Operation`: `Count`<br>`Timestamp` 列： `date requested` |
-| `Total returned amount` | 返された金額の合計です。 | `Operation `列： `Return's total value`<br>`Operation`:合計<br>`Timestamp` 列：リクエスト日 |
-| `Average returned amount` | 返された平均金額。 | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 列： `date requested` |
-| `Average time to return` | 注文から返品までの平均時間。 | `Operation` 列：注文が作成されてからリターンがリクエストされた日までの秒数<br>`Operation`: `Average`<br>`Timestamp` 列： `date requested` |
+| `Number of returns` | リクエストされた返品数。 | `Operation` 列： `entity id`<br>`Operation`: `Count`<br>`Timestamp` 列： `date requested` |
+| `Total returned amount` | 返された金額の合計です。 | `Operation `列： `Return's total value`<br>`Operation`:合計<br>`Timestamp` 列：リクエスト日 |
+| `Average returned amount` | 返された平均金額。 | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 列： `date requested` |
+| `Average time to return` | 注文から返品までの平均時間。 | `Operation` 列：注文が作成されてからリターンがリクエストされた日までの秒数<br>`Operation`: `Average`<br>`Timestamp` 列： `date requested` |
 
 {style="table-layout:auto"}
 
