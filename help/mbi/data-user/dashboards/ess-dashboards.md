@@ -2,7 +2,9 @@
 title: ダッシュボード
 description: ダッシュボードを作成し、使用する方法を説明します。
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -41,14 +43,13 @@ ht-degree: 0%
 
    * を作成するには、以下を実行します。 `Group` 「ダッシュボード」に、グループの名前を入力します。
 
-      例えば、コマースのインストールに複数のストア表示がある場合、各ストア表示に対してグループを作成できます。
+     例えば、コマースのインストールに複数のストア表示がある場合、各ストア表示に対してグループを作成できます。
 
    * クリック **[!UICONTROL Create]**.
 
    ![ダッシュボード名](../../assets/magento-bi-dashboard-create-name.png)
 
    * 新しいダッシュボードの名前が左上隅に表示されます。 下向き矢印 (![](../../assets/magento-bi-btn-down.png)) をクリックしてオプションを表示します。 グループを作成した場合は、リスト内のグループの下に新しいダッシュボードが表示されます。
-
 
 ### レポートの追加
 
@@ -58,7 +59,7 @@ ht-degree: 0%
 
    * ダッシュボードのヘッダーで、 **[!UICONTROL Add Report]**.
 
-      ![レポートの追加](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![レポートの追加](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. クリック **[!UICONTROL Create Report]** 見せる **[!UICONTROL Report Builder Options]**.
 
@@ -107,6 +108,7 @@ In **[!DNL Manage Data** > **Dashboards]**&#x200B;を使用すると、自分が
       * `View`
       * `Edit`
       * `None`
+
    1. 確認メッセージが表示されたら、「 **[!UICONTROL OK]** をクリックして、各ユーザーの権限レベルを更新します。
 
    1. 個人の権限レベルを変更するには、リスト内のユーザーを探して、権限レベルを変更します。 変更は自動的に保存されます。

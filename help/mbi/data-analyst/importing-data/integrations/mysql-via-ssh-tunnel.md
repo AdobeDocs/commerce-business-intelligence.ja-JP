@@ -2,7 +2,9 @@
 title: 接続中 [!DNL MySQL] SSH トンネル経由
 description: 接続方法の詳細 [!DNL MySQL] SSH トンネル経由。
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
@@ -62,7 +64,7 @@ ht-degree: 0%
         mkdir /home/rjmetric/.ssh
 ```
 
-1. を記憶する `public key` 最初の部分で検索したの？ ユーザーがデータベースに確実にアクセスできるようにするには、キーを `authorized\_keys`.
+1. を記憶する `public key` 最初の部分で取り戻したの？ ユーザーがデータベースに確実にアクセスできるようにするには、キーを `authorized\_keys`.
 
    キー全体を `authorized\_keys` ファイルの内容は次のとおりです。
 
@@ -106,7 +108,7 @@ ht-degree: 0%
 * `Port`: [!DNL MySQL] サーバー上のポート（デフォルトは 3306）
 * `Host` デフォルトでは、localhost です。 一般に、バインドアドレスの値は [!DNL MySQL] サーバー（デフォルトは） `127.0.0.1 (localhost)`は、一部のローカルネットワークアドレス ( 例： `192.168.0.1`) またはサーバーのパブリック IP アドレス。
 
-   この値は、 `my.cnf` 次の場所にあるファイル： `/etc/my.cnf`) を `\[mysqld\]`. バインドアドレス行がそのファイルでコメントアウトされている場合、外部接続の試行からサーバーが保護されます。
+  この値は、 `my.cnf` 次の場所にあるファイル： `/etc/my.cnf`) を `\[mysqld\]`. バインドアドレス行がそのファイルでコメントアウトされている場合、外部接続の試行からサーバーが保護されます。
 
 内 `SSH Connection` セクション：
 

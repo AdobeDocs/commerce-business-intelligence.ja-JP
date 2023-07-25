@@ -2,9 +2,9 @@
 title: 高度な計算列のタイプ
 description: ほとんどの使用例に関する基本事項を説明します。ただし、Data Warehouseマネージャーで作成できるものよりも少し複雑な計算列が必要な場合もあります。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-role: Data Architect, Data Engineer, User
+role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 4%

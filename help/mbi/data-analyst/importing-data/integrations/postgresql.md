@@ -2,7 +2,9 @@
 title: SSH トンネルを介した PostgreSQL の接続
 description: SSH トンネルを使用して PostgreSQL データベースを Commerce Intelligence に接続する方法を説明します。
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -15,8 +17,8 @@ ht-degree: 0%
 
 1. [の取得 [!DNL Commerce Intelligence] 公開鍵](#retrieve)
 1. [次へのアクセスを許可： [!DNL Commerce Intelligence] IP アドレス](#allowlist)
-1. [の作成 [!DNL Linux] のユーザー [!DNL Commerce Intelligence] ](#linux)
-1. [の作成 [!DNL PostgreSQL] のユーザー [!DNL Commerce Intelligence] ](#postgres)
+1. [の作成 [!DNL Linux] のユーザー [!DNL Commerce Intelligence]](#linux)
+1. [の作成 [!DNL PostgreSQL] のユーザー [!DNL Commerce Intelligence]](#postgres)
 1. [接続とユーザー情報をに入力します。 [!DNL Commerce Intelligence]](#finish)
 
 ## の取得 [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
@@ -50,7 +52,7 @@ ht-degree: 0%
         mkdir /home/rjmetric/.ssh
 ```
 
-1. を記憶する `public key` 最初の部分で検索したの？ ユーザーがデータベースに確実にアクセスできるようにするには、キーを `authorized\_keys`.
+1. を記憶する `public key` 最初の部分で取り戻したの？ ユーザーがデータベースに確実にアクセスできるようにするには、キーを `authorized\_keys`.
 
    キー全体を `authorized\_keys` ファイルの内容は次のとおりです。
 

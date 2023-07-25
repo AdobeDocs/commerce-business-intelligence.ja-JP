@@ -2,7 +2,9 @@
 title: 数式
 description: 数式の使用方法を説明します。
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -49,7 +51,7 @@ ht-degree: 0%
 
    * 内 `Enter your Formula` 入力ボックスに、 `A/B`.
 
-      これにより、売上高が新規顧客数で並べ替えられた製品数で割られます。
+     これにより、売上高が新規顧客数で並べ替えられた製品数で割られます。
 
    * 設定 `Select format` から `123Number`.
 
@@ -71,11 +73,11 @@ ht-degree: 0%
 
    * カレンダーで、日付範囲を選択します。
 
-      この例では、ホリデーシーズンは `November 1` 経由 `December 31`.
+     この例では、ホリデーシーズンは `November 1` 経由 `December 31`.
 
    * の下 `Select Time Interval`選択 `Day`.
 
-      ![固定日付範囲](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
+     ![固定日付範囲](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
    * 完了したら、「 **[!UICONTROL Apply]**.
 

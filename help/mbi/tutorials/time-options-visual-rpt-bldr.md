@@ -2,7 +2,9 @@
 title: ビジュアルReport Builderの [ 時間オプションを使用 ]
 description: 特定の期間のレポート内のデータを分析する方法を学びます。
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -82,6 +84,7 @@ ht-degree: 0%
    * `Time Interval`:をに設定します。 `None`.
 
    * `Time Range`:をに設定します。 `From 14 Months Ago To 13 Months Ago` 最初にクリックして **[!UICONTROL Custom]** その後 **[!UICONTROL Moving Range]**. メニュー上部のフィールドとドロップダウンを使用して、範囲を設定します。 この設定を使用すると、前月の売上高を、前年に表示できます。
+
    レポートに指標が表示されなくなっても、心配する必要はありません。独立時間オプションを設定すると、レポートから指標が自動的に非表示になります。 再表示するには、 **[!UICONTROL Show]** をクリックします。
 
    ![](../assets/Different_Time_Ranges.gif)
@@ -95,8 +98,6 @@ ht-degree: 0%
    ![](../assets/TO4.png)
 
    * 指標の名前を変更します。 この例では、最初の指標は `Revenue - 2015` 二つ目は `Revenue - 2014`.
-
-
 
 カスタムのもう 1 つの一般的な使用方法 `Time Options` は、何週間もの供給を決定するためのものです。 特に、ホリデーシーズンや特別なプロモーション期間の間に、前週、前月、前のプロモーション期間に販売された品目を考慮して、十分な情報に基づいた購入上の意思決定を行うことができます。
 
@@ -129,13 +130,13 @@ ht-degree: 0%
 * の `last 7 days time period`を入力して、 `D / A` 内 `Formula` フィールドに入力します。
 * の `last 28 days time period`を入力して、 `D / (B/4)` 内 `Formula` フィールドに入力します。
 
-   >[!NOTE]
-   >
-   >ここで選択した期間を正規化することが重要です。 この例では、28 日を 4 週間に分割します。 場合によっては、数式に別のロジックを適用する必要があります。
+  >[!NOTE]
+  >
+  >ここで選択した期間を正規化することが重要です。 この例では、28 日を 4 週間に分割します。 場合によっては、数式に別のロジックを適用する必要があります。
 
 * の `last promo period`を入力して、 `D / C` 内 `Formula` フィールドに入力します。
 
-   ![](../assets/Different_Time_Ranges_2.png)
+  ![](../assets/Different_Time_Ranges_2.png)
 
 * 最後に、指標を非表示にし、 `SKU` または、 `Group By`.
 

@@ -2,7 +2,9 @@
 title: コホートReport Builder
 description: ライフサイクルにわたって同様の特性を共有するユーザーグループの分析について説明します。
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -181,7 +183,7 @@ X 軸上でのこれらの間隔の表示方法は、 **期間** メニュー
 
 ### ユーザーの全期間の異なる時点でのユーザーの注文件数の平均を知りたい。
 
-!![Average number of orders users make at different points in their lifetimes](../../assets/cohort2.gif)
+(../../assets/cohort2.gif)
 
 この例では、 `Number of orders` 指標を使用する場合、コホートを `customer's first order date`に含まれ、最新の 8 つのコホート ( `Time Period` メニュー ) を使用して、分析で使用できます。 各コホートの平均注文数を確認するために、 `perspective` から `Average Value per Cohort Member`.
 

@@ -2,7 +2,9 @@
 title: ダッシュボードの検索
 description: グローバル検索機能を使用してダッシュボードを検索する方法、および他のユーザーが所有するダッシュボードを検索する方法について説明します。
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%

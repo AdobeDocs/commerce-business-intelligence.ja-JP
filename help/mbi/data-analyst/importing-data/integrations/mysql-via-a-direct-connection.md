@@ -2,7 +2,9 @@
 title: 直接接続を介した MySQL の接続
 description: 接続方法の詳細 [!DNL MongoDB] 直接接続を介して。
 exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -58,7 +60,7 @@ ht-degree: 0%
 * `Port`:サーバー上の MySQL のポート (`3306` （デフォルト）
 * `Host`:デフォルトでは、localhost です。 一般に、バインドアドレスの値は [!DNL MySQL] サーバー（デフォルトは） `127.0.0.1 (localhost)`は、一部のローカルネットワークアドレス ( 例： `192.168.0.1`) またはサーバーのパブリック IP アドレス。
 
-   この値は、 `my.cnf` 次の場所にあるファイル： `/etc/my.cnf`) を `\[mysqld\]`. バインドアドレス行がそのファイルでコメントアウトされている場合、外部接続の試行からサーバーが保護されます。
+  この値は、 `my.cnf` 次の場所にあるファイル： `/etc/my.cnf`) を `\[mysqld\]`. バインドアドレス行がそのファイルでコメントアウトされている場合、外部接続の試行からサーバーが保護されます。
 
 完了したら、「 **[!UICONTROL Save & Test]** をクリックして設定を完了します。
 

@@ -2,7 +2,9 @@
 title: Mixpanel を接続
 description: ユーザーが Web サイトやアプリをどのようにナビゲートし、使用しているかを分析する方法について説明します。
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%

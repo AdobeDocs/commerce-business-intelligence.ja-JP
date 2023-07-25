@@ -2,7 +2,9 @@
 title: Report Builder の選択
 description: Report Builder の選択方法を説明します。
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
@@ -13,7 +15,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >>必要 [管理者権限](../../administrator/user-management/user-management.md).
-
 
 現在は、分析を作成するためのオプションが増えているので、ニーズに合った Report Builder の機能を正確に把握するのが難しい場合があります。 このトピックでは、分析を構築する最適な方法を選択する手順を説明します。
 
@@ -64,7 +65,7 @@ ht-degree: 0%
 
 ### 他のユーザーと作業内容を共有する場合
 
-組織全体のユーザーがこの分析を使用しているか、表示しているか。 誰と作業を共有しているかによっては、ビジュアルReport Builderを使用した方が良い場合があります。 ユーザーは、 [!DNL Visual Report Builder] 潜在的に長いを読むのに対して [!DNL SQL] クエリ。
+組織全体のユーザーがこの分析を使用/表示しているか。 誰と作業を共有しているかによっては、ビジュアルReport Builderを使用した方が良い場合があります。 ユーザーは、 [!DNL Visual Report Builder] 潜在的に長いを読むのに対して [!DNL SQL] クエリ。
 
 レポートを必要とするが、に精通していないユーザーがいる場合。 [!DNL SQL]Adobeは、Report Builderの本来の味を使用することを示唆しています。 それは彼らを楽にする。
 

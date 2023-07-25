@@ -2,7 +2,9 @@
 title: フィルター
 description: フィルターの使用方法を説明します。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -37,21 +39,21 @@ ht-degree: 0%
 
    * フィルターの最初の部分をクリックし、式の件名として使用する列を選択します。
 
-      ![フィルタの最初の部分を選択](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![フィルタの最初の部分を選択](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * フィルターの 2 番目の部分をクリックし、演算子を選択します。
 
-      ![演算子を選択](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![演算子を選択](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * フィルターの 3 番目の部分に、式を完了するために必要な値を入力します。
 
-      ![値を入力](../../assets/magento-bi-report-builder-filter-part3.png)
+     ![値を入力](../../assets/magento-bi-report-builder-filter-part3.png)
 
    * フィルターが完了したら、 **[!UICONTROL Apply]**.
 
-      レポートにリピート客のみが含まれるようになり、レポートに対して取得した顧客レコードの数が 33,000 から 12,600 に減りました。
+     レポートにリピート客のみが含まれるようになり、レポートに対して取得した顧客レコードの数が 33,000 から 12,600 に減りました。
 
-      ![フィルター済みレポート](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![フィルター済みレポート](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
 1. サイドバーで、パースペクティブ ( ![](../../assets/magento-bi-btn-perspective.png)) アイコンをクリックします。
 
