@@ -41,7 +41,7 @@ ht-degree: 0%
 
 測定をコアコンポーネントに分類します。 登録した人の数、数、購入を行った人の数、およびこれら 2 つのイベントの間の経過時間を把握しておく必要があります。
 
-より高いレベルでは、データベース内でこのデータを見つける場所を知る必要があります。具体的には、次のようにします。
+より高いレベルでは、データベース内でこのデータを見つける場所を知る必要があります。具体的には、次のようになります。
 
 * が登録するたびにデータの行を記録するテーブル
 * 購入を行うたびにデータ行を記録するテーブル
@@ -49,8 +49,8 @@ ht-degree: 0%
 
 より詳細なレベルで、この分析に使用される正確なデータフィールドを特定する必要があります。
 
-* 顧客の登録日を含むデータテーブルと列：例： `user.created\_at`
-* 購入日を含むデータテーブルおよび列：例： `order.created\_at`
+* 顧客の登録日を含むデータテーブルおよび列：例 `user.created\_at`
+* 購入日を含むデータテーブルおよび列：例 `order.created\_at`
 
 ## 分析用のデータ列の作成
 
@@ -62,11 +62,11 @@ ht-degree: 0%
 
 * `Time between a customer's registration date and first purchase date`：登録から初回購入までの特定のユーザーの経過時間を返します。 これは、後で使用する指標の基準です。
 
-これらのフィールドは両方とも、ユーザーレベル ( `user` 表 )。 これにより、平均分析をユーザーごとに正規化できます（つまり、この平均計算での分母はユーザー数です）。
+これらのフィールドは両方とも、ユーザーレベル ( 例： `user` 表 )。 これにより、平均分析をユーザーごとに正規化できます（つまり、この平均計算での分母はユーザー数です）。
 
-ここで [!DNL Commerce Intelligence] ステップイン！ 次の項目を使用して、 [!DNL Commerce Intelligence] 上の列を作成するData Warehouse。 Adobeアナリストチームに連絡し、作成用の新しい列の具体的な定義をお知らせください。 また、 [列エディタ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+ここで [!DNL Commerce Intelligence] 足を踏み入れ！ 次の項目を使用して、 [!DNL Commerce Intelligence] 上の列を作成するData Warehouse。 Adobeアナリストチームに連絡し、作成用の新しい列の具体的な定義をお知らせください。 また、 [列エディタ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
-ベストプラクティスは、これらの計算データフィールドをデータベースで直接作成することです。実稼動サーバーに不要な負担がかかるので、このような計算データフィールドを直接作成しないことです。
+ベストプラクティスは、これらの計算データフィールドをデータベースで直接作成することです。実稼動サーバーに不要な負荷がかかるので、このような計算データフィールドを直接作成しないことです。
 
 ## 指標の作成
 
@@ -80,8 +80,8 @@ _[合計 `Time between a customer's registration date and first purchase date`] 
 この計算を、顧客の登録日に従って、時間やトレンドの変化に基づいてグラフ化したいと考えます。 そして、次の方法を実行します。 [この指標を作成](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
 
 1. に移動します。 **[!UICONTROL Data]** をクリックし、 `Metrics` タブをクリックします。
-1. クリック **[!UICONTROL Add New Metric]** をクリックし、 `user` テーブル（上記のディメンションを作成した場所）
-1. ドロップダウンで、「 」を選択します。 `Average` の`Time between a customer's registration date and first purchase date` 列 `user` ～で並べられたテーブル `Customer's registration date`  列。
+1. クリック **[!UICONTROL Add New Metric]** をクリックし、 `user` テーブル（上記のディメンションを作成した場所）。
+1. ドロップダウンで、「 」を選択します。 `Average` の`Time between a customer's registration date and first purchase date` 列の `user` ～で並べられたテーブル `Customer's registration date`  列。
 1. 関連するフィルターまたはフィルターセットを追加します。
 
 これで、この指標の準備が整いました。
@@ -94,12 +94,12 @@ _[合計 `Time between a customer's registration date and first purchase date`] 
 
 ### `Visual Report Builder` {#visualrb}
 
-[この `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) は、データを視覚化する最も簡単な方法です。 SQL に慣れていない場合や、レポートをすばやく作成する場合は、ビジュアルReport Builderが最適です。 数回のクリックで、指標の追加、データのセグメント化、に対するレポートの作成を組織全体でおこなえます。 このオプションは、技術的な専門知識を必要としないので、初心者と専門家の両方に最適です。
+[The `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) は、データを視覚化する最も簡単な方法です。 SQL に慣れていない場合や、レポートをすばやく作成する場合は、ビジュアルReport Builderが最適です。 数回のクリックで、指標の追加、データのセグメント化、に対するレポートの作成を組織全体でおこなえます。 このオプションは、技術的な専門知識を必要としないので、初心者と専門家の両方に最適です。
 
 |  |  |
 |--- |--- |
 | **これは…に最適です。** | **これは…** |
-|  — あらゆるレベルの分析/技術経験<br> — レポートをすばやく作成する<br> — 他のユーザーと共有する分析を作成 | - SQL 固有の関数を必要とする分析<br> — 新しい列のテスト — 計算列は、初期データ母集団の更新サイクルに依存しますが、SQL を使用して作成されたデータは、依存しません。 |
+|  — あらゆるレベルの分析/技術経験<br> — レポートを素早く作成する<br> — 他のユーザーと共有する分析を作成する | - SQL 固有の関数を必要とする分析<br> — 新しい列のテスト — 計算列は、初期データ母集団の更新サイクルに依存しますが、SQL を使用して作成された列は、更新サイクルに依存しません。 |
 
 {style="table-layout:auto"}
 
@@ -119,7 +119,7 @@ _[合計 `Time between a customer's registration date and first purchase date`] 
 
 #### 画像としてのレポートのエクスポート
 
-レポートをプレゼンテーションまたはドキュメントに含める必要がある場合 任意のレポートは、 `Report Options` メニュー（各レポートの右上隅にあります）
+レポートをプレゼンテーションまたはドキュメントに含める必要がある場合 任意のレポートを (PNG、PDF、SVG形式の ) 画像として保存するには、 `Report Options` メニュー（各レポートの右上隅にあります）
 
 1. レポートの右上隅にある歯車アイコンをクリックします。
 1. ドロップダウンで、「 」を選択します。 `Enlarge`.

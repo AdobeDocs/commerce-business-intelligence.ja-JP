@@ -15,15 +15,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>が必要 [管理者権限](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/adobe-analytic-slogo.png)
 
-この [!DNL Adobe Analytics] の統合 [!DNL Adobe Commerce Intelligence] を使用すれば、カスタマージャーニーをエンドツーエンドで集中させることができます。 [!DNL Adobe Analytics] e コマースの焦点は、 [!DNL Commerce Intelligence]. これにより、ストアの全体的なパフォーマンスの全体像が得られます。
+The [!DNL Adobe Analytics] の統合 [!DNL Adobe Commerce Intelligence] を使用すれば、カスタマージャーニーをエンドツーエンドで集中させることができます。 [!DNL Adobe Analytics] e コマースの焦点は、 [!DNL Commerce Intelligence]. これにより、ストアの全体的なパフォーマンスの全体像が得られます。
 
-具体的には、 [!DNL Adobe Analytics] の統合 [!DNL Commerce Intelligence] 商人が組み合わせを開始する機能を提供 [!DNL Adobe Commerce] および [!DNL Adobe Analytics] データセット。
+具体的には、 [!DNL Adobe Analytics] の統合 [!DNL Commerce Intelligence] マーチャントが組み合わせを開始する機能を提供 [!DNL Adobe Commerce] および [!DNL Adobe Analytics] データセット。
 
-- 既存のから接続を作成 [!DNL Adobe Analytics] ～を説明する [!DNL Commerce Intelligence].
+- 既存のから接続を作成する [!DNL Adobe Analytics] ～を説明する [!DNL Commerce Intelligence].
 
 - Data Warehouseにレプリケートする 1 つのレポートスイートから最大 25 個の指標およびディメンションを選択します。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 - レプリケート先の指標およびディメンションのリスト [!DNL Commerce Intelligence]
 
-## 接続 [!DNL Adobe Analytics] の統合 [!DNL Commerce Intelligence]
+## の接続 [!DNL Adobe Analytics] の統合 [!DNL Commerce Intelligence]
 
 1. 次に移動： `Integrations` 下のページ **[!DNL Manage Data** > **Integrations]**.
 
@@ -49,9 +49,9 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Authorize with Adobe Analytics]**.
 
-1. を入力します。 [!DNL Adobe Analytics] 資格情報。 認証が成功すると、にリダイレクトされます。 [!DNL Commerce Intelligence].
+1. を入力します。 [!DNL Adobe Analytics] 認証情報。 認証が成功すると、にリダイレクトされます。 [!DNL Commerce Intelligence].
 
-1. 使用可能なレポートスイートのリストが表示されます。 データのインポート元のレポートスイートを選択し、 **[!UICONTROL Continue]**.
+1. 使用可能なレポートスイートのリストが表示されます。 データのインポート元のレポートスイートを選択し、「 **[!UICONTROL Continue]**.
 
 1. 指標およびディメンションの選択画面が表示されます。 1 つ以上の指標と 1 つ以上のディメンションを選択し、合計 25 個の指標とディメンションを組み合わせます。 名前で検索するか、スクロールしてコンポーネントを探し、チェックボックスをクリックして選択します。 クリック **[!UICONTROL Continue]**.
 

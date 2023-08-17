@@ -39,7 +39,7 @@ ht-degree: 0%
 
    * 
      [!UICONTROL データ型]: `String`
-   * [!UICONTROL Calculation]:例 `A` が null の場合は `No coupon` else `Coupon` 終了
+   * [!UICONTROL Calculation]：次の場合のケース `A` が null の場合は `No coupon` else `Coupon` 終了
 
 * **\[INPUT\] customer\_id — クーポンコード**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
@@ -59,7 +59,7 @@ ht-degree: 0%
 ゲストによる注文がサポートされていない場合に作成する追加の列：
 
 * `customer\_entity` 表
-   * **顧客の最初の注文にクーポンが含まれていた場合 （クーポン/クーポンなし）**
+   * **顧客の最初の注文にクーポンが含まれていたか。 （クーポン/クーポンなし）**
    * [!UICONTROL Column type]: `Many to One => MAX`
    * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
    * を選択します。 [!UICONTROL column]: `Order has coupon applied? (Coupon/No coupon)`
@@ -125,7 +125,7 @@ ht-degree: 0%
 ゲストによる注文がサポートされていない場合に作成する追加の列：
 
 * `sales\_flat\_order` 表
-   * **顧客の最初の注文にクーポンが含まれていた場合 （クーポン/クーポンなし）** **-** \[COUPON ANALYSIS\] チケットの一部としてアナリストが作成しました
+   * **顧客の最初の注文にクーポンが含まれていたか。 （クーポン/クーポンなし）** **-** \[COUPON ANALYSIS\] チケットの一部としてアナリストが作成しました
    * **顧客の初回注文のクーポン**{::}**-** \[COUPON ANALYSIS\] チケットの一部としてアナリストが作成しました
 
 * **使用した顧客のライフタイムクーポン数**{::}**-** \[COUPON ANALYSIS\] チケットの一部としてアナリストが作成しました
@@ -163,25 +163,25 @@ ht-degree: 0%
    * `Orders we count`
    * `Order has coupon applied? (Coupon/No coupon)= Coupon`
 
-* 内 `sales\_flat\_order` 表
+* Adobe Analytics の `sales\_flat\_order` 表
 * この指標では **合計**
-* の `discount\_amount` 列
-* 発注元： `created\_at` timestamp
+* 次の日： `discount\_amount` 列
+* 並べ替え元 `created\_at` timestamp
 * [!UICONTROL Filter]:
 
 * **使用されたクーポン数**
    * `Orders we count`
    * `Order has coupon applied? (Coupon/No coupon)= Coupon`
 
-* 内 `sales\_flat\_order` 表
+* Adobe Analytics の `sales\_flat\_order` 表
 * この指標では **カウント**
-* の `entity\_id` 列
-* 発注元： `created\_at` timestamp
+* 次の日： `entity\_id` 列
+* 並べ替え元 `created\_at` timestamp
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に
+>必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に。
 
 ## レポート
 
@@ -205,7 +205,7 @@ ht-degree: 0%
 * [!UICONTROL Group by]: `Coupon acquisitions customer` または `Non coupon acquisition customer`
 * [!UICONTROL Chart type]: `Stacked column`
 
-* **全期間平均売上高：クーポン Acq. （生後 90 日以上）**
+* **平均全期間売上高：クーポン Acq. （生後 90 日以上）**
    * [!UICONTROL Metric]: `Average lifetime revenue`
    * [!UICONTROL Filter]:
       * 顧客の最初の注文にクーポンが含まれました（クーポン/クーポンなし） =クーポン
@@ -218,7 +218,7 @@ ht-degree: 0%
   [!UICONTROL グラフの種類]: `Scalar`
 
 * **全期間平均売上高：非クーポン Acq. （生後 90 日以上）**
-   * [!UICONTROL Metric]:平均ライフタイム売上高
+   * [!UICONTROL Metric]：全期間の平均売上高
    * [!UICONTROL Filter]:
       * 顧客の最初の注文にクーポンが含まれました（クーポン/クーポンなし） =クーポンなし
 
@@ -244,7 +244,7 @@ ht-degree: 0%
 >
 >多くのクーポンコードがある場合、多くの顧客と同様に、トップ 10 を平均ライフタイム売上高で並べ替えた場合など、トップ/ボトムを適用する必要があります
 
-* **繰り返し順序の可能性：クーポン獲得**
+* **リピート注文の可能性：クーポン獲得**
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 顧客の最初の注文にクーポンが含まれました（クーポン/クーポンなし） =クーポン
@@ -268,7 +268,7 @@ ht-degree: 0%
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
 
-* **繰り返し注文の確率：クーポン以外の獲得**
+* **繰り返し注文の確率：非クーポン獲得**
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 顧客の最初の注文にクーポンが含まれました（クーポン/クーポンなし） =クーポンなし
@@ -296,17 +296,17 @@ ht-degree: 0%
 * **クーポン取得済み顧客のクーポン使用率（リピート注文）**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
-      * クーポン獲得顧客またはクーポン獲得顧客=クーポン獲得
+      * クーポン獲得顧客または非クーポン獲得顧客=クーポン獲得
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 顧客の注文番号 > 1
-      * 顧客の最初の注文にクーポンが含まれていた場合 （クーポン/クーポンなし） =クーポン
+      * 顧客の最初の注文にクーポンが含まれていたか。 （クーポン/クーポンなし） =クーポン
 
    * [!UICONTROL Metric]:`Number of orders`
    * [!UICONTROL Filter]:
       * 顧客の注文番号 > 1
-      * 顧客の最初の注文にクーポンが含まれていた場合 （クーポン/クーポンなし） =クーポン
+      * 顧客の最初の注文にクーポンが含まれていたか。 （クーポン/クーポンなし） =クーポン
       * 注文にクーポンが適用されていますか？ （クーポン/クーポンなし） =クーポン
 
    * 
@@ -331,12 +331,12 @@ ht-degree: 0%
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 顧客の注文番号 > 1
-      * 顧客の最初の注文にクーポンが含まれていた場合 （クーポン/クーポンなし） =クーポンなし
+      * 顧客の最初の注文にクーポンが含まれていたか。 （クーポン/クーポンなし） =クーポンなし
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 顧客の注文番号 > 1
-      * 顧客の最初の注文にクーポンが含まれていた場合 （クーポン/クーポンなし） =クーポンなし
+      * 顧客の最初の注文にクーポンが含まれていたか。 （クーポン/クーポンなし） =クーポンなし
       * 注文にクーポンが適用されていますか？ （クーポン/クーポンなし） =クーポン
 
    * 
@@ -370,7 +370,7 @@ ht-degree: 0%
       * 顧客の注文番号= 1
       * このクーポンが 10 を超える注文の数
 
-   * [!UICONTROL Formula]: `B-C` （C が負の場合）;B+C （C が正の場合）
+   * [!UICONTROL Formula]: `B-C` （C が負の場合）; B+C （C が正の場合）
    * 
      [!UICONTROL 形式]: `Currency`
 
@@ -506,4 +506,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、ページ上部の画像のようになる場合があります。
 
-この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -1,6 +1,6 @@
 ---
 title: 繰り返し確率減衰とチャーンの分析
-description: 注文と顧客がチャーンすると予想されるタイミングとの間の時間の経過を把握します。
+description: 注文と顧客がチャーンすると予想されるタイミングとの間の時間の経過を学び、理解します。
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -76,9 +76,9 @@ ht-degree: 0%
 
 上記の分析を作成し、チャーンしきい値を決定した後は、より多くの分析を作成して、チャーンユーザーの一般的なトレンドを特定できます。 例えば、同じ期間にチャーンを購入した顧客や、類似した製品を最後の注文で購入した顧客はいますか。 チャーンしきい値を設定したら、これらのチャーン対象の顧客の特定の特性をさらに掘り下げて調べることができます。
 
-複数の製品を提供する場合、特定の製品を購入した顧客の行動が、他の顧客と比べて時間の経過と共にどのように異なるのか疑問に思うかもしれません。 詳しく知りたい場合は、 このチュートリアルを調べて、購入した特定の製品に基づく、顧客コホートのライフタイム購入行動を調べます。
+複数の製品を提供する場合、特定の製品を購入した顧客の行動が、他の顧客と比べて時間の経過と共にどのように異なるのか疑問に思うかもしれません。 詳細を知りたい場合は、 このチュートリアルを調べて、購入した特定の製品に基づく、顧客コホートのライフタイム購入行動を調べます。
 
-このベストプラクティスは、次の URL で提供されます。 [!DNL Adobe Commerce Intelligence] データ分析サービス (DAS)。 [サポートに連絡](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 詳しくは、を参照してください。
+このベストプラクティスは、次の URL で提供されます。 [!DNL Adobe Commerce Intelligence] データ分析サービス (DAS)。 [サポートへの問い合わせ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 詳しくは、を参照してください。
 
 ### 関連
 

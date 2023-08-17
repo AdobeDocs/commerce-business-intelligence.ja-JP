@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![](../../assets/blobid0.png)
 
-RFM 分析は、 [!DNL Adobe Commerce Intelligence] 新しいアーキテクチャの計画を立てます ( 例えば、 `Data Warehouse Views` オプションを `Manage Data` メニュー )。 これらの列は、 **[!DNL Manage Data > Data Warehouse]** ページ。 詳細な手順は以下のとおりです。
+RFM 分析は、 [!DNL Adobe Commerce Intelligence] 新しいアーキテクチャの計画を立てます ( 例えば、 `Data Warehouse Views` オプションを `Manage Data` メニュー ) を参照してください。 これらの列は、 **[!DNL Manage Data > Data Warehouse]** ページに貼り付けます。 詳細な手順は以下のとおりです。
 
 ## はじめに
 
@@ -44,7 +44,7 @@ RFM 分析は、 [!DNL Adobe Commerce Intelligence] 新しいアーキテクチ�
 
 * 
       顧客の最終注文日からの経過秒数
-  * [!UICONTROL Column type]:- &quot;同じ表 > 年齢
+  * [!UICONTROL Column type]: - &quot;同じテーブル > 年齢
 * 選択済み [!UICONTROL column]: `Customer's last order date`
 
 * （入力）カウントの参照
@@ -94,8 +94,8 @@ RFM 分析は、 [!DNL Adobe Commerce Intelligence] 新しいアーキテクチ�
 * 顧客のライフタイム数別のランキング（注文件数）
 * 
   [!UICONTROL 列タイプ]: – "同じテーブル/計算"
-* [!UICONTROL Inputs]:- **（入力）顧客のライフタイム番号による注文件数のランキング**, **顧客数**
-* [!UICONTROL Calculation]:- **A が null の場合は Null、それ以外の場合 (B-(A-1)) は終了**
+* [!UICONTROL Inputs]: - **（入力）顧客のライフタイム番号による注文件数のランキング**, **顧客数**
+* [!UICONTROL Calculation]: - **A が null の場合は Null、それ以外の場合 (B-(A-1)) は End**
 * [!UICONTROL Datatype]: — 整数
 
 * 顧客の頻度スコア（パーセンタイル単位）
@@ -135,7 +135,7 @@ RFM 分析は、 [!DNL Adobe Commerce Intelligence] 新しいアーキテクチ�
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path]: `customer_entity.(input) reference > Customer Concentration.Primary Key`
-* 選択済み [!UICONTROL column]:- `Number of customers`
+* 選択済み [!UICONTROL column]: - `Number of customers`
 
 * 顧客の最新性スコア `(R+F+M)`
 * [!UICONTROL Column type]: `Same table > Calculation`
@@ -174,7 +174,7 @@ RFM 分析は、 [!DNL Adobe Commerce Intelligence] 新しいアーキテクチ�
 
 >[!NOTE]
 >
->必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に
+>必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に。
 
 ## レポート
 
@@ -186,14 +186,14 @@ RFM 分析は、 [!DNL Adobe Commerce Intelligence] 新しいアーキテクチ�
 * [!UICONTROL Time period]: `All time`
 * 
   [!UICONTROL Interval]: `None`
-* グラフを非表示
+* グラフを非表示にする
 * [!UICONTROL Group by]: `Customer's RFM group`
 * 
   [!UICONTROL グループ化基準]: `Email`
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **最新性スコアが 5 つある顧客**
+* **最新性スコアが 5 回の顧客**
 * 指標 `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
@@ -203,7 +203,7 @@ RFM 分析は、 [!DNL Adobe Commerce Intelligence] 新しいアーキテクチ�
   [!UICONTROL Interval]: `None`
 * 
   [!UICONTROL Chart Type]: `Scalar`
-* グラフを非表示
+* グラフを非表示にする
 * 
   [!UICONTROL グループ化基準]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
@@ -220,7 +220,7 @@ RFM 分析は、 [!DNL Adobe Commerce Intelligence] 新しいアーキテクチ�
   [!UICONTROL Interval]: `None`
 * 
   [!UICONTROL Chart Type]: `Scalar`
-* グラフを非表示
+* グラフを非表示にする
 * 
   [!UICONTROL グループ化基準]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`

@@ -37,7 +37,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に
+>必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に。
 
 ## 指標
 
@@ -48,10 +48,10 @@ ht-degree: 2%
 >
 >この指標は、お使いのアカウントに存在する場合があります。
 
-* 内 **`customer_entity`** 表
+* Adobe Analytics の **`customer_entity`** 表
 * この指標では **カウント**
-* の **`entity_id`** 列
-* 発注元： **`Customer's first order date`** timestamp
+* 次の日： **`entity_id`** 列
+* 並べ替え元 **`Customer's first order date`** timestamp
 * [!UICONTROL Filter]:
 
 * **新規顧客（最終注文日別）**
@@ -61,20 +61,20 @@ ht-degree: 2%
   >
   >この指標は、お使いのアカウントに存在する場合があります。
 
-* 内 **`customer_entity`** 表
+* Adobe Analytics の **`customer_entity`** 表
 * この指標では **カウント**
-* の **`entity_id`** 列
-* 発注元： **`Customer's last order date`** timestamp
+* 次の日： **`entity_id`** 列
+* 並べ替え元 **`Customer's last order date`** timestamp
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に
+>必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に。
 
 ## レポート
 
 * **チャーンレート**
-   * [!UICONTROL Metric]:新規顧客（初回注文日別）
+   * [!UICONTROL Metric]：新規顧客（初回注文日別）
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
      [!UICONTROL Perspective]: `Cumulative`

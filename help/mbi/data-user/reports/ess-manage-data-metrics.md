@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者権限](../../administrator/user-management/user-management.md).
+>が必要 [管理者権限](../../administrator/user-management/user-management.md).
 
-指標は測定です。 SQL およびデータベース構造では、指標は、変数期間にわたって保存されたクエリのようなものです。
+指標は測定値です。 SQL およびデータベース構造では、指標は、変数期間にわたって保存されたクエリのようなものです。
 
 In [!DNL Commerce Intelligence]を使用する場合、指標を [グラフを作成](../../data-user/reports/ess-rpt-build-visual.md). 例えば、指標 `revenue` は、注文の合計数です。 指標 `average customer revenue per order` は、顧客が注文あたりに費やす平均値です。
 
-レポートで使用すると、指標を指定した期間にわたって分析でき、 [フィルターまたはセグメント化済み](../../best-practices/segment-filter.md) 異なるカテゴリ別。 性別でグループ化した平均顧客売上高の分析を検討します。この場合、 `average customer revenue per order` は指標で、性別はグループ化です。
+レポートで使用すると、指標を指定した期間にわたって分析でき、 [フィルター済みまたはセグメント化済み](../../best-practices/segment-filter.md) 異なるカテゴリ別。 性別でグループ化した平均顧客売上高の分析を検討します。この場合、 `average customer revenue per order` は指標で、性別はグループ化です。
 
 ## 指標の定義 {#define}
 
@@ -35,7 +35,7 @@ In [!DNL Commerce Intelligence]を使用する場合、指標を [グラフを�
 
    Adobeでは、指標が何であるかを示す名前が推奨されます。 例： `Average Order Revenue`.
 
-1. 次の手順では、指標の動作を定義します。 ドロップダウンメニューを使用して、指標の操作を定義します。 `operation` 列と `date` ディメンション：
+1. 次の手順では、指標の動作を定義します。 ドロップダウンメニューを使用して、指標の操作を定義します。 `operation` 列、および `date` ディメンション：
 
    * 次の操作を選択します。
       * `Count`  — この操作は、データテーブルの行数をカウントします
@@ -56,11 +56,11 @@ In [!DNL Commerce Intelligence]を使用する場合、指標を [グラフを�
 
 ## フィルターの追加 {#filters}
 
-この `Filter` 「 」セクションでは、フィルターの作成や適用をおこなうことができます。 [保存済みフィルターセット](../../data-user/reports/ess-manage-data-filters.md) を指標に追加します。
+The `Filter` 「 」セクションでは、フィルターの作成や適用をおこなうことができます。 [保存済みフィルターセット](../../data-user/reports/ess-manage-data-filters.md) を指標に追加します。
 
 の `average order revenue` 」指標を使用する場合、ストアの設定中に行われた可能性のあるテスト注文を含めたくない場合があります。これにより、不正確な結果が得られます。 フィルターセットを適用して、これらの注文をデータセットから削除できます。 フィルターを作成すると、この指標を使用して作成されたすべてのグラフに適用されます。
 
-この `Filter Logic` セクションでは、指標の動作をさらに詳しく定義できます。
+The `Filter Logic` セクションでは、指標の動作をさらに詳しく定義できます。
 
 * &quot;\[`A`\] または\[`B`「\]」では、フィルター「\[」を満たすすべてのデータを許可します`A`\] または\[`B`\]
 * &quot;\[`A`\] と\[`B`\]」では、両方のフィルター\[`A`\] と\[`B`\]
@@ -68,7 +68,7 @@ In [!DNL Commerce Intelligence]を使用する場合、指標を [グラフを�
 
 ## 追加Dimension {#dimensions}
 
-この [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 「 」セクションには、フィルタリングまたはグループ化に使用可能なすべてのデータディメンションが表示されます。デフォルトでは、使用可能なすべてのデータ列がディメンションとして表示されます。 この例では、紹介元別に売上高をセグメント化する場合は、ここでそれを実行できます。
+The [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 「 」セクションには、フィルタリングまたはグループ化に使用可能なすべてのデータディメンションが表示されます。デフォルトでは、使用可能なすべてのデータ列がディメンションとして表示されます。 この例では、紹介元別に売上高をセグメント化する場合は、ここでそれを実行できます。
 
 使用可能なすべてのデータ列をディメンションとして表示する以外に、 [!DNL Commerce Intelligence] 列がグループ化可能な場所です。 *レポートでデータをセグメント化またはグループ化するには*、列はグループ化可能としてマークする必要があります。
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 * [通常の更新と強制更新の違いは何ですか？](#regularforcedupdates)
 * [更新サイクルに長い時間がかかるのはなぜですか？](#updatecycletime)
 * [更新サイクルが完了したら通知を受け取ることはできますか？](#notifyupdate)
-* [の理由 [!DNL Google ECommerce] データベースに異なるデータがある場合](#ecommdatabase)
+* [はなぜですか？ [!DNL Google ECommerce] データベースに異なるデータがある場合](#ecommdatabase)
 * [データの相違をトラブルシューティングする方法を教えてください。](#datadiscrepancy)
 
 ## データが変更された理由 {#datachange}
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 通常の更新と強制更新の違いは何ですか？ {#regularforcedupdates}
 
-定期的な更新は次のとおりです **予定** 強制更新中のプロセス **自分が開始した手動プロセス**. ブラックアウト時間 ( または [!DNL Commerce Intelligence] ではデータを更新しない ) 場合、強制的に更新すると、ブラックアウト期間の制限を考慮しないサイクルが開始されます。
+定期的な更新は次のとおりです。 **予定** 強制更新中のプロセス **自分が開始した手動プロセス**. ブラックアウト時間 ( または [!DNL Commerce Intelligence] ではデータを更新しない ) 場合、強制的に更新すると、ブラックアウト期間の制限を考慮しないサイクルが開始されます。
 
 ## 更新サイクルに長い時間がかかるのはなぜですか？ {#updatecycletime}
 
@@ -38,9 +38,9 @@ ht-degree: 0%
 
 更新が進行中の場合、 `Connections` サイクルが完了した後に電子メール通知をリクエストするために使用できるページ。
 
-## の理由[!DNL Google ECommerce]データベースに異なるデータがある場合 {#ecommdatabase}
+## はなぜですか？[!DNL Google ECommerce]データベースに異なるデータがある場合 {#ecommdatabase}
 
-の不一致 [!DNL Google Analytics] そしてあなたのデータベースは様々な理由で生じる可能性がある トラッキングが適切に有効になっていない場合、匿名を訪問し、クリックイベントが正しく機能しない場合の例はいくつかあります。 売上高と注文が正しく表示されない場合、 [このトピックを参照](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 問題を診断する。
+次の間の不一致 [!DNL Google Analytics] そしてあなたのデータベースは様々な理由で生じる可能性がある トラッキングが適切に有効になっていない場合、匿名を訪問し、クリックイベントが正しく機能しない場合の例はいくつかあります。 売上高と注文が正しく表示されない場合、 [このトピックを参照](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 問題を診断する。
 
 ## データの相違をトラブルシューティングする方法を教えてください。 {#datadiscrepancy}
 

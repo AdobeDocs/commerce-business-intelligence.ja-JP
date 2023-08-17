@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # データを接続
 
-In [!DNL Adobe Commerce Intelligence]、データソース `integrations`. 次の後： `integration` が正常に接続されたので、同期に使用できるテーブルをData Warehouseマネージャーで参照できます。
+In [!DNL Adobe Commerce Intelligence]、データソースは `integrations`. 次の期間の後 `integration` が正常に接続されたので、同期に使用できるテーブルをData Warehouseマネージャーで参照できます。
 
 統合は、 `Connections` ページ（クリックするとアクセス可能） **[!UICONTROL Manage Data** > **Connections]**. ここで、次のようになります。
 
@@ -29,7 +29,7 @@ In [!DNL Adobe Commerce Intelligence]、データソース `integrations`. 次�
 
 ## 統合のタイプ
 
-データをに取り込む方法は 4 つあります。 [!DNL Commerce Intelligence]:データベースの接続、SaaS 統合の接続、 `.csv` ファイルに書き込むか、AdobeAPI を使用します。
+データをに取り込む方法は 4 つあります。 [!DNL Commerce Intelligence]：データベースの接続、SaaS 統合の接続、SaaS 統合のアップロード `.csv` ファイルに書き込むか、AdobeAPI を使用します。
 
 ## データベースの統合
 
@@ -47,7 +47,7 @@ In [!DNL Adobe Commerce Intelligence]、データソース `integrations`. 次�
 
 `SaaS` 統合は、 [[!DNL Google Adwords]](../integrations/google-adwords.md), [[!DNL Salesforce]](../integrations/salesforce.md)、および [[!DNL Zendesk]](../integrations/zendesk.md). サードパーティデータはベンダーのサーバー上に存在するので、データベース内のデータと同様に、直接アクセスすることはできません。
 
-通常、 [!DNL Commerce Intelligence] は、単にアカウントの資格情報を入力するだけで簡単にできます。 一部のサービスでは、認証を完了するために API キーが必要になる場合があります。 以下を確認します。 [統合セクション](../integrations/integrations.md) 必要な資格情報の生成手順については、を参照してください。
+通常、 [!DNL Commerce Intelligence] は、単にアカウントの資格情報を入力するだけで簡単にできます。 一部のサービスでは、認証を完了するために API キーが必要になる場合があります。 以下を確認します。 [「統合」セクション](../integrations/integrations.md) 必要な資格情報の生成手順については、を参照してください。
 
 ## ファイルのアップロード
 
@@ -59,17 +59,17 @@ In [!DNL Adobe Commerce Intelligence]、データソース `integrations`. 次�
 
 API を使用するには、多くの技術的な専門知識が必要です。小さな Ruby または PHP スクリプトを記述し、管理することに慣れている人は、資格を持つ以上の人です。
 
-の使用を開始する方法について詳しくは、以下を参照してください。 `Import API`、 [開発者サイト](https://developer.adobe.com/commerce/services/reporting/) および [API キーの生成方法](https://developer.adobe.com/commerce/services/reporting/import-api/).
+の使用を開始する方法について詳しくは、以下を参照してください。 `Import API`、次を確認します。 [開発者サイト](https://developer.adobe.com/commerce/services/reporting/) および [API キーの生成方法](https://developer.adobe.com/commerce/services/reporting/import-api/).
 
 ## 統合の追加
 
-統合を追加するには、 **[!UICONTROL Manage Data** > **Connections]** 次に、 **[!UICONTROL Add a New Data Source]**. 追加する統合のアイコンをクリックし、ヘルプトピックの手順に従って設定を行います。
+統合を追加するには、 **[!UICONTROL Manage Data** > **Connections]** 次に、「 **[!UICONTROL Add a New Data Source]**. 追加する統合のアイコンをクリックし、ヘルプトピックの手順に従って設定を行います。
 
 * [統合に関する FAQ](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
 * [利用可能 ](../integrations/integrations.md)
 * [テーブルの統合](../../../best-practices/consolidating-your-tables.md)
 * [データベースへのアクセスの制限](../../../administrator/account-management/restrict-db-access.md)
 
-**目的の統合が表示されていない場合は、** 一部の統合は、アカウントで表示できるように、アクティブ化する必要があります。 次のようなものをお探しの場合 [!DNL Facebook] しかしリストには載っていない [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+**目的の統合が表示されていない場合は、** 一部の統合は、アカウントで表示できるように、アクティブ化する必要があります。 次のようなものをお探しの場合： [!DNL Facebook] しかしリストには載っていない [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
-**統合のエラーステータスが表示される場合**、 [トラブルシューティング節](https://support.magento.com/hc/en-us/sections/360003078151) を参照してください。
+**統合のエラーステータスが表示される場合**、次を確認します。 [トラブルシューティング節](https://support.magento.com/hc/en-us/sections/360003078151) を参照してください。

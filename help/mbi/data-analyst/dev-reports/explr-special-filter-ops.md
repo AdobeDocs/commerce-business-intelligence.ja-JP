@@ -1,6 +1,6 @@
 ---
 title: 特別なフィルター演算子
-description: レポートの作成時や指標の作成時に、フィルターで使用されるいくつかの特殊な演算子について説明します。
+description: レポートの作成時や指標の作成時に、フィルターで使用される特別な演算子について説明します。
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # フィルターオプション
 
-このトピックでは、いくつかの特別な内容を紹介します `operators` 使用される `filters` when [レポートの作成](../../tutorials/using-visual-report-builder.md){:target=&quot;_blank&quot;} または [指標の作成](../../data-user/reports/ess-manage-data-metrics.md){:target=&quot;_blank&quot;}。
+このトピックでは、いくつかの特別な内容を紹介します `operators` 使用される `filters` when [レポートの作成](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} または [指標の作成](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}。
 
 ## `Filter Operators`
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 * `IS` 列が `NULL`、または空。
 
-* `IS NOT` が `IS` 演算子を使用しますが、NULL 以外の列をチェックします。
+* `IS NOT` は、 `IS` 演算子を使用しますが、NULL 以外の列をチェックします。
 
 * `IN` 値の存在をコンマ区切りリストで確認します。 ( 例： 「色」 `IN` 「red,orange」は色と同じです。 `equal to` 赤または色 `equal to` オレンジ色 )。
 

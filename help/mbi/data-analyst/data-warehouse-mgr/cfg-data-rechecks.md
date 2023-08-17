@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # データチェックの設定
 
-データベーステーブルには、値が変更可能なデータ列が存在する場合があります。 例えば、 `orders` という列があるかもしれないテーブル `status`. 注文が最初にデータベースに書き込まれるとき、ステータス列に値が含まれている場合があります _保留中_. 注文が [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) この `pending` の値です。
+データベーステーブルには、値が変更可能なデータ列が存在する場合があります。 例えば、 `orders` という列があるかもしれないテーブル `status`. 注文が最初にデータベースに書き込まれるとき、ステータス列に値が含まれている場合があります _保留中_. 注文は、 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) この `pending` の値です。
 
 注文のステータスは、必ずしも `pending` ステータス。 最終的には `complete` または `cancelled`. Data Warehouseがこの変更を確実に同期するには、列で新しい値を再度チェックする必要があります。
 
-これは、 [レプリケーションメソッド](../data-warehouse-mgr/cfg-replication-methods.md) それは話し合われましたか？ 再チェックの処理は、選択したレプリケーション方法に応じて異なります。 この `Modified\_At` 再チェックを設定する必要がないので、変更する値を処理するにはレプリケーション方法が最適です。 この `Auto-Incrementing Primary Key` および `Primary Key Batch Monitoring` メソッドでは再確認の設定が必要です。
+これがとどのように適合するか [レプリケーションメソッド](../data-warehouse-mgr/cfg-replication-methods.md) それは話し合われましたか？ 再チェックの処理は、選択したレプリケーション方法に応じて異なります。 The `Modified\_At` 再チェックを設定する必要がないので、変更する値を処理するにはレプリケーション方法が最適です。 The `Auto-Incrementing Primary Key` および `Primary Key Batch Monitoring` メソッドでは再確認の設定が必要です。
 
 これらの方法のいずれかを使用する場合は、変更可能な列に再チェック用のフラグを設定する必要があります。 これをおこなう方法は 3 つあります。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ![](../../assets/dwm-recheck.png)
 
-時々、 `Paused` 内 `Changes?` 列。 この値は、テーブルの [複製法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) が `Paused`.
+時々、 `Paused` （内） `Changes?` 列。 この値は、テーブルの [複製法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) が `Paused`.
 
 [!DNL Adobe] では、これらの列を確認して更新内容を最適化し、変更可能な列が再度チェックされるようにすることをお勧めします。 データの変更頻度が高い列の再確認頻度が高い場合は、Adobeで更新を最適化するために、値を小さくすることをお勧めします。
 

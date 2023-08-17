@@ -19,9 +19,9 @@ ht-degree: 0%
 * [ハンディリファレンスマップ](#map)
 * [高度な計算列](#advanced)
 
-内 [Data Warehouse管理](../data-warehouse-mgr/tour-dwm.md)を使用すると、列を作成して、データを分析用に拡張および最適化できます。 [この機能](../data-warehouse-mgr/creating-calculated-columns.md) は、Data Warehouseマネージャで任意のテーブルを選択し、 **[!UICONTROL Create New Column]**.
+内 [Data Warehouse管理](../data-warehouse-mgr/tour-dwm.md)を使用すると、列を作成して、データを分析用に拡張および最適化できます。 [この機能](../data-warehouse-mgr/creating-calculated-columns.md) は、Data Warehouseマネージャーで任意のテーブルを選択し、 **[!UICONTROL Create New Column]**.
 
-このトピックでは、Data Warehouse・マネージャを使用して作成できる列のタイプについて説明します。 また、説明、その列の視覚的なウォークスルー、 [参照マップ](#map) 列の作成に必要なすべての入力値を含むデータを取得できます。 計算列を作成する方法は 3 つあります。
+このトピックでは、Data Warehouse・マネージャを使用して作成できる列のタイプについて説明します。 また、説明、その列の視覚的なウォークスルー、および [参照マップ](#map) 列の作成に必要なすべての入力値を含むデータを取得できます。 計算列を作成する方法は 3 つあります。
 
 1. [同じテーブル計算列](#sametable)
 1. [1 対多の計算列](#onetomany)
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 ### 年齢 {#age}
 
-経過時間計算列は、現在の時間と入力時間の間の秒数を返します。
+経過時間計算列は、現在の時間と一部の入力時間の間の秒数を返します。
 
-次の例はを作成します。 `Seconds since customer's most recent order` 内 `customers` 表。 これは、内で購入を行っていない（チャーンと呼ばれる場合もあります）顧客のユーザーリストを作成するために使用できます `X days`.
+次の例はを作成します。 `Seconds since customer's most recent order` （内） `customers` 表。 これは、内で購入を行っていない（チャーンと呼ばれる場合もあります）顧客のユーザーリストを作成するために使用できます。 `X days`.
 
 ![](../../assets/age.gif)
 
@@ -43,9 +43,9 @@ ht-degree: 0%
 
 通貨コンバータ計算列は、列のネイティブ通貨を目的の新しい通貨に変換します。
 
-次の例はを作成します。 `base\_grand\_total In AED`、 `base\_grand\_total` それはネイティブの通貨から AED に `sales\_flat\_order` 表。 この列は、現地通貨でレポートする複数の通貨を持つ店舗で適しています。
+次の例はを作成します。 `base\_grand\_total In AED`、変換する `base\_grand\_total` それはネイティブの通貨から AED に `sales\_flat\_order` 表。 この列は、現地通貨でレポートする複数の通貨を持つ店舗で適しています。
 
-コマースクライアントの場合、 `base\_currency\_code` フィールドは通常、ネイティブの通貨を保存します。 この `Spot Time` フィールドは、指標で使用される日付と一致する必要があります。
+コマースクライアントの場合、 `base\_currency\_code` フィールドは通常、ネイティブの通貨を保存します。 The `Spot Time` フィールドは、指標で使用される日付と一致する必要があります。
 
 ![](../../assets/currency_converter.png)
 
@@ -69,9 +69,9 @@ ht-degree: 0%
 
 このタイプの計算列は、多数のテーブルの値の数を返します *onto* 一つのテーブル。
 
-次の例では、ディメンション `Customer's lifetime number of canceled orders` が `customers` テーブル ( `orders.status`) をクリックします。
+次の例では、ディメンション `Customer's lifetime number of canceled orders` が `customers` テーブル（フィルター付き） `orders.status`) をクリックします。
 
-![](../../assets/many_to_one.gif){:width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
 
 ### 合計 {#sum}
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ### 存在する {#exists}
 
-計算列は、多くの面でのレコードの存在を判断するバイナリテストです。 つまり、新しい列は `1` パスが各テーブルの少なくとも 1 つの行を接続している場合、 `0` 接続できない場合。
+計算列は、多くの面でのレコードの存在を判断するバイナリテストです。 つまり、新しい列は `1` パスが各テーブルの少なくとも 1 つの行を接続している場合、および `0` 接続できない場合。
 
 このタイプのディメンションは、例えば、顧客が特定の製品を購入したことがあるかどうかを判断する場合があります。 結合の使用 `customers` 表と `orders` テーブル、特定の製品のフィルター、ディメンション `Customer has purchased Product X?` を構築できます。
 

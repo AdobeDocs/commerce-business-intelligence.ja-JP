@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # [!DNL Commerce Intelligence Essentials] vs [!DNL Commerce Intelligence Pro]
 
-レガシーの `Essentials` アカウントと現在の Commerce Intelligence アカウントの違いについて説明します。 Adobeのオファー廃止 `Essentials`.
+次の表に、レガシーの `Essentials` アカウントと現在の Commerce Intelligence アカウントの違いについて説明します。 Adobeのオファー廃止 `Essentials`.
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|

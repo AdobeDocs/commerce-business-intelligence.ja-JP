@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ダッシュボードを（共有を解除）したままにする
 
-チームを変更しますか？ 春の間に、 [!DNL Commerce Intelligence] アカウント？ ダッシュボードから自分の状態を終了または共有解除するには、 **[!UICONTROL Shared]** をクリックします。 クリック **[!UICONTROL Leave this Dashboard]** 自分を取り除く
+チームを変更しますか？ 春の間に、あなたの [!DNL Commerce Intelligence] アカウント？ ダッシュボードから自分の状態を終了または共有解除するには、 **[!UICONTROL Shared]** をクリックします。 クリック **[!UICONTROL Leave this Dashboard]** 自分を取り除く
 
 例：
 

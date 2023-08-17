@@ -1,5 +1,5 @@
 ---
-title: オンボーディングAdobe Commerce Intelligence
+title: Onboarding Adobe Commerce Intelligence
 description: Adobe Commerce Intelligence のオンボーディングについて説明します。
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
 role: Admin, Data Architect, Data Engineer, User
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 - *あなたの店はゲストのチェックアウトを受け入れますか？*  — 選択 **はい** 顧客がアカウントに登録せずにストアから購入を許可する場合。
 
-- `Timezone` - `timezone` レポートを表示する
+- `Timezone`  — を選択します。 `timezone` レポートを表示する
 
-- `Currency` - `currency` お客様の店が運営する
+- `Currency`  — を選択します。 `currency` お客様の店が運営する
 
 - `Your week starts on...`  — レポートで週の開始日にする曜日を選択します。
 
-- *使用する Commerce のバージョンを教えてください。* - `currency` お客様の店が運営する
+- *使用する Commerce のバージョンを教えてください。*  — を選択します。 `currency` お客様の店が運営する
 
 - *あなたの店は EU に本拠を置いていますか？*  — 答えた場合 `Yes` この質問に対して、Adobeは、GDPR に準拠して、Data Warehouseと EU 内のすべてのデータをホストします。
 

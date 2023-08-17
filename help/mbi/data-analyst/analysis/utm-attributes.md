@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # [!DNL Google Analytics] および UTM 属性
 
-～することが極めて重要である。 [ユーザー獲得ソースの追跡](../../data-analyst/analysis/google-track-user-acq.md) から [最も効果の高い広告キャンペーンの特定](../../data-analyst/analysis/most-value-source-channel.md). このトピックでは、 [!DNL Google Analytics] ソース属性プロセス。 つまり、どの情報が記録されたときか。
+～することが極めて重要である。 [ユーザー獲得ソースの追跡](../../data-analyst/analysis/google-track-user-acq.md) から [最も効果の高い広告キャンペーンの特定](../../data-analyst/analysis/most-value-source-channel.md). このトピックでは、 [!DNL Google Analytics] ソース属性プロセス。 つまり、どの情報が記録されたときかです。
 
 ## 属性とは
 
-`Attribution` は、特定のアクティビティの参照元を指定することを目的としています。 これらのアクティビティは、通常、マクロ変換またはマイクロ変換です。マクロは、次のようになります。 **purchases**&#x200B;といったミクロなもの **登録，電子メールのサインアップ，ブログコメント，** など。
+`Attribution` は、特定のアクティビティの参照元を指定することを目的としています。 これらのアクティビティは、通常、マクロ変換またはマイクロ変換です。マクロは、次のようになります。 **purchases**&#x200B;といった、ミクロなもの **登録，電子メールのサインアップ，ブログコメント，** など。
 
 理想的には、コンバージョンイベントが発生するたびに、参照元が記録されます。 しかし、その原因はどのように決まるのでしょうか。
 
@@ -31,13 +31,13 @@ UTM パラメーターが URL で指定されると、それらは解析され�
 
 ### 最後のクリック属性
 
-最後のクリックのアトリビューションは、 [!DNL Google Analytics]. この場合、 [!DNL Google Analytics] cookie は、コンバージョンイベントの前の最新のソースの UTM パラメーターを表し、これは [データベースに記録される](../../data-analyst/analysis/google-track-user-acq.md). この [!DNL Google Analytics] ユーザーが新しい UTM パラメーターのセットを含む新しい URL をクリックすると、cookie は以前の UTM パラメーターのみを上書きします。
+最後のクリックのアトリビューションは、 [!DNL Google Analytics]. この場合、 [!DNL Google Analytics] cookie は、コンバージョンイベントの前の最新のソースの UTM パラメーターを表します。これは、 [データベースに記録される](../../data-analyst/analysis/google-track-user-acq.md). The [!DNL Google Analytics] ユーザーが新しい UTM パラメーターのセットを含む新しい URL をクリックすると、cookie は以前の UTM パラメーターのみを上書きします。
 
-例えば、ユーザーがを通じて最初に Web サイトにアクセスしたとします。 [!DNL Google Analytics] *有料検索*&#x200B;を返し、 *オーガニック検索*&#x200B;最後に、に戻ります。 *web サイトを直接* または経由 *電子メールリンク* **UTM パラメーターなし** コンバージョンイベントの前に配置されます。 この例では、 [!DNL Google Analytics] cookie には、ユーザーのソースが「オーガニック」と表示されます。これは、変換前の最後のソースを表すからです。 この *パス* の値は、その最終的なコンバージョンイベントの前のユーザーに対しては無視されます。 ユーザーが UTM を含む電子メールリンクから Web サイトに訪問した場合、 [!DNL Google Analytics] Cookie の場合、ソースは「email」となります。 したがって、cookie に既存の UTM パラメーターが存在し、ユーザーが直接アクセスする場合、 [!DNL Google Analytics] cookie には、「直接」ではなく UTM パラメーターが表示されます。
+例えば、ユーザーがを通じて最初に Web サイトにアクセスしたとします。 [!DNL Google Analytics] *有料検索*&#x200B;を返し、 *オーガニック検索*&#x200B;最後に、に戻ります。 *web サイトを直接* または経由 *電子メールリンク* **UTM パラメーターなし** コンバージョンイベントの前に配置されます。 この例では、 [!DNL Google Analytics] cookie には、ユーザーのソースが「オーガニック」と表示されます。これは、変換前の最後のソースを表すからです。 The *パス* の値は、その最終的なコンバージョンイベントの前のユーザーに対しては無視されます。 ユーザーが UTM を含む電子メールリンクから Web サイトに訪問した場合、 [!DNL Google Analytics] Cookie の場合、ソースは「email」となります。 したがって、cookie に既存の UTM パラメーターが存在し、ユーザーが直接アクセスする場合は、 [!DNL Google Analytics] cookie には、「直接」ではなく UTM パラメーターが表示されます。
 
 >[!NOTE]
 >
->特定のユーザーの [!DNL Google Analytics] cookie のパラメーターは、cookie の作成時に消去されます [有効期限](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)、またはユーザーがブラウザーで Cookie をクリアした場合に発生します。*
+>特定のユーザーの [!DNL Google Analytics] cookie のパラメーターは、cookie の作成時に消去されます。 [有効期限](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)、またはユーザーがブラウザーで Cookie をクリアした場合に発生します。*
 
 ### 最初のクリック属性
 
@@ -54,7 +54,7 @@ UTM パラメーターが URL で指定されると、それらは解析され�
 
 これで、各マイクロコンバージョンまたはマクロコンバージョンのアトリビューションモデルを理解したので、質問は「ユーザーのコンバージョンの全体をどのように扱うのか」になります。  例えば、GA のラストクリックロジックに基づいて記録される UTM を見てみましょう。
 
-* ユーザーがオーガニックに登録する
+* ユーザーがオーガニック環境で登録する
 * 有料検索でのユーザーの最初の購入$5.00
 * メール$50.00 でのユーザーの 2 回目の購入
 * オーガニック$10.00 でのユーザーの 3 回目の購入
@@ -63,10 +63,10 @@ UTM パラメーターが URL で指定されると、それらは解析され�
 
 ## 関連ドキュメント
 
-* [経由で注文のリファラルソースを追跡 [!DNL Google Analytics] E コマース](../importing-data/integrations/google-ecommerce.md)
-* [データベース内のユーザー参照元を追跡する](../analysis/google-track-user-acq.md)
+* [経由で注文のリファラルソースを追跡する [!DNL Google Analytics] E コマース](../importing-data/integrations/google-ecommerce.md)
+* [データベース内のユーザーのリファラルソースを追跡する](../analysis/google-track-user-acq.md)
 * [データベース内のユーザーデバイス、ブラウザー、OS データを追跡する](../analysis/google-track-user-acq.md)
 * [最も価値のある獲得ソースとチャネルを見つける](../analysis/most-value-source-channel.md)
-* [接続 [!DNL Google Adwords] アカウント](../importing-data/integrations/google-adwords.md)
+* [接続する [!DNL Google Adwords] アカウント](../importing-data/integrations/google-adwords.md)
 * [広告キャンペーンの ROI の向上](../analysis/roi-ad-camp.md)
 * [での UTM タグ付けの 5 つのベストプラクティス [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

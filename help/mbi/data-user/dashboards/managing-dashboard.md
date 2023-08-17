@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者権限](../../administrator/user-management/user-management.md).
+>が必要 [管理者権限](../../administrator/user-management/user-management.md).
 
 In **[!DNL Manage Data** > **Dashboards]**&#x200B;を使用すると、自分が所有するダッシュボードのユーザー権限を管理したり、不要になったダッシュボードを削除したり、デフォルトのダッシュボードを設定したりできます。 このトピックでは、以下について説明します。
 
@@ -37,7 +37,7 @@ In **[!DNL Manage Data** > **Dashboards]**&#x200B;を使用すると、自分が
 
 ## ユーザー権限の管理 {#userperm}
 
-には 3 つのレベルのアクセス権が存在します [!DNL Commerce Intelligence] （ダッシュボードの場合） `View`, `Edit`、および `None`.
+には 3 つのレベルのアクセス権が存在します。 [!DNL Commerce Intelligence] （ダッシュボードの場合） `View`, `Edit`、および `None`.
 
 * `View` 選択したユーザーがダッシュボードを表示できますが、編集はできません。 また、Standard または管理者権限を持っている場合は、「名前を付けて保存」機能を使用して、グラフのサイズ変更、データの書き出し、グラフを独自のダッシュボードにコピーすることもできます。
 
@@ -47,7 +47,7 @@ In **[!DNL Manage Data** > **Dashboards]**&#x200B;を使用すると、自分が
 
 ユーザー権限は、すべてのユーザーまたは個々のユーザーに対して、2 つの方法のいずれかを変更できます。
 
-1. *すべてのユーザーの権限を変更するには、* の横にあるドロップダウンメニューを使用します。 `Set all users' permissions to…` ラベル
+1. *すべてのユーザーの権限を変更するには、* の横にあるドロップダウンメニューを使用します。 `Set all users' permissions to…` ラベル。
 
 1. *個々のユーザーの権限を変更するには、* ユーザー名の横にあるドロップダウンメニューを使用して、目的のアクセスレベルを設定します。
 

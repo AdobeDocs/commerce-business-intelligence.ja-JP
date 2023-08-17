@@ -28,7 +28,7 @@ ht-degree: 0%
 
 特定の統合に関する最新のデータポイントは、 `Last Data Point Received` 各統合の右側にあるタイムスタンプ。 このタイムスタンプは、Data Warehouseがデータベース、API、サードパーティ統合のいずれの場合でも、そのソースからデータポイントを正常に受け取った最後のポイントを示します。
 
-からのデータの鮮度を確認するには *特定のテーブル*&#x200B;を使用する場合、Adobeはクイックを作成することをお勧めします [[!DNL SQL] レポート](../../dev-reports/sql-rpt-bldr.md) が `MAX(timestamp)` アカウントで最も重要な表で このタイムスタンプと `Last Data Point` 問題がアカウント全体に影響を与えたか、テーブルのサブセットに影響を与えたかを示します。 Adobeでは、一般的に使用される 3 ～ 4 つの重要なテーブルに対してこの操作をお勧めします。
+からのデータの鮮度を確認するには *特定のテーブル*&#x200B;を使用する場合、Adobeはクイックを作成することをお勧めします [[!DNL SQL] レポート](../../dev-reports/sql-rpt-bldr.md) を実行する `MAX(timestamp)` アカウントで最も重要な表に。 このタイムスタンプと `Last Data Point` 問題がアカウント全体に影響を与えたか、テーブルのサブセットに影響を与えたかを示します。 Adobeでは、一般的に使用される 3 ～ 4 つの重要なテーブルに対してこの操作をお勧めします。
 
-- この `MAX(timestamp)` の値が `Last Data Point Received`つまり、テーブルのサブセットは影響を受けましたが、アカウント全体の更新サイクルは安定しています。
-- この `MAX(timestamp)` 値が次の値と等しいかそれ以前 `Last Data Point Received`の場合は、アカウントの更新サイクルが影響を受けたことを意味します。 この状況では、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+- 次の場合、 `MAX(timestamp)` の値が次の値より新しい `Last Data Point Received`つまり、テーブルのサブセットは影響を受けましたが、アカウント全体の更新サイクルは安定しています。
+- 次の場合、 `MAX(timestamp)` 値が次の値と等しいかそれ以前 `Last Data Point Received`の場合は、アカウントの更新サイクルが影響を受けたことを意味します。 この状況では、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -13,11 +13,11 @@ ht-degree: 9%
 
 # Data Warehouseビューの操作
 
-このドキュメントでは、の目的と使用方法を説明します。 `Data Warehouse Views` ～に移動してアクセスできる **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. その機能とビューの作成方法、およびの使用方法の例を次に示します `Data Warehouse Views` 統合する [!DNL Facebook] および [!DNL AdWords] 支出データ
+このドキュメントでは、の目的と使用方法を説明します。 `Data Warehouse Views` ～に移動してアクセスできる **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. その機能とビューの作成方法、およびの使用方法の例を次に示します `Data Warehouse Views` 統合する [!DNL Facebook] および [!DNL AdWords] データを使う
 
 ## 汎用
 
-この `Data Warehouse Views` 機能は、既存の表を変更するか、SQL を使用して複数の表を結合または統合することによって、新しい倉庫内表を作成する方法です。 1 回： `Data Warehouse View` が作成され、更新サイクルで処理されると、Data Warehouse内で、 `Data Warehouse Views` ドロップダウンに表示されます。
+The `Data Warehouse Views` 機能は、既存の表を変更するか、SQL を使用して複数の表を結合または統合することによって、新しい倉庫内表を作成する方法です。 1 回： `Data Warehouse View` が作成され、更新サイクルで処理されると、Data Warehouse内で、 `Data Warehouse Views` ドロップダウンに表示されます。
 
 ![](../../assets/Data_Warehouse.png)
 
@@ -27,7 +27,7 @@ ht-degree: 9%
 
 SQL に詳しい場合は、これらの統合の例の両方で、 `UNION` 関数を使用できますが、新しいビューを作成する際には、任意の PostgreSQL 構文と関数を使用できます。
 
-## Data Warehouseビューの作成と管理
+## Data Warehouse・ビューの作成と管理
 
 新規 `Data Warehouse Views` は次の場所に移動して作成でき、既存のビューを削除できます。 **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**、以下に示すように。
 
@@ -86,7 +86,7 @@ SQL に詳しい場合は、これらの統合の例の両方で、 `UNION` 関�
 * すべてのクエリは同じ数の列を返す必要があります
 * 対応する列は、同じデータタイプを持つ必要があります
 
-の実行時 `UNION` または `UNION ALL` 文内の列の名前は、最終出力内の列の名前が、最初のクエリでの列の名前を反映しています。
+を実行する際に、 `UNION` または `UNION ALL` 文内の列の名前は、最終出力内の列の名前が、最初のクエリでの列の名前を反映しています。
 
 通常、 [!DNL Facebook] および [!DNL Google AdWords] データを～に使う `Data Warehouse View` 次のようなクエリを使用して、7 つの列を持つテーブルを作成する必要があります。
 
@@ -112,12 +112,12 @@ SQL に詳しい場合は、これらの統合の例の両方で、 `UNION` 関�
     FROM facebook_ads_insights_12345
 ```
 
-上記に関する重要な点を 2 つ示します。
+上記に関する重要な点を 2 つ挙げます。
 
 * 明確にするため、すべての列は、すべてのクエリで名前が一致するように、上にエイリアスされます。 ただし、これは必須ではありません。 SELECT クエリで列が呼び出される順序は、列の並び順を示します。
-* 新しい列 `ad_source` フィルタリングを容易にするために作成されました。 [!DNL AdWords] または [!DNL Facebook] データ。 このクエリは、両方のテーブルのすべてのデータを組み合わせることに注意してください。 次のような列を作成しない場合 `ad_source`を使用する場合、特定のソースから支出を簡単に識別する方法はありません。
+* 新しい列 `ad_source` フィルタリングを容易にするために作成されました。 [!DNL AdWords] または [!DNL Facebook] データ。 このクエリは、両方のテーブルのすべてのデータを組み合わせることに注意してください。 次のような列を作成しない場合： `ad_source`を使用する場合、特定のソースから支出を簡単に識別する方法はありません。
 
-上記のクエリを `Data Warehouse View` は、 [!DNL Facebook] および [!DNL AdWords] 以下のような費用。
+上記のクエリを `Data Warehouse View` テーブルを作成し、 [!DNL Facebook] および [!DNL AdWords] 以下のような費用を支出します。
 
 | **`id`** | **`ad_source`** | **`date`** | **`campaign`** | **`spend`** | **`impressions`** | **`clicks`** |
 |--- |--- |--- |--- |--- |--- |--- |

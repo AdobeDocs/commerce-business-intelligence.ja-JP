@@ -25,7 +25,7 @@ ht-degree: 0%
 
    ![サインイン — アドビ](../assets/sign-in-adobe.png)
 
-1. 自分が [!DNL Commerce Intelligence] アカウント まだAdobeアカウントを持っていない場合は、 **[!UICONTROL Create an account]** 情報を入力します。 忘れずに、 [!DNL Commerce Intelligence] アカウント 電子メールアドレスは、Adobeアカウントにアクセスするための鍵です。
+1. 作成時に使用した電子メールアドレスを入力します。 [!DNL Commerce Intelligence] アカウント。 まだAdobeアカウントを持っていない場合は、 **[!UICONTROL Create an account]** 情報を入力します。 忘れずに、 [!DNL Commerce Intelligence] アカウント。 電子メールアドレスは、Adobeアカウントにアクセスするための鍵です。
 
 >[!NOTE]
 >
@@ -33,6 +33,6 @@ ht-degree: 0%
 
 ## ユーザー名とパスワードを使用してサインイン
 
-メールアドレスとパスワードを入力し、 **[!UICONTROL Sign In]**.
+電子メールアドレスとパスワードを入力し、 **[!UICONTROL Sign In]**.
 
 これで、 [!DNL Commerce Intelligence].

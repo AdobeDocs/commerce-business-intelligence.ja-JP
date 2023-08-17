@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Cohort Report Builder] （日付ベース以外のコホート）
 
-この [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) は、時間の経過と共に異なるユーザーのサブセットがどのように動作するかを商人が調べるのに役立ちます。 以前は、 `Cohort Report Builder` は、共通のユーザーのグループ化用に最適化されています `cohort date` （例えば、特定の月に初めて購入したすべての顧客のセット）。 この `Non-Date Based Cohort` 機能を使用すると、類似のアクティビティや属性でユーザーをグループ化できます。 この機能の使用例をいくつか見てみましょう。
+The [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) は、時間の経過と共に異なるユーザーのサブセットがどのように動作するかを商人が調べるのに役立ちます。 以前は、 `Cohort Report Builder` は、共通のユーザーのグループ化用に最適化されています。 `cohort date` （例えば、特定の月に初めて購入したすべての顧客のセット）。 The `Non-Date Based Cohort` 機能を使用すると、類似のアクティビティや属性でユーザーをグループ化できます。 この機能の使用例をいくつか見てみましょう。
 
 ## 使用例
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Report Builder]** ( 左側のタブまたは **[!UICONTROL Add Report** > **Create Report]** （任意のダッシュボード）
 
-1. 内 `Report Builder Selection` 画面、クリック **[!UICONTROL Create Report]** の横 `Visual Report Builder` オプション。
+1. Adobe Analytics の `Report Builder Selection` スクリーン、クリック **[!UICONTROL Create Report]** の横 `Visual Report Builder` オプション。
 
 ### 指標の追加
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 #### 1.グループ化 `cohorts`
 
-`Cohorts` は、動作特性別にグループ化されています ( この例では `Customer's first order GA source`. ここで使用できるオプションは、既に `groupable` を参照してください。
+`Cohorts` は、動作特性別にグループ化されています（この例では）。 `Customer's first order GA source`. ここで使用できるオプションは、既に `groupable` を参照してください。
 
 #### 2.コホートの選択
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 #### 5. `Time range after cohort occurrence`
 
-次の項目を表示しますか： `cohorts` 月別、週別、年別に ここで選択を行います。 このセクションの下で、 `time range` 後 `cohort action timestamp` が発生しました。 例えば、この例では、アクション期間内に最初の注文をした顧客の 12 ヶ月分のデータが表示されます。
+次の項目を表示しますか： `cohorts` 月別、週別、年別に ここで選択を行います。 このセクションの下で、 `time range` の後 `cohort action timestamp` が発生しました。 例えば、この例では、アクション期間内に最初の注文をした顧客の 12 ヶ月分のデータが表示されます。
 
 ![コホート — 最初のアクション — 時間範囲](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 

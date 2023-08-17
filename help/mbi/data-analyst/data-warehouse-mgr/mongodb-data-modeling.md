@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 条件 [!DNL Adobe Commerce Intelligence] 取り込む [!DNL MongoDB] データを使用する場合は、そのデータをリレーショナルモデルに変換します。
 
-悪い知らせは、ほとんどのデータパターンに問題はありませんが、ではサポートされないデータパターンがいくつかあります。 [!DNL Commerce Intelligence]リレーショナルモデルへの変換が原因です。
+悪い知らせ：ほとんどのデータパターンは問題を引き起こしませんが、次のようにはサポートされないデータパターンがいくつかあります。 [!DNL Commerce Intelligence]リレーショナルモデルへの変換が原因です。
 
-良い知らせは：これらのパターンはすべて回避できます。
+良い知らせ：これらのパターンはすべて避けることができます。
 
 ## サブネスト化された配列 {#subnested}
 
-コレクションが次の例のような場合、 [!DNL Commerce Intelligence] items 配列内のデータのみをレプリケートします。 サブ項目配列のデータは取り込まれません。
+コレクションが次の例のような場合、 [!DNL Commerce Intelligence] は、items 配列内のデータのみをレプリケートします。 サブ項目配列のデータは取り込まれません。
 
 ```bash
     {

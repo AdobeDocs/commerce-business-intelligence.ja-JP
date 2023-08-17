@@ -13,13 +13,13 @@ ht-degree: 4%
 
 # 高度な計算列のタイプ
 
-作成したい分析の多くには、 **新しい列** を `group by` または `filter by`. この [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルではほとんどの使用例について基本的な説明をしますが、Data Warehouseマネージャーで作成できるものよりも少し複雑な計算列が必要な場合があります。
-{:#top}
+作成したい分析の多くには、 **新しい列** を `group by` または `filter by`. The [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルではほとんどの使用例について基本的な説明をしますが、Data Warehouseマネージャーで作成できるものよりも少し複雑な計算列が必要な場合があります。
+{: #top}
 
 これらのタイプの列は、Data WarehouseアナリストのAdobeチームが作成できます。 新しい計算列を定義するには、次の情報を入力します。
 
-1. この **`definition`** この列の（入力、数式、書式を含む）
-1. この **`table`** 列を作成する対象
+1. The **`definition`** この列の（入力、数式、書式を含む）
+1. The **`table`** 列を作成する対象
 1. 任意 **`example data points`** 列に含める内容を記述する
 
 次に、高度な計算列の一般的な例を示します。
@@ -27,7 +27,7 @@ ht-degree: 4%
 * [イベントを順番に並べ替える（またはランク付けする）](#compareevents)
 * [2 つのイベント間の時間を見つける](#twoevents)
 * [順次イベント値の比較](#sequence)
-* [変換通貨](#currency)
+* [通貨の変換](#currency)
 * [タイムゾーンの変換](#timezone)
 * [他のもの](#else)
 
@@ -115,7 +115,7 @@ ht-degree: 4%
 
 ## 私は通貨を換算しようとしています。 {#currency}
 
-A **通貨コンバージョン** 計算列は、イベント時の為替レートに基づいて、トランザクション金額を記録済み通貨からレポート通貨に変換します。
+A **通貨コンバージョン** 計算列は、イベント時の為替レートに基づいて、トランザクション金額を記録済み通貨から報告用通貨に変換します。
 
 次に例を示します。
 
@@ -161,7 +161,7 @@ A **タイムゾーン変換** 計算列は、特定のデータソースのタ�
 
 心配しないで。 ここに記載されていないので、実行できないとは限りません。 AdobeアナリストのData Warehouseチームがお手伝いします。
 
-新しい計算列を定義するには、次の手順を実行します。 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) に、作成する内容の詳細を示します。
+新しい計算列を定義するには、次の手順に従います。 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) に、作成する内容の詳細を示します。
 
 ## 関連ドキュメント
 

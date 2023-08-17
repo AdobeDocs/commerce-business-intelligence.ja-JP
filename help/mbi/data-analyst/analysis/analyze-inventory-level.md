@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 在庫レベルの分析
 
-このトピックでは、現在のインベントリに関する洞察を提供し、レガシーアーキテクチャと新しいアーキテクチャの両方でクライアントに対する手順を含むダッシュボードを設定する方法について説明します。 既存のアーキテクチャを使用している ( **[!UICONTROL Data Warehouse Views]** オプションを **[!UICONTROL Manage Data]** メニュー レガシーアーキテクチャを使用している場合は、 [新しいサポートリクエスト](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 件名 **[!UICONTROL INVENTORY ANALYSIS]** 次に、 _計算列_ 以下の手順を参照してください。
+このトピックでは、現在のインベントリに関する洞察を提供し、レガシーアーキテクチャと新しいアーキテクチャの両方のクライアント向けの手順を含むダッシュボードを設定する方法について説明します。 既存のアーキテクチャを使用している ( **[!UICONTROL Data Warehouse Views]** オプションを **[!UICONTROL Manage Data]** メニュー。 レガシーアーキテクチャを使用している場合は、 [新しいサポートリクエスト](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 問題を **[!UICONTROL INVENTORY ANALYSIS]** 次に、 _計算列_ 以下の手順を参照してください。
 
 ## 追跡する列：
 
@@ -72,7 +72,7 @@ ht-degree: 0%
       * 
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] 入力：
-         * 回答： `Product's lifetime number of items sold`
+         * A: `Product's lifetime number of items sold`
          * B: `Product's first order date`
       * 
         [!UICONTROL Datatype]: `Decimal`
@@ -113,7 +113,7 @@ ht-degree: 0%
       * 
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] 入力：
-         * 回答： `qty`
+         * A: `qty`
          * B: `Avg products sold per week (all time)`
       * 
         [!UICONTROL Datatype]: `Decimal`
@@ -199,9 +199,9 @@ ht-degree: 0%
 ### 指標の手順
 
 * **[!UICONTROL cataloginventory_stock_item]** テーブル：
-   * **`Inventory on hand`**:この指標が
+   * **`Inventory on hand`**：この指標は
       * **合計** の
-      * **`qty`** 並べ替えられた列
+      * **`qty`** 列の並べ替え順
       * [なし] 列
 
 ## レポート
@@ -242,4 +242,4 @@ ht-degree: 0%
    * 
      [!UICONTROL Chart type]: `Table`
 
-この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

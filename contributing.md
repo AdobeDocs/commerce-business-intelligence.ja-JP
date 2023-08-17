@@ -2,7 +2,7 @@
 source-git-commit: 84182bc922e95cf066675af936add7ca7b82bfae
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 0%
+ht-degree: 22%
 
 ---
 # 貢献
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 行動規範
 
-このプロジェクトはAdobeに従う [行動規範](../code-of-conduct.md). 参加する際には、この行動規範を遵守する必要があります。 容認できない行為は次の場合に報告してください：
+このプロジェクトはアドビ[行動規範](../code-of-conduct.md)を遵守しています。参加することにより、この行動規範を遵守することが期待されます。容認できない行為は次の場合に報告してください：
 [Grp-opensourceoffice@adobe.com](../mailto:Grp-opensourceoffice@adobe.com).
 
 ## 寄稿者ガイドドキュメント
@@ -26,12 +26,11 @@ ht-degree: 0%
 
 ## 寄稿者使用許諾契約
 
-このプロジェクトに対するサードパーティの投稿には、署名済みの投稿者使用許諾契約が含まれている必要があります。 これにより、Adobeは、投稿をプロジェクトの一部として再配布できるようになります。 [アドビの CLA に署名する](http://opensource.adobe.com/cla.html). AdobeCLA は 1 回だけ送信する必要があるので、以前に送信したことがある場合は、先へ進むことができます。
+このプロジェクトに対するサードパーティの投稿には、署名済みの投稿者使用許諾契約が含まれている必要があります。 これにより、アドビの権限をプロジェクトの一部として再配布する権限が付与されます。[アドビの CLA に署名する](http://opensource.adobe.com/cla.html). AdobeCLA は 1 回だけ送信する必要があるので、以前に送信したことがある場合は、先へ進むことができます。
 
 ## コードレビュー
 
-提出はすべて、プルリクエスト形式でおこなわれ、プロジェクトコミッターのレビューを受ける必要があります。 読み取り [GitHub のプルリクエストドキュメント](https://help.github.com/articles/about-pull-requests/)
-プルリクエストの送信について詳しくは、を参照してください。
+すべての送信は、プルリクエスト形式でおこなわれ、プロジェクト承諾者のレビューを受ける必要があります。プルリクエストの送信について詳しくは、[GitHub のプルリクエストドキュメント](https://help.github.com/ja/github/collaborating-with-issues-and-pull-requests/about-pull-requests)をお読みください。
 
 <!--
 Lastly, please follow the [pull request template](../PULL_REQUEST_TEMPLATE.md) when

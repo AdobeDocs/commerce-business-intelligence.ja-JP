@@ -1,6 +1,6 @@
 ---
 title: 返品注文の分析
-description: ストアの返品状況を詳細に分析できるダッシュボードの設定方法を説明します。
+description: ストアの返品状況を詳細に分析できるダッシュボードを設定する方法を説明します。
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 返された注文
 
-このトピックでは、店舗の返品状況を詳細に分析できるダッシュボードの設定方法を説明します。
+このトピックでは、店舗の返品状況を詳細に分析できるダッシュボードの設定方法について説明します。
 
 ![](../../assets/detailed-returns-dboard.png)
 
@@ -46,12 +46,12 @@ ht-degree: 0%
 * **`enterprise_rma`** 表
 * フィルタセット名： `Returns we count`
 * フィルターセットの論理式：
-   * プレースホルダー — ここにカスタムロジックを入力
+   * プレースホルダー — ここにカスタムロジックを入力します
 
 * **`enterprise_rma_item_entity`** 表
 * フィルタセット名： `Returns items we count`
 * フィルターセットの論理式：
-   * プレースホルダー — ここにカスタムロジックを入力
+   * プレースホルダー — ここにカスタムロジックを入力します
 
 ### 計算列
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 * を選択します。 [!UICONTROL column]: `Customer's order number`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Time between order's created_at and date_requested`** は、 `[RETURNS ANALYSIS]` チケット
+* **`Time between order's created_at and date_requested`** は、アナリストによって `[RETURNS ANALYSIS]` チケット
 
 * **`enterprise_rma_item_entity`** 表
 * **`return_date_requested`**
@@ -91,7 +91,7 @@ ht-degree: 0%
 * を選択します。 [!UICONTROL column]: `date_requested`
    * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
 
-* **`Return item total value (qty_returned * price)`** は、 `[RETURNS ANALYSIS]` チケット
+* **`Return item total value (qty_returned * price)`** は、アナリストによって `[RETURNS ANALYSIS]` チケット
 
 * **`sales_flat_order`** 表
 * **`Order contains a return? (1=yes/0=No)`**
@@ -99,8 +99,8 @@ ht-degree: 0%
 * を選択します。 [!UICONTROL table]: `enterprise_rma`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Customer's previous order number`** は、 `[RETURNS ANALYSIS]` チケット
-* **`Customer's previous order contains return? (1=yes/0=no)`** は、 `[RETURNS ANALYSIS]` チケット
+* **`Customer's previous order number`** は、アナリストによって `[RETURNS ANALYSIS]` チケット
+* **`Customer's previous order contains return? (1=yes/0=no)`** は、アナリストによって `[RETURNS ANALYSIS]` チケット
 
 >[!NOTE]
 >
@@ -109,36 +109,36 @@ ht-degree: 0%
 ### 指標
 
 * **戻り値**
-* 内 **`enterprise_rma`** 表
+* Adobe Analytics の **`enterprise_rma`** 表
 * この指標では **カウント**
-* の **`entity_id`** 列
-* 発注元： **`date_requested`**
+* 次の日： **`entity_id`** 列
+* 並べ替え元 **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 * **返された項目**
-* 内 **`enterprise_rma_item_entity`** 表
+* Adobe Analytics の **`enterprise_rma_item_entity`** 表
 * この指標では **合計**
-* の **`qty_approved`** 列
-* 発注元： **`return date_requested`**
+* 次の日： **`qty_approved`** 列
+* 並べ替え元 **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 * **返された項目の合計値**
-* 内 **`enterprise_rma_item_entity`** 表
+* Adobe Analytics の **`enterprise_rma_item_entity`** 表
 * この指標では **合計**
-* の **`Returned item total value (qty_returned * price)`** 列
-* 発注元： **`return date_requested`**
+* 次の日： **`Returned item total value (qty_returned * price)`** 列
+* 並べ替え元 **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 * **注文から返品までの平均時間**
-* 内 **`enterprise_rma`** 表
-* この指標では **平均**
-* の **`Time between order's created_at and date_requested`** 列
-* 発注元： **`date_requested`**
+* Adobe Analytics の **`enterprise_rma`** 表
+* この指標では、 **平均**
+* 次の日： **`Time between order's created_at and date_requested`** 列
+* 並べ替え元 **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 >[!NOTE]
 >
->必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に
+>必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に。
 
 ### レポート
 
@@ -167,7 +167,7 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフの種類]: `Bar`
 
-* **平均戻り時間（全時間）**
+* **戻り値の平均時間（全時間）**
 * 指標 `A`: `Avg time between order and return`
 * [!UICONTROL Metric]: `Avg time between order and return`
 
@@ -205,7 +205,7 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフの種類]: `Line`
 
-* **再度購入せずに返品を行った顧客**
+* **再購入を行わずに返品を行った顧客**
 * 指標 `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
@@ -222,7 +222,7 @@ ht-degree: 0%
 
 * **品目別の返品率**
 * 指標 `A`: `Returned items` （非表示）
-* [!UICONTROL Metric]:返された項目
+* [!UICONTROL Metric]：戻された項目
 
 * 指標 `B`: `Items sold` （非表示）
 * [!UICONTROL Metric]: `Number of orders`

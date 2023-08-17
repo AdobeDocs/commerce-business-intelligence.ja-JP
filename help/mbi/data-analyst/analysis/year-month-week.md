@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# 長期にわたるレポート
+# 長期間のレポート
 
 >[!NOTE]
 >
->このトピックでは、元のアーキテクチャと新しいアーキテクチャを使用しているお客様向けの手順について説明します。 あなたは [新しいアーキテクチャ](../../administrator/account-management/new-architecture.md) もし [!DNL _Data Warehouseビュー_] 選択後に使用可能なセクション [!DNL Manage Data] を選択します。
+>このトピックでは、元のアーキテクチャと新しいアーキテクチャを使用しているお客様向けの手順について説明します。 あなたは、 [新しいアーキテクチャ](../../administrator/account-management/new-architecture.md) もし [!DNL _Data Warehouseビュー_] 選択後に使用可能なセクション [!DNL Manage Data] を選択します。
 
 Report Builder を使用すると、経時的なトレンドを簡単に確認でき、比較する期間のパースペクティブを変更できます。 このトピックでは、ダッシュボードを設定して、前週比、前月比、前年比の分析用のレポートを作成できるようにする方法を説明します。
 
@@ -49,17 +49,17 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 
 >[!NOTE]
 >
->必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に
+>必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に。
 
 ## レポート
 
-* **Y グラフ**
+* **Y 軸グラフ**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
-   * [!UICONTROL Show top/bottom]:上位 100%の並べ替え基準 **`created_at (month-day)`***
+   * [!UICONTROL Show top/bottom]：上位 100%の並べ替え基準 **`created_at (month-day)`***
 
 * 指標 `A`: `This year`
 * 指標 `B`: `Last year`
@@ -76,11 +76,11 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
    * [!UICONTROL Metric]: `Number of orders`
    * 時間オプション： `Time range (Custom)`: `2 months ago to 1 month ago`
 
-   * 上/下を表示：上位 100%の並べ替え基準 **`created_at (day of month)`***
+   * 上位/下位を表示：上位 100%の並べ替え基準 **`created_at (day of month)`***
 
-* 指標 `A`:今月*
-* 指標 `B`:先月*
-* [!UICONTROL Time period]:1 か月前～ 0 か月前
+* 指標 `A`：今月*
+* 指標 `B`：先月*
+* [!UICONTROL Time period]:1 か月前から 0 か月前
 * 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
@@ -93,7 +93,7 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
-   * [!UICONTROL Show top/bottom]:上位 100%の並べ替え基準 `created_at (day of week)`
+   * [!UICONTROL Show top/bottom]：上位 100%の並べ替え基準 `created_at (day of week)`
 
 * 指標 `A`: `This week`
 * 指標 `B`: `Last week`
@@ -110,7 +110,7 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
-   * [!UICONTROL Show top/bottom]:上位 100%の並べ替え基準 `created_at (hour of day)`
+   * [!UICONTROL Show top/bottom]：上位 100%の並べ替え基準 `created_at (hour of day)`
 
 * 指標 `A`: `Today`
 * 指標 B: `Yesterday`

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 技術上のメリット
 
-主な違いは上記のとおりですが、主な変更点は、更新サイクル中の計算の実行方法です。 すべての列で、更新のたびに計算が実行されるわけではなくなりました。代わりに、VisualReport Builderからオンデマンドで実行されます。
+主な違いは上記のとおりですが、主な変更点は、更新サイクル中の計算の実行方法です。 計算は、更新のたびにすべての列で実行されるわけではなく、VisualReport Builderからオンデマンドで実行されます。
 
 ### 新しいアーキテクチャへの移行
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### ヘルプの表示
 
-この [!DNL Adobe Commerce Intelligence] [サービスチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を使用して再実装を実行し、追加コストをかけることができます。 お問い合わせ [Adobeアカウントチーム](../../guide-overview.md#Submitting-a-Support-Ticket) 新しいアカウントでの作成を優先するダッシュボード/レポートのリストを提供する準備をします。
+The [!DNL Adobe Commerce Intelligence] [サービスチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を使用して再実装を実行し、追加コストをかけることができます。 お問い合わせ [Adobeアカウントチーム](../../guide-overview.md#Submitting-a-Support-Ticket) 新しいアカウントでの作成を優先するダッシュボード/レポートのリストを提供する準備をします。
 
 ### 既存のアーキテクチャの使用
 

@@ -23,13 +23,13 @@ ht-degree: 0%
 
 ![日付範囲の移動](../../assets/moving_date_ranges.png)
 
-この `Last Full...` 移動範囲オプションは、最後に完了した範囲を表します。 `This...` は、現在進行中の範囲です。 例えば、6 月の場合、 `Last Full Month` が _5 月 1 日～5 月 31 日_、 `This Month` が _6 月 1 日～今すぐ_.
+The `Last Full...` 移動範囲オプションは、最後に完了した範囲を表します。 `This...` は、現在進行中の範囲です。 例えば、6 月の場合、 `Last Full Month` 次に該当 _5 月 1 日～5 月 31 日_&#x200B;で、 `This Month` 次に該当 _6 月 1 日～今すぐ_.
 
 または、独自の `Custom Moving Range`\:
 
 ![カスタム移動範囲](../../assets/custom-moving-range.png)
 
-間隔も変更します。 デフォルトのボタン (![時間間隔のデフォルト](../../assets/time_interval_default.png)) は、日付範囲のみが変更されることを意味します。
+間隔の変更も選択します。 デフォルトのボタン (![時間間隔のデフォルト](../../assets/time_interval_default.png)) は、日付範囲のみが変更されることを意味します。
 
 ![時間間隔](../../assets/time_interval.png)
 
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ストアフィルターは、 [!DNL Commerce Intelligence] アカウント フィルタの影響を受けないレポート ( [!DNL Adobe Commerce] データなど ) が含まれる場合、これらのレポートは、ストアフィルターが適用されても更新されません。 以下が可能です。 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ストアの選択に基づいてレポートを更新すると思われる場合や、アカウントストアのフィルターが誤って無効になっていると思われる場合。
+>ストアフィルターは、 [!DNL Commerce Intelligence] アカウント。 フィルタの影響を受けないレポート ( [!DNL Adobe Commerce] データなど ) が含まれる場合、これらのレポートは、ストアフィルターが適用されても更新されません。 以下が可能です。 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ストアの選択に基づいてレポートを更新すると思われる場合や、アカウントストアのフィルターが誤って無効になっていると思われる場合。
 
-ストアを `Store Filter`を使用すると、ダッシュボード間を移動する際にフィルターで選択内容が保持されます。 選択を維持すると、選択したストアのデータを、選択した `All Stores`.
+次の場所からストアを選択すると、 `Store Filter`を使用すると、ダッシュボード間を移動する際にフィルターで選択内容が保持されます。 選択を維持すると、選択したストアのデータを、選択した `All Stores`.
 
 ## 共有ダッシュボードのフィルター
 

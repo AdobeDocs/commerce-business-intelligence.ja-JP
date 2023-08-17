@@ -30,9 +30,9 @@ ht-degree: 0%
   >この指標が構築されるテーブル ( おそらく `customer_entity` または `sales_order` ストアがゲストのチェックアウトを受け入れる機能に応じて異なります )。
 
    * クリック **[!UICONTROL Create New Metric]** 上からテーブルを選択します。
-   * この指標では **中央値** の `Customer's lifetime revenue` 列、並べ替え順 `created_at`.
+   * この指標では **中央値** の `Customer's lifetime revenue` 列、並び順 `created_at`.
       * [!UICONTROL Filters]:
-         * を `Customers we count (Saved Filter Set)` ( または `Registered accounts we count`)
+         * 次を追加： `Customers we count (Saved Filter Set)` ( または `Registered accounts we count`)
 
    * 指標に名前を付けます（例： ）。 `Median lifetime revenue`.
 
@@ -61,7 +61,7 @@ ht-degree: 0%
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * 追加 [!UICONTROL filters]:
          * [`A`] `Customer's group code` **次と等しくない** `Not Logged In`
-         * [`B`] `Customer's lifetime number of orders` **より大きい**`0`
+         * [`B`] `Customer's lifetime number of orders` **次の値より大きい**`0`
 
    * [!UICONTROL Time period]: `All time`
    * 

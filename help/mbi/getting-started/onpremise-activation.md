@@ -1,6 +1,6 @@
 ---
 title: のアクティブ化 [!DNL Commerce Intelligence] アカウント
-description: 担当者に連絡して、 [!DNL Commerce Intelligence] アカウント
+description: 担当者に連絡して、 [!DNL Commerce Intelligence] アカウント。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration

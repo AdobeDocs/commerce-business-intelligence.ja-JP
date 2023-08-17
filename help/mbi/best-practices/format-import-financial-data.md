@@ -28,16 +28,16 @@ ht-degree: 0%
 2 次元テーブルを統合するには、 [!DNL Excel] ピボットテーブル：
 
 1. 2 次元のデータテーブルを含んだファイルを開きます。
-1. ピボットテーブルウィザードを開きます。 In [!DNL Windows]の場合、ショートカットは `Alt-D`. In [!DNL Mac OS]を入力して、 `Command-Option-P`.
-1. 選択 **[!UICONTROL Multiple consolidated ranges]** をクリックし、 **[!UICONTROL Next]**.
-1. 選択 **[!UICONTROL I will create the page fields]** をクリックし、 **[!UICONTROL Next]**.
-1. ラベルを含む 2 次元テーブルのデータセット全体を選択します。 以下を確認します。 `0` を選択し、「 **[!UICONTROL Next]**.
+1. ピボットテーブルウィザードを開きます。 In [!DNL Windows]の場合、ショートカットは `Alt-D`. In [!DNL Mac OS]，と入力します。 `Command-Option-P`.
+1. 選択 **[!UICONTROL Multiple consolidated ranges]** をクリックします。 **[!UICONTROL Next]**.
+1. 選択 **[!UICONTROL I will create the page fields]** をクリックします。 **[!UICONTROL Next]**.
+1. ラベルを含む 2 次元テーブルのデータセット全体を選択します。 以下を確認します。 `0` を選択して、「 」をクリックします。 **[!UICONTROL Next]**.
 1. 新しいシートにピボットテーブルを作成し、 **[!UICONTROL Finish]**.
-1. フィールドリストの列および行フィールドの選択を解除します。
+1. フィールドリストの列フィールドと行フィールドの選択を解除します。
 1. 結果の数値をダブルクリックすると、新しいシートに統合されたソースデータが表示されます。
    ![](../../mbi/assets/pivot-table-double-click.png)
 1. 名前を付けて保存 `CSV` ファイル。
 
 ## 折り返し
 
-データテーブルはリスト形式に変換され、元の情報はすべて保持されました。 [読み込み先： [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) 分析用。
+データテーブルはリスト形式に変換され、元の情報はすべて保持されました。これで、 [読み込み先 [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) 分析用。

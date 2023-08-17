@@ -21,7 +21,7 @@ ht-degree: 0%
 
 1. に移動します。 **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
 1. 目的のユーザーアカウントを選択します。
-1. この **[!UICONTROL Metrics]** 「 」タブに、使用可能な指標のリストが表示されます。 ユーザーにアクセス権を付与する指標を選択し、ユーザーがアクセス権を付与しない指標の選択を解除します。
+1. The **[!UICONTROL Metrics]** 「 」タブには、使用可能な指標のリストが表示されます。 ユーザーにアクセス権を付与する指標を選択し、ユーザーがアクセス権を付与しない指標の選択を解除します。
 1. [!DNL Adobe Commerce Intelligence] は変更を自動的に保存します。 変更が成功した場合、 [!DNL Commerce Intelligence] 表示 **[!UICONTROL Saved!]** をクリックします。
 
 >[!NOTE]

@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# 違い [!DNL SQL] および [!DNL Data Warehouse Manager]
+# 次の間の違い [!DNL SQL] および [!DNL Data Warehouse Manager]
 
-列には、 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) また、 [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md). 1 つは更新サイクルへの依存性で、もう 1 つはアカウントでの列の保存方法です。
+次の 2 つの主な違いがあります： [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) また、 [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md). 1 つは更新サイクルへの依存性で、もう 1 つはアカウントでの列の保存方法です。
 
-## 列 [!DNL SQL Report Builder]
+## 列の [!DNL SQL Report Builder]
 
 列は更新サイクルに依存しないので、列で繰り返し処理を行う前に、列が完了するのを待つ必要がなくなりました。 誤りを犯した場合、修正には数回のキー操作しかかかりません。2 回の更新が終わるのを待たずに、作業に戻ることができます。
 

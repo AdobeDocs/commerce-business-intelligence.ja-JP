@@ -15,7 +15,7 @@ ht-degree: 0%
 
 次の手順で [!DNL PostgreSQL] データベースへ [!DNL Commerce Intelligence] 経由 `SSH tunnel`を使用する場合は、次のいくつかの操作を行う必要があります。
 
-1. [の取得 [!DNL Commerce Intelligence] 公開鍵](#retrieve)
+1. [を取得する [!DNL Commerce Intelligence] 公開鍵](#retrieve)
 1. [次へのアクセスを許可： [!DNL Commerce Intelligence] IP アドレス](#allowlist)
 1. [の作成 [!DNL Linux] のユーザー [!DNL Commerce Intelligence]](#linux)
 1. [の作成 [!DNL PostgreSQL] のユーザー [!DNL Commerce Intelligence]](#postgres)
@@ -23,14 +23,14 @@ ht-degree: 0%
 
 ## の取得 [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
 
-この `public key` は、 [!DNL Commerce Intelligence] [!DNL Linux] ユーザー。 次に、ユーザーを作成し、キーをインポートします。
+The `public key` を認証するために使用します。 [!DNL Commerce Intelligence] [!DNL Linux] ユーザー。 次に、ユーザーを作成し、キーをインポートします。
 
-1. に移動します。 **[!UICONTROL Manage Data** > **Connections]** をクリックし、 **[!UICONTROL Add a Data Source]**.
-1. 次をクリック： [!DNL PostgreSQL] アイコン
-1. 次の期間の後 `PostgreSQL credentials` ページを開く、 `Encrypted` 切り替える `Yes`. これにより、 `SSH` 設定フォーム。
-1. この `public key` はこのフォームの下に配置されています。
+1. に移動します。 **[!UICONTROL Manage Data** > **Connections]** をクリックします。 **[!UICONTROL Add a Data Source]**.
+1. 次をクリック： [!DNL PostgreSQL] アイコン。
+1. 次の期間の後に `PostgreSQL credentials` ページを開く、 `Encrypted` 切り替える `Yes`. これにより、 `SSH` 設定フォーム。
+1. The `public key` はこのフォームの下に配置されています。
 
-このページはチュートリアル全体で開いたままにしておきます。次のセクションで、最後にこのページを開く必要があります。
+このページは、チュートリアル全体で開いたままにしておきます。次のセクションで、最後におこなう必要があります。
 
 以下に、 [!DNL Commerce Intelligence] キーを取得するには：
 
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 ## 次へのアクセスを許可： [!DNL Commerce Intelligence] IP アドレス {#allowlist}
 
-接続が成功するには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 これは `54.88.76.97/32`ですが、それはまた、 `PostgreSQL` 認証情報ページ。 上記のGIFの青いボックスを確認します。
+接続が成功するには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 それは `54.88.76.97/32`ですが、それはまた、 `PostgreSQL` 認証情報ページ。 上記のGIFの青いボックスを確認します。
 
 ## の作成 [!DNL Linux] のユーザー [!DNL Commerce Intelligence] {#linux}
 
-リアルタイム（または頻繁に更新される）データが含まれる限り、実稼動マシンまたはセカンダリマシンにすることができます。 次のことが可能です。 [このユーザーを制限](../../../administrator/account-management/restrict-db-access.md) どのようにしても、 [!DNL PostgreSQL] サーバー。
+リアルタイム（または頻繁に更新される）データが含まれる限り、実稼動マシンまたはセカンダリマシンにすることができます。 次のことが可能です。 [このユーザーを制限](../../../administrator/account-management/restrict-db-access.md) どのようにしても、それが [!DNL PostgreSQL] サーバー。
 
 1. 新しいユーザーを追加するには、次のコマンドを root として [!DNL Linux] サーバ：
 
@@ -52,7 +52,7 @@ ht-degree: 0%
         mkdir /home/rjmetric/.ssh
 ```
 
-1. を記憶する `public key` 最初の部分で取り戻したの？ ユーザーがデータベースに確実にアクセスできるようにするには、キーを `authorized\_keys`.
+1. 次を記憶する： `public key` 最初の部分で取り戻したの？ ユーザーがデータベースに確実にアクセスできるようにするには、キーを `authorized\_keys`.
 
    キー全体を `authorized\_keys` ファイルの内容は次のとおりです。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->この `sshd\_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合は、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL Commerce Intelligence]. このような場合、 `AllowUsers` rjmetric ユーザーにサーバーへのアクセスを許可する。
+>次の場合、 `sshd\_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合は、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL Commerce Intelligence]. このような場合、次のようなコマンドを実行する必要があります。 `AllowUsers` rjmetric ユーザーにサーバーへのアクセスを許可する。
 
 ## の作成 [!DNL Commerce Intelligence] [!DNL Postgres] ユーザー {#postgres}
 
@@ -86,20 +86,20 @@ ht-degree: 0%
 
 ## 次の場所に接続とユーザー情報を入力 [!DNL Commerce Intelligence] {#finish}
 
-まとめるには、接続とユーザー情報を次のように入力する必要があります。 [!DNL Commerce Intelligence]. あなたは [!DNL PostgreSQL] 認証情報ページを開きますか？ そうでない場合は、に移動します。 **[!UICONTROL Manage Data > Connections]** をクリックし、 **[!UICONTROL Add a Data Source]**、 [!DNL PostgreSQL] アイコン 忘れずに `Encrypted` 切り替える `Yes`.
+まとめるには、接続とユーザー情報を次のように入力する必要があります。 [!DNL Commerce Intelligence]. あなたは [!DNL PostgreSQL] 認証情報ページを開きますか？ そうでない場合は、に移動します。 **[!UICONTROL Manage Data > Connections]** をクリックします。 **[!UICONTROL Add a Data Source]**&#x200B;を、 [!DNL PostgreSQL] アイコン。 忘れずに `Encrypted` 切り替える `Yes`.
 
 このページに、以下の情報を入力します。 `Database Connection` セクション：
 
 * `Username`:RJMetrics Postgres ユーザー名（rjmetric である必要があります）
 * `Password`:RJMetrics Postgres パスワード
-* `Port`:サーバー上の PostgreSQL ポート（デフォルトは 5432）
+* `Port`：サーバー上の PostgreSQL ポート（デフォルトは 5432）
 * `Host`: 127.0.0.1
 
 の下 `SSH Connection`:
 
 * `Remote Address`:SSH で接続するサーバーの IP アドレスまたはホスト名
 * `Username`:SSH ログイン名（rjmetric である必要があります）
-* `SSH Port`:サーバー上の SSH ポート（デフォルトでは 22）
+* `SSH Port`：サーバー上の SSH ポート（デフォルトは 22）
 
 完了したら、「 **保存してテスト** をクリックして設定を完了します。
 

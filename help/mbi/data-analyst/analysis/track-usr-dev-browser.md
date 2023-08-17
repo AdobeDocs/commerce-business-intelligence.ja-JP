@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!UICONTROL Google Analytics] トラッキング
 
-を使用 [!UICONTROL Google Analytics] 以下が可能です。 [リファラルソース情報を保存](../analysis/google-track-user-acq.md) 最も価値の高いユーザーがどこから来たのかを把握するために このトピックでは、ユーザーが作業しているプラットフォーム（デバイスやブラウザーなど）について説明します。 これにより、モバイルデバイスを介して実際にログインしているユーザーの数と、それがユーザーのライフタイム値に与える影響を把握できます。
+を使用 [!UICONTROL Google Analytics] 以下が可能です。 [リファラルソース情報を保存する](../analysis/google-track-user-acq.md) 最も価値の高いユーザーがどこから来たのかを把握するために このトピックでは、ユーザーが作業しているプラットフォーム（デバイスやブラウザーなど）について説明します。 これにより、モバイルデバイスを介して実際にログインしているユーザーの数と、それがユーザーのライフタイム値に与える影響を把握できます。
 
 ## ユーザーデバイスとブラウザーデータの保存
 
@@ -35,7 +35,7 @@ Web サイトでリクエストがおこなわれるたびに、ユーザーの�
 
 >[!NOTE]
 >
->この `User-Agent` 文字列の長さはこれよりも大幅に長くすることができますが、実際にはこの長さを超えることはほとんどありません。
+>The `User-Agent` 文字列の長さはこれよりも大幅に長くすることができますが、実際にはこの長さを超えることはほとんどありません。
 
 ### 有用なセグメントを解析する方法を教えてください。
 
@@ -45,9 +45,9 @@ Web サイトでリクエストがおこなわれるたびに、ユーザーの�
 
 ## 関連
 
-* [経由で注文のリファラルソースを追跡 [!DNL Google Anaytics] E コマース](../importing-data/integrations/google-ecommerce.md)
-* [データベース内のユーザー参照元を追跡する](../analysis/google-track-user-acq.md)
+* [経由で注文のリファラルソースを追跡する [!DNL Google Anaytics] E コマース](../importing-data/integrations/google-ecommerce.md)
+* [データベース内のユーザーのリファラルソースを追跡する](../analysis/google-track-user-acq.md)
 * [最も価値のある獲得ソースとチャネルを見つける](../analysis/most-value-source-channel.md)
-* [接続 [!DNL Google Adwords] アカウント](../importing-data/integrations/google-adwords.md)
+* [接続する [!DNL Google Adwords] アカウント](../importing-data/integrations/google-adwords.md)
 * [広告キャンペーンの ROI の向上](../analysis/roi-ad-camp.md)
 * [方法 [!DNL Google Analytics] UTM 属性は機能しますか？](../analysis/utm-attributes.md)

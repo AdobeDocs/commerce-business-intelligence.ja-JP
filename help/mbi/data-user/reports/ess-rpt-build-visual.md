@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## シンプルなレポートを作成するには：
 
-1. 内 [!DNL Commerce Intelligence] メニュー、クリック **[!UICONTROL Report Builder]**.
+1. Adobe Analytics の [!DNL Commerce Intelligence] メニュー、クリック **[!UICONTROL Report Builder]**.
 
 1. の下 [!UICONTROL Visual Report Builder]をクリックし、 **[!UICONTROL Create Report]** 次の操作を実行します。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    * を選択します。 [指標](../../data-user/reports/ess-manage-data-metrics.md) レポートに使用する一連のデータを表します。
 
-     この `New Customers` この例で使用される指標では、すべての顧客がカウントされ、顧客がアカウントに新規登録した日付でリストが並べ替えられます。 最初のレポートには、シンプルな折れ線グラフに続くデータのテーブルが含まれます。
+     The `New Customers` この例で使用される指標では、すべての顧客がカウントされ、顧客がアカウントに新規登録した日付でリストが並べ替えられます。 最初のレポートには、シンプルな折れ線グラフに続くデータのテーブルが含まれます。
 
      左側の概要には、現在の指標の名前が表示され、その後に、指標で指定された列データに対する計算の結果が表示されます。 この例では、概要に顧客の総数が表示されます。
 
@@ -39,11 +39,11 @@ ht-degree: 0%
 
 1. グラフで、線の各データポイントにカーソルを合わせます。 各データポイントは、その月に新規登録した顧客の合計数を示します。
 
-1. データのグループ化、日付範囲の変更およびグラフタイプを行うには、次の手順に従います。
+1. データのグループ化、日付範囲の変更およびグラフのタイプを行うには、次の手順に従います。
 
    **`Group By`**
 
-   この `Group By` 「 」コントロールを使用すると、複数のディメンションをグループまたはセグメント別に追加できます。 Dimensionは、データのグループ化に使用できるテーブル内の列です。
+   The `Group By` 「 」コントロールを使用すると、複数のディメンションをグループまたはセグメント別に追加できます。 Dimensionは、データのグループ化に使用できるテーブル内の列です。
 
    * 次のリストから、使用可能なディメンションの 1 つを選択します。 `Group By` オプション。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
      ![グループ化の基準](../../assets/magento-bi-report-builder-group-by-dimensions.png)
 
-     この `Group By` 顧客が使用する各クーポンの詳細リストが表示されます。 最初の注文をおこなうために使用されたクーポンは、チェックボックスでマークされます。 グラフに、1 回目の注文で使用された各クーポンを表す、複数の色付きの線が表示されるようになりました。 凡例は、データの各行に対応するように色分けされます。
+     The `Group By` 顧客が使用する各クーポンの詳細リストが表示されます。 最初の注文をおこなうために使用されたクーポンは、チェックボックスでマークされます。 グラフに、1 回目の注文で使用された各クーポンを表す、複数の色付きの線が表示されるようになりました。 凡例は、データの各行に対応するように色分けされます。
 
    * クリック **[!UICONTROL Apply]** をクリックして、Group By の詳細を閉じます。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
      ![テーブルデータでグループ化](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * 移動 (![](../../assets/magento-bi-btn-transpose.png)) コントロールを使用して、データの向きを変更できます。
+   * 移調 (![](../../assets/magento-bi-btn-transpose.png)) コントロールを使用して、データの向きを変更できます。
 
      データ軸が反転し、テーブルに各クーポンコードの列と、各月の行が表示されるようになりました。 この向きは読みやすいかもしれません。
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
    **`Date Range`**
 
-   この `Date Range` コントロールは、現在の日付範囲と時間間隔の設定を表示し、右側のグラフのすぐ上にあります。
+   The `Date Range` コントロールは、現在の日付範囲と時間間隔の設定を表示し、右側のグラフのすぐ上に配置されます。
 
    * 次をクリック： `Date Range` コントロール ( この例では `All-Time by Month`.
 
@@ -79,8 +79,8 @@ ht-degree: 0%
 
    * 次の変更を行います。
 
-      * 拡大して表示を拡大するには、日付範囲を `Last Full Quarter`.
-      * の下 `Select Time Interval`選択 `Week`.
+      * 拡大して近くを表示するには、日付範囲をに変更します。 `Last Full Quarter`.
+      * の下 `Select Time Interval`を選択します。 `Week`.
       * 完了したら、「 **[!UICONTROL Save]**.
 
      レポートには、前四半期のデータのみが週別に含まれるようになりました。
@@ -101,12 +101,12 @@ ht-degree: 0%
      | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | 縦棒グラフ |
      | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 積み重ね縦棒グラフ |
      | ![](../../assets/magento-bi-btn-chart-pie.png) | 円グラフ |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | 領域 |
+     | ![](../../assets/magento-bi-btn-chart-area.png) | 面グラフ |
      | ![](../../assets/magento-bi-btn-chart-funnel.png) | ファネル |
 
      {style="table-layout:auto"}
 
-1. レポートに `title`、 `Untitled Report` ページ上部のテキストに説明的なタイトルが付きます。
+1. レポートに `title`、 `Untitled Report` ページ上部のテキストに説明的なタイトルを付けます。
 
 1. 右上隅で、 **[!UICONTROL Save]** 次の操作を実行します。
 

@@ -1,5 +1,5 @@
 ---
-title: 予測[!DNL Google ECommerce]データ
+title: 期待値[!DNL Google ECommerce]データ
 description: Google E コマースと共有されるデータの種類を説明します。
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
 role: Admin, Data Architect, Data Engineer, User
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# 予測[!DNL Google ECommerce] データ
+# 期待値[!DNL Google ECommerce] データ
 
-次に [!DNL Google ECommerce] アカウントが次に正常に接続されました： [!DNL Commerce Intelligence]を指定した場合、システムは「 」というタイトルのテーブルへのデータのインポートを開始します `ecommerce`. このテーブルには、トランザクションごとに 1 つのデータ行が記録されます。 これには、次の順序レベルのデータ列が含まれます。
+次に [!DNL Google ECommerce] アカウントが次に正常に接続されました： [!DNL Commerce Intelligence]を指定した場合、システムは「 」というタイトルのテーブルへのデータのインポートを開始します。 `ecommerce`. このテーブルには、トランザクションごとに 1 つのデータ行が記録されます。 これには、次の順序レベルのデータ列が含まれます。
 
 | 列名 | 説明 |
 |-----|-----|

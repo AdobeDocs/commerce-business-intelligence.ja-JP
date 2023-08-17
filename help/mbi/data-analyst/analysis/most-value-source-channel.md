@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 成功したマーケティングソースの特定
 
-オーディエンスを調べ、キャンペーンを作り、いくつかのマーケティングチャネルに投資しました。 しばらく経った今、これらのチャネルはどのように動いているのでしょうか。 最も新しいユーザーを導いたチャネルは何ですか？ 合計売上高に最も貢献したのは、どのソースですか？
+オーディエンスを調べ、キャンペーンを作り、いくつかのマーケティングチャネルに投資しました。 しばらく経った今、これらのチャネルはどのように動いているのでしょうか？ 最も新しいユーザーを導いたチャネルは何ですか？ 合計売上高に最も貢献したのは、どのソースですか？
 
 を使用 [!DNL Adobe Commerce Intelligence]を使用すると、リファラルソース ( [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) またはカスタムデータフィールド。 このセグメント化により、最もパフォーマンスの高いチャネルを見つけ、マーケティング予算に投資することができます。
 
@@ -27,16 +27,16 @@ ht-degree: 0%
 
 ## 前提条件 {#prereqs}
 
-このトピックの分析を作成するには、マーケティング獲得/参照元データにアクセスする必要があります。 まだ追跡していない場合は、 [紹介元のデータを注文 [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) into [!DNL Adobe Commerce Intelligence] をクリックしてください。 また、分析にユーザーデバイス情報を追加すると、紹介で使用しているテクノロジーを確認できます。
+このトピックの分析を作成するには、マーケティング獲得/参照元データにアクセスする必要があります。 まだ追跡していない場合は、 [紹介元のデータを注文する [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) into [!DNL Adobe Commerce Intelligence] をクリックしてください。 また、分析にユーザーデバイス情報を追加すると、紹介で使用しているテクノロジーを確認できます。
 
-## ソース別の新規ユーザー {#newusersbysource}
+## ソース別の新規ユーザー数 {#newusersbysource}
 
 リファラルソースのパフォーマンスの評価は、最も価値の高いチャネルを決定する上で重要です。 このレポートは、新たに登録されたユーザーの数を、獲得ソースごとに経時的に表示します。これにより、新しく登録されたユーザーを取得する際の参照元のパフォーマンスを追跡できます。
 
 このレポートを [Report Builder](../../tutorials/using-visual-report-builder.md)、 **新規ユーザー** 指標（または時間の経過に伴う新規ユーザー数をカウントする同等の指標）を示します。 次に、以下の手順を実行します。
 
-1. を [!UICONTROL Time Period] を分析する登録期間に追加します。
-1. を [!UICONTROL Interval] から毎月
+1. を設定します。 [!UICONTROL Time Period] を、分析する登録期間に追加します。
+1. を設定します。 [!UICONTROL Interval] から毎月
 1. 設定 [!UICONTROL Group By] 獲得（または紹介）ソースを選択し、含めるソースを選択します。
 1. この例では、 `stacked columns` [!UICONTROL chart type].
 
@@ -50,8 +50,8 @@ ht-degree: 0%
 
 このレポートをReport Builderで作成するには、 **平均ライフタイム売上高** 指標をレポートに追加します。 次に、以下の手順を実行します。
 
-1. を [!UICONTROL Time Period] を分析する期間に追加します。
-1. を [!UICONTROL Interval] から毎月
+1. を設定します。 [!UICONTROL Time Period] を分析する期間に追加します。
+1. を設定します。 [!UICONTROL Interval] から毎月
    [!UICONTROL Group By] 獲得（または紹介）ソースを選択し、含めるソースを選択します。
 1. この例では、 `line chart` タイプ。
 
@@ -67,8 +67,8 @@ ht-degree: 0%
 
 このレポートをReport Builderで作成するには、 **平均注文額** 指標を選択し、次の操作を実行します。
 
-1. を [!UICONTROL Time Period] を分析する登録期間に追加します。
-1. を [!UICONTROL Time Interval] から毎月
+1. を設定します。 [!UICONTROL Time Period] を、分析する登録期間に追加します。
+1. を設定します。 [!UICONTROL Time Interval] から毎月
 1. 設定 [!UICONTROL Group By] 獲得（または紹介）ソースを選択し、含めるソースを選択します。
 1. この例では、 **積み重ね列** グラフのタイプ。
 
@@ -80,16 +80,16 @@ ht-degree: 0%
 
 先ほど説明した全期間売上高分析では、様々なソースから取得したユーザーの平均全期間売上高を調べることができますが、全期間売上高はどうなりますか？ このレポートでは、特定の期間および特定のソースから登録した全体的な売上高ユーザーが生み出す売上高を特定できます。
 
-このレポートをReport Builderで作成するには、 `Revenue by user registration date` 指標。 次の条件を満たしていない場合、 [この指標を作成しました](../../data-user/reports/ess-manage-data-metrics.md) 既に `Revenue` 指標を追加して、 `time stamp` ユーザーの `creation date`. 指標を追加した後、次の操作を行います。
+このレポートをReport Builderで作成するには、 `Revenue by user registration date` 指標。 次の条件を満たしていない場合、 [この指標を作成しました](../../data-user/reports/ess-manage-data-metrics.md) 既に、 `Revenue` 指標を追加して、 `time stamp` ユーザーの `creation date`. 指標を追加した後、次の操作を行います。
 
-1. を [!UICONTROL Time Period] を分析する登録期間に追加します。
-1. を [!UICONTROL Time Interval] から毎月
+1. を設定します。 [!UICONTROL Time Period] を、分析する登録期間に追加します。
+1. を設定します。 [!UICONTROL Time Interval] から毎月
 1. 設定 [!UICONTROL Group By] 獲得（または紹介）ソースを選択し、含めるソースを選択します。
 1. この例では、 `stacked columns` グラフのタイプ。
 
 以下に、視覚的なガイドを示します。
 
-![ユーザー登録日別合計売上高およびソースレポートの作成](../../assets/Revenue_by_user_registration_date_and_source.gif)
+![ユーザー登録日別合計売上高およびソースレポートの作成。](../../assets/Revenue_by_user_registration_date_and_source.gif)
 
 ## ユーザーソース別に注文を繰り返す {#repeatordersbysource}
 
@@ -97,8 +97,8 @@ ht-degree: 0%
 
 このレポートを [Report Builder](../../tutorials/using-visual-report-builder.md)、 **注文数** 指標を選択し、次の操作を実行します。
 
-1. を [!UICONTROL Time Period] を分析する登録期間に追加します。
-1. を [!UICONTROL Time Interval] から毎月
+1. を設定します。 [!UICONTROL Time Period] を、分析する登録期間に追加します。
+1. を設定します。 [!UICONTROL Time Interval] から毎月
 1. を追加します。 [!UICONTROL filter] 繰り返し注文を持つユーザーのみが含まれるように、次の手順に従います。
 
    1 より大きいユーザーの注文番号
@@ -108,7 +108,7 @@ ht-degree: 0%
 
 以下に、視覚的なガイドを示します。
 
-![ユーザーソース別の繰り返し注文レポートの作成](../../assets/Repeat_orders_by_user_source.gif)
+![ユーザーソース別の繰り返し注文レポートの作成。](../../assets/Repeat_orders_by_user_source.gif)
 
 
 ## 折り返し {#wrapup}

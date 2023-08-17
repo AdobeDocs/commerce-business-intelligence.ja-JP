@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者権限](../../administrator/user-management/user-management.md).
+>が必要 [管理者権限](../../administrator/user-management/user-management.md).
 
 1. クリック **[!DNL Manage Data** > **Filter Sets]** サイドバーに表示されます。
 
@@ -29,25 +29,25 @@ ht-degree: 0%
 
 1. フィルタリングする指標を含むテーブルを選択します。
 
-   例えば、 `Total number of orders` 指標を使用し、 `orders` テーブルを選択します。
+   例えば、 `Total number of orders` 指標を使用し、 `orders` テーブルを選択し、そのテーブルを選択します。
 
-1. 名前を `Filter Set`.
+1. に名前を付けます。 `Filter Set`.
 
 1. 関連するすべてのフィルターを追加します。
 
    例えば、「完了」ステータスの注文のみを `Total number of orders` 指標を使用する場合、ステータス= `complete`.
 
-1. フィルターロジックを検証し、括弧および演算子が正しく配置されていることを確認します。例： `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
+1. フィルターロジックを検証し、括弧と演算子が正しく配置されていることを確認します。例： `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
    誤ったフィルターは、多くの場合、 [!DNL Commerce Intelligence] レポートおよび期待される結果。
 
-1. 保存する `Filter Set`.
+1. を保存します。 `Filter Set`.
 
-フィルターセットを保存した後、同じテーブルを使用する任意の指標に適用できます。 例えば、 `Filter Set` の `orders` テーブルを *任意の指標* このテーブルに基づいて作成される `Revenue`.
+フィルターセットを保存した後、同じテーブルを使用する任意の指標に適用できます。 例えば、 `Filter Set` の `orders` テーブルを次に適用できます。 *任意の指標* このテーブルに基づいて作成される `Revenue`.
 
 >[!NOTE]
 >
->`Filter Sets` また、 [!DNL Commerce Intelligence]. フィルターセットを [!DNL Commerce Intelligence] を介して、サポートに連絡します。
+>`Filter Sets` また、 [!DNL Commerce Intelligence]. フィルターセットの適用を、 [!DNL Commerce Intelligence] を介して、サポートに連絡します。
 
 ## 関連
 

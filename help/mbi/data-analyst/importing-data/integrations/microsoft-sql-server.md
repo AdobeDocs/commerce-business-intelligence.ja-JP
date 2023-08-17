@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>が必要 [管理者権限](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/MicrosoftSQLServer-logo.png)
 
 このトピックでは、 [!DNL Microsoft SQL] データベースへ [!DNL Commerce Intelligence] 4 段階のプロセスで このプロセスには、サーバー接続と SQL に関する技術的な専門知識が必要です。また、チームの開発者のサポートが必要になる場合があります。
 
-[!DNL Commerce Intelligence] サポート [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure]、およびその他のほとんどのクラウドサーバープロバイダー。 特定のホストに関する質問がある場合は、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) この情報を提供して欲しいと頼む
+[!DNL Commerce Intelligence] サポート [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure]、およびその他のほとんどのクラウドサーバープロバイダー。 特定のホストに関する質問がある場合は、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) この情報を提供して欲しいと頼んでいる。
 
 システムは、データベースに対して SELECT クエリを実行する必要があります。 最初は、データベース構造のスナップショットを取得し、データを最新の状態に保つために定期的に時間がかかります。 更新は増分で、Adobeは更新の頻度と時間を制限して、サーバーへの不要な負荷を防ぎます。
 
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 1. ファイアウォールで、サーバーの専用 IP が接続できることを確認します。
 
-   サーバーへの接続に使用される IP アドレスは、 `Settings` ページ。
+   サーバーへの接続に使用される IP アドレスは、 `Settings` ページに貼り付けます。
 
-1. データベースサーバーへのログインに使用するユーザーを作成します。 2 つの選択肢があります。次のいずれか `UI` または経由 `query`:
+1. データベースサーバーへのログインに使用するユーザーを作成します。 次の 2 つのオプションがあります。 `UI` または経由 `query`:
    * `UI`
    * [`Query`](http://sqlserverplanet.com/security/add-user) （2 番目の例）
 
@@ -45,6 +45,6 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Add a Data Source]**.
 
-1. 選択して `Microsoft SQL` データベースにログインし、新しい `Connections` ページ。
+1. 接続を選択 `Microsoft SQL` データベースにログインし、新しい `Connections` ページに貼り付けます。
 
-   次を使用する場合： `Windows Azure`に値を指定する場合は、データベース名も指定する必要があります。
+   を使用している場合、 `Windows Azure`に値を指定する場合は、データベース名も指定する必要があります。

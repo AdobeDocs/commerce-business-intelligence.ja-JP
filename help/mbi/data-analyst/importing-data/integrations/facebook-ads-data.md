@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# 予測 [!DNL Facebook Ads] データ
+# 期待値 [!DNL Facebook Ads] データ
 
 次の条件が満たされた後 [接続済み [!DNL Facebook Ads] アカウント](../integrations/facebook-ads.md)を使用する場合、 [Data Warehouse管理](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 分析に関連するデータフィールドを容易に追跡する。
 
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 ### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
-次の表は、 [!DNL Facebook Ads] アカウント 列の内容 `campaign id`, `name`, `status (active/paused)`, `objective`.
+次の表は、 [!DNL Facebook Ads] アカウント。 列に含まれる値 `campaign id`, `name`, `status (active/paused)`, `objective`.
 
 ### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
-このテーブルレコードは、 [!DNL Facebook Ads] のセット [!DNL Facebook Ads] アカウント 広告を含む列 `Campaign id/name` 広告セットは、予算設定、入札タイプ、スケジュール設定およびオーディエンスのターゲティング情報に属します。
+このテーブルレコードは、 [!DNL Facebook Ads] のセット [!DNL Facebook Ads] アカウント。 広告を含む列 `Campaign id/name` 広告セットは、予算設定、入札タイプ、スケジュール設定およびオーディエンスのターゲティング情報に属します。
 
 ### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-このテーブルでは、 [!DNL Facebook Ads] アカウント 列には、広告が属する広告セットおよび広告キャンペーン、広告入札、広告のターゲティング、広告が使用する特定のクリエイティブ（画像/テキスト）への参照を含む広告情報が含まれます。
+このテーブルでは、 [!DNL Facebook Ads] アカウント。 列には、広告が属する広告セットおよび広告キャンペーン、広告入札、広告のターゲティング、広告が使用する特定のクリエイティブ（画像/テキスト）への参照を含む広告情報が含まれます。
 
 ### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 

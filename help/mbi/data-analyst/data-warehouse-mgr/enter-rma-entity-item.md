@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 | `rma\_entity\_id` | に関連付けられた外部キー `enterprise\_rma` 表。 |
 | `status` | 品目の返品のステータス。 値には、「received」、「pending」、「authorized」などが含まれます。 このステータスの値は、戻り値全体のステータスの値と一致しない場合があります。 |
 | `qty\_requested` | 顧客が返品を要求する数量。 |
-| `qty\_approved` | 返品の承認済数量。 |
+| `qty\_approved` | 返品の承認済み数量。 |
 | `qty\_returned` | 返された数量。 |
 | `order\_item\_id` | に関連付けられた外部キー `sales\_flat\_order\_item` 表。 |
 | `product\_sku` | 返される sku。 |
@@ -48,8 +48,8 @@ ht-degree: 0%
 
 | **指標名** | **説明** | **構築** |
 |---|---|---|
-| `Number of items returned` | 返される項目の数。 | 操作列：返された数量<br>操作：合計<br>タイムスタンプ列：リクエストされた返却日 |
-| `Returned items' total value` | 返された金額。 | 操作列：返品品目の合計値（返品数量*価格）<br>操作：合計<br>タイムスタンプ列：リクエストされた返却日 |
+| `Number of items returned` | 返される項目の数。 | 工程列：返品数量<br>操作：合計<br>タイムスタンプ列：リクエストされた返却日 |
+| `Returned items' total value` | 返された金額。 | 工程列：返品品目の合計値（返品数量*価格）<br>操作：合計<br>タイムスタンプ列：リクエストされた返却日 |
 
 {style="table-layout:auto"}
 

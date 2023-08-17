@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# 予測 [!DNL Google Analytics] データ
+# 期待値 [!DNL Google Analytics] データ
 
-接続後 [!DNL Google Analytics] 統合を使用すると、 [!DNL Google Analytics] 指標 *すぐに`Visual Report Builder`*. 次に `Visual Report Builder`をクリックした場合、 **[!UICONTROL Add a Metric]**( [!DNL Google Analytics] プロファイルは、Data Warehouseの指標のすぐ下にドロップダウンに表示されます。
+接続後、 [!DNL Google Analytics] 統合を使用すると、 [!DNL Google Analytics] 指標 *すぐに`Visual Report Builder`*. 次の項目に `Visual Report Builder`をクリックした場合、 **[!UICONTROL Add a Metric]**( [!DNL Google Analytics] プロファイルは、Data Warehouseの指標のすぐ下にドロップダウンに表示されます。
 
-この [!DNL Google Analytics] 統合は *live*  — つまり、 `Report Builder` からデータをリクエスト [!DNL Google Analytics] *即時* レポートに指標を追加する場合。 また、アクセスできる指標は、 [!DNL Google Analytics]を参照し、これらの値が *倉庫に入った* の [!DNL Commerce Intelligence] アカウント — レポートにのみ視覚的に表示されます。
+The [!DNL Google Analytics] 統合は、 *live*  — つまり、 `Report Builder` からデータをリクエスト [!DNL Google Analytics] *即時* レポートに指標を追加する場合。 また、アクセスできる指標は、 [!DNL Google Analytics]を参照し、これらの値が *倉庫に入った* の [!DNL Commerce Intelligence] アカウント — レポートにのみ視覚的に表示されます。
 
 +++サポートされる指標とDimension(Google Analytics3 または Universal Analytics)
 

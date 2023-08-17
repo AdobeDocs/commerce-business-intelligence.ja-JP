@@ -39,7 +39,7 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Create Dashboard]**. 次に、以下の手順を実行します。
 
-   * を入力します。 `Name` をダッシュボードに追加します。
+   * を入力します。 `Name` 」をダッシュボードに追加します。
 
    * を作成するには、以下を実行します。 `Group` 「ダッシュボード」に、グループの名前を入力します。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
    ![Report Builderオプション](../../assets/magento-bi-report-builder.png)
 
-## ダッシュボードでの項目の配置
+## ダッシュボード上での項目の配置
 
 * グラフまたはレポートのサイズを変更するには、右下隅を新しいサイズにドラッグします。
 
@@ -87,7 +87,7 @@ In **[!DNL Manage Data** > **Dashboards]**&#x200B;を使用すると、自分が
 
 ### 共有ダッシュボードへのアクセス {#accessshared}
 
-*管理者または標準ユーザーの場合* 共有ダッシュボードをアカウントに追加する場合は、 **[!UICONTROL Dashboard Options]** をクリックし、 **[!UICONTROL Find]** 」と入力します。
+*管理者または標準ユーザーの場合は次のようにします。* 共有ダッシュボードをアカウントに追加する場合は、「 **[!UICONTROL Dashboard Options]** をクリックし、 **[!UICONTROL Find]** 」と入力します。
 
 ![ダッシュボードを検索](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
 

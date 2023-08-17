@@ -1,5 +1,5 @@
 ---
-title: Pro 向けの予想ライフタイム値 (LTV) 分析
+title: Pro 向けの期待されるライフタイム値 (LTV) 分析
 description: 顧客のライフタイムバリューの増加と、顧客の予想されるライフタイムバリューを理解するのに役立つダッシュボードを設定する方法を説明します。
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
 role: Admin, User
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
-この分析は、Pro アカウントのお客様が新しいアーキテクチャでのみ利用できます。 アカウントが `Persistent Views` の下の機能 `Manage Data` サイドバーを使用すると、新しいアーキテクチャに移行し、ここに示す手順に従って自分でこの分析を構築できます。
+この分析は、Pro アカウントのお客様が新しいアーキテクチャでのみ利用できます。 アカウントが `Persistent Views` の下の特集 `Manage Data` サイドバーを使用すると、新しいアーキテクチャに移行し、ここに示す手順に従って自分でこの分析を構築できます。
 
 使用を開始する前に、 [コホートレポートビルダー。](../dev-reports/cohort-rpt-bldr.md)
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 * [!UICONTROL Column type]: `Same Table`
 * 
   [!UICONTROL Column equation]: `CALCULATION`
-* [!UICONTROL Column input]:A = `Seconds between customer's first order date and this order`
+* [!UICONTROL Column input]: A = `Seconds between customer's first order date and this order`
 * 
   [!UICONTROL Datatype]: `Integer`
 * **定義：**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
@@ -38,7 +38,7 @@ ht-degree: 0%
 * [!UICONTROL Column type]: `Same Table`
 * 
   [!UICONTROL Column equation]: `CALCULATION`
-* [!UICONTROL Column input]:A = `created_at`
+* [!UICONTROL Column input]: A = `created_at`
 * 
   [!UICONTROL Datatype]: `Integer`
 * 定義： `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
@@ -70,7 +70,7 @@ ht-degree: 0%
 * [!UICONTROL Column type]: `Same Table`
 * 
   [!UICONTROL Column equation]: `CALCULATION`
-* [!UICONTROL Column input]:A = `created_at`
+* [!UICONTROL Column input]: A = `created_at`
 * 
   [!UICONTROL Datatype]: `String`
 * 定義： `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
@@ -81,17 +81,17 @@ ht-degree: 0%
 
 作成する指標
 
-* **初回注文日別ユニーク顧客**
+* **初回注文日別のユニーク顧客**
    * ゲストによる注文を有効にする場合は、 `customer_email`
 
-* 内 **`orders`** 表
-* この指標では **ユニーク値をカウント**
-* の **`customer_id`** 列
-* 発注元： **`Customer's first order date`** timestamp
+* Adobe Analytics の **`orders`** 表
+* この指標では **個別の値をカウント**
+* 次の日： **`customer_id`** 列
+* 並べ替え元 **`Customer's first order date`** timestamp
 
 >[!NOTE]
 >
->必ず [すべての新しい列を指標のディメンションとして追加](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に
+>必ず [すべての新しい列を指標のディメンションとして追加](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に。
 
 ## レポート
 
@@ -130,7 +130,7 @@ ht-degree: 0%
 * [!UICONTROL Time period]: `All time`
 * 時間間隔： `None`
 * [!UICONTROL Group by]: `Calendar months between first order and this order`  — すべてを表示
-* を `group by` の `All time customers` 非依存指標は、 `group by`
+* 次を変更： `group by` （の） `All time customers` 非依存指標は、 `group by`
 * を編集します。 `Show top/bottom` フィールドには次の情報が含まれます。
    * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
    * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
@@ -154,4 +154,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、ページ上部の画像のようになる場合があります。
 
-この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

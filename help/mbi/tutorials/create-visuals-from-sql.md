@@ -15,31 +15,31 @@ ht-degree: 0%
 
 このチュートリアルの目的は、 [!DNL SQL Report Builder] を作成するための確固たる基盤を提供します。 `SQL visualizations`.
 
-この [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) は、次のオプションを含む Report Builder です。クエリは、データのテーブルを取得する目的でのみ実行できます。また、その結果をレポートに変換することもできます。 このチュートリアルでは、SQL クエリからビジュアライゼーションを作成する方法を説明します。
+The [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) は、オプションを備えた report builder です。クエリを実行してデータのテーブルを取得するだけで済みます。また、その結果をレポートに変換することもできます。 このチュートリアルでは、SQL クエリからビジュアライゼーションを作成する方法を説明します。
 
 ## 用語
 
 このチュートリアルを開始する前に、 `SQL Report Builder`.
 
-- `Series`:測定する列は、SQLReport Builderでは「系列」と呼ばれます。 一般的な例は次のとおりです。 `revenue`, `items sold`、および `marketing spend`. 1 つ以上の列を `Series` をクリックして、ビジュアライゼーションを作成します。
+- `Series`：測定する列は、SQLReport Builderでは「シリーズ」と呼ばれます。 一般的な例は次のとおりです。 `revenue`, `items sold`、および `marketing spend`. 1 つ以上の列を `Series` をクリックして、ビジュアライゼーションを作成します。
 
-- `Category`:データのセグメント化に使用する列は、 `Category` これは、 `Group By` の機能 [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). 例えば、顧客の全期間売上高を獲得ソース別にセグメント化する場合、獲得ソースを含む列は `Category`. 複数の列を `Category`.
+- `Category`：データのセグメント化に使用する列は、 `Category` これは、 `Group By` の機能 [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). 例えば、顧客の全期間売上高を獲得ソース別にセグメント化する場合、獲得ソースを含む列は `Category`. 複数の列を `Category`.
 
 >[!NOTE]
 >
 >日付とタイムスタンプは `Categories`. これらはクエリ内のデータの別の列であり、クエリ自体で必要に応じて書式設定および並べ替える必要があります。
 
-- `Labels`:これらは X 軸のラベルとして適用されます。 経時的にデータトレンドを分析する場合、年と月の列をラベルとして指定します。 複数の列をラベルに設定できます。
+- `Labels`:X 軸のラベルとして適用されます。 経時的にデータトレンドを分析する場合、年と月の列をラベルとして指定します。 複数の列をラベルに設定できます。
 
-## 手順 1:クエリを記述
+## 手順 1：クエリを作成する
 
 次の点に注意してください。
 
-- この [!DNL SQL Report Builder] uses [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
+- The [!DNL SQL Report Builder] uses [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
 
 - 時系列を含むレポートを作成する場合は、必ず `ORDER BY` タイムスタンプ列。 これにより、タイムスタンプがレポート上で適切な順序でプロットされます。
 
-- この `EXTRACT` 関数は、タイムスタンプの日、週、月または年を解析するために使用するのに最適です。 これは、 `time interval` レポートに使用するのは、 `daily`, `weekly`, `monthly`または `yearly`.
+- The `EXTRACT` 関数は、タイムスタンプの日、週、月または年を解析するために使用するのに最適です。 これは、 `time interval` レポートに使用するのは、 `daily`, `weekly`, `monthly`または `yearly`.
 
 利用を開始するには、 [!DNL SQL Report Builder] クリックして **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
@@ -60,9 +60,9 @@ ht-degree: 0%
 
 ![](../assets/SQL_results_table.png)
 
-## 手順 2:ビジュアライゼーションの作成
+## 手順 2：ビジュアライゼーションの作成
 
-この結果では、 *ビジュアライゼーションを作成する方法を教えてください。* 開始するには、 **[!UICONTROL Chart]** 」タブをクリックします。 `Results` ウィンドウ これにより、 `Chart settings` タブをクリックします。
+この結果では、 *ビジュアライゼーションを作成する方法を教えてください。* 使用を開始するには、 **[!UICONTROL Chart]** 」タブをクリックします。 `Results` ウィンドウ これにより、 `Chart settings` タブをクリックします。
 
 クエリを最初に実行したとき、クエリ内のすべての列が一連としてプロットされるので、レポートは不可確に見える場合があります。
 
@@ -70,11 +70,11 @@ ht-degree: 0%
 
 この例では、経時的なトレンドを示す折れ線グラフを使用します。 作成するには、次の設定を使用します。
 
-- `Series`:を選択します。 `Items sold` 列を `Series` 測定したいので 次に `Series` 列には、レポートに 1 行がプロットされます。
+- `Series`：を選択します。 `Items sold` 列を `Series` 測定したいので 次に、 `Series` 列には、レポートに 1 行がプロットされます。
 
-- `Category`:この例では、各製品を別々の行としてレポートに表示します。 これをおこなうには、 `Product name` を `Category`.
+- `Category`：この例では、各製品を別々の行としてレポートに表示します。 これをおこなうには、 `Product name` として `Category`.
 
-- `Labels`:列を使用 `year` および `month` x 軸のラベルとして表示 `Items Sold` 経時的にトレンドを示す
+- `Labels`：列を使用します。 `year` および `month` x 軸のラベルとして表示可能 `Items Sold` 経時的にトレンドを示します。
 
 >[!NOTE]
 >
@@ -84,17 +84,17 @@ ht-degree: 0%
 
 ![](../assets/SQL_report_settings.gif)
 
-## 手順 3:を選択します。 `Chart Type`
+## 手順 3: `Chart Type`
 
 この例では、 `Line` グラフのタイプ。 別の `chart type`をクリックし、グラフオプションセクションの上にあるアイコンをクリックして変更します。
 
 ![](../assets/Chart_types.png)
 
-## 手順 4:ビジュアライゼーションの保存
+## 手順 4：ビジュアライゼーションの保存
 
 このレポートを再度使用する場合は、レポートに名前を付け、 **[!UICONTROL Save]** をクリックします。
 
-ドロップダウンで、 `Chart` を `Type` 次に、レポートの保存先のダッシュボードを開きます。
+ドロップダウンで、「 」を選択します。 `Chart` として `Type` 次に、レポートの保存先のダッシュボードを開きます。
 
 ## 折り返し
 

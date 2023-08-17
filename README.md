@@ -2,7 +2,7 @@
 source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 # 記事の投稿
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ## Adobeオープンソース行動規範
 
-このプロジェクトでは、 [Adobeオープンソース行動規範](../code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct). 詳しくは、 [貢献](../contributing.md) トピック。
+このプロジェクトでは、[アドビオープンソース行動規範](../code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct)を採用しています。詳しくは、 [貢献](../contributing.md) トピック。
 
 ## Adobeコンテンツへの投稿について
 
 詳しくは、 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
-投稿方法は、投稿者と、投稿する変更の種類によって異なります。
+投稿方法は、投稿者と、投稿する変更の種類に応じて異なります。
 
 ### 軽微な変更
 
@@ -56,5 +56,5 @@ Adobe Experience Cloudソリューションの製品チームのテクニカル�
 
 公開リポジトリでは、プルリクエストに自動ラベルが割り当てられ、プルリクエストのワークフローを管理したり、プルリクエストの処理状況を知らせたりできます。
 
-* **変更が作成者に送信されました**:保留中のプル要求について作成者に通知されました。
-* **ready-to-merge**:プルリクエストレビューチームによるレビューの準備が整いました。
+* **変更が作成者に送信されました**：保留中のプル要求について作成者に通知されました。
+* **ready-to-merge**：プルリクエストレビューチームによるレビューの準備ができました。

@@ -14,7 +14,7 @@ ht-degree: 0%
 # 新しい [!DNL Adobe Commercer Intelligence] ユーザー
 
 1. 右上隅で会社の名前をクリックし、「 」を選択します。 **[!UICONTROL Invite User]** をドロップダウンから選択します。
-1. ユーザー名と E メールを入力します。
+1. ユーザーの名前と E メールを入力します。
 1. ユーザーの **[!UICONTROL general permission level]**: `Admin`, `Standard`または `Read Only`.
 1. この新しいユーザーが、 **[!UICONTROL billing]** または **[!UICONTROL technical]** の問題を修正するには、該当するボックスをオンにします。
 
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->各アカウントには、契約済みのライセンス数（シート数）があります。 制限に達した場合や、詳細を知りたい場合は、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>各アカウントには、契約済みのライセンス数（シート数）があります。 制限に達した場合や、より多くの情報を知りたい場合は、 [サポートチケットを提出する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

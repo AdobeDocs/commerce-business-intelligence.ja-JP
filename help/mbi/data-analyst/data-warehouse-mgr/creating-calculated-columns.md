@@ -15,17 +15,17 @@ ht-degree: 0%
 
 データを分析する場合、様々なソースのデータを統合すると便利です。 獲得ソース別に売上高をグループ化し、 `orders` 表と [!DNL Google Analytics] データ？ 顧客の性別別で売上高をグループ化したり、顧客属性をトランザクションデータに結合してセグメント化したい場合があります。 このトピックでは、それを行う方法について説明します。
 
-開始する前に、Adobeでは、 [計算列タイプガイド](../../data-analyst/data-warehouse-mgr/calc-column-types.md) を参照してください。
+Adobeでは、まず [計算列タイプガイド](../../data-analyst/data-warehouse-mgr/calc-column-types.md) を参照してください。
 
 1. 利用を開始するには、 **[!DNL Manage Data > Data Warehouse]**.
 
-1. 列を作成するテーブルをクリックします。 例えば、 `Customer Gender` 列で「 `sales_flat_order` 表。
+1. 列を作成するテーブルをクリックします。 例えば、 `Customer Gender` 列で「売上高」を選択し、 `sales_flat_order` 表。
 
 1. テーブルスキームが表示されます。 クリック **[!UICONTROL Create New Column]**.
 
 1. 列に名前を付けます。 例： `Customer Gender`.
 
-1. 列の定義を選択します。 ここで、 [計算列のタイプガイド](../data-warehouse-mgr/calc-column-types.md) 便利だ！
+1. 列の定義を選択します。 ここで、 [計算列のタイプガイド](../data-warehouse-mgr/calc-column-types.md) 役に立つ！
 
 1. 特定のタイプの列では、列を正しく作成するために、もう少し情報が必要です。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 * 終了したら、 **[!UICONTROL Save]**.
 
-新しい列は、現在のテーブルに `Pending` ステータス。 次の更新が完了したら、列を指標およびレポートで使用できるようになります。
+新しい列が現在のテーブルに表示され、 `Pending` ステータス。 次の更新が完了したら、列を指標およびレポートで使用できるようになります。
 
 ## ハンディリファレンスマップ {#map}
 

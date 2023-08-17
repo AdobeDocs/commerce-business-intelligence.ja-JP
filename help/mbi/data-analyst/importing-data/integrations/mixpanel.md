@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>が必要 [管理者権限](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/Mixpanel_logo.png)
 
@@ -24,14 +24,14 @@ ht-degree: 0%
 接続 [!DNL Mixpanel] データを [!DNL Commerce Intelligence] 簡単な 3 ステップのプロセス：
 
 1. [を開きます。 [!DNL Mixpanel] 認証情報ページ [!DNL Commerce Intelligence]](#stepone)
-1. [を [!DNL Mixpanel] API 資格情報](#steptwo)
-1. [を入力します。 [!DNL Mixpanel] の API 資格情報 [!DNL Commerce Intelligence]](#stepthree)
+1. [を取得する [!DNL Mixpanel] API 資格情報](#steptwo)
+1. [を入力します。 [!DNL Mixpanel] での API 資格情報 [!DNL Commerce Intelligence]](#stepthree)
 
-このプロセスを完了するには、2 つのブラウザーウィンドウまたはタブを開く必要があります (1 つは [!DNL Commerce Intelligence] そしてもう一つは君の [!DNL Mixpanel] アカウント
+このプロセスを完了するには、2 つのブラウザーウィンドウまたはタブを開く必要があります (1 つは [!DNL Commerce Intelligence] そしてもう一つは君の [!DNL Mixpanel] アカウント。
 
 ## を開く [!DNL Mixpanel] 資格情報ページ {#stepone}
 
-はじめに：
+基本を学ぶ:
 
 1. 次に移動： `Connections` 下のページ **[!DNL Manage Data** > **Connections]**.
 
@@ -39,11 +39,11 @@ ht-degree: 0%
 
 1. 次をクリック： [!DNL Mixpanel] アイコンと資格情報ページが開きます。
 
-このページを開いたまま、 [!DNL Mixpanel] アカウント
+このページは開いたままにし、 [!DNL Mixpanel] アカウント。
 
 ## の取得 [!DNL Mixpanel] API 資格情報 {#steptwo}
 
-まだ [!DNL Mixpanel] アカウントを作成し、次の手順を実行します。
+ログインしていない場合は、 [!DNL Mixpanel] アカウントを作成し、次の手順を実行します。
 
 1. クリック **[!UICONTROL Account]** をクリックします。
 
@@ -53,16 +53,16 @@ ht-degree: 0%
 
 ![Mixpanel API 資格情報の取得](../../../assets/Mixpanel_API_creds.png)
 
-これを開いたままにしておく必要があります。
+これを開いたままにしておくと、これをまとめる必要があります。
 
-## 入力 [!DNL Mixpanel] の API 資格情報 [!DNL Commerce Intelligence] {#stepthree}
+## 次の項目に入ります： [!DNL Mixpanel] での API 資格情報 [!DNL Commerce Intelligence] {#stepthree}
 
-1. を `API Key` および `Secret` に [!DNL Mixpanel] 認証情報ページ [!DNL Commerce Intelligence].
+1. をコピーします。 `API Key` および `Secret` に [!DNL Mixpanel] 認証情報ページ [!DNL Commerce Intelligence].
 1. クリック **[!UICONTROL Connect to Mixpanel]** をクリックして設定を完了します。
 
 接続に成功した場合、 _成功！_ メッセージがページの上部に表示されます。
 
 ### 関連
 
-* [予測 [!DNL Mixpanel] データ](../integrations/mixpanel-data.md)
+* [期待値 [!DNL Mixpanel] データ](../integrations/mixpanel-data.md)
 * [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

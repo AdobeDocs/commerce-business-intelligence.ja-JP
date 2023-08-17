@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # SQL クエリの最適化
 
-この [!DNL SQL Report Builder] を使用すると、任意の時点でこれらのクエリをクエリし、繰り返し実行できます。 これは、更新が必要な列やレポートを確認する前に、更新サイクルが完了するのを待たずにクエリを変更する必要がある場合に役立ちます。
+The [!DNL SQL Report Builder] を使用すると、任意の時点でこれらのクエリをクエリし、繰り返し実行できます。 これは、更新が必要な列やレポートを確認する前に、更新サイクルが完了するのを待たずにクエリを変更する必要がある場合に役立ちます。
 
-クエリを実行する前に、 [[!DNL Commerce Intelligence] 費用を見積もる](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). コストでは、クエリの実行に必要な時間とリソースの数が考慮されます。 そのコストが高すぎると見なされた場合、または返される行の数が [!DNL Commerce Intelligence] 制限を満たさない場合、クエリは失敗します。 のクエリ [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用すると、可能な限り効率的なクエリを記述できます。Adobeでは、次の操作をお勧めします。
+クエリを実行する前に、 [[!DNL Commerce Intelligence] 費用を見積もる](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). コストでは、クエリの実行に必要な時間とリソースの数が考慮されます。 そのコストが高すぎると見なされた場合、または返される行の数が [!DNL Commerce Intelligence] 制限を満たさない場合、クエリは失敗します。 を照会する場合 [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用すると、可能な限り効率的なクエリを記述できます。Adobeでは、次の操作をお勧めします。
 
 ## SELECT またはすべての列の選択の使用
 
@@ -67,15 +67,15 @@ FULL OUTER JOIN クエリを書き換える方法を見てみましょう。
 
 クエリを記述する際は、可能な限り「低コスト」の演算子を使用することを検討してください。 各クエリには計算コストがかかり、クエリを構成する関数、演算子、フィルターによって決まります。 一部の演算子は、必要な計算作業が少なく、他の演算子よりもコストが低くなります。
 
-比較演算子（>、&lt;、=など）は最もコストが低く、その後に [例： と POSIX 演算子に類似](https://www.postgresql.org/docs/9.5/functions-matching.html) これは最も高価な演算子です。
+比較演算子（>、&lt;、=など）は最もコストが低く、その後に [いいね。 と POSIX 演算子に類似](https://www.postgresql.org/docs/9.5/functions-matching.html) これは最も高価な演算子です。
 
 ## EXISTS と IN の使用
 
 使用 `EXISTS` 対比 `IN` 返す結果のタイプに応じて異なります。 1 つの値のみを使用する場合は、 `EXISTS` 代わりに節を使う `IN`. `IN` は、コンマ区切り値のリストと共に使用され、クエリの計算コストが増加します。
 
-条件 `IN` クエリを実行する場合、まずサブクエリ ( `IN` ステートメント ) を使用し、 `IN` 文。 `EXISTS` は、クエリを複数回実行する必要がないので、はるかに効率的です。クエリで指定した関係を確認する際に、true または false 値が返されます。
+条件 `IN` クエリを実行する場合、まずサブクエリ ( `IN` ステートメント ) を使用し、 `IN` ステートメント。 `EXISTS` は、クエリを複数回実行する必要がないので、はるかに効率的です。クエリで指定した関係を確認する際に、true または false 値が返されます。
 
-簡単に言うと、使用時にシステムが処理する必要はありません `EXISTS`.
+簡単に言えば、システムは、 `EXISTS`.
 
 | **この代わりに…** | **やってみて！** |
 |-----|-----|
@@ -87,7 +87,7 @@ FULL OUTER JOIN クエリを書き換える方法を見てみましょう。
 
 `ORDER BY` は SQL の高価な関数で、クエリのコストを大幅に引き上げることができます。 クエリの EXPLAIN コストが高すぎるというエラーメッセージが表示された場合は、 `ORDER BY`をクエリから削除する必要があります（必要な場合）。
 
-とは言えません。 `ORDER BY` は使用できません。必要な場合にのみ使用する必要があります。
+とは言えません。 `ORDER BY` は使用できません。必要な場合にのみ使用する必要があるからです。
 
 ## GROUP BY と ORDER BY の使用
 
@@ -101,4 +101,4 @@ FULL OUTER JOIN クエリを書き換える方法を見てみましょう。
 
 ## 折り返し
 
-SQL の書き方を学ぶ最も良い方法は、試行錯誤を通じてです。 最適なレポートを見つけるには、SQL エディターのみを使用していくつかのレポートを再作成してみてください。
+SQL の書き方を学ぶ最も良い方法は、試行錯誤を通じてです。 最適なレポートを見つけるには、SQL エディターのみを使用して、いくつかのレポートを再作成してみてください。

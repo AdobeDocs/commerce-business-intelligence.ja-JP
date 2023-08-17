@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者権限](../../administrator/user-management/user-management.md).
+>が必要 [管理者権限](../../administrator/user-management/user-management.md).
 
 ディメンションは、指標と同じテーブル内のフィールドで、その指標に基づいてグラフのフィルタリングやセグメント化に使用できます。 例えば、売上高指標には、市区町村、都道府県、国、注文のステータス、クーポンコード、その他のタイプのディメンションを含めることができます。
 
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 1. ディメンションを含むテーブルを選択します。
 
-1. 内 `Choose Metric(s) to Add Dimensions` 列で、ディメンションを追加する指標を選択します。 選択した後、 `Choose Dimensions to Add` 列が右側に表示されます。 選択した指標に追加するディメンションを確認します。
+1. Adobe Analytics の `Choose Metric(s) to Add Dimensions` 列で、ディメンションを追加する指標を選択します。 選択した後、 `Choose Dimensions to Add` 列が右側に表示されます。 選択した指標に追加するディメンションを確認します。
 
    ![](../../assets/Add_Dimensions.png)
 
-1. レポート上の任意のデータディメンションでセグメント化またはグループ化する場合は、次のように指定します _グループ化可能_.
+1. レポート上の任意のデータディメンションでセグメント化またはグループ化する場合は、次のように指定します。 _グループ化可能_.
 
 1. クリック **[!UICONTROL Add]**.
 
@@ -61,11 +61,11 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Edit]** 新しいディメンションを追加する指標です。
 
-1. 内 `Dimensions` セクションで、 `Add a dimension` 追加するディメンションを選択するドロップダウン。
+1. Adobe Analytics の `Dimensions` セクションで、 `Add a dimension` 追加するディメンションを選択するドロップダウン。
 
 >[!NOTE]
 >
->フィルターまたはグループ化に使用するディメンションは、で既に追跡されている必要があります。 [!DNL Commerce Intelligence]. 目的のディメンションが見つからない場合は、 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページ。
+>フィルターまたはグループ化に使用するディメンションは、で既に追跡されている必要があります。 [!DNL Commerce Intelligence]. 目的のディメンションが見つからない場合は、データベースで、 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページに貼り付けます。
 
 
 **指標からディメンションを削除するには：**
@@ -74,11 +74,11 @@ ht-degree: 0%
 
 1. クリック **[!UICONTROL Edit]** 新しいディメンションを追加する指標です。
 
-1. 以下 `Dimensions` セクションで、削除するディメンションの横にある削除列のチェックボックスを選択します。
+1. の下 `Dimensions` セクションで、削除するディメンションの横にある削除列のチェックボックスをオンにします。
 
 >[!NOTE]
 >
->ディメンションを削除しても、そのディメンションはData Warehouseのテーブルの列として存在します。 任意の指標にその指標を再度追加し、これらのディメンションを使用して新しい指標を作成できます。 ディメンションが対応するデータ列をから削除するには [!DNL Commerce Intelligence]を使用する場合は、 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページ。
+>ディメンションを削除しても、そのディメンションはData Warehouseのテーブルの列として存在します。 任意の指標にその指標を再度追加し、これらのディメンションを使用して新しい指標を作成できます。 ディメンションが対応するデータ列をから削除するには [!DNL Commerce Intelligence]を使用する場合は、 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページに貼り付けます。
 
 ## 関連ドキュメント
 

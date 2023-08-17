@@ -17,6 +17,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->グラフの削除は、 [削除](../../data-user/dashboards/delete-chart.md). また、 [グラフはダッシュボードに読み取ることができます](../../data-user/dashboards/add-charts-dashboard.md) いつでも
+>グラフの削除は、 [削除する](../../data-user/dashboards/delete-chart.md). また、 [グラフはダッシュボードに読み取ることができます](../../data-user/dashboards/add-charts-dashboard.md) いつでも
 
 ![グラフを削除](../../assets/Removing_Charts_from_Dashboards.gif)

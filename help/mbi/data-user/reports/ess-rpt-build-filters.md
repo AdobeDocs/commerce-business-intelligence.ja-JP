@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # フィルター
 
-1 つ以上のフィルターを追加して、レポートの作成に使用するデータを制限できます。 各フィルターは、関連付けられたテーブルの列、演算子、値を含む式です。 例えば、リピート顧客のみを含めるには、複数の注文をした顧客のみを含むフィルターを作成します。 論理 `AND/OR` 演算子を使用して、レポートにロジックを追加できます。
+1 つ以上のフィルターを追加して、レポートの作成に使用するデータを制限できます。 各フィルターは、関連付けられたテーブルの列、演算子、値を含む式です。 例えば、リピート顧客のみを含めるには、複数の注文をした顧客のみを含むフィルターを作成します。 複数のフィルターを論理 `AND/OR` 演算子を使用して、レポートにロジックを追加できます。
 
 >[!TIP]
 >
@@ -43,13 +43,13 @@ ht-degree: 0%
 
    * フィルターの 2 番目の部分をクリックし、演算子を選択します。
 
-     ![演算子を選択](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![演算子を選択します。](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * フィルターの 3 番目の部分に、式を完了するために必要な値を入力します。
 
      ![値を入力](../../assets/magento-bi-report-builder-filter-part3.png)
 
-   * フィルターが完了したら、 **[!UICONTROL Apply]**.
+   * フィルターが完了したら、「 **[!UICONTROL Apply]**.
 
      レポートにリピート客のみが含まれるようになり、レポートに対して取得した顧客レコードの数が 33,000 から 12,600 に減りました。
 
@@ -63,8 +63,8 @@ ht-degree: 0%
 
    ![累積パースペクティブ](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
 
-   この `Cumulative` パースペクティブは、月ごとのぼかしやぼかしを表示するのではなく、時間の経過と共に変化を分布します。
+   The `Cumulative` パースペクティブは、月ごとのぼかしやぼかしを表示するのではなく、時間の経過と共に変化を分布します。
 
-1. を入力します。 `Title` をクリックします。 **[!UICONTROL Save]** それは `Chart` をダッシュボードに追加します。
+1. を入力します。 `Title` をクリックします。 **[!UICONTROL Save]** it as a `Chart` をダッシュボードに追加します。
 
    ![ダッシュボードに保存](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

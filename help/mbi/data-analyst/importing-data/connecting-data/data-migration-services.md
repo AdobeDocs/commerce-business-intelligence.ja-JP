@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # データ移行
 
-新しいデータベーススキーマ、サーバー、またはレポートデータベースへの移行に多くのストレスがかかることはありません。 この [[!DNL Adobe] サービスチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) は、移行支援を提供します。
+新しいデータベーススキーマ、サーバー、またはレポートデータベースへの移行に多くのストレスがかかることはありません。 The [[!DNL Adobe] サービスチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) は、移行支援を提供します。
 
 移行をできるだけスムーズにおこなうには、移行リクエストを送信する際に、できるだけ詳しくおこなう必要があります。 このトピックには、リクエストを送信し、移行を開始するために必要なすべてが含まれています。 お客様のニーズの包括的な全体像を提供することで、お客様のプロジェクトが適切に範囲を定め、見積もりが正確になることが保証されます。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 * **すべての履歴データは新しいデータベースに存在しますか。それとも、移行する必要がありますか。** 移行プロセス中に、履歴データと新しいデータを統合できます。 統合が必要ない場合でも、お客様のリクエストでお知らせください。
 
-上記の回答を得たら、移行のタイプを知っておく必要があります。 新しいデータベースに [`same`](#sameschema) スキーマ、または [`different`](#newschema) スキーマ？ 以下のディスカッションでは、各移行タイプの詳細な手順を確認します。
+上記の回答を得たら、移行のタイプを知っておく必要があります。 新しいデータベースに [`same`](#sameschema) スキーマにするか、 [`different`](#newschema) スキーマ？ 以下のディスカッションでは、各移行タイプに関する詳細な手順を確認します。
 
 ## 同じスキーマを持つ新しいデータベースへの移行 {#sameschema}
 
@@ -45,13 +45,13 @@ ht-degree: 0%
 
 照合を自分でおこなうことが快適な場合は、次の手順に従い、完了したスプレッドシートをリクエストに添付します。
 
-1. Data Warehouse(**[!UICONTROL Manage Data** > **Data Warehouse]**) をクリックします。
+1. DATA WAREHOUSE(**[!UICONTROL Manage Data** > **Data Warehouse]**) をクリックします。
 
 1. スプレッドシートで、新しいデータベースに移行する各テーブルのタブを作成します。
 
 1. 各タブで、移行する必要のある既存の列すべてに対して列を作成します。 Adobeは、 `Existing column name`.
 
-1. また、スプレッドシートの各タブで、新しいデータベースの列と同等の列に別の列を作成する必要があります。 Adobeは、列に次のような名前を付けることをお勧めします `New column name`.
+1. また、スプレッドシートの各タブで、新しいデータベースの列と同等の列に別の列を作成する必要があります。 Adobeは、列に次のような名前を付けることをお勧めします。 `New column name`.
 
 1. 既存の列とそれに相当する列を入力します。 既存の列に新しい同等の列がない場合は、「 `N/A`.
 
@@ -65,9 +65,9 @@ ht-degree: 0%
 >
 >特定のデータ列に、新しいデータベース内に同等の列がない場合、プロセス内で特定の分析が失われる可能性があります。
 
-## リクエストの送信方法 {#submitreq}
+## リクエストを送信する方法を教えてください。 {#submitreq}
 
-次の手順で弊社に連絡できます： [サポートリクエストの送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+次の手順で当社に連絡を取ることができます： [サポートリクエストの送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 前のセクションの手順に従って、列マッチングスプレッドシートを作成した場合は、必ず添付してください。
 

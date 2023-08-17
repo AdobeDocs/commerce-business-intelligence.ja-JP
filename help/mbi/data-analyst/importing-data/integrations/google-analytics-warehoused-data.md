@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# 予測 [!DNL Google Analytics Warehoused] データ
+# 期待値 [!DNL Google Analytics Warehoused] データ
 
 >[!NOTE]
 >
->必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>が必要 [管理者権限](../../../administrator/user-management/user-management.md).
 
 >[!NOTE]
 >
 >一部の情報は、次の場所であなたの友人から許可を得て使用されました： [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
 
-[!DNL Google Analytics Warehoused] 統合 [!DNL Commerce Intelligence] は [!DNL Google Analytics] [コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
+[!DNL Google Analytics Warehoused] の統合 [!DNL Commerce Intelligence] は [!DNL Google Analytics] [コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
 
 >[!NOTE]
 >
@@ -43,10 +43,10 @@ ht-degree: 0%
 | `\_id` | この列は `primary key`. |
 | `\_rjm\_record\_hash` | [!DNL Commerce Intelligence] 一意の ID。 この列は次のユーザーによって作成されます： [!DNL Commerce Intelligence]. |
 | `\_updated\_at` | この列には、データ行が最後に更新された日時が含まれます。 この列は次のユーザーによって作成されます： [!DNL Commerce Intelligence]. |
-| `start-date` | 行の対象日を示す ID。 |
-| `end-date` | 行の対象日を示す ID。 |
-| `month` | 選択したディメンション：セッションの月で、01 ～ 12 の 2 桁の整数。 |
-| `users` | 選択した指標：リクエストされた期間のユーザーの合計数。 |
+| `start-date` | 行の目的の日を示す ID。 |
+| `end-date` | 行の目的の日を示す ID。 |
+| `month` | 選択されたディメンション：セッションの月（01 ～ 12 の 2 桁の整数）。 |
+| `users` | 選択された指標：リクエストされた期間のユーザーの合計数。 |
 
 {style="table-layout:auto"}
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 見る [!DNL Google Analytics] 広告キャンペーンを参照してください。 Q4 に異なる名前の広告キャンペーンが複数あるとします。 キャンペーンは、特定のマーケティングイニシアチブの結果でした。 倉庫に格納されたデータを使用して、問題のキャンペーン名を検索し、次の Q4 イニシアチブ名を返す列を作成できます。 `Operation Dumbo`.
 
-組み合わせの側面により、 [!DNL Google Analytics] 分析を行うために他のデータに結合するデータ。 例えば、次のようにします。 `Total Time On Site By Ad Campaign` からのデータ [!DNL Google Analytics] そしてそれを仲間に入れ `Total Spent Per Campaign` からのデータ [!DNL Facebook Ads] エンゲージメントに費やされたコストの全体像を把握するために。
+組み合わせの側面により、 [!DNL Google Analytics] 分析を行うために他のデータに結合するデータ。 例えば、次のようにします。 `Total Time On Site By Ad Campaign` からのデータ [!DNL Google Analytics] そしてそれを仲間に入れて `Total Spent Per Campaign` からのデータ [!DNL Facebook Ads] エンゲージメントに費やされたコストの全体像を把握するために。
 
 を使用 [!DNL Google Analytics Live] 一方で、 [!DNL Google Analytics] グラフは、 [!DNL Commerce Intelligence] Data Warehouse。
 

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 まず、クーポンコードの追跡方法に関するメモを追加します。 顧客が 1 つの注文にクーポンを適用すると、次の 3 つのことがおこなわれます。
 
-* 割引が `base_grand_total` ( `Revenue` 指標（コマースインテリジェンスの）
+* 割引が `base_grand_total` 量 ( `Revenue` 指標（コマースインテリジェンスの）
 * クーポンコードは、 `coupon_code` フィールドに入力します。 このフィールドが NULL（空）の場合、注文にはクーポンが関連付けられません。
 * 割引額は、 `base_discount_amount`. 設定に応じて、この値は負の値または正の値になる場合があります。
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 * に移動します。 **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
 
 * を選択します。 `sales_order`.
-* この指標では **合計** の **base_discount_amount** 列、並べ替え順 **created_at**.
+* この指標では **合計** の **base_discount_amount** 列、並び順 **created_at**.
    * [!UICONTROL Filters]:
-      * を `Orders we count` （保存済みフィルタセット）
+      * 次を追加： `Orders we count` （保存済みフィルタセット）
       * 以下を追加します。
          * `coupon_code`**IS NOT**`[NULL]`
       * 指標に名前を付けます（例： ）。 `Coupon discount amount`.
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この [!UICONTROL Time Period]**レポートごとに、 `All-time`. 分析のニーズに合わせて自由に変更できます。 Adobeでは、このダッシュボード上のすべてのレポートが、次のように同じ期間に対応していることを推奨します。 `All time`, `Year-to-date`または `Last 365 days`.
+>The [!UICONTROL Time Period]**レポートごとに、 `All-time`. 分析のニーズに合わせて自由に変更できます。 Adobeでは、このダッシュボード上のすべてのレポートが、次のように同じ期間に対応していることを推奨します。 `All time`, `Year-to-date`または `Last 365 days`.
 
 * **クーポンを含む注文**
    * 
@@ -97,7 +97,7 @@ ht-degree: 0%
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **全期間平均売上高：獲得したクーポン顧客**
+* **平均全期間売上高：獲得したクーポン顧客**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * フィルターを追加：
          * [`A`] `Customer's first order's coupon_code` **IS NOT** `[NULL]`
@@ -107,7 +107,7 @@ ht-degree: 0%
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **全期間平均売上高：獲得した非クーポン顧客**
+* **全期間平均売上高：クーポン以外で獲得した顧客**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * フィルターを追加：
          * [A] `Customer's first order's coupon_code` **次に該当**`[NULL]`

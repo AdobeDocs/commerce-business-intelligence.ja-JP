@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # 共有ダッシュボードへのアクセスを変更
 
-ダッシュボードへのアクセスは、同じ手順でいつでも変更できます。 [最初にダッシュボードを共有する](../../data-user/dashboards/share-dashboard-with-users.md){:target=&quot;_blank&quot;}。 ( `Share Dashboard` メニューで、必要に応じてユーザー/組織の権限を更新し、 **[!UICONTROL Save Changes]** を更新します。
+ダッシュボードへのアクセスは、同じ手順でいつでも変更できます。 [最初にダッシュボードを共有する](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}。 ( `Share Dashboard` メニューで、必要に応じてユーザー/組織の権限を更新し、 **[!UICONTROL Save Changes]** を更新します。

@@ -15,13 +15,13 @@ ht-degree: 0%
 
 キャンペーンの取り組みの包括的な状況を把握するには、 [!DNL Mailchimp] キャンペーンデータをメールで送る [!DNL Commerce Intelligence]. インポートを完了するには、それぞれに対して次の操作を実行する必要があります [!DNL Mailchimp] 以下のキャンペーンがあります。
 
-## 開封数データのエクスポート {#opens}
+## 開封数データを書き出し {#opens}
 
-1. へのログイン後 [!DNL Mailchimp]、 `Campaigns` タブをクリックします。
+1. へのログイン後 [!DNL Mailchimp]、に移動します。 `Campaigns` タブをクリックします。
 
    ![mailchimp 1 をインポート](../../../assets/import-mailchimp-1.png)
 
-1. クリック **[!UICONTROL View Report]**（キャンペーン名の横）
+1. クリック **[!UICONTROL View Report]**（キャンペーン名の横）をクリックします。
 
    ![mailchimp 2 をインポート](../../../assets/import-mailchimp-2.png)
 
@@ -55,13 +55,13 @@ ht-degree: 0%
 
 1. 電子メールでクリックした URL ごとに手順 3 と 4 を繰り返し、すべてのデータを同じに組み合わせます。 `.csv` ファイルを作成します。
 
-## 送信済みデータのエクスポート {#sent}
+## 送信済みデータの書き出し {#sent}
 
-1. を `Campaigns` タブ [!DNL Mailchimp].
+1. 次に進みます。 `Campaigns` タブ [!DNL Mailchimp].
 
-1. クリック **[!UICONTROL View Report]** をクリックします。
+1. クリック **[!UICONTROL View Report]** キャンペーン名の横に表示されます。
 
-1. の横の番号をクリックします。 `Recipients`.
+1. の横の数字をクリックします。 `Recipients`.
 
    ![mailchimp 8 をインポート](../../../assets/import-mailchimp-8.png)
 
@@ -73,6 +73,6 @@ ht-degree: 0%
 
 ## へのアップロード用ファイルの準備 [!DNL Commerce Intelligence] {#upload}
 
-各ファイル — `Opens`, `Clicks`、および `Sent`  — にアップロードする必要があります [!DNL Commerce Intelligence] を別のファイルとして指定します。 Adobeでは、次の命名規則を使用してファイルに名前を付けることをお勧めします。 `MailChimp\_ACTION\_DATE`. 置換 `ACTION` と `Open`, `Click`または `Sent`、および `DATE` をエクスポート日付と共に追加します。
+各ファイル — `Opens`, `Clicks`、および `Sent`  — にアップロードする必要があります [!DNL Commerce Intelligence] を別のファイルとして指定します。 Adobeでは、次の命名規則を使用してファイルに名前を付けることをお勧めします。 `MailChimp\_ACTION\_DATE`. 置換 `ACTION` 次を使用 `Open`, `Click`または `Sent`、および `DATE` を、エクスポート日付と共に追加します。
 
 ファイルをアップロードする準備が整ったら、 [`File Upload` 機能](../connecting-data/using-file-uploader.md) データをData Warehouseに取り込む

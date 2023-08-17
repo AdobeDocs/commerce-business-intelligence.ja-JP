@@ -7,13 +7,13 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # グラフを完全に削除する
 
-たとえあなたが [ダッシュボードからグラフを削除する](../../data-user/dashboards/remove-charts-dashboard.md)」内に、 [!DNL Commerce Intelligence] アカウント
+たとえあなたが [ダッシュボードからグラフを削除する](../../data-user/dashboards/remove-charts-dashboard.md)」内に存在する場合は、 [!DNL Commerce Intelligence] アカウント。
 
 グラフを完全に削除するには、次の手順に従います。
 

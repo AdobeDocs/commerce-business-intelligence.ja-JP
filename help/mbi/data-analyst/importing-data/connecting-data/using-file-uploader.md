@@ -15,18 +15,18 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>が必要 [管理者権限](../../../administrator/user-management/user-management.md).
 
-[!DNL Adobe Commerce Intelligence] は、ビジュアライゼーション機能だけでなく、すべてのデータを単一のData Warehouseに配置できるので、強力です。 データベースや統合の外部に存在するデータも、に取り込むことができます。 [!DNL Commerce Intelligence] Data Warehouse・マネージャのファイル・アップロード・ツールを使用して
+[!DNL Adobe Commerce Intelligence] は、ビジュアライゼーション機能だけでなく、すべてのデータを単一のData Warehouseに配置できるので、強力です。 データベースや統合の外部に存在するデータも、に取り込むことができます。 [!DNL Commerce Intelligence] Data Warehouse・マネージャのファイル・アップロード・ツールを使用する。
 
 例として広告キャンペーンを使用します。 オンラインとオフラインの両方のキャンペーンを実行している場合、オンライン統合からのデータの分析のみを行っている場合は、全体像を把握することはできません。 オフラインキャンペーンデータを使用してスプレッドシートをアップロードすると、両方のデータセットを分析し、キャンペーンのパフォーマンスをより詳細に把握できます。
 
 ## 制限事項と要件 {#require}
 
-1. **ファイルのアップロードでサポートされる形式は、次のとおりです。 `CSV` または`comma separated values`**. Excel で作業している場合は、「名前を付けて保存」機能を使用して、ファイルをに保存できます。 `.csv` 形式
-1. **`CSV`ファイルは`UTF-8 encoding`**. ほとんどの場合、これは問題ではありません。 ファイルのアップロード中にこのエラーが発生した場合は、 [このサポート記事を参照してください。](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
+1. **ファイルのアップロードでサポートされる形式は、次のとおりです。 `CSV` または`comma separated values`**. Excel で作業している場合は、「名前を付けて保存」機能を使用して、ファイルをに保存できます。 `.csv` 形式を使用します。
+1. **`CSV`ファイルは、`UTF-8 encoding`**. ほとんどの場合、これは問題ではありません。 ファイルのアップロード中にこのエラーが発生した場合は、 [このサポート記事を参照してください。](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **100 MB を超えるファイルは使用できません**. ファイルがこれより大きい場合は、テーブルをチャンクに分割し、個々のファイルとして保存します。 最初のファイルの読み込み後に、データを追加できます。
-1. **すべてのテーブルには`primary key`**. テーブル内に、 `primary key`、またはテーブル内の各行の一意の ID。 次に指定された列： `primary key` can *なし* が null の場合に限ります。 A `primary key` は、各行に数値を与える列を追加するのと同じくらい簡単にできます。また、2 つの列を連結して一意の値の列を作成することもできます ( 例： `campaign name` および `date`) をクリックします。
+1. **すべてのテーブルには、`primary key`**. テーブル内に、 `primary key`、またはテーブル内の各行の一意の ID。 次に指定された列： `primary key` can *なし* が null の場合にのみ有効です。 A `primary key` は、各行に数値を与える列を追加するのと同じくらい簡単にできます。また、2 つの列を連結して一意の値の列を作成することもできます ( 例： `campaign name` および `date`) をクリックします。
 
    列（または列）が一意であると指定されているが、重複がある場合、重複する行はインポートされません。
 
@@ -71,13 +71,13 @@ ht-degree: 0%
 
 ファイル内の一部の値（郵便番号や ID など）は、ゼロで始まる、または終わる場合があります。 ゼロが適切に保持され、アップロードされるように、書式設定タイプ ( 例： [数からテキストへ](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&amp;rs=en-us&amp;ad=us)) または数値書式を適用します。
 
-用途 `US ZIP codes` 数値の書式設定を変更する方法の例を示します。 In [!DNL Excel]、次を含む列をハイライト表示します。 `ZIP codes` および [数値の形式を変更する](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&amp;rs=en-us&amp;ad=us) から `ZIP code`. また、カスタムの数値書式を選択し、 `Type` ウィンドウ： `00000`. この方法では、一部のコードが `00000` その他のものは `00000-0000`.
+用途 `US ZIP codes` 数値の書式設定を変更する方法の例を示します。 In [!DNL Excel]、次を含む列をハイライト表示します。 `ZIP codes` および [数値の形式を変更する](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&amp;rs=en-us&amp;ad=us) から `ZIP code`. また、カスタムの数値書式を選択し、 `Type` ウィンドウ、入力 `00000`. この方法では、一部のコードが `00000` その他のものは `00000-0000`.
 
-この `Type` は [他のデータ型の対応に合わせて別の形式に設定](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us)（ID など） 次の場合、 `ID` の長さは 9 桁です ( 例： `Type` は、 `000000000` または `000-000-000`. これは変更されます `123456` から `000-123-456`.
+The `Type` は、 [他のデータ型の対応に合わせて別の形式に設定](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us)（ID など） 次の場合、 `ID` の長さは 9 桁です ( 例： `Type` は、 `000000000` または `000-000-000`. これは変更されます `123456` から `000-123-456`.
 
 の場合 [!DNL Google Docs] および [!DNL Apple Numbers] リソース ( [関連](#related) リストを表示します。
 
-## データのアップロード {#uploading}
+## データをアップロード中 {#uploading}
 
 これで、スプレッドシートが正しくフォーマットされ、 [!DNL Commerce Intelligence]-friendly、Data Warehouseに追加します。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 1. 次をクリック： **[!UICONTROL Upload to New Table]** タブをクリックします。
 
-1. クリック **[!UICONTROL Choose File]** ファイルを選択します。 クリック **[!UICONTROL Open]** をクリックしてアップロードを開始します。
+1. クリック **[!UICONTROL Choose File]** をクリックし、ファイルを選択します。 クリック **[!UICONTROL Open]** をクリックしてアップロードを開始します。
 
    アップロードが完了した後、列のリスト [!DNL Commerce Intelligence] がファイルディスプレイに表示されます。
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >この `datatype` は重要なので、この手順をスキップしないでください。
+   >The `datatype` は重要なので、この手順をスキップしないでください。
 
 1. を構成する列（複数可）を選択します。 `primary key` キーアイコンの下のチェックボックスを使用して、テーブルに追加します。
 
@@ -113,7 +113,7 @@ A *成功！* テーブルを保存すると、画面の上部にメッセージ
 
 ## 既存のテーブルへのデータの更新または追加 {#appending}
 
-既にアップロード済みのファイルに追加する新しいデータがありますか？ 問題なし — で簡単にデータを更新および追加できます [!DNL Commerce Intelligence].
+既にアップロード済みのファイルに追加する新しいデータがありますか？ 問題なし — で簡単にデータを更新および追加できます。 [!DNL Commerce Intelligence].
 
 1. 利用を開始するには、に移動します。 **[!UICONTROL Manage Data** > **File Uploads]**.
 
@@ -129,7 +129,7 @@ A *成功！* テーブルを保存すると、画面の上部にメッセージ
    | `Retain old row; discard new row` | 既存のテーブルと新しいファイルの両方で行のプライマリキーが同じ場合、新しいデータは無視されます。 |
    | `Purge all existing rows first and ignore duplicate keys within the file` | これにより、既存のデータが削除され、ファイルの新しいデータに置き換えられます。 このオプションは、既存のテーブルのデータが不要な場合にのみ使用します。 |
 
-1. クリック **[!UICONTROL Choose File]** ファイルを選択します。
+1. クリック **[!UICONTROL Choose File]** をクリックし、ファイルを選択します。
 
 1. クリック **[!UICONTROL Open]** をクリックしてアップロードを開始します。
 
@@ -143,13 +143,13 @@ A *成功！* テーブルを保存すると、画面の上部にメッセージ
 
 このトピックでは、データのインポートの基本についてのみ説明しましたが、より高度な操作を行うこともできます。 金融、e コマース、広告費用、その他のデータのフォーマットとインポートに関するガイダンスについては、関連記事を参照してください。
 
-また、データをに送信する方法は、ファイルのアップロードだけではありません [!DNL Commerce Intelligence]. この [データインポート API](https://developer.adobe.com/commerce/services/reporting/import-api/) 関数を使用すると、任意のデータを [!DNL Commerce Intelligence] Data Warehouse。
+また、データをに送信する方法は、ファイルのアップロードだけではありません。 [!DNL Commerce Intelligence]. The [データインポート API](https://developer.adobe.com/commerce/services/reporting/import-api/) 関数を使用すると、任意のデータを [!DNL Commerce Intelligence] Data Warehouse。
 
 ## 関連 {#related}
 
 * [財務データのフォーマットとインポート](../../../best-practices/format-import-financial-data.md)
 * [オフライン/その他の広告費用データのインポート](../connecting-data/import-offline-ad-data.md)
-* [予測[!DNL Google ECommerce] データ](../integrations/google-ecommerce-data.md)
+* [期待値[!DNL Google ECommerce] データ](../integrations/google-ecommerce-data.md)
 
 ## サードパーティのリソース
 

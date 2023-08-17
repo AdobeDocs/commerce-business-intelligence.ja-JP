@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,23 +15,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>が必要 [管理者権限](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/stripe-logo.png)
 
 [!DNL Stripe] では、ビジネスの支払いと請求書データを管理および追跡できます。 接続 [!DNL Stripe] アカウント [!DNL Commerce Intelligence] は、簡単な 2 段階のプロセスです。
 
 1. [追加 [!DNL Stripe] を [!DNL Commerce Intelligence]](#stepone)
-1. [許可 [!DNL Commerce Intelligence] の [!DNL Stripe] データ](#steptwo)
+1. [許可 [!DNL Commerce Intelligence] 次にアクセス： [!DNL Stripe] データ](#steptwo)
 
 ## 追加 [!DNL Stripe] データソースとして {#stepone}
 
 1. 次に移動： `Connections` 下のページ **[!UICONTROL Admin** > **Connections]**.
 1. クリック **[!UICONTROL Add a Data Source]**( 画面の右側、上の `Data Sources` 表。
-1. 次をクリック： [!DNL Stripe] アイコン これにより、 `[!DNL Stripe] authorization` ページ。
+1. 次をクリック： [!DNL Stripe] アイコン。 これにより、 `[!DNL Stripe] authorization` ページに貼り付けます。
 1. クリック **[!UICONTROL Connect with Stripe]**.
 
-## 許可 [!DNL Commerce Intelligence] の [!DNL Stripe] データ {#steptwo}
+## 許可 [!DNL Commerce Intelligence] 次にアクセス： [!DNL Stripe] データ {#steptwo}
 
 クリック後 **[!UICONTROL Connect with Stripe]**&#x200B;に設定すると、アクセスリクエストページが表示されます。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## 関連：
 
-この [[!DNL Stripe] API ドキュメント](https://stripe.com/docs/api) は、 [!DNL Stripe] が [!DNL Commerce Intelligence].
+The [[!DNL Stripe] API ドキュメント](https://stripe.com/docs/api) は、 [!DNL Stripe] は、 [!DNL Commerce Intelligence].
 
-* [予測 [!DNL Stripe] データ](../integrations/stripe-data.md)
+* [期待値 [!DNL Stripe] データ](../integrations/stripe-data.md)
 * [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

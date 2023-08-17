@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 計算列のパスの作成または削除
 
-## 計算列の更新
+## 計算列リフレッシャ
 
 条件 [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) Data Warehouseで、列を作成するテーブルが、情報を取り込むテーブルとどのように関連しているかを示すパスを定義するよう求められます。 パスを正しく作成するには、次の 2 つを理解する必要があります。
 
@@ -26,15 +26,15 @@ ht-degree: 0%
 
 ### テーブルの関係 {#relationships}
 
-この概念は、 [テーブルの関係についてと評価の記事](../../data-analyst/data-warehouse-mgr/table-relationships.md)でも簡単なまとめは誰も傷つけないでしょ？
+この概念については、 [テーブルの関係についてと評価の記事](../../data-analyst/data-warehouse-mgr/table-relationships.md)でも簡単なまとめは誰も傷つけないでしょ？
 
 テーブルは、次の 3 つの方法のいずれかで相互に関連付けることができます。
 
 | **`Relationship Type`** | **`Example`** |
 |-----|-----|
-| **`one-to-one`** | 人と運転免許証番号の関係。 1 人の人が持つ運転免許証番号は 1 つだけで、1 人の運転免許証番号は 1 人の人にしか属していません。 |
+| **`one-to-one`** | 人と運転免許証番号との関係。 1 人の人が持つ運転免許証番号は 1 つだけで、1 人の運転免許証番号は 1 人の人にしか属していません。 |
 | **`one-to-many`** | 注文と品目の関係 — 注文に多数の品目を含めることができますが、品目は 1 つの注文に属します。 この場合、注文テーブルは一方の側で、項目テーブルは多方の側です。 |
-| **`many-to-many`** | 製品とカテゴリの関係：1 つの製品は多くのカテゴリに属することができ、複数の製品を含めることができます。 |
+| **`many-to-many`** | 製品とカテゴリ間の関係：製品は多くのカテゴリに属することができ、カテゴリは多くの製品を含むことができます。 |
 
 {style="table-layout:auto"}
 
@@ -42,9 +42,9 @@ ht-degree: 0%
 
 ### プライマリと外部キー {#keys}
 
-A `Primary Key` は、テーブル内で一意の値を生成する、変更されない列または列のセットです。 例えば、顧客が Web サイトで注文をすると、新しい行が `orders` 新しい `order_id`. この `order_id` では、顧客とビジネスの両方が特定の注文の進行状況を追跡できます。 注文 ID は一意なので、通常は `Primary Key` の `orders` 表。
+A `Primary Key` は、テーブル内で一意の値を生成する、変更されない列または列のセットです。 例えば、顧客が Web サイトで注文をすると、新しい行が `orders` 買い物かごに新しい `order_id`. この `order_id` では、顧客とビジネスの両方が特定の注文の進行状況を追跡できます。 注文 ID は一意なので、通常は `Primary Key` の `orders` 表。
 
-A `Foreign Key` は、 `Primary Key` 別のテーブルの列。 外部キーはテーブル間で参照を作成するので、アナリストは簡単にレコードを検索してリンクできます。 各顧客に属している注文を知りたがったとします。 この `customer id` 列 (`Primary Key` の `customers` 表 ) と `order_id` 列 (`Foreign Key` 内 `customers` テーブル、参照 `Primary Key` の `orders` 表 ) では、この情報をリンクおよび分析できます。 パスを作成する際に、 `Primary Key` および `Foreign Key`.
+A `Foreign Key` は、 `Primary Key` 別のテーブルの列。 外部キーはテーブル間で参照を作成するので、アナリストは簡単にレコードを検索してリンクできます。 各顧客に属している注文を知りたがったとします。 The `customer id` 列 (`Primary Key` の `customers` 表 ) と `order_id` 列 (`Foreign Key` （内） `customers` テーブル、を参照 `Primary Key` の `orders` 表 ) では、この情報をリンクおよび分析できます。 パスを作成する際に、 `Primary Key` および `Foreign Key`.
 
 ## パスの作成 {#createpath}
 
@@ -53,8 +53,8 @@ Data Warehouseで列を作成する場合は、あるテーブルから別のテ
 A と B の関係を使用 **顧客** および **注文件数** どのように行われたかを示す 分類：
 
 * 関係は `one-to-many` ：顧客は多数の注文を持つことができますが、1 つの注文には 1 つの顧客のみを持つことができます。 これにより、関係の方向、または計算列を作成する場所が示されます。 この場合、 `orders` テーブルを `customers` 表。
-* この `primary key` 次を使用します。 `customers.customerid`、または `customer ID` 列 `customers` 表。
-* この `foreign key` 次を使用します。 `orders.customerid`、または `customer ID` 列 `orders` 表。
+* The `primary key` 次を使用します。 `customers.customerid`、または `customer ID` 列の `customers` 表。
+* The `foreign key` 次を使用します。 `orders.customerid`、または `customer ID` 列の `orders` 表。
 
 次に、パスを作成できます。
 
@@ -62,16 +62,16 @@ A と B の関係を使用 **顧客** および **注文件数** どのように
 1. 表の一覧で、列を作成する表をクリックします。 この例では、 `customers` 表。
 1. テーブルスキーマが表示されます。 クリック **[!UICONTROL Create New Column]**.
 1. 列に名前を付けます（例： ）。 `Customer's orders`.
-1. 列の定義を選択します。 以下を確認します。 [計算列ガイド](../data-warehouse-mgr/creating-calculated-columns.md) 便利なチートシートの
-1. 内 [!UICONTROL Select table and column] ドロップダウンで、 **[!UICONTROL Create new path]** オプション。
+1. 列の定義を選択します。 以下を確認します。 [計算列ガイド](../data-warehouse-mgr/creating-calculated-columns.md) 便利なチートシートのために
+1. Adobe Analytics の [!UICONTROL Select table and column] ドロップダウンで、 **[!UICONTROL Create new path]** オプション。
 
    ![計算列モーダルのパスの作成](../../assets/Creating_Paths_modal.png)
 
 1. ドロップダウンを使用して、各テーブルのプライマリキーと外部キーを選択します。
 
-   の `Many` サイド、 `orders.customerid`  — 顧客は多くの注文を受けることができます。
+   次の日： `Many` 「 」で、「 」を選択します。 `orders.customerid`  — 顧客は多くの注文を受けることができます。
 
-   の `One` サイド、 `customers.customerid`  — 注文には 1 人の顧客のみを含めることができます。
+   次の日： `One` 「 」で、「 」を選択します。 `customers.customerid`  — 注文には 1 人の顧客のみを含めることができます。
 
 1. クリック **[!UICONTROL Save]** パスを保存し、列の作成を終了します。
 
@@ -87,13 +87,13 @@ A と B の関係を使用 **顧客** および **注文件数** どのように
 
 上記の 1 つ以上の制限により計算列を作成できない場合は、サポートに連絡して、現在の列の説明を確認してください
 
-## 計算列のパスを削除 {#delete}
+## 計算列のパスを削除する {#delete}
 
 Data Warehouse内に間違ったパスを作成しましたか？ 春の掃除をして片付けたいのか？ アカウントからパスを削除する必要がある場合は、 [チケットをAdobe・サポート・アナリストに送る](../../guide-overview.md#Submitting-a-Support-Ticket). **必ずパスの名前を含めてください。**
 
 ## 折り返し {#wrapup}
 
-これで、Data Warehouse内の計算列のパスを作成することに慣れました。 それでも特定のパスが不明な場合は、いつでも「 **[!UICONTROL Support]** の [!DNL Commerce Intelligence] アカウントを使用してサポートを受けてください。
+これで、Data Warehouse内の計算列のパスを作成することに慣れました。 それでも特定のパスが不明な場合は、常に「 **[!UICONTROL Support]** の [!DNL Commerce Intelligence] アカウントを使用してサポートを受けてください。
 
 ## 関連
 

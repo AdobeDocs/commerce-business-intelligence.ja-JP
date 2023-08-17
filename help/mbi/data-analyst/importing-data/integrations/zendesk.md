@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>が必要 [管理者権限](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/Zendesk_logo.png)
 
@@ -24,26 +24,26 @@ ht-degree: 0%
 接続 [!DNL Zendesk] データは、次の 3 つの手順で構成される簡単なプロセスです。
 
 1. [を開きます。 [!DNL Zendesk] 認証情報ページ [!DNL Commerce Intelligence]](#stepone)
-1. [を [!DNL Zendesk] API トークン](#steptwo)
+1. [を取得する [!DNL Zendesk] API トークン](#steptwo)
 1. [を入力します。 [!DNL Zendesk] ログイン情報とトークン： [!DNL Commerce Intelligence]](#stepthree)
 
-このプロセスを完了するには、2 つのブラウザーウィンドウまたはタブを開く必要があります。1 つは [!DNL Commerce Intelligence]、もう 1 つは [!DNL Zendesk] アカウント
+このプロセスを完了するには、2 つのブラウザーウィンドウまたはタブを開く必要があります。1 つは [!DNL Commerce Intelligence]、もう 1 つは [!DNL Zendesk] アカウント。
 
 ## を開きます。 [!DNL Zendesk] 認証情報ページ [!DNL Commerce Intelligence] {#stepone}
 
 1. 次に移動： `Integrations` 下のページ **[!UICONTROL Manage Data** > **&#x200B;データソース&#x200B;**/ **統合]**.
 1. クリック **[!UICONTROL Add Integration]**：画面の右側にあります。
-1. 次をクリック： [!DNL Zendesk] アイコン これにより、 [!DNL Zendesk] 認証情報ページ。
+1. 次をクリック： [!DNL Zendesk] アイコン。 これにより、 [!DNL Zendesk] 認証情報ページ。
 
-## を [!DNL Zendesk] API トークン {#steptwo}
+## を取得する [!DNL Zendesk] API トークン {#steptwo}
 
 1. ログインしているウィンドウ/タブ [!DNL Zendesk] アカウントで、画面の左下隅にある設定（歯車）アイコンをクリックします。
 1. 次の場合に `Settings` メニュー表示、 `Channels` 」セクションに入力します。 クリック **[!UICONTROL API]** （この節を参照）。
-1. 内 `Token Access` このページの「 」セクションで、「 」の横にあるチェックボックスをクリックします。 `Enabled`. アクティブな API トークンのリストが表示されます。
+1. Adobe Analytics の `Token Access` このページの「 」セクションで、「 」の横にあるチェックボックスをクリックします。 `Enabled`. アクティブな API トークンのリストが表示されます。
 1. クリック **[!UICONTROL Add New Token]**.
 1. プロンプトが表示されたら、トークンのラベルを入力します。 Adobeは、 `Commerce Intelligence`つまり、トークンを使用しているアプリケーションは一目でわかります。
 1. クリック **[!UICONTROL Create]**.
-1. API トークンが作成されます。 このトークンをコピーする。次の手順で使用します。
+1. API トークンが作成されます。 このトークンをコピーします。次の手順で使用します。
 
 ## 入力 [!DNL Zendesk] ログイン情報と API トークン： [!DNL Commerce Intelligence] {#stepthree}
 
@@ -53,5 +53,5 @@ ht-degree: 0%
 
 ## 関連：
 
-* [予測 [!DNL Zendesk] データ](../integrations/exp-zendesk-data.md)
+* [期待値 [!DNL Zendesk] データ](../integrations/exp-zendesk-data.md)
 * [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

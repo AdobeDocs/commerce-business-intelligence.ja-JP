@@ -17,4 +17,4 @@ ht-degree: 0%
 
 この節では、現在の顧客のライフタイム値を学び、より多くの注文でライフタイム値がどのように増加するかを予測します。
 
-関連項目： [全期間値 (LTV) 分析（基本）](../../data-analyst/analysis/ess-expected-ltv.md)
+関連トピック： [全期間値 (LTV) 分析（基本）](../../data-analyst/analysis/ess-expected-ltv.md)

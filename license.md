@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # MIT ライセンス
 
-© Copyright 2021Adobe。 all rights reserved
+© Copyright 2021Adobe。 ALL RIGHTS RESERVED.
 
 本ソフトウェアの使用、複製、変更、結合、公開、頒布、副ライセンス、販売の権利を含め、本ソフトウェアおよび本ソフトウェアに関する関連文書ファイル（以下「ソフトウェア」）の複製を取得する者には、無料で許可が与えられます。
 

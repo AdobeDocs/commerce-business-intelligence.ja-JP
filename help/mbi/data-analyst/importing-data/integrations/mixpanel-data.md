@@ -1,6 +1,6 @@
 ---
 title: 予期される Mixpanel データ
-description: Mixpanel から [!DNL Commerce Intelligence] アカウント
+description: Mixpanel から [!DNL Commerce Intelligence] アカウント。
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# 予測 [!DNL Mixpanel] データ
+# 期待値 [!DNL Mixpanel] データ
 
 後 [接続しました [!DNL Mixpanel] アカウント](../integrations/mixpanel.md)を使用する場合、 [Data Warehouse管理](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 分析に関連するデータフィールドを容易に追跡する。
 
-このトピックでは、からインポートできる主なデータテーブルについて説明します。 [!DNL Mixpanel] を [!DNL Commerce Intelligence] アカウント 次の表は、接続後にData Warehouseに作成されます [!DNL Mixpanel]. 追跡に使用できるすべてのフィールドを表示するには、テーブル名列でリンクをクリックします。
+このトピックでは、からインポートできる主なデータテーブルについて説明します。 [!DNL Mixpanel] を [!DNL Commerce Intelligence] アカウント。 次の表は、接続後にData Warehouseに作成されます [!DNL Mixpanel]. 追跡に使用できるすべてのフィールドを表示するには、テーブル名列でリンクをクリックします。
 
 >[!NOTE]
 >

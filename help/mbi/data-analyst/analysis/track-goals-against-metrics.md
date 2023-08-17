@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # パフォーマンス指標に対する目標の追跡
 
-ほとんどの顧客は、 **ビジネス目標**&#x200B;が、 [!DNL Adobe Commerce Intelligence]. このトピックでは、売上高、新規登録ユーザー、注文件数など、実際のデータに基づいてビジネス目標を追跡する際に役立つダッシュボードを設定する方法について説明します。 また、次のようなダッシュボードで、前年比のパフォーマンスを比較する方法も学習します。
+ほとんどの顧客は、 **ビジネス目標**&#x200B;で可能なことには気がつかない [!DNL Adobe Commerce Intelligence]. このトピックでは、売上高、新規登録ユーザー、注文件数など、実際のデータに基づいてビジネス目標を追跡する際に役立つダッシュボードを設定する方法について説明します。 また、次のようなダッシュボードで、前年比のパフォーマンスを比較する方法も学習します。
 
 ![](../../assets/Goals-_dashboard_2.png)
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 最初に、ビジネスに関する特定の日別/月別/四半期別ターゲットを含むファイルをアップロードする必要があります。
 
-以下を使用して、 [ファイルアップローダ](../importing-data/connecting-data/using-file-uploader.md) および以下の画像を使用して、ファイルの形式を設定します。 クライアントが追跡する最も一般的なターゲット [!DNL Commerce Intelligence] 注文件数、売上高、新規登録済みアカウントが含まれます。
+以下を使用すると、 [ファイルアップローダ](../importing-data/connecting-data/using-file-uploader.md) および以下の画像を使用して、ファイルの形式を設定します。 クライアントが追跡する最も一般的なターゲット [!DNL Commerce Intelligence] 注文件数、売上高、新規登録済みアカウントが含まれます。
 
 ![](../../assets/Goals-_Excel.png)
 
@@ -32,22 +32,22 @@ ht-degree: 0%
 各ターゲットに対して 1 つの新しい指標を作成します。 例えば、月別の売上高と注文のターゲットをアップロードする場合、2 つの新しい指標を作成する必要があります。
 
 * **月別収益ターゲット**
-* 内 **`Monthly goals`** 表
+* Adobe Analytics の **`Monthly goals`** 表
 * この指標では **合計**
-* の **`Revenue target`** 列
-* 発注元： **`Month`** timestamp
+* 次の日： **`Revenue target`** 列
+* 並べ替え元 **`Month`** timestamp
 
 * **月次注文のターゲット**
-* 内 **`Monthly goals`** 表
+* Adobe Analytics の **`Monthly goals`** 表
 * この指標では **合計**
-* の **`Orders target`** 列
-* 発注元： **`Month`** timestamp
+* 次の日： **`Orders target`** 列
+* 並べ替え元 **`Month`** timestamp
 
 * **毎月の新規登録アカウントのターゲット**
-* 内 **`Monthly goals`** 表
+* Adobe Analytics の **`Monthly goals`** 表
 * この指標では **合計**
-* の **`New registered accounts target`** 列
-* 発注元： **`Month`** timestamp
+* 次の日： **`New registered accounts target`** 列
+* 並べ替え元 **`Month`** timestamp
 
 ## レポート
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 * 
   [!UICONTROL Format]: `Number`
 
-* [!UICONTROL Time period]:（任意の期間）
+* [!UICONTROL Time period]: （任意の関連期間）
 * 
   [!UICONTROL Interval]: `Month`
 * 
@@ -86,14 +86,14 @@ ht-degree: 0%
   [!UICONTROL 指標]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
-* [!UICONTROL Formula]:（今月前年）
+* [!UICONTROL Formula]: （今月前年）
 * 
   [!UICONTROL 数式]: `(A-C)`
 * 
   [!UICONTROL Format]: `Currency`
 
 * オフにする `Multiple Y-Axes`
-* [!UICONTROL Time period]:（任意の関連期間）*
+* [!UICONTROL Time period]: （任意の関連期間）*
 * 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`

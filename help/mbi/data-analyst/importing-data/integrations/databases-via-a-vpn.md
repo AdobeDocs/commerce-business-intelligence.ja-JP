@@ -13,12 +13,12 @@ ht-degree: 0%
 
 # VPN 経由でデータベースに接続
 
-Adobeでは、 `SSH tunnel`を使用する場合、暗号化された `VPN` 物事を安全に保つための接続。 A `VPN` は、任意のデータベース統合に使用でき、操作を簡単にするために、プロセスは `SSH tunnel`:
+Adobeでは、 `SSH tunnel`を使用する場合、暗号化された `VPN` 物事を安全に保つための接続。 A `VPN` は、任意のデータベース統合に使用でき、操作を簡単にするために、プロセスは、 `SSH tunnel`:
 
-1. [の作成 [!DNL Commerce Intelligence] データベースユーザ](#database)
+1. [の作成 [!DNL Commerce Intelligence] データベースユーザー](#database)
 1. [の作成 [!DNL Commerce Intelligence] VPN ユーザ](#vpn)
 1. [次へのアクセスを許可： [!DNL Commerce Intelligence] IP アドレス](#allowlist)
-1. [接続と VPN ユーザ情報を Commerce Intelligence に入力します](#finish)
+1. [接続と VPN ユーザ情報を Commerce Intelligence に入力します。](#finish)
 
 データベースの資格情報に加えて、VPN ユーザーが情報をラップするための資格情報を入力する必要があります。 VPN ユーザはすべて機能しますが、Adobeは、 [!DNL Commerce Intelligence] ユーザーを参照してください。ユーザーは、アカウント上でユーザーを簡単に追跡できます。
 
@@ -43,27 +43,27 @@ Adobeでは、 `SSH tunnel`を使用する場合、暗号化された `VPN` 物�
 
 ## 接続の入力と `VPN` ユーザ情報を [!DNL Commerce Intelligence] {#finish}
 
-まとめるには、接続とユーザー情報を次のように入力する必要があります。 [!DNL Commerce Intelligence]. データベースを離れましたか？ `credentials` ページが開いているか そうでない場合は、に移動します。 **[!UICONTROL Manage Data** > **Connections]**. クリック **[!UICONTROL Add New Data Source]**&#x200B;をクリックし、接続するデータベースのアイコンをクリックします。 忘れずに `Encrypted` 切り替える `Yes`.
+まとめるには、接続とユーザー情報を次のように入力する必要があります。 [!DNL Commerce Intelligence]. データベースを離れましたか？ `credentials` ページが開いているか？ そうでない場合は、に移動します。 **[!UICONTROL Manage Data** > **Connections]**. クリック **[!UICONTROL Add New Data Source]**&#x200B;をクリックし、接続するデータベースのアイコンをクリックします。 忘れずに `Encrypted` 切り替える `Yes`.
 
 このページに、以下の情報を入力します。 `Database Connection` セクション：
 
-* `Username`:のユーザー名 [!DNL Commerce Intelligence] データベースユーザ
-* `Password`:のパスワード [!DNL Commerce Intelligence] データベースユーザ
-* `Port`:サーバー上のデータベースのポート。 デフォルトは次のとおりです。
+* `Username`：のユーザー名 [!DNL Commerce Intelligence] データベースユーザー
+* `Password`：のパスワード [!DNL Commerce Intelligence] データベースユーザー
+* `Port`：サーバー上のデータベースのポート。 デフォルトは次のとおりです。
    * `MicrosoftSQL`: `1433`
    * `MongoDB`: `27017`
    * `MySQL`: `3306`
    * `PostgreSQL`: `5432`
-* `Host`:デフォルトでは localhost です。 `127.0.0.1`が含まれますが、サーバーのパブリック IP アドレスまたはローカルエリアネットワークアドレスの場合もあります。
-* `Database Name (optional)`:1 つのデータベースへのアクセスのみを許可する場合は（これはデータベースユーザーの作成手順で指定します）、ここにそのデータベースの名前を入力します。
+* `Host`：デフォルトでは localhost です。 `127.0.0.1`が含まれますが、サーバーのパブリック IP アドレスまたはローカルエリアネットワークアドレスの場合もあります。
+* `Database Name (optional)`:1 つのデータベースへのアクセスのみを許可する場合（データベースユーザーの作成手順で指定）は、ここにそのデータベースの名前を入力します。
 
-以下 `Encryption Connection` セクション：
+の下 `Encryption Connection` セクション：
 
-* `Encryption Type`:これを `Cisco IPsec VPN`
+* `Encryption Type`：これをに設定します。 `Cisco IPsec VPN`
 * `Gateway Address`:VPN サーバーの IP アドレス
-* `Group Name`:グループ認証に使用するグループの名前
-* `Group Secret`:グループに対応するパスワード。
-* `Username`:この [!DNL Commerce Intelligence] `VPN` ユーザー名
-* `Password`:この [!DNL Commerce Intelligence] `VPN` ユーザーのパスワード
+* `Group Name`：グループ認証に使用するグループの名前
+* `Group Secret`：グループに対応するパスワード。
+* `Username`: [!DNL Commerce Intelligence] `VPN` ユーザー名
+* `Password`: [!DNL Commerce Intelligence] `VPN` ユーザーのパスワード
 
 完了したら、「 **[!UICONTROL Save & Test]** をクリックして設定を完了します。

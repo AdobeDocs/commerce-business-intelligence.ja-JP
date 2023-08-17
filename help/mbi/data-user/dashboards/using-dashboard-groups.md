@@ -31,7 +31,7 @@ ht-degree: 0%
 
    ![ダッシュボードグループを作成](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. 既存のダッシュボードのグループを変更する場合、 `Manage Data > Dashboards` ページ：
+1. 既存のダッシュボードのグループを変更する場合は、 `Manage Data > Dashboards` ページ：
 
    1. グループを作成するダッシュボードをクリックします。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ## 既存のダッシュボードを既存のグループに追加
 
-1. の `Manage Data > Dashboards` 「 」ページで、グループを変更するダッシュボードを選択します。
+1. 次の日： `Manage Data > Dashboards` 「 」ページで、グループを変更するダッシュボードを選択します。
 
 1. の下のテキスト `Dashboard Group (optional)` ダッシュボードの現在のダッシュボードグループを表示します。
 

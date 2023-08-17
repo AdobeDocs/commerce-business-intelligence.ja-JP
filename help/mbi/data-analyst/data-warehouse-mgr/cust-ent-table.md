@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # customer_entity テーブル
 
-この `customer_entity` テーブルには、すべての登録済みアカウントのレコードが含まれます。 アカウントが購入に成功したかどうかに関係なく、アカウントに新規登録した場合、そのアカウントは登録済みと見なされます。 各行は、そのアカウントの `entity_id`.
+The `customer_entity` テーブルには、すべての登録済みアカウントのレコードが含まれます。 アカウントが購入に成功したかどうかに関係なく、アカウントに新規登録した場合、そのアカウントは登録済みと見なされます。 各行は、そのアカウントの `entity_id`.
 
 このテーブルには、ゲストチェックアウトで注文をした顧客のレコードは含まれません。 ストアがゲストによるチェックアウトを受け入れる場合は、 [ゲストによる注文を考慮する方法](../data-warehouse-mgr/guest-orders.md) 注文に対して
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |---|---|
-| `created_at` | アカウントの登録日に対応するタイムスタンプ。ローカルの UTC に保存されます。 の設定に応じて、 [!DNL Commerce Intelligence]の場合、このタイムスタンプは [!DNL Commerce Intelligence] データベースのタイムゾーンと異なる |
+| `created_at` | アカウントの登録日に対応するタイムスタンプ。ローカルの UTC に保存されます。 の設定に応じて、 [!DNL Commerce Intelligence]の場合、このタイムスタンプは、 [!DNL Commerce Intelligence] データベースのタイムゾーンと異なる |
 | `email` | アカウントに関連付けられた電子メールアドレス |
 | `entity_id` (PK) | テーブルの一意の識別子（ID の結合で一般的に使用） `customer_id` インスタンス内の他のテーブル内 |
 | `group_id` | に関連付けられた外部キー `customer_group` 表。 結合先 `customer_group.customer_group_id` 登録済みアカウントに関連付けられている顧客グループを特定するには |
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |---|---|
-| `Customer's first 30 day revenue` | 顧客の最初の注文日から 30 日以内にこの顧客が行ったすべての注文に対する売上高の合計。 結合によって計算 `customer_entity.entity_id` から `sales_order.customer_id` そして要約すると `base_grand_total` すべての注文のフィールド `sales_order.Seconds between customer's first order date and this order` ≤ 2592000（30 日の秒数） |
+| `Customer's first 30 day revenue` | 顧客の最初の注文日から 30 日以内にこの顧客が行ったすべての注文に対する売上高の合計。 結合によって計算 `customer_entity.entity_id` から `sales_order.customer_id` そして要約すると `base_grand_total` 次のすべての注文のフィールド `sales_order.Seconds between customer's first order date and this order` ≤ 2592000（30 日の秒数） |
 | `Customer's first order date` | この顧客が最初に発注した注文のタイムスタンプ。 結合によって計算 `customer_entity.entity_id` から `sales_order.customer_id` 最小値を返す `sales_order`.`created_at` 値 |
 | `Customer's first order's billing region` | 顧客の最初の注文に関連付けられた請求地域。 結合によって計算 `customer_entity.entity_id` から `sales_order.customer_id` そして `Billing address region` 場所 `sales_order.Customer's order number` = 1 |
 | `Customer's first order's coupon_code` | 顧客の最初の注文に関連付けられたクーポンコード。 結合によって計算 `customer_entity.entity_id` から `sales_order.customer_id` そして `sales_order.coupon_code` 場所 `sales_order.Customer's order number` = 1 |
@@ -50,11 +50,11 @@ ht-degree: 0%
 
 | **指標名** | **説明** | **構築** |
 |---|---|---|
-| `Avg first 30 day revenue` | 顧客の最初の注文から 30 日以内に行われた注文に対する顧客あたりの平均売上高 | 操作：平均<br/>オペランド： `Customer's first 30 day revenue`<br/>タイムスタンプ： `created_at`<br/>フィルター：<br/><br/>- \[A\] `Seconds since customer's first order date` ≥ 2592000（初回注文から 30 日に達していない顧客を除く） |
+| `Avg first 30 day revenue` | 顧客の最初の注文から 30 日以内に行われた注文に対する、顧客あたりの平均売上高 | 操作：平均<br/>オペランド： `Customer's first 30 day revenue`<br/>タイムスタンプ： `created_at`<br/>フィルター：<br/><br/>- \[A\] `Seconds since customer's first order date` ≥ 2592000（初回注文から 30 日に達していない顧客を除く） |
 | `Avg lifetime coupons` | 全期間で顧客ごとの注文に適用されたクーポンの平均数 | 操作：平均<br/>オペランド： `Customer's lifetime number of coupons`<br/>タイムスタンプ： `created_at` |
 | `Avg lifetime orders` | 顧客の全期間における顧客あたりの平均注文数 | 操作：平均<br/>オペランド： `Customer's lifetime number of orders`<br/>タイムスタンプ： `created_at` |
 | `Avg lifetime revenue` | 全期間におこなわれたすべての注文に対する、顧客あたりの平均合計売上高 | 操作：平均<br/>オペランド： `Customer's lifetime revenue`<br/>タイムスタンプ： `created_at` |
-| `New customers` | 1 つ以上の注文を持つ顧客の数。最初の注文日にカウントされます。 登録したが決して注文しなかったアカウントを除外 | 操作：カウント<br/>オペランド： `entity_id`<br/>タイムスタンプ： `Customer's first order date` |
+| `New customers` | 1 つ以上の注文を持つ顧客の数。最初の注文日にカウントされます。 登録したが決して注文しなかったアカウントを除外します | 操作：カウント<br/>オペランド： `entity_id`<br/>タイムスタンプ： `Customer's first order date` |
 | `Registered accounts` | 登録されたアカウントの数。 アカウントが注文をしたかどうかに関係なく、すべての登録済みアカウントが含まれます | 操作：カウント<br/>オペランド： `entity_id`<br/>タイムスタンプ： `created_at` |
 
 {style="table-layout:auto"}

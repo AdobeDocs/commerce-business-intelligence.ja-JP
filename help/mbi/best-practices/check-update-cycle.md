@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 更新サイクルのステータスを確認する必要があるのはなぜですか？
 
-ステータスの更新サイクルを確認すると、 [!DNL Commerce Intelligence] アカウント もし [期待を満たさない結果](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)例： [!DNL Commerce Intelligence] が、e コマースプラットフォームまたは [[!DNL Google] e コマース売上高](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 最後のデータポイントを調べて、更新が完了した後に問題が解決したかどうかを確認できます。
+ステータスの更新サイクルを確認すると、 [!DNL Commerce Intelligence] アカウント。 もし、 [期待を満たさない結果](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)( 例： [!DNL Commerce Intelligence] が、e コマースプラットフォームまたは [[!DNL Google] e コマース売上高](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 最後のデータポイントを調べて、更新が完了した後に問題が解決したかどうかを確認できます。
 
 ## [!UICONTROL Read-Only] および [!UICONTROL Standard] ユーザー
 

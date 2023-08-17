@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # 内部使用のメタデータ
 
-この `metadata.md` ファイルには、ユーザーガイドに渡されるリポジトリレベルのメタデータが含まれています `TOC.md` ファイルをリポジトリに格納します。 任意のユーザーガイドの metadata.md コンテンツを変更する場合は、任意の `TOC.md` ファイル。
+The `metadata.md` ファイルには、ユーザーガイドに渡されるリポジトリレベルのメタデータが含まれています `TOC.md` ファイルをリポジトリに格納します。 任意のユーザーガイドの metadata.md コンテンツを変更する場合は、任意の `TOC.md` ファイル。
 
 | メタデータ | 説明 |
 |--- |--- |
-| solution-title | 記事のヘッダーでリンクとして使用されます |
+| solution-title | 記事のヘッダーでリンクとして使用されます。 |
 | solution-hub-url | helpx ハブページを開きます |
 | solution-icon | ソリューションタイトルの横にソリューションアイコンが表示されます。 未実装 |
 | getting-started-url | helpx の概要ページへのリンク |
@@ -38,7 +38,7 @@ TOC.md ファイル内
 
 | メタデータ | 説明 |
 |--- |--- |
-| user-guide-title | 記事のヘッダーでリンクとして使用されます |
+| user-guide-title | 記事のヘッダーでリンクとして使用されます。 |
 | user-guide-url | helpx ハブページを開きます |
 
 {style="table-layout:auto"}

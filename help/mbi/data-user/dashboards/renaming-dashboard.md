@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必要 [管理者](../../administrator/user-management/user-management.md) または `Standard` これらの機能を実行する権限。 次の場合、 `Standard` ユーザーも `Edit` ダッシュボードに対する権限。
+>が必要 [管理者](../../administrator/user-management/user-management.md) または `Standard` これらの機能を実行する権限。 次の場合、 `Standard` ユーザーも、 `Edit` ダッシュボードに対する権限。
 
 名前が合わなくなることもあります。 ダッシュボードの名前変更は、すばやく簡単におこなえます。
 
-1. ダッシュボードで、 **[!UICONTROL Dashboard Options]** 画面上部のメニュー ( `Global Search` メニュー
+1. ダッシュボードで、 **[!UICONTROL Dashboard Options]** 画面上部のメニュー ( `Global Search` メニュー。
 
 1. クリック **[!UICONTROL Rename]** 」と入力します。
 

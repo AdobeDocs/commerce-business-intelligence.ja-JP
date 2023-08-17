@@ -17,7 +17,7 @@ ht-degree: 0%
 
 1. を [!DNL CJ Affiliate] アカウントに移動します。 `Reports` タブをクリックします。
 
-1. 内 `Performance` タブ、選択 `Report Options`.
+1. Adobe Analytics の `Performance` タブ、選択 `Report Options`.
 
 1. 設定 `Performance By` 次と等しい `Program`, `Trend` 次と等しい `Daily`、および `Date Range` 監査対象の日付範囲と等しい。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 1. 選択 `Run Report`.
 
-1. 内 `File Format` ドロップダウン、選択 `CSV`.  クリック **[!UICONTROL Download]**.
+1. Adobe Analytics の `File Format` ドロップダウン、選択 `CSV`.  クリック **[!UICONTROL Download]**.
 
    ![cj アフィリエイトデータのエクスポート](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
 

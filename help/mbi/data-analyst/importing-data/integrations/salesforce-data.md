@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# 予測 [!DNL Salesforce] データ
+# 期待値 [!DNL Salesforce] データ
 
-次の期間の後 [[!DNL Salesforce] 設定](../integrations/salesforce.md) が完了し、各クエリ可能なテーブル [object](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm)  — 名前 `sf_/\{sobject-name}`  — がData Warehouseに作成されました。
+次の期間の後に [[!DNL Salesforce] 設定](../integrations/salesforce.md) が完了した場合、各クエリ可能なテーブル [object](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm)  — 名前 `sf_/\{sobject-name}`  — がData Warehouseに作成されました。
 
 >[!NOTE]
 >
 >各テーブルの構造（列）は、オブジェクトに含まれるフィールドに応じて異なります。
 
-組織で使用可能なオブジェクトのリストを取得するには、 [!DNL Salesforce] [Get a List of Objects ドキュメント](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). オブジェクトのリストを作成したら、 [エンティティ関係図 (ERD) セクション](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) / [!DNL Salesforce] エンティティの相互関係を確認するドキュメント
+組織で使用可能なオブジェクトのリストを取得するには、 [!DNL Salesforce] [Get a List of Objects ドキュメント](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). オブジェクトのリストを作成したら、 [エンティティ関係図 (ERD) セクション](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) / [!DNL Salesforce] エンティティの相互関係を確認するドキュメントです。
 
 ## サポートされていないオブジェクト
 

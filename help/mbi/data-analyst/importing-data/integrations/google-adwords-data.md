@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# 予測 [!DNL Google Adwords] データ
+# 期待値 [!DNL Google Adwords] データ
 
 後 [接続しました [!DNL Google Adwords] アカウント](../integrations/google-adwords.md)を使用する場合、 [Data Warehouse管理](../../data-warehouse-mgr/tour-dwm.md) 分析に関連するデータフィールドを容易に追跡する。
 
@@ -20,9 +20,9 @@ Data Warehouseへのレプリケーションに使用できる 2 つのテーブ
 * `campaigns[account-id]`
 * `adwords[account-id]`
 
-この `campaigns` 表 *は、デフォルトで使用する必要があります*&#x200B;を使用すると、そのテーブルの関連するすべてのフィールドを同期することから始めることができます。
+The `campaigns` 表 *は、デフォルトで使用する必要があります*&#x200B;を使用すると、そのテーブルの関連するすべてのフィールドを同期することから始めることができます。
 
-この `adwords` テーブルに、 `campaigns` テーブル：
+The `adwords` テーブルに、以下にない 4 つの列が含まれています `campaigns` テーブル：
 
 1. `keyword`
 1. `adContent`
@@ -33,13 +33,13 @@ Data Warehouseへのレプリケーションに使用できる 2 つのテーブ
 
 >[!IMPORTANT]
 >
->このテーブルでは、これらの 4 つの列がすべて含まれる行が除外されます `null`.
+>このテーブルでは、これらの 4 つの列がすべて含まれる行が除外されます。 `null`.
 
 以下に、両方のテーブルで期待されるスキーマを示します。
 
 ## [!DNL Campaigns] 表
 
-この `campaigns` テーブルには、次の列が含まれます。
+The `campaigns` テーブルには、次の列が含まれます。
 
 | **列** | **説明** |
 |-----|-----|
@@ -59,7 +59,7 @@ Data Warehouseへのレプリケーションに使用できる 2 つのテーブ
 
 ## [!DNL AdWords] 表
 
-この `adwords` テーブルには、次の列が含まれます。
+The `adwords` テーブルには、次の列が含まれます。
 
 | **列** | **説明** |
 |-----|-----|
@@ -76,12 +76,12 @@ Data Warehouseへのレプリケーションに使用できる 2 つのテーブ
 | `\_updated\_at` | この行の最後の更新の日時 |
 | `keyword` | キャンペーンのキーワード |
 | `adContent` | オンラインキャンペーンのテキストの最初の行 |
-| `adDestinationUrl` | URL [!DNL Adwords] 広告参照トラフィック |
+| `adDestinationUrl` | URL: [!DNL Adwords] 広告参照トラフィック |
 | `adGroup` | の名前 [!DNL Adwords] 広告グループ |
 
 {style="table-layout:auto"}
 
-このデータを使用して、 [指標](../../../data-user/reports/ess-manage-data-metrics.md) および [レポート](../../../tutorials/using-visual-report-builder.md) 支出データと [ROI を計算するために生涯収益と結び付ける](../../analysis/roi-ad-camp.md).
+このデータを使用して、 [指標](../../../data-user/reports/ess-manage-data-metrics.md) および [レポート](../../../tutorials/using-visual-report-builder.md) 支出データに基づき、 [ROI を計算するために生涯収益と結び付ける](../../analysis/roi-ad-camp.md).
 
 ## 統合テーブル
 

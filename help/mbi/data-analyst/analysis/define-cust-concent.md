@@ -21,11 +21,11 @@ ht-degree: 0%
 
 最初に、値が 1 のプライマリキーのみを含むファイルをアップロードする必要があります。 これにより、解析に必要な計算列を作成できます。
 
-以下を使用できます。 [ファイルアップローダ](../importing-data/connecting-data/using-file-uploader.md) および以下の画像を使用して、ファイルの形式を設定します。
+以下を使用できます。 [ファイルのアップローダ](../importing-data/connecting-data/using-file-uploader.md) および以下の画像を使用して、ファイルの形式を設定します。
 
 ## 計算列
 
-元のアーキテクチャを使用している場合 ( 例えば、 `Data Warehouse Views` オプションを `Manage Data` メニュー ) を使用する場合に、サポートチームに連絡して、次の列を構築する必要があります。 新しいアーキテクチャでは、これらの列は `Manage Data > Data Warehouse` ページ。 詳細な手順は以下のとおりです。
+元のアーキテクチャを使用している場合 ( 例えば、 `Data Warehouse Views` オプションを `Manage Data` メニュー ) を使用する場合に、サポートチームに連絡して、次の列を構築する必要があります。 新しいアーキテクチャでは、これらの列は `Manage Data > Data Warehouse` ページに貼り付けます。 詳細な手順は以下のとおりです。
 
 お客様のビジネスがゲストの注文を許可する場合は、さらに区別がおこなわれます。 その場合、 `customer_entity` 表。 ゲストによる注文が許可されない場合、 `sales_flat_order` 表。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 * （入力） `reference`
 * [!UICONTROL Column type]: – `Same table > Calculation`
 * [!UICONTROL Inputs]: – `entity_id`
-* [!UICONTROL Calculation]:- **A が null の場合は Null の場合、それ以外の場合は 1 の終わり**
+* [!UICONTROL Calculation]: - **A が null の場合は Null の場合、それ以外の場合は 1 の終わり**
 * [!UICONTROL Datatype]: – `Integer`
 
 * `Customer concentration` テーブル ( これは、アップロードしたファイルの番号 `1`)
@@ -58,7 +58,7 @@ ht-degree: 0%
 * 顧客の売上高の百分位
 * [!UICONTROL Column type]: – `Same table > Calculation`
 * [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]:- **A が null の場合は Null を、それ以外の場合 (A/B)* 100 終了&#x200B;**
+* [!UICONTROL Calculation]: - **A が null の場合は Null を、それ以外の場合 (A/B)* 100 終了&#x200B;**
 * [!UICONTROL Datatype]: – `Decimal`
 
 * `Sales_flat_order` 表
@@ -76,7 +76,7 @@ ht-degree: 0%
 * 顧客の売上高の百分位
 * [!UICONTROL Column type]: – `Same table > Calculation`
 * [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]:- **A が null の場合は Null を、それ以外の場合 (A/B)* 100 終了&#x200B;**
+* [!UICONTROL Calculation]: - **A が null の場合は Null を、それ以外の場合 (A/B)* 100 終了&#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -86,10 +86,10 @@ ht-degree: 0%
 ## 指標
 
 * **合計顧客ライフタイム値**
-* 内 `customer_entity` 表
+* Adobe Analytics の `customer_entity` 表
 * この指標では **合計**
-* の `Customer's lifetime revenue` 列
-* 発注元： `Customer's first order date` timestamp
+* 次の日： `Customer's lifetime revenue` 列
+* 並べ替え元 `Customer's first order date` timestamp
 
 ## レポート
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 * [!UICONTROL Time period]: `All time`
 * 
   [!UICONTROL Interval]: `None`
-* グラフを非表示
+* グラフを非表示にする
 * 
   [!UICONTROL グループ化基準]: `Email`
 * 
@@ -135,7 +135,7 @@ ht-degree: 0%
 * [!UICONTROL Time period]: `All time`
 * 
   [!UICONTROL Interval]: `None`
-* グラフを非表示
+* グラフを非表示にする
 * 
   [!UICONTROL グループ化基準]: `Email`
 * 
@@ -148,7 +148,7 @@ ht-degree: 0%
 * [!UICONTROL Time period]: `All time`
 * 
   [!UICONTROL Interval]: `None`
-* グラフを非表示
+* グラフを非表示にする
 * 
   [!UICONTROL グループ化基準]: `Email`
 * 
@@ -156,4 +156,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 
-この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

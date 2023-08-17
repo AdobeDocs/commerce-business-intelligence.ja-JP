@@ -15,7 +15,7 @@ ht-degree: 0%
 
 サーバーに SSH トンネルを作成する場合、 [!DNL Adobe Commerce Intelligence] データベース以外の何かにアクセスできるようにする。 もしあなたが望まないなら [!DNL Commerce Intelligence] データベースを格納しているサーバーに対するフルアクセス権を持つには、 [!DNL Commerce Intelligence Linux] ユーザーを [制限付き bash シェル](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
 
-名前から推測したかもしれませんが、制限付きの bash シェルは、標準のシェルよりも制御された環境を設定するために使用されます。 この種のシェルに関する重要な点は、制限付きシェルユーザーがシステム関数にアクセスしたり、何らかの変更を加えたりできないことです。
+名前から推測したかもしれませんが、制限付きの bash シェルは、標準のシェルよりも制御された環境を設定するために使用されます。 この種のシェルに関する重要な点は、制限付きのシェルユーザーがシステム関数にアクセスしたり、何らかの変更を加えたりできないことです。
 
 次の手順で [!DNL Commerce Intelligence Linux] ユーザーは、次の 2 つの操作を実行する必要があります。
 

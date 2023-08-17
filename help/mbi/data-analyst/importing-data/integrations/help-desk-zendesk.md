@@ -17,9 +17,9 @@ ht-degree: 0%
 >
 >これは、 `Pro` 新しいアーキテクチャを計画および使用します。 新しいアーキテクチャを使用している場合、 `Data Warehouse Views` 選択後に使用可能なセクション `Manage Data` を選択します。
 
-統合 [!DNL Zendesk] トランザクションデータベースのデータは、お客様のセールスまたは顧客の成功チームとの関わり方をより深く理解するための優れた方法です。 また、サポートプラットフォームを使用している顧客の種類を知るのに役立ちます。 このトピックでは、 [!DNL Zendesk] パフォーマンスを向上させ、トランザクションの顧客と結び付ける。
+統合 [!DNL Zendesk] トランザクションデータベースのデータは、お客様のセールスまたは顧客の成功チームとの関わり方をより深く理解するための優れた方法です。 また、サポートプラットフォームを使用している顧客の種類を知るのにも役立ちます。 このトピックでは、 [!DNL Zendesk] パフォーマンスを向上させ、トランザクションの顧客と結び付ける。
 
-開始する前に、 [[!DNL Zendesk]](../integrations/zendesk.md). この分析に含まれる内容 [高度な計算列](../../data-warehouse-mgr/adv-calc-columns.md).
+使用を開始する前に、 [[!DNL Zendesk]](../integrations/zendesk.md). この分析に含まれる内容 [高度な計算列](../../data-warehouse-mgr/adv-calc-columns.md).
 
 <!-- Getting Started -->
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
       * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user` その後 `Yes` when `B` 等しくない `null` および `B` いいね！ `%@magento.com` その後 `Yes` else `No` 終了
 
-      * 置換 `@magento.com` を、
+      * 置換 `@magento.com` を使用して
 
       * `Datatype` - `String`
 
@@ -236,54 +236,54 @@ ht-degree: 0%
 * **[!DNL Zendesk]新しいチケット**
    * `Tickets we count`
 
-* 内 **`[!DNL Zendesk] tickets`** 表
+* Adobe Analytics の **`[!DNL Zendesk] tickets`** 表
 * この指標では **カウント**
-* の **`id`** 列
-* 発注元： **`created_at`** timestamp
+* 次の日： **`id`** 列
+* 並べ替え元 **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]解決済みチケット**
    * `Tickets we count`
    * ステータス IN `closed, solved`
 
-* 内 **`[!DNL Zendesk] tickets`** 表
+* Adobe Analytics の **`[!DNL Zendesk] tickets`** 表
 * この指標では **カウント**
-* の **`id`** 列
-* 発注元： **`created_at`** timestamp
+* 次の日： **`id`** 列
+* 並べ替え元 **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]チケットを申し込むユニークユーザー**
    * `Tickets we count`
 
-* 内 **`[!DNL Zendesk] tickets`** 表
+* Adobe Analytics の **`[!DNL Zendesk] tickets`** 表
 * この指標では **個別カウント**
-* の **`requester_id`** 列
-* 発注元： **`created_at`** timestamp
+* 次の日： **`requester_id`** 列
+* 並べ替え元 **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]平均/中央値チケット解決時間**
+* **[!DNL Zendesk]チケットの平均解決時間/中央値解決時間**
    * `Tickets we count`
    * ステータス IN `closed, solved`
 
-* 内 **`[!DNL Zendesk] tickets`** 表
-* この指標では **平均（中央値）**
-* の **`Seconds to resolution`** 列
-* 発注元： **`created_at`** timestamp
+* Adobe Analytics の **`[!DNL Zendesk] tickets`** 表
+* この指標では、 **平均（中央値）**
+* 次の日： **`Seconds to resolution`** 列
+* 並べ替え元 **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]最初の応答までの平均時間/中央値**
    * カウントされるチケット
-   * ステータス IN クローズ、解決済み
+   * ステータス IN クローズ済み、解決済み
 
-* 内 **`[!DNL Zendesk] tickets`** 表
-* この指標では **平均（中央値）**
-* の **`Seconds to first response`** 列
-* 発注元： **`created_at`** timestamp
+* Adobe Analytics の **`[!DNL Zendesk] tickets`** 表
+* この指標では、 **平均（中央値）**
+* 次の日： **`Seconds to first response`** 列
+* 並べ替え元 **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->必ず [すべての新しい列を指標のディメンションとして追加](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に
+>必ず [すべての新しい列を指標のディメンションとして追加](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に。
 
 ### レポート
 

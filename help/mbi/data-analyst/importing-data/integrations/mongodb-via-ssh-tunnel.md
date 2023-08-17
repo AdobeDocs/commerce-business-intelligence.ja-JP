@@ -1,6 +1,6 @@
 ---
 title: 接続 [!DNL MongoDB] SSH トンネル経由
-description: 接続方法の詳細 [!DNL MongoDB] SSH トンネル経由。
+description: 接続方法を学ぶ [!DNL MongoDB] SSH トンネル経由。
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 次の手順で [!DNL MongoDB] データベースへ [!DNL Commerce Intelligence] SSH トンネルを介して、次の操作を行う必要があります。
 
-1. [の取得 [!DNL Commerce Intelligence] 公開鍵](#retrieve)
+1. [を取得する [!DNL Commerce Intelligence] 公開鍵](#retrieve)
 1. [次へのアクセスを許可： [!DNL Commerce Intelligence] IP アドレス](#allowlist)
 1. [Commerce Intelligence 用の Linux ユーザーの作成](#linux)
 1. [の作成 [!DNL MongoDB] コマースインテリジェンス用のユーザー](#mongodb)
@@ -27,16 +27,16 @@ ht-degree: 0%
 
 ## の取得 [!DNL Commerce Intelligence] 公開鍵 {#retrieve}
 
-この `public key` は、 [!DNL Commerce Intelligence] `Linux` ユーザー。 次の節では、ユーザーの作成とキーの読み込みの手順を説明します。
+The `public key` を認証するために使用します。 [!DNL Commerce Intelligence] `Linux` ユーザー。 次の節では、ユーザーの作成とキーの読み込みの手順を説明します。
 
-1. に移動します。 **[!UICONTROL Data** > **Connections]** をクリックし、 **[!UICONTROL Add New Data Source]**.
-1. 次をクリック： [!DNL MONGODB] アイコン
-1. 次の期間の後 [!DNL MongoDB] 認証情報ページが開きます。 `Encrypted` 切り替える `Yes`. SSH セットアップフォームが表示されます。
-1. この `public key` はこのフォームの下に配置されています。
+1. に移動します。 **[!UICONTROL Data** > **Connections]** をクリックします。 **[!UICONTROL Add New Data Source]**.
+1. 次をクリック： [!DNL MONGODB] アイコン。
+1. 次の期間の後に [!DNL MongoDB] 認証情報ページが開きます。 `Encrypted` 切り替える `Yes`. SSH セットアップフォームが表示されます。
+1. The `public key` はこのフォームの下に配置されています。
 
-このページはチュートリアル全体で開いたままにしておきます。次のセクションで、最後にこのページを開く必要があります。
+このページは、チュートリアル全体で開いたままにしておきます。次のセクションで、最後におこなう必要があります。
 
-少し迷ったら、次の操作を実行します [!DNL Commerce Intelligence] キーを取得するには：
+少し迷ったら、次の操作を実行します。 [!DNL Commerce Intelligence] キーを取得するには：
 
 ![RJMetrics 公開鍵の取得](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->この `sshd_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合は、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL Commerce Intelligence]. このような場合、 `AllowUsers` 許す `rjmetric` ユーザーがサーバーにアクセスできること。
+>次の場合、 `sshd_config` サーバーに関連付けられたファイルがデフォルトのオプションに設定されていない場合は、特定のユーザーだけがサーバーにアクセスできます。これにより、 [!DNL Commerce Intelligence]. このような場合、次のようなコマンドを実行する必要があります。 `AllowUsers` 許可する `rjmetric` ユーザーがサーバーにアクセスできること。
 
 リアルタイム（または頻繁に更新される）データが含まれる限り、実稼動マシンまたはセカンダリマシンにすることができます。 このユーザーは、 [!DNL MongoDB] サーバー。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
     mkdir /home/rjmetric/.ssh
 ```
 
-を記憶する `public key` 最初の部分で取り戻したの？ ユーザーがデータベースに確実にアクセスできるようにするには、キーを `authorized_keys`. キー全体を `authorized_keys` ファイルの内容は次のとおりです。
+次を記憶する： `public key` 最初の部分で取り戻したの？ ユーザーがデータベースに確実にアクセスできるようにするには、キーを `authorized_keys`. キー全体を `authorized_keys` ファイルの内容は次のとおりです。
 
 ```bash
     touch /home/rjmetric/.ssh/authorized_keys
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ## の作成 [!DNL Commerce Intelligence] [!DNL MongoDB] ユーザー {#mongodb}
 
-[!DNL MongoDB] サーバは 2 つの実行モードを持つ — [1 つは「auth」オプションを持つもの](#auth) `(mongod -- auth)` 一人はいなかった [これはデフォルトの](#default). の作成手順 [!DNL MongoDB] ユーザーは、サーバーが使用しているモードによって異なります。 続行する前に、モードを確認してください。
+[!DNL MongoDB] サーバは 2 つの実行モードを持つ — [1 つは「auth」オプションを持つもの](#auth) `(mongod -- auth)` 一人はいなかった [（これはデフォルト）](#default). を作成する手順 [!DNL MongoDB] ユーザーは、サーバーが使用しているモードによって異なります。 続行する前に、モードを確認してください。
 
 ### サーバーが `Auth` オプション： {#auth}
 
@@ -95,7 +95,7 @@ ht-degree: 0%
     db.createUser('rjmetric', '< secure password here >', true)
 ```
 
-次のコマンドを使用して [!DNL Commerce Intelligence] ユーザーアクセス `to a single database`:
+次のコマンドを使用して、 [!DNL Commerce Intelligence] ユーザーアクセス `to a single database`:
 
 ```bash
     use < database name >
@@ -126,21 +126,21 @@ ht-degree: 0%
 
 ## 次の場所に接続とユーザー情報を入力 [!DNL Commerce Intelligence] {#finish}
 
-まとめるには、接続とユーザー情報を次のように入力する必要があります。 [!DNL Commerce Intelligence]. あなたは [!DNL MongoDB] 認証情報ページを開きますか？ そうでない場合は、に移動します。 **[!UICONTROL Data > Connections]** をクリックし、 **[!UICONTROL Add New Data Source]**、 [!DNL MongoDB] アイコン 忘れずに `Encrypted` 切り替える `Yes`.
+まとめるには、接続とユーザー情報を次のように入力する必要があります。 [!DNL Commerce Intelligence]. あなたは [!DNL MongoDB] 認証情報ページを開きますか？ そうでない場合は、に移動します。 **[!UICONTROL Data > Connections]** をクリックします。 **[!UICONTROL Add New Data Source]**&#x200B;を、 [!DNL MongoDB] アイコン。 忘れずに `Encrypted` 切り替える `Yes`.
 
 このページに、以下の情報を入力します。 `Database Connection` セクション：
 
 * `Host`: `127.0.0.1`
-* `Username`:この [!DNL Commerce Intelligence] [!DNL MongoDB] ユーザー名 ( `rjmetric`)
-* `Password`:この [!DNL Commerce Intelligence] [!DNL MongoDB] パスワード
-* `Port`:サーバー上の MongoDB のポート (`27017` （デフォルト）
-* `Database Name` （オプション）:1 つのデータベースへのアクセスのみを許可する場合は、ここでそのデータベースの名前を指定します。
+* `Username`: [!DNL Commerce Intelligence] [!DNL MongoDB] ユーザー名 ( `rjmetric`)
+* `Password`: [!DNL Commerce Intelligence] [!DNL MongoDB] パスワード
+* `Port`：サーバー上の MongoDB のポート (`27017` （デフォルト）
+* `Database Name` （オプション）:1 つのデータベースへのアクセスのみを許可する場合は、そのデータベースの名前をここに指定します。
 
-以下 `SSH Connection` セクション：
+の下 `SSH Connection` セクション：
 
 * `Remote Address`:SSH で接続するサーバーの IP アドレスまたはホスト名
-* `Username`:この [!DNL Commerce Intelligence] Linux(SSH) ユーザー名 (rjmetric)
-* `SSH Port`:サーバー上の SSH ポート（デフォルトは 22）
+* `Username`: [!DNL Commerce Intelligence] Linux(SSH) ユーザー名 (rjmetric)
+* `SSH Port`：サーバー上の SSH ポート（デフォルトは 22）
 
 完了したら、「 **[!UICONTROL Save Test]** をクリックして設定を完了します。
 

@@ -17,17 +17,17 @@ ht-degree: 0%
 
 ![ダッシュボードでのホリデーセールス](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
-## 手順 1:基本レポートの作成
+## 手順 1：基本レポートの作成
 
 1. メニューで、「 」を選択します。 `Report Builder`.
 
 1. クリック **[!UICONTROL Add Metric]** レポートの最初の指標を選択します。
 
-   この例では、 `Revenue by products ordered` 指標が使用されます。
+   この例では、 `Revenue by products ordered` という指標が使用されます。
 
 1. クリック **[!UICONTROL Add Metric]** 再度選択し、レポートの 2 番目の指標を選択します。
 
-   この例では、 `New Customers` 指標が使用されます。
+   この例では、 `New Customers` という指標が使用されます。
 
 1. サイドバーで、 **[!UICONTROL Details]** をクリックして、各指標に関する情報を表示します。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 1. グラフで、各行のいくつかのデータポイントにマウスポインターを置くと、各指標に関連付けられている金額が表示されます。
 
-## 手順 2:数式を追加
+## 手順 2：数式を追加する
 
 1. サイドバーの上部で、 **[!UICONTROL Add Formula]**.
 
@@ -49,13 +49,13 @@ ht-degree: 0%
 
    次の操作を実行します。
 
-   * 内 `Enter your Formula` 入力ボックスに、 `A/B`.
+   * Adobe Analytics の `Enter your Formula` 入力ボックスに、 `A/B`.
 
      これにより、売上高が新規顧客数で並べ替えられた製品数で割られます。
 
    * 設定 `Select format` から `123Number`.
 
-   * サイドバーで、 `Untitled` 数式の名前を持つ
+   * サイドバーで、 `Untitled` 数式の名前を持つ。
 
    ![数式設定](../../assets/magento-bi-report-builder-revenue-by-products-add-formula-detail.png)
 
@@ -65,17 +65,17 @@ ht-degree: 0%
 
    ![数式でレポート](../../assets/magento-bi-report-builder-revenue-by-products-formula-report.png)
 
-## 手順 3:日付範囲を追加
+## 手順 3：日付範囲の追加
 
 1. クリック **[!UICONTROL Date Range]** をクリックします。
 
-1. の `Fixed Date Range` 「 」タブで、以下の操作を実行します。
+1. 次の日： `Fixed Date Range` 「 」タブで、以下の操作を実行します。
 
    * カレンダーで、日付範囲を選択します。
 
      この例では、ホリデーシーズンは `November 1` 経由 `December 31`.
 
-   * の下 `Select Time Interval`選択 `Day`.
+   * の下 `Select Time Interval`を選択します。 `Day`.
 
      ![固定日付範囲](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
    ![固定日付範囲](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range-report.png)
 
-## 手順 4:レポートの保存
+## 手順 4：レポートの保存
 
 この手順では、レポートをグラフとして、またテーブルとして保存します。
 
