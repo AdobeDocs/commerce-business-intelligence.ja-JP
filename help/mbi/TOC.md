@@ -4,7 +4,7 @@ description: 使用方法を学ぶ [!DNL Commerce Intelligence] Adobe Commerce�
 breadcrumb-title: Commerce Intelligence ユーザーガイド
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
+source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 - データを分析 {#analyze}
    - [データアナリスト](data-analyst.md)
    - Data Warehouse管理 {#warehouse-manager}
-      - [はじめに](data-analyst/data-warehouse-mgr/tour-dwm.md)
+      - [概要](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [高度な計算列のタイプ](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [建物 [!DNL Google Ecommerce] 寸法](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
       - [計算列のタイプ](data-analyst/data-warehouse-mgr/calc-column-types.md)
@@ -57,12 +57,12 @@ ht-degree: 0%
       - [マッピングテーブルを使用したデータの標準化](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
       - [SQL クエリのへの変換 [!DNL Commerce Intelligence] レポート](data-analyst/dev-reports/sql-queries-reports.md)
       - [テーブルの関係の理解と評価](data-analyst/data-warehouse-mgr/table-relationships.md)
-      - [計算された日付差異の使用](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
+      - [計算された日付差異の使用](data-analyst/data-warehouse-mgr/using-date-diff-calc-column.md)
       - [ダッシュボード全体でのフィルタリングの使用](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [イベント番号計算列の使用](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
-      - [順次比較計算列の使用](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column-.md)
+      - [順次比較計算列の使用](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
    - 共通コマーステーブル {#tables}
-      - [はじめに](data-analyst/data-warehouse-mgr/common-mage-tables.md)
+      - [概要](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
       - [[!DNL enterprise_rma]](data-analyst/data-warehouse-mgr/enter-rma-table.md)
       - [[!DNL enterprise_rma_item_entity]](data-analyst/data-warehouse-mgr/enter-rma-entity-item.md)
@@ -86,7 +86,7 @@ ht-degree: 0%
       - [を使用した指標の監査 [!DNL SQL Report Builder]](data-analyst/dev-reports/audit-metrics-sql.md)
       - [列間の違い [!DNL SQL] および [!DNL Data Warehouse Manager]](data-analyst/dev-reports/columns-sql-dwm.md)
    - データの接続 {#connecting}
-      - [はじめに](data-analyst/importing-data/connecting-data/connecting-data.md)
+      - [概要](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [e コマースデータのフォーマットとインポート](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
       - [インポート中 [!DNL Bing Ad Spend] データ](data-analyst/importing-data/connecting-data/import-bing-ad-data.md)
       - [インポート中 [!DNL CJ Affiliate] （委員会合）マーケティングデータ](data-analyst/importing-data/connecting-data/import-cj-market-data.md)
@@ -171,7 +171,7 @@ ht-degree: 0%
       - [在庫レベルの分析](data-analyst/analysis/analyze-inventory-level.md)
       - [小売カレンダーのレポート](data-analyst/analysis/report-retail-calendar.md)
    - 予測 {#forecasting}
-      - [はじめに](data-analyst/analysis/forecasting.md)
+      - [概要](data-analyst/analysis/forecasting.md)
 - レポートの作成とデータの共有 {#build}
    - [データユーザ](../mbi/data-user.md)
    - レポート {#reports}
@@ -231,7 +231,7 @@ ht-degree: 0%
    - ダッシュボードの操作 {#working-dashboards}
       - [ダッシュボードの共有](best-practices/share-dashboard-best-practice.md)
       - [投資者ダッシュボードの作成](best-practices/build-investor-dashboard.md)
-- チュートリアル {#tutorials}
+- Tutorials {#tutorials}
    - [の使用 [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [時間オプションを使用する [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [のビジュアライゼーションの作成 [!DNL SQL] クエリ](tutorials/create-visuals-from-sql.md)
