@@ -4,9 +4,9 @@ description: 新しいAdobe Commerce Intelligence アーキテクチャで、SQL
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ The `Is customer's last order?` 列は、入力を使用します `Customer's li
    * `Integer`  — 整数
    * `Decimal(10,2)`  — 合計 10 桁の 10 進数で、そのうち 2 は小数点の右側にある
    * `String`  — 数字以外の文字を使用する任意の種類のテキストまたは一連の文字
-   * `Datetime` - yyyy-MM-dd hh:mm:ss 形式
+   * `Datetime` - `yyyy-MM-dd hh:mm:ss` 形式
 
 1. クリック **[!UICONTROL test column]**. これにより、各入力に対して 5 つのテスト値のリストが生成され、テスト値の各セットに対して手順 6 のロジックの結果が表示されます。 SQL のいずれかの部分でエラーが生成された場合は、適切なエラーメッセージが返されます。 サンプル結果は、すべての入力列がネイティブフィールドの場合にのみ生成できます。 いずれかの入力列が計算列である場合は、指標に列を追加し、ビジュアルReport Builderで表示して、結果を検証する必要があります
 
