@@ -1,5 +1,5 @@
 ---
-title: データを管理
+title: データの管理
 description: データの管理の使用方法を説明します。
 exl-id: 6274eda4-d3ff-47b6-81d9-06ad4f150ef7
 role: Admin, Data Architect, Data Engineer, User
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# データを管理
+# データの管理
 
-「データを管理」を使用すると、統合、レポートおよびグラフのデータ、ダッシュボード、エクスポートを管理するための様々なツールにアクセスできます。
+データを管理：統合、レポートおよびグラフデータ、ダッシュボードおよびエクスポートを管理する様々なツールにアクセスできます。
 
-## アクセスするには [!DNL Manage Data]:
+## アクセス対象 [!DNL Manage Data]:
 
 1. メニューで、 **[!DNL Manage Data]**.
 
@@ -25,4 +25,4 @@ ht-degree: 0%
    * `Manage Data`
    * `Export Data`
 
-   ![データを管理](../../assets/magento-bi-manage-data.png)<!--{: .zoom}-->
+   ![データの管理](../../assets/magento-bi-manage-data.png)<!--{: .zoom}-->

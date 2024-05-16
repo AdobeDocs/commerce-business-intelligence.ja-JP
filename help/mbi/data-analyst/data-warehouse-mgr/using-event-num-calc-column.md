@@ -1,27 +1,27 @@
 ---
-title: イベント番号計算列
-description: イベント番号計算列の目的と用途について説明します。
+title: イベント数計算列
+description: イベント番号の計算列の目的と使用について説明します。
 exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 3%
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
-# イベント番号計算列
+# イベント数計算列
 
-このトピックでは、 `Event Number` で使用できる計算列 **[!DNL Manage Data > Data Warehouse]** ページに貼り付けます。 その動作の説明と、その後に例と、それを作る仕組みを次に示します。
+このトピックでは、 `Event Number` で使用できる計算列 **[!DNL Manage Data > Data Warehouse]** ページ。 以下に、その機能の説明、例、およびそれを作成する仕組みを示します。
 
 **説明**
 
-The `Event Number` 列タイプは、特定の **イベント所有者**、など `customer` または `user`. SQL に詳しい場合、この列のタイプは `RANK` 関数に置き換えます。 この関数を使用して、データ内の初回イベント、繰り返しイベント、n 番目のイベントの動作の違いを観察できます。
+この `Event Number` 列タイプは、特定のイベントが発生したシーケンスを識別します **イベント所有者**。例： `customer` または `user`. SQL を熟知している場合、この列タイプはと同じです `RANK` 関数。 これを使用すると、データ内の初回イベント、リピートイベントまたは n 番目のイベント間で動作の違いを確認できます。
 
-結び付けの場合、この列には同じ値が含まれます **rank** 結び付けられたイベントに対して実行し、後続の数値をスキップします。 例えば、5、8、10、10、12 という数値をランク付けしている場合、ランクは 1、2、3、3、5 になります。
+同数の場合、この列には同じ値が含まれます **ランク** 結び付けられたイベントについては、後続の数値をスキップします。 例えば、5,8,10,10,12 という数字をランク付けした場合、ランクは 1,2,3,3,5 になります。
 
-この列の最も一般的な使用例は、初めての購入者とリピート購入者を分析することです。 初めて、購入者が、 `Customer's order number` = 1. `Customer's order number` はタイプの列です `Event Number`.
+この列の最も一般的なユースケースは、初回購入者とリピート購入者を分析することです。 初回購入者は、（指標またはレポートに）フィルターを追加することで識別されます `Customer's order number` = 1。 `Customer's order number` は、型の列です `Event Number`.
 
 **例**
 
@@ -33,26 +33,26 @@ The `Event Number` 列タイプは、特定の **イベント所有者**、な�
 | **4 | A | 2015-01-02 13:00:00 | 3 |
 | **5 | B | 2015-01-03 13:00:00 | 2 |
 
-上記の例では、列 `Owner's event number` は `Event Number` 列。 所有者のイベントを、発生した順序 ( `timestamp` 」列 ) を参照してください。
+上記の例では、列 `Owner's event number` は `Event Number` 列。 所有者のイベントを、発生した順序で（に基づいて）ランク付けします `timestamp` 列）に含まれます。
 
-例えば、次の場所にあるすべての行を考えてみます。 `owner_id = A`. テーブルの最初の行がこの所有者の最も早いタイムスタンプで、その後にテーブルの 3 番目の行、その後にテーブルの 4 番目の行が続きます。
+例えば、次のようなすべての行を検討します `owner_id = A`. テーブルの最初の行は、この所有者の最も古いタイムスタンプ、テーブルの 3 行目、テーブルの 4 行目が続きます。
 
-**力学**
+**仕組み**
 
-以下に、 `Event Number` 列：
+以下は、を作成する手順です。 `Event Number` 列：
 
-1. 次に移動： **[!UICONTROL Manage Data > Data Warehouse]** ページに貼り付けます。
+1. に移動します。 **[!UICONTROL Manage Data > Data Warehouse]** ページ。
 
 1. この列を作成するテーブルに移動します。
 
-1. クリック **[!UICONTROL Create a Column]** を選択し、 `EVENT_NUMBER (…)` 列タイプ： `Same Table` 」セクションに入力します。
+1. クリック **[!UICONTROL Create a Column]** を選択し、 `EVENT_NUMBER (…)` 列タイプ：の下 `Same Table` セクション。
 
-1. 最初のドロップダウン `Event Owner` ランクを決定するエンティティを指定します。 例えば、 `Customer's order number`、顧客識別子（例： ） `customer_id` または `customer_email` 次のようになります `Event Owner`.
+1. 最初のドロップダウン `Event Owner` ランクを決定するエンティティを指定します。 次の場合 `Customer's order number`、などの顧客識別子。 `customer_id` または `customer_email` はになります。 `Event Owner`.
 
-1. 2 番目のドロップダウン `Event Rank` 行のランクを決定する順序を強制する列を指定します。 例えば、 `Customer's order number`、 `created_at` timestamp は、 `Event Rank`.
+1. 2 つ目のドロップダウン `Event Rank` 行のランクを決定するシーケンスを強制する列を指定します。 次の場合 `Customer's order number`, `created_at` timestamp はとなります。 `Event Rank`.
 
-1. の下 `Options` ドロップダウンで、フィルターを追加して、考慮しない行を除外できます。 除外された行には、 `NULL` の値を指定します。
+1. の下 `Options` ドロップダウンでは、フィルターを追加して、行を考慮から除外できます。 除外行には、 `NULL` この列の値。
 
-1. 列に名前を付け、「 **[!UICONTROL Save]**.
+1. 列に名前を付け、 **[!UICONTROL Save]**.
 
-1. この列は、 _すぐに_
+1. 列は使用可能です _すぐに。_

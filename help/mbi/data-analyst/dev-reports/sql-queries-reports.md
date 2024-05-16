@@ -1,161 +1,161 @@
 ---
-title: SQL クエリの Commerce Intelligence レポートへの変換
-description: SQL クエリを Commerce Intelligence で使用する計算列、指標に変換する方法を説明します。
+title: SQL クエリのCommerce Intelligence レポートへの変換
+description: SQL クエリをCommerce Intelligence で使用する計算列（指標）に変換する方法を説明します。
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
 
 # Commerce Intelligence での SQL クエリの翻訳
 
-SQL クエリが [計算列](../data-warehouse-mgr/creating-calculated-columns.md), [指標](../../data-user/reports/ess-manage-data-metrics.md)、および [レポート](../../tutorials/using-visual-report-builder.md) を使用している [!DNL Commerce Intelligence]? SQL の使用が多い場合は、SQL の変換方法を [!DNL Commerce Intelligence] を使用すると、 [Data Warehouse管理](../data-warehouse-mgr/tour-dwm.md) そして、 [!DNL Commerce Intelligence] プラットフォーム。
+SQL クエリがにどのように変換されるかを疑問に思ったことはありません [計算される列](../data-warehouse-mgr/creating-calculated-columns.md), [指標](../../data-user/reports/ess-manage-data-metrics.md)、および [報告書](../../tutorials/using-visual-report-builder.md) でを使用しています [!DNL Commerce Intelligence]? 大量の SQL ユーザーの場合は、での SQL の翻訳方法を理解する [!DNL Commerce Intelligence] を使用すると、でよりスマートに作業できます [Data Warehouse管理者](../data-warehouse-mgr/tour-dwm.md) を最大限に活用 [!DNL Commerce Intelligence] プラットフォーム。
 
-このトピックの最後に、 **翻訳マトリックス** SQL クエリ句の場合は、 [!DNL Commerce Intelligence] 要素。
+このトピックの最後には、 **翻訳マトリックス** SQL 問合せ句および [!DNL Commerce Intelligence] 要素。
 
 まず、一般的なクエリを確認します。
 
 | | |
 |--- |--- |
 | `SELECT` |  |
-| `a,` | レポート `group by` |
+| `a,` | 報告書 `group by` |
 | `SUM(b)` | `Aggregate function` （列） |
-| `FROM c` | `Source` 表 |
+| `FROM c` | `Source` テーブル |
 | `WHERE` |  |
 | `d IS NOT NULL` | `Filter` |
-| `AND time < X`<br><br> `AND time >= Y` | レポート `time frame` |
-| `GROUP BY a` | レポート `group by` |
+| `AND time < X`<br><br> `AND time >= Y` | 報告書 `time frame` |
+| `GROUP BY a` | 報告書 `group by` |
 
-この例では、ほとんどの翻訳例を扱いますが、いくつか例外があります。 に進み、 `aggregate` 関数が翻訳されます。
+この例ではほとんどの翻訳ケースをカバーしていますが、例外もあります。 方法から始まる、の詳細 `aggregate` 関数が翻訳されます。
 
 ## 集計関数
 
-集計関数 ( 例： `count`, `sum`, `average`, `max`, `min`) をクエリで使用する場合は、次の形式を使用します。 **指標の集計** または **列の集計** in [!DNL Commerce Intelligence]. 差分係数は、集計を実行するために結合が必要かどうかです。
+集計関数（例： `count`, `sum`, `average`, `max`, `min`）に設定する必要があります。 **指標集計** または **列の集計** 。対象： [!DNL Commerce Intelligence]. 差別化要因は、集計を実行するために結合が必要かどうかです。
 
-上記のそれぞれの例を見てみましょう。
+上記のそれぞれの例を参照してください。
 
 ## 指標の集計 {#aggregate}
 
-集計には指標が必要です `within a single table`. 例えば、 `SUM(b)` 上記のクエリの集計関数は、列を合計した指標で表される可能性が最も高くなります `B`. 
+集計時には指標が必要です `within a single table`. 例： `SUM(b)` 上記のクエリの集計関数は、おそらく、列を合計する指標で表されます `B`. 
 
-特定の例を見てみましょう。 `Total Revenue` 指標は、 [!DNL Commerce Intelligence]. 翻訳を試みる以下のクエリを確認します。
+方法の具体的な例を見る `Total Revenue` 指標は次で定義できます [!DNL Commerce Intelligence]. 翻訳を試みる以下のクエリを確認します。
 
 | | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation` （列） |
-| `FROM orders` | `Metric source` 表 |
+| `FROM orders` | `Metric source` テーブル |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | 指標 `filter` |
-| `AND created_at < X`<br><br>`AND created_at >= Y` | 指標 `timestamp` ( およびレポート `time range`) |
+| `AND created_at < X`<br><br>`AND created_at >= Y` | 指標 `timestamp` （およびレポート `time range`） |
 
-次をクリックして指標ビルダーに移動します。 **[!UICONTROL Manage Data** > **&#x200B;指標&#x200B;**> **新しい指標を作成]**&#x200B;の場合、最初に適切な `source` 表 ( この場合は `orders` 表。 次に、指標が次のように設定されます。
+をクリックして指標ビルダーに移動します。 **[!UICONTROL Manage Data** > **&#x200B;指標&#x200B;**> **新しい指標を作成]**&#x200B;最初に、適切なを選択する必要があります `source` テーブル（この場合は） `orders` テーブル。 次に、指標は次のように設定されます。
 
 ![指標の集計](../../assets/Metric_aggregation.png)
 
 ## 列の集計
 
-別のテーブルから結合された列を集計する場合は、集計列が必要です。 例えば、 `customer` 呼び出しテーブル `Customer LTV`: `orders` 表。
+集計列は、別のテーブルから結合されている列を集計する場合に必要です。 例えば、に列を作成できます `customer` テーブル名 `Customer LTV`。この顧客に関連付けられているすべての注文の合計値を `orders` テーブル。
 
 この集計のクエリは、次のようになります。
 
 |  |  |
 |--- |--- |
 | `Select` | |
-| `c.customer_id` | 所有者を集計 |
+| `c.customer_id` | 集計所有者 |
 | `SUM(o.order_total) as "Customer LTV"` | 集計操作（列） |
-| `FROM customers c` | 集計所有者テーブル |
+| `FROM customers c` | 所有者テーブルを集計 |
 | `JOIN orders o` | 集計ソーステーブル |
 | `ON c.customer_id = o.customer_id` | パス |
 | `WHERE o.status = 'success'` | 集計フィルター |
 
-で設定します。 [!DNL Commerce Intelligence] を使用するには、Data Warehouseマネージャーを使用し、 `orders` および `customers` 次に、「 」という列を作成します。 `Customer LTV` を設定します。
+での設定 [!DNL Commerce Intelligence] では、Data Warehouseマネージャーを使用して、 `orders` および `customers` テーブルで、という名前の列を作成します。 `Customer LTV` 顧客のテーブルに追加します。
 
-Web サイトの `customers` および `orders`. 最終目標は、 `customers` テーブルに移動し、最初に `customers` Data Warehouseの表を開き、「 **[!UICONTROL Create a Column** > **&#x200B;定義を選択&#x200B;**> **SUM]**.
+間に新しいパスを確立する方法を見る `customers` および `orders`. 最後の目標は、に新しい集計列を作成することです。 `customers` テーブルなので、最初にに移動します `customers` Data Warehouseのテーブルで、 **[!UICONTROL Create a Column** > **&#x200B;定義を選択&#x200B;**> **SUM]**.
 
-次に、ソーステーブルを選択する必要があります。 パスが `orders` 表では、ドロップダウンから選択するだけです。 新しいパスを作成する場合は、 **[!UICONTROL Create new path]** 次の画面が表示されます。
+次に、ソーステーブルを選択する必要があります。 にパスが存在する場合 `orders` テーブル。ドロップダウンから選択するだけです。 ただし、新しいパスを作成する場合は、 **[!UICONTROL Create new path]** 次の画面が表示されます。
 
 ![新しいパスを作成](../../assets/Create_new_path.png)
 
-ここでは、結合しようとしている 2 つのテーブル間の関係を慎重に考慮する必要があります。 この場合、次のような状況が発生する可能性があります。 `Many` ～に関連する注文 `One` 顧客、したがって `orders` 表が `Many` 一方、 `customers` テーブルが選択されました `One` サイド。
+ここでは、結合しようとしている 2 つのテーブル間の関係を慎重に検討する必要があります。 この場合、次の可能性があります `Many` 関連するオーダー `One` 顧客、したがって `orders` テーブルはに一覧表示されます `Many` 辺と、 `customers` で選択したテーブル `One` 辺。
 
 >[!NOTE]
 >
->In [!DNL Commerce Intelligence], a `path` は、 `Join` SQL の
+>対象： [!DNL Commerce Intelligence], a `path` は、と同等です。 `Join` （SQL の場合）。
 
 パスを保存したら、 `Customer LTV` 列！ 以下を参照してください。
 
 ![](../../assets/Customer_LTV.gif)
 
-これで、新しい `Customer LTV` 列内の `customers` テーブルを作成する準備が整いました。 [指標の集計](#aggregate) この列を使用します（例えば、顧客ごとの平均 LTV を見つける場合）。 また、 `group by` または `filter` を指定します。 `customers` 表。
+これで、新しい `Customer LTV` の列 `customers` テーブルを作成する準備が整いました [指標の集計](#aggregate) この列の使用（例えば、顧客ごとの平均 LTV を検索） 以下の手順でも可能です `group by` または `filter` で作成された既存の指標を使用した、レポートの計算列別 `customers` テーブル。
 
 >[!NOTE]
 >
->後者の場合は、新しい計算列を作成する際は常に、 [既存の指標にディメンションを追加する](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 以前は、 `filter` または `group by`.
+>後者の場合、新しい計算列を作成する際はいつでも次の操作を行う必要があります [既存の指標へのディメンションの追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) として使用する前に `filter` または `group by`.
 
-詳しくは、 [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) をData Warehouseマネージャーに追加します。
+参照： [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) とData Warehouse管理者。
 
-## `Group By` 句
+## `Group By` 条項
 
-`Group By` クエリ内の関数は、多くの場合、 [!DNL Commerce Intelligence] ビジュアルレポートのセグメント化またはフィルタリングに使用する列。 例として、 `Total Revenue` 以前に確認したクエリですが、今回は売上高を `coupon\_code` を使用して、どのクーポンが最も高い売上高を生み出しているかをより深く理解できます。
+`Group By` クエリ内の関数は、多くの場合、で表現されます。 [!DNL Commerce Intelligence] ビジュアルレポートのセグメント化やフィルタリングに使用される列。 例として、を再検討します。 `Total Revenue` 以前に調査したクエリですが、今回は次の方法で売上高をセグメント化します `coupon\_code` 最も多くの売上高を生み出しているクーポンについての理解を深めるために。
 
-まず、次のクエリを使用します。
+以下のクエリから開始します。
 
 | | |
 |--- |--- |
-| `SELECT coupon_code,` | レポート `group by` |
+| `SELECT coupon_code,` | 報告書 `group by` |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation`（列） |
-| `FROM orders` | `Metric source` 表 |
+| `FROM orders` | `Metric source` テーブル |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | 指標 `filter` |
-| `AND created_at < '2016-12-01'` <br><br>`AND created_at >= '2016-09-01'` | 指標 `timestamp` ( およびレポート `time range`) |
-| `GROUP BY coupon_code` | レポート `group by` |
+| `AND created_at < '2016-12-01'` <br><br>`AND created_at >= '2016-09-01'` | 指標 `timestamp` （およびレポート `time range`） |
+| `GROUP BY coupon_code` | 報告書 `group by` |
 
 >[!NOTE]
 >
->以前に開始したクエリとの唯一の違いは、グループ化の基準として「coupon\_code」を追加することです。_
+>以前に開始したクエリとの唯一の違いは、グループ化の基準として「coupon\_code」が追加されたことです。_
 
-同じ `Total Revenue` 以前に作成した指標を使用して、クーポンコード別にセグメント化された売上高のレポートを作成できます。 9 月から 11 月のデータに関するこのビジュアルレポートの設定方法を以下の gif で確認してください。
+同じを使用 `Total Revenue` 以前に作成した指標を使用すると、クーポンコードでセグメント化された売上高のレポートを作成する準備が整います。 9 月から 11 月のデータを調べて、このビジュアルレポートを設定する方法を示す以下の gif を見てください。
 
-![クーポンコード別の売上高](../../assets/Revenue_by_coupon_code.gif)
+![クーポンコード別売上高](../../assets/Revenue_by_coupon_code.gif)
 
 ## 数式
 
-クエリでは、別々の列間の関係を計算するために、複数の集計が含まれる場合があります。 例えば、次の 2 つの方法のいずれかで、クエリの平均注文額を計算できます。
+場合によっては、クエリには、別々の列間の関係を計算するために複数の集計が含まれることがあります。 例えば、次の 2 つの方法のいずれかを使用して、クエリの平均注文値を計算できます。
 
 * `AVG('order\_total')` または
 * `SUM('order\_total')/COUNT('order\_id')`
 
-前者の方法では、新しい指標を作成し、その指標の平均は `order\_total` 列。 ただし、 `Total Revenue` および `Number of orders`.
+前の方法では、で平均を実行する新しい指標を作成します `order\_total` 列。 ただし、を計算するための指標が既に設定されている場合は、後者のメソッドを Report Builder で直接作成できます `Total Revenue` および `Number of orders`.
 
-少し戻って、クエリ全体を見てみましょう。 `Average order value`:
+一歩下がって、のクエリ全体を確認します `Average order value`:
 
 | | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | 指標 `operation` （列） |
 | `COUNT(order_id) as "Number of orders"` | 指標 `operation` （列） |
-| `SUM(order_total)/COUNT(order_id) as "Average order value"` | 指標 `operation` （列） /指標の操作（列） |
-| `FROM orders` | 指標 `source` 表 |
+| `SUM(order_total)/COUNT(order_id) as "Average order value"` | 指標 `operation` （列）/指標の操作（列） |
+| `FROM orders` | 指標 `source` テーブル |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | 指標 `filter` |
 | `AND created_at < '2016-12-01'`<br><br>`AND created_at >= '2016-09-01'` | 指標のタイムスタンプ（およびレポートの時間範囲） |
 
-次に、 `Total Revenue` および `Number of orders`. これらの指標が存在するので、 `Report Builder` を使用してオンデマンド計算を作成し、 `Formula` 機能：
+次に、を計算するための指標が既に設定されているとします `Total Revenue` および `Number of orders`. これらの指標は存在するので、次を開くだけです： `Report Builder` を使用してオンデマンド計算を作成します `Formula` 機能：
 
-![AOV forumula](../../assets/AOV_forumula.gif)
+![AOV フォーラム](../../assets/AOV_forumula.gif)
 
-## 折り返し
+## まとめ
 
-SQL の負荷が高いユーザーの場合は、クエリが [!DNL Commerce Intelligence] では、計算列、指標およびレポートを作成できます。
+SQL を大量に使用する場合は、クエリの翻訳方法を検討します。 [!DNL Commerce Intelligence] では、計算列、指標およびレポートを作成できます。
 
-クイックリファレンスについては、以下のマトリックスを参照してください。 これは、SQL 句の同等の値を示します [!DNL Commerce Intelligence] 要素と、クエリでの使用方法に応じて、複数の要素にどのようにマッピングできるかを指定できます。
+クイックリファレンスについては、以下のマトリックスをご覧ください。 これは、SQL 句の同等のものを示します [!DNL Commerce Intelligence] 要素と、クエリでの使用方法に応じて、複数の要素にマッピングする方法。
 
-## Commerce インテリジェンス要素
+## Commerce Intelligence の要素
 
 | **`SQL Clause`** | **`Metric`** | **`Filter`** | **`Report group by`** | **`Report time frame`** | **`Path`** | **`Calculated column inputs`** | **`Source table`** |
 |---|---|---|---|---|---|---|---|

@@ -1,45 +1,45 @@
 ---
-title: 予期されるGoogle Adwords データ
-description: Data Warehouseマネージャーを使用して、分析に関連するデータフィールドを簡単に追跡する方法を説明します。
+title: Google Adwords データが必要です
+description: Data Warehouseマネージャーを使用して、関連するデータフィールドを簡単にトラッキングして分析する方法を説明します。
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
-# 期待値 [!DNL Google Adwords] データ
+# 予測 [!DNL Google Adwords] データ
 
-後 [接続しました [!DNL Google Adwords] アカウント](../integrations/google-adwords.md)を使用する場合、 [Data Warehouse管理](../../data-warehouse-mgr/tour-dwm.md) 分析に関連するデータフィールドを容易に追跡する。
+後 [を接続しました [!DNL Google Adwords] アカウント](../integrations/google-adwords.md)を使用する場合は、 [Data Warehouse管理者](../../data-warehouse-mgr/tour-dwm.md) 関連するデータフィールドを容易に追跡して分析できるようにする。
 
-Data Warehouseへのレプリケーションに使用できる 2 つのテーブルがあります。
+ここで、Data Warehouseへのレプリケーションに使用できる 2 つのテーブルがあります。
 
 * `campaigns[account-id]`
 * `adwords[account-id]`
 
-The `campaigns` 表 *は、デフォルトで使用する必要があります*&#x200B;を使用すると、そのテーブルの関連するすべてのフィールドを同期することから始めることができます。
+この `campaigns` テーブル *は、デフォルトで使用される必要があります*&#x200B;最初に、そのテーブルから関連するすべてのフィールドを同期できます。
 
-The `adwords` テーブルに、以下にない 4 つの列が含まれています `campaigns` テーブル：
+この `adwords` テーブルに含まれていない 4 つの列 `campaigns` テーブル：
 
 1. `keyword`
 1. `adContent`
 1. `adDestinationUrl`
 1. `adGroup`
 
-これらの属性を考慮した分析を実行したい場合は、 `adwords` 表。
+これらの属性を考慮した分析を実行する場合は、常に `adwords` テーブル。
 
 >[!IMPORTANT]
 >
->このテーブルでは、これらの 4 つの列がすべて含まれる行が除外されます。 `null`.
+>この表には、これらの 4 つの列がすべて含まれる行は含まれません `null`.
 
-以下に、両方のテーブルで期待されるスキーマを示します。
+両方のテーブルで想定されるスキーマを以下に示します。
 
-## [!DNL Campaigns] 表
+## [!DNL Campaigns] テーブル
 
-The `campaigns` テーブルには、次の列が含まれます。
+この `campaigns` テーブルには、次の列が含まれます。
 
 | **列** | **説明** |
 |-----|-----|
@@ -48,18 +48,18 @@ The `campaigns` テーブルには、次の列が含まれます。
 | [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | その日のクリック総数 |
 | [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | その日のキャンペーンの合計コスト |
 | [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] キャンペーン ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | キャンペーン名 ( 例： [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | キャンペーン実行日 |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | キャンペーン名（例： [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | キャンペーンが実行された日付 |
 | [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | その日のインプレッション数 |
 | `profileId` | プロファイル ID |
 | `profileName` | プロファイル名 |
-| `\_updated\_at` | この行の最後の更新の日時 |
+| `\_updated\_at` | この行の最終更新日時 |
 
 {style="table-layout:auto"}
 
-## [!DNL AdWords] 表
+## [!DNL AdWords] テーブル
 
-The `adwords` テーブルには、次の列が含まれます。
+この `adwords` テーブルには、次の列が含まれます。
 
 | **列** | **説明** |
 |-----|-----|
@@ -68,25 +68,25 @@ The `adwords` テーブルには、次の列が含まれます。
 | [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | その日のクリック総数 |
 | [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | その日のキャンペーンの合計コスト |
 | [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] キャンペーン ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | キャンペーン名 ( 例： [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | キャンペーン実行日 |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | キャンペーン名（例： [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | キャンペーンが実行された日付 |
 | [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | その日のインプレッション数 |
 | `profileId` | プロファイル ID |
 | `profileName` | プロファイル名 |
-| `\_updated\_at` | この行の最後の更新の日時 |
+| `\_updated\_at` | この行の最終更新日時 |
 | `keyword` | キャンペーンのキーワード |
-| `adContent` | オンラインキャンペーンのテキストの最初の行 |
-| `adDestinationUrl` | URL: [!DNL Adwords] 広告参照トラフィック |
+| `adContent` | オンラインキャンペーンのテキストの 1 行目 |
+| `adDestinationUrl` | この URL に対して [!DNL Adwords] 広告が参照するトラフィック |
 | `adGroup` | の名前 [!DNL Adwords] 広告グループ |
 
 {style="table-layout:auto"}
 
-このデータを使用して、 [指標](../../../data-user/reports/ess-manage-data-metrics.md) および [レポート](../../../tutorials/using-visual-report-builder.md) 支出データに基づき、 [ROI を計算するために生涯収益と結び付ける](../../analysis/roi-ad-camp.md).
+このデータを使用して、の作成を開始できます [指標](../../../data-user/reports/ess-manage-data-metrics.md) および [報告書](../../../tutorials/using-visual-report-builder.md) 支出データと [ライフタイムの売上高と結合して ROI を計算](../../analysis/roi-ad-camp.md).
 
 ## 統合テーブル
 
-[!DNL Adobe] では、 `consolidated ad spend` 表を使用して、複数の広告ソースのすべてのデータを 1 つの表に組み合わせることができます。 これにより、広告分析に単一の指標セットを使用できます。
+[!DNL Adobe] では、以下を作成することをお勧めします `consolidated ad spend` 複数の広告ソースすべてのデータを 1 つのテーブルに結合するテーブル。 これにより、広告分析に単一の指標セットを使用できます。
 
-統合テーブルがなく、 `adwords` テーブルを作成する場合は、レポートを複製するか、重複する指標を作成して、そのデータを [!DNL Facebook Ads] データ。 統合テーブルを使用すると、シームレスに組み込むことができます [!DNL Facebook Ads] 既存の [!DNL Adwords] レポート。 また、広告プラットフォーム別にセグメント化することもできます。
+統合テーブルがなく、で美しいダッシュボードを作成する場合 `adwords` テーブルでは、レポートをレプリケートするか、重複指標を作成して、そのデータをのデータと比較する必要があります [!DNL Facebook Ads] データ。 統合テーブルを使用すると、をシームレスに組み込むことができます [!DNL Facebook Ads] 既存のデータを使用 [!DNL Adwords] レポート。 広告プラットフォームでセグメント化することもできます。
 
-上記のフィールドを既に同期している場合は、 [お問い合わせ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を使用して広告費用を統合できます。
+上記のフィールドを既に同期している場合は、 [contact us](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 広告費用を統合します。

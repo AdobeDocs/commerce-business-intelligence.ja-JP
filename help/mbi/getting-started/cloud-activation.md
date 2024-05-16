@@ -1,5 +1,5 @@
 ---
-title: クラウドスターターサブスクリプション用のコマースインテリジェンスアカウントを有効化します
+title: Cloud Starter サブスクリプション用のCommerce Intelligence アカウントを有効化する
 description: Commerce Intelligence for Cloud Starter プロジェクトをアクティブ化する方法を説明します。
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
 redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/start/onpremise-activation.html

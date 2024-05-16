@@ -1,23 +1,23 @@
 ---
-title: 返品注文の分析
-description: ストアの返品状況を詳細に分析できるダッシュボードを設定する方法を説明します。
+title: 返品受注の分析
+description: ストアの収益を詳細に分析するダッシュボードの設定方法を説明します。
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
-# 返された注文
+# 返品注文
 
-このトピックでは、店舗の返品状況を詳細に分析できるダッシュボードの設定方法について説明します。
+このトピックでは、ストアの収益を詳細に分析するダッシュボードの設定方法を説明します。
 
 ![](../../assets/detailed-returns-dboard.png)
 
-使い始める前に、 [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) の顧客と、会社が `enterprise\_rma` 戻り値のテーブル。
+使用を開始する前に、 [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) お客様と、会社が以下を使用していることを確認する必要があります `enterprise\_rma` 戻り値のテーブル
 
 この分析に含まれる内容 [高度な計算列](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -25,14 +25,14 @@ ht-degree: 0%
 
 追跡する列
 
-* **`enterprise_rma`** または **`rma`** 表
+* **`enterprise_rma`** または **`rma`** テーブル
 * **`entity_id`**
 * **`status`**
 * **`order_id`**
 * **`customer_id`**
 * **`date_requested`**
 
-* **`enterprise_rma_item_entity`** または **`rma_item_entity`** 表
+* **`enterprise_rma_item_entity`** または **`rma_item_entity`** テーブル
 * **`entity_id`**
 * **`rma_entity_id`**
 * **`qty_returned`**
@@ -43,106 +43,106 @@ ht-degree: 0%
 
 作成するフィルターセット
 
-* **`enterprise_rma`** 表
-* フィルタセット名： `Returns we count`
-* フィルターセットの論理式：
-   * プレースホルダー — ここにカスタムロジックを入力します
+* **`enterprise_rma`** テーブル
+* フィルターセット名： `Returns we count`
+* フィルターセットのロジック：
+   * プレースホルダー – ここにカスタムロジックを入力します
 
-* **`enterprise_rma_item_entity`** 表
-* フィルタセット名： `Returns items we count`
-* フィルターセットの論理式：
-   * プレースホルダー — ここにカスタムロジックを入力します
+* **`enterprise_rma_item_entity`** テーブル
+* フィルターセット名： `Returns items we count`
+* フィルターセットのロジック：
+   * プレースホルダー – ここにカスタムロジックを入力します
 
-### 計算列
+### 計算される列
 
 作成する列
 
-* **`enterprise_rma`** 表
+* **`enterprise_rma`** テーブル
 * **`Order's created at`**
-* 定義を選択します。 `Joined Column`
+* 定義を選択： `Joined Column`
 * [!UICONTROL Create Path]:
 * 
   [!UICONTROL Many]: `enterprise_rma.order_id`
 * 
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
-* を選択します。 [!UICONTROL table]: `sales_flat_order`
-* を選択します。 [!UICONTROL column]: `created_at`
+* を選択 [!UICONTROL table]: `sales_flat_order`
+* を選択 [!UICONTROL column]: `created_at`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
 * **`Customer's order number`**
-* 定義を選択します。 `Joined Column`
-* を選択します。 [!UICONTROL table]: `sales_flat_order`
-* を選択します。 [!UICONTROL column]: `Customer's order number`
+* 定義を選択： `Joined Column`
+* を選択 [!UICONTROL table]: `sales_flat_order`
+* を選択 [!UICONTROL column]: `Customer's order number`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Time between order's created_at and date_requested`** は、アナリストによって `[RETURNS ANALYSIS]` チケット
+* **`Time between order's created_at and date_requested`** は、の一部としてアナリストによって作成されます `[RETURNS ANALYSIS]` チケット
 
-* **`enterprise_rma_item_entity`** 表
+* **`enterprise_rma_item_entity`** テーブル
 * **`return_date_requested`**
-* 定義を選択します。 `Joined Column`
+* 定義を選択： `Joined Column`
 * [!UICONTROL Create Path]:
    * 
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
    * 
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
-* を選択します。 [!UICONTROL table]: `enterprise_rma`
-* を選択します。 [!UICONTROL column]: `date_requested`
+* を選択 [!UICONTROL table]: `enterprise_rma`
+* を選択 [!UICONTROL column]: `date_requested`
    * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
 
-* **`Return item total value (qty_returned * price)`** は、アナリストによって `[RETURNS ANALYSIS]` チケット
+* **`Return item total value (qty_returned * price)`** は、の一部としてアナリストによって作成されます `[RETURNS ANALYSIS]` チケット
 
-* **`sales_flat_order`** 表
+* **`sales_flat_order`** テーブル
 * **`Order contains a return? (1=yes/0=No)`**
-* 定義を選択します。 `Exists`
-* を選択します。 [!UICONTROL table]: `enterprise_rma`
+* 定義を選択： `Exists`
+* を選択 [!UICONTROL table]: `enterprise_rma`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Customer's previous order number`** は、アナリストによって `[RETURNS ANALYSIS]` チケット
-* **`Customer's previous order contains return? (1=yes/0=no)`** は、アナリストによって `[RETURNS ANALYSIS]` チケット
+* **`Customer's previous order number`** は、の一部としてアナリストによって作成されます `[RETURNS ANALYSIS]` チケット
+* **`Customer's previous order contains return? (1=yes/0=no)`** は、の一部としてアナリストによって作成されます `[RETURNS ANALYSIS]` チケット
 
 >[!NOTE]
 >
->「秒」が解決するまでの営業時間のみを分析したい場合、または「秒」が最初の応答までの営業時間を分析したい場合は、チケットをリクエストする際にアナリストに通知します。
+>解決までの秒数または最初の応答までの秒数の営業時間のみを分析したい場合は、チケットを要求する際にアナリストにお知らせください。
 
 ### 指標
 
 * **戻り値**
-* Adobe Analytics の **`enterprise_rma`** 表
-* この指標では **カウント**
-* 次の日： **`entity_id`** 列
-* 並べ替え元 **`date_requested`**
+* が含まれる **`enterprise_rma`** テーブル
+* このメトリックは、 **カウント**
+* 日 **`entity_id`** 列
+* による並べ替え **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 * **返された項目**
-* Adobe Analytics の **`enterprise_rma_item_entity`** 表
-* この指標では **合計**
-* 次の日： **`qty_approved`** 列
-* 並べ替え元 **`return date_requested`**
+* が含まれる **`enterprise_rma_item_entity`** テーブル
+* このメトリックは、 **合計**
+* 日 **`qty_approved`** 列
+* による並べ替え **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **返された項目の合計値**
-* Adobe Analytics の **`enterprise_rma_item_entity`** 表
-* この指標では **合計**
-* 次の日： **`Returned item total value (qty_returned * price)`** 列
-* 並べ替え元 **`return date_requested`**
+* **返される項目の合計値**
+* が含まれる **`enterprise_rma_item_entity`** テーブル
+* このメトリックは、 **合計**
+* 日 **`Returned item total value (qty_returned * price)`** 列
+* による並べ替え **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 * **注文から返品までの平均時間**
-* Adobe Analytics の **`enterprise_rma`** 表
-* この指標では、 **平均**
-* 次の日： **`Time between order's created_at and date_requested`** 列
-* 並べ替え元 **`date_requested`**
+* が含まれる **`enterprise_rma`** テーブル
+* このメトリックは、 **平均**
+* 日 **`Time between order's created_at and date_requested`** 列
+* による並べ替え **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 >[!NOTE]
 >
->必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に。
+>必ずしてください [すべての新規列をディメンションとして指標に追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に、
 
 ### レポート
 
-* **返品後に注文の確率を繰り返す**
+* **リターンを行った後の繰り返し注文確率**
 * 指標 `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
@@ -165,9 +165,9 @@ ht-degree: 0%
   [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * 
-  [!UICONTROL グラフの種類]: `Bar`
+  [!UICONTROL グラフ タイプ]: `Bar`
 
-* **戻り値の平均時間（全時間）**
+* **返す平均時間（すべての時間）**
 * 指標 `A`: `Avg time between order and return`
 * [!UICONTROL Metric]: `Avg time between order and return`
 
@@ -175,7 +175,7 @@ ht-degree: 0%
 * 
   [!UICONTROL 間隔]: `None`
 * 
-  [!UICONTROL グラフの種類]: `Number`
+  [!UICONTROL グラフ タイプ]: `Number`
 
 * **返品のある注文の割合**
 * 指標 `A`: `Number of orders`
@@ -186,7 +186,7 @@ ht-degree: 0%
 * [!UICONTROL Filter]:
    * `Order contains a return? (1=yes/0=No) = 1`
 
-* 数式：返品のある注文の割合
+* 数式：返品付き注文の %
 * [!UICONTROL Formula]: `B / A`
 * 
   [!UICONTROL Format]: `Percentage`
@@ -196,16 +196,16 @@ ht-degree: 0%
   [!UICONTROL 間隔]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
-* **月別の収益**
+* **収益（月別）**
 * 指標 `A`: `Returned item total value`
 * [!UICONTROL Metric]: `Returned item total value`
 
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
 * 
-  [!UICONTROL グラフの種類]: `Line`
+  [!UICONTROL グラフ タイプ]: `Line`
 
-* **再購入を行わずに返品を行った顧客**
+* **返品したが再購入していない顧客**
 * 指標 `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
@@ -216,15 +216,15 @@ ht-degree: 0%
 * 
   [!UICONTROL 間隔]: `None`
 * 
-  [!UICONTROL グループ化基準]: `Customer_email`
+  [!UICONTROL Group by]: `Customer_email`
 * 
-  [!UICONTROL グラフの種類]: `Table`
+  [!UICONTROL グラフ タイプ]: `Table`
 
-* **品目別の返品率**
-* 指標 `A`: `Returned items` （非表示）
-* [!UICONTROL Metric]：戻された項目
+* **返品率（品目別）**
+* 指標 `A`: `Returned items` （Hide）
+* [!UICONTROL Metric]：返された項目
 
-* 指標 `B`: `Items sold` （非表示）
+* 指標 `B`: `Items sold` （Hide）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
 
@@ -238,8 +238,8 @@ ht-degree: 0%
   [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
 * 
-  [!UICONTROL グラフの種類]: `Table`
+  [!UICONTROL グラフ タイプ]: `Table`
 
-すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、上記のサンプルダッシュボードのようになります。
+すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 
-この分析の構築中に質問が発生した場合や、Professional Services チームを関与させたい場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+分析中に質問が発生した場合や、Professional Services チームに依頼したい場合、 [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

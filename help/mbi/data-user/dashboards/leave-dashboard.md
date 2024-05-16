@@ -1,6 +1,6 @@
 ---
-title: ダッシュボードを（共有を解除）したままにする
-description: ダッシュボードから自分を残す、または共有を解除する方法を学びます。
+title: ダッシュボードを残す（共有解除）
+description: ダッシュボードから自分を移動または共有解除する方法を説明します。
 exl-id: c84e7145-aded-4f66-8e52-a61c7e6ac804
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -11,10 +11,10 @@ ht-degree: 0%
 
 ---
 
-# ダッシュボードを（共有を解除）したままにする
+# ダッシュボードを残す（共有解除）
 
-チームを変更しますか？ 春の間に、あなたの [!DNL Commerce Intelligence] アカウント？ ダッシュボードから自分の状態を終了または共有解除するには、 **[!UICONTROL Shared]** をクリックします。 クリック **[!UICONTROL Leave this Dashboard]** 自分を取り除く
+チームを変更しますか？ 春の真ん中にあなたの掃除 [!DNL Commerce Intelligence] アカウント？ ダッシュボードから自分自身を移動または共有解除するには、 **[!UICONTROL Shared]** 残したいダッシュボードでの画面の上部。 クリック **[!UICONTROL Leave this Dashboard]** 自分を取り除くために。
 
 例：
 
-![ダッシュボードを終了](../../assets/Leave_Dashboard.gif)
+![ダッシュボードを離れる](../../assets/Leave_Dashboard.gif)

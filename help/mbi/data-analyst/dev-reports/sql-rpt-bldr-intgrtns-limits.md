@@ -1,6 +1,6 @@
 ---
-title: SQL 統合で使用されるReport Builder
-description: SQL 統合で使用できる統合について説明します。Report Builder
+title: SQL Report Builderと併用する場合
+description: SQLReport Builderで使用できる統合について説明します。
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # `SQL Report Builder` 統合
 
-世界の現在の状態では [[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) は、と共に使用できない唯一の統合です。 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md). この機能は開発中です。
+現在の世界では、 [[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) は、 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md). 開発中のこの機能。

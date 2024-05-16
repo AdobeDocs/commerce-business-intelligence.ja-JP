@@ -1,6 +1,6 @@
 ---
-title: Spree に接続
-description: ビジネスのパフォーマンスを確認する方法、または最も価値のある獲得ソースやチャネルを見つける方法について説明します。
+title: Spree を接続
+description: ビジネスのパフォーマンスを確認する方法や、最も価値のある獲得ソースとチャネルを見つける方法について説明します。
 exl-id: d443e6ca-04b0-4090-a3be-14db71819356
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 ![](../../../assets/spree-commerce-logo.png)
 
-ビジネスのパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを見つけたりしたい場合は、 接続 [!DNL Spree] データを [!DNL Commerce Intelligence] では、これらの質問などに答えることができます。
+ビジネスのパフォーマンスを確認したい場合や、最も価値のある獲得ソースとチャネルを見つけたい場合は、 の接続 [!DNL Spree] データ送信先 [!DNL Commerce Intelligence] これらの質問などに答えることができます。
 
-The [!DNL Spree] データベースの基準 [!DNL PostgreSQL]を使用している場合、 [!DNL Commerce Intelligence] の使用 [通常の手順と同じ [!DNL Postgres] 接続](../integrations/postgresql.md).
+この [!DNL Spree] データベースの基準 [!DNL PostgreSQL]に接続できます。 [!DNL Commerce Intelligence] の使用 [通常と同じ手順 [!DNL Postgres] 接続](../integrations/postgresql.md).
 
 ## 関連ドキュメント
 
-* [セグメント化およびフィルタリングに推奨されるデータディメンション](../../../best-practices/segment-filter.md)
-* [最も価値のある獲得ソースとチャネルは何ですか？](../../analysis/most-value-source-channel.md)
+* [セグメント化とフィルタリングに推奨されるデータディメンション](../../../best-practices/segment-filter.md)
+* [最も価値の高い獲得ソースとチャネルは何ですか？](../../analysis/most-value-source-channel.md)

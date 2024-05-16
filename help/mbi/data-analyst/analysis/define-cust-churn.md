@@ -1,74 +1,74 @@
 ---
-title: 顧客チャーンを定義
-description: トランザクション顧客のチャーンを定義するのに役立つダッシュボードを設定する方法について説明します。
+title: 顧客チャーンの定義
+description: トランザクション顧客のチャーンを定義するのに役立つダッシュボードの設定方法を説明します。
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
 # トランザクション顧客チャーン
 
-このトピックでは、トランザクション顧客のチャーンを定義するのに役立つダッシュボードを設定する方法について説明します。
+このトピックでは、トランザクション顧客のチャーンを定義するのに役立つダッシュボードの設定方法を示します。
 
 ![](../../assets/churn-deashboard.png)
 
 この分析に含まれる内容 [高度な計算列](../data-warehouse-mgr/adv-calc-columns.md).
 
-## 計算列
+## 計算される列
 
 作成する列
 
-* `customer_entity` 表
+* `customer_entity` テーブル
 * `Customer's lifetime number of orders`
-* 定義を選択します。 `Count`
-* を選択します。 [!UICONTROL table]: `sales_flat_order`
-* を選択します。 [!UICONTROL column]: **`entity_id`**
+* 定義を選択： `Count`
+* を選択 [!UICONTROL table]: `sales_flat_order`
+* を選択 [!UICONTROL column]: **`entity_id`**
 * [!UICONTROL Path]: sales_flat_order.customer_id = customer_entity.entity_id
 * [!UICONTROL Filter]:
 * カウントされる注文
 
-* `sales_flat_order` 表
+* `sales_flat_order` テーブル
 * `Customer's lifetime number of orders`
-* 定義を選択：結合列
-* を選択します。 [!UICONTROL table]: `customer_entity`
-* を選択します。 [!UICONTROL column]: `Customer's lifetime number of orders`
+* 定義を選択：[ 結合 ] 列
+* を選択 [!UICONTROL table]: `customer_entity`
+* を選択 [!UICONTROL column]: `Customer's lifetime number of orders`
 * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 * [!UICONTROL Filter]: `Orders we count`
 
 * `Seconds since created_at`
-* 定義を選択します。 `Age`
-* を選択します。 [!UICONTROL column]: `created_at`
+* 定義を選択： `Age`
+* を選択 [!UICONTROL column]: `created_at`
 
-* **`Customer's order number`** は、アナリストによって **[チャーンの定義]** チケット
-* **`Is customer's last order`** は、アナリストによって **[チャーンの定義]** チケット
-* **`Seconds since previous order`** は、アナリストによって **[チャーンの定義]** チケット
-* **`Months since order`** は、アナリストによって **[チャーンの定義]** チケット
-* **`Months since previous order`** は、アナリストによって **[チャーンの定義]** チケット
+* **`Customer's order number`** は、の一部としてアナリストによって作成されます **[チャーンの定義]** チケット
+* **`Is customer's last order`** は、の一部としてアナリストによって作成されます **[チャーンの定義]** チケット
+* **`Seconds since previous order`** は、の一部としてアナリストによって作成されます **[チャーンの定義]** チケット
+* **`Months since order`** は、の一部としてアナリストによって作成されます **[チャーンの定義]** チケット
+* **`Months since previous order`** は、の一部としてアナリストによって作成されます **[チャーンの定義]** チケット
 
 ## 指標
 
-新しい指標がありません。
+新しい指標はありません。
 
 >[!NOTE]
 >
->必ず [すべての新しい列を指標のディメンションとして追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に。
+>必ずしてください [すべての新規列をディメンションとして指標に追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に、
 
 ## レポート
 
-* **最初の繰り返し順序の確率**
-* 指標 A：全期間のリピート注文
+* **最初の繰り返し順序確率**
+* 指標 A：全期間リピート注文
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* 指標 B：全期注文件数
+* 指標 B：全期間オーダー
 * [!UICONTROL Metric]：注文数
 
-* [!UICONTROL Formula]：最初の繰り返し順序の確率
+* [!UICONTROL Formula]：最初の繰り返し順序確率
 * 
   [!UICONTROL 数式]: `A/B`
 * 
@@ -80,34 +80,34 @@ ht-degree: 0%
 * 
   [!UICONTROL Chart type]: `Scalar`
 
-* **注文から指定された月の繰り返し注文の確率**
-* 指標 A：前の注文からの月別の注文を繰り返す（非表示）
+* **注文以降に指定された月の繰り返し注文確率**
+* 指標 A：以前の注文以降の月別の繰り返し注文（非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* 指標 B：注文からの最終注文を月別に表示（非表示）
+* 指標 B：注文以降の過去の注文件数（月別）（非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* 指標 C：全時間の繰り返し注文（非表示）
+* 指標 C：全期間のリピート注文（非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
-  [!UICONTROL グループ化基準]: `Independent`
+  [!UICONTROL Group by]: `Independent`
 
-* 指標 D：前回の注文をすべて（非表示）
+* 指標 D：すべての時間の最後の注文（非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 
-  [!UICONTROL グループ化基準]: `Independent`
+  [!UICONTROL Group by]: `Independent`
 
-* [!UICONTROL Formula]：最初の繰り返し順序の確率
+* [!UICONTROL Formula]：最初の繰り返し順序確率
 * 
   [!UICONTROL 数式]: `(C-A)/(C+D-A-B)`
 * 
@@ -117,19 +117,19 @@ ht-degree: 0%
 * 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
-* Show top.bottom：上位 24 カテゴリ（カテゴリ名で並べ替え）
+* top.bottom を表示：上位 24 個のカテゴリをカテゴリ名順に表示
 
 * 
   [!UICONTROL Chart type]: `Line`
 
-最初の繰り返し注文の確率レポートは、「繰り返し注文の合計/合計注文件数」を表します。 すべての注文は、繰り返し注文をおこなう機会です。繰り返し注文の数は、実際に実行する注文のサブセットです。
+最初のリピート注文確率レポートは、リピート注文の合計/注文の合計を表します。 すべての注文は、リピート注文を行う機会です。リピート注文の数は、実際に行う注文のサブセットです。
 
-使用する式は、（X ヶ月後に発生した繰り返し注文の合計）/（少なくとも X ヶ月前の注文の合計）に簡素化します。 これは、過去に、注文から X ヶ月が経過した場合に、ユーザーが別の注文をする可能性が Y%あることを示しています。
+使用する式は、（X か月後に発生したリピート注文の合計）/（少なくとも X か月前の注文の合計）を簡略化します。 これは、注文後 X か月が経過している場合、ユーザーが別の注文を行う可能性が Y% あることを歴史的に示しています。
 
-ダッシュボードを構築した後、最も一般的な質問は、「チャーンしきい値を決定するには、これをどのように使用すればよいですか？」です。
+ダッシュボードを作成したら、最も一般的な質問は次のとおりです。チャーンしきい値を決定するにはどうすればよいですか？
 
-**これに対する「一つの正しい答え」はありません。** ただし、Adobeでは、線が最初の繰り返し確率の半分の値と交差する点を見つけることをお勧めします。 ここで、「ユーザーが繰り返し注文をする場合は、おそらく今までに完了していたでしょう」と言えるポイントです。 最終的な目標は、「リテンション」から「再アクティブ化」への切り替えが意味を持つしきい値を選択することです。
+**これに対する「唯一の正解」はありません。** ただし、Adobeでは、線が最初の繰り返し確率率の半分の値と交差するポイントを見つけることをお勧めします。 これは、「リピート注文をするつもりなら、今ごろはもう間に合っただろう」と言えるポイントです。 最終的な目標は、「リテンション」から「再アクティブ化」に切り替えると効果的な、しきい値を選択することです。
 
-すべてのレポートをコンパイルした後、必要に応じてダッシュボードで整理できます。 結果は、ページ上部の画像のように表示される場合があります
+すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、ページ上部の画像のようになります
 
-この分析の構築中に質問が発生した場合、または単に Professional Services チームを引き付けたい場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+分析中に質問が発生した場合、または単にプロフェッショナルサービスチームに依頼したい場合、 [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

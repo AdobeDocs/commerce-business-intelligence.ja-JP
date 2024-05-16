@@ -1,6 +1,6 @@
 ---
-title: データユーザ
-description: データユーザ
+title: データユーザー
+description: データユーザー
 exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# データユーザ
+# データユーザー
 
-データは、ビジネス上の意思決定に役立ちます。 チームのデータアナリストからレポートやダッシュボードを受け取る一方で、これらのレポートやダッシュボードの作成方法を学ぶこともできます。
+データを使用すると、ビジネス上の意思決定に役立ちます。 チームのデータアナリストからレポートやダッシュボードを受け取る場合もありますが、これらのレポートやダッシュボードの作成方法の詳細も必要になります。
 
-この節では、以下の方法について説明します。
-* データを取得して表示する [!DNL Commerce Intelligence] レポートとダッシュボードの使用
-* 電子メールを通じてそのデータを関係者と共有し、 `.csv` ファイル
+この節では、次の方法を説明します。
+* データの取得と表示： [!DNL Commerce Intelligence] レポートとダッシュボードの使用
+* メールを通じてそのデータを関係者と共有する `.csv` ファイル
 
 ## 関連
 

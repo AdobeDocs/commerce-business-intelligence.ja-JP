@@ -1,5 +1,5 @@
 ---
-title: Amazon RDS の接続
+title: Connect Amazon RDS
 description: RDS インスタンスを接続する手順を説明します。
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Data Architect, Data Engineer, User
@@ -13,47 +13,47 @@ ht-degree: 0%
 
 # 接続 [!DNL Amazon RDS]
 
-[!DNL Amazon Relational Database Services (RDS)] は、おそらく既にご存知のデータベースエンジン上で動作する、管理対象のデータベースサービスです。
+[!DNL Amazon Relational Database Services (RDS)] は、既に使い慣れたデータベースエンジンで実行されるマネージドデータベースサービスです。
 
 * [[!DNL MySQL]](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL Microsoft SQL]](../integrations/microsoft-sql-server.md)
 * [[!DNL PostgreSQL]](../integrations/postgresql.md)
 
-接続の手順 [!DNL RDS] インスタンスは、使用しているデータベースの種類と、暗号化された接続 ( [`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)) ですが、以下に基本事項を示します。
+を接続する手順 [!DNL RDS] インスタンスは、使用しているデータベースのタイプと、暗号化された接続を使用しているかどうかによって異なります（ [`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)）が、基本は次のとおりです。
 
-## 許可 [!DNL Commerce Intelligence] データベースにアクセスするには
+## を承認する [!DNL Commerce Intelligence] データベースにアクセスするには
 
-認証情報ページ (**[!UICONTROL Manage Data** > **Integrations]**) をクリックすると、R への接続を許可する必要がある IP アドレスが記載されたボックスが表示されます[!DNL RDS] から [!DNL Commerce Intelligence]: `54.88.76.97` および `34.250.211.151`. 以下に、 `MySQL credentials` 「IP アドレス」ボックスがハイライト表示されたページ
+資格情報ページ（**[!UICONTROL Manage Data** > **Integrations]**）を選択すると、接続 R に認証する必要のある IP アドレスを含むボックスが表示されます。[!DNL RDS] 対象： [!DNL Commerce Intelligence]: `54.88.76.97` および `34.250.211.151`. を見てみましょう。 `MySQL credentials` ip アドレスボックスをハイライトしたページ：
 
 ![](../../../assets/RDS_IP.png)
 
-の場合 [!DNL Commerce Intelligence] を正常に接続するには、 [!DNL RDS] 例えば、AWS管理コンソールから、これらの IP アドレスを適切なデータベースセキュリティグループに追加する必要があります。 これらの IP アドレスは、既存のグループに追加することも、既存のグループを作成することもできます。重要なのは、接続先のインスタンスへのアクセスをグループが許可されていることです [!DNL Commerce Intelligence].
+の場合 [!DNL Commerce Intelligence] を使用してと正常に接続するには [!DNL RDS] インスタンスでは、これらの IP アドレスをAWS Management Console 経由で適切なデータベースセキュリティグループに追加する必要があります。 これらの IP アドレスは、既存のグループに追加することも、作成することもできます。重要なのは、接続先のインスタンスにグループがアクセスする権限を持っていることです [!DNL Commerce Intelligence].
 
-を追加する場合、 [!DNL Commerce Intelligence] IP アドレスを使用する場合は、必ず `/32` を指定するアドレスの末尾に [!DNL Amazon] 正確な IP アドレスであることを示します。 AWSのインターフェイスでは、これが必要であることが明確になっています。
+を追加する場合 [!DNL Commerce Intelligence] IP アドレス、必ず以下を追加します `/32` を示すアドレスの末尾に追加されます [!DNL Amazon] 正確な IP アドレスであること。 AWS インターフェイスは、これが必要であることを明確にします。
 
-## の作成 `Linux` のユーザー [!DNL Commerce Intelligence] {#linux}
+## を作成 `Linux` のユーザー [!DNL Commerce Intelligence] {#linux}
 
 >[!NOTE]
 >
->この手順は、暗号化された接続を使用する場合にのみ必要です。 この方法については、使用しているデータベースの設定トピックを参照してください（例： MySQL）。 The `Linux` ユーザーが `SSH tunnel`：インターネット経由でデータを送信する最も安全な方法です。
+>この手順が必要になるのは、暗号化された接続を使用している場合のみです。 この方法については、使用しているデータベース（例：MySQL）の設定トピックを参照してください。 この `Linux` ユーザーにより、以下を作成できます： `SSH tunnel`（インターネット経由でデータを送信する最も安全な方法です）。
 
-## のデータベースユーザーを作成します。 [!DNL Commerce Intelligence]
+## のデータベースユーザーを作成 [!DNL Commerce Intelligence]
 
-これは、使用しているデータベースに応じて、手順が異なるプロセスの一部です。 ただし、ユーザーを作成して [!DNL Commerce Intelligence] データベースへのアクセスに使用する データベースの作成手順 [!DNL Commerce Intelligence] 使用しているデータベースの設定トピックに「 」というユーザーが表示されます。
+これは、使用しているデータベースに応じて手順が異なる、プロセスの一部です。 考え方は同じですが、のユーザーを作成します [!DNL Commerce Intelligence] データベースにアクセスするために使用されます。 データベース作成手順 [!DNL Commerce Intelligence] ユーザーは、使用しているデータベースの設定トピックで確認できます。
 
-## 次の場所に接続情報を入力 [!DNL Commerce Intelligence]
+## 接続情報をに入力 [!DNL Commerce Intelligence]
 
-君が許した後で [!DNL Commerce Intelligence] インスタンスにアクセスしてユーザーを作成しました。最後に、次の場所に接続情報を入力する必要があります。 [!DNL Commerce Intelligence].
+付与した後 [!DNL Commerce Intelligence] インスタンスにアクセスし、ユーザーを作成したら、接続情報をに入力する必要はありません。 [!DNL Commerce Intelligence].
 
-次の資格情報ページ： `MySQL`, `Microsoft SQL`、および `PostgreSQL` は、 `Integrations` ページ (**[!UICONTROL Manage Data** > **Integrations]**) をクリックして、 **[!UICONTROL Add Integration]**. 統合のリストが表示されたら、使用しているデータベースのアイコンをクリックして資格情報ページに移動します。 現在、必要な統合にアクセスできない場合は、Adobeアカウントチームにお問い合わせください。
+の資格情報ページ `MySQL`, `Microsoft SQL`、および `PostgreSQL` 経由でアクセスできます `Integrations` ページ （**[!UICONTROL Manage Data** > **Integrations]**）をクリックします。 **[!UICONTROL Add Integration]**. 統合のリストが表示されたら、使用しているデータベースのアイコンをクリックして、資格情報ページに移動します。 現在、必要な統合へのアクセス権がない場合は、Adobeアカウントチームにお問い合わせください。
 
 接続の作成を完了するには、次の情報が必要です。
 
-* RDS インスタンスのパブリックアドレス：これは、 [!DNL AWS] 管理コンソール。
-* データベースインスタンスが使用するポート：一部のデータベースにはデフォルトのポートがあり、これにより `Port` フィールドに入力します。 この情報は、データベースのセットアップドキュメントにも記載されています。
+* RDS インスタンスのパブリックアドレス：これは、次の場所にあります。 [!DNL AWS] 管理コンソール。
+* データベースインスタンスが使用するポート：一部のデータベースにはデフォルトのポートがあり、自動的に次の値が入力されます `Port` フィールド。 この情報は、データベースの設定ドキュメントでも確認できます。
 * 作成したユーザーのユーザー名とパスワード [!DNL Commerce Intelligence].
 
-暗号化された接続を使用している場合は、 `Encrypted` データベース資格情報ページをに切り替えます。 `Yes`. 暗号化を設定するための追加のフォームが表示されます。
+暗号化された接続を使用している場合、 `Encrypted` データベース資格情報ページをに切り替えます。 `Yes`. 暗号化を設定するための追加フォームが表示されます。
 
 ![](../../../assets/sql-integration-encrypted-yes.png)
 

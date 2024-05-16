@@ -1,6 +1,6 @@
 ---
 title: データの共有
-description: データの共有の概要。
+description: データ共有の概要。
 exl-id: 5c434d3b-0519-4980-a666-60bed122a93b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # データの共有
 
-ビジネスの状況と傾向を伝えることが不可欠です。 この節では、グラフからにデータをエクスポートして共有する方法を説明します。 `.csv` または `Excel` ファイル。 また、データの概要を設定し、主要関係者に自動的に電子メールで送信する方法についても説明します。
+ビジネスの状況やトレンドを伝えることが不可欠です。 この節では、グラフからにデータを書き出して共有する方法について説明します `.csv` または `Excel` ファイル。 また、データのメール概要を設定し、主要な関係者に自動的に送信する方法についても説明します。

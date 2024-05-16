@@ -1,12 +1,12 @@
 ---
-title: SQLReport Builderの使用
-description: SQLReport Builderの使用方法を学びます。
+title: SQL Report Builderの使用
+description: SQL Report Builderを使用したの詳細を説明します。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -15,21 +15,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->が必要 [管理者権限](../../administrator/user-management/user-management.md) をクリックして、SQL チャートを作成および編集します。 `Standard` ユーザーは、ダッシュボードでこれらのグラフを並べ替えることができます。 `Read-only` ユーザーは、従来のグラフと同じエクスペリエンスを持ちます。 さらに、 `Read-only` ユーザーはクエリのテキストにアクセスできません。
+>が必要 [管理者権限](../../administrator/user-management/user-management.md) sql チャートを作成および編集する手順は、次のとおりです。 `Standard` ユーザーは、ダッシュボード上でこれらのグラフを並べ替えることができます。 `Read-only` ユーザーは、従来のグラフと同じエクスペリエンスを得ることができます。 さらに、 `Read-only` ユーザーはクエリのテキストにアクセスできません。
 
-詳しくは、 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) を参照してください。
+を参照してください。 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) を参照してください。
 
-[!DNL SQL](Structured Query Language) は、データベースとの通信に使用されるプログラミング言語です。 In [!DNL Commerce Intelligence], [!DNL SQL] を使用して、データをData Warehouseに問い合わせたり、取得したりします。 ダッシュボード上でレポートを確認します。バックグラウンドで、それぞれが [!DNL SQL] クエリ。
+[!DNL SQL]構造化クエリ言語は、データベースとの通信に使用されるプログラミング言語です。 対象： [!DNL Commerce Intelligence], [!DNL SQL] は、Data Warehouseに対してデータのクエリや取得を行うために使用します。 ダッシュボード上のレポートを確認します。各レポートは、その背後で、 [!DNL SQL] クエリ。
 
-以下を使用すると、 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) を使用して、Data Warehouseに直接問い合わせ、結果を表示し、グラフに変換します。 レポートの作成を開始するには、 [!DNL SQL Report Builder] クリックして **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
+を使用できます [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) Data Warehouseを直接クエリするには、結果を表示してグラフに変換します。 でレポートの作成を開始できます [!DNL SQL Report Builder] クリックして **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
 
-詳しくは、 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) を参照してください。
+を参照してください。 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) を参照してください。
 
-The [!DNL SQL Report Builder] を使用すると、Data Warehouseに直接問い合わせ、結果を表示し、すばやくグラフに変換できます。 の使用に関する最善の部分 [!DNL SQL] レポートを作成するには、作成する列を繰り返す更新サイクルを待つ必要はありません。 結果が正しく表示されない場合は、クエリをすばやく編集し、期待どおりに実行できます。
+この [!DNL SQL Report Builder] を使用すると、Data Warehouseに対して直接クエリを実行し、結果を確認して、グラフにすばやく変換できます。 の使用に関する最も優れた点 [!DNL SQL] レポートを作成する場合、作成した列に対して繰り返し処理を行うために、更新サイクルを待機する必要はありません。 結果が適切でない場合は、期待どおりになるまで、クエリをすばやく編集して再実行できます。
 
-このトピックでは、 [!DNL SQL Report Builder]. 道を知ったら、 [!DNL SQL] ビジュアライゼーションに関するチュートリアルを参照するか、作成したクエリの一部を最適化してみてください。
+このトピックでは、を使用する手順を説明します [!DNL SQL Report Builder]. あなたの道を知ったら、 [!DNL SQL] ビジュアライゼーションに関するチュートリアルとして利用したり、記述したクエリの一部を最適化してみたりする場合に使用します。
 
-この記事では、次の内容を説明します。
+この記事では、次の内容について説明します。
 
 1. [クエリの作成](#writing)
 
@@ -41,71 +41,71 @@ The [!DNL SQL Report Builder] を使用すると、Data Warehouseに直接問い
 
 ## [!DNL SQL Report Builder] 統合
 
-[[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) は、と共に使用できない唯一の統合です。 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md). この機能は開発中です。
+[[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) は、 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md). この機能は開発中です。
 
-を作成し始めるには、以下を実行します。 [!DNL SQL] レポート、クリック **[!UICONTROL Report Builder]** または **[!UICONTROL Add Report]** をクリックします。 Adobe Analytics の [!DNL Report Picker] スクリーン、クリック **[!UICONTROL SQL Report Builder]** 開く [!DNL SQL] 編集者です。
+の作成を開始するには [!DNL SQL] レポート、クリック **[!UICONTROL Report Builder]** または **[!UICONTROL Add Report]** ダッシュボードの上部 が含まれる [!DNL Report Picker] 画面、クリック **[!UICONTROL SQL Report Builder]** を開きます [!DNL SQL] 編集者。
 
 ## はじめに
 
-レポートを編集するには、歯車 (![](../../assets/gear-icon.png)) アイコンをクリックします。 [!DNL SQL] — ベースのグラフとクリック **[!UICONTROL Edit]**.
+レポートを編集するには、歯車（![](../../assets/gear-icon.png)の右上隅にある） アイコン [!DNL SQL]ベースのグラフを選択し、 **[!UICONTROL Edit]**.
 
 ## クエリの作成 {#writing}
 
 >[!NOTE]
 >
->[!DNL SQL Report Builder] クエリでは大文字と小文字が区別されます。 クエリを記述する際は、正しいケースを使用していることを確認してください。そうしないと、予期しない結果やエラーが発生する場合があります。
+>[!DNL SQL Report Builder] クエリでは大文字と小文字が区別されます。 クエリを記述する際は、正しいケースを使用していることを確認してください。そうでない場合、予期しない結果やエラーが発生する可能性があります。
 
-次に、 [クエリ最適化のガイドライン](../../best-practices/optimizing-your-sql-queries.md)を使用する場合、 [!DNL SQL] 編集者です。
+次に [クエリの最適化のガイドライン](../../best-practices/optimizing-your-sql-queries.md)でクエリを記述します [!DNL SQL] 編集者。
 
 >[!IMPORTANT]
 >
->**の指標 [!DNL SQL] レポート** - SQL レポートに指標を挿入すると、 `current definition` の値が使用されます。
+>**の指標 [!DNL SQL] 報告書** - SQL レポートに指標を挿入すると、 `current definition` 指標のが使用されます。
 
-指標が将来更新される場合、SQL レポート *次の値と等しくない* 変更が反映されます。 変更を有効にするには、レポートを手動で編集する必要があります。
+指標が将来更新された場合、SQL レポート *次を含まない* 変更を反映します。 変更を有効にするには、レポートを手動で編集する必要があります。
 
-サイドバーの上部にあるボタンを使用して、テーブルのリストと、 [!DNL SQL Report Builder]. リストに何を探しているかが表示されない場合は、サイドバーの上部にある検索バーを使用して検索してみてください。
+サイドバーの上部にあるボタンを使用すると、で使用できるテーブルと指標のリストを切り替えることができます [!DNL SQL Report Builder]. リストに探しているものが表示されない場合は、サイドバーの上部にある検索バーを使用して検索してみてください。
 
-また、 [!DNL SQL] 指標、テーブルおよび列をクエリに直接挿入する場合は、クエリにマウスポインターを置いて「 **[!UICONTROL Insert]**:
+でサイドバーを使用することもできます [!DNL SQL] 指標、テーブル、列にカーソルを合わせてクリックすることで、クエリに直接指標、テーブル、列を挿入するエディター **[!UICONTROL Insert]**:
 
-![テーブルの [!DNL SQL] 編集者です。](../../assets/SQL_RB_Insert_Table.png)
+![にテーブルを挿入する [!DNL SQL] 編集者。](../../assets/SQL_RB_Insert_Table.png)
 
 >[!NOTE]
 >
->任意 [SELECT 関数](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST)、または PostgreSQL でサポートされるデータを変更しない関数は、SQLReport Builderでサポートされます。 これには、AVG、COUNT、COUNT DISTINCT、MIN/MAX、SUM などが該当しますが、これらに限定されません。
+>任意 [関数を選択](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST)、または PostgreSQL でサポートされているデータを変更しない関数は、SQL Report Builderでサポートされています。 これには、AVG、COUNT、COUNT DISTINCT、MIN/MAX、SUM などが含まれますが、これらに限定されません。
 
-また、任意の `JOIN` タイプはサポートされていますが、Adobeでは INNER JOIN の使用のみが推奨されています。INNER JOIN は `JOIN` タイプ。
+次のいずれか `JOIN` 型はサポートされていますが、Adobeでは、INNER JOIN を使用することをお勧めします。これは、 `JOIN` タイプ。
 
 ## クエリの実行と結果の表示 {#runquery}
 
-クエリの記述が完了したら、「 **[!UICONTROL Run Query]**. 結果は、SQL エディタの下の表に表示されます。
+クエリの作成が完了したら、 **[!UICONTROL Run Query]**. 結果は、SQL エディターの下のテーブルに表示されます。
 
 ![クエリを実行し、結果を表示する。](../../assets/SQL_Run_Query.gif)
 
-結果に何か問題があるように見える場合は、クエリを編集し、問題が解決するまで再実行できます。
+結果に誤りがあると思われる場合は、クエリを編集し、問題がなくなるまで再実行できます。
 
-時々、 [エディタの下に EXPLAIN を含むメッセージ](../../best-practices/optimizing-your-sql-queries.md). これらのいずれかが表示される場合は、クエリが実行されておらず、微調整が必要です。
+時々は見るかもしれない [エディターの下のメッセージに説明が含まれる](../../best-practices/optimizing-your-sql-queries.md). これらのいずれかが表示された場合は、クエリが実行されておらず、少し微調整が必要であることを意味します。
 
-クエリの編集が完了したら、ビジュアライゼーションの作成またはダッシュボードへの作業の保存に進むことができます。
+クエリの編集が完了したら、ビジュアライゼーションの作成または作業内容のダッシュボードへの保存に進むことができます。
 
 ## ビジュアライゼーションの作成 {#createviz}
 
-クエリ結果を使用してビジュアライゼーションを作成するには、 **[!UICONTROL Chart]** 」タブをクリックします。 `Results` ウィンドウ このタブで、次の項目を選択します。
+クエリ結果でビジュアライゼーションを作成するには、 **[!UICONTROL Chart]** タブ `Results` ペイン。 このタブでは、次の項目を選択します。
 
-* The `Series`または、測定する列（例： ） **販売済みアイテム**.
-* The `Category`または、データのセグメント化に使用する列 ( 例： **獲得ソース**.
-* The `Labels`、または X 軸の値。
+* この `Series`や、測定する列（など） **販売された品目**.
+* この `Category`または、データのセグメント化に使用する列（など） **獲得ソース**.
+* この `Labels`、または X 軸の値。
 
-次に、ビジュアライゼーションプロセスの概要を示します。
+ビジュアライゼーションプロセスがどのように表示されるかを次に示します。
 
 ![](../../assets/SQL_RB_viz_overview.gif)
 
-ビジュアライゼーションの作成方法について詳しくは、 [SQL クエリからのビジュアライゼーションの作成のチュートリアル](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;}。
+ビジュアライゼーションの作成方法に関する詳細な手順については、 [「SQL クエリからのビジュアライゼーションの作成」チュートリアル](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;}。
 
 ## レポートの保存 {#save}
 
-作業内容を保存する前に、レポートに名前を付ける必要があります。 忘れずに [命名に関するベストプラクティスのガイドライン](../../best-practices/naming-elements.md){: target=&quot;_blank&quot;} を選択し、レポートの内容を明確に伝えるものを選択します。
+作業内容を保存する前に、レポートに名前を付ける必要があります。 を忘れずにフォローしてください [の命名に関するベストプラクティスガイドライン](../../best-practices/naming-elements.md){: target=&quot;_blank&quot;} して、レポートの内容を明確に伝えるものを選択します。
 
-クリック **[!UICONTROL Save]** の右上隅に [!DNL SQL] エディターを開き、レポートを選択します。 `Type` (`Chart` または `Table`) をクリックします。 まとめるには、レポートの保存先となるダッシュボードを選択し、「 **[!UICONTROL Save to Dashboard]**.
+クリック **[!UICONTROL Save]** の右上隅に [!DNL SQL] エディターでレポートを選択する `Type` （`Chart` または `Table`）に設定します。 まとめるには、レポートの保存先のダッシュボードを選択し、 **[!UICONTROL Save to Dashboard]**.
 
 ![](../../assets/SQL_Save_Report.gif)
 
@@ -113,64 +113,64 @@ The [!DNL SQL Report Builder] を使用すると、Data Warehouseに直接問い
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) を使用すると、Data Warehouseに直接問い合わせ、結果を表示し、すばやくレポートに変換できます。 使用 [!DNL SQL] また、 [使用する [!DNL SQL] 使用できない関数](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) （内） `Visual` または `Cohort` Report Builderを使用して、データをより詳細に制御できます。
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) を使用すると、Data Warehouseに対して直接クエリを実行し、結果を表示して、レポートにすばやく変換できます。 使用 [!DNL SQL] では、次の操作も実行できます [使用する [!DNL SQL] 使用できない関数](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) が含まれる `Visual` または `Cohort` Report Builderを使用すると、データをより詳細に制御できます。
 
-を使用して作成された計算列 [!DNL SQL] は、更新サイクルに依存しません。つまり、必要に応じて繰り返し実行し、即座に結果を確認できます。
+を使用して作成された計算列 [!DNL SQL] 更新サイクルに依存しないので、自由に繰り返し処理して、すぐに結果を確認できます。
 
 >[!NOTE]
 >
->これは列の構造にのみ適用され、データの鮮度には適用されません。 新しいデータは、正常に完了した更新サイクルに依存します。
+>これは列の構造にのみ適用され、データの鮮度には適用されません。 新しいデータは、引き続き、正常に完了した更新サイクルに依存します。
 
-| **これは…に最適です。** | **これは…** |
+| **これは…に最適です** | **これは…にはあまり良くありません。** |
 |---|---|
-| 中級アナリスト/上級アナリスト | 初心者 — 知る必要がある [!DNL SQL]. |
-| The [!DNL SQL] 経験豊富な | 単純な分析 — 単に [!UICONTROL Visual Report Builder]. |
-| 1 回限りの計算列の作成 | 他のユーザーとの共有 — オーディエンスを考慮：理解しているか [!DNL SQL]? そうでない場合は、レポートの作成方法に混乱する可能性があります。 |
-| データの格納先 `one-to-many` 関係 |  |
+| 中級/上級アナリスト | 初心者 – あなたは知る必要があります [!DNL SQL]. |
+| この [!DNL SQL] 精通した | 単純な分析 – クエリの記述は、単にクエリを使用するよりも作業が複雑になる場合があります。 [!UICONTROL Visual Report Builder]. |
+| 1 回限りの計算列の作成 | 他のユーザーとの共有 – 対象オーディエンスを検討します。理解しているか [!DNL SQL]? そうしないと、レポートの作成方法で混乱する可能性があります。 |
+| を含むデータ `one-to-many` の関係 |  |
 | 新しい列または分析のテスト |  |
 
-#### データベースと SQL エディタの結果
+#### データベースと SQL エディターの結果
 
-ほとんどの時間、結果の違いは、更新サイクルに起因する可能性があります。 次の場合 [!DNL Commerce Intelligence] は、データベースからData Warehouseにデータをレプリケートするプロセス中で、同じクエリを使用している場合でも、異なる結果が表示される場合があります。
+ほとんどの場合、結果の違いは更新サイクルに起因する可能性があります。 次の場合 [!DNL Commerce Intelligence] は、データベースからData Warehouseにデータをレプリケーション中です。同じクエリを使用しても、異なる結果が表示される場合があります。
 
-接続の問題によって不整合が生じる場合もあります。 次に移動： `Connections` ページをクリックして **[!DNL Manage Data** > **Connections]** チェックアウトするには、問題のデータベース統合にエラーはありますか。 その場合は、 [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) もう一度動かすために。
+接続の問題によって、不一致が発生する場合もあります。 に移動します。 `Connections` をクリックしたページ **[!DNL Manage Data** > **Connections]** チェックアウトするには、データベース統合に関するエラーがありますか？ その場合、次が必要になる可能性があります。 [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) 再び動作させる。
 
-すべての統合が正常に接続され、更新サイクルの途中にない場合は、他に何か問題が発生する可能性があります。
+すべての統合が正常に接続され、更新サイクルの途中ではない場合は、他の何かが問題である可能性があります。
 
-#### 次を削除します。 [!DNL SQL] レポートは基になる列もData Warehouseから削除しますか？
+#### 削除の実行 [!DNL SQL] レポートでData Warehouseから基になる列も削除しますか？
 
-いいえ。どのように作成したかに関係なく、Data Warehouseから列が失われることはありません。
+いいえ、どのように構築したかに関係なく、Data Warehouseから列が失われることはありません。
 
-を使用して作成された列 `Data Warehouse Manager` を使用するレポートまたはクエリを削除しても、影響は受けません。
+を使用して作成された列 `Data Warehouse Manager` これらを使用するレポートまたはクエリを削除しても、影響を受けません。
 
-を使用して作成された列 [!DNL SQL Report Builder] はData Warehouseに保存されません。
+を使用して作成された列 [!DNL SQL Report Builder] はData Warehouseに保存されていません。
 
 
-#### `Report Builder` 対比 `SQL Report Builder`
+#### `Report Builder` 対 `SQL Report Builder`
 
-The [!DNL SQL Report Builder] を使用すると、グラフを作成および構造化する際に柔軟性が高まります。例えば、表示する値を選択できます `X` および `Y` 軸 グラフの作成について詳しくは、 [!DNL SQL Report Builder]、次を確認します。 [からのビジュアライゼーションの作成 [!DNL SQL] クエリ](../../tutorials/create-visuals-from-sql.md) チュートリアル
+この [!DNL SQL Report Builder] を使用すると、グラフを作成および構造化する際の柔軟性が向上します。例えば、で表示する値を選択できます `X` および `Y` 軸： でのグラフの作成について詳しくは、 [!DNL SQL Report Builder]を確認してください。 [からのビジュアライゼーションの作成 [!DNL SQL] クエリ](../../tutorials/create-visuals-from-sql.md) チュートリアル。
 
 #### `Cohort Report Builder` {#cohortrb}
 
-とは異なり、 [!DNL Visual Report Builder]、 [[!DNL Cohort Report Builder]](../dev-reports/cohort-rpt-bldr.md) は、単一の目的を目的としており、類似したユーザーグループの行動トレンドを経時的に分析および識別します。 の使用 [!DNL Cohort Report Builder] 次の項目は不要です： [!DNL SQL] 経験豊富なので、出発したばかりなら、ためらうことなくすぐに飛び込むことができます。
+と異なります。 [!DNL Visual Report Builder], [[!DNL Cohort Report Builder]](../dev-reports/cohort-rpt-bldr.md) は、類似したユーザーグループの行動のトレンドを時間の経過と共に分析および特定する、単一の目的を対象としています。 使用， [!DNL Cohort Report Builder] は次を必要としません [!DNL SQL] 知識が豊富なので、始めたばかりの場合でも、ためらうことなくダイビングできます。
 
-| **これは…に最適です。** | **これは…** |
+| **これは…に最適です** | **これは…にはあまり良くありません。** |
 |---|---|
-| 中級アナリスト/上級アナリスト | 初心者 — 練習用のコホートが必要です。 |
-| 経時的な行動トレンドの特定 | 定性分析 — 可能 [完了](../dev-reports/create-qual-cohort-analysis.md)を使用するには、Adobeの支援が必要です。 |
+| 中級/上級アナリスト | 初心者 – あなたは練習を定義するコホートが必要です。 |
+| 行動の経時的なトレンドの特定 | 定性分析 – 次のことが可能です [完了](../dev-reports/create-qual-cohort-analysis.md)ただし、Adobeの支援が必要です。 |
 
-## 更新サイクル後の問合せの再構築
+## 更新サイクル後のクエリの再構築
 
-クエリを再構築する必要はありません。 を使用して作成されたレポート [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) は、従来の `Report Builder`. 次の更新プロセス： [!DNL SQL] グラフは同じです。データを更新すると、グラフの値が再計算され、再表示されます。
+クエリを再構築する必要はありません。 を使用して作成されたレポート [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) は、従来ので作成したように保存されます `Report Builder`. の更新プロセス [!DNL SQL] グラフは同じです。データを更新すると、グラフの値が再計算され、再表示されます。
 
 >[!NOTE]
 >
->を削除する場合 [!DNL SQL] レポート/クエリの場合、基になる列がData Warehouseから削除されることはありません。 どのように作成したかに関係なく、列は失われません。
+>を削除する場合 [!DNL SQL] レポート/クエリの場合、基になる列はData Warehouseから削除されません。 列の作成方法にかかわらず、列は失われません。
 
-* Data Warehouseマネージャを使用して作成した列は、それらを使用するレポートまたはクエリを削除しても影響を受けません。
+* Data Warehouse・マネージャを使用して作成された列は、それらを使用するレポートまたは問合せを削除しても影響を受けません。
 
-* SQLReport Builderを使用して作成した列はData Warehouseに保存されません。
+* SQL Report Builderを使用して作成された列は、Data Warehouseに保存されません。
 
-## 折り返し {#wrapup}
+## まとめ {#wrapup}
 
-もう少し難しいことを試したい場合は、ビジュアライゼーション用に最適化されたクエリを記述してみてはどうですか。 以下を確認します。 [からのビジュアライゼーションの作成 [!DNL SQL] クエリのチュートリアル](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;} をクリックして開始します。
+もう少し難しいことに挑戦する場合は、ビジュアライゼーションに最適化されたクエリを記述してみませんか？ を確認してください。 [からのビジュアライゼーションの作成 [!DNL SQL] クエリチュートリアル](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;} をクリックして開始してください。

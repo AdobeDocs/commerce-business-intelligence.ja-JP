@@ -1,6 +1,6 @@
 ---
-title: Connect Adobe Commerce
-description: 最も価値のある獲得ソースとチャネルを見つける方法を学びます。
+title: Adobe Commerceを接続
+description: 最も価値のある獲得ソースとチャネルを見つける方法を説明します。
 exl-id: c20e7673-9aa3-4e5e-979c-6adaa4164793
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -17,12 +17,12 @@ ht-degree: 0%
 >
 >が必要 [管理者権限](../../../administrator/user-management/user-management.md).
 
-ビジネスのパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを見つけたりしたい場合は、 接続 [!DNL Adobe Commerce] データを [!DNL Commerce Intelligence] では、これらの質問などに答えることができます。
+ビジネスのパフォーマンスを確認したい場合や、最も価値のある獲得ソースとチャネルを見つけたい場合は、 の接続 [!DNL Adobe Commerce] データ送信先 [!DNL Commerce Intelligence] を使用すると、これらの質問などに回答できます。
 
-を [!DNL Adobe Commerce] データベースは MySQL に基づいているので、次の場所に接続できます。 [!DNL Commerce Intelligence] 経由で [直接接続](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)または [SSH トンネル経由](../integrations/mysql-via-ssh-tunnel.md). SSH は最も安全なので、SSH 方式をお勧めします。
+として [!DNL Adobe Commerce] データベースは MySQL に基づいています。次の場所に接続できます。 [!DNL Commerce Intelligence] を通して [直接接続](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)、または [ssh トンネル経由](../integrations/mysql-via-ssh-tunnel.md). 最も安全な SSH 方式をお勧めします。
 
 ## 関連情報
 
-* [予想されるコマースデータ](../integrations/magento-data.md)
-* [セグメント化およびフィルタリングに推奨されるデータディメンション](../../../best-practices/segment-filter.md)
-* [最も価値のある獲得ソースとチャネルは何ですか？](../../analysis/most-value-source-channel.md)
+* [予想されるCommerce データ](../integrations/magento-data.md)
+* [セグメント化とフィルタリングに推奨されるデータディメンション](../../../best-practices/segment-filter.md)
+* [最も価値の高い獲得ソースとチャネルは何ですか？](../../analysis/most-value-source-channel.md)

@@ -1,6 +1,6 @@
 ---
-title: MongoDB のデータモデリング
-description: 問題を引き起こすデータパターンを回避する方法を説明します。
+title: MongoDB データモデリング
+description: 問題の原因となるデータパターンを回避する方法を説明します。
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -13,15 +13,15 @@ ht-degree: 1%
 
 # [!DNL MongoDB] データモデリング
 
-条件 [!DNL Adobe Commerce Intelligence] 取り込む [!DNL MongoDB] データを使用する場合は、そのデータをリレーショナルモデルに変換します。
+条件 [!DNL Adobe Commerce Intelligence] 引き込む [!DNL MongoDB] データ。そのデータはリレーショナルモデルに変換されます。
 
-悪い知らせ：ほとんどのデータパターンは問題を引き起こしませんが、次のようにはサポートされないデータパターンがいくつかあります。 [!DNL Commerce Intelligence]リレーショナルモデルへの変換が原因です。
+悪いニュース：ほとんどのデータパターンは問題になりませんが、でサポートされていないものがいくつかあります [!DNL Commerce Intelligence]（リレーショナルモデルへの翻訳が原因）。
 
-良い知らせ：これらのパターンはすべて避けることができます。
+良いニュース：これらすべてのパターンは回避できます。
 
-## サブネスト化された配列 {#subnested}
+## サブネストされた配列 {#subnested}
 
-コレクションが次の例のような場合、 [!DNL Commerce Intelligence] は、items 配列内のデータのみをレプリケートします。 サブ項目配列のデータは取り込まれません。
+コレクションが次の例のような場合、 [!DNL Commerce Intelligence] は、items 配列のデータのみを複製します。 サブ項目配列のデータは取り込まれません。
 
 ```bash
     {
@@ -41,9 +41,9 @@ ht-degree: 1%
     }
 ```
 
-## 変数オブジェクトキー {#varobjectkeys}
+## 可変オブジェクトキー {#varobjectkeys}
 
-可変オブジェクトキーを持つオブジェクトを含むコレクションは、 [!DNL Commerce Intelligence]. 例：
+可変オブジェクトキーを持つオブジェクトを含むコレクションは、でレプリケートされない [!DNL Commerce Intelligence]. 例：
 
 ```bash
     {
@@ -56,7 +56,7 @@ ht-degree: 1%
     }
 ```
 
-これは通常、オブジェクトが使用されている場合に発生し、配列の方が適切です。 次に、上記の例を再度実行します。
+これは通常、オブジェクトが使用されていて、配列の方が適切な場合に発生します。 次に、上記の例を再作成します。
 
 ```bash
     {

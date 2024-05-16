@@ -1,107 +1,107 @@
 ---
-title: 計算列のタイプ
-description: 列を作成して、データを拡張し分析用に最適化する方法を説明します。
+title: 集計列の種類
+description: 分析用にデータを拡張および最適化するための列を作成する方法を説明します。
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
 
-# 計算列のタイプ
+# 集計列の種類
 
-* [同じテーブル計算](#sametable)
+* [同じテーブルの計算](#sametable)
 * [1 対多の計算](#onetomany)
 * [多対 1 の計算](#manytoone)
-* [ハンディリファレンスマップ](#map)
+* [便利な参照マップ](#map)
 * [高度な計算列](#advanced)
 
-内 [Data Warehouse管理](../data-warehouse-mgr/tour-dwm.md)を使用すると、列を作成して、データを分析用に拡張および最適化できます。 [この機能](../data-warehouse-mgr/creating-calculated-columns.md) は、Data Warehouseマネージャーで任意のテーブルを選択し、 **[!UICONTROL Create New Column]**.
+内 [Data Warehouse管理者](../data-warehouse-mgr/tour-dwm.md)を参照してください。また、列を作成して、分析用にデータを補強し最適化できます。 [この機能](../data-warehouse-mgr/creating-calculated-columns.md) アクセスするには、Data Warehouseマネージャで任意のテーブルを選択し、をクリックします **[!UICONTROL Create New Column]**.
 
-このトピックでは、Data Warehouse・マネージャを使用して作成できる列のタイプについて説明します。 また、説明、その列の視覚的なウォークスルー、および [参照マップ](#map) 列の作成に必要なすべての入力値を含むデータを取得できます。 計算列を作成する方法は 3 つあります。
+ここでは、Data Warehouseマネージャを使用して作成できる列のタイプについて説明します。 また、説明、その列の視覚的なウォークスルーおよび [参照マップ](#map) 列の作成に必要なすべての入力。 計算列を作成する方法は 3 つあります。
 
-1. [同じテーブル計算列](#sametable)
+1. [同じテーブルの計算列](#sametable)
 1. [1 対多の計算列](#onetomany)
 1. [多対 1 の計算列](#manytoone)
 
-## 同じテーブル計算列 {#sametable}
+## 同じテーブルの計算列 {#sametable}
 
 これらの列は、同じテーブルの入力列を使用して作成されます。
 
 ### 年齢 {#age}
 
-経過時間計算列は、現在の時間と一部の入力時間の間の秒数を返します。
+年齢の計算列は、現在の時刻と入力時刻の間の秒数を返します。
 
-次の例はを作成します。 `Seconds since customer's most recent order` （内） `customers` 表。 これは、内で購入を行っていない（チャーンと呼ばれる場合もあります）顧客のユーザーリストを作成するために使用できます。 `X days`.
+次の例では、を作成します。 `Seconds since customer's most recent order` が含まれる `customers` テーブル。 これを使用して、内で購入を行っていない顧客（チャーンと呼ばれることもあります）のユーザーリストを作成できます `X days`.
 
 ![](../../assets/age.gif)
 
-### 通貨コンバータ
+### 通貨換算
 
-通貨コンバータ計算列は、列のネイティブ通貨を目的の新しい通貨に変換します。
+通貨換算計算列は、列のネイティブ通貨を目的の新しい通貨に変換します。
 
-次の例はを作成します。 `base\_grand\_total In AED`、変換する `base\_grand\_total` それはネイティブの通貨から AED に `sales\_flat\_order` 表。 この列は、現地通貨でレポートする複数の通貨を持つ店舗で適しています。
+次の例では、を作成します。 `base\_grand\_total In AED`、変換 `base\_grand\_total` から AED のネイティブ通貨です。 `sales\_flat\_order` テーブル。 この列は、現地通貨でレポートを作成する複数通貨のストアに適しています。
 
-コマースクライアントの場合、 `base\_currency\_code` フィールドは通常、ネイティブの通貨を保存します。 The `Spot Time` フィールドは、指標で使用される日付と一致する必要があります。
+Commerce クライアントの場合、 `base\_currency\_code` 通常、フィールドには現地通貨を格納します。 この `Spot Time` フィールドは、指標で使用された日付と一致する必要があります。
 
 ![](../../assets/currency_converter.png)
 
 ## 1 対多の計算列 {#onetomany}
 
-`One-to-Many` 列 [2 つのテーブルの間のパスを使用する](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). このパスは常に、属性が存在する 1 つのテーブルと、その属性が「再配置」される多くのテーブルを示します。 パスは、 `foreign key--primary key` 関係。
+`One-to-Many` 列 [2 つのテーブル間のパスを使用](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). このパスは、常に、属性が存在する 1 つのテーブルと、その属性が「再配置」される多数のテーブルを意味します。 パスは `foreign key--primary key` 関係。
 
 ### 結合された列 {#joined}
 
-結合された列は、1 つのテーブルの属性を再配置します *から* 多くのテーブル。 1/多の典型的な例は、顧客（1 つ）と注文（多数）です。
+結合された列は、1 つのテーブルの属性を再配置します *対象：* 多数のテーブル。 典型的な 1 対多の例は、顧客（1 人）と注文（多数）です。
 
-次の例では、 `Customer's group\_id` ディメンションは、 `orders` 表。
+以下の例では、 `Customer's group\_id` ディメンションは、以下に結合されます `orders` テーブル。
 
 ![](../../assets/joined_column.gif)
 
 ## 多対 1 の計算列 {#manytoone}
 
-これらの列は、1 対多の列と同じパスを使用しますが、データは反対の方向を指します。 列は、多くの側とは対照的に、パスの片側に作成されます。 この関係により、列の値は集計である必要があります。つまり、多くの側のデータポイントで実行される数学的演算です。 これには多くの使用例があり、いくつかを以下に示します。
+これらの列は、1 対多の列と同じパスを使用しますが、データを反対方向に指します。 列は、多の側とは異なり、パスの片側に作成されます。 この関係により、列の値は集計、つまり、多側のデータポイントに対して実行される数学演算である必要があります。 多くの使用例がありますが、以下にいくつか示します。
 
 ### カウント {#count}
 
-このタイプの計算列は、多数のテーブルの値の数を返します *onto* 一つのテーブル。
+このタイプの計算列は、多数のテーブルの値の数を返します *を対象* 1 つのテーブル。
 
-次の例では、ディメンション `Customer's lifetime number of canceled orders` が `customers` テーブル（フィルター付き） `orders.status`) をクリックします。
+次の例では、ディメンションです `Customer's lifetime number of canceled orders` 次の日に作成される `customers` テーブル （フィルター付き） `orders.status`）に設定します。
 
 ![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
 
 ### 合計 {#sum}
 
-合計の計算列は、 `many` テーブルを 1 つのテーブル上に置きます。
+合計計算列は、上の値の合計です `many` 1 つのテーブル上のテーブル。
 
-これは、 `Customer's lifetime revenue`.
+これは、次のような顧客レベルのディメンションを作成するために使用できます `Customer's lifetime revenue`.
 
 ### 最小または最大 {#minmax}
 
-最小または最大の計算列は、多辺に存在する最小または最大のレコードを返します。
+最小または最大計算列は、多側にある最小または最大のレコードを返します。
 
-これは、 `Customer's first order date`.
+これは、次のような顧客レベルのディメンションを作成するために使用できます `Customer's first order date`.
 
-### 存在する {#exists}
+### が存在する {#exists}
 
-計算列は、多くの面でのレコードの存在を判断するバイナリテストです。 つまり、新しい列は `1` パスが各テーブルの少なくとも 1 つの行を接続している場合、および `0` 接続できない場合。
+計算列は、多側でのレコードの存在を判断するバイナリテストです。 つまり、新しい列はを返します。 `1` パスが各テーブルの 1 行以上を接続する場合、および `0` 接続できない場合。
 
-このタイプのディメンションは、例えば、顧客が特定の製品を購入したことがあるかどうかを判断する場合があります。 結合の使用 `customers` 表と `orders` テーブル、特定の製品のフィルター、ディメンション `Customer has purchased Product X?` を構築できます。
+このタイプのディメンションは、例えば、顧客が特定の製品を購入したことがあるかどうかを決定する場合があります。 間の結合の使用 `customers` テーブルと `orders` テーブル、特定の製品のフィルター、ディメンション `Customer has purchased Product X?` を作成できます。
 
-## ハンディリファレンスマップ {#map}
+## 便利な参照マップ {#map}
 
-計算列を作成する際に、すべての入力値を記憶するのに問題が生じる場合は、次のリファレンスマップを作成時に手元に用意しておいてください。
+計算列を作成するときにすべての入力が何であるかを思い出すのに苦労している場合は、以下を作成するときにこの参照マップを手元に置いておいてください。
 
 ![](../../assets/merged_reference_map.png)
 
 ## 高度な計算列 {#advanced}
 
-ビジネスに関する質問を分析し、回答するためのクエストで、必要な列を正確に作成できない状況が発生する場合があります。
+ビジネスに関する質問を分析し、回答しようとすると、必要な正確な列を作成できない状況が発生する場合があります。
 
-迅速な転換を実現するため、Adobeは、 [高度な計算列のタイプ](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) ガイドを参照して、Adobeサポートチームが構築できる列の種類を確認します。 また、このトピックでは、列の作成に必要な情報について説明します。リクエストに含めます。
+迅速な復旧を確実にするために、Adobeでは以下を確認することをお勧めします。 [高度な計算列のタイプ](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) Adobeサポートチームが作成できる列の種類を確認するためのガイド。 このトピックでは、列を作成するために必要な情報も扱います。これをリクエストに含めます。
 
 ## 関連ドキュメント
 

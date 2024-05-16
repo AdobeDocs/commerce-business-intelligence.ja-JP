@@ -6,65 +6,65 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
 
 # フィルター
 
-1 つ以上のフィルターを追加して、レポートの作成に使用するデータを制限できます。 各フィルターは、関連付けられたテーブルの列、演算子、値を含む式です。 例えば、リピート顧客のみを含めるには、複数の注文をした顧客のみを含むフィルターを作成します。 複数のフィルターを論理 `AND/OR` 演算子を使用して、レポートにロジックを追加できます。
+1 つ以上のフィルターを追加して、レポートの作成に使用するデータを制限できます。 各フィルターは、関連付けられたテーブルの列、演算子、値を含む式です。 例えば、リピート顧客のみを含めるには、複数の注文を行った顧客のみを含めるフィルターを作成します。 複数のフィルターを論理的に使用できます `AND/OR` レポートにロジックを追加するための演算子。
 
 >[!TIP]
 >
->1 つのレポートに設定できるデータポイントは最大 3,500 個です。 データポイントの数を減らすには、フィルターを使用して、レポートの生成に使用するデータの量を減らします。
+>レポートには、最大 3,500 個のデータポイントを含めることができます。 データポイントの数を減らすには、フィルターを使用して、レポートの生成に使用するデータの量を減らします。
 
-[!DNL Adobe Commerce Intelligence] には、「標準 (OOTB)」を使用したり、必要に応じて変更したりできるフィルターの選択が含まれています。 作成できるフィルターの数に制限はありません。
+[!DNL Adobe Commerce Intelligence] には、「標準搭載（OOTB）」を使用したり、必要に応じて変更したりできる、一連のフィルターが含まれています。 作成できるフィルターの数に制限はありません。
 
-## フィルターを追加するには、次の手順に従います。
+## フィルターを追加するには：
 
-1. グラフで、各データポイントにカーソルを合わせます。
+1. グラフで、各データポイントにポインタを合わせます。
 
-   このレポートでは、各データポイントにはその月の顧客の合計数が表示されます。
+   このレポートでは、各データポイントはその月の顧客の合計数を示します。
 
-1. 左のパネルで、「フィルター」(![](../../assets/magento-bi-btn-filter.png)) アイコンをクリックします。
+1. 左側のパネルで「フィルター」をクリックします（![](../../assets/magento-bi-btn-filter.png)） アイコンをクリックします。
 
    ![フィルターを追加](../../assets/magento-bi-report-builder-filter-add.png)
 
 1. クリック **[!UICONTROL Add Filter]**.
 
-   フィルターはアルファベット順に番号付けされ、最初は `[A]`. フィルターの最初の 2 つの部分はドロップダウンオプションで、3 番目の部分は値です。
+   フィルターにはアルファベット順に番号が付けられ、最初のは `[A]`. フィルターの最初の 2 つの部分はドロップダウンオプションで、3 番目の部分は値です。
 
    ![](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * フィルターの最初の部分をクリックし、式の件名として使用する列を選択します。
 
-     ![フィルタの最初の部分を選択](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![フィルターの最初の部分を選択](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * フィルターの 2 番目の部分をクリックし、演算子を選択します。
 
-     ![演算子を選択します。](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![演算子の選択](../../assets/magento-bi-report-builder-filter-part2.png)
 
-   * フィルターの 3 番目の部分に、式を完了するために必要な値を入力します。
+   * フィルターの 3 番目の部分で、式を完成させるために必要な値を入力します。
 
      ![値を入力](../../assets/magento-bi-report-builder-filter-part3.png)
 
-   * フィルターが完了したら、「 **[!UICONTROL Apply]**.
+   * フィルターが完了したら、 **[!UICONTROL Apply]**.
 
-     レポートにリピート客のみが含まれるようになり、レポートに対して取得した顧客レコードの数が 33,000 から 12,600 に減りました。
+     レポートにはリピート顧客のみが含まれるようになり、レポート用に取得された顧客レコードの数が 33,000 から 12,600 に減りました。
 
-     ![フィルター済みレポート](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![フィルター済み報告書](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
-1. サイドバーで、パースペクティブ ( ![](../../assets/magento-bi-btn-perspective.png)) アイコンをクリックします。
+1. サイドバーで、パースペクティブ（ ![](../../assets/magento-bi-btn-perspective.png)） アイコンをクリックします。
 
-   ![遠近法](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
+   ![透視投影](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
 
-1. 設定のリストで、「 」を選択します。 `Cumulative`. 次に、「 **[!UICONTROL Apply]**.
+1. 設定のリストで、を選択します `Cumulative`. 次に、 **[!UICONTROL Apply]**.
 
-   ![累積パースペクティブ](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
+   ![累積的視点](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
 
-   The `Cumulative` パースペクティブは、月ごとのぼかしやぼかしを表示するのではなく、時間の経過と共に変化を分布します。
+   この `Cumulative` パースペクティブでは、各月のギザギザの上下を表示するのではなく、時間の経過に伴う変化が分配されます。
 
-1. を入力します。 `Title` をクリックします。 **[!UICONTROL Save]** it as a `Chart` をダッシュボードに追加します。
+1. を入力 `Title` レポートの場合は、をクリックします。 **[!UICONTROL Save]** as a `Chart` をダッシュボードに追加します。
 
    ![ダッシュボードに保存](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

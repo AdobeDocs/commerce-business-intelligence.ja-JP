@@ -1,6 +1,6 @@
 ---
-title: グラフデータを書き出し
-description: データをグラフの背後に表示する方法を説明します。
+title: グラフ データのエクスポート
+description: グラフの背後にあるデータを表示する方法を説明します。
 exl-id: 3c75ff3c-c4e2-4ff8-a303-6f24ccfca0ff
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# グラフデータを書き出し
+# グラフ データのエクスポート
 
-データをグラフの背後に表示する場合は、グラフの右上隅にある歯車アイコンをクリックします。
+グラフの背後にあるデータを表示する場合は、グラフの右上隅にある歯車アイコンをクリックします。
 
 次のいずれかを選択します。
 
@@ -22,6 +22,6 @@ ht-degree: 0%
 - `Full Excel Export`
 - `Raw Export`
 
-また、 [エクスポートに含めるテーブルと列](../../tutorials/export-raw-data.md).
+以下を定義することもできます [書き出しに含めるテーブルと列](../../tutorials/export-raw-data.md).
 
-プレゼンテーションやドキュメントにグラフを含める必要がある場合は、グラフを画像として PNG、PDF、またはSVG形式で書き出すことができます。 グラフの右上隅にある歯車アイコンをクリックします。 を選択します。 `Enlarge` 」オプションを選択し、 **[!UICONTROL Download]** をクリックして、エクスポートを完了します。
+プレゼンテーションまたは文書にグラフを含める必要がある場合は、PNG、PDF、またはSVG形式の画像としてグラフをエクスポートできます。 グラフの右上隅にある歯車アイコンをクリックします。 「」を選択します `Enlarge` ドロップダウンで「」オプションを選択し、をクリックします。 **[!UICONTROL Download]** をクリックして書き出しを完了します。

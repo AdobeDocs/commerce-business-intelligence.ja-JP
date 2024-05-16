@@ -1,6 +1,6 @@
 ---
-title: ダッシュボードにグラフを追加
-description: 「レポートの追加」機能を使用してグラフをダッシュボードに追加する方法を説明します。
+title: ダッシュボードへのグラフの追加
+description: レポートの追加関数を使用してダッシュボードにグラフを追加する方法を説明します。
 exl-id: 4a4f14c3-a6ab-4abc-9451-2a0f2fcf06a2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# ダッシュボードにグラフを追加
+# ダッシュボードへのグラフの追加
 
-既存のグラフは、 [!UICONTROL Add Report] 関数内に配置します。 同じグラフを複数のダッシュボードに追加できます。つまり、グラフを編集すると、このグラフを持つすべてのダッシュボードに変更が反映されます。
+既存のグラフは、 [!UICONTROL Add Report] 画面の右上の領域にある関数。 同じグラフを複数のダッシュボードに追加できます。つまり、グラフを編集すると、このグラフを持つすべてのダッシュボードに変更が反映されます。
 
 >[!NOTE]
 >
->クリック **[!UICONTROL Add Report]** は、クリックとは異なります **[!UICONTROL Save As]** をクリックします。 `Add Report` はグラフをダッシュボードに追加するだけで、 `Save As` 既存のグラフのバージョンを作成します。
+>クリック **[!UICONTROL Add Report]** クリックと同じではありません **[!UICONTROL Save As]** グラフエディター `Add Report` ダッシュボードにグラフを追加するだけで、 `Save As` 既存のグラフのバージョンを作成します。
 
-## グラフを追加
+## グラフの追加
 
 1. クリック **[!UICONTROL Add Report]**. 既存のグラフのリストが表示されます。
 

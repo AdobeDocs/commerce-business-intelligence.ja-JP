@@ -1,5 +1,5 @@
 ---
-title: 更新サイクルの後にクエリを再構築しますか？
+title: 更新サイクル後にクエリを再構築しますか？
 description: 更新サイクルの実行後にクエリがどうなるかを説明します。
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
@@ -10,6 +10,6 @@ ht-degree: 0%
 
 ---
 
-# 更新サイクル後の問合せの再構築
+# 更新サイクル後のクエリの再構築
 
-クエリを再構築する必要はありません。 を使用して作成されたレポート [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) は、従来の `Report Builder`. SQL グラフの更新プロセスは同じです。データが更新されると、グラフの値が再計算され、再表示されます。
+クエリを再構築する必要はありません。 を使用して作成されたレポート [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) は、従来ので作成したように保存されます `Report Builder`. SQL グラフの更新プロセスは同じです。データが更新されると、グラフの値が再計算され、再表示されます。

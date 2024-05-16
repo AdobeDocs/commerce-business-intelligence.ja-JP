@@ -1,12 +1,12 @@
 ---
-title: WooCommerce を接続
-description: ビジネスのパフォーマンスを確認する方法、または最も価値のある獲得ソースやチャネルを見つける方法について説明します。
+title: WooCommerce の接続
+description: ビジネスのパフォーマンスを確認する方法や、最も価値のある獲得ソースとチャネルを見つける方法について説明します。
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ![](../../../assets/WooCommerce-Logo.jpg)
 
-ビジネスのパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを見つけたりしたい場合は、 接続 [!DNL WooCommerce] データを [!DNL Commerce Intelligence] では、これらの質問などに答えることができます。
+ビジネスのパフォーマンスを確認したい場合や、最も価値のある獲得ソースとチャネルを見つけたい場合は、 の接続 [!DNL WooCommerce] データ送信先 [!DNL Commerce Intelligence] これらの質問などに答えることができます。
 
-The [!DNL WooCommerce] データベースの基準 [!DNL MySQL]を使用している場合、 [!DNL Commerce Intelligence] 経由で [直接接続](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)または [経由 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobeでは最も安全な SSH 方式の使用をお勧めします。
+この [!DNL WooCommerce] データベースの基準 [!DNL MySQL]に接続できます。 [!DNL Commerce Intelligence] を通して [直接接続](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)、または [経由 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobeでは、最も安全な SSH 方式を使用することをお勧めします。
 
 ## 関連：
 
 * [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
-* [セグメント化およびフィルタリングに推奨されるデータディメンション](../../../best-practices/segment-filter.md)
+* [セグメント化とフィルタリングに推奨されるデータディメンション](../../../best-practices/segment-filter.md)

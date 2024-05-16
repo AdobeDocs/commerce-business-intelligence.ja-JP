@@ -1,82 +1,82 @@
 ---
 title: 定性コホート分析の作成
-description: 定性コホートとは何か、この分析の構築に興味を持つ理由、および Commerce Intelligence での作成方法を説明します。
+description: 定性的コホートとは何か、この分析の構築に興味を持つ理由、Commerce Intelligence での分析作成方法について説明します。
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
 
-# の作成 `Qualitative Cohort Analysis`
+# を作成 `Qualitative Cohort Analysis`
 
-あなたは自分の [!DNL Google Adwords] — 獲得した顧客セグメントは、オーガニック検索から獲得した顧客と比べて、LTV が成長しているか。 今までに、 `cohort` 同じレポート内で異なる顧客セグメントを並べて分析した場合、 その場合、 `qualitative cohort analysis` は、これらの質問に答えるのに役立ちます。
+あなたの方法を知っていますか [!DNL Google Adwords] – 獲得した顧客セグメントは、オーガニック検索で獲得した顧客と比較して LTV を伸ばしていますか？ ～を演じようと思ったことはありますか？ `cohort` 同じレポートで異なる顧客セグメントを並べて分析 もしそうなら、 `qualitative cohort analysis` これらの質問に答えるのに役立ちます。
 
-このトピックでは、定性コホートとは何か、この分析の作成に興味を持つ理由と、での分析の作成方法について説明します。 [!DNL Commerce Intelligence].
+このトピックでは、定性的コホートの概要、この分析の構築に興味を持つ理由、での作成方法について説明します [!DNL Commerce Intelligence].
 
-## 説明 `qualitative cohorts`それでも？ {#whatare}
+## について `qualitative cohorts`とにかくね？ {#whatare}
 
-`Cohort` 一般的な分析は、ライフサイクルにわたって同じ特性を共有するユーザーグループの分析として広く定義できます。 異なるユーザーグループにわたる行動傾向を識別できます。
+`Cohort` 分析一般には、ライフサイクルを通じて類似した特性を共有するユーザーグループの分析と定義できます。 これにより、様々なユーザーグループにわたる行動のトレンドを特定できます。
 
-詳しくは、 [コホート分析](https://www.cohortanalysis.com/).
+参照： [コホート分析](https://www.cohortanalysis.com/).
 
-最も多い `cohort` 分析 [!DNL Commerce Intelligence] 共通の日付（特定の月に初めて購入したすべての顧客のセットなど）でユーザーをグループ化します。 A `qualitative cohort` は少し異なります。これは、時間ベースではない特性で定義されるユーザーグループです。 以下に例を示します。
+Most `cohort` での分析 [!DNL Commerce Intelligence] 共通の日付（特定の月に最初の購入を行ったすべての顧客のセットなど）でユーザーをグループ化します。 A `qualitative cohort` 少し異なります。時間ベースではない特性によって定義されるユーザーグループです。 例を次に示します。
 
-* 広告キャンペーンから取得されたすべてのユーザーのセット
+* 広告キャンペーンから取得したすべてのユーザーのセット
 * 最初の購入にクーポンが含まれている（または含まれていない）すべてのユーザーのセット
-* 特定の年齢に属するすべてのユーザーのセット
+* 特定の年齢のすべてのユーザーのセット
 
-## それは通常とどのように違うのですか `cohort` ビルダー？ {#different}
+## それが通常とどう違うか `cohort` ビルダー？ {#different}
 
-The [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) は、時間ベースの特性を使用してコホートをグループ化するために最適化されています。 これは、特定のユーザーセグメント（例えば、有料検索キャンペーンで獲得したすべてのユーザー）に焦点を当てた分析に最適です。 Adobe Analytics の `Cohort Analysis Builder`(1) その特定のユーザーグループに焦点を当て、(2) `cohort` 日付（初回注文日など）に設定している必要があります。
+この [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) は、時間ベースの特性を使用してコホートをグループ化するために最適化されています。 これは、特定のユーザーのセグメント（有料検索キャンペーンで取得したすべてのユーザーなど）に焦点を当てた分析に最適です。 が含まれる `Cohort Analysis Builder`を使用すると、（1）その特定のユーザーグループにフォーカスすることができます。（2） `cohort` 日付（最初の注文日と同様に）に。
 
-ただし、同じコホートレポート (`paid` 検索対象 `organic` 検索と直接トラフィック（おそらく？）の違いにより、このより高度な分析を `Report Builder`.
+ただし、同じコホートレポートで複数のユーザーセグメントのコホート動作を分析する場合（`paid` 検索と `organic` 検索と直接トラフィックなど）、より高度な分析は、次の場所で構築できます。 `Report Builder`.
 
-## 分析を設定するには、どのような情報をサポートに送信する必要がありますか？ {#support}
+## 分析を設定するには、どのような情報をサポートに送信するとよいですか？ {#support}
 
-の作成 `qualitative cohort` レポート `Report Builder` Adobe・アナリスト・チームが [高度な計算列](../data-warehouse-mgr/creating-calculated-columns.md) を必要なテーブルに追加します。
+の作成 `qualitative cohort` のレポート `Report Builder` は、Adobeアナリストチームが一部を作成する必要があります [高度な計算列](../data-warehouse-mgr/creating-calculated-columns.md) 必要なテーブルで。
 
-これらを作成するには、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （およびこの記事を参照してください。） 次の情報が必要です。
+これを作成するには、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （この記事を参照してください。 必要な知識を次に示します。
 
-* The `metric` コホート分析を、その分析で使用するテーブル ( 例： `Revenue`( `orders` 表 )。
+* この `metric` コホート分析に使用するテーブルと使用するテーブルを指定する（例： `Revenue`、にビルド `orders` テーブル）に保存します。
 
-* The `user segments` その情報を定義し、その情報がデータベース内のどこに存在するか ( 例：異なる値 `User's referral source`（にネイティブ） `users` テーブルに移動し、 `orders`) をクリックします。
+* この `user segments` その情報がデータベース内のどこにあるかを定義する場合（例：の異なる値） `User's referral source`、ネイティブ `users` テーブルを次の場所に移動 `orders`）に設定します。
 
-* The `cohort date` 分析で使用する ( 例： `User's first order date` タイムスタンプ )。 この例では、各セグメントを確認して `How does a user's revenue grow in the months following their first order date?`.
+* この `cohort date` 分析で使用する（例： `User's first order date` timestamp）を参照してください。 この例を使用すると、各セグメントを確認して尋ねることができます `How does a user's revenue grow in the months following their first order date?`.
 
-* The `time interval` 分析を確認する必要がある場合 ( 例： `weeks`, `months`または `quarters` の後 `User's first order date`) をクリックします。
+* この `time interval` 分析を確認する場合（例： `weeks`, `months`、または `quarters` 後 `User's first order date`）に設定します。
 
-Adobeアナリストチームが上記に応答したら、レポートを作成するための新しい高度な計算列が 2 つ追加されます。 その後、以下の指示に従ってこれを行うことができます。
+Adobeアナリストチームが上記の手順に従ったら、新しい高度な計算列をいくつか用意して、レポートを作成できます。 次に、以下の手順に従ってこれを行うことができます。
 
 ## 定性コホート分析の作成 {#create}
 
-まず、コホートに使用する指標を追加します。各指標に対して 1 回ずつ追加します `cohort` 分析中です。 この例では、累積 `Revenue` 顧客の初回注文から数か月後に、 `User's referral source`. つまり、各セグメントに対して 1 つ追加します `Revenue` 指標とフィルターを指定します。
+まず、調整する指標を各 1 回ずつ追加します `cohort` 分析しています。 この例では、累積を表示します `Revenue` 顧客の初回注文後の数か月で行われ、によってセグメント化される `User's referral source`. つまり、セグメントごとに 1 つ追加します `Revenue` 特定のセグメントの指標とフィルター：
 
 ![](../../assets/qualcohort1.gif)
 
-次に、レポートの時間オプションに 2 つの変更を加えます。
+次に、レポートの時間オプションを 2 回変更する必要があります。
 
-1. を設定します。 `time interval` から `None`. これは、通常の時間オプションを使用する代わりに、最終的に時間間隔でディメンションとしてグループ化するからです。
+1. を `time interval` 対象： `None`. これは、通常の時間オプションを使用する代わりに、最終的にディメンションとして時間間隔でグループ化するためです。
 
-1. を設定します。 `time range` を指定します。
+1. を `time range` レポートの対象とする時間帯に追加します。
 
-この例では、 `all time` ～の見方 `Revenue`. その後、次の一連のドットが表示されます。
+この例では、を確認します。 `all time` の表示 `Revenue`. この後、一連のドットで終わります。
 
 ![](../../assets/qualcohort2.gif)
 
-3 つ目は、を調整して `cohorts`. 次に基づく `cohort date` および `time interval` Adobe・アナリスト・チームに指定した場合、 `cohort` 付き合い。 この例では、カスタムディメンションの名前はです。 `Months between this order and customer's first order date`. このディメンションを使用して、次の操作をおこなう必要があります。
+3 番目に、 `cohorts`. に基づく `cohort date` および `time interval` Adobeアナリストチームに指定した場合、を実行するディメンションがアカウントに存在します `cohort` デート中。 この例では、そのカスタムディメンションはと呼ばれます `Months between this order and customer's first order date`. このディメンションを使用すると、次のことができます。
 
-* `Group by` 次元と `group by` オプション
+* `Group by` を含むディメンション `group by` オプション
 
-* 次の項目のすべての値を選択 `dimension` あなたが興味を持っている
+* の値をすべて選択 `dimension` 関心のあるもの
 
-* を使用 `Show top/bottom option`、関心のある上位 X ヶ月を選択し、 `Months between this order and customer's first order date` ディメンション
+* （を使用） `Show top/bottom option`を選択し、関心のある上位 X か月を選択して、で並べ替えます `Months between this order and customer's first order date` 寸法
 
-これで、各 `cohort` 指定した値。 例を今すぐご覧ください — `Revenue` 各リファラルソースのユーザーによって投稿されました。 `grouped by` 最初の注文からそれ以降の注文までの月数。 また、 `Cumulative perspective` 見る `cohorts'` 集計の増加 — より精度の高い結果の表を見てみましょう。
+これで、各行を 1 行ずつ表示できるようになります `cohort` を指定しました。 今すぐ例を確認してください。次が表示されます。 `Revenue` 各リファラルソースのユーザーが投稿、 `grouped by` 最初の注文から後続の注文までの月数。 この例では、も追加されています。 `Cumulative perspective` を表示するには `cohorts'` 集計値の増加：詳細については、結果の表を参照してください。
 
-これは何を意味するのでしょうか？ ここでは、特定のリファラルソースについて説明します。 `Paid search` は、顧客の購入期間の最初の 1 か月で役立ちますが、リピート売上高を伴う顧客ベースの維持に失敗します。 While `Direct Traffic` は、より少ない金額で開始し、後続の月の売上高は、実際には同じペースで累積します。
+これは何を意味しますか？ ここでは、特定のリファラルソース `Paid search` は、顧客の購入有効期間の最初の 1 か月では価値がありますが、リピート収益があるにもかかわらず、顧客ベースを維持できません。 While `Direct Traffic` より少ない金額で開始し、その後の数か月の収益は実際には同様のペースで累積されます。
 
-どんなにさいころをしても `cohort` 分析は、分析ツールボックスの強力なツールです。 このタイプの分析は、従来の `time-based cohorts` できず、より優れたデータ主導型の意思決定を可能にする可能性があります。
+どんなに細かく言っても `cohort` analysis は、analysis ツールボックスの強力なツールです。 このタイプの分析は、従来のようなビジネスに関する興味深いインサイトを得ることができます `time-based cohorts` できない場合があり、データに基づいた意思決定を向上させることができます。

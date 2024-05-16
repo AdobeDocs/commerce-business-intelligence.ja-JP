@@ -1,6 +1,6 @@
 ---
-title: デフォルトのダッシュボードを設定する
-description: デフォルトのダッシュボードを設定する方法を説明します。
+title: デフォルトのダッシュボードの設定
+description: デフォルトのダッシュボードを設定する方法について説明します。
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -11,18 +11,18 @@ ht-degree: 0%
 
 ---
 
-# デフォルトのダッシュボードを設定する
+# デフォルトのダッシュボードを設定
 
-デフォルトのダッシュボードは、開くと最初に表示されるダッシュボードです [!DNL Commerce Intelligence].
+デフォルトのダッシュボードは、開いたときに最初に表示されるダッシュボードです [!DNL Commerce Intelligence].
 
-1. ダッシュボードで、 **[!UICONTROL Dashboard Options]** は、画面の上部に表示されます。
+1. ダッシュボードで、 **[!UICONTROL Dashboard Options]** 画面の上部にあります。
 
-1. クリック **[!UICONTROL Make Default]** 」と入力します。
+1. クリック **[!UICONTROL Make Default]** ドロップダウンで選択します。
 
-1. 確認メッセージが表示されたら、 **[!UICONTROL Yes]** をクリックして、デフォルトのダッシュボードを変更します。
+1. 確認プロンプトが表示されたら、 **[!UICONTROL Yes]** デフォルトのダッシュボードを変更します。
 
-これが、新しいデフォルトのダッシュボードになりました。
+これが新しいデフォルトダッシュボードになります。
 
 例：
 
-![デフォルトのダッシュボード](../../assets/default_dashboard.gif)
+![デフォルトダッシュボード](../../assets/default_dashboard.gif)

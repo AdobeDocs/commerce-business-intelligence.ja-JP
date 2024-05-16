@@ -1,6 +1,6 @@
 ---
-title: グラフデータ情報
-description: ビジュアルReport Builderのビジュアライゼーションオプションの使用方法を説明します。
+title: グラフのデータ情報
+description: ビジュアルReport Builderでのビジュアライゼーションオプションの使用方法を説明します。
 exl-id: 865efc8b-1e1a-4033-9e42-cbd03b220260
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -11,12 +11,12 @@ ht-degree: 0%
 
 ---
 
-# グラフデータ情報
+# グラフのデータ情報
 
-選択します（単純な英語または指標定義）。 グラフに注釈を付け、グラフ内の指標と数式を表示するには、 _情報_ アイコンを使用して、グラフの右上隅に表示できます。
+わかりやすい英語や指標の定義から選択します。 ユーザーは、次のアイコンをクリックして、グラフに注釈を付け、グラフ内の指標と数式を表示できます _情報_ アイコンをクリックします。
 
 ## 関連：
 
-* [基本分析](../../data-analyst/analysis/basic-analytics.md)
+* [基本的な分析](../../data-analyst/analysis/basic-analytics.md)
 * [[!DNL Visual Report Builder]](../../data-user/reports/ess-rpt-build-visual.md)
 * [[!DNL SQL Report Builder]](../../data-analyst/dev-reports/sql-rpt-bldr.md)

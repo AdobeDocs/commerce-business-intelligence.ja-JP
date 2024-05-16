@@ -1,31 +1,31 @@
 ---
-title: 予期される Mixpanel データ
-description: Mixpanel から [!DNL Commerce Intelligence] アカウント。
+title: 期待される Mixpanel データ
+description: Mixpanel からに読み込むことができるメインデータテーブルについて説明します [!DNL Commerce Intelligence] アカウント。
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
-# 期待値 [!DNL Mixpanel] データ
+# 予測 [!DNL Mixpanel] データ
 
-後 [接続しました [!DNL Mixpanel] アカウント](../integrations/mixpanel.md)を使用する場合、 [Data Warehouse管理](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 分析に関連するデータフィールドを容易に追跡する。
+後 [を接続しました [!DNL Mixpanel] アカウント](../integrations/mixpanel.md)を使用する場合は、 [Data Warehouse管理者](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 関連するデータフィールドを容易に追跡して分析できるようにする。
 
-このトピックでは、からインポートできる主なデータテーブルについて説明します。 [!DNL Mixpanel] を [!DNL Commerce Intelligence] アカウント。 次の表は、接続後にData Warehouseに作成されます [!DNL Mixpanel]. 追跡に使用できるすべてのフィールドを表示するには、テーブル名列でリンクをクリックします。
+このトピックでは、インポート元となるメインのデータ テーブルについて説明します [!DNL Mixpanel] を自分の [!DNL Commerce Intelligence] アカウント。 接続後、次のテーブルがData Warehouseに作成されます [!DNL Mixpanel]. トラッキングに使用できるすべてのフィールドを表示するには、テーブル名列のリンクをクリックします。
 
 >[!NOTE]
 >
->の制限により [!DNL Mixpanel] API、履歴データ — 接続日から 7 日を経過したデータ [!DNL Commerce Intelligence]  — はレプリケートされていません。
+>の制限事項により [!DNL Mixpanel] API、履歴データ – への接続日から 7 日以上前のデータ [!DNL Commerce Intelligence]  – はレプリケートされません。
 
 | **テーブル名** | **説明** |
 |-----|-----|
-| [`mixpanel\_export`](https://developer.mixpanel.com/reference/raw-data-export-api#datafeed) | この表には、イベント、イベント日、プラットフォームバケットを含む生のイベントデータが含まれています。 |
-| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | この表には、ファネル ID、ファネルの長さ（ユーザーがファネルを完了するまでにかかった日数）、ファネルの開始日と終了日を含む、ファネルに関するデータが含まれています。 |
-| [`mixpanel\_engage`](https://developer.mixpanel.com/reference/raw-data-export-api#engage-default) | これには、セッション ID、ページおよびユーザー情報、およびユーザーが最後に閲覧された日時など、People Analytics からのデータが含まれます。 |
+| [`mixpanel\_export`](https://developer.mixpanel.com/reference/raw-data-export-api#datafeed) | このテーブルには、イベント、イベント日付、プラットフォームバケットなど、生のイベントデータが含まれています。 |
+| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | このテーブルには、ファネル ID、ファネルの長さ（ユーザーがファネルを完了する必要がある日数）、ファネルの開始日と終了日など、ファネルに関するデータが含まれています。 |
+| [`mixpanel\_engage`](https://developer.mixpanel.com/reference/raw-data-export-api#engage-default) | これには、セッション ID、ページおよびユーザー情報、ユーザーが最後に表示された日時など、People Analytics からのデータが含まれます。 |
 
 {style="table-layout:auto"}
 

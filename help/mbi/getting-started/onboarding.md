@@ -1,5 +1,5 @@
 ---
-title: Onboarding Adobe Commerce Intelligence
+title: Adobe Commerce Intelligence のオンボーディング
 description: Adobe Commerce Intelligence のオンボーディングについて説明します。
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
 role: Admin, Data Architect, Data Engineer, User
@@ -13,24 +13,24 @@ ht-degree: 0%
 
 # オンボーディング [!DNL Adobe Commerce Intelligence]
 
-以下に関するオンボーディングに関する質問： `store` および `database` を設定することで、レポートが正しく設定されていることを確認します。 Adobeは、これらの回答を使用して、お客様の店舗の設定に合わせて正確にカスタマイズされたレポートを提供します。
+に関連するオンボーディングの質問 `store` および `database` 設定レポートを正しく設定していることを確認します。 これらの回答を使用して、Adobeはストアの設定に合わせて正確に調整されたレポートを提供します。
 
-## ストア設定
+## ストアの設定
 
-- *あなたの店はゲストのチェックアウトを受け入れますか？*  — 選択 **はい** 顧客がアカウントに登録せずにストアから購入を許可する場合。
+- *お店はゲストのチェックアウトを受け付けていますか。*  – を選択 **はい** 顧客がアカウントを登録せずにストアから購入することを許可している場合。
 
-- `Timezone`  — を選択します。 `timezone` レポートを表示する
+- `Timezone`  – を選択します `timezone` にレポートを表示します。
 
-- `Currency`  — を選択します。 `currency` お客様の店が運営する
+- `Currency`  – を選択します `currency` その店が営業している。
 
-- `Your week starts on...`  — レポートで週の開始日にする曜日を選択します。
+- `Your week starts on...` - レポートで週の開始日とする曜日を選択します。
 
-- *使用する Commerce のバージョンを教えてください。*  — を選択します。 `currency` お客様の店が運営する
+- *Commerceのどのバージョンを使用していますか？*  – を選択します `currency` その店が営業している。
 
-- *あなたの店は EU に本拠を置いていますか？*  — 答えた場合 `Yes` この質問に対して、Adobeは、GDPR に準拠して、Data Warehouseと EU 内のすべてのデータをホストします。
+- *お店は欧州連合に拠点を置いていますか？*  – 次の場合： `Yes` この質問に対しては、Adobeは、GDPR に準拠して、Data Warehouseとすべてのデータを欧州連合（EU）でホストします。
 
 ## データベース設定
 
-- `Database name`  — とは *名前 [!DNL MySQL] データベース* コマーストランザクションデータはどこにありますか。
+- `Database name`  – とは *の名前 [!DNL MySQL] データベース* Commerce トランザクションデータの格納場所
 
-- `Table prefix (optional)` - Commerce データベースに含まれるテーブルの先頭には何かが付いています ( 例： `store_`)? これは通常はそうではありませんが、カスタマイズが可能です。
+- `Table prefix (optional)`  – は、Commerce データベースに含まれるテーブルの先頭に何かを付加したものです（例： `store_`）? これは通常は当てはまらないが、カスタマイズが可能である。

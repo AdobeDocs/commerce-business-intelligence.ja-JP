@@ -1,77 +1,77 @@
 ---
 title: Adobe Commerceのユーザーと権限の管理
-description: Commerce Intelligence ユーザーの管理方法を説明します。
+description: Commerce Intelligence ユーザーの管理方法について説明します。
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
 role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
 
 # ユーザー権限の管理
 
-[!DNL Adobe Commerce Intelligence] は、組織全体の単一の情報源となることを意図しています。 各ユーザーは、独自のダッシュボードセットを持ち、これを実行できます [他のユーザーと共有する](../../data-user/dashboards/share-dashboard-with-users.md).
+[!DNL Adobe Commerce Intelligence] は、組織全体の唯一の情報源となることを目的としています。 各ユーザーは、独自のダッシュボードセットを持ち、それらを使用することができます [他のユーザーと共有](../../data-user/dashboards/share-dashboard-with-users.md).
 
 ## ユーザー権限レベル
 
-In [!DNL Commerce Intelligence]には、ユーザーに適用される次の 3 つの一般的な権限レベルがあります。これらはアカウントの作成時に選択されます。
+対象： [!DNL Commerce Intelligence]には、ユーザーに適用される一般的な権限レベルが 3 つあり、アカウントの作成時に選択されます。
 
 * `Admin`
 * `Standard`
 * `Read-Only`
 
-これらの権限を使用すると、ユーザーは特定のアクションを実行したり、 [!DNL Commerce Intelligence]. 次に、各権限レベルで実行できる操作の表を示します。 [!DNL Commerce Intelligence]:
+これらの権限により、ユーザーは特定のアクションを実行したり、の特定の部分にアクセスしたりできます。 [!DNL Commerce Intelligence]. 以下の表に、各アクセス許可レベルでできることについて示します [!DNL Commerce Intelligence]:
 
 |   | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
-| **ユーザーを作成/管理** | ✔ |   |   |
-| **E メールの概要の作成** | ✔ | ✔ |   |
-| **ダッシュボードの作成、編集、共有** | ✔ | ✔ |   |
-| **ダッシュボードを表示** | ✔ | ✔ | ✔ |
-| **ビジュアルレポートを作成/編集/削除** | ✔ | ✔* |   |
+| **ユーザーの作成/管理** | ✔ |   |   |
+| **メール概要の作成** | ✔ | ✔ |   |
+| **ダッシュボードの作成/編集/共有** | ✔ | ✔ |   |
+| **ダッシュボードの表示** | ✔ | ✔ | ✔ |
+| **ビジュアル レポートの作成/編集/削除** | ✔ | ✔* |   |
 | **SQL レポートの作成/編集/削除** | ✔ |  |   |
 | **ダッシュボードの複製** | ✔ |   |   |
-| **統合を追加/管理** | ✔ |   |   |
-| **Data Warehouseマネージャへのアクセス** | ✔ |   |   |
-| **テーブルと列の同期/非同期** | ✔ |   |   |
+| **統合の追加/管理** | ✔ |   |   |
+| **Data Warehouseマネージャーへのアクセス** | ✔ |   |   |
+| **テーブルと列の同期/同期解除** | ✔ |   |   |
 | **指標の作成/編集** | ✔ |   |   |
-| **フィルターセットを作成/編集** | ✔ |   |   |
-| **計算列を作成/編集** | ✔ |   |   |
-| **依存レポートのリストの作成** | ✔ |   |   |
-| **アクセスシステムの概要** | ✔ |   |   |
-| **タイムゾーン設定にアクセス** | ✔ |   |   |
+| **フィルターセットの作成/編集** | ✔ |   |   |
+| **計算列の作成/編集** | ✔ |   |   |
+| **依存レポートのリストを作成** | ✔ |   |   |
+| **アクセス システムの概要** | ✔ |   |   |
+| **タイムゾーン設定へのアクセス** | ✔ |   |   |
 | **請求にアクセス** | ✔ | ✔** |   |
-| **サポートへの問い合わせ** | ✔ | ✔ | ✔ |
+| **サポートに連絡** | ✔ | ✔ | ✔ |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->_次の項目を制限できます。**[!UICONTROL Standard]**ユーザーの [特定の指標へのアクセス](../../administrator/user-management/restrict-metric-access.md)._
+>_以下を制限できます&#x200B;**[!UICONTROL Standard]**ユーザーの [特定の指標へのアクセス](../../administrator/user-management/restrict-metric-access.md)._
 >
 >**[!UICONTROL Standard] _ユーザーは、追加の権限設定で請求にアクセスできます。_
 >
->**[!UICONTROL Read-Only]** ユーザーは次のみを実行できます： _表示_ ダッシュボードは共有されています。 [!DNL Commerce Intelligence]また、アカウントで新しいダッシュボードを検索して追加することもできません。 Adobeは、特定のダッシュボードセットをと共有することをお勧めします。 **[!UICONTROL Read-Only]** 自分やチームの他のメンバーが管理するユーザー。 ダッシュボードのセットを複製しないでください。
+>**[!UICONTROL Read-Only]** のユーザーのみ _表示_ 共有されているダッシュボード。では何も作成または編集できません [!DNL Commerce Intelligence]また、新しいダッシュボードを検索してアカウントに追加することもできません。 Adobeでは、特定のダッシュボードセットをと共有することをお勧めします **[!UICONTROL Read-Only]** 自分またはチームの別のメンバーが維持するユーザー。 それらのダッシュボードのセットのクローンを作成しないでください。
 
-## 追加の権限：請求と技術 {#billingtech}
+## その他の権限：請求および技術 {#billingtech}
 
-一般的な権限レベルに加えて、他にも 2 つのユーザー指定が存在します。 `Billing` および `Technical`. これらの指定は、一般的な権限レベルで使用する必要があります。
+一般的な権限レベルに加えて、次の 2 つのユーザー指定も存在します。 `Billing` および `Technical`. これらの指定は、一般的な権限レベルで使用する必要があります。
 
 ### 請求
 
-`Billing` ユーザーは請求ページにアクセスでき、支払い情報を変更できます。 また、請求に関する質問にAdobeから連絡を受ける場合もあります。
+`Billing` ユーザーは請求ページにアクセスでき、支払い情報を変更できます。 また、Adobeから請求に関する問い合わせが来ることもあります。
 
-`Admin` ユーザーは、 `Billing` タブはデフォルトでは表示されますが、 `Standard` ユーザーは、 `Billing` チェックボックスをオンにしているかどうかを把握できます。
+`Admin` ユーザー： `Billing` tab キーがデフォルトで使用されますが、 `Standard` また、次の項目を持っている場合、ユーザーはアクセス権を取得できます `Billing` プロファイルでチェックボックスが選択されている。
 
 ![課金](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### 技術
 
-`Technical` ユーザーに固有の権限がありません。この設定は、組織内の技術的な連絡先を示すだけです。 これらのユーザーは、技術的な質問に対してAdobeから連絡を受ける場合があります。
+`Technical` ユーザーには固有の権限はありません。この設定は、組織内の技術担当者をマークするだけです。 これらのユーザーには、Adobeから技術的な問い合わせがある場合があります。
 
-`Admin` ユーザーは、 **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** そしてプロンプトに従って ユーザーが [!DNL Commerce Intelligence]招待しているラッキーな人には、アカウント設定プロセスの完了方法に関する電子メールの指示が届きます。
+`Admin` ユーザーは、次の項目をクリックして新しいユーザーをアカウントに追加できます。 **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** とプロンプトに従います。 ユーザーの作成後 [!DNL Commerce Intelligence]招待した幸運な人には、アカウント設定プロセスを完了する方法を記載した電子メールが届きます。
 
-いつでも `Admins` は、以下をクリックして、アカウント内のすべてのユーザーを表示できます： **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. このページには、ユーザーの権限と、ユーザーがアクセスできる指標およびダッシュボードが表示されます。
+いつでも、 `Admins` をクリックすると、自分のアカウントのすべてのユーザーを表示できます。 **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. このページには、ユーザーの権限と、ユーザーがアクセスできる指標およびダッシュボードが表示されます。

@@ -1,35 +1,35 @@
 ---
-title: Commerce Intelligence Essentials と Pro
-description: Commerce Intelligence Essentials と Commerce Intelligence Pro の違いについて説明します。
+title: Commerce Intelligence Essentials と Pro の比較
+description: Commerce Intelligence Essentials とCommerce Intelligence Pro の違いについて説明します。
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 5%
+source-wordcount: '77'
+ht-degree: 2%
 
 ---
 
-# [!DNL Commerce Intelligence Essentials] vs [!DNL Commerce Intelligence Pro]
+# [!DNL Commerce Intelligence Essentials] 比較対象： [!DNL Commerce Intelligence Pro]
 
-次の表に、レガシーの `Essentials` アカウントと現在の Commerce Intelligence アカウントの違いについて説明します。 Adobeのオファー廃止 `Essentials`.
+次の表に、レガシーに含まれる要素を示します `Essentials` アカウントと、現在のCommerce インテリジェンスアカウントの比較。 Adobeがオファーを提供しなくなりました `Essentials`.
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
 | `Pre-Defined Reports` | 最大 100 | カスタム |
 | `Pre-Defined Dashboards` | 5-6 | カスタム |
 | `New Custom Report Creation` | はい | はい |
-| `Commerce Tables` | 4-6 | 無制限 |
+| `Commerce Tables` | 4-6 | 制限なし |
 | `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | はい | はい |
-| `Data Warehouse Manager` | 使用不可 | 利用可能 |
+| `Data Warehouse Manager` | 利用不可 | 利用可能 |
 | `Email Reports` | はい | はい |
 | `Cohort Report Builder` | はい | はい |
-| `Google Analytics Live Integration` | はい | 無制限 |
-| `3rd Party Integrations` | 使用不可 | 利用可能 |
-| `Full API Access` | いいえ | はい |
-| `Access to CS, AM, or Analysts` | いいえ | はい |
+| `Google Analytics Live Integration` | はい | 制限なし |
+| `3rd Party Integrations` | 利用不可 | 利用可能 |
+| `Full API Access` | 不可 | はい |
+| `Access to CS, AM, or Analysts` | 不可 | はい |
 | `Professional Services` | 利用可能 | 利用可能 |
 
 {style="table-layout:auto"}

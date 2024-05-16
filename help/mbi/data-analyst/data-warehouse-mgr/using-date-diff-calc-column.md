@@ -1,6 +1,6 @@
 ---
-title: 日付差の計算列の使用
-description: 日付の差異の計算列の目的と用途について説明します。
+title: 日付の差異の計算列の使用
+description: 日付差異の計算列の目的と使用について説明します。
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# 日付差の計算列
+# 日付の差異の計算列
 
-このトピックでは、 `Date Difference` で使用できる計算列 **[!DNL Manage Data > Data Warehouse]** ページに貼り付けます。 その動作の説明と、その後に例と、それを作る仕組みを次に示します。
+このトピックでは、 `Date Difference` で使用できる計算列 **[!DNL Manage Data > Data Warehouse]** ページ。 以下に、その機能の説明、例、およびそれを作成する仕組みを示します。
 
 **説明**
 
-The `Date Difference` 列タイプは、イベントのタイムスタンプに基づいて、1 つのレコードに属する 2 つのイベント間の時間を計算します。 この列で計算される生の値は秒単位ですが、レポートに表示するために、分、時間、日などに自動変換されます。 ただし、でフィルターまたはグループ化として使用する場合は、秒単位の値を使用する必要があります。
+この `Date Difference` 列タイプは、イベントのタイムスタンプに基づいて、1 つのレコードに属する 2 つのイベント間の時間を計算します。 この列で計算された生の値は秒単位ですが、レポートに表示するために分、時間、日などに自動変換されます。 ただし、でフィルター/グループ化として使用する場合は、秒単位の値を使用します。
 
-A `date difference` 計算列は、顧客登録と初回注文の間の平均時間など、2 つのイベント間の平均時間または中央値時間を計算する指標の作成に使用できます。
+A `date difference` 計算列を使用すると、顧客登録から最初の注文までの平均時間など、2 つのイベント間の平均または中央値の時間を計算する指標を作成できます。
 
 **例**
 
@@ -31,23 +31,23 @@ A `date difference` 計算列は、顧客登録と初回注文の間の平均時
 {style="table-layout:auto"}
 
 
-上記の例では、 `Date Difference` 列は `Seconds between timestamp_2 and timestamp_1` 列。 計算を実行します `timestamp_2 minus timestamp_1`.
+上記の例では、 `Date Difference` 列は `Seconds between timestamp_2 and timestamp_1` 列。 計算が実行されます `timestamp_2 minus timestamp_1`.
 
-**力学**
+**仕組み**
 
-次の手順で、 `Date Difference` 列。
+以下の手順では、を作成する方法について説明します `Date Difference` 列。
 
-1. 次に移動： **[!DNL Manage Data > Data Warehouse]** ページに貼り付けます。
+1. に移動します。 **[!DNL Manage Data > Data Warehouse]** ページ。
 1. この列を作成するテーブルに移動します。
-1. クリック **[!UICONTROL Create a Column]** 列を次のように設定します。
-   * 選択 `Column Definition Type` > `Same Table`
-   * 選択 `Column Definition Equation` > `DATE_DIFF = (Ending DATETIME - Starting DATETIME)`
-   * 選択 `Ending DATETIME` 列/終了日時フィールドを選択します。通常は、後で発生するイベントです。
-   * 選択 `Starting DATETIME` 列** /開始日時フィールドを選択します。これは通常、以前に発生したイベントです。
+1. クリック **[!UICONTROL Create a Column]** そして、次のように列を設定します。
+   * を選択 `Column Definition Type` > `Same Table`
+   * を選択 `Column Definition Equation` > `DATE_DIFF = (Ending DATETIME - Starting DATETIME)`
+   * を選択 `Ending DATETIME` 列 > 終了日時フィールドを選択します（通常、後で発生するイベント）
+   * を選択 `Starting DATETIME` 列** > 開始時刻フィールドを選択します。通常、このフィールドより前に発生するイベントです
 
 1. 列に名前を付け、 **[!UICONTROL Save]**.
-1. この列は、 *即時*.
+1. 列は使用可能です *即時*.
 
-例えば、次の例は、 `Seconds between order date and customer's creation date`:
+例えば、次の例はを計算するように設定されています。 `Seconds between order date and customer's creation date`:
 
 ![](../../assets/date_diff.png)

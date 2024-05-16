@@ -1,5 +1,5 @@
 ---
-title: マッピングテーブルを使用してデータを標準化します
+title: マッピングテーブルを使用したデータの標準化
 description: マッピングテーブルの操作方法を説明します。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Data Architect, Data Engineer, User
@@ -11,74 +11,74 @@ ht-degree: 0%
 
 ---
 
-# マッピング・テーブルを使用したデータの標準化
+# マッピングテーブルを使用したデータの標準化
 
-自分が `Report Builder` 建物 `Revenue by State` レポート。 を追加しようとするまで、すべて正常に動作します。 `billing state` グループ化を使用して次の情報を確認できます。
+自分が次の場所にいると仮定します： `Report Builder` の構築 `Revenue by State` レポート。 を追加しようとするまですべてがうまくいっています `billing state` レポートに対してグループ化すると、次の情報が表示されます。
 
 ![](../../assets/Messy_State_Segments.png)
 
-## どうしてこんな事が起こるの？
+## どうしてこんな事が起こったの？
 
-残念ながら、標準化の欠如が、レポートを作成する際に、データの乱雑さや頭痛を引き起こす可能性があります。 この例では、顧客が請求状態情報を入力するためのドロップダウンメニューや標準化された方法がない場合があります。 その結果、様々な値が得られます。 `pa`, `PA`, `penna`, `pennsylvania`、および `Pennsylvania`  — 同じ状態で、それが何か奇妙な結果を引き起こす `Report Builder`.
+残念ながら、標準化されていないと、レポートを作成する際にデータの混乱や頭痛の種になる場合があります。 この例では、顧客が請求状態情報を入力するためのドロップダウンメニューや標準化された方法がなかった可能性があります。 これにより、次のような様々な値が得られます。 `pa`, `PA`, `penna`, `pennsylvania`、および `Pennsylvania`  – すべて同じ状態に対するものです。これにより、 `Report Builder`.
 
-データのクリーンアップや、データベースに直接必要な列の挿入に役立つ技術リソースが存在する可能性があります。 そうでない場合は、別の解決策があります。 **マッピングテーブル**. マッピングテーブルを使用すると、データを単一の出力にマッピングすることで、メッセージのあるデータをすばやく簡単にクレンジングし、標準化できます。
+データのクリーンアップや、必要な列のデータベースへの直接挿入に役立つテクニカルリソースが存在する場合があります。 そうでない場合は、別の解決策があります。 **マッピングテーブル**. マッピングテーブルを使用すると、データを単一の出力にマッピングすることで、散らかったデータをすばやく簡単にクレンジングして標準化できます。
 
 >[!NOTE]
 >
->Adobe・サポート・チームの支援がない場合は、統合テーブルのマッピング・テーブルを作成できません。
+>統合テーブルのマッピング・テーブルを作成するには、Adobe・サポート・チームのサポートが必要です。
 
-## 作成する方法を教えてください。 {#how}
+## 作成方法 {#how}
 
-**データフォーマットリフレッシャ：**
+**データ形式リフレッシャ：**
 
 * スプレッドシートにヘッダー行があることを確認します。
-* コンマは使用しないでください。 ファイルをアップロードする際に問題が発生します。
-* 標準の日付形式を使用 `(YYYY-MM-DD HH:MM:SS)` （日付）
-* パーセンテージは小数で入力する必要があります。
-* 先頭または末尾の 0 が適切に保持されていることを確認します。
+* コンマの使用は避けます。 これにより、ファイルをアップロードする際に問題が発生します。
+* 標準の日付形式を使用 `(YYYY-MM-DD HH:MM:SS)` 日付の場合。
+* 割合は小数で入力する必要があります。
+* 先頭または末尾のゼロが正しく保持されていることを確認します。
 
-に進む前に、Adobeは、 [生のテーブルデータをエクスポート](../../tutorials/export-raw-data.md). 最初に生データを見ると、クリーンアップする必要のあるデータの可能なすべての組み合わせを調べることができ、マッピングテーブルですべてをカバーできるようになります。
+取り組む前に、Adobeでは次のことをお勧めします [生のテーブルデータのエクスポート](../../tutorials/export-raw-data.md). 最初に生データを調べると、クリーンアップする必要があるデータのすべての組み合わせを調べることができ、マッピングテーブルがすべてをカバーしていることを確認できます。
 
-マッピングテーブルを作成するには、 [ファイルアップロード用の書式ルール](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
+マッピングテーブルを作成するには、に従って 2 列のスプレッドシートを作成する必要があります [ファイルアップロードのフォーマットルール](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
 
-最初の列に、データベースに格納されている値を **各行に 1 つの値のみ**. 例： `pa` および `PA` は同じ行にはできません。各入力には、独自の行が必要です。 例については、以下を参照してください。
+最初の列に、データベースに格納されている値を次のように入力します **各行に 1 つの値のみ**. 例： `pa` および `PA` 同じ行に入力することはできません。各入力には独自の行が必要です。 以下に例を示します。
 
-2 番目の列に、これらの値を入力します。 **は、**. 必要に応じて、請求状態の例を続行します。 `pa`, `PA`, `Pennsylvania`、および `pennsylvania` 単純に `PA`次のように入力します。 `PA` を入力します。
+2 列目に、これらの値を入力します **は、**. 必要に応じて、請求状態の例を続けます `pa`, `PA`, `Pennsylvania`、および `pennsylvania` 素直に～になる `PA`と入力します。 `PA` この列の各入力値。
 
 ![](../../assets/Mapping_table_examples.jpg)
 
-## で必要な操作 [!DNL Commerce Intelligence] 使用するには？ {#use}
+## で必要な作業 [!DNL Commerce Intelligence] それを使うには？ {#use}
 
-マッピングテーブルの作成が完了したら、 [ファイルをアップロード](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) into [!DNL Commerce Intelligence] および [結合された列を作成する](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 新しいフィールドを目的のテーブルに再配置します。 これは、ファイルがData Warehouseに同期された後で実行できます。
+マッピングテーブルの作成が完了したら、次の操作を行う必要があります [ファイルをアップロードします](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 対象 [!DNL Commerce Intelligence] および [結合された列を作成](../../data-analyst/data-warehouse-mgr/calc-column-types.md) これで、新しいフィールドが目的のテーブルに再配置されます。 これは、ファイルがData Warehouseに同期された後で行うことができます。
 
-次の使用例は、 `mapping_state` テーブル (`state_input`) を `customer_address` 結合された列を使用するテーブル。 これにより、クリーンでグループ化できます `state_input` 」列を使用します。 `state` 列。
+次の使用例は、 `mapping_state` テーブル （`state_input`）に設定します。 `customer_address` 結合列を使用するテーブル。 これにより、クリーンでグループ化できます `state_input` レポートの列（の代わり） `state` 列。
 
-次の手順で `joined` 列を開き、Data Warehouse・マネージャでフィールドの再配置先のテーブルに移動します。 この例では、次のようになります。 `customer_address` 表。
+を作成するには `joined` 列で、Data Warehouseマネージャーでフィールドを再配置するテーブルに移動します。 この例では、のようになります。 `customer_address` テーブル。
 
 1. クリック **[!UICONTROL Create a Column]**.
-1. 選択 `Joined Column` から `Definition` ドロップダウン。
-1. 列に、列との区別を示す名前を付けます。 `state` 」列を使用します。 列に名前を付けます。 `billing state (mapped)` そのため、report builder でセグメント化時に使用する列を指定できます。
-1. テーブルを接続するために必要なパスが存在しないので、パスを作成する必要があります。 クリック **[!UICONTROL Create new path]**  （内） `Select a table and column` ドロップダウン。
+1. を選択 `Joined Column` から `Definition` ドロップダウン。
+1. 列に、と区別できる名前を付けます `state` データベースの列。 列に名前を付ける `billing state (mapped)` そのため、report builder でセグメント化する際に使用する列を指定できます。
+1. テーブルの接続に必要なパスが存在しないので、パスを作成する必要があります。 クリック **[!UICONTROL Create new path]**  が含まれる `Select a table and column` ドロップダウン。
 
-   テーブルの関係や、主キーと外部キーを適切に定義する方法が不明な場合は、 [チュートリアル](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) 助けを借りるために。
+   テーブルの関係が何か、またはプライマリキーと外部キーを適切に定義する方法が不明な場合は、 [チュートリアル](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) ヘルプを表示します。
 
-   * 次の日： `Many` サイド、フィールドの移動先のテーブルを選択します ( 再度選択します。 `customer_address`) および `Foreign Key` 列、または `state` 列に表示されます。
-   * 次の日： `One` 「側」で、 `mapping` テーブルと `Primary key` 列。 この場合、「 `state_input` 列を `mapping_state` 表。
-   * パスがどのように表示されるかを以下に示します。
+   * 日 `Many` フィールドの移動先となるテーブルを選択します（ここでも、ここでは `customer_address`）および `Foreign Key` 列、または `state` 列（例：）。
+   * 日 `One` 側で、を選択します `mapping` テーブルと `Primary key` 列。 この場合、 `state_input` からの列 `mapping_state` テーブル。
+   * パスは次のようになります。
 
      ![](../../assets/State_Mapping_Path.png)
 
-1. 終了したら、「 **[!UICONTROL Save]** をクリックして、パスを作成します。
-1. 保存後すぐにパスが設定されない場合があります。この場合は、 `Path` ボックスをクリックし、作成したパスを選択します。
+1. 終了したら、 **[!UICONTROL Save]** をクリックしてパスを作成します。
+1. パスは保存後すぐには入力されない場合があります – この場合は、 `Path` ボックスに入力し、作成したパスを選択します。
 1. クリック **[!UICONTROL Save]** をクリックして列を作成します。
 
-## どうすればいい？ {#wrapup}
+## 私は今何をしますか？ {#wrapup}
 
-更新サイクルが完了したら、新しい結合列を使用して、データベースの messy 列ではなく、データを適切にセグメント化できます。 グループ化のオプションを今すぐ確認してください。ストレスの混乱はなくなりました。
+更新サイクルが完了すると、データベースの乱雑な列ではなく、新しく結合された列を使用して、データを適切にセグメント化できるようになります。 グループ化オプションを今すぐ見てみましょう。ストレスの混乱をなくします。
 
 ![](../../assets/Clean_State_Segments.png)
 
-マッピングテーブルは、Data Warehouse内の不正な可能性のあるデータをクリーンアップする場合に便利です。 ただし、マッピングテーブルは、他のクールな使用例（例： ）にも使用できます [レプリケート中 [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
+マッピングテーブルは、Data Warehouse内の散らかっている可能性のあるデータをクリーンアップする場合にいつでも便利です。 ただし、マッピングテーブルは、その他の便利なユースケース（など）にも使用できます [のレプリケーション [!DNL Google Analytics channels] 。対象： [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### 関連
 

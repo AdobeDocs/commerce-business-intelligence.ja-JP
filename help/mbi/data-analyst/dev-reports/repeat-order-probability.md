@@ -1,43 +1,43 @@
 ---
-title: 繰り返し注文の確率レポート
-description: 繰り返し注文の確率レポートの詳細と理解。
+title: リピート注文確率レポート
+description: リピート注文確率レポートについて説明します。
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
-# 繰り返し注文の確率レポート
+# リピート注文確率レポート
 
-## が `Incremental Event Probability` パースペクティブを利用できますか？
+## が `Incremental Event Probability` パースペクティブを使用できますか？
 
-The `incremental event probability` パースペクティブは、フィルターがすべての注文 ( ユーザーの `gender`, user&#39;s `age` またはユーザーの `source`) をクリックします。
+この `incremental event probability` パースペクティブは、フィルターがすべての注文に等しいディメンション（ユーザーなど）を使用する場合にのみ使用できます `gender`、ユーザー `age` またはユーザーの `source`）に設定します。
 
-これは、このパースペクティブが「 」と呼ばれるディメンションに依存するためです。 `User's order number` セグメントの場合。これは、ユーザーの購入数（ジョンの 1 回目、2 回目、3 回目の注文など）を表します。
+これは、このパースペクティブがというディメンションに依存しているからです `User's order number` セグメントの場合、ユーザーの購入に番号を付けます（例えば、John の 1 番目、2 番目、3 番目の注文）。
 
-すべての注文に対して等しくないディメンション（例： ）を使用するフィルターを追加した場合。 `Order's Region`)、 `User's order number` ディメンションの正確性は失われます。 これは、ユーザーの注文に番号を付ける際に、特定の地域を考慮しないためです（例えば、John の 1 番目、2 番目、3 番目の注文は、その地域に関係なく、まだ同じです）。
+すべての注文に等しくないディメンションを使用するフィルターを追加した場合（例： `Order's Region`）、 `User's order number` 寸法は正確ではなくなります。 これは、ユーザーの注文に番号を付けるときに、特定の地域が考慮されないからです（例えば、John の 1 番目、2 番目、3 番目の注文は、地域に関係なく同じままです）。
 
-## 注文固有のディメンションをユーザー固有のディメンションに変換する
+## 順序固有の寸法をユーザ固有の寸法に変換する
 
-場合によっては、 `order-specific` 次元を `user-specific` フィルターとして追加するディメンション `Repeat Order Probability` グラフ。 この場合、ユーザーの最初の注文または最新の注文の注文属性（ユーザーの最初の注文地域名など）を返します。
+場合によっては、 `order-specific` ディメンションを a に `user-specific` でフィルターとして追加するディメンション `Repeat Order Probability` グラフ。 この場合、ユーザーの最初の注文または最新の注文の注文属性（ユーザーの最初の注文の地域名など）を返します。
 
-このような新しいディメンションを作成する場合は、 [連絡先サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+このような新しいディメンションを作成する場合、 [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## 異なる属性を持つ注文の繰り返し確率の比較
 
-異なる注文属性 ( 注文の `region`) を使用する場合、Adobeでは、 `Users by lifetime number of orders`. これにより、全期間で 1、2、3、...の注文数を達成したユーザーの数が表示され、注文レベルのフィルターが追加されます。 （つまり、ユーザーが 1 つの地域でリピート購入を行うかどうかを示すことができます）。
+異なる注文属性（注文など）のリピート購入数を比較するには、 `region`）、Adobeでは、次のようなグラフを作成することをお勧めします `Users by lifetime number of orders`. これにより、1、2、3、...の全期間の注文件数を行ったユーザー数が表示され、注文レベルのフィルターが追加されます。 （つまり、ユーザーがある地域でリピート購入を増やしているか減っているかを示すことができます）。
 
-その後、このようなグラフを構成する数値を Excel にエクスポートして、繰り返し注文の確率を計算できます。 顧客が行った確率を確認するには `(x)` 命令 `(x+1)` 注文、単に` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` 購入。
+このようなグラフを構成する数値を excel にエクスポートして、繰り返し注文の確率を計算できます。 実行した顧客の確率を確認するには `(x)` 発する命令 `(x+1)` 注文件数、簡単` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` 購入。
 
 ### 例：
 
 | カテゴリ | 値 |
 |---|---|
-| 生涯に 1 回購入した顧客の数 | `90` |
-| 全期間に 2 回購入した顧客の数 | `30` |
-| 全期間に 3 回購入した顧客の数 | `10` |
-| 生涯に 1 回購入して 2 回目の購入をおこなった顧客のリピート注文確率 | `(30 + 10) / (30+10+90) = 30.77%` |
+| ライフタイムに 1 件の購入を行った顧客の数 | `90` |
+| ライフタイムに 2 回購入した顧客の数 | `30` |
+| ライフタイムに 3 回購入した顧客の数 | `10` |
+| ライフタイム中に 1 回の購入を行い、2 回目の購入を行った顧客のリピート注文確率 | `(30 + 10) / (30+10+90) = 30.77%` |

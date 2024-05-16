@@ -1,21 +1,21 @@
 ---
 title: 投資家向けダッシュボードの構築
-description: 投資家向けのダッシュボードを作成する方法を説明します。
+description: 投資家向けダッシュボードの作成方法を説明します。
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
-# 投資者ダッシュボードの作成
+# 投資家ダッシュボードの作成
 
-多くの顧客は投資家と連携し、プラットフォームから情報を共有する必要がありますが、日々のビジネス上の意思決定を行うために作成するダッシュボードは、投資家が探しているものではない場合があります。 以下に、アクティブで潜在的な投資家との共有に最適な、包括的でシンプルなダッシュボードの作成方法に関するベストプラクティスを示します。
+多くのクライアントは投資家と協力し、プラットフォームから情報を共有する必要がありますが、日々のビジネス上の意思決定のために作成するダッシュボードは、投資家が探しているものではない可能性があります。 以下では、包括的でシンプルで、アクティブな投資家や潜在的な投資家と共有するのに最適なダッシュボードの作成方法に関するベストプラクティスをいくつか説明します。
 
-投資家ダッシュボード用にレポートを作成する必要がある情報を次に示します。
+投資家ダッシュボードのレポートを作成するには、次の操作が必要です。
 
 ## スカラーレポート
 
@@ -28,53 +28,53 @@ ht-degree: 0%
 ## ビジュアルレポート
 
 * **[!UICONTROL Revenue by quarter]**
-   * 指標 — 売上高
+   * 指標 – 売上高
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * 指標 — 初回注文売上高
-   * フィルター — ユーザーの注文番号が 1 に等しい
-   * 指標 2 — リピート注文売上高
-      * フィルター — ユーザーの注文番号が 1 より大きいです
-   * 「複数の Y 軸」のチェックボックスをオフにします。
-   * 積み重ね縦棒グラフに変更する
+   * 指標 – 初回の注文売上高
+   * フィルター – ユーザーの注文番号は 1 に等しい
+   * 指標 2 – リピート注文売上高
+      * フィルター – ユーザーの注文番号が 1 より大きい
+   * 複数の Y 軸のチェックボックスをオフにします
+   * 積み重ね柱状グラフに変更
 * **[!UICONTROL AOV by quarter]**
-   * 指標 1 — 売上高
-      * この指標を非表示にする
-   * 指標 2 — 注文数
-      * この指標を非表示にする
-   * 数式 — AOV
+   * 指標 1 – 売上高
+      * この指標を非表示
+   * 指標 2 – 注文数
+      * この指標を非表示
+   * 数式 – AOV
       * A/B
 * **[!UICONTROL All-time revenue by source]**
-   * 指標 — 売上高
-   * 顧客別のグループ `utm_source`
+   * 指標 – 売上高
+   * 顧客のでグループ化 `utm_source`
 * **[!UICONTROL Revenue from top 10 products]**
-   * 指標 — 製品の売上高
-      * グラフを非表示にする
+   * 指標 – 製品売上高
+      * グラフを非表示
       * 製品名でグループ化します。 すべての製品を選択します。
-      * 時間範囲を全時間に設定
-      * 間隔を「なし」に設定します。
-      * 「上位/下位を表示」で、上位 10 を製品の利益で並べ替えて表示します
+      * 時間範囲を「全時間」に設定します。
+      * 時間間隔をなしに設定します
+      * 「上位/下位を表示」で、製品の利益順に並べ替えられた上位 10 個のみを表示します
 * **[!UICONTROL Cumulative distinct buyers by quarter]**
-   * 指標 — ユニーク購入者
-      * パースペクティブ — 累積
+   * 指標 – ユニーク購入者
+      * 透視投影 – 累積
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * セッション
 
-を使用 [!DNL Google Analytics] 統合には、次のレポートを含めることができます。
+（を使用） [!DNL Google Analytics] 統合により、次のレポートを含めることができます。
 
 * サイト訪問数
 * コンバージョン率
 
-を使用 [コマースデータエンリッチメントサービス](https://business.adobe.com/products/magento/magento-commerce.html)を使用すると、次のレポートを含めることができます。
+（を使用） [Commerce Data Enrichment サービス](https://business.adobe.com/products/magento/magento-commerce.html)に関するレポートを追加できます。
 
-* 州/地域、年齢、性別別のユニーク顧客。
+* 州/地域、年齢、性別ごとのユニーク顧客。
 
 ## その他のヒント
 
-* 明確で簡潔な [命名規則](../best-practices/naming-elements.md)
-* 投資家ユーザーとダッシュボードを共有する
-* または、 **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
-* 1 つのダッシュボードのみを作成します。 これにより、コンテンツの保守が容易になり、投資家が何を見ているかを正確に把握できます。
+* 明確かつ簡潔に使用する [命名規則](../best-practices/naming-elements.md)
+* 投資家ユーザーとのダッシュボードの共有
+* または、経由で送信 **[!UICONTROL Automated email summary]**（../data-user/export-data/email-summaries.md）
+* 1 つのダッシュボードのみを作成します。 これにより、コンテンツのメンテナンスが容易になり、投資家が何を見ているかが正確にわかります。
 
-レポートを慎重に整理し、詳細に注意します。 完了すると、ダッシュボードは次のようになります。
+レポートを思慮深く整理し、詳細に注意を払います。 完了すると、ダッシュボードは次のようになります。
 
 ![](../../mbi/assets/investor-dboard-example.png)

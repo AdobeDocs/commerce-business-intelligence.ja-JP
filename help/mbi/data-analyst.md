@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # データアナリスト
 
-クエリを設計し、データ分析の基本を担うユーザーであることが快適です。 データに関する特定の回答を見つけ、同僚のセルフサービスエクスペリエンスを促進する方法を知っています。
+クエリを適切に設計し、データ分析の頼りになる人物になれます。 データに関する質問に対する特定の回答を見つける方法を理解しており、同僚のセルフサービスエクスペリエンスを促進したいと考えています。
 
-この節では、以下の方法について説明します。
-* データの接続とインポート [!DNL Commerce Intelligence]
-* データがData Warehouse内にどのように保存および構造化されているかを表示
+この節では、次の方法を説明します。
+* データの接続と読み込み先 [!DNL Commerce Intelligence]
+* Data Warehouseでのデータの保存および構造化の方法を表示します
 * データの分析
-* を使用します。 [!DNL SQL Report Builder]
+* を使用する [!DNL SQL Report Builder]
 
 ## 関連
 
-* [Data Warehouse管理](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
+* [Data Warehouse管理者](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
 * [[!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
 * [データの接続](../mbi/data-analyst/importing-data/connecting-data/connecting-data.md)
 * [統合](../mbi/data-analyst/importing-data/integrations/magento.md)

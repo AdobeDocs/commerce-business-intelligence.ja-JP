@@ -1,6 +1,6 @@
 ---
 title: Zendesk のヘルプデスクレポート
-description: 最も重要な参照チャネルについて学びます。
+description: 最も価値の高いリファラルチャネルについて説明します。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# ヘルプデスク向けレポート [!DNL Zendesk]
+# のヘルプ デスク レポート [!DNL Zendesk]
 
 >[!NOTE]
 >
->これは、 `Pro` 新しいアーキテクチャを計画および使用します。 新しいアーキテクチャを使用している場合、 `Data Warehouse Views` 選択後に使用可能なセクション `Manage Data` を選択します。
+>これは、 `Pro` 新しいアーキテクチャを計画して使用します。 次の項目がある場合は、新しいアーキテクチャを使用します `Data Warehouse Views` セクションは選択後に使用可能です `Manage Data` メインツールバーから。
 
-統合 [!DNL Zendesk] トランザクションデータベースのデータは、お客様のセールスまたは顧客の成功チームとの関わり方をより深く理解するための優れた方法です。 また、サポートプラットフォームを使用している顧客の種類を知るのにも役立ちます。 このトピックでは、 [!DNL Zendesk] パフォーマンスを向上させ、トランザクションの顧客と結び付ける。
+を統合中 [!DNL Zendesk] トランザクションデータベースを含むデータは、顧客がセールスチームやカスタマーサクセスチームとどのようにやり取りしているかを深く理解するための優れた方法です。 また、サポートプラットフォームを使用している顧客のタイプを把握するのにも役立ちます。 このトピックでは、ダッシュボードを設定して、に関する詳細なレポートを取得する方法を示します [!DNL Zendesk] トランザクション顧客のパフォーマンスと結び付き。
 
-使用を開始する前に、 [[!DNL Zendesk]](../integrations/zendesk.md). この分析に含まれる内容 [高度な計算列](../../data-warehouse-mgr/adv-calc-columns.md).
+開始する前に、を接続する [[!DNL Zendesk]](../integrations/zendesk.md). この分析に含まれる内容 [高度な計算列](../../data-warehouse-mgr/adv-calc-columns.md).
 
 <!-- Getting Started -->
 
@@ -27,14 +27,14 @@ ht-degree: 0%
 
 ### 追跡する列
 
-* `audits` 表
+* `audits` テーブル
 * `_id`
 * `created_at`
 * `id`
 * `ticket_id`
 * `_updated_at`
 
-* `audits_~_events` 表
+* `audits_~_events` テーブル
 * `_sub_id`
 * `_id_of_parent`
 * `author_id`
@@ -43,7 +43,7 @@ ht-degree: 0%
 * `type`
 * `value`
 
-* `tickets` 表
+* `tickets` テーブル
 * `_id`
 * `assignee_id`
 * `created_at`
@@ -54,7 +54,7 @@ ht-degree: 0%
 * `via_~_source_~_from_~_address`
 * `_updated_at`
 
-* `users` 表
+* `users` テーブル
 * `_id`
 * `created_at`
 * `emails`
@@ -65,56 +65,56 @@ ht-degree: 0%
 
 ### 作成するフィルターセット
 
-* `[!DNL Zendesk] Tickets` 表
+* `[!DNL Zendesk] Tickets` テーブル
    * `status != deleted`
 
 * `Filter set name`: `Tickets we count`
 * `Filter set logic`:
 
-## 計算列
+## 計算される列
 
 ### 作成する列
 
-* **`[!DNL Zendesk] user's`** 表
+* **`[!DNL Zendesk] user's`** テーブル
    * `User is agent? (Yes/No) `
    * 
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`, `email`
 
-      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user` その後 `Yes` when `B` 等しくない `null` および `B` いいね！ `%@magento.com` その後 `Yes` else `No` 終了
+      * `SQL Calculation` `- case when `A` is not `ヌル` and `A!=`end-user` その後 `Yes` 条件 `B` 等しくない `null` および `B` like `%@magento.com` その後 `Yes` else `No` 終了
 
-      * 置換 `@magento.com` を使用して
+      * 置換 `@magento.com` （ドメインを使用）
 
       * `Datatype` - `String`
 
-* **`[!DNL Zendesk] audits_~_events`** 表
-   * 定義を選択します。 `Joined Column`
+* **`[!DNL Zendesk] audits_~_events`** テーブル
+   * 定義を選択： `Joined Column`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events.author_id8`
    * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] users`
-   * を選択します。 [!UICONTROL column]: `User is agent? (Yes/No)`
+   * を選択 [!UICONTROL table]: `[!DNL Zendesk] users`
+   * を選択 [!UICONTROL column]: `User is agent? (Yes/No)`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
 
 * **`Author is agent? (Yes/No)`**
 
-* **`[!DNL Zendesk] audits`** 表
-   * 定義を選択します。 `Exists`
+* **`[!DNL Zendesk] audits`** テーブル
+   * 定義を選択： `Exists`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events._id_of_parent`
    * [!UICONTROL One]: `[!DNL Zendesk] audits._id`
 
-   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * を選択 [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]:
    * `field_name` = `status`
    * `type` = `Change`
    * `value` = `solved`
 
-   * 定義を選択します。 `Exists`
-   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * 定義を選択： `Exists`
+   * を選択 [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]: `Author is agent? (Yes/No)`
    * `type` = `Comment`
@@ -123,35 +123,35 @@ ht-degree: 0%
 * **`Status changes to solved? (1/0)`**
 * **`Is agent comment? (1/0)`**
 
-* **`[!DNL Zendesk] Tickets`** 表
-   * 定義を選択します。 `Joined Column`
+* **`[!DNL Zendesk] Tickets`** テーブル
+   * 定義を選択： `Joined Column`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.requester_id`
    * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] users`
-   * を選択します。 [!UICONTROL column]: `email`
+   * を選択 [!UICONTROL table]: `[!DNL Zendesk] users`
+   * を選択 [!UICONTROL column]: `email`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
-   * 定義を選択します。 `Joined Column`
-   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] users`
-   * を選択します。 [!UICONTROL column]: `role`
+   * 定義を選択： `Joined Column`
+   * を選択 [!UICONTROL table]: `[!DNL Zendesk] users`
+   * を選択 [!UICONTROL column]: `role`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
-   * 定義を選択します。 `Max`
+   * 定義を選択： `Max`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] audits.ticket_id`
    * [!UICONTROL One]: `[!DNL Zendesk] tickets.id`
 
-   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] audits`
-   * を選択します。 [!UICONTROL column]: `created_at`
+   * を選択 [!UICONTROL table]: `[!DNL Zendesk] audits`
+   * を選択 [!UICONTROL column]: `created_at`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
-   * `status` 次に変更： `solved = 1`
+   * `status` がに変更されました `solved = 1`
 
-   * 定義を選択します。 `Min`
-   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] audits`
-   * を選択します。 [!UICONTROL column]: `created_at`
+   * 定義を選択： `Min`
+   * を選択 [!UICONTROL table]: `[!DNL Zendesk] audits`
+   * を選択 [!UICONTROL column]: `created_at`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
    * `Is agent comment? = 1`
@@ -182,32 +182,32 @@ ht-degree: 0%
 
 * **`Ticket created_at (hour of day)`**
    * 
-      * `Column type` - &quot;同じテーブル > 計算&quot;
+      * `Column type`  – 「同じテーブル/計算」
 
       * `Input columns` - `created_at`
 
       * `SQL Calculation` - `to_char(A,'HH24')::int`
 
-      * `Datatype`  — 整数
+      * `Datatype`  – 整数
 
 * **`Ticket created_at (day of week)`**
    * 
-      * `Column type` - &quot;同じテーブル > 計算&quot;
+      * `Column type`  – 「同じテーブル/計算」
 
       * `Input columns` - `created_at`
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-     *`Datatype` – `String`
+     *`Datatype` - `String`
 
-* **`customer_entity`** 表
-   * 定義を選択します。 `Count`
+* **`customer_entity`** テーブル
+   * 定義を選択： `Count`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
    * 
      [!UICONTROL One]: `customer_entity.email`
 
-   * を選択します。 [!UICONTROL table]: `[!DNL Zendesk] tickets`
+   * を選択 [!UICONTROL table]: `[!DNL Zendesk] tickets`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
    * [!UICONTROL Filter]:
    * `Tickets we count`
@@ -215,18 +215,18 @@ ht-degree: 0%
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
    * 
-      * `Column type` - &quot;同じテーブル > 計算&quot;
+      * `Column type`  – 「同じテーブル/計算」
 
       * `Input columns` - `User's lifetime number of support tickets requested`
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` – `String`
+      * `Datatype` - `String`
 
-* **`[!DNL Zendesk] Tickets`** 表
-   * 定義を選択します。 `Joined Column`
-   * を選択します。 [!UICONTROL table]: `customer_entity`
-   * を選択します。 [!UICONTROL column]: `User's lifetime number of support tickets requested`
+* **`[!DNL Zendesk] Tickets`** テーブル
+   * 定義を選択： `Joined Column`
+   * を選択 [!UICONTROL table]: `customer_entity`
+   * を選択 [!UICONTROL column]: `User's lifetime number of support tickets requested`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
 
 * **`Requester's lifetime number of support tickets`**
@@ -236,61 +236,61 @@ ht-degree: 0%
 * **[!DNL Zendesk]新しいチケット**
    * `Tickets we count`
 
-* Adobe Analytics の **`[!DNL Zendesk] tickets`** 表
-* この指標では **カウント**
-* 次の日： **`id`** 列
-* 並べ替え元 **`created_at`** timestamp
+* が含まれる **`[!DNL Zendesk] tickets`** テーブル
+* このメトリックは、 **カウント**
+* 日 **`id`** 列
+* による並べ替え **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]解決済みチケット**
+* **[!DNL Zendesk]解決済みのチケット**
    * `Tickets we count`
-   * ステータス IN `closed, solved`
+   * ステータス： `closed, solved`
 
-* Adobe Analytics の **`[!DNL Zendesk] tickets`** 表
-* この指標では **カウント**
-* 次の日： **`id`** 列
-* 並べ替え元 **`created_at`** timestamp
+* が含まれる **`[!DNL Zendesk] tickets`** テーブル
+* このメトリックは、 **カウント**
+* 日 **`id`** 列
+* による並べ替え **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]チケットを申し込むユニークユーザー**
+* **[!DNL Zendesk]チケットを提出する個別ユーザー**
    * `Tickets we count`
 
-* Adobe Analytics の **`[!DNL Zendesk] tickets`** 表
-* この指標では **個別カウント**
-* 次の日： **`requester_id`** 列
-* 並べ替え元 **`created_at`** timestamp
+* が含まれる **`[!DNL Zendesk] tickets`** テーブル
+* このメトリックは、 **個別カウント**
+* 日 **`requester_id`** 列
+* による並べ替え **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]チケットの平均解決時間/中央値解決時間**
+* **[!DNL Zendesk]チケット解決時間の平均/中央値**
    * `Tickets we count`
-   * ステータス IN `closed, solved`
+   * ステータス： `closed, solved`
 
-* Adobe Analytics の **`[!DNL Zendesk] tickets`** 表
-* この指標では、 **平均（中央値）**
-* 次の日： **`Seconds to resolution`** 列
-* 並べ替え元 **`created_at`** timestamp
+* が含まれる **`[!DNL Zendesk] tickets`** テーブル
+* このメトリックは、 **平均（または中央値）**
+* 日 **`Seconds to resolution`** 列
+* による並べ替え **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]最初の応答までの平均時間/中央値**
+* **[!DNL Zendesk]最初の応答までの平均/中央値の時間**
    * カウントされるチケット
-   * ステータス IN クローズ済み、解決済み
+   * ステータス IN がクローズ済み、解決済み
 
-* Adobe Analytics の **`[!DNL Zendesk] tickets`** 表
-* この指標では、 **平均（中央値）**
-* 次の日： **`Seconds to first response`** 列
-* 並べ替え元 **`created_at`** timestamp
+* が含まれる **`[!DNL Zendesk] tickets`** テーブル
+* このメトリックは、 **平均（または中央値）**
+* 日 **`Seconds to first response`** 列
+* による並べ替え **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->必ず [すべての新しい列を指標のディメンションとして追加](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に。
+>必ずしてください [すべての新規列をディメンションとして指標に追加](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に、
 
 ### レポート
 
 * **[!UICONTROL New/Open/Pending tickets]**
    * [!UICONTROL Metric]: `New Tickets`
    * [!UICONTROL Filter]:
-   * ステータス IN `new, open, pending`
+   * ステータス： `new, open, pending`
 
 * 指標 `A`: `New tickets`
 * `Time period`: `All time`
@@ -300,7 +300,7 @@ ht-degree: 0%
 * **[!UICONTROL Closed/Solved tickets]**
    * [!UICONTROL Metric]: `New Tickets`
    * [!UICONTROL Filter]:
-   * ステータス IN `solved, closed`
+   * ステータス： `solved, closed`
 
 * 指標 `A`: `New tickets`
 * `Time period`: `All time`
@@ -318,7 +318,7 @@ ht-degree: 0%
 * **[!UICONTROL Average time to resolution]**
    * [!UICONTROL Metric]: `Average time to resolution`
    * [!UICONTROL Filter]:
-   * ステータス IN `solved, closed`
+   * ステータス： `solved, closed`
 
 * 指標 `A`: `Average time to resolution`
 * `Time period`: `All time`
@@ -356,7 +356,7 @@ ht-degree: 0%
 * **[!UICONTROL Time to resolution]**
    * [!UICONTROL Metric]: `Average time to resolution`
    * [!UICONTROL Filter]:
-   * ステータス IN `solved, closed`
+   * ステータス： `solved, closed`
 
 * 指標 `A`: `Average time to resolution`
 * `Time period`: `All time`

@@ -1,6 +1,6 @@
 ---
-title: 自動電子メールの概要の作成
-description: 自動電子メールの概要を作成する方法を説明します。
+title: 自動メール概要の作成
+description: 自動メール概要を作成する方法を説明します。
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,91 +11,91 @@ ht-degree: 0%
 
 ---
 
-# 自動電子メールの概要の作成
+# 自動メール概要の作成
 
-E メールの概要は、ビジネスのステータスやトレンドを主要関係者と共有するのに使用できる強力なコミュニケーションツールです。 E メールの概要を使用すると、次のことができます。
+メールの概要は、ビジネスのステータスやトレンドを主要な関係者と共有するために使用できる、強力なコミュニケーションツールです。 メールの概要を使用すると、次のことができます。
 
-* レポートを含むグラフィカルな概要を電子メールで送信する
-* 電子メールの概要作成者を電子メールの受信に含めるか除外します
-* E メールの送信スケジュール
-* スケジュール済みの既存の電子メールの概要を編集、削除、一時停止します
+* レポートを含む電子メールのグラフィカルな要約
+* 電子メールの概要作成者を電子メールの受信に含めるか除外する
+* メールの送信時にスケジュールを設定
+* 既存のスケジュール済み電子メール概要の編集、削除、および一時停止
 
-## 新しいメールサマリの作成
+## 新しい電子メールの概要を作成
 
-1. クリック **[!DNL Manage Data]** その後 **[!UICONTROL Email Summary]** サイドバーに表示されます。
+1. クリック **[!DNL Manage Data]** その後 **[!UICONTROL Email Summary]** サイドバーで。
 
-   電子メールの概要を初めて作成する場合、このページには保存された概要は表示されません。
+   メールの概要を初めて作成する場合は、保存された概要はこのページに表示されません。
 
-1. クリック **[!UICONTROL Create New Email Summary]** をクリックします。
+1. クリック **[!UICONTROL Create New Email Summary]** 右上隅
 
-1. 要約の名前を入力します。
+1. 概要の名前を入力します。
 
-   概要に含まれる内容を表す名前を選択します。 例： `AOV Comparison`.
+   概要に含まれる内容を伝える名前を選択します。 例： `AOV Comparison`.
 
-1. Adobe Analytics の `Choose Content` 「 」セクションで、概要に含めるレポートを選択します。
+1. が含まれる `Choose Content` セクションで、概要に含めるレポートを選択します。
 
-   所有するレポートは 10 個まで選択できます。 レポートを選択した後、表示されるアイコンを使用して、そのレポートを表またはグラフとして送信するかどうかを選択します。 レポートを数値として保存した場合は、数値としてのみ送信できます。 古いデータを含むレポートを含む電子メールの概要を送信する方法については、 [アカウント設定の管理](../../administrator/account-management/managing-account-settings.md).
+   所有するレポートは最大 10 個まで選択できます。 レポートを選択した後、表示されるアイコンを使用して、そのレポートをテーブルとして送信するかグラフとして送信するかを選択します。 レポートを数値として保存した場合、送信できるのは数値のみです。 古いデータを含むレポートを含むメールサマリーの送信について詳しくは、以下を参照してください。 [アカウント設定の管理](../../administrator/account-management/managing-account-settings.md).
 
    >[!NOTE]
    >
    >`Cohort` レポートは、新しいアーキテクチャを使用している場合にのみ使用できます。
 
-1. （オプション）「 」を選択します。 `Send Email To Me` 電子メールを受信する場合。
+1. （オプション）を選択 `Send Email To Me` メールを受信する場合。
 
-1. 電子メールに他のユーザーを含めるには、「 `Add Email Recipients` コンマ、スペース、タブまたはセミコロンで区切られたフィールド。
+1. 他のユーザーを含めてメールを送信するには、そのユーザーのメールアドレスを `Add Email Recipients` コンマ、スペース、タブ、セミコロンで区切られたフィールド。
 
-## スケジュールメールの概要
+## スケジュール メールの概要
 
-Adobe Analytics の `Set when to send the Email Summary` 「 」フィールドでは、電子メールの概要を送信するタイミングを指定できます。 オプションは次のとおりです。
+が含まれる `Set when to send the Email Summary` フィールドに、メール概要を送信するタイミングを指定できます。 オプションは次のとおりです。
 
 * `Manual`
 * `Once`
 * `Repeating`
 
-### 後日送信する電子メールの概要を保存
+### 後日送信するメールの概要を保存
 
-1. 選択 `Manual` から `Set when to send the Email Summary` フィールドに入力します。
+1. を選択 `Manual` から `Set when to send the Email Summary` フィールド。
 
 1. クリック **[!UICONTROL Save]**.
 
-   これにより、概要が E メールの概要のリストに保存されます。
+   これにより、概要がメール概要のリストに保存されます。
 
-1. 概要を送信する準備が整ったら、歯車アイコンをクリックし、「 `Send Now`.
+1. 概要を送信する準備が整ったら、歯車アイコンをクリックし、以下を選択します。 `Send Now`.
 
-### メールサマリを 1 回送信
+### メールの概要を 1 回送信
 
-1. 選択 `Once` から `Set when to send the Email Summary` フィールドに入力します。
+1. を選択 `Once` から `Set when to send the Email Summary` フィールド。
 
-1. 開始日を `Select Start Date` カレンダー。
+1. で開始日を指定 `Select Start Date` カレンダー。
 
-1. 電子メールを送信する時間を `Select time to send` フィールドに入力します。
+1. でメールを送信する時間を指定 `Select time to send` フィールド。
 
-### 繰り返しスケジュールを作成
+### 繰り返しスケジュールの作成
 
-1. 選択 `Repeating` から `Set when to send the Email Summary` フィールドに入力します。
+1. を選択 `Repeating` から `Set when to send the Email Summary` フィールド。
 
-1. Adobe Analytics の `Set Frequency` フィールド、選択 `Daily`, `Weekly`または `Monthly`.
+1. が含まれる `Set Frequency` フィールド、選択 `Daily`, `Weekly`、または `Monthly`.
 
-1. 開始日を `Select Start Date` カレンダー。
+1. で開始日を指定 `Select Start Date` カレンダー。
 
-1. 電子メールを送信する時間を `Select time to send` フィールドに入力します。
+1. でメールを送信する時間を指定 `Select time to send` フィールド。
 
 1. （オプション）終了日を指定するには、 `End Date` カレンダーから終了日を選択します。
 
-## 既存のメールの概要の変更
+## 既存の電子メールの概要の変更
 
-電子メールの概要を作成して保存すると、 `Email Summaries` ページには、保存されたすべての概要のリストが表示されます。 を展開できます (`+`) をクリックして、詳細を確認します。 このビューの列は次のとおりです。
+メールの概要を作成して保存した後、 `Email Summaries` ページには、すべての保存済みの要約のリストが表示されます。 を展開できます（`+`）を選択します。 このビューの列は次のとおりです。
 
-* `Email Name`  — 電子メールの概要の名前
-* `Content`  — レポート名など、概要内のコンテンツのタイプ。 古いデータを含むレポートを含む電子メールの概要を送信する方法については、 [アカウント設定の管理](../../administrator/account-management/managing-account-settings.md).
-* `Scheduled`  — 電子メールの概要が送信される頻度、日付、時刻
-* `Recipients` - E メールサマリの受信者
-* `Created Date`  — 電子メールの概要が作成された日付
+* `Email Name` - メールの概要の名前
+* `Content`  – 報告書名など、概要内の内容のタイプ。 古いデータを含むレポートを含むメールサマリーの送信について詳しくは、以下を参照してください。 [アカウント設定の管理](../../administrator/account-management/managing-account-settings.md).
+* `Scheduled` - E メール概要を送信する頻度、日時
+* `Recipients` - メールの概要の受信者
+* `Created Date` - メールの概要が作成された日付
 * `Status` - `Paused` または `Active`
 
-各行の右側の歯車アイコンをクリックして、次の操作を実行します。
+各行の右側にある歯車アイコンをクリックして、次の操作を実行します。
 
-* `Send Now`  — 指定したすべての受信者に電子メールの概要を直ちに送信します
-* `Edit` - E メールの概要の詳細を変更できます
-* `Pause/Active`  — 電子メールの概要が配信されるのを一時停止したり、設定に基づいて概要を有効にしたりできます
-* `Delete`  — 電子メールの概要を削除します
+* `Send Now`  – 指定されたすべての受信者にメールの概要をすぐに送信します
+* `Edit`  – 電子メールの概要の詳細を変更できます
+* `Pause/Active`  – 概要の配信を一時停止したり、設定方法に基づいて概要を有効にしたりできます
+* `Delete`  – 電子メールの概要を削除します

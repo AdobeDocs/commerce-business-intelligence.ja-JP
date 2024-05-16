@@ -1,5 +1,5 @@
 ---
-title: クエリ結果をエクスポート
+title: クエリ結果のエクスポート
 description: データ結果をエクスポートする方法を説明します。
 exl-id: 7c5672af-ca60-47c5-9054-ff36e2887497
 role: Admin, Data Architect, Data Engineer, User
@@ -11,6 +11,6 @@ ht-degree: 0%
 
 ---
 
-# クエリ結果をエクスポート
+# クエリ結果のエクスポート
 
-クリック **[!UICONTROL Export Data]** （内） `Results` 結果をにエクスポートするウィンドウ `.csv` ファイル。
+クリック **[!UICONTROL Export Data]** が含まれる `Results` 結果をに書き出すパネル `.csv` ファイル。

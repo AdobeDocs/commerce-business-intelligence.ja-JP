@@ -1,6 +1,6 @@
 ---
 title: PrestaShop を接続
-description: PrestaShop データをに接続する方法を説明します。 [!DNL Commerce Intelligence].
+description: PrestaShop データをに接続する方法を説明します [!DNL Commerce Intelligence].
 exl-id: b6f240c0-9461-4015-a56a-64e8e67392fa
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 ![](../../../assets/Prestashop-logo.png)
 
-ビジネスのパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを見つけたりしたい場合は、 接続 [!DNL PrestaShop] データを [!DNL Commerce Intelligence] では、これらの質問などに答えることができます。
+ビジネスのパフォーマンスを確認したい場合や、最も価値のある獲得ソースとチャネルを見つけたい場合は、 の接続 [!DNL PrestaShop] データ送信先 [!DNL Commerce Intelligence] これらの質問などに答えることができます。
 
-The [!DNL PrestaShop] データベースの基準 [!DNL MySQL]を使用している場合、 [!DNL Commerce Intelligence] 経由で [直接接続](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)または [経由 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobeは、 `SSH` メソッドを使用します。最も安全です。
+この [!DNL PrestaShop] データベースの基準 [!DNL MySQL]に接続できます。 [!DNL Commerce Intelligence] を通して [直接接続](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)、または [経由 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobeでは、を使用することをお勧めします `SSH` それは最も安全であるため、方法。
 
 ## 関連ドキュメント
 
-* [セグメント化およびフィルタリングに推奨されるデータディメンション](../../../best-practices/segment-filter.md)
-* [最も価値のある獲得ソースとチャネルは何ですか？](../../analysis/most-value-source-channel.md)
+* [セグメント化とフィルタリングに推奨されるデータディメンション](../../../best-practices/segment-filter.md)
+* [最も価値の高い獲得ソースとチャネルは何ですか？](../../analysis/most-value-source-channel.md)
