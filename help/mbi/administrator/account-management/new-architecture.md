@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 新しいアーキテクチャ
 
-[!DNL Adobe Commerce Intelligence] 製品チームとエンジニアリングチームは、昨年最も抜本的で要望の多い改善を実現することに重点を置いています。 Adobeは、新しいのリリースをお知らせします [!DNL Commerce Intelligence] これらの改善を実現する製品アーキテクチャ。
+製品チームとエンジニアリングチーム [!DNL Adobe Commerce Intelligence]、昨年可能な限り最も抜本的で要望の多い改善に焦点を当てています。 Adobeは、これらの改善を実現する新しい [!DNL Commerce Intelligence] 製品アーキテクチャの提供を喜ばしく思っています。
 
 ## 新しいアーキテクチャのメリット
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### ヘルプ
 
-この [!DNL Adobe Commerce Intelligence] [サービスチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 再実装を追加費用で実行できます。 に連絡してください [Adobeアカウントチーム](../../guide-overview.md#Submitting-a-Support-Ticket) 新しいアカウントで作成する際に優先順位を付けるダッシュボードやレポートのリストを用意しておきます
+[!DNL Adobe Commerce Intelligence] [ サービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) は、追加費用で再実装を実行できます。 [Adobeアカウントチームに連絡して ](../../guide-overview.md#Submitting-a-Support-Ticket) 新しいアカウントでの作成を優先させるダッシュボード/レポートのリストを提供する準備を整えてください
 
 ### 既存のアーキテクチャの維持
 

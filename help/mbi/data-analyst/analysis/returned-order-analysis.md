@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ![](../../assets/detailed-returns-dboard.png)
 
-使用を開始する前に、 [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) お客様と、会社が以下を使用していることを確認する必要があります `enterprise\_rma` 戻り値のテーブル
+開始する前に、[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) の顧客であり、会社が返品に `enterprise\_rma` テーブルを使用していることを確認する必要があります。
 
-この分析に含まれる内容 [高度な計算列](../data-warehouse-mgr/adv-calc-columns.md).
+この分析には [ 高度な計算列 ](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
 ## はじめに
 
@@ -44,12 +44,12 @@ ht-degree: 0%
 作成するフィルターセット
 
 * **`enterprise_rma`** テーブル
-* フィルターセット名： `Returns we count`
+* フィルターセット名：`Returns we count`
 * フィルターセットのロジック：
    * プレースホルダー – ここにカスタムロジックを入力します
 
 * **`enterprise_rma_item_entity`** テーブル
-* フィルターセット名： `Returns items we count`
+* フィルターセット名：`Returns items we count`
 * フィルターセットのロジック：
    * プレースホルダー – ここにカスタムロジックを入力します
 
@@ -59,48 +59,48 @@ ht-degree: 0%
 
 * **`enterprise_rma`** テーブル
 * **`Order's created at`**
-* 定義を選択： `Joined Column`
+* 定義を選択：`Joined Column`
 * [!UICONTROL Create Path]:
 * 
   [!UICONTROL Many]: `enterprise_rma.order_id`
 * 
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
-* を選択 [!UICONTROL table]: `sales_flat_order`
-* を選択 [!UICONTROL column]: `created_at`
+* [!UICONTROL table] を選択：`sales_flat_order`
+* [!UICONTROL column] を選択：`created_at`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
 * **`Customer's order number`**
-* 定義を選択： `Joined Column`
-* を選択 [!UICONTROL table]: `sales_flat_order`
-* を選択 [!UICONTROL column]: `Customer's order number`
+* 定義を選択：`Joined Column`
+* [!UICONTROL table] を選択：`sales_flat_order`
+* [!UICONTROL column] を選択：`Customer's order number`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Time between order's created_at and date_requested`** は、の一部としてアナリストによって作成されます `[RETURNS ANALYSIS]` チケット
+* **`Time between order's created_at and date_requested`** は、`[RETURNS ANALYSIS]` チケットの一部としてアナリストによって作成されます
 
 * **`enterprise_rma_item_entity`** テーブル
 * **`return_date_requested`**
-* 定義を選択： `Joined Column`
+* 定義を選択：`Joined Column`
 * [!UICONTROL Create Path]:
    * 
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
    * 
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
-* を選択 [!UICONTROL table]: `enterprise_rma`
-* を選択 [!UICONTROL column]: `date_requested`
+* [!UICONTROL table] を選択：`enterprise_rma`
+* [!UICONTROL column] を選択：`date_requested`
    * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
 
-* **`Return item total value (qty_returned * price)`** は、の一部としてアナリストによって作成されます `[RETURNS ANALYSIS]` チケット
+* **`Return item total value (qty_returned * price)`** は、`[RETURNS ANALYSIS]` チケットの一部としてアナリストによって作成されます
 
 * **`sales_flat_order`** テーブル
 * **`Order contains a return? (1=yes/0=No)`**
-* 定義を選択： `Exists`
-* を選択 [!UICONTROL table]: `enterprise_rma`
+* 定義を選択：`Exists`
+* [!UICONTROL table] を選択：`enterprise_rma`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Customer's previous order number`** は、の一部としてアナリストによって作成されます `[RETURNS ANALYSIS]` チケット
-* **`Customer's previous order contains return? (1=yes/0=no)`** は、の一部としてアナリストによって作成されます `[RETURNS ANALYSIS]` チケット
+* **`Customer's previous order number`** は、`[RETURNS ANALYSIS]` チケットの一部としてアナリストによって作成されます
+* **`Customer's previous order contains return? (1=yes/0=no)`** は、`[RETURNS ANALYSIS]` チケットの一部としてアナリストによって作成されます
 
 >[!NOTE]
 >
@@ -109,40 +109,40 @@ ht-degree: 0%
 ### 指標
 
 * **戻り値**
-* が含まれる **`enterprise_rma`** テーブル
-* このメトリックは、 **カウント**
-* 日 **`entity_id`** 列
-* による並べ替え **`date_requested`**
+* **`enterprise_rma`** のテーブル内
+* このメトリックは、**カウント** を実行します。
+* **`entity_id`** 列
+* **`date_requested`** 順
 * [!UICONTROL Filter]: `Returns we count`
 
 * **返された項目**
-* が含まれる **`enterprise_rma_item_entity`** テーブル
-* このメトリックは、 **合計**
-* 日 **`qty_approved`** 列
-* による並べ替え **`return date_requested`**
+* **`enterprise_rma_item_entity`** のテーブル内
+* このメトリックは **Sum** を実行します。
+* **`qty_approved`** 列
+* **`return date_requested`** 順
 * [!UICONTROL Filter]: `Returns we count`
 
-* **返される項目の合計値**
-* が含まれる **`enterprise_rma_item_entity`** テーブル
-* このメトリックは、 **合計**
-* 日 **`Returned item total value (qty_returned * price)`** 列
-* による並べ替え **`return date_requested`**
+* **返された項目の合計値**
+* **`enterprise_rma_item_entity`** のテーブル内
+* このメトリックは **Sum** を実行します。
+* **`Returned item total value (qty_returned * price)`** 列
+* **`return date_requested`** 順
 * [!UICONTROL Filter]: `Returns we count`
 
 * **注文から返品までの平均時間**
-* が含まれる **`enterprise_rma`** テーブル
-* このメトリックは、 **平均**
-* 日 **`Time between order's created_at and date_requested`** 列
-* による並べ替え **`date_requested`**
+* **`enterprise_rma`** のテーブル内
+* この指標は **平均** を実行します
+* **`Time between order's created_at and date_requested`** 列
+* **`date_requested`** 順
 * [!UICONTROL Filter]: `Returns we count`
 
 >[!NOTE]
 >
->必ずしてください [すべての新規列をディメンションとして指標に追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に、
+>新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ### レポート
 
-* **リターンを行った後の繰り返し注文確率**
+* **再来訪後の再来訪確率**
 * 指標 `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
@@ -167,7 +167,7 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフ タイプ]: `Bar`
 
-* **返す平均時間（すべての時間）**
+* **返される平均時間（すべての時間）**
 * 指標 `A`: `Avg time between order and return`
 * [!UICONTROL Metric]: `Avg time between order and return`
 
@@ -205,7 +205,7 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフ タイプ]: `Line`
 
-* **返品したが再購入していない顧客**
+* **返品したものの再購入していない顧客**
 * 指標 `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
@@ -220,11 +220,11 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフ タイプ]: `Table`
 
-* **返品率（品目別）**
-* 指標 `A`: `Returned items` （Hide）
+* **品目別返品率**
+* 指標 `A`: `Returned items` （非表示）
 * [!UICONTROL Metric]：返された項目
 
-* 指標 `B`: `Items sold` （Hide）
+* 指標 `B`: `Items sold` （非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
 
@@ -242,4 +242,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 
-分析中に質問が発生した場合や、Professional Services チームに依頼したい場合、 [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートへのお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

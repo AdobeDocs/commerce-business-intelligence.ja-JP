@@ -1,6 +1,6 @@
 ---
 title: SSH トンネルを介した PostgreSQL の接続
-description: SSH トンネルを介して PostgreSQL データベースをCommerce Intelligence に接続する方法を説明します。
+description: SSH トンネルを介して PostgreSQL データベースをCommerce Intelligenceに接続する方法を説明します。
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
@@ -11,40 +11,40 @@ ht-degree: 0%
 
 ---
 
-# 接続 [!DNL PostgreSQL] 経由 [!DNL SSH Tunnel]
+# [!DNL SSH Tunnel] 経由で [!DNL PostgreSQL] に接続
 
-を接続するには [!DNL PostgreSQL] データベース先 [!DNL Commerce Intelligence] 経由 `SSH tunnel`次の手順を実行する必要があります。
+`SSH tunnel` を使用して [!DNL PostgreSQL] データベースを [!DNL Commerce Intelligence] に接続するには、次の操作を行う必要があります。
 
-1. [を取得します [!DNL Commerce Intelligence] 公開鍵](#retrieve)
-1. [へのアクセスを許可 [!DNL Commerce Intelligence] IP アドレス](#allowlist)
-1. [を作成 [!DNL Linux] のユーザー [!DNL Commerce Intelligence]](#linux)
-1. [を作成 [!DNL PostgreSQL] のユーザー [!DNL Commerce Intelligence]](#postgres)
-1. [接続およびユーザー情報の入力先 [!DNL Commerce Intelligence]](#finish)
+1. [ [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
+1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+1. [ [!DNL Commerce Intelligence] のユ  [!DNL Linux]  ザーを作成](#linux)
+1. [ [!DNL Commerce Intelligence] のユ  [!DNL PostgreSQL]  ザーを作成](#postgres)
+1. [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
 
-## の取得 [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
+## [!DNL Commerce Intelligence] [!DNL public key] の取得 {#retrieve}
 
-この `public key` を使用して、以下を認証します [!DNL Commerce Intelligence] [!DNL Linux] ユーザー。 ここでは、ユーザーを作成し、キーを読み込みます。
+`public key` は、[!DNL Commerce Intelligence] [!DNL Linux] ユーザーの認証に使用されます。 ここでは、ユーザーを作成し、キーを読み込みます。
 
-1. に移動 **[!UICONTROL Manage Data** > **Connections]** をクリックして、 **[!UICONTROL Add a Data Source]**.
-1. 「」をクリックします [!DNL PostgreSQL] アイコン。
-1. 後 `PostgreSQL credentials` ページが開いたら、 `Encrypted` 切り替え `Yes`. 次が表示されます `SSH` フォームを設定します。
-1. この `public key` このフォームの下にあります。
+1. **[!UICONTROL Manage Data** > **Connections]** に移動し、「**[!UICONTROL Add a Data Source]**」をクリックします。
+1. [!DNL PostgreSQL] アイコンをクリックします。
+1. `PostgreSQL credentials` ページが開いたら、「`Encrypted`」切り替えスイッチを「`Yes`」に設定します。 `SSH` 設定フォームが表示されます。
+1. `public key` はこのフォームの下にあります。
 
 このページは、チュートリアルの最後まで開いたままにしておきます。次の節と最後に必要になります。
 
-以下に、のナビゲーション方法を示します [!DNL Commerce Intelligence] キーを取得するには：
+以下に、キーを取得するために [!DNL Commerce Intelligence] 内を移動する方法を示します。
 
-![RJMetrics 公開鍵の取得](../../../assets/get-mbi-public-key.gif)
+![RJMetrics 公開鍵の取得 ](../../../assets/get-mbi-public-key.gif)
 
-## へのアクセスを許可 [!DNL Commerce Intelligence] IP アドレス {#allowlist}
+## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可します {#allowlist}
 
-接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 このプロパティは `54.88.76.97/32`ただし、そのページは `PostgreSQL` 資格情報ページ。 上のGIFの青いボックスを参照してください。
+接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 これは `54.88.76.97/32` ですが、`PostgreSQL` 資格情報ページにも表示されます。 上のGIFの青いボックスを参照してください。
 
-## の作成 [!DNL Linux] のユーザー [!DNL Commerce Intelligence] {#linux}
+## [!DNL Commerce Intelligence] 用の [!DNL Linux] ユーザーの作成 {#linux}
 
-リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 いいよ [このユーザーを制限](../../../administrator/account-management/restrict-db-access.md) 好きなように、それが接続する権利を保持している限り [!DNL PostgreSQL] サーバー。
+リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [!DNL PostgreSQL] サーバーへの接続権が保持されている限り、好きなように [ このユーザーを制限 ](../../../administrator/account-management/restrict-db-access.md) することができます。
 
-1. 新しいユーザーを追加するには、次のコマンドを root で実行します。 [!DNL Linux] サーバー：
+1. 新しいユーザーを追加するには、[!DNL Linux] サーバーで次のコマンドを root として実行します。
 
 ```bash
         adduser rjmetric -p<password>
@@ -52,16 +52,16 @@ ht-degree: 0%
         mkdir /home/rjmetric/.ssh
 ```
 
-1. を覚えている `public key` 最初のセクションで取り出したのか？ ユーザーがデータベースに確実にアクセスできるようにするには、キーをに読み込む必要があります `authorized\_keys`.
+1. 最初のセクションで取得した `public key` を覚えていますか？ ユーザーがデータベースにアクセスできるようにするには、キーを `authorized\_keys` に読み込む必要があります。
 
-   キー全体をにコピーします `authorized\_keys` ファイルの内容は次のとおりです。
+   次のように、キー全体を `authorized\_keys` ファイルにコピーします。
 
 ```bash
         touch /home/rjmetric/.ssh/authorized_keys
         "<PASTE KEY HERE>" >> /home/rjmetric/.ssh/authorized_keys
 ```
 
-1. ユーザーの作成を完了するには、権限を `/home/rjmetric` 経由でアクセスを許可するディレクトリ `SSH`:
+1. ユーザーの作成を完了するには、`/home/rjmetric` ディレクトリの権限を変更して、`SSH` 経由でのアクセスを許可します。
 
 ```bash
         chown -R rjmetric:rjmetric /home/rjmetric
@@ -70,39 +70,39 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->次の場合 `sshd\_config` サーバーに関連付けられているファイルがデフォルトオプションに設定されず、特定のユーザーのみがサーバーアクセス権を持ちます。これにより、への接続に成功するのを防ぎます [!DNL Commerce Intelligence]. この場合、のようなコマンドを実行する必要があります。 `AllowUsers` を使用して、プライマリユーザーがサーバーにアクセスできるようにします。
+>サーバーに関連付けられている `sshd\_config` ファイルが既定のオプションに設定されていない場合は、特定のユーザーのみがサーバーにアクセスできます。これにより、[!DNL Commerce Intelligence] への接続に成功できなくなります。 このような場合、rjmetric ユーザーにサーバーへのアクセスを許可するには、`AllowUsers` などのコマンドを実行する必要があります。
 
-## の作成 [!DNL Commerce Intelligence] [!DNL Postgres] ユーザー {#postgres}
+## [!DNL Commerce Intelligence] [!DNL Postgres] ユーザーの作成 {#postgres}
 
-組織では別のプロセスが必要になる場合がありますが、このユーザーを作成する最も簡単な方法は、権限を付与する権限を持つユーザーとして Postgres にログインしたときに次のクエリを実行することです。 また、ユーザーは、というスキーマを所有している必要があります。 [!DNL Commerce Intelligence] は、へのアクセス権を付与されています。
+組織では別のプロセスが必要になる場合がありますが、このユーザーを作成する最も簡単な方法は、権限を付与する権限を持つユーザーとして Postgres にログインしたときに次のクエリを実行することです。 また、ユーザーは、アクセス権が付与され [!DNL Commerce Intelligence] スキーマを所有している必要があります。
 
 ```sql
     GRANT CONNECT ON DATABASE <database name> TO rjmetric WITH PASSWORD <secure password>;GRANT USAGE ON SCHEMA <schema name> TO rjmetric;GRANT SELECT ON ALL TABLES IN SCHEMA <schema name> TO rjmetric;ALTER DEFAULT PRIVILEGES IN SCHEMA <schema name> GRANT SELECT ON TABLES TO rjmetric;
 ```
 
-置換 `secure password` ssh パスワードとは異なる独自の安全なパスワードを使用します。 また、を置き換えてください。 `database name` および `schema name` 使用するデータベース内の適切な名前。
+`secure password` を、SSH パスワードとは異なる独自のセキュアなパスワードに置き換えます。 また、`database name` と `schema name` をデータベース内の適切な名前に置き換える必要があります。
 
 複数のデータベースまたはスキーマを接続する場合は、必要に応じてこのプロセスを繰り返します。
 
-## 接続およびユーザー情報の入力 [!DNL Commerce Intelligence] {#finish}
+## [!DNL Commerce Intelligence] への接続およびユーザー情報の入力 {#finish}
 
-最後に、接続とユーザー情報をに入力する必要があります。 [!DNL Commerce Intelligence]. を残しましたか [!DNL PostgreSQL] 資格情報ページが開かれますか？ そうでない場合は、に移動します **[!UICONTROL Manage Data > Connections]** をクリックして、 **[!UICONTROL Add a Data Source]**&#x200B;を選択し、続いて [!DNL PostgreSQL] アイコン。 設定を忘れないでください `Encrypted` 切り替え `Yes`.
+まとめるには、接続とユーザー情報を [!DNL Commerce Intelligence] に入力する必要があります。 [!DNL PostgreSQL] 資格情報ページを開いたままにしましたか？ そうでない場合は、**[!UICONTROL Manage Data > Connections]** に移動して「**[!UICONTROL Add a Data Source]**」をクリックし、次に「[!DNL PostgreSQL]」アイコンをクリックします。 「`Encrypted`」トグルを `Yes` に設定することを忘れないでください。
 
-このページに以下の情報を入力します。まず、 `Database Connection` セクション：
+このページに、`Database Connection` のセクションから始まる次の情報を入力します。
 
-* `Username`:RJMetrics Postgres のユーザー名（rjmetric）
+* `Username`:RJMetrics Postgres ユーザー名（rjmetric にする）
 * `Password`:RJMetrics Postgres パスワード
 * `Port`：サーバー上の PostgreSQL ポート（デフォルトでは 5432）
-* `Host`:127.0.0.1
+* `Host`: 127.0.0.1
 
-次の下 `SSH Connection`:
+`SSH Connection` の下：
 
 * `Remote Address`:SSH で接続するサーバーの IP アドレスまたはホスト名
 * `Username`:SSH ログイン名（rjmetric）
 * `SSH Port`：サーバーの SSH ポート（デフォルトでは 22）
 
-完了したら、 **保存してテスト** をクリックして設定を完了します。
+完了したら、**保存してテスト** をクリックして設定を完了します。
 
 ### 関連
 
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

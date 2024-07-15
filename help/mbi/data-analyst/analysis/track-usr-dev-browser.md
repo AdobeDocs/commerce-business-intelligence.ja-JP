@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!UICONTROL Google Analytics] トラッキング
 
-（を使用） [!UICONTROL Google Analytics] 次のことができます [参照元の情報を保存](../analysis/google-track-user-acq.md) 最も価値の高いユーザーの出所を理解する。 このトピックでは、ユーザーが作業しているプラットフォーム（デバイス、ブラウザーなど）について説明します。 これにより、モバイルデバイスで実際にログインしているユーザーの数と、そのユーザーのライフタイム値への影響を把握できます。
+[!UICONTROL Google Analytics] を使用すると [ リファラルソース情報を保存 ](../analysis/google-track-user-acq.md) して、最も価値のあるユーザーの出所を把握できます。 このトピックでは、ユーザーが作業しているプラットフォーム（デバイス、ブラウザーなど）について説明します。 これにより、モバイルデバイスで実際にログインしているユーザーの数と、そのユーザーのライフタイム値への影響を把握できます。
 
 ## ユーザーデバイスとブラウザーデータの保存
 
@@ -25,29 +25,29 @@ Web サイトに対してリクエストが行われるたびに、ユーザー�
 1.` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
 1. `Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
 
-詳しく見ると、文字列にユーザーのオペレーティングシステム、ブラウザー、使用しているデバイスの名前（名前がある場合）に関する情報が含まれていることがわかります。 User-Agent 文字列は、プラットフォーム間および同じプラットフォームのバージョン間で大きく異なりますが、通常、プラットフォーム名は内のどこかに存在します。 例えば、上記の#1 は Chrome ブラウザーを備えたMac#2、上記は Firefox ブラウザーを備えた Windows マシン、#3 はiPhone、#4 はiPad、#5 は Android デバイスです。
+詳しく見ると、文字列にユーザーのオペレーティングシステム、ブラウザー、使用しているデバイスの名前（名前がある場合）に関する情報が含まれていることがわかります。 User-Agent 文字列は、プラットフォーム間および同じプラットフォームのバージョン間で大きく異なりますが、通常、プラットフォーム名は内のどこかに存在します。 例えば、上記の#1 はChrome ブラウザーを使用したMac#2、上記は Firefox ブラウザーを使用した Windows マシン、#3 はiPhone、#4 はiPad、#5 はAndroid デバイスです。
 
-この情報には、リクエストが行われるたびにサーバーからアクセスできます。 PHP では、User-Agent 文字列は `$_SERVER['HTTP_USER_AGENT']`. Ruby on Rails では、次の場所に保存されます。 `request.env['HTTP_USER_AGENT']`. 他の言語や環境でも、同様の方法でアクセスできます。
+この情報には、リクエストが行われるたびにサーバーからアクセスできます。 PHP では、User-Agent 文字列は `$_SERVER['HTTP_USER_AGENT']` に格納されます。 Ruby on Rails では、`request.env['HTTP_USER_AGENT']` に保存されます。 他の言語や環境でも、同様の方法でアクセスできます。
 
 ### このデータはいつ記録する必要がありますか？
 
-[!DNL Adobe] では、という新しいフィールドを追加することをお勧めします。 `Platform` または `User-Agent` 宛先： `Customers` および `Orders` ユーザーが作成されたときや注文されたときにこの情報を格納するデータベーステーブル。 SQL データベースを使用している場合、このフィールドは `VARCHAR(255)`. 
+[!DNL Adobe] では、`Platform` または `User-Agent` という新しいフィールドを `Customers` および `Orders` データベーステーブルに追加して、ユーザーの作成や注文のたびに、この情報を保存することをお勧めします。 SQL データベースを使用している場合、このフィールドは `VARCHAR(255)` にする必要があります。 
 
 >[!NOTE]
 >
->この `User-Agent` 文字列はこの長さを超えることはできますが、実際にはこの長さを超えることはほとんどありません。
+>`User-Agent` の文字列は、これよりはるかに長くなることができますが、実際にはこの長さを超えることはほとんどありません。
 
 ### 役に立つセグメントを解析するにはどうすればよいですか？
 
-の解析に役立つライブラリが多数あります `User-Agent` 文字列を、オペレーティングシステムやデバイスなどのコンポーネントに変換します。 を参照してください。 [ua-parser プロジェクト](https://github.com/tobie/ua-parser) を参照してください。
+`User-Agent` の文字列を解析してオペレーティングシステムやデバイスなどのコンポーネントを生成するのに役立つライブラリが多数用意されています。 詳しくは、[ua-parser プロジェクト ](https://github.com/tobie/ua-parser) を参照してください。
 
 この新しい情報により、ユーザーがサイトにアクセスする方法をより深く理解できます。 その後、エクスペリエンスをカスタマイズしたり、特定のグループ向けのマーケティングキャンペーンを作成したりできます。
 
 ## 関連
 
-* [以下を介した注文参照ソースの追跡 [!DNL Google Anaytics] 電子Commerce](../importing-data/integrations/google-ecommerce.md)
+* [E-Commerce経由  [!DNL Google Anaytics]  注文リファラルソースを追跡](../importing-data/integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースを追跡](../analysis/google-track-user-acq.md)
 * [最も価値のある獲得ソースとチャネルを見つける](../analysis/most-value-source-channel.md)
-* [を接続 [!DNL Google Adwords] アカウント](../importing-data/integrations/google-adwords.md)
+* [アカウント  [!DNL Google Adwords]  接続](../importing-data/integrations/google-adwords.md)
 * [広告キャンペーンの ROI の向上](../analysis/roi-ad-camp.md)
-* [方法 [!DNL Google Analytics] UTM アトリビューションの仕組み](../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics] UTM アトリビューションの仕組み](../analysis/utm-attributes.md)

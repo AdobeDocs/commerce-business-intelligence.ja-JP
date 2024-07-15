@@ -19,90 +19,90 @@ ht-degree: 0%
 
 ## 前提条件
 
-**広告コストデータの読み込み**  – 接続 [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) 対象： [!DNL Adobe Commerce Intelligence]  – これは自動的に [!DNL AdWords] Commerce Intelligence でお過ごしください。
+**広告コストデータのインポート** - [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) を [!DNL Adobe Commerce Intelligence] に接続すると、Commerce Intelligenceでの [!DNL AdWords] 広告の支出が自動的に同期されます。
 
-**ユーザー獲得チャネルデータの追跡**  – を結び付ける [!DNL Google AdWords] データをデータベース内の特定の順序に変換するには、次の操作を行う必要があります [ユーザー獲得の追跡](../analysis/google-track-user-acq.md) 経由 [!DNL Google Analytics E-commerce]. これにより、各注文を utm ソースとメディアに接続できます。
+**ユーザー獲得チャネルデータの追跡** - [!DNL Google AdWords] データをデータベース内の特定の注文に関連付けるには、[!DNL Google Analytics E-commerce] を介して [ ユーザー獲得を追跡 ](../analysis/google-track-user-acq.md) する必要があります。 これにより、各注文を utm ソースとメディアに接続できます。
 
 ## ユーザー獲得キャンペーン
 
 このレポートコレクションは、次を使用して構築されています。
 
-* を接続すると自動的に生成される指標 [!DNL Google AdWords] データ
-* お使いのアカウントで既に使用可能になっている基本的な指標（など） `Number of orders` および `New users`
-* に参加する際に作成されたDimension [!DNL Google Analytics Ecommerce] 注文の utm ソースや注文の utm メディアなどのデータをデータベースに送信します。 お使いのアカウントでこれらのフィールドが現在使用できない場合は、サポートチームにお問い合わせください
+* [!DNL Google AdWords] データの接続時に自動的に生成される指標
+* `Number of orders` や `New users` など、アカウントで既に使用可能になっている基本指標
+* 注文の utm ソースや注文の utm メディアなど、[!DNL Google Analytics Ecommerce] データをデータベースに結合する際に作成されるDimension。 お使いのアカウントでこれらのフィールドが現在使用できない場合は、サポートチームにお問い合わせください
 
 ## レポートの作成
 
 **まず、ページビュー数、セッション数およびユーザー数の推移を示すレポートを作成します。**
 
 1. レポートを作成します。
-1. クリック **[!UICONTROL Add Metric]**&#x200B;その後、上にマウスを移動 [!DNL Google Analytics] ドロップダウンの下部にあるセクションを選択し、 `Page Views`.
-1. 別の指標を追加し、再び上にマウスポインターを置きます [!DNL Google Analytics] セクション、今回は選択 `Sessions`.
-1. 3 番目の指標を追加し、再び上にマウスポインターを置きます [!DNL Google Analytics] セクション、今回は選択 `Users`.
-1. 次に、期間を 31 日前から 1 日前までの移動範囲に変更し、時間間隔を次のように調整します `by day`.
-1. レポートに名前を付けます（例： `Page views, sessions and users by day`）を選択し、をクリックします **[!UICONTROL Save]**.
+1. 「**[!UICONTROL Add Metric]**」をクリックして、ドロップダウンの下部にある「[!DNL Google Analytics]」セクションにマウスを移動し、「`Page Views`」を選択します。
+1. 別の指標を追加し、再び「[!DNL Google Analytics]」セクションにマウスポインターを置いて、今度は「`Sessions`」を選択します。
+1. 3 つ目の指標を追加し、再び「[!DNL Google Analytics]」セクションにマウスポインターを置き、今回は「`Users`」を選択します。
+1. 次に、期間を 31 日前から 1 日前までの移動範囲に変更し、時間間隔を `by day` に調整します。
+1. レポートに名前（例：`Page views, sessions and users by day`）を付け、「**[!UICONTROL Save]**」をクリックします。
 
-**2 つ目のレポートは、過去 1 年間のページビュー数を示しています。**
-
-1. レポートを作成します。
-1. クリック **[!UICONTROL Add Metric]**、マウスで囲む [!DNL Google Analytics] ドロップダウンの下部にあるセクションを選択し、 _ページビュー_.
-1. 期間を 13 か月前から 1 か月前の移動範囲に変更し、時間間隔を次のように調整します `by month`.
-1. レポートに次のような名前を付けます `Page views by month,` をクリックして、 **[!UICONTROL Save]**.
-
-**3 つ目のグラフは、過去 1 年間のバウンス率を示しています。**
+**2 番目のレポートは、過去 1 年間のページビュー数を示しています**。
 
 1. レポートを作成します。
-1. クリック **[!UICONTROL Add Metric]**、マウスで囲む [!DNL Google Analytics] ドロップダウンの下部にあるセクションを選択し、 _バウンス率_.
-1. 期間を 13 か月前から 1 か月前の移動範囲に変更し、時間間隔を次のように調整します `by month`.
-1. レポートに次のような名前を付けます `Bounce rate by month`を選択し、 **[!UICONTROL Save]**.
+1. 「**[!UICONTROL Add Metric]**」をクリックし、ドロップダウンの下部にある「[!DNL Google Analytics]」セクションにマウスを移動して、「_ページビュー_」を選択します。
+1. 期間を 13 か月前から 1 か月前の移動範囲に変更し、時間間隔を `by month` に調整します。
+1. レポートに `Page views by month,` などの名前を付け、「**[!UICONTROL Save]**」をクリックします。
+
+**3 つ目のグラフは、過去 1 年間のバウンス率を示しています**
+
+1. レポートを作成します。
+1. 「**[!UICONTROL Add Metric]**」をクリックし、ドロップダウンの下部にある「[!DNL Google Analytics]」セクションにマウスポインターを置いて、「_バウンス率_」を選択します。
+1. 期間を 13 か月前から 1 か月前の移動範囲に変更し、時間間隔を `by month` に調整します。
+1. レポートに `Bounce rate by month` のような名前を付け、「**[!UICONTROL Save]**」をクリックします。
 
 **次に、再訪問者と比較した、新規訪問者のセッションの平均長さを見てみましょう。**
 
 1. レポートを作成します。
-1. クリック **UICONTROL 指標の追加**、マウスで囲む [!DNL Google Analytics] ドロップダウンの下部にあるセクションを選択し、 `Average Session Length`.
-1. 期間を 13 か月前から 1 か月前の移動範囲に変更し、時間間隔を次のように調整します `by month`?
-1. を追加 `Group by` を選択して、 `New or returning visitor`.  を確認します `Show All` ボックス、次に **[!UICONTROL Apply]**.
-1. レポートに次のような名前を付けます `Average session length`を選択し、 **[!UICONTROL Save]**.
+1. **UICONTROL 指標を追加** をクリックし、ドロップダウンの下部にある「[!DNL Google Analytics]」セクションにマウスポインターを置いて、「`Average Session Length`」を選択します。
+1. 期間を 13 か月前から 1 か月前の移動範囲に変更し、時間間隔を `by month` に調整しますか？
+1. `Group by` を追加し、「`New or returning visitor`」を選択します。  「`Show All`」ボックスを選択し、「**[!UICONTROL Apply]**」をクリックします。
+1. レポートに `Average session length` のような名前を付け、「**[!UICONTROL Save]**」をクリックします。
 
-**次に、過去 30 日間の上位の参照ドメインを確認します。**
+**次に、過去 30 日間に上位の参照ドメインを確認します。**
 
 1. レポートを作成します。
-1. クリック **[!UICONTROL Add Metric]**、マウスで囲む [!DNL Google Analytics] ドロップダウンの下部にあるセクションを選択し、 `Sessions`.
-1. 期間を 31 日前から 1 日前までの移動範囲に変更し、時間間隔を次のように調整します `none`.
-1. を追加 `Group by` を選択して、 `ga:source`.  を確認します _すべてを表示_ ボックス、次に **[!UICONTROL Apply]**.
-1. さらに追加 `group by` を選択して、 `ga:medium`. もう一度確認します `Show All` ボックス、次に **[!UICONTROL Apply]**.
-1. レポートに次のような名前を付けます `Top 20 Referring Domains, 30 Days`を選択し、 **[!UICONTROL Save]**.
+1. 「**[!UICONTROL Add Metric]**」をクリックし、ドロップダウンの下部にある「[!DNL Google Analytics]」セクションにマウスを移動して「`Sessions`」を選択します。
+1. 期間を 31 日前から 1 日前の移動範囲に変更し、時間間隔を `none` に調整します。
+1. `Group by` を追加し、「`ga:source`」を選択します。  _すべて表示_ ボックスをオンにし、**[!UICONTROL Apply]** をクリックします。
+1. 別の `group by` を追加し、`ga:medium` を選択します。 再度、「`Show All`」チェックボックスをオンにし、「**[!UICONTROL Apply]**」をクリックします。
+1. レポートに `Top 20 Referring Domains, 30 Days` のような名前を付け、「**[!UICONTROL Save]**」をクリックします。
 
-**最後に、コンバージョンについて説明します。**
+**最後に、コンバージョンを見てみましょう。**
 
 1. レポートを作成します。
 1. 次の指標を追加します。
 
 * `New users`
-   * クリック **[!UICONTROL Hide]** 指標名の下
+   * 指標名の下にある「**[!UICONTROL Hide]**」をクリックします
 
 * `Number of orders`
-   * のフィルターを追加 `Customer's order number` = 1 で、をクリックします **[!UICONTROL Apply]**
-   * 指標名をクリックして呼び出すことにより、指標の名前を変更します `Number of first orders`を選択し、 **[!UICONTROL Hide]**
+   * `Customer's order number` = 1 のフィルターを追加して、「**[!UICONTROL Apply]**」をクリックします。
+   * 指標名をクリックして `Number of first orders` 呼び出すことにより、指標の名前を変更し、「**[!UICONTROL Hide]**」をクリックします
 
 * `Number of orders`
-   * **[!UICONTROL Hide]** 指標
+   * 指標の **[!UICONTROL Hide]**
 
 * `Users`
-   * **[!UICONTROL Hide]** 指標
-   * 期間をに変更します。 `24 months ago to now`、および時間間隔を次のように調整します `by month`.
-   * をクリックして、次の式を追加します。 **[!UICONTROL Formula]**.
-   * A/D をクリックしてから、 **[!UICONTROL Apply]**
-   * 式の名前の変更 `Registration conversion`
-   * B/D 次にクリック **[!UICONTROL Apply]**
-   * 式の名前の変更 `First order conversion`
-   * C/D をクリックしてから、 **[!UICONTROL Apply]**
-   * 式の名前の変更 `Any order conversion`
+   * 指標の **[!UICONTROL Hide]**
+   * 期間を `24 months ago to now` に変更し、時間間隔を `by month` に調整します。
+   * 「**[!UICONTROL Formula]**」をクリックして、次の式を追加します。
+   * A/D をクリックしてから **[!UICONTROL Apply]** をクリック
+   * 式の名前を `Registration conversion` に変更
+   * B/D をクリックしてから「**[!UICONTROL Apply]**」をクリック
+   * 式の名前を `First order conversion` に変更
+   * C/D をクリックしてから **[!UICONTROL Apply]**
+   * 式の名前を `Any order conversion` に変更
 
-* 次のように、レポートに名前を付けます `Conversion by month`を選択し、 **[!UICONTROL Save]**.
+* 次に、レポートに `Conversion by month` のような名前を付け、[**[!UICONTROL Save]**] をクリックします。
 
 ## 次の手順
 
 Web トラフィックおよびコンバージョン率に関するデータにアクセスできるようになったので、これをマイニングして、サイトへのトラフィックを促進するのに最適なサイトはどれかなど、ビジネス上の意思決定を促進できます。 または、生涯価値の高い顧客を獲得する上で最も効果的なキャンペーンはどれですか？
 
-広告費用とマーケティング戦略を調整する際に、結果を次の場所で引き続き追跡できます [!DNL Commerce Intelligence]。会社の進化する優先度に合わせて、このダッシュボードを繰り返し処理します。
+広告費用とマーケティング戦略を調整しながら、[!DNL Commerce Intelligence] で結果を追跡し続け、このダッシュボードを繰り返して、会社の進化する優先度に合わせることができます。

@@ -17,40 +17,40 @@ ht-degree: 0%
 
 ## 日付フィルター
 
-ダッシュボードの日付範囲またはレポートの間隔を変更するには、右上隅にあるカレンダーアイコン（![カレンダー](../../assets/calendar-button.png)）に設定します。
+ダッシュボードの日付範囲またはレポートの間隔を変更するには、右上隅にあるカレンダーアイコン（![calendar](../../assets/calendar-button.png)）をクリックします。
 
-を使用してデータを表示するように選択できます `Fixed Date Range` またはさまざまな事前計算済み `Moving Date Ranges`:
+`Fixed Date Range` ールまたは様々な事前計算された `Moving Date Ranges` を使用して、データを表示するよう選択できます。
 
-![日付範囲の移動](../../assets/moving_date_ranges.png)
+![ 日付範囲の移動 ](../../assets/moving_date_ranges.png)
 
-この `Last Full...` 移動範囲オプションは、最後に完了した範囲を表し、一方で `This...` は、現在の進行中の範囲です。 例えば、6 月の場合 `Last Full Month` 等しい _5 月 1 日～5 月 31 日_、間 `This Month` 等しい _6 月 1 日（PT） – 今_.
+`Last Full...` の移動範囲オプションは、最後に完了した範囲を表し、`This...` は現在の進行中の範囲です。 例えば、6 月の場合、`Last Full Month` は _5 月 1 日から 5 月 31 日_、`This Month` は _6 月 1 日から現在_ になります。
 
-または独自に作成 `Custom Moving Range`\:
+または独自の `Custom Moving Range` を作成\:
 
-![カスタム移動範囲](../../assets/custom-moving-range.png)
+![ カスタム移動範囲 ](../../assets/custom-moving-range.png)
 
-を選択して、間隔も変更します。 デフォルトボタンの選択（![時間間隔の既定値](../../assets/time_interval_default.png)）は、日付範囲のみが変更されることを意味します。
+を選択して、間隔も変更します。 デフォルトのボタン（![ 時間間隔のデフォルト ](../../assets/time_interval_default.png)）を選択すると、日付範囲のみが変更されます。
 
-![時間間隔](../../assets/time_interval.png)
+![ 時間間隔 ](../../assets/time_interval.png)
 
-すべてのレポートを初期の日付範囲および間隔に復元するには、をクリックします **[!UICONTROL Restore Defaults]** またはクリック **[!UICONTROL Cancel]**.
+すべてのレポートを初期の日付範囲および間隔に復元するには、「**[!UICONTROL Restore Defaults]**」または「**[!UICONTROL Cancel]**」をクリックします。
 
 ダッシュボードに日付フィルターを指定すると、そのフィルターはそのダッシュボードにのみ適用されます。 他のダッシュボードに移動する場合は適用されません。
 
 >[!NOTE]
 >
->現在、 `Cohort Reports` および `SQL Reports` ダッシュボードレベルで変更を適用する場合は、が含まれません。
+>現在、ダッシュボードレベルで変更を適用する場合、`Cohort Reports` と `SQL Reports` は含まれません。
 
 ## フィルターの保存
 
-特定のストアのパフォーマンスを分析するには、右上隅にあるストアアイコン（![フィルターの保存](../../assets/store-filter.png)）に設定します。 デフォルトでは `Store Filter` はに設定されています。 `All Stores`。すべてのデータが表示されます。 [ビューを保存](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) Commerce サイトで使用できます。
+特定のストアのパフォーマンスを分析するには、右上隅にあるストアアイコン（![ ストアフィルター ](../../assets/store-filter.png)）をクリックします。 デフォルトでは、`Store Filter` は `All Stores` に設定されており、Commerce サイトで使用可能なすべての [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) からのデータが表示されます。
 
 >[!NOTE]
 >
->ストアフィルターは全体に対して有効または無効になっています [!DNL Commerce Intelligence] アカウント。 ダッシュボードに、フィルターの影響を受けないレポートが含まれている場合（どのレポートにも基づいていないレポートなど） [!DNL Adobe Commerce] data）に設定した場合、これらのレポートは、ストアフィルターが適用される際に更新されません。 次のことができます [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ストアの選択に基づいてレポートを更新する必要があると思われる場合、またはアカウントストアのフィルターが誤って無効になっていると思われる場合。
+>ストアフィルターは、[!DNL Commerce Intelligence] アカウント全体で有効または無効になります。 ダッシュボードにフィルターの影響を受けないレポート（[!DNL Adobe Commerce] のデータに基づいていないレポートなど）が含まれている場合、ストアフィルターを適用してもそれらのレポートは更新されません。 ストアの選択に基づいてレポートを更新する必要があると思われる場合、またはアカウントストアのフィルターが誤って無効になっていると思われる場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
-からストアを選択した場合 `Store Filter`の場合、ダッシュボード間を移動しても、フィルターは選択内容を保持します。 選択を保持すると、を選択するまで、選択したストアのデータをどこにでも表示できます `All Stores`.
+ダッシュボードからストアを選択しても、ダッ `Store Filter` ボード間を移動する際は、選択内容がフィルターに保持されます。 選択を保持すると、`All Stores` を選択するまで、選択したストアのデータをどこにでも表示できます。
 
 ## 共有ダッシュボードのフィルター
 
-共有ダッシュボードの場合、1 人のユーザーが日付フィルターを設定すると、ダッシュボードにアクセスできる他のユーザーには、同じフィルターが適用されます。 ただし、この場合、ストアフィルターは適用されません。 ダッシュボードの所有者がストアフィルターを設定してダッシュボードを共有すると、設定されたストアフィルターは別のユーザーには保持されません。 ユーザーの条件 [アクセスを編集](../../data-user/dashboards/share-dashboard-with-users.md) をダッシュボードに移動して、ダッシュボードフィルターを調整します。
+共有ダッシュボードの場合、1 人のユーザーが日付フィルターを設定すると、ダッシュボードにアクセスできる他のユーザーには、同じフィルターが適用されます。 ただし、この場合、ストアフィルターは適用されません。 ダッシュボードの所有者がストアフィルターを設定してダッシュボードを共有すると、設定されたストアフィルターは別のユーザーには保持されません。 ダッシュボードフィルターを調整するには、ユーザーがダッシュボードに [ 編集アクセス ](../../data-user/dashboards/share-dashboard-with-users.md) できる必要があります。

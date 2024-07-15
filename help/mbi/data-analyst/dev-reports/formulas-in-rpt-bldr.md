@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# 内の数式 `Report Builder`
+# `Report Builder` の数式
 
-が含まれる [`Report Builder`](../../tutorials/using-visual-report-builder.md)を使用すると、強力なビジュアライゼーションを作成できます [定義済みの指標](../../data-user/reports/ess-manage-data-metrics.md) あなたの口座に。 これらの指標を式で組み合わせることで、データから追加のインサイトを得ることができます。 このトピックでは、で式を使用する方法について説明します `Report Builder`  – 飛び込もう！
+[`Report Builder`](../../tutorials/using-visual-report-builder.md) では、アカウントで [ 定義済み指標 ](../../data-user/reports/ess-manage-data-metrics.md) を使用して強力なビジュアライゼーションを作成できます。 これらの指標を式で組み合わせることで、データから追加のインサイトを得ることができます。 このトピックでは、`Report Builder` で数式を使用する方法を詳しく説明します。ここでは、ジャンプしましょう。
 
-## とは `formula`? {#what}
+## `formula` とは{#what}
 
-が含まれる `Report Builder`, a `formula` は、何らかの数学的論理に基づいて 1 つ以上の指標を組み合わせたものです。 典型的な例を次に示します。
+`Report Builder` では、`formula` は、何らかの数学的ロジックに基づいて 1 つ以上の指標を組み合わせたものです。 典型的な例を次に示します。
 
 ![](../../assets/formula-example.png)
 
-この例では、を使用します `Number of orders metric (A)` および `Distinct buyers metric (B)`を選択します。その後の目標は、「購入者が月に作成した注文の平均数はどれくらいか」という質問に答えることです。 式のパラメーターは次のとおりです。
+この例では、`Number of orders metric (A)` と `Distinct buyers metric (B)` を使用します。購入者が月に作成した注文の平均数はどれくらいですか？という質問に答えることを目標にします。 式のパラメーターは次のとおりです。
 
 * `Definition`：ここでは、入力指標に数学を適用します。 この例では、注文数を個別の購入者の数で割ると、注文数の平均がわかります。 したがって、の定義は（A/B）になります。
 
@@ -29,40 +29,40 @@ ht-degree: 0%
 
 * `Miscellaneous`：数式のタイムスタンプ、グループ化、パースペクティブ、フィルターはすべて、入力指標に継承されます。 何もすることがない！
 
-## 使用方法 `formulas` 報告書に？ {#how}
+## レポートで `formulas` を使用するにはどうすればよいですか？ {#how}
 
 基本について説明したので、いくつかの例を見てみましょう。
 
 ### 例：初回注文に起因する売上高の割合を確認したい。
 
-![数式を使用して初回注文に起因する収益の割合を見つける](../../assets/first_time_orders.gif)
+![ 数式を使用して初回注文に起因する収益の割合を見つける ](../../assets/first_time_orders.gif)
 
-この例では、を使用しました `Revenue` および `Revenue (first time orders)` 指標。 を除算する `Revenue (first time orders)(B)` による指標 `Revenue metric (A)` 戻り値の形式をに設定します。 `Percent`を使用すると、初回注文の売上高に占める割合を確認できます。
+この例では、`Revenue` と `Revenue (first time orders)` の指標を使用しました。 `Revenue (first time orders)(B)` 指標を `Revenue metric (A)` で割り、戻り値の形式を `Percent` に設定すると、初回注文に起因する可能性がある売上高の割合を見つけることができます。
 
-### 例：オファーを行う場合と行わない場合の、注文あたりの平均売上高を知りたい `promo code`.
+### 例：注文あたりの平均売上高を知りたいのですが、`promo code` をオファーする場合とオファーしない場合。
 
-![プロモーションコードを使用した場合と使用しない場合の、注文あたりの平均売上高を示す数式の使用](../../assets/promo_code.gif)
+![ 数式を使用して、プロモーションコードの有無にかかわらず、注文あたりの平均売上高を見つける ](../../assets/promo_code.gif)
 
-この例では、を使用しました `Revenue` および `Number of orders` 指標。 この質問に対する答えは、次の 2 つの手順で構成されます。 `Revenue (A)` 基準： `Number of orders (B)` 戻り値の形式をに設定します。 `Currency`. 次に、式の結果（`Avg. Revenue per order`）を選択して、結果を次の基準で表示およびグループ化します `Promo code`.
+この例では、`Revenue` と `Number of orders` の指標を使用しました。 この質問に対する答えは、`Revenue (A)` を `Number of orders (B)` で割り、戻り値の形式を `Currency` に設定するという 2 つの手順で構成されます。 次に、数式の結果（`Avg. Revenue per order`）のみを表示し、結果を `Promo code` でグループ化しました。
 
 ### 例：新規顧客の UTM ソースの配布を知りたいとします。
 
-![数式を使用して新規顧客の UTM ソースの配分を検索する](../../assets/distro.gif)
+![ 数式を使用して新規顧客の UTM ソースの分布を見つける ](../../assets/distro.gif)
 
 この質問に対する答えを見つけるには、次の手順が必要です。
 
-1. 最初にを追加しました `New Customers` 指標、さらにグループ化の基準 `utm_source - all`. これは指標です `A`、または `New Customers (grouped)`.
+1. 最初に `New Customers` の指標を追加し、次に `utm_source - all` でグループ化しました。 これは、指標 `A` または `New Customers (grouped)` です。
 
-1. 次に、を複製しました `New Customers (grouped)` 指標を使用し、独立のディメンションを使用するように設定します。 指標 `B` - `New customers (ungrouped)`  – 新規顧客の合計数を表示します。
+1. 次に、`New Customers (grouped)` 指標を複製し、独立したディメンションを使用するように設定しました。 指標 `B` - `New customers (ungrouped)` – 新規顧客の合計数を示します。
 
-1. 両方の指標を非表示にした後、数式の定義をに設定します `A/B`. これにより、 `New customers (grouped)` 基準： `New Customers (ungrouped)`.
+1. 両方の指標を非表示にした後、数式の定義を `A/B` に設定します。 これにより、`New customers (grouped)` が `New Customers (ungrouped)` で除算されます。
 
-1. 次に、結果の形式をに設定します。 `Percent`.
+1. 次に、結果の形式を `Percent` に設定します。
 
-この例では、を使用しました `Stacked Columns` パースペクティブ：結果を月ごとに表示します。 これにより、新規顧客の配分を月単位で比較できます。
+この例では、`Stacked Columns` パースペクティブを使用して結果を月ごとに表示しました。 これにより、新規顧客の配分を月単位で比較できます。
 
 ## まとめ {#wrapup}
 
-上記の例で、式がであることに気付きましたか `timestamp`, `groupings`, `perspectives`、および `filters` 入力指標から継承されるか の使用には数式を使用できます `perspectives` および [独立時間のオプション](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;} は、指標と同様です。
+上記の例で、数式の `timestamp`、`groupings`、`perspectives`、`filters` が入力指標から継承されていることに気がつきましたか？ 指標と同様に、数式を使用して `perspectives` および [ 独立した時間オプション ](../../tutorials/time-options-visual-rpt-bldr.md){:target=&quot;_blank&quot;} を使用できることに注意してください。
 
-で数式を使用する方法について質問がある場合 `Report Builder`, [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+`Report Builder` での数式の使用に関するその他の質問については、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

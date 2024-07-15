@@ -17,19 +17,19 @@ ht-degree: 0%
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
-この分析は、新しいアーキテクチャの Pro アカウントのお客様のみが利用できます。 アカウントがへのアクセス権を持っている場合 `Persistent Views` の下の機能 `Manage Data` サイドバーは、新しいアーキテクチャを使用しており、ここに記載されている手順に従って分析を自分で構築できます。
+この分析は、新しいアーキテクチャの Pro アカウントのお客様のみが利用できます。 アカウントが `Manage Data` サイドバーの `Persistent Views` 機能にアクセスできる場合は、新しいアーキテクチャを使用しており、ここに記載されている手順に従って分析を自分で構築できます。
 
-開始する前に、について理解しておく必要があります [コホート report builder.](../dev-reports/cohort-rpt-bldr.md)
+開始する前に、[ コホートレポートビルダー ](../dev-reports/cohort-rpt-bldr.md) を熟知しておく必要があります。
 
 ## 計算される列
 
-に作成する列 **注文件数** を使用している場合はテーブル **30 日間の月**:
+**30 日の月** を使用する場合に、**orders** テーブルに作成する列：
 
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
 * 
   [!UICONTROL Column equation]: `CALCULATION`
-* [!UICONTROL Column input]:A = `Seconds between customer's first order date and this order`
+* [!UICONTROL Column input]: A = `Seconds between customer's first order date and this order`
 * 
   [!UICONTROL Datatype]: `Integer`
 * **定義：**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
@@ -38,12 +38,12 @@ ht-degree: 0%
 * [!UICONTROL Column type]: `Same Table`
 * 
   [!UICONTROL Column equation]: `CALCULATION`
-* [!UICONTROL Column input]:A = `created_at`
+* [!UICONTROL Column input]: A = `created_at`
 * 
   [!UICONTROL Datatype]: `Integer`
-* 定義： `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
+* 定義：`case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
-に作成する列 **`orders`** を使用している場合はテーブル **カレンダー** 月数：
+**カレンダー** 月を使用している場合、**`orders`** テーブルに作成する列：
 
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 * 
   [!UICONTROL Datatype]: `Integer`
-* 定義： `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
+* 定義：`case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
 * [!UICONTROL Column name]: `Calendar months since order`
 * [!UICONTROL Column type]: `Same Table`
@@ -70,10 +70,10 @@ ht-degree: 0%
 * [!UICONTROL Column type]: `Same Table`
 * 
   [!UICONTROL Column equation]: `CALCULATION`
-* [!UICONTROL Column input]:A = `created_at`
+* [!UICONTROL Column input]: A = `created_at`
 * 
   [!UICONTROL Datatype]: `String`
-* 定義： `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
+* 定義：`case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
 ## 指標
 
@@ -82,25 +82,25 @@ ht-degree: 0%
 作成する指標
 
 * **初回注文日別のユニーク顧客**
-   * ゲストによる注文を有効にする場合は、 `customer_email`
+   * ゲストによる注文を有効にする場合は、`customer_email` を使用します
 
-* が含まれる **`orders`** テーブル
-* このメトリックは、 **個別の値をカウント**
-* 日 **`customer_id`** 列
-* による並べ替え **`Customer's first order date`** timestamp
+* **`orders`** のテーブル内
+* この指標は、「個別値のカウント **を実行します**
+* **`customer_id`** 列
+* **`Customer's first order date`** タイムスタンプで並べ替え
 
 >[!NOTE]
 >
->必ずしてください [すべての新規列をディメンションとして指標に追加](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に、
+>新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## レポート
 
 ### レポートの手順
 
-**顧客ごとの月別収益の予測**
+**顧客ごとの月別収益予測**
 
 * 指標 `A`: `Revenue (hide)`
-   * `Calendar months between first order and this order` `<= X` （X に妥当な数を選択します。例：24 か月）
+   * `Calendar months between first order and this order` `<= X` （X に適した数値を選択してください。例：24 か月）
    * `Is in current month?` = `No`
 
 * 
@@ -128,10 +128,10 @@ ht-degree: 0%
 その他のグラフの詳細
 
 * [!UICONTROL Time period]: `All time`
-* 時間間隔： `None`
-* [!UICONTROL Group by]: `Calendar months between first order and this order`  – すべてを表示
-* 変更： `group by` の場合 `All time customers` の横にある鉛筆アイコンを使用して、指標を「独立」に設定します。 `group by`
-* を編集する `Show top/bottom` フィールドを次に示します。
+* 時間間隔：`None`
+* [!UICONTROL Group by]: `Calendar months between first order and this order` – すべてを表示
+* `group by` の横にある鉛筆アイコンを使用して、`All time customers` 指標の `group by` を「独立」に変更します
+* `Show top/bottom` のフィールドを次のように編集します。
    * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
    * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
    * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
@@ -154,4 +154,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、ページ上部の画像のようになります。
 
-分析中に質問が発生した場合、または単にプロフェッショナルサービスチームに依頼したい場合、 [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

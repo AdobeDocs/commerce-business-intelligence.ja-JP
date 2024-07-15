@@ -45,7 +45,7 @@ ht-degree: 0%
       * A/B
 * **[!UICONTROL All-time revenue by source]**
    * 指標 – 売上高
-   * 顧客のでグループ化 `utm_source`
+   * 顧客の `utm_source` でグループ化
 * **[!UICONTROL Revenue from top 10 products]**
    * 指標 – 製品売上高
       * グラフを非表示
@@ -59,20 +59,20 @@ ht-degree: 0%
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * セッション
 
-（を使用） [!DNL Google Analytics] 統合により、次のレポートを含めることができます。
+[!DNL Google Analytics] 統合を使用すると、次の項目に関するレポートを含めることができます。
 
 * サイト訪問数
 * コンバージョン率
 
-（を使用） [Commerce Data Enrichment サービス](https://business.adobe.com/products/magento/magento-commerce.html)に関するレポートを追加できます。
+[Commerce データエンリッチメントサービス ](https://business.adobe.com/products/magento/magento-commerce.html) を使用すると、次の項目に関するレポートを含めることができます。
 
 * 州/地域、年齢、性別ごとのユニーク顧客。
 
 ## その他のヒント
 
-* 明確かつ簡潔に使用する [命名規則](../best-practices/naming-elements.md)
+* 明確で簡潔な [ 命名規則 ](../best-practices/naming-elements.md) を使用します
 * 投資家ユーザーとのダッシュボードの共有
-* または、経由で送信 **[!UICONTROL Automated email summary]**（../data-user/export-data/email-summaries.md）
+* または、**[!UICONTROL Automated email summary]** （../data-user/export-data/email-summaries.md）経由で送信します
 * 1 つのダッシュボードのみを作成します。 これにより、コンテンツのメンテナンスが容易になり、投資家が何を見ているかが正確にわかります。
 
 レポートを思慮深く整理し、詳細に注意を払います。 完了すると、ダッシュボードは次のようになります。

@@ -17,31 +17,31 @@ ht-degree: 0%
 * [通常の更新と強制更新の違いは何ですか？](#regularforcedupdates)
 * [更新サイクルに時間がかかるのはなぜですか。](#updatecycletime)
 * [更新サイクルが完了したときに通知を受け取ることはできますか？](#notifyupdate)
-* [の理由 [!DNL Google ECommerce] データがデータベースと異なる場合](#ecommdatabase)
+* [データがデ  [!DNL Google ECommerce]  タベースと異なる理由](#ecommdatabase)
 * [データの不一致をトラブルシューティングするにはどうすればよいですか？](#datadiscrepancy)
 
 ## データが変更された理由 {#datachange}
 
-新しいデータがData Warehouseに同期されるので、グラフの値は 1 日を通して変化する可能性があります。 また、既存のデータ列の値は、次の理由で変更される可能性があります。 [再チェック](../data-warehouse-mgr/cfg-data-rechecks.md). 再チェックは、注文ステータスの移動など、データ列内の変更された値を探すプロセスです `open` 対象： `shipped`.
+新しいデータがData Warehouseに同期されるので、グラフの値は 1 日を通して変化する可能性があります。 また、既存のデータ列の値は、[ 再確認 ](../data-warehouse-mgr/cfg-data-rechecks.md) によって変更される場合があります。 再チェックは、注文ステータスが `open` から `shipped` に移動するなど、データ列で変更された値を探すプロセスです。
 
-いくつかの異なる方法があります [更新サイクルのステータスを確認するには](../../best-practices/check-update-cycle.md)ユーザーの権限設定に応じて調整します。
+ユーザーの権限設定に応じて [ 更新サイクルのステータスを確認する ](../../best-practices/check-update-cycle.md) 方法はいくつかあります。
 
 ## 通常の更新と強制更新の違いは何ですか？ {#regularforcedupdates}
 
-定期的なアップデートは次のとおりです **スケジュール** 強制更新中のプロセス **手動プロセスの開始**. ブラックアウト時間（または次の条件を満たす期間）がある場合 [!DNL Commerce Intelligence] はデータを更新しないでください）。更新を強制すると、ブラックアウト期間の制限を考慮しないサイクルが開始されます。
+定期的な更新は **スケジュールされた** プロセスですが、強制更新は **ユーザーによって開始された手動のプロセス** です。 ブラックアウト時間（またはデータを更新 [!DNL Commerce Intelligence] ない期間）がある場合、更新を強制すると、ブラックアウト期間の制限を考慮しないサイクルが開始されます。
 
 ## 更新サイクルに時間がかかるのはなぜですか。 {#updatecycletime}
 
-既に更新時間が長くなる原因には数多くの要因があります。 特定 [レプリケーション方法](../data-warehouse-mgr/cfg-replication-methods.md), [再検査頻度の増加](../data-warehouse-mgr/cfg-data-rechecks.md)、およびダッシュボードとグラフの数は、ほんの一部です。 Adobeのお勧め [一部の設定の再設定](../../best-practices/reduce-update-cycle-time.md) および [分析のためのデータベースの最適化](../../best-practices/opt-db-analysis.md) 更新時間を短縮する。
+既に更新時間が長くなる原因には数多くの要因があります。 一部の [ レプリケーション方法 ](../data-warehouse-mgr/cfg-replication-methods.md)、[ より高い再チェック頻度 ](../data-warehouse-mgr/cfg-data-rechecks.md)、ダッシュボードとグラフの数は、ほんの一部に過ぎません。 更新時間を短縮するには、[ 一部の設定を再設定する ](../../best-practices/reduce-update-cycle-time.md) および [Adobe用にデータベースを最適化する ](../../best-practices/opt-db-analysis.md) をお勧めします。
 
 ## 更新サイクルが完了したときに通知を受け取ることはできますか？ {#notifyupdate}
 
-更新中の場合は、にリンクがあります `Connections` サイクルが完了した後にメール通知をリクエストするために使用できるページ。
+更新が進行中の場合は、サイクルが完了した後にメール通知をリクエストするために使用できるリンクが `Connections` ページに表示されます。
 
-## の理由[!DNL Google ECommerce]データがデータベースと異なる場合 {#ecommdatabase}
+## データがデ [!DNL Google ECommerce] タベースと異なる理由 {#ecommdatabase}
 
-間の不一致 [!DNL Google Analytics] また、データベースは様々な理由で発生する可能性があります。 トラッキングが適切に有効になっていない場合や、匿名ユーザーがアクセスしている場合、クリックイベントが正しく機能していない場合などは、ほんの一例です。 売上高と注文件数が適切に表示されない場合、 [このトピックを参照してください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 問題を診断する。
+[!DNL Google Analytics] とデータベースの間で不一致が発生する場合は、様々な理由があります。 トラッキングが適切に有効になっていない場合や、匿名ユーザーがアクセスしている場合、クリックイベントが正しく機能していない場合などは、ほんの一例です。 売上高と注文が適切に表示されない場合は、問題を診断するために [ このトピックを参照 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)。
 
 ## データの不一致をトラブルシューティングするにはどうすればよいですか？ {#datadiscrepancy}
 
-Adobeは、一貫性のないデータを見ることがフラストレーションにつながる可能性があることを認識しています。 を使用してみてください [データ不一致チェックリスト](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) または [データ書き出しのチュートリアル](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) 問題を診断します。 まだ足がつまずいているなら、 [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Adobeは、一貫性のないデータを見ることがフラストレーションにつながる可能性があることを認識しています。 [ データの相違チェックリスト ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) または [ データの書き出しチュートリアル ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) を使用して、問題を診断してみてください。 まだ問題が解決しない場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

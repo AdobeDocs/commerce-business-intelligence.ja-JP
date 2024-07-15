@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # 指標の操作テーブルの変更
 
-場合によっては、指標が操作の実行に使用するデータテーブルを変更することもできます。 例えば、新しいユーザーテーブルがある場合、ユーザー関連の指標をから移行するとします  `Users\_Old` を使用するテーブル `Users\_New` 代わりにテーブルを使用します。
+場合によっては、指標が操作の実行に使用するデータテーブルを変更することもできます。 例えば、新しいユーザーテーブルがある場合、ユーザー関連の指標を `Users\_Old` テーブルから移行して、代わりに `Users\_New` テーブルを使用するとします。
 
-1. に移動 **[!UICONTROL Data]** > **[!UICONTROL Metrics]**
-1. クリック **[!UICONTROL Edit]** を切り替える指標の横 `operational` テーブル。
-1. エディターで、 **[!UICONTROL Change]**.
+1. **[!UICONTROL Data]**/**[!UICONTROL Metrics]** に移動します。
+1. `operational` テーブルを切り替える指標の横にある「**[!UICONTROL Edit]**」をクリックします。
+1. エディターで、「**[!UICONTROL Change]**」をクリックします。
 
    ![](../../assets/change-metrics-1.png)
 1. この指標のベースとする新しいテーブルを選択します。
-1. 既存のデータディメンションを、新しいテーブル内の対応するディメンションに一致させます。 例えば、という列があるとします。 `User's registration date`新しいテーブルのどの列に同じ日付データを記録するかを選択するだけです。 （新しいテーブルに一致する列がない場合は、次の手順を参照）
+1. 既存のデータディメンションを、新しいテーブル内の対応するディメンションに一致させます。 例えば、`User's registration date` という列がある場合、新しいテーブルのどの列に同じ日付データが記録されているかを選択するだけです。 （新しいテーブルに一致する列がない場合は、次の手順を参照）
 
    ![](../../assets/change-metrics-2.png)
 
-1. 新しいテーブルに一致する列がない場合、次のいずれかを実行できます **データテーブルでの作成** または [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 計算列または計算次元の作成者 [!DNL Commerce Intelligence]. 以下の手順でも可能です **指標からのディメンションの削除**. 不要になったディメンションを削除するには、指標のエディターに戻り、削除するディメンションを選択します `Dimensions`.
+1. 新しいテーブルに一致する列がない場合は、**データ テーブル内で作成する** か、[!DNL Commerce Intelligence] が作成した計算列またはディメンションである場合は [ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ことができます。 また、**指標からディメンションを削除する** こともできます。 不要になったディメンションを削除するには、指標のエディターに戻り、削除するディメンションを `Dimensions` で選択します。
 
    ![](../../assets/change-metrics-3.png)

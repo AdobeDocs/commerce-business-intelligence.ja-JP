@@ -1,6 +1,6 @@
 ---
 title: Bing Ad 費用データのインポート
-description: Bing 広告費用データのへの読み込みを学ぶ [!DNL Commerce Intelligence] 分析用。
+description: 分析用に Bing 広告費用データをに読み込む方法  [!DNL Commerce Intelligence]  説明します。
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 ---
 
-# インポート [!DNL Bing] データ
+# [!DNL Bing] データの読み込み
 
-インポートする [!DNL Bing] 広告費用データの対象 [!DNL Adobe Commerce Intelligence] 分析の場合、次の場所からデータを書き出すだけです。 [!DNL Bing Ads Editor] in a `.csv` の形式をにアップロードします [!DNL Commerce Intelligence] 以下の手順に従います。
+広告費用データ [!DNL Bing] 分析用に [!DNL Adobe Commerce Intelligence] に読み込むには、以下の手順に従って、[!DNL Bing Ads Editor] から `.csv` 形式でデータを書き出し、[!DNL Commerce Intelligence] にアップロードするだけです。
 
 ## [!DNL Bing Ads Editor]
 
-をエクスポートするには [!DNL Bing Ads] データです。次が必要です [!DNL Bing Ads Editor] インストールされています。 次の項目を無料でダウンロードできます。 [[!DNL Bing Ads Editor]](https://about.ads.microsoft.com/en-us/solutions/tools/editor).
+[!DNL Bing Ads] データを書き出すには、[!DNL Bing Ads Editor] がインストールされている必要があります。 あなたは [[!DNL Bing Ads Editor]](https://about.ads.microsoft.com/en-us/solutions/tools/editor) の無料ダウンロードを見つけることができます。
 
-## [!DNL Bing Ads] データ書き出し
+## [!DNL Bing Ads] データの書き出し
 
-1. が含まれる `Browser` 次のパネル [!DNL Bing Ads Editor]エクスポートするキャンペーンまたは広告グループを右クリックし、 **[!UICONTROL Export]**.
-1. が含まれる `Export` ダイアログ ボックスで、 **[!UICONTROL Export]**.
-1. が含まれる `Save As` ダイアログ ボックスで、書き出しファイルを保存するフォルダをクリックします。
-1. が含まれる `File name` ボックスに、ファイルの書き出しの名前を選択します。
-1. クリック **[!UICONTROL Save]**.
-1. ファイルのダウンロード後、  [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) に代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。
+1. [!DNL Bing Ads Editor] の `Browser` ウィンドウ枠で、エクスポートするキャンペーンまたは広告グループを右クリックし、「**[!UICONTROL Export]**」をクリックします。
+1. `Export` ダイアログボックスで、「**[!UICONTROL Export]**」をクリックします。
+1. `Save As` ダイアログボックスで、書き出しファイルを保存するフォルダーをクリックします。
+1. `File name` ボックスで、ファイルの書き出しの名前を選択します。
+1. 「**[!UICONTROL Save]**」をクリックします。
+1. ファイルをダウンロードしたら、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) し、ユーザーに代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。

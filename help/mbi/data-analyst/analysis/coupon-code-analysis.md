@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
-この分析に含まれる内容 [高度な計算列](../data-warehouse-mgr/adv-calc-columns.md).
+この分析には [ 高度な計算列 ](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
 ## はじめに
 
-最初の手順として、次の列がData Warehouseに同期されていることを確認する必要があります。 存在しない場合は、に移動して、追跡に進みます。 `Manage Data` > `Data Warehouse`。次の項目を同期しています。
+最初の手順として、次の列がData Warehouseに同期されていることを確認する必要があります。 一致しない場合は、`Manage Data`/`Data Warehouse` に移動し、次の項目を同期して、問題を追跡します。
 
 * **sales\_flat\_order** テーブル
 * **coupon\_code**
@@ -32,16 +32,16 @@ ht-degree: 0%
 ゲスト注文ポリシーに関係なく作成する列：
 
 * `sales\_flat\_order` テーブル
-* **注文にクーポンが適用されていますか？**
+* **クーポンの適用順序**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
 
    * 
      [!UICONTROL データ型]: `String`
-   * [!UICONTROL Calculation]：の場合 `A` が null の場合、 `No coupon` else `Coupon` 終了
+   * [!UICONTROL Calculation]:`A` が null の場合は終了 `No coupon`、それ以外の場合 `Coupon` 終了
 
-* **\[INPUT\] customer\_id - クーポン コード**
+* **\[INPUT\] customer\_id - クーポンコード**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `customer\_id`
@@ -50,19 +50,19 @@ ht-degree: 0%
    * [!UICONTROL Datatype] 文字列
    * [!UICONTROL Calculation]: `concat(A,' - ',B)`
 
-* **このクーポンを使用した注文数**
+* **このクーポンの注文数**
    * [!UICONTROL Column type]: `Same Table => EVENT\_NUMBER`
    * イベント所有者：`INPUT customer_id - coupon code`
-   * イベントのランク： `created\_at`
+   * イベントのランク：`created\_at`
    * [!UICONTROL Filters]: `Orders we count` フィルターセット
 
 ゲストによる注文がサポートされていない場合に作成する追加列：
 
 * `customer\_entity` テーブル
-   * **顧客の最初の注文にクーポンが含まれていますか？ （クーポン/クーポンなし）**
+   * **顧客の最初の注文にはクーポンが含まれていますか？ （クーポン/クーポンなし）**
    * [!UICONTROL Column type]: `Many to One => MAX`
    * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
-   * を選択 [!UICONTROL column]: `Order has coupon applied? (Coupon/No coupon)`
+   * [!UICONTROL column] を選択：`Order has coupon applied? (Coupon/No coupon)`
    * [!UICONTROL Filters]:
       * `A`: `Orders we count`
       * `B`: `Customer's order number = 1`
@@ -70,26 +70,26 @@ ht-degree: 0%
    * **顧客の初回注文クーポン**
       * [!UICONTROL Column type]: `Many to One => MAX`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
-      * を選択 [!UICONTROL column]: `coupon\_code`
+      * [!UICONTROL column] を選択：`coupon\_code`
       * [!UICONTROL Filter]:
          * `A`: `Orders we count`
          * `B`: `Customer's order number = 1`
 
-   * **顧客の生涯使用クーポン数**
+   * **顧客が使用したクーポンのライフタイムナンバー**
       * [!UICONTROL Column type]: `Many to One => COUNT`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
       * [!UICONTROL Filter]:
          * `A`: `Orders we count`
          * `B`: `Order has coupon applied? (Coupon/No coupon) = Coupon`
 
-   * **クーポン取得顧客または非クーポン取得顧客**
+   * **クーポン取得顧客又は非クーポン取得顧客**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
       * 
         [!UICONTROL データ型]: `String`
-      * [!UICONTROL Calculation]: **ケース A=&#39;クーポン&#39; then &#39;クーポン取得顧客&#39; else &#39;クーポン取得顧客&#39;終了**
+      * [!UICONTROL Calculation]: **A=&#39;クーポン&#39; then &#39;クーポン取得顧客&#39; else &#39;クーポン取得顧客&#39;終了**
 
    * **顧客のクーポン付き注文の割合**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
@@ -99,7 +99,7 @@ ht-degree: 0%
 
       * 
         [!UICONTROL データ型]: `Decimal`
-      * [!UICONTROL Calculation]: **a が null または B が null または B=0 の場合、null または A/B が終了した場合**
+      * [!UICONTROL Calculation]: **A が null または B が null または B=0 の場合、null または A/B が終了した場合**
 
    * **顧客のクーポン使用状況**
       * [!UICONTROL Column type]: `Same Table => Calculation`
@@ -108,35 +108,35 @@ ht-degree: 0%
 
       * 
         [!UICONTROL データ型]: `String`
-      * [!UICONTROL Calculation]: **a が null で、次に null の場合 A=0 で「クーポンを使用しない」場合 A&lt;0.5、次に「ほぼ完全な価格」 A=0.5、次に「50/50」 A>0.5、次に「クーポンのみ」、次に「ほぼ完全なクーポン」、それ以外は「未定義」の場合**
+      * [!UICONTROL Calculation]: **A が null で、A=0 で「クーポンを使用しない」場合は null、A&lt;0.5、A=0.5、A=1 で「クーポンのみ」の場合は「50/50」、A>0.5、Most coupon」の場合は「未定義」の場合は「クーポンを使用しない」**
 
 * `sales\_flat\_order` テーブル
    * **顧客の最初の注文にクーポンが含まれていますか？ （クーポン/クーポンなし）**
       * [!UICONTROL Column type]: `One to Many => JOINED\_COLUMN`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
-      * を選択 [!UICONTROL column]: `Customer's first order included a coupon? (Coupon/No coupon)`
+      * [!UICONTROL column] を選択：`Customer's first order included a coupon? (Coupon/No coupon)`
 ^
 
    * **顧客の初回注文クーポン**
       * [!UICONTROL Column type]: `One to Many => JOINED\_COLUMN`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
-      * を選択 [!UICONTROL column]: `Customer's first order coupon?`
+      * [!UICONTROL column] を選択：`Customer's first order coupon?`
 
 ゲストによる注文がサポートされていない場合に作成する追加列：
 
 * `sales\_flat\_order` テーブル
-   * **顧客の最初の注文にクーポンが含まれていますか？ （クーポン/クーポンなし）** **-** アナリストが\[ クーポン分析\] チケットの一部として作成しました
-   * **顧客の初回注文クーポン**{::}**-** アナリストが\[ クーポン分析\] チケットの一部として作成しました
+   * **顧客の最初の注文にはクーポンが含まれていますか？ （クーポン/クーポンなし）** アナリストが\[COUPON ANALYSIS\] チケットの一部として作成した **-**
+   * **顧客の最初の注文のクーポン**{::}**-** が、\[ クーポン分析\] チケットの一部としてアナリストによって作成されました
 
-* **顧客の生涯使用クーポン数**{::}**-** アナリストが\[ クーポン分析\] チケットの一部として作成しました
-* **クーポン取得顧客または非クーポン取得顧客**
+* **アナリストがお客様の\[ クーポン分析\] チケットの一部として作成した、お客様が使用したクーポンのライフタイム数**{::}**-**
+* **クーポン取得顧客又は非クーポン取得顧客**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
    * 
      [!UICONTROL データ型]: `String`
-   * [!UICONTROL Calculation]: **ケース A=&#39;クーポン&#39; then &#39;クーポン取得顧客&#39; else &#39;クーポン取得顧客&#39;終了**
+   * [!UICONTROL Calculation]: **A=&#39;クーポン&#39; then &#39;クーポン取得顧客&#39; else &#39;クーポン取得顧客&#39;終了**
 
 * **顧客のクーポン付き注文の割合**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
@@ -146,7 +146,7 @@ ht-degree: 0%
 
    * 
      [!UICONTROL データ型]: `Decimal`
-   * [!UICONTROL Calculation]: **a が null または B が null または B=0 の場合、null または A/B が終了した場合**
+   * [!UICONTROL Calculation]: **A が null または B が null または B=0 の場合、null または A/B が終了した場合**
 
 * **顧客のクーポン使用状況**
    * [!UICONTROL Column type]: `Same Table => Calculation`
@@ -155,37 +155,37 @@ ht-degree: 0%
 
    * 
      [!UICONTROL データ型]: `String`
-   * [!UICONTROL Calculation]: **a が null で、次に null の場合 A=0 で「クーポンを使用しない」場合 A&lt;0.5、次に「ほぼ完全な価格」 A=0.5、次に「50/50」 A>0.5、次に「クーポンのみ」、次に「ほぼ完全なクーポン」、それ以外は「未定義」の場合**
+   * [!UICONTROL Calculation]: **A が null で、A=0 で「クーポンを使用しない」場合は null、A&lt;0.5、A=0.5、A=1 で「クーポンのみ」の場合は「50/50」、A>0.5、Most coupon」の場合は「未定義」の場合は「クーポンを使用しない」**
 
 ## 指標
 
-* **クーポン割引金額**
+* **クーポン割引額**
    * `Orders we count`
    * `Order has coupon applied? (Coupon/No coupon)= Coupon`
 
-* が含まれる `sales\_flat\_order` テーブル
-* このメトリックは、 **合計**
-* 日 `discount\_amount` 列
-* による並べ替え `created\_at` timestamp
+* `sales\_flat\_order` のテーブル内
+* このメトリックは **Sum** を実行します。
+* `discount\_amount` 列
+* `created\_at` タイムスタンプで並べ替え
 * [!UICONTROL Filter]:
 
-* **使用されたクーポンの数**
+* **使用クーポン数**
    * `Orders we count`
    * `Order has coupon applied? (Coupon/No coupon)= Coupon`
 
-* が含まれる `sales\_flat\_order` テーブル
-* このメトリックは、 **カウント**
-* 日 `entity\_id` 列
-* による並べ替え `created\_at` timestamp
+* `sales\_flat\_order` のテーブル内
+* このメトリックは、**カウント** を実行します。
+* `entity\_id` 列
+* `created\_at` タイムスタンプで並べ替え
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->必ずしてください [すべての新規列をディメンションとして指標に追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に、
+>新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## レポート
 
-* **クーポン取得済およびクーポン未取得顧客の割合（%）**
+* クーポン取得済み顧客とクーポン未取得顧客の **%**
    * [!UICONTROL Metric]: `New customers`
 
 * 指標 `A`: `Coupon acquisitions`
@@ -196,7 +196,7 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフ タイプ]: `Pie`
 
-* **クーポンで取得された顧客とクーポンで取得されなかった顧客の数**
+* **クーポンで取得した顧客と取得していない顧客の数**
    * [!UICONTROL Metric]: `New customers`
 
 * 指標 A: `Coupon acquisitions`
@@ -257,7 +257,7 @@ ht-degree: 0%
      [!UICONTROL 数式]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
-   * 統計的に有意な数を次から選択 `Customer's by lifetime orders` グラフ。 グラフを見る際の良いルールは、バケットに 30 以上の顧客がある注文番号を探すことです。 データセットによっては、この値が大きくなる場合があるので、自由に 1～10 を加算してください。
+   * グラフから統計的に有意な数 `Customer's by lifetime orders` 選択します。 グラフを見る際の良いルールは、バケットに 30 以上の顧客がある注文番号を探すことです。 データセットによっては、この値が大きくなる場合があるので、自由に 1～10 を加算してください。
 
 * 指標 `A`: `Number of orders`
 * 指標 `B`: `Number of non last orders`
@@ -268,7 +268,7 @@ ht-degree: 0%
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
 
-* **繰り返し注文の可能性：非クーポン取得**
+* **リピート注文確率：非クーポン取得**
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 顧客の最初の注文にクーポン （クーポン/クーポンなし） = クーポンなし
@@ -282,7 +282,7 @@ ht-degree: 0%
      [!UICONTROL 数式]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
-   * 統計的に有意な数を次から選択 `Customer's by lifetime orders` グラフまたは 1-5。
+   * グラフまたは 1～5 から統計的 `Customer's by lifetime orders` 有意な数を選択します。
 
 * 指標 `A`: `Number of orders`
 * 指標 `B`: `Number of non last orders`
@@ -293,7 +293,7 @@ ht-degree: 0%
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
 
-* **クーポン取得顧客のクーポン使用率（リピート注文）**
+* **クーポン取得顧客のクーポン利用率（リピート注文）**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
       * クーポン取得顧客または非クーポン取得顧客= クーポン取得
@@ -323,7 +323,7 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフ タイプ]: `Table` (ビジュアライゼーションを向上させるために、このテーブルを転置できます)
 
-* **非クーポン取得顧客のクーポン使用率（リピート注文）**
+* **クーポン未獲得顧客のクーポン使用率（リピート注文）**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
       * クーポン取得顧客または非クーポン取得顧客=非クーポン取得
@@ -353,7 +353,7 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフ タイプ]: `Table` (ビジュアライゼーションを向上させるために、このテーブルを転置できます)
 
-* **クーポンの使用状況の詳細（初回の注文）**
+* **クーポン使用状況の詳細（初回注文）**
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * 顧客の注文番号= 1
@@ -404,7 +404,7 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフ タイプ]: `Scalar`
 
-* **クーポン付き注文からの純売上高（常に）**
+* **クーポン付き注文による純売上高（常に）**
    * 
      [!UICONTROL 指標]: `Revenue`
    * [!UICONTROL Filter]:
@@ -417,7 +417,7 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフ タイプ]: `Scalar`
 
-* **クーポンからの割引（常に）**
+* **割引券による割引（常時）**
    * [!UICONTROL Metric]: `Number of coupons used`
 
 * 指標 `A`: `Coupon discount amount`
@@ -427,7 +427,7 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフ タイプ]: `Scalar`
 
-* **クーポンの有無による注文の数**
+* **クーポンの有無による注文数**
    * [!UICONTROL Metric]: `Number of orders`
 
 * 指標 `A`: `Number of orders`
@@ -437,7 +437,7 @@ ht-degree: 0%
 * [!UICONTROL Group by]: `Order has coupon applied? (Coupon/No coupon)`
 * [!UICONTROL Chart type]: `Stacked column`
 
-* **リピートユーザー間のクーポン使用**
+* **リピートユーザー間のクーポン使用状況**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
       * 顧客の生涯注文数 > 1
@@ -450,7 +450,7 @@ ht-degree: 0%
 * 
   [!UICONTROL グラフ タイプ]: `Pie`
 
-* **クーポン使用状況の詳細**
+* **クーポンの使用状況の詳細**
    * [!UICONTROL Metric]: `Number of orders with coupon`
    * [!UICONTROL Filter]:
       * このクーポンを使用した注文数 > 10
@@ -464,11 +464,11 @@ ht-degree: 0%
    * [!UICONTROL Filter]:
       * このクーポンを使用した注文数 > 10
 
-   * [!UICONTROL Formula]: `B-C` （if `C` が負の数）; `B+C` （if `C` 正の数）
+   * [!UICONTROL Formula]: `B-C` （`C` が負の場合）; `B+C` （`C` が正の場合）
    * 
      [!UICONTROL 形式]: `Currency`
 
-   * [!UICONTROL Formula]: `C/(B-C)` （if `C` が負の数）; `C/(B+C)` （if `C` 正の数）
+   * [!UICONTROL Formula]: `C/(B-C)` （`C` が負の場合）; `C/(B+C)` （`C` が正の場合）
    * 
      [!UICONTROL 形式]: `Percentage`
 
@@ -506,10 +506,10 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、ページ上部の画像のようになります。
 
-分析中に質問が発生した場合、または単にプロフェッショナルサービスチームに依頼したい場合、 [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.7 以降、のお客様は以下を使用できます **quote_coupons** および **sales_order_coupons** 顧客が複数のクーポンをどのように使用しているかに関するインサイトを取得するテーブル。
+>Adobe Commerce 2.4.7 の時点では、お客様は **quote_coupons** および **sales_order_coupons** テーブルを使用して、複数のクーポンの使用方法に関するインサイトを取得できます。
 
 ![](../../assets/multicoupon_relationship_tables.png)

@@ -11,58 +11,58 @@ ht-degree: 0%
 
 ---
 
-# 接続 [!DNL Facebook Ads]
+# Connect [!DNL Facebook Ads]
 
 >[!NOTE]
 >
->が必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
 ![](../../../assets/facebook-ads-logo.png)
 
-調査を行い、広告を作成し、キャンペーンを次の日に開始しました [!DNL Facebook]. 次に、広告費用データを分析し、お金が効果的に費やされているかどうかを確認します。 広告費用データを使用すると、次のことができます [広告コストと顧客生涯価値（CLV）を組み合わせて、キャンペーン ROI を測定します](../../../data-analyst/analysis/roi-ad-camp.md) キャンペーンから取得したユーザーの。
+調査を行い、広告を作成し、[!DNL Facebook] でキャンペーンを開始しました。 次に、広告費用データを分析し、お金が効果的に費やされているかどうかを確認します。 広告費用データを使用すると、広告コストとキャンペーンから取得したユーザーの顧客生涯価値（CLV）を組み合わせて [ キャンペーン ROI を測定 ](../../../data-analyst/analysis/roi-ad-camp.md) できます。
 
-の接続 [!DNL Facebook Ad] データ送信先 [!DNL Commerce Intelligence] は、簡単な 3 ステップのプロセスです。
+[!DNL Facebook Ad] データを [!DNL Commerce Intelligence] に接続する手順は、次の 3 つです。
 
-1. [追加 [!DNL Facebook] におけるデータソースとして [!DNL Commerce Intelligence]](#stepone)
-1. [許可 [!DNL Commerce Intelligence] アクセス権限 [!DNL Facebook Ads] データ](#steptwo)
-1. [を選択 [!DNL Facebook Ads] データを取り込むためのアカウント](#stepthree)
+1. [ [!DNL Commerce Intelligence] [!DNL Facebook]  データソースとして追加](#stepone)
+1. [デ  [!DNL Commerce Intelligence]  タへのアクセス  [!DNL Facebook Ads]  許可](#steptwo)
+1. [データを取り込むための Select [!DNL Facebook Ads] Accounts](#stepthree)
 
-## 追加 [!DNL Facebook] におけるデータソースとして [!DNL Commerce Intelligence] {#stepone}
+## [!DNL Facebook] を [!DNL Commerce Intelligence] のデータソースとして追加する {#stepone}
 
-1. を追加します [!DNL Facebook] との統合 [!DNL Commerce Intelligence]アカウントで、に移動します `Connections` ページの下 **[!UICONTROL Manage Data** > **Integrations]**.
-1. クリック **[!UICONTROL Add Integration]**&#x200B;右側にあります。
-1. 「」をクリックします [!DNL Facebook] アイコン。 次が表示されます [!DNL Facebook] 認証ページ。
-1. クリック **[!UICONTROL Authorize]**.
+1. [!DNL Facebook] 統合を [!DNL Commerce Intelligence] アカウントに追加するには、「**[!UICONTROL Manage Data** > **Integrations]**」の下の `Connections` ページに移動します。
+1. 右側にある「**[!UICONTROL Add Integration]**」をクリックします。
+1. [!DNL Facebook] アイコンをクリックします。 [!DNL Facebook] 認証ページが表示されます。
+1. 「**[!UICONTROL Authorize]**」をクリックします。
 
-## 許可 [!DNL Commerce Intelligence] アクセス権限 [!DNL Facebook Ads] データ {#steptwo}
+## [!DNL Facebook Ads] データへの [!DNL Commerce Intelligence] アクセスを許可する {#steptwo}
 
-クリック後 **[!DNL Facebook Authorize]**&#x200B;小さなポップアップウィンドウが表示されます。
+**[!DNL Facebook Authorize]** をクリックすると、小さなポップアップウィンドウが表示されます。
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-次の一連の手順に従って、 [!DNL Commerce Intelligence] パブリック プロファイルのデータにアクセスするには [!DNL Facebook Ads] と、関連する統計です。 クリック **[!UICONTROL OK]** この手順を繰り返します。
+一連の手順に従って、[!DNL Commerce Intelligence] が公開プロファイル、[!DNL Facebook Ads] および関連する統計からデータにアクセスできるようにします。 続行するには、次の手順の **[!UICONTROL OK]** をクリックします。
 
-## を選択 [!DNL Facebook Ads] データを取り込むためのアカウント {#stepthree}
+## データを取り込む [!DNL Facebook Ads] アカウントを選択 {#stepthree}
 
-1. 認証が完了すると、 [!DNL Facebook Ads] データの取り込み元のアカウント。 のチェックボックスをクリックして、目的のアカウントを選択します。 `Connect` 列。
+1. 認証が完了すると、データを取り込む [!DNL Facebook Ads] アカウントを選択するように求められます。 `Connect` 列のチェックボックスをクリックして、目的のアカウントを選択します。
 
    ![](../../../assets/Facebook_Ad_Accounts.png)
 
-1. クリック **[!UICONTROL Save Connections]**.
+1. 「**[!UICONTROL Save Connections]**」をクリックします。
 
-   接続に成功した場合、 *接続に成功しました。* メッセージがページの上部に表示されます。
+   接続に成功した場合、「接続に成功しました *メッセ* ジがページの上部に表示されます。
 
 ## 次の手順 {#next}
 
-を追跡していることを確認します [!DNL Facebook] のキャンペーン [!DNL Google Analytics]. これにより、 `utm\_campaign` のフィールド [!DNL Google Analytics] がユーザーに対して適切に設定されている [!DNL Facebook] キャンペーン。
+[!DNL Google Analytics] でキャンペーンをトラッキ [!DNL Facebook] グしていることを確認します。 これにより、[!DNL Google Analytics] の `utm\_campaign` フィールドが [!DNL Facebook] キャンペーン用に適切に設定されます。
 
 ## 関連
 
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
-* [を接続 [!DNL Google Adwords] アカウント](../integrations/google-ecommerce.md)
-* [以下を介した注文参照ソースの追跡 [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [アカウント  [!DNL Google Adwords]  接続](../integrations/google-ecommerce.md)
+* [ [!DNL Google eCommerce] を介した注文リファラルソースの追跡](../integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースを追跡](../../analysis/google-track-user-acq.md)
 * [データベース内のユーザーデバイス、ブラウザー、OS データの追跡](../../analysis/track-usr-dev-browser.md)
 * [最も価値のある獲得ソースとチャネルを見つける](../../analysis/most-value-source-channel.md)
 * [広告キャンペーンの ROI の向上](../../analysis/roi-ad-camp.md)
-* [方法 [!DNL Google Analytics] UTM アトリビューションの仕組み](../../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics] UTM アトリビューションの仕組み](../../analysis/utm-attributes.md)

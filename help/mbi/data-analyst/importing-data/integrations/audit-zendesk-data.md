@@ -13,23 +13,23 @@ ht-degree: 0%
 
 # Zendesk データの監査
 
-あなたの中に何か奇妙なものを見つけました [[!DNL Zendesk] データ](../integrations/exp-zendesk-data.md)? 問題を特定するには、データを調査する必要があります。 これを行うには、 [!DNL Zendesk] データをダウンロード可能なファイルに追加します。
+[[!DNL Zendesk] data](../integrations/exp-zendesk-data.md) に何か奇妙なものが見つかりましたか？ 問題を特定するには、データを調査する必要があります。 これを行うには、[!DNL Zendesk] データをダウンロード可能なファイルに書き出します。
 
 ## データの書き出しの有効化
 
-データの書き出しは現在、一部ので有効になっていません [!DNL Zendesk] アカウント。 この機能を有効にするには、 [サポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)、に言及しています [!DNL Zendesk] サブドメイン名。
+現在、すべての [!DNL Zendesk] アカウントでデータの書き出しが有効になっているわけではありません。 この機能を有効にするには、[!DNL Zendesk] のサブドメイン名を示す [ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) します。
 
 >[!NOTE]
 >
->のみ `Enterprise` および `Plus` 現在、計画はこの機能にアクセスできます。
+>現在、この機能にアクセスできるのは `Enterprise` と `Plus` のプランのみです。
 
-データの書き出しが有効になると、特定のメールドメインの管理者のみがユーザーの [!DNL Zendesk] アカウント。 通常、このメールドメインは、と同じメールドメインです。 [!DNL Zendesk]. アカウント所有者のメールドメインがデフォルトで使用されますが、必要に応じてドメインを変更できます。
+データの書き出しが有効になると、特定のメールドメインの管理者のみが [!DNL Zendesk] アカウントからデータを書き出すことができます。 通常、このメールドメインは、[!DNL Zendesk] ーザーと同じメールドメインです。 アカウント所有者のメールドメインがデフォルトで使用されますが、必要に応じてドメインを変更できます。
 
 ## ダウンロード可能ファイルへのエクスポート
 
-1. サイドバーの管理者アイコン（歯車ロゴ）をクリックし、次を選択します **[!UICONTROL Manage** > **Reports]**.
-1. 「」をクリックします **[!UICONTROL Export]** タブ。
-1. クリック **[!UICONTROL Request file]** 以下の画像に示すように、完全な XML 書き出しの横にあります。
+1. サイドバーの管理者アイコン（歯車ロゴ）をクリックし、「**[!UICONTROL Manage** > **Reports]**」を選択します。
+1. 「**[!UICONTROL Export]**」タブをクリックします。
+1. 次の画像に示すように、「完全な XML 書き出し」の横にある「**[!UICONTROL Request file]**」をクリックします。
 
    この時点でビルドが開始され、完了するとメールで通知されます。
    ![reports_export_new.png](../../../assets/reports_export_new.png)
@@ -38,6 +38,6 @@ ht-degree: 0%
 
    このダウンロードリンクは少なくとも 3 日間有効です。
 
-このプロセスは、現在の [!DNL Zendesk] アカウント（チケットデータ（コメント付き）、ユーザーデータ、アカウントデータを含む）。 この時点で、次のことができます [サポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （必ずこのファイルを添付してください。） したがって、データを詳しく見ることができます。 ファイルが大きすぎる場合は、 [!DNL Commerce Intelligence] 次を使用してチーム： [!DNL Dropbox] または [!DNL Google Drive].
+このプロセスは、チケットデータ（コメント付き）、ユーザーデータ、アカウントデータなど、現在の [!DNL Zendesk] アカウントに保存されているすべての情報を含む XML ファイルを構築します。 この時点で、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) できます（必ずこのファイルを添付してください）。 したがって、データを詳しく見ることができます。 ファイルが大きすぎる場合は、[!DNL Dropbox] または [!DNL Google Drive] を使用して [!DNL Commerce Intelligence] チームと共有します。
 
-詳しくは、 [!DNL Zendesk] ファイルのエクスポートについては、公式のを参照してください。 [[!DNL Zendesk] ドキュメントを書き出し](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).
+ファイルの書き出しについて詳 [!DNL Zendesk] くは、公式の [[!DNL Zendesk]  書き出しドキュメント ](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file) を参照してください。

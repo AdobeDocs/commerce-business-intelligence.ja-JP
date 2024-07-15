@@ -11,33 +11,33 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Google Analytics] および UTM アトリビューション
+# [!DNL Google Analytics] と UTM の属性
 
-～することが極めて重要である [ユーザー獲得ソースの追跡](../../data-analyst/analysis/google-track-user-acq.md) 対象： [最もパフォーマンスの高い広告キャンペーンを特定する](../../data-analyst/analysis/most-value-source-channel.md). このトピックでは、について説明します [!DNL Google Analytics] ソース属性プロセス。 つまり、どの情報がいつ記録されるか。
+[ 最もパフォーマンスの高い広告キャンペーンを特定 ](../../data-analyst/analysis/google-track-user-acq.md) するために、[ ユーザー獲得ソースを追跡 ](../../data-analyst/analysis/most-value-source-channel.md) することが重要です。 このトピックでは、[!DNL Google Analytics] ソースアトリビューションプロセスについて説明します。 つまり、どの情報がいつ記録されるか。
 
 ## アトリビューションとは
 
-`Attribution` は、特定のアクティビティのリファラルソースを指定することを目的としています。 これらのアクティビティは通常、マクロコンバージョンまたはマイクロコンバージョンで、マクロは次のようになります **購入**（ミクロは～のようなもの） **登録，メールのサインアップ，ブログコメント，** その他。
+`Attribution` れは、特定のアクティビティのリファラルソースを指定することです。 これらのアクティビティは通常、マクロコンバージョンまたはマイクロコンバージョン、マクロは **購入**、マイクロは **登録、メールのサインアップ、ブログコメント** などです。
 
 理想的には、コンバージョンイベントが発生するたびに、リファラルソースが記録されます。 しかし、ソースはどのように決定されますか？
 
-実際には、ユーザーは、マイクロコンバージョンやマクロコンバージョンをヒット/コミットする前に、多くのソースから来ることがよくあります。 例えば、オーガニック経由でサイトにアクセスしてから出発し、有料検索を使用して来て、出発してから、サイト自体に直接来る場合があります。 このソーストラッキング情報は、多くの場合、UTM パラメーターを介してサイトに提供されますが、より高度なシステムも存在します。 目的に応じて、次を重視します [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
+実際には、ユーザーは、マイクロコンバージョンやマクロコンバージョンをヒット/コミットする前に、多くのソースから来ることがよくあります。 例えば、オーガニック経由でサイトにアクセスしてから出発し、有料検索を使用して来て、出発してから、サイト自体に直接来る場合があります。 このソーストラッキング情報は、多くの場合、UTM パラメーターを介してサイトに提供されますが、より高度なシステムも存在します。 ここでは、[UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998) を重点的に説明します。
 
-## 方法 [!DNL Google Analytics] UTM パラメーターを使用したリファラルソースの属性
+## UTM パラメーター [!DNL Google Analytics] 使用したリファラルソースの属性方法
 
-UTM パラメーターが URL で指定されると、これらは解析されて、に配置されます。 [!DNL Google Analytics] [cookie](https://en.wikipedia.org/wiki/HTTP_cookie). Web サイトに次の情報がない場合： [!DNL Google Analytics]、UTM を使用しても意味はありません。 [!DNL Google Analytics] には、有効期間中に UTM で複数の URL にヒットしたユーザーを処理する方法のルールがあります（詳しくは後で説明します）。 Web サイトが UTM パラメーターを外部データベースに取り込むように設定されている場合、ミクロまたはマクロの変換が発生すると、 [!DNL Google Analytics] 変換時の cookie がデータベースにレプリケートされます。
+UTM パラメーターが URL で指定されると、これらは解析されて、[!DNL Google Analytics] [cookie](https://en.wikipedia.org/wiki/HTTP_cookie) に配置されます。 Web サイトに [!DNL Google Analytics] がない場合、UTM を使用しても意味はありません。 [!DNL Google Analytics] には、有効期間において UTM で複数の URL にヒットしたユーザーを処理する方法のルールがあります（詳しくは後で説明します）。 Web サイトが UTM パラメーターを外部データベースに取り込むように設定されている場合、ミクロまたはマクロの変換が発生すると、変換時の [!DNL Google Analytics] cookie 内の情報がデータベースにレプリケートされます。
 
 ## 最初のクリックと最後のクリック
 
 ### 最終クリック属性
 
-最終クリック数アトリビューションは、が採用する最も一般的なアトリビューションモデルです [!DNL Google Analytics]. この場合、 [!DNL Google Analytics] cookie は、コンバージョンイベントより前の最新のソースに対する UTM パラメーターを表します。これは [データベースに記録される](../../data-analyst/analysis/google-track-user-acq.md). この [!DNL Google Analytics] cookie は、ユーザーが新しい UTM パラメーターセットを含む新しい URL をクリックした場合にのみ、以前の UTM パラメーターを上書きします。
+ラストクリックアトリビューションは、[!DNL Google Analytics] で使用される最も一般的なアトリビューションモデルです。 この場合、[!DNL Google Analytics] Cookie は変換イベント前の最新のソースに対する UTM パラメーターを表し、これが [ データベースに記録 ](../../data-analyst/analysis/google-track-user-acq.md) されます。 [!DNL Google Analytics] cookie は、ユーザーが新しい UTM パラメーターのセットを含む新しい URL をクリックした場合にのみ、以前の UTM パラメーターを上書きします。
 
-例えば、最初にを介して web サイトを訪問するユーザーについて考えてみます [!DNL Google Analytics] *有料検索*&#x200B;を選択すると、から次の経路で戻ります *オーガニック検索*&#x200B;最後に、に戻ります *web サイトを直接参照* または *メールリンク* **UTM パラメーターなし** コンバージョンイベントの前。 この例では、 [!DNL Google Analytics] cookie は、ユーザーのソースが変換前の最後のソースを表すため、ユーザーのソースがオーガニックであると言います。 この *パス* その最終コンバージョンイベントの前のユーザーのは無視されます。 代わりに、ユーザーが UTM を使用したメールリンクから web サイトにアクセスした場合は、 [!DNL Google Analytics] cookie はソースが「email」と言います。 そのため、Cookie に既存の UTM パラメーターがあり、ユーザーが直接経由でアクセスする場合、 [!DNL Google Analytics] cookie は、「直接」ではなく UTM パラメーターを表示します。
+例えば、コンバージョンイベントの前に、最初に [!DNL Google Analytics]*有料検索* を使用して web サイトを訪問し、次に *オーガニック検索* を使用して戻り、最後に *web サイト* 直接または *メールリンク***UTM パラメーターなし** を使用して戻ってきたユーザーについて考えてみます。 この例では、[!DNL Google Analytics] Cookie はユーザーのソースがオーガニックであることを示しています。これは、変換前の最後のソースを表すからです。 その最終コンバージョンイベントの前のユーザーの *パス* は無視されます。 代わりに、ユーザーが UTM を使用したメールリンクから web サイトにアクセスした場合、[!DNL Google Analytics] Cookie はソースが「メール」であると言います。 そのため、Cookie に既存の UTM パラメーターがあり、ユーザーが direct を介して入ってきた場合、[!DNL Google Analytics] Cookie は「direct」ではなく UTM パラメーターを表示します。
 
 >[!NOTE]
 >
->特定のユーザーの [!DNL Google Analytics] cookie のパラメーターは次の場合に消去されます [expires](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)または、ユーザーがブラウザーで Cookie をクリアした場合に発生します。*
+>特定のユーザーの [!DNL Google Analytics] 定の cookie パラメーターは、その cookie が [ 期限切れ ](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) になったとき、またはユーザーがブラウザーで cookie をクリアしたときに消去されます。*
 
 ### ファーストクリック属性
 
@@ -45,7 +45,7 @@ UTM パラメーターが URL で指定されると、これらは解析され�
 
 ## アトリビューションの分析方法
 
-[!DNL Google Analytics] には、4 つの異なるアトリビューションモデルを実行できる堅牢な機能が web インターフェイスに含まれています。
+[!DNL Google Analytics] の web インターフェイスには、4 つの異なるアトリビューションモデルを実行できる堅牢な機能がいくつかあります。
 
 1. 最初のクリック
 1. 前回のクリック
@@ -63,10 +63,10 @@ UTM パラメーターが URL で指定されると、これらは解析され�
 
 ## 関連ドキュメント
 
-* [以下を介した注文参照ソースの追跡 [!DNL Google Analytics] 電子Commerce](../importing-data/integrations/google-ecommerce.md)
+* [E-Commerce経由  [!DNL Google Analytics]  注文リファラルソースを追跡](../importing-data/integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースを追跡](../analysis/google-track-user-acq.md)
 * [データベース内のユーザーデバイス、ブラウザー、OS データの追跡](../analysis/google-track-user-acq.md)
 * [最も価値のある獲得ソースとチャネルを見つける](../analysis/most-value-source-channel.md)
-* [を接続 [!DNL Google Adwords] アカウント](../importing-data/integrations/google-adwords.md)
+* [アカウント  [!DNL Google Adwords]  接続](../importing-data/integrations/google-adwords.md)
 * [広告キャンペーンの ROI の向上](../analysis/roi-ad-camp.md)
-* [での UTM タグ付けの 5 つのベストプラクティス [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [での UTM タグ付けの 5 つのベストプラクティス  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

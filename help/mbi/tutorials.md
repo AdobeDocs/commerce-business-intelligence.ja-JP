@@ -12,4 +12,4 @@ ht-degree: 25%
 
 # チュートリアル
 
-これらのセルフガイドのチュートリアルに従って、の機能を学びます [!DNL Adobe Commerce Intelligence].
+これらのセルフガイドのチュートリアルに従って、[!DNL Adobe Commerce Intelligence] の機能を学習します。

@@ -1,6 +1,6 @@
 ---
-title: 接続中 [!DNL MySQL] ssh トンネル経由
-description: 接続方法を学ぶ [!DNL MySQL] ssh トンネル経由。
+title: SSH トンネル経由  [!DNL MySQL]  接続
+description: SSH トンネル経由で接続する方法  [!DNL MySQL]  説明します。
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
@@ -11,52 +11,52 @@ ht-degree: 0%
 
 ---
 
-# 接続 [!DNL MySQL] 経由 [!DNL SSH Tunnel]
+# [!DNL SSH Tunnel] 経由で [!DNL MySQL] に接続
 
-* [を取得します [!DNL Commerce Intelligence] 公開鍵](#retrieve)
-* [へのアクセスを許可 [!DNL Commerce Intelligence] IP アドレス](#allowlist)
-* [用の Linux ユーザーの作成 [!DNL Commerce Intelligence]](#linux)
-* [を作成 [!DNL MySQL] のユーザー [!DNL Commerce Intelligence]](#mysql)
-* [接続およびユーザー情報の入力先 [!DNL Commerce Intelligence]](#finish)
+* [ [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
+* [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+* [Linux ユーザーを作成する  [!DNL Commerce Intelligence]](#linux)
+* [ [!DNL Commerce Intelligence] のユ  [!DNL MySQL]  ザーを作成](#mysql)
+* [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
 
 ## ジャンプ
 
-* [[!DNL MySQL] 経由 ](../integrations/mysql-via-a-direct-connection.md)
-* [[!DNL MySQL] 経由 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
+* [[!DNL MySQL] via ](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] via [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-を接続するには [!DNL MySQL] データベース先 [!DNL Commerce Intelligence] 経由 `SSH tunnel`次の手順を実行する必要があります。
+`SSH tunnel` を使用して [!DNL MySQL] データベースを [!DNL Commerce Intelligence] に接続するには、次の操作を行う必要があります。
 
-1. を取得します [!DNL Commerce Intelligence] `public key`
-1. へのアクセスを許可 [!DNL Commerce Intelligence] `IP address`
-1. を作成 `Linux` のユーザー [!DNL Commerce Intelligence]
-1. を作成 `MySQL` のユーザー [!DNL Commerce Intelligence]
-1. 接続およびユーザー情報の入力先 [!DNL Commerce Intelligence]
+1. [!DNL Commerce Intelligence] `public key` の取得
+1. [!DNL Commerce Intelligence] `IP address` へのアクセスを許可
+1. [!DNL Commerce Intelligence] の `Linux` ユーザーの作成
+1. [!DNL Commerce Intelligence] の `MySQL` ユーザーの作成
+1. [!DNL Commerce Intelligence] に接続およびユーザー情報を入力
 
 
-## の取得 [!DNL Commerce Intelligence] 公開鍵 {#retrieve}
+## [!DNL Commerce Intelligence] 公開鍵の取得 {#retrieve}
 
-この `public key` を使用して、以下を認証します [!DNL Commerce Intelligence] `Linux` ユーザー。 次の節では、ユーザーを作成してキーを読み込みます。
+`public key` は、[!DNL Commerce Intelligence] `Linux` ユーザーの認証に使用されます。 次の節では、ユーザーを作成してキーを読み込みます。
 
-1. に移動 **[!UICONTROL Manage Data** > **Connections]** をクリックして、 **[!UICONTROL Add New Data Source]**.
-1. 「」をクリックします `MySQL` アイコン。
-1. 後 `MySQL credentials` ページが開いたら、 `Encrypted` 切り替え `Yes`. SSH 設定フォームが表示されます。
-1. この `public key` このフォームの下にあります。
+1. **[!UICONTROL Manage Data** > **Connections]** に移動し、「**[!UICONTROL Add New Data Source]**」をクリックします。
+1. `MySQL` アイコンをクリックします。
+1. `MySQL credentials` ページが開いたら、「`Encrypted`」切り替えスイッチを「`Yes`」に設定します。 SSH 設定フォームが表示されます。
+1. `public key` はこのフォームの下にあります。
 
 このページは、チュートリアルの最後まで開いたままにしておきます。次の節と最後に必要になります。
 
-次の方法で操作できます [!DNL Commerce Intelligence] キーを取得するには：
+[!DNL Commerce Intelligence] 内を移動してキーを取得する方法を次に示します。
 
 ![](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
 
-## へのアクセスを許可 [!DNL Commerce Intelligence] IP アドレス {#allowlist}
+## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可します {#allowlist}
 
-接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 次のとおりです `54.88.76.97` および `34.250.211.151` しかし、それらは `MySQL credentials` ページ。 上のGIFの青いボックスを参照してください。
+接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 それらは `54.88.76.97` と `34.250.211.151` ですが、`MySQL credentials` のページにもあります。 上のGIFの青いボックスを参照してください。
 
-## の作成 [!DNL Linux] のユーザー [!DNL Commerce Intelligence] {#linux}
+## [!DNL Commerce Intelligence] 用の [!DNL Linux] ユーザーの作成 {#linux}
 
-リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 いいよ [このユーザーを制限](../../../administrator/account-management/restrict-db-access.md) 好きなように、それが接続する権利を保持している限り `MySQL` サーバー。
+リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 `MySQL` サーバーへの接続権が保持されている限り、好きなように [ このユーザーを制限 ](../../../administrator/account-management/restrict-db-access.md) することができます。
 
-1. 新しいユーザーを追加するには、次のコマンドを root で実行します。 [!DNL Linux] サーバー：
+1. 新しいユーザーを追加するには、[!DNL Linux] サーバーで次のコマンドを root として実行します。
 
 ```bash
         adduser rjmetric -p<password>
@@ -64,16 +64,16 @@ ht-degree: 0%
         mkdir /home/rjmetric/.ssh
 ```
 
-1. を覚えている `public key` 最初のセクションで取り出したのか？ ユーザーがデータベースに確実にアクセスできるようにするには、キーをに読み込む必要があります `authorized\_keys`.
+1. 最初のセクションで取得した `public key` を覚えていますか？ ユーザーがデータベースにアクセスできるようにするには、キーを `authorized\_keys` に読み込む必要があります。
 
-   キー全体をにコピーします `authorized\_keys` ファイルの内容は次のとおりです。
+   次のように、キー全体を `authorized\_keys` ファイルにコピーします。
 
 ```bash
         touch /home/rjmetric/.ssh/authorized_keys
         "<PASTE KEY HERE>" >> /home/rjmetric/.ssh/authorized_keys
 ```
 
-1. ユーザーの作成を完了するには、権限を `/home/rjmetric` 経由でアクセスを許可するディレクトリ `SSH`:
+1. ユーザーの作成を完了するには、`/home/rjmetric` ディレクトリの権限を変更して、`SSH` 経由でのアクセスを許可します。
 
 ```bash
         chown -R rjmetric:rjmetric /home/rjmetric
@@ -83,41 +83,41 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->次の場合 `sshd\_config` サーバーに関連付けられているファイルがデフォルトオプションに設定されず、特定のユーザーのみがサーバーアクセス権を持ちます。これにより、への接続に成功するのを防ぎます [!DNL Commerce Intelligence]. この場合、のようなコマンドを実行する必要があります。 `AllowUsers` を許可する `rjmetric` サーバーへのユーザーアクセス。
+>サーバーに関連付けられている `sshd\_config` ファイルが既定のオプションに設定されていない場合は、特定のユーザーのみがサーバーにアクセスできます。これにより、[!DNL Commerce Intelligence] への接続に成功できなくなります。 このような場合、`rjmetric` ユーザーにサーバーへのアクセスを許可するには、`AllowUsers` のようなコマンドを実行する必要があります。
 
-## の作成 [!DNL MySQL] のユーザー [!DNL Commerce Intelligence] {#mysql}
+## [!DNL Commerce Intelligence] 用の [!DNL MySQL] ユーザーの作成 {#mysql}
 
-組織では別のプロセスが必要になる場合がありますが、このユーザーを作成する最も簡単な方法は、にログインしたときに次のクエリを実行することです [!DNL MySQL] 権限を付与できるユーザーとして、次の権限があります。
+組織では別のプロセスが必要になる場合がありますが、このユーザーを作成する最も簡単な方法は、権限を付与する権限を持つユーザーとして [!DNL MySQL] にログインしたときに次のクエリを実行することです。
 
 ```sql
     GRANT SELECT ON *.* TO 'rjmetric'@'localhost' IDENTIFIED BY '<secure password here>';
 ```
 
-置換 `secure password here` と異なる場合がある安全なパスワードを使用します。 `SSH` パスワード。
+`secure password here` を安全なパスワードに置き換えます。これは、`SSH` パスワードとは異なる場合があります。
 
 このユーザーが特定のデータベース、テーブル、または列のデータにアクセスするのを制限するには、代わりに、許可されたデータへのアクセスのみを許可する GRANT クエリを実行します。
 
-## 接続およびユーザー情報の入力 [!DNL Commerce Intelligence] {#finish}
+## [!DNL Commerce Intelligence] への接続およびユーザー情報の入力 {#finish}
 
-最後に、接続とユーザー情報をに入力する必要があります。 [!DNL Commerce Intelligence]. を残しましたか `MySQL credentials` ページを開きますか？ そうでない場合は、に移動します **[!UICONTROL Data** > **Connections]** をクリックして、 **[!UICONTROL Add New Data Source]**&#x200B;を選択し、続いて [!DNL MySQL] アイコン。 設定を忘れないでください `Encrypted` 切り替え `Yes`.
+まとめるには、接続とユーザー情報を [!DNL Commerce Intelligence] に入力する必要があります。 `MySQL credentials` のページは開いたままにしておきましたか。 そうでない場合は、**[!UICONTROL Data** > **Connections]** に移動して「**[!UICONTROL Add New Data Source]**」をクリックし、次に「[!DNL MySQL]」アイコンをクリックします。 「`Encrypted`」トグルを `Yes` に設定することを忘れないでください。
 
-このページに以下の情報を入力します。まず、 `Database Connection` セクション：
+このページに、`Database Connection` のセクションから始まる次の情報を入力します。
 
-* `Username`：のユーザー名 [!DNL Commerce Intelligence] [!DNL MySQL] ユーザー
-* `Password`：のパスワード [!DNL Commerce Intelligence] [!DNL MySQL] ユーザー
-* `Port`: [!DNL MySQL] サーバーのポート （デフォルトは 3306）
-* `Host` デフォルトでは、localhost です。 通常、これはユーザのバインド アドレスの値です [!DNL MySQL] サーバー（デフォルトでは） `127.0.0.1 (localhost)`ただし、ローカルネットワークアドレス（例：）も指定できます `192.168.0.1`）またはサーバーのパブリック IP アドレス。
+* `Username`:[!DNL Commerce Intelligence] [!DNL MySQL] ユーザーのユーザー名
+* `Password`:[!DNL Commerce Intelligence] [!DNL MySQL] ユーザーのパスワード
+* `Port`：サーバー上の [!DNL MySQL] ポート（デフォルトでは 3306）
+* `Host` デフォルトでは、localhost です。 一般に、これは [!DNL MySQL] サーバーのバインド アドレス値です。デフォルトでは `127.0.0.1 (localhost)` ですが、ローカル ネットワーク アドレス （`192.168.0.1` など）またはサーバーのパブリック IP アドレスの場合もあります。
 
-  値は、 `my.cnf` ファイル （の場所： `/etc/my.cnf`）を表す行の下 `\[mysqld\]`. このファイルで bind-address 行がコメントアウトされている場合、サーバーは外部からの接続の試行から保護されます。
+  この値は、`\[mysqld\]` を読み取る行の下の `my.cnf` ファイル（`/etc/my.cnf` にあります）にあります。 このファイルで bind-address 行がコメントアウトされている場合、サーバーは外部からの接続の試行から保護されます。
 
-が含まれる `SSH Connection` セクション：
+`SSH Connection` のセクションで以下を実行します。
 
-* `Remote Address`：サーバーの IP アドレスまたはホスト名 [!DNL Commerce Intelligence] ～にトンネルを通す
-* `Username`：のユーザー名 [!DNL Commerce Intelligence] SSH （[!DNL Linux]） ユーザー
+* `Remote Address`: トンネル先のサーバー [!DNL Commerce Intelligence] の IP アドレスまたはホスト名
+* `Username`:[!DNL Commerce Intelligence] SSH （[!DNL Linux]）ユーザーのユーザー名
 * `SSH Port`：サーバーの SSH ポート（デフォルトでは 22）
 
-完了したら、 **[!UICONTROL Save & Test]** をクリックして設定を完了します。
+完了したら、「**[!UICONTROL Save & Test]**」をクリックして設定を完了します。
 
 ## 関連：
 
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

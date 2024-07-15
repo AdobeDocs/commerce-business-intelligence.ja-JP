@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # customer_entity テーブル
 
-この `customer_entity` テーブルには、すべての登録済みアカウントのレコードが含まれています。 購入を完了したかどうかに関係なく、アカウントに新規登録した場合、アカウントは登録済みと見なされます。 各行は、アカウントで識別される 1 つの一意の登録済みアカウントに対応します `entity_id`.
+`customer_entity` テーブルには、すべての登録済みアカウントのレコードが含まれています。 購入を完了したかどうかに関係なく、アカウントに新規登録した場合、アカウントは登録済みと見なされます。 各行は、アカウントの `entity_id` によって識別される 1 つの一意の登録済みアカウントに対応します。
 
-このテーブルには、ゲストのチェックアウト経由で注文した顧客のレコードは含まれていません。 ストアがゲストのチェックアウトを許可する場合は、 [ゲストの注文のアカウントを作成する方法](../data-warehouse-mgr/guest-orders.md) その命令に対して。
+このテーブルには、ゲストのチェックアウト経由で注文した顧客のレコードは含まれていません。 ストアがゲストのチェックアウトを受け入れる場合は、それらの注文について [ ゲスト注文のアカウントを作成する方法 ](../data-warehouse-mgr/guest-orders.md) を参照してください。
 
 ## 共通列
 
 | **列名** | **説明** |
 |---|---|
-| `created_at` | アカウントの登録日に対応するタイムスタンプ。UTC でローカルに保存されます。 での設定に応じて [!DNL Commerce Intelligence]、このタイムスタンプはのレポートタイムゾーンに変換される場合があります [!DNL Commerce Intelligence] データベースのタイムゾーンとは異なる |
+| `created_at` | アカウントの登録日に対応するタイムスタンプ。UTC でローカルに保存されます。 [!DNL Commerce Intelligence] での設定に応じて、このタイムスタンプはデータベースのタイムゾーンとは異な [!DNL Commerce Intelligence] レポートタイムゾーンに変換される場合があります |
 | `email` | アカウントに関連付けられているメールアドレス |
-| `entity_id` （PK） | テーブルの一意の ID で、 `customer_id` インスタンス内の他のテーブルの |
-| `group_id` | に関連付けられた外部キー `customer_group` テーブル。 に参加 `customer_group.customer_group_id` 登録済みのアカウントに関連付けられている顧客グループを特定するには |
-| `store_id` | に関連付けられた外部キー `store` テーブル。 に参加 `store`.`store_id` 登録済みアカウントに関連付けられているCommerce ストア表示を確認するには |
+| `entity_id` （PK） | テーブルの一意の ID で、インスタンス内の他のテーブルの `customer_id` への結合で一般的に使用されます |
+| `group_id` | `customer_group` テーブルに関連付けられている外部キー。 `customer_group.customer_group_id` に参加して、登録済みアカウントに関連付けられている顧客グループを決定します |
+| `store_id` | `store` テーブルに関連付けられている外部キー。 `store` に参加します。登録済みのアカウントに関連付けられているCommerce ストア表示を確認する `store_id` 法 |
 
 {style="table-layout:auto"}
 
@@ -33,16 +33,16 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |---|---|
-| `Customer's first 30 day revenue` | 顧客の最初の注文日から 30 日以内にこの顧客によって行われたすべての注文の売上高の合計。 結合によって計算 `customer_entity.entity_id` 対象： `sales_order.customer_id` を合計する `base_grand_total` すべての注文のフィールドに次の条件を満たす場合 `sales_order.Seconds between customer's first order date and this order` ≤ 2592000 （30 日間の秒数） |
-| `Customer's first order date` | この顧客による最初の注文のタイムスタンプ。 結合によって計算 `customer_entity.entity_id` 対象： `sales_order.customer_id` 最小値を返します `sales_order`.`created_at` value |
-| `Customer's first order's billing region` | 顧客の初回注文に関連付けられた請求リージョン。 結合によって計算 `customer_entity.entity_id` 対象： `sales_order.customer_id` およびを返します `Billing address region` ここで、 `sales_order.Customer's order number` = 1 |
-| `Customer's first order's coupon_code` | 顧客の最初の注文に関連付けられたクーポンコード。 結合によって計算 `customer_entity.entity_id` 対象： `sales_order.customer_id` およびを返します `sales_order.coupon_code` ここで、 `sales_order.Customer's order number` = 1 |
-| `Customer's group code` | 登録済み顧客のグループ名。 結合によって計算 `customer_entity.group_id` 対象： `customer_group`.`customer_group_id` およびを返します `customer_group_code` フィールド |
-| `Customer's lifetime number of coupons` | この顧客が行ったすべての注文に適用されたクーポンの合計数。 結合によって計算 `customer_entity.entity_id` 対象： `sales_order.customer_id` 注文数をカウントする場合 `sales_order.coupon_code` 等しくない `NULL` |
-| `Customer's lifetime number of orders` | この顧客が注文した注文の合計数。 結合によって計算 `customer_entity.entity_id` 対象： `sales_order.customer_id` および内の行数のカウント `sales_order` テーブル |
-| `Customer's lifetime revenue` | この顧客が行ったすべての注文の売上高の合計。 結合によって計算 `customer_entity.entity_id` 対象： `sales_order.customer_id` を合計する `base_grand_total` この顧客が注文したすべてのフィールド |
-| `Seconds since customer's first order date` | 顧客の初回注文日から現在までの経過時間。 引いて計算される `Customer's first order date` クエリ実行時のサーバーのタイムスタンプから、秒数の整数で返されます |
-| `Store name` | この登録済みアカウントに関連付けられたCommerce ストアの名前。 結合によって計算 `customer_entity.store_id` 対象： `store.store_id` およびを返します `name` フィールド |
+| `Customer's first 30 day revenue` | 顧客の最初の注文日から 30 日以内にこの顧客によって行われたすべての注文の売上高の合計。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`sales_order.Seconds between customer's first order date and this order` が 2592000 を≤すすべての注文の `base_grand_total` フィールドを合計することによって計算されます。これは 30 日間の秒数です |
+| `Customer's first order date` | この顧客による最初の注文のタイムスタンプ。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、最小 `sales_order` を返すことによって計算されます。`created_at` 値 |
+| `Customer's first order's billing region` | 顧客の初回注文に関連付けられた請求リージョン。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`sales_order.Customer's order number` = 1 の `Billing address region` を返すことによって計算されます |
+| `Customer's first order's coupon_code` | 顧客の最初の注文に関連付けられたクーポンコード。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`sales_order.Customer's order number` = 1 の `sales_order.coupon_code` を返すことによって計算されます |
+| `Customer's group code` | 登録済み顧客のグループ名。 `customer_entity.group_id` を `customer_group` に結合して計算されます。`customer_group_code` フィールドの `customer_group_id` び出しと返し |
+| `Customer's lifetime number of coupons` | この顧客が行ったすべての注文に適用されたクーポンの合計数。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`sales_order.coupon_code` が `NULL` しくない注文の数をカウントすることで計算されます |
+| `Customer's lifetime number of orders` | この顧客が注文した注文の合計数。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`sales_order` テーブルの行数をカウントすることによって計算されます |
+| `Customer's lifetime revenue` | この顧客が行ったすべての注文の売上高の合計。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、この顧客によって行われたすべての注文の `base_grand_total` フィールドを合計することによって計算されます |
+| `Seconds since customer's first order date` | 顧客の初回注文日から現在までの経過時間。 クエリの実行時にサーバーのタイムスタンプから `Customer's first order date` を引いて計算され、秒数の整数で返されます |
+| `Store name` | この登録済みアカウントに関連付けられたCommerce ストアの名前。 `customer_entity.store_id` を `store.store_id` に結合し、`name` フィールドを返すことによって計算されます |
 
 {style="table-layout:auto"}
 
@@ -50,12 +50,12 @@ ht-degree: 0%
 
 | **指標名** | **説明** | **建設** |
 |---|---|---|
-| `Avg first 30 day revenue` | 顧客からの最初の注文から 30 日以内に行われた注文に対する顧客あたりの平均売上高 | 操作：平均<br/>オペランド： `Customer's first 30 day revenue`<br/>タイムスタンプ： `created_at`<br/>フィルター：<br/><br/>- \[A\] `Seconds since customer's first order date` ≥ 2592000 （最初の注文から 30 日が経過していない顧客を除く） |
-| `Avg lifetime coupons` | 顧客ごとの注文に適用された、有効期間の平均クーポン数 | 操作：平均<br/>オペランド： `Customer's lifetime number of coupons`<br/>タイムスタンプ： `created_at` |
-| `Avg lifetime orders` | 顧客が全期間に注文した平均数 | 操作：平均<br/>オペランド： `Customer's lifetime number of orders`<br/>タイムスタンプ： `created_at` |
-| `Avg lifetime revenue` | 顧客の有効期間を通じて行われたすべての注文に関する、顧客あたりの平均合計売上高 | 操作：平均<br/>オペランド： `Customer's lifetime revenue`<br/>タイムスタンプ： `created_at` |
-| `New customers` | 最初の注文日にカウントされた、注文が 1 つ以上ある顧客の数。 登録はしたが注文しないアカウントを除外 | 操作：カウント<br/>オペランド： `entity_id`<br/>タイムスタンプ： `Customer's first order date` |
-| `Registered accounts` | 登録されたアカウントの数。 注文されたかどうかに関係なく、すべての登録済みアカウントが含まれます | 操作：カウント<br/>オペランド： `entity_id`<br/>タイムスタンプ： `created_at` |
+| `Avg first 30 day revenue` | 顧客からの最初の注文から 30 日以内に行われた注文に対する顧客あたりの平均売上高 | 操作：Average<br/>Operand: `Customer's first 30 day revenue`<br/>Timestamp: `created_at`<br/>Filters:<br/><br/>- \[A\] `Seconds since customer's first order date` ≥ 2592000 （最初の注文から 30 日が経過していない顧客を除外） |
+| `Avg lifetime coupons` | 顧客ごとの注文に適用された、有効期間の平均クーポン数 | 操作：平均 <br/> オペランド：`Customer's lifetime number of coupons`<br/> タイムスタンプ：`created_at` |
+| `Avg lifetime orders` | 顧客が全期間に注文した平均数 | 操作：平均 <br/> オペランド：`Customer's lifetime number of orders`<br/> タイムスタンプ：`created_at` |
+| `Avg lifetime revenue` | 顧客の有効期間を通じて行われたすべての注文に関する、顧客あたりの平均合計売上高 | 操作：平均 <br/> オペランド：`Customer's lifetime revenue`<br/> タイムスタンプ：`created_at` |
+| `New customers` | 最初の注文日にカウントされた、注文が 1 つ以上ある顧客の数。 登録はしたが注文しないアカウントを除外 | 操作：カウント <br/> オペランド：`entity_id`<br/> タイムスタンプ：`Customer's first order date` |
+| `Registered accounts` | 登録されたアカウントの数。 注文されたかどうかに関係なく、すべての登録済みアカウントが含まれます | 操作：カウント <br/> オペランド：`entity_id`<br/> タイムスタンプ：`created_at` |
 
 {style="table-layout:auto"}
 
@@ -63,10 +63,10 @@ ht-degree: 0%
 
 `customer_group`
 
-* に参加 `customer_group` 登録済みアカウントの顧客グループ名を返す列を作成するテーブル。
-   * パス： `customer_entity.group_id` （多） => `customer_group.customer_group_id` （1）
+* テーブルに結合 `customer_group` て、登録済みアカウントの顧客グループ名を返す列を作成します。
+   * パス：`customer_entity.group_id` （多） => `customer_group.customer_group_id` （1）
 
 `store`
 
-* に参加 `store` 登録済みアカウントに関連付けられたストアに関連する詳細を返す列を作成するテーブル。
-   * パス： `customer_entity.store_id` （多） => `store.store_id` （1）
+* テーブルに結合 `store` て、登録済みアカウントに関連付けられたストアに関連する詳細を返す列を作成します。
+   * パス：`customer_entity.store_id` （多） => `store.store_id` （1）

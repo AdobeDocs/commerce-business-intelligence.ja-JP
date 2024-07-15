@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # デフォルトのダッシュボードを設定
 
-デフォルトのダッシュボードは、開いたときに最初に表示されるダッシュボードです [!DNL Commerce Intelligence].
+デフォルトのダッシュボードは、[!DNL Commerce Intelligence] を開いたときに最初に表示されるダッシュボードです。
 
-1. ダッシュボードで、 **[!UICONTROL Dashboard Options]** 画面の上部にあります。
+1. ダッシュボードで、画面 **[!UICONTROL Dashboard Options]** 上部にある「」をクリックします。
 
-1. クリック **[!UICONTROL Make Default]** ドロップダウンで選択します。
+1. ドロップダウンで「**[!UICONTROL Make Default]**」をクリックします。
 
-1. 確認プロンプトが表示されたら、 **[!UICONTROL Yes]** デフォルトのダッシュボードを変更します。
+1. 確認プロンプトが表示されたら、「**[!UICONTROL Yes]**」をクリックしてデフォルトのダッシュボードを変更します。
 
 これが新しいデフォルトダッシュボードになります。
 
 例：
 
-![デフォルトダッシュボード](../../assets/default_dashboard.gif)
+![ デフォルトのダッシュボード ](../../assets/default_dashboard.gif)

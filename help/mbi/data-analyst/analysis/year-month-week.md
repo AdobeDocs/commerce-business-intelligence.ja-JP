@@ -15,20 +15,20 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このトピックには、元のアーキテクチャと新しいアーキテクチャを使用しているクライアント向けの手順が含まれています。 現在 [新しいアーキテクチャ](../../administrator/account-management/new-architecture.md) 次のような場合： [!DNL _Data Warehouseビュー_] セクションは選択後に使用可能です [!DNL Manage Data] メインツールバーから。
+>このトピックには、元のアーキテクチャと新しいアーキテクチャを使用しているクライアント向けの手順が含まれています。 メインのツールバーから「[!DNL _Data Warehouseビュー [」セクションを選択できる場合は_] 新しいアーキテクチャ ](../../administrator/account-management/new-architecture.md) を開 [!DNL Manage Data] ています。
 
 Report Builder を使用すると、経時的なトレンドを簡単に確認し、比較したい期間の視点を変更できます。 このトピックでは、より深いレベルに到達するためのダッシュボードを設定する方法を説明します。これにより、週別、月別、年別分析のレポートを作成できます。
 
 ![](../../assets/Wow__mom__yoy.png)
 
-始める前に、より詳細な視点を確認してください [こちら](../../tutorials/using-visual-report-builder.md) および独立時間のオプション [こちら](../../tutorials/time-options-visual-rpt-bldr.md).
+始める前に、より詳細な視点を探索する [ こちら ](../../tutorials/using-visual-report-builder.md) および独立した時間オプション [ こちら ](../../tutorials/time-options-visual-rpt-bldr.md) を確認する必要があります。
 
-この分析に含まれる内容 [高度な計算列](../data-warehouse-mgr/adv-calc-columns.md).
+この分析には [ 高度な計算列 ](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
 ## 計算される列
 
 * **`Sales_flat_order`** テーブル
-* **オリジナルのアーキテクチャ：** 以下の列は、の一部としてアナリストによって作成されています `[YoY WoW MoM ANALYSIS]` チケット
+* **元のアーキテクチャ：** 以下の列は、`[YoY WoW MoM ANALYSIS]` チケットの一部としてアナリストによって作成されています
 * `created_at (month-day)`
 * `created_at (month)`
 * `created_at (day of the month)`
@@ -49,7 +49,7 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 
 >[!NOTE]
 >
->必ずしてください [すべての新規列をディメンションとして指標に追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に、
+>新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## レポート
 
@@ -59,7 +59,7 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
-   * [!UICONTROL Show top/bottom]：上位 100% の並べ替え基準 **`created_at (month-day)`***
+   * [!UICONTROL Show top/bottom]：上位 100% を **`created_at (month-day)`***で並べ替えた場合
 
 * 指標 `A`: `This year`
 * 指標 `B`: `Last year`
@@ -74,9 +74,9 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * 時間オプション： `Time range (Custom)`: `2 months ago to 1 month ago`
+   * 時間オプション：`Time range (Custom)`: `2 months ago to 1 month ago`
 
-   * 上/下を表示：上位 100% を次の基準で並べ替え **`created_at (day of month)`***
+   * 上/下を表示：上位 100% を **`created_at (day of month)`***で並べ替え
 
 * 指標 `A`：今月*
 * 指標 `B`：先月*
@@ -93,7 +93,7 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
-   * [!UICONTROL Show top/bottom]：上位 100% の並べ替え基準 `created_at (day of week)`
+   * [!UICONTROL Show top/bottom]：上位 100% を `created_at (day of week)` 順に並べ替えた場合
 
 * 指標 `A`: `This week`
 * 指標 `B`: `Last week`
@@ -110,7 +110,7 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
-   * [!UICONTROL Show top/bottom]：上位 100% の並べ替え基準 `created_at (hour of day)`
+   * [!UICONTROL Show top/bottom]：上位 100% を `created_at (hour of day)` 順に並べ替えた場合
 
 * 指標 `A`: `Today`
 * 指標 B: `Yesterday`

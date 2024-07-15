@@ -15,30 +15,30 @@ ht-degree: 0%
 
 ダッシュボードリストが煩雑になりすぎないようにするには、不要になったダッシュボードを削除できます。 これは、次の 2 つの方法のいずれかで実現できます。
 
-1. [経由 `Account Settings` ページ](#account)  – このメソッドには次が必要です： [管理者権限](../../administrator/user-management/user-management.md).
+1. [`Account Settings` ページ経由 ](#account) – この方法には [ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
 
-1. [経由 `Dashboard Options` メニュー](#do)  – この方法では、ダッシュボードを所有するか、次のことを行う必要があります `Edit` 権限。
+1. [`Dashboard Options` メニューを使用 ](#do) – この方法では、ユーザーがダッシュボードを所有するか、`Edit` 権限を持っている必要があります。
 
-## 経由でのダッシュボードの削除 `Account Settings` ページ {#account}
+## `Account Settings` ページを使用したダッシュボードの削除 {#account}
 
-1. クリック **[!UICONTROL Account Settings** > **Dashboards]**.
+1. 「**[!UICONTROL Account Settings** > **Dashboards]**」をクリックします。
 
 1. ダッシュボードの一覧で、削除するダッシュボードをクリックします。
 
-1. クリック **[!UICONTROL Delete Dashboard]**.
+1. 「**[!UICONTROL Delete Dashboard]**」をクリックします。
 
 例：
 
-![ダッシュボードを削除](../../assets/deleting_dash.gif)<!--{: width="703" height="346"}-->
+![ ダッシュボードを削除 ](../../assets/deleting_dash.gif)<!--{: width="703" height="346"}-->
 
-## 経由でのダッシュボードの削除 `Dashboard Options` メニュー {#do}
+## `Dashboard Options` メニューを使用したダッシュボードの削除 {#do}
 
-1. 「」をクリックします **[!UICONTROL Dashboard Options]** 画面上部のメニュー。
+1. 画面上部の **[!UICONTROL Dashboard Options]** メニューをクリックします。
 
-1. ドロップダウンで、 **[!UICONTROL Delete]**.
+1. ドロップダウンで、「**[!UICONTROL Delete]**」をクリックします。
 
-1. 確認を求められたら、 **[!UICONTROL Delete]**.
+1. 確認を求めるメッセージが表示されたら、「**[!UICONTROL Delete]**」をクリックします。
 
 例：
 
-![ダッシュボードを削除](../../assets/deleting_dash_2.gif)<!--{: width="703" height="347"}-->
+![ ダッシュボードを削除 ](../../assets/deleting_dash_2.gif)<!--{: width="703" height="347"}-->

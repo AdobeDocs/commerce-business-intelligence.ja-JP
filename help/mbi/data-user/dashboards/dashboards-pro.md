@@ -17,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これらのダッシュボードへのアクセスは、アカウントのタイプとアクセスレベルに応じて異なります。 これらのダッシュボードが表示されない場合は、に連絡してください [サポート](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>これらのダッシュボードへのアクセスは、アカウントのタイプとアクセスレベルに応じて異なります。 これらのダッシュボードが表示されない場合は、[ サポート ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) にお問い合わせください。
 
 ## レポートの可用性
 
-の場合 `Customers` および `Executive Summary` ダッシュボード。ストアのチェックアウト設定によっては、一部のレポートしか使用できません。 特に、ストアがゲストのチェックアウトを許可している場合、またはストアがゲストのチェックアウトを許可していない場合。
+`Customers` および `Executive Summary` ダッシュボードの場合、ストアのチェックアウト設定によっては、一部のレポートしか使用できません。 特に、ストアがゲストのチェックアウトを許可している場合、またはストアがゲストのチェックアウトを許可していない場合。
 
 ## 顧客（ゲストのチェックアウトが許可されています）
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 | `Time Between Orders` | 顧客が注文間に取る平均時間と中央値は、注文番号別に分類されます（つまり、注文から注文までの時間が 1 から 2 まで、2 から 3 までなど）。 |
 | `Number of Customers - Lifetime Orders` | 顧客の全期間に行われた特定の注文数に対して、その多くの注文を行った顧客の数と、その数が表す顧客ベース全体の割合。 |
 | `One-Time Customers who Bought 3-6 Months Ago` | 3 か月前から 6 か月前の間に初めて購入した顧客。 |
-| `Avg LTV by First Order` | 複数のコホートをまたいで、顧客のライフタイム収益の累積平均を比較します。 コホートは、顧客が最初に購入を行った月によって定義されます。 例： `Jan 2020` コホートでは、最初の購入が 2020 年 1 月だった顧客の累積平均 LTV を表示します。 |
+| `Avg LTV by First Order` | 複数のコホートをまたいで、顧客のライフタイム収益の累積平均を比較します。 コホートは、顧客が最初に購入を行った月によって定義されます。 例えば、ある `Jan 2020` コホートは、2020 年 1 月に初回購入を行った顧客の累積平均 LTV を表示します。 |
 | `Customer's First 30 Day vs Lifetime Revenue` | 初回購入後 30 日間の顧客からの平均売上高と、全期間の平均売上高の比較。 各バブルは出荷地域に対応し、各バブルのサイズはその地域から取得した顧客の数を表します。 |
 
 ## 顧客（ゲストのチェックアウトは許可されていません）
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## 製品
 
-製品ダッシュボードには、注文された製品、総商品価値（GMV）、購入および払い戻された上位の製品に関する一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、製品の成功と人気を判断するのに役立ちます。 ストアは、 [払い戻しを追跡するように設定されている](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) （これらのグラフを入力する場合）。
+製品ダッシュボードには、注文された製品、総商品価値（GMV）、購入および払い戻された上位の製品に関する一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、製品の成功と人気を判断するのに役立ちます。 これらのグラフを入力するには、ストアを [ 払戻をトラッキングするように設定 ](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) する必要があります。
 
 >[!NOTE]
 >

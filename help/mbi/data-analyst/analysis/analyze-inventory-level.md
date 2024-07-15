@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 在庫レベルの分析
 
-このトピックでは、現在のインベントリに関するインサイトを提供し、レガシーアーキテクチャと新しいアーキテクチャの両方についてクライアントに対する手順を含むダッシュボードを設定する方法について説明します。 を持っていない場合は、レガシーアーキテクチャを使用します。 **[!UICONTROL Data Warehouse Views]** の下のオプション **[!UICONTROL Manage Data]** メニュー。 レガシーアーキテクチャを使用している場合は、 [新しいサポートリクエスト](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 件名に **[!UICONTROL INVENTORY ANALYSIS]** で指定されたセクションに到達したら _計算される列_ 以下の手順
+このトピックでは、現在のインベントリに関するインサイトを提供し、レガシーアーキテクチャと新しいアーキテクチャの両方についてクライアントに対する手順を含むダッシュボードを設定する方法について説明します。 **[!UICONTROL Manage Data]** メニューの **[!UICONTROL Data Warehouse Views]** オプションがない場合は、従来のアーキテクチャを使用します。 レガシーアーキテクチャを使用している場合は、以下の [ 計算列 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 手順で指定されたセクションに到達したら、件名 **[!UICONTROL INVENTORY ANALYSIS]** の _新規サポートリクエスト_ を送信します。
 
 ## 追跡する列：
 
@@ -39,7 +39,7 @@ ht-degree: 0%
       * 
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `created_at`
+      * [!UICONTROL column] を選択：`created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
@@ -48,7 +48,7 @@ ht-degree: 0%
       * 
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `created_at`
+      * [!UICONTROL column] を選択：`created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
@@ -56,14 +56,14 @@ ht-degree: 0%
       * [!UICONTROL Column type]: `Same Table`
       * 
         [!UICONTROL Column equation]: `AGE`
-      * を選択 [!UICONTROL DATETIME column]: `Product's most recent order date`
+      * [!UICONTROL DATETIME column] を選択：`Product's most recent order date`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
       * 
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `qty_ordered`
+      * [!UICONTROL column] を選択：`qty_ordered`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
@@ -72,7 +72,7 @@ ht-degree: 0%
       * 
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] 入力：
-         * 回答： `Product's lifetime number of items sold`
+         * A: `Product's lifetime number of items sold`
          * B: `Product's first order date`
       * 
         [!UICONTROL Datatype]: `Decimal`
@@ -85,35 +85,35 @@ ht-degree: 0%
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `sku`
+      * [!UICONTROL column] を選択：`sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `Product's lifetime number of items sold`
+      * [!UICONTROL column] を選択：`Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `Seconds since product's most recent order date`
+      * [!UICONTROL column] を選択：`Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `Avg products sold per week (all time)`
+      * [!UICONTROL column] を選択：`Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
       * [!UICONTROL Column type]: `Same Table`
       * 
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] 入力：
-         * 回答： `qty`
+         * A: `qty`
          * B: `Avg products sold per week (all time)`
       * 
         [!UICONTROL Datatype]: `Decimal`
@@ -129,7 +129,7 @@ ht-degree: 0%
       * 
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `created_at`
+      * [!UICONTROL column] を選択：`created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
@@ -138,7 +138,7 @@ ht-degree: 0%
       * 
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `created_at`
+      * [!UICONTROL column] を選択：`created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
@@ -146,19 +146,19 @@ ht-degree: 0%
       * [!UICONTROL Column type]: `Same Table`
       * 
         [!UICONTROL Column equation]: `AGE`
-      * 日時列を選択： **`Product's most recent order date`**
+      * DATETIME 列の選択：**`Product's most recent order date`**
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
       * 
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
-      * を選択 [!UICONTROL column]: **`qty_ordered`**
+      * [!UICONTROL column] を選択：**`qty_ordered`**
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
    * **`Avg products sold per week (all time)`**
-      * を送信する際にアナリストによって作成されます **[在庫分析]** サポートリクエスト
+      * **[在庫分析]** サポート要求を提出する際に、アナリストによって作成されます
 
 * **[!UICONTROL cataloginventory_stock_item]** テーブル：
    * **`Sku`**
@@ -166,31 +166,31 @@ ht-degree: 0%
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `sku`
+      * [!UICONTROL column] を選択：`sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `Product's lifetime number of items sold`
+      * [!UICONTROL column] を選択：`Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `Seconds since product's most recent order date`
+      * [!UICONTROL column] を選択：`Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * を選択 [!UICONTROL column]: `Avg products sold per week (all time)`
+      * [!UICONTROL column] を選択：`Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
-      * を送信する際にアナリストによって作成されます **[!UICONTROL INVENTORY ANALYSIS]** サポートリクエスト
+      * **[!UICONTROL INVENTORY ANALYSIS]** サポートのリクエストを送信する際にアナリストによって作成されます
 
 +++
 
@@ -199,10 +199,10 @@ ht-degree: 0%
 ### 指標の手順
 
 * **[!UICONTROL cataloginventory_stock_item]** テーブル：
-   * **`Inventory on hand`**：この指標は、次の操作を実行します
-      * **合計** 日
-      * **`qty`** 列の順序付け：
-      * [なし] 列
+   * **`Inventory on hand`**：このメトリックは、
+      * **合計**
+      * **`qty`** 順に並べ替えられた列
+      * [ なし ] 列
 
 ## レポート
 
@@ -211,7 +211,7 @@ ht-degree: 0%
 * **`Inventory on hand by sku`**
    * [!UICONTROL Metric]: `Inventory on hand`
    * [!UICONTROL Time period]: `All time`
-   * 時間間隔： `None`
+   * 時間間隔：`None`
    * [!UICONTROL Group by]:
       * `Sku`
       * `Weeks on hand`
@@ -224,7 +224,7 @@ ht-degree: 0%
          * [A] `Weeks on hand` `< 2`
 
    * [!UICONTROL Time period]: `All time`
-   * 時間間隔： `None`
+   * 時間間隔：`None`
    * 
      [!UICONTROL Group by]: `Sku`
    * 
@@ -236,10 +236,10 @@ ht-degree: 0%
          * [A] `Weeks on hand` `> 26`
 
    * [!UICONTROL Time period]: `All time`
-   * 時間間隔： `None`
+   * 時間間隔：`None`
    * 
      [!UICONTROL Group by]: `Sku`
    * 
      [!UICONTROL Chart type]: `Table`
 
-分析中に質問が発生した場合、または単にプロフェッショナルサービスチームに依頼したい場合、 [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

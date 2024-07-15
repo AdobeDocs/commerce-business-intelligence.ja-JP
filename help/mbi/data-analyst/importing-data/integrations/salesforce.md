@@ -11,29 +11,29 @@ ht-degree: 0%
 
 ---
 
-# 接続 [!DNL Salesforce]
+# Connect [!DNL Salesforce]
 
 ![](../../../assets/Salesforce_Logo.png)
 
 >[!NOTE]
 >
->が必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-の接続 [!DNL Salesforce] データにより、リードのスコアリングと最適化から、コンバージョンされた機会の目標を達成するものまで、様々な分析が可能になります。
+[!DNL Salesforce] データを結び付けることで、リードのスコアリングと最適化から、コンバージョンされた機会の目標を達成するものまで、様々な分析を可能にします。
 
 >[!IMPORTANT]
 >
->この [!DNL Salesforce] コネクタを使用するには、次が必要です [[!DNL Salesforce] API アクセス](../integrations/salesforce.md) の一部として [!DNL Salesforce] 登録。 開始する前に、これが有効になっていることを確認してください。
+>[!DNL Salesforce] コネクタを使用するには、[!DNL Salesforce] サブスクリプションの一部として [[!DNL Salesforce] API アクセス ](../integrations/salesforce.md) が必要です。 開始する前に、これが有効になっていることを確認してください。
 
-1. を追加します [!DNL Salesforce] お使いのアカウントに統合し、次の URL に移動します： `Connections` ページの下 **[!UICONTROL Manage Data** > **Connections]**.
-1. クリック **[!UICONTROL Add a Data Source]**&#x200B;画面右側、「データソース」テーブルの上にあります。
-1. 「」をクリックします [!DNL Salesforce] アイコン。
-1. クリック **[!UICONTROL Connect to Salesforce]**.
-1. を入力 [!DNL Salesforce] 資格情報を入力してクリック **[!UICONTROL Login to Salesforce]**.
+1. [!DNL Salesforce] 統合をアカウントに追加するには、「**[!UICONTROL Manage Data** > **Connections]**」の下の `Connections` ページに移動します。
+1. 「データソース」テーブルの上にある画面右側の「**[!UICONTROL Add a Data Source]**」をクリックします。
+1. [!DNL Salesforce] アイコンをクリックします。
+1. 「**[!UICONTROL Connect to Salesforce]**」をクリックします。
+1. [!DNL Salesforce] 資格情報を入力し、「**[!UICONTROL Login to Salesforce]**」をクリックします。
 
 ## 関連：
 
-もう少し技術に詳しい場合、 [[!DNL Salesforce] API ドキュメント](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) は、Salesforce との統合方法の詳細を学ぶのに役立つリソースです [!DNL Commerce Intelligence].
+もう少し技術に詳しい場合は、[[!DNL Salesforce] API ドキュメント ](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) を参照して、Salesforce と [!DNL Commerce Intelligence] の統合方法について詳しく確認してください。
 
-* [予測 [!DNL Salesforce] データ](../integrations/salesforce-data.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Expected [!DNL Salesforce] data](../integrations/salesforce-data.md)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

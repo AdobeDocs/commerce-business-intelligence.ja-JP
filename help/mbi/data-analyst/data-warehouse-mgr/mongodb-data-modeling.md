@@ -13,15 +13,15 @@ ht-degree: 1%
 
 # [!DNL MongoDB] データモデリング
 
-条件 [!DNL Adobe Commerce Intelligence] 引き込む [!DNL MongoDB] データ。そのデータはリレーショナルモデルに変換されます。
+データを取 [!DNL Adobe Commerce Intelligence] 込む [!DNL MongoDB]、そのデータはリレーショナルモデルに変換されます。
 
-悪いニュース：ほとんどのデータパターンは問題になりませんが、でサポートされていないものがいくつかあります [!DNL Commerce Intelligence]（リレーショナルモデルへの翻訳が原因）。
+悪いニュース：ほとんどのデータパターンは問題になりませんが、リレーショナルモデルへの翻訳が原因で、[!DNL Commerce Intelligence] でサポートされていないものがいくつかあります。
 
 良いニュース：これらすべてのパターンは回避できます。
 
 ## サブネストされた配列 {#subnested}
 
-コレクションが次の例のような場合、 [!DNL Commerce Intelligence] は、items 配列のデータのみを複製します。 サブ項目配列のデータは取り込まれません。
+コレクションが次の例のような場合、[!DNL Commerce Intelligence] は items 配列のデータのみをレプリケートします。 サブ項目配列のデータは取り込まれません。
 
 ```bash
     {
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 ## 可変オブジェクトキー {#varobjectkeys}
 
-可変オブジェクトキーを持つオブジェクトを含むコレクションは、でレプリケートされない [!DNL Commerce Intelligence]. 例：
+可変オブジェクトキーを持つオブジェクトを含むコレクションは、[!DNL Commerce Intelligence] でレプリケートされません。 例：
 
 ```bash
     {

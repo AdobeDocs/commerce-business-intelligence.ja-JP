@@ -16,10 +16,10 @@ ht-degree: 0%
 クエリを適切に設計し、データ分析の頼りになる人物になれます。 データに関する質問に対する特定の回答を見つける方法を理解しており、同僚のセルフサービスエクスペリエンスを促進したいと考えています。
 
 この節では、次の方法を説明します。
-* データの接続と読み込み先 [!DNL Commerce Intelligence]
+* [!DNL Commerce Intelligence] へのデータの接続と読み込み
 * Data Warehouseでのデータの保存および構造化の方法を表示します
 * データの分析
-* を使用する [!DNL SQL Report Builder]
+* [!DNL SQL Report Builder] の使用
 
 ## 関連
 

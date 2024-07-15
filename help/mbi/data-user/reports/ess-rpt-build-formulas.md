@@ -15,27 +15,27 @@ ht-degree: 0%
 
 数式は、複数の指標と数学的ロジックを組み合わせて、質問に回答します。 例えば、ホリデーシーズンの製品あたりの売上高のうち、新規顧客によって生み出されたものはどれくらいですか。
 
-![ダッシュボードでの休日販売](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
+![ ダッシュボードでのホリデーセールス ](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## 手順 1：基本レポートの作成
 
-1. メニューで、を選択します `Report Builder`.
+1. メニューで、「`Report Builder`」を選択します。
 
-1. クリック **[!UICONTROL Add Metric]** レポートの最初の指標を選択します。
+1. 「**[!UICONTROL Add Metric]**」をクリックして、レポートの最初の指標を選択します。
 
-   この例の場合、 `Revenue by products ordered` 指標が使用されます。
+   この例では、`Revenue by products ordered` の指標を使用します。
 
-1. クリック **[!UICONTROL Add Metric]** もう一度、レポートの 2 番目の指標を選択します。
+1. もう一度「**[!UICONTROL Add Metric]**」をクリックして、レポートの 2 番目の指標を選択します。
 
-   この例の場合、 `New Customers` 指標が使用されます。
+   この例では、`New Customers` の指標を使用します。
 
-1. サイドバーで、をクリックします **[!UICONTROL Details]** 各指標に関する情報を表示します。
+1. サイドバーで「**[!UICONTROL Details]**」をクリックすると、各指標に関する情報が表示されます。
 
-   ![注文済製品別の売上高](../../assets/magento-bi-report-builder-revenue-by-products.png)
+   ![ 注文済製品ごとの売上高 ](../../assets/magento-bi-report-builder-revenue-by-products.png)
 
 1. サイドバーで、各指標の名前をクリックして、設定ページを新しいブラウザータブで開きます。 下にスクロールして、指標クエリ、フィルター、ディメンションなど、指標の各コンポーネントを表示します。
 
-   ![指標設定](../../assets/magento-bi-report-builder-revenue-by-products-metric-detail.png)
+   ![ 指標設定 ](../../assets/magento-bi-report-builder-revenue-by-products-metric-detail.png)
 
 1. レポートに戻るには、[ 前のブラウザ ] タブをクリックします。
 
@@ -43,78 +43,78 @@ ht-degree: 0%
 
 ## 手順 2：数式を追加
 
-1. サイドバーの上部にある「」をクリックします **[!UICONTROL Add Formula]**.
+1. サイドバーの上部にある「**[!UICONTROL Add Formula]**」をクリックします。
 
-   式ボックスに、使用可能な入力として指標が表示されます `A` および `B`、および数式を入力できる入力ボックスが含まれます。
+   式ボックスには、指標が使用可能な入力 `A` および `B` として表示され、式を入力できる入力ボックスが含まれています。
 
    次の手順を実行します。
 
-   * が含まれる `Enter your Formula` 入力ボックス、入力 `A/B`.
+   * `Enter your Formula` 入力ボックスに `A/B` と入力します。
 
      これにより、売上高が製品の注文数で、新規顧客数で除算されます。
 
-   * を設定 `Select format` 対象： `123Number`.
+   * `Select format` を `123Number` に設定します。
 
-   * サイドバーで、 `Untitled` 式の名前を指定します。
+   * サイドバーで、`Untitled` を式の名前に置き換えます。
 
-   ![数式の設定](../../assets/magento-bi-report-builder-revenue-by-products-add-formula-detail.png)
+   ![ 数式設定 ](../../assets/magento-bi-report-builder-revenue-by-products-add-formula-detail.png)
 
-1. 完了したら、 **[!UICONTROL Apply]**.
+1. 完了したら、「**[!UICONTROL Apply]**」をクリックします。
 
-   レポートに、式の新しい行が追加されました。 `New Customer Revenue`サイドバーには、新規顧客が生み出した売上高の合計金額が表示されます。
+   レポートには、式、`New Customer Revenue` の新しい行が表示され、サイドバーには、新規顧客によって生み出された収益の合計金額が表示されます。
 
-   ![式を含むレポート](../../assets/magento-bi-report-builder-revenue-by-products-formula-report.png)
+   ![ 式を使用したレポート ](../../assets/magento-bi-report-builder-revenue-by-products-formula-report.png)
 
 ## 手順 3：日付範囲の追加
 
-1. クリック **[!UICONTROL Date Range]** 右上隅
+1. 右上隅の「**[!UICONTROL Date Range]**」をクリックします。
 
-1. 日 `Fixed Date Range` タブで、次の操作を実行します。
+1. [`Fixed Date Range`] タブで次の操作を行います。
 
    * カレンダーで、日付範囲を選択します。
 
-     この例では、ホリデーシーズンは次のとおりです `November 1` から `December 31`.
+     この例では、ホリデーシーズンは `November 1`～`December 31` です。
 
-   * 次の下 `Select Time Interval`、を選択 `Day`.
+   * 「`Select Time Interval`」で、「`Day`」を選択します。
 
-     ![固定日付範囲](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
+     ![ 固定日付範囲 ](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
-   * 完了したら、 **[!UICONTROL Apply]**.
+   * 完了したら、「**[!UICONTROL Apply]**」をクリックします。
 
    レポートは現在、ホリデーシーズンに限定され、各日のデータポイントが含まれます。
 
-   ![固定日付範囲](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range-report.png)
+   ![ 固定日付範囲 ](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range-report.png)
 
 ## 手順 4：レポートを保存する
 
 この手順では、レポートをグラフおよびテーブルとして保存します。
 
-1. クリック `Untitled Report` ページの上部に、わかりやすいタイトルを入力します。 この例では、レポートタイトルはです `2017 Holiday Sales`.
+1. ページ上部の「`Untitled Report`」をクリックして、わかりやすいタイトルを入力します。 この例では、レポートタイトルは `2017 Holiday Sales` です。
 
    次に、以下の手順を実行します。
 
-   * 右上隅のをクリックします。 **[!UICONTROL Save]**.
+   * 右上隅にある「**[!UICONTROL Save]**」をクリックします。
 
-   * の場合 `Type`、デフォルトを使用します `Chart` の設定値。
+   * `Type` の場合、デフォルトの `Chart` 設定を使用します。
 
-   * を選択します。 `Dashboard` レポートを使用できる場所。
+   * レポートを使用できる `Dashboard` を選択します。
 
-   * クリック **[!UICONTROL Save to Dashboard]**.
+   * 「**[!UICONTROL Save to Dashboard]**」をクリックします。
 
-1. レポートのタイトルをクリックし、名前を変更します。 この例では、レポートタイトルがに変更されます。 `2017 Holiday Sales Data`.
+1. レポートのタイトルをクリックし、名前を変更します。 この例では、レポートのタイトルを `2017 Holiday Sales Data` に変更します。
 
    次に、以下の手順を実行します。
 
-   * 右上隅のをクリックします。 **[!UICONTROL Save a Copy]**.
+   * 右上隅の「**[!UICONTROL Save a Copy]**」をクリックします。
 
-   * を設定 `Type` 対象： `Table`.
+   * `Type` を `Table` に設定します。
 
-   * を選択します。 `Dashboard` レポートを使用できる場所。
+   * レポートを使用できる `Dashboard` を選択します。
 
-   * クリック **[!UICONTROL Save a Copy to Dashboard]**.
+   * 「**[!UICONTROL Save a Copy to Dashboard]**」をクリックします。
 
 1. ダッシュボードでレポートを表示するには、次のいずれかの操作を行います。
 
-   * クリック **[!UICONTROL Go to Dashboard]** ページ上部のメッセージ。
+   * ページ上部のメッセージで「**[!UICONTROL Go to Dashboard]**」をクリックします。
 
-   * メニューで、を選択します **[!UICONTROL Dashboards]**. 現在のダッシュボードの名前をクリックしてリストを表示します。 次に、レポートが保存されたダッシュボードの名前をクリックします。
+   * メニューで、「**[!UICONTROL Dashboards]**」を選択します。 現在のダッシュボードの名前をクリックしてリストを表示します。 次に、レポートが保存されたダッシュボードの名前をクリックします。

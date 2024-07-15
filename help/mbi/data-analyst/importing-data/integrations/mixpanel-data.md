@@ -1,6 +1,6 @@
 ---
 title: 期待される Mixpanel データ
-description: Mixpanel からに読み込むことができるメインデータテーブルについて説明します [!DNL Commerce Intelligence] アカウント。
+description: Mixpanel から自分のアカウントに読み込むことができるメインデータテーブル  [!DNL Commerce Intelligence]  調べます。
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# 予測 [!DNL Mixpanel] データ
+# 予期される [!DNL Mixpanel] データ
 
-後 [を接続しました [!DNL Mixpanel] アカウント](../integrations/mixpanel.md)を使用する場合は、 [Data Warehouse管理者](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 関連するデータフィールドを容易に追跡して分析できるようにする。
+[ アカウントに接続  [!DNL Mixpanel]  た ](../integrations/mixpanel.md) 後、[Data Warehouseマネージャー ](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。
 
-このトピックでは、インポート元となるメインのデータ テーブルについて説明します [!DNL Mixpanel] を自分の [!DNL Commerce Intelligence] アカウント。 接続後、次のテーブルがData Warehouseに作成されます [!DNL Mixpanel]. トラッキングに使用できるすべてのフィールドを表示するには、テーブル名列のリンクをクリックします。
+このトピックでは、[!DNL Mixpanel] から [!DNL Commerce Intelligence] アカウントに読み込むことができるメインデータテーブルについて説明します。 [!DNL Mixpanel] を接続すると、Data Warehouseに次のテーブルが作成されます。 トラッキングに使用できるすべてのフィールドを表示するには、テーブル名列のリンクをクリックします。
 
 >[!NOTE]
 >
->の制限事項により [!DNL Mixpanel] API、履歴データ – への接続日から 7 日以上前のデータ [!DNL Commerce Intelligence]  – はレプリケートされません。
+>[!DNL Mixpanel] API の制限により、履歴データ（[!DNL Commerce Intelligence] への接続日から 7 日以上経過したデータ）はレプリケートされません。
 
 | **テーブル名** | **説明** |
 |-----|-----|
@@ -31,5 +31,5 @@ ht-degree: 0%
 
 ## 関連ドキュメント
 
-* [接続中 [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [接続  [!DNL Mixpanel]](../integrations/mixpanel.md)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

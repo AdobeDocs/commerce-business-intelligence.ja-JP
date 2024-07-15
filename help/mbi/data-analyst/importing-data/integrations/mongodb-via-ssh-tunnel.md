@@ -1,6 +1,6 @@
 ---
-title: 接続 [!DNL MongoDB] ssh トンネル経由
-description: 接続方法を学ぶ [!DNL MongoDB] ssh トンネル経由。
+title: SSH トンネル経由  [!DNL MongoDB]  接続
+description: SSH トンネルを介して接続する方法  [!DNL MongoDB]  説明します。
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,50 +11,50 @@ ht-degree: 0%
 
 ---
 
-# 接続 [!DNL MongoDB] ssh トンネル経由
+# SSH トンネル経由の [!DNL MongoDB] の接続
 
-を接続するには [!DNL MongoDB] データベース先 [!DNL Commerce Intelligence] ssh トンネルを経由して、次の操作を行う必要があります。
+SSH トンネルを使用して [!DNL MongoDB] データベースを [!DNL Commerce Intelligence] に接続するには、次の手順を実行する必要があります。
 
-1. [を取得します [!DNL Commerce Intelligence] 公開鍵](#retrieve)
-1. [へのアクセスを許可 [!DNL Commerce Intelligence] IP アドレス](#allowlist)
-1. [Commerce Intelligence 用の Linux ユーザーの作成](#linux)
-1. [を作成 [!DNL MongoDB] Commerce Intelligence のユーザー](#mongodb)
-1. [接続およびユーザー情報の入力先 [!DNL Commerce Intelligence]](#finish)
+1. [ [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
+1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+1. [Commerce Intelligence用の Linux ユーザーの作成](#linux)
+1. [Commerce Intelligence用  [!DNL MongoDB]  ユーザーの作成](#mongodb)
+1. [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
 
 >[!NOTE]
 >
 >この設定は技術的な性質上、Adobeでは、開発者に協力を求め、まだこの作業を行っていない場合は、支援を求めることをお勧めします。
 
-## の取得 [!DNL Commerce Intelligence] 公開鍵 {#retrieve}
+## [!DNL Commerce Intelligence] 公開鍵の取得 {#retrieve}
 
-この `public key` を使用して、以下を認証します [!DNL Commerce Intelligence] `Linux` ユーザー。 次の節では、ユーザーの作成とキーの読み込みについて説明します。
+`public key` は、[!DNL Commerce Intelligence] `Linux` ユーザーの認証に使用されます。 次の節では、ユーザーの作成とキーの読み込みについて説明します。
 
-1. に移動 **[!UICONTROL Data** > **Connections]** をクリックして、 **[!UICONTROL Add New Data Source]**.
-1. 「」をクリックします [!DNL MONGODB] アイコン。
-1. 後 [!DNL MongoDB] 資格情報ページが開きます。変更します `Encrypted` 切り替え `Yes`. SSH 設定フォームが表示されます。
-1. この `public key` このフォームの下にあります。
+1. **[!UICONTROL Data** > **Connections]** に移動し、「**[!UICONTROL Add New Data Source]**」をクリックします。
+1. [!DNL MONGODB] アイコンをクリックします。
+1. [!DNL MongoDB] 資格情報ページが開いたら、「`Encrypted`」切り替えスイッチを `Yes` に変更します。 SSH 設定フォームが表示されます。
+1. `public key` はこのフォームの下にあります。
 
 このページは、チュートリアルの最後まで開いたままにしておきます。次の節と最後に必要になります。
 
-少し迷った場合は、次の方法で移動できます [!DNL Commerce Intelligence] キーを取得するには：
+少し迷った場合は、[!DNL Commerce Intelligence] を移動してキーを取得する方法を次に示します。
 
-![RJMetrics 公開鍵の取得](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
+![RJMetrics 公開鍵の取得 ](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
 
-## へのアクセスを許可 [!DNL Commerce Intelligence] IP アドレス {#allowlist}
+## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可します {#allowlist}
 
-接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 次のとおりです `54.88.76.97` および `34.250.211.151`ただし、そのページは [!DNL MongoDB] 資格情報ページ：
+接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 これらは `54.88.76.97` と `34.250.211.151` ですが、[!DNL MongoDB] の資格情報ページにも表示されます。
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## の作成 `Linux` のユーザー [!DNL Commerce Intelligence] {#linux}
+## [!DNL Commerce Intelligence] 用の `Linux` ユーザーの作成 {#linux}
 
 >[!IMPORTANT]
 >
->次の場合 `sshd_config` サーバーに関連付けられているファイルがデフォルトオプションに設定されず、特定のユーザーのみがサーバーアクセス権を持ちます。これにより、への接続に成功するのを防ぎます [!DNL Commerce Intelligence]. この場合、のようなコマンドを実行する必要があります。 `AllowUsers` を許可する `rjmetric` サーバーへのユーザーアクセス。
+>サーバーに関連付けられている `sshd_config` ファイルが既定のオプションに設定されていない場合は、特定のユーザーのみがサーバーにアクセスできます。これにより、[!DNL Commerce Intelligence] への接続に成功できなくなります。 このような場合、`rjmetric` ユーザーにサーバーへのアクセスを許可するには、`AllowUsers` のようなコマンドを実行する必要があります。
 
-リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 このユーザーがに接続する権利を保持している限り、このユーザーを好きなように制限することができます。 [!DNL MongoDB] サーバー。
+リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [!DNL MongoDB] サーバーへの接続権限を保持している限り、このユーザーを好きなように制限することができます。
 
-新しいユーザーを追加するには、次のコマンドを root で実行します。 `Linux` サーバー：
+新しいユーザーを追加するには、`Linux` サーバーで次のコマンドを root として実行します。
 
 ```bash
     adduser rjmetric -p
@@ -62,7 +62,7 @@ ht-degree: 0%
     mkdir /home/rjmetric/.ssh
 ```
 
-を覚えている `public key` 最初のセクションで取り出したのか？ ユーザーがデータベースに確実にアクセスできるようにするには、キーをに読み込む必要があります `authorized_keys`. キー全体をにコピーします `authorized_keys` ファイルの内容は次のとおりです。
+最初のセクションで取得した `public key` を覚えていますか？ ユーザーがデータベースにアクセスできるようにするには、キーを `authorized_keys` に読み込む必要があります。 次のように、キー全体を `authorized_keys` ファイルにコピーします。
 
 ```bash
     touch /home/rjmetric/.ssh/authorized_keys
@@ -76,26 +76,26 @@ ht-degree: 0%
     chmod -R 700 /home/rjmetric/.ssh
 ```
 
-## の作成 [!DNL Commerce Intelligence] [!DNL MongoDB] ユーザー {#mongodb}
+## [!DNL Commerce Intelligence] [!DNL MongoDB] ユーザーの作成 {#mongodb}
 
-[!DNL MongoDB] サーバには 2 つの実行モードがあります。 [「auth」オプションを持つもの](#auth) `(mongod -- auth)` 1 つはなし、 [（デフォルト）](#default). を作成する手順 [!DNL MongoDB] ユーザーは、サーバーが使用しているモードによって異なります。 続行する前に、モードを確認してください。
+[!DNL MongoDB] サーバーには 2 つの実行モードがあります [1 つは「認証」オプションを使用したもの ](#auth)`(mongod -- auth)` もう 1 つは [ デフォルト ](#default) を使用したもの）。 [!DNL MongoDB] ユーザーを作成する手順は、サーバーで使用しているモードによって異なります。 続行する前に、モードを確認してください。
 
-### サーバーがを使用している場合 `Auth` オプション： {#auth}
+### サーバーで `Auth` オプションを使用する場合： {#auth}
 
-複数のデータベースに接続する場合、にログインしてユーザーを追加できます。 [!DNL MongoDB] 管理者ユーザーとして、および次のコマンドを実行します。
+複数のデータベースに接続する場合、管理者ユーザーとして [!DNL MongoDB] にログインし、次のコマンドを実行することでユーザーを追加できます。
 
 >[!NOTE]
 >
->使用可能なすべてのデータベースを表示するには、 [!DNL Commerce Intelligence] ユーザーが実行するには権限が必要です `listDatabases.`
+>使用可能なすべてのデータベースを表示するには、[!DNL Commerce Intelligence] ユーザーが `listDatabases.` を実行する権限が必要です
 
-このコマンドは、 [!DNL Commerce Intelligence] ユーザーアクセス `to all databases`:
+このコマンドは、[!DNL Commerce Intelligence] ユーザーに次のアクセス権 `to all databases` 付与します。
 
 ```bash
     use admin
     db.createUser('rjmetric', '< secure password here >', true)
 ```
 
-次のコマンドを使用して、 [!DNL Commerce Intelligence] ユーザーアクセス `to a single database`:
+次のコマンドを使用して、[!DNL Commerce Intelligence] のユーザーに `to a single database` のアクセス権を付与します。
 
 ```bash
     use < database name >
@@ -115,35 +115,35 @@ ht-degree: 0%
 
 ### サーバーでデフォルトオプションを使用している場合 {#default}
 
-サーバーがを使用していない場合 `auth` モード、 [!DNL MongoDB] サーバーは、ユーザー名とパスワードがなくてもアクセスできます。 ただし、以下を確実にする必要があります `mongodb.conf` ファイル `(/etc/mongodb.conf)` には次の行があります。行が含まれていない場合は、追加した後にサーバーを再起動してください。
+サーバーが `auth` モードを使用しない場合、ユーザー名とパスワードがなくても [!DNL MongoDB] サーバーにアクセスできます。 ただし、`mongodb.conf` ファイル `(/etc/mongodb.conf)` に次の行が含まれていることを確認する必要があります。行が含まれていない場合は、追加した後にサーバーを再起動します。
 
 ```bash
     bind_ip = 127.0.0.1
     noauth = true
 ```
 
-をバインドするには [!DNL MongoDB] サーバーを別のアドレスに変更する場合は、それに応じて次の手順でデータベースのホスト名を調整します。
+[!DNL MongoDB] サーバーを別のアドレスにバインドするには、次の手順でデータベースホスト名を適宜調整します。
 
-## 接続およびユーザー情報の入力 [!DNL Commerce Intelligence] {#finish}
+## [!DNL Commerce Intelligence] への接続およびユーザー情報の入力 {#finish}
 
-最後に、接続とユーザー情報をに入力する必要があります。 [!DNL Commerce Intelligence]. を残しましたか [!DNL MongoDB] 資格情報ページが開かれますか？ そうでない場合は、に移動します **[!UICONTROL Data > Connections]** をクリックして、 **[!UICONTROL Add New Data Source]**&#x200B;を選択し、続いて [!DNL MongoDB] アイコン。 を変更することを忘れないでください `Encrypted` 切り替え `Yes`.
+まとめるには、接続とユーザー情報を [!DNL Commerce Intelligence] に入力する必要があります。 [!DNL MongoDB] 資格情報ページを開いたままにしましたか？ そうでない場合は、**[!UICONTROL Data > Connections]** に移動して「**[!UICONTROL Add New Data Source]**」をクリックし、次に「[!DNL MongoDB]」アイコンをクリックします。 `Encrypted` の切り替えを `Yes` に変更することを忘れないでください。
 
-このページに以下の情報を入力します。まず、 `Database Connection` セクション：
+このページに、`Database Connection` のセクションから始まる次の情報を入力します。
 
 * `Host`: `127.0.0.1`
-* `Username`：です [!DNL Commerce Intelligence] [!DNL MongoDB] ユーザー名（でなければなりません `rjmetric`）
-* `Password`：です [!DNL Commerce Intelligence] [!DNL MongoDB] password
-* `Port`：サーバー上の MongoDB のポート（`27017` デフォルト）
+* `Username`:[!DNL Commerce Intelligence] [!DNL MongoDB] ユーザー名（`rjmetric` にする必要があります）
+* `Password`:[!DNL Commerce Intelligence] [!DNL MongoDB] のパスワード
+* `Port`：サーバー上の MongoDB のポート（デフォルトでは `27017`）
 * `Database Name` （オプション）:1 つのデータベースへのアクセスのみを許可した場合は、そのデータベースの名前をここに指定します。
 
-の下 `SSH Connection` セクション：
+「`SSH Connection`」セクションで、
 
 * `Remote Address`:SSH で接続するサーバーの IP アドレスまたはホスト名
-* `Username`：です [!DNL Commerce Intelligence] Linux （SSH）ユーザー名（rjmetric にする）
+* `Username`:[!DNL Commerce Intelligence] Linux （SSH）のユーザー名（rjmetric）
 * `SSH Port`：サーバー上の SSH ポート（デフォルトでは 22）
 
-完了したら、 **[!UICONTROL Save Test]** をクリックして設定を完了します。
+完了したら、「**[!UICONTROL Save Test]**」をクリックして設定を完了します。
 
 ### 関連
 
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

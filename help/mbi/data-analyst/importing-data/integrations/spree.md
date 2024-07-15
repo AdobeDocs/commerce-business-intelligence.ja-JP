@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# 接続 [!DNL Spree]
+# Connect [!DNL Spree]
 
 ![](../../../assets/spree-commerce-logo.png)
 
-ビジネスのパフォーマンスを確認したい場合や、最も価値のある獲得ソースとチャネルを見つけたい場合は、 の接続 [!DNL Spree] データ送信先 [!DNL Commerce Intelligence] これらの質問などに答えることができます。
+ビジネスのパフォーマンスを確認したい場合や、最も価値のある獲得ソースとチャネルを見つけたい場合は、 [!DNL Spree] データを [!DNL Commerce Intelligence] に接続すると、これらの質問などに回答できます。
 
-この [!DNL Spree] データベースの基準 [!DNL PostgreSQL]に接続できます。 [!DNL Commerce Intelligence] の使用 [通常と同じ手順 [!DNL Postgres] 接続](../integrations/postgresql.md).
+[!DNL Spree] データベースは [!DNL PostgreSQL] に基づいており、[ 通常の接続と同じ手順 ](../integrations/postgresql.md) を使用して [!DNL Commerce Intelligence] に接続  [!DNL Postgres]  きます。
 
 ## 関連ドキュメント
 

@@ -1,6 +1,6 @@
 ---
 title: 生データの書き出し
-description: からレコードを書き出す方法を学ぶ [!DNL Commerce Intelligence] ダッシュボードの機能を詳しく見るためのData Warehouseです。
+description: ダッシュボードを強化している機能を詳しく確認するために、 [!DNL Commerce Intelligence] Data Warehouseからレコードをエクスポートする方法を説明します。
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 生データの書き出し
 
-生データの書き出しを使用すると、ダッシュボードからレコードを書き出して、Data Warehouseの機能を詳しく確認できます。 生データの書き出しも、次の場合に役立ちます [データの不一致を特定](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
+生データの書き出しを使用すると、ダッシュボードからレコードを書き出して、Data Warehouseの機能を詳しく確認できます。 また、生データの書き出しは、[ データの不一致をピンポイントで特定 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) するのに役立ちます。
 
-生データの書き出しでは、関連指標の正規化の解除と事前集計によって生成された追加の列とディメンションにアクセスできます。 例： `User's first order date` は、のユーザーごとに書き出すことができるディメンションです [!DNL Commerce Intelligence]データベースで使用できない場合もあります。
+生データの書き出しでは、関連指標の正規化の解除と事前集計によって生成された追加の列とディメンションにアクセスできます。 例えば、`User's first order date` は [!DNL Commerce Intelligence] の各ユーザーに対して書き出すことができるディメンションですが、データベースでは使用できない場合があります。
 
 このチュートリアルでは、次の内容について説明します。
 
@@ -25,39 +25,39 @@ ht-degree: 0%
 
 ## 手順 1：エクスポートするデータの選択 {#select}
 
-生データを書き出す方法には、次の 2 つがあります [!DNL Commerce Intelligence]:
+生データを [!DNL Commerce Intelligence] に書き出す方法は 2 つあります。
 
 1. グラフレベル
 1. テーブルレベル
 
-### のテーブルレベルでの書き出し [!UICONTROL Manage Data] タブ
+### 「[!UICONTROL Manage Data]」タブのテーブルレベルでのエクスポート
 
-からテーブルを書き出す場合 [!UICONTROL Manage Data] タブ、必要です [Admin](../administrator/user-management/user-management.md) 権限。
+[!UICONTROL Manage Data] のタブからテーブルを書き出すには、[ 管理者 ](../administrator/user-management/user-management.md) 権限が必要です。
 
-1. クリック **[!UICONTROL Manage Data** > **&#x200B;データを書き出し&#x200B;**> **生データの書き出し]**.
-1. 「」が表示されます。 `Export List` 最近作成したデータ書き出しがある場合は、その中から クリック **[!UICONTROL Add Export]** エクスポートを作成します。
-1. この `New Raw Data Export` ダイアログが表示されます。 ここでは、列とフィルターを選択または選択解除して、書き出しをカスタマイズできます。
+1. **[!UICONTROL Manage Data** > ** データの書き出し **/**生データの書き出し]** をクリックします。
+1. 最近作成したデータ書き出しが存在する場合は、その `Export List` が表示されます。 「**[!UICONTROL Add Export]**」をクリックして、書き出しを作成します。
+1. `New Raw Data Export` ダイアログが表示されます。 ここでは、列とフィルターを選択または選択解除して、書き出しをカスタマイズできます。
 
-   * `Table`  – が `Table` フィールドは、データの書き出し元のテーブルを選択します。 デフォルトでは、移動先のテーブルが表示されます。
-   * `Export Name`  – このフィールドに、書き出しの名前を入力します。 例： `Philadelphia - Daily Revenue`.
-   * `Available Columns`  – このフィールドには、エクスポートに含めることができるデータベース内の列（ディメンション）が一覧表示されます。 列を追加するには、列の名前をクリックします。
-   * `Selected Columns`  – このフィールドには、現在エクスポートに含まれている列（ディメンション）が一覧表示されます。 列を削除するには、列の名前をクリックします。
-   * `Filter`  – このセクションには、現在エクスポートに適用されているフィルターが一覧表示されます。 これらのフィルターは変更できます。新しいフィルターを追加して、特定のデータセットを書き出すこともできます。
-   * 終了したら、 **[!UICONTROL Export Data]**.
+   * `Table` - 「`Table`」フィールドは、データの書き出し元のテーブルを選択します。 デフォルトでは、移動先のテーブルが表示されます。
+   * `Export Name` – このフィールドに、書き出しの名前を入力します。 例：`Philadelphia - Daily Revenue`。
+   * `Available Columns` – このフィールドには、エクスポートに含めることができるデータベース内の列（ディメンション）が一覧表示されます。 列を追加するには、列の名前をクリックします。
+   * `Selected Columns` – このフィールドには、現在エクスポートに含まれている列（ディメンション）が一覧表示されます。 列を削除するには、列の名前をクリックします。
+   * `Filter` – このセクションには、書き出しに現在適用されているフィルターが一覧表示されます。 これらのフィルターは変更できます。新しいフィルターを追加して、特定のデータセットを書き出すこともできます。
+   * 終了したら、「**[!UICONTROL Export Data]**」をクリックします。
 
 ### ダッシュボードからのチャート・レベルでのエクスポート
 
 1. グラフの右上隅にある歯車アイコンをクリックします。
 
-1. を選択 `Raw Export` ドロップダウンからを表示します `Raw Export` ダイアログ。
+1. ドロップダウンから「`Raw Export`」を選択し、「`Raw Export`」ダイアログを表示します。
 
-1. を選択して、書き出しをカスタマイズします。 `table`, `columns`、および `filters` を含めるか除外します。 このモジュールのフィールドについて詳しくは、前の節を参照してください。
+1. 含めるか除外する `table`、`columns`、`filters` を選択して、書き出しをカスタマイズします。 このモジュールのフィールドについて詳しくは、前の節を参照してください。
 
    >[!NOTE]
    >
-   >に表示されるテーブル `Table` フィールドは、デフォルトで、グラフを強化するテーブルです。
+   >`Table` フィールドに表示されるテーブルは、デフォルトでは、グラフを強化するテーブルです。
 
-1. 終了したら、 **[!UICONTROL Export Data]**.
+1. 終了したら、「**[!UICONTROL Export Data]**」をクリックします。
 
 プロセス全体をチャートレベルで見てみましょう。
 
@@ -65,12 +65,12 @@ ht-degree: 0%
 
 ## 手順 2：エクスポートのダウンロード {#download}
 
-書き出しの処理は、 `Raw Data Export` ダイアログ。 一部の書き出しはサイズが大きくなる可能性があるので、行数が 1,000 万行に制限され、実行に時間がかかる場合があります。
+書き出しは、`Raw Data Export` ダイアログでの選択が完了するとすぐに、処理を開始します。 一部の書き出しはサイズが大きくなる可能性があるので、行数が 1,000 万行に制限され、実行に時間がかかる場合があります。
 
-エクスポートの準備ができているかどうかを確認するには、 **[!UICONTROL Raw Data Exports]** 画面の右上隅に表示されます。 クリック **[!UICONTROL Download]** ZIP 形式でダウンロードするには `.csv` 書き出しのファイル。
+書き出しの準備ができているかどうかを確認するには、画面の右上隅にある「**[!UICONTROL Raw Data Exports]**」をクリックします。 「**[!UICONTROL Download]**」をクリックして、書き出しの zip フ `.csv` ールド ファイルをダウンロードします。
 
 ![](../assets/Downloading_export.gif)
 
 ## 手順 3：履歴エクスポートへのアクセス {#historical}
 
-過去の書き出しを表示するには、をクリックします **[!UICONTROL Raw Data Export]** 画面の右上隅に表示されます。 保留中および完了済みのレポートには、最大 7 日間アクセスできます。
+過去の書き出しを表示するには、画面の右上隅にある「**[!UICONTROL Raw Data Export]**」をクリックします。 保留中および完了済みのレポートには、最大 7 日間アクセスできます。

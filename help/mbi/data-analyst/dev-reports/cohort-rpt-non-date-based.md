@@ -11,35 +11,35 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Cohort Report Builder] 日付ベース以外のコホートの場合
+# 非日付ベースのコホートの [!DNL Cohort Report Builder]
 
-この [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) は、マーチャントが時間の経過と共にユーザーの様々なサブセットの動作を研究するのを支援するのに最適です。 過去、 `Cohort Report Builder` は、共通のでユーザーをグループ化するために最適化されました `cohort date` （例えば、特定の月に最初の購入を行ったすべての顧客のセットなど）。 この `Non-Date Based Cohort` の機能で、類似のアクティビティまたは属性でユーザーをグループ化できるようになりました。 この機能の使用例をいくつか見てみましょう。
+この [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) は、マーチャントが時間の経過と共にユーザーの様々なサブセットの動作を研究するのに役立ちます。 以前は、共通の `cohort date` でユーザーをグループ化するために `Cohort Report Builder` が最適化されていました（例えば、特定の月に最初の購入を行ったすべての顧客のセット）。 `Non-Date Based Cohort` 機能を使用して、類似のアクティビティまたは属性でユーザーをグループ化できるようになりました。 この機能の使用例をいくつか見てみましょう。
 
 ## ユースケース
 
 これは包括的なリストではありませんが、この機能を使用して実行できる潜在的な分析をいくつか示します。
 
-* から獲得した顧客の売上高の調査 [!DNL Google] 対 [!DNL Facebook]
+* [!DNL Google] から獲得した顧客の売上高と [!DNL Facebook] の売上高の比較
 * 米国とカナダで初回購入を行った顧客の分析
 * 様々な広告キャンペーンで獲得した顧客の行動を見る
 
 ## 分析の作成方法
 
-1. クリック **[!UICONTROL Report Builder]** 左側のタブまたは **[!UICONTROL Add Report** > **Create Report]** を任意のダッシュボードに表示します。
+1. 左側のタブの「**[!UICONTROL Report Builder]**」または任意のダッシュボードの「**[!UICONTROL Add Report** > **Create Report]**」をクリックします。
 
-1. が含まれる `Report Builder Selection` 画面、クリック **[!UICONTROL Create Report]** 「」の横 `Visual Report Builder` オプション。
+1. `Report Builder Selection` 画面で、「`Visual Report Builder`」オプションの横にある「**[!UICONTROL Create Report]**」をクリックします。
 
 ### 指標の追加
 
-現在は、 `Report Builder`に基づいて、分析を実行する指標を追加します（例： `Revenue` または `Orders`）に設定します。
+`Report Builder` を開いたので、分析を実行する指標（例：`Revenue` または `Orders`）を追加します。
 
 >[!NOTE]
 >
->ネイティブ [!DNL Google Analytics] 指標は、と互換性がありません `Cohort Report Builder`. この例の目標は、異なるを通じて取得された初回顧客の売上高の推移を確認することです [!DNL Google Analytics] ソース。
+>ネイティブの [!DNL Google Analytics] 指標は `Cohort Report Builder` と互換性がありません。 この例の目標は、様々な [!DNL Google Analytics] ソースから取得した初回顧客の売上高の推移を確認することです。
 
-### 切り替え `Metric View` 対象： `Cohort`
+### `Metric View` を `Cohort` に切り替えます。
 
-![指標ビューをコホートに切り替える 1](../../assets/1-toggle-metric-view-to-cohort.png)
+![1 – 指標ビューをコホートに切り替え ](../../assets/1-toggle-metric-view-to-cohort.png)
 
 これにより新しいウィンドウが開き、コホートレポートの詳細を設定できます。
 
@@ -51,38 +51,38 @@ ht-degree: 0%
 1. コホートの初回アクションの時間範囲
 1. コホート発生後の時間範囲
 
-![コホートグループ](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
+![ コホートグループ ](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
 
 
 
 #### 1. グループ化 `cohorts`
 
-`Cohorts` 次の例では、動作特性でグループ化されています `Customer's first order GA source`. ここで使用できるオプションは、既に次のように指定されている列です `groupable` を指標として使用します。
+`Cohorts` は、動作の特性によってグループ化されます。この例では `Customer's first order GA source` です。 ここで使用できるオプションは、指標の `groupable` として既に指定されている列です。
 
 #### 2. コホートの選択
 
-指定した特性のすべての結果を表示できます。 これは多くの結果を引き起こす可能性があるため `cohorts`具体的なを選択できます `cohorts` （これは、で使用可能な様々な値に対応します。 `Customer's first order GA source`）が必要です。
+指定した特性のすべての結果を表示できます。 これにより多くの `cohorts` が生じる可能性があるので、必要な特定の `cohorts` （`Customer's first order GA source` で使用可能な様々な値に対応）を選択できます。
 
-![コホートグループ](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
+![ コホートグループ ](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
 
-#### 3. `Action timestamp`
+#### 3.`Action timestamp`
 
-これにより、指標を作成した列以外の日付ベースの列を選択できます。 以下では、特定のに適用される時間範囲の選択について説明します `action timestamp`.
+これにより、指標を作成した列以外の日付ベースの列を選択できます。 以下では、指定された `action timestamp` に適用される時間範囲の選択について説明します。
 
-#### 4. `Cohort first action time range`
+#### 4.`Cohort first action time range`
 
-以下は、を含む日付範囲の選択場所です。 `cohorts action timestamp` （2017 年 11 月から 2018 年 10 月まで初回注文があったお客様）。 これは、移動日付範囲または固定日付範囲にすることができます。
+ここでは、`cohorts action timestamp` を含む日付範囲（つまり、2017 年 11 月から 2018 年 10 月に最初の注文を行ったお客様）を選択します。 これは、移動日付範囲または固定日付範囲にすることができます。
 
-#### 5. `Time range after cohort occurrence`
+#### 5.`Time range after cohort occurrence`
 
-を表示しますか？ `cohorts` 時間の経過と共に、月、週、または年別に表示しますか？ ここで、選択を行います。 そのセクションの下で、 `time range` 後 `cohort action timestamp` が発生しました。 例えば、アクションの時間範囲内に最初の注文を行った顧客の 12 か月のデータが表示されます。
+`cohorts` の推移を月別、週別または年別に表示しますか？ ここで、選択を行います。 そのセクションの下で、`cohort action timestamp` が発生した後の `time range` を選択します。 例えば、アクションの時間範囲内に最初の注文を行った顧客の 12 か月のデータが表示されます。
 
-![cohort-first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
+![ コホート – first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 >[!NOTE]
 >
->[!UICONTROL Filters] 以下を切り替えても、指標に適用されるデータは変わりません `Standard` および `Cohort` ビュー。
+>`Standard` ビューと `Cohort` ビューを切り替えても、指標に適用される [!UICONTROL Filters] ータはそのまま維持されます。
 
 ### 関連
 
-参照： [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+[`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md) を参照。

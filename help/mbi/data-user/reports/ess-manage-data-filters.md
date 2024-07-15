@@ -13,41 +13,41 @@ ht-degree: 0%
 
 # フィルターセットの作成
 
-に複数の指標がある場合 [!DNL Commerce Intelligence] 同様の方法でフィルタリングする必要がある場合（例えば、テスト注文を除外する場合）、保存済みのフィルターセットを作成して、指標に適用できます。 これにより、指標を作成または編集する際に個々のフィルターを追加する必要がなくなるので、時間を節約できます。
+同様の方法でフィルタリングする必要がある指標が [!DNL Commerce Intelligence] 内に複数ある場合（例えばテスト注文を除外する場合）、保存済みのフィルターセットを作成して指標に適用できます。 これにより、指標を作成または編集する際に個々のフィルターを追加する必要がなくなるので、時間を節約できます。
 
-を参照してください。 [トレーニングビデオ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) を参照してください。
+詳しくは、[ トレーニングビデオ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) を参照してください。
 
 >[!NOTE]
 >
->が必要 [管理者権限](../../administrator/user-management/user-management.md).
+>[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
 
-1. クリック **[!DNL Manage Data** > **Filter Sets]** サイドバーで。
+1. サイドバーの「**[!DNL Manage Data** > **Filter Sets]**」をクリックします。
 
    ![](../../assets/create-filter-sets.png)
 
-1. クリック **[!UICONTROL Add Filter Set]** ページの上部
+1. ページ上部の「**[!UICONTROL Add Filter Set]**」をクリックします。
 
 1. フィルターする指標を含んだテーブルを選択します。
 
-   例えば、 `Total number of orders` 指標および指標は `orders` テーブル、そのテーブルを選択します。
+   例えば、`Total number of orders` 指標をフィルタリングし、`orders` テーブルに基づいて作成する場合は、そのテーブルを選択します。
 
-1. に名前を付ける `Filter Set`.
+1. `Filter Set` に名前を付けます。
 
 1. 関連するすべてのフィルターを追加します。
 
-   例えば、完了ステータスの注文のみを `Total number of orders` 指標の場合、ステータス =でないすべての注文を除外するフィルターを適用します `complete`.
+   例えば、`Total number of orders` 指標に完了ステータスの注文のみを含める場合、ステータス = `complete` を持たないすべての注文を除外するフィルターを適用します。
 
-1. フィルターロジックを検証し、括弧と演算子が正しく配置されていることを確認します。例： `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
+1. フィルタ ロジックを検証し、括弧と演算子が正しく配置されていることを確認します（例：`\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`）。
 
-   多くの場合、間違ったフィルターが間のデータ不一致の原因です [!DNL Commerce Intelligence] レポートと予想される結果。
+   誤ったフィルターは、多くの場合、レポートと期待される結果との間 [!DNL Commerce Intelligence] データの不一致の原因です。
 
-1. を保存します `Filter Set`.
+1. `Filter Set` を保存します。
 
-フィルターセットを保存したら、同じテーブルを使用する任意の指標に適用できます。 例えば、 `Filter Set` 日 `orders` テーブル、適用先 *任意の指標* 次のような、このテーブルに基づいて作成されます `Revenue`.
+フィルターセットを保存したら、同じテーブルを使用する任意の指標に適用できます。 例えば、`orders` テーブルに `Filter Set` を作成した場合、`Revenue` など、このテーブルに基づいて作成された *任意の指標* に適用できます。
 
 >[!NOTE]
 >
->`Filter Sets` は、の計算列にも適用できます [!DNL Commerce Intelligence]. で作成されたデータディメンションにフィルターセットを適用するようリクエストすることもできます。 [!DNL Commerce Intelligence] を使用して、サポートに問い合わせます。
+>`Filter Sets` は、[!DNL Commerce Intelligence] の計算列にも適用できます。 サポートに問い合わせることで、を介して [!DNL Commerce Intelligence] で作成されたデータディメンションにフィルターセットを適用するようリクエストできます。
 
 ## 関連
 

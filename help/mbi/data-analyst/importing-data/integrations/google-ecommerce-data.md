@@ -1,5 +1,5 @@
 ---
-title: 予測[!DNL Google ECommerce]データ
+title: Expected[!DNL Google ECommerce]data
 description: Google E コマースと共有されるデータのタイプについて説明します。
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
 role: Admin, Data Architect, Data Engineer, User
@@ -11,21 +11,21 @@ ht-degree: 0%
 
 ---
 
-# 予測 [!DNL Google ECommerce] データ
+# 予期される [!DNL Google ECommerce] データ
 
-あなたの後で [!DNL Google ECommerce] アカウントがに正常に接続されました [!DNL Commerce Intelligence]を選択すると、システムがという名前のテーブルへのデータのインポートを開始します `ecommerce`. このテーブルは、各トランザクションのデータ行を記録します。 これには、次の順序レベルのデータ列が含まれます。
+[!DNL Google ECommerce] アカウントが [!DNL Commerce Intelligence] に正常に接続されると、システムによって `ecommerce` という名前のテーブルへのデータのインポートが開始されます。 このテーブルは、各トランザクションのデータ行を記録します。 これには、次の順序レベルのデータ列が含まれます。
 
 | 列名 | 説明 |
 |-----|-----|
 | `\_id` | この列はプライマリキーです。 |
-| `accountId` | この列には、に関連付けられたアカウント ID が含まれています [!DNL Google Analytics] e コマースアカウント。 |
-| `profileName` | この列には、が含まれます [!DNL Google Analytics] プロファイル名。 |
-| `profileId` | この列には、が含まれます [!DNL Google Analytics] プロファイル ID。 |
-| `socialNetwork` | この列にはソーシャルネットワークの名前が含まれます（例：） [!DNL Facebook]、または [!DNL YouTube]） |
-| `campaign` | この列にはキャンペーン名が表示されます（例：） [`utm\_campaign`](https://support.google.com/analytics/answer/1033867?hl=en)）に設定します。 |
-| `medium` | この列には、中程度の名前が含まれています（例： [`utm\_medium`](https://support.google.com/analytics/answer/1033867?hl=en)） |
-| `source` | この列にはソース名が含まれます。 （例： [`utm\_source`](https://support.google.com/analytics/answer/1033867?hl=en)） |
-| `keyword` | この列には、キーワードの説明が含まれます（例：） [`utm\_term`](https://support.google.com/analytics/answer/1033867?hl=en)） |
+| `accountId` | この列には、[!DNL Google Analytics] e コマースアカウントに関連付けられたアカウント ID が含まれています。 |
+| `profileName` | この列には、[!DNL Google Analytics] プロファイル名が表示されます。 |
+| `profileId` | この列には、[!DNL Google Analytics] プロファイル ID が表示されます。 |
+| `socialNetwork` | この列には、ソーシャルネットワークの名前（例：[!DNL Facebook]、[!DNL YouTube]）が表示されます |
+| `campaign` | この列にはキャンペーン名が表示されます（例：[`utm\_campaign`](https://support.google.com/analytics/answer/1033867?hl=en)）。 |
+| `medium` | この列には、中程度の名前（例：[`utm\_medium`](https://support.google.com/analytics/answer/1033867?hl=en)）が含まれています |
+| `source` | この列にはソース名が含まれます。 （例：[`utm\_source`](https://support.google.com/analytics/answer/1033867?hl=en)）。 |
+| `keyword` | この列には、キーワードの説明（例：[`utm\_term`](https://support.google.com/analytics/answer/1033867?hl=en)）が含まれます |
 | `transactionId` | この列には注文 ID が含まれています。 これは、リファラルデータを注文データに結合するために使用されます。 |
 | `updated\_at` | この列には、データ行が最後に更新された時刻が含まれています。 |
 

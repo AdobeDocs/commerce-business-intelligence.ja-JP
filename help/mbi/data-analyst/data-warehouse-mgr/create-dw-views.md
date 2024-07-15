@@ -13,43 +13,43 @@ ht-degree: 6%
 
 # Data Warehouseビューの操作
 
-このドキュメントでは、の目的と使用について説明します `Data Warehouse Views` に移動してアクセス可能 **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. 次に、機能とビューの作成方法を説明し、の使用方法の例を示します `Data Warehouse Views` 連結する [!DNL Facebook] および [!DNL AdWords] 費用データ。
+このドキュメントでは、**[!UICONTROL Manage Data]**/**[!UICONTROL Data Warehouse Views]** に移動してアクセス可能な `Data Warehouse Views` の目的と使用について説明します。 以下に、アクティビティの概要とビューの作成方法を説明し、`Data Warehouse Views` を使用して [!DNL Facebook] ータと [!DNL AdWords] の支出データを統合する方法の例を示します。
 
 ## 一般用途
 
-この `Data Warehouse Views` この機能は、既存のテーブルを変更したり、SQL を使用して複数のテーブルを結合または統合したりして、新しいウェアハウス テーブルを作成する方法です。 1 回 `Data Warehouse View` が更新サイクルで作成および処理され、の下の新しいテーブルとしてData Warehouseに入力されます。 `Data Warehouse Views` 次に示すように、ドロップダウンを使用します。
+`Data Warehouse Views` の機能は、既存のテーブルを変更して新しいウェアハウス テーブルを作成する方法、または SQL を使用して複数のテーブルを結合または統合する方法です。 更新サイクルで `Data Warehouse View` が作成および処理されると、次に示すように、`Data Warehouse Views` ドロップダウンの下の新しいテーブルとしてData Warehouseに入力されます。
 
 ![](../../assets/Data_Warehouse.png)
 
 ここから、新しいビューは他のテーブルと同様に機能し、新しい計算列を作成したり、指標とレポートを作成したりできます。
 
-`Data Warehouse Views` 主に、類似しているが異なる複数のテーブルを統合して、すべてのレポートを 1 つの新しいテーブルで作成できるようにするために使用されます。 一般的な例としては、従来のデータベースとライブデータベースのテーブルを統合して履歴データと現在のデータを組み合わせたり、Facebookや AdWords などの複数の広告ソースを 1 つの広告に組み合わせたりすることができます `Consolidated ad spend` テーブル。
+`Data Warehouse Views` は主に、類似しているが異なる複数のテーブルを統合して、すべてのレポートを 1 つの新しいテーブルで作成できるようにするために使用されます。 一般的な例としては、従来のデータベースとライブデータベースのテーブルを統合して履歴データと現在のデータを組み合わせたり、Facebookや AdWords などの複数の広告ソースを 1 つの `Consolidated ad spend` テーブルに組み合わせたりすることができます。
 
-SQL に精通している場合、これらの統合の例ではどちらも `UNION` 関数ですが、新しいビューを作成する際には任意の PostgreSQL 構文と関数を使用できます。
+SQL に精通している場合、これらの統合例の両方で `UNION` 関数を使用していますが、新しいビューを作成する際には任意の PostgreSQL 構文および関数を使用できます。
 
 ## Data Warehouseビューの作成と管理
 
-新規 `Data Warehouse Views` に移動することで、を作成したり、既存のビューを削除したりできます。 **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**&#x200B;を次に示します。
+以下に示すように、**[!UICONTROL Manage Data]** / **[!UICONTROL Data Warehouse Views]** に移動して、新しい `Data Warehouse Views` を作成し、既存のビューを削除できます。
 
 ![](../../assets/Data_Warehouse_Views.png)
 
 ここから、以下のサンプル手順に従ってビューを作成できます。
 
-1. 既存のビューを確認する場合は、をクリックします **[!UICONTROL New Data Warehouse View]** をクリックして、空のクエリ ウィンドウを開きます。 空のクエリウィンドウが既に開いている場合は、次の手順に進みます。
-1. を入力して、ビューに名前を付けます。 `View Name` フィールド。 ここで指定した名前によって、Data Warehouseのビューの表示名が決まります。 `View names` は、小文字、数字、アンダースコア（_）に制限されます。 その他の文字は使用できません。
-1. という名前のウィンドウにクエリを入力します。 `Select Query`標準の PostgreSQL 構文を使用します。
+1. 既存のビューを監視する場合は、**[!UICONTROL New Data Warehouse View]** をクリックして空のクエリウィンドウを開きます。 空のクエリウィンドウが既に開いている場合は、次の手順に進みます。
+1. `View Name` フィールドにと入力して、ビューに名前を付けます。 ここで指定した名前によって、Data Warehouseのビューの表示名が決まります。 `View names` は、小文字、数字、アンダースコア（_）に制限されます。 その他の文字は使用できません。
+1. 標準の PostgreSQL 構文を使用して、`Select Query` という名前のウィンドウにクエリを入力します。
 
    >[!NOTE]
    >
-   >クエリでは、特定の列名を参照する必要があります。 の使用 `*`すべての列を選択する文字は許可されていません。
+   >クエリでは、特定の列名を参照する必要があります。 `*` 文字を使用してすべての列を選択することは許可されていません。
 
-1. 完了したら、 **[!UICONTROL Save]** ビューを保存します。 現在のビューには一時的に `Pending` 次回の完全更新サイクルで処理されるまでのステータス。次のサイクルで処理された時点で、ステータスがに変わります。 `Active`. 更新で処理されると、ビューをレポートで使用できるようになります。
+1. 完了したら、「**[!UICONTROL Save]**」をクリックしてビューを保存します。 次回の完全更新サイクルで処理されるまで、ビューのステータスは一時的に `Pending` になります。次回の完全更新サイクルで、ステータスが `Active` に変わります。 更新で処理されると、ビューをレポートで使用できるようになります。
 
-保存後、基になるクエリがの生成に使用されることに注意してください `Data Warehouse View` 編集できません。 構造を調整する必要がある場合 `Data Warehouse View`の場合は、ビューを作成し、計算列、指標またはレポートを元のビューから新しいビューに手動で移行する必要があります。 移行が完了したら、元のビューを安全に削除できます。 なぜなら `Data Warehouse Views` は編集できません。Adobeでは、 `SQL Report Builder` クエリをData Warehouseビューとして保存する前に。
+保存後は、`Data Warehouse View` ータの生成に使用される基になるクエリを編集できないことに注意してください。 `Data Warehouse View` の構造を調整する必要がある場合は、ビューを作成し、計算列、指標、またはレポートを元のビューから新しいビューに手動で移行する必要があります。 移行が完了したら、元のビューを安全に削除できます。 Adobe `Data Warehouse Views` は編集できないので、クエリをData Warehouseビューとして保存する前に、`SQL Report Builder` を使用してクエリの出力をテストすることをお勧めします。
 
-## 例： [!DNL Facebook] および [!DNL Google AdWords] データ
+## 例：[!DNL Facebook] および [!DNL Google AdWords] データ
 
-この記事で前述した例の 1 つを詳しく見てください。統合 [!DNL Facebook] および [!DNL AdWords] データを新しい統合広告テーブルに費やします。 最も一般的には、以下のサンプルデータセットを使用した 2 つのテーブルの統合が含まれます。
+この記事で前述した例の 1 つを詳しく見てください。[!DNL Facebook] と [!DNL AdWords] の支出データを新しい統合広告テーブルに統合します。 最も一般的には、以下のサンプルデータセットを使用した 2 つのテーブルの統合が含まれます。
 
 `Ad source: Google AdWords`
 
@@ -79,16 +79,16 @@ SQL に精通している場合、これらの統合の例ではどちらも `UN
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-両方を含む単一の広告費用テーブルを作成するには [!DNL Facebook] および [!DNL Google AdWords] キャンペーンの場合は、SQL クエリを記述し、を使用する必要があります `UNION ALL` 関数。 A `UNION ALL` 文は、各クエリの結果を 1 つの出力に追加する際に、複数の個別の SQL クエリを組み合わせるために最もよく使用されます。
+[!DNL Facebook] キャンペーンと [!DNL Google AdWords] キャンペーンの両方を含んだ単一の広告費用テーブルを作成するには、SQL クエリを記述し、`UNION ALL` 関数を使用する必要があります。 `UNION ALL` 文は、各クエリの結果を 1 つの出力に追加する際に、複数の個別の SQL クエリを組み合わせるために最もよく使用されます。
 
-には、いくつかの要件があります `UNION` postgreSQL で概説されているように、言及する価値のあるステートメント [詳細を見る](https://www.postgresql.org/docs/8.3/queries-union.html):
+PostgreSQL [ ドキュメント ](https://www.postgresql.org/docs/8.3/queries-union.html) に概説されているように、言及する価値のある `UNION` 文のいくつかの要件があります。
 
 * すべてのクエリは、同じ数の列を返す必要があります
 * 対応する列は、同じデータタイプである必要があります
 
-を実行する場合 `UNION` または `UNION ALL` ステートメントでは、最終的な出力内の列の名前は、最初のクエリの列の名前を反映しています。
+`UNION` または `UNION ALL` ステートメントを実行する場合、最終的な出力内の列の名前は、最初のクエリの列の名前を反映しています。
 
-通常、を統合します [!DNL Facebook] および [!DNL Google AdWords] データを～に費やす `Data Warehouse View` では、次のようなクエリを使用して、7 つの列を持つテーブルを作成する必要があります。
+通常、[!DNL Facebook] と [!DNL Google AdWords] の支出データを `Data Warehouse View` に統合するには、次のようなクエリを使用して、7 列のテーブルを作成する必要があります。
 
 ```sql
     SELECT
@@ -115,9 +115,9 @@ SQL に精通している場合、これらの統合の例ではどちらも `UN
 上記に関するいくつかの重要な点を以下に示します。
 
 * わかりやすくするために、すべての列はこれらよりもエイリアス化され、すべてのクエリで名前が一致するようになります。 ただし、これは要件ではありません。 SELECT クエリでカラムが呼び出される順序によって、カラムの並び方が決まります。
-* という新しい列 `ad_source` を作成して、フィルタリングを容易にする [!DNL AdWords] または [!DNL Facebook] データ。 このクエリは、両方のテーブルのすべてのデータを結合することに注意してください。 のような列を作成しない場合 `ad_source`、特定のソースから支出を識別する簡単な方法はありません。
+* データの [!DNL AdWords] ースや [!DNL Facebook] ストを簡単にフィルタリングできるように、`ad_source` という新しい列が作成されます。 このクエリは、両方のテーブルのすべてのデータを結合することに注意してください。 `ad_source` のような列を作成しない場合、特定のソースから支出を簡単に特定する方法はありません。
 
-上記のクエリをとして保存 `Data Warehouse View` 両方を含むテーブルを作成します [!DNL Facebook] および [!DNL AdWords] 次のような費用：
+上記のクエリを `Data Warehouse View` として保存すると、次のように、[!DNL Facebook] と [!DNL AdWords] の両方の支出を含むテーブルが作成されます。
 
 | **`id`** | **`ad_source`** | **`date`** | **`campaign`** | **`spend`** | **`impressions`** | **`clicks`** |
 |--- |--- |--- |--- |--- |--- |--- |
@@ -136,9 +136,9 @@ SQL に精通している場合、これらの統合の例ではどちらも `UN
 
 **その他のヘルプをお探しですか？**
 
-SQL の記述と作成 `Data Warehouse Views` は、テクニカルサポートには含まれていません。 ただし、 [サービスチーム](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ビューの作成に役立ちます。 従来のデータベースを新しいデータベースに移行して、特定の分析のために 1 つのData Warehouseビューを作成するといった作業は、サポートチームがサポートします。
+SQL の書き込みと `Data Warehouse Views` の作成は、テクニカルサポートには含まれていません。 ただし、[ サービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) は、ビューの作成を支援します。 従来のデータベースを新しいデータベースに移行して、特定の分析のために 1 つのData Warehouseビューを作成するといった作業は、サポートチームがサポートします。
 
-通常、新しいの作成 `Data Warehouse View` 2～3 の同様に構造化されたテーブルを統合する場合、5 時間のサービス時間が必要になり、これは約 1,250 ドルの作業になります。 ただし、以下に、必要な予想投資を増やす可能性のある一般的な要因を示します。
+通常、2～3 の同様に構造化されたテーブルを統合する目的で新しい `Data Warehouse View` ールを作成するには、5 時間のサービス時間が必要です。これは、約 1,250 ドルの作業になります。 ただし、以下に、必要な予想投資を増やす可能性のある一般的な要因を示します。
 
 * 3 つ以上のテーブルを 1 つのビューに統合
 * 複数のData Warehouseビューの作成

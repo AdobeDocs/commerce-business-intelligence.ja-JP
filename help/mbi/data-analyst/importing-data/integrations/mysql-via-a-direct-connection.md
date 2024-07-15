@@ -1,6 +1,6 @@
 ---
 title: 直接接続による MySQL の接続
-description: 接続方法を学ぶ [!DNL MongoDB] 直接接続を使用する。
+description: 直接接続を使用して接続する方法  [!DNL MongoDB]  説明します。
 exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,59 +11,59 @@ ht-degree: 0%
 
 ---
 
-# 接続 [!DNL MySQL] 直接接続による
+# 直接接続を介して [!DNL MySQL] に接続
 
 ## このトピック内
 
-* [へのアクセスを許可 [!DNL Commerce Intelligence] IP アドレス](#allowlist)
-* [を作成 [!DNL MySQL] のユーザー [!DNL Commerce Intelligence]](#steptwo)
-* [接続情報をに入力 [!DNL Commerce Intelligence]](#stepthree)
+* [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+* [ [!DNL Commerce Intelligence] のユ  [!DNL MySQL]  ザーを作成](#steptwo)
+* [接続情報の入力先  [!DNL Commerce Intelligence]](#stepthree)
 
 ## 移動先
 
-* [[!DNL MySQL] 経由 ](../integrations/mysql-via-ssh-tunnel.md)
-* [[!DNL MySQL] 経由 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
+* [[!DNL MySQL] via ](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL] via [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >
->[!DNL Adobe] では、を使用することをお勧めします。 [SSH](../integrations/mysql-via-ssh-tunnel.md) または、データを保護するためのその他の形式の暗号化 このオプションが選択できない場合でも、直接接続できます [!DNL Commerce Intelligence] をデータベースに追加するには、このトピックの手順を使用します。
+>[!DNL Adobe] では、データを保護するために [SSH](../integrations/mysql-via-ssh-tunnel.md) またはその他の形式の暗号化を使用することをお勧めします。 これがオプションでない場合でも、このトピックの手順を使用して、[!DNL Commerce Intelligence] をデータベースに直接接続できます。
 
-このトピックでは、を直接接続する方法について説明します [!DNL MySQL] データベース先 [!DNL Commerce Intelligence]. これらの設定は、 [!DNL Adobe Commerce] または、MySQL を使用するその他の e コマースデータベース。
+このトピックでは、[!DNL MySQL] データベースを [!DNL Commerce Intelligence] に直接接続する手順について説明します。 これらの設定は、[!DNL Adobe Commerce] または MySQL を使用するその他の e コマースデータベースでも使用できます。
 
-## へのアクセスを許可 [!DNL Commerce Intelligence] IP アドレス {#allowlist}
+## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可 {#allowlist}
 
-接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 次のとおりです `54.88.76.97` および `34.250.211.151`ただし、そのページは [!DNL MySQL] 資格情報ページ：
+接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 これらは `54.88.76.97` と `34.250.211.151` ですが、[!DNL MySQL] の資格情報ページにも表示されます。
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## を作成 [!DNL MySQL] のユーザー [!DNL Commerce Intelligence]
+## [!DNL Commerce Intelligence] の [!DNL MySQL] ユーザーの作成
 
-を作成する最も簡単な方法 `MySQL` のユーザー [!DNL Commerce Intelligence] をにログインすると、次のクエリが実行されます `MySQL` （を使用） `GRANT` 権限。 置換 `Commerce Intelligence IP Address` （を使用） [!DNL Commerce Intelligence] IP アドレスと置換 `secure password` 任意の安全なパスワードを使用：
+[!DNL Commerce Intelligence] の `MySQL` ユーザーを作成する最も簡単な方法は、`GRANT` 権限で `MySQL` にログインしたときに次のクエリを実行することです。 `Commerce Intelligence IP Address` を [!DNL Commerce Intelligence] の IP アドレスに置き換え、`secure password` を選択した安全なパスワードに置き換えます。
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
 ```
 
-このユーザーが特定のデータベース、テーブルまたは列のデータにアクセスするのを制限するには、代わりにを実行します。 `GRANT` 許可したデータへのアクセスのみを許可するクエリ。
+このユーザーが特定のデータベース、テーブル、または列のデータにアクセスするのを制限するには、許可されたデータへのアクセスのみを許可する `GRANT` クエリを実行します。
 
 **同じユーザーとパスワードを使用して、必要なすべての IP に対して GRANT クエリを再実行します。**
 
-## Commerce Intelligence で接続情報を入力します
+## Commerce Intelligenceに接続情報を入力
 
-最後に、接続とユーザー情報をに入力する必要があります。 [!DNL Commerce Intelligence]. を残しましたか [!DNL MySQL] 資格情報ページが開かれますか？ そうでない場合は、に移動します **[!UICONTROL Data** > **Connections]** をクリックして、 **[!UICONTROL Add New Data Source]**&#x200B;を選択し、 [!DNL MySQL] アイコン。 を変更することを忘れないでください `Encrypted` 切り替え `Yes`.
+まとめるには、接続とユーザー情報を [!DNL Commerce Intelligence] に入力する必要があります。 [!DNL MySQL] 資格情報ページを開いたままにしましたか？ 表示されていない場合は、**[!UICONTROL Data** > **Connections]** に移動して「**[!UICONTROL Add New Data Source]**」をクリックし、[!DNL MySQL] アイコンをクリックします。 `Encrypted` の切り替えを `Yes` に変更することを忘れないでください。
 
-このページに以下の情報を入力します。まず、 `Database Connection` セクション：
+このページに、`Database Connection` のセクションから始まる次の情報を入力します。
 
 * `Connection Nickname`：統合の名前（E コマースストアなど）を入力します
-* `Username`：のユーザー名 [!DNL Commerce Intelligence] [!DNL MySQL] ユーザー
-* `Password`：のパスワード [!DNL Commerce Intelligence] [!DNL MySQL] ユーザー
-* `Port`：サーバー上の MySQL のポート（`3306` デフォルト）
-* `Host`：デフォルトでは、localhost です。 通常、これはユーザのバインド アドレスの値です [!DNL MySQL] サーバー（デフォルトでは） `127.0.0.1 (localhost)`ただし、ローカルネットワークアドレス（例：）も指定できます `192.168.0.1`）またはサーバーのパブリック IP アドレス。
+* `Username`:[!DNL Commerce Intelligence] [!DNL MySQL] ユーザーのユーザー名
+* `Password`:[!DNL Commerce Intelligence] [!DNL MySQL] ユーザーのパスワード
+* `Port`: サーバー上の MySQL のポート （デフォルトでは `3306`）
+* `Host`: デフォルトでは、これは localhost です。 一般に、これは [!DNL MySQL] サーバーのバインド アドレス値です。デフォルトでは `127.0.0.1 (localhost)` ですが、ローカル ネットワーク アドレス （`192.168.0.1` など）またはサーバーのパブリック IP アドレスの場合もあります。
 
-  値は、 `my.cnf` ファイル （の場所： `/etc/my.cnf`）を表す行の下 `\[mysqld\]`. このファイルで bind-address 行がコメントアウトされている場合、サーバーは外部からの接続の試行から保護されます。
+  この値は、`\[mysqld\]` を読み取る行の下の `my.cnf` ファイル（`/etc/my.cnf` にあります）にあります。 このファイルで bind-address 行がコメントアウトされている場合、サーバーは外部からの接続の試行から保護されます。
 
-完了したら、 **[!UICONTROL Save & Test]** をクリックして設定を完了します。
+完了したら、「**[!UICONTROL Save & Test]**」をクリックして設定を完了します。
 
 ## 関連ドキュメント
 
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

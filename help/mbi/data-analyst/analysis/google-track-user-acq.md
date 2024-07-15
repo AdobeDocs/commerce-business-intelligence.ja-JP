@@ -1,5 +1,5 @@
 ---
-title: Google Analytics - ユーザー獲得ソースデータのトラッキングの概要
+title: Google Analytics - ユーザー獲得の追跡Source データの概要
 description: ユーザー獲得ソース別にデータをセグメント化する方法を説明します。
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
@@ -15,55 +15,55 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->以下のプロセスはサポートしていません [!DNL Google Universal Analytics].
+>以下のプロセスは [!DNL Google Universal Analytics] をサポートしていません。
 
 マーケティングプランを効果的に管理するには、ユーザー獲得ソースでデータをセグメント化する機能が重要です。 新しいユーザーの獲得ソースを把握すると、どのチャネルが最も高いリターンを生み出すかを示し、チームが自信を持ってマーケティングドルを割り当てることができます。
 
-データベース内のユーザー獲得ソースをまだトラッキングしていない場合は、 [!DNL Adobe Commerce Intelligence] 作業を開始する際に役立ちます。
+データベース内のユーザー獲得ソースをまだトラッキングしていない場合は、[!DNL Adobe Commerce Intelligence] の方法を開始すると役立ちます。
 
 ## ユーザー獲得ソースのトラッキング
 
 [!DNL Adobe] では、設定に基づいてリファラルソースデータを追跡する 2 つの方法をお勧めします。
 
-### （オプション 1）を介した注文リファラルソースデータのトラッキング [!DNL Google Analytics E-Commerce]
+### （オプション 1） [!DNL Google Analytics E-Commerce] を介した注文リファラルソースデータの追跡
 
-を使用する場合 [!DNL Google Analytics E-Commerce] 注文および販売データを追跡するには、を使用できます [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) 各注文の参照元データを同期します。 これにより、リファラルソース（など）別に売上高と注文をセグメント化できます。 `utm_source` または `utm_medium`）に設定します。 また、次のような方法で、顧客獲得ソースを把握できます [!DNL Commerce Intelligence] カスタムディメンション（例：） `User's first order source`.
+[!DNL Google Analytics E-Commerce] を使用して注文および販売データを追跡する場合は、[!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) を使用して各注文のリファラルソースデータを同期できます。 これにより、売上高と注文をリファラルソース（`utm_source` や `utm_medium` など）別にセグメント化できます。 また、`User's first order source` などのカスタムディメンションを使用して、顧客獲得ソース [!DNL Commerce Intelligence] 把握できます。
 
-### （オプション 2）保存 [!DNL Google Analytics]データベース内の獲得ソースデータ
+### （オプション 2） [!DNL Google Analytics] の取得元データをデータベースに保存する
 
-このトピックでは、保存方法を説明します [!DNL Google Analytics] 獲得チャネル情報を独自のデータベースに –  `source`, `medium`, `term`, `content`, `campaign`、および `gclid` ユーザーの初めての web サイト訪問時に存在したパラメーター。 これらのパラメータの詳細については、 [[!DNL Google Analytics] 詳細を見る](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). 次に、この情報を使用して実行できる強力なマーケティング分析をいくつか見ていきます。 [!DNL Commerce Intelligence].
+このトピックでは [!DNL Google Analytics] ユーザーが初めて Web サイトを訪問した際に存在した `source`、`medium`、`term`、`content`、`campaign` および `gclid` のパラメーターなど、獲得チャネルの情報を独自のデータベースに保存する方法について説明します。 これらのパラメーターについて詳しくは、[[!DNL Google Analytics]  ドキュメント ](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article) を参照してください。 次に、この情報を使用して [!DNL Commerce Intelligence] で実行できる強力なマーケティング分析をいくつか見ていきます。
 
 #### なぜでしょうか。
 
-デフォルトの場合は、次のようになります [!DNL Google Analytics] コンバージョンと獲得の指標については、全体像を把握しているわけではありません。 オーガニック検索と有料検索のコンバージョン数の比較は興味深いものですが、この情報で何ができますか？ 有料検索にもっと金を使うべきですか？ これは、そのチャネルから生じる顧客の価値によって異なり、Google Analyticsが提供するものではありません。
+コンバージョンおよび獲得指標 [!DNL Google Analytics] デフォルト値を見ているだけでは、全体像を把握することはできません。 オーガニック検索と有料検索のコンバージョン数の比較は興味深いものですが、この情報で何ができますか？ 有料検索にもっと金を使うべきですか？ これは、そのチャネルから生じる顧客の価値によって異なり、Google Analyticsが提供するものではありません。
 
 >[!NOTE]
 >
->[[!DNL Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) トランザクションデータをに保存することでこの問題を軽減します [!DNL Google Analytics]ただし、このソリューションは e コマース以外のサイトには機能しません。 また、コホート分析などの特定のツールは、 [!DNL Google Analytics] インターフェイス。
+>[[!DNL Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) は、トランザクションデータを [!DNL Google Analytics] に保存することでこの問題を軽減しますが、このソリューションは e コマース以外のサイトには機能しません。 また、コホート分析などの特定のツールは、[!DNL Google Analytics] インターフェイスで簡単に実行できません。
 
-特定のメールキャンペーンから取得したすべての顧客にフォローアップの契約をメールで送信する場合はどうすればよいですか？ または、獲得データを CRM システムと統合しますか？ では不可能です。 [!DNL Google Analytics]  – 実際、次のサービス利用規約に反します： [!DNL Google Analytics] 個人を識別するデータを格納する場合。 ただし、このデータは自分で保存できます。
+特定のメールキャンペーンから取得したすべての顧客にフォローアップの契約をメールで送信する場合はどうすればよいですか？ または、獲得データを CRM システムと統合しますか？ これは [!DNL Google Analytics] では不可能です。実際、個人を識別するデータを保存することは、[!DNL Google Analytics] の利用規約に反します。 ただし、このデータは自分で保存できます。
 
 #### メソッド
 
-[!DNL Google Analytics] という cookie に訪問者の参照情報を格納します `__utmz`. この Cookie の設定後（ [!DNL Google Analytics] トラッキングコード）、そのコンテンツは、そのユーザーからドメインに後続のリクエストのたびに送信されます。 例えば PHP では、以下の内容を確認できます。 `$_COOKIE['__utmz']` 次のような文字列が表示されます。
+[!DNL Google Analytics] は、訪問者の参照情報を `__utmz` という cookie に格納します。 [!DNL Google Analytics] トラッキングコードによってこの cookie が設定された後は、そのユーザーからのドメインへの後続のリクエストのたびに、その内容が送信されます。 例えば PHP では、`$_COOKIE['__utmz']` の内容をチェックすると、次のような文字列が表示されます。
 
 `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 
 文字列にエンコードされた何らかの取得元データがあることは明らかです。 これは、訪問者の最新の獲得ソースおよび関連するキャンペーンデータであることを確認するためにテストされています。 次に、データの抽出方法を知る必要があります。
 
-このコードはに変換されました [github でホストされる PHP ライブラリ](https://github.com/RJMetrics/referral-grabber-php). ライブラリを使用するには、 `include` 対する参照 `ReferralGrabber.php` を呼び出します
+このコードは、github でホストされる [PHP ライブラリ ](https://github.com/RJMetrics/referral-grabber-php) に変換されました。 ライブラリを使用するには、`ReferralGrabber.php` への参照を `include` し、次にを呼び出します
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 
-返された `$data` 配列はキーのマップです `source`, `medium`, `term`, `content`, `campaign`, `gclid`、およびそれぞれの値。
+返される `$data` 配列は、キー `source`、`medium`、`term`、`content`、`campaign`、`gclid` およびそれぞれの値のマップです。
 
-Adobeでは、データベースにというテーブルを追加することをお勧めします。例： `user_referral`：次のような列を持ちます。 `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. ユーザーがサインアップするたびに、参照情報を取得してこのテーブルに保存します。
+Adobeでは、例えば `user_referral` というテーブルを、`id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)` のような列を使用して、データベースに追加することをお勧めします。 ユーザーがサインアップするたびに、参照情報を取得してこのテーブルに保存します。
 
 #### このデータの使用方法
 
 ユーザー獲得ソースを保存している今、どのように使用できますか？
 
-SQL データベースを使用していて、 `users` 次の構造を持つテーブル：
+SQL データベースを使用していて、次の構造の `users` テーブルがあるとします。
 
 | ID | 電子メール | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
 |--- |--- |--- |--- |--- |
@@ -91,14 +91,14 @@ SQL データベースを使用していて、 `users` 次の構造を持つテ�
 
 * これらの数値の経時的な成長率
 * 各獲得ソースによって生成された収益の額
-* A [コホート分析](https://en.wikipedia.org/wiki/Cohort_analysis) 各ソースからのユーザーの
+* 各ソースからのユーザーの [ コホート分析 ](https://en.wikipedia.org/wiki/Cohort_analysis)
 * これらのチャネルのいずれかからのユーザーが将来、顧客として返される確率
 
 これらの分析を行うために必要なクエリは複雑です。 この情報に基づいて、最も収益性の高い獲得チャネルを決定し、それに応じてマーケティング時間と費用を集中させることができます。
 
 ### 関連
 
-* **[最も価値のある獲得ソースとチャネルを見つける](../analysis/most-value-source-channel.md)**
-* **[を接続 [!DNL Google Adwords] アカウント](../importing-data/integrations/google-adwords.md)**
+* **[最も価値の高い獲得ソースとチャネルを見つける](../analysis/most-value-source-channel.md)**
+* **[アカウント  [!DNL Google Adwords]  接続](../importing-data/integrations/google-adwords.md)**
 * **[広告キャンペーンの ROI の向上](../analysis/roi-ad-camp.md)**
-* **[方法 [!DNL Google Analytics] UTM アトリビューションの仕組み](../analysis/utm-attributes.md)**
+* **[UTM アトリビ  [!DNL Google Analytics]  ーションはどのように機能しますか？](../analysis/utm-attributes.md)**

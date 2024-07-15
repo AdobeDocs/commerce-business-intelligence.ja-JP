@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # リピート注文確率レポート
 
-## が `Incremental Event Probability` パースペクティブを使用できますか？
+## `Incremental Event Probability` パースペクティブを使用できるのはいつですか？
 
-この `incremental event probability` パースペクティブは、フィルターがすべての注文に等しいディメンション（ユーザーなど）を使用する場合にのみ使用できます `gender`、ユーザー `age` またはユーザーの `source`）に設定します。
+`incremental event probability` パースペクティブは、フィルターがすべての注文に等しいディメンション（ユーザーの `gender`、ユーザーの `age`、ユーザーの `source` など）を使用する場合にのみ使用できます。
 
-これは、このパースペクティブがというディメンションに依存しているからです `User's order number` セグメントの場合、ユーザーの購入に番号を付けます（例えば、John の 1 番目、2 番目、3 番目の注文）。
+これは、このパースペクティブが、ユーザーの購入に番号を付けるセグメント化のために `User's order number` と呼ばれるディメンションに依存しているからです（例えば、John の 1 番目、2 番目、3 番目の注文）。
 
-すべての注文に等しくないディメンションを使用するフィルターを追加した場合（例： `Order's Region`）、 `User's order number` 寸法は正確ではなくなります。 これは、ユーザーの注文に番号を付けるときに、特定の地域が考慮されないからです（例えば、John の 1 番目、2 番目、3 番目の注文は、地域に関係なく同じままです）。
+すべての注文に等しくないディメンションを使用するフィルターを追加した場合（例：`Order's Region`）、`User's order number` のディメンションは正確ではなくなります。 これは、ユーザーの注文に番号を付けるときに、特定の地域が考慮されないからです（例えば、John の 1 番目、2 番目、3 番目の注文は、地域に関係なく同じままです）。
 
 ## 順序固有の寸法をユーザ固有の寸法に変換する
 
-場合によっては、 `order-specific` ディメンションを a に `user-specific` でフィルターとして追加するディメンション `Repeat Order Probability` グラフ。 この場合、ユーザーの最初の注文または最新の注文の注文属性（ユーザーの最初の注文の地域名など）を返します。
+場合によっては、`order-specific` ディメンションを `user-specific` ディメンションに変換して、`Repeat Order Probability` グラフにフィルターとして追加できることがあります。 この場合、ユーザーの最初の注文または最新の注文の注文属性（ユーザーの最初の注文の地域名など）を返します。
 
-このような新しいディメンションを作成する場合、 [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+このような新しいディメンションを作成する場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## 異なる属性を持つ注文の繰り返し確率の比較
 
-異なる注文属性（注文など）のリピート購入数を比較するには、 `region`）、Adobeでは、次のようなグラフを作成することをお勧めします `Users by lifetime number of orders`. これにより、1、2、3、...の全期間の注文件数を行ったユーザー数が表示され、注文レベルのフィルターが追加されます。 （つまり、ユーザーがある地域でリピート購入を増やしているか減っているかを示すことができます）。
+異なる注文属性（注文の `region` など）の繰り返し購入の数を比較するために、Adobeでは `Users by lifetime number of orders` のようなグラフを作成することをお勧めします。 これにより、1、2、3、...の全期間の注文件数を行ったユーザー数が表示され、注文レベルのフィルターが追加されます。 （つまり、ユーザーがある地域でリピート購入を増やしているか減っているかを示すことができます）。
 
-このようなグラフを構成する数値を excel にエクスポートして、繰り返し注文の確率を計算できます。 実行した顧客の確率を確認するには `(x)` 発する命令 `(x+1)` 注文件数、簡単` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` 購入。
+このようなグラフを構成する数値を excel にエクスポートして、繰り返し注文の確率を計算できます。 `(x)` の注文を行った顧客の確率を確認するには、`(x+1)` の注文、単に購入 ` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` ます。
 
 ### 例：
 

@@ -15,9 +15,9 @@ ht-degree: 0%
 
 データを管理：統合、レポートおよびグラフデータ、ダッシュボードおよびエクスポートを管理する様々なツールにアクセスできます。
 
-## アクセス対象 [!DNL Manage Data]:
+## [!DNL Manage Data] にアクセスするには：
 
-1. メニューで、 **[!DNL Manage Data]**.
+1. メニューで、「**[!DNL Manage Data]**」をクリックします。
 
 1. サイドバーで、次の見出しの下で必要なトピックを選択します。
 
@@ -25,4 +25,4 @@ ht-degree: 0%
    * `Manage Data`
    * `Export Data`
 
-   ![データの管理](../../assets/magento-bi-manage-data.png)<!--{: .zoom}-->
+   ![ データの管理 ](../../assets/magento-bi-manage-data.png)<!--{: .zoom}-->

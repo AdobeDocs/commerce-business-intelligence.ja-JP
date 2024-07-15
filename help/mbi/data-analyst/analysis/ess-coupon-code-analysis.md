@@ -23,49 +23,49 @@ ht-degree: 0%
 
 まず、クーポンコードの追跡方法に関するメモ。 顧客が注文にクーポンを適用した場合、次の 3 つの問題が発生します。
 
-* 割引は次に反映されます `base_grand_total` 金額（自分 `Revenue` （Commerce Intelligence の指標）
-* クーポンコードは、に保存されます。 `coupon_code` フィールド。 このフィールドが NULL （空）の場合、注文にはクーポンが関連付けられていません。
-* 割引された金額は、次の場所に保存されます。 `base_discount_amount`. 設定によっては、この値が負または正に表示される場合があります。
+* 割引は、`base_grand_total` 金額（Commerce Intelligenceの `Revenue` 指標）に反映されます
+* クーポンコードは、「`coupon_code`」フィールドに保存されます。 このフィールドが NULL （空）の場合、注文にはクーポンが関連付けられていません。
+* 割引された金額は `base_discount_amount` に保存されます。 設定によっては、この値が負または正に表示される場合があります。
 
 Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクーポンコードを適用できます。 この場合の解決策は、次のとおりです。
 
-* 適用されたすべてのクーポンコードは、 `coupon_code` フィールドの `sales_order_coupons`. 適用された最初のクーポンコードも、に保存されます。 `coupon_code` フィールドの `sales_order`. このフィールドが NULL （空）の場合、注文にはクーポンが関連付けられていません。
+* 適用されたすべてのクーポンコードは、`sales_order_coupons` の `coupon_code` フィールドに保存されます。 適用された最初のクーポンコードは、`sales_order` の `coupon_code` フィールドにも保存されます。 このフィールドが NULL （空）の場合、注文にはクーポンが関連付けられていません。
 
 ## 指標の作成
 
 最初の手順では、次の手順で新しい指標を作成します。
 
-* に移動します。 **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
+* **[!UICONTROL Manage Data > Metrics > Create New Metric]** に移動します。
 
-* 「」を選択します `sales_order`.
-* このメトリックは、 **合計** 日 **base_discount_amount** 列、並べ替え順 **created_at**.
+* `sales_order` を選択します。
+* このメトリックは、**base_discount_amount** 列を **created_at** で順序付け **Sum** を実行します。
    * [!UICONTROL Filters]:
-      * を追加 `Orders we count` （保存済みフィルターセット）
+      * `Orders we count` （保存済みフィルターセット）を追加
       * 以下を追加します。
-         * `coupon_code`**等しくない**`[NULL]`
-      * 指標に名前を付けます（例：）。 `Coupon discount amount`.
+         * `coupon_code`**ではない**`[NULL]`
+      * 指標に名前（例：`Coupon discount amount`）を付けます。
 
 ## ダッシュボードの作成
 
 * 指標を作成したら、次の手順を実行します。
-   * に移動します。 [!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**。
-   * ダッシュボードに次のような名前を付けます `_Coupon Analysis_`.
+   * [!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**に移動します。
+   * ダッシュボードに `_Coupon Analysis_` などの名前を付けます。
 
 * ここで、すべてのレポートを作成および追加します。
 
 ## レポートの作成
 
-* **新しいレポート：**
+* **新規レポート：**
 
 >[!NOTE]
 >
->この [!UICONTROL Time Period]各レポートの**は次のとおりです。 `All-time`. 分析のニーズに合わせて自由に変更できます。 Adobeでは、次のような、このダッシュボードのすべてのレポートが同じ期間をカバーすることをお勧めします `All time`, `Year-to-date`、または `Last 365 days`.
+>各レポートの [!UICONTROL Time Period]**は `All-time` のように表示されます。 分析のニーズに合わせて自由に変更できます。 Adobeでは、このダッシュボードのすべてのレポートが、`All time`、`Year-to-date`、`Last 365 days` など、同じ期間をカバーすることをお勧めします。
 
-* **クーポン付きの注文**
+* **クーポン付き注文**
    * 
      [!UICONTROL 指標]: `Orders`
       * フィルターを追加：
-         * [`A`] `coupon_code` **等しくない** `[NULL]`
+         * [`A`] `coupon_code` **は** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -76,35 +76,35 @@ Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクー�
    * 
      [!UICONTROL 指標]: `Orders`
       * フィルターを追加：
-         * [`A`] `coupon_code` **等しい** `[NULL]`
+         * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
-* **クーポン付き注文からの純売上高**
+* **クーポン付き注文による純売上高**
    * 
      [!UICONTROL 指標]: `Revenue`
       * フィルターを追加：
-         * [`A`] `coupon_code` **等しくない** `[NULL]`
+         * [`A`] `coupon_code` **は** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **クーポンからの割引**
+* **割引券による割引**
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Time period]: `All time`
    * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **平均生涯売上高：クーポンで獲得した顧客**
+* **平均生涯売上高：クーポンで取得した顧客**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * フィルターを追加：
-         * [`A`] `Customer's first order's coupon_code` **等しくない** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **は** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -114,42 +114,42 @@ Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクー�
 * **平均生涯売上高：クーポン以外で取得した顧客**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * フィルターを追加：
-         * [A] `Customer's first order's coupon_code` **等しい**`[NULL]`
+         * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **クーポンの使用状況の詳細（初回の注文）**
+* **クーポン使用状況の詳細（初回注文）**
    * 指標 `1`: `Orders`
       * フィルターを追加：
-         * [`A`] `coupon_code` **等しくない**`[NULL]`
+         * [`A`] `coupon_code` **IS NOT**`[NULL]`
          * [`B`] `Customer's order number` **次と等しい** `1`
 
    * 指標 `2`: `Revenue`
       * フィルターを追加：
-         * [`A`] `coupon_code` **等しくない**`[NULL]`
+         * [`A`] `coupon_code` **IS NOT**`[NULL]`
          * [`B`] `Customer's order number` **次と等しい** `1`
 
-      * 名前を変更：  `Net revenue`
+      * 名前を変更：`Net revenue`
 
    * 指標 `3`: `Coupon discount amount`
       * フィルターを追加：
-         * [`A`] `coupon_code` **等しくない**`[NULL]`
+         * [`A`] `coupon_code` **IS NOT**`[NULL]`
          * [`B`] `Customer's order number` **次と等しい** `1`
 
-   * 数式を作成： `Gross revenue`
+   * 数式を作成：`Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
       * 
         [!UICONTROL Format]: `Currency`
 
-   * 数式を作成：**割引率**
-      * 数式： `(C / (B - C))`
+   * 数式を作成：**% 割引**
+      * 数式：`(C / (B - C))`
       * 
         [!UICONTROL Format]: `Percentage`
 
-   * 数式を作成： `Average order discount`
+   * 数式を作成：`Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
       * 
         [!UICONTROL Format]: `Percentage`
@@ -163,17 +163,17 @@ Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクー�
 * **初回注文クーポン別の平均生涯売上高**
    * [!UICONTROL Metric]:**平均生涯売上高**
       * フィルターを追加：
-         * [`A`] `coupon_code` **等しい**`[NULL]`
+         * [`A`] `coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **クーポンの使用状況の詳細（初回の注文）**
+* **クーポン使用状況の詳細（初回注文）**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * フィルターを追加：
-         * [`A`] `Customer's first order's coupon_code` **等しくない** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **は** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -182,16 +182,16 @@ Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクー�
    * 
      [!UICONTROL グラフ タイプ]: **Column**
 
-* **クーポン/非クーポン獲得による新規顧客**
+* **クーポン/非クーポン取得による新規顧客**
    * 指標 `1`: `New customers`
       * フィルターを追加：
-         * [`A`] `Customer's first order's coupon_code` **等しくない** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **は** `[NULL]`
 
       * [!UICONTROL Rename]: `Coupon acquisition customer`
 
    * 指標 `2`: `New customers`
       * フィルターを追加：
-         * [`A`] `coupon_code` **等しい**`[NULL]`
+         * [`A`] `coupon_code` **IS**`[NULL]`
 
       * [!UICONTROL Rename]: `Non-coupon acquisition customer`
 
@@ -203,6 +203,6 @@ Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクー�
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.7 以降、のお客様は以下を使用できます **quote_coupons** および **sales_order_coupons** 顧客が複数のクーポンをどのように使用しているかに関するインサイトを取得するテーブル。
+>Adobe Commerce 2.4.7 の時点では、お客様は **quote_coupons** および **sales_order_coupons** テーブルを使用して、複数のクーポンの使用方法に関するインサイトを取得できます。
 
 ![](../../assets/multicoupon_relationship_tables.png)

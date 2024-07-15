@@ -1,6 +1,6 @@
 ---
-title: を接続 [!DNL MySQL] データベース
-description: 接続方法を見る [!DNL MySQL] データベース [!DNL Commerce Intelligence].
+title: データベース  [!DNL MySQL]  接続
+description: データベースを  [!DNL Commerce Intelligence] に接続する方法  [!DNL MySQL]  ご覧ください。
 exl-id: 22632cab-3c44-4a1b-8809-ac6cba5f655a
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,6 +11,6 @@ ht-degree: 0%
 
 ---
 
-# を接続 `MySQL` データベース
+# `MySQL` データベースへの接続
 
 情報を入手しています。

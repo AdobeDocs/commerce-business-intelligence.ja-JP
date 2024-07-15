@@ -11,21 +11,21 @@ ht-degree: 0%
 
 ---
 
-# 作成 [!DNL Google Analytics] グラフ
+# [!DNL Google Analytics] グラフの作成
 
 （正規表現構文のヘルプを使用）
 
-接続したら [[!DNL Google Analytics] アカウント](../../data-analyst/importing-data/integrations/google-analytics.md)を使用してグラフを作成できます [!DNL Google Analytics] データ。
+[[!DNL Google Analytics]  アカウント ](../../data-analyst/importing-data/integrations/google-analytics.md) に接続したら、[!DNL Google Analytics] データを使用してグラフを作成できます。
 
-## 作成 [!DNL Google Analytics] グラフ
+## [!DNL Google Analytics] グラフの作成
 
-1. クリック **[!UICONTROL Add Chart** > **Create New Chart]**.
+1. 「**[!UICONTROL Add Chart** > **Create New Chart]**」をクリックします。
 
-1. で指標を選択する場合 `Chart Builder`リストの下部までスクロールし、を含むセクションを見つけます [!DNL Google Analytics] プロファイル。 2 つ目の指標ドロップダウンが表示されます。 ここで、分析する指標を選択できます。
+1. `Chart Builder` で指標を選択する場合は、リストの下部までスクロールして、[!DNL Google Analytics] プロファイルを含むセクションを探します。 2 つ目の指標ドロップダウンが表示されます。 ここで、分析する指標を選択できます。
 
-1. 指標を選択したら、次のオプションを選択することで、他のグラフと同様にこのグラフを進めることができます `time period`, `interval`、およびデータ `perspectives` あなたが見たいと思うもの。
+1. 指標を選択したら、表示する `time period`、`interval`、データ `perspectives` を選択することで、このグラフを他のグラフと同じように続行できます。
 
-1. ここでの 1 つの大きな違いは `√` フィルターに正規表現を使用します。 正規表現（略して正規表現）は、検索パターンを説明するための特別なテキスト文字列です。 で正規表現構文の例を参照してください。 [[!DNL Google] analytics 正規表現に関するガイド](https://support.google.com/analytics/answer/1034324?hl=en).
+1. ここでの大きな違いは、フィルターに正規表現を使用 `√` ることです。 正規表現（略して正規表現）は、検索パターンを説明するための特別なテキスト文字列です。 [[!DNL Google] Analytics 正規表現に関するガイド ](https://support.google.com/analytics/answer/1034324?hl=en) の正規表現構文の例を参照してください。
 
 >[!NOTE]
 >

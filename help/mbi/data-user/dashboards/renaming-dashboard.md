@@ -15,18 +15,18 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->が必要 [Admin](../../administrator/user-management/user-management.md) または `Standard` これらの機能を実行するための権限。 次の場合： `Standard` ユーザー（も必要） `Edit` ダッシュボードに対する権限。
+>これらの機能を実行するには、[ 管理者 ](../../administrator/user-management/user-management.md) 権限または `Standard` 権限が必要です。 `Standard` ユーザーの場合は、ダッシュボードに対する `Edit` 権限も必要です。
 
 名前が合わなくなる場合もあります。 ダッシュボードの名前の変更は、すばやく簡単に行えます。
 
-1. ダッシュボードで、 **[!UICONTROL Dashboard Options]** の横にある画面上部のメニュー `Global Search` メニュー。
+1. ダッシュボードで、画面の上部にある **[!UICONTROL Dashboard Options]** メニュー（`Global Search` メニューの横）をクリックします。
 
-1. クリック **[!UICONTROL Rename]** ドロップダウンで選択します。
+1. ドロップダウンで「**[!UICONTROL Rename]**」をクリックします。
 
 1. プロンプトが表示されたら、ダッシュボードの新しい名前を入力します。
 
-1. クリック **[!UICONTROL Save Changes]**.
+1. 「**[!UICONTROL Save Changes]**」をクリックします。
 
 例：
 
-![ダッシュボード名の変更](../../assets/renaming-dboard.gif)
+![ ダッシュボード名を変更 ](../../assets/renaming-dboard.gif)

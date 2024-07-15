@@ -11,9 +11,9 @@ ht-degree: 2%
 
 ---
 
-# [!DNL Commerce Intelligence Essentials] 比較対象： [!DNL Commerce Intelligence Pro]
+# [!DNL Commerce Intelligence Essentials] と [!DNL Commerce Intelligence Pro]
 
-次の表に、レガシーに含まれる要素を示します `Essentials` アカウントと、現在のCommerce インテリジェンスアカウントの比較。 Adobeがオファーを提供しなくなりました `Essentials`.
+次の表に、従来のCommerce Intelligence アカウントと現在の `Essentials` アカウントの比較に含まれる要素を示します。 Adobeでは、`Essentials` を提供しなくなりました。
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|

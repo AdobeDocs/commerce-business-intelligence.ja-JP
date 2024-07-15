@@ -11,33 +11,33 @@ ht-degree: 0%
 
 ---
 
-# 接続 [!DNL QuickBooks]
+# Connect [!DNL QuickBooks]
 
 >[!NOTE]
 >
->が必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
 ![](../../../assets/Quickbooks.png)
 
-（を使用） [!DNL QuickBooks] 統合により、ビジネスの財務を販売およびマーケティングデータと並べて管理できるので、費用をすばやく簡単に確認したり、過剰支出を特定したりできます。
+[!DNL QuickBooks] の統合により、ビジネスの財務を販売およびマーケティングデータと連携させることができるため、費用の監視、過剰支出の特定などを迅速かつ簡単に行うことができます。
 
-## 追加 [!DNL QuickBooks] におけるデータソースとして [!DNL Commerce Intelligence]
+## [!DNL QuickBooks] を [!DNL Commerce Intelligence] のデータソースとして追加する
 
-1. に移動します `Integrations` ページの下 **[!UICONTROL Manage Data** > **Data Sources]**.
-1. クリック **[!UICONTROL Add Integration]**&#x200B;画面右側の上部にある `Data Sources` テーブル。
-1. 「」をクリックします [!DNL QuickBooks] アイコン。
-1. クリック **[!UICONTROL Connect to Quickbooks]**.
+1. **[!UICONTROL Manage Data** > **Data Sources]** の下の `Integrations` ページに移動します。
+1. `Data Sources` テーブルの上の画面の右側にある [**[!UICONTROL Add Integration]**] をクリックします。
+1. [!DNL QuickBooks] アイコンをクリックします。
+1. 「**[!UICONTROL Connect to Quickbooks]**」をクリックします。
 
-## 付与 [!DNL Commerce Intelligence] アクセス権限 [!DNL QuickBooks] データ
+## [!DNL QuickBooks] データへの [!DNL Commerce Intelligence] アクセス権の付与
 
-クリック後 **[!UICONTROL Connect to Quickbooks]**&#x200B;にログインします [!DNL Intuit] 次のアカウントで接続を認証します。
+「**[!UICONTROL Connect to Quickbooks]**」をクリックした後、[!DNL Intuit] アカウントにログインして接続を認証します。
 
 ![](../../../assets/QuickBooks_App_Store_1.jpg)
 
-1. が含まれる `Search for a company` ドロップダウンで、会社を選択します。
-1. クリック **[!UICONTROL Next]**. リダイレクト先 [!DNL Commerce Intelligence] および *接続に成功しました。* メッセージが画面の上部に表示されます。
+1. `Search for a company` ドロップダウンで、会社を選択します。
+1. 「**[!UICONTROL Next]**」をクリックします。 「[!DNL Commerce Intelligence]」および「接続に成功しました *にリダイレクトされます。メッセ* ジが画面の上部に表示されます。
 
 ## 関連
 
-* [予測 [!DNL QuickBooks] データ](../integrations/quickbooks-data.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Expected [!DNL QuickBooks] data](../integrations/quickbooks-data.md)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

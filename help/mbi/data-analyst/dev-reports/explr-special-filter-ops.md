@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # フィルターオプション
 
-このトピックでは、いくつかの特別な機能について説明します `operators` 使用されている `filters` 条件 [レポートの作成](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} または [指標の作成](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}。
+このトピックでは、[ レポートの作成 ](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} または [ 指標の作成 ](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;} の `filters` に使用される特殊な `operators` を説明します。
 
 ## `Filter Operators`
 
-* `LIKE` （パターンマッチング用）。 これは、ワイルドカード文字 % （可変文字数のワイルドカードの場合）または_ （ワイルドカードの 1 文字の場合）と共に使用する必要があります。  例えば、次のような制限があります `LIKE \_ake%` は true を返します `Jake Stein`, `Jake Smith`、または `Fake Smith`.  の場合は false が返されます `Drake Smith`.
+* パターンマッチングの `LIKE`。 これは、ワイルドカード文字 % （可変文字数のワイルドカードの場合）または_ （ワイルドカードの 1 文字の場合）と共に使用する必要があります。  例えば、制限 `LIKE \_ake%` は、`Jake Stein`、`Jake Smith`、`Fake Smith` に対して true を返します。  `Drake Smith` の場合は false を返します。
 
-* `NOT LIKE` は上記のパターンマッチングに似ていますが、どのパターンが一致しないかを確認します。
+* `NOT LIKE` は上記のパターンマッチングに似ていますが、どのパターンが一致しないかをチェックします。
 
-* `IS` 列がであるかどうかを確認します `NULL`、または空です。
+* `IS` は、列が `NULL` であるか、空であるかをチェックします。
 
-* `IS NOT` 次に類似しています `IS` null 以外の列をチェックする上記の演算子。
+* `IS NOT` は上記の `IS` 演算子に似ていますが、NULL 以外の列をチェックします。
 
-* `IN` コンマ区切りリストで値の存在をチェックします。 （例：「カラー」 `IN` 赤、オレンジ」は色に相当します `equal to` 赤または色 `equal to` オレンジ）。
+* `IN` 値の存在をコンマ区切りリストでチェックします。 （例えば、「赤 `IN` 色」、オレンジは赤の色、またはオレンジ `equal to` 色 `equal to` 同等です）。
 
-* `NOT IN` 次に類似している `IN` 上記の値が、値の欠落をチェックします。
+* `NOT IN` は上記の `IN` に似ていますが、値が存在しないかどうかを確認します。

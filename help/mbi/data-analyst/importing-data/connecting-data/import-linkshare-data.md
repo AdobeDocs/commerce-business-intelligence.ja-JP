@@ -1,6 +1,6 @@
 ---
 title: リンク共有データの読み込み
-description: Linkshare データのへの読み込み方法を説明します [!DNL Commerce Intelligence].
+description: Linkshare データの  [!DNL Commerce Intelligence] への読み込みについて説明します。
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,33 +11,33 @@ ht-degree: 0%
 
 ---
 
-# インポート [!DNL Linkshare] データ
+# [!DNL Linkshare] データの読み込み
 
-お持ち込み下さい [!DNL Linkshare] データ対象 [!DNL Adobe Commerce Intelligence]は、次の 2 つの操作をおこなう必要があります。
+[!DNL Linkshare] データを [!DNL Adobe Commerce Intelligence] に取り込むには、次の 2 つの操作が必要です。
 
 1. [でのリンク共有データのエクスポート ](#export)
-1. [スプレッドシートをにアップロードします [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
+1. [スプレッドシートをにアップロードします  [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Linkshare からのデータのエクスポート {#export}
 
-1. あなたの [!DNL Linkshare] アカウント、に移動 **[!UICONTROL Reports** > **Run Reports].**
+1. [!DNL Linkshare] アカウントで、**[!UICONTROL Reports** > **Run Reports].** に移動します
 
-1. が含まれる `Report` ドロップダウン、選択 **[!UICONTROL Sales & Activity Report]**.
+1. `Report` ドロップダウンで「**[!UICONTROL Sales & Activity Report]**」を選択します。
 
 1. 他のすべてのドロップダウンオプションはデフォルトのままにします。
 
-1. が含まれる `Date Range` ドロップダウンで、いずれかのオプション（`Sun - Sat`, `Mon - Sun`）がと一致します `Start of Week` の設定 [!DNL Commerce Intelligence].
+1. 「`Date Range`」ドロップダウンで、[!DNL Commerce Intelligence] で `Start of Week` 定した設定と一致するオプション（`Sun - Sat`、`Mon - Sun`）を選択します。
 
-1. をクリア `Compare Year-Over-Year Data` チェックボックス。
+1. 「`Compare Year-Over-Year Data`」チェックボックスをオフにします。
 
-1. 次の下 `Data Type`を選択 `Transaction Date`.
+1. 「`Data Type`」で、「`Transaction Date`」を選択します。
 
-   ![インポート\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
+   ![importing\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
 
-1. クリック **[!UICONTROL View Report]**.
+1. 「**[!UICONTROL View Report]**」をクリックします。
 
-1. クリック **[!UICONTROL Download]**.
+1. 「**[!UICONTROL Download]**」をクリックします。
 
-   この時点で、 `.csv` ファイルをダウンロードしました。
+   この時点で、`.csv` ファイルがダウンロードされました。
 
-ファイルをダウンロードしたら、次の場所にアップロードできます [!DNL Commerce Intelligence] の使用 [`File Upload` 機能](../connecting-data/using-file-uploader.md).
+ファイルをダウンロードしたら、[`File Upload` 機能を使用して [!DNL Commerce Intelligence] にアップロードでき ](../connecting-data/using-file-uploader.md) す。

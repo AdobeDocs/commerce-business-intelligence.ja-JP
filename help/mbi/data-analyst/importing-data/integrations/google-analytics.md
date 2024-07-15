@@ -1,6 +1,6 @@
 ---
 title: Google Analyticsを接続
-description: Google Analyticsと AEM を連携させる方法を学ぶ [!DNL Commerce Intelligence].
+description: Google Analyticsと  [!DNL Commerce Intelligence] を結び付ける方法を説明します。
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,53 +11,53 @@ ht-degree: 0%
 
 ---
 
-# 接続 [!DNL Google Analytics]
+# Connect [!DNL Google Analytics]
 
 >[!NOTE]
 >
->が必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] は、インターネット上で最も広く使用されている web 分析サービスです。 実装 [!DNL Google Analytics] web サイトでは、訪問者によるサイトの使用方法、魅力的なコンテンツ、訪問者が離脱する場所などを追跡できます。 でのこれらの指標の分析 [!DNL Commerce Intelligence]は、他のデータと共に、サイトの全体的な正常性と操作性を向上させます。
+[!DNL Google Analytics] は、インターネット上で最も広く使用されている web 分析サービスです。 Web サイトに [!DNL Google Analytics] を実装すると、訪問者によるサイトの使用方法、魅力的なコンテンツ、訪問者が離脱する場所などを追跡できます。 これらの指標を [!DNL Commerce Intelligence] で分析すると、他のデータと共に、サイトの全体的な正常性と操作性が向上します。
 
-基本を学ぶには [!DNL Google Analytics] への認証情報 [!DNL Commerce Intelligence]:
+まず、[!DNL Google Analytics] の資格情報を [!DNL Commerce Intelligence] に入力します。
 
-1. に移動 **[!UICONTROL Manage Data** > **Integrations]**.
+1. **[!UICONTROL Manage Data** > **Integrations]** に移動します。
 
-1. クリック **[!UICONTROL Add Integration]**&#x200B;画面の右側にあります。
+1. 画面の右側にある「**[!UICONTROL Add Integration]**」をクリックします。
 
-1. 「」をクリックします [!DNL Google Analytics] アイコン。 これにより、 [!DNL Google Analytics] 資格情報ページ。
+1. [!DNL Google Analytics] アイコンをクリックします。 これにより、[!DNL Google Analytics] 資格情報ページが開きます。
 
-1. を入力 [!DNL Google Analytics] 資格情報。 認証プロセスが完了すると、にリダイレクトされます。 [!DNL Commerce Intelligence].
+1. [!DNL Google Analytics] 資格情報を入力します。 認証プロセスが完了すると、[!DNL Commerce Intelligence] にリダイレクトされます。
 
-1. プロファイル ID のリストが表示されます。 接続先のプロファイルを確認する [!DNL Commerce Intelligence]. 複数のプロファイルがあり、どちらを識別するかのヘルプが必要な場合は、複数のプロファイルの接続を参照してください [!DNL Google Analytics] 以下の「プロファイル」セクション：
+1. プロファイル ID のリストが表示されます。 [!DNL Commerce Intelligence] に接続するプロファイルを確認します。 複数のプロファイルがあり、どれを識別するのかについてのヘルプが必要な場合は、以下の複数の [!DNL Google Analytics] プロファイルの接続の節を参照してください。
 
    ![](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
 
-1. 変更は自動的に保存されるため、 **接続に戻る** 完了したら、
+1. 変更は自動的に保存されるので、完了したら「**接続に戻る**」をクリックします。
 
-## 複数のの接続 [!DNL Google Analytics] プロファイル
+## 複数の [!DNL Google Analytics] プロファイルの接続
 
-複数の web サイトが 1 つのサイトに接続されている場合があります [!DNL Google Analytics] アカウント（独自に識別） [!DNL Google Analytics] プロファイル ID。 この場合、すべてのプロファイル ID をに含めるオプションがあります [!DNL Commerce Intelligence]. プロファイル選択手順に含めるプロファイル ID を確認します。
+1 つの [!DNL Google Analytics] アカウントに接続された複数の web サイトがあり、独自の [!DNL Google Analytics] プロファイル ID で識別されている場合があります。 この場合、すべてのプロファイル ID を [!DNL Commerce Intelligence] に含めるオプションがあります。 プロファイル選択手順に含めるプロファイル ID を確認します。
 
-特定の web サイトを識別するには [!DNL Google Analytics] プロファイル ID:
+特定の web サイトの [!DNL Google Analytics] プロファイル ID を識別するには：
 
-1. にログインします [!DNL Google Analytics]
-1. 特定の Web サイトに移動 [!DNL Google Analytics] dashboard
-1. URL を見ます。プロファイル ID は、次の 8 つの数値に対応しています `p` ラインの最後に：
+1. [!DNL Google Analytics] にログインします
+1. 特定の web サイトの [!DNL Google Analytics] ダッシュボードに移動します
+1. URL を見ます。プロファイル ID は、行の最後の `p` に続く 8 つの数値に対応しています。
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
-## 切断中 [!DNL Google Analytics] から [!DNL Commerce Intelligence] {#disconnect}
+## [!DNL Google Analytics] を [!DNL Commerce Intelligence] から切断しています {#disconnect}
 
-1. にアクセス [!DNL Google Analytics] [アカウント設定](https://accounts.google.com/) ページ。
-1. の下 `Security` セクションで、をクリックします。 **[!UICONTROL edit]** 次の `Authorizing` アプリケーションとサイト。
-1. クリック **[!UICONTROL revoke access]** 次の [!DNL Commerce Intelligence].
+1. [!DNL Google Analytics] の [ アカウント設定 ](https://accounts.google.com/) ページにアクセスします。
+1. 「`Security`」セクションで、「アプリケーションとサイト」の横にある「**[!UICONTROL edit]**」 `Authorizing` クリックします。
+1. 「[!DNL Commerce Intelligence]」の横にある「**[!UICONTROL revoke access]**」をクリックします。
 
 ## 関連：
 
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
-* [接続中 [!DNL Google Adwords]](../integrations/google-adwords.md)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [接続  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Web サイトのアクティビティと顧客コンバージョン率の分析](../../analysis/web-act-cust-conversion.md)
-* [を使用したユーザー獲得データの追跡 [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)
+* [cookie を使用したユーザー取得デ  [!DNL Google Analytics]  タの追跡](../../analysis/google-track-user-acq.md)

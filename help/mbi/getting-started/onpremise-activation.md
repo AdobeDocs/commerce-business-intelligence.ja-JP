@@ -1,6 +1,6 @@
 ---
-title: のアクティベート [!DNL Adobe Commerce Intelligence] アカウント
-description: アクティベーションを行うために連絡するユーザーを説明します [!DNL Commerce Intelligence] アカウント。
+title: アカウント  [!DNL Adobe Commerce Intelligence]  アクティブ化
+description: アカウントをアクティブ化するために連絡する相手  [!DNL Commerce Intelligence]  ついて説明します。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -11,86 +11,86 @@ ht-degree: 0%
 
 ---
 
-# のアクティベート [!DNL Commerce Intelligence] オンプレミスおよびスターター配信登録用のアカウント
+# オンプレミスおよびスターターのサブスクリプション用に [!DNL Commerce Intelligence] アカウントを有効化する
 
-アクティベートするには [!DNL Commerce Intelligence] オンプレミスのサブスクリプションの場合は、まず [!DNL Commerce Intelligence] アカウントを選択し、設定情報を入力してから、接続します [!DNL Commerce Intelligence] 宛先： [!DNL Commerce] データベース。 <!-- For information about activation in `Cloud Starter` projects, see [Activating your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions](../getting-started/cloud-activation.md).-->
+オンプレミスのサブスクリプションで [!DNL Commerce Intelligence] をアクティブにするには、まず [!DNL Commerce Intelligence] アカウントを作成し、設定情報を入力してから、[!DNL Commerce] データベースに接続 [!DNL Commerce Intelligence] ます。<!-- For information about activation in `Cloud Starter` projects, see [Activating your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions](../getting-started/cloud-activation.md).-->
 
-## を作成 [!DNL Commerce Intelligence] アカウント
+## [!DNL Commerce Intelligence] アカウントの作成
 
 アカウントを作成するには、Adobeアカウントチームまたはカスタマーテクニカルアドバイザーにお問い合わせください。
 
 ## パスワードを作成
 
-アカウントが作成されたら、メールで次のアカウント通知メールを確認します： [!DNL The Magento BI Team@rjmetrics.com]. メールに記載されているリンクを使用して、 [!DNL Commerce Intelligence] アカウントを作成し、パスワードを作成します。 インボックスに移動し、メールアドレスを確認します。
+アカウントが作成されたら、メールで [!DNL The Magento BI Team@rjmetrics.com] からのアカウント通知メールを確認します。 メールに記載されているリンクを使用して [!DNL Commerce Intelligence] アカウントにアクセスし、パスワードを作成します。 インボックスに移動し、メールアドレスを確認します。
 
-メールを受信していない場合、 [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+メールを受け取っていない場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)。
 
 ![](../assets/create-account-4.png)
 
 ## ストアの環境設定
 
-データベース接続を設定する前に、ストア情報フォームに入力します。 この情報は、 **[!UICONTROL Connect your Database]** 設定。
+データベース接続を設定する前に、ストア情報フォームに入力します。 この情報は、**[!UICONTROL Connect your Database]** の設定を完了するために必要です。
 
 ![](../assets/create-account-6.png)
 
-## 追加 [!DNL Commerce Intelligence] ユーザー
+## [!DNL Commerce Intelligence] 名のユーザーを追加
 
-パスワードを設定し、にログインしたら、 [!DNL Commerce Intelligence]を開きます。他のユーザーをに追加できます [!DNL Commerce Intelligence] アカウント。 ユーザーを追加する場合は、適切な権限を持つ管理者ユーザーを追加してアクティベーションプロセスを完了します。
+パスワードを設定して [!DNL Commerce Intelligence] にログインすると、[!DNL Commerce Intelligence] アカウントに他のユーザーを追加できます。 ユーザーを追加する場合は、適切な権限を持つ管理者ユーザーを追加してアクティベーションプロセスを完了します。
 
 ![](../assets/create-account-5.png)
 
-## 専用のを作成 [!DNL Commerce Intelligence] のユーザー [!DNL Commerce] admin
+## [!DNL Commerce] admin で専用の [!DNL Commerce Intelligence] ユーザーを作成します
 
-使用目的 [!DNL Commerce Intelligence]に、永続的な専用ユーザーを追加する必要があります [!DNL Commerce] プロジェクト。 この専用ユーザーは、に恒久的に接続します [!DNL Commerce] これにより、新しいデータを取得してアカウントのに転送できます [!DNL Commerce Intelligence] Data Warehouse。
+[!DNL Commerce Intelligence] を使用するには、[!DNL Commerce] プロジェクトに永続的な専用ユーザーを追加する必要があります。 この専用ユーザーは、[!DNL Commerce] への永続的な接続として機能し、新しいデータを取得してアカウントの [!DNL Commerce Intelligence] Data Warehouseに転送できます。
 
-専用のの設定 [!DNL Commerce Intelligence] ユーザーは、アカウントがディアクティベートされたり削除されたりしていないことを確認します。これにより、が停止します [!DNL Commerce Intelligence] 接続。
+専用の [!DNL Commerce Intelligence] ユーザーを設定すると、アカウントがディアクティベートされたり削除されたりすることがないので、[!DNL Commerce Intelligence] 接続が停止します。
 
 
 >[!NOTE]
 >
 >Adobeは、永続的なステータスを示すアカウント名（ACI-dedicated、ACI-database-connector など）を使用することをお勧めします。
 
-用の専用ユーザーの作成後 [!DNL Commerce Intelligence] admin で、同じユーザーをプライマリ環境のに追加します。 [!DNL Commerce] を使用したプロジェクト **[!UICONTROL Master]** の設定 `Contributor`.
+管理者で [!DNL Commerce Intelligence] 専用ユーザーを作成したら、同じユーザーを `Contributor` の **[!UICONTROL Master]** 設定で [!DNL Commerce] プロジェクトのプライマリ環境に追加します。
 
 ![](../assets/commerce-add-user-settings.png)
 
-## Commerce Intelligence の SSH キーの取得
+## Commerce Intelligenceの SSH キーの取得
 
-1. 日 [!UICONTROL Connect your database] のページ [!DNL Commerce Intelligence] 設定、下にスクロールして選択 **[!UICONTROL Encryption settings]**.
+1. 設定の [!UICONTROL Connect your database] ページで、下 [!DNL Commerce Intelligence] スクロールして「**[!UICONTROL Encryption settings]**」を選択します。
 
-1. の場合 **暗号化タイプ**&#x200B;を選択 `SSH Tunnel`.
+1. **暗号化の種類** で、`SSH Tunnel` を選択します。
 
 1. ドロップダウンから、指定された公開鍵をコピーします。
 
    ![](../assets/encryption-setting-new-account.png)
 
-## 公開鍵をに追加します [!DNL Commerce Intelligence]
+## 公開鍵を [!DNL Commerce Intelligence] に追加
 
-1. から [!DNL Commerce Admin]、のログイン情報を使用してログイン [!DNL Commerce Intelligence] 作成したユーザー。
+1. [!DNL Commerce Admin] から、作成した [!DNL Commerce Intelligence] ユーザーのログイン情報を使用してログインします。
 
-1. 「」を選択します **アカウント設定** タブ。
+1. 「**アカウント設定**」タブを選択します。
 
-1. 下にスクロールして、 **[!UICONTROL SSH Keys]** ドロップダウン。 次に、を選択します **[!UICONTROL Add a public key]**.
+1. 下にスクロールして、**[!UICONTROL SSH Keys]** ドロップダウンを展開します。 次に、「**[!UICONTROL Add a public key]**」を選択します。
 
    ![](../assets/add-public-key.png)
 
-1. コピーした公開鍵をに貼り付けます [!DNL Encryption Type] 上記の手順です。
+1. 上記の [!DNL Encryption Type] の手順でコピーした公開鍵を貼り付けます。
 
    ![](../assets/paste-public-key.png)
 
-## 提供する [!DNL Commerce Intelligence] 初期設定 `MySQL` 資格情報
+## [!DNL Commerce Intelligence] Essentials `MySQL` 資格情報の指定
 
-1. を更新 `.magento/services.yaml`.
+1. `.magento/services.yaml` を更新します。
 
    ![](../assets/update-magento-services-yaml.png)
 
-1. を更新 `.magento.app.yaml`.
+1. `.magento.app.yaml` を更新します。
 
    ![](../assets/magento-app-yaml-relationships.png)
 
 ## データベース接続情報の取得
 
-へのデータベース接続情報の取得 [!DNL Commerce] データベース先 [!DNL Commerce Intelligence]
+[!DNL Commerce] データベースへのデータベース接続情報を取得して [!DNL Commerce Intelligence] ます。
 
 1. 次のコマンドを実行して、情報を取得します。
 
@@ -100,19 +100,19 @@ ht-degree: 0%
 
    ![](../assets/example-database-information.png)
 
-## 接続 [!DNL Commerce Intelligence] 宛先： [!DNL Commerce] 暗号化された接続を使用したデータベース
+## 暗号化された接続を使用して [!DNL Commerce] データベースに [!DNL Commerce Intelligence] を接続する
 
 >[!NOTE]
 >
->Adobeでは、 [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) データベース接続を確立するためにトンネルを作成します。 ただし、この方法がオプションでない場合は、リンクを設定できます [!DNL Commerce Intelligence] を使用してデータベースに [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md).
+>Adobeでは、[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) トンネルを使用してデータベース接続を確立することを強くお勧めします。 ただし、この方法がオプションでない場合でも、[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md) を使用して [!DNL Commerce Intelligence] をデータベースにリンクできます。
 
-を入力 [!DNL Commerce Intelligence] の情報 [!UICONTROL Connect your Magento Database] 画面。
+[!UICONTROL Connect your Magento Database] 画面に [!DNL Commerce Intelligence] 情報を入力します。
 
 ![](../assets/connect-magento-db.png)
 
 **入力：**
 
-[!UICONTROL Integration Name]: [ 名前を選択してください [!DNL Commerce Intelligence] instance]
+[!UICONTROL Integration Name]: [[!DNL Commerce Intelligence] インスタンスの名前を選択 ]
 
 [!UICONTROL Host]: `mbi.internal`
 
@@ -120,13 +120,13 @@ ht-degree: 0%
 
 [!UICONTROL ユーザー名]: `mbi`
 
-[!UICONTROL Password]: [前の節で表示した入力パスワード]
+[!UICONTROL Password]: [ 前の節で表示した入力パスワード ]
 
 [!UICONTROL Database Name]: `main`
 
-[!UICONTROL Table Prefixes]: [テーブルのプレフィックスがない場合は空白のままにします]
+[!UICONTROL Table Prefixes]: [ テーブルのプレフィックスがない場合は空白のままにします ]
 
-## を設定 [!UICONTROL **タイムゾーン**] 設定
+## [!UICONTROL **タイムゾーン**] 設定を行う
 
 ![](../assets/time-zone-settings.png)
 
@@ -134,15 +134,15 @@ ht-degree: 0%
 
 [!UICONTROL Database Timezone]: `UTC`
 
-[!UICONTROL Desired Timezone]: [データを表示するタイムゾーンを選択します]
+[!UICONTROL Desired Timezone]: [ データを表示するタイムゾーンを選択します ]
 
 ## 暗号化設定の情報の取得
 
-プロジェクト UI には SSH アクセス文字列を指定します。 この文字列は、に必要な情報の収集に使用できます [!UICONTROL **リモートアドレス**] および [!UICONTROL **ユーザー名**]. プロジェクト UI のマスターブランチにある「アクセス サイト」ボタンをクリックして、SSH アクセス文字列を使用します。 次に、を見つけます [!UICONTROL User Name] および [!UICONTROL Remote Address] 下図を参照してください。
+プロジェクト UI には SSH アクセス文字列を指定します。 この文字列は、[!UICONTROL **Remote Address**] および [!UICONTROL **Username**] に必要な情報の収集に使用できます。 プロジェクト UI のマスターブランチにある「アクセス サイト」ボタンをクリックして、SSH アクセス文字列を使用します。 次に、[!UICONTROL User Name] を見つけ、以下に示すように [!UICONTROL Remote Address] します。
 
 ![](../assets/master-branch-settings.png)
 
-## 入力： [!DNL Encryption] 設定
+## [!DNL Encryption] 設定を入力
 
 ![](../assets/encryption-settings-2.png)
 
@@ -150,23 +150,23 @@ ht-degree: 0%
 
 [!UICONTROL Encryption Type]: `SSH Tunnel`
 
-[!UICONTROL Remote Address]: `ssh.us-3.magento.cloud`  [前の手順から]
+[!UICONTROL Remote Address]: `ssh.us-3.magento.cloud` [ 前の手順から ]
 
-[!UICONTROL Username]: `vfbfui4vmfez6-master-7rqtwti—mymagento`  [前の手順から]
+[!UICONTROL Username]: `vfbfui4vmfez6-master-7rqtwti—mymagento` [ 前の手順から ]
 
 [!UICONTROL Port]: `22`
 
 ## 統合を保存します。
 
-設定手順を完了したら、次を選択して変更を適用します。 [!UICONTROL **統合を保存**].
+設定手順が完了したら、「[!UICONTROL **統合を保存**]」を選択して変更を適用します。
 
-接続に成功しました [!DNL Commerce] データベースから [!DNL Commerce Intelligence] アカウント。
+これで、[!DNL Commerce] データベースが [!DNL Commerce Intelligence] アカウントに正常に接続されました。
 
 >[!NOTE]
 >
->次の場合： [!DNL Adobe Commerce Intelligence Pro] お客様は、カスタマーサクセスマネージャーまたはカスタマーテクニカルアドバイザーに連絡して、次の手順を調整します。
+>[!DNL Adobe Commerce Intelligence Pro] のお客様は、カスタマーサクセスマネージャーまたはカスタマーテクニカルアドバイザーに連絡して、次の手順を調整してください。
 
-設定が完了したら、 [ログイン](../getting-started/sign-in.md) 宛先： [!DNL Commerce Intelligence] アカウント。
+設定を完了したら、[!DNL Commerce Intelligence] アカウントに [ ログイン ](../getting-started/sign-in.md) します。
 
 <!---# Activate your [!DNL Commerce Intelligence] Account 
 

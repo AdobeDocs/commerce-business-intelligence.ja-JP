@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # enterprise_rma 表
 
-各行 `enterprise_rma` テーブル （多くの場合、 `magento_rma` Adobe Commerce 2.x では。ただし、名前はカスタマイズできます）には、特定のリターンリクエストに関する情報が含まれます。
+`enterprise_rma` テーブルの各行（Adobe Commerce 2.x では `magento_rma` と呼ばれることが多いですが、名前はカスタマイズできます）には、特定の返しリクエストに関する情報が含まれます。
 
 >[!NOTE]
 >
->この表は、次のユーザーの場合、Adobe Commerce アカウントに標準で付属しています `Enterprise Edition` または `Enterprise Cloud Edition` 顧客。
+>この表は、`Enterprise Edition` またはお客様の場合、お使いのAdobe Commerce アカウントに標準で付属して `Enterprise Cloud Edition` ます。
 
 ## 共通ネイティブ列
 
 | **列名** | **説明** |
 |---|---|
-| `entity\_id` | テーブルの一意の識別子。 Each `entity\_id` return リクエストを表します。 |
+| `entity\_id` | テーブルの一意の識別子。 各リク `entity\_id` ストはリターンリクエストを表します。 |
 | `date\_requested` | 返品がリクエストされた日付。 |
 | `status` | 返品のステータス。 値には「received」、「pending」、「authorized」などがあります。 |
-| `order\_id` | に関連付けられた外部キー `sales\_flat\_order` テーブル。 |
-| `customer\_id` | に関連付けられた外部キー `customer\_entity` テーブル。 |
+| `order\_id` | `sales\_flat\_order` テーブルに関連付けられている外部キー。 |
+| `customer\_id` | `customer\_entity` テーブルに関連付けられている外部キー。 |
 
 {style="table-layout:auto"}
 
@@ -46,10 +46,10 @@ ht-degree: 0%
 
 | **指標名** | **説明** | **建設** |
 |---|---|---|
-| `Number of returns` | リクエストされた戻り値の数。 | `Operation` 列： `entity id`<br>`Operation`: `Count`<br>`Timestamp` 列： `date requested` |
-| `Total returned amount` | 返される合計金額。 | `Operation `列： `Return's total value`<br>`Operation`：合計<br>`Timestamp` 列：リクエストされた日付 |
-| `Average returned amount` | 返される平均金額。 | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 列： `date requested` |
-| `Average time to return` | 注文から返品までの平均時間。 | `Operation` 列：注文が作成されてから返品がリクエストされた日付までの秒数<br>`Operation`: `Average`<br>`Timestamp` 列： `date requested` |
+| `Number of returns` | リクエストされた戻り値の数。 | `Operation` 列：`entity id`<br>`Operation`: `Count`<br>`Timestamp` 列：`date requested` |
+| `Total returned amount` | 返される合計金額。 | `Operation ` 列：`Return's total value`<br>`Operation`：合計 <br>`Timestamp` 列：リクエストされた日付 |
+| `Average returned amount` | 返される平均金額。 | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 列：`date requested` |
+| `Average time to return` | 注文から返品までの平均時間。 | `Operation` 列：で作成された注文からリクエストされた返品日までの秒数 <br>`Operation`: `Average`<br>`Timestamp` 列：`date requested` |
 
 {style="table-layout:auto"}
 
@@ -57,12 +57,12 @@ ht-degree: 0%
 
 `sale_flat_order`
 
-* セグメント化する結合列を作成し、で注文レベルの属性でフィルタリングする `enterprise_rma` 以下の結合を使用したテーブル：
+* セグメント化する結合列を作成し、次の結合を使用して、`enterprise_rma` テーブルの注文レベルの属性でフィルタリングします。
    * Commerce 1.x: `enterprise_rma.order_id` （多） => `sales_flat_order.entity_id` （1）
    * Commerce 2.x: `magento_rma.order_id` （多） => `sales_order.entity_id` （1）
 
 `enterprise_rma_item_entity`
 
-* 次のような多対 1 列の作成 `Return's total value` 日 `enterprise_rma` 以下の結合を使用したテーブル：
+* 次の結合を使用して、`enterprise_rma` テーブルに `Return's total value` などの多対 1 列を作成します。
    * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id` （多） => `enterprise_rma.entity_id` （1）
    * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` （多） => `magento_rma.entity_id` （1）

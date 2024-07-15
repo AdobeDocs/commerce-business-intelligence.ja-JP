@@ -29,27 +29,27 @@ ht-degree: 0%
 
 1. ダッシュボードの作成時：
 
-   ![ダッシュボードグループの作成](../../assets/create-dashboard-groups-new-dashboard.png)
+   ![ ダッシュボードグループの作成 ](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. 既存のダッシュボードのグループを変更する場合、 `Manage Data > Dashboards` ページ：
+1. 既存のダッシュボードのグループを変更する場合は、`Manage Data > Dashboards` のページから次の操作を行います。
 
    1. グループを作成するダッシュボードをクリックします。
 
-   1. 次の下 `Dashboard Group (optional)`現在のダッシュボードグループが表示されます。
+   1. 「`Dashboard Group (optional)`」の下に、現在のダッシュボードグループが表示されます。
 
    1. グループを作成するには、新しいグループの名前を入力し、ボックスの外側をクリックします。
 
-      ![ダッシュボードグループの作成](../../assets/create-dashboard-groups-existing-dashboard.png)
+      ![ ダッシュボードグループの作成 ](../../assets/create-dashboard-groups-existing-dashboard.png)
 
 ## 既存のダッシュボードを既存のグループに追加
 
-1. 日 `Manage Data > Dashboards` ページで、グループを変更するダッシュボードを選択します。
+1. 「`Manage Data > Dashboards`」ページで、グループを変更するダッシュボードを選択します。
 
-1. の下のテキスト `Dashboard Group (optional)` ダッシュボードの現在のダッシュボードグループを表示します。
+1. `Dashboard Group (optional)` の下のテキストには、ダッシュボードの現在のダッシュボードグループが表示されます。
 
-1. ダッシュボードのグループを変更するには、リストから別のグループ（この場合は）を選択します `PS`, `Campaigns`.
+1. ダッシュボードのグループを変更するには、リストから別のグループ（この場合は `PS`、`Campaigns`）を選択します。
 
-   ![グループダッシュボードの変更](../../assets/add-existing-dashboard-existing-group.png)
+   ![ グループ ダッシュボードの変更 ](../../assets/add-existing-dashboard-existing-group.png)
 
 ## ダッシュボードグループの削除
 

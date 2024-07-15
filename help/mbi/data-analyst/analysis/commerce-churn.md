@@ -13,11 +13,11 @@ ht-degree: 2%
 
 # チャーンレート
 
-このトピックでは、の計算方法を示します **チャーンレート** の場合 **コマース顧客**. SaaS や従来のサブスクリプション企業とは異なり、コマース顧客は通常、具体的な情報を持っていません **&quot;チャーンイベント&quot;** アクティブな顧客にカウントされなくなったことを示します。 このため、以下の手順を使用すると、最後の注文以降に決定された経過時間に基づいて、顧客を「チャーン」として定義できます。
+このトピックでは、**コマース顧客** の **チャーンレート** を計算する方法を説明します。 SaaS や従来のサブスクリプション企業とは異なり、コマース顧客は通常、アクティブな顧客をカウントすべきではないことを示すために **具体的な** 「チャーンイベント」を持っていません。 このため、以下の手順を使用すると、最後の注文以降に決定された経過時間に基づいて、顧客を「チャーン」として定義できます。
 
 ![](../../assets/Churn_rate_image.png)
 
-多くのお客様は、何を概念化し始めるうえで支援を必要としています。 **期間** データに基づいてを使用する必要があります。 過去の顧客行動を使用してこれを定義する場合 **チャーン期間**&#x200B;を参照してください。次のことをよく理解している必要があります [チャーンの定義](../analysis/define-cust-churn.md) トピック。 次に、以下の手順で、チャーンレートの数式の結果を使用できます。
+多くのお客様は、データに基づいて、使用する **期間** を概念化し始める際に支援を必要としています。 過去の顧客の行動を使用してこの **チャーン期間** を定義する場合は、「チャーンの定義 [ に関するトピックを熟知してい ](../analysis/define-cust-churn.md) 必要があります。 次に、以下の手順で、チャーンレートの数式の結果を使用できます。
 
 ## 計算される列
 
@@ -25,19 +25,19 @@ ht-degree: 2%
 
 * **`customer_entity`** テーブル
 * **`Customer's last order date`**
-   * を選択 [!UICONTROL definition]: `Max`
-   * を選択 [!UICONTROL table]: `sales_flat_order`
-   * を選択 [!UICONTROL column]: `created_at`
+   * [!UICONTROL definition] を選択：`Max`
+   * [!UICONTROL table] を選択：`sales_flat_order`
+   * [!UICONTROL column] を選択：`created_at`
    * `sales_flat_order.customer_id = customer_entity.entity_id`
    * [!UICONTROL Filter]: `Orders we count`
 
 * **`Seconds since customer's last order date`**
-   * を選択 [!UICONTROL definition]: `Age`
-   * を選択 [!UICONTROL column]: `Customer's last order date`
+   * [!UICONTROL definition] を選択：`Age`
+   * [!UICONTROL column] を選択：`Customer's last order date`
 
 >[!NOTE]
 >
->必ずしてください [すべての新規列をディメンションとして指標に追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に、
+>新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## 指標
 
@@ -48,28 +48,28 @@ ht-degree: 2%
 >
 >この指標は、お使いのアカウントに存在する可能性があります。
 
-* が含まれる **`customer_entity`** テーブル
-* このメトリックは、 **カウント**
-* 日 **`entity_id`** 列
-* による並べ替え **`Customer's first order date`** timestamp
+* **`customer_entity`** のテーブル内
+* このメトリックは、**カウント** を実行します。
+* **`entity_id`** 列
+* **`Customer's first order date`** タイムスタンプで並べ替え
 * [!UICONTROL Filter]:
 
-* **新規顧客（前回の注文日別）**
+* **新規顧客（最終注文日別）**
    * カウントされる顧客
 
   >[!NOTE]
   >
   >この指標は、お使いのアカウントに存在する可能性があります。
 
-* が含まれる **`customer_entity`** テーブル
-* このメトリックは、 **カウント**
-* 日 **`entity_id`** 列
-* による並べ替え **`Customer's last order date`** timestamp
+* **`customer_entity`** のテーブル内
+* このメトリックは、**カウント** を実行します。
+* **`entity_id`** 列
+* **`Customer's last order date`** タイムスタンプで並べ替え
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->必ずしてください [すべての新規列をディメンションとして指標に追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に、
+>新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## レポート
 
@@ -80,7 +80,7 @@ ht-degree: 2%
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * 顧客の最終注文日からの経過時間（秒） >= [チャーンされた顧客に対する自己定義のカットオフ&#x200B;]**`^`**
+   * 顧客の最終注文日からの秒数 >= [ チャーンされた顧客の事前定義されたカットオフ ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
@@ -101,7 +101,7 @@ ht-degree: 2%
 
 以下は、一般的な月/2 回目のコンバージョンの一部ですが、google では、探しているカスタム値の週/秒コンバージョンなど、他の値を提供しています。
 
-| **か月** | **秒** |
+| **月** | **秒** |
 |---|---|
 | 3 | 7,776,000 |
 | 6 | 15,552,000 |

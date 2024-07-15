@@ -11,18 +11,18 @@ ht-degree: 0%
 
 ---
 
-# 監査 [!DNL Google Adwords] データ
+# データ [!DNL Google Adwords] 監査
 
-～で何か奇妙なものを見つけた [[!DNL Google Adwords]](../integrations/google-adwords.md)? 問題を特定するには、データを調査する必要があります。 これを行うには、 [!DNL Google Adwords] データをに `.csv` ファイル。
+[[!DNL Google Adwords]](../integrations/google-adwords.md) に何か奇妙なものを見つけたの？ 問題を特定するには、データを調査する必要があります。 これを行うには、[!DNL Google Adwords] データを `.csv` ファイルに書き出します。
 
-1. 無料のをダウンロードしてインストールします [[!DNL Google Adwords] 編集者](https://ads.google.com/home/tools/ads-editor/) アプリケーション。
+1. 無料の [[!DNL Google Adwords] Editor](https://ads.google.com/home/tools/ads-editor/) アプリケーションをダウンロードしてインストールします。
 
-1. インストールが完了したら、 `Add Count` が含まれる `Add/manage accounts` パネル。
+1. インストールが完了したら、`Add/manage accounts` のパネルで「`Add Count`」を選択します。
 
-1. を入力 [!DNL Google Adwords] アカウント情報。
+1. [!DNL Google Adwords] アカウント情報を入力します。
 
-1. アカウントの追加後 [!DNL Google Adwords] エディター、選択 **[!UICONTROL File** > **&#x200B;スプレッドシートの書き出し（CSV）**> **アカウント全体のエクスポート]**
+1. アカウントが [!DNL Google Adwords] Editor に追加されたら、**[!UICONTROL File** > ** スプレッドシート（CSV）の書き出し） **/**アカウント全体の書き出し]** を選択します。
 
-これにより、 `.csv` 現在のに保存されているすべての情報を含むファイル [!DNL Google Adwords] アカウント。 この時点で、 [サポートチケット](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （必ずこのファイルを添付してください。） したがって、データを詳しく見ることができます。 ファイルが大きすぎる場合は、 [!DNL Commerce Intelligence] 次を使用してチーム： [!DNL Dropbox] または [!DNL Google Drive].
+これにより、現在の [!DNL Google Adwords] アカウントに保存されているすべての情報を含む `.csv` ファイルがビルドされます。 この時点で、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を送信します（必ずこのファイルを添付してください）。 したがって、データを詳しく見ることができます。 ファイルが大きすぎる場合は、[!DNL Dropbox] または [!DNL Google Drive] を使用して [!DNL Commerce Intelligence] チームと共有します。
 
-詳しくは、 [!DNL Google Adwords] `.csv` ファイルのエクスポートについては、公式のを参照してください。 [[!DNL Google Adwords] 詳細を見る](https://support.google.com/google-ads/editor/answer/38657?hl=en).
+`.csv` ファイルの書き出 [!DNL Google Adwords] について詳しくは、公式の [[!DNL Google Adwords]  ドキュメント ](https://support.google.com/google-ads/editor/answer/38657?hl=en) を参照してください。

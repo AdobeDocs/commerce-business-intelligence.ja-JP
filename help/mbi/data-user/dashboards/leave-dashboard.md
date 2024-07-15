@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # ダッシュボードを残す（共有解除）
 
-チームを変更しますか？ 春の真ん中にあなたの掃除 [!DNL Commerce Intelligence] アカウント？ ダッシュボードから自分自身を移動または共有解除するには、 **[!UICONTROL Shared]** 残したいダッシュボードでの画面の上部。 クリック **[!UICONTROL Leave this Dashboard]** 自分を取り除くために。
+チームを変更しますか？ 春の真ん中にあなたの [!DNL Commerce Intelligence] のアカウントをクリーニング？ ダッシュボードから自分を離れたり、共有を解除したりするには、ダッシュボードから離れたい状態で、画面の上部にある「**[!UICONTROL Shared]**」をクリックします。 **[!UICONTROL Leave this Dashboard]** をクリックして自分を削除します。
 
 例：
 
-![ダッシュボードを離れる](../../assets/Leave_Dashboard.gif)
+![ ダッシュボードから移動 ](../../assets/Leave_Dashboard.gif)

@@ -11,25 +11,25 @@ ht-degree: 0%
 
 ---
 
-# 予測 [!DNL Google Analytics Warehoused] データ
+# 予期される [!DNL Google Analytics Warehoused] データ
 
 >[!NOTE]
 >
->が必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
 >[!NOTE]
 >
->で友人の許可を得て情報を使用しました [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
+>[[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics) 時に友達から許可を得て情報を使用しました。
 
-[!DNL Google Analytics Warehoused] との統合 [!DNL Commerce Intelligence] はを使用します [!DNL Google Analytics] [コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
+[!DNL Commerce Intelligence] の統合 [!DNL Google Analytics Warehoused]、[!DNL Google Analytics] [ コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用します。
 
 >[!NOTE]
 >
->予期しない結果や感覚的でない結果を避けるために、使用するディメンションが次のものであることを確認します [1 つ以上の指標と互換性がある](https://ga-dev-tools.google/dimensions-metrics-explorer/) では、を使用します `Report Builder`.
+>予期しない結果や感覚的でない結果を避けるために、使用するディメンションが `Report Builder` で使用する [1 つ以上の指標と互換性がある ](https://ga-dev-tools.google/dimensions-metrics-explorer/) ことを確認します。
 
-単一のテーブル – と呼ばれます `report`  – がData Warehouse内に作成されます。
+Data Warehouseに `report` という 1 つのテーブルが作成されます。
 
-このテーブルのスキーマは、設定プロセスで選択した指標およびDimensionと、他の 2 つの列で構成されています。 `start-date` および `end-date`.
+このテーブルのスキーマは、設定プロセス中に選択した指標およびDimensionと、`start-date` および `end-date` という 2 つの他の列で構成されています。
 
 例えば、セットアップ時に次の指標とDimensionを選択した場合：
 
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |-----|-----|
-| `\_id` | この列はです `primary key`. |
-| `\_rjm\_record\_hash` | [!DNL Commerce Intelligence] 一意の ID。 この列の作成者 [!DNL Commerce Intelligence]. |
-| `\_updated\_at` | この列には、データ行が最後に更新された時刻が含まれています。 この列の作成者 [!DNL Commerce Intelligence]. |
+| `\_id` | この列は `primary key` です。 |
+| `\_rjm\_record\_hash` | 一意 [!DNL Commerce Intelligence]ID。 この列は [!DNL Commerce Intelligence] が作成しました。 |
+| `\_updated\_at` | この列には、データ行が最後に更新された時刻が含まれています。 この列は [!DNL Commerce Intelligence] が作成しました。 |
 | `start-date` | 行の日付を示す ID。 |
 | `end-date` | 行の日付を示す ID。 |
 | `month` | 選択したディメンション : セッションの月。01 ～ 12 の 2 桁の整数。 |
@@ -50,16 +50,16 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-## の違いは何ですか。 [!DNL Google Analytics Warehoused] および [!DNL Live Integration]
+## [!DNL Google Analytics Warehoused] と [!DNL Live Integration] の違い
 
-主な差別化要因は、1 つの統合が格納されるということです（[!DNL Google Analytics Warehoused]）、もう 1 つは（[!DNL Google Analytics Live]）に設定します。 の場合 [!DNL Google Analytics Warehoused]を使用すると、の操作が可能です [!DNL Google Analytics] を使用すると、との結合が可能です。 [!DNL Google Analytics] インサイトに満ちたレポートを作成するためのその他のデータソース。
+主な違いは、1 つの統合が保存され（[!DNL Google Analytics Warehoused]）、もう 1 つは保存されない（[!DNL Google Analytics Live]）ことです。 [!DNL Google Analytics Warehoused] の場合は、[!DNL Google Analytics] データを操作でき、[!DNL Google Analytics] と他のデータソースを組み合わせて、インサイトに満ちたレポートを作成できます。
 
-を見る [!DNL Google Analytics] 操作の観点からできることの例として、広告キャンペーンを使用します。 異なる名前の Q4 に複数の広告キャンペーンがあるとします。 キャンペーンは、特定のマーケティング施策の成果でした。 ウェアハウスに格納されたデータを使用すると、問題のキャンペーン名を見つけて、第 4 四半期のイニシアチブ名を返す列を作成できます。 `Operation Dumbo`.
+操作の観点から実行できる操作の例については、[!DNL Google Analytics] の広告キャンペーンを参照してください。 異なる名前の Q4 に複数の広告キャンペーンがあるとします。 キャンペーンは、特定のマーケティング施策の成果でした。 ウェアハウスに格納されたデータを使用すると、問題のキャンペーン名を見つけて、Q4 イニシアチブ名 `Operation Dumbo` を返す列を作成できます。
 
-組み合わせ側面では、 [!DNL Google Analytics] 分析を行うために他のデータに結合されるデータ。 例： `Total Time On Site By Ad Campaign` からのデータ [!DNL Google Analytics] そして、それに加わる `Total Spent Per Campaign` からのデータ [!DNL Facebook Ads] エンゲージメントにかかる費用の全体像を把握する
+組み合わせ側面 [!DNL Google Analytics] 使用すると、分析を行うためにデータを他のデータに結合できます。 例えば、[!DNL Google Analytics] のデータ `Total Time On Site By Ad Campaign` 取り、[!DNL Facebook Ads] の `Total Spent Per Campaign` データと結合して、エンゲージメントにかかる費用の全体像を把握できます。
 
-（を使用） [!DNL Google Analytics Live] 一方、の統合では、 [!DNL Google Analytics] グラフは、に保存されていない小さなサイロのようなものです [!DNL Commerce Intelligence] Data Warehouse。
+一方、[!DNL Google Analytics Live] の統合では、すべての [!DNL Google Analytics] グラフは [!DNL Commerce Intelligence] Data Warehouseには保存されない小さなサイロのようになります。
 
 ## 関連：
 
-* [接続中 [!DNL Google Analytics Warehoused]](../integrations/google-analytics-warehoused.md)
+* [接続  [!DNL Google Analytics Warehoused]](../integrations/google-analytics-warehoused.md)

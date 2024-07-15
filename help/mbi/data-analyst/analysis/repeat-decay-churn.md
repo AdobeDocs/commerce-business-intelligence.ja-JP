@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 推奨される指標
 
-繰り返し確率の減衰とチャーンを分析する場合は、（[または建物](../../data-user/reports/ess-manage-data-metrics.md)）これらの指標：
+繰り返し確率の減衰とチャーンを分析する場合は、次の指標の使用 [ または構築） ](../../data-user/reports/ess-manage-data-metrics.md) 検討します。
 
 ### 最初の繰り返し順序確率
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 この測定は、最後の注文から経過した月数を指定して、ユーザーが再度注文する可能性を示します。 この指標の生成に使用される式は、次のことを簡素化します。
 
-![繰り返し確率の数式](../../assets/Repeat_probability_formula.png)
+![ 繰り返し確率式 ](../../assets/Repeat_probability_formula.png)
 
 ビジネスモデルによっては、リピート注文の確率が、顧客が注文した直後に下がって後続の数か月で減少し続けるか、季節的な変動やスパイクが示される場合があります。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 一般的な e コマースビジネスの繰り返し確率減衰を確認します。
 
-![最初のリピート注文確率リピート注文の確率には、注文から数か月が指定されています。](../../assets/Order_probability_reports.png)
+![ 最初のリピート注文確率繰り返し注文から数か月が割り当てられています。](../../assets/Order_probability_reports.png)
 
 ### 最初の繰り返し順序確率
 
@@ -78,7 +78,7 @@ Adobeでは、リピート注文の可能性を業務に当てはめることの
 
 複数の製品を提供する場合、特定の製品を購入した顧客の行動が、時間の経過と共に他の顧客とどのように異なるかを疑問に思うかもしれません。 詳しく知りたい場合 このチュートリアルをチェックして、購入した特定の製品に基づいた、顧客コホートの生涯購入行動を調べます。
 
-このベストプラクティスは、次によって提供されます [!DNL Adobe Commerce Intelligence] データ分析サービス（DAS） [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を参照。
+このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されます。 詳しくは、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ください。
 
 ### 関連
 

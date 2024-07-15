@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/churn-deashboard.png)
 
-この分析に含まれる内容 [高度な計算列](../data-warehouse-mgr/adv-calc-columns.md).
+この分析には [ 高度な計算列 ](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
 ## 計算される列
 
@@ -25,9 +25,9 @@ ht-degree: 0%
 
 * `customer_entity` テーブル
 * `Customer's lifetime number of orders`
-* 定義を選択： `Count`
-* を選択 [!UICONTROL table]: `sales_flat_order`
-* を選択 [!UICONTROL column]: **`entity_id`**
+* 定義を選択：`Count`
+* [!UICONTROL table] を選択：`sales_flat_order`
+* [!UICONTROL column] を選択：**`entity_id`**
 * [!UICONTROL Path]: sales_flat_order.customer_id = customer_entity.entity_id
 * [!UICONTROL Filter]:
 * カウントされる注文
@@ -35,20 +35,20 @@ ht-degree: 0%
 * `sales_flat_order` テーブル
 * `Customer's lifetime number of orders`
 * 定義を選択：[ 結合 ] 列
-* を選択 [!UICONTROL table]: `customer_entity`
-* を選択 [!UICONTROL column]: `Customer's lifetime number of orders`
+* [!UICONTROL table] を選択：`customer_entity`
+* [!UICONTROL column] を選択：`Customer's lifetime number of orders`
 * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 * [!UICONTROL Filter]: `Orders we count`
 
 * `Seconds since created_at`
-* 定義を選択： `Age`
-* を選択 [!UICONTROL column]: `created_at`
+* 定義を選択：`Age`
+* [!UICONTROL column] を選択：`created_at`
 
-* **`Customer's order number`** は、の一部としてアナリストによって作成されます **[チャーンの定義]** チケット
-* **`Is customer's last order`** は、の一部としてアナリストによって作成されます **[チャーンの定義]** チケット
-* **`Seconds since previous order`** は、の一部としてアナリストによって作成されます **[チャーンの定義]** チケット
-* **`Months since order`** は、の一部としてアナリストによって作成されます **[チャーンの定義]** チケット
-* **`Months since previous order`** は、の一部としてアナリストによって作成されます **[チャーンの定義]** チケット
+* **`Customer's order number`** は、アナリストが **[チャーンの定義]** チケットの一部として作成します
+* **`Is customer's last order`** は、アナリストが **[チャーンの定義]** チケットの一部として作成します
+* **`Seconds since previous order`** は、アナリストが **[チャーンの定義]** チケットの一部として作成します
+* **`Months since order`** は、アナリストが **[チャーンの定義]** チケットの一部として作成します
+* **`Months since previous order`** は、アナリストが **[チャーンの定義]** チケットの一部として作成します
 
 ## 指標
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->必ずしてください [すべての新規列をディメンションとして指標に追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に、
+>新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## レポート
 
@@ -132,4 +132,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、ページ上部の画像のようになります
 
-分析中に質問が発生した場合、または単にプロフェッショナルサービスチームに依頼したい場合、 [サポートに連絡する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

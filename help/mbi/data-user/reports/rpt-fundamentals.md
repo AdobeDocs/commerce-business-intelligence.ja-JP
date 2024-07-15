@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # レポートの使用
 
-でのレポートの使用 [!DNL Adobe Commerce Intelligence] ビジネスに関する質問に答えるのに役立ちます。昨年と比較して今月の売上高を確認したいだけなのか、最新の獲得コストを把握したいだけなのか、のいずれかです [!DNL Google AdWords] キャンペーン。
+[!DNL Adobe Commerce Intelligence] のレポートを使用すると、ビジネスに関する質問に答えることができます。昨年と比較して今月の売上高を確認したいだけなのか、最新の [!DNL Google AdWords] キャンペーンの獲得コストを把握したいだけなのかを考慮します。
 
 質問から回答へのパスは、正確にはどのようなものですか？
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 * 登録するたびにデータ行を記録するテーブル
 * ユーザーが購入を行うたびにデータ行を記録するテーブル
-* を結合または参照するために使用できる列 `purchase` テーブルから `customer` テーブル – これにより、誰が購入したかを知ることができます
+* `purchase` テーブルを `customer` テーブルに結合または参照するために使用できる列。これにより、誰が購入したかを把握できます
 
 より詳細なレベルで、この分析に使用される正確なデータフィールドを識別する必要があります。
 
@@ -56,15 +56,15 @@ ht-degree: 0%
 
 上記のネイティブデータ列に加えて、この分析を有効にするには、次のような一連の計算データフィールドも必要です。
 
-* `Customer's first purchase date` 特定のユーザーのを返します。 `MIN(order.created_at`）
+* 特定のユーザーの `MIN(order.created_at` を返す `Customer's first purchase date`）
 
 これは、次の項目の作成に使用されます。
 
-* `Time between a customer's registration date and first purchase date`：登録から最初の購入日までの経過時間を特定のユーザーに返します。 これは、後で指標の基礎となります。
+* `Time between a customer's registration date and first purchase date`。登録から最初の購入日までの経過時間を特定のユーザーに返します。 これは、後で指標の基礎となります。
 
-これらのフィールドは両方とも、ユーザーレベル（例えば、 `user` テーブル）に保存します。 これにより、平均分析をユーザーで正規化できます（つまり、この平均計算の分母はユーザーの数です）。
+これらのフィールドは両方とも、ユーザーレベル（例えば `user` テーブル）で作成する必要があります。 これにより、平均分析をユーザーで正規化できます（つまり、この平均計算の分母はユーザーの数です）。
 
-ここで、 [!DNL Commerce Intelligence] 入れ！ を使用できます [!DNL Commerce Intelligence] 上記の列を作成するためのData Warehouse。 Adobeアナリストチームに連絡して、作成する新しい列の具体的な定義を提供してください。 を使用することもできます [列エディター](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+ここで [!DNL Commerce Intelligence] の手順を実行します。 [!DNL Commerce Intelligence] Data Warehouseを使用して、上記の列を作成できます。 Adobeアナリストチームに連絡して、作成する新しい列の具体的な定義を提供してください。 [ 列エディター ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) を使用することもできます。
 
 ベストプラクティスとしては、実稼動サーバーに不要な負荷をかけるので、これらの計算データフィールドをデータベースに直接作成しないようにすることをお勧めします。
 
@@ -75,13 +75,13 @@ ht-degree: 0%
 ここでは、次の計算を実行します。
 
 
-_[合計 `Time between a customer's registration date and first purchase date`] / [登録および購入した顧客の合計数]_
+_[`Time between a customer's registration date and first purchase date`]/[ 登録・購入したお客様の総数]_
 
-また、この計算が、顧客の登録日に応じて、経時的にプロットされるかトレンドを確認する必要があります。 その方法を次に示します [この指標を作成](../../data-user/reports/ess-manage-data-metrics.md) 。対象： [!DNL Commerce Intelligence]:
+また、この計算が、顧客の登録日に応じて、経時的にプロットされるかトレンドを確認する必要があります。 また、[!DNL Commerce Intelligence] で [ この指標を作成 ](../../data-user/reports/ess-manage-data-metrics.md) する方法を次に示します。
 
-1. に移動 **[!UICONTROL Data]** を選択し、 `Metrics` タブ。
-1. クリック **[!UICONTROL Add New Metric]** を選択し、 `user` テーブル（上記でディメンションを作成した場所）。
-1. ドロップダウンから「」を選択します `Average` 日`Time between a customer's registration date and first purchase date` 列： `user` で並べ替えられたテーブル `Customer's registration date`  列。
+1. **[!UICONTROL Data]** に移動し、「`Metrics`」タブを選択します。
+1. 「**[!UICONTROL Add New Metric]**」をクリックし、`user` のテーブル（上記でディメンションを作成した場所）を選択します。
+1. ドロップダウンから、`user` テーブルの `Time between a customer's registration date and first purchase date` 列の `Average` を `Customer's registration date` 列で並べ替えて選択します。
 1. 関連するフィルターまたはフィルターセットを追加します。
 
 これで、この指標の準備が整いました。
@@ -90,16 +90,16 @@ _[合計 `Time between a customer's registration date and first purchase date`] 
 
 新しい指標が設定されたので、それを使用して、登録から最初の購入日までの平均時間を登録日別にレポートできます。
 
-任意のダッシュボードに移動して、 [レポートの作成](../../data-user/reports/ess-manage-data-metrics.md) 上記で作成した指標を使用します。
+任意のダッシュボードに移動し、上記で作成した指標を使用して [ レポートを作成 ](../../data-user/reports/ess-manage-data-metrics.md) するだけです。
 
 ### `Visual Report Builder` {#visualrb}
 
-[この `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) は、データを視覚化する最も簡単な方法です。 SQL に詳しくない場合や、レポートをすばやく作成したい場合は、ビジュアルReport Builderが最適です。 数回クリックするだけで、組織全体で指標を追加し、データをセグメント化し、レポートを作成できます。 このオプションは、技術的な専門知識を必要としないので、初心者や専門家に最適です。
+[`Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) は、データを視覚化する最も簡単な方法です。 SQL に詳しくない場合や、レポートをすばやく作成したい場合は、ビジュアルReport Builderが最適です。 数回クリックするだけで、組織全体で指標を追加し、データをセグメント化し、レポートを作成できます。 このオプションは、技術的な専門知識を必要としないので、初心者や専門家に最適です。
 
 |  |  |
 |--- |--- |
-| **これは…に最適です** | **これは…にはあまり良くありません。** |
-|  – あらゆるレベルの分析/技術エクスペリエンス<br>- レポートをすばやく作成します<br> – 他のユーザーと共有する分析の作成 | - SQL 固有の関数を必要とする分析<br> – 新しい列のテスト – 計算列は、初期データ母集団の更新サイクルに依存しますが、SQL を使用して作成された列は依存しません。 |
+| **これは…に最適です** | **これは…にはあまり適していません** |
+|  – あらゆるレベルの分析/技術エクスペリエンス <br>- レポートをすばやく作成 <br> – 他のユーザーと共有するための分析の作成 | - SQL 固有の関数が必要な分析 <br> – 新しい列のテスト – 計算列は初期データ母集団の更新サイクルに依存しますが、SQL を使用して作成された列は依存しません。 |
 
 {style="table-layout:auto"}
 
@@ -109,21 +109,21 @@ _[合計 `Time between a customer's registration date and first purchase date`] 
 
 Adobeでは、チームの他のメンバーと共有するレポートを作成する場合、他のユーザーが分析をより深く理解できるように説明を追加することをお勧めします。
 
-1. クリック **[!UICONTROL i]** レポートの先頭
+1. レポートの上部にある「**[!UICONTROL i]**」をクリックします。
 1. 単語ボックスに説明を入力します。
-1. クリック **[!UICONTROL Save Description]**.
+1. 「**[!UICONTROL Save Description]**」をクリックします。
 
 以下を参照してください。
 
-![グラフの説明](../../assets/Chart_Description.gif)
+![ グラフの説明 ](../../assets/Chart_Description.gif)
 
 #### レポートを画像として書き出す
 
-プレゼンテーションまたはドキュメントにレポートを含める必要がありますか。 レポートは、次のコマンドを使用して、画像（PNG、PDF、SVG形式）として保存できます `Report Options` すべてのレポートの右上隅に表示されるメニュー。
+プレゼンテーションまたはドキュメントにレポートを含める必要がありますか。 すべてのレポートの右上隅にある `Report Options` メニューを使用して、レポートを画像（PNG、PDF、SVG形式）として保存できます。
 
 1. レポートの右上隅にある歯車アイコンをクリックします。
-1. ドロップダウンから「」を選択します `Enlarge`.
-1. レポートが拡大したら、 **[!UICONTROL Download]** レポートの右上隅
+1. ドロップダウンから「`Enlarge`」を選択します。
+1. レポートが拡大したら、レポートの右上隅にある「**[!UICONTROL Download]**」をクリックします。
 1. ドロップダウンから目的の画像形式を選択します。 ダウンロードは直ちに開始されます。
 
 以下を参照してください。

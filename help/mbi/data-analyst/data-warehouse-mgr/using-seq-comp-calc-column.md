@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # 順次比較の計算列
 
-このトピックでは、 `Sequential Comparison` で使用できる計算列 **[!DNL Manage Data > Data Warehouse]** ページ。 以下に、その機能の説明を示し、その後に例と作成の仕組みを示します。
+このトピックでは、**[!DNL Manage Data > Data Warehouse]** ページで使用できる `Sequential Comparison` の計算列の目的と使用の概要を説明します。 以下に、その機能の説明を示し、その後に例と作成の仕組みを示します。
 
 **説明**
 
-この `Sequential Comparison` 列タイプ：連続したイベントの違いを検索します。 最も一般的なタイプの `Sequential Comparison` 列は `Seconds since previous order` 列。 この列には、次の 3 つの入力が必要です。
+`Sequential Comparison` 列タイプ：連続するイベントの違いを見つけます。 最も一般的な列 `Sequential Comparison` タイプは `Seconds since previous order` 列です。 この列には、次の 3 つの入力が必要です。
 
-1. `Event Owner`：この入力は、行がグループ化されるエンティティを決定します。 例： `Seconds since previous order` 列で、イベントの所有者は顧客です。これは、同じ顧客の前回の注文からの秒数を求めるためです。
-1. `Event Date`：この入力は、イベントのシーケンスを強制します。 の場合 `Seconds since previous order`。注文のタイムスタンプを含む列は、です `Event Date`. この入力は常にタイムスタンプです。
-1. `Value to Compare`：比較される実際の値です。 現在の行の値から前の行の値を減算します。 したがって、顧客の連続する注文の時間差を求める列が呼び出されます `Seconds since previous order`. この入力はタイムスタンプである必要はありません。 タイムスタンプ以外の例では、顧客の連続する注文間の注文値の違いを見つけます。
+1. `Event Owner`：この入力は、行がグループ化されるエンティティを決定します。 例えば、「`Seconds since previous order`」列のイベント所有者が顧客である場合は、同じ顧客を前回注文からの秒数を求めるためです。
+1. `Event Date`：この入力は、イベントのシーケンスを強制します。 `Seconds since previous order` の場合、注文のタイムスタンプを含む列は `Event Date` にする必要があります。 この入力は常にタイムスタンプです。
+1. `Value to Compare`：この入力は、比較される実際の値です。 現在の行の値から前の行の値を減算します。 したがって、顧客の連続する注文の時間差を求める列は `Seconds since previous order` と呼ばれます。 この入力はタイムスタンプである必要はありません。 タイムスタンプ以外の例では、顧客の連続する注文間の注文値の違いを見つけます。
 
 **例**
 
@@ -33,33 +33,33 @@ ht-degree: 0%
 | **`4`** | A | 2015-01-02 13:00:00 | 126000 |
 | **`5`** | B | 2015-01-03 13:00:00 | 217800 |
 
-上記の例では、 `Seconds since owner's previous event` が `Sequential Comparison` 集計列。 の場合 `owner_id = A`最初に、に基づいてシーケンスを識別します `timestamp` 列に追加し、直前のイベントの `timestamp` 現在のイベントのタイムスタンプから。 テーブルの 3 行目 – 2 行目 `owner_id A`  – の値 `Seconds since owner's previous event` は、「2015-01-01 02:00」から「2015-01-01 00」までの秒数です:00:00&#39;。 この差は、2 時間= 7200 秒に等しくなります。
+上記の例では、`Seconds since owner's previous event` が `Sequential Comparison` の計算列です。 `owner_id = A` の場合、最初に `timestamp` 列に基づいてシーケンスを識別し、次に現在のイベントのタイムスタンプから前のイベントの `timestamp` を減算します。 テーブルの 3 行目（`owner_id A` の 2 行目）の `Seconds since owner's previous event` の値は、「2015-01-01 02:00」と「2015-01-01 00:00:00」の間の秒数です。 この差は、2 時間= 7200 秒に等しくなります。
 
-この計算列タイプの場合、所有者の最初のイベントに対応する行には `NULL` の値。
+この計算列タイプの場合、所有者の最初のイベントに対応する行には `NULL` 値があります。
 
-**仕組み**
+**力学**
 
-を作成するには **イベント番号** 列：
+**イベント番号** 列を作成するには：
 
-1. に移動します。 **[!DNL Manage Data > Data Warehouse]** ページ。
+1. **[!DNL Manage Data > Data Warehouse]** ページに移動します。
 
 1. この列を作成するテーブルに移動します。
 
-1. クリック **[!UICONTROL Create New Column]** 右上隅
+1. 右上隅の「**[!UICONTROL Create New Column]**」をクリックします。
 
-1. を選択 `Same Table` as the `Definition Type` （比較する列が同じテーブルにない場合は、再配置する必要がある可能性があります）。
+1. `Definition Type` として「`Same Table`」を選択します（比較する列が同じテーブルにない場合は、再配置する必要がある可能性があります）。
 
-1. を選択 `SEQUENTIAL_COMPARISON` as the `Column Definition Equation`.
+1. `Column Definition Equation` として `SEQUENTIAL_COMPARISON` を選択します。
 
 1. 入力を選択します（前述）。
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
 
-1. フィルターを追加して、行を考慮から除外することもできます。 除外行には、 `NULL` この列の値。
+1. フィルターを追加して、行を考慮から除外することもできます。 除外された行には、この列の `NULL` 値があります。
 
-1. ページ上部の列の名前を指定し、 **[!UICONTROL Save]**.
+1. ページ上部の列の名前を指定し、「**[!UICONTROL Save]**」をクリックします。
 
-1. 列は使用可能です *即時*.
+1. この列は *即時* に使用できます。
 
-![秒](../../assets/SEC_new.png)
+![ 秒 ](../../assets/SEC_new.png)

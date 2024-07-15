@@ -21,17 +21,17 @@ ht-degree: 0%
 
 ![](../../assets/blobid0.png)
 
-RFM 分析を設定できるのは、 [!DNL Adobe Commerce Intelligence] 新しいアーキテクチャに関する Pro プラン （例： `Data Warehouse Views` の下のオプション `Manage Data` メニュー）。 これらの列は、 **[!DNL Manage Data > Data Warehouse]** ページ。 詳細な手順は次のとおりです。
+RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intelligence] Pro プランがある場合（たとえば、`Manage Data` メニューの `Data Warehouse Views` オプションがある場合）にのみ設定できます。 これらの列は、**[!DNL Manage Data > Data Warehouse]** のページから作成できます。 詳細な手順は次のとおりです。
 
 ## はじめに
 
 まず、値が 1 のプライマリキーのみを含むファイルをアップロードする必要があります。 これにより、分析に必要な計算列を作成できます。
 
-あなたはこれを使うことができます [記事](../importing-data/connecting-data/using-file-uploader.md) および以下の画像でファイルを書式設定します。
+この [ 記事 ](../importing-data/connecting-data/using-file-uploader.md) と以下の画像を使用して、ファイルをフォーマットできます。
 
 ## 計算される列
 
-ビジネスでゲストによる注文が許可されている場合は、さらに区別されます。 その場合は、のすべての手順を無視して、 `customer_entity` テーブル。 ゲストによる注文が許可されていない場合は、のすべてのステップを無視します。 `sales_flat_order` テーブル。
+ビジネスでゲストによる注文が許可されている場合は、さらに区別されます。 その場合は、`customer_entity` テーブルのすべてのステップを無視できます。 ゲストの注文が許可されていない場合は、`sales_flat_order` テーブルのすべてのステップを無視します。
 
 作成する列
 
@@ -39,13 +39,13 @@ RFM 分析を設定できるのは、 [!DNL Adobe Commerce Intelligence] 新し�
 * `Customer's last order date`
 * [!UICONTROL Column type]: `Many to one > Max`
 * [!UICONTROL Pat]: `sales_flat_order.customer_id > customer_entity.entity_id`
-* 個選択済み [!UICONTROL column]: `created_at`
+* 選択された [!UICONTROL column]: `created_at`
 * [!UICONTROL Filter]: `Orders we count`
 
 * 
-      顧客の前回の注文日からの経過時間（秒）
-  * [!UICONTROL Column type]: - 「同じテーブル > 年齢
-* 個選択済み [!UICONTROL column]: `Customer's last order date`
+       顧客の最終注文日からの経過時間（秒） 
+  * [!UICONTROL Column type]: -     &quot;同じテーブル > 年齢
+* 選択された [!UICONTROL column]: `Customer's last order date`
 
 * （入力）カウント参照
 * [!UICONTROL Column type]: `Same table > Calculation`
@@ -55,19 +55,19 @@ RFM 分析を設定できるのは、 [!DNL Adobe Commerce Intelligence] 新し�
 * 
   [!UICONTROL データ型]: `Integer`
 
-* **参照をカウント** テーブル （これは「1」の番号でアップロードしたファイルです）
+* **カウント参照** テーブル（これは「1」という番号でアップロードしたファイルです）
 * 顧客の数
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
-* [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` または `customer_entity.(input)reference > Count Reference`. `Primary Key`
-* 個選択済み [!UICONTROL column]: `sales_flat_order.customer_email` または `customer_entity.entity_id`
+* [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` または `customer_entity.(input)reference > Count Reference`。`Primary Key`
+* 選択された [!UICONTROL column]: `sales_flat_order.customer_email` または `customer_entity.entity_id`
 
 * **Customer_entity** テーブル
 * 顧客の数
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
-* [!UICONTROL Path]: `customer_entity`.（入力） リファレンス > 顧客集中度。 `Primary Key`
-* 個選択済み [!UICONTROL column]: `Number of customers`
+* [!UICONTROL Path]: `customer_entity`。（入力） リファレンス > 顧客集中度。`Primary Key`
+* 選択された [!UICONTROL column]: `Number of customers`
 
-* （必要情報） `Ranking by customer lifetime revenue`
+* （入力） `Ranking by customer lifetime revenue`
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's lifetime revenue`
@@ -94,8 +94,8 @@ RFM 分析を設定できるのは、 [!DNL Adobe Commerce Intelligence] 新し�
 * 顧客の生涯注文数によるランキング
 * 
   [!UICONTROL 列タイプ]: – "同じテーブル/計算"
-* [!UICONTROL Inputs]: - **（入力）顧客のライフタイムナンバーごとの注文ランキング**, **顧客の数**
-* [!UICONTROL Calculation]: - **a が null で else （B – （A-1））終了した場合**
+* [!UICONTROL Inputs]: - **（入力）顧客のライフタイム数によるランキング注文数**、**顧客数**
+* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（B – （A-1））終了**
 * [!UICONTROL Datatype]: – 整数
 
 * 顧客の頻度スコア （パーセンタイル単位）
@@ -119,27 +119,27 @@ RFM 分析を設定できるのは、 [!DNL Adobe Commerce Intelligence] 新し�
 
 * 顧客の最新性スコア （パーセンタイル単位）
 * [!UICONTROL Column type]: `Same table > Calculation`
-* [!UICONTROL Inputs]: `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
+* [!UICONTROL Inputs]: `Customer's recency score (by percentiles)`、`Customer's frequency score (by percentiles)`、`Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
 * 
   [!UICONTROL データ型]: String
 
-* **参照をカウント** テーブル
+* **カウント参照** テーブル
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `sales_flat_order.(input) reference > Customer Concentration. Primary Key` または `customer_entity.(input)reference > Customer Concentration.Primary Key`
-* 個選択済み [!UICONTROL column]: `sales_flat_order.customer_email` または `customer_entity.entity_id`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` 000 と等しくない
+* 選択された [!UICONTROL column]: `sales_flat_order.customer_email` または `customer_entity.entity_id`
+* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` が 000 と等しくない
 
 * **Customer_entity** テーブル
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path]: `customer_entity.(input) reference > Customer Concentration.Primary Key`
-* 個選択済み [!UICONTROL column]: - `Number of customers`
+* 選択された [!UICONTROL column]: - `Number of customers`
 
 * 顧客の最新性スコア `(R+F+M)`
 * [!UICONTROL Column type]: `Same table > Calculation`
-* [!UICONTROL Inputs]: - `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
+* [!UICONTROL Inputs]: - `Customer's recency score (by percentiles)`、`Customer's frequency score (by percentiles)`、`Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
 * 
   [!UICONTROL データ型]: `Integer`
@@ -148,7 +148,7 @@ RFM 分析を設定できるのは、 [!DNL Adobe Commerce Intelligence] 新し�
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's recency score (R+F+M)`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` 000 と等しくない
+* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` が 000 と等しくない
 
 * 顧客の RFM スコア全体によるランキング
 * [!UICONTROL Column type]: `Same table > Calculation`
@@ -174,7 +174,7 @@ RFM 分析を設定できるのは、 [!DNL Adobe Commerce Intelligence] 新し�
 
 >[!NOTE]
 >
->必ずしてください [すべての新規列をディメンションとして指標に追加](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 新しいレポートを作成する前に、
+>新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## レポート
 
@@ -210,7 +210,7 @@ RFM 分析を設定できるのは、 [!DNL Adobe Commerce Intelligence] 新し�
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **最新性スコアが 1 つの顧客**
+* **1 つの最新性スコアを持つ顧客**
 * 指標 `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`

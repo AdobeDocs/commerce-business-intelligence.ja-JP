@@ -11,22 +11,22 @@ ht-degree: 0%
 
 ---
 
-# でのデータ検証 [!DNL Mixpanel]
+# [!DNL Mixpanel] でのデータ検証
 
-条件 [!DNL Adobe Commerce Intelligence] 最初にに接続 [!DNL Mixpanel] データ、担当のアカウントマネージャーまたはアナリストは、次からのデータ書き出しを行うようリクエストする場合があります [!DNL Mixpanel] 検証の目的で使用します。 これにより、直接内で使用可能なすべての同じデータを同期したことを確認できます [!DNL Mixpanel].
+[!DNL Adobe Commerce Intelligence] が [!DNL Mixpanel] データに初めて接続する際、アカウントマネージャーまたはアナリストは、検証を目的として、[!DNL Mixpanel] からのデータ書き出しを提供するようリクエストする場合があります。 これにより、[!DNL Mixpanel] 内で直接使用可能な同じデータをすべて同期したことを確認できます。
 
-## データの書き出しプロセス： `Events`
+## データ エクスポート プロセス：`Events`
 
-1. にアクセス `Segmentation` セクションとビュー `Your Top Events`.
+1. `Segmentation` のセクションにアクセスして、`Your Top Events` を表示します。
 
    ![](../../../assets/your-top-events.png)
 
-1. を選択 `Past 96 Hours` 時間範囲
+1. 時間範囲の `Past 96 Hours` を選択
 
    ![](../../../assets/past-96-hours.png)
 
-1. レポートの右下部分までスクロールし、 `.csv` ファイル：
+1. レポートの右下部分までスクロールし、`.csv` ファイルを書き出します。
 
    ![](../../../assets/export-csv-mixpanel.png)
 
-1. を送信 `.csv` この検証プロセスで使用するアカウント・マネージャまたはアナリストにファイルを送信します。
+1. `.csv` ファイルを、この検証プロセスで使用しているアカウントマネージャーまたはアナリストに送信します。

@@ -11,19 +11,19 @@ ht-degree: 0%
 
 ---
 
-# 接続 [!DNL WooCommerce]
+# Connect [!DNL WooCommerce]
 
 >[!NOTE]
 >
->が必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
 ![](../../../assets/WooCommerce-Logo.jpg)
 
-ビジネスのパフォーマンスを確認したい場合や、最も価値のある獲得ソースとチャネルを見つけたい場合は、 の接続 [!DNL WooCommerce] データ送信先 [!DNL Commerce Intelligence] これらの質問などに答えることができます。
+ビジネスのパフォーマンスを確認したい場合や、最も価値のある獲得ソースとチャネルを見つけたい場合は、 [!DNL WooCommerce] データを [!DNL Commerce Intelligence] に接続すると、これらの質問などに回答できます。
 
-この [!DNL WooCommerce] データベースの基準 [!DNL MySQL]に接続できます。 [!DNL Commerce Intelligence] を通して [直接接続](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)、または [経由 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobeでは、最も安全な SSH 方式を使用することをお勧めします。
+[!DNL WooCommerce] データベースは [!DNL MySQL][!DNL Commerce Intelligence] に基づいており、[ 直接接続 ](../integrations/mysql-via-a-direct-connection.md)、[[!DNL cPanel]](../integrations/mysql-via-cpanel.md)、または [ 経由で `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md) に接続できます。 Adobeでは、最も安全な SSH 方式を使用することをお勧めします。
 
 ## 関連：
 
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [セグメント化とフィルタリングに推奨されるデータディメンション](../../../best-practices/segment-filter.md)

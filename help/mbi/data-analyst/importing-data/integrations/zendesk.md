@@ -1,6 +1,6 @@
 ---
 title: Zendesk に接続
-description: でヘルプデスクレポートを統合する方法を説明します [!DNL Commerce Intelligence].
+description: ' [!DNL Commerce Intelligence] でヘルプデスクレポートを統合する方法を説明します。'
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,47 +11,47 @@ ht-degree: 0%
 
 ---
 
-# 接続 [!DNL Zendesk]
+# Connect [!DNL Zendesk]
 
 >[!NOTE]
 >
->が必要 [管理者権限](../../../administrator/user-management/user-management.md).
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
 ![](../../../assets/Zendesk_logo.png)
 
-の接続 [!DNL Zendesk] データを使用すると、でヘルプデスクレポートを統合できます [!DNL Commerce Intelligence]. これにより、カスタマーサポートを最適化し、売上高と共にヘルプデスクのパフォーマンスを監視できます。
+[!DNL Zendesk] データを接続すると、[!DNL Commerce Intelligence] でヘルプ デスク レポートを統合できます。 これにより、カスタマーサポートを最適化し、売上高と共にヘルプデスクのパフォーマンスを監視できます。
 
-の接続 [!DNL Zendesk] データは、次の 3 つの簡単な手順で構成されます。
+[!DNL Zendesk] データの接続は、簡単な 3 ステップのプロセスで行うことができます。
 
-1. [を開きます [!DNL Zendesk] の資格情報ページ [!DNL Commerce Intelligence]](#stepone)
-1. [を取得する [!DNL Zendesk] API トークン](#steptwo)
-1. [を入力 [!DNL Zendesk] のログイン情報とトークン [!DNL Commerce Intelligence]](#stepthree)
+1. [ [!DNL Commerce Intelligence] の場所で  [!DNL Zendesk] credentials ページを開きます。](#stepone)
+1. [API トークン  [!DNL Zendesk]  取得](#steptwo)
+1. [ログイン情報  [!DNL Zendesk]  トークンを  [!DNL Commerce Intelligence] に入力します。](#stepthree)
 
-このプロセスを完了するには、ブラウザーウィンドウまたはタブを 2 つ開く必要があります。1 つは以下に対応します [!DNL Commerce Intelligence]、他に [!DNL Zendesk] アカウント。
+このプロセスを完了するには、2 つのブラウザーウィンドウまたはタブを開く必要があります。1 つは [!DNL Commerce Intelligence] 用、もう 1 つは [!DNL Zendesk] アカウント用です。
 
-## を開きます [!DNL Zendesk] の資格情報ページ [!DNL Commerce Intelligence] {#stepone}
+## [!DNL Commerce Intelligence] の [!DNL Zendesk] 資格情報ページを開きます。 {#stepone}
 
-1. に移動します `Integrations` ページの下 **[!UICONTROL Manage Data** > **&#x200B;データソース&#x200B;**> **統合]**.
-1. クリック **[!UICONTROL Add Integration]**&#x200B;画面の右側にあります。
-1. 「」をクリックします [!DNL Zendesk] アイコン。 これにより、 [!DNL Zendesk] 資格情報ページ。
+1. **[!UICONTROL Manage Data** > ** データソース **/**統合]** の下の `Integrations` ページに移動します。
+1. 画面の右側にある「**[!UICONTROL Add Integration]**」をクリックします。
+1. [!DNL Zendesk] アイコンをクリックします。 これにより、[!DNL Zendesk] 資格情報ページが開きます。
 
-## を取得する [!DNL Zendesk] API トークン {#steptwo}
+## [!DNL Zendesk] API トークンの取得 {#steptwo}
 
-1. ログインしているウィンドウ/タブで、 [!DNL Zendesk] アカウントで、画面の左下にある「設定」（歯車）アイコンをクリックします。
-1. いつ `Settings` メニューが表示されたら、 `Channels` セクション。 クリック **[!UICONTROL API]** この節を参照してください。
-1. が含まれる `Token Access` このページのセクションで、の横にあるチェックボックスをクリックします。 `Enabled`. アクティブな API トークンのリストが表示されます。
-1. クリック **[!UICONTROL Add New Token]**.
-1. プロンプトが表示されたら、トークンのラベルを入力します。 Adobeでは、を使用することをお勧めします。 `Commerce Intelligence`トークンを使用しているアプリケーションを一目で確認できます。
-1. クリック **[!UICONTROL Create]**.
+1. [!DNL Zendesk] アカウントにログインしているウィンドウ/タブで、画面の左下にある設定（歯車）アイコンをクリックします。
+1. `Settings` メニューが表示されたら、`Channels` セクションを見つけます。 このセクションの「**[!UICONTROL API]**」をクリックします。
+1. このページの「`Token Access`」セクションで、「`Enabled`」の横にあるチェックボックスをクリックします。 アクティブな API トークンのリストが表示されます。
+1. 「**[!UICONTROL Add New Token]**」をクリックします。
+1. プロンプトが表示されたら、トークンのラベルを入力します。 Adobeでは、トークンを使用するアプリケーションを一目で把握できるように、`Commerce Intelligence` を使用することをお勧めします。
+1. 「**[!UICONTROL Create]**」をクリックします。
 1. API トークンが作成されます。 このトークンをコピーします。このトークンは、次の手順で使用します。
 
-## Enter [!DNL Zendesk] へのログイン情報と API トークン [!DNL Commerce Intelligence] {#stepthree}
+## ログイン情報 [!DNL Zendesk]API トークンを [!DNL Commerce Intelligence] に入力します。 {#stepthree}
 
-1. を入力 [!DNL Zendesk] のサイトのプレフィックスとログインメール [!DNL Zendesk] の資格情報ページ [!DNL Commerce Intelligence].
+1. [!DNL Commerce Intelligence] の [!DNL Zendesk] 資格情報ページに [!DNL Zendesk] サイトのプレフィックスとログインメールを入力します。
 1. API トークンを入力します。
-1. クリック **[!UICONTROL Save & Connect]**. 接続に成功した場合、 *接続に成功しました。* メッセージが画面の上部に表示されます。
+1. 「**[!UICONTROL Save & Connect]**」をクリックします。 接続に成功した場合、「接続に成功しました *メッセ* ジが画面の上部に表示されます。
 
 ## 関連：
 
-* [予測 [!DNL Zendesk] データ](../integrations/exp-zendesk-data.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Expected [!DNL Zendesk] data](../integrations/exp-zendesk-data.md)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
