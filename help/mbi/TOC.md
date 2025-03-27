@@ -4,9 +4,9 @@ description: Adobe Commerceで使用できる機能  [!DNL Commerce Intelligence
 breadcrumb-title: Commerce Intelligence ユーザーガイド
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: cea314102fb3b2164c1498ce1efa60e83c41b188
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,10 @@ ht-degree: 0%
       - [ユーザー権限の管理](administrator/user-management/user-management.md)
       - [パスワードをリセット](../mbi/administrator/user-management/reset-password.md)
       - [指標へのアクセスの制限](../mbi/administrator/user-management/restrict-metric-access.md)
+      - [高度なユーザー管理](../mbi/administrator/user-management/advanced.md)
 - データ {#analyze} ースの分析
    - [データアナリスト](data-analyst.md)
-   - Data Warehouse管理者 {#warehouse-manager}
+   - Data Warehouse Manager {#warehouse-manager}
       - [概要](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [高度な計算列のタイプ](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [構築ディメ  [!DNL Google Ecommerce]  ション](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
@@ -43,7 +44,7 @@ ht-degree: 0%
       - [レプリケーションメソッドの設定](data-analyst/data-warehouse-mgr/cfg-replication-methods.md)
       - [データの再チェックの設定](data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)
       - [指標の操作テーブルの変更](data-analyst/data-warehouse-mgr/change-metric-op-table.md)
-      - [Data Warehouseビューの作成および使用](data-analyst/data-warehouse-mgr/create-dw-views.md)
+      - [Data Warehouse ビューの作成と使用](data-analyst/data-warehouse-mgr/create-dw-views.md)
       - [計算列のパスの作成/削除](data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)
       - [SQL 計算列の作成/使用](data-analyst/data-warehouse-mgr/create-sql-calc-column.md)
       - [計算列の作成](data-analyst/data-warehouse-mgr/creating-calculated-columns.md)
@@ -70,7 +71,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - SQLReport Builder{#sql}
+   - SQL Report Builder {#sql}
       - [使用  [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [非日付ベース  [!DNL Cohort Report Builder]  コホートの使用](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [定性コホート分析の作成](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -217,7 +218,7 @@ ht-degree: 0%
       - [データの操作](best-practices/work-data.md)
       - [内の UTM タグ付け  [!DNL Google Analytics]](best-practices/utm-tagging-google.md)
       - [財務データのフォーマットとインポート](best-practices/format-import-financial-data.md)
-      - [セグメント化とフィルタリングに推奨されるデータDimension](best-practices/segment-filter.md)
+      - [セグメント化とフィルタリングに推奨されるデータディメンション](best-practices/segment-filter.md)
       - [更新サイクルステータスの確認](best-practices/check-update-cycle.md)
       - [更新サイクル時間の短縮](best-practices/reduce-update-cycle-time.md)
       - [増分レプリケーションをサポートするためのデータベースの変更](best-practices/mod-db-inc-replication.md)
@@ -231,7 +232,7 @@ ht-degree: 0%
    - ダッシュボード {#working-dashboards} の操作
       - [ダッシュボードの共有](best-practices/share-dashboard-best-practice.md)
       - [投資家ダッシュボードの構築](best-practices/build-investor-dashboard.md)
-- Tutorials{#tutorials}
+- チュートリアル {#tutorials}
    - [使用  [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [ [!DNL Visual Report Builder] の時間オプションを使用します。](tutorials/time-options-visual-rpt-bldr.md)
    - [クエリからのビジュアライゼーション  [!DNL SQL]  作成](tutorials/create-visuals-from-sql.md)
