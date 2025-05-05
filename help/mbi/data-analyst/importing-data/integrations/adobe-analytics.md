@@ -57,6 +57,6 @@ ht-degree: 0%
 
 1. 選択したレポートスイートがテーブルに表示されます。 「**[!UICONTROL Save]**」をクリックして選択を確定します。
 
-1. [!DNL Commerce Intelligence] サポートチーム [ に統合が許可されていることを通知し、最初の接続プロセスを実行します ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+1. [!DNL Commerce Intelligence] サポートチーム [ に統合が許可されていることを通知し、最初の接続プロセスを実行します ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
 
 最初の接続プロセスが実行されると、テーブルは、Data Warehouseページの「`All Tables`」タブで使用できるようになります。 レプリケートする列を選択すると、次回の完全更新後にデータが表示されます。

@@ -15,13 +15,13 @@ ht-degree: 4%
 
 ## Adobeコンテンツへの投稿について
 
-詳しくは、 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+詳しくは、 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja).
 
 投稿方法は、投稿者と、投稿する変更の種類に応じて異なります。
 
 ### 軽微な変更
 
-善意でマイナーな更新を行う場合は、記事にアクセスし、 **編集** トピックの GitHub ソースに移動する記事内のリンク。 その後、GitHub UI を使用して更新をおこないます。 一般 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
+善意でマイナーな更新を行う場合は、記事にアクセスし、 **編集** トピックの GitHub ソースに移動する記事内のリンク。 その後、GitHub UI を使用して更新をおこないます。 一般 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
 
 このリポジトリのドキュメントおよびコード例について送信したマイナーな修正や説明は、Adobe利用条件の適用を受けます。
 
@@ -43,7 +43,7 @@ Adobe Experience Cloudソリューションの製品チームのテクニカル�
 
 コミュニティの投稿者は、GitHub UI を使用して基本的な編集をおこなったり、リポジトリをフォークして大きな貢献をすることができます。
 
-詳しくは、 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 」を参照してください。
+詳しくは、 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) 」を参照してください。
 
 ## Markdown を使用してトピックをフォーマットする方法
 

@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 関連：
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
 * [接続  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Web サイトのアクティビティと顧客コンバージョン率の分析](../../analysis/web-act-cust-conversion.md)
 * [cookie を使用したユーザー取得デ  [!DNL Google Analytics]  タの追跡](../../analysis/google-track-user-acq.md)

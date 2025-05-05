@@ -17,4 +17,4 @@ ht-degree: 0%
 
 この節では、様々な外部データソースを [!DNL Commerce Intelligence] に接続する際に使用できる統合について説明します。
 
-接続または統合を削除するには、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) のうえ、削除する接続または統合の名前を含めてください。
+接続または統合を削除するには、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) のうえ、削除する接続または統合の名前を含めてください。

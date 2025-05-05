@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >一部のダッシュボードを使用できるかどうかは、のデータセットによって異なります。
 
-ご質問がある場合や、アカウントへのパッケージの追加に興味がある場合は、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を送信してヘルプを受けてください。
+ご質問がある場合や、アカウントへのパッケージの追加に興味がある場合は、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) を送信してヘルプを受けてください。
 
 ## エグゼクティブサマリー
 

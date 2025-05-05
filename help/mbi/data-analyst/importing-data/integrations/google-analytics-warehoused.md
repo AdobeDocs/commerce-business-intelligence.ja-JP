@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] は `Premium` 統合です。 この統合をサブスクリプションに追加することに関心がある場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+>[!DNL Google Analytics Warehoused] は `Premium` 統合です。 この統合をサブスクリプションに追加することに関心がある場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
 
 1. **[!UICONTROL Admin** > **Integrations]** の下の `Connections` ページに移動します。
 1. 右側にある「**[!UICONTROL Add an Integration]**」をクリックします。
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## 関連ドキュメント
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
 * [接続  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Web サイトのアクティビティと顧客コンバージョン率の分析](../../analysis/web-act-cust-conversion.md)
 * [cookie を使用したユーザー取得デ  [!DNL Google Analytics]  タの追跡](../../analysis/google-track-user-acq.md)

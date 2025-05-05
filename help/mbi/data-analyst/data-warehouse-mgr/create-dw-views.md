@@ -136,7 +136,7 @@ PostgreSQL [ ドキュメント ](https://www.postgresql.org/docs/8.3/queries-un
 
 **その他のヘルプをお探しですか？**
 
-SQL の書き込みと `Data Warehouse Views` の作成は、テクニカルサポートには含まれていません。 ただし、[ サービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) は、ビューの作成を支援します。 従来のデータベースを新しいデータベースに移行して、特定の分析のために 1 つのData Warehouseビューを作成するといった作業は、サポートチームがサポートします。
+SQL の書き込みと `Data Warehouse Views` の作成は、テクニカルサポートには含まれていません。 ただし、[ サービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) は、ビューの作成を支援します。 従来のデータベースを新しいデータベースに移行して、特定の分析のために 1 つのData Warehouseビューを作成するといった作業は、サポートチームがサポートします。
 
 通常、2～3 の同様に構造化されたテーブルを統合する目的で新しい `Data Warehouse View` ールを作成するには、5 時間のサービス時間が必要です。これは、約 1,250 ドルの作業になります。 ただし、以下に、必要な予想投資を増やす可能性のある一般的な要因を示します。
 

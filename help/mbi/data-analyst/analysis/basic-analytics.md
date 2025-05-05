@@ -46,7 +46,7 @@ ht-degree: 0%
 
 **ゲストの注文は受け付けますか？**
 
-*その場合、一部の顧客がこのテーブルに含まれていない可能性があります。 顧客の分析にすべての顧客が含まれることを確認するには、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) にお問い合わせください。*
+*その場合、一部の顧客がこのテーブルに含まれていない可能性があります。 顧客の分析にすべての顧客が含まれることを確認するには、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) にお問い合わせください。*
 
 *お客様から注文を受け付けているか不明な場合は、 詳しくは、[ このトピック ](../data-warehouse-mgr/guest-orders.md) を参照してください。*
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**：注文が作成または発注された日付。
 * **[!UICONTROL Customer_email]**：注文を行った顧客のメールアドレス。 これは、顧客の一意の ID である場合もあります。
 * **[!UICONTROL Customer's lifetime number of orders]**:`Customers` テーブル上にある同じ名前の列のコピー。
-* **[!UICONTROL Customer's order number]**：受注に関連付けられた顧客の受注番号。 例えば、表示している行が顧客の最初の注文の場合、この列は「1」ですが、顧客の 15 番目の注文の場合、この列には、この注文の「15」が表示されます。 このディメンションが `Customers` テーブルに存在しない場合は、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) に問い合わせて、ディメンションの作成を支援してください。
+* **[!UICONTROL Customer's order number]**：受注に関連付けられた顧客の受注番号。 例えば、表示している行が顧客の最初の注文の場合、この列は「1」ですが、顧客の 15 番目の注文の場合、この列には、この注文の「15」が表示されます。 このディメンションが `Customers` テーブルに存在しない場合は、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) に問い合わせて、ディメンションの作成を支援してください。
 * **[!UICONTROL Customer's order number (previous-current)]**:**[!UICONTROL Customer's order number]** 列内の 2 つの値の連結。 以下のサンプルレポートで、任意の 2 つの注文間の経過時間を表示するために使用されます。 例えば、顧客の最初の注文日と 2 番目の注文日の間の時間は、この計算では「1-2」として表されます。
 * **[!UICONTROL Coupon_code]**：各注文で使用されたクーポンを表示します。
 * **[!UICONTROL Seconds since previous order]**：顧客の注文間の時間（秒単位）。

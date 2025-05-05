@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL CJ Affiliate] データの読み込み
 
-データ [!DNL CJ Affiliate (Commission Junction)][!DNL Adobe Commerce Intelligence] に読み込むには、次の手順に従い、結果のファイルを [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) に添付します。 Adobeはアカウントにデータテーブルを設定し、ユーザーが引き続き個別にデータをアップロードできるようにします。
+データ [!DNL CJ Affiliate (Commission Junction)][!DNL Adobe Commerce Intelligence] に読み込むには、次の手順に従い、結果のファイルを [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) に添付します。 Adobeはアカウントにデータテーブルを設定し、ユーザーが引き続き個別にデータをアップロードできるようにします。
 
 ## [!DNL CJ Affiliate] データのエクスポート
 

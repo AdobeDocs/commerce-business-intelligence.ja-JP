@@ -78,7 +78,7 @@ Adobeでは、リピート注文の可能性を業務に当てはめることの
 
 複数の製品を提供する場合、特定の製品を購入した顧客の行動が、時間の経過と共に他の顧客とどのように異なるかを疑問に思うかもしれません。 詳しく知りたい場合 このチュートリアルをチェックして、購入した特定の製品に基づいた、顧客コホートの生涯購入行動を調べます。
 
-このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されます。 詳しくは、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ください。
+このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されます。 詳しくは、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) ください。
 
 ### 関連
 

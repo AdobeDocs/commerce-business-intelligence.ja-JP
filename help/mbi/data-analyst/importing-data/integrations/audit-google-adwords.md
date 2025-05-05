@@ -23,6 +23,6 @@ ht-degree: 0%
 
 1. アカウントが [!DNL Google Adwords] Editor に追加されたら、**[!UICONTROL File** > **&#x200B; スプレッドシート（CSV）の書き出し） &#x200B;**/**アカウント全体の書き出し]** を選択します。
 
-これにより、現在の [!DNL Google Adwords] アカウントに保存されているすべての情報を含む `.csv` ファイルがビルドされます。 この時点で、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を送信します（必ずこのファイルを添付してください）。 したがって、データを詳しく見ることができます。 ファイルが大きすぎる場合は、[!DNL Dropbox] または [!DNL Google Drive] を使用して [!DNL Commerce Intelligence] チームと共有します。
+これにより、現在の [!DNL Google Adwords] アカウントに保存されているすべての情報を含む `.csv` ファイルがビルドされます。 この時点で、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) を送信します（必ずこのファイルを添付してください）。 したがって、データを詳しく見ることができます。 ファイルが大きすぎる場合は、[!DNL Dropbox] または [!DNL Google Drive] を使用して [!DNL Commerce Intelligence] チームと共有します。
 
 `.csv` ファイルの書き出 [!DNL Google Adwords] について詳しくは、公式の [[!DNL Google Adwords]  ドキュメント ](https://support.google.com/google-ads/editor/answer/38657?hl=en) を参照してください。

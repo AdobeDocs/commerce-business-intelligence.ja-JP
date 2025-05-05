@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Commerce Intelligence] 環境
 
-コマースデータを分析する際は、これらの要因と一般的な誤解に注意してください。 Commerce スキーマを正しく使用していることを確認するためにサポートが必要な場合は、ためらわずに [ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+コマースデータを分析する際は、これらの要因と一般的な誤解に注意してください。 Commerce スキーマを正しく使用していることを確認するためにサポートが必要な場合は、ためらわずに [ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
 
 ## [!DNL entity\_id]
 
