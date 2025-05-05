@@ -392,7 +392,7 @@ ht-degree: 0%
 
 ユーザーグループを設定するには：
 
-1. [!UICONTROL **ユーザーを管理**]/[!UICONTROL **User Groups]**に移動して、既存のユーザーグループを表示します。
+1. [!UICONTROL **ユーザーを管理**]/[!UICONTROL **User Groups]**&#x200B;に移動して、既存のユーザーグループを表示します。
 
    ![ ユーザーグループの設定 ](../../assets/configure-user-groups.png)
 

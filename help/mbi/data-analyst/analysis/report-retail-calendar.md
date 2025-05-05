@@ -50,7 +50,8 @@ ht-degree: 0%
    * **現在の日付**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
-      * 
+      * &#x200B;
+
         [!UICONTROL データ型]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
@@ -62,7 +63,8 @@ ht-degree: 0%
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-      * 
+      * &#x200B;
+
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **現在の小売年度に含まれるか？ （はい/いいえ）**
@@ -70,7 +72,8 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
+
         [!UICONTROL データ型]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **以前の小売年度に含まれていますか？ （はい/いいえ）**
@@ -78,7 +81,8 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
+
         [!UICONTROL データ型]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
@@ -139,62 +143,79 @@ ht-degree: 0%
       * [!UICONTROL Filter]:
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Line`
       * `multiple Y-axes` をオフにする
 
 * **小売カレンダーの概要（現在の小売年/月）**
    * 指標 `A`: `Revenue`
-      * 
+      * &#x200B;
+
         [!UICONTROL 指標]: `Revenue`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Line`
 
 * **小売カレンダーの概要（以前の小売年/月）**
    * 指標 `A`: `Revenue`
-      * 
+      * &#x200B;
+
         [!UICONTROL 指標]: `Revenue`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `B`: `Orders`
       * [!UICONTROL Metric]：注文数
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
+
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Line`
 
 ## 次の手順

@@ -37,7 +37,8 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
 
-   * 
+   * &#x200B;
+
      [!UICONTROL データ型]: `String`
    * [!UICONTROL Calculation]:`A` が null の場合は終了 `No coupon`、それ以外の場合 `Coupon` 終了
 
@@ -87,7 +88,8 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
-      * 
+      * &#x200B;
+
         [!UICONTROL データ型]: `String`
       * [!UICONTROL Calculation]: **A=&#39;クーポン&#39; then &#39;クーポン取得顧客&#39; else &#39;クーポン取得顧客&#39;終了**
 
@@ -97,7 +99,8 @@ ht-degree: 0%
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
 
-      * 
+      * &#x200B;
+
         [!UICONTROL データ型]: `Decimal`
       * [!UICONTROL Calculation]: **A が null または B が null または B=0 の場合、null または A/B が終了した場合**
 
@@ -106,7 +109,8 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
 
-      * 
+      * &#x200B;
+
         [!UICONTROL データ型]: `String`
       * [!UICONTROL Calculation]: **A が null で、A=0 で「クーポンを使用しない」場合は null、A&lt;0.5、A=0.5、A=1 で「クーポンのみ」の場合は「50/50」、A>0.5、Most coupon」の場合は「未定義」の場合は「クーポンを使用しない」**
 
@@ -134,7 +138,8 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
-   * 
+   * &#x200B;
+
      [!UICONTROL データ型]: `String`
    * [!UICONTROL Calculation]: **A=&#39;クーポン&#39; then &#39;クーポン取得顧客&#39; else &#39;クーポン取得顧客&#39;終了**
 
@@ -144,7 +149,8 @@ ht-degree: 0%
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
 
-   * 
+   * &#x200B;
+
      [!UICONTROL データ型]: `Decimal`
    * [!UICONTROL Calculation]: **A が null または B が null または B=0 の場合、null または A/B が終了した場合**
 
@@ -153,7 +159,8 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
 
-   * 
+   * &#x200B;
+
      [!UICONTROL データ型]: `String`
    * [!UICONTROL Calculation]: **A が null で、A=0 で「クーポンを使用しない」場合は null、A&lt;0.5、A=0.5、A=1 で「クーポンのみ」の場合は「50/50」、A>0.5、Most coupon」の場合は「未定義」の場合は「クーポンを使用しない」**
 
@@ -190,10 +197,10 @@ ht-degree: 0%
 
 * 指標 `A`: `Coupon acquisitions`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `Coupon acquisitions customer` または `Non coupon acquisition customer`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Pie`
 
 * **クーポンで取得した顧客と取得していない顧客の数**
@@ -212,9 +219,9 @@ ht-degree: 0%
 
 * 指標 `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Scalar`
 
 * **平均生涯売上高：クーポン以外の Acq。 （90 日以上）**
@@ -224,9 +231,9 @@ ht-degree: 0%
 
 * 指標 `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Scalar`
 
 * **初回注文クーポン別の平均生涯売上高**
@@ -234,10 +241,10 @@ ht-degree: 0%
 
 * 指標 `A`: `Average lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `Customer's first order's coupon`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Column`
 
 >[!NOTE]
@@ -253,7 +260,8 @@ ht-degree: 0%
    * [!UICONTROL Filter]:
       * 顧客の最初の注文にクーポンが含まれている（クーポン/クーポンなし） = クーポン
       * 顧客の最後の注文か =いいえ
-   * 
+   * &#x200B;
+
      [!UICONTROL 数式]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -263,7 +271,7 @@ ht-degree: 0%
 * 指標 `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
@@ -278,7 +286,8 @@ ht-degree: 0%
       * 顧客の最初の注文にクーポン （クーポン/クーポンなし） = クーポンなし
       * 顧客の最後の注文か =いいえ
 
-   * 
+   * &#x200B;
+
      [!UICONTROL 数式]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -288,7 +297,7 @@ ht-degree: 0%
 * 指標 `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
@@ -309,7 +318,8 @@ ht-degree: 0%
       * 顧客の最初の注文にクーポンが含まれていますか？ （クーポン/クーポンなし） = クーポン
       * 注文にクーポンが適用されていますか？ （クーポン/クーポンなし） = クーポン
 
-   * 
+   * &#x200B;
+
      [!UICONTROL 数式]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -318,9 +328,9 @@ ht-degree: 0%
 * 指標 `C`: `Number of repeat orders with coupon`
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Table` (ビジュアライゼーションを向上させるために、このテーブルを転置できます)
 
 * **クーポン未獲得顧客のクーポン使用率（リピート注文）**
@@ -339,7 +349,8 @@ ht-degree: 0%
       * 顧客の最初の注文にクーポンが含まれていますか？ （クーポン/クーポンなし） =クーポンなし
       * 注文にクーポンが適用されていますか？ （クーポン/クーポンなし） = クーポン
 
-   * 
+   * &#x200B;
+
      [!UICONTROL 数式]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -348,9 +359,9 @@ ht-degree: 0%
 * 指標 `C`: `Number of repeat orders with coupon`
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Table` (ビジュアライゼーションを向上させるために、このテーブルを転置できます)
 
 * **クーポン使用状況の詳細（初回注文）**
@@ -359,7 +370,8 @@ ht-degree: 0%
       * 顧客の注文番号= 1
       * このクーポンを使用した注文数 > 10
 
-   * 
+   * &#x200B;
+
      [!UICONTROL 指標]: `Revenue`
    * [!UICONTROL Filter]:
       * 顧客の注文番号= 1
@@ -371,7 +383,8 @@ ht-degree: 0%
       * このクーポンを使用した注文数 > 10
 
    * [!UICONTROL Formula]: `B-C` （C が負の場合）; B+C （C が正の場合）
-   * 
+   * &#x200B;
+
      [!UICONTROL 形式]: `Currency`
 
    * [!UICONTROL Metric]: `Average order value`
@@ -385,10 +398,10 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `Gross revenue from FTO`
 * 指標 `E`: `Average order value for FTO`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `coupon code`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Table`
 >[!NOTE]
 >
@@ -399,22 +412,23 @@ ht-degree: 0%
 
 * 指標 `A`: `Number or orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Scalar`
 
 * **クーポン付き注文による純売上高（常に）**
-   * 
+   * &#x200B;
+
      [!UICONTROL 指標]: `Revenue`
    * [!UICONTROL Filter]:
       * 注文にクーポンが適用されていますか？ （クーポン/クーポンなし） = クーポン
 
 * 指標 `A`: `Net revenue from orders with coupons`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Scalar`
 
 * **割引券による割引（常時）**
@@ -422,9 +436,9 @@ ht-degree: 0%
 
 * 指標 `A`: `Coupon discount amount`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Scalar`
 
 * **クーポンの有無による注文数**
@@ -432,7 +446,7 @@ ht-degree: 0%
 
 * 指標 `A`: `Number of orders`
 * [!UICONTROL Time period]: `Last 24 months`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `Order has coupon applied? (Coupon/No coupon)`
 * [!UICONTROL Chart type]: `Stacked column`
@@ -444,10 +458,10 @@ ht-degree: 0%
 
 * 指標 `A`: `New customers`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `Customer's coupon usage`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Pie`
 
 * **クーポンの使用状況の詳細**
@@ -455,7 +469,8 @@ ht-degree: 0%
    * [!UICONTROL Filter]:
       * このクーポンを使用した注文数 > 10
 
-   * 
+   * &#x200B;
+
      [!UICONTROL 指標]: `Revenue`
    * [!UICONTROL Filter]:
       * このクーポンを使用した注文数 > 10
@@ -465,20 +480,24 @@ ht-degree: 0%
       * このクーポンを使用した注文数 > 10
 
    * [!UICONTROL Formula]: `B-C` （`C` が負の場合）; `B+C` （`C` が正の場合）
-   * 
+   * &#x200B;
+
      [!UICONTROL 形式]: `Currency`
 
    * [!UICONTROL Formula]: `C/(B-C)` （`C` が負の場合）; `C/(B+C)` （`C` が正の場合）
-   * 
+   * &#x200B;
+
      [!UICONTROL 形式]: `Percentage`
 
    * [!UICONTROL Metric]: `Average order value`
    * [!UICONTROL Filter]:
       * このクーポンを使用した注文数 > 10
 
-   * 
+   * &#x200B;
+
      [!UICONTROL 数式]: `C/A`
-   * 
+   * &#x200B;
+
      [!UICONTROL 形式]: `Currency`
 
    * [!UICONTROL Metric]: `Distinct buyers`
@@ -494,10 +513,10 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `Average order discount`
 * 指標 `H`: `Distinct buyers`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `coupon code`
-* 
+* &#x200B;
   [!UICONTROL グラフ タイプ]: `Table`
 
 >[!NOTE]

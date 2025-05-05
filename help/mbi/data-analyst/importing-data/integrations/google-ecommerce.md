@@ -54,7 +54,7 @@ ht-degree: 0%
 ## [!DNL Google ECommerce] を [!DNL Commerce Intelligence] から切断しています {#disconnect}
 
 1. [!DNL Google Analytics] の [ アカウント設定 ](https://www.google.com/account/about/?hl=en) ページにアクセスします。
-1. [`Security`] セクションで、[ アプリケーションとサイト `Authorizing` 横にある [**[!UICONTROL edit]**] をクリックします。
+1. [`Security`] セクションで、&lbrack; アプリケーションとサイト `Authorizing` 横にある [**[!UICONTROL edit]**] をクリックします。
 1. 「[!DNL Commerce Intelligence]」の横にある「**[!UICONTROL revoke access]**」をクリックします。
 
 ## 関連：

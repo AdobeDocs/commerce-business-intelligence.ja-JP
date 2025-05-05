@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Commerce Intelligenceでの SQL クエリの翻訳
 
-SQL クエリを [!DNL Commerce Intelligence] で使用する [ 計算列 ](../data-warehouse-mgr/creating-calculated-columns.md)、[ 指標 ](../../data-user/reports/ess-manage-data-metrics.md)、および [ レポート ](../../tutorials/using-visual-report-builder.md) に変換する方法を疑問に思ったことはありませんか？ SQL を大量に使用するユーザーの場合は、[!DNL Commerce Intelligence] での SQL の翻訳方法を理解することで、[Platform Manager でよりスマートに作業し ](../data-warehouse-mgr/tour-dwm.md)[!DNL Commerce Intelligence] Data Warehouseを最大限に活用できます。
+SQL クエリを [!DNL Commerce Intelligence] で使用する [ 計算列 ](../data-warehouse-mgr/creating-calculated-columns.md)、[ 指標 ](../../data-user/reports/ess-manage-data-metrics.md)、および [ レポート ](../../tutorials/using-visual-report-builder.md) に変換する方法を疑問に思ったことはありませんか？ SQL を大量に使用するユーザーの場合は、[!DNL Commerce Intelligence] での SQL の翻訳方法を理解することで、[Platform Manager でよりスマートに作業し ](../data-warehouse-mgr/tour-dwm.md) [!DNL Commerce Intelligence] Data Warehouseを最大限に活用できます。
 
 このトピックの最後には、SQL クエリ句と [!DNL Commerce Intelligence] 要素の **翻訳行列** があります。
 
@@ -53,7 +53,7 @@ SQL クエリを [!DNL Commerce Intelligence] で使用する [ 計算列 ](../d
 | `email NOT LIKE '%@magento.com'` | 指標 `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | 指標 `timestamp` （およびレポート `time range`） |
 
-**[!UICONTROL Manage Data** > ** 指標 **/**新しい指標を作成]** をクリックして指標ビルダーに移動します。まず、適切な `source` テーブル（この場合は `orders` テーブル）を選択する必要があります。 次に、指標は次のように設定されます。
+**[!UICONTROL Manage Data** > **&#x200B; 指標 &#x200B;**/**新しい指標を作成]** をクリックして指標ビルダーに移動します。まず、適切な `source` テーブル（この場合は `orders` テーブル）を選択する必要があります。 次に、指標は次のように設定されます。
 
 ![ 指標の集計 ](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ SQL クエリを [!DNL Commerce Intelligence] で使用する [ 計算列 ](../d
 
 [!DNL Commerce Intelligence] でこれを設定するには、Data Warehouseマネージャーを使用する必要があります。ここでは、`orders` と `customers` のテーブルの間にパスを作成し、顧客のテーブルに `Customer LTV` という列を作成します。
 
-`customers` と `orders` の間に新しいパスを確立する方法を確認します。 最後の目標は、`customers` テーブルに新しい集計列を作成することです。そのため、最初にData Warehouseの `customers` テーブルに移動し、**[!UICONTROL Create a Column** > ** 定義を選択 **/**SUM]** をクリックします。
+`customers` と `orders` の間に新しいパスを確立する方法を確認します。 最後の目標は、`customers` テーブルに新しい集計列を作成することです。そのため、最初にData Warehouseの `customers` テーブルに移動し、**[!UICONTROL Create a Column** > **&#x200B; 定義を選択 &#x200B;**/**SUM]** をクリックします。
 
 次に、ソーステーブルを選択する必要があります。 `orders` テーブルへのパスが存在する場合は、ドロップダウンから選択するだけです。 ただし、新しいパスを作成している場合は、「**[!UICONTROL Create new path]**」をクリックすると、次の画面が表示されます。
 

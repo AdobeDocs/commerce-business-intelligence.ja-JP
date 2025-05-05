@@ -36,7 +36,8 @@ ht-degree: 0%
 * **[!UICONTROL catalog_product_entity]** テーブル：
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`created_at`
@@ -45,7 +46,8 @@ ht-degree: 0%
 
    * **`Product's first order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`created_at`
@@ -54,13 +56,15 @@ ht-degree: 0%
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `AGE`
       * [!UICONTROL DATETIME column] を選択：`Product's most recent order date`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`qty_ordered`
@@ -69,12 +73,14 @@ ht-degree: 0%
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] 入力：
          * A: `Product's lifetime number of items sold`
          * B: `Product's first order date`
-      * 
+      * &#x200B;
+
         [!UICONTROL Datatype]: `Decimal`
       * 定義：
          * a が null または B が null の場合は null で、それ以外の場合は round （A::decimal/（extract （epoch from （current_timestamp - B））::decimal/604800.0）,2） end
@@ -82,40 +88,46 @@ ht-degree: 0%
 * **[!UICONTROL cataloginventory_stock_item]** テーブル：
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
       * [!UICONTROL Column type]: `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] 入力：
          * A: `qty`
          * B: `Avg products sold per week (all time)`
-      * 
+      * &#x200B;
+
         [!UICONTROL Datatype]: `Decimal`
       * 定義：
          * a が null または B が null または B = 0.0 の場合、null または round （A::decimal/B,2）終了
@@ -126,7 +138,8 @@ ht-degree: 0%
 * **[!UICONTROL catalog_product_entity]** テーブル：
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`created_at`
@@ -135,7 +148,8 @@ ht-degree: 0%
 
    * **`Product's first order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`created_at`
@@ -144,13 +158,15 @@ ht-degree: 0%
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `Same Table`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `AGE`
       * DATETIME 列の選択：**`Product's most recent order date`**
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
       * [!UICONTROL column] を選択：**`qty_ordered`**
@@ -163,28 +179,32 @@ ht-degree: 0%
 * **[!UICONTROL cataloginventory_stock_item]** テーブル：
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
-      * 
+      * &#x200B;
+
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * [!UICONTROL column] を選択：`Avg products sold per week (all time)`
@@ -215,7 +235,8 @@ ht-degree: 0%
    * [!UICONTROL Group by]:
       * `Sku`
       * `Weeks on hand`
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with less than 2 weeks on hand (order now)`**
@@ -225,9 +246,11 @@ ht-degree: 0%
 
    * [!UICONTROL Time period]: `All time`
    * 時間間隔：`None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Group by]: `Sku`
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with more than 26 weeks on hand (put on sale)`**
@@ -237,9 +260,11 @@ ht-degree: 0%
 
    * [!UICONTROL Time period]: `All time`
    * 時間間隔：`None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Group by]: `Sku`
-   * 
+   * &#x200B;
+
      [!UICONTROL Chart type]: `Table`
 
 分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

@@ -69,27 +69,27 @@ ht-degree: 0%
 * [!UICONTROL Metric]：注文数
 
 * [!UICONTROL Formula]：最初の繰り返し順序確率
-* 
+* &#x200B;
   [!UICONTROL 数式]: `A/B`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Scalar`
 
 * **注文以降に指定された月の繰り返し注文確率**
 * 指標 A：以前の注文以降の月別の繰り返し注文（非表示）
 * [!UICONTROL Metric]: `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 指標 B：注文以降の過去の注文件数（月別）（非表示）
 * [!UICONTROL Metric]: `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Independent`
 
 * 指標 D：すべての時間の最後の注文（非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Independent`
 
 * [!UICONTROL Formula]：最初の繰り返し順序確率
-* 
+* &#x200B;
   [!UICONTROL 数式]: `(C-A)/(C+D-A-B)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * top.bottom を表示：上位 24 個のカテゴリをカテゴリ名順に表示
 
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 最初のリピート注文確率レポートは、リピート注文の合計/注文の合計を表します。 すべての注文は、リピート注文を行う機会です。リピート注文の数は、実際に行う注文のサブセットです。

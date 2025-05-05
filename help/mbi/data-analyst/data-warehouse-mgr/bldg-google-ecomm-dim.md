@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## ディメンションの作成
 
-ディメンションを作成するには、**[!UICONTROL Data]**/**[!UICONTROL Data Warehouse]** をクリックして ](../data-warehouse-mgr/tour-dwm.md)0}Data Warehouseマネージャー } を開きます。[
+ディメンションを作成するには、**[!UICONTROL Data]**/**[!UICONTROL Data Warehouse]** をクリックして [&#128279;](../data-warehouse-mgr/tour-dwm.md)0&rbrace;Data Warehouseマネージャー &rbrace; を開きます。
 
 ### 受注テーブル、丸 1
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 ### ボーナス：「受注」表、ラウンド 2
 
-必要に応じてここで停止することもできますが、このセクションでは **最後のセクション ](#customers) で作成した [ 顧客の最初の注文の [!DNL Google Analytics] ディメンション** を `orders` のテーブルに取り込むことで、さらに分析できます。 このセクションでディメンションを作成すると、顧客の初回注文の [!DNL Google Analytics] 属性を使用して、`orders` テーブルに作成されたすべての指標（`Revenue`、`Number of orders`、`Distinct buyers` など）を分析できます。
+必要に応じてここで停止することもできますが、このセクションでは **最後のセクション [&#128279;](#customers) で作成した  顧客の最初の注文の [!DNL Google Analytics] ディメンション** を `orders` のテーブルに取り込むことで、さらに分析できます。 このセクションでディメンションを作成すると、顧客の初回注文の [!DNL Google Analytics] 属性を使用して、`orders` テーブルに作成されたすべての指標（`Revenue`、`Number of orders`、`Distinct buyers` など）を分析できます。
 
 次の使用例は、`Customer's first order's [!DNL Google Analytics] source` ディメンションを `orders` テーブルに結合します。
 

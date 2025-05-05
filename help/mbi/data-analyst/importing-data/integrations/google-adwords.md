@@ -50,7 +50,7 @@ ht-degree: 0%
 ## [!DNL Google Adwords] の切断
 
 1. [!DNL Google] の [ アカウント設定 ](https://www.google.com/account/about/?hl=en) ページにアクセスします。
-1. [`Security`] セクションで、[ アプリケーションとサイト `Authorizing` 横にある [**[!UICONTROL edit]**] をクリックします。
+1. [`Security`] セクションで、&lbrack; アプリケーションとサイト `Authorizing` 横にある [**[!UICONTROL edit]**] をクリックします。
 1. 「**[!UICONTROL revoke access]**」をクリックします。
 
 ## 関連

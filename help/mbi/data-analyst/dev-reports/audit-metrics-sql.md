@@ -38,7 +38,7 @@ ht-degree: 0%
 
 レポートがニーズを満たしたら、レポートに明確な名前を付け、「**[!UICONTROL Save]**」をクリックし、保存するレポートのタイプとダッシュボードを選択します。 Adobeでは、指標を監査する場合、レポートを `Table` として保存し、テストダッシュボードに保存することをお勧めします。
 
-レポートを保存したら、「`Go to Dashboard`」を選択してそのダッシュボードに移動します。 ここからデータを書き出すには、レポートを見つけて ]**書き出し**[!UICONTROL Options gear > Full `.csv` または **[!UICONTROL Full Excel Export]** を選択します。
+レポートを保存したら、「`Go to Dashboard`」を選択してそのダッシュボードに移動します。 ここからデータを書き出すには、レポートを見つけて **書き出し**&#x200B;Options gear > Full `.csv` または **[!UICONTROL Full Excel Export]** を選択します。
 
 ![](../../assets/export-dboard-data.gif)
 

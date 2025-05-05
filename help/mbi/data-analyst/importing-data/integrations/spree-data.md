@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL Spree] データ
 
-[ ストアに接続 ](../../../data-analyst/importing-data/integrations/spree.md) した後、{3 [!DNL Spree] Data Warehouseマネージャー ](../../data-warehouse-mgr/tour-dwm.md) を使用すると、[!DNL Spree] プラットフォームから関連するデータフィールドを簡単に追跡して分析できます。[
+[ ストアに接続 ](../../../data-analyst/importing-data/integrations/spree.md) した後、&lbrace;3 [!DNL Spree] Data Warehouseマネージャー [&#128279;](../../data-warehouse-mgr/tour-dwm.md) を使用すると、[!DNL Spree] プラットフォームから関連するデータフィールドを簡単に追跡して分析できます。
 
 このトピックでは、データに関する [ 追加ドキュメント ](https://guides.spreecommerce.org/developer/addresses.html#address) へのリンクを含め、[!DNL Spree] から [!DNL Commerce Intelligence] アカウントに読み込むことができるメインのデータテーブル [!DNL Spree] ついて説明します。
 
