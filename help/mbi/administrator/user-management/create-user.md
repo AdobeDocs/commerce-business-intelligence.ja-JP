@@ -4,14 +4,14 @@ description: 新しいユーザーを追加する方法と  [!DNL Commerce Intel
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 99fc6c26017b5da4d066d400be1888ab4032590d
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# 新しい [!DNL Adobe Commercer Intelligence] ユーザーを追加
+# 新しい [!DNL Adobe Commerce Intelligence] ユーザーを追加
 
 1. 右上隅にある会社名をクリックし、ドロップダウンから「**[!UICONTROL Invite User]**」を選択します。
 1. ユーザーの名前とメールアドレスを入力します。
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->各アカウントには、ライセンス（シート）の契約数があります。 上限に達した場合や、さらに詳しく知りたい場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) してください。
+>各アカウントには、ライセンス（シート）の契約数があります。 上限に達した場合や、さらに詳しく知りたい場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) してください。
