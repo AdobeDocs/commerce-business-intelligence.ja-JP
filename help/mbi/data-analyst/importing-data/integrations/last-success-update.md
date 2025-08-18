@@ -31,4 +31,4 @@ ht-degree: 0%
 Adobeでは、*特定のテーブル* からのデータの鮮度を確認するために、アカウント上で最も重要なテーブルに対して [[!DNL SQL]  ータを実行するクイック ](../../dev-reports/sql-rpt-bldr.md) レポート `MAX(timestamp)` を作成することをお勧めします。 このタイムスタンプを `Last Data Point` と比較すると、問題がアカウント全体に影響を与えたか、テーブルのサブセットに影響を与えたかが示されます。 Adobeでは、一般的に使用される 3～4 つの重要なテーブルに対してこれを行うことをお勧めします。
 
 - `MAX(timestamp)` の値が `Last Data Point Received` より新しい場合は、テーブルのサブセットが影響を受けましたが、アカウント全体の更新サイクルは安定しています。
-- `MAX(timestamp)` の値が `Last Data Point Received` 以前の場合は、アカウントの更新サイクルが影響を受けていることを意味します。 この場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) します。
+- `MAX(timestamp)` の値が `Last Data Point Received` 以前の場合は、アカウントの更新サイクルが影響を受けていることを意味します。 この場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) します。

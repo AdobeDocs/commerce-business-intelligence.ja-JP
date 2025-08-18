@@ -82,4 +82,4 @@ Adobeでは、お客様の購入アクティビティ分析を作成する際に
 
 チャーンが発生している理由を特定したら、分析を使用して `reactivation` キャンペーンを作成できます。 このデータを使用すると、非アクティブになったユーザー、最後の訪問からの経過時間、最後の購入の履歴などを識別できます。 これにより、顧客を再び呼び戻すための実用的な決定を下すことができます。
 
-分析に関するヘルプについては、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+分析に関するヘルプについては、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。

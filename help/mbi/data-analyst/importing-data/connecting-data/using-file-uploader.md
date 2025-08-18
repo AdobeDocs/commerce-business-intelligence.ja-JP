@@ -24,7 +24,7 @@ ht-degree: 0%
 ## 制限事項と要件 {#require}
 
 1. **ファイルのアップロードでサポートされている形式は `CSV` または`comma separated values`** のみです。 Excel で作業している場合は、「名前を付けて保存」関数を使用してファイルを `.csv` 形式で保存できます。
-1. **`CSV`ファイルは`UTF-8 encoding`** を使用する必要があります。 ほとんどの場合、これは問題ではありません。 ファイルのアップロード中にこのエラーが発生した場合は、[ こちらのサポート記事を参照 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html)。
+1. **`CSV`ファイルは`UTF-8 encoding`** を使用する必要があります。 ほとんどの場合、これは問題ではありません。 ファイルのアップロード中にこのエラーが発生した場合は、[ こちらのサポート記事を参照 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=ja)。
 1. **ファイルは 100 MB 以下にする必要があります**。 ファイルのサイズがこのサイズより大きい場合は、テーブルをチャンクに分割して、個々のファイルとして保存します。 初期ファイルが読み込まれた後で、データを追加できます。
 1. **すべてのテーブルには`primary key`** が必要です。 テーブルには、`primary key` として使用できる列か、テーブルの各行に対する一意の ID が少なくとも 1 つ必要です。 `primary key` として指定された列は、null *できません*。 `primary key` は、各行に数値を示す列を追加するのと同じくらい単純なものでも、2 つの列を連結して一意の値の列（`campaign name` や `date` など）にすることもできます。
 

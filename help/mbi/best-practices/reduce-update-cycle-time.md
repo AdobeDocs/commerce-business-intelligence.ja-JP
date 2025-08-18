@@ -43,4 +43,4 @@ ht-degree: 0%
 
 ## まとめ
 
-これらの推奨事項を実装しても更新時間が遅いと思われる場合は、[ サポートチームにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+これらの推奨事項を実装しても更新時間が遅いと思われる場合は、[ サポートチームにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。

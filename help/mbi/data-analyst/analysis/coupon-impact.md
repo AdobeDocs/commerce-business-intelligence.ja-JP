@@ -151,4 +151,4 @@ ht-degree: 1%
 
 ## まとめ {#wrapup}
 
-顧客によるクーポンの使用方法をより深く理解するために作成できる分析は多数あります。 顧客がクーポンをどのように使用するか、またはクーポンの使用にかかる時間を分析することを考えたことはありますか？ 最適な割引額を見つけることはどうですか – リピート購入者を促す金額、平均注文額の増加、生涯売上高の増加はどうなりますか？ これらのタイプの質問に関するヘルプについては、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+顧客によるクーポンの使用方法をより深く理解するために作成できる分析は多数あります。 顧客がクーポンをどのように使用するか、またはクーポンの使用にかかる時間を分析することを考えたことはありますか？ 最適な割引額を見つけることはどうですか – リピート購入者を促す金額、平均注文額の増加、生涯売上高の増加はどうなりますか？ これらのタイプの質問に関するヘルプについては、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。

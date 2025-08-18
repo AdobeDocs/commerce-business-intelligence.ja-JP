@@ -48,4 +48,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->データを監査した後に不一致が見つかった場合は、[ サポートへの問い合わせ：データの不一致 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) のサポートトピックを参照して、次に行う作業の詳細を確認してください。
+>データを監査した後に不一致が見つかった場合は、[ サポートへの問い合わせ：データの不一致 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=ja) のサポートトピックを参照して、次に行う作業の詳細を確認してください。

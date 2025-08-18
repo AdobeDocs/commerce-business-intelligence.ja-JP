@@ -20,7 +20,7 @@ Data Warehouseで [ 計算列の作成 ](../data-warehouse-mgr/creating-calculat
 1. データベース内のテーブルの相互関係
 1. この関係を定義する主キーと外部キー
 
-この情報を知っていれば、このトピックの手順に従ってパスを簡単に作成できます。 所属する組織の技術エキスパートに問い合わせるか、[Professional Services チーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) にお問い合わせください。
+この情報を知っていれば、このトピックの手順に従ってパスを簡単に作成できます。 所属する組織の技術エキスパートに問い合わせるか、[Professional Services チーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) にお問い合わせください。
 
 ## テーブルのリレーションシップとキーの種類に関する更新 {#refresher}
 
@@ -79,7 +79,7 @@ Data Warehouseで列を作成する場合、あるテーブルから別のテー
 
 * 主キーと外部キーの関係を推測で **[!DNL Commerce Intelligence]ません**。 誤ったデータをアカウントに導入しないので、パスの作成は手動で行う必要があります。
 
-* **現在、パスは 2 つの異なるテーブル間でのみ指定できます**。 再作成しようとしているロジックには、2 つ以上のテーブルが含まれていますか？ その後、（1）列をまず仲介テーブルに結合してから「最終的な宛先」テーブルに結合するか、（2） [ プロフェッショナルサービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) に相談して、目標に対する最適なアプローチを見つけることが理にかなっている場合があります。
+* **現在、パスは 2 つの異なるテーブル間でのみ指定できます**。 再作成しようとしているロジックには、2 つ以上のテーブルが含まれていますか？ その後、（1）列をまず仲介テーブルに結合してから「最終的な宛先」テーブルに結合するか、（2） [ プロフェッショナルサービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) に相談して、目標に対する最適なアプローチを見つけることが理にかなっている場合があります。
 
 * **列は、一度に 1 つのパスの外部キー参照のみとすることができます**。 例えば、`order_items.order_id` が `orders.id` を指している場合、`order_items.order_id` はそれ以外を指すことはできません。
 
