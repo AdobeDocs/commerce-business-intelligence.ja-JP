@@ -30,7 +30,7 @@ ht-degree: 0%
   >この指標が構築されるテーブル（おそらく `customer_entity` または `sales_order` は、ストアがゲストのチェックアウトを受け入れることができるかどうかに応じて異なります）。
 
    * 「**[!UICONTROL Create New Metric]**」をクリックし、上からテーブルを選択します。
-   * この指標は、`Customer's lifetime revenue` 列を `created_at` 順に並べ替えた **中央値** を実行します。
+   * この指標は、**列を** 順に並べ替えた `Customer's lifetime revenue` 中央値 `created_at` を実行します。
       * [!UICONTROL Filters]:
          * `Customers we count (Saved Filter Set)` （または `Registered accounts we count`）を追加
 
@@ -53,8 +53,7 @@ ht-degree: 0%
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -65,8 +64,7 @@ ht-degree: 0%
          * [`B`] `Customer's lifetime number of orders` **より大きい**`0`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -75,8 +73,7 @@ ht-degree: 0%
    * 指標 `2`: `Median lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
-   * &#x200B;
-
+   * 
      [!UICONTROL グラフ タイプ]: `Line`
    * `Multiple Y-Axes` をオフ
 
@@ -84,12 +81,10 @@ ht-degree: 0%
    * 指標 `1`: `Avg lifetime revenue`
    * 指標 `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * &#x200B;
-
+   * 
      [!UICONTROL グラフ タイプ]: `Line`
 
   >[!NOTE]

@@ -17,13 +17,13 @@ ht-degree: 0%
 
 この節では、次の方法を説明します。
 * [!DNL Commerce Intelligence] へのデータの接続と読み込み
-* Data Warehouseでのデータの保存および構造化の方法を表示します
+* Data Warehouseでのデータの保存および構造化の方法を確認する
 * データの分析
 * [!DNL SQL Report Builder] の使用
 
 ## 関連
 
-* [Data Warehouse管理者](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
+* [Data Warehouse Manager](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
 * [[!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
 * [データの接続](../mbi/data-analyst/importing-data/connecting-data/connecting-data.md)
 * [統合](../mbi/data-analyst/importing-data/integrations/magento.md)

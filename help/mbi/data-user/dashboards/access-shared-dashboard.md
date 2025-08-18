@@ -21,4 +21,4 @@ ht-degree: 0%
 
 ## 既存のユーザー
 
-共有ダッシュボードのリストを再度表示するには、`Global Search` メニューの **[!UICONTROL Find]** をクリックします。
+共有ダッシュボードのリストを再度表示するには、**[!UICONTROL Find]** メニューの `Global Search` をクリックします。

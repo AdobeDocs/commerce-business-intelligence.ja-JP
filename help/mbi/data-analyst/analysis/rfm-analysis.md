@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![](../../assets/blobid0.png)
 
-RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intelligence] Pro プランがある場合（たとえば、`Manage Data` メニューの `Data Warehouse Views` オプションがある場合）にのみ設定できます。 これらの列は、**[!DNL Manage Data > Data Warehouse]** のページから作成できます。 詳細な手順は次のとおりです。
+RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intelligence] Pro プランがある場合（たとえば、`Data Warehouse Views` メニューの `Manage Data` オプションがある場合）にのみ設定できます。 これらの列は、**[!DNL Manage Data > Data Warehouse]** のページから作成できます。 詳細な手順は次のとおりです。
 
 ## はじめに
 
@@ -42,17 +42,17 @@ RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intellige
 * 選択された [!UICONTROL column]: `created_at`
 * [!UICONTROL Filter]: `Orders we count`
 
-* &#x200B;
+* 
        顧客の最終注文日からの経過時間（秒） 
   * [!UICONTROL Column type]: -     &quot;同じテーブル > 年齢
 * 選択された [!UICONTROL column]: `Customer's last order date`
 
 * （入力）カウント参照
 * [!UICONTROL Column type]: `Same table > Calculation`
-* &#x200B;
+* 
   [!UICONTROL 入力]: `entity_id`
 * [!UICONTROL Calculation]: `**case when A is null then null else 1 end**`
-* &#x200B;
+* 
   [!UICONTROL データ型]: `Integer`
 
 * **カウント参照** テーブル（これは「1」という番号でアップロードしたファイルです）
@@ -76,14 +76,14 @@ RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intellige
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* &#x200B;
+* 
   [!UICONTROL データ型]: `Integer`
 
 * 顧客の通貨スコア （パーセンタイル単位）
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* &#x200B;
+* 
   [!UICONTROL データ型]: `Integer`
 
 * （入力）顧客のライフタイムナンバーごとの注文ランキング
@@ -92,7 +92,7 @@ RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intellige
 * [!UICONTROL Event rank]: `Customer's lifetime number of orders`
 
 * 顧客の生涯注文数によるランキング
-* &#x200B;
+* 
   [!UICONTROL 列タイプ]: – "同じテーブル/計算"
 * [!UICONTROL Inputs]: - **（入力）顧客のライフタイム数によるランキング注文数**、**顧客数**
 * [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（B – （A-1））終了**
@@ -102,7 +102,7 @@ RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intellige
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* &#x200B;
+* 
   [!UICONTROL データ型]: `Integer`
 
 * 顧客の前回の注文日以降のランキング （秒）
@@ -114,14 +114,14 @@ RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intellige
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
-* &#x200B;
+* 
   [!UICONTROL データ型]: `Integer`
 
 * 顧客の最新性スコア （パーセンタイル単位）
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `Customer's recency score (by percentiles)`、`Customer's frequency score (by percentiles)`、`Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
-* &#x200B;
+* 
   [!UICONTROL データ型]: String
 
 * **カウント参照** テーブル
@@ -141,7 +141,7 @@ RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intellige
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: - `Customer's recency score (by percentiles)`、`Customer's frequency score (by percentiles)`、`Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
-* &#x200B;
+* 
   [!UICONTROL データ型]: `Integer`
 
 * （入力）顧客の RFM 全体スコア別のランキング
@@ -154,14 +154,14 @@ RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intellige
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer's overall RFM score`, `Number of customers (RFM > 0)`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* &#x200B;
+* 
   [!UICONTROL データ型]: `Integer`
 
 * 顧客の RFM グループ
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
-* &#x200B;
+* 
   [!UICONTROL データ型]: `Integer`
 
 >[!NOTE]
@@ -184,13 +184,13 @@ RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intellige
 * [!UICONTROL Filter]: `Customer's RFM score (by percentiles) Not Equal to 000`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * グラフを非表示
 * [!UICONTROL Group by]: `Customer's RFM group`
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **5 つの最新性スコアを持つ顧客**
@@ -199,15 +199,15 @@ RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intellige
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 * グラフを非表示
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **1 つの最新性スコアを持つ顧客**
@@ -216,15 +216,15 @@ RFM 分析は、新しいアーキテクチャに [!DNL Adobe Commerce Intellige
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 * グラフを非表示
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は上記のサンプルダッシュボードのようになりますが、生成された 3 つのテーブルは、実行できる顧客セグメント化のタイプの例に過ぎません。

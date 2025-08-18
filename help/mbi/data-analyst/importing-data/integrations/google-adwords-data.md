@@ -1,6 +1,6 @@
 ---
 title: Google Adwords データが必要です
-description: Data Warehouseマネージャーを使用して、関連するデータフィールドを簡単にトラッキングして分析する方法を説明します。
+description: Data Warehouse Manager を使用して、関連するデータフィールドを簡単にトラッキングし、分析する方法を説明します。
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 予期される [!DNL Google Adwords] データ
 
-[ アカウントに接続  [!DNL Google Adwords]  た ](../integrations/google-adwords.md) 後、[Data Warehouseマネージャー ](../../data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。
+[ アカウントに接続  [!DNL Google Adwords]  た ](../integrations/google-adwords.md) 後、[Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。
 
-ここで、Data Warehouseへのレプリケーションに使用できる 2 つのテーブルがあります。
+ここには、Data Warehouseへのレプリケーションに使用できる 2 つのテーブルがあります。
 
 * `campaigns[account-id]`
 * `adwords[account-id]`
@@ -45,12 +45,12 @@ ht-degree: 0%
 |-----|-----|
 | `\_id` | テーブルのプライマリキー |
 | `accountId` | アカウント ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | その日のクリック総数 |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | その日のキャンペーンの合計コスト |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] キャンペーン ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | キャンペーン名（例：[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | キャンペーンが実行された日付 |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | その日のインプレッション数 |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | その日のクリック総数 |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | その日のキャンペーンの合計コスト |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | [!DNL Adwords] キャンペーン ID |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | キャンペーン名（例：[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | キャンペーンが実行された日付 |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | その日のインプレッション数 |
 | `profileId` | プロファイル ID |
 | `profileName` | プロファイル名 |
 | `\_updated\_at` | この行の最終更新日時 |
@@ -65,12 +65,12 @@ ht-degree: 0%
 |-----|-----|
 | `\_id` | テーブルのプライマリキー |
 | `accountId` | アカウント ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | その日のクリック総数 |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | その日のキャンペーンの合計コスト |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] キャンペーン ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | キャンペーン名（例：[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | キャンペーンが実行された日付 |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | その日のインプレッション数 |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | その日のクリック総数 |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | その日のキャンペーンの合計コスト |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | [!DNL Adwords] キャンペーン ID |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | キャンペーン名（例：[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | キャンペーンが実行された日付 |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | その日のインプレッション数 |
 | `profileId` | プロファイル ID |
 | `profileName` | プロファイル名 |
 | `\_updated\_at` | この行の最終更新日時 |
@@ -87,6 +87,6 @@ ht-degree: 0%
 
 [!DNL Adobe] では、複数の広告ソースすべてからのデータを 1 つのテーブルに組み合わせる `consolidated ad spend` テーブルを作成することをお勧めします。 これにより、広告分析に単一の指標セットを使用できます。
 
-統合テーブルがなく、`adwords` テーブルに美しいダッシュボードを作成する場合は、レポートをレプリケートするか、重複指標を作成して、そのデータを [!DNL Facebook Ads] データと比較する必要があります。 統合テーブルを使用すると、既存の [!DNL Adwords] レポート [!DNL Facebook Ads] データをシームレスに組み込むことができます。 広告プラットフォームでセグメント化することもできます。
+統合テーブルがなく、`adwords` テーブルに美しいダッシュボードを作成する場合は、レポートをレプリケートするか、重複指標を作成して、そのデータを [!DNL Facebook Ads] データと比較する必要があります。 統合テーブルを使用すると、既存の [!DNL Facebook Ads] レポート [!DNL Adwords] データをシームレスに組み込むことができます。 広告プラットフォームでセグメント化することもできます。
 
-上記のフィールドを既に同期している場合は、[ お問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) して、広告費用を統合します。
+上記のフィールドを既に同期している場合は、[ お問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) して、広告費用を統合します。

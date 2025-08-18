@@ -1,6 +1,6 @@
 ---
 title: データの接続
-description: Data Warehouseマネージャーで同期に使用できるテーブルを参照する方法を説明します。
+description: Data Warehouse Manager で同期に使用できるテーブルを参照する方法を説明します。
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # データの接続
 
-ま [!DNL Adobe Commerce Intelligence]、データソースは `integrations` と呼ばれます。 `integration` が正常に接続されると、同期に使用できるテーブルをData Warehouseマネージャーで参照できるようになります。
+ま [!DNL Adobe Commerce Intelligence]、データソースは `integrations` と呼ばれます。 `integration` が正常に接続されると、Data Warehouse Manager で、同期に使用できるテーブルを参照できるようになります。
 
 統合の追加や管理には `Connections` ページを使用します。このページにアクセスするには、「**[!UICONTROL Manage Data** > **Connections]**」をクリックします。 ここでは、次のようになります。
 
@@ -29,13 +29,13 @@ ht-degree: 0%
 
 ## 統合のタイプ
 
-データを [!DNL Commerce Intelligence] に取り込む方法は 4 つあります。データベースに接続する、SaaSAdobeに接続する、`.csv` ファイルをアップロードする、統合 API を使用する、です。
+データを [!DNL Commerce Intelligence] に取り込む方法は、データベースへの接続、SaaS 統合の接続、`.csv` ファイルのアップロード、Adobe API の使用の 4 とおりあります。
 
 ## データベースの統合
 
 ![Database\_icons.jpg](../../../assets/Database_icons.jpg)
 
-[!DNL Commerce Intelligence] では、[MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md)、[Microsoft SQL](../integrations/microsoft-sql-server.md) [、&lbrace;MongoDB](../integrations/mongodb-via-ssh-tunnel.md)、&lbrace;PostgreSQL[&#128279;](../integrations/postgresql.md) など、SQL ベースのデータベースと NoSQL データベースをサポ  トしています。
+[!DNL Commerce Intelligence] では、[MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md)、[Microsoft SQL](../integrations/microsoft-sql-server.md) [、{MongoDB](../integrations/mongodb-via-ssh-tunnel.md)、{PostgreSQL[ など、SQL ベースのデータベースと NoSQL データベースをサポ ](../integrations/postgresql.md) トしています。
 
 データベース資格情報を使用してデータベースを [!DNL Commerce Intelligence] に直接接続できますが、Adobeでは SSH トンネルなどの実証済みの暗号化方式を使用することをお勧めします。 これにより、データがData Warehouseに取り込まれる際に、データの安全が確保されます。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## ファイルのアップロード
 
-補足ソースからData Warehouseにデータを取り込む方法がわからない場合は、 [`File Upload` 機能の使用 ](../connecting-data/using-file-uploader.md) は、日常の意思決定に必要のないデータを取り込む優れた方法です。 書式設定ルールに従って、`.csv` ファイルをすばやくData Warehouseにアップロードし、他のデータソースと結合できます。
+補足ソースからData Warehouseにデータを取得する方法がわからない場合は、 [`File Upload` 機能の使用 ](../connecting-data/using-file-uploader.md) は、日常の意思決定に必要のないデータを取り込む優れた方法です。 書式設定ルールに従って、`.csv` ファイルをすばやくData Warehouseにアップロードし、他のデータソースと結合できます。
 
 ## [!DNL Commerce Intelligence] `Import API`
 
@@ -70,6 +70,6 @@ ht-degree: 0%
 * [テーブルの統合](../../../best-practices/consolidating-your-tables.md)
 * [データベースへのアクセスの制限](../../../administrator/account-management/restrict-db-access.md)
 
-**必要な統合が表示されない場合は、** アカウントに表示されるようにするには、いくつかの統合をアクティベートする必要があります。 [!DNL Facebook] のようなものを探しているがリストに表示されない場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) してください。
+**必要な統合が表示されない場合は、** アカウントに表示されるようにするには、いくつかの統合をアクティベートする必要があります。 [!DNL Facebook] のようなものを探しているがリストに表示されない場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) してください。
 
 **統合のエラーステータスが表示された場合**、[ トラブルシューティングの節 ](https://support.magento.com/hc/en-us/sections/360003078151) のヘルプを参照してください。

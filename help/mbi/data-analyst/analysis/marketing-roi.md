@@ -21,20 +21,20 @@ ht-degree: 0%
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-開始する前に、[[!DNL [Facebook Ads]]](../importing-data/integrations/facebook-ads.md)、[[!DNL [Adwords]]](../importing-data/integrations/google-adwords.md)、[[!DNL [Google Ecommerce]]](../importing-data/integrations/google-ecommerce.md) のアカウントを接続し、追加のオンライン広告費用データを取り込みます。 この分析には [ 高度な計算列 ](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
+開始する前に、[!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)、[!DNL [Adwords]](../importing-data/integrations/google-adwords.md)、[!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) のアカウントを接続し、追加のオンライン広告費用データを取り込みます。 この分析には [ 高度な計算列 ](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
 ## 統合テーブル
 
-**オリジナルアーキテクチャ：** [!DNL Facebook Ads] や [!DNL Google Adwords] など、様々なソースからの広告支出をまとめるために、Adobeでは、すべての広告支出の **統合テーブル** を作成することをお勧めします。 この手順を完了するには、アナリストが必要です。 定義されていない場合は、件名 `[MARKETING ROI ANALYSIS]` を付けて [ サポートリクエストを提出 ](../../guide-overview.md#Submitting-a-Support-Ticket) し、アナリストがこのテーブルを作成します。
+**オリジナルアーキテクチャ：** [!DNL Facebook Ads] や [!DNL Google Adwords] など、様々なソースからの広告支出をまとめるために、Adobeでは、すべての広告支出の **統合テーブル** を作成することをお勧めします。 この手順を完了するには、アナリストが必要です。 定義されていない場合は、件名 [ を付けて ](../../guide-overview.md#Submitting-a-Support-Ticket) サポートリクエストを提出 `[MARKETING ROI ANALYSIS]` し、アナリストがこのテーブルを作成します。
 
-**新しいアーキテクチャ：** この分析ライブラリ [ のトピックの例に従うこ ](../../data-analyst/data-warehouse-mgr/create-dw-views.md) ができます。 統合テーブルは、新しいアーキテクチャではData Warehouseビューと呼ばれるようになりました。
+**新しいアーキテクチャ：** この分析ライブラリ [ のトピックの例に従うこ ](../../data-analyst/data-warehouse-mgr/create-dw-views.md) ができます。 統合テーブルは、新しいアーキテクチャではData Warehouse ビューと呼ばれるようになりました。
 
 ## 計算される列
 
 作成する列
 
 * **`Consolidated Digital Ad Spend`** テーブル
-* **`Campaign name`** は、Adobeアナリストが **[マーケティング ROI 分析]** チケットの一部として作成します
+* **`Campaign name`** は、Adobe アナリストが **[マーケティング ROI 分析]** チケットの一部として作成します
 
 **オリジナルおよび新しいアーキテクチャ：**
 
@@ -42,11 +42,9 @@ ht-degree: 0%
    * **`Order's GA campaign`**
       * 定義を選択：`Joined Column`
       * [!UICONTROL Create Path]:
-      * &#x200B;
-
+      * 
         [!UICONTROL Many]: `sales_flat_order.increment_id`
-      * &#x200B;
-
+      * 
         [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * [!UICONTROL table] を選択：`ecommerce####`
@@ -144,9 +142,9 @@ ht-degree: 0%
 
 * 指標 `A`：広告費用
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 間隔]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **広告顧客の獲得（常時）**
@@ -160,9 +158,9 @@ ht-degree: 0%
 
 * 指標 `A`: `Ad customer acquisitions`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 間隔]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **広告 ROI**
@@ -185,8 +183,7 @@ ht-degree: 0%
       * フィルターロジック：（[`A`] または [`B`] または [`C`]）および [`D`]
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Percentage`
 
 * 指標 `A`: `Ad Spend (hide)`
@@ -194,21 +191,20 @@ ht-degree: 0%
 * 指標 `C`: `Average LTV (hide)`
 * [!UICONTROL Formula]: `Ads ROI`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 間隔]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **ga メディア別のオーダー数**
-   * &#x200B;
-
+   * 
      [!UICONTROL 指標]: `Orders`
 
 * 指標 `A`: `Orders`
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By Month`
 * [!UICONTROL Group by]: `Order's medium`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Area`
 
 * **キャンペーン別の広告 ROI**
@@ -239,18 +235,15 @@ ht-degree: 0%
       * フィルターロジック：（[`A`] または [`B`] または [`C`]）および [`D`]
 
    * [!UICONTROL Formula]: `(A / B)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `(C - (A / B))`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]: `Ad Clicks`
@@ -258,38 +251,36 @@ ht-degree: 0%
    * [!UICONTROL Metric]: `Ad Impressions`
 
    * [!UICONTROL Formula]: `(H / I)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula]: `(A / H)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Currency`
 
 * 指標 `A`: `Ad Spend` （非表示）
 * 指標 `B`: `Ad customer acquisitions`
 * 指標 `C`: `Average LTV`
 * 指標 `D`: `Average lifetime # of orders`
-* &#x200B;
+* 
   [!UICONTROL 数式]: `CAC`
 * [!UICONTROL Formula]: `Avg return`
 * [!UICONTROL Formula]: `Ads ROI`
 * 指標 `H`: `adClicks`
 * 指標 `I`: `Impressions`
-* &#x200B;
+* 
   [!UICONTROL 数式]: `CTR`
-* &#x200B;
+* 
   [!UICONTROL 数式]: `CPC`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL 間隔]: `None`
-* &#x200B;
+* 
   [!UICONTROL Group by]: `campaign` (広告以外の費用テーブル指標に対する「顧客の最初の注文」キャンペーンの使用)
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Table`
 
-分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 関連
 

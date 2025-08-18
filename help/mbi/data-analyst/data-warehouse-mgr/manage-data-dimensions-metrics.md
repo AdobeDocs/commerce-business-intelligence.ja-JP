@@ -65,7 +65,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->フィルターまたはグループ化の基準にするディメンションは、既に [!DNL Commerce Intelligence] で追跡されている必要があります。 目的のディメンションが見つからない場合は、[Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページからデータベースの新しいデータ列のトラッキングを開始する必要がある場合があります。
+>フィルターまたはグループ化の基準にするディメンションは、既に [!DNL Commerce Intelligence] で追跡されている必要があります。 目的のディメンションが見つからない場合は、[Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページからデータベース内の新しいデータ列のトラッキングを開始する必要がある場合があります。
 
 
 **指標からディメンションを削除するには：**
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ディメンションを削除した後も、そのディメンションはData Warehouse内のテーブルの列として存在します。 任意の指標に追加し直して、これらのディメンションを使用して新しい指標を作成できます。 ディメンションが対応するデータ列を [!DNL Commerce Intelligence] から削除するには、[Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページでデータ列のトラックを解除します。
+>ディメンションを削除した後も、そのディメンションはData Warehouseのテーブルの列として存在します。 任意の指標に追加し直して、これらのディメンションを使用して新しい指標を作成できます。 ディメンションが対応するデータ列を [!DNL Commerce Intelligence] から削除するには、[Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページでデータ列のトラックを解除します。
 
 ## 関連ドキュメント
 

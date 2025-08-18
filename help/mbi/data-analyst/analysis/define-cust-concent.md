@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 計算される列
 
-元のアーキテクチャを使用している場合（例えば、`Manage Data` メニューに「`Data Warehouse Views`」オプションがない場合）、以下の列を作成するためにサポートチームに連絡します。 新しいアーキテクチャでは、`Manage Data > Data Warehouse` のページからこれらの列を作成できます。 詳細な手順は以下のとおりです。
+元のアーキテクチャを使用している場合（例えば、`Data Warehouse Views` メニューに「`Manage Data`」オプションがない場合）、以下の列を作成するためにサポートチームに連絡します。 新しいアーキテクチャでは、`Manage Data > Data Warehouse` のページからこれらの列を作成できます。 詳細な手順は以下のとおりです。
 
 ビジネスでゲストによる注文が許可されている場合は、さらに区別されます。 その場合は、`customer_entity` テーブルのすべてのステップを無視できます。 ゲストの注文が許可されていない場合は、`sales_flat_order` テーブルのすべてのステップを無視します。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 * 顧客の売上高のパーセンタイル
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`、`Number of customers`
-* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order` テーブル
@@ -76,7 +76,7 @@ ht-degree: 0%
 * 顧客の売上高のパーセンタイル
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`、`Number of customers`
-* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -100,16 +100,16 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Independent`
 * 指標 `A`: `Total customer lifetime revenue by percentile`
 * 指標 `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * 上/下を表示：`100% of Customer's revenue percentile Name`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 * **上位 10% の濃度**
@@ -117,12 +117,12 @@ ht-degree: 0%
 
 * 指標 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * グラフを非表示
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **1 回の購入で下位 50 % の集中**
@@ -133,12 +133,12 @@ ht-degree: 0%
 * [!UICONTROL Filter]:
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * グラフを非表示
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **下位 10% の濃度**
@@ -146,14 +146,14 @@ ht-degree: 0%
 
 * 指標 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * グラフを非表示
-* &#x200B;
+* 
   [!UICONTROL Group by]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 
-分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

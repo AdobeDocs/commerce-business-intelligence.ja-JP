@@ -23,9 +23,9 @@ ht-degree: 0%
 
 まず、[!DNL Google ECommerce] の資格情報を [!DNL Commerce Intelligence] に入力します。
 
-1. **[!UICONTROL Admin** > **Connections]** の下の `Connections` ページに移動します。
+1. `Connections` の下の **[!UICONTROL Admin** > **Connections]** ページに移動します。
 
-1. `Data Sources` テーブルの上の画面の右側にある [**[!UICONTROL Add a New Source]**] をクリックします。
+1. **[!UICONTROL Add a New Source]** テーブルの上の画面の右側にある [`Data Sources`] をクリックします。
 
 1. [!DNL Google ECommerce] アイコンをクリックします。 これにより、[!DNL Google ECommerce] 資格情報ページが開きます。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 1. 変更は自動的に保存されるので、完了したら「**[!UICONTROL Back to Connections]**」をクリックします。
 
-## [!DNL Commerce Intelligence] への複数の [!DNL Google Analytics] プロファイルの接続
+## [!DNL Google Analytics] への複数の [!DNL Commerce Intelligence] プロファイルの接続
 
 1 つの [!DNL Google Analytics] アカウントに接続された複数の web サイトがあり、独自の [!DNL Google Analytics] プロファイル ID で識別されている場合があります。 この場合、すべてのプロファイル ID を [!DNL Commerce Intelligence] に含めるオプションがあります。 プロファイル選択手順に含めるプロファイル ID を確認します。
 
@@ -54,13 +54,13 @@ ht-degree: 0%
 ## [!DNL Google ECommerce] を [!DNL Commerce Intelligence] から切断しています {#disconnect}
 
 1. [!DNL Google Analytics] の [ アカウント設定 ](https://www.google.com/account/about/?hl=en) ページにアクセスします。
-1. [`Security`] セクションで、&lbrack; アプリケーションとサイト `Authorizing` 横にある [**[!UICONTROL edit]**] をクリックします。
-1. 「[!DNL Commerce Intelligence]」の横にある「**[!UICONTROL revoke access]**」をクリックします。
+1. [`Security`] セクションで、[ アプリケーションとサイト **[!UICONTROL edit]** 横にある [`Authorizing`] をクリックします。
+1. 「**[!UICONTROL revoke access]**」の横にある「[!DNL Commerce Intelligence]」をクリックします。
 
 ## 関連：
 
 * [Expected [!DNL Google ECommerce] data](../integrations/google-ecommerce-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [ 設定  [!DNL Google ECommerce]  トラッキング ](https://support.google.com/analytics/answer/1009612?hl=en)
 * [最も価値のある獲得ソースとチャネルを見つける](../../analysis/most-value-source-channel.md)
 * [広告キャンペーンの ROI の向上](../../analysis/roi-ad-camp.md)

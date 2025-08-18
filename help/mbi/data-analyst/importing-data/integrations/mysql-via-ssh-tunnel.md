@@ -11,12 +11,12 @@ ht-degree: 0%
 
 ---
 
-# [!DNL SSH Tunnel] 経由で [!DNL MySQL] に接続
+# [!DNL MySQL] 経由で [!DNL SSH Tunnel] に接続
 
 * [ [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
 * [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
 * [Linux ユーザーを作成する  [!DNL Commerce Intelligence]](#linux)
-* [ [!DNL Commerce Intelligence] のユ  [!DNL MySQL]  ザーを作成](#mysql)
+* [ [!DNL MySQL]  のユ  [!DNL Commerce Intelligence] ザーを作成](#mysql)
 * [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
 
 ## ジャンプ
@@ -24,12 +24,12 @@ ht-degree: 0%
 * [[!DNL MySQL] via ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] via [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-`SSH tunnel` を使用して [!DNL MySQL] データベースを [!DNL Commerce Intelligence] に接続するには、次の操作を行う必要があります。
+[!DNL MySQL] を使用して [!DNL Commerce Intelligence] データベースを `SSH tunnel` に接続するには、次の操作を行う必要があります。
 
 1. [!DNL Commerce Intelligence] `public key` の取得
 1. [!DNL Commerce Intelligence] `IP address` へのアクセスを許可
-1. [!DNL Commerce Intelligence] の `Linux` ユーザーの作成
-1. [!DNL Commerce Intelligence] の `MySQL` ユーザーの作成
+1. `Linux` の [!DNL Commerce Intelligence] ユーザーの作成
+1. `MySQL` の [!DNL Commerce Intelligence] ユーザーの作成
 1. [!DNL Commerce Intelligence] に接続およびユーザー情報を入力
 
 
@@ -50,11 +50,11 @@ ht-degree: 0%
 
 ## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可します {#allowlist}
 
-接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 それらは `54.88.76.97` と `34.250.211.151` ですが、`MySQL credentials` のページにもあります。 上のGIFの青いボックスを参照してください。
+接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 それらは `54.88.76.97` と `34.250.211.151` ですが、`MySQL credentials` のページにもあります。 上記のGIFの青いボックスを参照してください。
 
-## [!DNL Commerce Intelligence] 用の [!DNL Linux] ユーザーの作成 {#linux}
+## [!DNL Linux] 用の [!DNL Commerce Intelligence] ユーザーの作成 {#linux}
 
-リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 `MySQL` サーバーへの接続権が保持されている限り、好きなように [ このユーザーを制限 ](../../../administrator/account-management/restrict-db-access.md) することができます。
+リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [ サーバーへの接続権が保持されている限り、好きなように ](../../../administrator/account-management/restrict-db-access.md) このユーザーを制限 `MySQL` することができます。
 
 1. 新しいユーザーを追加するには、[!DNL Linux] サーバーで次のコマンドを root として実行します。
 
@@ -83,9 +83,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->サーバーに関連付けられている `sshd\_config` ファイルが既定のオプションに設定されていない場合は、特定のユーザーのみがサーバーにアクセスできます。これにより、[!DNL Commerce Intelligence] への接続に成功できなくなります。 このような場合、`rjmetric` ユーザーにサーバーへのアクセスを許可するには、`AllowUsers` のようなコマンドを実行する必要があります。
+>サーバーに関連付けられている `sshd\_config` ファイルが既定のオプションに設定されていない場合は、特定のユーザーのみがサーバーにアクセスできます。これにより、[!DNL Commerce Intelligence] への接続に成功できなくなります。 このような場合、`AllowUsers` ユーザーにサーバーへのアクセスを許可するには、`rjmetric` のようなコマンドを実行する必要があります。
 
-## [!DNL Commerce Intelligence] 用の [!DNL MySQL] ユーザーの作成 {#mysql}
+## [!DNL MySQL] 用の [!DNL Commerce Intelligence] ユーザーの作成 {#mysql}
 
 組織では別のプロセスが必要になる場合がありますが、このユーザーを作成する最も簡単な方法は、権限を付与する権限を持つユーザーとして [!DNL MySQL] にログインしたときに次のクエリを実行することです。
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 * `Port`：サーバー上の [!DNL MySQL] ポート（デフォルトでは 3306）
 * `Host` デフォルトでは、localhost です。 一般に、これは [!DNL MySQL] サーバーのバインド アドレス値です。デフォルトでは `127.0.0.1 (localhost)` ですが、ローカル ネットワーク アドレス （`192.168.0.1` など）またはサーバーのパブリック IP アドレスの場合もあります。
 
-  この値は、`\[mysqld\]` を読み取る行の下の `my.cnf` ファイル（`/etc/my.cnf` にあります）にあります。 このファイルで bind-address 行がコメントアウトされている場合、サーバーは外部からの接続の試行から保護されます。
+  この値は、`my.cnf` を読み取る行の下の `/etc/my.cnf` ファイル（`\[mysqld\]` にあります）にあります。 このファイルで bind-address 行がコメントアウトされている場合、サーバーは外部からの接続の試行から保護されます。
 
 `SSH Connection` のセクションで以下を実行します。
 
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ## 関連：
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 データを分析する場合、様々なソースのデータを統合すると役立ちます。 `orders` テーブルのデータと [!DNL Google Analytics] データをリンクして、収益を獲得ソース別にグループ化したい場合 売上高を顧客の性別でグループ化する場合や、顧客属性をトランザクションデータに結合してセグメント化する場合があります。 このトピックでは、その方法について説明します。
 
-開始する前に、Adobeでは、Data Warehouseマネージャーで作成できる列の種類とその定義および例について、[ 計算列の種類ガイド ](../../data-analyst/data-warehouse-mgr/calc-column-types.md) を確認することをお勧めします。
+開始する前に、Adobe Data Warehouse Manager で作成できる列の種類とその定義および例について [ 計算列の種類のガイド ](../../data-analyst/data-warehouse-mgr/calc-column-types.md) を確認することをお勧めします。
 
 1. 開始するには、[**[!DNL Manage Data > Data Warehouse]**] をクリックしてください。
 

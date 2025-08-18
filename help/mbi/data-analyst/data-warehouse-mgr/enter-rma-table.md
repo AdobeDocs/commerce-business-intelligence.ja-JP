@@ -48,7 +48,7 @@ ht-degree: 0%
 |---|---|---|
 | `Number of returns` | リクエストされた戻り値の数。 | `Operation` 列：`entity id`<br>`Operation`: `Count`<br>`Timestamp` 列：`date requested` |
 | `Total returned amount` | 返される合計金額。 | `Operation ` 列：`Return's total value`<br>`Operation`：合計 <br>`Timestamp` 列：リクエストされた日付 |
-| `Average returned amount` | 返される平均金額。 | `Operation` ` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 列：`date requested` |
+| `Average returned amount` | 返される平均金額。 | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 列：`date requested` |
 | `Average time to return` | 注文から返品までの平均時間。 | `Operation` 列：で作成された注文からリクエストされた返品日までの秒数 <br>`Operation`: `Average`<br>`Timestamp` 列：`date requested` |
 
 {style="table-layout:auto"}
@@ -63,6 +63,6 @@ ht-degree: 0%
 
 `enterprise_rma_item_entity`
 
-* 次の結合を使用して、`enterprise_rma` テーブルに `Return's total value` などの多対 1 列を作成します。
+* 次の結合を使用して、`Return's total value` テーブルに `enterprise_rma` などの多対 1 列を作成します。
    * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id` （多） => `enterprise_rma.entity_id` （1）
    * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` （多） => `magento_rma.entity_id` （1）

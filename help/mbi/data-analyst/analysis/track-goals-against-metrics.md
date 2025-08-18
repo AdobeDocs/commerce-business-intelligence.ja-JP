@@ -55,46 +55,46 @@ ht-degree: 0%
 
 * **目標を達成するための残りの売上高**
 * 指標 `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL 指標]: `Revenue`
 
 * 指標 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* &#x200B;
+* 
   [!UICONTROL 数式]: `(B-A)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: （必要な関連期間）
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* &#x200B;
+* 
   [!UICONTROL グラフ タイプ]: `Scalar`
 
 * **収益目標**
 * 指標 `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL 指標]: `Revenue`
 
 * 指標 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * 指標 `C`: `Revenue (amount change since previous year)` （非表示）
-* &#x200B;
+* 
   [!UICONTROL 指標]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: （昨年今月）
-* &#x200B;
+* 
   [!UICONTROL 数式]: `(A-C)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Currency`
 
 * `Multiple Y-Axes` をオフにする
 * [!UICONTROL Time period]: （必要な関連期間）*
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

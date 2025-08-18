@@ -1,12 +1,12 @@
 ---
-title: Report Builder内の数式
-description: Report Builderで数式を使用する方法を説明します。
+title: Report Builderの数式
+description: Report Builderでの数式の使用方法を説明します。
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [`Report Builder`](../../tutorials/using-visual-report-builder.md) では、アカウントで [ 定義済み指標 ](../../data-user/reports/ess-manage-data-metrics.md) を使用して強力なビジュアライゼーションを作成できます。 これらの指標を式で組み合わせることで、データから追加のインサイトを得ることができます。 このトピックでは、`Report Builder` で数式を使用する方法を詳しく説明します。ここでは、ジャンプしましょう。
 
-## `formula` とは{#what}
+## `formula` とは {#what}
 
 `Report Builder` では、`formula` は、何らかの数学的ロジックに基づいて 1 つ以上の指標を組み合わせたものです。 典型的な例を次に示します。
 
@@ -63,6 +63,6 @@ ht-degree: 0%
 
 ## まとめ {#wrapup}
 
-上記の例で、数式の `timestamp`、`groupings`、`perspectives`、`filters` が入力指標から継承されていることに気がつきましたか？ 指標と同様に、数式を使用して `perspectives` および [ 独立した時間オプション ](../../tutorials/time-options-visual-rpt-bldr.md){:target=&quot;_blank&quot;} を使用できることに注意してください。
+上記の例で、数式の `timestamp`、`groupings`、`perspectives`、`filters` が入力指標から継承されていることに気がつきましたか？ 指標と同様に、数式を使用して `perspectives` および [ 独立した時間オプション ](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"} を使用できることに注意してください。
 
-`Report Builder` での数式の使用に関するその他の質問については、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+`Report Builder` での数式の使用に関するその他の質問については、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

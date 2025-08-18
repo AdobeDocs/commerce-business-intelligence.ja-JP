@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL cPanel] 経由で [!DNL MySQL] に接続
+# [!DNL MySQL] 経由で [!DNL cPanel] に接続
 
-* [ [!DNL cPanel] での  [!DNL Commerce Intelligence] [!DNL MySQL] ユーザーの作成](#cpanel)
+* [ [!DNL Commerce Intelligence] [!DNL MySQL] での  [!DNL cPanel] ユーザーの作成](#cpanel)
 * [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
 
 ## 移動先
@@ -25,17 +25,17 @@ ht-degree: 0%
 >
 >[!DNL Adobe] では、データを保護するために SSH またはその他の形式の暗号化を使用することをお勧めします。 これがオプションでない場合でも、このトピックの手順を使用して、[!DNL Commerce Intelligence] をデータベースに直接接続できます。
 
-このトピックでは、[!DNL cPanel] を使用して [!DNL MySQL] データベースを [!DNL Commerce Intelligence] に直接接続する手順について説明します。 このプロセスは、[!DNL Adobe Commerce] やその他の MySQL ベースの e コマースデータベースを [!DNL Commerce Intelligence] に接続する場合にも使用できます。
+このトピックでは、[!DNL MySQL] を使用して [!DNL Commerce Intelligence] データベースを [!DNL cPanel] に直接接続する手順について説明します。 このプロセスは、[!DNL Adobe Commerce] やその他の MySQL ベースの e コマースデータベースを [!DNL Commerce Intelligence] に接続する場合にも使用できます。
 
-1. [!DNL cPanel] での [!DNL Commerce Intelligence] [!DNL MySQL] ユーザーの作成
+1. [!DNL Commerce Intelligence] での [!DNL MySQL] [!DNL cPanel] ユーザーの作成
 1. [!DNL Commerce Intelligence] に接続およびユーザー情報を入力
 
 今すぐ始めましょう。
 
-## [!DNL cPanel] での [!DNL Commerce Intelligence] [!DNL MySQL] ユーザーの作成 {#cpanel}
+## [!DNL Commerce Intelligence] での [!DNL MySQL] [!DNL cPanel] ユーザーの作成 {#cpanel}
 
 1. ホスティングプロバイダーを通じて [!DNL cPanel] にログインします。
-1. 「`Database`」セクションの「**[!UICONTROL [!DNL MySQL] Databases]**」をクリックします。
+1. 「**[!UICONTROL [!DNL MySQL] Databases]**」セクションの「`Database`」をクリックします。
 1. `Add New User` のセクションまでスクロールし、[!DNL Commerce Intelligence] のユーザーを作成します。
 
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 ## 関連：
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

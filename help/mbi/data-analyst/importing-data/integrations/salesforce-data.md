@@ -1,5 +1,5 @@
 ---
-title: Salesforce の期待データ
+title: 予想されるSalesforce データ
 description: Salesforce データでサポートされるオブジェクトとサポートされないオブジェクトについて説明します。
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
 role: Admin, Data Architect, Data Engineer, User
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL Salesforce] データ
 
-[[!DNL Salesforce] setup](../integrations/salesforce.md) が完了すると、クエリ可能な [object](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) ごとに `sf_/\{sobject-name}` という名前のテーブルがData Warehouseに作成されます。
+[[!DNL Salesforce]  設定 ](../integrations/salesforce.md) が完了すると、クエリ可能な [ オブジェクト ](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) ごとに `sf_/\{sobject-name}` という名前のテーブルがData Warehouseに作成されます。
 
 >[!NOTE]
 >
@@ -50,4 +50,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続  [!DNL Salesforce]](../integrations/salesforce.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

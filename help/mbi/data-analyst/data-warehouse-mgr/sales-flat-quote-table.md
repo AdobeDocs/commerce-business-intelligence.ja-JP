@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 見積もりテーブル
 
-`quote` テーブル（M1 の `sales_flat_quote`）には、放棄されたか購入に変換されたかに関わらず、ストアで作成されたすべての買い物かごに関するレコードが含まれています。 各行は 1 つの買い物かごを表します。 このテーブルの潜在的なサイズにより、Adobeでは、60 日を超える未変換の買い物かごがある場合など、特定の条件を満たした場合に、レコードを定期的に削除することをお勧めします。
+`quote` テーブル（M1 の `sales_flat_quote`）には、放棄されたか購入に変換されたかに関わらず、ストアで作成されたすべての買い物かごに関するレコードが含まれています。 各行は 1 つの買い物かごを表します。 Adobeこのテーブルの潜在的なサイズのため、60 日を超える未変換の買い物かごがある場合など、特定の条件を満たした場合は、レコードを定期的に削除することをお勧めします。
 
 >[!NOTE]
 >
@@ -28,12 +28,12 @@ ht-degree: 0%
 | `base_subtotal` | 買い物かごに含まれるすべての品目の総商品価値。 税金、送料、割引などは含まれません |
 | `created_at` | UTC でローカルに保存された、買い物かごの作成タイムスタンプ。 [!DNL Commerce Intelligence] での設定に応じて、このタイムスタンプはデータベースのタイムゾーンとは異な [!DNL Commerce Intelligence] レポートタイムゾーンに変換される場合があります |
 | `customer_email` | 買い物かごを作成した顧客のメールアドレス |
-| `customer_id` | 顧客が登録されている場合、`customer_entity` テーブルに関連付けられた `Foreign key` ール。 `customer_entity.entity_id` に結合して、買い物かごを作成したユーザーに関連付けられた顧客属性を決定します。 ゲストのチェックアウトで買い物かごが作成された場合、このフィールドは `NULL` になります |
+| `customer_id` | 顧客が登録されている場合、`Foreign key` テーブルに関連付けられた `customer_entity` ール。 `customer_entity.entity_id` に結合して、買い物かごを作成したユーザーに関連付けられた顧客属性を決定します。 ゲストのチェックアウトで買い物かごが作成された場合、このフィールドは `NULL` になります |
 | `entity_id` （PK） | テーブルの一意の ID。Commerce インスタンス内の他のテーブルへの結合で一般的に使用されます |
 | `is_active` | 買い物かごが顧客によって作成され、まだ注文に変換されていない場合に「1」を返すブール値フィールド。 変換された買い物かごまたは管理者を通じて作成された買い物かごに対して「0」を返します |
 | `items_qty` | 買い物かごに含まれているすべての品目の合計数量の合計 |
-| `reserved_order_id` | `sales_order` テーブルに関連付けられた `Foreign key`。 `sales_order.increment_id` に結合して、コンバート済み買い物かごに関連付けられている注文の詳細を判断します。 変換された注文に関連付けられていない買い物かごの場合、`reserved_order_id` は `NULL` のままになります |
-| `store_id` | `store` テーブルに関連付けられた `Foreign key`。 `store` に参加します。買い物かごに関連付けられているCommerce ストア表示を確認する `store_id` 法 |
+| `reserved_order_id` | `Foreign key` テーブルに関連付けられた `sales_order`。 `sales_order.increment_id` に結合して、コンバート済み買い物かごに関連付けられている注文の詳細を判断します。 変換された注文に関連付けられていない買い物かごの場合、`reserved_order_id` は `NULL` のままになります |
+| `store_id` | `Foreign key` テーブルに関連付けられた `store`。 `store` に参加します。買い物かごに関連付けられているCommerce ストア表示を確認する `store_id` 法 |
 
 {style="table-layout:auto"}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 | **列名** | **説明** |
 |---|---|
 | `Order date` | コンバート済み買い物かごの注文作成日を反映するタイムスタンプ。 `quote.reserved_order_id` を `sales_order.increment_id` に結合し、`sales_order.created_at` フィールドを返すことによって計算されます |
-| `Seconds between cart creation and order` | 買い物かごの作成と注文の作成の間の経過時間。 `Order date` から `created_at` を引いて計算され、秒数の整数で返されます |
+| `Seconds between cart creation and order` | 買い物かごの作成と注文の作成の間の経過時間。 `created_at` から `Order date` を引いて計算され、秒数の整数で返されます |
 | `Seconds since cart creation` | 買い物かごの作成日から現在までの経過時間。 クエリの実行時にサーバーのタイムスタンプから `created_at` を引いて計算され、秒数の整数で返されます。 買い物かごの年齢を識別するために最も一般的に使用される |
 | `Store name` | この注文に関連付けられたCommerce ストアの名前。 `quote.store_id` を `store.store_id` に結合し、`name` フィールドを返すことによって計算されます |
 

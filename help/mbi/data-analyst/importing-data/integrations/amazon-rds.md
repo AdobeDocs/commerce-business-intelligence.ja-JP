@@ -31,7 +31,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] の IP アドレスを追加する場合は、アドレスの末尾に `/32` を追加して、それが正確な IP アドレスであ [!DNL Amazon] ことを示してください。 AWS インターフェイスは、これが必要であることを明確にします。
 
-## [!DNL Commerce Intelligence] の `Linux` ユーザーの作成 {#linux}
+## `Linux` の [!DNL Commerce Intelligence] ユーザーの作成 {#linux}
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 インスタンスへのアクセス権を [!DNL Commerce Intelligence] に付与し、ユーザーを作成したら、接続情報を [!DNL Commerce Intelligence] に入力する必要があります。
 
-`MySQL`、`Microsoft SQL`、`PostgreSQL` の資格情報ページには、「**[!UICONTROL Add Integration]**」をクリックして、`Integrations` ページ（**[!UICONTROL Manage Data** > **Integrations]**）からアクセスできます。 統合のリストが表示されたら、使用しているデータベースのアイコンをクリックして、資格情報ページに移動します。 現在、必要な統合へのアクセス権がない場合は、Adobeアカウントチームにお問い合わせください。
+`MySQL`、`Microsoft SQL`、`PostgreSQL` の資格情報ページには、「`Integrations`」をクリックして、**[!UICONTROL Manage Data** > **Integrations]** ページ（**[!UICONTROL Add Integration]**）からアクセスできます。 統合のリストが表示されたら、使用しているデータベースのアイコンをクリックして、資格情報ページに移動します。 現在、必要な統合へのアクセス権がない場合は、Adobe アカウントチームにお問い合わせください。
 
 接続の作成を完了するには、次の情報が必要です。
 

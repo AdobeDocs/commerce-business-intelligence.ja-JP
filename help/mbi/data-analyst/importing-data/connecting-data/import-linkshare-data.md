@@ -26,7 +26,7 @@ ht-degree: 0%
 
 1. 他のすべてのドロップダウンオプションはデフォルトのままにします。
 
-1. 「`Date Range`」ドロップダウンで、[!DNL Commerce Intelligence] で `Start of Week` 定した設定と一致するオプション（`Sun - Sat`、`Mon - Sun`）を選択します。
+1. 「`Date Range`」ドロップダウンで、`Sun - Sat` で `Mon - Sun` 定した設定と一致するオプション（`Start of Week`、[!DNL Commerce Intelligence]）を選択します。
 
 1. 「`Compare Year-Over-Year Data`」チェックボックスをオフにします。
 
@@ -40,4 +40,4 @@ ht-degree: 0%
 
    この時点で、`.csv` ファイルがダウンロードされました。
 
-ファイルをダウンロードしたら、[`File Upload` 機能を使用して [!DNL Commerce Intelligence] にアップロードでき ](../connecting-data/using-file-uploader.md) す。
+ファイルをダウンロードしたら、[!DNL Commerce Intelligence] 機能を使用して [`File Upload` にアップロードでき ](../connecting-data/using-file-uploader.md) す。

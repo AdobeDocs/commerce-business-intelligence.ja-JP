@@ -1,6 +1,6 @@
 ---
-title: Google Analyticsグラフの作成
-description: Google Analyticsデータからグラフを作成する方法を説明します。
+title: Google Analyticsのグラフの作成
+description: Google Analytics データからグラフを作成する方法を説明します。
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports

@@ -34,7 +34,7 @@ ht-degree: 0%
 
 これらの計算の一部が現在データベースに存在しない場合は、アカウント内の管理者ユーザーが計算を作成できます。 また、これらのディメンションが、該当するすべての指標に対してグループ化できるようにする必要もあります。
 
-**Dimension**
+**寸法**
 
 * **[!UICONTROL Entity_id]**：各顧客の一意の ID。 これは、一意の顧客番号や顧客のメールアドレスである場合もあり、注文のテーブルへの参照キーとして機能する必要があります。
 * **[!UICONTROL Created_at]**：顧客のアカウントが作成され、データベースに追加された日付。
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 **ゲストの注文は受け付けますか？**
 
-*その場合、一部の顧客がこのテーブルに含まれていない可能性があります。 顧客の分析にすべての顧客が含まれることを確認するには、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) にお問い合わせください。*
+*その場合、一部の顧客がこのテーブルに含まれていない可能性があります。 顧客の分析にすべての顧客が含まれることを確認するには、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) にお問い合わせください。*
 
 *お客様から注文を受け付けているか不明な場合は、 詳しくは、[ このトピック ](../data-warehouse-mgr/guest-orders.md) を参照してください。*
 
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 この表では、各行が 1 つの順序を表しています。 このテーブルの列には、注文 ID、作成日、ステータス、注文を行った顧客の ID など、各注文に関する基本的な情報が含まれています。 以下の例では、注文テーブルのサンプルの名前として **[!UICONTROL sales_flat_order]** を使用しています。
 
-**Dimension**
+**寸法**
 
-* **[!UICONTROL Customer_id]**：注文した顧客の一意の ID。 これは、多くの場合、顧客テーブルと注文テーブルの間で情報を移動するために使用されます。 これらの例では、**[!UICONTROL sales_flat_order]** テーブルの customer_id が **[!UICONTROL customer_entity]** テーブルの **[!UICONTROL entitiy_id]** と整合することを想定しています。
+* **[!UICONTROL Customer_id]**：注文した顧客の一意の ID。 これは、多くの場合、顧客テーブルと注文テーブルの間で情報を移動するために使用されます。 これらの例では、**[!UICONTROL sales_flat_order]** テーブルの customer_id が **[!UICONTROL entitiy_id]** テーブルの **[!UICONTROL customer_entity]** と整合することを想定しています。
 * **[!UICONTROL Created_at]**：注文が作成または発注された日付。
 * **[!UICONTROL Customer_email]**：注文を行った顧客のメールアドレス。 これは、顧客の一意の ID である場合もあります。
 * **[!UICONTROL Customer's lifetime number of orders]**:`Customers` テーブル上にある同じ名前の列のコピー。
-* **[!UICONTROL Customer's order number]**：受注に関連付けられた顧客の受注番号。 例えば、表示している行が顧客の最初の注文の場合、この列は「1」ですが、顧客の 15 番目の注文の場合、この列には、この注文の「15」が表示されます。 このディメンションが `Customers` テーブルに存在しない場合は、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) に問い合わせて、ディメンションの作成を支援してください。
+* **[!UICONTROL Customer's order number]**：受注に関連付けられた顧客の受注番号。 例えば、表示している行が顧客の最初の注文の場合、この列は「1」ですが、顧客の 15 番目の注文の場合、この列には、この注文の「15」が表示されます。 このディメンションが `Customers` テーブルに存在しない場合は、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) に問い合わせて、ディメンションの作成を支援してください。
 * **[!UICONTROL Customer's order number (previous-current)]**:**[!UICONTROL Customer's order number]** 列内の 2 つの値の連結。 以下のサンプルレポートで、任意の 2 つの注文間の経過時間を表示するために使用されます。 例えば、顧客の最初の注文日と 2 番目の注文日の間の時間は、この計算では「1-2」として表されます。
 * **[!UICONTROL Coupon_code]**：各注文で使用されたクーポンを表示します。
 * **[!UICONTROL Seconds since previous order]**：顧客の注文間の時間（秒単位）。
@@ -69,35 +69,35 @@ ht-degree: 0%
 
 この表では、各行は販売された 1 つの品目を表しています。 この表には、受注参照番号、製品番号、数量など、各受注で販売された品目に関する情報が含まれます。 以下の例では、サンプルの order items テーブルの名前として `sales_flat_order_item` を使用しています。
 
-**Dimension**
+**寸法**
 
 * **[!UICONTROL Item_id]**: テーブルの各行の一意の ID。
 * **[!UICONTROL Order_id]**：どの品目が同じ順序で購入されたかを示す `Orders` ークテーブルの参照キー。 1 つの注文に複数の品目が含まれる場合、この値が繰り返されます。
 * **[!UICONTROL Product_id]**：購入した特定の製品に関する情報（色、サイズなど）が必要な場合は、この列を使用して製品テーブルからその情報を取り込みます。
-* **[!UICONTROL Order's created_at]**：注文されたタイムスタンプ。通常、`Orders` テーブルから `order line items` テーブルにコピーされます。
+* **[!UICONTROL Order's created_at]**：注文されたタイムスタンプ。通常、`order line items` テーブルから `Orders` テーブルにコピーされます。
 * **[!UICONTROL Order's coupon_code]**:`Order's created_at` ディメンションと同様に、この列は注文テーブルからコピーされます。
 
 ## 購読テーブル
 
 このテーブルは、サブスクリプション ID、サブスクライバーの E メールアドレス、サブスクリプション開始日など、サブスクリプション情報の管理に使用されます。
 
-**Dimension**
+**寸法**
 
-* **[!UICONTROL Customer_id]**：注文した顧客の一意の ID。 これは、[ 得意先 ] テーブルと [ 受注 ] テーブルの間のパスを作成する一般的な方法です。 これらの例では、**sales_flat_order** テーブルの customer_id が `customer_entity` テーブルの `entitiy_id` と整合することを想定しています。
+* **[!UICONTROL Customer_id]**：注文した顧客の一意の ID。 これは、[ 得意先 ] テーブルと [ 受注 ] テーブルの間のパスを作成する一般的な方法です。 これらの例では、**sales_flat_order** テーブルの customer_id が `entitiy_id` テーブルの `customer_entity` と整合することを想定しています。
 * **[!UICONTROL Start date]**：顧客の購読が開始された日付。
 
 ## マーケティング費用テーブル
 
 マーケティング費用を分析する際に、分析に [!DNL Facebook]、[!DNL Google AdWords] またはその他のソースを含めることができます。 複数のマーケティング費用ソースがある場合は、[Managed Services チーム ](https://business.adobe.com/products/magento/fully-managed-service.html) に連絡して、マーケティングキャンペーン用の統合テーブルの設定をサポートしてください。
 
-**Dimension**
+**寸法**
 
-* **[!UICONTROL Spend]**：広告費用の合計。 [!DNL Facebook] の場合、これは `facebook_ads_insights_####` テーブルの支出列になります。 [!DNL Google AdWords] の場合、これは `campaigns####` テーブルの `adCost` の列になります。
+* **[!UICONTROL Spend]**：広告費用の合計。 [!DNL Facebook] の場合、これは `facebook_ads_insights_####` テーブルの支出列になります。 [!DNL Google AdWords] の場合、これは `adCost` テーブルの `campaigns####` の列になります。
 * これらの各テーブルに追加される `####` は、[!DNL Facebook] または [!DNL Google AdWords] アカウントの特定のアカウント ID に関連しています。
 * **[!UICONTROL Clicks]**：クリックの合計数。 [!DNL Facebook] の場合、これは `facebook_ads_insights_####` テーブルのクリック数の列になります。 ま [!DNL Google AdWords]、`campaigns####` テーブルの adClicks 列になります。
 * **[!UICONTROL Impressions]**：インプレッション数の合計。 ま [!DNL Facebook]、これは `facebook_ads_insights_####` テーブルのインプレッション数になります。 ま [!DNL Google AdWords]、これは `campaigns####` テーブルのインプレッション数になります。
 * **[!UICONTROL Campaign]**：クリックの合計数。 [!DNL Facebook] の場合、これは `facebook_ads_insights_####` テーブルの campaign_name 列になります。 [!DNL Google AdWords] の場合、これは `campaigns####` テーブルのキャンペーン列になります。
-* **[!UICONTROL Date]**：特定のキャンペーンに対してアクティビティ（費用、クリック数またはインプレッション数）が発生した日時。 [!DNL Facebook] の場合、これは `facebook_ads_insights_####` テーブルの `date_start` の列になります。 [!DNL Google AdWords] の場合、これは `campaigns####` テーブルの日付列になります。
+* **[!UICONTROL Date]**：特定のキャンペーンに対してアクティビティ（費用、クリック数またはインプレッション数）が発生した日時。 [!DNL Facebook] の場合、これは `date_start` テーブルの `facebook_ads_insights_####` の列になります。 [!DNL Google AdWords] の場合、これは `campaigns####` テーブルの日付列になります。
 * **[!UICONTROL Customer's first order's source]**：顧客の初回注文からの注文のソース。 まず、アカウントに `customer's first order's source` という名前の列があるかどうかを確認します。 この列が表示されない場合は、次の手順を使用して目的の列を作成できます。
 * **[!UICONTROL Customer's first order's medium]**：顧客の最初の注文からの注文のメディア。 まず、アカウントに `customer's first order's source` という名前の列があるかどうかを確認します。 この列が表示されない場合は、次の手順を使用して目的の列を作成できます。
 * **[!UICONTROL Customer's first order's campaign]**：顧客の初回注文からの注文のキャンペーン。 まず、アカウントに `customer's first order's source` という名前の列があるかどうかを確認します。 この列が表示されない場合は、次の手順を使用して目的の列を作成できます。
@@ -115,7 +115,7 @@ ht-degree: 0%
 ### 新規ユーザー
 
 * **説明**：特定の期間に新しく取得したユーザーの合計数の数。 `New Users` は `Unique Customers` とは異なります。`New Users` はサービスを使用してアカウントが作成されたタイムスタンプを持ち（これは必ずしも注文されたとは限らない）、`Unique Customers` は少なくとも 1 つの注文を行っているからです。
-* **指標定義**：この指標は、`created_at` で並べ替えられたテーブルの `entity_id` の **カウント**`customer_entity` 実行します。
+* **指標定義**：この指標は、**で並べ替えられたテーブルの** の `entity_id` カウント `customer_entity``created_at` 実行します。
 * **レポートの例**：先月作成された新規ユーザーの数
    * **[!UICONTROL Metric]**: `New Users`
    * **[!UICONTROL Time Range]**: `Last Month`
@@ -126,7 +126,7 @@ ht-degree: 0%
 ### ユニーク顧客
 
 * **説明**：特定の期間における個別の顧客の合計数。 これは `New Users` とは異なります。これは、少なくとも 1 つの注文を行った顧客のみを追跡するためです。 ユニーク顧客レポートでは、特定の時間間隔で 1 回だけ顧客を追跡します。 時間間隔を `By Day` に設定し、その日に顧客が複数の購入をおこなった場合、顧客は 1 回のみカウントされます。 一般的な購入数の合計を確認したい場合は、`Number of Orders` を参照してください。
-* **指標定義**：この指標は、`created_at` で並べ替えられたテーブルからの `customer_id` の **個別カウント**`sales_flat_order` 実行します。
+* **指標定義**：この指標は、**で並べ替えられたテーブルからの** の `customer_id` 個別カウント `sales_flat_order``created_at` 実行します。
 * **レポートの例**：過去 90 日間の週別のユニーク顧客
    * **[!UICONTROL Metric]**: `Distinct Customers`
    * **[!UICONTROL Time Range]**: `Moving range > Last 90 Days`
@@ -137,7 +137,7 @@ ht-degree: 0%
 ### 新規購読者
 
 * **説明**：特定の期間に取得した新規購読者の合計数の数。
-* **指標定義**：この指標は、`start_date` で並べ替えられたテーブルからの `customer_id` の **個別カウント**`subscriptions` 実行します。
+* **指標定義**：この指標は、**で並べ替えられたテーブルからの** の `customer_id` 個別カウント `subscriptions``start_date` 実行します。
 * **レポートの例**：今年の新しい購読者が月ごとに表示されます
    * **[!UICONTROL Metric]**: `New Subscribers`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 0 Days Ago`
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 ### リピート顧客
 
-* **説明**：ある期間に複数の注文を行った顧客の合計数。 リピート顧客レポートでは、`orders` テーブルの `Distinct Customers` 指標と `Customer's Order Number` ディメンションを使用できます。
+* **説明**：ある期間に複数の注文を行った顧客の合計数。 リピート顧客レポートでは、`Distinct Customers` テーブルの `Customer's Order Number` 指標と `orders` ディメンションを使用できます。
 * **使用される指標**: `Distinct Customers`
 * **レポートの例**：昨年に行われた 2 回目と 3 回目の購入数
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -242,7 +242,7 @@ ht-degree: 0%
 ### 最初の 30 日間の平均売上高
 
 * **説明**：顧客が顧客としての最初の 30 日以内に生み出した収益額の平均。
-* **指標の説明**：この指標は、`created_at` で並べ替えられたテーブルの `Customer's First 30 Day Revenue` の **平均**`customer_entity` 実行します。
+* **指標の説明**：この指標は、**で並べ替えられたテーブルの** の `Customer's First 30 Day Revenue` 平均 `customer_entity``created_at` 実行します。
 * **レポートの説明**：顧客の最初の 30 日間の収益の全時間平均
 * **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
 * **[!UICONTROL Time Range]**: `All Time`
@@ -253,7 +253,7 @@ ht-degree: 0%
 ### 顧客の生涯平均売上高
 
 * **説明**：顧客が全期間で生み出した平均売上高。
-* **指標の説明**：この指標は、`created_at` に基づいて、`customer_entity` テーブルの `Customer's Lifetime Revenue` 列の **平均** を実行します。
+* **指標の説明**：この指標は、**に基づいて、** テーブルの `Customer's Lifetime Revenue` 列の `customer_entity` 平均 `created_at` を実行します。
 * **レポートの説明**：顧客の生涯売上高の全時間平均
    * **[!UICONTROL Metric]**: `Average Customer Lifetime Revenue`
    * **[!UICONTROL Time Range]**: `All Time`
@@ -266,7 +266,7 @@ ht-degree: 0%
 ### 収益
 
 * **説明**：収益指標には、選択した期間に発生した合計売上高が表示されます。
-* このメトリックは、`created_at` で順序付けられた表からの `grand_total` の **合計**`sales_flat_order` を実行します。
+* このメトリックは、**で順序付けられた表からの** の `grand_total` 合計 `sales_flat_order``created_at` を実行します。
 * **レポートの例**：月別、年累計の収益
    * **[!UICONTROL Metric]**: `Revenue`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
@@ -281,7 +281,7 @@ ht-degree: 0%
 ### 注文件数
 
 * **説明**：特定の期間における注文の合計数。 注文レポートは、新製品の提供、プロモーション、またはトランザクション量を増加（または減少）させる可能性のあるその他の要因によって発生した注文量の変化を追跡します。 質問に答えるために、いくつかの変数でこの指標をセグメント化したい場合がよくあります。
-* **指標定義**：この指標は、`created_at` で並べ替えられたテーブルの `entity_id` の **カウント**`sales_flat_order` 実行します。
+* **指標定義**：この指標は、**で並べ替えられたテーブルの** の `entity_id` カウント `sales_flat_order``created_at` 実行します。
 * **レポートの例**：月別、年累計のオーダー
    * **[!UICONTROL Metric]**: `number of orders`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
@@ -296,7 +296,7 @@ ht-degree: 0%
 ### 注文された製品
 
 * **説明**：注文製品の指標は、特定の期間に販売された項目の数量を示します。
-* **指標の定義**：この指標は、`created_at` で並べ替えられたテーブルの `qty_ordered` の **合計**`sales_flat_order_item` 実行します。
+* **指標の定義**：この指標は、**で並べ替えられたテーブルの** の `qty_ordered` 合計 `sales_flat_order_item``created_at` 実行します。
 * **レポートの例**:YTD で月別に販売された品目
    * **[!UICONTROL Metric]**: `Products ordered`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
@@ -332,7 +332,7 @@ ht-degree: 0%
 ### 平均注文値
 
 * **説明**：ある期間に発注された注文の平均値を追跡します。 この指標を使用すると、マーケティング活動、製品オファー、ビジネスのその他の変化の結果として平均注文額（AOV）がどのように変動したかをすばやく判断できます。
-* **指標定義**：この指標は、`created_at` で並べ替えられたテーブルの `grand_total` の **平均**`sales_flat_order` 実行します。
+* **指標定義**：この指標は、**で並べ替えられたテーブルの** の `grand_total` 平均 `sales_flat_order``created_at` 実行します。
 * **レポート例**:AOV と前年、YTD の比較
    * **[!UICONTROL Metric]**: `Average order value`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
@@ -343,7 +343,7 @@ ht-degree: 0%
 
 ### クーポンで最も多く購入された製品
 
-* **説明**：このレポートは、プロモーションやクーポンの提供時に、どの製品が販売されているかに関するインサイトを提供します。
+* **説明**：このレポートは、プロモーションやクーポンの提供時に、商品が販売されるinsightを提供します。
 * **使用指標**：注文された製品
 * **レポートの例**：クーポンで最も多く購入された製品
    * **[!UICONTROL Metric]**: `Products ordered`
@@ -357,8 +357,8 @@ ht-degree: 0%
 
 ### 注文間の時間
 
-* **説明**：平均（または中央値）を調べる **注文間隔** 分析を使用して、顧客の購入サイクルに関する前提と期待をテストします 購入間の時間。 次のグラフを見ると、3 つ以上の注文を行った顧客のうち最高の顧客が、6 か月以内に 2 番目の購入を行っていることがわかります。 4 回目の注文を行っていない顧客は、2 回目の購入を行う 14 か月前に待ちます。
-* **指標定義**：この指標は、`created_at` で並べ替えられた `sales_flat_order` からの `Time since previous order` の **平均** を実行します。
+* **説明**：購入間の平均（または中央値！）時間を調べる **注文間の時間** 分析を使用して、顧客の購入サイクルに関する前提と期待をテストします。 次のグラフを見ると、3 つ以上の注文を行った顧客のうち最高の顧客が、6 か月以内に 2 番目の購入を行っていることがわかります。 4 回目の注文を行っていない顧客は、2 回目の購入を行う 14 か月前に待ちます。
+* **指標定義**：この指標は、**で並べ替えられた** からの `Time since previous order` の `sales_flat_order` 平均 `created_at` を実行します。
 * **レポート例**:
    * **指標 1**: ≤ 3 個の注文
       * **[!UICONTROL Metric]**: `Average time between orders`
@@ -381,7 +381,7 @@ ht-degree: 0%
 ### 広告費用
 
 * **説明**：様々な期間と間隔、キャンペーンや広告セット、またはその他のセグメント別に、マーケティング費用を分析できます。
-* **指標の定義**：この指標は、`date` 列で並べ替えられた `Marketing Spend` テーブルの支出列に対して合計を実行します。
+* **指標の定義**：この指標は、`Marketing Spend` 列で並べ替えられた `date` テーブルの支出列に対して合計を実行します。
 * **レポートの例**：キャンペーン別の広告費用
    * **[!UICONTROL Metric]**: `Ad spend`
    * **[!UICONTROL Time Range]**: `All-Time`
@@ -416,7 +416,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->式は `CTR` として **タイトル** 表示し、すべての指標を **非表示** できます。
+>式は **として** タイトル `CTR` 表示し、すべての指標を **非表示** できます。
 
 ![CTR](../../assets/CTR.png)<!--{: width="929"}-->
 
@@ -434,7 +434,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->式は `CPC` として **タイトル** 表示し、すべての指標を **非表示** できます。
+>式は **として** タイトル `CPC` 表示し、すべての指標を **非表示** できます。
 
 ![CPC](../../assets/CPC.png)<!--{: width="929"}-->
 
@@ -488,7 +488,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->式は `CTR` として **タイトル** 表示し、すべての指標を **非表示** できます。 また、詳しくは [ この記事 ](../analysis/roi-ad-camp.md) を参照してください。
+>式は **として** タイトル `CTR` 表示し、すべての指標を **非表示** できます。 また、詳しくは [ この記事 ](../analysis/roi-ad-camp.md) を参照してください。
 
 ![CAC 1](../../assets/New_Users_Last_Month.png)
 
@@ -499,7 +499,7 @@ ht-degree: 0%
 * **説明**：各キャンペーンで取得した顧客数を分析するだけでなく、これらの顧客の平均生涯売上高を分析することもできます。 次の項目を特定するのに役立ちます。
    * 特定のキャンペーンが大量の顧客を引き付けるが、それらの顧客の生涯価値が低い場合。
    * 特定のキャンペーンが少量の顧客を引き付けているが、それらの顧客は高い生涯価値を持っている場合。
-* **レポートの例**：まず、`New customers` の指標を追加します。 次に、`Average lifetime revenue` の指標を追加します。 目的の時間枠を選択し、`None` のように `interval` を選択します。 最後に、「`group by`」オプションを `Customer's first order's campaign` のように選択します。
+* **レポートの例**：まず、`New customers` の指標を追加します。 次に、`Average lifetime revenue` の指標を追加します。 目的の時間枠を選択し、`interval` のように `None` を選択します。 最後に、「`group by`」オプションを `Customer's first order's campaign` のように選択します。
    * **[!UICONTROL Metric A]**: `New Customers`
    * **[!UICONTROL Filter A]**: `Customer's first order's source` LIKE &#39;%google%&#39;
    * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
@@ -512,7 +512,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2 つのフィルターについて、「有料」メディアと見なされる他のメディア（cpc や有料検索など）を追加できます。 また、分析したい他のソース（Facebookなど）を追加することもできます。 CAC、LTV および ROI について詳しくは、[ この記事 ](../analysis/roi-ad-camp.md) を参照してください。
+>2 つのフィルターについて、「有料」メディアと見なされる他のメディア（cpc や有料検索など）を追加できます。 また、Facebook など、分析したい他のソースを追加することもできます。 CAC、LTV および ROI について詳しくは、[ この記事 ](../analysis/roi-ad-camp.md) を参照してください。
 
 ![ 獲得ソース、メディア、キャンペーン別のライフタイム値 ](../../assets/LTV_2.png)<!--{: width="929"}-->
 

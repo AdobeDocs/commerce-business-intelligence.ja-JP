@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
 # フィルターオプション
 
-このトピックでは、[ レポートの作成 ](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} または [ 指標の作成 ](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;} の `filters` に使用される特殊な `operators` を説明します。
+このトピックでは、`operators` レポートの作成 `filters` または [ 指標の作成 ](../../tutorials/using-visual-report-builder.md){: target="_blank"} の [ に使用される特殊な ](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"} を説明します。
 
 ## `Filter Operators`
 

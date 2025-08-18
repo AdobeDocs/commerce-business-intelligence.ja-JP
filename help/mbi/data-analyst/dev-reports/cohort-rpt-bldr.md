@@ -21,7 +21,7 @@ ht-degree: 0%
 
 分析に関する詳細な入門 `cohort` ついては、[ このページ ](https://www.cohortanalysis.com/) を参照してください。
 
-[!DNL Commerce Intelligence] ダッシュボードでは、`cohort` 定の日付とアカウントの指標に基づいて、ユーザー `cohorts` を簡単に作成できます。
+[!DNL Commerce Intelligence] ダッシュボードでは、`cohorts` 定の日付とアカウントの指標に基づいて、ユーザー `cohort` を簡単に作成できます。
 
 ## コホート分析はなぜ重要なのでしょうか？ {#important}
 
@@ -31,11 +31,11 @@ ht-degree: 0%
 
 ### 新しいアーキテクチャ
 
-[ 新しいアーキテクチャ ](../../administrator/account-management/new-architecture.md) の `Cohort Report Builder` を使用する手順を以下に示します。
+`Cohort Report Builder` 新しいアーキテクチャ [ の ](../../administrator/account-management/new-architecture.md) を使用する手順を以下に示します。
 
 1. 左側のタブの「**[!UICONTROL Report Builder]**」または任意のダッシュボードの「**[!UICONTROL Add Report** > **Create Report]**」をクリックします。
 
-1. `Report Builder` 選択画面で、「`Visual Report Builder`」オプションの横にある「**[!UICONTROL Create Report]**」をクリックします。
+1. `Report Builder` 選択画面で、「**[!UICONTROL Create Report]**」オプションの横にある「`Visual Report Builder`」をクリックします。
 
 **指標の追加**
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 1. 各 `cohort` に含める必要があるデータの最小量
 1. `cohort` の発生後の時間範囲
 
-#### 1. グループ化 `cohorts`
+#### &#x200B;1. グループ化 `cohorts`
 
 `Cohorts` は、**登録日** や **初回注文日** など、タイムスタンプでグループ化されます。
 
@@ -75,11 +75,11 @@ ht-degree: 0%
 
 これらのパラメーターは、関心のある `cohorts` のみを表示するのに役立ち、ウィンドウの下部にある便利な `Preview` ボックスは、レポートに表示されるコホートを正確に示します。
 
-デフォルトでは、各 `cohort` ータに必要な最小限のデータ量を `0` に変更しない限り、現在の `cohort` は含まれません。 この場合、当期の `cohort` には部分的なデータのみが含まれます。
+デフォルトでは、各 `cohort` ータに必要な最小限のデータ量を `cohort` に変更しない限り、現在の `0` は含まれません。 この場合、当期の `cohort` には部分的なデータのみが含まれます。
 
 #### 5.`Cohort` 発生後の時間範囲
 
-この機能を使用すると、選択した `cohorts` ータに対して表示するデータの時間範囲を設定できます。 例えば、`customer's first order date` に基づいて 24 か月の `cohorts` を表示したいが、各 `cohort` ータの最初の 3 か月のデータにのみ関心がある場合は、`number of cohorts to view` を `24`、`time range after cohort occurrence` を `3` に設定できます。
+この機能を使用すると、選択した `cohorts` ータに対して表示するデータの時間範囲を設定できます。 例えば、`cohorts` に基づいて 24 か月の `customer's first order date` を表示したいが、各 `cohort` ータの最初の 3 か月のデータにのみ関心がある場合は、`number of cohorts to view` を `24`、`time range after cohort occurrence` を `3` に設定できます。
 
 この値の間隔は、`cohort time period` で選択した値によって変わり、デフォルトでは値は `12` に設定されています。カレンダーアイコンをクリックして編集しない限り、値は変更されません。
 
@@ -109,11 +109,11 @@ ht-degree: 0%
 
 実行中の `Cohort` 分析 ここでは、時間の経過と共に売上高が累積およびユーザー単位で増加していることがわかります。
 
-この節では、独自の `cohort` 分析を作成する手順について説明します。 例（およびプロセスを示すアニメーションGIF）については、このトピックの [ 例セクション ](#examples) を参照してください。
+この節では、独自の `cohort` 分析を作成する手順について説明します。 例（およびプロセスを示すアニメーション GIF）については、このトピックの [ 例セクション ](#examples) を参照してください。
 
 1. 左側のタブの「**[!UICONTROL Report Builder]**」または任意のダッシュボードの「**[!UICONTROL Add Report** > **Create Report]**」をクリックします。
 
-1. `Report Builder Selection` 画面で、「`Cohort Analysis`」オプションの横にある「**[!UICONTROL Create Report]**」をクリックします。
+1. `Report Builder Selection` 画面で、「**[!UICONTROL Create Report]**」オプションの横にある「`Cohort Analysis`」をクリックします。
 
 #### 指標の追加
 
@@ -136,7 +136,7 @@ ht-degree: 0%
 次に、`Interval` と `Time Period` を設定します。
 
 `Interval`
-「`Interval`」オプションを使用すると、`cohorts` の `length` を設定できます。 例えば、これを `Month` に設定すると、レポートは月単位で測定されます。
+「`Interval`」オプションを使用すると、`length` の `cohorts` を設定できます。 例えば、これを `Month` に設定すると、レポートは月単位で測定されます。
 
 **期間** メニューを使用して、X 軸でのこれらの間隔の表示方法を変更できます。
 
@@ -157,7 +157,7 @@ ht-degree: 0%
 
 ![](../../assets/Cohort_Counting_Members_option.png)
 
-この設定を理解するには、例を参照してください。 `Customer's registration date` 別の `Revenue` しい指標を示すレポートを作成したとします。 また、パースペクティブ `Average value per cohort member` を使用して、買い手ごとの売上高を経時的に確認する必要がありました。 買い手ごとの平均値を見つけるには、で割る買い手の数を決定する必要があります。 `customers` テーブルに登録されている顧客の数ですか、それとも同じ期間における `orders table` 内の個別の購入者の数ですか。
+この設定を理解するには、例を参照してください。 `Revenue` 別の `Customer's registration date` しい指標を示すレポートを作成したとします。 また、パースペクティブ `Average value per cohort member` を使用して、買い手ごとの売上高を経時的に確認する必要がありました。 買い手ごとの平均値を見つけるには、で割る買い手の数を決定する必要があります。 `customers` テーブルに登録されている顧客の数ですか、それとも同じ期間における `orders table` 内の個別の購入者の数ですか。
 
 この設定は、その質問に回答します。 `customers` テーブル内のカウントメンバーには、（これまでに購入を行ったかどうかに関わらず）すべての顧客が平均で含まれます。 `orders` テーブル内のカウントメンバーには、購入を行った顧客のみが含まれます。
 
@@ -203,10 +203,10 @@ ht-degree: 0%
 この `perspective` では、従来の `cohort` 分析を `cumulative` に示します。 つまり、ライフサイクルの特定の時点における、特定のコホートの現在までの貢献度の合計を示します。 例えば、特定のコホートから 6 週間のユーザーが得た後の累積売上高などです。
 
 `Cumulative Average Value per Cohort Member`
-これにより、（3）の `Cumulative` 分析が各 `cohort` グループのユーザー数で割られます。 これは、`cohort's` 期の各期間における `cohort` メンバーあたりの平均生涯貢献度（多くの場合、平均生涯売上高）を示します。 例えば、6 月に参加したユーザーが 6 か月後の平均生涯売上高です。
+これにより、（3）の `Cumulative` 分析が各 `cohort` グループのユーザー数で割られます。 これは、`cohort` 期の各期間における `cohort's` メンバーあたりの平均生涯貢献度（多くの場合、平均生涯売上高）を示します。 例えば、6 月に参加したユーザーが 6 か月後の平均生涯売上高です。
 
 `Percent of First Value (show first value)`
-これは、`cohort's` のライフサイクルの特定の時間における貢献度 `cohort` 集計を、最初の期間における貢献度のパーセンテージとして分析します。 例えば、6 か月の売上高を 6 月に参加したユーザーの 1 か月の売上高で割ったとします。
+これは、`cohort` のライフサイクルの特定の時間における貢献度 `cohort's` 集計を、最初の期間における貢献度のパーセンテージとして分析します。 例えば、6 か月の売上高を 6 月に参加したユーザーの 1 か月の売上高で割ったとします。
 
 `Percent of First Value (hide first value)`
 これは上 `perspective` と同じですが、100% の最初の期間の値が非表示になります。

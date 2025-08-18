@@ -37,19 +37,19 @@ ht-degree: 0%
 
 ## 分析を設定するには、どのような情報をサポートに送信するとよいですか？ {#support}
 
-`Report Builder` で `qualitative cohort` レポートを作成するには、Adobeアナリストチームが、必要なテーブルに [ 高度な計算列 ](../data-warehouse-mgr/creating-calculated-columns.md) を作成する必要があります。
+`qualitative cohort` で `Report Builder` レポートを作成するには、Adobe アナリストチームが、必要なテーブルに [ 高度な計算列 ](../data-warehouse-mgr/creating-calculated-columns.md) を作成する必要があります。
 
-これを作成するには、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) を送信します（この記事も参照してください）。 必要な知識を次に示します。
+これを作成するには、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を送信します（この記事も参照してください）。 必要な知識を次に示します。
 
-* コホート分析を実行する `metric` と、コホート分析で使用するテーブル （例：`orders` テーブルに基づいて作成された `Revenue`）。
+* コホート分析を実行する `metric` と、コホート分析で使用するテーブル （例：`Revenue` テーブルに基づいて作成された `orders`）。
 
 * 定義する `user segments` と、その情報がデータベース内のどこに存在するか（例：`User's referral source` の様々な値は、`users` テーブルにネイティブで、`orders` に再配置されます）。
 
 * 分析で使用する `cohort date` （例：`User's first order date` タイムスタンプ）。 この例では、各セグメントを確認して問い合わせること `How does a user's revenue grow in the months following their first order date?` できます。
 
-* 分析を表示する `time interval` （例：`User's first order date` の後の `weeks`、`months` または `quarters`）。
+* 分析を表示する `time interval` （例：`weeks` の後の `months`、`quarters` または `User's first order date`）。
 
-Adobeアナリストチームが上記の手順に従ったら、新しい高度な計算列をいくつか用意して、レポートを作成できます。 次に、以下の手順に従ってこれを行うことができます。
+Adobe アナリストチームが上記の手順に従ったら、新しい高度な計算列をいくつか用意して、レポートを作成できます。 次に、以下の手順に従ってこれを行うことができます。
 
 ## 定性コホート分析の作成 {#create}
 
@@ -63,19 +63,19 @@ Adobeアナリストチームが上記の手順に従ったら、新しい高度
 
 1. レポートの対象とする時間枠に `time range` を設定します。
 
-この例では、`Revenue` の `all time` しいビューを見ます。 この後、一連のドットで終わります。
+この例では、`all time` の `Revenue` しいビューを見ます。 この後、一連のドットで終わります。
 
 ![](../../assets/qualcohort2.gif)
 
-3 番目に、`cohorts` を設定するように調整します。 Adobeアナリストチームに指定した `cohort date` と `time interval` に基づいて、`cohort` 付け日を実行するディメンションがアカウントに存在します。 この例では、そのカスタムディメンションは `Months between this order and customer's first order date` と呼ばれます。 このディメンションを使用すると、次のことができます。
+3 番目に、`cohorts` を設定するように調整します。 Adobe アナリストチームに指定した `cohort date` と `time interval` に基づいて、`cohort` 付け日を実行するディメンションがアカウントに存在します。 この例では、そのカスタムディメンションは `Months between this order and customer's first order date` と呼ばれます。 このディメンションを使用すると、次のことができます。
 
-* `group by` オプションを使用してディメンションを `Group by` きます
+* `Group by` オプションを使用してディメンションを `group by` きます
 
 * 目的の `dimension` のすべての値を選択します
 
 * `Show top/bottom option` で、目的の上位 X か月を選択し、`Months between this order and customer's first order date` ディメンションで並べ替えます
 
-これで、指定した `cohort` ごとに 1 行ずつ表示できます。 この例を今すぐ確認してください。各リファラルソースのユーザーが投稿した `Revenue` ール `grouped by`、最初の注文から後続の注文までの月数が表示されます。 この例では、`cohorts'` の集計の増加を確認する `Cumulative perspective` ールも追加しました。詳細については、結果テーブルを参照してください。
+これで、指定した `cohort` ごとに 1 行ずつ表示できます。 この例を今すぐ確認してください。各リファラルソースのユーザーが投稿した `Revenue` ール `grouped by`、最初の注文から後続の注文までの月数が表示されます。 この例では、`Cumulative perspective` の集計の増加を確認する `cohorts'` ールも追加しました。詳細については、結果テーブルを参照してください。
 
 これは何を意味しますか？ ここで、特定のリファラルソース `Paid search` は、顧客の購入有効期間の最初の 1 か月では価値がありますが、リピート売上高で顧客ベースを保持することはできません。 `Direct Traffic` の収益は当初は少ない額で積み上げられますが、それ以降の数か月の収益は実際には同じようなペースで積み上げられます。
 

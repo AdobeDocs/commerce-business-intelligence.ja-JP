@@ -1,6 +1,6 @@
 ---
-title: 視覚Report Builder
-description: ビジュアルReport Builderの使用方法を説明します。
+title: ビジュアルReport Builder
+description: Visual Report Builderの使用方法を説明します。
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -27,7 +27,7 @@ ht-degree: 0%
 
      使用可能な指標は、アルファベット順またはテーブル順に表示されます。
 
-     ![ 視覚Report Builder](../../assets/magento-bi-visual-report-builder-add-metric.png)
+     ![ ビジュアルReport Builder](../../assets/magento-bi-visual-report-builder-add-metric.png)
 
    * レポートに使用するデータセットを表す [ 指標 ](../../data-user/reports/ess-manage-data-metrics.md) を選択します。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
      左側の概要には、現在の指標の名前が表示され、その後、指標で指定された列データに対する計算の結果が表示されます。 この例では、概要に合計顧客数が表示されます。
 
-     ![ 視覚Report Builder](../../assets/magento-bi-report-builder-untitled.png)
+     ![ ビジュアルReport Builder](../../assets/magento-bi-report-builder-untitled.png)
 
 1. グラフでは、線上の各データ ポイントにポインタを合わせます。 各データポイントには、その月に新規登録した顧客の合計数が表示されます。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
    **`Group By`**
 
-   `Group By` コントロールを使用すると、グループまたはセグメントごとに複数の寸法を追加できます。 Dimensionは、データのグループ化に使用できるテーブルの列です。
+   `Group By` コントロールを使用すると、グループまたはセグメントごとに複数の寸法を追加できます。 ディメンションは、データのグループ化に使用できるテーブルの列です。
 
    * オプションのリストから、使用可能なディメンションの 1 つ `Group By` 選択します。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Apply]** をクリックして、Group By の詳細を閉じます。
 
-     ![ 複数のDimension](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
+     ![ 複数ディメンション ](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
    * 各行にいくつかのデータポイントを合わせると、最初の注文時にそのクーポンを使用した 1 か月の顧客数が表示されます。
 
@@ -101,7 +101,7 @@ ht-degree: 0%
      | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | 縦棒グラフ |
      | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 縦積み横棒グラフ |
      | ![](../../assets/magento-bi-btn-chart-pie.png) | 円グラフ |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | 領域 |
+     | ![](../../assets/magento-bi-btn-chart-area.png) | 面グラフ |
      | ![](../../assets/magento-bi-btn-chart-funnel.png) | ファネル |
 
      {style="table-layout:auto"}

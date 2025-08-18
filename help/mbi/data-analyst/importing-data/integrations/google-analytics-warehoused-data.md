@@ -1,6 +1,6 @@
 ---
-title: 予期されるGoogle Analyticsのウェアハウスされたデータ
-description: Google Analyticsが保管したデータとやり取りする方法を説明します。
+title: Google Analyticsが格納する必要があるデータ
+description: Google Analyticsに保管されたデータとのやり取りを説明します。
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -21,17 +21,17 @@ ht-degree: 0%
 >
 >[[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics) 時に友達から許可を得て情報を使用しました。
 
-[!DNL Commerce Intelligence] の統合 [!DNL Google Analytics Warehoused]、[!DNL Google Analytics] [ コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用します。
+[!DNL Google Analytics Warehoused] の統合 [!DNL Commerce Intelligence]、[!DNL Google Analytics] [ コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用します。
 
 >[!NOTE]
 >
->予期しない結果や感覚的でない結果を避けるために、使用するディメンションが `Report Builder` で使用する [1 つ以上の指標と互換性がある ](https://ga-dev-tools.google/dimensions-metrics-explorer/) ことを確認します。
+>予期しない結果や感覚的でない結果を避けるために、使用するディメンションが [ で使用する ](https://ga-dev-tools.google/dimensions-metrics-explorer/)1 つ以上の指標と互換性がある `Report Builder` ことを確認します。
 
 Data Warehouseに `report` という 1 つのテーブルが作成されます。
 
-このテーブルのスキーマは、設定プロセス中に選択した指標およびDimensionと、`start-date` および `end-date` という 2 つの他の列で構成されています。
+このテーブルのスキーマは、設定プロセス中に選択した指標およびディメンションと、他の 2 つの列（`start-date` および `end-date`）で構成されています。
 
-例えば、セットアップ時に次の指標とDimensionを選択した場合：
+例えば、セットアップ時に次の指標とディメンションを選択した場合：
 
 * `Metrics`: `ga:users`
 * `Dimensions`: `ga:month`
@@ -56,7 +56,7 @@ Data Warehouseに `report` という 1 つのテーブルが作成されます�
 
 操作の観点から実行できる操作の例については、[!DNL Google Analytics] の広告キャンペーンを参照してください。 異なる名前の Q4 に複数の広告キャンペーンがあるとします。 キャンペーンは、特定のマーケティング施策の成果でした。 ウェアハウスに格納されたデータを使用すると、問題のキャンペーン名を見つけて、Q4 イニシアチブ名 `Operation Dumbo` を返す列を作成できます。
 
-組み合わせ側面 [!DNL Google Analytics] 使用すると、分析を行うためにデータを他のデータに結合できます。 例えば、[!DNL Google Analytics] のデータ `Total Time On Site By Ad Campaign` 取り、[!DNL Facebook Ads] の `Total Spent Per Campaign` データと結合して、エンゲージメントにかかる費用の全体像を把握できます。
+組み合わせ側面 [!DNL Google Analytics] 使用すると、分析を行うためにデータを他のデータに結合できます。 例えば、`Total Time On Site By Ad Campaign` のデータ [!DNL Google Analytics] 取り、`Total Spent Per Campaign` の [!DNL Facebook Ads] データと結合して、エンゲージメントにかかる費用の全体像を把握できます。
 
 一方、[!DNL Google Analytics Live] の統合では、すべての [!DNL Google Analytics] グラフは [!DNL Commerce Intelligence] Data Warehouseには保存されない小さなサイロのようになります。
 

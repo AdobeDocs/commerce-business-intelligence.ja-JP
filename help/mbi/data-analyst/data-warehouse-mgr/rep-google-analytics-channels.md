@@ -1,6 +1,6 @@
 ---
-title: 獲得ソースを使用したGoogle Analyticsチャネルのレプリケーション
-description: 獲得ソースを使用してGoogle Analyticsチャネルをレプリケートする方法を説明します。
+title: 獲得ソースを使用したGoogle Analytics チャネルのレプリケーション
+description: 獲得ソースを使用してGoogle Analytics チャネルをレプリケートする方法を説明します。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -40,13 +40,13 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-## Data Warehouseでこれらのチャネルグループ化を再作成するにはどうすればよいですか？ {#recreate}
+## これらのチャネルグループをData Warehouseで再作成するにはどうすればよいですか？ {#recreate}
 
-チャネルはソースとメディアの単なる組み合わせであることが理解できたので、Data Warehouseでこれらのグループ化を再作成するのは簡単な 3 ステップのプロセスです。
+チャネルはソースとメディアの単なる組み合わせだとわかったので、これらのグループ化をData Warehouseで再作成するには、簡単な 3 つの手順のプロセスです。
 
 1. **統合を有効 [!DNL Google ECommerce] する**
 
-   [ 有効 ](../importing-data/integrations/google-ecommerce.md) にする場合は、Data Warehouseの [medium] （../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing）フィールドと **source** フィールドを必ず **sync** （./）にします。 これが完了すると、メディアおよびソースの獲得データがData Warehouseに取り込まれます。
+   [ 有効 ](../importing-data/integrations/google-ecommerce.md) にする場合は、Data Warehouseの [medium] フィールドと {{ site.baseurl }}source **フィールドを** sync **（../**/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing）に設定します。 これが完了すると、中程度のデータやソースの獲得データがData Warehouseに取り込まれます。
 
 1. **Googleのチャネルグループ化のマッピングをアップロードする**
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    [!DNL Google Analytics] pro で独自のチャネルを作成した場合は、ファイルを [!DNL Commerce Intelligence] にアップロードする前に、特定のルールをマッピングテーブルに追加する必要があります。
 
-   [ ファイルのアップロード ](../importing-data/connecting-data/using-file-uploader.md) として、Data Warehouseーに取り込みます。
+   ファイルをData Warehouse as a[ ファイルのアップロード ](../importing-data/connecting-data/using-file-uploader.md) に取り込みます。
 
    ![](../../assets/Setting_Primary_Keys.png)
 

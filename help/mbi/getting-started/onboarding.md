@@ -27,10 +27,10 @@ ht-degree: 0%
 
 - *Commerceのどのバージョンを使用していますか？* - ストアが動作する `currency` を選択します。
 
-- *貴社の店舗は EU に拠点を置いていますか？* – この質問に対して `Yes` と答えた場合は、GDPR に準拠して、AdobeがData Warehouseとすべてのデータを欧州連合でホストします。
+- *貴社の店舗は EU に拠点を置いていますか？* – この質問に対して `Yes` と回答した場合、Adobeは GDPR に準拠して、Data Warehouseとすべてのデータを欧州連合でホストします。
 
 ## データベース設定
 
-- `Database name` - Commerce トランザクションデータが格納されている [!DNL MySQL] データベースの *名前* は何ですか？
+- `Database name` - Commerce トランザクションデータが格納されている *データベースの [!DNL MySQL] 名前* は何ですか？
 
 - `Table prefix (optional)` - Commerce データベースに含まれるテーブルの先頭に何か付加はありますか（例：`store_`）? これは通常は当てはまらないが、カスタマイズが可能である。

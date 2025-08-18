@@ -19,13 +19,13 @@ ht-degree: 0%
 
 ## 再チェックの頻度を減らす
 
-データベーステーブルには、変更可能な値を持つデータ列を使用できます。 例えば、**orders** テーブルには、**status** という列がある場合があります。 注文が最初にデータベースに書き込まれると、ステータス列に値 `pending` が含まれる場合があります。 注文が [Data Warehouseで ](../data-analyst/data-warehouse-mgr/tour-dwm.md) この `pending` 値でレプリケートされます。
+データベーステーブルには、変更可能な値を持つデータ列を使用できます。 例えば、**orders** テーブルには、**status** という列がある場合があります。 注文が最初にデータベースに書き込まれると、ステータス列に値 `pending` が含まれる場合があります。 注文は [0}Data Warehouse} でこの ](../data-analyst/data-warehouse-mgr/tour-dwm.md) 値でレプリケートされます。`pending`
 
-変更可能な列は、時間の経過と共に [ 更新された値について再チェック ](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) される必要があります。 デフォルト [!DNL Commerce Intelligence] は、更新時にこれらの列を再チェックしますが、再チェックおよびレプリケートされるデータが大量にある場合は、更新時間に悪影響を与える可能性があります。 Adobeでは、更新ごとに再チェックを実行する代わりに、再チェックの頻度を日次、週次、月次のいずれかに設定することをお勧めします。
+変更可能な列は、時間の経過と共に [ 更新された値について再チェック ](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) される必要があります。 デフォルト [!DNL Commerce Intelligence] は、更新時にこれらの列を再チェックしますが、再チェックおよびレプリケートされるデータが大量にある場合は、更新時間に悪影響を与える可能性があります。 Adobeでは、すべての更新で再チェックを実行する代わりに、再チェックの頻度を日単位、週単位または月単位に設定することをお勧めします。
 
 ## 増分レプリケーション方法の使用
 
-前述のように、更新時間の長さは、再確認およびレプリケートが必要なデータの量に直接相関します。 [ 増分レプリケーション方法 ](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md) を使用すると、更新サイクル中に処理されるデータ量を大幅に削減できます。 Adobeでは、可能な限りこれらの手段を使用するか、増分方式をサポートするようにデータベースを変更することをお勧めします。
+前述のように、更新時間の長さは、再確認およびレプリケートが必要なデータの量に直接相関します。 [ 増分レプリケーション方法 ](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md) を使用すると、更新サイクル中に処理されるデータ量を大幅に削減できます。 可能な限り、Adobeでは、増分処理をサポートするために、これらの手法を使用するか、データベースを変更することをお勧めします。
 
 ## ダッシュボードから未使用のグラフを削除
 
@@ -43,4 +43,4 @@ ht-degree: 0%
 
 ## まとめ
 
-これらの推奨事項を実装しても更新時間が遅いと思われる場合は、[ サポートチームにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+これらの推奨事項を実装しても更新時間が遅いと思われる場合は、[ サポートチームにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

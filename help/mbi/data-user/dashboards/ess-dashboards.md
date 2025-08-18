@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## ダッシュボードの作成 {#createdash}
 
-ダッシュボードは、Report Builderで作成する分析に対して共有可能な、テーマを設定したバケットです。 これにより、チームに対して、組織全体で単一の情報源の共同作業と維持を促すことができます。
+ダッシュボードは、Report Builder で作成する分析に対して共有可能な、テーマを設定したバケットです。 これにより、チームに対して、組織全体で単一の情報源の共同作業と維持を促すことができます。
 
 *管理者または標準ユーザーの場合*、ダッシュボードのドロップダウンをクリックして `Dashboard Options` を選択することで、ダッシュボ `Create New dashboard` ドを作成できます。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 1. 「**[!UICONTROL Create Report]**」をクリックして **[!UICONTROL Report Builder Options]** を表示します。
 
-   ![Report Builderオプション ](../../assets/magento-bi-report-builder.png)
+   ![Report Builder オプション ](../../assets/magento-bi-report-builder.png)
 
 ## ダッシュボード上のアイテムの配置
 

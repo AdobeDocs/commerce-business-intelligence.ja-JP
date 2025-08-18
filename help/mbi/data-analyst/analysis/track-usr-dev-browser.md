@@ -1,5 +1,5 @@
 ---
-title: Google Analytics - データベース内のユーザーデバイスとブラウザーデータを追跡します
+title: Google Analytics - データベース内のユーザーデバイスとブラウザーデータを追跡します。
 description: モバイルデバイスを介して実際にログインしているユーザーの数と、そのユーザーのライフタイム値への影響について説明します。
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
 role: Admin, User

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] を 6 か月または 6 年間使用しているかどうかにかかわらず、適切なアカウントを維持することは、プラットフォームを最大限に活用する組織にとって最も重要です。 時間の経過と共に、不要になったユーザー、ダッシュボード、レポート、指標および列が存在するのは当然です。 1 回限りのレポートを作成してそれを忘れた場合や、会社を離れたときにアカウントを非アクティブ化しなかったユーザーの場合があります。
 
-[!DNL Commerce Intelligence] アカウントの [ すべての要素の名前が標準化され明確になっている ](../best-practices/naming-elements.md)）ので、以下のアカウント監査手順を使用して、ユーザーにとって混乱や不要な分析を減らすことができます。 その他のメリットとして、[ 場合によってはより高速な更新サイクル ](../best-practices/reduce-update-cycle-time.md) が挙げられます。
+[ アカウントの ](../best-practices/naming-elements.md) すべての要素の名前が標準化され明確になっている [!DNL Commerce Intelligence]）ので、以下のアカウント監査手順を使用して、ユーザーにとって混乱や不要な分析を減らすことができます。 その他のメリットとして、[ 場合によってはより高速な更新サイクル ](../best-practices/reduce-update-cycle-time.md) が挙げられます。
 
 ## 手順 1：非アクティブユーザーの特定
 
@@ -95,13 +95,13 @@ ht-degree: 0%
 
 ![](../../mbi/assets/report_dependecies.png)
 
-指標が不要になった場合は、「**[!UICONTROL Back to Metric List]**」をクリックして **[!UICONTROL Metrics]** ページに戻り、削除する指標を見つけます。 「**[!UICONTROL Delete]**」をクリックします。
+指標が不要になった場合は、「**[!UICONTROL Metrics]**」をクリックして **[!UICONTROL Back to Metric List]** ページに戻り、削除する指標を見つけます。 「**[!UICONTROL Delete]**」をクリックします。
 
 ## 手順 4：同期された列を評価
 
 最後の手順は、Data Warehouseで現在同期されている列を評価することです。 列の同期を解除すると、アカウントの表示を減らすだけでなく、更新時間を短縮する可能性もあります。
 
-その場合は、[!DNL Commerce Intelligence] サポート [ までお問い合わせください ](../guide-overview.md#Submitting-a-Support-Ticket)。 サポートチームは、どのユーザーのダッシュボードでも使用されておらず、電子メールの概要でも使用されていないすべての列を含むレポート（SQL レポートを除く）を作成できます。 その後、このレポートをガイドとして使用し、Data Warehouseマネージャーで同期を解除する列を選択できます。
+その場合は、[!DNL Commerce Intelligence] サポート [ までお問い合わせください ](../guide-overview.md#Submitting-a-Support-Ticket)。 サポートチームは、どのユーザーのダッシュボードでも使用されておらず、電子メールの概要でも使用されていないすべての列を含むレポート（SQL レポートを除く）を作成できます。 その後、このレポートをガイドとして使用し、Data Warehouse Manager で同期を解除する列を選択できます。
 
 >[!NOTE]
 >

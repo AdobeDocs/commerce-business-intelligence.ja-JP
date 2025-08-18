@@ -1,6 +1,6 @@
 ---
 title: Google Analyticsを接続
-description: Google Analyticsと  [!DNL Commerce Intelligence] を結び付ける方法を説明します。
+description: Google Analyticsと  [!DNL Commerce Intelligence] を接続する方法を説明します。
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -53,11 +53,11 @@ ht-degree: 0%
 
 1. [!DNL Google Analytics] の [ アカウント設定 ](https://accounts.google.com/) ページにアクセスします。
 1. 「`Security`」セクションで、「アプリケーションとサイト」の横にある「**[!UICONTROL edit]**」 `Authorizing` クリックします。
-1. 「[!DNL Commerce Intelligence]」の横にある「**[!UICONTROL revoke access]**」をクリックします。
+1. 「**[!UICONTROL revoke access]**」の横にある「[!DNL Commerce Intelligence]」をクリックします。
 
 ## 関連：
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [接続  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Web サイトのアクティビティと顧客コンバージョン率の分析](../../analysis/web-act-cust-conversion.md)
 * [cookie を使用したユーザー取得デ  [!DNL Google Analytics]  タの追跡](../../analysis/google-track-user-acq.md)

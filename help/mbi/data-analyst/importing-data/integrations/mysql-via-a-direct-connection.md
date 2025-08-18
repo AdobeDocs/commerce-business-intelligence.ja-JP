@@ -16,7 +16,7 @@ ht-degree: 0%
 ## このトピック内
 
 * [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
-* [ [!DNL Commerce Intelligence] のユ  [!DNL MySQL]  ザーを作成](#steptwo)
+* [ [!DNL MySQL]  のユ  [!DNL Commerce Intelligence] ザーを作成](#steptwo)
 * [接続情報の入力先  [!DNL Commerce Intelligence]](#stepthree)
 
 ## 移動先
@@ -36,9 +36,9 @@ ht-degree: 0%
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## [!DNL Commerce Intelligence] の [!DNL MySQL] ユーザーの作成
+## [!DNL MySQL] の [!DNL Commerce Intelligence] ユーザーの作成
 
-[!DNL Commerce Intelligence] の `MySQL` ユーザーを作成する最も簡単な方法は、`GRANT` 権限で `MySQL` にログインしたときに次のクエリを実行することです。 `Commerce Intelligence IP Address` を [!DNL Commerce Intelligence] の IP アドレスに置き換え、`secure password` を選択した安全なパスワードに置き換えます。
+`MySQL` の [!DNL Commerce Intelligence] ユーザーを作成する最も簡単な方法は、`MySQL` 権限で `GRANT` にログインしたときに次のクエリを実行することです。 `Commerce Intelligence IP Address` を [!DNL Commerce Intelligence] の IP アドレスに置き換え、`secure password` を選択した安全なパスワードに置き換えます。
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
@@ -60,10 +60,10 @@ ht-degree: 0%
 * `Port`: サーバー上の MySQL のポート （デフォルトでは `3306`）
 * `Host`: デフォルトでは、これは localhost です。 一般に、これは [!DNL MySQL] サーバーのバインド アドレス値です。デフォルトでは `127.0.0.1 (localhost)` ですが、ローカル ネットワーク アドレス （`192.168.0.1` など）またはサーバーのパブリック IP アドレスの場合もあります。
 
-  この値は、`\[mysqld\]` を読み取る行の下の `my.cnf` ファイル（`/etc/my.cnf` にあります）にあります。 このファイルで bind-address 行がコメントアウトされている場合、サーバーは外部からの接続の試行から保護されます。
+  この値は、`my.cnf` を読み取る行の下の `/etc/my.cnf` ファイル（`\[mysqld\]` にあります）にあります。 このファイルで bind-address 行がコメントアウトされている場合、サーバーは外部からの接続の試行から保護されます。
 
 完了したら、「**[!UICONTROL Save & Test]**」をクリックして設定を完了します。
 
 ## 関連ドキュメント
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

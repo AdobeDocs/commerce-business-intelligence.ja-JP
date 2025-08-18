@@ -1,5 +1,5 @@
 ---
-title: Data Warehouse管理者
+title: Data Warehouse Manager
 description: テーブルと列の同期設定の管理、テーブルのスキーマへのドリルダウンおよびレポートで使用する計算列の作成の方法を説明します。
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
 role: Admin, Data Architect, Data Engineer, User
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Data Warehouse管理者
+# Data Warehouse Manager
 
 >[!NOTE]
 >
 >[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です
 
-**[!UICONTROL Manage Data > Data Warehouse]** をクリックしてアクセスするData Warehouseマネージャーは、[!DNL Adobe Commerce Intelligence]Data Warehouseのポータルです。 Data Warehouseマネージャーを使用すると、テーブルと列の同期設定の管理、テーブルのスキーマへのドリルダウンおよびレポートで使用する計算列の作成を行うことができます。
+Data Warehouse Manager は、「**[!UICONTROL Manage Data > Data Warehouse]**」をクリックしてアクセスする [!DNL Adobe Commerce Intelligence] Data Warehouseのポータルです。 Data Warehouse Manager を使用すると、テーブルと列の同期設定の管理、テーブルのスキーマへのドリルダウンおよびレポートで使用する計算列の作成を行うことができます。
 
 このトピックの内容は次のとおりです。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 検索ボックスの下に、「`All Tables`」と「`Synced Tables`」の 2 つのオプションが表示されます。 「`All Tables`」オプションを選択すると、同期されたテーブルと同期されていないテーブルの両方を含む、Data Warehouseで使用可能なすべてのテーブルが一覧表示されます。
 
-`Synced Tables` のオプションを選択すると、Data Warehouseに既に追加されており、選択した列からデータがレプリケートされているすべてのテーブルが表示されます。
+「`Synced Tables`」オプションを選択すると、Data Warehouseに既に追加されており、選択した列からデータがレプリケートされているすべてのテーブルが表示されます。
 
 探しているテーブルが `All Tables` のリストに表示されない場合は、 その理由はいくつか考えられます。
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 ### 新しいテーブルとネイティブ列の同期
 
-Data Warehouseマネージャを使用すると、データソースを簡単に表示および管理できるだけでなく、同期する個々のテーブルと列を自由に選択することもできます。
+Data Warehouse Manager を使用すると、データソースを簡単に表示および管理できるだけでなく、同期する個々のテーブルや列を自由に選択することもできます。
 
 1. `All Tables` オプションをクリックし、同期するテーブルを見つけます。
 1. テーブルの名前をクリックして、スキーマをプレビューします。 テーブルが新規の場合、すべての列が `Unsynced` として表示されます。
@@ -77,21 +77,21 @@ A *成功！メッセ* ジが表示され、選択した列のステータスが
 
 ### 新しいテーブルと列の確認 {#forceupdate}
 
-新しいソース、テーブルまたは列が追加されても、Data Warehouseによって自動的に検出されることはありません。 同期プロセスは、新しい追加を検索して使用可能にするために 1 週間を通じて実行されますが、プロセスを実行する前に新しく追加されたテーブルと列にアクセスする場合は、構造の同期を強制的に実行できます。
+Data Warehouseは、新しいソース、テーブルまたは列が追加された時点で自動的に検出するものではありません。 同期プロセスは、新しい追加を検索して使用可能にするために 1 週間を通じて実行されますが、プロセスを実行する前に新しく追加されたテーブルと列にアクセスする場合は、構造の同期を強制的に実行できます。
 
 テーブルリストの検索バーの下には、`Check for new tables and columns` のリンクがあります。 このリンクをクリックすると、構造の同期プロセスが強制的に開始されます。新しい追加機能は通常、10 分後に利用できるようになります。 ページを更新して、新しいソース、テーブルまたは列を表示します。
 
 ## 計算列の作成 {#calculated}
 
-すべてのソースのデータを表示および管理できるようになるだけで、ビジネスに関するインサイトがはるかに容易になります。 ただし、Data Warehouseマネージャー内でテーブル内に計算列を作成することで、さらに一歩進むことができます。 `Calculated` 列は、既存のデータから新しい情報を派生します。
+すべてのソースのデータを表示および管理できるようになるだけで、ビジネスに関するインサイトがはるかに容易になります。 ただし、Data Warehouse Manager 内では、テーブル内に計算列を作成することで、さらに一歩進むことができます。 `Calculated` 列は、既存のデータから新しい情報を派生します。
 
-`users` テーブルに `user's lifetime revenue` を追加して、価値の高いユーザーを見つけたいとします。 また、売上高を男女別にセグメント化する場合は、`orders` テーブルに `customer's gender` を追加できます。
+`user's lifetime revenue` テーブルに `users` を追加して、価値の高いユーザーを見つけたいとします。 また、売上高を男女別にセグメント化する場合は、`customer's gender` テーブルに `orders` を追加できます。
 
 詳しくは、この [ チュートリアル ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) を参照してください。
 
 ## 表の削除と列の削除 {#delete}
 
-Data Warehouseに同期するテーブルと列を選択できるのと同様に、テーブルや列を削除することもできます。
+Data Warehouseに同期するテーブルと列を選択できるのと同じように、それらをドロップまたは削除することもできます。
 
 >[!NOTE]
 >
@@ -115,12 +115,12 @@ Data Warehouseに同期するテーブルと列を選択できるのと同様に
 
 ## では、新しい列はいつ使用できますか？ {#when}
 
-新しい同期列と新しい計算列または更新された計算列は、次回の完全更新が完了した後で使用できるようになります。 更新がまだ進行中でない場合は、`Data Warehouse` ージまたは `Integrations` のページの上部に表示されている **[!UICONTROL Force update]** をクリックして、更新を強制できます。 「**[!UICONTROL Email me when complete]**」をクリックして、更新の完了時にメール通知をスケジュールすることもできます。
+新しい同期列と新しい計算列または更新された計算列は、次回の完全更新が完了した後で使用できるようになります。 更新がまだ進行中でない場合は、**[!UICONTROL Force update]** ージまたは `Data Warehouse` のページの上部に表示されている `Integrations` をクリックして、更新を強制できます。 「**[!UICONTROL Email me when complete]**」をクリックして、更新の完了時にメール通知をスケジュールすることもできます。
 
 レポートで新しい列を使用する準備が整ったら、[ 最初に指標に追加する必要があります ](../data-warehouse-mgr/manage-data-dimensions-metrics.md)。 更新が完了するまではデータを使用できませんが、レポートでは新しい列を使用できます。 レポート内のデータは、更新が完了すると表示されます。
 
 ## まとめ
 
-この記事は多くの資料をカバーしている。 これで、データベースの概要、データの編成方法、テーブル間の関係、Data Warehouseマネージャを使用して実行できる操作について、明確な理解が得られました。
+この記事は多くの資料をカバーしている。 これで、データベースの概要、データの編成方法、テーブル同士の関係、Data Warehouse Manager で実行できる操作について、明確に理解できました。
 
 [ 計算列を作成する ](../data-warehouse-mgr/creating-calculated-columns.md) または [ 面白いレポートを作成する ](../../tutorials/using-visual-report-builder.md) で知識をテストしてください。

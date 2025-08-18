@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL Adobe Analytics] データ
 
-[!DNL Adobe Commerce Intelligence] の [!DNL Adobe Analytics] 統合では、[Analytics 2.0 レポート API](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md) を使用します。
+[!DNL Adobe Analytics] の [!DNL Adobe Commerce Intelligence] 統合では、[Analytics 2.0 レポート API](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md) を使用します。
 
 >[!INFO]
 >
@@ -34,20 +34,20 @@ ht-degree: 0%
 | `_id` | この列はプライマリキーです。 |
 | `_item_hash` | 一意 [!DNL Commerce Intelligence]ID。 この列は [!DNL Commerce Intelligence] が作成しました。 |
 | `_updated_at` | この列には、データ行が最後に更新された時刻が含まれています。 [!DNL Commerce Intelligence] によって作成されます。 |
-| `start_date` | その行に含まれるデータの開始日。 `start_date` は、1 行以内の同じ日の 00:00 です。 |
-| `end_date` | その行に含まれるデータの終了日。 `end_date` は常に同じ日の 23 時 59 分を 1 行以内に収めます。 |
+| `start_date` | その行に含まれるデータの開始日。 `start_date` は常に 1 行内の同じ日の 00:00 です。 |
+| `end_date` | その行に含まれるデータの終了日。 `end_date` は常に 1 行以内の同じ日の 23:59 です。 |
 | `page_views` | 選択した指標：特定された期間のページビューの合計数。 |
 | `page` | 選択したディメンション：追跡されたビューを含む個々のページ名。 |
 
-`Data Warehouse` ページの *同期* または *同期解除* オプションを使用して、選択した指標およびディメンションのうち、[!DNL Commerce Intelligence] テーブルで使用できるデータを持つものを制御します。 現在同期されていない列はグレーで表示されます。 列の同期を停止した場合は、後でもう一度同期を開始できます。
+[!DNL Commerce Intelligence] ページの *同期* または *同期解除* オプションを使用して、選択した指標およびディメンションのうち、`Data Warehouse` テーブルで使用できるデータを持つものを制御します。 現在同期されていない列はグレーで表示されます。 列の同期を停止した場合は、後でもう一度同期を開始できます。
 
 ## 現在の制限事項
 
-この節では、[!DNL Commerce Intelligence] の [!DNL Adobe Analytics] 統合の制限について概説します。
+この節では、[!DNL Adobe Analytics] の [!DNL Commerce Intelligence] 統合の制限について概説します。
 
 | 制限事項 | 説明 |
 | --- | --- |
 | `Historical data period` | 他のサードパーティ統合と同様に、[!DNL Adobe Analytics] 統合では、限られた量の履歴データを取り込み、その後もデータを最新の状態に保ちます。 履歴期間は 2 週間に設定されています。 |
-| `Empty component combinations` | 指標とディメンションの一部の組み合わせには、データが含まれていません。 このような組み合わせをレプリケーションに選択 [!DNL Commerce Intelligence] ると、レプリケートされたテーブルから列が除外されます。 このような組み合わせを選ばないようにするには、まず [[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja) でレポートを作成して、目的のデータが得られることを確認します。 |
+| `Empty component combinations` | 指標とディメンションの一部の組み合わせには、データが含まれていません。 このような組み合わせをレプリケーションに選択 [!DNL Commerce Intelligence] ると、レプリケートされたテーブルから列が除外されます。 このような組み合わせを選ばないようにするには、まず [[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) でレポートを作成して、目的のデータが得られることを確認します。 |
 | `Re-authorization cadence` | [!DNL Adobe Analytics] 統合の再認証は、2 週間ごとに必要です。 再認証するには、統合の編集ページに移動し、「**[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**」をクリックします。 |
 | `One dimension per row` | [!DNL Adobe Analytics] は、一度に 1 つのディメンションの指標データを提供します。 設定時に複数の寸法を選択した場合、[!DNL Commerce Intelligence] テーブルの各行には、1 つの寸法値と他の寸法の NULL が含まれます。 |

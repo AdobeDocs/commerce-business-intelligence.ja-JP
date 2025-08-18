@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 * [便利な参照マップ](#map)
 * [高度な計算列](#advanced)
 
-[Data Warehouseマネージャー ](../data-warehouse-mgr/tour-dwm.md) 内に、分析用にデータを拡張および最適化する列を作成できます。 [ この機能 ](../data-warehouse-mgr/creating-calculated-columns.md) には、Data Warehouseマネージャーで任意のテーブルを選択し、「**[!UICONTROL Create New Column]**」をクリックしてアクセスできます。
+[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) 内には、分析用にデータを拡張および最適化する列を作成できます。 [ この機能 ](../data-warehouse-mgr/creating-calculated-columns.md) にアクセスするには、Data Warehouse Manager で任意のテーブルを選択し、「**[!UICONTROL Create New Column]**」をクリックします。
 
-ここでは、Data Warehouseマネージャを使用して作成できる列のタイプについて説明します。 また、列の説明、その列の視覚的なウォークスルー、列の作成に必要なすべての入力の [ 参照マップ ](#map) についても説明します。 計算列を作成する方法は 3 つあります。
+ここでは、Data Warehouse Manager で作成できる列のタイプについて説明します。 また、列の説明、その列の視覚的なウォークスルー、列の作成に必要なすべての入力の [ 参照マップ ](#map) についても説明します。 計算列を作成する方法は 3 つあります。
 
 1. [同じテーブルの計算列](#sametable)
 1. [1 対多の計算列](#onetomany)
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 年齢の計算列は、現在の時刻と入力時刻の間の秒数を返します。
 
-次の例では、`customers` テーブルに `Seconds since customer's most recent order` を作成します。 これを使用して、`X days` 内で購入を行っていない顧客（チャーンと呼ばれることもあります）のユーザーリストを作成できます。
+次の例では、`Seconds since customer's most recent order` テーブルに `customers` を作成します。 これを使用して、`X days` 内で購入を行っていない顧客（チャーンと呼ばれることもあります）のユーザーリストを作成できます。
 
 ![](../../assets/age.gif)
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 通貨換算計算列は、列のネイティブ通貨を目的の新しい通貨に変換します。
 
-以下の例では、`sales\_flat\_order` テーブルで `base\_grand\_total` をネイティブ通貨から AED に変換して `base\_grand\_total In AED` を作成しています。 この列は、現地通貨でレポートを作成する複数通貨のストアに適しています。
+以下の例では、`base\_grand\_total In AED` テーブルで `base\_grand\_total` をネイティブ通貨から AED に変換して `sales\_flat\_order` を作成しています。 この列は、現地通貨でレポートを作成する複数通貨のストアに適しています。
 
 Commerce クライアントの場合、通常、「`base\_currency\_code`」フィールドには現地通貨が格納されます。 `Spot Time` フィールドは、指標で使用される日付と一致する必要があります。
 
@@ -69,9 +69,9 @@ Commerce クライアントの場合、通常、「`base\_currency\_code`」フ�
 
 この種類の集計列は、1 つのテーブルに対する多数のテーブルの値の数を返します *1 つのテーブルに対して* 行されます）。
 
-次の例では、（`orders.status` のフィルターを使用して） ディメンション `Customer's lifetime number of canceled orders` を `customers` テーブルに作成します。
+次の例では、（`Customer's lifetime number of canceled orders` のフィルターを使用して） ディメンション `customers` を `orders.status` テーブルに作成します。
 
-![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### 合計 {#sum}
 
@@ -101,7 +101,7 @@ Commerce クライアントの場合、通常、「`base\_currency\_code`」フ�
 
 ビジネスに関する質問を分析し、回答しようとすると、必要な正確な列を作成できない状況が発生する場合があります。
 
-迅速な変換を行うために、Adobeでは、[ 高度な計算列の種類 ](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) ガイドを参照して、Adobeサポートチームが作成できる列の種類を確認することをお勧めします。 このトピックでは、列を作成するために必要な情報も扱います。これをリクエストに含めます。
+迅速なターンアラウンドを確保するために、Adobeでは [ 高度な計算列の種類 ](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) ガイドを参照して、Adobe サポートチームが作成できる列の種類を確認することをお勧めします。 このトピックでは、列を作成するために必要な情報も扱います。これをリクエストに含めます。
 
 ## 関連ドキュメント
 

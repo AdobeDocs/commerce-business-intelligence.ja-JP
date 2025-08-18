@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # ダッシュボードを他のユーザーと共有
 
-ダッシュボードの共有は、チームのメンバーが常に同じ状況に置かれ、共同作業によるディスカッションを促進するのに最適な方法です。 中央のダッシュボードを作成して共有することで、コントロールを維持しながらチームに必要な情報を提供できます。 [[!DNL Adobe]  推奨 ](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} では、誤って変更することを最小限に抑えるために、一部のユーザーに `Edit` 権限を付与します。
+ダッシュボードの共有は、チームのメンバーが常に同じ状況に置かれ、共同作業によるディスカッションを促進するのに最適な方法です。 中央のダッシュボードを作成して共有することで、コントロールを維持しながらチームに必要な情報を提供できます。 [[!DNL Adobe]  では、誤って変更することを最小限に抑えるために ](../../best-practices/share-dashboard-best-practice.md){: target="_blank"} 一部のに `Edit` の権限を付与することをお勧めします。
 
 >[!NOTE]
 >

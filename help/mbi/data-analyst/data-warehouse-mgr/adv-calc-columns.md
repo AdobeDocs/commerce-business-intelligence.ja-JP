@@ -1,22 +1,22 @@
 ---
 title: 高度な計算列のタイプ
-description: ほとんどのユースケースで基本的な内容を説明しますが、Data Warehouseマネージャーで作成できるよりも少し複雑な計算列が必要になる場合があります。
+description: ほとんどのユースケースでの列の基本を学びますが、Data Warehouse Manager で作成できるよりも少し複雑な計算列が必要になる場合があります。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 2%
 
 ---
 
 # 高度な計算列のタイプ
 
-作成する分析の多くには、`group by` 定または `filter by` 定する **新しい列** の使用が含まれる場合があります。 [ 計算列の作成 ](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルでは、ほとんどのユースケースの基本を説明しますが、Data Warehouseマネージャーで作成できるよりも少し複雑な計算列が必要になる場合があります。
+作成する分析の多くには、**定または** 定する `group by` 新しい列 `filter by` の使用が含まれる場合があります。 [ 計算列の作成 ](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルでは、ほとんどのユースケースの基本を説明しますが、Data Warehouse Manager で作成できるよりも少し複雑な計算列が必要になる場合があります。
 {: #top}
 
-これらのタイプの列は、Data WarehouseアナリストのAdobeチームが作成できます。 新しい計算列を定義するには、次の情報を入力します。
+これらのタイプの列は、Data Warehouse アナリストのAdobe チームが作成できます。 新しい計算列を定義するには、次の情報を入力します。
 
 1. この列の **`definition`** （入力、式、書式設定を含む）
 1. 列を作成する **`table`**
@@ -159,9 +159,9 @@ ht-degree: 2%
 
 ## ここに記載されていない操作を実行しようとしています。 {#else}
 
-心配しないでください。 ここに記載されていないからといって、不可能という意味ではありません。 Data WarehouseアナリストのAdobeチームが支援を行います。
+心配しないでください。 ここに記載されていないからといって、不可能という意味ではありません。 Data Warehouse アナリストのAdobe チームがお手伝いします。
 
-新しい計算列を定義するには、作成する内容に正確な詳細を指定して [ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) します。
+新しい計算列を定義するには、作成する内容に正確な詳細を指定して [ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) します。
 
 ## 関連ドキュメント
 

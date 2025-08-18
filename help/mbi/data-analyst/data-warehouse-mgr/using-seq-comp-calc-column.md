@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 順次比較の計算列
 
-このトピックでは、**[!DNL Manage Data > Data Warehouse]** ページで使用できる `Sequential Comparison` の計算列の目的と使用の概要を説明します。 以下に、その機能の説明を示し、その後に例と作成の仕組みを示します。
+このトピックでは、`Sequential Comparison` ページで使用できる **[!DNL Manage Data > Data Warehouse]** の計算列の目的と使用の概要を説明します。 以下に、その機能の説明を示し、その後に例と作成の仕組みを示します。
 
 **説明**
 
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 1. 右上隅の「**[!UICONTROL Create New Column]**」をクリックします。
 
-1. `Definition Type` として「`Same Table`」を選択します（比較する列が同じテーブルにない場合は、再配置する必要がある可能性があります）。
+1. `Same Table` として「`Definition Type`」を選択します（比較する列が同じテーブルにない場合は、再配置する必要がある可能性があります）。
 
-1. `Column Definition Equation` として `SEQUENTIAL_COMPARISON` を選択します。
+1. `SEQUENTIAL_COMPARISON` として `Column Definition Equation` を選択します。
 
 1. 入力を選択します（前述）。
    - `Event Owner`

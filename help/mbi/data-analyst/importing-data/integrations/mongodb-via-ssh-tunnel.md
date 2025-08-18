@@ -23,7 +23,7 @@ SSH トンネルを使用して [!DNL MongoDB] データベースを [!DNL Comme
 
 >[!NOTE]
 >
->この設定は技術的な性質上、Adobeでは、開発者に協力を求め、まだこの作業を行っていない場合は、支援を求めることをお勧めします。
+>この設定は技術的な性質上、Adobeでは、開発者に協力を求めることをお勧めします。これまでにこれをおこなわなかった場合は、
 
 ## [!DNL Commerce Intelligence] 公開鍵の取得 {#retrieve}
 
@@ -46,11 +46,11 @@ SSH トンネルを使用して [!DNL MongoDB] データベースを [!DNL Comme
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## [!DNL Commerce Intelligence] 用の `Linux` ユーザーの作成 {#linux}
+## `Linux` 用の [!DNL Commerce Intelligence] ユーザーの作成 {#linux}
 
 >[!IMPORTANT]
 >
->サーバーに関連付けられている `sshd_config` ファイルが既定のオプションに設定されていない場合は、特定のユーザーのみがサーバーにアクセスできます。これにより、[!DNL Commerce Intelligence] への接続に成功できなくなります。 このような場合、`rjmetric` ユーザーにサーバーへのアクセスを許可するには、`AllowUsers` のようなコマンドを実行する必要があります。
+>サーバーに関連付けられている `sshd_config` ファイルが既定のオプションに設定されていない場合は、特定のユーザーのみがサーバーにアクセスできます。これにより、[!DNL Commerce Intelligence] への接続に成功できなくなります。 このような場合、`AllowUsers` ユーザーにサーバーへのアクセスを許可するには、`rjmetric` のようなコマンドを実行する必要があります。
 
 リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [!DNL MongoDB] サーバーへの接続権限を保持している限り、このユーザーを好きなように制限することができます。
 
@@ -146,4 +146,4 @@ SSH トンネルを使用して [!DNL MongoDB] データベースを [!DNL Comme
 
 ### 関連
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

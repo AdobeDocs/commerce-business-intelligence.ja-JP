@@ -23,7 +23,7 @@ ht-degree: 0%
 
 まず、[!DNL Google Adwords] 資格情報を [!DNL Commerce Intelligence] に入力します。
 
-1. **データを管理/統合** の下の `Connections` ページに移動します。
+1. `Connections` データを管理/統合 **の下の** ページに移動します。
 1. 画面の右上にある「**統合を追加**」をクリックします。
 1. **[!DNL Google Adwords]** アイコンをクリックします。 これにより、[!DNL Google Adwords] 資格情報ページが開きます。
 1. [!DNL Google Analytics] 資格情報を入力します。 認証プロセスが完了すると、[!DNL Commerce Intelligence] にリダイレクトされます。
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 1 つの [!DNL Google Analytics] アカウントに接続された複数の web サイトがあり、独自の [!DNL Google Analytics] プロファイル ID で識別されている場合があります。 この場合、すべてのプロファイル ID を [!DNL Commerce Intelligence] に含めるオプションがあります。 プロファイル選択手順に含めるプロファイル ID を確認します。
 
-**特定の web サイトのGoogle Analyticsプロファイル ID を識別するには：**
+**特定の web サイトのGoogle Analytics プロファイル ID を識別するには：**
 
 1. [!DNL Google Analytics] にログインします
 1. 特定の web サイトの [!DNL Google Analytics] ダッシュボードに移動します
@@ -50,12 +50,12 @@ ht-degree: 0%
 ## [!DNL Google Adwords] の切断
 
 1. [!DNL Google] の [ アカウント設定 ](https://www.google.com/account/about/?hl=en) ページにアクセスします。
-1. [`Security`] セクションで、&lbrack; アプリケーションとサイト `Authorizing` 横にある [**[!UICONTROL edit]**] をクリックします。
+1. [`Security`] セクションで、[ アプリケーションとサイト **[!UICONTROL edit]** 横にある [`Authorizing`] をクリックします。
 1. 「**[!UICONTROL revoke access]**」をクリックします。
 
 ## 関連
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [ [!DNL Google ECommerce] を介した注文リファラルソースの追跡](../integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースを追跡](../../analysis/google-track-user-acq.md)
 * [最も価値のある獲得ソースとチャネルを見つける](../../analysis/most-value-source-channel.md)

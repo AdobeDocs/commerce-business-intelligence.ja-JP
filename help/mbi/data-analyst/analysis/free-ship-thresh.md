@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このトピックには、元のアーキテクチャと新しいアーキテクチャを使用しているクライアント向けの手順が含まれています。 メインのツールバーから `Manage Data` を選択した後で「`Data Warehouse Views`」セクションを使用できる場合は、新しいアーキテクチャを使用できます。
+>このトピックには、元のアーキテクチャと新しいアーキテクチャを使用しているクライアント向けの手順が含まれています。 メインのツールバーから `Data Warehouse Views` を選択した後で「`Manage Data`」セクションを使用できる場合は、新しいアーキテクチャを使用できます。
 
 このトピックでは、送料無料のしきい値のパフォーマンスを追跡するダッシュボードの設定方法を示します。 このダッシュボードは、以下に示すように、2 つの送料無料しきい値を A/B テストするための優れた方法です。 例えば、会社によっては、送料無料を 50 ドルと 100 ドルのどちらで提供すべきか分からない場合があります。 顧客の 2 つのランダムサブセットに対して A/B テストを実行し、[!DNL Commerce Intelligence] で分析を実行する必要があります。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 計算される列
 
-元のアーキテクチャを使用している場合（例えば、`Manage Data` メニューに「`Data Warehouse Views`」オプションがない場合）、サポートチームに連絡して、以下の列を作成します。 新しいアーキテクチャでは、`Manage Data > Data Warehouse` のページからこれらの列を作成できます。 詳細な手順は以下のとおりです。
+元のアーキテクチャを使用している場合（例えば、`Data Warehouse Views` メニューに「`Manage Data`」オプションがない場合）、サポートチームに連絡して、以下の列を作成します。 新しいアーキテクチャでは、`Manage Data > Data Warehouse` のページからこれらの列を作成できます。 詳細な手順は以下のとおりです。
 
 * **`sales_flat_order`** テーブル
    * この計算では、通常の買い物かごサイズに応じた増分でバケットが作成されます。 値は、5、10、50、100 などの増分から選択できます
@@ -66,9 +66,9 @@ else &#39;over 450&#39;
 
 * 指標 `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **出荷ルール A を使用した小計バケット別の受注数**
@@ -76,62 +76,57 @@ else &#39;over 450&#39;
 
   >[!NOTE]
   >
-  >`Show top/bottom` ージに `Order subtotal` （バケット）の上 `X` を表示して、尾 `sorted by` 端を切り取ることができます。
+  >`X` ージに `sorted by` （バケット）の上 `Order subtotal` を表示して、尾 `Show top/bottom` 端を切り取ることができます。
 
 * 指標 `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Column`
 
 * **出荷ルール A を使用した小計による受注の割合**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `%`
 
 * 指標 `A`: `Number of orders by subtotal (hide)`
 * 指標 `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **小計が出荷ルール A を超えている受注の割合**
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
-
+   * 
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `%`
 
 * 指標 `A`: `Number of orders by subtotal`
 * 指標 `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 

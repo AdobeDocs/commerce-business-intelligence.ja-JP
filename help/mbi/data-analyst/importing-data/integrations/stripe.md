@@ -21,17 +21,17 @@ ht-degree: 0%
 
 [!DNL Stripe] を使用すると、ビジネスの支払いおよび請求書データを管理および追跡できます。 [!DNL Stripe] アカウントを [!DNL Commerce Intelligence] に接続する手順は、次のとおりです。
 
-1. [ [!DNL Commerce Intelligence] [!DNL Stripe]  データソースとして追加](#stepone)
+1. [ [!DNL Stripe]  [!DNL Commerce Intelligence] データソースとして追加](#stepone)
 1. [データへ  [!DNL Commerce Intelligence]  アクセス  [!DNL Stripe]  許可](#steptwo)
 
 ## [!DNL Stripe] をデータソースとして追加する {#stepone}
 
-1. **[!UICONTROL Admin** > **Connections]** の下の `Connections` ページに移動します。
-1. `Data Sources` テーブルの上の画面の右側にある [**[!UICONTROL Add a Data Source]**] をクリックします。
+1. `Connections` の下の **[!UICONTROL Admin** > **Connections]** ページに移動します。
+1. **[!UICONTROL Add a Data Source]** テーブルの上の画面の右側にある [`Data Sources`] をクリックします。
 1. [!DNL Stripe] アイコンをクリックします。 `[!DNL Stripe] authorization` ページが表示されます。
 1. 「**[!UICONTROL Connect with Stripe]**」をクリックします。
 
-## [!DNL Stripe] データへの [!DNL Commerce Intelligence] アクセスを許可する {#steptwo}
+## [!DNL Commerce Intelligence] データへの [!DNL Stripe] アクセスを許可する {#steptwo}
 
 「**[!UICONTROL Connect with Stripe]**」をクリックすると、アクセス要求ページが表示されます。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## 関連：
 
-[[!DNL Stripe] API ドキュメント ](https://stripe.com/docs/api) は、[!DNL Commerce Intelligence] との統合方法の詳細を学習する際に役立 [!DNL Stripe] リソースです。
+[[!DNL Stripe] API ドキュメント ](https://stripe.com/docs/api) は、[!DNL Stripe] との統合方法の詳細を学習する際に役立 [!DNL Commerce Intelligence] リソースです。
 
 * [Expected [!DNL Stripe] data](../integrations/stripe-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

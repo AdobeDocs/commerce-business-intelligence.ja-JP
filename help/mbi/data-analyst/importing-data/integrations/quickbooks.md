@@ -23,12 +23,12 @@ ht-degree: 0%
 
 ## [!DNL QuickBooks] を [!DNL Commerce Intelligence] のデータソースとして追加する
 
-1. **[!UICONTROL Manage Data** > **Data Sources]** の下の `Integrations` ページに移動します。
-1. `Data Sources` テーブルの上の画面の右側にある [**[!UICONTROL Add Integration]**] をクリックします。
+1. `Integrations` の下の **[!UICONTROL Manage Data** > **Data Sources]** ページに移動します。
+1. **[!UICONTROL Add Integration]** テーブルの上の画面の右側にある [`Data Sources`] をクリックします。
 1. [!DNL QuickBooks] アイコンをクリックします。
 1. 「**[!UICONTROL Connect to Quickbooks]**」をクリックします。
 
-## [!DNL QuickBooks] データへの [!DNL Commerce Intelligence] アクセス権の付与
+## [!DNL Commerce Intelligence] データへの [!DNL QuickBooks] アクセス権の付与
 
 「**[!UICONTROL Connect to Quickbooks]**」をクリックした後、[!DNL Intuit] アカウントにログインして接続を認証します。
 
@@ -40,4 +40,4 @@ ht-degree: 0%
 ## 関連
 
 * [Expected [!DNL QuickBooks] data](../integrations/quickbooks-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

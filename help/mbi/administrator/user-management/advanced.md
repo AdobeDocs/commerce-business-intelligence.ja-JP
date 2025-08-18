@@ -3,13 +3,13 @@ title: 高度なユーザー管理
 description: データの可視性の向上、レポートの合理化、ユーザーグループ別のアクセスのカスタマイズ、ダッシュボードの共有の単純化、組織のセキュリティとスケーラビリティの確保を実現します。
 role: Admin, User
 feature: User Management
-source-git-commit: 42871886d12b97ee52aa270da6f0186a9a4eaddc
+exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
+source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
 
 ---
-
 
 # 高度なユーザー管理
 
@@ -392,7 +392,7 @@ ht-degree: 0%
 
 ユーザーグループを設定するには：
 
-1. [!UICONTROL **ユーザーを管理**]/[!UICONTROL **User Groups]**&#x200B;に移動して、既存のユーザーグループを表示します。
+1. [!UICONTROL **ユーザーを管理**]/[!UICONTROL **User Groups]**に移動して、既存のユーザーグループを表示します。
 
    ![ ユーザーグループの設定 ](../../assets/configure-user-groups.png)
 

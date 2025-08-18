@@ -1,5 +1,5 @@
 ---
-title: Google Analyticsが倉庫に保管されているを接続
+title: Google Analyticsをウェアハウジングに接続
 description: 訪問者によるサイトの使用方法、魅力的なコンテンツ、訪問者が離脱する場所などをトラッキングする方法を説明します。
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Data Architect, Data Engineer, User
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] は、インターネット上で最も広く使用されている web 分析サービスです。 Web サイトに [!DNL Google Analytics] を実装すると、訪問者によるサイトの使用方法、魅力的なコンテンツ、訪問者が離脱する場所などを追跡できます。 [!DNL Google Analytics Warehoused] は、既存の [!DNL Google Analytics] 統合とは別の統合です。 これにより、既存の [!DNL Google Analytics] 統合のライブフィードとは異なる、Data Warehouseに [!DNL Google Analytics] しいデータが含まれるため、分析の精度が向上します。 これらの指標を [!DNL Commerce Intelligence] で分析すると、他のデータと共に、サイトの全体的な正常性と操作性が向上します。
+[!DNL Google Analytics] は、インターネット上で最も広く使用されている web 分析サービスです。 Web サイトに [!DNL Google Analytics] を実装すると、訪問者によるサイトの使用方法、魅力的なコンテンツ、訪問者が離脱する場所などを追跡できます。 [!DNL Google Analytics Warehoused] は、既存の [!DNL Google Analytics] 統合とは別の統合です。 これにより、既存の [!DNL Google Analytics] 統合のライブフィードとは異なり、Data Warehouseに [!DNL Google Analytics] のデータが含まれるので、分析の精度が向上します。 これらの指標を [!DNL Commerce Intelligence] で分析すると、他のデータと共に、サイトの全体的な正常性と操作性が向上します。
 
 ## GA ウェアハウスとライブ統合の違い
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 操作の観点から実行できる操作の例については、[!DNL Google Analytics] の広告キャンペーンを参照してください。 第 4 四半期に、異なる名前の複数の広告キャンペーンがあったとします。 キャンペーンは、特定のマーケティング施策の成果でした。 ウェアハウスに格納されたデータを使用すると、問題のキャンペーン名を見つけて、第 4 四半期のイニシアチブ名 `Operation Dumbo` を返す列を作成できます。
 
-組み合わせ側面 [!DNL Google Analytics] 使用すると、分析を行うためにデータを他のデータに結合できます。 例えば、[!DNL Google Analytics] のデータ `Total Time On Site By Ad Campaign` 取り、[!DNL Facebook Ads] の `Total Spent Per Campaign` データと結合して、エンゲージメントにかかる費用の全体像を把握できます。
+組み合わせ側面 [!DNL Google Analytics] 使用すると、分析を行うためにデータを他のデータに結合できます。 例えば、`Total Time On Site By Ad Campaign` のデータ [!DNL Google Analytics] 取り、`Total Spent Per Campaign` の [!DNL Facebook Ads] データと結合して、エンゲージメントにかかる費用の全体像を把握できます。
 
 一方、[!DNL Google Analytics Live] の統合では、すべての [!DNL Google Analytics] グラフはData Warehouseに保存されない小さなサイロのようになります。
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] は `Premium` 統合です。 この統合をサブスクリプションに追加することに関心がある場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+>[!DNL Google Analytics Warehoused] は `Premium` 統合です。 この統合をサブスクリプションに追加することに関心がある場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
-1. **[!UICONTROL Admin** > **Integrations]** の下の `Connections` ページに移動します。
+1. `Connections` の下の **[!UICONTROL Admin** > **Integrations]** ページに移動します。
 1. 右側にある「**[!UICONTROL Add an Integration]**」をクリックします。
 1. [!DNL Google Analytics Warehoused] アイコンをクリックします。 これにより、[!DNL Google Analytics] 資格情報ページが開きます。
 1. [!DNL Google Analytics] 資格情報を入力します。 認証プロセスが完了すると、[!DNL Commerce Intelligence] にリダイレクトされます。
@@ -59,11 +59,11 @@ ht-degree: 0%
 
 1. [!DNL Google Analytics] の [ アカウント設定 ](https://myaccount.google.com/intro) ページにアクセスします。
 1. 「`Security`」セクションで、「アプリケーションとサイト」の横にある「**[!UICONTROL edit]**」 `Authorizing` クリックします。
-1. 「[!DNL Commerce Intelligence]」の横にある「**[!UICONTROL revoke access]**」をクリックします。
+1. 「**[!UICONTROL revoke access]**」の横にある「[!DNL Commerce Intelligence]」をクリックします。
 
 ## 関連ドキュメント
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [接続  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Web サイトのアクティビティと顧客コンバージョン率の分析](../../analysis/web-act-cust-conversion.md)
 * [cookie を使用したユーザー取得デ  [!DNL Google Analytics]  タの追跡](../../analysis/google-track-user-acq.md)

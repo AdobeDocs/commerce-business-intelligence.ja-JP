@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Visual Report Builder] での [!DNL Time] オプションの使用
+# [!DNL Time] での [!DNL Visual Report Builder] オプションの使用
 
 [!DNL Visual Report Builder] の機能の 1 つは、グローバルな `Time Range` と `Interval` 設定です。 これらの設定を使用すると、特定の期間に関するレポートのデータを分析できます。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 一部の指標では、データが関連付けられたタイムスタンプで収集または保存されないので、時間の経過と共にトレンドを分析できないだけです。 例えば、多くの場合、在庫テーブルには各 SKU に対して 1 行のみが含まれます。 その場合は、タイムスタンプを指定せずに [ 指標を作成 ](../data-user/reports/ess-manage-data-metrics.md) してください。
 
-レポートでこのような指標を使用すると、この指標をレポートに追加すると、`None` と `Time Range` の独立した `Time Interval` が自動的に `Global` 定されます。
+レポートでこのような指標を使用すると、この指標をレポートに追加すると、`Time Interval` と `None` の独立した `Time Range` が自動的に `Global` 定されます。
 
 ![](../assets/Metrics_without_timestamps.gif)
 
@@ -42,13 +42,13 @@ ht-degree: 0%
 1. 「グローバル **[!UICONTROL Time Range]**」オプションをクリックし、「**[!UICONTROL Moving Time Range]**」をクリックします。 これを `Last Year` に設定します。
 1. 「グローバル **[!UICONTROL Time Interval]**」オプションをクリックし、「`Monthly`」に設定します。
 1. Report Builderは、2 番目の指標の 2 番目の Y 軸を自動的に追加します。 「`Multiple Y-Axes`」ボックスの選択を解除します。
-1. 次に、最初の指標に独立した `Time Interval` を適用します。 `first Revenue metric`**[!UICONTROL Time Options]** 右側にある時計アイコンをクリックします。
+1. 次に、最初の指標に独立した `Time Interval` を適用します。 **[!UICONTROL Time Options]**`first Revenue metric` 右側にある時計アイコンをクリックします。
 1. レポートの上に表示される展開ウィンドウで「**[!UICONTROL Time Options]**」をクリックします。
 1. ドロップダウンで、次の設定を行います。
 
    * `Time Interval`：これを `None` に設定します。
 
-   * `Time Range`：最初に **[!UICONTROL Custom]** をクリックし、次に **[!UICONTROL Moving Range]** をクリックして、最後に `Last Year` オプションを選択することで、これを `Last Year` に設定します。
+   * `Time Range`：最初に `Last Year` をクリックし、次に **[!UICONTROL Custom]** をクリックして、最後に **[!UICONTROL Moving Range]** オプションを選択することで、これを `Last Year` に設定します。
 
    * 「**[!UICONTROL Apply]**」をクリックして、間隔と範囲の設定を保存します。 これにより、前年の合計売上高を計算する指標が作成されます。 次に、この指標を式の分母として使用します。
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 異なる時間範囲での同じ指標の比較 {#difftimerange}
 
-この例では、「`Day number of the month`」というカスタムディメンションを使用します。 このレポートを作成したいが、Data Warehouseにこのディメンションがまだない場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+この例では、「`Day number of the month`」というカスタムディメンションを使用します。 このレポートを作成したいが、Data Warehouseにこのディメンションがまだない場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 このカテゴリの 2 つの最も一般的な例は、（1）成長指標（前年度の売上高または前月比の売上高）の比較、（2）最近の在庫または品目販売のトレンドをより深く理解することです。
 
@@ -77,13 +77,13 @@ ht-degree: 0%
 1. 最初の指標の名前を `Items sold last 7 days` に、2 番目の指標の名前を `Items sold last 28 days` に変更します。
 1. 「**[!UICONTROL Time Range]**」をクリックし、「**[!UICONTROL Moving Time Range]**」をクリックします。 これを `Last Month` に設定します。
 1. 「**[!UICONTROL Time Interval]**」をクリックし、`None` に設定します。
-1. 2 つ目の `Revenue` 指標の横にある **[!UICONTROL Time Options]** （時計アイコン）をクリックします。
+1. 2 つ目の **[!UICONTROL Time Options]** 指標の横にある `Revenue` （時計アイコン）をクリックします。
 1. レポートの上に表示される展開ウィンドウで「**[!UICONTROL Time Options]**」をクリックします。
 1. ドロップダウンで、次の設定を行います。
 
    * `Time Interval`：これを `None` に設定します。
 
-   * `Time Range`：最初に **[!UICONTROL Custom]** をクリックし、次に **[!UICONTROL Moving Range]** をクリックして、これを `From 14 Months Ago To 13 Months Ago` に設定します。 メニュー上部のフィールドとドロップダウンを使用して、範囲を設定します。 この設定を使用すると、前月の売上高を前年に表示できます。
+   * `Time Range`：最初に `From 14 Months Ago To 13 Months Ago` をクリックし、次に **[!UICONTROL Custom]** をクリックして、これを **[!UICONTROL Moving Range]** に設定します。 メニュー上部のフィールドとドロップダウンを使用して、範囲を設定します。 この設定を使用すると、前月の売上高を前年に表示できます。
 
    指標がレポートから消えても心配しないでください。独立した時間オプションを設定すると、レポートから指標が自動的に非表示になります。 再表示するには、指標の横にある「**[!UICONTROL Show]**」をクリックします。
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
    * 「**[!UICONTROL Apply]**」をクリックして、間隔と範囲の設定を保存します。
 
-   * 次に、**[!UICONTROL Group By]** をクリックしてディメンションを選択することで、カスタム `Day number of the month` ディメンションを追加します。 これにより、注文の月の日数が返されます。例えば、3 月 2 日に注文した場合は `2` が返されます。
+   * 次に、`Day number of the month` をクリックしてディメンションを選択することで、カスタム **[!UICONTROL Group By]** ディメンションを追加します。 これにより、注文の月の日数が返されます。例えば、3 月 2 日に注文した場合は `2` が返されます。
 
    * 「`Group By`」ドロップダウンで「`Show All`」を選択し、「**[!UICONTROL Apply]**」をクリックします。 これにより、レポートの X 軸の値が作成されます。
 
@@ -110,12 +110,12 @@ ht-degree: 0%
    1. 2 番目の指標の名前を `Items sold last 28 days` に変更します。
 1. `Items sold last 7 days` 指標で、「グローバル **[!UICONTROL Time Range]**」オプションをクリックし、**[!UICONTROL Moving Time Range]** をクリックします。 この例では、`Last 7 Days` に設定します。
 1. 「**[!UICONTROL Time Interval]**」をクリックし、`None` に設定します。
-1. 次に、`Items sold last 28 days` の指標の `Time Options` を定義します。 `second Items sold`**[!UICONTROL Time Options]** 指標の右側にある時計アイコンをクリックします。
+1. 次に、`Time Options` の指標の `Items sold last 28 days` を定義します。 **[!UICONTROL Time Options]**`second Items sold` 指標の右側にある時計アイコンをクリックします。
 1. レポートの上に表示される展開ウィンドウで「**[!UICONTROL Time Options]**」をクリックします。
 1. ドロップダウンで、次の設定を行います。
 
    * `Time Interval`：これを `None` に設定します。
-   * `Time Range`：最初に「**[!UICONTROL Custom]**」、次に「**[!UICONTROL Moving Range]**」をクリックして、これを「`From 29 days to 1 day ago`」に設定します。 メニュー上部のフィールドとドロップダウンを使用して、範囲を設定します。
+   * `Time Range`：最初に「`From 29 days to 1 day ago`」、次に「**[!UICONTROL Custom]**」をクリックして、これを「**[!UICONTROL Moving Range]**」に設定します。 メニュー上部のフィールドとドロップダウンを使用して、範囲を設定します。
    * 「**[!UICONTROL Apply]**」をクリックして、間隔と範囲の設定を保存します。
    * `Items sold last 28 days` 指標を複製し、新しい指標の `Time Options` を開きます。 オプションを次のように設定します。
 
@@ -127,14 +127,14 @@ ht-degree: 0%
 
 数式を作成するには、[**[!UICONTROL Add Formula]**] をクリックします。 以下の数式を入力し、終了したら「**[!UICONTROL Apply Changes]**」をクリックします。 次の 3 つの期間のそれぞれについて、これを繰り返します。
 
-* `last 7 days time period` の場合は、`Formula` フィールドに「`D / A`」と入力します。
-* `last 28 days time period` の場合は、`Formula` フィールドに「`D / (B/4)`」と入力します。
+* `last 7 days time period` の場合は、`D / A` フィールドに「`Formula`」と入力します。
+* `last 28 days time period` の場合は、`D / (B/4)` フィールドに「`Formula`」と入力します。
 
   >[!NOTE]
   >
   >選択した時間範囲をここで正規化することが重要です。 この例では 28 日を 4 週間に分割します。 数式に異なるロジックを適用する必要が生じる場合があります。
 
-* `last promo period` の場合は、`Formula` フィールドに「`D / C`」と入力します。
+* `last promo period` の場合は、`D / C` フィールドに「`Formula`」と入力します。
 
   ![](../assets/Different_Time_Ranges_2.png)
 

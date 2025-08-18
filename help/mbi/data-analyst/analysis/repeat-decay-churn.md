@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## どのような質問を検討すればよいですか？
 
-Adobeでは、リピート注文の可能性を業務に当てはめることの理解に役立てるため、独自のデータを調べる際に次の点を検討することをお勧めします。
+Adobeでは、自身のビジネスに当てはまる繰り返し注文の可能性を理解できるように、自身のデータを調査する際に次の質問を検討することをお勧めします。
 
 * 最初のリピート注文の確率は想定されていますか？ そうでない場合、なぜそれが高くまたは低くなければならないと思いますか？
 * 最後の注文から特定の月のリピート注文の確率が大幅に低下していますか？ その場合、これらの変更は期待されますか？
@@ -78,7 +78,7 @@ Adobeでは、リピート注文の可能性を業務に当てはめることの
 
 複数の製品を提供する場合、特定の製品を購入した顧客の行動が、時間の経過と共に他の顧客とどのように異なるかを疑問に思うかもしれません。 詳しく知りたい場合 このチュートリアルをチェックして、購入した特定の製品に基づいた、顧客コホートの生涯購入行動を調べます。
 
-このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されます。 詳しくは、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) ください。
+このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されます。 詳しくは、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ください。
 
 ### 関連
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 場合によっては、指標が操作の実行に使用するデータテーブルを変更することもできます。 例えば、新しいユーザーテーブルがある場合、ユーザー関連の指標を `Users\_Old` テーブルから移行して、代わりに `Users\_New` テーブルを使用するとします。
 
 1. **[!UICONTROL Data]**/**[!UICONTROL Metrics]** に移動します。
-1. `operational` テーブルを切り替える指標の横にある「**[!UICONTROL Edit]**」をクリックします。
+1. **[!UICONTROL Edit]** テーブルを切り替える指標の横にある「`operational`」をクリックします。
 1. エディターで、「**[!UICONTROL Change]**」をクリックします。
 
    ![](../../assets/change-metrics-1.png)
@@ -25,6 +25,6 @@ ht-degree: 0%
 
    ![](../../assets/change-metrics-2.png)
 
-1. 新しいテーブルに一致する列がない場合は、**データ テーブル内で作成する** か、[!DNL Commerce Intelligence] が作成した計算列またはディメンションである場合は [ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) ことができます。 また、**指標からディメンションを削除する** こともできます。 不要になったディメンションを削除するには、指標のエディターに戻り、削除するディメンションを `Dimensions` で選択します。
+1. 新しいテーブルに一致する列がない場合は、**データ テーブル内で作成する** か、[ が作成した計算列またはディメンションである場合は ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) サポートにお問い合わせください [!DNL Commerce Intelligence] ことができます。 また、**指標からディメンションを削除する** こともできます。 不要になったディメンションを削除するには、指標のエディターに戻り、削除するディメンションを `Dimensions` で選択します。
 
    ![](../../assets/change-metrics-3.png)

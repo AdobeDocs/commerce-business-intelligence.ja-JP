@@ -56,7 +56,7 @@ ht-degree: 0%
 
 上記のネイティブデータ列に加えて、この分析を有効にするには、次のような一連の計算データフィールドも必要です。
 
-* 特定のユーザーの `MIN(order.created_at` を返す `Customer's first purchase date`）
+* 特定のユーザーの `Customer's first purchase date` を返す `MIN(order.created_at`）
 
 これは、次の項目の作成に使用されます。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 これらのフィールドは両方とも、ユーザーレベル（例えば `user` テーブル）で作成する必要があります。 これにより、平均分析をユーザーで正規化できます（つまり、この平均計算の分母はユーザーの数です）。
 
-ここで [!DNL Commerce Intelligence] の手順を実行します。 [!DNL Commerce Intelligence] Data Warehouseを使用して、上記の列を作成できます。 Adobeアナリストチームに連絡して、作成する新しい列の具体的な定義を提供してください。 [ 列エディター ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) を使用することもできます。
+ここで [!DNL Commerce Intelligence] の手順を実行します。 [!DNL Commerce Intelligence] Data Warehouseを使用して、上記の列を作成できます。 Adobe アナリストチームに連絡して、作成する新しい列の具体的な定義を提供してください。 [ 列エディター ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) を使用することもできます。
 
 ベストプラクティスとしては、実稼動サーバーに不要な負荷をかけるので、これらの計算データフィールドをデータベースに直接作成しないようにすることをお勧めします。
 
@@ -77,11 +77,11 @@ ht-degree: 0%
 
 _[`Time between a customer's registration date and first purchase date`]/[ 登録・購入したお客様の総数]_
 
-また、この計算が、顧客の登録日に応じて、経時的にプロットされるかトレンドを確認する必要があります。 また、[!DNL Commerce Intelligence] で [ この指標を作成 ](../../data-user/reports/ess-manage-data-metrics.md) する方法を次に示します。
+また、この計算が、顧客の登録日に応じて、経時的にプロットされるかトレンドを確認する必要があります。 また、[ で ](../../data-user/reports/ess-manage-data-metrics.md) この指標を作成 [!DNL Commerce Intelligence] する方法を次に示します。
 
 1. **[!UICONTROL Data]** に移動し、「`Metrics`」タブを選択します。
 1. 「**[!UICONTROL Add New Metric]**」をクリックし、`user` のテーブル（上記でディメンションを作成した場所）を選択します。
-1. ドロップダウンから、`user` テーブルの `Time between a customer's registration date and first purchase date` 列の `Average` を `Customer's registration date` 列で並べ替えて選択します。
+1. ドロップダウンから、`Average` テーブルの `Time between a customer's registration date and first purchase date` 列の `user` を `Customer's registration date` 列で並べ替えて選択します。
 1. 関連するフィルターまたはフィルターセットを追加します。
 
 これで、この指標の準備が整いました。
@@ -119,7 +119,7 @@ Adobeでは、チームの他のメンバーと共有するレポートを作成
 
 #### レポートを画像として書き出す
 
-プレゼンテーションまたはドキュメントにレポートを含める必要がありますか。 すべてのレポートの右上隅にある `Report Options` メニューを使用して、レポートを画像（PNG、PDF、SVG形式）として保存できます。
+プレゼンテーションまたはドキュメントにレポートを含める必要がありますか。 すべてのレポートの右上隅にある `Report Options` メニューを使用して、レポートを画像（PNG、PDFまたはSVG形式）として保存できます。
 
 1. レポートの右上隅にある歯車アイコンをクリックします。
 1. ドロップダウンから「`Enlarge`」を選択します。

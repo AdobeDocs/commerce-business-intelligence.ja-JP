@@ -35,27 +35,27 @@ ht-degree: 2%
 上記の役割ベースのワークフローに加えて、このガイドには次の内容も含まれます。
 
 - ベストプラクティス：[!UICONTROL Commerce Intelligence] は堅牢で柔軟なプラットフォームであり、同様のタスクを実行する方法は多数あります。 このセクションでは、データのキャプチャ、分析、表示に [!DNL Commerce Intelligence] に推奨される方法をまとめます。
-- Tutorials：これらのセルフガイド型チュートリアルに従って、[!DNL Commerce Intelligence] の機能を学習します。
+- チュートリアル：これらのセルフガイドのチュートリアルに従って、[!DNL Commerce Intelligence] の機能を学習します。
 
 ## お問い合わせ
 
-ご不明な点やプロフェッショナルサービスを利用したい場合、またはアカウントで問題が発生した場合は、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) にお問い合わせください。
+ご不明な点やプロフェッショナルサービスを利用したい場合、またはアカウントで問題が発生した場合は、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) にお問い合わせください。
 
 ### サービスポリシー
 
-[ カスタマーサポートチームが提供するサービスのリスト ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) を参照してください。
+[ カスタマーサポートチームが提供するサービスのリスト ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を参照してください。
 
 ### サポートチケットの送信
 
-高度な計算列の作成に関するサポートが必要な場合は、 欠陥または接続の問題が発生しましたか？ サポートチームに連絡する必要がある場合、Adobeは、[ サポートチケットガイドライン ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) を使用するように求めます。 このガイドラインでは、Adobeがこの問題を解決するために必要な情報の概要を説明します。
+高度な計算列の作成に関するサポートが必要な場合は、 欠陥または接続の問題が発生しましたか？ サポートチームに連絡する必要がある場合は、Adobeから [ サポートチケットガイドライン ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を使用するよう求められます。 これらのガイドラインでは、Adobeでこの問題を解決するために必要な情報の概要を説明します。
 
 ## 使用可能なドキュメント
 
 | ドキュメントリソース | 説明 |
 |----------------------- | ----------- |
-| [Adobe Commerce 2.4 マーチャントドキュメント ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ja) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャント向けドキュメント |
-| [Adobe Commerce向けサービスのドキュメント ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=ja) | マーチャントがビジネスの主要なコンポーネントをストアと統合するのに役立つ、サービスのコレクションをサポートするドキュメント。 |
-| [Adobe Commerce 2.4 運用ガイド ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ja) | Adobe CommerceおよびMagento Open Sourceプラットフォームにデプロイされたプロジェクトを開発、デプロイ、管理するためのコンセプト、プロセス、ツールおよびベストプラクティスに関するシステムドキュメント。 |
+| [Adobe Commerce 2.4 マーチャントドキュメント ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャントフォーカスのドキュメント |
+| [Adobe Commerce向けサービスのドキュメント ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | マーチャントがビジネスの主要なコンポーネントをストアと統合するのに役立つ、サービスのコレクションをサポートするドキュメント。 |
+| [Adobe Commerce 2.4 運用ガイド ](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Adobe CommerceおよびMagento Open Source プラットフォームにデプロイされたプロジェクトを開発、デプロイ、管理するためのコンセプト、プロセス、ツールおよびベストプラクティスに関するシステムドキュメント。 |
 | [Adobe Commerce 2.4 開発者向けドキュメント ](https://developer.adobe.com/commerce/) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用される、開発者向けドキュメント |
 
 {style="table-layout:auto"}

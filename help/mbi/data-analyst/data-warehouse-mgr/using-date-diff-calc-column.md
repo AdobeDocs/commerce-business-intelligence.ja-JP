@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 日付の差異の計算列
 
-このトピックでは、**[!DNL Manage Data > Data Warehouse]** ページで使用できる `Date Difference` の計算列の目的と使用の概要を説明します。 以下に、その機能の説明、例、およびそれを作成する仕組みを示します。
+このトピックでは、`Date Difference` ページで使用できる **[!DNL Manage Data > Data Warehouse]** の計算列の目的と使用の概要を説明します。 以下に、その機能の説明、例、およびそれを作成する仕組みを示します。
 
 **説明**
 

@@ -1,6 +1,6 @@
 ---
 title: SQL クエリからのビジュアライゼーションの作成
-description: SQL Report Builderで使用される用語を理解し、SQL ビジュアライゼーションを作成するための堅牢な基盤を提供します。
+description: SQL Report Builderで使用されている用語を理解し、SQL ビジュアライゼーションを作成するための堅牢な基盤を提供します。
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 このチュートリアルを開始する前に、`SQL Report Builder` で使用されている次の用語を参照してください。
 
-- `Series`：測定する列は、SQL Report Builderでは系列として参照されます。 一般的な例には、`revenue`、`items sold`、`marketing spend` があります。 ビジュアライゼーションを作成するには、少なくとも 1 つの列が `Series` として設定されている必要があります。
+- `Series`：測定する列は、SQL Report Builderでは系列と呼ばれます。 一般的な例には、`revenue`、`items sold`、`marketing spend` があります。 ビジュアライゼーションを作成するには、少なくとも 1 つの列が `Series` として設定されている必要があります。
 
-- `Category`：データのセグメント化に使用する列は `Category` と呼ばれます。これは、[`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) の `Group By` 機能と似ています。 例えば、顧客の生涯売上高を獲得ソースでセグメント化する場合、獲得ソースを含む列は `Category` として指定されます。 複数の列を `Category` として設定できます。
+- `Category`：データのセグメント化に使用する列は `Category` と呼ばれます。これは、`Group By` の [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) 機能と似ています。 例えば、顧客の生涯売上高を獲得ソースでセグメント化する場合、獲得ソースを含む列は `Category` として指定されます。 複数の列を `Category` として設定できます。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 - `EXTRACT` 関数は、タイムスタンプの日、週、月、年を解析するために使用するのに最適です。 これは、レポートで使用する `time interval` が `daily`、`weekly`、`monthly` または `yearly` の場合に便利です。
 
-開始するには、「開 **[!UICONTROL Report Builder** > **SQL Report Builder]**」をクリックして [!DNL SQL Report Builder] を開きます。
+開始するには、「開 [!DNL SQL Report Builder]」をクリックして **[!UICONTROL Report Builder** > **SQL Report Builder]** を開きます。
 
 例えば、各製品で販売された項目の月別の合計数を返す次のクエリについて考えてみます。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 手順 2：ビジュアライゼーションの作成
 
-これらの結果から、*ビジュアライゼーションはどのように作成されますか？* 開始するには、`Results` ウィンドウの [**[!UICONTROL Chart]**] タブをクリックします。 「`Chart settings`」タブが表示されます。
+これらの結果から、*ビジュアライゼーションはどのように作成されますか？* 開始するには、**[!UICONTROL Chart]** ウィンドウの [`Results`] タブをクリックします。 「`Chart settings`」タブが表示されます。
 
 クエリを初めて実行すると、クエリ内のすべての列が系列としてプロットされるので、レポートが不可解に見える場合があります。
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->`date`/`time` 列の場合、クエリにはラベルに `ORDER BY` 句を含める必要があります。
+>`ORDER BY`/`date` 列の場合、クエリにはラベルに `time` 句を含める必要があります。
 
 クエリの実行からレポートの設定に至るまで、このビジュアライゼーションがどのように作成されたかを以下に示します。
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 このレポートを再度使用する場合は、レポートに名前を付け、右上隅の「**[!UICONTROL Save]**」をクリックします。
 
-ドロップダウンで、`Type` として「`Chart`」を選択し、レポートの保存先のダッシュボードを選択します。
+ドロップダウンで、`Chart` として「`Type`」を選択し、レポートの保存先のダッシュボードを選択します。
 
 ## まとめ
 

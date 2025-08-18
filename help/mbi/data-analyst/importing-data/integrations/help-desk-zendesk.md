@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これは、`Pro` プラン上で新しいアーキテクチャを使用しているクライアントでのみ使用できます。 メインのツールバーから `Manage Data` を選択した後で「`Data Warehouse Views`」セクションを使用できる場合は、新しいアーキテクチャを使用できます。
+>これは、`Pro` プラン上で新しいアーキテクチャを使用しているクライアントでのみ使用できます。 メインのツールバーから `Data Warehouse Views` を選択した後で「`Manage Data`」セクションを使用できる場合は、新しいアーキテクチャを使用できます。
 
 [!DNL Zendesk] データをトランザクションデータベースと統合することは、顧客がセールスチームやカスタマーサクセスチームとどのようにやり取りしているかを深く理解するための優れた方法です。 また、サポートプラットフォームを使用している顧客のタイプを把握するのにも役立ちます。 このトピックでは、ダッシュボードを設定して、[!DNL Zendesk] のパフォーマンスに関する詳細なレポートを取得し、トランザクション顧客と結び付ける方法を示します。
 
@@ -77,12 +77,12 @@ ht-degree: 0%
 
 * **`[!DNL Zendesk] user's`** テーブル
    * `User is agent? (Yes/No) `
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`、`email`
 
-      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user` 次に、`B` が `null` でない場合は `Yes` を `B` し、`%@magento.com` のような場合は `Yes` を `No` します
+      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user` 次に、`Yes` が `B` でない場合は `null` を `B` し、`%@magento.com` のような場合は `Yes` を `No` します
 
       * `@magento.com` をお使いのドメインに置き換えます
 
@@ -161,19 +161,19 @@ ht-degree: 0%
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `Ticket's latest solved date` マイナス `created_at`
 
 * **`Seconds to first response`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `First agent response date` マイナス `created_at`
 
 * **`Requester's ticket number`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Event Number`
 
       * `Event Owner` - `requester_id`
@@ -181,7 +181,7 @@ ht-degree: 0%
       * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-   * &#x200B;
+   * 
       * `Column type` – 「同じテーブル/計算」
 
       * `Input columns` - `created_at`
@@ -191,7 +191,7 @@ ht-degree: 0%
       * `Datatype` – 整数
 
 * **`Ticket created_at (day of week)`**
-   * &#x200B;
+   * 
       * `Column type` – 「同じテーブル/計算」
 
       * `Input columns` - `created_at`
@@ -204,8 +204,7 @@ ht-degree: 0%
    * 定義を選択：`Count`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
-   * &#x200B;
-
+   * 
      [!UICONTROL One]: `customer_entity.email`
 
    * [!UICONTROL table] を選択：`[!DNL Zendesk] tickets`
@@ -215,7 +214,7 @@ ht-degree: 0%
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-   * &#x200B;
+   * 
       * `Column type` – 「同じテーブル/計算」
 
       * `Input columns` - `User's lifetime number of support tickets requested`
@@ -402,8 +401,7 @@ ht-degree: 0%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-   * &#x200B;
-
+   * 
      [!UICONTROL 指標]: Users
 
 * 指標 `A`: `New users`

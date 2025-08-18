@@ -76,22 +76,19 @@ ht-degree: 2%
 * **チャーンレート**
    * [!UICONTROL Metric]：新規顧客（初回注文日別）
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * 顧客の最終注文日からの秒数 >= [ チャーンされた顧客の事前定義されたカットオフ ]&#x200B;**`^`**
+   * 顧客の最終注文日からの秒数 >= [ チャーンされた顧客の事前定義されたカットオフ ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: Percentage
 
 * *指標 `A`:`New customers cumulative`*

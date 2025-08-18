@@ -1,5 +1,5 @@
 ---
-title: セグメント化とフィルタリングに推奨されるデータDimension
+title: セグメント化とフィルタリングに推奨されるデータディメンション
 description: セグメント化とフィルタリングのベストプラクティスについて説明します。
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 上記のディメンションで指標をセグメント化する最初の手順は、データベース内でこのデータを確実に追跡することです。 トラッキングされない場合は、技術チームに問い合わせて、このデータのトラッキングを開始する方法を見つけます。
 
-データがデータベース内で追跡されていることを確認したら、[ サポートチームにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) して、ディメンションを [!DNL Commerce Intelligence] の指標およびグラフにプッシュします。 また、*フィールド管理* ツールを使用して、これらのフィールドを [!DNL Commerce Intelligence] で追跡することもできます。
+データがデータベース内で追跡されていることを確認したら、[ サポートチームにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) して、ディメンションを [!DNL Commerce Intelligence] の指標およびグラフにプッシュします。 また、*フィールド管理* ツールを使用して、これらのフィールドを [!DNL Commerce Intelligence] で追跡することもできます。
 
 ## 関連
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL Adobe Commerce] データ
 
-[ ストアに接続 ](../../../data-analyst/importing-data/integrations/magento.md) した後は、データマネージャ  [!DNL Adobe Commerce]  を使用して、Commerce Data Warehouseから関連するデータフィールドを簡単にトラッキングして分析できます。
+[ ストアに接続  [!DNL Adobe Commerce]  した後は、Data Warehouse Manager を使用して、](../../../data-analyst/importing-data/integrations/magento.md) 析のためにCommerce データベースから関連するデータフィールドを簡単に追跡できます。
 
 このトピックでは、Commerce ユーザーが [!DNL Commerce Intelligence] に読み込むメインデータテーブルについて説明します。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 |-----|-----|
 | `Customers` | `customer\_entity` と関連テーブルには、メールアドレスや登録日など、データベース内の各 *登録済みの顧客* に関連付けられた情報が記述されます。 この情報を使用して、顧客レベルの属性およびコホートでセグメント化を開始できます。 |
 | `Orders` | `sales\_flat\_order` テーブルは、注文が行われた `created\_at` タイムスタンプと、売上高を合計する `base\_grand\_total` フィールドを含む、すべての注文を記録します。 これらのフィールドは、注文レベルの指標の基礎となります。 注文が *登録済みの顧客* によって行われた場合、`customer\_id` フィールドは `customer\_entity` テーブルにリンクして戻り、顧客の購入行動を分析できるようにします。 |
-| `Order items` | `sales\_flat\_order\_item` テーブルには、注文に属する各品目が記録されます。 これには、`price` フィールドと `qty\_ordered` フィールド、および `sales\_flat\_order` テーブルに接続する `order\_id` フィールドが含まれます。 このテーブルは、`Item sold` などの指標の基礎となり、`product` と `product type` でセグメント化できます。 |
+| `Order items` | `sales\_flat\_order\_item` テーブルには、注文に属する各品目が記録されます。 これには、`price` フィールドと `qty\_ordered` フィールド、および `order\_id` テーブルに接続する `sales\_flat\_order` フィールドが含まれます。 このテーブルは、`Item sold` などの指標の基礎となり、`product` と `product type` でセグメント化できます。 |
 | `Products` | `catalog\_product\_entity` のテーブルには、カテゴリ、サイズ、色など、製品レベルの属性に関する情報が格納されます。 |
 | `Categories` | 商品は、Commerce ビルドの設定方法に応じて、1 つまたは複数の異なる `product categories` に属します。 `catalog\_category\_entity` テーブルには、これらのカテゴリの階層（例：アパレル/トップス/T シャツ）が格納され、`catalog\_category\_product` テーブルには、製品とそれらのカテゴリ間の接続がログに記録されます。 |
 
@@ -30,4 +30,4 @@ ht-degree: 0%
 ## 関連
 
 * [接続  [!DNL Adobe Commerce]](../integrations/magento.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

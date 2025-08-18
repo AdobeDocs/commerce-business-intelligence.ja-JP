@@ -1,6 +1,6 @@
 ---
 title: 標準のダッシュボード
-description: 標準のダッシュボードを使用して、ビジネスに関するインサイトを提供する方法を説明します。
+description: 標準のダッシュボードを使用してinsightをビジネスに提供する方法を説明します。
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 標準のダッシュボード
 
-[!DNL Adobe Commerce Intelligence] には、標準のダッシュボードが含まれており、ビジネスに関するインサイトを提供します。 ダッシュボードを使用すると、ユーザーの生涯売上高、リピート購入数、特定の期間に購入された上位の製品など、重要な指標の状態を確認できます。 これらの事前設定済みのダッシュボードは、十分な情報に基づいたビジネス上の意思決定を支援するために作成されています。
+[!DNL Adobe Commerce Intelligence] には、insightをビジネスに提供するための、すぐに使用できるダッシュボードが含まれています。 ダッシュボードを使用すると、ユーザーの生涯売上高、リピート購入数、特定の期間に購入された上位の製品など、重要な指標の状態を確認できます。 これらの事前設定済みのダッシュボードは、十分な情報に基づいたビジネス上の意思決定を支援するために作成されています。
 
 >[!NOTE]
 >
->これらのダッシュボードへのアクセスは、アカウントのタイプとアクセスレベルに応じて異なります。 これらのダッシュボードが表示されない場合は、[ サポート ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) にお問い合わせください。
+>これらのダッシュボードへのアクセスは、アカウントのタイプとアクセスレベルに応じて異なります。 これらのダッシュボードが表示されない場合は、[ サポート ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) にお問い合わせください。
 
 ## レポートの可用性
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## 製品
 
-製品ダッシュボードには、注文された製品、総商品価値（GMV）、購入および払い戻された上位の製品に関する一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、製品の成功と人気を判断するのに役立ちます。 これらのグラフを入力するには、ストアを [ 払戻をトラッキングするように設定 ](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=ja) する必要があります。
+製品ダッシュボードには、注文された製品、総商品価値（GMV）、購入および払い戻された上位の製品に関する一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、製品の成功と人気を判断するのに役立ちます。 これらのグラフを入力するには、ストアを [ 払戻をトラッキングするように設定 ](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) する必要があります。
 
 >[!NOTE]
 >

@@ -33,11 +33,11 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |---|---|
-| `Customer's first 30 day revenue` | 顧客の最初の注文日から 30 日以内にこの顧客によって行われたすべての注文の売上高の合計。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`sales_order.Seconds between customer's first order date and this order` が 2592000 を≤すすべての注文の `base_grand_total` フィールドを合計することによって計算されます。これは 30 日間の秒数です |
+| `Customer's first 30 day revenue` | 顧客の最初の注文日から 30 日以内にこの顧客によって行われたすべての注文の売上高の合計。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`base_grand_total` が 2592000 を≤すすべての注文の `sales_order.Seconds between customer's first order date and this order` フィールドを合計することによって計算されます。これは 30 日間の秒数です |
 | `Customer's first order date` | この顧客による最初の注文のタイムスタンプ。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、最小 `sales_order` を返すことによって計算されます。`created_at` 値 |
-| `Customer's first order's billing region` | 顧客の初回注文に関連付けられた請求リージョン。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`sales_order.Customer's order number` = 1 の `Billing address region` を返すことによって計算されます |
-| `Customer's first order's coupon_code` | 顧客の最初の注文に関連付けられたクーポンコード。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`sales_order.Customer's order number` = 1 の `sales_order.coupon_code` を返すことによって計算されます |
-| `Customer's group code` | 登録済み顧客のグループ名。 `customer_entity.group_id` を `customer_group` に結合して計算されます。`customer_group_code` フィールドの `customer_group_id` び出しと返し |
+| `Customer's first order's billing region` | 顧客の初回注文に関連付けられた請求リージョン。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`Billing address region` = 1 の `sales_order.Customer's order number` を返すことによって計算されます |
+| `Customer's first order's coupon_code` | 顧客の最初の注文に関連付けられたクーポンコード。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`sales_order.coupon_code` = 1 の `sales_order.Customer's order number` を返すことによって計算されます |
+| `Customer's group code` | 登録済み顧客のグループ名。 `customer_entity.group_id` を `customer_group` に結合して計算されます。`customer_group_id` フィールドの `customer_group_code` び出しと返し |
 | `Customer's lifetime number of coupons` | この顧客が行ったすべての注文に適用されたクーポンの合計数。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`sales_order.coupon_code` が `NULL` しくない注文の数をカウントすることで計算されます |
 | `Customer's lifetime number of orders` | この顧客が注文した注文の合計数。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、`sales_order` テーブルの行数をカウントすることによって計算されます |
 | `Customer's lifetime revenue` | この顧客が行ったすべての注文の売上高の合計。 `customer_entity.entity_id` を `sales_order.customer_id` に結合し、この顧客によって行われたすべての注文の `base_grand_total` フィールドを合計することによって計算されます |

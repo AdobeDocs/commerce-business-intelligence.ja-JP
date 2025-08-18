@@ -65,6 +65,6 @@ ht-degree: 0%
 
    `Cumulative` パースペクティブでは、各月のギザギザした上下を表示するのではなく、時間の経過に伴う変化が分配されます。
 
-1. レポートの `Title` を入力し、ダッシュボードの `Chart` として **[!UICONTROL Save]** をクリックします。
+1. レポートの `Title` を入力し、ダッシュボードの **[!UICONTROL Save]** として `Chart` をクリックします。
 
    ![ ダッシュボードに保存 ](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

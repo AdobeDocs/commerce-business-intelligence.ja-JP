@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # クエリ結果のエクスポート
 
-結果を `.csv` ファイルに書き出すには、`Results` ウィンドウの [**[!UICONTROL Export Data]**] をクリックします。
+結果を **[!UICONTROL Export Data]** ファイルに書き出すには、`Results` ウィンドウの [`.csv`] をクリックします。

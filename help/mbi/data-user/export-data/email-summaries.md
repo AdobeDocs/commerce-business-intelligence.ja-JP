@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ### 後日送信するメールの概要を保存
 
-1. 「`Set when to send the Email Summary`」フィールドから「`Manual`」を選択します。
+1. 「`Manual`」フィールドから「`Set when to send the Email Summary`」を選択します。
 
 1. 「**[!UICONTROL Save]**」をクリックします。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ### メールの概要を 1 回送信
 
-1. 「`Set when to send the Email Summary`」フィールドから「`Once`」を選択します。
+1. 「`Once`」フィールドから「`Set when to send the Email Summary`」を選択します。
 
 1. `Select Start Date` カレンダーで開始日を指定します。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ### 繰り返しスケジュールの作成
 
-1. 「`Set when to send the Email Summary`」フィールドから「`Repeating`」を選択します。
+1. 「`Repeating`」フィールドから「`Set when to send the Email Summary`」を選択します。
 
 1. 「`Set Frequency`」フィールドで、「`Daily`」、「`Weekly`」または「`Monthly`」を選択します。
 

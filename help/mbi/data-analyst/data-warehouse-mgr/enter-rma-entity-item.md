@@ -57,7 +57,7 @@ ht-degree: 0%
 
 `enterprise_rma`
 
-* 次の結合を使用して、`enterprise_rma_item_entity` テーブルに `Return date\_requested` などの結合された列を作成します。
+* 次の結合を使用して、`Return date\_requested` テーブルに `enterprise_rma_item_entity` などの結合された列を作成します。
 * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id ` （多） => `enterprise_rma.entity_id` （1）
 * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` （多） => `magento_rma.entity_id` （1）
 

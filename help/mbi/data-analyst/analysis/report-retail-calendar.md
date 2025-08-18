@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 小売カレンダーのレポート
 
-このトピックでは、[!DNL Adobe Commerce Intelligence] アカウント内で [4-5-4 小売カレンダーを使用する構造を設定す ](https://nrf.com/resources/4-5-4-calendar) 方法について説明します。 Visual Report Builder は、非常に柔軟な時間範囲、間隔および独立した設定を提供します。 ただし、これらの設定はすべて、従来の月別カレンダーで機能します。
+このトピックでは、[ アカウント内で ](https://nrf.com/resources/4-5-4-calendar)4-5-4 小売カレンダーを使用する構造を設定す [!DNL Adobe Commerce Intelligence] 方法について説明します。 Visual Report Builder は、非常に柔軟な時間範囲、間隔および独立した設定を提供します。 ただし、これらの設定はすべて、従来の月別カレンダーで機能します。
 
 多くの顧客は小売日付または会計日付を使用するようにカレンダーを変更するので、次の手順では、小売日付を使用してデータを操作し、レポートを作成する方法を説明します。 以下の手順は 4-5-4 小売カレンダーを参照していますが、財務カレンダーやカスタム時間枠かどうかに関係なく、チームが使用する特定のカレンダーに対してそれらを変更できます。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## はじめに
 
-2014 年から 2017 年の小売年度の 4-5-4 小売カレンダーの `.csv` しいバージョンを [ ダウンロード ](../../assets/454-calendar.csv) できます。 場合によっては、社内の小売カレンダーに従ってこのファイルを調整し、履歴期間と現在の時間枠をサポートするように日付範囲を拡張する必要があります。 ファイルをダウンロードしたら、ファイルアップローダを使用して、[!DNL Commerce Intelligence] Data Warehouseーに小売カレンダーテーブルを作成します。 変更されていないバージョンの 4-5-4 小売カレンダーを使用している場合は、このテーブルのフィールドの構造とデータタイプが次と一致していることを確認してください。
+2014 年から 2017 年の小売年度の 4-5-4 小売カレンダーの [ しいバージョンを ](../../assets/454-calendar.csv) ダウンロード `.csv` できます。 場合によっては、社内の小売カレンダーに従ってこのファイルを調整し、履歴期間と現在の時間枠をサポートするように日付範囲を拡張する必要があります。 ファイルをダウンロードしたら、ファイルアップローダを使用して、[!DNL Commerce Intelligence] Data Warehouseに小売カレンダーテーブルを作成します。 変更されていないバージョンの 4-5-4 小売カレンダーを使用している場合は、このテーブルのフィールドの構造とデータタイプが次と一致していることを確認してください。
 
 | 列名 | 列データタイプ | プライマリキー |
 | --- | --- | --- |
@@ -50,21 +50,19 @@ ht-degree: 0%
    * **現在の日付**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
-      * &#x200B;
-
+      * 
         [!UICONTROL データ型]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
         >[!NOTE]
         >
-        >上記の `now()` 関数は PostgreSQL に固有のものです。 ほとんどの [!DNL Commerce Intelligence] データウェアハウスは PostgreSQL でホストされますが、一部は Redshift でホストされる場合があります。 上記の計算でエラーが返された場合は、`now()` の代わりに Redshift 関数 `getdate()` を使用する必要がある可能性があります。
+        >上記の `now()` 関数は PostgreSQL に固有のものです。 ほとんどの [!DNL Commerce Intelligence] データウェアハウスは PostgreSQL でホストされますが、一部は Redshift でホストされる場合があります。 上記の計算でエラーが返された場合は、`getdate()` の代わりに Redshift 関数 `now()` を使用する必要がある可能性があります。
 
    * **現在の小売年** （サポートアナリストが作成する必要があります）
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-      * &#x200B;
-
+      * 
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **現在の小売年度に含まれるか？ （はい/いいえ）**
@@ -72,8 +70,7 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
-
+      * 
         [!UICONTROL データ型]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **以前の小売年度に含まれていますか？ （はい/いいえ）**
@@ -81,8 +78,7 @@ ht-degree: 0%
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
-
+      * 
         [!UICONTROL データ型]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
@@ -143,85 +139,68 @@ ht-degree: 0%
       * [!UICONTROL Filter]:
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
       * `multiple Y-axes` をオフにする
 
 * **小売カレンダーの概要（現在の小売年/月）**
    * 指標 `A`: `Revenue`
-      * &#x200B;
-
+      * 
         [!UICONTROL 指標]: `Revenue`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
 
 * **小売カレンダーの概要（以前の小売年/月）**
    * 指標 `A`: `Revenue`
-      * &#x200B;
-
+      * 
         [!UICONTROL 指標]: `Revenue`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `B`: `Orders`
       * [!UICONTROL Metric]：注文数
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 指標 `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
 
 ## 次の手順
 
 上記では、`sales\_order` テーブルに作成された任意の指標（`Revenue` や `Orders` など）と互換性を持つように小売カレンダーを設定する方法を説明します。 これを拡張して、任意のテーブルに作成された指標の小売カレンダーをサポートすることもできます。 唯一の要件は、このテーブルには、小売カレンダーテーブルへの結合に使用できる有効な日時フィールドがあることです。
 
-例えば、4-5-4 小売カレンダーで顧客レベルの指標を表示するには、上記と同様に、`customer\_entity` テーブルに `Same Table` 計算を作成 `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` ます。 その後、この列を使用して、`customer\_entity` テーブルを `Retail Calendar` テーブルに結合することで、`One to Many` の JOINED\_COLUMN 計算（`Created_at (retail year)` など）と `Include in previous retail year? (Yes/No)` を再現できます。
+例えば、4-5-4 小売カレンダーで顧客レベルの指標を表示するには、上記と同様に、`Same Table` テーブルに `customer\_entity` 計算を作成 `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` ます。 その後、この列を使用して、`One to Many` テーブルを `Created_at (retail year)` テーブルに結合することで、`Include in previous retail year? (Yes/No)` の JOINED\_COLUMN 計算（`customer\_entity` など）と `Retail Calendar` を再現できます。
 
 新しいレポートを作成する前に、[ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) を忘れないでください。

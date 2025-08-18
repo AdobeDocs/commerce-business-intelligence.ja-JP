@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Commerce Intelligenceでの SQL クエリの翻訳
 
-SQL クエリを [!DNL Commerce Intelligence] で使用する [ 計算列 ](../data-warehouse-mgr/creating-calculated-columns.md)、[ 指標 ](../../data-user/reports/ess-manage-data-metrics.md)、および [ レポート ](../../tutorials/using-visual-report-builder.md) に変換する方法を疑問に思ったことはありませんか？ SQL を大量に使用するユーザーの場合は、[!DNL Commerce Intelligence] での SQL の翻訳方法を理解することで、[Platform Manager でよりスマートに作業し ](../data-warehouse-mgr/tour-dwm.md) [!DNL Commerce Intelligence] Data Warehouseを最大限に活用できます。
+SQL クエリを [ で使用する ](../data-warehouse-mgr/creating-calculated-columns.md) 計算列 [、](../../data-user/reports/ess-manage-data-metrics.md) 指標 [、および ](../../tutorials/using-visual-report-builder.md) レポート [!DNL Commerce Intelligence] に変換する方法を疑問に思ったことはありませんか？ SQL を大量に使用するユーザーの場合は、[!DNL Commerce Intelligence] での SQL の翻訳方法を理解することで、[Data Warehouse Manager でよりスマートに作業し ](../data-warehouse-mgr/tour-dwm.md)[!DNL Commerce Intelligence] プラットフォームを最大限に活用できます。
 
-このトピックの最後には、SQL クエリ句と [!DNL Commerce Intelligence] 要素の **翻訳行列** があります。
+このトピックの最後には、SQL クエリ句と **要素の** 翻訳行列 [!DNL Commerce Intelligence] があります。
 
 まず、一般的なクエリを確認します。
 
@@ -34,7 +34,7 @@ SQL クエリを [!DNL Commerce Intelligence] で使用する [ 計算列 ](../d
 
 ## 集計関数
 
-クエリの集計関数（`count`、`sum`、`average`、`max`、`min` など）は、[!DNL Commerce Intelligence] では **指標の集計** または **列の集計** のいずれかの形式を取ります。 差別化要因は、集計を実行するために結合が必要かどうかです。
+クエリの集計関数（`count`、`sum`、`average`、`max`、`min` など）は、**では** 指標の集計 **または** 列の集計 [!DNL Commerce Intelligence] のいずれかの形式を取ります。 差別化要因は、集計を実行するために結合が必要かどうかです。
 
 上記のそれぞれの例を参照してください。
 
@@ -42,7 +42,7 @@ SQL クエリを [!DNL Commerce Intelligence] で使用する [ 計算列 ](../d
 
 `within a single table` ータを集計する場合は、指標が必要です。 したがって、例えば、上記のクエリの `SUM(b)` 集計関数は、列の `B` を合計する指標で表される可能性が高くなります。 
 
-[!DNL Commerce Intelligence] での `Total Revenue` 指標の定義方法に関する、特定の例を見てみましょう。 翻訳を試みる以下のクエリを確認します。
+`Total Revenue` での [!DNL Commerce Intelligence] 指標の定義方法に関する、特定の例を見てみましょう。 翻訳を試みる以下のクエリを確認します。
 
 | | |
 |--- |--- |
@@ -53,7 +53,7 @@ SQL クエリを [!DNL Commerce Intelligence] で使用する [ 計算列 ](../d
 | `email NOT LIKE '%@magento.com'` | 指標 `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | 指標 `timestamp` （およびレポート `time range`） |
 
-**[!UICONTROL Manage Data** > **&#x200B; 指標 &#x200B;**/**新しい指標を作成]** をクリックして指標ビルダーに移動します。まず、適切な `source` テーブル（この場合は `orders` テーブル）を選択する必要があります。 次に、指標は次のように設定されます。
+**[!UICONTROL Manage Data** > ** 指標 **/**新しい指標を作成]** をクリックして指標ビルダーに移動します。まず、適切な `source` テーブル（この場合は `orders` テーブル）を選択する必要があります。 次に、指標は次のように設定されます。
 
 ![ 指標の集計 ](../../assets/Metric_aggregation.png)
 
@@ -73,15 +73,15 @@ SQL クエリを [!DNL Commerce Intelligence] で使用する [ 計算列 ](../d
 | `ON c.customer_id = o.customer_id` | パス |
 | `WHERE o.status = 'success'` | 集計フィルター |
 
-[!DNL Commerce Intelligence] でこれを設定するには、Data Warehouseマネージャーを使用する必要があります。ここでは、`orders` と `customers` のテーブルの間にパスを作成し、顧客のテーブルに `Customer LTV` という列を作成します。
+[!DNL Commerce Intelligence] でこれを設定するには、Data Warehouse Manager を使用する必要があります。ここでは、`orders` と `customers` のテーブルの間にパスを作成し、顧客のテーブルに `Customer LTV` という列を作成します。
 
-`customers` と `orders` の間に新しいパスを確立する方法を確認します。 最後の目標は、`customers` テーブルに新しい集計列を作成することです。そのため、最初にData Warehouseの `customers` テーブルに移動し、**[!UICONTROL Create a Column** > **&#x200B; 定義を選択 &#x200B;**/**SUM]** をクリックします。
+`customers` と `orders` の間に新しいパスを確立する方法を確認します。 最後の目標は、`customers` テーブルに新しい集計列を作成することです。そのため、まずData Warehouseの `customers` テーブルに移動し、**[!UICONTROL Create a Column** > ** 定義を選択 **/**SUM]** をクリックします。
 
 次に、ソーステーブルを選択する必要があります。 `orders` テーブルへのパスが存在する場合は、ドロップダウンから選択するだけです。 ただし、新しいパスを作成している場合は、「**[!UICONTROL Create new path]**」をクリックすると、次の画面が表示されます。
 
 ![ 新しいパスを作成 ](../../assets/Create_new_path.png)
 
-ここでは、結合しようとしている 2 つのテーブル間の関係を慎重に検討する必要があります。 この場合、顧客に関連付けられた注文が `Many` い可能性があ `One` ので、`Many` 側には `orders` のテーブルが表示され、`One` 側には `customers` のテーブルが選択されます。
+ここでは、結合しようとしている 2 つのテーブル間の関係を慎重に検討する必要があります。 この場合、顧客に関連付けられた注文が `Many` い可能性があ `One` ので、`orders` 側には `Many` のテーブルが表示され、`customers` 側には `One` のテーブルが選択されます。
 
 >[!NOTE]
 >
@@ -91,13 +91,13 @@ SQL クエリを [!DNL Commerce Intelligence] で使用する [ 計算列 ](../d
 
 ![](../../assets/Customer_LTV.gif)
 
-`customers` テーブルに新しい `Customer LTV` 列を作成したので、この列を使用して [ 指標の集計 ](#aggregate) を作成する準備が整いました（例えば、顧客あたりの平均 LTV を見つける場合）。 また、`customers` テーブルに基づいて作成された既存の指標を使用して、レポートの計算列で `group by` 計または `filter` 計することもできます。
+`Customer LTV` テーブルに新しい `customers` 列を作成したので、この列を使用して [ 指標の集計 ](#aggregate) を作成する準備が整いました（例えば、顧客あたりの平均 LTV を見つける場合）。 また、`group by` テーブルに基づいて作成された既存の指標を使用して、レポートの計算列で `filter` 計または `customers` 計することもできます。
 
 >[!NOTE]
 >
->後者の場合、新しい計算列を作成する際は、ディメンションを `filter` または `group by` として使用する前に、[ 既存の指標にディメンションを追加 ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) する必要があります。
+>後者の場合、新しい計算列を作成する際は、ディメンションを [ または ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) として使用する前に、`filter` 既存の指標にディメンションを追加 `group by` する必要があります。
 
-詳しくは、Data Warehouseマネージャーで [ 計算列の作成 ](../data-warehouse-mgr/creating-calculated-columns.md) を参照してください。
+詳しくは、Data Warehouse Manager で [ 計算列の作成 ](../data-warehouse-mgr/creating-calculated-columns.md) を参照してください。
 
 ## `Group By` 句
 

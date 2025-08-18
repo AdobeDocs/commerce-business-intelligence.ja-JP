@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ユーザー権限レベルの設定に加えて、指標へのアクセスをユーザーごとに制限することもできます。 例えば、会計部門から売上高に関連する指標へのアクセスを許可しても、ユーザー獲得指標へのアクセスを許可しない場合は、それらの指標へのアクセスを制限できます。
 
-このような場合、Adobeでは、そのユーザーのアカウントを **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)** に設定することをお勧めします。 指標、計算列、統合またはユーザーを作成または変更する必要はないが、Data Warehouse内のデータにアクセスする必要があるユーザーには、**[!UICONTROL Standard]** の権限を付与する必要があります。 データへのアクセスを完全に制限する場合は、**[!UICONTROL Read Only]** の権限を使用します。
+このような場合、Adobeでは、そのユーザーのアカウントを **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)** に設定することをお勧めします。 指標、計算列、統合またはユーザーを作成または変更する必要はないが、Data Warehouseのデータにアクセスする必要があるユーザーには、**[!UICONTROL Standard]** の権限を付与する必要があります。 データへのアクセスを完全に制限する場合は、**[!UICONTROL Read Only]** の権限を使用します。
 
 権限レベルを設定した後、**[!UICONTROL Standard]** ユーザーがアクセスできる指標を選択するには、次の操作を行います。
 
@@ -26,9 +26,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**[!UICONTROL Standard]** 権限を持つすべてのユーザーは、[!DNL Google Analytics] のすべての指標に加え、データエクスポートを介してData Warehouse内のすべてのデータにアクセスできます。
+>**[!UICONTROL Standard]** 権限を持つすべてのユーザーは、[!DNL Google Analytics] のすべての指標に加え、Data Warehouseのすべてのデータにデータ書き出しを介してアクセスできます。
 
-また、指標を編集し、「**[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)**」セクションでユーザーを選択すること **[!UICONTROL Standard]**、指標へのアクセスを制限できます。
+また、指標を編集し、「**[!UICONTROL Standard]**」セクションでユーザーを選択すること **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)**、指標へのアクセスを制限できます。
 
 >[!NOTE]
 >

@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## [!DNL Bing Ads] データの書き出し
 
-1. [!DNL Bing Ads Editor] の `Browser` ウィンドウ枠で、エクスポートするキャンペーンまたは広告グループを右クリックし、「**[!UICONTROL Export]**」をクリックします。
+1. `Browser` の [!DNL Bing Ads Editor] ウィンドウ枠で、エクスポートするキャンペーンまたは広告グループを右クリックし、「**[!UICONTROL Export]**」をクリックします。
 1. `Export` ダイアログボックスで、「**[!UICONTROL Export]**」をクリックします。
 1. `Save As` ダイアログボックスで、書き出しファイルを保存するフォルダーをクリックします。
 1. `File name` ボックスで、ファイルの書き出しの名前を選択します。
 1. 「**[!UICONTROL Save]**」をクリックします。
-1. ファイルをダウンロードしたら、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) し、ユーザーに代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。
+1. ファイルをダウンロードしたら、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) し、ユーザーに代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。

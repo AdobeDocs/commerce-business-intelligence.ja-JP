@@ -1,6 +1,6 @@
 ---
 title: グラフのデータ情報
-description: ビジュアルReport Builderでのビジュアライゼーションオプションの使用方法を説明します。
+description: ビジュアルReport Builderのビジュアライゼーションオプションの使用方法を説明します。
 exl-id: 865efc8b-1e1a-4033-9e42-cbd03b220260
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # データ移行
 
-新しいデータベーススキーマ、サーバーまたはレポートデータベースへの移行は、ストレスを感じることなく行えます。 [[!DNL Adobe]  サービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) が移行の支援を提供します。
+新しいデータベーススキーマ、サーバーまたはレポートデータベースへの移行は、ストレスを感じることなく行えます。 [[!DNL Adobe]  サービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) が移行の支援を提供します。
 
 移行をできる限りスムーズに行うには、移行リクエストを送信する際に、できるだけ詳しく説明する必要があります。 このトピックには、リクエストを送信し、移行を開始するために必要なすべてが含まれています。 お客様のニーズを包括的に把握することで、プロジェクトの範囲が適切に設定され、見積もりが正確になることを保証します。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 自分で照合することに不安がない場合は、次の手順に従って、完成したスプレッドシートを要求に添付します。
 
-1. 現在Data Warehouseに同期しているすべてのテーブルと列を確認します（**[!UICONTROL Manage Data** > **Data Warehouse]**）。
+1. Data Warehouse（**[!UICONTROL Manage Data** > **Data Warehouse]**）と現在同期しているすべてのテーブルと列を確認します。
 
 1. スプレッドシートで、新しいデータベースに移行するすべてのテーブルにタブを作成します。
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## リクエストを送信するにはどうすればよいですか？ {#submitreq}
 
-[ サポートリクエストを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) いただくことで、当社にご連絡いただけます。
+[ サポートリクエストを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) いただくことで、当社にご連絡いただけます。
 
 列に一致するスプレッドシートの作成について前の節の手順に従っている場合は、必ず添付してください。
 

@@ -6,7 +6,7 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 | **SQL レポートの作成/編集/削除** | ✔ |  |   |
 | **ダッシュボードの複製** | ✔ |   |   |
 | **統合の追加/管理** | ✔ |   |   |
-| **Data Warehouseマネージャーへのアクセス** | ✔ |   |   |
+| **Data Warehouse Manager へのアクセス** | ✔ |   |   |
 | **テーブルと列の同期/同期解除** | ✔ |   |   |
 | **指標の作成/編集** | ✔ |   |   |
 | **フィルターセットの作成/編集** | ✔ |   |   |
@@ -50,11 +50,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_&#x200B;**[!UICONTROL Standard]**&#x200B;ユーザーの [ アクセスを特定の指標に制限 ](../../administrator/user-management/restrict-metric-access.md) できます。_
+>_**[!UICONTROL Standard]**ユーザーの [ アクセスを特定の指標に制限 ](../../administrator/user-management/restrict-metric-access.md) できます。_
 >
 >**[!UICONTROL Standard] _ユーザーは、追加の権限設定で請求にアクセスできます。_
 >
->**[!UICONTROL Read-Only]** ユーザーは、共有されているダッシュボードのみを _表示_ できます。[!DNL Commerce Intelligence] でダッシュボードを作成または編集したり、新しいダッシュボードを検索してアカウントに追加したりすることはできません。 Adobeは、自分またはチームの別のメンバーが管理するユーザー **[!UICONTROL Read-Only]**、特定のダッシュボードセットを共有することをお勧めします。 それらのダッシュボードのセットのクローンを作成しないでください。
+>**[!UICONTROL Read-Only]** ユーザーは、共有されているダッシュボードのみを _表示_ できます。[!DNL Commerce Intelligence] でダッシュボードを作成または編集したり、新しいダッシュボードを検索してアカウントに追加したりすることはできません。 Adobeでは、自分またはチームの別のメンバーが管理する **[!UICONTROL Read-Only]** ユーザーと、特定のダッシュボードセットを共有することをお勧めします。 それらのダッシュボードのセットのクローンを作成しないでください。
 
 ## その他の権限：請求および技術 {#billingtech}
 
@@ -62,9 +62,9 @@ ht-degree: 0%
 
 ### 請求
 
-`Billing` ユーザーは請求ページにアクセスでき、支払い情報を変更できます。 また、Adobeから請求に関する問い合わせが来ることもあります。
+`Billing` ユーザーは請求ページにアクセスでき、支払い情報を変更できます。 また、Adobeから請求に関する連絡を受ける場合もあります。
 
-`Admin` ユーザーはデフォルトで「`Billing`」タブにアクセスできますが、プロファイルで「`Billing`」チェックボックスを選択している場合は、`Standard` ユーザーもアクセスできます。
+`Admin` ユーザーはデフォルトで「`Billing`」タブにアクセスできますが、プロファイルで「`Standard`」チェックボックスを選択している場合は、`Billing` ユーザーもアクセスできます。
 
 ![ 請求 ](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
@@ -74,4 +74,4 @@ ht-degree: 0%
 
 `Admin` ユーザーは、**[!UICONTROL Account Settings]**/**[!UICONTROL Create Users]** をクリックし、プロンプトに従って、自分のアカウントに新しいユーザーを追加できます。 [!DNL Commerce Intelligence] でユーザーが作成されると、招待している幸運な人に、アカウント設定プロセスを完了する方法を説明するメールが届きます。
 
-**[!UICONTROL Account Settings]**/**[!UICONTROL Manage Users]** をクリック `Admins` ると、アカウント内のすべてのユーザーをいつでも表示できます。 このページには、ユーザーの権限と、ユーザーがアクセスできる指標およびダッシュボードが表示されます。
+`Admins`/**[!UICONTROL Account Settings]** をクリック **[!UICONTROL Manage Users]** ると、アカウント内のすべてのユーザーをいつでも表示できます。 このページには、ユーザーの権限と、ユーザーがアクセスできる指標およびダッシュボードが表示されます。

@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクーポンコードを適用できます。 この場合の解決策は、次のとおりです。
 
-* 適用されたすべてのクーポンコードは、`sales_order_coupons` の `coupon_code` フィールドに保存されます。 適用された最初のクーポンコードは、`sales_order` の `coupon_code` フィールドにも保存されます。 このフィールドが NULL （空）の場合、注文にはクーポンが関連付けられていません。
+* 適用されたすべてのクーポンコードは、`coupon_code` の `sales_order_coupons` フィールドに保存されます。 適用された最初のクーポンコードは、`coupon_code` の `sales_order` フィールドにも保存されます。 このフィールドが NULL （空）の場合、注文にはクーポンが関連付けられていません。
 
 ## 指標の作成
 
@@ -62,49 +62,42 @@ Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクー�
 >各レポートの [!UICONTROL Time Period]**は `All-time` のように表示されます。 分析のニーズに合わせて自由に変更できます。 Adobeでは、このダッシュボードのすべてのレポートが、`All time`、`Year-to-date`、`Last 365 days` など、同じ期間をカバーすることをお勧めします。
 
 * **クーポン付き注文**
-   * &#x200B;
-
+   * 
      [!UICONTROL 指標]: `Orders`
       * フィルターを追加：
          * [`A`] `coupon_code` **は** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **クーポンのない注文**
-   * &#x200B;
-
+   * 
      [!UICONTROL 指標]: `Orders`
       * フィルターを追加：
          * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **クーポン付き注文による純売上高**
-   * &#x200B;
-
+   * 
      [!UICONTROL 指標]: `Revenue`
       * フィルターを追加：
          * [`A`] `coupon_code` **は** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **割引券による割引**
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -114,8 +107,7 @@ Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクー�
          * [`A`] `Customer's first order's coupon_code` **は** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -125,8 +117,7 @@ Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクー�
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -150,28 +141,23 @@ Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクー�
 
    * 数式を作成：`Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
-      * &#x200B;
-
+      * 
         [!UICONTROL Format]: `Currency`
 
    * 数式を作成：**% 割引**
       * 数式：`(C / (B - C))`
-      * &#x200B;
-
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * 数式を作成：`Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
-      * &#x200B;
-
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL グラフ タイプ]: `Table`
 
 * **初回注文クーポン別の平均生涯売上高**
@@ -180,8 +166,7 @@ Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクー�
          * [`A`] `coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -191,12 +176,10 @@ Commerce 2.4.7 の時点では、お客様は 1 つの注文に複数のクー�
          * [`A`] `Customer's first order's coupon_code` **は** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Group by]: `Customer's first order's coupon_code`
-   * &#x200B;
-
+   * 
      [!UICONTROL グラフ タイプ]: **Column**
 
 * **クーポン/非クーポン取得による新規顧客**

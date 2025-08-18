@@ -1,6 +1,6 @@
 ---
 title: ビジュアルReport Builderのビジュアライゼーションオプション
-description: ビジュアルReport Builderでのビジュアライゼーションオプションの使用方法を説明します。
+description: ビジュアルReport Builderのビジュアライゼーションオプションの使用方法を説明します。
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration

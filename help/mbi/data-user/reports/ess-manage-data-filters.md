@@ -15,7 +15,7 @@ ht-degree: 0%
 
 同様の方法でフィルタリングする必要がある指標が [!DNL Commerce Intelligence] 内に複数ある場合（例えばテスト注文を除外する場合）、保存済みのフィルターセットを作成して指標に適用できます。 これにより、指標を作成または編集する際に個々のフィルターを追加する必要がなくなるので、時間を節約できます。
 
-詳しくは、[ トレーニングビデオ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=ja) を参照してください。
+詳しくは、[ トレーニングビデオ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) を参照してください。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. `Filter Set` を保存します。
 
-フィルターセットを保存したら、同じテーブルを使用する任意の指標に適用できます。 例えば、`orders` テーブルに `Filter Set` を作成した場合、`Revenue` など、このテーブルに基づいて作成された *任意の指標* に適用できます。
+フィルターセットを保存したら、同じテーブルを使用する任意の指標に適用できます。 例えば、`Filter Set` テーブルに `orders` を作成した場合、*など、このテーブルに基づいて作成された* 任意の指標 `Revenue` に適用できます。
 
 >[!NOTE]
 >

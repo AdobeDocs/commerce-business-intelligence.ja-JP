@@ -27,17 +27,17 @@ ht-degree: 0%
 | `base_subtotal` | 注文に含まれるすべての品目の総商品価値。 税金、送料、割引などは含まれません |
 | `base_shipping_amount` | 注文に適用される配送料 |
 | `base_tax_amount` | 注文に適用される税額 |
-| `billing_address_id` | `sales_order_address` テーブルに関連付けられた `Foreign key`。 `sales_order_address.entity_id` に参加して、注文に関連付けられた請求先住所の詳細を決定します |
+| `billing_address_id` | `Foreign key` テーブルに関連付けられた `sales_order_address`。 `sales_order_address.entity_id` に参加して、注文に関連付けられた請求先住所の詳細を決定します |
 | `coupon_code` | クーポンが注文に適用されました。 クーポンが適用されない場合、このフィールドは `NULL` です |
 | `created_at` | 注文の作成タイムスタンプ（UTC でローカルに保存）。 [!DNL Commerce Intelligence] での設定に応じて、このタイムスタンプはデータベースのタイムゾーンとは異な [!DNL Commerce Intelligence] レポートタイムゾーンに変換される場合があります |
 | `customer_email` | 注文を行う顧客の電子メールアドレス。 これは、ゲストチェックアウトで処理された注文を含め、すべての状況で入力されます |
 | `customer_group_id` | `customer_group` テーブルに関連付けられている外部キー。 `customer_group.customer_group_id` に結合して、注文に関連付けられている顧客グループを決定します |
-| `customer_id` | 顧客が登録されている場合、`customer_entity` テーブルに関連付けられた `Foreign key` ール。 `customer_entity.entity_id` に結合して、注文に関連付けられている顧客属性を決定します。 ゲストのチェックアウトで注文された場合、このフィールドは `NULL` になります |
+| `customer_id` | 顧客が登録されている場合、`Foreign key` テーブルに関連付けられた `customer_entity` ール。 `customer_entity.entity_id` に結合して、注文に関連付けられている顧客属性を決定します。 ゲストのチェックアウトで注文された場合、このフィールドは `NULL` になります |
 | `entity_id` （PK） | テーブルの一意の ID。Commerce インスタンス内の他のテーブルへの結合で一般的に使用されます |
 | `increment_id` | 注文の一意の ID。Adobe Commerceでは `order_id` と呼ばれることが多いです。 `increment_id` は、[!DNL Google Ecommerce] などの外部ソースへの結合に最もよく使用されます |
 | `shipping_address_id` | `sales_order_address` テーブルに関連付けられている外部キー。 `sales_order_address.entity_id` に結合して、注文に関連付けられた配送先住所の詳細を決定します |
 | `status` | 注文のステータス。 「complete」、「processing」、「cancelled」、「refunded」、およびCommerce インスタンスに実装されているカスタムステータスなどの値を返す場合があります。 注文が処理されるたびに変更される場合があります |
-| `store_id` | `store` テーブルに関連付けられた `Foreign key`。 `store` に参加します。どのCommerce ストアビューが注文に関連付けられているかを判断する `store_id` 法 |
+| `store_id` | `Foreign key` テーブルに関連付けられた `store`。 `store` に参加します。どのCommerce ストアビューが注文に関連付けられているかを判断する `store_id` 法 |
 
 {style="table-layout:auto"}
 
@@ -45,26 +45,26 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |---|---|
-| `Billing address city` | 注文の請求先市区町村。 `sales_order` を結合して計算されます。`billing_address_id`～`sales_order_address`。`city` フィールドの `entity_id` び出しと返し |
-| `Billing address country` | 注文の請求国コード。 `sales_order` を結合して計算されます。`billing_address_id`～`sales_order_address`。`country_id` ージの `entity_id` ージと返し |
-| `Billing address region` | 注文の請求地域（ほとんどの場合は都道府県）。 `sales_order` を結合して計算されます。`billing_address_id`～`sales_order_address`。`region` フィールドの `entity_id` び出しと返し |
+| `Billing address city` | 注文の請求先市区町村。 `sales_order` を結合して計算されます。`billing_address_id`～`sales_order_address`。`entity_id` フィールドの `city` び出しと返し |
+| `Billing address country` | 注文の請求国コード。 `sales_order` を結合して計算されます。`billing_address_id`～`sales_order_address`。`entity_id` ージの `country_id` ージと返し |
+| `Billing address region` | 注文の請求地域（ほとんどの場合は都道府県）。 `sales_order` を結合して計算されます。`billing_address_id`～`sales_order_address`。`entity_id` フィールドの `region` び出しと返し |
 | `Customer's first order date` | この顧客による最初の注文のタイムスタンプ。 多くの場合、顧客の「獲得日」と見なされます。 最小 `sales_order` を返すことによって計算されます。一意の各顧客の `created_at` 値 |
 | `Customer's first order's billing region` | 注文を行った顧客の取得請求地域。 顧客の最初の注文に関連付けられた `Billing address region` を返すことにより計算されます |
 | `Customer's first order's coupon_code` | この注文を行った顧客の獲得クーポンコード。 顧客の最初の注文に関連付けられた `coupon_code` を返すことにより計算されます |
-| `Customer's group code` | この注文を行った顧客のグループ名。 `sales_order` を結合して計算されます。`customer_group_id`～`customer_group`。`customer_group_code` フィールドの `customer_group_id` び出しと返し |
+| `Customer's group code` | この注文を行った顧客のグループ名。 `sales_order` を結合して計算されます。`customer_group_id`～`customer_group`。`customer_group_id` フィールドの `customer_group_code` び出しと返し |
 | `Customer's lifetime number of coupons` | この顧客が発注したすべての注文に適用されたクーポンの合計数量。 一意の顧客ごとに、`coupon_code` が `NULL` しくない注文の数をカウントして計算されます |
 | `Customer's lifetime number of orders` | この顧客が注文した注文の合計数。 一意の顧客ごとに `sales_order` テーブルの行数をカウントすることによって計算されます |
 | `Customer's lifetime revenue` | この顧客が行ったすべての注文の売上高の合計。 一意の顧客ごとに、すべての注文の `base_grand_total` フィールドを合計して計算されます |
 | `Customer's order number` | この顧客の注文の順次オーダーランク。 顧客から注文されたすべての注文を識別し、`created_at` タイムスタンプで昇順に並べ替え、各注文に増分する整数値を割り当てることによって計算されます。 例えば、顧客の最初の注文は `Customer's order number` 1 を返し、顧客の 2 番目の注文は `Customer's order number` 2 を返します。 |
 | `Customer's order number (previous-current)` | 顧客の以前の注文のランクを、この注文のランクと連結し、`-` 文字で区切ります。 （「`Customer's order number` - 1」）を「`-`」に続いて「`Customer's order number`」で連結することによって計算されます。 例えば、顧客の 2 回目の購入に関連付けられた注文の場合、この列は `1-2` の値を返します。 2 つの注文イベント間の時間を表す（「注文間の時間」グラフ）場合に最もよく使用されます |
 | `Is customer's last order?` | 注文が顧客の最後の注文に対応するか、最新の注文に対応するかを決定します。 `Customer's order number` 値を `Customer's lifetime number of orders` と比較して計算されます。 これら 2 つのフィールドが指定された順序で等しい場合、この列は `Yes` を返し、それ以外の場合は `No` を返します |
-| `Number of items in order` | 注文に含まれる品目の合計数量。 `sales_order` を結合して計算されます。`entity_id`～`sales_order_item`。`sales_order_item` を `order_id` して合計します。`qty_ordered` フィールド |
-| `Seconds between customer's first order date and this order` | この注文と顧客の最初の注文の間の経過時間。 各注文の `created_at` から `Customer's first order date` を減算して計算され、秒数の整数で返されます |
+| `Number of items in order` | 注文に含まれる品目の合計数量。 `sales_order` を結合して計算されます。`entity_id`～`sales_order_item`。`order_id` を `sales_order_item` して合計します。`qty_ordered` フィールド |
+| `Seconds between customer's first order date and this order` | この注文と顧客の最初の注文の間の経過時間。 各注文の `Customer's first order date` から `created_at` を減算して計算され、秒数の整数で返されます |
 | `Seconds since previous order` | この注文と顧客の直前の注文の間の経過時間。 この注文の `created_at` から前の注文の `created_at` を引いて計算され、秒数の整数で返されます。 例えば、顧客の 3 番目の注文に対応する注文レコードの場合、この列は、顧客の 2 番目の注文から 3 番目の注文までの秒数を返します。 顧客の初回注文の場合、このフィールドは `NULL` を返します |
-| `Shipping address city` | 注文の発送先市区町村。 `sales_order` を結合して計算されます。`shipping_address_id`～`sales_order_address`。`city` フィールドの `entity_id` び出しと返し |
-| `Shipping address country` | 注文の発送国コード。 `sales_order` を結合して計算されます。`Shipping_address_id`～`sales_order_address`。`country_id` ージの `entity_id` ージと返し |
-| `Shipping address region` | 注文の出荷地域（ほとんどの場合は都道府県）。 `sales_order` を結合して計算されます。`shipping_address_id`～`sales_order_address`。`region` フィールドの `entity_id` び出しと返し |
-| `Store name` | この注文に関連付けられたCommerce ストアの名前。 `sales_order` を結合して計算されます。`store_id`～`store`。`name` フィールドの `store_id` び出しと返し |
+| `Shipping address city` | 注文の発送先市区町村。 `sales_order` を結合して計算されます。`shipping_address_id`～`sales_order_address`。`entity_id` フィールドの `city` び出しと返し |
+| `Shipping address country` | 注文の発送国コード。 `sales_order` を結合して計算されます。`Shipping_address_id`～`sales_order_address`。`entity_id` ージの `country_id` ージと返し |
+| `Shipping address region` | 注文の出荷地域（ほとんどの場合は都道府県）。 `sales_order` を結合して計算されます。`shipping_address_id`～`sales_order_address`。`entity_id` フィールドの `region` び出しと返し |
+| `Store name` | この注文に関連付けられたCommerce ストアの名前。 `sales_order` を結合して計算されます。`store_id`～`store`。`store_id` フィールドの `name` び出しと返し |
 
 ## 一般的な指標
 

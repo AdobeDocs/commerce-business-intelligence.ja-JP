@@ -1,6 +1,6 @@
 ---
 title: CJ アフィリエイト（コミッション結合）マーケティングデータの読み込み
-description: CJ アフィリエイトデータを  [!DNL Commerce Intelligence].L Commerce Intelligence&rbrack; に読み込む方法を説明します。
+description: CJ アフィリエイトデータを  [!DNL Commerce Intelligence].L Commerce Intelligence] に読み込む方法を説明します。
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL CJ Affiliate] データの読み込み
 
-データ [!DNL CJ Affiliate (Commission Junction)][!DNL Adobe Commerce Intelligence] に読み込むには、次の手順に従い、結果のファイルを [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) に添付します。 Adobeはアカウントにデータテーブルを設定し、ユーザーが引き続き個別にデータをアップロードできるようにします。
+データ [!DNL CJ Affiliate (Commission Junction)][!DNL Adobe Commerce Intelligence] に読み込むには、次の手順に従い、結果のファイルを [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) に添付します。 Adobeによってアカウントのデータテーブルが設定され、引き続き個別にデータをアップロードできるようになります。
 
 ## [!DNL CJ Affiliate] データのエクスポート
 
@@ -29,6 +29,6 @@ ht-degree: 0%
 
    ![cj アフィリエイトデータのエクスポート ](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
 
-1. ファイルをダウンロードしたら、[!DNL Commerce Intelligence] Data Warehouseに [ ファイルをアップロード ](../connecting-data/using-file-uploader.md) できます。
+1. ファイルをダウンロードしたら、[ Data Warehouseに ](../connecting-data/using-file-uploader.md) ファイルをアップロード [!DNL Commerce Intelligence] できます。
 
-   これにより、[!DNL Commerce Intelligence] Data Warehouseにテーブルが作成され、新しいデータを引き続き定期的にアップロードできます。 ファイルをアップロードする場合は、[ ファイルアップローダの使用 ](../connecting-data/using-file-uploader.md) に記載されている書式設定要件に従います。
+   これにより、新しいデータを引き続き定期的にアップロードできるテーブルが [!DNL Commerce Intelligence] Data Warehouseに作成されます。 ファイルをアップロードする場合は、[ ファイルアップローダの使用 ](../connecting-data/using-file-uploader.md) に記載されている書式設定要件に従います。

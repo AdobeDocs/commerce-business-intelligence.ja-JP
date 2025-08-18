@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ビジネスのパフォーマンスを確認したい場合や、最も価値のある獲得ソースとチャネルを見つけたい場合は、 [!DNL Adobe Commerce] データを [!DNL Commerce Intelligence] に接続すると、これらの質問などに回答できます。
 
-[!DNL Adobe Commerce] データベースは MySQL に基づいているので、[ 直接接続 ](../integrations/mysql-via-a-direct-connection.md)、[[!DNL cPanel]](../integrations/mysql-via-cpanel.md)、または [SSH トンネル経由 ](../integrations/mysql-via-ssh-tunnel.md) を介して [!DNL Commerce Intelligence] に接続できます。 最も安全な SSH 方式をお勧めします。
+[!DNL Adobe Commerce] データベースは MySQL に基づいているので、[!DNL Commerce Intelligence] 直接接続 [、](../integrations/mysql-via-a-direct-connection.md)、または [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)SSH トンネル経由 [ を介して ](../integrations/mysql-via-ssh-tunnel.md) に接続できます。 最も安全な SSH 方式をお勧めします。
 
 ## 関連情報
 

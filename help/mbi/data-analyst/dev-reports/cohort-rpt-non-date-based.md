@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 非日付ベースのコホートの [!DNL Cohort Report Builder]
 
-この [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) は、マーチャントが時間の経過と共にユーザーの様々なサブセットの動作を研究するのに役立ちます。 以前は、共通の `cohort date` でユーザーをグループ化するために `Cohort Report Builder` が最適化されていました（例えば、特定の月に最初の購入を行ったすべての顧客のセット）。 `Non-Date Based Cohort` 機能を使用して、類似のアクティビティまたは属性でユーザーをグループ化できるようになりました。 この機能の使用例をいくつか見てみましょう。
+この [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) は、マーチャントが時間の経過と共にユーザーの様々なサブセットの動作を研究するのに役立ちます。 以前は、共通の `Cohort Report Builder` でユーザーをグループ化するために `cohort date` が最適化されていました（例えば、特定の月に最初の購入を行ったすべての顧客のセット）。 `Non-Date Based Cohort` 機能を使用して、類似のアクティビティまたは属性でユーザーをグループ化できるようになりました。 この機能の使用例をいくつか見てみましょう。
 
 ## ユースケース
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. 左側のタブの「**[!UICONTROL Report Builder]**」または任意のダッシュボードの「**[!UICONTROL Add Report** > **Create Report]**」をクリックします。
 
-1. `Report Builder Selection` 画面で、「`Visual Report Builder`」オプションの横にある「**[!UICONTROL Create Report]**」をクリックします。
+1. `Report Builder Selection` 画面で、「**[!UICONTROL Create Report]**」オプションの横にある「`Visual Report Builder`」をクリックします。
 
 ### 指標の追加
 
@@ -55,11 +55,11 @@ ht-degree: 0%
 
 
 
-#### 1. グループ化 `cohorts`
+#### &#x200B;1. グループ化 `cohorts`
 
 `Cohorts` は、動作の特性によってグループ化されます。この例では `Customer's first order GA source` です。 ここで使用できるオプションは、指標の `groupable` として既に指定されている列です。
 
-#### 2. コホートの選択
+#### &#x200B;2. コホートの選択
 
 指定した特性のすべての結果を表示できます。 これにより多くの `cohorts` が生じる可能性があるので、必要な特定の `cohorts` （`Customer's first order GA source` で使用可能な様々な値に対応）を選択できます。
 
@@ -75,13 +75,13 @@ ht-degree: 0%
 
 #### 5.`Time range after cohort occurrence`
 
-`cohorts` の推移を月別、週別または年別に表示しますか？ ここで、選択を行います。 そのセクションの下で、`cohort action timestamp` が発生した後の `time range` を選択します。 例えば、アクションの時間範囲内に最初の注文を行った顧客の 12 か月のデータが表示されます。
+`cohorts` の推移を月別、週別または年別に表示しますか？ ここで、選択を行います。 そのセクションの下で、`time range` が発生した後の `cohort action timestamp` を選択します。 例えば、アクションの時間範囲内に最初の注文を行った顧客の 12 か月のデータが表示されます。
 
 ![ コホート – first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 >[!NOTE]
 >
->`Standard` ビューと `Cohort` ビューを切り替えても、指標に適用される [!UICONTROL Filters] ータはそのまま維持されます。
+>[!UICONTROL Filters] ビューと `Standard` ビューを切り替えても、指標に適用される `Cohort` ータはそのまま維持されます。
 
 ### 関連
 

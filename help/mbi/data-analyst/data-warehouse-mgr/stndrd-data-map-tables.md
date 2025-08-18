@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # マッピングテーブルを使用したデータの標準化
 
-`Revenue by State` しいレポートを作成する `Report Builder` にいると仮定します。 レポートに `billing state` しいグループ化を追加しようとすると、次の情報が表示されるまで、すべてが正常に動作します。
+`Report Builder` しいレポートを作成する `Revenue by State` にいると仮定します。 レポートに `billing state` しいグループ化を追加しようとすると、次の情報が表示されるまで、すべてが正常に動作します。
 
 ![](../../assets/Messy_State_Segments.png)
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->統合テーブルのマッピング・テーブルを作成するには、Adobe・サポート・チームのサポートが必要です。
+>統合テーブルのマッピングテーブルを作成するには、Adobe サポートチームのサポートが必要です。
 
 ## 作成方法 {#how}
 
@@ -49,21 +49,21 @@ ht-degree: 0%
 
 ## 使用するた [!DNL Commerce Intelligence] に必要な操作 {#use}
 
-マッピングテーブルの作成が完了したら、[!DNL Commerce Intelligence] に [ ファイルをアップロード ](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) し、新しいフィールドを目的のテーブルに再配置する [ 結合列を作成 ](../../data-analyst/data-warehouse-mgr/calc-column-types.md) する必要があります。 これは、ファイルがData Warehouseに同期された後で行うことができます。
+マッピングテーブルの作成が完了したら、[ に ](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) ファイルをアップロード [!DNL Commerce Intelligence] し、新しいフィールドを目的のテーブルに再配置する [ 結合列を作成 ](../../data-analyst/data-warehouse-mgr/calc-column-types.md) する必要があります。 これは、ファイルがData Warehouseに同期された後で実行できます。
 
-次の使用例は、`mapping_state` テーブル （`state_input`）に作成した列を、結合された列を使用して `customer_address` テーブルに移動します。 これにより、`state` 列ではなく、レポートのクリーンな `state_input` 列でグループ化できるようになります。
+次の使用例は、`mapping_state` テーブル （`state_input`）に作成した列を、結合された列を使用して `customer_address` テーブルに移動します。 これにより、`state_input` 列ではなく、レポートのクリーンな `state` 列でグループ化できるようになります。
 
-`joined` 列を作成するには、Data Warehouseマネージャーでフィールドの移動先となるテーブルに移動します。 この例では、これが `customer_address` テーブルになります。
+`joined` 列を作成するには、Data Warehouse Manager でフィールドの移動先となるテーブルに移動します。 この例では、これが `customer_address` テーブルになります。
 
 1. 「**[!UICONTROL Create a Column]**」をクリックします。
-1. `Definition` ドロップダウンから「`Joined Column`」を選択します。
+1. `Joined Column` ドロップダウンから「`Definition`」を選択します。
 1. 列に、データベースの `state` 列と区別する名前を付けます。 Report Builder でセグメント化する際に使用する列を指定できるように、列 `billing state (mapped)` に名前を付けます。
-1. テーブルの接続に必要なパスが存在しないので、パスを作成する必要があります。 `Select a table and column` ドロップダウンで「**[!UICONTROL Create new path]**」をクリックします。
+1. テーブルの接続に必要なパスが存在しないので、パスを作成する必要があります。 **[!UICONTROL Create new path]** ドロップダウンで「`Select a table and column`」をクリックします。
 
    テーブルの関係が何か、またはプライマリキーと外部キーを適切に定義する方法が不明な場合は、[ チュートリアル ](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) でヘルプを確認してください。
 
    * `Many` 側で、フィールドの移動先のテーブル（ここでは `customer_address`）と、`Foreign Key` 列（この例では `state` 列）を選択します。
-   * `One` 側で、`mapping` テーブルと `Primary key` 列を選択します。 この場合は、`mapping_state` のテーブルから `state_input` の列を選択します。
+   * `One` 側で、`mapping` テーブルと `Primary key` 列を選択します。 この場合は、`state_input` のテーブルから `mapping_state` の列を選択します。
    * パスは次のようになります。
 
      ![](../../assets/State_Mapping_Path.png)
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ![](../../assets/Clean_State_Segments.png)
 
-マッピングテーブルは、Data Warehouse内の散らかっている可能性のあるデータをクリーンアップする場合にいつでも便利です。 ただし、マッピングテーブルは、[ 内のレプリケーション  [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md) など、その他の優れたユースケースにも使用  [!DNL Google Analytics channels]  きます。
+マッピングテーブルは、Data Warehouse内の散らかっている可能性のあるデータをクリーンアップする場合にいつでも便利です。 ただし、マッピングテーブルは、[ 内のレプリケーション  [!DNL Google Analytics channels]  など、その他の優れたユースケースにも使用  [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md) きます。
 
 ### 関連
 

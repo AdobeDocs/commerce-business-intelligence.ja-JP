@@ -6,19 +6,19 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
-# [!DNL SSH Tunnel] 経由で [!DNL PostgreSQL] に接続
+# [!DNL PostgreSQL] 経由で [!DNL SSH Tunnel] に接続
 
-`SSH tunnel` を使用して [!DNL PostgreSQL] データベースを [!DNL Commerce Intelligence] に接続するには、次の操作を行う必要があります。
+[!DNL PostgreSQL] を使用して [!DNL Commerce Intelligence] データベースを `SSH tunnel` に接続するには、次の操作を行う必要があります。
 
 1. [ [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
 1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
-1. [ [!DNL Commerce Intelligence] のユ  [!DNL Linux]  ザーを作成](#linux)
-1. [ [!DNL Commerce Intelligence] のユ  [!DNL PostgreSQL]  ザーを作成](#postgres)
+1. [ [!DNL Linux]  のユ  [!DNL Commerce Intelligence] ザーを作成](#linux)
+1. [ [!DNL PostgreSQL]  のユ  [!DNL Commerce Intelligence] ザーを作成](#postgres)
 1. [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
 
 ## [!DNL Commerce Intelligence] [!DNL public key] の取得 {#retrieve}
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 ## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可します {#allowlist}
 
-接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 これは `54.88.76.97/32` ですが、`PostgreSQL` 資格情報ページにも表示されます。 上のGIFの青いボックスを参照してください。
+接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 これは `54.88.76.97/32` ですが、`PostgreSQL` 資格情報ページにも表示されます。 上記のGIFの青いボックスを参照してください。
 
-## [!DNL Commerce Intelligence] 用の [!DNL Linux] ユーザーの作成 {#linux}
+## [!DNL Linux] 用の [!DNL Commerce Intelligence] ユーザーの作成 {#linux}
 
-リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [!DNL PostgreSQL] サーバーへの接続権が保持されている限り、好きなように [ このユーザーを制限 ](../../../administrator/account-management/restrict-db-access.md) することができます。
+リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [ サーバーへの接続権が保持されている限り、好きなように ](../../../administrator/account-management/restrict-db-access.md) このユーザーを制限 [!DNL PostgreSQL] することができます。
 
 1. 新しいユーザーを追加するには、[!DNL Linux] サーバーで次のコマンドを root として実行します。
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 関連
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

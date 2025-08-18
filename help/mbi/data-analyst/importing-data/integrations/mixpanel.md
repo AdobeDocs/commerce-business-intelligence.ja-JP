@@ -23,7 +23,7 @@ ht-degree: 0%
 
 [!DNL Mixpanel] データをに接続する [!DNL Commerce Intelligence]、簡単な 3 ステップのプロセスです。
 
-1. [ [!DNL Commerce Intelligence] の場所で  [!DNL Mixpanel] credentials ページを開きます。](#stepone)
+1. [ [!DNL Mixpanel]  の場所で  [!DNL Commerce Intelligence]credentials ページを開きます。](#stepone)
 1. [API 資格情報  [!DNL Mixpanel]  取得](#steptwo)
 1. [API 資格情報  [!DNL Mixpanel]  入力  [!DNL Commerce Intelligence]](#stepthree)
 
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 はじめに：
 
-1. **[!DNL Manage Data** > **Connections]** の下の `Connections` ページに移動します。
+1. `Connections` の下の **[!DNL Manage Data** > **Connections]** ページに移動します。
 
-1. `Data Sources` テーブルの上の画面の右側にある [**[!UICONTROL Add a New Source]**] をクリックします。
+1. **[!UICONTROL Add a New Source]** テーブルの上の画面の右側にある [`Data Sources`] をクリックします。
 
 1. [!DNL Mixpanel] アイコンをクリックし、資格情報ページを開きます。
 
@@ -55,9 +55,9 @@ ht-degree: 0%
 
 これを開いたままにしておきます。これを包み込む必要があります。
 
-## [!DNL Commerce Intelligence] での [!DNL Mixpanel] API 資格情報の入力 {#stepthree}
+## [!DNL Mixpanel] での [!DNL Commerce Intelligence] API 資格情報の入力 {#stepthree}
 
-1. `API Key` と `Secret` を [!DNL Commerce Intelligence] の [!DNL Mixpanel] 資格情報ページにコピーします。
+1. `API Key` と `Secret` を [!DNL Mixpanel] の [!DNL Commerce Intelligence] 資格情報ページにコピーします。
 1. 「**[!UICONTROL Connect to Mixpanel]**」をクリックして設定を完了します。
 
 接続に成功した場合、_成功！メッセ_ ジがページの上部に表示されます。
@@ -65,4 +65,4 @@ ht-degree: 0%
 ### 関連
 
 * [Expected [!DNL Mixpanel] data](../integrations/mixpanel-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

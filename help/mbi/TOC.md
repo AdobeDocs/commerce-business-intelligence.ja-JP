@@ -16,7 +16,7 @@ ht-degree: 0%
 
 - [[!DNL Commerce Intelligence] ユーザーガイド](guide-overview.md)
 - [[!DNL Commerce Intelligence] の概要](getting-started/getting-started.md)
-- 入門 {#start}
+- はじめに {#start}
    - [オンボーディング](getting-started/onboarding.md)
    - [アカウント  [!DNL Commerce Intelligence]  アクティブ化](getting-started/onpremise-activation.md)
    - [アカウントにログイ  [!DNL Commerce Intelligence] ](getting-started/sign-in.md)
@@ -27,14 +27,14 @@ ht-degree: 0%
       - [オフィスのダッシュボードを表示](../mbi/administrator/account-management/display-dashboards-office.md)
       - [アカウントの管理](administrator/account-management/managing-account-settings.md)
       - [データベース アクセスの制限](../mbi/administrator/account-management/restrict-db-access.md)
-   - User Management {#user-mgmt}
+   - ユーザー管理 {#user-mgmt}
       - [ユーザーの作成/編集](../mbi/administrator/user-management/create-user.md)
       - [ユーザーの削除/再アクティブ化](../mbi/administrator/user-management/delete-user.md)
       - [ユーザー権限の管理](administrator/user-management/user-management.md)
       - [パスワードをリセット](../mbi/administrator/user-management/reset-password.md)
       - [指標へのアクセスの制限](../mbi/administrator/user-management/restrict-metric-access.md)
       - [高度なユーザー管理](../mbi/administrator/user-management/advanced.md)
-- データ ースの分析 {#analyze}
+- データの分析 {#analyze}
    - [データアナリスト](data-analyst.md)
    - Data Warehouse Manager {#warehouse-manager}
       - [概要](data-analyst/data-warehouse-mgr/tour-dwm.md)
@@ -62,7 +62,7 @@ ht-degree: 0%
       - [ダッシュボード全体のフィルタリングの使用](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [イベント番号の計算列の使用](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
       - [順次比較の計算列の使用](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
-   - Commerceの一般的なテーブル {#tables}
+   - 一般的なCommerce テーブル {#tables}
       - [概要](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
       - [[!DNL enterprise_rma]](data-analyst/data-warehouse-mgr/enter-rma-table.md)
@@ -71,7 +71,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - SQL Report Builder {#sql}
+   - SQL REPORT BUILDER {#sql}
       - [使用  [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [非日付ベース  [!DNL Cohort Report Builder]  コホートの使用](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [定性コホート分析の作成](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -86,7 +86,7 @@ ht-degree: 0%
       - [ [!DNL Repeat Order Probability Report] の内容について](data-analyst/dev-reports/repeat-order-probability.md)
       - [ [!DNL SQL Report Builder] を使用した指標の監査](data-analyst/dev-reports/audit-metrics-sql.md)
       - [ [!DNL SQL]  との間の列の違い  [!DNL Data Warehouse Manager]](data-analyst/dev-reports/columns-sql-dwm.md)
-   - Data の接続 {#connecting}
+   - データの接続 {#connecting}
       - [概要](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [e コマースデータのフォーマットと読み込み](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
       - [インポート  [!DNL Bing Ad Spend]  データ](data-analyst/importing-data/connecting-data/import-bing-ad-data.md)
@@ -129,7 +129,7 @@ ht-degree: 0%
       - [Expected [!DNL Zendesk] data](data-analyst/importing-data/integrations/exp-zendesk-data.md)
       - [分析  [!DNL Zendesk]  データ](data-analyst/importing-data/integrations/help-desk-zendesk.md)
       - [監査  [!DNL Zendesk]  データ](data-analyst/importing-data/integrations/audit-zendesk-data.md)
-   - Database Integrations {#integration}
+   - データベースの統合 {#integration}
       - [接続  [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [VPN を介したデータベースの接続](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
       - [ [!DNL MySQL Database]  を  [!DNL Commerce Intelligence] に接続](data-analyst/importing-data/integrations/db-to-mbi.md)
@@ -149,7 +149,7 @@ ht-degree: 0%
       - [クーポン使用状況の分析](data-analyst/analysis/coupon-usage.md)
       - [広告キャンペーンの ROI の向上](data-analyst/analysis/roi-ad-camp.md)
       - [マーケティング ROI](data-analyst/analysis/marketing-roi.md)
-   - 顧客 の分析 {#customers}
+   - 顧客の分析 {#customers}
       - [Commerceのチャーンレートの計算](data-analyst/analysis/commerce-churn.md)
       - [顧客集中度の定義](data-analyst/analysis/define-cust-concent.md)
       - [顧客チャーンの定義](data-analyst/analysis/define-cust-churn.md)
@@ -160,7 +160,7 @@ ht-degree: 0%
       - [顧客の再購入行動の分析](data-analyst/analysis/repurchase-behavior.md)
       - [Web サイトのアクティビティと顧客コンバージョン率の分析](data-analyst/analysis/web-act-cust-conversion.md)
       - [最新性、頻度、通貨（RFM）分析](data-analyst/analysis/rfm-analysis.md)
-   - ビジネスの業績 の分析 {#performance}
+   - ビジネスパフォーマンスの分析 {#performance}
       - [実際の指標に対する目標の追跡](data-analyst/analysis/track-goals-against-metrics.md)
       - [返品注文の分析](data-analyst/analysis/returned-order-analysis.md)
       - [前年比、前月比、前週比](data-analyst/analysis/year-month-week.md)
@@ -173,7 +173,7 @@ ht-degree: 0%
       - [小売カレンダーのレポート](data-analyst/analysis/report-retail-calendar.md)
    - 予測 {#forecasting}
       - [概要](data-analyst/analysis/forecasting.md)
-- レポートの作成とデータ ースの共有 {#build}
+- レポートの作成とデータの共有 {#build}
    - [データユーザー](../mbi/data-user.md)
    - レポート {#reports}
       - [レポートの基本事項](data-user/reports/rpt-fundamentals.md)
@@ -209,12 +209,12 @@ ht-degree: 0%
       - [共有ダッシュボードへのアクセス](data-user/dashboards/access-shared-dashboard.md)
       - [共有ダッシュボードへのアクセス権の変更](data-user/dashboards/change-access-dashboard.md)
       - [ダッシュボードの離脱（共有解除）](data-user/dashboards/leave-dashboard.md)
-   - Sharing Data {#share}
+   - データの共有 {#share}
       - [データの共有](data-user/export-data/share-data.md)
       - [グラフ データをエクスポートしています](data-user/export-data/exp-chart-dash.md)
       - [自動メール概要](data-user/export-data/email-summaries.md)
 - ベストプラクティス {#best-practices}
-   - Data の操作 {#data}
+   - データの操作 {#data}
       - [データの操作](best-practices/work-data.md)
       - [内の UTM タグ付け  [!DNL Google Analytics]](best-practices/utm-tagging-google.md)
       - [財務データのフォーマットとインポート](best-practices/format-import-financial-data.md)
@@ -229,7 +229,7 @@ ht-degree: 0%
       - [レポートおよび要素の命名  [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [テーブルの統合](best-practices/consolidating-your-tables.md)
       - [アカウントの  [!DNL Commerce Intelligence]  除](best-practices/declutter-account.md)
-   - ダッシュボード の操作 {#working-dashboards}
+   - ダッシュボードの操作 {#working-dashboards}
       - [ダッシュボードの共有](best-practices/share-dashboard-best-practice.md)
       - [投資家ダッシュボードの構築](best-practices/build-investor-dashboard.md)
 - チュートリアル {#tutorials}

@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### （オプション 1） [!DNL Google Analytics E-Commerce] を介した注文リファラルソースデータの追跡
 
-[!DNL Google Analytics E-Commerce] を使用して注文および販売データを追跡する場合は、[[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) を使用して各注文のリファラルソースデータを同期できます。 これにより、売上高と注文をリファラルソース（`utm_source` や `utm_medium` など）別にセグメント化できます。 また、`User's first order source` などのカスタムディメンションを使用して、顧客獲得ソース [!DNL Commerce Intelligence] 把握できます。
+[!DNL Google Analytics E-Commerce] を使用して注文および販売データを追跡する場合は、[!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) を使用して各注文のリファラルソースデータを同期できます。 これにより、売上高と注文をリファラルソース（`utm_source` や `utm_medium` など）別にセグメント化できます。 また、[!DNL Commerce Intelligence] などのカスタムディメンションを使用して、顧客獲得ソース `User's first order source` 把握できます。
 
 ### （オプション 2） [!DNL Google Analytics] の取得元データをデータベースに保存する
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 #### なぜでしょうか。
 
-コンバージョンおよび獲得指標 [!DNL Google Analytics] デフォルト値を見ているだけでは、全体像を把握することはできません。 オーガニック検索と有料検索のコンバージョン数の比較は興味深いものですが、この情報で何ができますか？ 有料検索にもっと金を使うべきですか？ これは、そのチャネルから生じる顧客の価値によって異なり、Google Analyticsが提供するものではありません。
+コンバージョンおよび獲得指標 [!DNL Google Analytics] デフォルト値を見ているだけでは、全体像を把握することはできません。 オーガニック検索と有料検索のコンバージョン数の比較は興味深いものですが、この情報で何ができますか？ 有料検索にもっと金を使うべきですか？ これは、そのチャネルから生じる顧客の価値によって異なり、Google Analyticsでは提供されません。
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 文字列にエンコードされた何らかの取得元データがあることは明らかです。 これは、訪問者の最新の獲得ソースおよび関連するキャンペーンデータであることを確認するためにテストされています。 次に、データの抽出方法を知る必要があります。
 
-このコードは、github でホストされる [PHP ライブラリ ](https://github.com/RJMetrics/referral-grabber-php) に変換されました。 ライブラリを使用するには、`ReferralGrabber.php` への参照を `include` し、次にを呼び出します
+このコードは、github でホストされる [PHP ライブラリ ](https://github.com/RJMetrics/referral-grabber-php) に変換されました。 ライブラリを使用するには、`include` への参照を `ReferralGrabber.php` し、次にを呼び出します
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 

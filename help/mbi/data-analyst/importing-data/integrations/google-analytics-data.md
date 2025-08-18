@@ -1,5 +1,5 @@
 ---
-title: 想定されるGoogle Analyticsデータ
+title: 予想されるGoogle Analytics データ
 description: Google Analytics指標の操作方法を説明します。
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
 role: Admin, Data Architect, Data Engineer, User
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 [!DNL Google Analytics] 統合に接続すると、[!DNL Google Analytics] の指標を *`Visual Report Builder`* で即座に）操作できます。 `Visual Report Builder` を入力するときに「**[!UICONTROL Add a Metric]**」をクリックすると、[!DNL Google Analytics] プロファイルの一連の指標がData Warehouseの指標のすぐ下のドロップダウンに表示されます。
 
-[!DNL Google Analytics] 統合は *ライブ* です。つまり、レポートに指標を追加すると、`Report Builder` ーザー [!DNL Google Analytics]*即時* からデータをリクエストします。 また、アクセス可能な指標は [!DNL Google Analytics] の場合と同じように定義され、これらの値は [!DNL Commerce Intelligence] アカウントには *格納* されず、レポートに視覚的にのみ表示されます。
+[!DNL Google Analytics] 統合は *ライブ* です。つまり、レポートに指標を追加すると、`Report Builder` ーザー [!DNL Google Analytics]*即時* からデータをリクエストします。 また、アクセス可能な指標は [!DNL Google Analytics] の場合と同じように定義され、これらの値は *アカウントには* 格納 [!DNL Commerce Intelligence] されず、レポートに視覚的にのみ表示されます。
 
-+++サポートされる指標およびDimension（Google Analytics 3 または Universal Analytics）
++++サポートされる指標およびディメンション（Google Analytics 3 または Universal Analytics）
 
 >[!NOTE]
 >
 >2023 年 7 月 1 日（PT）をもって、標準の Universal Analytics （[!DNL Google Analytics] 3）プロパティでデータが処理されなくなります。 2023 年 7 月 1 日（PT）以降の期間、ユニバーサルアナリティクスレポートを表示できるようになります。 ただし、新しいデータは [!DNL Google Analytics]4 つのプロパティにのみ送られます。
 
-[!DNL Commerce Intelligence] の [!DNL Google Analytics] 統合では、[!DNL Google Analytics] [ コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用し、次の指標とディメンションをサポートしています。
+[!DNL Google Analytics] の [!DNL Commerce Intelligence] 統合では、[!DNL Google Analytics] [ コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用し、次の指標とディメンションをサポートしています。
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-## サポートされるDimension
+## サポートされるディメンション
 
 | [!DNL Commerce Intelligence] 表示名 | [!DNL Google Analytics] 名/式 | グループ化可能？ |
 | --- | --- | --- |
@@ -154,14 +154,14 @@ ht-degree: 0%
 
 +++
 
-+++サポートされる指標およびDimension（Google Analytics 4）
++++サポートされる指標およびディメンション（Google Analytics 4）
 
-[!DNL Commerce Intelligence] の [!DNL Google Analytics] 統合では、[!DNL Google Analytics] [Data API v1 （GA4） ](https://developers.google.com/analytics/devguides/reporting/data/v1) を使用します。
+[!DNL Google Analytics] の [!DNL Commerce Intelligence] 統合では、[!DNL Google Analytics] [Data API v1 （GA4） ](https://developers.google.com/analytics/devguides/reporting/data/v1) を使用します。
 
 >[!NOTE]
 >
 > Commerce Intelligenceでは、`cohort`、`cohortNthDay`、`cohortNthMonth`、`cohortNthWeek` のディメンションはサポートされていません。
 >
->予期しない結果や感覚的でない結果を避けるために、使用するディメンションが、`Visual Report Builder` で使用する 1 つ以上の指標と互換性があることを確認します。 [GA4 Dimensionおよび指標エクスプローラー ](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/) を確認できます。
+>予期しない結果や感覚的でない結果を避けるために、使用するディメンションが、`Visual Report Builder` で使用する 1 つ以上の指標と互換性があることを確認します。 [GA4 ディメンションおよび指標エクスプローラー ](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/) を確認できます。
 
 +++

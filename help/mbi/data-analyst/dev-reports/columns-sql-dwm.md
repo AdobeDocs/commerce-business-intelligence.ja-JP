@@ -1,6 +1,6 @@
 ---
-title: SQL とData Warehouse・マネージャの違い
-description: SQL とData Warehouseマネージャーの違いについて説明します。
+title: SQL とData Warehouse Manager の違い
+description: SQL とData Warehouse Manager の違いについて説明します。
 exl-id: 31dd7a04-5c03-4399-b67e-f51703eb9fea
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
@@ -23,6 +23,6 @@ ht-degree: 0%
 >
 >[!DNL SQL] エディターを使用して作成した列は、Data Warehouseに保存されません。 列を含むクエリには常にアクセスできますが、複数のレポートで列を使用する場合は、各レポートのクエリで列を再作成する必要があります。 つまり、[!DNL SQL] エディターを使用して作成された列は、従来の [!DNL Report Builder] では使用できません。
 
-## Data Warehouseマネージャーの列
+## Data Warehouse Manager の列
 
-列は更新サイクルに依存するので、編集する前に完全なサイクルを完了する必要があります。 これらの列はData Warehouseマネージャーに保存され、従来の [!DNL Report Builder] または [!DNL SQL Report Builder] で使用できます。
+列は更新サイクルに依存するので、編集する前に完全なサイクルを完了する必要があります。 これらの列はData Warehouse Manager に保存され、従来の [!DNL Report Builder] や [!DNL SQL Report Builder] で使用できます。

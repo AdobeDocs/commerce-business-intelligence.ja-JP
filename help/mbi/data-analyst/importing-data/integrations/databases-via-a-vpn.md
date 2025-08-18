@@ -20,7 +20,7 @@ Adobeでは、`SSH tunnel` を使用してデータベースを接続するこ�
 1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
 1. [Commerce Intelligenceへの接続と VPN ユーザー情報の入力](#finish)
 
-データベースの資格情報に加えて、VPN ユーザーの資格情報を入力して内容を確認する必要があります。 どの VPN ユーザーでも機能しますが、Adobeでは、アカウント上のユーザーを簡単にトラッキングできるように、[!DNL Commerce Intelligence] ユーザーを作成することをお勧めします。
+データベースの資格情報に加えて、VPN ユーザーの資格情報を入力して内容を確認する必要があります。 どの VPN ユーザーでも機能しますが、Adobeでは、アカウント上のユーザーを簡単に追跡できるため、[!DNL Commerce Intelligence] ユーザーを作成することをお勧めします。
 
 ## [!DNL Commerce Intelligence] 用のデータベースユーザーの作成 {#database}
 
@@ -31,7 +31,7 @@ Adobeでは、`SSH tunnel` を使用してデータベースを接続するこ�
 * [MySQL](../integrations/mysql-via-a-direct-connection.md)
 * [PostgreSQL](../integrations/postgresql.md)
 
-## [!DNL Commerce Intelligence] 用の `VPN` ユーザーの作成 {#vpn}
+## `VPN` 用の [!DNL Commerce Intelligence] ユーザーの作成 {#vpn}
 
 前述のように、有効な `VPN` ユーザーであれば誰でも機能しますが、Adobeでは、[!DNL Commerce Intelligence] 用のためにのみユーザーを作成することをお勧めします。
 
@@ -41,7 +41,7 @@ Adobeでは、`SSH tunnel` を使用してデータベースを接続するこ�
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## 接続の入力とユーザー情報の [!DNL Commerce Intelligence] への `VPN` 入 {#finish}
+## 接続の入力とユーザー情報の `VPN` への [!DNL Commerce Intelligence] 入 {#finish}
 
 まとめるには、接続とユーザー情報を [!DNL Commerce Intelligence] に入力する必要があります。 データベースの `credentials` ページを開いたままにしましたか。 そうでない場合は、**[!UICONTROL Manage Data** > **Connections]** に移動します。 [**[!UICONTROL Add New Data Source]**] をクリックし、接続するデータベースのアイコンをクリックします。 `Encrypted` の切り替えを `Yes` に変更することを忘れないでください。
 

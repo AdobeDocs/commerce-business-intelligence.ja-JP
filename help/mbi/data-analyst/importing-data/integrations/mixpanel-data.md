@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL Mixpanel] データ
 
-[ アカウントに接続  [!DNL Mixpanel]  た ](../integrations/mixpanel.md) 後、[Data Warehouseマネージャー ](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。
+[ アカウントに接続  [!DNL Mixpanel]  た ](../integrations/mixpanel.md) 後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。
 
 このトピックでは、[!DNL Mixpanel] から [!DNL Commerce Intelligence] アカウントに読み込むことができるメインデータテーブルについて説明します。 [!DNL Mixpanel] を接続すると、Data Warehouseに次のテーブルが作成されます。 トラッキングに使用できるすべてのフィールドを表示するには、テーブル名列のリンクをクリックします。
 
@@ -32,4 +32,4 @@ ht-degree: 0%
 ## 関連ドキュメント
 
 * [接続  [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

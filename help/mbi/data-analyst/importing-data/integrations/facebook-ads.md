@@ -1,5 +1,5 @@
 ---
-title: facebook Ads の接続
+title: Facebook 広告を接続
 description: 広告費用データを分析し、お金が効果的に費やされているかどうかを確認する方法を説明します。
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Data Architect, Data Engineer, User
@@ -23,18 +23,18 @@ ht-degree: 0%
 
 [!DNL Facebook Ad] データを [!DNL Commerce Intelligence] に接続する手順は、次の 3 つです。
 
-1. [ [!DNL Commerce Intelligence] [!DNL Facebook]  データソースとして追加](#stepone)
+1. [ [!DNL Facebook]  [!DNL Commerce Intelligence] データソースとして追加](#stepone)
 1. [デ  [!DNL Commerce Intelligence]  タへのアクセス  [!DNL Facebook Ads]  許可](#steptwo)
 1. [データを取り込むための Select [!DNL Facebook Ads] Accounts](#stepthree)
 
 ## [!DNL Facebook] を [!DNL Commerce Intelligence] のデータソースとして追加する {#stepone}
 
-1. [!DNL Facebook] 統合を [!DNL Commerce Intelligence] アカウントに追加するには、「**[!UICONTROL Manage Data** > **Integrations]**」の下の `Connections` ページに移動します。
+1. [!DNL Facebook] 統合を [!DNL Commerce Intelligence] アカウントに追加するには、「`Connections`」の下の **[!UICONTROL Manage Data** > **Integrations]** ページに移動します。
 1. 右側にある「**[!UICONTROL Add Integration]**」をクリックします。
 1. [!DNL Facebook] アイコンをクリックします。 [!DNL Facebook] 認証ページが表示されます。
 1. 「**[!UICONTROL Authorize]**」をクリックします。
 
-## [!DNL Facebook Ads] データへの [!DNL Commerce Intelligence] アクセスを許可する {#steptwo}
+## [!DNL Commerce Intelligence] データへの [!DNL Facebook Ads] アクセスを許可する {#steptwo}
 
 **[!DNL Facebook Authorize]** をクリックすると、小さなポップアップウィンドウが表示されます。
 
@@ -54,11 +54,11 @@ ht-degree: 0%
 
 ## 次の手順 {#next}
 
-[!DNL Google Analytics] でキャンペーンをトラッキ [!DNL Facebook] グしていることを確認します。 これにより、[!DNL Google Analytics] の `utm\_campaign` フィールドが [!DNL Facebook] キャンペーン用に適切に設定されます。
+[!DNL Facebook] でキャンペーンをトラッキ [!DNL Google Analytics] グしていることを確認します。 これにより、`utm\_campaign` の [!DNL Google Analytics] フィールドが [!DNL Facebook] キャンペーン用に適切に設定されます。
 
 ## 関連
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [アカウント  [!DNL Google Adwords]  接続](../integrations/google-ecommerce.md)
 * [ [!DNL Google eCommerce] を介した注文リファラルソースの追跡](../integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースを追跡](../../analysis/google-track-user-acq.md)

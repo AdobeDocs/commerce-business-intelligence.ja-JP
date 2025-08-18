@@ -21,7 +21,7 @@ ht-degree: 0%
 
 このトピックでは、[!DNL Microsoft SQL] データベースを [!DNL Commerce Intelligence] に接続する方法を 4 段階で説明します。 このプロセスには、サーバー接続と SQL に関連する技術的な専門知識が必要であり、チームの開発者のサポートが必要になる場合があります。
 
-[!DNL Commerce Intelligence] は、[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure] およびその他のほとんどのクラウドサーバープロバイダーをサポートしています。 特定のホストに関するご質問については、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)、この情報の提供をアドビに依頼してください。
+[!DNL Commerce Intelligence] は、[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure] およびその他のほとんどのクラウドサーバープロバイダーをサポートしています。 特定のホストに関するご質問については、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)、この情報の提供をアドビに依頼してください。
 
 システムは、データベースに対して SELECT クエリを実行する必要があります。 この処理は、最初はデータベース構造のスナップショットを取得するために行われ、その後、定期的に残業してデータを最新の状態に保ちます。 更新は増分更新なので、Adobeでは、更新の頻度と時間を制限して、サーバーに不要な負荷がかかるのを防ぎます。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
    * `UI`
    * [`Query`](http://sqlserverplanet.com/security/add-user) （2 番目の例）
 
-1. **[!UICONTROL Manage Data** > **Connections]** の下の [!DNL Commerce Intelligence] に、サーバーの IP アドレス、ユーザー名およびパスワードを入力します。
+1. [!DNL Commerce Intelligence] の下の **[!UICONTROL Manage Data** > **Connections]** に、サーバーの IP アドレス、ユーザー名およびパスワードを入力します。
 
    ![](../../../assets/manage-data-connections.png)
 

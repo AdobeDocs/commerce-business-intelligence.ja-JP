@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # オンプレミスおよびスターターのサブスクリプション用に [!DNL Commerce Intelligence] アカウントを有効化する
 
-オンプレミスのサブスクリプションで [!DNL Commerce Intelligence] をアクティブにするには、まず [!DNL Commerce Intelligence] アカウントを作成し、設定情報を入力してから、[!DNL Commerce] データベースに接続 [!DNL Commerce Intelligence] ます。<!-- For information about activation in `Cloud Starter` projects, see [Activating your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions](../getting-started/cloud-activation.md).-->
+オンプレミスのサブスクリプションで [!DNL Commerce Intelligence] をアクティブにするには、まず [!DNL Commerce Intelligence] アカウントを作成し、設定情報を入力してから、[!DNL Commerce Intelligence] データベースに接続 [!DNL Commerce] ます。<!-- For information about activation in `Cloud Starter` projects, see [Activating your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions](../getting-started/cloud-activation.md).-->
 
 ## [!DNL Commerce Intelligence] アカウントの作成
 
-アカウントを作成するには、Adobeアカウントチームまたはカスタマーテクニカルアドバイザーにお問い合わせください。
+アカウントを作成するには、Adobe アカウントチームまたはカスタマーテクニカルアドバイザーにお問い合わせください。
 
 ## パスワードを作成
 
 アカウントが作成されたら、メールで [!DNL The Magento BI Team@rjmetrics.com] からのアカウント通知メールを確認します。 メールに記載されているリンクを使用して [!DNL Commerce Intelligence] アカウントにアクセスし、パスワードを作成します。 インボックスに移動し、メールアドレスを確認します。
 
-メールを受け取っていない場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+メールを受け取っていない場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)。
 
 ![](../assets/create-account-4.png)
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ![](../assets/create-account-5.png)
 
-## [!DNL Commerce] admin で専用の [!DNL Commerce Intelligence] ユーザーを作成します
+## [!DNL Commerce Intelligence] admin で専用の [!DNL Commerce] ユーザーを作成します
 
 [!DNL Commerce Intelligence] を使用するには、[!DNL Commerce] プロジェクトに永続的な専用ユーザーを追加する必要があります。 この専用ユーザーは、[!DNL Commerce] への永続的な接続として機能し、新しいデータを取得してアカウントの [!DNL Commerce Intelligence] Data Warehouseに転送できます。
 
@@ -48,9 +48,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobeは、永続的なステータスを示すアカウント名（ACI-dedicated、ACI-database-connector など）を使用することをお勧めします。
+>Adobeでは、永続的なステータスを示すアカウント名（ACI-dedicated、ACI-database-connector など）の使用を推奨しています。
 
-管理者で [!DNL Commerce Intelligence] 専用ユーザーを作成したら、同じユーザーを `Contributor` の **[!UICONTROL Master]** 設定で [!DNL Commerce] プロジェクトのプライマリ環境に追加します。
+管理者で [!DNL Commerce Intelligence] 専用ユーザーを作成したら、同じユーザーを [!DNL Commerce] の **[!UICONTROL Master]** 設定で `Contributor` プロジェクトのプライマリ環境に追加します。
 
 ![](../assets/commerce-add-user-settings.png)
 
@@ -100,13 +100,13 @@ ht-degree: 0%
 
    ![](../assets/example-database-information.png)
 
-## 暗号化された接続を使用して [!DNL Commerce] データベースに [!DNL Commerce Intelligence] を接続する
+## 暗号化された接続を使用して [!DNL Commerce Intelligence] データベースに [!DNL Commerce] を接続する
 
 >[!NOTE]
 >
->Adobeでは、[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) トンネルを使用してデータベース接続を確立することを強くお勧めします。 ただし、この方法がオプションでない場合でも、[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md) を使用して [!DNL Commerce Intelligence] をデータベースにリンクできます。
+>Adobeでは、[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) トンネルを使用してデータベース接続を確立することを強くお勧めします。 ただし、この方法がオプションでない場合でも、[!DNL Commerce Intelligence] を使用して [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md) をデータベースにリンクできます。
 
-[!UICONTROL Connect your Magento Database] 画面に [!DNL Commerce Intelligence] 情報を入力します。
+[!DNL Commerce Intelligence] 画面に [!UICONTROL Connect your Magento Database] 情報を入力します。
 
 ![](../assets/connect-magento-db.png)
 
@@ -166,11 +166,11 @@ ht-degree: 0%
 >
 >[!DNL Adobe Commerce Intelligence Pro] のお客様は、カスタマーサクセスマネージャーまたはカスタマーテクニカルアドバイザーに連絡して、次の手順を調整してください。
 
-設定を完了したら、[!DNL Commerce Intelligence] アカウントに [ ログイン ](../getting-started/sign-in.md) します。
+設定を完了したら、[ アカウントに ](../getting-started/sign-in.md) ログイン [!DNL Commerce Intelligence] します。
 
 <!---# Activate your [!DNL Commerce Intelligence] Account 
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

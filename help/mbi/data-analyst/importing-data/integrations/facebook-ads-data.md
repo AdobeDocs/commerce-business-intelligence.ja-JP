@@ -1,6 +1,6 @@
 ---
-title: 予想されるFacebook Ads データ
-description: Data Warehouseへの同期に推奨されるテーブルの概要を説明します
+title: 予想される Facebook 広告データ
+description: Data Warehouseとの同期に推奨されるテーブルの概要について説明します
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 予期される [!DNL Facebook Ads] データ
 
-[ アカウントに接続 ](../integrations/facebook-ads.md) した後  [!DNL Facebook Ads] [Data Warehouseマネージャー ](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用すると、関連するデータフィールドを簡単に追跡して分析できます。
+[ アカウントに接続  [!DNL Facebook Ads]  した後 ](../integrations/facebook-ads.md)[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用すると、関連するデータフィールドを簡単に追跡して分析できます。
 
-このトピックでは、AdobeがData Warehouseに同期する際に推奨するテーブルの概要を説明します。 かなりの数のサブテーブルがあるので、ここではコアテーブルのみが強調表示されます。
+このトピックでは、Data WarehouseとAdobeで同期することをお勧めするテーブルの概要を説明します。 かなりの数のサブテーブルがあるので、ここではコアテーブルのみが強調表示されます。
 
 ## コア広告キャンペーンテーブル
 
@@ -60,4 +60,4 @@ ht-degree: 0%
 ## 関連
 
 * [接続  [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

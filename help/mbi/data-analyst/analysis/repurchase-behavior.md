@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 推奨される指標
 
-Adobeは、顧客再購入アクティビティ分析を作成する場合、次の指標を使用することをお勧めします。
+Adobeでは、お客様の購入アクティビティ分析を作成する際に、次の指標を使用することをお勧めします。
 
 ### 繰り返し注文の確率
 
@@ -82,4 +82,4 @@ Adobeは、顧客再購入アクティビティ分析を作成する場合、次
 
 チャーンが発生している理由を特定したら、分析を使用して `reactivation` キャンペーンを作成できます。 このデータを使用すると、非アクティブになったユーザー、最後の訪問からの経過時間、最後の購入の履歴などを識別できます。 これにより、顧客を再び呼び戻すための実用的な決定を下すことができます。
 
-分析に関するヘルプについては、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+分析に関するヘルプについては、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
