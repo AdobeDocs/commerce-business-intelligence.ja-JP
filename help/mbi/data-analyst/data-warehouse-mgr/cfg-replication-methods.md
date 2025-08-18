@@ -21,9 +21,9 @@ ht-degree: 0%
 
 `Replication` のメソッドは、`Incremental`、`Full Table`、`Paused` の 3 つのグループに分類されます。
 
-つまり、[**[!UICONTROL Incremental Replication]**](#incremental)[!DNL Commerce Intelligence] レプリケーションを試行するたびに、新しいデータまたは更新されたデータのみをレプリケートします。 これらの方法で待ち時間が大幅に短縮されるので、Adobeでは可能な限りこれを使用することをお勧めします。
+つまり、[**[!UICONTROL Incremental Replication]**](#incremental) [!DNL Commerce Intelligence] レプリケーションを試行するたびに、新しいデータまたは更新されたデータのみをレプリケートします。 これらの方法で待ち時間が大幅に短縮されるので、Adobeでは可能な限りこれを使用することをお勧めします。
 
-つまり、[**[!UICONTROL Full Table Replication]**](#fulltable)[!DNL Commerce Intelligence] レプリケーションを試行するたびに、テーブルのコンテンツ全体をレプリケートします。 レプリケートされるデータは大量になる可能性があるので、これらの方法によって待ち時間と更新時間が長くなる場合があります。 テーブルにタイムスタンプ付きまたは日時の列が含まれる場合、Adobeでは、代わりに増分処理メソッドを使用することをお勧めします。
+つまり、[**[!UICONTROL Full Table Replication]**](#fulltable) [!DNL Commerce Intelligence] レプリケーションを試行するたびに、テーブルのコンテンツ全体をレプリケートします。 レプリケートされるデータは大量になる可能性があるので、これらの方法によって待ち時間と更新時間が長くなる場合があります。 テーブルにタイムスタンプ付きまたは日時の列が含まれる場合、Adobeでは、代わりに増分処理メソッドを使用することをお勧めします。
 
 **[!UICONTROL Paused]** は、テーブルのレプリケーションが停止または一時停止されていることを示します。 [!DNL Commerce Intelligence] は、更新サイクル中に新しいデータまたは更新されたデータをチェックしません。つまり、レプリケーション方法としてこれを持つテーブルからデータがレプリケートされることはありません。
 

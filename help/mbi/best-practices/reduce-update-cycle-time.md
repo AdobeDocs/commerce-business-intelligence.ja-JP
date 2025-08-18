@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 再チェックの頻度を減らす
 
-データベーステーブルには、変更可能な値を持つデータ列を使用できます。 例えば、**orders** テーブルには、**status** という列がある場合があります。 注文が最初にデータベースに書き込まれると、ステータス列に値 `pending` が含まれる場合があります。 注文は [0}Data Warehouse} でこの ](../data-analyst/data-warehouse-mgr/tour-dwm.md) 値でレプリケートされます。`pending`
+データベーステーブルには、変更可能な値を持つデータ列を使用できます。 例えば、**orders** テーブルには、**status** という列がある場合があります。 注文が最初にデータベースに書き込まれると、ステータス列に値 `pending` が含まれる場合があります。 注文は [0&rbrace;Data Warehouse&rbrace; でこの ](../data-analyst/data-warehouse-mgr/tour-dwm.md) 値でレプリケートされます。`pending`
 
 変更可能な列は、時間の経過と共に [ 更新された値について再チェック ](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) される必要があります。 デフォルト [!DNL Commerce Intelligence] は、更新時にこれらの列を再チェックしますが、再チェックおよびレプリケートされるデータが大量にある場合は、更新時間に悪影響を与える可能性があります。 Adobeでは、すべての更新で再チェックを実行する代わりに、再チェックの頻度を日単位、週単位または月単位に設定することをお勧めします。
 

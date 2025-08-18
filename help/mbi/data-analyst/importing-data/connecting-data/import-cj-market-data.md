@@ -1,6 +1,6 @@
 ---
 title: CJ アフィリエイト（コミッション結合）マーケティングデータの読み込み
-description: CJ アフィリエイトデータを  [!DNL Commerce Intelligence].L Commerce Intelligence] に読み込む方法を説明します。
+description: CJ アフィリエイトデータを  [!DNL Commerce Intelligence].L Commerce Intelligence&rbrack; に読み込む方法を説明します。
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt

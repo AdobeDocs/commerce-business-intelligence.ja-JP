@@ -34,7 +34,7 @@ ht-degree: 0%
 
 [!UICONTROL Manage Data] のタブからテーブルを書き出すには、[ 管理者 ](../administrator/user-management/user-management.md) 権限が必要です。
 
-1. **[!UICONTROL Manage Data** > ** データの書き出し **/**生データの書き出し]** をクリックします。
+1. **[!UICONTROL Manage Data** > **&#x200B; データの書き出し &#x200B;**/**生データの書き出し]** をクリックします。
 1. 最近作成したデータ書き出しが存在する場合は、その `Export List` が表示されます。 「**[!UICONTROL Add Export]**」をクリックして、書き出しを作成します。
 1. `New Raw Data Export` ダイアログが表示されます。 ここでは、列とフィルターを選択または選択解除して、書き出しをカスタマイズできます。
 

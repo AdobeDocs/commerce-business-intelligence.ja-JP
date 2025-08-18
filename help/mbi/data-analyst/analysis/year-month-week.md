@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このトピックには、元のアーキテクチャと新しいアーキテクチャを使用しているクライアント向けの手順が含まれています。 メインツールバーから「{2[Data Warehouse表示 ](../../administrator/account-management/new-architecture.md)」セクションを選択できる場合は、「[!DNL _新しいアーキテクチャ_] を使用しています。[!DNL Manage Data]
+>このトピックには、元のアーキテクチャと新しいアーキテクチャを使用しているクライアント向けの手順が含まれています。 メインツールバーから「&lbrace;2[Data Warehouse表示 ](../../administrator/account-management/new-architecture.md)」セクションを選択できる場合は、「[!DNL _新しいアーキテクチャ_] を使用しています。[!DNL Manage Data]
 
 Report Builder を使用すると、経時的なトレンドを簡単に確認し、比較したい期間の視点を変更できます。 このトピックでは、より深いレベルに到達するためのダッシュボードを設定する方法を説明します。これにより、週別、月別、年別分析のレポートを作成できます。
 
@@ -40,7 +40,7 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
    * `created_at (month)` [!UICONTROL Calculation]: **to_char （A, &#39;mm-month&#39;）**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char （A, &#39;dd&#39;）**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char （A, &#39;d-Day&#39;）**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char （A, &#39;hh24&#39;）**
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char （A, &#39;hh24&#39;）**
      ![](../../assets/new-arch-create-calc.png)
 
 ## 指標
@@ -64,10 +64,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`: `This year`
 * 指標 `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **MoM グラフ**
@@ -81,10 +81,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`：今月*
 * 指標 `B`：先月*
 * [!UICONTROL Time period]:1 か月前から 0 か月前
-* 
+* &#x200B;
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: Line
 
 * **WoW グラフ**
@@ -98,10 +98,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`: `This week`
 * 指標 `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **DoD グラフ**
@@ -115,10 +115,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`: `Today`
 * 指標 B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、このページの上部の画像のようになります。

@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## ディメンションの作成
 
-ディメンションを作成するには、[/](../data-warehouse-mgr/tour-dwm.md) をクリックして **[!UICONTROL Data]** 0}Data Warehouse Manager} を開きます。**[!UICONTROL Data Warehouse]**
+ディメンションを作成するには、[/](../data-warehouse-mgr/tour-dwm.md) をクリックして **[!UICONTROL Data]** 0&rbrace;Data Warehouse Manager&rbrace; を開きます。**[!UICONTROL Data Warehouse]**
 
 ### 受注テーブル、丸 1
 

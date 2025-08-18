@@ -58,7 +58,7 @@ ht-degree: 0%
 * 顧客の売上高のパーセンタイル
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`、`Number of customers`
-* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end **
+* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order` テーブル
@@ -76,7 +76,7 @@ ht-degree: 0%
 * 顧客の売上高のパーセンタイル
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`、`Number of customers`
-* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end **
+* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -100,16 +100,16 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Independent`
 * 指標 `A`: `Total customer lifetime revenue by percentile`
 * 指標 `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * 上/下を表示：`100% of Customer's revenue percentile Name`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 * **上位 10% の濃度**
@@ -117,12 +117,12 @@ ht-degree: 0%
 
 * 指標 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * グラフを非表示
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **1 回の購入で下位 50 % の集中**
@@ -133,12 +133,12 @@ ht-degree: 0%
 * [!UICONTROL Filter]:
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * グラフを非表示
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **下位 10% の濃度**
@@ -146,12 +146,12 @@ ht-degree: 0%
 
 * 指標 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * グラフを非表示
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、上記のサンプルダッシュボードのようになります。

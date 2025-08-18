@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL Facebook Ads] データ
 
-[ アカウントに接続  [!DNL Facebook Ads]  した後 ](../integrations/facebook-ads.md)[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用すると、関連するデータフィールドを簡単に追跡して分析できます。
+[ アカウントに接続  [!DNL Facebook Ads]  した後 ](../integrations/facebook-ads.md) [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用すると、関連するデータフィールドを簡単に追跡して分析できます。
 
 このトピックでは、Data WarehouseとAdobeで同期することをお勧めするテーブルの概要を説明します。 かなりの数のサブテーブルがあるので、ここではコアテーブルのみが強調表示されます。
 

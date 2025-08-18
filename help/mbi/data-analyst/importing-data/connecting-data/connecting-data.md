@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![Database\_icons.jpg](../../../assets/Database_icons.jpg)
 
-[!DNL Commerce Intelligence] では、[MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md)、[Microsoft SQL](../integrations/microsoft-sql-server.md) [、{MongoDB](../integrations/mongodb-via-ssh-tunnel.md)、{PostgreSQL[ など、SQL ベースのデータベースと NoSQL データベースをサポ ](../integrations/postgresql.md) トしています。
+[!DNL Commerce Intelligence] では、[MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md)、[Microsoft SQL](../integrations/microsoft-sql-server.md) [、&lbrace;MongoDB](../integrations/mongodb-via-ssh-tunnel.md)、&lbrace;PostgreSQL[ など、SQL ベースのデータベースと NoSQL データベースをサポ ](../integrations/postgresql.md) トしています。
 
 データベース資格情報を使用してデータベースを [!DNL Commerce Intelligence] に直接接続できますが、Adobeでは SSH トンネルなどの実証済みの暗号化方式を使用することをお勧めします。 これにより、データがData Warehouseに取り込まれる際に、データの安全が確保されます。
 

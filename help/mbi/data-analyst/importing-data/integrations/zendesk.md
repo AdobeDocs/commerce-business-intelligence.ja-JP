@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## [!DNL Zendesk] の [!DNL Commerce Intelligence] 資格情報ページを開きます。 {#stepone}
 
-1. `Integrations` データソース **[!UICONTROL Manage Data** > **/**統合 **の下の]** ページに移動します。
+1. `Integrations` データソース **[!UICONTROL Manage Data** > **/**&#x200B;統合 **の下の]** ページに移動します。
 1. 画面の右側にある「**[!UICONTROL Add Integration]**」をクリックします。
 1. [!DNL Zendesk] アイコンをクリックします。 これにより、[!DNL Zendesk] 資格情報ページが開きます。
 

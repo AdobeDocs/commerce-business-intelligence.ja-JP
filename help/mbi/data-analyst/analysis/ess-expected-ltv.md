@@ -53,7 +53,7 @@ ht-degree: 0%
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -64,7 +64,7 @@ ht-degree: 0%
          * [`B`] `Customer's lifetime number of orders` **より大きい**`0`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -73,7 +73,7 @@ ht-degree: 0%
    * 指標 `2`: `Median lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
-   * 
+   * &#x200B;
      [!UICONTROL グラフ タイプ]: `Line`
    * `Multiple Y-Axes` をオフ
 
@@ -81,10 +81,10 @@ ht-degree: 0%
    * 指標 `1`: `Avg lifetime revenue`
    * 指標 `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL 間隔]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL グラフ タイプ]: `Line`
 
   >[!NOTE]

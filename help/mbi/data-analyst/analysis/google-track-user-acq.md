@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### （オプション 1） [!DNL Google Analytics E-Commerce] を介した注文リファラルソースデータの追跡
 
-[!DNL Google Analytics E-Commerce] を使用して注文および販売データを追跡する場合は、[!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) を使用して各注文のリファラルソースデータを同期できます。 これにより、売上高と注文をリファラルソース（`utm_source` や `utm_medium` など）別にセグメント化できます。 また、[!DNL Commerce Intelligence] などのカスタムディメンションを使用して、顧客獲得ソース `User's first order source` 把握できます。
+[!DNL Google Analytics E-Commerce] を使用して注文および販売データを追跡する場合は、[[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) を使用して各注文のリファラルソースデータを同期できます。 これにより、売上高と注文をリファラルソース（`utm_source` や `utm_medium` など）別にセグメント化できます。 また、[!DNL Commerce Intelligence] などのカスタムディメンションを使用して、顧客獲得ソース `User's first order source` 把握できます。
 
 ### （オプション 2） [!DNL Google Analytics] の取得元データをデータベースに保存する
 

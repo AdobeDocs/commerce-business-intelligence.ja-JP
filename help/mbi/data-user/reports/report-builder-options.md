@@ -14,7 +14,7 @@ ht-degree: 0%
 # Report Builder の選択
 
 >[!NOTE]
->>[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
+>&#x200B;>[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
 
 分析を作成するオプションが増えたので、ニーズに合った Report Builder のフレーバーを正確に把握することが困難な場合があります。 このトピックでは、分析を構築するための最適な方法を選択する手順を説明します。
 
