@@ -1,60 +1,47 @@
 ---
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+source-git-commit: f4dbe7367d0aa3d452d1f963d208b503a74cff90
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 4%
+source-wordcount: '358'
+ht-degree: 7%
 
 ---
-# 記事の投稿
+# Adobe Commerce Intelligence技術ドキュメント
 
-コミュニティやドキュメントチーム以外のAdobe従業員からの投稿を歓迎します。
+ドキュメントチーム以外のAdobe社員やコミュニティからのコントリビューションを歓迎します。
 
-## Adobeオープンソース行動規範
+## Adobe オープン Source行動規範
 
-このプロジェクトでは、[アドビオープンソース行動規範](../code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct)を採用しています。詳しくは、 [貢献](../contributing.md) トピック。
+このプロジェクトでは、[アドビオープンソース行動規範](code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct)を採用しています。詳しくは、[投稿](contributing.md)の記事を参照してください。
 
-## Adobeコンテンツへの投稿について
+## Adobe コンテンツへの投稿について
 
-詳しくは、 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja).
+[Adobe ドキュメント投稿者ガイドを参照してください ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
-投稿方法は、投稿者と、投稿する変更の種類に応じて異なります。
+投稿方法は、投稿者と、投稿したい変更の種類に応じて異なります。
 
 ### 軽微な変更
 
-善意でマイナーな更新を行う場合は、記事にアクセスし、 **編集** トピックの GitHub ソースに移動する記事内のリンク。 その後、GitHub UI を使用して更新をおこないます。 一般 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
+軽微な変更をコントリビューションする場合は、記事にアクセスして記事の下部に表示されるフィードバックエリアをクリックし、**詳細なフィードバックオプション** をクリックします。次に、**編集の提案** をクリックして、GitHub の Markdown ソースファイルに移動します。 GitHub UI を使用して更新を行います。 一般的な [Adobe ドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
 
-このリポジトリのドキュメントおよびコード例について送信したマイナーな修正や説明は、Adobe利用条件の適用を受けます。
+このリポジトリのドキュメントおよびコード例について投稿者が送信した軽微な修正や説明は、Adobeの利用規約の対象となります。
 
-### コミュニティメンバーによる大きな変更または新しい記事
+### コミュニティメンバーによる大幅な変更または新しい記事
 
-Adobeコミュニティに属していて、新しい記事を作成したり、大きな変更を投稿したりする場合は、Git リポジトリの「Issues」タブを使用して、ドキュメントチームとの会話を開始するための問題を送信してください。 計画に同意したら、公開および非公開リポジトリでの作業を組み合わせて新しいコンテンツを取り込むために、従業員と協力する必要があります。
+Adobe コミュニティのメンバーが新しい記事を作成したり、大きな変更をコントリビューションしたりする場合は、Git リポジトリーの「イシュー」タブを使用してイシューを送信し、ドキュメントチームとのやり取りを開始してください。 計画に同意したら、公開および非公開リポジトリでの作業を組み合わせて新しいコンテンツを取り込むために、従業員と協力する必要があります。
 
-<!--
-If you submit a pull request with significant changes to documentation and code examples, you will see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
--->
+### Adobe社員からの大きな変化
 
-### 従業員からの大きな変更Adobe
+Adobe Experience Cloud ソリューションの製品チームのテクニカルライター、プログラムマネージャー、または開発者で技術記事の投稿または作成を担当している場合は、`https://git.corp.adobe.com/AdobeDocs` のプライベートリポジトリを使用する必要があります。
 
-Adobe Experience Cloudソリューションの製品チームのテクニカルライター、プログラムマネージャーまたは開発者で、技術記事の投稿や作成が職務となっている場合は、次のプライベートリポジトリを使用する必要があります。 `https://git.corp.adobe.com/AdobeDocs`.
+## ツールと設定
 
-<!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+コミュニティのコントリビューターは、基本的な編集を行う場合は GitHub UI を使用し、大きな変更を加える場合はリポジトリをフォークします。
 
-## ツールとセットアップ
+詳しくは、[Adobe ドキュメント投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
 
-コミュニティの投稿者は、GitHub UI を使用して基本的な編集をおこなったり、リポジトリをフォークして大きな貢献をすることができます。
+## Markdown を使用してトピックを書式設定する方法
 
-詳しくは、 [Adobeドキュメント寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) 」を参照してください。
+このリポジトリ内の記事はすべて、GitHub Flavored Markdown を使用しています。 Markdown について詳しくは、以下を参照してください。
 
-## Markdown を使用してトピックをフォーマットする方法
-
-このリポジトリ内の記事はすべて、GitHub 固有の Markdown を使用しています。 Markdown に詳しくない場合は、以下を参照してください。
-
-* [Markdown の基本](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [印刷可能な Markdown の早見表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## ラベル
-
-公開リポジトリでは、プルリクエストに自動ラベルが割り当てられ、プルリクエストのワークフローを管理したり、プルリクエストの処理状況を知らせたりできます。
-
-* **変更が作成者に送信されました**：保留中のプル要求について作成者に通知されました。
-* **ready-to-merge**：プルリクエストレビューチームによるレビューの準備ができました。
+- [Markdown の基本 ](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+- [ 印刷用 Markdown チートシート ](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
