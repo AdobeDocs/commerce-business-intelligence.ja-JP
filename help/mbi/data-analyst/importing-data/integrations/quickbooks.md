@@ -4,9 +4,9 @@ description: ビジネスの財務を販売データやマーケティングデ�
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 32b1e1be4e372164da757cb339ba1618d33a75ea
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 0%
 ![](../../../assets/Quickbooks.png)
 
 [!DNL QuickBooks] の統合により、ビジネスの財務を販売およびマーケティングデータと連携させることができるため、費用の監視、過剰支出の特定などを迅速かつ簡単に行うことができます。
+
+>[!NOTE]
+>
+>Adobe Commerce Intelligenceは QuickBooks Online （デスクトップではない）と統合されており、クラウド接続を使用して Intuit アカウントにログインする必要があります。これは、ローカルにインストールされた QuickBooks デスクトップモデルではなく、QuickBooks Online の SaaS 構造に一致します。
 
 ## [!DNL QuickBooks] を [!DNL Commerce Intelligence] のデータソースとして追加する
 
@@ -40,4 +44,4 @@ ht-degree: 0%
 ## 関連
 
 * [Expected [!DNL QuickBooks] data](../integrations/quickbooks-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
