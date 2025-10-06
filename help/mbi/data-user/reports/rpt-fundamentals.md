@@ -64,7 +64,7 @@ ht-degree: 0%
 
 これらのフィールドは両方とも、ユーザーレベル（例えば `user` テーブル）で作成する必要があります。 これにより、平均分析をユーザーで正規化できます（つまり、この平均計算の分母はユーザーの数です）。
 
-ここで [!DNL Commerce Intelligence] の手順を実行します。 [!DNL Commerce Intelligence] Data Warehouseを使用して、上記の列を作成できます。 Adobe アナリストチームに連絡して、作成する新しい列の具体的な定義を提供してください。 [ 列エディター ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) を使用することもできます。
+ここで [!DNL Commerce Intelligence] の手順を実行します。 [!DNL Commerce Intelligence] Data Warehouseを使用して、上記の列を作成できます。 Adobe アナリストチームに連絡して、作成する新しい列の具体的な定義を提供してください。 [&#x200B; 列エディター &#x200B;](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) を使用することもできます。
 
 ベストプラクティスとしては、実稼動サーバーに不要な負荷をかけるので、これらの計算データフィールドをデータベースに直接作成しないようにすることをお勧めします。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 _[`Time between a customer's registration date and first purchase date`]/[ 登録・購入したお客様の総数]_
 
-また、この計算が、顧客の登録日に応じて、経時的にプロットされるかトレンドを確認する必要があります。 また、[ で ](../../data-user/reports/ess-manage-data-metrics.md) この指標を作成 [!DNL Commerce Intelligence] する方法を次に示します。
+また、この計算が、顧客の登録日に応じて、経時的にプロットされるかトレンドを確認する必要があります。 また、[&#x200B; で &#x200B;](../../data-user/reports/ess-manage-data-metrics.md) この指標を作成 [!DNL Commerce Intelligence] する方法を次に示します。
 
 1. **[!UICONTROL Data]** に移動し、「`Metrics`」タブを選択します。
 1. 「**[!UICONTROL Add New Metric]**」をクリックし、`user` のテーブル（上記でディメンションを作成した場所）を選択します。
@@ -90,7 +90,7 @@ _[`Time between a customer's registration date and first purchase date`]/[ 登�
 
 新しい指標が設定されたので、それを使用して、登録から最初の購入日までの平均時間を登録日別にレポートできます。
 
-任意のダッシュボードに移動し、上記で作成した指標を使用して [ レポートを作成 ](../../data-user/reports/ess-manage-data-metrics.md) するだけです。
+任意のダッシュボードに移動し、上記で作成した指標を使用して [&#x200B; レポートを作成 &#x200B;](../../data-user/reports/ess-manage-data-metrics.md) するだけです。
 
 ### `Visual Report Builder` {#visualrb}
 
@@ -115,7 +115,7 @@ Adobeでは、チームの他のメンバーと共有するレポートを作成
 
 以下を参照してください。
 
-![ グラフの説明 ](../../assets/Chart_Description.gif)
+![&#x200B; グラフの説明 &#x200B;](../../assets/Chart_Description.gif)
 
 #### レポートを画像として書き出す
 
@@ -128,4 +128,4 @@ Adobeでは、チームの他のメンバーと共有するレポートを作成
 
 以下を参照してください。
 
-![ レポートを画像ファイルとして書き出す様子を示すアニメーションのデモ ](../../assets/exp-rep-as-image.gif)
+![&#x200B; レポートを画像ファイルとして書き出す様子を示すアニメーションのデモ &#x200B;](../../assets/exp-rep-as-image.gif)

@@ -15,11 +15,11 @@ ht-degree: 0%
 
 このトピックでは、顧客の生涯価値の成長と顧客の生涯期待値を理解するのに役立つ、ダッシュボードの設定方法を説明します。
 
-![ 顧客の価値予測を表示する期待生涯価値分析ダッシュボード ](../../assets/exp-lifetim-value-anyalysis.png)
+![&#x200B; 顧客の価値予測を表示する期待生涯価値分析ダッシュボード &#x200B;](../../assets/exp-lifetim-value-anyalysis.png)
 
 この分析は、新しいアーキテクチャの Pro アカウントのお客様のみが利用できます。 アカウントが `Persistent Views` サイドバーの `Manage Data` 機能にアクセスできる場合は、新しいアーキテクチャを使用しており、ここに記載されている手順に従って分析を自分で構築できます。
 
-開始する前に、[ コホートレポートビルダー ](../dev-reports/cohort-rpt-bldr.md) を熟知しておく必要があります。
+開始する前に、[&#x200B; コホートレポートビルダー &#x200B;](../dev-reports/cohort-rpt-bldr.md) を熟知しておく必要があります。
 
 ## 計算される列
 
@@ -27,19 +27,19 @@ ht-degree: 0%
 
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `Seconds between customer's first order date and this order`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * **定義：**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
 * [!UICONTROL Column name]: `Months since order`
 * [!UICONTROL Column type]: `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * 定義：`case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
@@ -47,31 +47,31 @@ ht-degree: 0%
 
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column inputs]:
    * `A` = `created_at`
    * `B` = `Customer's first order date`
 
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * 定義：`case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
 * [!UICONTROL Column name]: `Calendar months since order`
 * [!UICONTROL Column type]: `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: `A` = `created_at`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `Integer`
 * **定義：**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
 * [!UICONTROL Column name]: `Is in current month? (Yes/No)`
 * [!UICONTROL Column type]: `Same Table`
-* 
+* &#x200B;
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
-* 
+* &#x200B;
   [!UICONTROL Datatype]: `String`
 * 定義：`case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
+>新しいレポートを作成する前に、必ず [&#x200B; すべての新しい列をディメンションとして指標に追加する &#x200B;](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## レポート
 
@@ -103,7 +103,7 @@ ht-degree: 0%
    * `Calendar months between first order and this order` `<= X` （X に適した数値を選択してください。例：24 か月）
    * `Is in current month?` = `No`
 
-* 
+* &#x200B;
   [!UICONTROL 指標]: `Revenue`
 * [!UICONTROL Filter]:
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]: `Expected revenue`
 * [!UICONTROL Formula]: `A / (B - C)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Currency`
 
 その他のグラフの詳細
@@ -139,7 +139,7 @@ ht-degree: 0%
 **コホート別の 1 か月あたりの平均売上高**
 
 * 指標 `A`: `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Average value per cohort member`
@@ -147,11 +147,11 @@ ht-degree: 0%
 **コホート別の 1 か月あたりの累積平均売上高**
 
 * 指標 `A`: `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、ページ上部の画像のようになります。
 
-分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

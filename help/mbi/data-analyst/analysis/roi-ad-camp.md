@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # Advertising キャンペーンと ROI
 
-[!DNL Adobe Commerce Intelligence] を使用すると、データベースから広告のコストデータと売上高データを簡単に結び付ける [ 結合する ](../../data-analyst/importing-data/integrations/google-adwords.md) ことができます。 これにより、投資回収率（ROI）が最も高いキャンペーンを特定できます。 このトピックでは、キャンペーンのパフォーマンスを評価する様々な方法について説明します。
+[!DNL Adobe Commerce Intelligence] を使用すると、データベースから広告のコストデータと売上高データを簡単に結び付ける [&#x200B; 結合する &#x200B;](../../data-analyst/importing-data/integrations/google-adwords.md) ことができます。 これにより、投資回収率（ROI）が最も高いキャンペーンを特定できます。 このトピックでは、キャンペーンのパフォーマンスを評価する様々な方法について説明します。
 
 ## 前提条件
 
 * 広告コストデータを読み込みます。
-   * [ 接続  [!DNL Google AdWords]  先  [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md)：これは、[!DNL Adwords] での [!DNL Commerce Intelligence] の支出を同期します
-   * [ その他の広告コストデータをアップロードする ](../importing-data/connecting-data/import-offline-ad-data.md):[!DNL Commerce Intelligence] への直接コネクタがないチャネルの場合に推奨されます
-   * 複数のソースから原価データをインポートする場合は、[ のデータを ](../../best-practices/consolidating-your-tables.md) 連結 [!DNL Commerce Intelligence] できます。 単純に [ サポートチケットを送信 ](../../guide-overview.md#Submitting-a-Support-Ticket) します。
+   * [&#x200B; 接続  [!DNL Google AdWords]  先  [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md)：これは、[!DNL Adwords] での [!DNL Commerce Intelligence] の支出を同期します
+   * [&#x200B; その他の広告コストデータをアップロードする &#x200B;](../importing-data/connecting-data/import-offline-ad-data.md):[!DNL Commerce Intelligence] への直接コネクタがないチャネルの場合に推奨されます
+   * 複数のソースから原価データをインポートする場合は、[&#x200B; のデータを &#x200B;](../../best-practices/consolidating-your-tables.md) 連結 [!DNL Commerce Intelligence] できます。 単純に [&#x200B; サポートチケットを送信 &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket) します。
 * [ユーザー獲得チャネルデータの追跡](../analysis/google-track-user-acq.md)
 
 ## ユーザー獲得キャンペーン
@@ -31,7 +31,7 @@ ht-degree: 0%
 1. キャンペーンの登録から購入へのコンバージョン率
 1. 平均ユーザー生涯値（LTV）に基づくキャンペーンの ROI
 
-上記の（1）および（2）の分析は、[ 上位のマーケティングチャネルの識別 ](../analysis/most-value-source-channel.md) に関する別のチュートリアルで説明します。 ここでは、分析（3）を調べて、キャンペーンの ROI の推移を測定します。 これにより、特定のキャンペーンから取得したユーザーが、取得コストをカバーするのに十分な生涯収益を生み出したかどうかに回答できます。
+上記の（1）および（2）の分析は、[&#x200B; 上位のマーケティングチャネルの識別 &#x200B;](../analysis/most-value-source-channel.md) に関する別のチュートリアルで説明します。 ここでは、分析（3）を調べて、キャンペーンの ROI の推移を測定します。 これにより、特定のキャンペーンから取得したユーザーが、取得コストをカバーするのに十分な生涯収益を生み出したかどうかに回答できます。
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ ht-degree: 0%
 1. 「`Add New Metric`」を選択し、[!DNL `Adwords...`] のコストデータを記録している [!DNL AdWords] テーブルを選択します。
 1. 指標エディターで、指標に名前を付けます（例：[!UICONTROL AdWord Cost]）
 1. ドロップダウンを使用して、**列で並べ替えられた** テーブルの `adCost` 列で [!DNL Adwords...] 合計 `date` を実行します。
-   ![ 新しい指標の追加後の成功メッセージ ](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
+   ![&#x200B; 新しい指標の追加後の成功メッセージ &#x200B;](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 上部の「`Back to Metric List`」をクリックして、任意のダッシュボードに移動します。
 
 1. キャンペーン別の支出をセグメント化するレポートの作成
@@ -99,7 +99,7 @@ ht-degree: 0%
 >
 >この例では、すべてのキャンペーンコストが特定の製品の購入の生成にのみ使用されたと想定しています。 購入の生成にすべてのコストが費やされたと仮定すると、結果の ROI は最悪のケースシナリオ（購入あたりの最高コスト）を占めます。 実際の ROI はこの計算よりも高いと確信できます。 例：新規ユーザー 10 人と購入 10 件を生成したキャンペーンに$20 を費やしたとすると、購入あたりの実際のコストは$1 です。 新規ユーザーの獲得にはすべてのコストがかかるという前提の下では、1 回の購入あたりのコストは 2 ドルです。
 
-開始する前に、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) して、次のディメンションを行項目テーブル（`sales\_flat\_order\_item, order\_item`）に結合します。
+開始する前に、[&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) して、次のディメンションを行項目テーブル（`sales\_flat\_order\_item, order\_item`）に結合します。
 
 * 注文のソース（ユーザーレベルでリファラルソースのみを追跡する場合は、ユーザーのソースを結合します）
 * 注文のキャンペーン（ユーザーレベルでのリファラルソースの追跡のみ行う場合は、ユーザーのキャンペーンに参加します）
@@ -136,5 +136,5 @@ ht-degree: 0%
 * [データベース内のユーザーデバイス、ブラウザー、OS データの追跡](../analysis/track-usr-dev-browser.md)
 * [最も価値のある獲得ソースとチャネルを見つける](../analysis/most-value-source-channel.md)
 * [アカウント  [!DNL Google Adwords]  接続](../importing-data/integrations/google-adwords.md)
-* [ [!DNL Google Analytics] UTM アトリビューションの仕組み](../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics] UTM アトリビューションの仕組み](../analysis/utm-attributes.md)
 * [での UTM タグ付けの 5 つのベストプラクティス  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # 更新サイクルの進行状況
 
-[!DNL Adobe Commerce Intelligence] ダッシュボードにログインする際に、最後の更新サイクルのステータスを確認する方法はいくつかあります。 それはすべて、持っている [ ユーザー権限 ](../administrator/user-management/user-management.md) のタイプによって異なります。
+[!DNL Adobe Commerce Intelligence] ダッシュボードにログインする際に、最後の更新サイクルのステータスを確認する方法はいくつかあります。 それはすべて、持っている [&#x200B; ユーザー権限 &#x200B;](../administrator/user-management/user-management.md) のタイプによって異なります。
 
 ## 更新サイクルのステータスを確認する必要があるのはなぜですか。
 
-ステータス更新サイクルの確認は、[!DNL Commerce Intelligence] アカウントのデータを監査する場合に便利です。 [ 期待に合わない結果 ](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) が表示される場合（例えば、[!DNL Commerce Intelligence] の毎日の売上高が e コマースプラットフォームや [[!DNL Google] e コマースの売上高に表示されているものと一致しない場合）は ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 最後のデータポイントを確認して、更新が完了すると問題が解決するかどうかを確認できます。
+ステータス更新サイクルの確認は、[!DNL Commerce Intelligence] アカウントのデータを監査する場合に便利です。 [&#x200B; 期待に合わない結果 &#x200B;](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) が表示される場合（例えば、[!DNL Commerce Intelligence] の毎日の売上高が e コマースプラットフォームや [[!DNL Google] e コマースの売上高に表示されているものと一致しない場合）は &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 最後のデータポイントを確認して、更新が完了すると問題が解決するかどうかを確認できます。
 
 ## [!UICONTROL Read-Only] および [!UICONTROL Standard] ユーザー
 
 ユーザー `Read-only`、ダッシュボードにログインし、ページの右上のアイコンにマウスポインターを置くと、最近データが更新されたかどうかを確認できます。 これは、最後のデータポイントが取り込まれたタイミングを示します。
 
-![ インターフェイスに表示される前回成功したデータ更新タイムスタンプ ](../../mbi/assets/last-success-data.png)
+![&#x200B; インターフェイスに表示される前回成功したデータ更新タイムスタンプ &#x200B;](../../mbi/assets/last-success-data.png)
 
 ## [!UICONTROL Admin] Users
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 管理者ユーザーは、**[!UICONTROL Manage Data]**/**[!UICONTROL Integrations]** をクリックすると詳細を確認できます。
 
-![ 接続の詳細と更新ステータスを表示するデータ統合の管理ページ ](../../mbi/assets/detail-manage-data-integrations.png)
+![&#x200B; 接続の詳細と更新ステータスを表示するデータ統合の管理ページ &#x200B;](../../mbi/assets/detail-manage-data-integrations.png)
 
 このページには、現在の更新ステータスと、最後に完了した更新の時刻が表示されます。
 

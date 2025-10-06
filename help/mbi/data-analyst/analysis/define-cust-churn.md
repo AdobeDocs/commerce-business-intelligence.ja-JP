@@ -15,9 +15,9 @@ ht-degree: 0%
 
 このトピックでは、トランザクション顧客のチャーンを定義するのに役立つダッシュボードの設定方法を示します。
 
-![ チャーンレートとリテンション指標を表示する顧客チャーンダッシュボード ](../../assets/churn-deashboard.png)
+![&#x200B; チャーンレートとリテンション指標を表示する顧客チャーンダッシュボード &#x200B;](../../assets/churn-deashboard.png)
 
-この分析には [ 高度な計算列 ](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
+この分析には [&#x200B; 高度な計算列 &#x200B;](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
 ## 計算される列
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
+>新しいレポートを作成する前に、必ず [&#x200B; すべての新しい列をディメンションとして指標に追加する &#x200B;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## レポート
 
@@ -69,27 +69,27 @@ ht-degree: 0%
 * [!UICONTROL Metric]：注文数
 
 * [!UICONTROL Formula]：最初の繰り返し順序確率
-* 
+* &#x200B;
   [!UICONTROL 数式]: `A/B`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Scalar`
 
 * **注文以降に指定された月の繰り返し注文確率**
 * 指標 A：以前の注文以降の月別の繰り返し注文（非表示）
 * [!UICONTROL Metric]: `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 指標 B：注文以降の過去の注文件数（月別）（非表示）
 * [!UICONTROL Metric]: `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Independent`
 
 * 指標 D：すべての時間の最後の注文（非表示）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Independent`
 
 * [!UICONTROL Formula]：最初の繰り返し順序確率
-* 
+* &#x200B;
   [!UICONTROL 数式]: `(C-A)/(C+D-A-B)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * top.bottom を表示：上位 24 個のカテゴリをカテゴリ名順に表示
 
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 最初のリピート注文確率レポートは、リピート注文の合計/注文の合計を表します。 すべての注文は、リピート注文を行う機会です。リピート注文の数は、実際に行う注文のサブセットです。
@@ -132,4 +132,4 @@ ht-degree: 0%
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、ページ上部の画像のようになります
 
-分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

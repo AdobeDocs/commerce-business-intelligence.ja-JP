@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # ダッシュボードからのグラフの削除
 
-ダッシュボードからグラフを削除するには、グラフの右上隅にある歯車（![ 歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、「**[!UICONTROL Remove from Dashboard]**」をクリックします。
+ダッシュボードからグラフを削除するには、グラフの右上隅にある歯車（![&#x200B; 歯車アイコン &#x200B;](../../assets/gear-icon.png)）アイコンをクリックし、「**[!UICONTROL Remove from Dashboard]**」をクリックします。
 
 >[!NOTE]
 >
->グラフの削除は、グラフを削除する [ とは異なり ](../../data-user/dashboards/delete-chart.md) す。 また、[ グラフはいつでもダッシュボードに再追加でき ](../../data-user/dashboards/add-charts-dashboard.md) す。
+>グラフの削除は、グラフを削除する [&#x200B; とは異なり &#x200B;](../../data-user/dashboards/delete-chart.md) す。 また、[&#x200B; グラフはいつでもダッシュボードに再追加でき &#x200B;](../../data-user/dashboards/add-charts-dashboard.md) す。
 
-![ グラフの削除 ](../../assets/Removing_Charts_from_Dashboards.gif)
+![&#x200B; グラフの削除 &#x200B;](../../assets/Removing_Charts_from_Dashboards.gif)

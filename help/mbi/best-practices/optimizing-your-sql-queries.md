@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder] を使用すると、クエリを必要に応じて実行および変更できます。 この機能は、更新サイクルが完了するのを待ってから列またはレポートを修正する代わりに、クエリをすぐに更新する必要がある場合に役立ちます。
 
-クエリを実行する前に、は [[!DNL Commerce Intelligence]  コストを見積もります ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html)。 コストは、クエリの実行に必要な時間とリソースの数を考慮します。 そのコストが高すぎると見なされる場合や、返される行の数が [!DNL Commerce Intelligence] の制限を超える場合、クエリは失敗します。 Adobeで可能な限り効率的なクエリを記述できるように、[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) に対してクエリを実行する場合は、次の操作をお勧めします。
+クエリを実行する前に、は [[!DNL Commerce Intelligence]  コストを見積もります &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html)。 コストは、クエリの実行に必要な時間とリソースの数を考慮します。 そのコストが高すぎると見なされる場合や、返される行の数が [!DNL Commerce Intelligence] の制限を超える場合、クエリは失敗します。 Adobeで可能な限り効率的なクエリを記述できるように、[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) に対してクエリを実行する場合は、次の操作をお勧めします。
 
 ## SELECT の使用またはすべての列の選択
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる** |
 |-----|-----|
-| ![SELECT アスタリスクを使用した SQL クエリ ](../../mbi/assets/Select_all_1.png) | ![ 特定の列を選択する SQL クエリ ](../../mbi/assets/Select_all_2.png) |
+| ![SELECT アスタリスクを使用した SQL クエリ &#x200B;](../../mbi/assets/Select_all_1.png) | ![&#x200B; 特定の列を選択する SQL クエリ &#x200B;](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる** |
 |-----|-----|
-| ![ 完全外部結合を含む SQL クエリ ](../../mbi/assets/Full_Outer_Join_1.png) | ![ 最適化結合を使用した SQL クエリ ](../../mbi/assets/Full_Outer_Join_2.png) |
+| ![&#x200B; 完全外部結合を含む SQL クエリ &#x200B;](../../mbi/assets/Full_Outer_Join_1.png) | ![&#x200B; 最適化結合を使用した SQL クエリ &#x200B;](../../mbi/assets/Full_Outer_Join_2.png) |
 
 {style="table-layout:auto"}
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる** |
 |-----|-----|
-| ![WHERE 句フィルターを含む SQL クエリ ](../../mbi/assets/Join_filters_1.png) | ![ON 句フィルターを使用した SQL クエリ ](../../mbi/assets/Join_filters_2.png) |
+| ![WHERE 句フィルターを含む SQL クエリ &#x200B;](../../mbi/assets/Join_filters_1.png) | ![ON 句フィルターを使用した SQL クエリ &#x200B;](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる** |
 |-----|-----|
-| ![NULL チェック付きの LEFT JOIN を使用する SQL クエリ ](../../mbi/assets/Exists_1.png) | ![EXISTS 句を使用した SQL クエリ ](../../mbi/assets/Exists_2.png) |
+| ![NULL チェック付きの LEFT JOIN を使用する SQL クエリ &#x200B;](../../mbi/assets/Exists_1.png) | ![EXISTS 句を使用した SQL クエリ &#x200B;](../../mbi/assets/Exists_2.png) |
 
 {style="table-layout:auto"}
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる** |
 |-----|-----|
-| ![GROUP BY BEFORE フィルターを使用した SQL クエリ ](../../mbi/assets/Group_by_2.png) | ![GROUP BY の前にフィルターを含む SQL クエリ ](../../mbi/assets/Group_by_1.png) |
+| ![GROUP BY BEFORE フィルターを使用した SQL クエリ &#x200B;](../../mbi/assets/Group_by_2.png) | ![GROUP BY の前にフィルターを含む SQL クエリ &#x200B;](../../mbi/assets/Group_by_1.png) |
 
 {style="table-layout:auto"}
 

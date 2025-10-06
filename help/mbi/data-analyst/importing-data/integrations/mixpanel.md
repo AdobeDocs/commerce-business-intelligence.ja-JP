@@ -15,15 +15,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
+>[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
 
-![Mixpanel ロゴ ](../../../assets/Mixpanel_logo.png)
+![Mixpanel ロゴ &#x200B;](../../../assets/Mixpanel_logo.png)
 
 [!DNL Mixpanel] を使用すると、ユーザーが web サイトやアプリをどのように移動および使用するかを分析できます。 ユーザー行動データを詳しく見ることで、設計と開発の意思決定がスマートになり、製品全体が向上します。 [!DNL Mixpanel] を [!DNL Commerce Intelligence] に接続すると、ユーザーの行動とその行動が収益にどのように変換されるかを分析できます。
 
 [!DNL Mixpanel] データをに接続する [!DNL Commerce Intelligence]、簡単な 3 ステップのプロセスです。
 
-1. [ [!DNL Mixpanel]  の場所で  [!DNL Commerce Intelligence]credentials ページを開きます。](#stepone)
+1. [&#x200B; [!DNL Mixpanel]  の場所で  [!DNL Commerce Intelligence]credentials ページを開きます。](#stepone)
 1. [API 資格情報  [!DNL Mixpanel]  取得](#steptwo)
 1. [API 資格情報  [!DNL Mixpanel]  入力  [!DNL Commerce Intelligence]](#stepthree)
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 1. API 資格情報の表示：
 
-![Mixpanel API 資格情報の取得 ](../../../assets/Mixpanel_API_creds.png)
+![Mixpanel API 資格情報の取得 &#x200B;](../../../assets/Mixpanel_API_creds.png)
 
 これを開いたままにしておきます。これを包み込む必要があります。
 
@@ -65,4 +65,4 @@ ht-degree: 0%
 ### 関連
 
 * [Expected [!DNL Mixpanel] data](../integrations/mixpanel-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

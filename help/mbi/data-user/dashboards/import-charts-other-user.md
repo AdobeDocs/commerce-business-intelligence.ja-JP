@@ -21,8 +21,8 @@ ht-degree: 0%
 
 ## グラフのクローン
 
-共有ダッシュボードで、自分のアカウントにコピーするグラフを選択します。 歯車（![ 歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、「**[!UICONTROL Save As]**」をクリックします。
+共有ダッシュボードで、自分のアカウントにコピーするグラフを選択します。 歯車（![&#x200B; 歯車アイコン &#x200B;](../../assets/gear-icon.png)）アイコンをクリックし、「**[!UICONTROL Save As]**」をクリックします。
 
-グラフのコピーに名前を付け、既存のダッシュボードに追加するよう求められます。 ダッシュボードを選択しない場合、既存のグラフのリストに追加され、[ 後で追加 ](../../data-user/dashboards/add-charts-dashboard.md) できます。
+グラフのコピーに名前を付け、既存のダッシュボードに追加するよう求められます。 ダッシュボードを選択しない場合、既存のグラフのリストに追加され、[&#x200B; 後で追加 &#x200B;](../../data-user/dashboards/add-charts-dashboard.md) できます。
 
-![ 合計顧客数 ](../../assets/total-customers.png)
+![&#x200B; 合計顧客数 &#x200B;](../../assets/total-customers.png)

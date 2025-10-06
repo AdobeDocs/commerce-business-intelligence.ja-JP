@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Commerce Intelligenceでの SQL クエリの翻訳
 
-SQL クエリを [ で使用する ](../data-warehouse-mgr/creating-calculated-columns.md) 計算列 [、](../../data-user/reports/ess-manage-data-metrics.md) 指標 [、および ](../../tutorials/using-visual-report-builder.md) レポート [!DNL Commerce Intelligence] に変換する方法を疑問に思ったことはありませんか？ SQL を大量に使用するユーザーの場合は、[!DNL Commerce Intelligence] での SQL の翻訳方法を理解することで、[Data Warehouse Manager でよりスマートに作業し ](../data-warehouse-mgr/tour-dwm.md)[!DNL Commerce Intelligence] プラットフォームを最大限に活用できます。
+SQL クエリを [&#x200B; で使用する &#x200B;](../data-warehouse-mgr/creating-calculated-columns.md) 計算列 [、](../../data-user/reports/ess-manage-data-metrics.md) 指標 [、および &#x200B;](../../tutorials/using-visual-report-builder.md) レポート [!DNL Commerce Intelligence] に変換する方法を疑問に思ったことはありませんか？ SQL を大量に使用するユーザーの場合は、[!DNL Commerce Intelligence] での SQL の翻訳方法を理解することで、[Data Warehouse Manager でよりスマートに作業し &#x200B;](../data-warehouse-mgr/tour-dwm.md) [!DNL Commerce Intelligence] プラットフォームを最大限に活用できます。
 
 このトピックの最後には、SQL クエリ句と **要素の** 翻訳行列 [!DNL Commerce Intelligence] があります。
 
@@ -53,9 +53,9 @@ SQL クエリを [ で使用する ](../data-warehouse-mgr/creating-calculated-c
 | `email NOT LIKE '%@magento.com'` | 指標 `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | 指標 `timestamp` （およびレポート `time range`） |
 
-**[!UICONTROL Manage Data** > ** 指標 **/**新しい指標を作成]** をクリックして指標ビルダーに移動します。まず、適切な `source` テーブル（この場合は `orders` テーブル）を選択する必要があります。 次に、指標は次のように設定されます。
+**[!UICONTROL Manage Data** > **&#x200B; 指標 &#x200B;**/**新しい指標を作成]** をクリックして指標ビルダーに移動します。まず、適切な `source` テーブル（この場合は `orders` テーブル）を選択する必要があります。 次に、指標は次のように設定されます。
 
-![ 指標の集計 ](../../assets/Metric_aggregation.png)
+![&#x200B; 指標の集計 &#x200B;](../../assets/Metric_aggregation.png)
 
 ## 列の集計
 
@@ -75,11 +75,11 @@ SQL クエリを [ で使用する ](../data-warehouse-mgr/creating-calculated-c
 
 [!DNL Commerce Intelligence] でこれを設定するには、Data Warehouse Manager を使用する必要があります。ここでは、`orders` と `customers` のテーブルの間にパスを作成し、顧客のテーブルに `Customer LTV` という列を作成します。
 
-`customers` と `orders` の間に新しいパスを確立する方法を確認します。 最後の目標は、`customers` テーブルに新しい集計列を作成することです。そのため、まずData Warehouseの `customers` テーブルに移動し、**[!UICONTROL Create a Column** > ** 定義を選択 **/**SUM]** をクリックします。
+`customers` と `orders` の間に新しいパスを確立する方法を確認します。 最後の目標は、`customers` テーブルに新しい集計列を作成することです。そのため、まずData Warehouseの `customers` テーブルに移動し、**[!UICONTROL Create a Column** > **&#x200B; 定義を選択 &#x200B;**/**SUM]** をクリックします。
 
 次に、ソーステーブルを選択する必要があります。 `orders` テーブルへのパスが存在する場合は、ドロップダウンから選択するだけです。 ただし、新しいパスを作成している場合は、「**[!UICONTROL Create new path]**」をクリックすると、次の画面が表示されます。
 
-![ 新しいパスを作成 ](../../assets/Create_new_path.png)
+![&#x200B; 新しいパスを作成 &#x200B;](../../assets/Create_new_path.png)
 
 ここでは、結合しようとしている 2 つのテーブル間の関係を慎重に検討する必要があります。 この場合、顧客に関連付けられた注文が `Many` い可能性があ `One` ので、`orders` 側には `Many` のテーブルが表示され、`customers` 側には `One` のテーブルが選択されます。
 
@@ -89,15 +89,15 @@ SQL クエリを [ で使用する ](../data-warehouse-mgr/creating-calculated-c
 
 パスを保存したら、`Customer LTV` の列を作成できます。 以下を参照してください。
 
-![SQL を使用した、お客様のライフタイムバリュー分析のアニメーションデモ ](../../assets/Customer_LTV.gif)
+![SQL を使用した、お客様のライフタイムバリュー分析のアニメーションデモ &#x200B;](../../assets/Customer_LTV.gif)
 
-`Customer LTV` テーブルに新しい `customers` 列を作成したので、この列を使用して [ 指標の集計 ](#aggregate) を作成する準備が整いました（例えば、顧客あたりの平均 LTV を見つける場合）。 また、`group by` テーブルに基づいて作成された既存の指標を使用して、レポートの計算列で `filter` 計または `customers` 計することもできます。
+`Customer LTV` テーブルに新しい `customers` 列を作成したので、この列を使用して [&#x200B; 指標の集計 &#x200B;](#aggregate) を作成する準備が整いました（例えば、顧客あたりの平均 LTV を見つける場合）。 また、`group by` テーブルに基づいて作成された既存の指標を使用して、レポートの計算列で `filter` 計または `customers` 計することもできます。
 
 >[!NOTE]
 >
->後者の場合、新しい計算列を作成する際は、ディメンションを [ または ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) として使用する前に、`filter` 既存の指標にディメンションを追加 `group by` する必要があります。
+>後者の場合、新しい計算列を作成する際は、ディメンションを [&#x200B; または &#x200B;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) として使用する前に、`filter` 既存の指標にディメンションを追加 `group by` する必要があります。
 
-詳しくは、Data Warehouse Manager で [ 計算列の作成 ](../data-warehouse-mgr/creating-calculated-columns.md) を参照してください。
+詳しくは、Data Warehouse Manager で [&#x200B; 計算列の作成 &#x200B;](../data-warehouse-mgr/creating-calculated-columns.md) を参照してください。
 
 ## `Group By` 句
 
@@ -121,7 +121,7 @@ SQL クエリを [ で使用する ](../data-warehouse-mgr/creating-calculated-c
 
 以前に作成したのと同じ `Total Revenue` 指標を使用して、クーポンコードでセグメント化された売上高のレポートを作成する準備が整いました。 9 月から 11 月のデータを調べて、このビジュアルレポートを設定する方法を示す以下の gif を見てください。
 
-![ クーポンコード別売上高 ](../../assets/Revenue_by_coupon_code.gif)
+![&#x200B; クーポンコード別売上高 &#x200B;](../../assets/Revenue_by_coupon_code.gif)
 
 ## 数式
 

@@ -17,11 +17,11 @@ ht-degree: 0%
 
 2 次元のクロスタブ データ テーブルは、多くの場合、財務データに使用される形式です。 列と行の両方のラベルで値が分類されるので、このタイプのレイアウトは人間の目やスプレッドシートツールで簡単に表示できるかもしれませんが、データベースには適していません。
 
-![ ピボットテーブル レイアウトでデータを表示するクロス集計形式 ](../../mbi/assets/crosstab.png)
+![&#x200B; ピボットテーブル レイアウトでデータを表示するクロス集計形式 &#x200B;](../../mbi/assets/crosstab.png)
 
 このデータを [!DNL Commerce Intelligence] にインポートして分析するには、テーブルを 1 次元リストにフラット化する必要があります。 フラット化すると、各データ値は複数のラベルによって分類され、すべてが 1 行に含まれます。各行は一意であるか、主キー列などの一意の識別子を持ちます。
 
-![ 列レイアウトでデータを表示する、フラット化された形式 ](../../mbi/assets/flattened.png)
+![&#x200B; 列レイアウトでデータを表示する、フラット化された形式 &#x200B;](../../mbi/assets/flattened.png)
 
 ## インポートする Excel ファイルのフォーマット
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 1. 新しいシートにピボットテーブルを作成し、**[!UICONTROL Finish]** をクリックします。
 1. フィールドリストから列フィールドと行フィールドの選択を解除します。
 1. 結果の数値をダブルクリックして、フラット化されたソースデータを新しいシートに表示します。
-   ![ ダブルクリックして展開できる Excel ピボットテーブル フィールド リスト ](../../mbi/assets/pivot-table-double-click.png)
+   ![&#x200B; ダブルクリックして展開できる Excel ピボットテーブル フィールド リスト &#x200B;](../../mbi/assets/pivot-table-double-click.png)
 1. `CSV` ファイルとして保存します。
 
 ## まとめ
 
-データ テーブルはリスト形式に変換され、元の情報がすべて保持されます。このデータ テーブルは分析用に [ インポート  [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) できます。
+データ テーブルはリスト形式に変換され、元の情報がすべて保持されます。このデータ テーブルは分析用に [&#x200B; インポート  [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) できます。

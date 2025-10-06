@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ユーザー権限の管理
 
-[!DNL Adobe Commerce Intelligence] は、組織全体の唯一の情報源となることを目的としています。 各ユーザーは、独自のダッシュボードのセットを持ち、それらを [ 他のユーザーと共有 ](../../data-user/dashboards/share-dashboard-with-users.md) できます。
+[!DNL Adobe Commerce Intelligence] は、組織全体の唯一の情報源となることを目的としています。 各ユーザーは、独自のダッシュボードのセットを持ち、それらを [&#x200B; 他のユーザーと共有 &#x200B;](../../data-user/dashboards/share-dashboard-with-users.md) できます。
 
 ## ユーザー権限レベル
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_**[!UICONTROL Standard]**ユーザーの [ アクセスを特定の指標に制限 ](../../administrator/user-management/restrict-metric-access.md) できます。_
+>_&#x200B;**[!UICONTROL Standard]**&#x200B;ユーザーの [&#x200B; アクセスを特定の指標に制限 &#x200B;](../../administrator/user-management/restrict-metric-access.md) できます。_
 >
 >**[!UICONTROL Standard] _ユーザーは、追加の権限設定で請求にアクセスできます。_
 >
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 `Admin` ユーザーはデフォルトで「`Billing`」タブにアクセスできますが、プロファイルで「`Standard`」チェックボックスを選択している場合は、`Billing` ユーザーもアクセスできます。
 
-![ 請求ページ ](../../assets/billing.png)<!--{: width="550" height="363"}-->
+![&#x200B; 請求ページ &#x200B;](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### 技術
 

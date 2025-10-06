@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] を 6 か月または 6 年間使用しているかどうかにかかわらず、適切なアカウントを維持することは、プラットフォームを最大限に活用する組織にとって最も重要です。 時間の経過と共に、不要になったユーザー、ダッシュボード、レポート、指標および列が存在するのは当然です。 1 回限りのレポートを作成してそれを忘れた場合や、会社を離れたときにアカウントを非アクティブ化しなかったユーザーの場合があります。
 
-[ アカウントの ](../best-practices/naming-elements.md) すべての要素の名前が標準化され明確になっている [!DNL Commerce Intelligence]）ので、以下のアカウント監査手順を使用して、ユーザーにとって混乱や不要な分析を減らすことができます。 その他のメリットとして、[ 場合によってはより高速な更新サイクル ](../best-practices/reduce-update-cycle-time.md) が挙げられます。
+[&#x200B; アカウントの &#x200B;](../best-practices/naming-elements.md) すべての要素の名前が標準化され明確になっている [!DNL Commerce Intelligence]）ので、以下のアカウント監査手順を使用して、ユーザーにとって混乱や不要な分析を減らすことができます。 その他のメリットとして、[&#x200B; 場合によってはより高速な更新サイクル &#x200B;](../best-practices/reduce-update-cycle-time.md) が挙げられます。
 
 ## 手順 1：非アクティブユーザーの特定
 
@@ -25,11 +25,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これを行うには [ 管理者権限 ](../administrator/user-management/user-management.md) が必要です。
+>これを行うには [&#x200B; 管理者権限 &#x200B;](../administrator/user-management/user-management.md) が必要です。
 
 >[!WARNING]
 >
->ユーザーをディアクティベートすると、そのユーザーが作成したグラフ、ダッシュボード、その他のアセットが削除されます。 これらのアセットを保持したい場合は、ユーザーを非アクティブ化する前に [!DNL Commerce Intelligence] [ サポート ](../guide-overview.md#Submitting-a-Support-Ticket) チームにお問い合わせください。 サポートは、これらのアセットを別のユーザーに転送する際に役立ちます。
+>ユーザーをディアクティベートすると、そのユーザーが作成したグラフ、ダッシュボード、その他のアセットが削除されます。 これらのアセットを保持したい場合は、ユーザーを非アクティブ化する前に [!DNL Commerce Intelligence] [&#x200B; サポート &#x200B;](../guide-overview.md#Submitting-a-Support-Ticket) チームにお問い合わせください。 サポートは、これらのアセットを別のユーザーに転送する際に役立ちます。
 
 ### ユーザーの再アクティブ化
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これを行うには、`Admin` または `Standard` の [ ユーザー権限 ](../administrator/user-management/user-management.md) が必要です。
+>これを行うには、`Admin` または `Standard` の [&#x200B; ユーザー権限 &#x200B;](../administrator/user-management/user-management.md) が必要です。
 
 `Admin` または `Standard` アクセス権を持つすべてのユーザーが、レポートとダッシュボードを作成できます。 そのため、これらの権限を持つユーザーは全員、次の手順に従って未使用のレポートを特定し、削除する必要があります。
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 **[!UICONTROL Dashboard Options]** を選択して、ダッシュボード自体から **[!UICONTROL Delete]** を選択することもできます。
 
-![ ダッシュボードの歯車メニューの「削除」オプション ](../../mbi/assets/Delete_from_dashboard.png)
+![&#x200B; ダッシュボードの歯車メニューの「削除」オプション &#x200B;](../../mbi/assets/Delete_from_dashboard.png)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 未使用のレポート削除プロセスを次に示します。
 
-![ ダッシュボードにないレポートを示す未使用のレポートリスト ](../../mbi/assets/unused_reports.png)
+![&#x200B; ダッシュボードにないレポートを示す未使用のレポートリスト &#x200B;](../../mbi/assets/unused_reports.png)
 
 ## 手順 3：未使用の指標の削除
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 1. ページの下部に、「**[!UICONTROL Dependent Charts]**」というセクションが表示されます。 リンクをクリックして、この指標の依存レポートリストを生成します。
 1. チェックが完了すると、[!DNL Commerce Intelligence] の指標を使用しているダッシュボード、レポート、ユーザーのリストが表示されます。
 
-![ 選択した列を使用するレポートが表示されているレポートの依存関係ダイアログ ](../../mbi/assets/report_dependecies.png)
+![&#x200B; 選択した列を使用するレポートが表示されているレポートの依存関係ダイアログ &#x200B;](../../mbi/assets/report_dependecies.png)
 
 指標が不要になった場合は、「**[!UICONTROL Metrics]**」をクリックして **[!UICONTROL Back to Metric List]** ページに戻り、削除する指標を見つけます。 「**[!UICONTROL Delete]**」をクリックします。
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 最後の手順は、Data Warehouseで現在同期されている列を評価することです。 列の同期を解除すると、アカウントの表示を減らすだけでなく、更新時間を短縮する可能性もあります。
 
-その場合は、[!DNL Commerce Intelligence] サポート [ までお問い合わせください ](../guide-overview.md#Submitting-a-Support-Ticket)。 サポートチームは、どのユーザーのダッシュボードでも使用されておらず、電子メールの概要でも使用されていないすべての列を含むレポート（SQL レポートを除く）を作成できます。 その後、このレポートをガイドとして使用し、Data Warehouse Manager で同期を解除する列を選択できます。
+その場合は、[!DNL Commerce Intelligence] サポート [&#x200B; までお問い合わせください &#x200B;](../guide-overview.md#Submitting-a-Support-Ticket)。 サポートチームは、どのユーザーのダッシュボードでも使用されておらず、電子メールの概要でも使用されていないすべての列を含むレポート（SQL レポートを除く）を作成できます。 その後、このレポートをガイドとして使用し、Data Warehouse Manager で同期を解除する列を選択できます。
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ ht-degree: 0%
 
 プロセス全体を見ると、次のようになります。
 
-![Data Warehouse Manager の「列をドロップ」オプション ](../../mbi/assets/drop_column.png)
+![Data Warehouse Manager の「列をドロップ」オプション &#x200B;](../../mbi/assets/drop_column.png)
 
 ## まとめ
 

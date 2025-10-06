@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## `customer\_entity & sales\_flat\_order`
 
-![1 人の顧客が多数の注文を行う ](../../assets/2_OneCustomerManyOrders.png)
+![1 人の顧客が多数の注文を行う &#x200B;](../../assets/2_OneCustomerManyOrders.png)
 
 1 人の顧客が多数の注文を行うことができます。 この 2 つのテーブル間の関係は `customer\_entity.entity\_id = sales\_flat\_order.customer\_id` です
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 >
 >`customer\_entity.entity\_id` が `sales\_flat\_order.entity\_id` と等しくない。 1 つ目は `customer\_id` として、2 つ目は `order\_id.` として考えることができます
 
-[!DNL Commerce Intelligence] 内でこれらの 2 つのテーブル間のパスが存在しない場合は、「Data Warehouse」タブ内で [ パスを作成 ](../data-warehouse-mgr/create-paths-calc-columns.md) できます。 パスを作成する準備が整ったら、次のように定義します。
+[!DNL Commerce Intelligence] 内でこれらの 2 つのテーブル間のパスが存在しない場合は、「Data Warehouse」タブ内で [&#x200B; パスを作成 &#x200B;](../data-warehouse-mgr/create-paths-calc-columns.md) できます。 パスを作成する準備が整ったら、次のように定義します。
 
-![sales_flat_order から customer_entity へのパスを示すエンティティ関係図 ](../../assets/SFO___CE_path.png)
+![sales_flat_order から customer_entity へのパスを示すエンティティ関係図 &#x200B;](../../assets/SFO___CE_path.png)
 
 ## `sales\_flat\_order & sales\_flat\_order\_item`
 
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 1 つの注文に多数の品目を含めることができます。 この 2 つのテーブル間の関係は `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id` です。
 
-[!DNL Commerce Intelligence] 内でこれらの 2 つのテーブル間のパスが存在しない場合は、「Data Warehouse」タブで [ パスを作成 ](../data-warehouse-mgr/create-paths-calc-columns.md) できます。 パスを作成する準備が整ったら、以下に示すようにパスを定義します。
+[!DNL Commerce Intelligence] 内でこれらの 2 つのテーブル間のパスが存在しない場合は、「Data Warehouse」タブで [&#x200B; パスを作成 &#x200B;](../data-warehouse-mgr/create-paths-calc-columns.md) できます。 パスを作成する準備が整ったら、以下に示すようにパスを定義します。
 
-![sales_flat_order_item から sales_flat_order へのパスを示すエンティティ関係図 ](../../assets/SFOI___SFO_path.png)
+![sales_flat_order_item から sales_flat_order へのパスを示すエンティティ関係図 &#x200B;](../../assets/SFOI___SFO_path.png)
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 1 つの製品は多くのアイテムを購入することができます。 この 2 つのテーブル間の関係は `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product` です。
 
-[!DNL Commerce Intelligence] 内でこれらの 2 つのテーブル間のパスが存在しない場合は、「Data Warehouse」タブ内で [ パスを作成 ](../data-warehouse-mgr/create-paths-calc-columns.md) できます。 パスを作成する準備が整ったら、以下に示すようにパスを定義します。
+[!DNL Commerce Intelligence] 内でこれらの 2 つのテーブル間のパスが存在しない場合は、「Data Warehouse」タブ内で [&#x200B; パスを作成 &#x200B;](../data-warehouse-mgr/create-paths-calc-columns.md) できます。 パスを作成する準備が整ったら、以下に示すようにパスを定義します。
 
-![sales_flat_order_item から catalog_product_entity へのパスを示すエンティティ関係図 ](../../assets/SFOI___CPE_path.png)
+![sales_flat_order_item から catalog_product_entity へのパスを示すエンティティ関係図 &#x200B;](../../assets/SFOI___CPE_path.png)

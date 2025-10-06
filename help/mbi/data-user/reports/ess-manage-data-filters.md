@@ -15,15 +15,15 @@ ht-degree: 0%
 
 同様の方法でフィルタリングする必要がある指標が [!DNL Commerce Intelligence] 内に複数ある場合（例えばテスト注文を除外する場合）、保存済みのフィルターセットを作成して指標に適用できます。 これにより、指標を作成または編集する際に個々のフィルターを追加する必要がなくなるので、時間を節約できます。
 
-詳しくは、[ トレーニングビデオ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) を参照してください。
+詳しくは、[&#x200B; トレーニングビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) を参照してください。
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
+>[&#x200B; 管理者権限 &#x200B;](../../administrator/user-management/user-management.md) が必要です。
 
 1. サイドバーの「**[!DNL Manage Data** > **Filter Sets]**」をクリックします。
 
-   ![ 「フィルターセットを追加」オプションを使用したフィルターセットインターフェイスの作成 ](../../assets/create-filter-sets.png)
+   ![&#x200B; 「フィルターセットを追加」オプションを使用したフィルターセットインターフェイスの作成 &#x200B;](../../assets/create-filter-sets.png)
 
 1. ページ上部の「**[!UICONTROL Add Filter Set]**」をクリックします。
 
