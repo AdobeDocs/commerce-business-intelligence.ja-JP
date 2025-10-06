@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 異なる時間範囲での同じ指標の比較 {#difftimerange}
 
-この例では、「`Day number of the month`」というカスタムディメンションを使用します。 このレポートを作成したいが、Data Warehouseにこのディメンションがまだない場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+この例では、「`Day number of the month`」というカスタムディメンションを使用します。 このレポートを作成したいが、Data Warehouseにこのディメンションがまだない場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
 
 このカテゴリの 2 つの最も一般的な例は、（1）成長指標（前年度の売上高または前月比の売上高）の比較、（2）最近の在庫または品目販売のトレンドをより深く理解することです。
 

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 アカウントが作成されたら、メールで [!DNL The Magento BI Team@rjmetrics.com] からのアカウント通知メールを確認します。 メールに記載されているリンクを使用して [!DNL Commerce Intelligence] アカウントにアクセスし、パスワードを作成します。 インボックスに移動し、メールアドレスを確認します。
 
-メールを受け取っていない場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)。
+メールを受け取っていない場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
 
 ![&#x200B; 新しいCommerce Intelligence アカウントのパスワードを作成画面 &#x200B;](../assets/create-account-4.png)
 
@@ -170,7 +170,7 @@ ht-degree: 0%
 
 <!---# Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja).
 
 >[!NOTE]
 >

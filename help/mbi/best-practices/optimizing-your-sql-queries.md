@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder] を使用すると、クエリを必要に応じて実行および変更できます。 この機能は、更新サイクルが完了するのを待ってから列またはレポートを修正する代わりに、クエリをすぐに更新する必要がある場合に役立ちます。
 
-クエリを実行する前に、は [[!DNL Commerce Intelligence]  コストを見積もります &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html)。 コストは、クエリの実行に必要な時間とリソースの数を考慮します。 そのコストが高すぎると見なされる場合や、返される行の数が [!DNL Commerce Intelligence] の制限を超える場合、クエリは失敗します。 Adobeで可能な限り効率的なクエリを記述できるように、[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) に対してクエリを実行する場合は、次の操作をお勧めします。
+クエリを実行する前に、は [[!DNL Commerce Intelligence]  コストを見積もります &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=ja)。 コストは、クエリの実行に必要な時間とリソースの数を考慮します。 そのコストが高すぎると見なされる場合や、返される行の数が [!DNL Commerce Intelligence] の制限を超える場合、クエリは失敗します。 Adobeで可能な限り効率的なクエリを記述できるように、[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) に対してクエリを実行する場合は、次の操作をお勧めします。
 
 ## SELECT の使用またはすべての列の選択
 

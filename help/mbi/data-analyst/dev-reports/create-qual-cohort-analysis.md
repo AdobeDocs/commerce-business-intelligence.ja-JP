@@ -39,7 +39,7 @@ ht-degree: 0%
 
 `qualitative cohort` で `Report Builder` レポートを作成するには、Adobe アナリストチームが、必要なテーブルに [&#x200B; 高度な計算列 &#x200B;](../data-warehouse-mgr/creating-calculated-columns.md) を作成する必要があります。
 
-これを作成するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を送信します（この記事も参照してください）。 必要な知識を次に示します。
+これを作成するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) を送信します（この記事も参照してください）。 必要な知識を次に示します。
 
 * コホート分析を実行する `metric` と、コホート分析で使用するテーブル （例：`Revenue` テーブルに基づいて作成された `orders`）。
 
