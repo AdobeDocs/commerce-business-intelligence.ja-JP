@@ -4,9 +4,9 @@ description: キャンペーンのパフォーマンスを評価する様々な�
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 1. 「`Add New Metric`」を選択し、[!DNL `Adwords...`] のコストデータを記録している [!DNL AdWords] テーブルを選択します。
 1. 指標エディターで、指標に名前を付けます（例：[!UICONTROL AdWord Cost]）
 1. ドロップダウンを使用して、**列で並べ替えられた** テーブルの `adCost` 列で [!DNL Adwords...] 合計 `date` を実行します。
-   ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
+   ![ 新しい指標の追加後の成功メッセージ ](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 上部の「`Back to Metric List`」をクリックして、任意のダッシュボードに移動します。
 
 1. キャンペーン別の支出をセグメント化するレポートの作成
@@ -99,7 +99,7 @@ ht-degree: 0%
 >
 >この例では、すべてのキャンペーンコストが特定の製品の購入の生成にのみ使用されたと想定しています。 購入の生成にすべてのコストが費やされたと仮定すると、結果の ROI は最悪のケースシナリオ（購入あたりの最高コスト）を占めます。 実際の ROI はこの計算よりも高いと確信できます。 例：新規ユーザー 10 人と購入 10 件を生成したキャンペーンに$20 を費やしたとすると、購入あたりの実際のコストは$1 です。 新規ユーザーの獲得にはすべてのコストがかかるという前提の下では、1 回の購入あたりのコストは 2 ドルです。
 
-開始する前に、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) して、次のディメンションを行項目テーブル（`sales\_flat\_order\_item, order\_item`）に結合します。
+開始する前に、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) して、次のディメンションを行項目テーブル（`sales\_flat\_order\_item, order\_item`）に結合します。
 
 * 注文のソース（ユーザーレベルでリファラルソースのみを追跡する場合は、ユーザーのソースを結合します）
 * 注文のキャンペーン（ユーザーレベルでのリファラルソースの追跡のみ行う場合は、ユーザーのキャンペーンに参加します）
@@ -122,8 +122,8 @@ ht-degree: 0%
 1. これらの指標を設定した状態で、数式を追加します。
 1. [!UICONTROL ROI]：式 `\[A\]/\[B\]` を入力します（`\[A\]` が `Revenue per campaign for specific product(s)` を表し、`\[B\]` が `Ad cost by campaigns` を表す場合）。 これは、（特定の製品の売上高） / （キャンペーンコスト）の比率を返します
 1. [!UICONTROL Return]：式 `\[A\]-\[B\]` を入力します。 これは、（平均ユーザー LTV） – （獲得あたりの平均コスト）を計算して、ユーザーに対する平均利益を返します
-1. （任意） [!UICONTROL Revenue]:`Revenue by items` 指標を表示して、キャンペーンごとの特定の製品の売上高を確認します
-1. （任意） [!UICONTROL Cost]:`AdWords Cost` 指標を表示して、キャンペーンのコストを確認します
+   1. （任意） [!UICONTROL Revenue]:`Revenue by items` 指標を表示して、キャンペーンごとの特定の製品の売上高を確認します
+   1. （任意） [!UICONTROL Cost]:`AdWords Cost` 指標を表示して、キャンペーンのコストを確認します
 
 1. レポートに名前を付け、必ずテーブルとして保存します
 

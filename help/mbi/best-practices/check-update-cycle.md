@@ -4,9 +4,9 @@ description: 更新サイクルのステータスを確認する方法を説明�
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ## 更新サイクルのステータスを確認する必要があるのはなぜですか。
 
-ステータス更新サイクルの確認は、[!DNL Commerce Intelligence] アカウントのデータを監査する場合に便利です。 [ 期待に合わない結果 ](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) が表示される場合（例えば、[!DNL Commerce Intelligence] の毎日の売上高が e コマースプラットフォームや [[!DNL Google] e コマースの売上高に表示されているものと一致しない場合）は ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=ja) 最後のデータポイントを確認して、更新が完了すると問題が解決するかどうかを確認できます。
+ステータス更新サイクルの確認は、[!DNL Commerce Intelligence] アカウントのデータを監査する場合に便利です。 [ 期待に合わない結果 ](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) が表示される場合（例えば、[!DNL Commerce Intelligence] の毎日の売上高が e コマースプラットフォームや [[!DNL Google] e コマースの売上高に表示されているものと一致しない場合）は ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 最後のデータポイントを確認して、更新が完了すると問題が解決するかどうかを確認できます。
 
 ## [!UICONTROL Read-Only] および [!UICONTROL Standard] ユーザー
 
 ユーザー `Read-only`、ダッシュボードにログインし、ページの右上のアイコンにマウスポインターを置くと、最近データが更新されたかどうかを確認できます。 これは、最後のデータポイントが取り込まれたタイミングを示します。
 
-![](../../mbi/assets/last-success-data.png)
+![ インターフェイスに表示される前回成功したデータ更新タイムスタンプ ](../../mbi/assets/last-success-data.png)
 
 ## [!UICONTROL Admin] Users
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 管理者ユーザーは、**[!UICONTROL Manage Data]**/**[!UICONTROL Integrations]** をクリックすると詳細を確認できます。
 
-![](../../mbi/assets/detail-manage-data-integrations.png)
+![ 接続の詳細と更新ステータスを表示するデータ統合の管理ページ ](../../mbi/assets/detail-manage-data-integrations.png)
 
 このページには、現在の更新ステータスと、最後に完了した更新の時刻が表示されます。
 

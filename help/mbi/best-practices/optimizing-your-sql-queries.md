@@ -4,18 +4,18 @@ description: SQL クエリを最適化する方法を説明します。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # SQL クエリを最適化
 
-[!DNL SQL Report Builder] を使用すると、これらのクエリに対して、いつでもクエリを実行および繰り返すことができます。 これは、作成した列やレポートの更新が必要な場合に、更新サイクルの終了を待たずにクエリを変更する必要がある場合に便利です。
+[!DNL SQL Report Builder] を使用すると、クエリを必要に応じて実行および変更できます。 この機能は、更新サイクルが完了するのを待ってから列またはレポートを修正する代わりに、クエリをすぐに更新する必要がある場合に役立ちます。
 
-クエリを実行する前に、は [[!DNL Commerce Intelligence]  コストを見積もります ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=ja)。 コストは、クエリの実行に必要な時間とリソースの数を考慮します。 そのコストが高すぎると見なされる場合や、返される行の数が [!DNL Commerce Intelligence] の制限を超える場合、クエリは失敗します。 Adobeで可能な限り効率的なクエリを記述できるように、[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) に対してクエリを実行する場合は、次の操作をお勧めします。
+クエリを実行する前に、は [[!DNL Commerce Intelligence]  コストを見積もります ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html)。 コストは、クエリの実行に必要な時間とリソースの数を考慮します。 そのコストが高すぎると見なされる場合や、返される行の数が [!DNL Commerce Intelligence] の制限を超える場合、クエリは失敗します。 Adobeで可能な限り効率的なクエリを記述できるように、[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) に対してクエリを実行する場合は、次の操作をお勧めします。
 
 ## SELECT の使用またはすべての列の選択
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる** |
 |-----|-----|
-| ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
+| ![SELECT アスタリスクを使用した SQL クエリ ](../../mbi/assets/Select_all_1.png) | ![ 特定の列を選択する SQL クエリ ](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる** |
 |-----|-----|
-| ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
+| ![ 完全外部結合を含む SQL クエリ ](../../mbi/assets/Full_Outer_Join_1.png) | ![ 最適化結合を使用した SQL クエリ ](../../mbi/assets/Full_Outer_Join_2.png) |
 
 {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## フィルターの使用
 
-可能な限りフィルターを使用します。 `WHERE` および `HAVING` 句は、結果をフィルタリングし、本当に必要なデータのみを提供します。
+可能な限りフィルターを使用します。 句 `WHERE` と `HAVING` は、結果をフィルタリングし、本当に必要なデータのみを提供します。
 
 ## JOIN 句でのフィルタの使用
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる** |
 |-----|-----|
-| ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
+| ![WHERE 句フィルターを含む SQL クエリ ](../../mbi/assets/Join_filters_1.png) | ![ON 句フィルターを使用した SQL クエリ ](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -73,19 +73,19 @@ ht-degree: 0%
 
 `EXISTS` と `IN` のどちらを使用するかは、返そうとしている結果のタイプによって異なります。 1 つの値のみを対象とする場合は、`EXISTS` の代わりに `IN` 句を使用します。 `IN` は、コンマ区切り値のリストと共に使用され、クエリの計算コストを増加させます。
 
-クエリ `IN` 実行する場合、システムはまずサブクエリ（`IN` ステートメント）を処理し、次に `IN` ステートメントで指定された関係に基づいてクエリ全体を処理する必要があります。 クエリを複数回実行する必要がないので、`EXISTS` ははるかに効率的です。クエリで指定された関係を確認する際に、true/false 値が返されます。
+クエリ `IN` 実行する場合、システムはまずサブクエリ（`IN` ステートメント）を処理し、次に `IN` ステートメントで指定された関係に基づいてクエリ全体を処理する必要があります。 `EXISTS` クエリは、クエリを複数回実行する必要がないので、はるかに効率的です。クエリで指定された関係を確認する際に、true/false 値が返されます。
 
 簡単に言えば、システムは `EXISTS` を使用するときほど処理する必要はありません。
 
 | **代わりに…** | **試してみる** |
 |-----|-----|
-| ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
+| ![NULL チェック付きの LEFT JOIN を使用する SQL クエリ ](../../mbi/assets/Exists_1.png) | ![EXISTS 句を使用した SQL クエリ ](../../mbi/assets/Exists_2.png) |
 
 {style="table-layout:auto"}
 
 ## 並べ替え順の使用
 
-`ORDER BY` は SQL の高コストな関数で、クエリのコストを大幅に増やす可能性があります。 クエリの説明コストが高すぎるというエラーメッセージが表示された場合は、必要でない限り、クエリから `ORDER BY` を削除してみてください。
+`ORDER BY` 関数は SQL ではコストが高く、クエリのコストを大幅に増やす可能性があります。 クエリの説明コストが高すぎるというエラーメッセージが表示された場合は、必要でない限り、クエリから `ORDER BY` を削除してみてください。
 
 これは `ORDER BY` を使用できないとは言わないわけではなく、必要な場合にのみ使用する必要があります。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる** |
 |-----|-----|
-| ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
+| ![GROUP BY BEFORE フィルターを使用した SQL クエリ ](../../mbi/assets/Group_by_2.png) | ![GROUP BY の前にフィルターを含む SQL クエリ ](../../mbi/assets/Group_by_1.png) |
 
 {style="table-layout:auto"}
 

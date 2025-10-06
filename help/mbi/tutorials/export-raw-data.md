@@ -4,16 +4,16 @@ description: ' [!DNL Commerce Intelligence]  ダッシュボードからレコ�
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
 # 生データの書き出し
 
-生データの書き出しを使用すると、ダッシュボードからレコードを書き出して、Data Warehouseの機能を詳しく確認できます。 また、生データの書き出しは、[ データの不一致をピンポイントで特定 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=ja) するのに役立ちます。
+生データの書き出しを使用すると、ダッシュボードからレコードを書き出して、Data Warehouseの機能を詳しく確認できます。 また、生データの書き出しは、[ データの不一致をピンポイントで特定 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) するのに役立ちます。
 
 生データの書き出しでは、関連指標の正規化の解除と事前集計によって生成された追加の列とディメンションにアクセスできます。 例えば、`User's first order date` は [!DNL Commerce Intelligence] の各ユーザーに対して書き出すことができるディメンションですが、データベースでは使用できない場合があります。
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 [!UICONTROL Manage Data] のタブからテーブルを書き出すには、[ 管理者 ](../administrator/user-management/user-management.md) 権限が必要です。
 
-1. **[!UICONTROL Manage Data** > **&#x200B; データの書き出し &#x200B;**/**生データの書き出し]** をクリックします。
+1. **[!UICONTROL Manage Data** > ** データの書き出し **/**生データの書き出し]** をクリックします。
 1. 最近作成したデータ書き出しが存在する場合は、その `Export List` が表示されます。 「**[!UICONTROL Add Export]**」をクリックして、書き出しを作成します。
 1. `New Raw Data Export` ダイアログが表示されます。 ここでは、列とフィルターを選択または選択解除して、書き出しをカスタマイズできます。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 プロセス全体をチャートレベルで見てみましょう。
 
-![](../assets/Chart-level_export.gif)
+![ グラフから生データを書き出すアニメーションのデモ ](../assets/Chart-level_export.gif)
 
 ## 手順 2：エクスポートのダウンロード {#download}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 書き出しの準備ができているかどうかを確認するには、画面の右上隅にある「**[!UICONTROL Raw Data Exports]**」をクリックします。 「**[!UICONTROL Download]**」をクリックして、書き出しの zip フ `.csv` ールド ファイルをダウンロードします。
 
-![](../assets/Downloading_export.gif)
+![ 書き出した CSV ファイルのダウンロードに関するアニメーションによるデモ ](../assets/Downloading_export.gif)
 
 ## 手順 3：履歴エクスポートへのアクセス {#historical}
 

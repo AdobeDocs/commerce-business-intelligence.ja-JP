@@ -4,9 +4,9 @@ description: 投資家向けダッシュボードの作成方法を説明しま�
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
    * 指標 – 売上高
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
    * 指標 – 初回の注文売上高
-   * フィルター – ユーザーの注文番号は 1 に等しい
+      * フィルター – ユーザーの注文番号は 1 に等しい
    * 指標 2 – リピート注文売上高
       * フィルター – ユーザーの注文番号が 1 より大きい
    * 複数の Y 軸のチェックボックスをオフにします
@@ -77,4 +77,4 @@ ht-degree: 0%
 
 レポートを思慮深く整理し、詳細に注意を払います。 完了すると、ダッシュボードは次のようになります。
 
-![](../../mbi/assets/investor-dboard-example.png)
+![ 投資家ダッシュボードの作成 ](../../mbi/assets/investor-dboard-example.png)

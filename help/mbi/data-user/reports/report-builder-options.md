@@ -4,9 +4,9 @@ description: Report Builder の選択方法を説明します。
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Report Builder の選択
 
 >[!NOTE]
->&#x200B;>[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
+>>[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
 
 分析を作成するオプションが増えたので、ニーズに合った Report Builder のフレーバーを正確に把握することが困難な場合があります。 このトピックでは、分析を構築するための最適な方法を選択する手順を説明します。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 例えば、1 つの製品が複数の製品カテゴリの一部と見なされ、各製品の各カテゴリに関連付けられた売上高を表示するとします。 DWM を使用してこの関係を作成しようとすることは、面倒で難しい場合がありますが、[!DNL SQL] クエリを作成する方が少し簡単な場合があります。
 
-![](../../assets/When_should_I_use_the_RB_2.png)
+![1 対多の関係を持つ製品カテゴリ別の売上高を示す SQL クエリ ](../../assets/When_should_I_use_the_RB_2.png)
 
 ## 従来のReport Builderは、どのような場合に使用すればよいですか？ {#whentraditionalrb}
 

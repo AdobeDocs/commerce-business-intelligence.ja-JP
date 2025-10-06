@@ -4,9 +4,9 @@ description: SQL Report Builderで使用されている用語を理解し、SQL 
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 このクエリは、次の結果テーブルを返します。
 
-![](../assets/SQL_results_table.png)
+![ 製品、年、月ごとに販売されたアイテムを含む SQL クエリ結果を示すテーブル ](../assets/SQL_results_table.png)
 
 ## 手順 2：ビジュアライゼーションの作成
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 クエリを初めて実行すると、クエリ内のすべての列が系列としてプロットされるので、レポートが不可解に見える場合があります。
 
-![](../assets/SQL_initial_report_results.png)
+![ すべての列を系列としてプロットした初期 SQL レポート ](../assets/SQL_initial_report_results.png)
 
 この例では、経時的なトレンドを示す折れ線グラフにする必要があります。 作成するには、次の設定を使用します。
 
@@ -82,13 +82,13 @@ ht-degree: 0%
 
 クエリの実行からレポートの設定に至るまで、このビジュアライゼーションがどのように作成されたかを以下に示します。
 
-![](../assets/SQL_report_settings.gif)
+![SQL レポートビジュアライゼーション設定の設定に関するアニメーションのデモ ](../assets/SQL_report_settings.gif)
 
 ## 手順 3:`Chart Type` ールの選択
 
 次の使用例では、`Line` グラフの種類を使用します。 別の `chart type` を使用するには、[ グラフ オプション ] セクションの上にあるアイコンをクリックして変更します。
 
-![](../assets/Chart_types.png)
+![ 折れ線グラフ、棒グラフ、面グラフ、その他のビジュアライゼーションオプションなど、使用可能なグラフタイプのアイコン ](../assets/Chart_types.png)
 
 ## 手順 4：ビジュアライゼーションを保存
 

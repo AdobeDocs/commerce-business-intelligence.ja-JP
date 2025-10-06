@@ -4,9 +4,9 @@ description: Visual Report Builderの使用方法を説明します。
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 
      ![ テーブルデータでグループ化 ](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * テーブルの右上隅にある転置（![](../../assets/magento-bi-btn-transpose.png)） コントロールをクリックして、データの方向を変更します。
+   * テーブルの右上隅にある転置（![ 転置アイコン ](../../assets/magento-bi-btn-transpose.png)）コントロールをクリックして、データの方向を変更します。
 
      データの軸が反転され、テーブルにはクーポンコードごとに列があり、月ごとに行があります。 この向きは、読みやすいかもしれません。
 
@@ -95,14 +95,14 @@ ht-degree: 0%
 
      | | |
      |-----|-----|
-     | ![](../../assets/magento-bi-btn-chart-line.png) | 折れ線グラフ |
-     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | 横棒グラフ |
-     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 横積み重ね棒グラフ |
-     | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | 縦棒グラフ |
-     | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 縦積み横棒グラフ |
-     | ![](../../assets/magento-bi-btn-chart-pie.png) | 円グラフ |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | 面グラフ |
-     | ![](../../assets/magento-bi-btn-chart-funnel.png) | ファネル |
+     | ![ 折れ線グラフアイコン ](../../assets/magento-bi-btn-chart-line.png) | 折れ線グラフ |
+     | ![ 横棒グラフのアイコン ](../../assets/magento-bi-btn-chart-horz-bar.png) | 横棒グラフ |
+     | ![ 積み重ね横棒グラフのアイコン ](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 横積み重ね棒グラフ |
+     | ![ 縦棒アイコン ](../../assets/magento-bi-btn-chart-vert-bar.png) | 縦棒グラフ |
+     | ![ 垂直積み重ね棒アイコン ](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 縦積み横棒グラフ |
+     | ![ 円グラフアイコン ](../../assets/magento-bi-btn-chart-pie.png) | 円グラフ |
+     | ![ 面グラフ アイコン ](../../assets/magento-bi-btn-chart-area.png) | 面グラフ |
+     | ![Funnel グラフ アイコン ](../../assets/magento-bi-btn-chart-funnel.png) | ファネル |
 
      {style="table-layout:auto"}
 

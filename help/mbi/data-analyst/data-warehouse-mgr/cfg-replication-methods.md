@@ -4,9 +4,9 @@ description: テーブルを整理する方法と、テーブルデータの動�
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 `Replication` のメソッドは、`Incremental`、`Full Table`、`Paused` の 3 つのグループに分類されます。
 
-つまり、[**[!UICONTROL Incremental Replication]**](#incremental) [!DNL Commerce Intelligence] レプリケーションを試行するたびに、新しいデータまたは更新されたデータのみをレプリケートします。 これらの方法で待ち時間が大幅に短縮されるので、Adobeでは可能な限りこれを使用することをお勧めします。
+つまり、[**[!UICONTROL Incremental Replication]**](#incremental)[!DNL Commerce Intelligence] レプリケーションを試行するたびに、新しいデータまたは更新されたデータのみをレプリケートします。 これらの方法で待ち時間が大幅に短縮されるので、Adobeでは可能な限りこれを使用することをお勧めします。
 
-つまり、[**[!UICONTROL Full Table Replication]**](#fulltable) [!DNL Commerce Intelligence] レプリケーションを試行するたびに、テーブルのコンテンツ全体をレプリケートします。 レプリケートされるデータは大量になる可能性があるので、これらの方法によって待ち時間と更新時間が長くなる場合があります。 テーブルにタイムスタンプ付きまたは日時の列が含まれる場合、Adobeでは、代わりに増分処理メソッドを使用することをお勧めします。
+つまり、[**[!UICONTROL Full Table Replication]**](#fulltable)[!DNL Commerce Intelligence] レプリケーションを試行するたびに、テーブルのコンテンツ全体をレプリケートします。 レプリケートされるデータは大量になる可能性があるので、これらの方法によって待ち時間と更新時間が長くなる場合があります。 テーブルにタイムスタンプ付きまたは日時の列が含まれる場合、Adobeでは、代わりに増分処理メソッドを使用することをお勧めします。
 
 **[!UICONTROL Paused]** は、テーブルのレプリケーションが停止または一時停止されていることを示します。 [!DNL Commerce Intelligence] は、更新サイクル中に新しいデータまたは更新されたデータをチェックしません。つまり、レプリケーション方法としてこれを持つテーブルからデータがレプリケートされることはありません。
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 プロセス全体を見てみましょう。
 
-![](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
+![ データベース・テーブルのレプリケーション方法の構成に関するアニメーションによるデモ ](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
 
 ## まとめ
 

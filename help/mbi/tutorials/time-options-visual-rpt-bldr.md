@@ -4,9 +4,9 @@ description: 特定の期間に関するレポートのデータを分析する�
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 レポートでこのような指標を使用すると、この指標をレポートに追加すると、`Time Interval` と `None` の独立した `Time Range` が自動的に `Global` 定されます。
 
-![](../assets/Metrics_without_timestamps.gif)
+![ 時間間隔を「なし」に設定し、時間範囲を「グローバル」に設定した指標を示すレポート ](../assets/Metrics_without_timestamps.gif)
 
 ## 1 つの指標に独立した時間間隔を指定する {#independenttimeinterval}
 
@@ -62,11 +62,11 @@ ht-degree: 0%
 
 現在、各月が昨年にどの程度影響を与えたかを確認できます。
 
-![](../assets/Independent_Time_Int.png)
+![ 前年の月ごとの売上高の割合を示すグラフ ](../assets/Independent_Time_Int.png)
 
 ## 異なる時間範囲での同じ指標の比較 {#difftimerange}
 
-この例では、「`Day number of the month`」というカスタムディメンションを使用します。 このレポートを作成したいが、Data Warehouseにこのディメンションがまだない場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+この例では、「`Day number of the month`」というカスタムディメンションを使用します。 このレポートを作成したいが、Data Warehouseにこのディメンションがまだない場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 このカテゴリの 2 つの最も一般的な例は、（1）成長指標（前年度の売上高または前月比の売上高）の比較、（2）最近の在庫または品目販売のトレンドをより深く理解することです。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
    指標がレポートから消えても心配しないでください。独立した時間オプションを設定すると、レポートから指標が自動的に非表示になります。 再表示するには、指標の横にある「**[!UICONTROL Show]**」をクリックします。
 
-   ![](../assets/Different_Time_Ranges.gif)
+   ![ レポート内の指標に様々な時間範囲を設定するデモ ](../assets/Different_Time_Ranges.gif)
 
    * 「**[!UICONTROL Apply]**」をクリックして、間隔と範囲の設定を保存します。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
    * 「`Group By`」ドロップダウンで「`Show All`」を選択し、「**[!UICONTROL Apply]**」をクリックします。 これにより、レポートの X 軸の値が作成されます。
 
-   ![](../assets/TO4.png)
+   ![ 日数別にグループ化された売上高比較を示すレポート ](../assets/TO4.png)
 
    * 指標の名前を変更します。 この例では、最初の指標は `Revenue - 2015`、2 番目の指標は `Revenue - 2014` です。
 
@@ -136,7 +136,7 @@ ht-degree: 0%
 
 * `last promo period` の場合は、`D / C` フィールドに「`Formula`」と入力します。
 
-  ![](../assets/Different_Time_Ranges_2.png)
+  ![ 異なる期間の供給計算の週数を示すレポート ](../assets/Different_Time_Ranges_2.png)
 
 * 最後に、指標を非表示にし、`SKU` または類似のディメンションを `Group By` としてレポートに追加することで、レポートをカスタマイズします。
 

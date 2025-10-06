@@ -4,9 +4,9 @@ description: ビジネスのパフォーマンスを確認する方法や、最�
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![](../../../assets/WooCommerce-Logo.jpg)
+![WooCommerce ロゴ ](../../../assets/WooCommerce-Logo.jpg)
 
 ビジネスのパフォーマンスを確認したい場合や、最も価値のある獲得ソースとチャネルを見つけたい場合は、 [!DNL WooCommerce] データを [!DNL Commerce Intelligence] に接続すると、これらの質問などに回答できます。
 
@@ -25,5 +25,5 @@ ht-degree: 0%
 
 ## 関連：
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [セグメント化とフィルタリングに推奨されるデータディメンション](../../../best-practices/segment-filter.md)

@@ -4,9 +4,9 @@ description: 既存のテーブルを変更して新しいウェアハウス型�
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1120'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 `Data Warehouse Views` の機能は、既存のテーブルを変更して新しいウェアハウス テーブルを作成する方法、または SQL を使用して複数のテーブルを結合または統合する方法です。 `Data Warehouse View` ークフローが作成され、更新サイクルで処理されると、次に示すように、`Data Warehouse Views` ドロップダウンの下の新しいテーブルとしてData Warehouseに入力されます。
 
-![](../../assets/Data_Warehouse.png)
+![ テーブル管理オプションを表示するData Warehouse インターフェイス ](../../assets/Data_Warehouse.png)
 
 ここから、新しいビューは他のテーブルと同様に機能し、新しい計算列を作成したり、指標とレポートを作成したりできます。
 
@@ -31,7 +31,7 @@ SQL に精通している場合、これらの統合例の両方で `UNION` 関�
 
 以下に示すように、`Data Warehouse Views` / **[!UICONTROL Manage Data]** に移動して、新しい **[!UICONTROL Data Warehouse Views]** を作成し、既存のビューを削除できます。
 
-![](../../assets/Data_Warehouse_Views.png)
+![ カスタムビュー設定を示す「Data Warehouseビュー」セクション ](../../assets/Data_Warehouse_Views.png)
 
 ここから、以下のサンプル手順に従ってビューを作成できます。
 
@@ -136,7 +136,7 @@ PostgreSQL `UNION` ドキュメント [ に概説されているように、言�
 
 **その他のヘルプをお探しですか？**
 
-SQL の書き込みと `Data Warehouse Views` の作成は、テクニカルサポートには含まれていません。 ただし、[ サービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) は、ビューの作成を支援します。 従来のデータベースを新しいデータベースに移行して、特定の分析のために 1 つのData Warehouse ビューを作成するといった作業に関しては、サポートチームがサポートを提供します。
+SQL の書き込みと `Data Warehouse Views` の作成は、テクニカルサポートには含まれていません。 ただし、[ サービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) は、ビューの作成を支援します。 従来のデータベースを新しいデータベースに移行して、特定の分析のために 1 つのData Warehouse ビューを作成するといった作業に関しては、サポートチームがサポートを提供します。
 
 通常、2～3 の同様に構造化されたテーブルを統合する目的で新しい `Data Warehouse View` ールを作成するには、5 時間のサービス時間が必要です。これは、約 1,250 ドルの作業になります。 ただし、以下に、必要な予想投資を増やす可能性のある一般的な要因を示します。
 

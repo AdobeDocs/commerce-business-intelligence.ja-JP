@@ -4,9 +4,9 @@ description: あるテーブル内の可能なオカレンスのうち、別の�
 exl-id: e7256f46-879a-41da-9919-b700f2691013
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 例えば、人と運転免許証番号の関係では、人は 1 つの運転免許証番号しか持つことができず、運転免許証番号は人のみに属します。
 
-![](../../assets/one-to-one.png)
+![2 つのエンティティ間の 1 対 1 の関係を示す図 ](../../assets/one-to-one.png)
 
 ### `One-to-Many` {#onetomany}
 
 `one-to-many` 関係では、テーブル `A` のレコードがテーブル `B` の複数のレコードに属する可能性があります。 `orders` と `items` の関係を考えます。注文には多くの項目を含めることができますが、項目は 1 つの注文に属します。 この場合、`orders` テーブルは一側で、`items` テーブルは多側です。
 
-![](../../assets/one-to-many_001.png)
+![ 注文と品目の一対多の関係を示す図 ](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 **製品** と **カテゴリ** の関係を考えます。製品は多くのカテゴリに属することができ、カテゴリには多くの製品を含めることができます。
 
-![](../../assets/many-to-many.png)
+![ 製品とカテゴリの多対多の関係を示す図 ](../../assets/many-to-many.png)
 
 ## テーブルの評価 {#eval}
 
@@ -75,7 +75,7 @@ Data Warehouse内の特定のテーブルのペアの関係を評価するには
 
 これは、各テーブルが片側である `one-to-one` しい関係です。
 
-![](../../assets/one-to-one3.png)
+![ 人と運転免許との一対一の関係に関する概念図 ](../../assets/one-to-one3.png)
 
 ### `One-to-Many`
 
@@ -83,7 +83,7 @@ Data Warehouse内の特定のテーブルのペアの関係を評価するには
 
 これは、注文テーブルが一方の側で、品目テーブルが多い側である `one-to-many` しい関係です。
 
-![](../../assets/one-to-many3.png)
+![ オーダーとアイテムの 1 対多の関係の概念図 ](../../assets/one-to-many3.png)
 
 ### `Many-to-Many`
 
@@ -91,7 +91,7 @@ Data Warehouse内の特定のテーブルのペアの関係を評価するには
 
 これは、各テーブルが多数の辺を持つ `many-to-many` しい関係です。
 
-![](../../assets/many-to-many3.png)
+![ 製品とカテゴリの多対多の関係の概念図 ](../../assets/many-to-many3.png)
 
 ### テーブルのスキーマの使用 {#schema}
 
@@ -105,7 +105,7 @@ Data Warehouse内の特定のテーブルのペアの関係を評価するには
 
 例えば、`users` テーブルは、ほとんどのユーザー属性（名前など）を取得できますが、追加の `user_source` テーブルは、ユーザーの登録ソースを取得します。 各テーブルでは、行は 1 人のユーザーを表します。
 
-![](../../assets/one-to-one1.png)
+![ プライマリキーを使用した 1 対 1 の関係を示すスキーマ図 ](../../assets/one-to-one1.png)
 
 ### `One-to-many`
 
@@ -115,17 +115,17 @@ Data Warehouse内の特定のテーブルのペアの関係を評価するには
 
 `Foreign key` を指す `primary key` を使用してテーブルをリンクする場合、この設定は `one-to-many` の関係を表します。 一方の側は `primary key` を含むテーブルで、多くの側は `foreign key` を含むテーブルです。
 
-![](../../assets/one-to-many1.png)
+![ 外部キーを使用した 1 対多の関係を示すスキーマ図 ](../../assets/one-to-many1.png)
 
 ### `Many-to-many`
 
 次のいずれかに該当する場合、関係は `many-to-many` になります。
 
 * `Non-primary key` 列は、2 つのテーブルのリンクに使用されています
-  ![](../../assets/many-to-many1.png)
+  ![ 非プライマリキーを使用した多対多の関係を示すスキーマ図 ](../../assets/many-to-many1.png)
 * 複合 `primary key` の一部は、2 つのテーブルをリンクするために使用されます
 
-![](../../assets/many-to-mnay2.png)
+![ 複合プライマリキーを使用した多対多の関係を示すスキーマ図 ](../../assets/many-to-mnay2.png)
 
 ## 次の手順
 

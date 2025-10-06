@@ -4,9 +4,9 @@ description: フィルターの使用方法を説明します。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
    このレポートでは、各データポイントはその月の顧客の合計数を示します。
 
-1. 左側のパネルで、フィルター（![](../../assets/magento-bi-btn-filter.png)） アイコンをクリックします。
+1. 左側のパネルで、フィルター（![ フィルターアイコン ](../../assets/magento-bi-btn-filter.png)）アイコンをクリックします。
 
    ![ フィルターを追加 ](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    フィルターにはアルファベット順に番号が付けられ、最初のフィルターは `[A]` です。 フィルターの最初の 2 つの部分はドロップダウンオプションで、3 番目の部分は値です。
 
-   ![](../../assets/magento-bi-report-builder-filter-add-a.png)
+   ![ フィルターの追加オプションを表示するフィルターインターフェイス ](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * フィルターの最初の部分をクリックし、式の件名として使用する列を選択します。
 

@@ -4,9 +4,9 @@ description: RDS インスタンスを接続する手順を説明します。
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 各データベースの資格情報ページ（**[!UICONTROL Manage Data** > **Integrations]**）に、R[!DNL RDS] を [!DNL Commerce Intelligence]:`54.88.76.97` および `34.250.211.151` に接続するために認証する必要がある IP アドレスを含むボックスが表示されます。 次に、IP アドレスボックスがハイライト表示された `MySQL credentials` ページを見てみましょう。
 
-![](../../../assets/RDS_IP.png)
+![IP アドレス構成を示すAmazon RDS セキュリティ グループ設定 ](../../../assets/RDS_IP.png)
 
 [!DNL Commerce Intelligence] が [!DNL RDS] インスタンスに正常に接続するには、AWS Management Console を介して適切なデータベースセキュリティグループにこれらの IP アドレスを追加する必要があります。 これらの IP アドレスは、既存のグループに追加することも、作成することもできます。重要なのは、[!DNL Commerce Intelligence] に接続するインスタンスへのアクセスをグループに許可されているということです。
 
@@ -55,6 +55,6 @@ ht-degree: 0%
 
 暗号化された接続を使用している場合、データベース資格情報ページの「`Encrypted`」切替スイッチを「`Yes`」に変更します。 暗号化を設定するための追加フォームが表示されます。
 
-![](../../../assets/sql-integration-encrypted-yes.png)
+![ 暗号化が有効で「はい」オプションが表示されている SQL 統合フォーム ](../../../assets/sql-integration-encrypted-yes.png)
 
 

@@ -4,9 +4,9 @@ description: 質的コホートの概要、この分析の構築に興味を持�
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 `qualitative cohort` で `Report Builder` レポートを作成するには、Adobe アナリストチームが、必要なテーブルに [ 高度な計算列 ](../data-warehouse-mgr/creating-calculated-columns.md) を作成する必要があります。
 
-これを作成するには、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) を送信します（この記事も参照してください）。 必要な知識を次に示します。
+これを作成するには、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) を送信します（この記事も参照してください）。 必要な知識を次に示します。
 
 * コホート分析を実行する `metric` と、コホート分析で使用するテーブル （例：`Revenue` テーブルに基づいて作成された `orders`）。
 
@@ -55,7 +55,7 @@ Adobe アナリストチームが上記の手順に従ったら、新しい高�
 
 まず、分析する指標ごとに 1 回、コホートする指標を追加し `cohort` す。 この例では、顧客の最初の注文後の数か月に行われた累積 `Revenue` を、`User's referral source` でセグメント化して表示します。 つまり、セグメントごとに 1 つの `Revenue` 指標を追加し、特定のセグメントに対してフィルターを適用します。
 
-![](../../assets/qualcohort1.gif)
+![ 定性コホート分析の作成に関するアニメーションによるデモ ](../../assets/qualcohort1.gif)
 
 次に、レポートの時間オプションを 2 回変更する必要があります。
 
@@ -65,7 +65,7 @@ Adobe アナリストチームが上記の手順に従ったら、新しい高�
 
 この例では、`all time` の `Revenue` しいビューを見ます。 この後、一連のドットで終わります。
 
-![](../../assets/qualcohort2.gif)
+![ コホートのグループ化と分析のオプションに関するアニメーションによるデモ ](../../assets/qualcohort2.gif)
 
 3 番目に、`cohorts` を設定するように調整します。 Adobe アナリストチームに指定した `cohort date` と `time interval` に基づいて、`cohort` 付け日を実行するディメンションがアカウントに存在します。 この例では、そのカスタムディメンションは `Months between this order and customer's first order date` と呼ばれます。 このディメンションを使用すると、次のことができます。
 

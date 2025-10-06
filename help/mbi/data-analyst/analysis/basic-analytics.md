@@ -4,9 +4,9 @@ description: 分析の基本を理解し、構築する方法を説明します�
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '3120'
+source-wordcount: '3130'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 **ゲストの注文は受け付けますか？**
 
-*その場合、一部の顧客がこのテーブルに含まれていない可能性があります。 顧客の分析にすべての顧客が含まれることを確認するには、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) にお問い合わせください。*
+*その場合、一部の顧客がこのテーブルに含まれていない可能性があります。 顧客の分析にすべての顧客が含まれることを確認するには、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) にお問い合わせください。*
 
 *お客様から注文を受け付けているか不明な場合は、 詳しくは、[ このトピック ](../data-warehouse-mgr/guest-orders.md) を参照してください。*
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**：注文が作成または発注された日付。
 * **[!UICONTROL Customer_email]**：注文を行った顧客のメールアドレス。 これは、顧客の一意の ID である場合もあります。
 * **[!UICONTROL Customer's lifetime number of orders]**:`Customers` テーブル上にある同じ名前の列のコピー。
-* **[!UICONTROL Customer's order number]**：受注に関連付けられた顧客の受注番号。 例えば、表示している行が顧客の最初の注文の場合、この列は「1」ですが、顧客の 15 番目の注文の場合、この列には、この注文の「15」が表示されます。 このディメンションが `Customers` テーブルに存在しない場合は、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) に問い合わせて、ディメンションの作成を支援してください。
+* **[!UICONTROL Customer's order number]**：受注に関連付けられた顧客の受注番号。 例えば、表示している行が顧客の最初の注文の場合、この列は「1」ですが、顧客の 15 番目の注文の場合、この列には、この注文の「15」が表示されます。 このディメンションが `Customers` テーブルに存在しない場合は、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) に問い合わせて、ディメンションの作成を支援してください。
 * **[!UICONTROL Customer's order number (previous-current)]**:**[!UICONTROL Customer's order number]** 列内の 2 つの値の連結。 以下のサンプルレポートで、任意の 2 つの注文間の経過時間を表示するために使用されます。 例えば、顧客の最初の注文日と 2 番目の注文日の間の時間は、この計算では「1-2」として表されます。
 * **[!UICONTROL Coupon_code]**：各注文で使用されたクーポンを表示します。
 * **[!UICONTROL Seconds since previous order]**：顧客の注文間の時間（秒単位）。
@@ -115,7 +115,7 @@ ht-degree: 0%
 ### 新規ユーザー
 
 * **説明**：特定の期間に新しく取得したユーザーの合計数の数。 `New Users` は `Unique Customers` とは異なります。`New Users` はサービスを使用してアカウントが作成されたタイムスタンプを持ち（これは必ずしも注文されたとは限らない）、`Unique Customers` は少なくとも 1 つの注文を行っているからです。
-* **指標定義**：この指標は、**で並べ替えられたテーブルの** の `entity_id` カウント `customer_entity` `created_at` 実行します。
+* **指標定義**：この指標は、**で並べ替えられたテーブルの** の `entity_id` カウント `customer_entity``created_at` 実行します。
 * **レポートの例**：先月作成された新規ユーザーの数
    * **[!UICONTROL Metric]**: `New Users`
    * **[!UICONTROL Time Range]**: `Last Month`
@@ -126,7 +126,7 @@ ht-degree: 0%
 ### ユニーク顧客
 
 * **説明**：特定の期間における個別の顧客の合計数。 これは `New Users` とは異なります。これは、少なくとも 1 つの注文を行った顧客のみを追跡するためです。 ユニーク顧客レポートでは、特定の時間間隔で 1 回だけ顧客を追跡します。 時間間隔を `By Day` に設定し、その日に顧客が複数の購入をおこなった場合、顧客は 1 回のみカウントされます。 一般的な購入数の合計を確認したい場合は、`Number of Orders` を参照してください。
-* **指標定義**：この指標は、**で並べ替えられたテーブルからの** の `customer_id` 個別カウント `sales_flat_order` `created_at` 実行します。
+* **指標定義**：この指標は、**で並べ替えられたテーブルからの** の `customer_id` 個別カウント `sales_flat_order``created_at` 実行します。
 * **レポートの例**：過去 90 日間の週別のユニーク顧客
    * **[!UICONTROL Metric]**: `Distinct Customers`
    * **[!UICONTROL Time Range]**: `Moving range > Last 90 Days`
@@ -137,7 +137,7 @@ ht-degree: 0%
 ### 新規購読者
 
 * **説明**：特定の期間に取得した新規購読者の合計数の数。
-* **指標定義**：この指標は、**で並べ替えられたテーブルからの** の `customer_id` 個別カウント `subscriptions` `start_date` 実行します。
+* **指標定義**：この指標は、**で並べ替えられたテーブルからの** の `customer_id` 個別カウント `subscriptions``start_date` 実行します。
 * **レポートの例**：今年の新しい購読者が月ごとに表示されます
    * **[!UICONTROL Metric]**: `New Subscribers`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 0 Days Ago`
@@ -155,7 +155,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Group By]**: `Customer's Order Number` を選択してから、「`2`」を選択し、「`3`」を選択します
 
-  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![ 昨年の 2 番目と 3 番目の購入分析を示すグラフ ](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **レポート例 2**：昨年のリピート顧客の数
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -242,11 +242,11 @@ ht-degree: 0%
 ### 最初の 30 日間の平均売上高
 
 * **説明**：顧客が顧客としての最初の 30 日以内に生み出した収益額の平均。
-* **指標の説明**：この指標は、**で並べ替えられたテーブルの** の `Customer's First 30 Day Revenue` 平均 `customer_entity` `created_at` 実行します。
+* **指標の説明**：この指標は、**で並べ替えられたテーブルの** の `Customer's First 30 Day Revenue` 平均 `customer_entity``created_at` 実行します。
 * **レポートの説明**：顧客の最初の 30 日間の収益の全時間平均
-* **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
-* **[!UICONTROL Time Range]**: `All Time`
-* **[!UICONTROL Time Interval]**: `None`
+   * **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
+   * **[!UICONTROL Time Range]**: `All Time`
+   * **[!UICONTROL Time Interval]**: `None`
 
 ![ 最初の 30 日間の平均売上高 ](../../assets/Avg_first_30_day_revenue.png)<!--{: width="929"}-->
 
@@ -266,7 +266,7 @@ ht-degree: 0%
 ### 収益
 
 * **説明**：収益指標には、選択した期間に発生した合計売上高が表示されます。
-* このメトリックは、**で順序付けられた表からの** の `grand_total` 合計 `sales_flat_order` `created_at` を実行します。
+* このメトリックは、**で順序付けられた表からの** の `grand_total` 合計 `sales_flat_order``created_at` を実行します。
 * **レポートの例**：月別、年累計の収益
    * **[!UICONTROL Metric]**: `Revenue`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
@@ -281,7 +281,7 @@ ht-degree: 0%
 ### 注文件数
 
 * **説明**：特定の期間における注文の合計数。 注文レポートは、新製品の提供、プロモーション、またはトランザクション量を増加（または減少）させる可能性のあるその他の要因によって発生した注文量の変化を追跡します。 質問に答えるために、いくつかの変数でこの指標をセグメント化したい場合がよくあります。
-* **指標定義**：この指標は、**で並べ替えられたテーブルの** の `entity_id` カウント `sales_flat_order` `created_at` 実行します。
+* **指標定義**：この指標は、**で並べ替えられたテーブルの** の `entity_id` カウント `sales_flat_order``created_at` 実行します。
 * **レポートの例**：月別、年累計のオーダー
    * **[!UICONTROL Metric]**: `number of orders`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
@@ -296,7 +296,7 @@ ht-degree: 0%
 ### 注文された製品
 
 * **説明**：注文製品の指標は、特定の期間に販売された項目の数量を示します。
-* **指標の定義**：この指標は、**で並べ替えられたテーブルの** の `qty_ordered` 合計 `sales_flat_order_item` `created_at` 実行します。
+* **指標の定義**：この指標は、**で並べ替えられたテーブルの** の `qty_ordered` 合計 `sales_flat_order_item``created_at` 実行します。
 * **レポートの例**:YTD で月別に販売された品目
    * **[!UICONTROL Metric]**: `Products ordered`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
@@ -332,7 +332,7 @@ ht-degree: 0%
 ### 平均注文値
 
 * **説明**：ある期間に発注された注文の平均値を追跡します。 この指標を使用すると、マーケティング活動、製品オファー、ビジネスのその他の変化の結果として平均注文額（AOV）がどのように変動したかをすばやく判断できます。
-* **指標定義**：この指標は、**で並べ替えられたテーブルの** の `grand_total` 平均 `sales_flat_order` `created_at` 実行します。
+* **指標定義**：この指標は、**で並べ替えられたテーブルの** の `grand_total` 平均 `sales_flat_order``created_at` 実行します。
 * **レポート例**:AOV と前年、YTD の比較
    * **[!UICONTROL Metric]**: `Average order value`
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`

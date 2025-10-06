@@ -4,9 +4,9 @@ description: cPanel を使用して MySQL に接続する方法を説明しま�
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 1. 「**[!UICONTROL [!DNL MySQL] Databases]**」セクションの「`Database`」をクリックします。
 1. `Add New User` のセクションまでスクロールし、[!DNL Commerce Intelligence] のユーザーを作成します。
 
-   ![](../../../assets/create-mbi-mysql-user-cpanel.png)
+   ![ 作成ユーザーフォームを示す cPanel MySQL データベースインターフェイス ](../../../assets/create-mbi-mysql-user-cpanel.png)
 
 1. 「**[!UICONTROL Create User]**」をクリックします。
 1. ユーザーを作成したので、次はデータベースに関連付ける必要があります。 `Add New User` のセクションに戻ります – `Add User to Database?` の設定を参照してくださいそれが必要なものです。
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 ## 関連：
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

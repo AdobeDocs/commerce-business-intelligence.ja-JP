@@ -4,9 +4,9 @@ description: ビジネスの支払いと請求データを管理およびトラ�
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![](../../../assets/stripe-logo.png)
+![Stripe ロゴ ](../../../assets/stripe-logo.png)
 
 [!DNL Stripe] を使用すると、ビジネスの支払いおよび請求書データを管理および追跡できます。 [!DNL Stripe] アカウントを [!DNL Commerce Intelligence] に接続する手順は、次のとおりです。
 
@@ -48,4 +48,4 @@ ht-degree: 0%
 [[!DNL Stripe] API ドキュメント ](https://stripe.com/docs/api) は、[!DNL Stripe] との統合方法の詳細を学習する際に役立 [!DNL Commerce Intelligence] リソースです。
 
 * [Expected [!DNL Stripe] data](../integrations/stripe-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -4,9 +4,9 @@ description: ' [!DNL Commerce Intelligence] で一括編集機能を使用する
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## [!DNL Find/Replace] の使用 {#findreplace}
 
-1. ダッシュボード名の横にある歯車（![](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
+1. ダッシュボード名の横にある歯車（![ 歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
 
 1. ポップアップの **[!UICONTROL Chart Title Find and Replace]** をクリックします。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## 先行 `Chart Names` {#prepend}
 
-1. ダッシュボード名の横にある歯車（![](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
+1. ダッシュボード名の横にある歯車（![ 歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
 
 1. ポップアップの **[!UICONTROL Prepend Report Names]** をクリックします。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ## `Dates` の変更 {#dates}
 
-1. ダッシュボード名の横にある歯車（![](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウを選択します。
+1. ダッシュボード名の横にある歯車（![ 歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウを選択します。
 
 1. ポップアップウィンドウで「**[!UICONTROL Change Dates]**」をクリックします。
 

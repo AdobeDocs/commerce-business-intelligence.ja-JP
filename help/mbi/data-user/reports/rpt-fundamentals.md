@@ -4,9 +4,9 @@ description: レポートデータの使用方法を説明します。
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 * 登録から初回購入日までの、1 回の使用あたりの平均時間。
 
-これにより、登録日からユーザーの最初の購入日までの平均時間が表示され、コンバージョンファネルのこの最後のステップでユーザーがどのように行動するかがわかります。
+これにより、登録日からユーザーの最初の購入日までの平均時間が表示され、コンバージョンfunnelのこの最後のステップでユーザーがどのように行動するかがわかります。
 
 ## データの検索
 
@@ -128,4 +128,4 @@ Adobeでは、チームの他のメンバーと共有するレポートを作成
 
 以下を参照してください。
 
-![](../../assets/exp-rep-as-image.gif)
+![ レポートを画像ファイルとして書き出す様子を示すアニメーションのデモ ](../../assets/exp-rep-as-image.gif)

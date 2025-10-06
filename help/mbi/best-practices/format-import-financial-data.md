@@ -4,9 +4,9 @@ description: 財務データの書式設定とインポート方法を説明し�
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 2 次元のクロスタブ データ テーブルは、多くの場合、財務データに使用される形式です。 列と行の両方のラベルで値が分類されるので、このタイプのレイアウトは人間の目やスプレッドシートツールで簡単に表示できるかもしれませんが、データベースには適していません。
 
-![](../../mbi/assets/crosstab.png)
+![ ピボットテーブル レイアウトでデータを表示するクロス集計形式 ](../../mbi/assets/crosstab.png)
 
 このデータを [!DNL Commerce Intelligence] にインポートして分析するには、テーブルを 1 次元リストにフラット化する必要があります。 フラット化すると、各データ値は複数のラベルによって分類され、すべてが 1 行に含まれます。各行は一意であるか、主キー列などの一意の識別子を持ちます。
 
-![](../../mbi/assets/flattened.png)
+![ 列レイアウトでデータを表示する、フラット化された形式 ](../../mbi/assets/flattened.png)
 
 ## インポートする Excel ファイルのフォーマット
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 1. 新しいシートにピボットテーブルを作成し、**[!UICONTROL Finish]** をクリックします。
 1. フィールドリストから列フィールドと行フィールドの選択を解除します。
 1. 結果の数値をダブルクリックして、フラット化されたソースデータを新しいシートに表示します。
-   ![](../../mbi/assets/pivot-table-double-click.png)
+   ![ ダブルクリックして展開できる Excel ピボットテーブル フィールド リスト ](../../mbi/assets/pivot-table-double-click.png)
 1. `CSV` ファイルとして保存します。
 
 ## まとめ

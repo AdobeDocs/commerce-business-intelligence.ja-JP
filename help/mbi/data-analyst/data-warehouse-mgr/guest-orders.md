@@ -4,9 +4,9 @@ description: ゲストによる注文がデータに与える影響と、 [!DNL 
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 * **すべての顧客が登録され** ゲストによる注文が許可されていない場合、`orders` テーブルのすべてのレコードの `customer\_id` 列に値が入っていることを意味します。 その結果、すべての注文が `customers` テーブルに結合されます。
 
-  ![](../../assets/guest-orders-4.png)
+  ![ 顧客情報を示すゲスト注文データテーブル ](../../assets/guest-orders-4.png)
 
 * **ゲストによる注文が許可されている場合**、一部の注文の `customer\_id` 列に値が含まれていません。 登録済みの顧客にのみ、`customer\_id` テーブルの `orders` 列の値が提供されます。 登録されていないお客様には、この列の `NULL` 値（または空白）が表示されます。 その結果、すべての注文レコードが `customers` テーブル内に一致するレコードを持つわけではありません。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 このタイプの設定で設定された `Customers we count` フィルターには、`Customer's order number = 1` 用のフィルターがあることがわかります。
 
-![](../../assets/guest-orders-filter-set.png)
+![ ゲスト注文を除外するためのフィルターセット設定 ](../../assets/guest-orders-filter-set.png)
 
 ゲストからの注文がない場合、各顧客は顧客テーブル内に一意の行として存在します（画像 1 を参照）。 `New customers` などの指標は、単純に登録日に基づいてこのテーブルの ID をカウント `created\_at`、登録日に基づいて新規顧客を把握できます。
 

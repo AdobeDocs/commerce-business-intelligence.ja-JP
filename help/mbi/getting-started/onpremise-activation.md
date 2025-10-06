@@ -4,9 +4,9 @@ description: アカウントをアクティブ化するために連絡する相�
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: cdd2373c2b9afd85427d437c6d8450f4d4e03350
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -23,21 +23,21 @@ ht-degree: 0%
 
 アカウントが作成されたら、メールで [!DNL The Magento BI Team@rjmetrics.com] からのアカウント通知メールを確認します。 メールに記載されているリンクを使用して [!DNL Commerce Intelligence] アカウントにアクセスし、パスワードを作成します。 インボックスに移動し、メールアドレスを確認します。
 
-メールを受け取っていない場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+メールを受け取っていない場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)。
 
-![](../assets/create-account-4.png)
+![ 新しいCommerce Intelligence アカウントのパスワードを作成画面 ](../assets/create-account-4.png)
 
 ## ストアの環境設定
 
 データベース接続を設定する前に、ストア情報フォームに入力します。 この情報は、**[!UICONTROL Connect your Database]** の設定を完了するために必要です。
 
-![](../assets/create-account-6.png)
+![ ビジネス名、通貨、タイムゾーンのフィールドを含む情報フォームの保存 ](../assets/create-account-6.png)
 
 ## [!DNL Commerce Intelligence] 名のユーザーを追加
 
 パスワードを設定して [!DNL Commerce Intelligence] にログインすると、[!DNL Commerce Intelligence] アカウントに他のユーザーを追加できます。 ユーザーを追加する場合は、適切な権限を持つ管理者ユーザーを追加してアクティベーションプロセスを完了します。
 
-![](../assets/create-account-5.png)
+![ メールアドレスと権限レベルのフィールドを含んだユーザーフォームの追加 ](../assets/create-account-5.png)
 
 ## [!DNL Commerce Intelligence] admin で専用の [!DNL Commerce] ユーザーを作成します
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 管理者で [!DNL Commerce Intelligence] 専用ユーザーを作成したら、同じユーザーを [!DNL Commerce] の **[!UICONTROL Master]** 設定で `Contributor` プロジェクトのプライマリ環境に追加します。
 
-![](../assets/commerce-add-user-settings.png)
+![Commerce投稿者にロールが設定されたユーザーインターフェイスを追加 ](../assets/commerce-add-user-settings.png)
 
 ## Commerce Intelligenceの SSH キーの取得
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 1. ドロップダウンから、指定された公開鍵をコピーします。
 
-   ![](../assets/encryption-setting-new-account.png)
+   ![SSH トンネルのタイプと公開鍵フィールドを示す暗号化設定ページ ](../assets/encryption-setting-new-account.png)
 
 ## 公開鍵を [!DNL Commerce Intelligence] に追加
 
@@ -72,21 +72,21 @@ ht-degree: 0%
 
 1. 下にスクロールして、**[!UICONTROL SSH Keys]** ドロップダウンを展開します。 次に、「**[!UICONTROL Add a public key]**」を選択します。
 
-   ![](../assets/add-public-key.png)
+   ![SSH キーを含むアカウント設定ページの節と「公開鍵を追加」ボタンの節 ](../assets/add-public-key.png)
 
 1. 上記の [!DNL Encryption Type] の手順でコピーした公開鍵を貼り付けます。
 
-   ![](../assets/paste-public-key.png)
+   ![ 「キーテキスト」フィールドと「送信」ボタンを使用して公開鍵フォームを追加する ](../assets/paste-public-key.png)
 
 ## [!DNL Commerce Intelligence] Essentials `MySQL` 資格情報の指定
 
 1. `.magento/services.yaml` を更新します。
 
-   ![](../assets/update-magento-services-yaml.png)
+   ![services.yaml ファイルの MySQL サービス設定を示すコード ](../assets/update-magento-services-yaml.png)
 
 1. `.magento.app.yaml` を更新します。
 
-   ![](../assets/magento-app-yaml-relationships.png)
+   ![app.yaml ファイルのデータベース関係の設定を示すコード ](../assets/magento-app-yaml-relationships.png)
 
 ## データベース接続情報の取得
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 1. データベース情報を確認します。次の例のようになります。
 
-   ![](../assets/example-database-information.png)
+   ![ ホスト、ポート、ユーザー名を含むデータベース接続資格情報を示す JSON 出力 ](../assets/example-database-information.png)
 
 ## 暗号化された接続を使用して [!DNL Commerce Intelligence] データベースに [!DNL Commerce] を接続する
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] 画面に [!UICONTROL Connect your Magento Database] 情報を入力します。
 
-![](../assets/connect-magento-db.png)
+![ 統合名、ホスト、ポート、ユーザー名、パスワードおよびデータベース名のフィールドを使用してデータベースフォームを接続します ](../assets/connect-magento-db.png)
 
 **入力：**
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 ## [!UICONTROL **タイムゾーン**] 設定を行う
 
-![](../assets/time-zone-settings.png)
+![ データベースのタイムゾーンと目的のタイムゾーンのドロップダウンフィールドを含むタイムゾーン設定フォーム ](../assets/time-zone-settings.png)
 
 **入力：**
 
@@ -140,11 +140,11 @@ ht-degree: 0%
 
 プロジェクト UI には SSH アクセス文字列を指定します。 この文字列は、[!UICONTROL **Remote Address**] および [!UICONTROL **Username**] に必要な情報の収集に使用できます。 プロジェクト UI のマスターブランチにある「アクセス サイト」ボタンをクリックして、SSH アクセス文字列を使用します。 次に、[!UICONTROL User Name] を見つけ、以下に示すように [!UICONTROL Remote Address] します。
 
-![](../assets/master-branch-settings.png)
+![ ユーザー名とリモートアドレスを持つ SSH アクセス情報を示すプロジェクト UI](../assets/master-branch-settings.png)
 
 ## [!DNL Encryption] 設定を入力
 
-![](../assets/encryption-settings-2.png)
+![ 暗号化タイプ、リモートアドレス、ユーザー名、ポートのフィールドを持つ暗号化設定フォーム ](../assets/encryption-settings-2.png)
 
 **入力：**
 
@@ -168,9 +168,9 @@ ht-degree: 0%
 
 設定を完了したら、[ アカウントに ](../getting-started/sign-in.md) ログイン [!DNL Commerce Intelligence] します。
 
-<!---# Activate your [!DNL Commerce Intelligence] Account 
+<!---# Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

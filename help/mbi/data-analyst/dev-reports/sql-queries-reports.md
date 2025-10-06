@@ -4,16 +4,16 @@ description: SQL クエリをCommerce Intelligenceで使用する計算列（指
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
 
 # Commerce Intelligenceでの SQL クエリの翻訳
 
-SQL クエリを [ で使用する ](../data-warehouse-mgr/creating-calculated-columns.md) 計算列 [、](../../data-user/reports/ess-manage-data-metrics.md) 指標 [、および ](../../tutorials/using-visual-report-builder.md) レポート [!DNL Commerce Intelligence] に変換する方法を疑問に思ったことはありませんか？ SQL を大量に使用するユーザーの場合は、[!DNL Commerce Intelligence] での SQL の翻訳方法を理解することで、[Data Warehouse Manager でよりスマートに作業し ](../data-warehouse-mgr/tour-dwm.md) [!DNL Commerce Intelligence] プラットフォームを最大限に活用できます。
+SQL クエリを [ で使用する ](../data-warehouse-mgr/creating-calculated-columns.md) 計算列 [、](../../data-user/reports/ess-manage-data-metrics.md) 指標 [、および ](../../tutorials/using-visual-report-builder.md) レポート [!DNL Commerce Intelligence] に変換する方法を疑問に思ったことはありませんか？ SQL を大量に使用するユーザーの場合は、[!DNL Commerce Intelligence] での SQL の翻訳方法を理解することで、[Data Warehouse Manager でよりスマートに作業し ](../data-warehouse-mgr/tour-dwm.md)[!DNL Commerce Intelligence] プラットフォームを最大限に活用できます。
 
 このトピックの最後には、SQL クエリ句と **要素の** 翻訳行列 [!DNL Commerce Intelligence] があります。
 
@@ -53,7 +53,7 @@ SQL クエリを [ で使用する ](../data-warehouse-mgr/creating-calculated-c
 | `email NOT LIKE '%@magento.com'` | 指標 `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | 指標 `timestamp` （およびレポート `time range`） |
 
-**[!UICONTROL Manage Data** > **&#x200B; 指標 &#x200B;**/**新しい指標を作成]** をクリックして指標ビルダーに移動します。まず、適切な `source` テーブル（この場合は `orders` テーブル）を選択する必要があります。 次に、指標は次のように設定されます。
+**[!UICONTROL Manage Data** > ** 指標 **/**新しい指標を作成]** をクリックして指標ビルダーに移動します。まず、適切な `source` テーブル（この場合は `orders` テーブル）を選択する必要があります。 次に、指標は次のように設定されます。
 
 ![ 指標の集計 ](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ SQL クエリを [ で使用する ](../data-warehouse-mgr/creating-calculated-c
 
 [!DNL Commerce Intelligence] でこれを設定するには、Data Warehouse Manager を使用する必要があります。ここでは、`orders` と `customers` のテーブルの間にパスを作成し、顧客のテーブルに `Customer LTV` という列を作成します。
 
-`customers` と `orders` の間に新しいパスを確立する方法を確認します。 最後の目標は、`customers` テーブルに新しい集計列を作成することです。そのため、まずData Warehouseの `customers` テーブルに移動し、**[!UICONTROL Create a Column** > **&#x200B; 定義を選択 &#x200B;**/**SUM]** をクリックします。
+`customers` と `orders` の間に新しいパスを確立する方法を確認します。 最後の目標は、`customers` テーブルに新しい集計列を作成することです。そのため、まずData Warehouseの `customers` テーブルに移動し、**[!UICONTROL Create a Column** > ** 定義を選択 **/**SUM]** をクリックします。
 
 次に、ソーステーブルを選択する必要があります。 `orders` テーブルへのパスが存在する場合は、ドロップダウンから選択するだけです。 ただし、新しいパスを作成している場合は、「**[!UICONTROL Create new path]**」をクリックすると、次の画面が表示されます。
 
@@ -89,7 +89,7 @@ SQL クエリを [ で使用する ](../data-warehouse-mgr/creating-calculated-c
 
 パスを保存したら、`Customer LTV` の列を作成できます。 以下を参照してください。
 
-![](../../assets/Customer_LTV.gif)
+![SQL を使用した、お客様のライフタイムバリュー分析のアニメーションデモ ](../../assets/Customer_LTV.gif)
 
 `Customer LTV` テーブルに新しい `customers` 列を作成したので、この列を使用して [ 指標の集計 ](#aggregate) を作成する準備が整いました（例えば、顧客あたりの平均 LTV を見つける場合）。 また、`group by` テーブルに基づいて作成された既存の指標を使用して、レポートの計算列で `filter` 計または `customers` 計することもできます。
 

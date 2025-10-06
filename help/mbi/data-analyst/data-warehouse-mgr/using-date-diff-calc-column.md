@@ -4,9 +4,9 @@ description: 日付差異の計算列の目的と使用について説明しま�
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -50,4 +50,4 @@ ht-degree: 0%
 
 例えば、次の例は、`Seconds between order date and customer's creation date` を計算するように設定されています。
 
-![](../../assets/date_diff.png)
+![datetime 列の選択を示す日付差異の計算の設定 ](../../assets/date_diff.png)

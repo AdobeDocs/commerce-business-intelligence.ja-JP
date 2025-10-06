@@ -4,9 +4,9 @@ description: 様々なソースのデータを統合する方法を説明しま�
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 計算列を作成するときにすべての入力が何であるかを思い出せない場合は、以下を作成するときにこの参照マップを手元に置いておいてください。
 
-![](../../assets/Calculated_Columns_Example.png)
+![Data Warehouse Manager での計算列設定の例 ](../../assets/Calculated_Columns_Example.png)
 
 ## 関連ドキュメント
 

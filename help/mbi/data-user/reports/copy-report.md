@@ -4,9 +4,9 @@ description: レポートのコピーを作成する方法を説明します。
 exl-id: c57783b4-32ae-4054-a85a-5ddf63cfd34b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ ht-degree: 0%
 
 この場合は、`Chart Editor` を起動し、右上隅にある「**[!UICONTROL Save As]**」をクリックします。 これにより、既存のグラフが複製され、選択した新しい名前で現在のダッシュボードに追加され、新しいグラフの設定をすぐに編集できるようになります。
 
-![](../../assets/create-report-copy.png)
+![ レポートのコピーを作成するための「名前を付けて保存」オプションが表示されているグラフエディター ](../../assets/create-report-copy.png)

@@ -4,9 +4,9 @@ description: マッピングテーブルの操作方法を説明します。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 `Report Builder` しいレポートを作成する `Revenue by State` にいると仮定します。 レポートに `billing state` しいグループ化を追加しようとすると、次の情報が表示されるまで、すべてが正常に動作します。
 
-![](../../assets/Messy_State_Segments.png)
+![ 名前が一貫していない乱雑な状態セグメントを示すグラフ ](../../assets/Messy_State_Segments.png)
 
 ## どうしてこんな事が起こったの？
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 2 番目の列に、これらの値 **あるべき** を入力します。 請求状態の例を続けて、`pa`、`PA`、`Pennsylvania`、`pennsylvania` を単純に `PA` にする場合は、入力値ごとにこの列に `PA` を入力します。
 
-![](../../assets/Mapping_table_examples.jpg)
+![ 元の値と標準化された値を示すマッピングテーブルの例 ](../../assets/Mapping_table_examples.jpg)
 
 ## 使用するた [!DNL Commerce Intelligence] に必要な操作 {#use}
 
@@ -66,7 +66,7 @@ ht-degree: 0%
    * `One` 側で、`mapping` テーブルと `Primary key` 列を選択します。 この場合は、`state_input` のテーブルから `mapping_state` の列を選択します。
    * パスは次のようになります。
 
-     ![](../../assets/State_Mapping_Path.png)
+     ![ 状態マッピングの計算パスを表示しているData Warehouse Manager](../../assets/State_Mapping_Path.png)
 
 1. 終了したら、「**[!UICONTROL Save]**」をクリックしてパスを作成します。
 1. 保存後すぐにパスが入力されない場合があります。この場合は、「`Path`」ボックスをクリックし、作成したパスを選択します。
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 更新サイクルが完了すると、データベースの乱雑な列ではなく、新しく結合された列を使用して、データを適切にセグメント化できるようになります。 グループ化オプションを今すぐ見てみましょう。ストレスの混乱をなくします。
 
-![](../../assets/Clean_State_Segments.png)
+![ 標準化後のクリーン状態セグメントを示すグラフ ](../../assets/Clean_State_Segments.png)
 
 マッピングテーブルは、Data Warehouse内の散らかっている可能性のあるデータをクリーンアップする場合にいつでも便利です。 ただし、マッピングテーブルは、[ 内のレプリケーション  [!DNL Google Analytics channels]  など、その他の優れたユースケースにも使用  [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md) きます。
 

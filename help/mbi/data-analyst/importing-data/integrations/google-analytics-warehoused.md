@@ -4,9 +4,9 @@ description: 訪問者によるサイトの使用方法、魅力的なコンテ�
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![](../../../assets/google-analytics-logo.png)
+![Google Analytics ロゴ ](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics] は、インターネット上で最も広く使用されている web 分析サービスです。 Web サイトに [!DNL Google Analytics] を実装すると、訪問者によるサイトの使用方法、魅力的なコンテンツ、訪問者が離脱する場所などを追跡できます。 [!DNL Google Analytics Warehoused] は、既存の [!DNL Google Analytics] 統合とは別の統合です。 これにより、既存の [!DNL Google Analytics] 統合のライブフィードとは異なり、Data Warehouseに [!DNL Google Analytics] のデータが含まれるので、分析の精度が向上します。 これらの指標を [!DNL Commerce Intelligence] で分析すると、他のデータと共に、サイトの全体的な正常性と操作性が向上します。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] は `Premium` 統合です。 この統合をサブスクリプションに追加することに関心がある場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+>[!DNL Google Analytics Warehoused] は `Premium` 統合です。 この統合をサブスクリプションに追加することに関心がある場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 1. `Connections` の下の **[!UICONTROL Admin** > **Integrations]** ページに移動します。
 1. 右側にある「**[!UICONTROL Add an Integration]**」をクリックします。
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## 関連ドキュメント
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [接続  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Web サイトのアクティビティと顧客コンバージョン率の分析](../../analysis/web-act-cust-conversion.md)
 * [cookie を使用したユーザー取得デ  [!DNL Google Analytics]  タの追跡](../../analysis/google-track-user-acq.md)

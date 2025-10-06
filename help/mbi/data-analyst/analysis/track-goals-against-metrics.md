@@ -4,9 +4,9 @@ description: 売上高、新規登録ユーザー、注文の推移など、実�
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ほとんどのクライアントは、**ビジネス目標** を追跡したいと考えていますが、[!DNL Adobe Commerce Intelligence] ではこれが可能であるとは認識していません。 このトピックでは、売上高、新規登録ユーザー、注文の推移など、実際のデータに対してビジネス目標を追跡するのに役立つダッシュボードの設定方法を説明します。 また、次のようなダッシュボードで、前年比のパフォーマンスを比較する方法についても説明します。
 
-![](../../assets/Goals-_dashboard_2.png)
+![ 実際の指標のパフォーマンスに対する目標のトラッキングを示すダッシュボード ](../../assets/Goals-_dashboard_2.png)
 
 開始する前に、[ ファイルアップローダ ](../importing-data/connecting-data/using-file-uploader.md) を確認し、特定の期間のビジネス目標が定義されていることを確認する必要があります。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 [ ファイルアップローダ ](../importing-data/connecting-data/using-file-uploader.md) と以下の画像を使用して、ファイルをフォーマットできます。 [!DNL Commerce Intelligence] で顧客が追跡する最も一般的なターゲットには、注文、売上高、新規登録済みアカウントが含まれます。
 
-![](../../assets/Goals-_Excel.png)
+![ 目標と指標を追跡するための Excel スプレッドシートテンプレート ](../../assets/Goals-_Excel.png)
 
 ## 指標
 
@@ -55,46 +55,46 @@ ht-degree: 0%
 
 * **目標を達成するための残りの売上高**
 * 指標 `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL 指標]: `Revenue`
 
 * 指標 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* &#x200B;
+* 
   [!UICONTROL 数式]: `(B-A)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: （必要な関連期間）
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* &#x200B;
+* 
   [!UICONTROL グラフ タイプ]: `Scalar`
 
 * **収益目標**
 * 指標 `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL 指標]: `Revenue`
 
 * 指標 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * 指標 `C`: `Revenue (amount change since previous year)` （非表示）
-* &#x200B;
+* 
   [!UICONTROL 指標]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: （昨年今月）
-* &#x200B;
+* 
   [!UICONTROL 数式]: `(A-C)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Currency`
 
 * `Multiple Y-Axes` をオフにする
 * [!UICONTROL Time period]: （必要な関連期間）*
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

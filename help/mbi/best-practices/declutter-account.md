@@ -4,9 +4,9 @@ description: アカウントのクリーンアップ方法を説明  [!DNL Comme
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 **[!UICONTROL Dashboard Options]** を選択して、ダッシュボード自体から **[!UICONTROL Delete]** を選択することもできます。
 
-![](../../mbi/assets/Delete_from_dashboard.png)
+![ ダッシュボードの歯車メニューの「削除」オプション ](../../mbi/assets/Delete_from_dashboard.png)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 未使用のレポート削除プロセスを次に示します。
 
-![](../../mbi/assets/unused_reports.png)
+![ ダッシュボードにないレポートを示す未使用のレポートリスト ](../../mbi/assets/unused_reports.png)
 
 ## 手順 3：未使用の指標の削除
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 1. ページの下部に、「**[!UICONTROL Dependent Charts]**」というセクションが表示されます。 リンクをクリックして、この指標の依存レポートリストを生成します。
 1. チェックが完了すると、[!DNL Commerce Intelligence] の指標を使用しているダッシュボード、レポート、ユーザーのリストが表示されます。
 
-![](../../mbi/assets/report_dependecies.png)
+![ 選択した列を使用するレポートが表示されているレポートの依存関係ダイアログ ](../../mbi/assets/report_dependecies.png)
 
 指標が不要になった場合は、「**[!UICONTROL Metrics]**」をクリックして **[!UICONTROL Back to Metric List]** ページに戻り、削除する指標を見つけます。 「**[!UICONTROL Delete]**」をクリックします。
 
@@ -112,6 +112,7 @@ ht-degree: 0%
 1. **[!DNL Manage Data]** に移動し、次に **[!UICONTROL Data Warehouse]** へ移動します。
 1. **[!UICONTROL Synced Tables]** リストで、列を含むテーブルに移動します。
 1. 同期を解除する 1 つ以上の列の横にある 1 つ以上のチェックボックスをオンにします。
+
    >[!NOTE]
    >
    >テーブル全体を削除しないと、プライマリキー列の同期を解除できません。
@@ -120,7 +121,7 @@ ht-degree: 0%
 
 プロセス全体を見ると、次のようになります。
 
-![](../../mbi/assets/drop_column.png)
+![Data Warehouse Manager の「列をドロップ」オプション ](../../mbi/assets/drop_column.png)
 
 ## まとめ
 

@@ -4,9 +4,9 @@ description: Data Warehouse Manager で同期に使用できるテーブルを�
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![Database\_icons.jpg](../../../assets/Database_icons.jpg)
 
-[!DNL Commerce Intelligence] では、[MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md)、[Microsoft SQL](../integrations/microsoft-sql-server.md) [、&lbrace;MongoDB](../integrations/mongodb-via-ssh-tunnel.md)、&lbrace;PostgreSQL[ など、SQL ベースのデータベースと NoSQL データベースをサポ ](../integrations/postgresql.md) トしています。
+[!DNL Commerce Intelligence] では、[MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md)、[Microsoft SQL](../integrations/microsoft-sql-server.md) [、{MongoDB](../integrations/mongodb-via-ssh-tunnel.md)、{PostgreSQL[ など、SQL ベースのデータベースと NoSQL データベースをサポ ](../integrations/postgresql.md) トしています。
 
 データベース資格情報を使用してデータベースを [!DNL Commerce Intelligence] に直接接続できますが、Adobeでは SSH トンネルなどの実証済みの暗号化方式を使用することをお勧めします。 これにより、データがData Warehouseに取り込まれる際に、データの安全が確保されます。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ## `SaaS` 統合
 
-![](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
+サポートされている様々なプラットフォーム ![spree-commerce-logo.png を示す ](../../../assets/SaaS_icons.jpg)SaaS 統合アイコン
 
 `SaaS` の統合は、[[!DNL Google Adwords]](../integrations/google-adwords.md)、[[!DNL Salesforce]](../integrations/salesforce.md)、[[!DNL Zendesk]](../integrations/zendesk.md) などのサービスです。 サードパーティのデータはベンダーのサーバー上に存在するので、データベース内のデータを使用する場合とは異なり、直接アクセスすることはできません。
 
@@ -70,6 +70,6 @@ ht-degree: 0%
 * [テーブルの統合](../../../best-practices/consolidating-your-tables.md)
 * [データベースへのアクセスの制限](../../../administrator/account-management/restrict-db-access.md)
 
-**必要な統合が表示されない場合は、** アカウントに表示されるようにするには、いくつかの統合をアクティベートする必要があります。 [!DNL Facebook] のようなものを探しているがリストに表示されない場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) してください。
+**必要な統合が表示されない場合は、** アカウントに表示されるようにするには、いくつかの統合をアクティベートする必要があります。 [!DNL Facebook] のようなものを探しているがリストに表示されない場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) してください。
 
 **統合のエラーステータスが表示された場合**、[ トラブルシューティングの節 ](https://support.magento.com/hc/en-us/sections/360003078151) のヘルプを参照してください。

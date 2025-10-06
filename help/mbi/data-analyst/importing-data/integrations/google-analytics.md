@@ -4,9 +4,9 @@ description: Google Analyticsと  [!DNL Commerce Intelligence] を接続する�
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![](../../../assets/google-analytics-logo.png)
+![Google Analytics ロゴ ](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics] は、インターネット上で最も広く使用されている web 分析サービスです。 Web サイトに [!DNL Google Analytics] を実装すると、訪問者によるサイトの使用方法、魅力的なコンテンツ、訪問者が離脱する場所などを追跡できます。 これらの指標を [!DNL Commerce Intelligence] で分析すると、他のデータと共に、サイトの全体的な正常性と操作性が向上します。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. プロファイル ID のリストが表示されます。 [!DNL Commerce Intelligence] に接続するプロファイルを確認します。 複数のプロファイルがあり、どれを識別するのかについてのヘルプが必要な場合は、以下の複数の [!DNL Google Analytics] プロファイルの接続の節を参照してください。
 
-   ![](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
+   ![URL にプロファイル ID が表示されているGoogle Analytics管理ページ ](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
 
 1. 変更は自動的に保存されるので、完了したら「**接続に戻る**」をクリックします。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 関連：
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [接続  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Web サイトのアクティビティと顧客コンバージョン率の分析](../../analysis/web-act-cust-conversion.md)
 * [cookie を使用したユーザー取得デ  [!DNL Google Analytics]  タの追跡](../../analysis/google-track-user-acq.md)

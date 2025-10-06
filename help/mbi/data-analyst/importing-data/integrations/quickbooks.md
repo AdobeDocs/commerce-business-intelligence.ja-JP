@@ -4,9 +4,9 @@ description: ビジネスの財務を販売データやマーケティングデ�
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 32b1e1be4e372164da757cb339ba1618d33a75ea
+source-git-commit: b6f8a4f533286fad67dc875ebb6f4f3b7022ca5b
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![](../../../assets/Quickbooks.png)
+![QuickBooks ロゴ ](../../../assets/Quickbooks.png)
 
 [!DNL QuickBooks] の統合により、ビジネスの財務を販売およびマーケティングデータと連携させることができるため、費用の監視、過剰支出の特定などを迅速かつ簡単に行うことができます。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 「**[!UICONTROL Connect to Quickbooks]**」をクリックした後、[!DNL Intuit] アカウントにログインして接続を認証します。
 
-![](../../../assets/QuickBooks_App_Store_1.jpg)
+![QuickBooks App Store統合ページ ](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. `Search for a company` ドロップダウンで、会社を選択します。
 1. 「**[!UICONTROL Next]**」をクリックします。 「[!DNL Commerce Intelligence]」および「接続に成功しました *にリダイレクトされます。メッセ* ジが画面の上部に表示されます。
@@ -44,4 +44,4 @@ ht-degree: 0%
 ## 関連
 
 * [Expected [!DNL QuickBooks] data](../integrations/quickbooks-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

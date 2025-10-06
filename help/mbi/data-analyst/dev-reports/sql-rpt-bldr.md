@@ -4,9 +4,9 @@ description: SQL Report Builderを使用することの概要を説明します�
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1397'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 >
 >SQL グラフを作成および編集するには、[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。 ユーザー `Standard` ダッシュボード上でこれらのグラフの順序を変更でき、従来のグラフと同じエクスペリエンスを持つユーザーは `Read-only` とんどいません。 さらに、`Read-only` ユーザーはクエリのテキストにアクセスできません。
 
-詳しくは、[ トレーニングビデオ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=ja) を参照してください。
+詳しくは、[ トレーニングビデオ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) を参照してください。
 
 [!DNL SQL] （構造化照会言語）は、データベースとの通信に使用されるプログラミング言語です。 [!DNL Commerce Intelligence] では、Data Warehouseからデータ [!DNL SQL] クエリまたは取得するために使用されます。 ダッシュボード上のレポートを見てみましょう。各レポートは、その背後で [!DNL SQL] のクエリによって動作しています。
 
 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) を使用して、Data Warehouseに直接クエリを実行し、結果を表示して、グラフに変換できます。 「」をクリックして、[!DNL SQL Report Builder] でレポートの作成を開始 **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]** きます。
 
-詳しくは、[ トレーニングビデオ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=ja) を参照してください。
+詳しくは、[ トレーニングビデオ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) を参照してください。
 
 [!DNL SQL Report Builder] を使用すると、Data Warehouseに直接クエリを実行し、結果を表示して、すばやくグラフに変換できます。 [!DNL SQL] を使用したレポートの作成で最も役に立つ点は、作成した列に対して繰り返し処理を行うために、更新サイクルで待機する必要がないことです。 結果が適切でない場合は、期待どおりになるまで、クエリをすばやく編集して再実行できます。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## はじめに
 
-レポートを編集するには、![](../../assets/gear-icon.png) ベースのグラフの右上隅にある歯車（[!DNL SQL]）アイコンをクリックし、「**[!UICONTROL Edit]**」をクリックします。
+レポートを編集するには、![ ベースのグラフの右上隅にある歯車（](../../assets/gear-icon.png) 歯車アイコン [!DNL SQL]）アイコンをクリックし、「**[!UICONTROL Edit]**」をクリックします。
 
 ## クエリの作成 {#writing}
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 ビジュアライゼーションプロセスがどのように表示されるかを次に示します。
 
-![](../../assets/SQL_RB_viz_overview.gif)
+![SQL Report Builderのビジュアライゼーションの概要に関するアニメーションによるデモ ](../../assets/SQL_RB_viz_overview.gif)
 
 ビジュアライゼーションの作成方法に関する詳細な手順については、[SQL クエリからのビジュアライゼーションの作成チュートリアル ](../../tutorials/create-visuals-from-sql.md){: target="_blank"} を参照してください。
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 **[!UICONTROL Save]** エディターの右上隅にある「[!DNL SQL]」をクリックし、レポート `Type` （`Chart` または `Table`）を選択します。 まとめるには、レポートの保存先のダッシュボードを選択し、「**[!UICONTROL Save to Dashboard]**」をクリックします。
 
-![](../../assets/SQL_Save_Report.gif)
+![SQL レポートをダッシュボードに保存する方法を示すアニメーションのデモ ](../../assets/SQL_Save_Report.gif)
 
 ### データの分析
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ほとんどの場合、結果の違いは更新サイクルに起因する可能性があります。 データベースからData Warehouseにデータをレプリケートしている [!DNL Commerce Intelligence] 合は、同じクエリを使用しても結果が異なる場合があります。
 
-接続の問題によって、不一致が発生する場合もあります。 「`Connections`」をクリックして **[!DNL Manage Data** > **Connections]** ページに移動し、チェックアウトします。- データベース統合に関するエラーはありますか？ その場合は、再び動作させるには [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja) が必要になることがあります。
+接続の問題によって、不一致が発生する場合もあります。 「`Connections`」をクリックして **[!DNL Manage Data** > **Connections]** ページに移動し、チェックアウトします。- データベース統合に関するエラーはありますか？ その場合は、再び動作させるには [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) が必要になることがあります。
 
 すべての統合が正常に接続され、更新サイクルの途中ではない場合は、他の何かが問題である可能性があります。
 

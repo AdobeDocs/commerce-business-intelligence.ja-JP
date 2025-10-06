@@ -4,16 +4,16 @@ description: Salesforce データを使用して、リードのスコアリン�
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
 
 # Connect [!DNL Salesforce]
 
-![](../../../assets/Salesforce_Logo.png)
+![Salesforce ロゴ ](../../../assets/Salesforce_Logo.png)
 
 >[!NOTE]
 >
@@ -36,4 +36,4 @@ ht-degree: 0%
 もう少し技術に詳しい場合は、[[!DNL Salesforce] API ドキュメント ](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) を参照して、Salesforceと [!DNL Commerce Intelligence] の統合方法を詳しく学ぶことができます。
 
 * [Expected [!DNL Salesforce] data](../integrations/salesforce-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

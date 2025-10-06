@@ -4,9 +4,9 @@ description: ライフサイクルで類似した特性を共有するユーザ�
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1607'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 **指標ビューを`Cohort`** に切り替える
 
-![](../../assets/visual-report-builder-cohort-toggle.png)
+![ コホート分析の切り替えオプションを表示するビジュアルReport Builder](../../assets/visual-report-builder-cohort-toggle.png)
 
 これにより、`Cohort` レポートの詳細を設定するための新しいウィンドウが開きます。
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 この値の間隔は、`cohort time period` で選択した値によって変わり、デフォルトでは値は `12` に設定されています。カレンダーアイコンをクリックして編集しない限り、値は変更されません。
 
-![](../../assets/cohort-time-range.png)
+![ 日付オプションを表示するコホート時間範囲セレクター ](../../assets/cohort-time-range.png)
 
 #### その他のメモ
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 #### 独自の `cohort` 分析を作成するにはどうすればよいですか？ {#create}
 
-![](../../assets/create-cohort-analysis.png)
+![ 設定オプションを含むコホート分析を作成ダイアログ ](../../assets/create-cohort-analysis.png)
 
 実行中の `Cohort` 分析 ここでは、時間の経過と共に売上高が累積およびユーザー単位で増加していることがわかります。
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 別のテーブルから結合された `cohort date` でユーザーをグループ化することを選択した場合は、`counting members in the … table` のオプションが表示される場合があります。
 
-![](../../assets/Cohort_Counting_Members_option.png)
+![ 独立モードと累積モードを示すコホートカウントメンバーオプション ](../../assets/Cohort_Counting_Members_option.png)
 
 この設定を理解するには、例を参照してください。 `Revenue` 別の `Customer's registration date` しい指標を示すレポートを作成したとします。 また、パースペクティブ `Average value per cohort member` を使用して、買い手ごとの売上高を経時的に確認する必要がありました。 買い手ごとの平均値を見つけるには、で割る買い手の数を決定する必要があります。 `customers` テーブルに登録されている顧客の数ですか、それとも同じ期間における `orders table` 内の個別の購入者の数ですか。
 
@@ -169,7 +169,7 @@ ht-degree: 0%
 
 [ パースペクティブ ](#perspectives) を参照してください。
 
-![](../../assets/Cohort_Perspective_Menu.png)
+![ 様々な表示オプションを表示するコホートパースビューメニュー ](../../assets/Cohort_Perspective_Menu.png)
 
 ## コホート分析の例 {#examples}
 

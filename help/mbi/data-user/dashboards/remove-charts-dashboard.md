@@ -4,16 +4,16 @@ description: ダッシュボードからグラフを削除する方法を説明�
 exl-id: 44116f15-92a5-43c9-8808-7902742508c9
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '65'
 ht-degree: 0%
 
 ---
 
 # ダッシュボードからのグラフの削除
 
-ダッシュボードからグラフを削除するには、グラフの右上隅にある歯車（![](../../assets/gear-icon.png)）アイコンをクリックし、「**[!UICONTROL Remove from Dashboard]**」をクリックします。
+ダッシュボードからグラフを削除するには、グラフの右上隅にある歯車（![ 歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、「**[!UICONTROL Remove from Dashboard]**」をクリックします。
 
 >[!NOTE]
 >

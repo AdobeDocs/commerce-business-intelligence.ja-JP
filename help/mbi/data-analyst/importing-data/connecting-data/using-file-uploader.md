@@ -4,9 +4,9 @@ description: すべてのデータを 1 つのData Warehouseに配置する方�
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 ## 制限事項と要件 {#require}
 
 1. **ファイルのアップロードでサポートされている形式は `CSV` または`comma separated values`** のみです。 Excel で作業している場合は、「名前を付けて保存」関数を使用してファイルを `.csv` 形式で保存できます。
-1. **`CSV`ファイルは`UTF-8 encoding`** を使用する必要があります。 ほとんどの場合、これは問題ではありません。 ファイルのアップロード中にこのエラーが発生した場合は、[ こちらのサポート記事を参照 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=ja)。
+1. **`CSV`ファイルは`UTF-8 encoding`** を使用する必要があります。 ほとんどの場合、これは問題ではありません。 ファイルのアップロード中にこのエラーが発生した場合は、[ こちらのサポート記事を参照 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html)。
 1. **ファイルは 100 MB 以下にする必要があります**。 ファイルのサイズがこのサイズより大きい場合は、テーブルをチャンクに分割して、個々のファイルとして保存します。 初期ファイルが読み込まれた後で、データを追加できます。
 1. **すべてのテーブルには`primary key`** が必要です。 テーブルには、`primary key` として使用できる列か、テーブルの各行に対する一意の ID が少なくとも 1 つ必要です。 `primary key` として指定された列は、null *できません*。 `primary key` は、各行に数値を示す列を追加するのと同じくらい単純なものでも、2 つの列を連結して一意の値の列（`campaign name` や `date` など）にすることもできます。
 
@@ -105,11 +105,11 @@ A *成功！テ* ブルを保存すると、メッセージが画面の上部に
 
 ビジュアルが必要な場合は、プロセス全体を見てみましょう。
 
-![](../../../assets/fileupload.gif)
+![ ファイルのアップロードプロセスを示すアニメーションのデモ。追加されるデータを示す ](../../../assets/fileupload.gif)
 
 アップロードされたテーブルは、Data Warehouse Manager のテーブルリストの **ファイルアップロード** セクションに表示されます（「すべてのテーブル」オプションと「同期されたテーブル」オプションの両方）。
 
-![](../../../assets/upload-tables.png)
+![ データインポートに使用可能なテーブルを表示するテーブルアップロードインターフェイス ](../../../assets/upload-tables.png)
 
 ## 既存のテーブルへのデータの更新または追加 {#appending}
 

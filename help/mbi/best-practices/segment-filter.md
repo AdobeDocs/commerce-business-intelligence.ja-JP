@@ -4,9 +4,9 @@ description: セグメント化とフィルタリングのベストプラクテ�
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 このトピックでは、顧客に推奨されることが多い重要なセグメントについて説明します。 また、これらのセグメントが回答に役立つ質問についても詳しく説明します。 技術的には、セグメントはデータベース内のデータ列です。 ま [!DNL Adobe Commerce Intelligence]、これらはディメンションと呼ばれます。
 
-![](../../mbi/assets/mbi-critical-segments.png)
+![ 重要な顧客セグメントとフィルターを表示するダッシュボード ](../../mbi/assets/mbi-critical-segments.png)
 
 
 ## ユーザーセグメント
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 上記のディメンションで指標をセグメント化する最初の手順は、データベース内でこのデータを確実に追跡することです。 トラッキングされない場合は、技術チームに問い合わせて、このデータのトラッキングを開始する方法を見つけます。
 
-データがデータベース内で追跡されていることを確認したら、[ サポートチームにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) して、ディメンションを [!DNL Commerce Intelligence] の指標およびグラフにプッシュします。 また、*フィールド管理* ツールを使用して、これらのフィールドを [!DNL Commerce Intelligence] で追跡することもできます。
+データがデータベース内で追跡されていることを確認したら、[ サポートチームにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) して、ディメンションを [!DNL Commerce Intelligence] の指標およびグラフにプッシュします。 また、*フィールド管理* ツールを使用して、これらのフィールドを [!DNL Commerce Intelligence] で追跡することもできます。
 
 ## 関連
 

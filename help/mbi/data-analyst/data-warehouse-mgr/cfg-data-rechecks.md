@@ -4,16 +4,16 @@ description: 変更可能な値を使用してデータ列を設定する方法�
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
 
 # データチェックの設定
 
-データベーステーブルには、変更可能な値を持つデータ列を使用できます。 例えば、`orders` テーブルには `status` という列があるとします。 注文が最初にデータベースに書き込まれると、ステータス列には値 _保留中_ が含まれる場合があります。 注文は [0&rbrace;Data Warehouse&rbrace; でこの ](../data-warehouse-mgr/tour-dwm.md) 値でレプリケートされます。`pending`
+データベーステーブルには、変更可能な値を持つデータ列を使用できます。 例えば、`orders` テーブルには `status` という列があるとします。 注文が最初にデータベースに書き込まれると、ステータス列には値 _保留中_ が含まれる場合があります。 注文は [0}Data Warehouse} でこの ](../data-warehouse-mgr/tour-dwm.md) 値でレプリケートされます。`pending`
 
 注文ステータスは変更できますが、常に `pending` しいステータスであるとは限りません。 最終的には `complete` や `cancelled` になる可能性があります。 Data Warehouseでこの変更内容を確実に同期させるには、新しい値について列を再確認する必要があります。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 再チェックの頻度を変更するには、変更する列の横にあるチェックボックスをクリックします。 次に、「**[!UICONTROL Set Recheck Frequency]**」ドロップダウンをクリックし、目的の頻度を設定します。
 
-![](../../assets/dwm-recheck.png)
+![ 設定オプションの再確認を表示しているData Warehouse Manager](../../assets/dwm-recheck.png)
 
 `Paused` の列に `Changes?` が表示される場合があります。 この値は、テーブルの [ レプリケーションメソッド ](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) が `Paused` に設定されている場合に表示されます。
 

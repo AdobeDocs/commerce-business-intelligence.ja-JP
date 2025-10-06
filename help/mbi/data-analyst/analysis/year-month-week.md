@@ -4,9 +4,9 @@ description: 時間の経過に伴うトレンドを簡単に確認する方法�
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このトピックには、元のアーキテクチャと新しいアーキテクチャを使用しているクライアント向けの手順が含まれています。 メインツールバーから「&lbrace;2[Data Warehouse表示 ](../../administrator/account-management/new-architecture.md)」セクションを選択できる場合は、「[!DNL _新しいアーキテクチャ_] を使用しています。[!DNL Manage Data]
+>このトピックには、元のアーキテクチャと新しいアーキテクチャを使用しているクライアント向けの手順が含まれています。 メインツールバーから「{2[Data Warehouse表示 ](../../administrator/account-management/new-architecture.md)」セクションを選択できる場合は、「[!DNL _新しいアーキテクチャ_] を使用しています。[!DNL Manage Data]
 
 Report Builder を使用すると、経時的なトレンドを簡単に確認し、比較したい期間の視点を変更できます。 このトピックでは、より深いレベルに到達するためのダッシュボードを設定する方法を説明します。これにより、週別、月別、年別分析のレポートを作成できます。
 
-![](../../assets/Wow__mom__yoy.png)
+![ 前週比、前月比、前年比の比較を表示するダッシュボード ](../../assets/Wow__mom__yoy.png)
 
 始める前に、より詳細な視点を探索する [ こちら ](../../tutorials/using-visual-report-builder.md) および独立した時間オプション [ こちら ](../../tutorials/time-options-visual-rpt-bldr.md) を確認する必要があります。
 
@@ -40,8 +40,8 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
    * `created_at (month)` [!UICONTROL Calculation]: **to_char （A, &#39;mm-month&#39;）**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char （A, &#39;dd&#39;）**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char （A, &#39;d-Day&#39;）**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char （A, &#39;hh24&#39;）**
-     ![](../../assets/new-arch-create-calc.png)
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char （A, &#39;hh24&#39;）**
+     ![Data Warehouse Manager での計算列の作成インターフェイス ](../../assets/new-arch-create-calc.png)
 
 ## 指標
 
@@ -64,10 +64,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`: `This year`
 * 指標 `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **MoM グラフ**
@@ -81,10 +81,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`：今月*
 * 指標 `B`：先月*
 * [!UICONTROL Time period]:1 か月前から 0 か月前
-* &#x200B;
+* 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: Line
 
 * **WoW グラフ**
@@ -98,10 +98,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`: `This week`
 * 指標 `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **DoD グラフ**
@@ -115,10 +115,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`: `Today`
 * 指標 B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、このページの上部の画像のようになります。

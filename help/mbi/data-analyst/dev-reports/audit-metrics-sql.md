@@ -4,9 +4,9 @@ description: SQL Report Builderを使用してデータと指標を監査し、�
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 クエリをより明確に表示するために、クエリフィールドでの表示方法を再書式設定できます。 準備ができたら、「`Run Query`」を選択します。 結果は、クエリの下のレポートパネルにテーブルとして表示されます。
 
-![](../../assets/run-query-results.gif)
+![SQL クエリの実行と結果の表示に関するアニメーションによるデモ ](../../assets/run-query-results.gif)
 
 ## クエリの制限
 
 特定の不一致やデータセットを特定しようとしている場合は、ローカルデータベースに照らし合わせて確認するために、クエリを特定のサンプルに制限する必要があります。 それには、目的の制限に合わせてクエリを編集します。 次の例では、2013 年 1 月 1 日以降の売上高のみを含めるようにクエリを制限しています。 クエリを更新したら、もう一度 **[!UICONTROL Run Query]** を選択して結果を更新します。
 
-![](../../assets/restricting-query.gif)
+![ フィルターでクエリを制限する方法を示すアニメーションのデモ ](../../assets/restricting-query.gif)
 
 ## 保存とエクスポート
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 レポートを保存したら、「`Go to Dashboard`」を選択してそのダッシュボードに移動します。 ここからデータを書き出すには、レポートを見つけて **[!UICONTROL Options gear > Full `.csv`書き出し]** または **[!UICONTROL Full Excel Export]** を選択します。
 
-![](../../assets/export-dboard-data.gif)
+![ ダッシュボードデータの書き出しに関するアニメーションのデモ ](../../assets/export-dboard-data.gif)
 
 ## カスタムクエリ
 
@@ -48,4 +48,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->データを監査した後に不一致が見つかった場合は、[ サポートへの問い合わせ：データの不一致 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=ja) のサポートトピックを参照して、次に行う作業の詳細を確認してください。
+>データを監査した後に不一致が見つかった場合は、[ サポートへの問い合わせ：データの不一致 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) のサポートトピックを参照して、次に行う作業の詳細を確認してください。

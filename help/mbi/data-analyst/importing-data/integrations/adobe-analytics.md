@@ -4,9 +4,9 @@ description: のエンドツーエンドのカスタマージャーニーの焦�
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![](../../../assets/adobe-analytic-slogo.png)
+![Adobe Analytics ロゴ ](../../../assets/adobe-analytic-slogo.png)
 
 [!DNL Adobe Analytics] の [!DNL Adobe Commerce Intelligence] 統合により、[!DNL Adobe Analytics] のエンドツーエンドのカスタマージャーニーの焦点と、[!DNL Commerce Intelligence] から依存している e コマースの焦点を統合できます。 これにより、ストアの全体的なパフォーマンスの全体像を把握できます。
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 1. 選択したレポートスイートがテーブルに表示されます。 「**[!UICONTROL Save]**」をクリックして選択を確定します。
 
-1. [!DNL Commerce Intelligence] サポートチーム [ に統合が許可されていることを通知し、最初の接続プロセスを実行します ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+1. [!DNL Commerce Intelligence] サポートチーム [ に統合が許可されていることを通知し、最初の接続プロセスを実行します ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 最初の接続プロセスが実行されると、テーブルは、「Data Warehouse」ページの「`All Tables`」タブで使用できるようになります。 レプリケートする列を選択すると、次回の完全更新後にデータが表示されます。

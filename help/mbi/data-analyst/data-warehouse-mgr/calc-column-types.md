@@ -4,9 +4,9 @@ description: 分析用にデータを拡張および最適化するための列�
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 次の例では、`Seconds since customer's most recent order` テーブルに `customers` を作成します。 これを使用して、`X days` 内で購入を行っていない顧客（チャーンと呼ばれることもあります）のユーザーリストを作成できます。
 
-![](../../assets/age.gif)
+![ 年齢計算列の作成に関するアニメーション デモ ](../../assets/age.gif)
 
 ### 通貨換算
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 Commerce クライアントの場合、通常、「`base\_currency\_code`」フィールドには現地通貨が格納されます。 `Spot Time` フィールドは、指標で使用される日付と一致する必要があります。
 
-![](../../assets/currency_converter.png)
+![ 通貨コンバーターの計算列の設定 ](../../assets/currency_converter.png)
 
 ## 1 対多の計算列 {#onetomany}
 
@@ -59,7 +59,7 @@ Commerce クライアントの場合、通常、「`base\_currency\_code`」フ�
 
 次の例では、`Customer's group\_id` ディメンションを `orders` テーブルに結合します。
 
-![](../../assets/joined_column.gif)
+![ 結合列リンクテーブルの作成に関するアニメーションによるデモ ](../../assets/joined_column.gif)
 
 ## 多対 1 の計算列 {#manytoone}
 
@@ -71,7 +71,7 @@ Commerce クライアントの場合、通常、「`base\_currency\_code`」フ�
 
 次の例では、（`Customer's lifetime number of canceled orders` のフィルターを使用して） ディメンション `customers` を `orders.status` テーブルに作成します。
 
-![](../../assets/many_to_one.gif){: width="699" height="351"}
+![ 多対 1 の列集計のアニメーションデモ ](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### 合計 {#sum}
 
@@ -95,7 +95,7 @@ Commerce クライアントの場合、通常、「`base\_currency\_code`」フ�
 
 計算列を作成するときにすべての入力が何であるかを思い出すのに苦労している場合は、以下を作成するときにこの参照マップを手元に置いておいてください。
 
-![](../../assets/merged_reference_map.png)
+![ 結合された計算列の設定を示す参照マップ ](../../assets/merged_reference_map.png)
 
 ## 高度な計算列 {#advanced}
 

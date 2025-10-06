@@ -4,9 +4,9 @@ description: 新しいAdobe Commerce Intelligence アーキテクチャで SQL �
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Data Warehouse Manager のオプションとして使用できるようになっ
 
 ほとんどのアカウントには、`Is customer's last order?` テーブルに `orders` という列があり、リピート購入率とチャーンされた顧客に関する分析を実行します。 アカウントが新しいアーキテクチャ上にある場合、この列は `Calculation` の列を使用して作成され、次のスクリーンショットで確認できます。
 
-![](../../assets/Is_customer_s_last_order.png)
+![ 顧客の最後の注文を識別するための SQL 計算列の定義 ](../../assets/Is_customer_s_last_order.png)
 
 `Is customer's last order?` の列では、入力 `Customer's lifetime number of orders` と `Customer's order number` のエイリアスをそれぞれ `A` と `B` として使用します。
 
@@ -47,7 +47,7 @@ Data Warehouse Manager のオプションとして使用できるようになっ
 
 製品の売上高分析を有効にするために、ほとんどのアカウントの `Order item total value (quantity * price)` テーブルには `Orders Items` という列があります。 アカウントが新しいアーキテクチャ上にある場合、この列も `Calculation` の列を使用して作成され、次のスクリーンショットで確認できます。
 
-![](../../assets/Order_item_total_value.png)
+![ 注文品目の合計値の SQL 計算列の定義 ](../../assets/Order_item_total_value.png)
 
 Commerce スキーマの `Order item total value (quantity * price)` 列では、入力 `qty ordered` とエイリアス `base price` をそれぞれ `A` と `B` として使用します。
 
@@ -57,7 +57,7 @@ Commerce スキーマの `Order item total value (quantity * price)` 列では�
 
 次に示すように `Calculation` に移動して、新しい **[!DNL Manage Data > Data Warehouse]** 列をテーブルに追加できます。
 
-![](../../assets/blobid2.png)
+![ 計算列の結果を表示するテーブル表示 ](../../assets/blobid2.png)
 
 ここから、次の手順に従って `Calculation` しい列を作成できます。
 

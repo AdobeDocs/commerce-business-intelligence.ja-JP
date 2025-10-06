@@ -4,9 +4,9 @@ description: Commerce Intelligence ユーザーの管理方法について説明
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_&#x200B;**[!UICONTROL Standard]**&#x200B;ユーザーの [ アクセスを特定の指標に制限 ](../../administrator/user-management/restrict-metric-access.md) できます。_
+>_**[!UICONTROL Standard]**ユーザーの [ アクセスを特定の指標に制限 ](../../administrator/user-management/restrict-metric-access.md) できます。_
 >
 >**[!UICONTROL Standard] _ユーザーは、追加の権限設定で請求にアクセスできます。_
 >
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 `Admin` ユーザーはデフォルトで「`Billing`」タブにアクセスできますが、プロファイルで「`Standard`」チェックボックスを選択している場合は、`Billing` ユーザーもアクセスできます。
 
-![ 請求 ](../../assets/billing.png)<!--{: width="550" height="363"}-->
+![ 請求ページ ](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### 技術
 

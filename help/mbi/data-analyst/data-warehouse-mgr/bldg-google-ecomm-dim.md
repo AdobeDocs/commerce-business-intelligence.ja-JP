@@ -4,9 +4,9 @@ description: e コマースデータを注文および顧客データとリン�
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 以下に、リフレッシャーを使用する必要がある場合の、テーブルと列の同期に関する概要を示します。
 
-![](../../assets/Syncing_New_Columns.gif)
+![Data Warehouseでの新しい列の同期に関するアニメーションのデモ ](../../assets/Syncing_New_Columns.gif)
 
 `orders` テーブルから [!DNL Google eCommerce] テーブルへの結合を作成した後、以下のリストの最初の 3 つのディメンションを作成します。 次に、これらのディメンションを使用して、`customers` テーブルに 3 つのユーザー/顧客ディメンションを作成します。 完了するには、これらの列を `orders` テーブルに結合します。
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## ディメンションの作成
 
-ディメンションを作成するには、[/](../data-warehouse-mgr/tour-dwm.md) をクリックして **[!UICONTROL Data]** 0&rbrace;Data Warehouse Manager&rbrace; を開きます。**[!UICONTROL Data Warehouse]**
+ディメンションを作成するには、[/](../data-warehouse-mgr/tour-dwm.md) をクリックして **[!UICONTROL Data]** 0}Data Warehouse Manager} を開きます。**[!UICONTROL Data Warehouse]**
 
 ### 受注テーブル、丸 1
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 1. 表示されるウィンドウで、`Many` 側を `orders.order\_id` に設定するか、注文 ID を含む `orders` テーブルの列を設定します。
 1. `One` 側で `Google ECommerce` テーブルを見つけ、列を `transactionID` に設定します。
 
-   ![](../../assets/google-ecommerce-table.png)
+   ![ 使用可能なディメンションを示すGoogle e コマースのテーブル構造 ](../../assets/google-ecommerce-table.png)
 
 1. 「**[!UICONTROL Save]**」をクリックして、パスを作成します。
 1. パスを追加したら、「**[!UICONTROL Select table and column]**」ドロップダウンをもう一度クリックします。
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 プロセス全体を見ると、次のようになります。
 
-![](../../assets/help_center.gif)
+![Google Analytics ソースディメンションの作成に関するアニメーション化されたデモ ](../../assets/help_center.gif)
 
 次に、**Order&#39;s [!DNL Google Analytics] medium** を作成して `campaign` ます。 これらの寸法はあまり変更されないので、試してみてください。 しかし、行き詰まった場合は、[ この記事の最後 ](#stuck) を確認して、違いを確認できます。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 プロセス全体を見ると、次のようになります。
 
-![](../../assets/help_center2.gif)
+![ 顧客獲得ディメンションの作成に関するアニメーションのデモ ](../../assets/help_center2.gif)
 
 `Customer's first order's` の媒体と `campaign` の寸法を `orders` のテーブルに結合して、作業を終了します。 ディメンションに参加し、問題がある場合は、ヘルプが必要な場合は、チェックアウト [ 記事の最後 ](#stuck)。
 

@@ -4,9 +4,9 @@ description: SSH トンネル経由で接続する方法  [!DNL MySQL]  説明�
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] 内を移動してキーを取得する方法を次に示します。
 
-![](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
+![SSH トンネルを介した MySQL 接続のアニメーションによるデモ ](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
 
 ## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可します {#allowlist}
 
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ## 関連：
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

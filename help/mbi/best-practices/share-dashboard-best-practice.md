@@ -4,9 +4,9 @@ description: の操作方法とダッシュボードの共有方法を説明し�
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ダッシュボードを所有するユーザーを確認するには、左上隅のダッシュボードドロップダウンをクリックします。 ダッシュボードの下に名前がないダッシュボードは、すべてユーザーに属します。
 
-![](../../mbi/assets/Dash_ownership.png)
+![ 作成者と権限を示すダッシュボードの所有権指標 ](../../mbi/assets/Dash_ownership.png)
 
 重複するダッシュボードをすべて削除するには：
 

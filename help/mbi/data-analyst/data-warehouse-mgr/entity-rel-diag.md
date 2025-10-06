@@ -4,9 +4,9 @@ description: いくつかの ER 図を使用して、一般的なCommerce デー
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] 内でこれらの 2 つのテーブル間のパスが存在しない場合は、「Data Warehouse」タブ内で [ パスを作成 ](../data-warehouse-mgr/create-paths-calc-columns.md) できます。 パスを作成する準備が整ったら、次のように定義します。
 
-![](../../assets/SFO___CE_path.png)
+![sales_flat_order から customer_entity へのパスを示すエンティティ関係図 ](../../assets/SFO___CE_path.png)
 
 ## `sales\_flat\_order & sales\_flat\_order\_item`
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] 内でこれらの 2 つのテーブル間のパスが存在しない場合は、「Data Warehouse」タブで [ パスを作成 ](../data-warehouse-mgr/create-paths-calc-columns.md) できます。 パスを作成する準備が整ったら、以下に示すようにパスを定義します。
 
-![](../../assets/SFOI___SFO_path.png)
+![sales_flat_order_item から sales_flat_order へのパスを示すエンティティ関係図 ](../../assets/SFOI___SFO_path.png)
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
@@ -59,4 +59,4 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] 内でこれらの 2 つのテーブル間のパスが存在しない場合は、「Data Warehouse」タブ内で [ パスを作成 ](../data-warehouse-mgr/create-paths-calc-columns.md) できます。 パスを作成する準備が整ったら、以下に示すようにパスを定義します。
 
-![](../../assets/SFOI___CPE_path.png)
+![sales_flat_order_item から catalog_product_entity へのパスを示すエンティティ関係図 ](../../assets/SFOI___CPE_path.png)

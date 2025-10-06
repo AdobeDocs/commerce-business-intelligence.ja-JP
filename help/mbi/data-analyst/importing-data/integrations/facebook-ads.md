@@ -4,9 +4,9 @@ description: 広告費用データを分析し、お金が効果的に費やさ�
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![](../../../assets/facebook-ads-logo.png)
+![Facebook 広告のロゴ ](../../../assets/facebook-ads-logo.png)
 
 調査を行い、広告を作成し、[!DNL Facebook] でキャンペーンを開始しました。 次に、広告費用データを分析し、お金が効果的に費やされているかどうかを確認します。 広告費用データを使用すると、広告コストとキャンペーンから取得したユーザーの顧客生涯価値（CLV）を組み合わせて [ キャンペーン ROI を測定 ](../../../data-analyst/analysis/roi-ad-camp.md) できます。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **[!DNL Facebook Authorize]** をクリックすると、小さなポップアップウィンドウが表示されます。
 
-![](../../../assets/Facebook_Access_Popup.png)
+![Commerce Intelligenceの Facebook アクセス権限ダイアログ ](../../../assets/Facebook_Access_Popup.png)
 
 一連の手順に従って、[!DNL Commerce Intelligence] が公開プロファイル、[!DNL Facebook Ads] および関連する統計からデータにアクセスできるようにします。 続行するには、次の手順の **[!UICONTROL OK]** をクリックします。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 1. 認証が完了すると、データを取り込む [!DNL Facebook Ads] アカウントを選択するように求められます。 `Connect` 列のチェックボックスをクリックして、目的のアカウントを選択します。
 
-   ![](../../../assets/Facebook_Ad_Accounts.png)
+   ![Facebook 広告アカウント選択インターフェイス ](../../../assets/Facebook_Ad_Accounts.png)
 
 1. 「**[!UICONTROL Save Connections]**」をクリックします。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## 関連
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [アカウント  [!DNL Google Adwords]  接続](../integrations/google-ecommerce.md)
 * [ [!DNL Google eCommerce] を介した注文リファラルソースの追跡](../integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースを追跡](../../analysis/google-track-user-acq.md)

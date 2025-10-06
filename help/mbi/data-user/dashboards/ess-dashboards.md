@@ -4,9 +4,9 @@ description: ダッシュボードを作成して操作する方法を説明し�
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. メニューで「**[!UICONTROL Dashboards]**」をクリックします。
 
-1. デフォルトのダッシュボードの名前は、ダッシュボードヘッダーの左上隅に表示されます。 下矢印（![](../../assets/magento-bi-btn-down.png)）をクリックして、使用可能なオプションを表示します。
+1. デフォルトのダッシュボードの名前は、ダッシュボードヘッダーの左上隅に表示されます。 下向き矢印（![ 下向き矢印アイコン ](../../assets/magento-bi-btn-down.png)）をクリックして、使用可能なオプションを表示します。
 
    ![ ダッシュボードを作成 ](../../assets/magento-bi-dashboard-create.png)
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    ![ ダッシュボード名 ](../../assets/magento-bi-dashboard-create-name.png)
 
-   * 新しいダッシュボードの名前が左上隅に表示されます。 下矢印（![](../../assets/magento-bi-btn-down.png)）をクリックしてオプションを表示します。 グループを作成すると、新しいダッシュボードがリストのグループの下に表示されます。
+   * 新しいダッシュボードの名前が左上隅に表示されます。 下向き矢印（![ 下向き矢印アイコン ](../../assets/magento-bi-btn-down.png)）をクリックして、オプションを表示します。 グループを作成すると、新しいダッシュボードがリストのグループの下に表示されます。
 
 ### レポートを追加
 

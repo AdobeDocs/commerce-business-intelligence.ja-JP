@@ -4,9 +4,9 @@ description: ディメンションとは何かを説明し、指標に基づい�
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. `Choose Metric(s) to Add Dimensions` 列で、ディメンションを追加する指標を選択します。 選択すると、右側に `Choose Dimensions to Add` 列が表示されます。 選択した指標に追加するディメンションを確認します。
 
-   ![](../../assets/Add_Dimensions.png)
+   ![ 使用可能なディメンションオプションを表示するディメンションを追加ダイアログ ](../../assets/Add_Dimensions.png)
 
 1. レポートのいずれかのデータディメンションでセグメント化またはグループ化する場合は、それらが _グループ化可能_ であることを確認します。
 

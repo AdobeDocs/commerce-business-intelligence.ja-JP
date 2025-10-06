@@ -4,9 +4,9 @@ description: ユーザーが web サイトやアプリをどのように移動�
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![](../../../assets/Mixpanel_logo.png)
+![Mixpanel ロゴ ](../../../assets/Mixpanel_logo.png)
 
 [!DNL Mixpanel] を使用すると、ユーザーが web サイトやアプリをどのように移動および使用するかを分析できます。 ユーザー行動データを詳しく見ることで、設計と開発の意思決定がスマートになり、製品全体が向上します。 [!DNL Mixpanel] を [!DNL Commerce Intelligence] に接続すると、ユーザーの行動とその行動が収益にどのように変換されるかを分析できます。
 
@@ -65,4 +65,4 @@ ht-degree: 0%
 ### 関連
 
 * [Expected [!DNL Mixpanel] data](../integrations/mixpanel-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
