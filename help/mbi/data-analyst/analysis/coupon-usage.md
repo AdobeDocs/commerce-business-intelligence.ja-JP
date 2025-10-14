@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 推奨される指標 {#metrics}
 
-クーポンの使用状況を分析する場合は、次の指標の使用 [ または構築） ](../../data-user/reports/ess-manage-data-metrics.md) 検討してください。
+クーポンの使用状況を分析する場合は、次の指標の使用 [&#x200B; または構築） &#x200B;](../../data-user/reports/ess-manage-data-metrics.md) 検討してください。
 
 ### 注文数
 

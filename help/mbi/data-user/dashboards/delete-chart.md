@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # グラフを完全に削除する
 
-[ ダッシュボードからグラフを削除 ](../../data-user/dashboards/remove-charts-dashboard.md) しても、そのグラフは [!DNL Commerce Intelligence] アカウントに存在します。
+[&#x200B; ダッシュボードからグラフを削除 &#x200B;](../../data-user/dashboards/remove-charts-dashboard.md) しても、そのグラフは [!DNL Commerce Intelligence] アカウントに存在します。
 
 グラフを完全に削除するには：
 
@@ -33,4 +33,4 @@ ht-degree: 0%
 
 例：
 
-![ グラフの削除 ](../../assets/deletechart.gif)<!--{: width="630" height="402"}-->
+![&#x200B; グラフの削除 &#x200B;](../../assets/deletechart.gif)<!--{: width="630" height="402"}-->

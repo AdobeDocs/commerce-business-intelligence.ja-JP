@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ### （オプション 2） [!DNL Google Analytics] の取得元データをデータベースに保存する
 
-このトピックでは [!DNL Google Analytics] ユーザーが初めて Web サイトを訪問した際に存在した `source`、`medium`、`term`、`content`、`campaign` および `gclid` のパラメーターなど、獲得チャネルの情報を独自のデータベースに保存する方法について説明します。 これらのパラメーターについて詳しくは、[[!DNL Google Analytics]  ドキュメント ](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article) を参照してください。 次に、この情報を使用して [!DNL Commerce Intelligence] で実行できる強力なマーケティング分析をいくつか見ていきます。
+このトピックでは [!DNL Google Analytics] ユーザーが初めて Web サイトを訪問した際に存在した `source`、`medium`、`term`、`content`、`campaign` および `gclid` のパラメーターなど、獲得チャネルの情報を独自のデータベースに保存する方法について説明します。 これらのパラメーターについて詳しくは、[[!DNL Google Analytics]  ドキュメント &#x200B;](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article) を参照してください。 次に、この情報を使用して [!DNL Commerce Intelligence] で実行できる強力なマーケティング分析をいくつか見ていきます。
 
 #### なぜでしょうか。
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 文字列にエンコードされた何らかの取得元データがあることは明らかです。 これは、訪問者の最新の獲得ソースおよび関連するキャンペーンデータであることを確認するためにテストされています。 次に、データの抽出方法を知る必要があります。
 
-このコードは、github でホストされる [PHP ライブラリ ](https://github.com/RJMetrics/referral-grabber-php) に変換されました。 ライブラリを使用するには、`include` への参照を `ReferralGrabber.php` し、次にを呼び出します
+このコードは、github でホストされる [PHP ライブラリ &#x200B;](https://github.com/RJMetrics/referral-grabber-php) に変換されました。 ライブラリを使用するには、`include` への参照を `ReferralGrabber.php` し、次にを呼び出します
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 
@@ -91,7 +91,7 @@ SQL データベースを使用していて、次の構造の `users` テーブ�
 
 * これらの数値の経時的な成長率
 * 各獲得ソースによって生成された収益の額
-* 各ソースからのユーザーの [ コホート分析 ](https://en.wikipedia.org/wiki/Cohort_analysis)
+* 各ソースからのユーザーの [&#x200B; コホート分析 &#x200B;](https://en.wikipedia.org/wiki/Cohort_analysis)
 * これらのチャネルのいずれかからのユーザーが将来、顧客として返される確率
 
 これらの分析を行うために必要なクエリは複雑です。 この情報に基づいて、最も収益性の高い獲得チャネルを決定し、それに応じてマーケティング時間と費用を集中させることができます。

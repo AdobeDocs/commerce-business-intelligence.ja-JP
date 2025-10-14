@@ -17,4 +17,4 @@ ht-degree: 0%
 
 例：
 
-![ ダッシュボードから移動 ](../../assets/Leave_Dashboard.gif)
+![&#x200B; ダッシュボードから移動 &#x200B;](../../assets/Leave_Dashboard.gif)

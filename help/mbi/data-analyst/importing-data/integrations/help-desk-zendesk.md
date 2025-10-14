@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [!DNL Zendesk] データをトランザクションデータベースと統合することは、顧客がセールスチームやカスタマーサクセスチームとどのようにやり取りしているかを深く理解するための優れた方法です。 また、サポートプラットフォームを使用している顧客のタイプを把握するのにも役立ちます。 このトピックでは、ダッシュボードを設定して、[!DNL Zendesk] のパフォーマンスに関する詳細なレポートを取得し、トランザクション顧客と結び付ける方法を示します。
 
-開始する前に、[[!DNL Zendesk]](../integrations/zendesk.md) を接続します。 この分析には [ 高度な計算列 ](../../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
+開始する前に、[[!DNL Zendesk]](../integrations/zendesk.md) を接続します。 この分析には [&#x200B; 高度な計算列 &#x200B;](../../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
 <!-- Getting Started -->
 
@@ -283,7 +283,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
+>新しいレポートを作成する前に、必ず [&#x200B; すべての新しい列をディメンションとして指標に追加する &#x200B;](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ### レポート
 

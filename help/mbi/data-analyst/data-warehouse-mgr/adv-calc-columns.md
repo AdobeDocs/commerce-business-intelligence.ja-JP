@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 高度な計算列のタイプ
 
-作成する分析の多くには、**定または** 定する `group by` 新しい列 `filter by` の使用が含まれる場合があります。 [ 計算列の作成 ](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルでは、ほとんどのユースケースの基本を説明しますが、Data Warehouse Manager で作成できるよりも少し複雑な計算列が必要になる場合があります。
+作成する分析の多くには、**定または** 定する `group by` 新しい列 `filter by` の使用が含まれる場合があります。 [&#x200B; 計算列の作成 &#x200B;](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルでは、ほとんどのユースケースの基本を説明しますが、Data Warehouse Manager で作成できるよりも少し複雑な計算列が必要になる場合があります。
 {: #top}
 
 これらのタイプの列は、Data Warehouse アナリストのAdobe チームが作成できます。 新しい計算列を定義するには、次の情報を入力します。
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 顧客の注文番号列を実際に表示したいですか？ 画像をクリックして、レポートでグループ化ディメンションとして使用されていることを確認します。
 
-![ イベント番号の計算列を使用して、顧客の注文番号でグループ化。](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
+![&#x200B; イベント番号の計算列を使用して、顧客の注文番号でグループ化。](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
 
 このタイプの集計列を作成するには、次の点を理解しておく必要があります。
 
@@ -76,7 +76,7 @@ ht-degree: 2%
 
 日付差計算列を使用すると、2 つのイベント間の平均または中央値の時間を計算する指標を作成できます。 レポートでの `Average time to first order` 指標の使用方法を確認するには、以下の画像をクリックします。
 
-![ 日付差異の計算列を使用して、初回注文までの平均時間を計算します。](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
+![&#x200B; 日付差異の計算列を使用して、初回注文までの平均時間を計算します。](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
 
 このタイプの集計列を作成するには、次の点を理解しておく必要があります。
 
@@ -103,7 +103,7 @@ ht-degree: 2%
 
 順次イベント比較を使用して、各順次イベント間の平均時間または中央値の時間を見つけることができます。 下の画像をクリックして、実行中の **注文間の平均および中央値の時間** 指標を確認します。
 
-=![ 順次イベント比較計算列を使用して注文間の平均および中央値の時間を計算します。](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
+=![&#x200B; 順次イベント比較計算列を使用して注文間の平均および中央値の時間を計算します。](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
 
 このタイプの集計列を作成するには、次の点を理解しておく必要があります。
 
@@ -161,7 +161,7 @@ ht-degree: 2%
 
 心配しないでください。 ここに記載されていないからといって、不可能という意味ではありません。 Data Warehouse アナリストのAdobe チームがお手伝いします。
 
-新しい計算列を定義するには、作成する内容に正確な詳細を指定して [ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) します。
+新しい計算列を定義するには、作成する内容に正確な詳細を指定して [&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) します。
 
 ## 関連ドキュメント
 

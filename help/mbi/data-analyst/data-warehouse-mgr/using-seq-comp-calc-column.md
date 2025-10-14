@@ -62,4 +62,4 @@ ht-degree: 0%
 
 1. この列は *即時* に使用できます。
 
-![ 秒 ](../../assets/SEC_new.png)
+![&#x200B; 秒 &#x200B;](../../assets/SEC_new.png)

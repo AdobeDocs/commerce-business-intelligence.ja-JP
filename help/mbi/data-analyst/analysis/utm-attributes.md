@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Google Analytics] と UTM の属性
 
-[ 最もパフォーマンスの高い広告キャンペーンを特定 ](../../data-analyst/analysis/google-track-user-acq.md) するために、[ ユーザー獲得ソースを追跡 ](../../data-analyst/analysis/most-value-source-channel.md) することが重要です。 このトピックでは、[!DNL Google Analytics] ソースアトリビューションプロセスについて説明します。 つまり、どの情報がいつ記録されるか。
+[&#x200B; 最もパフォーマンスの高い広告キャンペーンを特定 &#x200B;](../../data-analyst/analysis/google-track-user-acq.md) するために、[&#x200B; ユーザー獲得ソースを追跡 &#x200B;](../../data-analyst/analysis/most-value-source-channel.md) することが重要です。 このトピックでは、[!DNL Google Analytics] ソースアトリビューションプロセスについて説明します。 つまり、どの情報がいつ記録されるか。
 
 ## アトリビューションとは
 
@@ -31,13 +31,13 @@ UTM パラメーターが URL で指定されると、これらは解析され�
 
 ### 最終クリック属性
 
-ラストクリックアトリビューションは、[!DNL Google Analytics] で使用される最も一般的なアトリビューションモデルです。 この場合、[!DNL Google Analytics] Cookie は変換イベント前の最新のソースに対する UTM パラメーターを表し、これが [ データベースに記録 ](../../data-analyst/analysis/google-track-user-acq.md) されます。 [!DNL Google Analytics] cookie は、ユーザーが新しい UTM パラメーターのセットを含む新しい URL をクリックした場合にのみ、以前の UTM パラメーターを上書きします。
+ラストクリックアトリビューションは、[!DNL Google Analytics] で使用される最も一般的なアトリビューションモデルです。 この場合、[!DNL Google Analytics] Cookie は変換イベント前の最新のソースに対する UTM パラメーターを表し、これが [&#x200B; データベースに記録 &#x200B;](../../data-analyst/analysis/google-track-user-acq.md) されます。 [!DNL Google Analytics] cookie は、ユーザーが新しい UTM パラメーターのセットを含む新しい URL をクリックした場合にのみ、以前の UTM パラメーターを上書きします。
 
 例えば、コンバージョンイベントの前に、最初に [!DNL Google Analytics]*有料検索* を使用して web サイトを訪問し、次に *オーガニック検索* を使用して戻り、最後に *web サイト* 直接または *メールリンク&#x200B;***UTM パラメーターなし** を使用して戻ってきたユーザーについて考えてみます。 この例では、[!DNL Google Analytics] Cookie はユーザーのソースがオーガニックであることを示しています。これは、変換前の最後のソースを表すからです。 その最終コンバージョンイベントの前のユーザーの *パス* は無視されます。 代わりに、ユーザーが UTM を使用したメールリンクから web サイトにアクセスした場合、[!DNL Google Analytics] Cookie はソースが「メール」であると言います。 そのため、Cookie に既存の UTM パラメーターがあり、ユーザーが direct を介して入ってきた場合、[!DNL Google Analytics] Cookie は「direct」ではなく UTM パラメーターを表示します。
 
 >[!NOTE]
 >
->特定のユーザーの [!DNL Google Analytics] 定の cookie パラメーターは、その cookie が [ 期限切れ ](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) になったとき、またはユーザーがブラウザーで cookie をクリアしたときに消去されます。*
+>特定のユーザーの [!DNL Google Analytics] 定の cookie パラメーターは、その cookie が [&#x200B; 期限切れ &#x200B;](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) になったとき、またはユーザーがブラウザーで cookie をクリアしたときに消去されます。*
 
 ### ファーストクリック属性
 

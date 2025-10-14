@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!UICONTROL Google Analytics] トラッキング
 
-[!UICONTROL Google Analytics] を使用すると [ リファラルソース情報を保存 ](../analysis/google-track-user-acq.md) して、最も価値のあるユーザーの出所を把握できます。 このトピックでは、ユーザーが作業しているプラットフォーム（デバイス、ブラウザーなど）について説明します。 これにより、モバイルデバイスで実際にログインしているユーザーの数と、そのユーザーのライフタイム値への影響を把握できます。
+[!UICONTROL Google Analytics] を使用すると [&#x200B; リファラルソース情報を保存 &#x200B;](../analysis/google-track-user-acq.md) して、最も価値のあるユーザーの出所を把握できます。 このトピックでは、ユーザーが作業しているプラットフォーム（デバイス、ブラウザーなど）について説明します。 これにより、モバイルデバイスで実際にログインしているユーザーの数と、そのユーザーのライフタイム値への影響を把握できます。
 
 ## ユーザーデバイスとブラウザーデータの保存
 
@@ -39,7 +39,7 @@ Web サイトに対してリクエストが行われるたびに、ユーザー�
 
 ### 役に立つセグメントを解析するにはどうすればよいですか？
 
-`User-Agent` の文字列を解析してオペレーティングシステムやデバイスなどのコンポーネントを生成するのに役立つライブラリが多数用意されています。 詳しくは、[ua-parser プロジェクト ](https://github.com/tobie/ua-parser) を参照してください。
+`User-Agent` の文字列を解析してオペレーティングシステムやデバイスなどのコンポーネントを生成するのに役立つライブラリが多数用意されています。 詳しくは、[ua-parser プロジェクト &#x200B;](https://github.com/tobie/ua-parser) を参照してください。
 
 この新しい情報により、ユーザーがサイトにアクセスする方法をより深く理解できます。 その後、エクスペリエンスをカスタマイズしたり、特定のグループ向けのマーケティングキャンペーンを作成したりできます。
 
@@ -50,4 +50,4 @@ Web サイトに対してリクエストが行われるたびに、ユーザー�
 * [最も価値のある獲得ソースとチャネルを見つける](../analysis/most-value-source-channel.md)
 * [アカウント  [!DNL Google Adwords]  接続](../importing-data/integrations/google-adwords.md)
 * [広告キャンペーンの ROI の向上](../analysis/roi-ad-camp.md)
-* [ [!DNL Google Analytics] UTM アトリビューションの仕組み](../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics] UTM アトリビューションの仕組み](../analysis/utm-attributes.md)

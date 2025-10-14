@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
+>[&#x200B; 管理者権限 &#x200B;](../../administrator/user-management/user-management.md) が必要です。
 
 [!DNL Commerce Intelligence] アカウントでは、Data Warehouse用にアカウント設定をカスタマイズできます。 これらのフィールドにアクセスするには、画面の右上隅にある組織名を選択し、ドロップダウンから「**[!UICONTROL Account Settings]**」を選択します。
 

@@ -25,4 +25,4 @@ ht-degree: 0%
    * `Manage Data`
    * `Export Data`
 
-   ![ データの管理 ](../../assets/magento-bi-manage-data.png)<!--{: .zoom}-->
+   ![&#x200B; データの管理 &#x200B;](../../assets/magento-bi-manage-data.png)<!--{: .zoom}-->

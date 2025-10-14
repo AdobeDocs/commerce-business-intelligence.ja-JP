@@ -15,10 +15,10 @@ ht-degree: 0%
 
 [!DNL PostgreSQL] を使用して [!DNL Commerce Intelligence] データベースを `SSH tunnel` に接続するには、次の操作を行う必要があります。
 
-1. [ [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
-1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
-1. [ [!DNL Linux]  のユ  [!DNL Commerce Intelligence] ザーを作成](#linux)
-1. [ [!DNL PostgreSQL]  のユ  [!DNL Commerce Intelligence] ザーを作成](#postgres)
+1. [&#x200B; [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
+1. [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+1. [&#x200B; [!DNL Linux]  のユ  [!DNL Commerce Intelligence] ザーを作成](#linux)
+1. [&#x200B; [!DNL PostgreSQL]  のユ  [!DNL Commerce Intelligence] ザーを作成](#postgres)
 1. [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
 
 ## [!DNL Commerce Intelligence] [!DNL public key] の取得 {#retrieve}
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 以下に、キーを取得するために [!DNL Commerce Intelligence] 内を移動する方法を示します。
 
-![RJMetrics 公開鍵の取得 ](../../../assets/get-mbi-public-key.gif)
+![RJMetrics 公開鍵の取得 &#x200B;](../../../assets/get-mbi-public-key.gif)
 
 ## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可します {#allowlist}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## [!DNL Linux] 用の [!DNL Commerce Intelligence] ユーザーの作成 {#linux}
 
-リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [ サーバーへの接続権が保持されている限り、好きなように ](../../../administrator/account-management/restrict-db-access.md) このユーザーを制限 [!DNL PostgreSQL] することができます。
+リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [&#x200B; サーバーへの接続権が保持されている限り、好きなように &#x200B;](../../../administrator/account-management/restrict-db-access.md) このユーザーを制限 [!DNL PostgreSQL] することができます。
 
 1. 新しいユーザーを追加するには、[!DNL Linux] サーバーで次のコマンドを root として実行します。
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 関連
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

@@ -45,7 +45,7 @@ Data Warehouse内の他のすべてのテーブルと同様に、列を追加す
 
 ## 統合テーブルの作成、表示または更新
 
-Data Warehouseに統合テーブルを追加することに関心がある場合は、[!DNL Commerce Intelligence] [ サポート ](../guide-overview.md#Submitting-a-Support-Ticket) にお問い合わせください。
+Data Warehouseに統合テーブルを追加することに関心がある場合は、[!DNL Commerce Intelligence] [&#x200B; サポート &#x200B;](../guide-overview.md#Submitting-a-Support-Ticket) にお問い合わせください。
 
 >[!NOTE]
 >

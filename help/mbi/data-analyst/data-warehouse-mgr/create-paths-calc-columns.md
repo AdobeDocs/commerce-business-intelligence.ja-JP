@@ -15,18 +15,18 @@ ht-degree: 0%
 
 ## 計算列の更新
 
-Data Warehouseで [ 計算列の作成 ](../data-warehouse-mgr/creating-calculated-columns.md) を行う場合、列を作成するテーブルと情報を取り込むテーブルとの関係を説明するパスを定義するように求められます。 パスを正常に作成するには、次の 2 つの点を知っておく必要があります。
+Data Warehouseで [&#x200B; 計算列の作成 &#x200B;](../data-warehouse-mgr/creating-calculated-columns.md) を行う場合、列を作成するテーブルと情報を取り込むテーブルとの関係を説明するパスを定義するように求められます。 パスを正常に作成するには、次の 2 つの点を知っておく必要があります。
 
 1. データベース内のテーブルの相互関係
 1. この関係を定義する主キーと外部キー
 
-この情報を知っていれば、このトピックの手順に従ってパスを簡単に作成できます。 所属する組織の技術エキスパートに問い合わせるか、[Professional Services チーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) にお問い合わせください。
+この情報を知っていれば、このトピックの手順に従ってパスを簡単に作成できます。 所属する組織の技術エキスパートに問い合わせるか、[Professional Services チーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) にお問い合わせください。
 
 ## テーブルのリレーションシップとキーの種類に関する更新 {#refresher}
 
 ### テーブルの関係 {#relationships}
 
-この概念については、[ テーブル関係の理解と評価 ](../../data-analyst/data-warehouse-mgr/table-relationships.md) の記事で説明していますが、簡単な概要では誰も傷つけないですよね？
+この概念については、[&#x200B; テーブル関係の理解と評価 &#x200B;](../../data-analyst/data-warehouse-mgr/table-relationships.md) の記事で説明していますが、簡単な概要では誰も傷つけないですよね？
 
 テーブルは、次の 3 つの方法のいずれかで相互に関連付けることができます。
 
@@ -62,10 +62,10 @@ Data Warehouseで列を作成する場合、あるテーブルから別のテー
 1. [ テーブル ] ボックスの一覧で、列を作成するテーブルをクリックします。 この例では、`customers` のテーブルです。
 1. テーブルスキーマが表示されます。 「**[!UICONTROL Create New Column]**」をクリックします。
 1. 列に名前（例：`Customer's orders`）を付けます。
-1. 列の定義を選択します。 便利なチートシートについては、[ 計算列ガイド ](../data-warehouse-mgr/creating-calculated-columns.md) を参照してください。
+1. 列の定義を選択します。 便利なチートシートについては、[&#x200B; 計算列ガイド &#x200B;](../data-warehouse-mgr/creating-calculated-columns.md) を参照してください。
 1. [!UICONTROL Select table and column] ドロップダウンで、「**[!UICONTROL Create new path]**」オプションをクリックします。
 
-   ![ 計算列モーダルのパスの作成 ](../../assets/Creating_Paths_modal.png)
+   ![&#x200B; 計算列モーダルのパスの作成 &#x200B;](../../assets/Creating_Paths_modal.png)
 
 1. ドロップダウンを使用して、各テーブルのプライマリキーと外部キーを選択します。
 
@@ -79,7 +79,7 @@ Data Warehouseで列を作成する場合、あるテーブルから別のテー
 
 * 主キーと外部キーの関係を推測で **[!DNL Commerce Intelligence]ません**。 誤ったデータをアカウントに導入しないので、パスの作成は手動で行う必要があります。
 
-* **現在、パスは 2 つの異なるテーブル間でのみ指定できます**。 再作成しようとしているロジックには、2 つ以上のテーブルが含まれていますか？ その後、（1）列をまず仲介テーブルに結合してから「最終的な宛先」テーブルに結合するか、（2） [ プロフェッショナルサービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) に相談して、目標に対する最適なアプローチを見つけることが理にかなっている場合があります。
+* **現在、パスは 2 つの異なるテーブル間でのみ指定できます**。 再作成しようとしているロジックには、2 つ以上のテーブルが含まれていますか？ その後、（1）列をまず仲介テーブルに結合してから「最終的な宛先」テーブルに結合するか、（2） [&#x200B; プロフェッショナルサービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) に相談して、目標に対する最適なアプローチを見つけることが理にかなっている場合があります。
 
 * **列は、一度に 1 つのパスの外部キー参照のみとすることができます**。 例えば、`order_items.order_id` が `orders.id` を指している場合、`order_items.order_id` はそれ以外を指すことはできません。
 
@@ -89,7 +89,7 @@ Data Warehouseで列を作成する場合、あるテーブルから別のテー
 
 ## 集計列のパスの削除 {#delete}
 
-Data Warehouseで間違ったパスを作成しましたか？ または、多分あなたは少し春のクリーニングをやって、片付けたいですか？ アカウントからパスを削除する必要がある場合は、[Adobe サポートアナリストにチケットを送る ](../../guide-overview.md#Submitting-a-Support-Ticket) ことができます。 **パス名を必ず含めてください。**
+Data Warehouseで間違ったパスを作成しましたか？ または、多分あなたは少し春のクリーニングをやって、片付けたいですか？ アカウントからパスを削除する必要がある場合は、[Adobe サポートアナリストにチケットを送る &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket) ことができます。 **パス名を必ず含めてください。**
 
 ## まとめ {#wrapup}
 
@@ -99,4 +99,4 @@ Data Warehouseで間違ったパスを作成しましたか？ または、多�
 
 * [テーブルの関係の理解と評価](../data-warehouse-mgr/table-relationships.md)
 * [計算列のパスの作成](../data-warehouse-mgr/create-paths-calc-columns.md)
-* [ 集計列の種類 ](../data-warehouse-mgr/calc-column-types.md) を作成しようとしています。
+* [&#x200B; 集計列の種類 &#x200B;](../data-warehouse-mgr/calc-column-types.md) を作成しようとしています。

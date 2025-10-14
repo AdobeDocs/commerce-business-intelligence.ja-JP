@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # 小売カレンダーのレポート
 
-このトピックでは、[ アカウント内で ](https://nrf.com/resources/4-5-4-calendar)4-5-4 小売カレンダーを使用する構造を設定す [!DNL Adobe Commerce Intelligence] 方法について説明します。 Visual Report Builder は、非常に柔軟な時間範囲、間隔および独立した設定を提供します。 ただし、これらの設定はすべて、従来の月別カレンダーで機能します。
+このトピックでは、[&#x200B; アカウント内で &#x200B;](https://nrf.com/resources/4-5-4-calendar)4-5-4 小売カレンダーを使用する構造を設定す [!DNL Adobe Commerce Intelligence] 方法について説明します。 Visual Report Builder は、非常に柔軟な時間範囲、間隔および独立した設定を提供します。 ただし、これらの設定はすべて、従来の月別カレンダーで機能します。
 
 多くの顧客は小売日付または会計日付を使用するようにカレンダーを変更するので、次の手順では、小売日付を使用してデータを操作し、レポートを作成する方法を説明します。 以下の手順は 4-5-4 小売カレンダーを参照していますが、財務カレンダーやカスタム時間枠かどうかに関係なく、チームが使用する特定のカレンダーに対してそれらを変更できます。
 
-作業を開始する前に、[ ファイルアップローダ ](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) を確認し、`.csv` ファイルが長くなっていることを確認してください。 これにより、日付が履歴データのすべてをカバーし、日付が将来に向かうようになります。
+作業を開始する前に、[&#x200B; ファイルアップローダ &#x200B;](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) を確認し、`.csv` ファイルが長くなっていることを確認してください。 これにより、日付が履歴データのすべてをカバーし、日付が将来に向かうようになります。
 
-この分析には [ 高度な計算列 ](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
+この分析には [&#x200B; 高度な計算列 &#x200B;](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
 ## はじめに
 
-2014 年から 2017 年の小売年度の 4-5-4 小売カレンダーの [ しいバージョンを ](../../assets/454-calendar.csv) ダウンロード `.csv` できます。 場合によっては、社内の小売カレンダーに従ってこのファイルを調整し、履歴期間と現在の時間枠をサポートするように日付範囲を拡張する必要があります。 ファイルをダウンロードしたら、ファイルアップローダを使用して、[!DNL Commerce Intelligence] Data Warehouseに小売カレンダーテーブルを作成します。 変更されていないバージョンの 4-5-4 小売カレンダーを使用している場合は、このテーブルのフィールドの構造とデータタイプが次と一致していることを確認してください。
+2014 年から 2017 年の小売年度の 4-5-4 小売カレンダーの [&#x200B; しいバージョンを &#x200B;](../../assets/454-calendar.csv) ダウンロード `.csv` できます。 場合によっては、社内の小売カレンダーに従ってこのファイルを調整し、履歴期間と現在の時間枠をサポートするように日付範囲を拡張する必要があります。 ファイルをダウンロードしたら、ファイルアップローダを使用して、[!DNL Commerce Intelligence] Data Warehouseに小売カレンダーテーブルを作成します。 変更されていないバージョンの 4-5-4 小売カレンダーを使用している場合は、このテーブルのフィールドの構造とデータタイプが次と一致していることを確認してください。
 
 | 列名 | 列データタイプ | プライマリキー |
 | --- | --- | --- |
@@ -121,7 +121,7 @@ ht-degree: 0%
 
 ## 指標
 
-メモ：この分析では、新しい指標は必要ありません。 ただし、レポートを続行する前に、sales\_order テーブルのすべてのメトリックに対して、[sales\_order テーブルにディメンションとして作成した新しい列を追加 ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) してください。
+メモ：この分析では、新しい指標は必要ありません。 ただし、レポートを続行する前に、sales\_order テーブルのすべてのメトリックに対して、[sales\_order テーブルにディメンションとして作成した新しい列を追加 &#x200B;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) してください。
 
 ## レポート
 
@@ -203,4 +203,4 @@ ht-degree: 0%
 
 例えば、4-5-4 小売カレンダーで顧客レベルの指標を表示するには、上記と同様に、`Same Table` テーブルに `customer\_entity` 計算を作成 `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` ます。 その後、この列を使用して、`One to Many` テーブルを `Created_at (retail year)` テーブルに結合することで、`Include in previous retail year? (Yes/No)` の JOINED\_COLUMN 計算（`customer\_entity` など）と `Retail Calendar` を再現できます。
 
-新しいレポートを作成する前に、[ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) を忘れないでください。
+新しいレポートを作成する前に、[&#x200B; すべての新しい列をディメンションとして指標に追加する &#x200B;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) を忘れないでください。

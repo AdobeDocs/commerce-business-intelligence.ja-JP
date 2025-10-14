@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL QuickBooks] データ
 
-[ アカウントに接続  [!DNL QuickBooks]  た ](../../../data-analyst/importing-data/integrations/quickbooks.md) 後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。 Data Warehouseでは、次のテーブルが作成されます。
+[&#x200B; アカウントに接続  [!DNL QuickBooks]  た &#x200B;](../../../data-analyst/importing-data/integrations/quickbooks.md) 後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。 Data Warehouseでは、次のテーブルが作成されます。
 
 トラッキングに使用できるすべてのフィールドを表示するには、テーブル名列のリンクをクリックします。
 
@@ -62,4 +62,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続  [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

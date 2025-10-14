@@ -17,7 +17,7 @@ Adobeでは、`SSH tunnel` を使用してデータベースを接続するこ�
 
 1. [データベースユーザ  [!DNL Commerce Intelligence]  の作成](#database)
 1. [VPN ユーザ  [!DNL Commerce Intelligence]  の作成](#vpn)
-1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+1. [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
 1. [Commerce Intelligenceへの接続と VPN ユーザー情報の入力](#finish)
 
 データベースの資格情報に加えて、VPN ユーザーの資格情報を入力して内容を確認する必要があります。 どの VPN ユーザーでも機能しますが、Adobeでは、アカウント上のユーザーを簡単に追跡できるため、[!DNL Commerce Intelligence] ユーザーを作成することをお勧めします。

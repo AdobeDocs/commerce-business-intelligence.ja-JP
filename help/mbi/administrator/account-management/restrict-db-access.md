@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # アクセスの制限
 
-サーバーへの SSH トンネルを作成する場合、データベース以外にアクセス [!DNL Adobe Commerce Intelligence] る必要はありません。 データベースを格納するサーバーへのフルアクセスを [!DNL Commerce Intelligence] に許可しない場合は、[!DNL Commerce Intelligence Linux] ユーザーを [ 制限付き bash シェル ](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html) に強制してアクセスを制限できます。
+サーバーへの SSH トンネルを作成する場合、データベース以外にアクセス [!DNL Adobe Commerce Intelligence] る必要はありません。 データベースを格納するサーバーへのフルアクセスを [!DNL Commerce Intelligence] に許可しない場合は、[!DNL Commerce Intelligence Linux] ユーザーを [&#x200B; 制限付き bash シェル &#x200B;](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html) に強制してアクセスを制限できます。
 
 名前から推測したかもしれませんが、標準のシェルよりも制御が強化された環境を設定するために、制限された bash シェルが使用されています。 このタイプのシェルに関する重要な点は、制限されたシェルのユーザはシステムの関数にアクセスできず、何らかの変更を加えられないことです。
 

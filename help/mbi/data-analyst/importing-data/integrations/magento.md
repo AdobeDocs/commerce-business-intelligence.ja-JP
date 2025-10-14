@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
+>[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
 
 ビジネスのパフォーマンスを確認したい場合や、最も価値のある獲得ソースとチャネルを見つけたい場合は、 [!DNL Adobe Commerce] データを [!DNL Commerce Intelligence] に接続すると、これらの質問などに回答できます。
 
-[!DNL Adobe Commerce] データベースは MySQL に基づいているので、[!DNL Commerce Intelligence] 直接接続 [、](../integrations/mysql-via-a-direct-connection.md)、または [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)SSH トンネル経由 [ を介して ](../integrations/mysql-via-ssh-tunnel.md) に接続できます。 最も安全な SSH 方式をお勧めします。
+[!DNL Adobe Commerce] データベースは MySQL に基づいているので、[!DNL Commerce Intelligence] 直接接続 [、](../integrations/mysql-via-a-direct-connection.md)、または [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)SSH トンネル経由 [&#x200B; を介して &#x200B;](../integrations/mysql-via-ssh-tunnel.md) に接続できます。 最も安全な SSH 方式をお勧めします。
 
 ## 関連情報
 

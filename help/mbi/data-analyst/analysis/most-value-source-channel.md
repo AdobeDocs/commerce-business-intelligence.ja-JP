@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 前提条件 {#prereqs}
 
-このトピックで分析を作成するには、マーケティング獲得/リファラルソースデータにアクセスする必要があります。 まだトラッキングしていない場合は、続行する前に、[ 参照元データを注文  [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) を [!DNL Adobe Commerce Intelligence] に取り込む必要があります。 また、分析にユーザーデバイス情報を追加すると、参照で使用しているテクノロジーを確認できます。
+このトピックで分析を作成するには、マーケティング獲得/リファラルソースデータにアクセスする必要があります。 まだトラッキングしていない場合は、続行する前に、[&#x200B; 参照元データを注文  [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) を [!DNL Adobe Commerce Intelligence] に取り込む必要があります。 また、分析にユーザーデバイス情報を追加すると、参照で使用しているテクノロジーを確認できます。
 
 ## ソース別の新規ユーザー {#newusersbysource}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 次のチュートリアルを視覚的に示します。
 
-![ ソース別の新規ユーザー作成レポート ](../../assets/New_Users_by_source.gif)
+![&#x200B; ソース別の新規ユーザー作成レポート &#x200B;](../../assets/New_Users_by_source.gif)
 
 ## ユーザーソース別の平均生涯売上高 {#avglifetimerev}
 
@@ -57,7 +57,7 @@ Report Builderでこのレポートを作成するには、**平均生涯売上�
 
 次のチュートリアルを視覚的に示します。
 
-![ ユーザーソース別の平均生涯売上高の作成 ](../../assets/Lifetime_revenue_by_user_source.gif)。
+![&#x200B; ユーザーソース別の平均生涯売上高の作成 &#x200B;](../../assets/Lifetime_revenue_by_user_source.gif)。
 
 この例では生涯売上高のみを見ていますが、この分析をレプリケートして、リファラルソースによる [!UICONTROL Number of orders] または [!UICONTROL Distinct buyers] を調べることもできます。
 
@@ -74,13 +74,13 @@ Report Builderでこのレポートを作成するには、**平均注文額** �
 
 次のチュートリアルを視覚的に示します。
 
-![ ユーザー・ソース別平均受注値レポートの作成 ](../../assets/Average_order_value_by_source.gif)
+![&#x200B; ユーザー・ソース別平均受注値レポートの作成 &#x200B;](../../assets/Average_order_value_by_source.gif)
 
 ## ユーザー登録日およびソース別の合計売上高 {#revbyregdateandsource}
 
 以前に説明した生涯売上高分析では、様々なソースから取得したユーザーの平均生涯売上高を見ることができますが、総生涯売上高についてはどうでしょうか。 このレポートを使用すると、特定の時間に、特定のソースから登録されたユーザーが生成した全体的な売上高を特定できます。
 
-Report Builderでこのレポートを作成するには、`Revenue by user registration date` の指標を追加します。 [ この指標を作成 ](../../data-user/reports/ess-manage-data-metrics.md) していない場合は、`Revenue` の指標をレプリケートし、`time stamp` をユーザーの `creation date` に変更することで作成できます。 指標を追加した後、次の操作を行います。
+Report Builderでこのレポートを作成するには、`Revenue by user registration date` の指標を追加します。 [&#x200B; この指標を作成 &#x200B;](../../data-user/reports/ess-manage-data-metrics.md) していない場合は、`Revenue` の指標をレプリケートし、`time stamp` をユーザーの `creation date` に変更することで作成できます。 指標を追加した後、次の操作を行います。
 
 1. 分析する登録期間を [!UICONTROL Time Period] 定します。
 1. [!UICONTROL Time Interval] を月単位に設定します。
@@ -89,7 +89,7 @@ Report Builderでこのレポートを作成するには、`Revenue by user regi
 
 次のチュートリアルを視覚的に示します。
 
-![ ユーザー登録日およびソースレポート別の合計売上高の作成 ](../../assets/Revenue_by_user_registration_date_and_source.gif)
+![&#x200B; ユーザー登録日およびソースレポート別の合計売上高の作成 &#x200B;](../../assets/Revenue_by_user_registration_date_and_source.gif)
 
 ## 繰り返し注文（ユーザーソース別） {#repeatordersbysource}
 
@@ -108,7 +108,7 @@ Report Builderでこのレポートを作成するには、`Revenue by user regi
 
 次のチュートリアルを視覚的に示します。
 
-![ ユーザー・ソース別リピート受注レポートの作成 ](../../assets/Repeat_orders_by_user_source.gif)
+![&#x200B; ユーザー・ソース別リピート受注レポートの作成 &#x200B;](../../assets/Repeat_orders_by_user_source.gif)
 
 
 ## まとめ {#wrapup}
@@ -117,7 +117,7 @@ Report Builderでこのレポートを作成するには、`Revenue by user regi
 
 ## 関連 {#related}
 
-* [ [!DNL Google ECommerce] を介した注文のリファラルソースのトラッキング](../importing-data/integrations/google-ecommerce.md)
+* [&#x200B; [!DNL Google ECommerce] を介した注文のリファラルソースのトラッキング](../importing-data/integrations/google-ecommerce.md)
 * [アカウント  [!DNL Google Adwords]  接続](../importing-data/integrations/google-adwords.md)
 * [注文  [!DNL Google ECommerce]  顧客データを使用したディメンションの作成](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
-* [ [!DNL Google Analytics] の UTM タグ付けのベストプラクティス](../../best-practices/utm-tagging-google.md)
+* [&#x200B; [!DNL Google Analytics] の UTM タグ付けのベストプラクティス](../../best-practices/utm-tagging-google.md)

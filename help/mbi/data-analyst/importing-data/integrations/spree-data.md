@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 予期される [!DNL Spree] データ
 
-[ ストアに接続  [!DNL Spree]  した後、&lbrace;3](../../../data-analyst/importing-data/integrations/spree.md)Data Warehouse Manager[ を使用すると、](../../data-warehouse-mgr/tour-dwm.md) Platform から関連するデータフィールドを簡単に追跡して分析できます。[!DNL Spree]
+[&#x200B; ストアに接続  [!DNL Spree]  した後、&lbrace;3](../../../data-analyst/importing-data/integrations/spree.md)Data Warehouse Manager[&#x200B; を使用すると、](../../data-warehouse-mgr/tour-dwm.md) Platform から関連するデータフィールドを簡単に追跡して分析できます。[!DNL Spree]
 
-このトピックでは、データに関する [!DNL Spree] 追加ドキュメント [!DNL Commerce Intelligence] へのリンクを含め、[ から ](https://guides.spreecommerce.org/developer/addresses.html#address) アカウントに読み込むことができるメインのデータテーブル [!DNL Spree] ついて説明します。
+このトピックでは、データに関する [!DNL Spree] 追加ドキュメント [!DNL Commerce Intelligence] へのリンクを含め、[&#x200B; から &#x200B;](https://guides.spreecommerce.org/developer/addresses.html#address) アカウントに読み込むことができるメインのデータテーブル [!DNL Spree] ついて説明します。
 
 | **テーブル名** | **説明** |
 |-----|-----|
@@ -30,4 +30,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続  [!DNL Spree]](../integrations/spree.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

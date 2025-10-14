@@ -26,4 +26,4 @@ ht-degree: 0%
 1. `Save As` ダイアログボックスで、書き出しファイルを保存するフォルダーをクリックします。
 1. `File name` ボックスで、ファイルの書き出しの名前を選択します。
 1. 「**[!UICONTROL Save]**」をクリックします。
-1. ファイルをダウンロードしたら、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) し、ユーザーに代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。
+1. ファイルをダウンロードしたら、[&#x200B; サポートにお問い合わせ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) し、ユーザーに代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。

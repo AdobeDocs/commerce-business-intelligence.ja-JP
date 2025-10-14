@@ -15,7 +15,7 @@ ht-degree: 0%
 
 （正規表現構文のヘルプを使用）
 
-[[!DNL Google Analytics]  アカウント ](../../data-analyst/importing-data/integrations/google-analytics.md) に接続したら、[!DNL Google Analytics] データを使用してグラフを作成できます。
+[[!DNL Google Analytics]  アカウント &#x200B;](../../data-analyst/importing-data/integrations/google-analytics.md) に接続したら、[!DNL Google Analytics] データを使用してグラフを作成できます。
 
 ## [!DNL Google Analytics] グラフの作成
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 1. 指標を選択したら、表示する `time period`、`interval`、データ `perspectives` を選択することで、このグラフを他のグラフと同じように続行できます。
 
-1. ここでの大きな違いは、フィルターに正規表現を使用 `√` ることです。 正規表現（略して正規表現）は、検索パターンを説明するための特別なテキスト文字列です。 [[!DNL Google] Analytics 正規表現に関するガイド ](https://support.google.com/analytics/answer/1034324?hl=en) の正規表現構文の例を参照してください。
+1. ここでの大きな違いは、フィルターに正規表現を使用 `√` ることです。 正規表現（略して正規表現）は、検索パターンを説明するための特別なテキスト文字列です。 [[!DNL Google] Analytics 正規表現に関するガイド &#x200B;](https://support.google.com/analytics/answer/1034324?hl=en) の正規表現構文の例を参照してください。
 
 >[!NOTE]
 >

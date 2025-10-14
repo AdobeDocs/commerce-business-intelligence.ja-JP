@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL Facebook Ads] データ
 
-[ アカウントに接続  [!DNL Facebook Ads]  した後 ](../integrations/facebook-ads.md) [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用すると、関連するデータフィールドを簡単に追跡して分析できます。
+[&#x200B; アカウントに接続  [!DNL Facebook Ads]  した後 &#x200B;](../integrations/facebook-ads.md) [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用すると、関連するデータフィールドを簡単に追跡して分析できます。
 
 このトピックでは、Data WarehouseとAdobeで同期することをお勧めするテーブルの概要を説明します。 かなりの数のサブテーブルがあるので、ここではコアテーブルのみが強調表示されます。
 
@@ -60,4 +60,4 @@ ht-degree: 0%
 ## 関連
 
 * [接続  [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

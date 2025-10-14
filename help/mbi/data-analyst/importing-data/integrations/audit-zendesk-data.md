@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## データの書き出しの有効化
 
-現在、すべての [!DNL Zendesk] アカウントでデータの書き出しが有効になっているわけではありません。 この機能を有効にするには、[ のサブドメイン名を示す ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) サポートチケットを送信 [!DNL Zendesk] します。
+現在、すべての [!DNL Zendesk] アカウントでデータの書き出しが有効になっているわけではありません。 この機能を有効にするには、[&#x200B; のサブドメイン名を示す &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) サポートチケットを送信 [!DNL Zendesk] します。
 
 >[!NOTE]
 >
@@ -38,6 +38,6 @@ ht-degree: 0%
 
    このダウンロードリンクは少なくとも 3 日間有効です。
 
-このプロセスは、チケットデータ（コメント付き）、ユーザーデータ、アカウントデータなど、現在の [!DNL Zendesk] アカウントに保存されているすべての情報を含む XML ファイルを構築します。 この時点で、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) （必ずこのファイルを添付してください）できるので、データを詳しく確認できます。 ファイルが大きすぎる場合は、[!DNL Commerce Intelligence] または [!DNL Dropbox] を使用して [!DNL Google Drive] チームと共有します。
+このプロセスは、チケットデータ（コメント付き）、ユーザーデータ、アカウントデータなど、現在の [!DNL Zendesk] アカウントに保存されているすべての情報を含む XML ファイルを構築します。 この時点で、[&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) （必ずこのファイルを添付してください）できるので、データを詳しく確認できます。 ファイルが大きすぎる場合は、[!DNL Commerce Intelligence] または [!DNL Dropbox] を使用して [!DNL Google Drive] チームと共有します。
 
-ファイルの書き出しについて詳 [!DNL Zendesk] くは、公式の [[!DNL Zendesk]  書き出しドキュメント ](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file) を参照してください。
+ファイルの書き出しについて詳 [!DNL Zendesk] くは、公式の [[!DNL Zendesk]  書き出しドキュメント &#x200B;](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file) を参照してください。

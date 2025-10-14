@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL CJ Affiliate] データの読み込み
 
-データ [!DNL CJ Affiliate (Commission Junction)][!DNL Adobe Commerce Intelligence] に読み込むには、次の手順に従い、結果のファイルを [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) に添付します。 Adobeによってアカウントのデータテーブルが設定され、引き続き個別にデータをアップロードできるようになります。
+データ [!DNL CJ Affiliate (Commission Junction)][!DNL Adobe Commerce Intelligence] に読み込むには、次の手順に従い、結果のファイルを [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) に添付します。 Adobeによってアカウントのデータテーブルが設定され、引き続き個別にデータをアップロードできるようになります。
 
 ## [!DNL CJ Affiliate] データのエクスポート
 
@@ -27,8 +27,8 @@ ht-degree: 0%
 
 1. `File Format` ドロップダウンで「`CSV`」を選択します。  「**[!UICONTROL Download]**」をクリックします。
 
-   ![cj アフィリエイトデータのエクスポート ](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
+   ![cj アフィリエイトデータのエクスポート &#x200B;](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
 
-1. ファイルをダウンロードしたら、[ Data Warehouseに ](../connecting-data/using-file-uploader.md) ファイルをアップロード [!DNL Commerce Intelligence] できます。
+1. ファイルをダウンロードしたら、[&#x200B; Data Warehouseに &#x200B;](../connecting-data/using-file-uploader.md) ファイルをアップロード [!DNL Commerce Intelligence] できます。
 
-   これにより、新しいデータを引き続き定期的にアップロードできるテーブルが [!DNL Commerce Intelligence] Data Warehouseに作成されます。 ファイルをアップロードする場合は、[ ファイルアップローダの使用 ](../connecting-data/using-file-uploader.md) に記載されている書式設定要件に従います。
+   これにより、新しいデータを引き続き定期的にアップロードできるテーブルが [!DNL Commerce Intelligence] Data Warehouseに作成されます。 ファイルをアップロードする場合は、[&#x200B; ファイルアップローダの使用 &#x200B;](../connecting-data/using-file-uploader.md) に記載されている書式設定要件に従います。

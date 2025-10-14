@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ユーザーを削除する前に、保持するグラフがあるかどうかを確認できます。 [!DNL Adobe Commerce Intelligence] サポートは、ユーザーのダッシュボードを共有できるので、必要なもののみを保存できます。 サポートは、すべてのダッシュボードを自分のアカウントにプッシュして、所有権を自分に転送することもできます。 [ お問い合わせ ](../../guide-overview.md#Submitting-a-Support-Ticket) ください。
+>ユーザーを削除する前に、保持するグラフがあるかどうかを確認できます。 [!DNL Adobe Commerce Intelligence] サポートは、ユーザーのダッシュボードを共有できるので、必要なもののみを保存できます。 サポートは、すべてのダッシュボードを自分のアカウントにプッシュして、所有権を自分に転送することもできます。 [&#x200B; お問い合わせ &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket) ください。
 
 ## 削除した [!DNL Commerce Intelligence] ユーザーの再アクティブ化
 
@@ -26,5 +26,5 @@ ht-degree: 0%
 そのユーザーのダッシュボードを別のユーザーのアカウントにプッシュするだけでよい場合は、次の操作を行います。
 
 1. 削除されたユーザーのメールアドレスを使用して、新しい [!DNL Commerce Intelligence] ユーザーを作成します。
-1. ユーザーを作成したら [ サポートに通知 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) します。 サポートにより、ダッシュボードがお使いのアカウントに転送されます。
+1. ユーザーを作成したら [&#x200B; サポートに通知 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) します。 サポートにより、ダッシュボードがお使いのアカウントに転送されます。
 1. Adobe サポートから転送の通知が届いたら、そのユーザーを再度削除できます。

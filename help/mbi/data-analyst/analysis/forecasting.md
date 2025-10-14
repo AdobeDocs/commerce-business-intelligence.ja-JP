@@ -17,4 +17,4 @@ ht-degree: 0%
 
 このセクションでは、現在の顧客のライフタイム値について説明し、注文が増えるにつれてライフタイム値がどのように増加するかを予測します。
 
-[ 期待生涯価値（LTV）分析（基本） ](../../data-analyst/analysis/ess-expected-ltv.md) も参照。
+[&#x200B; 期待生涯価値（LTV）分析（基本） &#x200B;](../../data-analyst/analysis/ess-expected-ltv.md) も参照。

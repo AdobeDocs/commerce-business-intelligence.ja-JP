@@ -20,7 +20,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >アカウントの請求情報を表示、追加、変更するには、`Billing` の権限が必要です。 [ 権限は、ユーザーアカウントの作成時にユーザーごとに設定されます ](../../administrator/user-management/user-management.md)。 `Billing` の権限が必要な場合は、アカウント管理者にお問い合わせください。
+   >アカウントの請求情報を表示、追加、変更するには、`Billing` の権限が必要です。 [&#x200B; 権限は、ユーザーアカウントの作成時にユーザーごとに設定されます &#x200B;](../../administrator/user-management/user-management.md)。 `Billing` の権限が必要な場合は、アカウント管理者にお問い合わせください。
 
 1. 「**[!UICONTROL Save]**」をクリックします。
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->新しいユーザーには、デフォルトではダッシュボードはありません。 Adobeでは、必要なダッシュボードを新しいユーザーとすぐに [ 共有 ](../../data-user/dashboards/share-dashboard-with-users.md) することをお勧めします。
+>新しいユーザーには、デフォルトではダッシュボードはありません。 Adobeでは、必要なダッシュボードを新しいユーザーとすぐに [&#x200B; 共有 &#x200B;](../../data-user/dashboards/share-dashboard-with-users.md) することをお勧めします。
 
 ## メールアドレスまたはパスワードの更新
 
@@ -36,8 +36,8 @@ ht-degree: 0%
 
 ## 招待状の再送信
 
-招待状を再送信する必要がある場合は、[ ログイン ページ ](https://dashboard.rjmetrics.com/v2/session/create) で [**[!UICONTROL Forgot?]**] をクリックし、新しいユーザーの E メール アドレスを入力して [**[!UICONTROL Reset Password]**] をクリックします。 これにより招待が再送信され、ユーザーはログインできるようになります。
+招待状を再送信する必要がある場合は、[&#x200B; ログイン ページ &#x200B;](https://dashboard.rjmetrics.com/v2/session/create) で [**[!UICONTROL Forgot?]**] をクリックし、新しいユーザーの E メール アドレスを入力して [**[!UICONTROL Reset Password]**] をクリックします。 これにより招待が再送信され、ユーザーはログインできるようになります。
 
 >[!IMPORTANT]
 >
->各アカウントには、ライセンス（シート）の契約数があります。 上限に達した場合や、さらに詳しく知りたい場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) してください。
+>各アカウントには、ライセンス（シート）の契約数があります。 上限に達した場合や、さらに詳しく知りたい場合は、[&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) してください。

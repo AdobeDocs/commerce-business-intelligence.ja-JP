@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL Adobe Commerce] データ
 
-[ ストアに接続  [!DNL Adobe Commerce]  した後は、Data Warehouse Manager を使用して、](../../../data-analyst/importing-data/integrations/magento.md) 析のためにCommerce データベースから関連するデータフィールドを簡単に追跡できます。
+[&#x200B; ストアに接続  [!DNL Adobe Commerce]  した後は、Data Warehouse Manager を使用して、](../../../data-analyst/importing-data/integrations/magento.md) 析のためにCommerce データベースから関連するデータフィールドを簡単に追跡できます。
 
 このトピックでは、Commerce ユーザーが [!DNL Commerce Intelligence] に読み込むメインデータテーブルについて説明します。
 
@@ -30,4 +30,4 @@ ht-degree: 0%
 ## 関連
 
 * [接続  [!DNL Adobe Commerce]](../integrations/magento.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

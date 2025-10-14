@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 予期される [!DNL Salesforce] データ
 
-[[!DNL Salesforce]  設定 ](../integrations/salesforce.md) が完了すると、クエリ可能な [ オブジェクト ](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) ごとに `sf_/\{sobject-name}` という名前のテーブルがData Warehouseに作成されます。
+[[!DNL Salesforce]  設定 &#x200B;](../integrations/salesforce.md) が完了すると、クエリ可能な [&#x200B; オブジェクト &#x200B;](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) ごとに `sf_/\{sobject-name}` という名前のテーブルがData Warehouseに作成されます。
 
 >[!NOTE]
 >
 >各テーブルの構造（列）は、オブジェクトに含まれるフィールドに応じて異なります。
 
-組織で使用可能なオブジェクトのリストを取得するには、[!DNL Salesforce] オブジェクトのリストの取得 [ ドキュメント ](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm) を参照してください。 オブジェクトのリストを確認したら、ドキュメントの [ エンティティ関係図（ERD）の節 ](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) を参照し [!DNL Salesforce]、エンティティが相互にどのように関連しているかを確認します。
+組織で使用可能なオブジェクトのリストを取得するには、[!DNL Salesforce] オブジェクトのリストの取得 [&#x200B; ドキュメント &#x200B;](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm) を参照してください。 オブジェクトのリストを確認したら、ドキュメントの [&#x200B; エンティティ関係図（ERD）の節 &#x200B;](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) を参照し [!DNL Salesforce]、エンティティが相互にどのように関連しているかを確認します。
 
 ## サポートされていないオブジェクト
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 * `Announcement`
 * `Attachment`
 * `ContentDocumentLink`
-* `External objects` - [ 外部オブジェクトとは ](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_external_objects.htm)
+* `External objects` - [&#x200B; 外部オブジェクトとは &#x200B;](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_external_objects.htm)
 * `CollaborationGroupRecord`
 * `ContentDocument`
 * `ContentDocumentLink`
@@ -50,4 +50,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続  [!DNL Salesforce]](../integrations/salesforce.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

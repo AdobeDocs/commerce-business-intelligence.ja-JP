@@ -34,4 +34,4 @@ ht-degree: 0%
 
 ## まとめ
 
-テーブルに小さな変更を加えることで、より高速で効率的な増分レプリケーション方式を活用できます。 ただし、これが不可能な場合でも、別の手順を実行して [ 更新時間を短縮 ](../best-practices/reduce-update-cycle-time.md)、[ データベースを最適化 ](../best-practices/opt-db-analysis.md) することができます。
+テーブルに小さな変更を加えることで、より高速で効率的な増分レプリケーション方式を活用できます。 ただし、これが不可能な場合でも、別の手順を実行して [&#x200B; 更新時間を短縮 &#x200B;](../best-practices/reduce-update-cycle-time.md)、[&#x200B; データベースを最適化 &#x200B;](../best-practices/opt-db-analysis.md) することができます。

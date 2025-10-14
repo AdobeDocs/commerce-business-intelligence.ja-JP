@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## このトピック内
 
-* [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
-* [ [!DNL MySQL]  のユ  [!DNL Commerce Intelligence] ザーを作成](#steptwo)
+* [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+* [&#x200B; [!DNL MySQL]  のユ  [!DNL Commerce Intelligence] ザーを作成](#steptwo)
 * [接続情報の入力先  [!DNL Commerce Intelligence]](#stepthree)
 
 ## 移動先
 
-* [[!DNL MySQL] via ](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL] via &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
 * [[!DNL MySQL] via [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
@@ -66,4 +66,4 @@ ht-degree: 0%
 
 ## 関連ドキュメント
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # データのフォーマットとインポート
 
-[!DNL Adobe Commerce Intelligence] で現在サポートされていない統合を使用している場合でも、[ ファイルアップロード機能 ](using-file-uploader.md) を使用してData Warehouseにデータを取り込むことができます。 このトピックでは、e コマースデータのアップロードに使用する理想的なデータ形式について説明します。
+[!DNL Adobe Commerce Intelligence] で現在サポートされていない統合を使用している場合でも、[&#x200B; ファイルアップロード機能 &#x200B;](using-file-uploader.md) を使用してData Warehouseにデータを取り込むことができます。 このトピックでは、e コマースデータのアップロードに使用する理想的なデータ形式について説明します。
 
 ## `Orders` テーブル
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 | `Customer` | 注文を行った顧客。 |
 | `Order total` | 注文の合計。 これは計算ベースの列である可能性があり、小計や出荷などの他の列の値がこの列の合計を構成します。 |
 | `Currency` | 注文の支払いに使用された通貨。 該当する場合は含めます。 |
-| ` Order status` | 注文のステータス（`In Progress`、`Refunded`、`Complete` など）。 この列の値は変更されます（完了していない場合）。 新しいデータや更新されたデータは、[ のページの ](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) データを追加機能 `File Uploads` を使用して読み込むことができます。 |
+| ` Order status` | 注文のステータス（`In Progress`、`Refunded`、`Complete` など）。 この列の値は変更されます（完了していない場合）。 新しいデータや更新されたデータは、[&#x200B; のページの &#x200B;](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) データを追加機能 `File Uploads` を使用して読み込むことができます。 |
 | `Acquisition/marketing channel` | 注文を行った顧客が紹介された獲得またはマーケティングチャネル。 |
 | `Order datetime` | 注文が作成された日時。 |
 | `Order updated at` | 注文レコードに対して最後に変更が加えられた日時。 |

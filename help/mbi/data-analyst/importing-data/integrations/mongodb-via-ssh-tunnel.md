@@ -15,8 +15,8 @@ ht-degree: 0%
 
 SSH トンネルを使用して [!DNL MongoDB] データベースを [!DNL Commerce Intelligence] に接続するには、次の手順を実行する必要があります。
 
-1. [ [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
-1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+1. [&#x200B; [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
+1. [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
 1. [Commerce Intelligence用の Linux ユーザーの作成](#linux)
 1. [Commerce Intelligence用  [!DNL MongoDB]  ユーザーの作成](#mongodb)
 1. [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
@@ -38,7 +38,7 @@ SSH トンネルを使用して [!DNL MongoDB] データベースを [!DNL Comme
 
 少し迷った場合は、[!DNL Commerce Intelligence] を移動してキーを取得する方法を次に示します。
 
-![RJMetrics 公開鍵の取得 ](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
+![RJMetrics 公開鍵の取得 &#x200B;](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
 
 ## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可します {#allowlist}
 
@@ -78,7 +78,7 @@ SSH トンネルを使用して [!DNL MongoDB] データベースを [!DNL Comme
 
 ## [!DNL Commerce Intelligence] [!DNL MongoDB] ユーザーの作成 {#mongodb}
 
-[!DNL MongoDB] サーバーには 2 つの実行モードがあります [1 つは「認証」オプションを使用したもの ](#auth)`(mongod -- auth)` もう 1 つは [ デフォルト ](#default) を使用したもの）。 [!DNL MongoDB] ユーザーを作成する手順は、サーバーで使用しているモードによって異なります。 続行する前に、モードを確認してください。
+[!DNL MongoDB] サーバーには 2 つの実行モードがあります [1 つは「認証」オプションを使用したもの &#x200B;](#auth)`(mongod -- auth)` もう 1 つは [&#x200B; デフォルト &#x200B;](#default) を使用したもの）。 [!DNL MongoDB] ユーザーを作成する手順は、サーバーで使用しているモードによって異なります。 続行する前に、モードを確認してください。
 
 ### サーバーで `Auth` オプションを使用する場合： {#auth}
 
@@ -146,4 +146,4 @@ SSH トンネルを使用して [!DNL MongoDB] データベースを [!DNL Comme
 
 ### 関連
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
