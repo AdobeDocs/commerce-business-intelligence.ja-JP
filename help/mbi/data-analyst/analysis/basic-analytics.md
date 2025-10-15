@@ -88,7 +88,7 @@ ht-degree: 0%
 
 ## マーケティング費用テーブル
 
-マーケティング費用を分析する際に、分析に [!DNL Facebook]、[!DNL Google AdWords] またはその他のソースを含めることができます。 複数のマーケティング費用ソースがある場合は、[Managed Services チーム &#x200B;](https://business.adobe.com/products/magento/fully-managed-service.html) に連絡して、マーケティングキャンペーン用の統合テーブルの設定をサポートしてください。
+マーケティング費用を分析する際に、分析に [!DNL Facebook]、[!DNL Google AdWords] またはその他のソースを含めることができます。 複数のマーケティング費用ソースがある場合は、[Managed Services チーム &#x200B;](https://business.adobe.com/jp/products/magento/fully-managed-service.html) に連絡して、マーケティングキャンペーン用の統合テーブルの設定をサポートしてください。
 
 **寸法**
 

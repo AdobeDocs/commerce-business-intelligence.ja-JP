@@ -64,7 +64,7 @@ ht-degree: 0%
 * サイト訪問数
 * コンバージョン率
 
-[Commerce データエンリッチメントサービス &#x200B;](https://business.adobe.com/products/magento/magento-commerce.html) を使用すると、次の項目に関するレポートを含めることができます。
+[Commerce データエンリッチメントサービス &#x200B;](https://business.adobe.com/jp/products/magento/magento-commerce.html) を使用すると、次の項目に関するレポートを含めることができます。
 
 * 州/地域、年齢、性別ごとのユニーク顧客。
 

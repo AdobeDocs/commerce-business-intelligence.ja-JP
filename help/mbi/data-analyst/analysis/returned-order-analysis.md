@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![&#x200B; 返品率と理由を示す詳細な返品ダッシュボード &#x200B;](../../assets/detailed-returns-dboard.png)
 
-開始する前に、[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) の顧客であり、会社が返品に `enterprise\_rma` テーブルを使用していることを確認する必要があります。
+開始する前に、[Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) の顧客であり、会社が返品に `enterprise\_rma` テーブルを使用していることを確認する必要があります。
 
 この分析には [&#x200B; 高度な計算列 &#x200B;](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
