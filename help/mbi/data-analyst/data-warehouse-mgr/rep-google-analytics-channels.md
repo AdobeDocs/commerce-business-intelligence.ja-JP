@@ -4,9 +4,9 @@ description: 獲得ソースを使用してGoogle Analytics チャネルをレ�
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 | オーガニック検索 | 無給検索エンジンで有機的にランク付けされたトラフィック。 | Medium= `organic` |
 | リファラル | オーガニック検索以外の外部リンクや、ソーシャルネットワーク以外の web サイトから受信したトラフィック。 | Medium= `referral` |
 | ペイド検索 | メディアが「cpc」、「ppc」、または「paidsearch」のいずれかであり、「コンテンツ」に一致しない広告配信ネットワークである UTM トラッキングコードを持つトラフィック。 | Medium = `^(cpc|ppc|paidsearch)$`<br> および Ad Distribution Network ≠ `Content` |
-| ソーシャル | 約 [400 のソーシャルネットワークのいずれかから発生し &#x200B;](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) 広告としてタグ付けされていないリファラルトラフィック。 | ソーシャルSource参照元= `Yes`<br> またはMedium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| ソーシャル | 約 400 のソーシャルネットワークのいずれかから発生し、広告としてタグ付けされていないリファラルトラフィック。 | ソーシャルSource参照元= `Yes`<br> またはMedium = `^(social|social-network|social-media|sm|social network|social media)$` |
 | 電子メール | 「メール」というメディアでタグ付けされたセッションからのトラフィック。 | Mediumの UTM トラッキングコード = `email` |
 | 表示 | メディアがディスプレイまたは cpm である UTM トラッキングコードを持つトラフィック。 また、広告配信ネットワークが「コンテンツ」と一致する AdWords インタラクションも含まれます | Medium = `^(display|cpm|banner)$`<br> または Ad Distribution Network = `Content`<br> および Ad Format ≠ `Text` |
 | その他 | 「cpc」、「ppc」、「cpm」、「cpv」、「cpa」、「cpp」、「アフィリエイト」という媒体でタグ付けされた他の広告チャネル（有料検索を除く）からのセッション。 | Medium= `^(cpv|cpa|cpp|content-text)$` |
@@ -46,25 +46,25 @@ ht-degree: 0%
 
 1. **統合を有効 [!DNL Google ECommerce] する**
 
-   [&#x200B; 有効 &#x200B;](../importing-data/integrations/google-ecommerce.md) にした場合、Data Warehouseで [sync](tour-dwm.md#syncing) **medium** および **source** フィールドが設定されていることを確認します。 これが完了すると、中程度のデータやソースの獲得データがData Warehouseに取り込まれます。
+   [ 有効 ](../importing-data/integrations/google-ecommerce.md) にした場合、Data Warehouseで [sync](tour-dwm.md#syncing) **medium** および **source** フィールドが設定されていることを確認します。 これが完了すると、中程度のデータやソースの獲得データがData Warehouseに取り込まれます。
 
 1. **Googleのチャネルグループ化のマッピングをアップロードする**
 
-   Adobe Commerceが、[&#x200B; ダウンロード &#x200B;](../../assets/ga-channel-mapping.csv) 可能なファイルとしてマッピングされた、デフォルトのグループを含むテーブルを作成します。
+   Adobe Commerceが、[ ダウンロード ](../../assets/ga-channel-mapping.csv) 可能なファイルとしてマッピングされた、デフォルトのグループを含むテーブルを作成します。
 
    [!DNL Google Analytics] pro で独自のチャネルを作成した場合は、ファイルを [!DNL Commerce Intelligence] にアップロードする前に、特定のルールをマッピングテーブルに追加する必要があります。
 
-   ファイルをData Warehouse as a[&#x200B; ファイルのアップロード &#x200B;](../importing-data/connecting-data/using-file-uploader.md) に取り込みます。
+   ファイルをData Warehouse as a[ ファイルのアップロード ](../importing-data/connecting-data/using-file-uploader.md) に取り込みます。
 
-   ![&#x200B; プライマリキーの設定を示すData Warehouse Manager インターフェイス &#x200B;](../../assets/Setting_Primary_Keys.png)
+   ![ プライマリキーの設定を示すData Warehouse Manager インターフェイス ](../../assets/Setting_Primary_Keys.png)
 
 1. **とマッピングファイルのアップロード間 [!DNL Google ECommerce] 関係の確立**
 
-   [!DNL Google ECommerce] とマッピングテーブルの間の関係を確立するには、データアナリストチームに [&#x200B; サポート依頼を送信 &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket) して、このトピックを参照してください。 アナリストが、E コマーステーブルに **チャネル** という新しい計算列を作成します。 **完全な更新サイクルの後**、この列は、`Filter` または `Group by` で使用できるようになります。
+   [!DNL Google ECommerce] とマッピングテーブルの間の関係を確立するには、データアナリストチームに [ サポート依頼を送信 ](../../guide-overview.md#Submitting-a-Support-Ticket) して、このトピックを参照してください。 アナリストが、E コマーステーブルに **チャネル** という新しい計算列を作成します。 **完全な更新サイクルの後**、この列は、`Filter` または `Group by` で使用できるようになります。
 
 これで、Data Warehouseに [!DNL Google Analytics Channel] のグループ化が作成されました。これにより、新しい視点からデータを分析できます。
 
-![&#x200B; 注文数指標のチャネル別のセグメント化 &#x200B;](../../assets/GA_Channel_Gif.gif)
+![ 注文数指標のチャネル別のセグメント化 ](../../assets/GA_Channel_Gif.gif)
 
 この例では、**注文数** 指標を **チャネル** でセグメント化して単純な作業を開始しました。 新しい列をテストし、[!DNL Google Analytics Channel] データで特定できるトレンドを確認します。
 
