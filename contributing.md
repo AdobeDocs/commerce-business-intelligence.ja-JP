@@ -1,46 +1,110 @@
 ---
-source-git-commit: 84182bc922e95cf066675af936add7ca7b82bfae
+source-git-commit: fe7b2cf347298a9b288df11868df538ef26f93d6
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 22%
+source-wordcount: '577'
+ht-degree: 1%
 
 ---
 # 貢献
 
-投稿いただきありがとうございます。
+ご協力いただきありがとうございます。
 
-このプロジェクトに貢献する際に従う一連のガイドラインを次に示します。
+このプロジェクトに投稿する際のガイドラインを次に示します。
 
 ## 行動規範
 
-このプロジェクトはアドビ[行動規範](../code-of-conduct.md)を遵守しています。参加することにより、この行動規範を遵守することが期待されます。容認できない行為は次の場合に報告してください：
-[Grp-opensourceoffice@adobe.com](../mailto:Grp-opensourceoffice@adobe.com).
+このプロジェクトはアドビ[行動規範](code-of-conduct.md)を遵守しています。参加することにより、
+この行動規範を遵守することが求められます。 受け入れがたい行動を見かけた場合は
+[Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com)。
 
-## 寄稿者ガイドドキュメント
+## 投稿者ガイドドキュメント
 
-詳しくは、 [寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja).
+詳しくは、[ 投稿者ガイド ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) を参照してください。
 
 ## 質問がある場合
 
-まず、イシューを入力します。 このプロジェクトの既存のコミッターは、（必要に応じて）問題スレッド内のプロジェクトの方向性と問題の解決策に関して合意に達するよう取り組みます。
+まず、イシューを入力します。 このプロジェクトの既存のコミッターは、次の項目に到達するよう取り組みます
+イシュースレッド内のプロジェクトの方向性とイシューの解決策に関する合意
+（該当する場合）。
 
-## 寄稿者使用許諾契約
+## コントリビューター使用許諾契約
 
-このプロジェクトに対するサードパーティの投稿には、署名済みの投稿者使用許諾契約が含まれている必要があります。 これにより、アドビの権限をプロジェクトの一部として再配布する権限が付与されます。[アドビの CLA に署名する](http://opensource.adobe.com/cla.html). AdobeCLA は 1 回だけ送信する必要があるので、以前に送信したことがある場合は、先へ進むことができます。
+このプロジェクトへのサードパーティ投稿者には、署名済みの投稿者が関連付けられている必要があります
+使用許諾契約。 これにより、Adobeに投稿を再配布する権限が付与されます
+プロジェクトの一環として。 [ アドビの CLA に署名してください ](https://opensource.adobe.com/cla.html)。 あなた
+Adobe CLA の送信は 1 回だけでかまいません。したがって、以前に送信したことがある場合は、
+行ってもよろしい。
 
 ## コードレビュー
 
-すべての送信は、プルリクエスト形式でおこなわれ、プロジェクト承諾者のレビューを受ける必要があります。プルリクエストの送信について詳しくは、[GitHub のプルリクエストドキュメント](https://help.github.com/ja/github/collaborating-with-issues-and-pull-requests/about-pull-requests)をお読みください。
+すべての送信は、プルリクエスト形式でおこなわれ、レビューする必要があります
+プロジェクト コミッター別 [GitHub のプルリクエストドキュメントをお読みください ](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+プルリクエストの送信に関する詳細情報。
 
-<!--
-Lastly, please follow the [pull request template](../PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+最後に、次の場合は [ プルリクエストテンプレート ](PULL_REQUEST_TEMPLATE.md) に従ってください
+プルリクエストを送信しています！
 
-## 寄稿者からコミッターへ
+## 投稿者からコミッターへ
 
-アドビはコミュニティからの投稿を歓迎しています。 投稿者から一歩進んで、プロジェクトでの完全な書き込みアクセス権と発言権を持つコミッターになりたい場合は、プロジェクトに招待される必要があります。 既存のコミッターは、招待が発行される前に、内部の指名プロセスで、Lazy Consensus（沈黙は承認）に到達する必要があります。 自分に資格があり、さらに深く関わりたいと思われる方は、自由に既存のコミッターに連絡して、それに関する会話をしてください。
+アドビはコミュニティからの投稿を歓迎しています。 コントリビューターから一歩進みたい場合
+そして、プロジェクトにおける完全な書き込みアクセス権と発言権を持つコミッターになる必要があります
+プロジェクトに招待される。 既存のコミッターは、内部ノミネーションを採用しています
+招待状の前に怠惰なコンセンサス（沈黙は承認）に到達しなければならないプロセス
+が発行されました。 自分に適性があり、さらに深く関わりたいと思われるなら、
+自由に既存のコミッターに連絡して、それについて話し合ってください。
 
 ## セキュリティ上の問題
 
-セキュリティ上の問題は、この問題トラッカーで報告しないでください。 代わりに、 [セキュリティの専門家に問題を提起する](https://helpx.adobe.com/jp/security/alertus.html)
+セキュリティ上の問題は、このイシュートラッカーでは報告しないでください。 代わりに、[ セキュリティの専門家に問題を提起してください ](https://helpx.adobe.com/security/alertus.html)。
+
+## 新機能
+
+変更によって、強調表示する必要のある新しいトピック、重要な更新、修正が導入された場合は、プルリクエストの本文から [ 新機能 ](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) のセクションに簡単な説明を追加できます。
+
+新機能のハイライトを追加するには：
+
+1. `whatsnew` タグと適切な説明を、最後にプルリクエスト本文に含めます。 説明には、変更に関するコンテキストと、ターゲットのトピックまたはトピックへのリンクを指定する必要があります。 次の形式を使用します（コードブロックの引用符は表示専用であり、プルリクエスト本文に含めないでください）。
+
+   ```text
+   whatsnew
+   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/target-topic.html).
+   ```
+
+   または、複数のトピックがある場合は、次の操作を行います。
+
+   ```text
+   whatsnew
+   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/third-target-topic.html).
+   ```
+
+   複数のハイライトにリストを使用することもできます。
+
+   ```text
+   whatsnew
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/second-topic.html).
+   ```
+
+   ```text
+   whatsnew
+   The following changes were made to the documentation:
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/second-topic.html).
+   ```
+
+1. 変更のタイプを示す、サポートされるラベルを追加します。 サポートされているラベルには、変更のタイプごとに次のようなラベルが含まれています。
+
+   - `new-topic` – 新しいトピック用
+   - `major-update` - コンテンツ、構造、機能に大幅な変更を含む可能性のある大規模な更新の場合
+   - `technical` - メジャーアップデートとは見なされないが、注意が必要な技術的な変更
+
+   オプションで、変更範囲のラベル（例：）
+
+   - `qpt` - Quality Patch Tool に関連する変更
+
+**重要：**
+
+1. `whatsnew` 部は、`whatsnew` タグから始めて、プルリクエスト本文の最後になければなりません。
+1. 変更の説明には、作業リンクを含める必要があります。 リンクが正しいことを確認し、目的のトピックに導いてください。 トピックが新規の場合は、プルリクエストを結合して新しいトピックを公開した後、リンクが機能していることを確認します。 プルリクエストが結合された後は、リンクを修正しても問題ありません。
+
+その他の例については、リポジトリ内でクローズドなプルリクエストを検索して既存のハイライトの書式を確認し、[ 新機能 ](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) の節と比較して、ドキュメントにどのように表示されるかを確認してください。
