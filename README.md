@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # アーカイブ済み
 
-このリポジトリは <https://github.com/Adobe-Enterprise-Docs/commerce-business-intelligence.en> に移行されました。
+このリポジトリは <https://github.com/Adobe-Enterprise-Docs/commerce-business-intelligence.ja-JP> に移行されました。
