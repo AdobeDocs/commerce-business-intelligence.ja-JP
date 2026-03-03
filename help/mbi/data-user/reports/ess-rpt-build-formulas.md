@@ -2,9 +2,9 @@
 title: 数式
 description: 数式の使用方法を説明します。
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 数式は、複数の指標と数学的ロジックを組み合わせて、質問に回答します。 例えば、ホリデーシーズンの製品あたりの売上高のうち、新規顧客によって生み出されたものはどれくらいですか。
 
-![&#x200B; ダッシュボードでのホリデーセールス &#x200B;](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
+![ ダッシュボードでのホリデーセールス ](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## 手順 1：基本レポートの作成
 
@@ -31,11 +31,11 @@ ht-degree: 0%
 
 1. サイドバーで「**[!UICONTROL Details]**」をクリックすると、各指標に関する情報が表示されます。
 
-   ![&#x200B; 注文済製品ごとの売上高 &#x200B;](../../assets/magento-bi-report-builder-revenue-by-products.png)
+   ![ 注文済製品ごとの売上高 ](../../assets/magento-bi-report-builder-revenue-by-products.png)
 
 1. サイドバーで、各指標の名前をクリックして、設定ページを新しいブラウザータブで開きます。 下にスクロールして、指標クエリ、フィルター、ディメンションなど、指標の各コンポーネントを表示します。
 
-   ![&#x200B; 指標設定 &#x200B;](../../assets/magento-bi-report-builder-revenue-by-products-metric-detail.png)
+   ![ 指標設定 ](../../assets/magento-bi-report-builder-revenue-by-products-metric-detail.png)
 
 1. レポートに戻るには、[ 前のブラウザ ] タブをクリックします。
 
@@ -57,13 +57,13 @@ ht-degree: 0%
 
    * サイドバーで、`Untitled` を式の名前に置き換えます。
 
-   ![&#x200B; 数式設定 &#x200B;](../../assets/magento-bi-report-builder-revenue-by-products-add-formula-detail.png)
+   ![ 数式設定 ](../../assets/magento-bi-report-builder-revenue-by-products-add-formula-detail.png)
 
 1. 完了したら、「**[!UICONTROL Apply]**」をクリックします。
 
    レポートには、式、`New Customer Revenue` の新しい行が表示され、サイドバーには、新規顧客によって生み出された収益の合計金額が表示されます。
 
-   ![&#x200B; 式を使用したレポート &#x200B;](../../assets/magento-bi-report-builder-revenue-by-products-formula-report.png)
+   ![ 式を使用したレポート ](../../assets/magento-bi-report-builder-revenue-by-products-formula-report.png)
 
 ## 手順 3：日付範囲の追加
 
@@ -77,13 +77,13 @@ ht-degree: 0%
 
    * 「`Select Time Interval`」で、「`Day`」を選択します。
 
-     ![&#x200B; 固定日付範囲 &#x200B;](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
+     ![ 固定日付範囲 ](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
    * 完了したら、「**[!UICONTROL Apply]**」をクリックします。
 
    レポートは現在、ホリデーシーズンに限定され、各日のデータポイントが含まれます。
 
-   ![&#x200B; 固定日付範囲 &#x200B;](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range-report.png)
+   ![ 固定日付範囲 ](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range-report.png)
 
 ## 手順 4：レポートを保存する
 

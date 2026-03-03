@@ -2,9 +2,9 @@
 title: Connect Microsoft SQL Server
 description: Microsoft SQL データベースをに 4 つの手順で接続  [!DNL Commerce Intelligence]  る方法を説明します。
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![Microsoft SQL Server ロゴ &#x200B;](../../../assets/MicrosoftSQLServer-logo.png)
+![Microsoft SQL Server ロゴ ](../../../assets/MicrosoftSQLServer-logo.png)
 
 このトピックでは、[!DNL Microsoft SQL] データベースを [!DNL Commerce Intelligence] に接続する方法を 4 段階で説明します。 このプロセスには、サーバー接続と SQL に関連する技術的な専門知識が必要であり、チームの開発者のサポートが必要になる場合があります。
 
-[!DNL Commerce Intelligence] は、[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure] およびその他のほとんどのクラウドサーバープロバイダーをサポートしています。 特定のホストに関するご質問については、[&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)、この情報の提供をアドビに依頼してください。
+[!DNL Commerce Intelligence] は、[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure] およびその他のほとんどのクラウドサーバープロバイダーをサポートしています。 特定のホストに関するご質問については、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)、この情報の提供をアドビに依頼してください。
 
 システムは、データベースに対して SELECT クエリを実行する必要があります。 この処理は、最初はデータベース構造のスナップショットを取得するために行われ、その後、定期的に残業してデータを最新の状態に保ちます。 更新は増分更新なので、Adobeでは、更新の頻度と時間を制限して、サーバーに不要な負荷がかかるのを防ぎます。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 1. [!DNL Commerce Intelligence] の下の **[!UICONTROL Manage Data** > **Connections]** に、サーバーの IP アドレス、ユーザー名およびパスワードを入力します。
 
-   ![&#x200B; データベース統合を示すデータ接続の管理ページ &#x200B;](../../../assets/manage-data-connections.png)
+   ![ データベース統合を示すデータ接続の管理ページ ](../../../assets/manage-data-connections.png)
 
 1. 「**[!UICONTROL Add a Data Source]**」をクリックします。
 

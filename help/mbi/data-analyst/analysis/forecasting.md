@@ -2,9 +2,9 @@
 title: 予測
 description: 予測
 exl-id: 61e0516a-941c-4e32-b051-6ff664962198
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%
@@ -17,4 +17,4 @@ ht-degree: 0%
 
 このセクションでは、現在の顧客のライフタイム値について説明し、注文が増えるにつれてライフタイム値がどのように増加するかを予測します。
 
-[&#x200B; 期待生涯価値（LTV）分析（基本） &#x200B;](../../data-analyst/analysis/ess-expected-ltv.md) も参照。
+[ 期待生涯価値（LTV）分析（基本） ](../../data-analyst/analysis/ess-expected-ltv.md) も参照。

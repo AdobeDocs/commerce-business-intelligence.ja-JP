@@ -2,9 +2,9 @@
 title: 環境  [!DNL Commerce Intelligence]  把握
 description: 環境での作業と改善について説明  [!DNL Commerce Intelligence]  ます。
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Commerce Intelligence] 環境
 
-コマースデータを分析する際は、これらの要因と一般的な誤解に注意してください。 Commerce スキーマを正しく使用していることを確認するためにサポートが必要な場合は、ためらわずに [&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+コマースデータを分析する際は、これらの要因と一般的な誤解に注意してください。 Commerce スキーマを正しく使用していることを確認するためにサポートが必要な場合は、ためらわずに [ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## [!DNL entity\_id]
 

@@ -2,9 +2,9 @@
 title: データ移行サービス
 description: リクエストを送信し、移行を開始するために必要なものをすべて説明します。
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # データ移行
 
-新しいデータベーススキーマ、サーバーまたはレポートデータベースへの移行は、ストレスを感じることなく行えます。 [[!DNL Adobe]  サービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) が移行の支援を提供します。
+新しいデータベーススキーマ、サーバーまたはレポートデータベースへの移行は、ストレスを感じることなく行えます。 [[!DNL Adobe]  サービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) が移行の支援を提供します。
 
 移行をできる限りスムーズに行うには、移行リクエストを送信する際に、できるだけ詳しく説明する必要があります。 このトピックには、リクエストを送信し、移行を開始するために必要なすべてが含まれています。 お客様のニーズを包括的に把握することで、プロジェクトの範囲が適切に設定され、見積もりが正確になることを保証します。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 次に例を示します。
 
-![&#x200B; データベーススキーマとテーブル構造を含む移行スプレッドシートテンプレート &#x200B;](../../../assets/Migration_Spreadsheet.png)
+![ データベーススキーマとテーブル構造を含む移行スプレッドシートテンプレート ](../../../assets/Migration_Spreadsheet.png)
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## リクエストを送信するにはどうすればよいですか？ {#submitreq}
 
-[&#x200B; サポートリクエストを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) いただくことで、当社にご連絡いただけます。
+[ サポートリクエストを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) いただくことで、当社にご連絡いただけます。
 
 列に一致するスプレッドシートの作成について前の節の手順に従っている場合は、必ず添付してください。
 

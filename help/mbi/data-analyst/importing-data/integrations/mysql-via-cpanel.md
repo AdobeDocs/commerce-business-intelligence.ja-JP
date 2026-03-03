@@ -2,9 +2,9 @@
 title: cPanel を介した MySQL の接続
 description: cPanel を使用して MySQL に接続する方法を説明します。
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL MySQL] 経由で [!DNL cPanel] に接続
 
-* [&#x200B; [!DNL Commerce Intelligence] [!DNL MySQL] での  [!DNL cPanel] ユーザーの作成](#cpanel)
+* [ [!DNL Commerce Intelligence] [!DNL MySQL] での  [!DNL cPanel] ユーザーの作成](#cpanel)
 * [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
 
 ## 移動先
@@ -38,7 +38,7 @@ ht-degree: 0%
 1. 「**[!UICONTROL [!DNL MySQL] Databases]**」セクションの「`Database`」をクリックします。
 1. `Add New User` のセクションまでスクロールし、[!DNL Commerce Intelligence] のユーザーを作成します。
 
-   ![&#x200B; 作成ユーザーフォームを示す cPanel MySQL データベースインターフェイス &#x200B;](../../../assets/create-mbi-mysql-user-cpanel.png)
+   ![ 作成ユーザーフォームを示す cPanel MySQL データベースインターフェイス ](../../../assets/create-mbi-mysql-user-cpanel.png)
 
 1. 「**[!UICONTROL Create User]**」をクリックします。
 1. ユーザーを作成したので、次はデータベースに関連付ける必要があります。 `Add New User` のセクションに戻ります – `Add User to Database?` の設定を参照してくださいそれが必要なものです。
@@ -62,11 +62,11 @@ ht-degree: 0%
 
 * `Connection Type`：これを `SSH Tunnel` に設定
 * `Remote Address`: トンネル先のサーバー [!DNL Commerce Intelligence] の IP アドレスまたはホスト名
-* `Username`:[!DNL Commerce Intelligence] `SSH (Linux)` ユーザーのユーザー名。[&#x200B; 手順 &#x200B;](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) まだの場合は、その方法）を参照してください
+* `Username`:[!DNL Commerce Intelligence] `SSH (Linux)` ユーザーのユーザー名。[ 手順 ](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) まだの場合は、その方法）を参照してください
 * `SSH Port`：サーバーの SSH ポート（デフォルトでは `22`）
 
 完了したら、「**[!UICONTROL Save & Test]**」をクリックして設定を完了します。
 
 ## 関連：
 
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

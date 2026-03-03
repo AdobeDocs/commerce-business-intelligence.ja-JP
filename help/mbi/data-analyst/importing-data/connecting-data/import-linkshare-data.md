@@ -2,9 +2,9 @@
 title: リンク共有データの読み込み
 description: Linkshare データの  [!DNL Commerce Intelligence] への読み込みについて説明します。
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Linkshare] データを [!DNL Adobe Commerce Intelligence] に取り込むには、次の 2 つの操作が必要です。
 
-1. [でのリンク共有データのエクスポート &#x200B;](#export)
+1. [でのリンク共有データのエクスポート ](#export)
 1. [スプレッドシートをにアップロードします  [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Linkshare からのデータのエクスポート {#export}
@@ -40,4 +40,4 @@ ht-degree: 0%
 
    この時点で、`.csv` ファイルがダウンロードされました。
 
-ファイルをダウンロードしたら、[!DNL Commerce Intelligence] 機能を使用して [`File Upload` にアップロードでき &#x200B;](../connecting-data/using-file-uploader.md) す。
+ファイルをダウンロードしたら、[!DNL Commerce Intelligence] 機能を使用して [`File Upload` にアップロードでき ](../connecting-data/using-file-uploader.md) す。

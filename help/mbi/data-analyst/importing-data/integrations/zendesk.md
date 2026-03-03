@@ -2,9 +2,9 @@
 title: Zendesk に接続
 description: ' [!DNL Commerce Intelligence] でヘルプデスクレポートを統合する方法を説明します。'
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![Zendesk ロゴ &#x200B;](../../../assets/Zendesk_logo.png)
+![Zendesk ロゴ ](../../../assets/Zendesk_logo.png)
 
 [!DNL Zendesk] データを接続すると、[!DNL Commerce Intelligence] でヘルプ デスク レポートを統合できます。 これにより、カスタマーサポートを最適化し、売上高と共にヘルプデスクのパフォーマンスを監視できます。
 
 [!DNL Zendesk] データの接続は、簡単な 3 ステップのプロセスで行うことができます。
 
-1. [&#x200B; [!DNL Zendesk]  の場所で  [!DNL Commerce Intelligence]credentials ページを開きます。](#stepone)
+1. [ [!DNL Zendesk]  の場所で  [!DNL Commerce Intelligence]credentials ページを開きます。](#stepone)
 1. [API トークン  [!DNL Zendesk]  取得](#steptwo)
 1. [ログイン情報  [!DNL Zendesk]  トークンを  [!DNL Commerce Intelligence] に入力します。](#stepthree)
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## [!DNL Zendesk] の [!DNL Commerce Intelligence] 資格情報ページを開きます。 {#stepone}
 
-1. `Integrations` データソース **[!UICONTROL Manage Data** > **/**&#x200B;統合 **の下の]** ページに移動します。
+1. `Integrations` データソース **[!UICONTROL Manage Data** > **/**統合 **の下の]** ページに移動します。
 1. 画面の右側にある「**[!UICONTROL Add Integration]**」をクリックします。
 1. [!DNL Zendesk] アイコンをクリックします。 これにより、[!DNL Zendesk] 資格情報ページが開きます。
 
@@ -54,4 +54,4 @@ ht-degree: 0%
 ## 関連：
 
 * [Expected [!DNL Zendesk] data](../integrations/exp-zendesk-data.md)
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

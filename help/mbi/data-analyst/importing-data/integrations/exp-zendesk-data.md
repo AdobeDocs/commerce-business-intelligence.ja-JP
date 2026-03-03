@@ -2,9 +2,9 @@
 title: Zendesk に必要なデータ
 description: Zendesk データに関する追加ドキュメントへのリンクなど、Zendesk からCommerce Intelligenceに読み込むことができるメインデータテーブルについて説明します。
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL Zendesk] データ
 
-[&#x200B; アカウントに接続  [!DNL Zendesk]  た &#x200B;](../integrations/zendesk.md) 後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。
+[ アカウントに接続  [!DNL Zendesk]  た ](../integrations/zendesk.md) 後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。
 
 このトピックでは、[!DNL Zendesk] から [!DNL Adobe Commerce Intelligence] に読み込むことができるメインのデータテーブルについて説明します。これには、データに関する追加ドキュメントへのリンク [!DNL Zendesk] 含まれます。
 
@@ -35,4 +35,4 @@ ht-degree: 0%
 ## 関連
 
 * [Zendesk への接続](../integrations/zendesk.md)
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

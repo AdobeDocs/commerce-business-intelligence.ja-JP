@@ -2,9 +2,9 @@
 title: Google Analyticsをウェアハウジングに接続
 description: 訪問者によるサイトの使用方法、魅力的なコンテンツ、訪問者が離脱する場所などをトラッキングする方法を説明します。
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![Google Analytics ロゴ &#x200B;](../../../assets/google-analytics-logo.png)
+![Google Analytics ロゴ ](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics] は、インターネット上で最も広く使用されている web 分析サービスです。 Web サイトに [!DNL Google Analytics] を実装すると、訪問者によるサイトの使用方法、魅力的なコンテンツ、訪問者が離脱する場所などを追跡できます。 [!DNL Google Analytics Warehoused] は、既存の [!DNL Google Analytics] 統合とは別の統合です。 これにより、既存の [!DNL Google Analytics] 統合のライブフィードとは異なり、Data Warehouseに [!DNL Google Analytics] のデータが含まれるので、分析の精度が向上します。 これらの指標を [!DNL Commerce Intelligence] で分析すると、他のデータと共に、サイトの全体的な正常性と操作性が向上します。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] は `Premium` 統合です。 この統合をサブスクリプションに追加することに関心がある場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+>[!DNL Google Analytics Warehoused] は `Premium` 統合です。 この統合をサブスクリプションに追加することに関心がある場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 1. `Connections` の下の **[!UICONTROL Admin** > **Integrations]** ページに移動します。
 1. 右側にある「**[!UICONTROL Add an Integration]**」をクリックします。
@@ -57,13 +57,13 @@ ht-degree: 0%
 
 ## [!DNL Google Analytics Warehoused] を [!DNL Commerce Intelligence] から切断しています {#disconnect}
 
-1. [!DNL Google Analytics] の [&#x200B; アカウント設定 &#x200B;](https://myaccount.google.com/intro) ページにアクセスします。
+1. [!DNL Google Analytics] の [ アカウント設定 ](https://myaccount.google.com/intro) ページにアクセスします。
 1. 「`Security`」セクションで、「アプリケーションとサイト」の横にある「**[!UICONTROL edit]**」 `Authorizing` クリックします。
 1. 「**[!UICONTROL revoke access]**」の横にある「[!DNL Commerce Intelligence]」をクリックします。
 
 ## 関連ドキュメント
 
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [接続  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Web サイトのアクティビティと顧客コンバージョン率の分析](../../analysis/web-act-cust-conversion.md)
 * [cookie を使用したユーザー取得デ  [!DNL Google Analytics]  タの追跡](../../analysis/google-track-user-acq.md)

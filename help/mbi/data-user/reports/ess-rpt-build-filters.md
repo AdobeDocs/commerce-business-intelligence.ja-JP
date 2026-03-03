@@ -2,9 +2,9 @@
 title: フィルター
 description: フィルターの使用方法を説明します。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -27,44 +27,44 @@ ht-degree: 0%
 
    このレポートでは、各データポイントはその月の顧客の合計数を示します。
 
-1. 左側のパネルで、フィルター（![&#x200B; フィルターアイコン &#x200B;](../../assets/magento-bi-btn-filter.png)）アイコンをクリックします。
+1. 左側のパネルで、フィルター（![ フィルターアイコン ](../../assets/magento-bi-btn-filter.png)）アイコンをクリックします。
 
-   ![&#x200B; フィルターを追加 &#x200B;](../../assets/magento-bi-report-builder-filter-add.png)
+   ![ フィルターを追加 ](../../assets/magento-bi-report-builder-filter-add.png)
 
 1. 「**[!UICONTROL Add Filter]**」をクリックします。
 
    フィルターにはアルファベット順に番号が付けられ、最初のフィルターは `[A]` です。 フィルターの最初の 2 つの部分はドロップダウンオプションで、3 番目の部分は値です。
 
-   ![&#x200B; フィルターの追加オプションを表示するフィルターインターフェイス &#x200B;](../../assets/magento-bi-report-builder-filter-add-a.png)
+   ![ フィルターの追加オプションを表示するフィルターインターフェイス ](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * フィルターの最初の部分をクリックし、式の件名として使用する列を選択します。
 
-     ![&#x200B; フィルターの最初の部分を選択 &#x200B;](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![ フィルターの最初の部分を選択 ](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * フィルターの 2 番目の部分をクリックし、演算子を選択します。
 
-     ![&#x200B; 演算子の選択 &#x200B;](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![ 演算子の選択 ](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * フィルターの 3 番目の部分で、式を完成させるために必要な値を入力します。
 
-     ![&#x200B; 値を入力 &#x200B;](../../assets/magento-bi-report-builder-filter-part3.png)
+     ![ 値を入力 ](../../assets/magento-bi-report-builder-filter-part3.png)
 
    * フィルターが完了したら、「**[!UICONTROL Apply]**」をクリックします。
 
      レポートにはリピート顧客のみが含まれるようになり、レポート用に取得された顧客レコードの数が 33,000 から 12,600 に減りました。
 
-     ![&#x200B; フィルター済み報告書 &#x200B;](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![ フィルター済み報告書 ](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
-1. サイドバーで、遠近法（![&#x200B; 遠近法アイコン &#x200B;](../../assets/magento-bi-btn-perspective.png)）アイコンをクリックします。
+1. サイドバーで、遠近法（![ 遠近法アイコン ](../../assets/magento-bi-btn-perspective.png)）アイコンをクリックします。
 
-   ![&#x200B; 分析観点 &#x200B;](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
+   ![ 分析観点 ](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
 
 1. 設定のリストで、「`Cumulative`」を選択します。 次に、「**[!UICONTROL Apply]**」をクリックします。
 
-   ![&#x200B; 累積的な視点 &#x200B;](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
+   ![ 累積的な視点 ](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
 
    `Cumulative` パースペクティブでは、各月のギザギザした上下を表示するのではなく、時間の経過に伴う変化が分配されます。
 
 1. レポートの `Title` を入力し、ダッシュボードの **[!UICONTROL Save]** として `Chart` をクリックします。
 
-   ![&#x200B; ダッシュボードに保存 &#x200B;](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)
+   ![ ダッシュボードに保存 ](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

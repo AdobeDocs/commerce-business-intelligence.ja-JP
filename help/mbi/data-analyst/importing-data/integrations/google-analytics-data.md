@@ -2,9 +2,9 @@
 title: 予想されるGoogle Analytics データ
 description: Google Analytics指標の操作方法を説明します。
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -23,11 +23,11 @@ ht-degree: 0%
 >
 >2023 年 7 月 1 日（PT）をもって、標準の Universal Analytics （[!DNL Google Analytics] 3）プロパティでデータが処理されなくなります。 2023 年 7 月 1 日（PT）以降の期間、ユニバーサルアナリティクスレポートを表示できるようになります。 ただし、新しいデータは [!DNL Google Analytics]4 つのプロパティにのみ送られます。
 
-[!DNL Google Analytics] の [!DNL Commerce Intelligence] 統合では、[!DNL Google Analytics] [&#x200B; コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用し、次の指標とディメンションをサポートしています。
+[!DNL Google Analytics] の [!DNL Commerce Intelligence] 統合では、[!DNL Google Analytics] [ コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用し、次の指標とディメンションをサポートしています。
 
 >[!NOTE]
 >
->予期しない結果や感覚的でない結果を避けるために、使用するディメンションが、`Report Builder` で使用する 1 つ以上の指標と互換性があることを確認します。 [&#x200B; こちら &#x200B;](https://ga-dev-tools.google/dimensions-metrics-explorer/) をご確認ください。
+>予期しない結果や感覚的でない結果を避けるために、使用するディメンションが、`Report Builder` で使用する 1 つ以上の指標と互換性があることを確認します。 [ こちら ](https://ga-dev-tools.google/dimensions-metrics-explorer/) をご確認ください。
 
 ## サポートされる指標
 
@@ -156,12 +156,12 @@ ht-degree: 0%
 
 +++サポートされる指標およびディメンション（Google Analytics 4）
 
-[!DNL Google Analytics] の [!DNL Commerce Intelligence] 統合では、[!DNL Google Analytics] [Data API v1 （GA4） &#x200B;](https://developers.google.com/analytics/devguides/reporting/data/v1) を使用します。
+[!DNL Google Analytics] の [!DNL Commerce Intelligence] 統合では、[!DNL Google Analytics] [Data API v1 （GA4） ](https://developers.google.com/analytics/devguides/reporting/data/v1) を使用します。
 
 >[!NOTE]
 >
 > Commerce Intelligenceでは、`cohort`、`cohortNthDay`、`cohortNthMonth`、`cohortNthWeek` のディメンションはサポートされていません。
 >
->予期しない結果や感覚的でない結果を避けるために、使用するディメンションが、`Visual Report Builder` で使用する 1 つ以上の指標と互換性があることを確認します。 [GA4 ディメンションおよび指標エクスプローラー &#x200B;](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/) を確認できます。
+>予期しない結果や感覚的でない結果を避けるために、使用するディメンションが、`Visual Report Builder` で使用する 1 つ以上の指標と互換性があることを確認します。 [GA4 ディメンションおよび指標エクスプローラー ](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/) を確認できます。
 
 +++

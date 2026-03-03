@@ -2,9 +2,9 @@
 title: 生データの書き出し
 description: ' [!DNL Commerce Intelligence]  ダッシュボードからレコードをエクスポートして、Data Warehouseの機能を詳しく確認する方法を説明します。'
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 生データの書き出し
 
-生データの書き出しを使用すると、ダッシュボードからレコードを書き出して、Data Warehouseの機能を詳しく確認できます。 また、生データの書き出しは、[&#x200B; データの不一致をピンポイントで特定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=ja) するのに役立ちます。
+生データの書き出しを使用すると、ダッシュボードからレコードを書き出して、Data Warehouseの機能を詳しく確認できます。 また、生データの書き出しは、[ データの不一致をピンポイントで特定 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) するのに役立ちます。
 
 生データの書き出しでは、関連指標の正規化の解除と事前集計によって生成された追加の列とディメンションにアクセスできます。 例えば、`User's first order date` は [!DNL Commerce Intelligence] の各ユーザーに対して書き出すことができるディメンションですが、データベースでは使用できない場合があります。
 
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 ### 「[!UICONTROL Manage Data]」タブのテーブルレベルでのエクスポート
 
-[!UICONTROL Manage Data] のタブからテーブルを書き出すには、[&#x200B; 管理者 &#x200B;](../administrator/user-management/user-management.md) 権限が必要です。
+[!UICONTROL Manage Data] のタブからテーブルを書き出すには、[ 管理者 ](../administrator/user-management/user-management.md) 権限が必要です。
 
-1. **[!UICONTROL Manage Data** > **&#x200B; データの書き出し &#x200B;**/**生データの書き出し]** をクリックします。
+1. **[!UICONTROL Manage Data** > ** データの書き出し **/**生データの書き出し]** をクリックします。
 1. 最近作成したデータ書き出しが存在する場合は、その `Export List` が表示されます。 「**[!UICONTROL Add Export]**」をクリックして、書き出しを作成します。
 1. `New Raw Data Export` ダイアログが表示されます。 ここでは、列とフィルターを選択または選択解除して、書き出しをカスタマイズできます。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 プロセス全体をチャートレベルで見てみましょう。
 
-![&#x200B; グラフから生データを書き出すアニメーションのデモ &#x200B;](../assets/Chart-level_export.gif)
+![ グラフから生データを書き出すアニメーションのデモ ](../assets/Chart-level_export.gif)
 
 ## 手順 2：エクスポートのダウンロード {#download}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 書き出しの準備ができているかどうかを確認するには、画面の右上隅にある「**[!UICONTROL Raw Data Exports]**」をクリックします。 「**[!UICONTROL Download]**」をクリックして、書き出しの zip フ `.csv` ールド ファイルをダウンロードします。
 
-![&#x200B; 書き出した CSV ファイルのダウンロードに関するアニメーションによるデモ &#x200B;](../assets/Downloading_export.gif)
+![ 書き出した CSV ファイルのダウンロードに関するアニメーションによるデモ ](../assets/Downloading_export.gif)
 
 ## 手順 3：履歴エクスポートへのアクセス {#historical}
 

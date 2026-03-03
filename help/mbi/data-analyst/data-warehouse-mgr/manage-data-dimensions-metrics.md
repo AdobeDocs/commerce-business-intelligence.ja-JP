@@ -2,9 +2,9 @@
 title: データディメンションの管理
 description: ディメンションとは何かを説明し、指標に基づいてグラフをフィルタリングしたりセグメント化したりするために使用できます。
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[&#x200B; 管理者権限 &#x200B;](../../administrator/user-management/user-management.md) が必要です。
+>[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
 
 ディメンションとは、指標と同じテーブル内のフィールドであり、その指標に基づいてグラフをフィルタリングまたはセグメント化するために使用できます。 例えば、売上高指標には、市区町村、都道府県、国、注文ステータス、クーポンコード、その他のタイプのディメンションが含まれることがあります。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. `Choose Metric(s) to Add Dimensions` 列で、ディメンションを追加する指標を選択します。 選択すると、右側に `Choose Dimensions to Add` 列が表示されます。 選択した指標に追加するディメンションを確認します。
 
-   ![&#x200B; 使用可能なディメンションオプションを表示するディメンションを追加ダイアログ &#x200B;](../../assets/Add_Dimensions.png)
+   ![ 使用可能なディメンションオプションを表示するディメンションを追加ダイアログ ](../../assets/Add_Dimensions.png)
 
 1. レポートのいずれかのデータディメンションでセグメント化またはグループ化する場合は、それらが _グループ化可能_ であることを確認します。
 

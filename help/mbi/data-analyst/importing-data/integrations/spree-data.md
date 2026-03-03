@@ -2,9 +2,9 @@
 title: 予期される Spree データ
 description: Spree から自分のアカウントにインポートできるメインのデータテ  [!DNL Commerce Intelligence]  ブルを調べます。
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 予期される [!DNL Spree] データ
 
-[&#x200B; ストアに接続  [!DNL Spree]  した後、&lbrace;3](../../../data-analyst/importing-data/integrations/spree.md)Data Warehouse Manager[&#x200B; を使用すると、](../../data-warehouse-mgr/tour-dwm.md) Platform から関連するデータフィールドを簡単に追跡して分析できます。[!DNL Spree]
+[ ストアに接続  [!DNL Spree]  した後、{3](../../../data-analyst/importing-data/integrations/spree.md)Data Warehouse Manager[ を使用すると、](../../data-warehouse-mgr/tour-dwm.md) Platform から関連するデータフィールドを簡単に追跡して分析できます。[!DNL Spree]
 
-このトピックでは、データに関する [!DNL Spree] 追加ドキュメント [!DNL Commerce Intelligence] へのリンクを含め、[&#x200B; から &#x200B;](https://guides.spreecommerce.org/developer/addresses.html#address) アカウントに読み込むことができるメインのデータテーブル [!DNL Spree] ついて説明します。
+このトピックでは、データに関する [!DNL Spree] 追加ドキュメント [!DNL Commerce Intelligence] へのリンクを含め、[ から ](https://guides.spreecommerce.org/developer/addresses.html#address) アカウントに読み込むことができるメインのデータテーブル [!DNL Spree] ついて説明します。
 
 | **テーブル名** | **説明** |
 |-----|-----|
@@ -30,4 +30,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続  [!DNL Spree]](../integrations/spree.md)
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

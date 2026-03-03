@@ -2,9 +2,9 @@
 title: sales_order テーブル
 description: sales_order テーブルの操作方法を説明します。
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 `sales_order` の表（M1 の `sales_flat_order`）は、各注文がキャプチャされる場所です。 通常、各行は 1 つの一意の注文を表しますが、Commerceには、注文を別々の行に分割するカスタム実装がいくつかあります。
 
-この表には、ゲストのチェックアウトを通じてその注文が処理されたかどうかにかかわらず、すべての顧客の注文が含まれています。 ストアがゲストのチェックアウトを受け入れる場合は、この [&#x200B; ユースケース &#x200B;](../data-warehouse-mgr/guest-orders.md) に関する詳細を確認できます。
+この表には、ゲストのチェックアウトを通じてその注文が処理されたかどうかにかかわらず、すべての顧客の注文が含まれています。 ストアがゲストのチェックアウトを受け入れる場合は、この [ ユースケース ](../data-warehouse-mgr/guest-orders.md) に関する詳細を確認できます。
 
 ## 共通列
 

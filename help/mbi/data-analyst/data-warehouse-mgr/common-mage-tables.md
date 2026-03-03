@@ -2,9 +2,9 @@
 title: 一般的なCommerce テーブル
 description: お客様が使用する一般的なテーブルのいくつか  [!DNL Commerce Intelligence]  ついて説明します。
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce] インスタンスを [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md) に初めて接続すると、[!DNL Commerce Intelligence] では、一部のコマーステーブル（通常は 4～6 個のテーブル）からデータを自動的に複製して、ダッシュボードとレポートの初期セットを設定します。 これは優れた出発点となりますが、ほとんどのストアインスタンスでは、数百ではなく数十の追加テーブルが生成され、ビジネスのパフォーマンスに重要なinsightを提供できます。
 
-以下に、お客様が使用する一般的なテーブルの一部 [!DNL Commerce Intelligence] 示します。 [Commerce インスタンスをCommerce Intelligenceに接続 &#x200B;](../../data-analyst/importing-data/integrations/magento.md) した後、[Data Warehouse Manager](../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して関連するデータフィールドを追跡できます。
+以下に、お客様が使用する一般的なテーブルの一部 [!DNL Commerce Intelligence] 示します。 [Commerce インスタンスをCommerce Intelligenceに接続 ](../../data-analyst/importing-data/integrations/magento.md) した後、[Data Warehouse Manager](../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して関連するデータフィールドを追跡できます。
 
 | テーブル名 | 説明 |
 |---|---|

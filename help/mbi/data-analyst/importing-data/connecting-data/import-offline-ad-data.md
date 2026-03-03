@@ -2,9 +2,9 @@
 title: その他の広告費用データのインポート
 description: オフラインまたはその他の広告費用データの  [!DNL Commerce Intelligence] へのインポートについて説明します。
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 広告費用データを分析する最初の手順は、データを取得することです。 ほとんどの広告プラットフォームではレポートを書き出すことができるので、Adobeでは、生データを広告プラットフォームから書き出し、操作せずに直接 [!DNL Commerce Intelligence] にアップロードすることをお勧めします。 Data Warehouse内のデータに対して操作を実行できるので、作業を 2 倍にする必要はありません。
 
-広告費用データを書き出したら、[`File Upload` 機能を使用して &#x200B;](../connecting-data/using-file-uploader.md) データをData Warehouseに取り込みます。 同じ [!DNL Commerce Intelligence] テーブルに新しいデータを経時的にアップロードできます。
+広告費用データを書き出したら、[`File Upload` 機能を使用して ](../connecting-data/using-file-uploader.md) データをData Warehouseに取り込みます。 同じ [!DNL Commerce Intelligence] テーブルに新しいデータを経時的にアップロードできます。
 
 ## オフラインソース
 

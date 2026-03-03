@@ -2,9 +2,9 @@
 title: ダッシュボードの管理
 description: 所有しているダッシュボードのユーザー権限を管理する方法、必要でなくなったダッシュボードを削除する方法、デフォルトのダッシュボードを設定する方法について説明します。
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[&#x200B; 管理者権限 &#x200B;](../../administrator/user-management/user-management.md) が必要です。
+>[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
 
 **[!DNL Manage Data** > **Dashboards]** では、所有しているダッシュボードのユーザー権限の管理、不要になったダッシュボードの削除、デフォルトのダッシュボードの設定を行うことができます。 このトピックの内容は次のとおりです。
 

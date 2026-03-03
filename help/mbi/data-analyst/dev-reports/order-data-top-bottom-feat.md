@@ -2,9 +2,9 @@
 title: 「上/下を表示」機能を使用したデータの順序付け
 description: 上と下を表示機能を使用してデータを並べ替える方法を説明します。
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 このようなデータの並べ替えと並べ替えは、`Group By` と `Time Interval of None` の両方を使用するレポートで実行できます。 これらの要素の両方がレポート内にある場合、`Show Top/Bottom` 機能はグラフのプレビューの上に表示されます。 この機能を使用すると、設定したパラメーターに基づいて、上（最大から最小）および下（最小から最大）のデータポイントを表示できます。
 
-![&#x200B; ビジュアルReport Builderで上/下機能を表示します。](../../assets/Show_Top_Bottom.png)
+![ ビジュアルReport Builderで上/下機能を表示します。](../../assets/Show_Top_Bottom.png)
 
 ## これはどうやって使うのですか。 {#how}
 
@@ -47,11 +47,11 @@ ht-degree: 0%
 
 以下は、グループ化ではなく `Revenue` 指標そのものを並べ替えたグラフの例です。 ご覧のように、指標をグループ化で並べ替えると、奇妙な（そして最終的には役に立たない）レポートが作成されます。
 
-![&#x200B; 不審で役に立たないレポートの結果 &#x200B;](../../assets/strange-report-results.png)
+![ 不審で役に立たないレポートの結果 ](../../assets/strange-report-results.png)
 
 両方の指標をグループ化で並べ替えた場合、グラフは次のようになります。
 
-![&#x200B; グループ化による両方の指標の並べ替え &#x200B;](../../assets/sort-metrics-by-grouping.png)
+![ グループ化による両方の指標の並べ替え ](../../assets/sort-metrics-by-grouping.png)
 
 ## デフォルトでは、値はどのように並べ替えられていますか？ {#defaultsorting}
 
@@ -59,11 +59,11 @@ ht-degree: 0%
 
 この例では、営業担当者がクローズしたオポチュニティの数を確認します。 このテーブルは、指標（この場合は `Won Opportunities`）に基づいて高い順に自動的に並べ替えられます。
 
-![&#x200B; 指標による並べ替え &#x200B;](../../assets/Ordered_by_metric.png)
+![ 指標による並べ替え ](../../assets/Ordered_by_metric.png)
 
 ただし、2 番目の指標を追加した場合、デフォルトでは、グループ化に基づいて上位のが並べ替えられます。 指標とグループ化を追加すると、デフォルトの並べ替えは最初のグループ化に基づいて、次に 2 番目のグループ化に基づいて、というように行われます。
 
-![&#x200B; グループ化による順序付け &#x200B;](../../assets/Ordered_by_grouping.png)
+![ グループ化による順序付け ](../../assets/Ordered_by_grouping.png)
 
 ## まとめ {#wrapup}
 

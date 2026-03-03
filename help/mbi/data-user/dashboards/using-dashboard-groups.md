@@ -2,9 +2,9 @@
 title: ダッシュボードグループの使用
 description: ダッシュボードの整理を改善する方法について説明します。
 exl-id: e48b7345-62d0-4898-997e-3c3c02040ad3
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 1. ダッシュボードの作成時：
 
-   ![&#x200B; ダッシュボードグループの作成 &#x200B;](../../assets/create-dashboard-groups-new-dashboard.png)
+   ![ ダッシュボードグループの作成 ](../../assets/create-dashboard-groups-new-dashboard.png)
 
 1. 既存のダッシュボードのグループを変更する場合は、`Manage Data > Dashboards` のページから次の操作を行います。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
    1. グループを作成するには、新しいグループの名前を入力し、ボックスの外側をクリックします。
 
-      ![&#x200B; ダッシュボードグループの作成 &#x200B;](../../assets/create-dashboard-groups-existing-dashboard.png)
+      ![ ダッシュボードグループの作成 ](../../assets/create-dashboard-groups-existing-dashboard.png)
 
 ## 既存のダッシュボードを既存のグループに追加
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 1. ダッシュボードのグループを変更するには、リストから別のグループ（この場合は `PS`、`Campaigns`）を選択します。
 
-   ![&#x200B; グループ ダッシュボードの変更 &#x200B;](../../assets/add-existing-dashboard-existing-group.png)
+   ![ グループ ダッシュボードの変更 ](../../assets/add-existing-dashboard-existing-group.png)
 
 ## ダッシュボードグループの削除
 

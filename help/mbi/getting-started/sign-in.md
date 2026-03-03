@@ -2,9 +2,9 @@
 title: Commerce Intelligence アカウントへのアクセス
 description: Commerce Intelligence アカウントへのログインについて説明します。
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Accounts
-source-git-commit: 988a7bee27a0c381d1c84db960e978ca73eb3615
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # アクティブ化された [!DNL Adobe Commerce Intelligence] アカウントへのアクセス
 
-[!DNL Commerce Intelligence] オンプレミスまたはクラウド [&#x200B; 用に &#x200B;](../getting-started/onpremise-activation.md) アカウントを有効にし、Adobe アカウントチームと協力して設定手順を完了したら、アカウントにログインできます。
+[!DNL Commerce Intelligence] オンプレミスまたはクラウド [ 用に ](../getting-started/onpremise-activation.md) アカウントを有効にし、Adobe アカウントチームと協力して設定手順を完了したら、アカウントにログインできます。
 
 ## [!DNL Adobe ID] を使用してログイン
 
 1. 「**[!UICONTROL Sign in with Adobe ID]**」をクリックします。
 
-   ![&#x200B; アドビへのログイン &#x200B;](../assets/sign-in-adobe.png)
+   ![ アドビへのログイン ](../assets/sign-in-adobe.png)
 
 1. [!DNL Commerce Intelligence] アカウントの作成時に使用したメールアドレスを入力します。 Adobe アカウントをお持ちでない場合は、「**[!UICONTROL Create an account]**」をクリックして情報を入力します。 [!DNL Commerce Intelligence] アカウントの作成時に使用したメールアドレスを使用することを忘れないでください。 Adobe アカウントにアクセスする場合は、メールアドレスがキーとなります。
 

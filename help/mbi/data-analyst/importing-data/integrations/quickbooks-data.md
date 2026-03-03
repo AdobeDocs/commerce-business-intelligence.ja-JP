@@ -2,9 +2,9 @@
 title: 期待される QuickBooks データ
 description: 分析に関連するデータフィールドを簡単にトラッキングする方法を説明します。
 exl-id: a60996bd-e3d1-497d-abce-f02ef1444f1a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL QuickBooks] データ
 
-[&#x200B; アカウントに接続  [!DNL QuickBooks]  た &#x200B;](../../../data-analyst/importing-data/integrations/quickbooks.md) 後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。 Data Warehouseでは、次のテーブルが作成されます。
+[ アカウントに接続  [!DNL QuickBooks]  た ](../../../data-analyst/importing-data/integrations/quickbooks.md) 後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。 Data Warehouseでは、次のテーブルが作成されます。
 
 トラッキングに使用できるすべてのフィールドを表示するには、テーブル名列のリンクをクリックします。
 
@@ -62,4 +62,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続  [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

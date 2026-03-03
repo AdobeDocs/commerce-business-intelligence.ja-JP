@@ -2,9 +2,9 @@
 title: 初回購入レポートまでの平均時間
 description: 初回購入までの平均時間レポートの使用方法を説明します。
 exl-id: c18734ce-0ae0-4e84-b9d0-eb2c21a5c3a5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 330832e2668024b00edb2b7c49b92bb042bd004a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Adobeのお客様の多くには、`Average time to first purchase` という名前の指標とグラフがあります。これは、一連のユーザーの登録日から最初の購入日までの平均時間を示します。 時間が現在に近づくにつれて、データはほぼ必ず下に傾きます。
 
-![&#x200B; 初回注文までの平均時間 &#x200B;](../../assets/average-time-to-first-order.png)
+![ 初回注文までの平均時間 ](../../assets/average-time-to-first-order.png)
 
 これは、これらの新しい顧客はまだ結合日から 1 か月以上行われた購入を生成する機会がないためです。 購入を行ったことがないユーザーはまったく含まれないので（購入を行うまで）、新しい顧客グループの平均減少率が偏っています。
 

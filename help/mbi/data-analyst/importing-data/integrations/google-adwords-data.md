@@ -2,9 +2,9 @@
 title: Google Adwords データが必要です
 description: Data Warehouse Manager を使用して、関連するデータフィールドを簡単にトラッキングし、分析する方法を説明します。
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 予期される [!DNL Google Adwords] データ
 
-[&#x200B; アカウントに接続  [!DNL Google Adwords]  た &#x200B;](../integrations/google-adwords.md) 後、[Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。
+[ アカウントに接続  [!DNL Google Adwords]  た ](../integrations/google-adwords.md) 後、[Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。
 
 ここには、Data Warehouseへのレプリケーションに使用できる 2 つのテーブルがあります。
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-このデータを使用して、支出データに基づく [&#x200B; 指標 &#x200B;](../../../data-user/reports/ess-manage-data-metrics.md) および [&#x200B; レポート &#x200B;](../../../tutorials/using-visual-report-builder.md) の作成を開始し、[&#x200B; ライフタイム収益と結合して ROI を計算 &#x200B;](../../analysis/roi-ad-camp.md) できます。
+このデータを使用して、支出データに基づく [ 指標 ](../../../data-user/reports/ess-manage-data-metrics.md) および [ レポート ](../../../tutorials/using-visual-report-builder.md) の作成を開始し、[ ライフタイム収益と結合して ROI を計算 ](../../analysis/roi-ad-camp.md) できます。
 
 ## 統合テーブル
 
@@ -89,4 +89,4 @@ ht-degree: 0%
 
 統合テーブルがなく、`adwords` テーブルに美しいダッシュボードを作成する場合は、レポートをレプリケートするか、重複指標を作成して、そのデータを [!DNL Facebook Ads] データと比較する必要があります。 統合テーブルを使用すると、既存の [!DNL Facebook Ads] レポート [!DNL Adwords] データをシームレスに組み込むことができます。 広告プラットフォームでセグメント化することもできます。
 
-上記のフィールドを既に同期している場合は、[&#x200B; お問い合わせ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) して、広告費用を統合します。
+上記のフィールドを既に同期している場合は、[ お問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) して、広告費用を統合します。

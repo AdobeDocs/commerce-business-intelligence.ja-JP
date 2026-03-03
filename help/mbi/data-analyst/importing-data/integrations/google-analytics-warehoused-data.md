@@ -2,9 +2,9 @@
 title: Google Analyticsが格納する必要があるデータ
 description: Google Analyticsに保管されたデータとのやり取りを説明します。
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
 >[!NOTE]
 >
 >[[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics) 時に友達から許可を得て情報を使用しました。
 
-[!DNL Google Analytics Warehoused] の統合 [!DNL Commerce Intelligence]、[!DNL Google Analytics] [&#x200B; コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用します。
+[!DNL Google Analytics Warehoused] の統合 [!DNL Commerce Intelligence]、[!DNL Google Analytics] [ コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用します。
 
 >[!NOTE]
 >
->予期しない結果や感覚的でない結果を避けるために、使用するディメンションが [&#x200B; で使用する &#x200B;](https://ga-dev-tools.google/dimensions-metrics-explorer/)1 つ以上の指標と互換性がある `Report Builder` ことを確認します。
+>予期しない結果や感覚的でない結果を避けるために、使用するディメンションが [ で使用する ](https://ga-dev-tools.google/dimensions-metrics-explorer/)1 つ以上の指標と互換性がある `Report Builder` ことを確認します。
 
 Data Warehouseに `report` という 1 つのテーブルが作成されます。
 

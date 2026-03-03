@@ -2,9 +2,9 @@
 title: Google Analyticsのグラフの作成
 description: Google Analytics データからグラフを作成する方法を説明します。
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 （正規表現構文のヘルプを使用）
 
-[[!DNL Google Analytics]  アカウント &#x200B;](../../data-analyst/importing-data/integrations/google-analytics.md) に接続したら、[!DNL Google Analytics] データを使用してグラフを作成できます。
+[[!DNL Google Analytics]  アカウント ](../../data-analyst/importing-data/integrations/google-analytics.md) に接続したら、[!DNL Google Analytics] データを使用してグラフを作成できます。
 
 ## [!DNL Google Analytics] グラフの作成
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 1. 指標を選択したら、表示する `time period`、`interval`、データ `perspectives` を選択することで、このグラフを他のグラフと同じように続行できます。
 
-1. ここでの大きな違いは、フィルターに正規表現を使用 `√` ることです。 正規表現（略して正規表現）は、検索パターンを説明するための特別なテキスト文字列です。 [[!DNL Google] Analytics 正規表現に関するガイド &#x200B;](https://support.google.com/analytics/answer/1034324?hl=en) の正規表現構文の例を参照してください。
+1. ここでの大きな違いは、フィルターに正規表現を使用 `√` ることです。 正規表現（略して正規表現）は、検索パターンを説明するための特別なテキスト文字列です。 [[!DNL Google] Analytics 正規表現に関するガイド ](https://support.google.com/analytics/answer/1034324?hl=en) の正規表現構文の例を参照してください。
 
 >[!NOTE]
 >

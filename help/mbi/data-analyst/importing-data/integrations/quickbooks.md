@@ -2,9 +2,9 @@
 title: QuickBooks の接続
 description: ビジネスの財務を販売データやマーケティングデータと連動させて管理する方法を説明します。これにより、費用をすばやく簡単に確認したり、過剰支出を特定したりできます。
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: b6f8a4f533286fad67dc875ebb6f4f3b7022ca5b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
+>[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
 
-![QuickBooks ロゴ &#x200B;](../../../assets/Quickbooks.png)
+![QuickBooks ロゴ ](../../../assets/Quickbooks.png)
 
 [!DNL QuickBooks] の統合により、ビジネスの財務を販売およびマーケティングデータと連携させることができるため、費用の監視、過剰支出の特定などを迅速かつ簡単に行うことができます。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 「**[!UICONTROL Connect to Quickbooks]**」をクリックした後、[!DNL Intuit] アカウントにログインして接続を認証します。
 
-![QuickBooks App Store統合ページ &#x200B;](../../../assets/QuickBooks_App_Store_1.jpg)
+![QuickBooks App Store統合ページ ](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. `Search for a company` ドロップダウンで、会社を選択します。
 1. 「**[!UICONTROL Next]**」をクリックします。 「[!DNL Commerce Intelligence]」および「接続に成功しました *にリダイレクトされます。メッセ* ジが画面の上部に表示されます。
@@ -44,4 +44,4 @@ ht-degree: 0%
 ## 関連
 
 * [Expected [!DNL QuickBooks] data](../integrations/quickbooks-data.md)
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

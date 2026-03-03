@@ -2,9 +2,9 @@
 title: 新しいアーキテクチャ
 description: 新しいアーキテクチャに移行するメリットについて説明します。
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
-source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### ヘルプ
 
-[!DNL Adobe Commerce Intelligence] [&#x200B; サービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) は、追加費用で再実装を実行できます。 [Adobe アカウントチームに連絡し &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket) 新しいアカウントでの作成で優先して使用するダッシュボード/レポートのリストを提供する準備が整いました
+[!DNL Adobe Commerce Intelligence] [ サービスチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) は、追加費用で再実装を実行できます。 [Adobe アカウントチームに連絡し ](../../guide-overview.md#Submitting-a-Support-Ticket) 新しいアカウントでの作成で優先して使用するダッシュボード/レポートのリストを提供する準備が整いました
 
 ### 既存のアーキテクチャの維持
 

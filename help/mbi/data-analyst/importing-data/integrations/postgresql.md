@@ -2,9 +2,9 @@
 title: SSH トンネルを介した PostgreSQL の接続
 description: SSH トンネルを介して PostgreSQL データベースをCommerce Intelligenceに接続する方法を説明します。
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 [!DNL PostgreSQL] を使用して [!DNL Commerce Intelligence] データベースを `SSH tunnel` に接続するには、次の操作を行う必要があります。
 
-1. [&#x200B; [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
-1. [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
-1. [&#x200B; [!DNL Linux]  のユ  [!DNL Commerce Intelligence] ザーを作成](#linux)
-1. [&#x200B; [!DNL PostgreSQL]  のユ  [!DNL Commerce Intelligence] ザーを作成](#postgres)
+1. [ [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
+1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+1. [ [!DNL Linux]  のユ  [!DNL Commerce Intelligence] ザーを作成](#linux)
+1. [ [!DNL PostgreSQL]  のユ  [!DNL Commerce Intelligence] ザーを作成](#postgres)
 1. [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
 
 ## [!DNL Commerce Intelligence] [!DNL public key] の取得 {#retrieve}
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 以下に、キーを取得するために [!DNL Commerce Intelligence] 内を移動する方法を示します。
 
-![RJMetrics 公開鍵の取得 &#x200B;](../../../assets/get-mbi-public-key.gif)
+![RJMetrics 公開鍵の取得 ](../../../assets/get-mbi-public-key.gif)
 
 ## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可します {#allowlist}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## [!DNL Linux] 用の [!DNL Commerce Intelligence] ユーザーの作成 {#linux}
 
-リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [&#x200B; サーバーへの接続権が保持されている限り、好きなように &#x200B;](../../../administrator/account-management/restrict-db-access.md) このユーザーを制限 [!DNL PostgreSQL] することができます。
+リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [ サーバーへの接続権が保持されている限り、好きなように ](../../../administrator/account-management/restrict-db-access.md) このユーザーを制限 [!DNL PostgreSQL] することができます。
 
 1. 新しいユーザーを追加するには、[!DNL Linux] サーバーで次のコマンドを root として実行します。
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 関連
 
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

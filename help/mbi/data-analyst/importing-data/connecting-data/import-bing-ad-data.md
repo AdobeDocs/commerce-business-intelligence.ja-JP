@@ -2,9 +2,9 @@
 title: Bing Ad 費用データのインポート
 description: 分析用に Bing 広告費用データをに読み込む方法  [!DNL Commerce Intelligence]  説明します。
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
@@ -26,4 +26,4 @@ ht-degree: 0%
 1. `Save As` ダイアログボックスで、書き出しファイルを保存するフォルダーをクリックします。
 1. `File name` ボックスで、ファイルの書き出しの名前を選択します。
 1. 「**[!UICONTROL Save]**」をクリックします。
-1. ファイルをダウンロードしたら、[&#x200B; サポートにお問い合わせ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) し、ユーザーに代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。
+1. ファイルをダウンロードしたら、[ サポートにお問い合わせ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) し、ユーザーに代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。

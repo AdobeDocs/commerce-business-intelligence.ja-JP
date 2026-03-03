@@ -2,9 +2,9 @@
 title: Commerceチャーン
 description: Commerceのチャーンレートを生成して分析する方法を説明します。
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
@@ -15,9 +15,9 @@ ht-degree: 2%
 
 このトピックでは、**コマース顧客** の **チャーンレート** を計算する方法を説明します。 SaaS や従来のサブスクリプション企業とは異なり、コマース顧客は通常、アクティブな顧客をカウントすべきではないことを示すために **具体的な** 「チャーンイベント」を持っていません。 このため、以下の手順を使用すると、最後の注文以降に決定された経過時間に基づいて、顧客を「チャーン」として定義できます。
 
-![&#x200B; 時間の経過に伴う顧客のリテンションを示すチャーンレートビジュアライゼーション &#x200B;](../../assets/Churn_rate_image.png)
+![ 時間の経過に伴う顧客のリテンションを示すチャーンレートビジュアライゼーション ](../../assets/Churn_rate_image.png)
 
-多くのお客様は、データに基づいて、使用する **期間** を概念化し始める際に支援を必要としています。 過去の顧客の行動を使用してこの **チャーン期間** を定義する場合は、「チャーンの定義 [&#x200B; に関するトピックを熟知してい &#x200B;](../analysis/define-cust-churn.md) 必要があります。 次に、以下の手順で、チャーンレートの数式の結果を使用できます。
+多くのお客様は、データに基づいて、使用する **期間** を概念化し始める際に支援を必要としています。 過去の顧客の行動を使用してこの **チャーン期間** を定義する場合は、「チャーンの定義 [ に関するトピックを熟知してい ](../analysis/define-cust-churn.md) 必要があります。 次に、以下の手順で、チャーンレートの数式の結果を使用できます。
 
 ## 計算される列
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->新しいレポートを作成する前に、必ず [&#x200B; すべての新しい列をディメンションとして指標に追加する &#x200B;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
+>新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## 指標
 
@@ -69,26 +69,26 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->新しいレポートを作成する前に、必ず [&#x200B; すべての新しい列をディメンションとして指標に追加する &#x200B;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
+>新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## レポート
 
 * **チャーンレート**
    * [!UICONTROL Metric]：新規顧客（初回注文日別）
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * 顧客の最終注文日からの秒数 >= [ チャーンされた顧客の事前定義されたカットオフ ]&#x200B;**`^`**
+   * 顧客の最終注文日からの秒数 >= [ チャーンされた顧客の事前定義されたカットオフ ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: Percentage
 
 * *指標 `A`:`New customers cumulative`*

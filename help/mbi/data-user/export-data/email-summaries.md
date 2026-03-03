@@ -2,9 +2,9 @@
 title: 自動メール概要の作成
 description: 自動メール概要を作成する方法を説明します。
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: a65ededb203b7551fdfcb31cff130ef85b01fbe3
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
    * **個々のレポートを選択** - ダッシュボードから特定のレポートを選択します
    * **ダッシュボード全体を選択** - ダッシュボードのレイアウトに表示されるすべてのレポートを含めます
 
-   所有するレポートは最大 10 個まで選択できます。 レポートを選択した後、表示されるアイコンを使用して、そのレポートをテーブルとして送信するかグラフとして送信するかを選択します。 レポートを数値として保存した場合、送信できるのは数値のみです。 古いデータを含むレポートを含むメールの概要の送信について詳しくは、[&#x200B; アカウント設定の管理 &#x200B;](../../administrator/account-management/managing-account-settings.md) を参照してください。
+   所有するレポートは最大 10 個まで選択できます。 レポートを選択した後、表示されるアイコンを使用して、そのレポートをテーブルとして送信するかグラフとして送信するかを選択します。 レポートを数値として保存した場合、送信できるのは数値のみです。 古いデータを含むレポートを含むメールの概要の送信について詳しくは、[ アカウント設定の管理 ](../../administrator/account-management/managing-account-settings.md) を参照してください。
 
    ダッシュボード全体を追加する場合、次の形式および削除オプションがあります。
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->古いデータを含むレポートを含むメールの概要の送信について詳しくは、[&#x200B; アカウント設定の管理 &#x200B;](../../administrator/account-management/managing-account-settings.md) を参照してください。
+>古いデータを含むレポートを含むメールの概要の送信について詳しくは、[ アカウント設定の管理 ](../../administrator/account-management/managing-account-settings.md) を参照してください。
 
 各行の右側にある歯車アイコンをクリックして、次の操作を実行します。
 

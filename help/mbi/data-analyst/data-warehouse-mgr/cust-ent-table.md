@@ -2,9 +2,9 @@
 title: customer_entity テーブル
 description: すべての登録済みアカウントのレコードにアクセスする方法を説明します。
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 `customer_entity` テーブルには、すべての登録済みアカウントのレコードが含まれています。 購入を完了したかどうかに関係なく、アカウントに新規登録した場合、アカウントは登録済みと見なされます。 各行は、アカウントの `entity_id` によって識別される 1 つの一意の登録済みアカウントに対応します。
 
-このテーブルには、ゲストのチェックアウト経由で注文した顧客のレコードは含まれていません。 ストアがゲストのチェックアウトを受け入れる場合は、それらの注文について [&#x200B; ゲスト注文のアカウントを作成する方法 &#x200B;](../data-warehouse-mgr/guest-orders.md) を参照してください。
+このテーブルには、ゲストのチェックアウト経由で注文した顧客のレコードは含まれていません。 ストアがゲストのチェックアウトを受け入れる場合は、それらの注文について [ ゲスト注文のアカウントを作成する方法 ](../data-warehouse-mgr/guest-orders.md) を参照してください。
 
 ## 共通列
 

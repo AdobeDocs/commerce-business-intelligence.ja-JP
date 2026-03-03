@@ -1,12 +1,13 @@
 ---
 title: Commerce Intelligence
 description: Adobe Commerceで使用できる機能  [!DNL Commerce Intelligence]  使用方法を説明します。
+user-guide-title: Commerce Intelligence ユーザーガイド
 breadcrumb-title: Commerce Intelligence ユーザーガイド
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Business Performance
-source-git-commit: cea314102fb3b2164c1498ce1efa60e83c41b188
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -19,11 +20,11 @@ ht-degree: 0%
 - はじめに {#start}
    - [オンボーディング](getting-started/onboarding.md)
    - [アカウント  [!DNL Commerce Intelligence]  アクティブ化](getting-started/onpremise-activation.md)
-   - [アカウントにログイ  [!DNL Commerce Intelligence] &#x200B;](getting-started/sign-in.md)
+   - [アカウントにログイ  [!DNL Commerce Intelligence] ](getting-started/sign-in.md)
    - [Commerce Intelligence Essentials とCommerce Intelligence Pro の比較](getting-started/essentials-vs-pro.md)
 - 管理者 {#administrator}
    - アカウント管理 {#acct-mgmt}
-      - [&#x200B; [!DNL New Architecture] の利点](../mbi/administrator/account-management/new-architecture.md)
+      - [ [!DNL New Architecture] の利点](../mbi/administrator/account-management/new-architecture.md)
       - [オフィスのダッシュボードを表示](../mbi/administrator/account-management/display-dashboards-office.md)
       - [アカウントの管理](administrator/account-management/managing-account-settings.md)
       - [データベース アクセスの制限](../mbi/administrator/account-management/restrict-db-access.md)
@@ -79,13 +80,13 @@ ht-degree: 0%
       - [自分のクエリの結果をエクスポート](data-analyst/dev-reports/export-query-results.md)
       - [[Report Builder] で数式を使用する](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [グラフ  [!DNL Google Analytics]  作成](data-analyst/dev-reports/google-analytics-charts-regex.md)
-      - [&#x200B; [!DNL Lifetime Revenue Cohort Analysis] の重要性](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
-      - [&#x200B; [!DNL Show Top/Bottom]  機能を使用したデータの順序付け](data-analyst/dev-reports/order-data-top-bottom-feat.md)
+      - [ [!DNL Lifetime Revenue Cohort Analysis] の重要性](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
+      - [ [!DNL Show Top/Bottom]  機能を使用したデータの順序付け](data-analyst/dev-reports/order-data-top-bottom-feat.md)
       - [使用  [!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
       - [初回購入レポート](data-analyst/dev-reports/time-first-purchase-slope-dwnwrd.md)
-      - [&#x200B; [!DNL Repeat Order Probability Report] の内容について](data-analyst/dev-reports/repeat-order-probability.md)
-      - [&#x200B; [!DNL SQL Report Builder] を使用した指標の監査](data-analyst/dev-reports/audit-metrics-sql.md)
-      - [&#x200B; [!DNL SQL]  との間の列の違い  [!DNL Data Warehouse Manager]](data-analyst/dev-reports/columns-sql-dwm.md)
+      - [ [!DNL Repeat Order Probability Report] の内容について](data-analyst/dev-reports/repeat-order-probability.md)
+      - [ [!DNL SQL Report Builder] を使用した指標の監査](data-analyst/dev-reports/audit-metrics-sql.md)
+      - [ [!DNL SQL]  との間の列の違い  [!DNL Data Warehouse Manager]](data-analyst/dev-reports/columns-sql-dwm.md)
    - データの接続 {#connecting}
       - [概要](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [e コマースデータのフォーマットと読み込み](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
@@ -114,7 +115,7 @@ ht-degree: 0%
       - [Expected [!DNL Google ECommerce] data](data-analyst/importing-data/integrations/google-ecommerce-data.md)
       - [接続  [!DNL Mixpanel]](data-analyst/importing-data/integrations/mixpanel.md)
       - [Expected [!DNL Mixpanel] data](data-analyst/importing-data/integrations/mixpanel-data.md)
-      - [&#x200B; [!DNL Mixpanel] でのデータ検証](data-analyst/importing-data/integrations/mixpanel-data-valid.md)
+      - [ [!DNL Mixpanel] でのデータ検証](data-analyst/importing-data/integrations/mixpanel-data-valid.md)
       - [接続  [!DNL PrestaShop]](data-analyst/importing-data/integrations/prestashop.md)
       - [接続  [!DNL Quickbooks]](data-analyst/importing-data/integrations/quickbooks.md)
       - [Expected [!DNL Quickbooks] data](data-analyst/importing-data/integrations/quickbooks-data.md)
@@ -132,7 +133,7 @@ ht-degree: 0%
    - データベースの統合 {#integration}
       - [接続  [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [VPN を介したデータベースの接続](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
-      - [&#x200B; [!DNL MySQL Database]  を  [!DNL Commerce Intelligence] に接続](data-analyst/importing-data/integrations/db-to-mbi.md)
+      - [ [!DNL MySQL Database]  を  [!DNL Commerce Intelligence] に接続](data-analyst/importing-data/integrations/db-to-mbi.md)
       - [Adobe Commerceの接続](data-analyst/importing-data/integrations/magento.md)
       - [予想されるCommerce データ](data-analyst/importing-data/integrations/magento-data.md)
       - [接続  [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
@@ -234,6 +235,6 @@ ht-degree: 0%
       - [投資家ダッシュボードの構築](best-practices/build-investor-dashboard.md)
 - チュートリアル {#tutorials}
    - [使用  [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
-   - [&#x200B; [!DNL Visual Report Builder] の時間オプションを使用します。](tutorials/time-options-visual-rpt-bldr.md)
+   - [ [!DNL Visual Report Builder] の時間オプションを使用します。](tutorials/time-options-visual-rpt-bldr.md)
    - [クエリからのビジュアライゼーション  [!DNL SQL]  作成](tutorials/create-visuals-from-sql.md)
    - [生データのエクスポート](tutorials/export-raw-data.md)

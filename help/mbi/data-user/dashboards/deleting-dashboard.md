@@ -2,9 +2,9 @@
 title: ダッシュボードの削除
 description: ダッシュボードの削除方法を説明します。
 exl-id: 27482dea-0593-46d6-8310-ad505ff9436a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ダッシュボードリストが煩雑になりすぎないようにするには、不要になったダッシュボードを削除できます。 これは、次の 2 つの方法のいずれかで実現できます。
 
-1. [`Account Settings` ページ経由 &#x200B;](#account) – この方法には [&#x200B; 管理者権限 &#x200B;](../../administrator/user-management/user-management.md) が必要です。
+1. [`Account Settings` ページ経由 ](#account) – この方法には [ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
 
-1. [`Dashboard Options` メニューを使用 &#x200B;](#do) – この方法では、ユーザーがダッシュボードを所有するか、`Edit` 権限を持っている必要があります。
+1. [`Dashboard Options` メニューを使用 ](#do) – この方法では、ユーザーがダッシュボードを所有するか、`Edit` 権限を持っている必要があります。
 
 ## `Account Settings` ページを使用したダッシュボードの削除 {#account}
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 例：
 
-![&#x200B; ダッシュボードを削除 &#x200B;](../../assets/deleting_dash.gif)<!--{: width="703" height="346"}-->
+![ ダッシュボードを削除 ](../../assets/deleting_dash.gif)<!--{: width="703" height="346"}-->
 
 ## `Dashboard Options` メニューを使用したダッシュボードの削除 {#do}
 
@@ -41,4 +41,4 @@ ht-degree: 0%
 
 例：
 
-![&#x200B; ダッシュボードを削除 &#x200B;](../../assets/deleting_dash_2.gif)<!--{: width="703" height="347"}-->
+![ ダッシュボードを削除 ](../../assets/deleting_dash_2.gif)<!--{: width="703" height="347"}-->

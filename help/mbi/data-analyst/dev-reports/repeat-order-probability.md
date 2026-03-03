@@ -2,9 +2,9 @@
 title: リピート注文確率レポート
 description: リピート注文確率レポートについて説明します。
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 場合によっては、`order-specific` ディメンションを `user-specific` ディメンションに変換して、`Repeat Order Probability` グラフにフィルターとして追加できることがあります。 この場合、ユーザーの最初の注文または最新の注文の注文属性（ユーザーの最初の注文の地域名など）を返します。
 
-このような新しいディメンションを作成する場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+このような新しいディメンションを作成する場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## 異なる属性を持つ注文の繰り返し確率の比較
 

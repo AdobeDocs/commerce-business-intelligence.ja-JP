@@ -2,9 +2,9 @@
 title: 生涯売上高コホート分析
 description: Commerce Intelligence コホート分析の機能を探索します。
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 0%
@@ -43,6 +43,6 @@ ht-degree: 0%
 
 ## このグラフのバリエーションは何ですか。
 
-有用な `cohort` 解析には様々な種類があります。 最も一般的なバリエーションは [&#x200B; ユーザー獲得ソースによるフィルタリング &#x200B;](../analysis/most-value-source-channel.md) です。 例えば、検索、`organic` 検索、アフィリエイトプログラムから来た顧客 `paid` ついて、このグラフを見ることができます。 これにより、ある獲得ソースの顧客が別の獲得ソースよりも忠実であるか、価値があるかを理解できます。 人口統計やその他のユーザー属性でフィルタリングすることもできます。
+有用な `cohort` 解析には様々な種類があります。 最も一般的なバリエーションは [ ユーザー獲得ソースによるフィルタリング ](../analysis/most-value-source-channel.md) です。 例えば、検索、`organic` 検索、アフィリエイトプログラムから来た顧客 `paid` ついて、このグラフを見ることができます。 これにより、ある獲得ソースの顧客が別の獲得ソースよりも忠実であるか、価値があるかを理解できます。 人口統計やその他のユーザー属性でフィルタリングすることもできます。
 
 データを見るもう 1 つの方法は、累積的なデータの観点ではなく、増分的なデータの観点です。 これは、平均的なユーザーが取得後に月ごとに費やした増分量を表示します。 これは、既存のユーザーから取得するリピート購入数を予測する場合に役立ちます。 売上高以外にも他の項目で見ることができます。 例としては、マージン指標や、招待状、投票、メッセージなどの非財務指標があります。

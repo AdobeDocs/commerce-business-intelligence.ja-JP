@@ -2,9 +2,9 @@
 title: 標準のダッシュボード
 description: 標準のダッシュボードを使用してinsightをビジネスに提供する方法を説明します。
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これらのダッシュボードへのアクセスは、アカウントのタイプとアクセスレベルに応じて異なります。 これらのダッシュボードが表示されない場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) にお問い合わせください。
+>これらのダッシュボードへのアクセスは、アカウントのタイプとアクセスレベルに応じて異なります。 これらのダッシュボードが表示されない場合は、[ サポート ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) にお問い合わせください。
 
 ## レポートの可用性
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## 製品
 
-製品ダッシュボードには、注文された製品、総商品価値（GMV）、購入および払い戻された上位の製品に関する一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、製品の成功と人気を判断するのに役立ちます。 これらのグラフを入力するには、ストアを [&#x200B; 払戻をトラッキングするように設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=ja) する必要があります。
+製品ダッシュボードには、注文された製品、総商品価値（GMV）、購入および払い戻された上位の製品に関する一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、製品の成功と人気を判断するのに役立ちます。 これらのグラフを入力するには、ストアを [ 払戻をトラッキングするように設定 ](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) する必要があります。
 
 >[!NOTE]
 >

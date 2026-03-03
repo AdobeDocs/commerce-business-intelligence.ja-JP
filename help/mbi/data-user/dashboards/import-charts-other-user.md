@@ -2,9 +2,9 @@
 title: 別のユーザーからのグラフのインポート
 description: 別のユーザーが所有するグラフを編集する方法、または類似のものを作成する方法を説明します。
 exl-id: defcb72d-6027-4ae7-b974-e2f39773fe32
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -21,8 +21,8 @@ ht-degree: 0%
 
 ## グラフのクローン
 
-共有ダッシュボードで、自分のアカウントにコピーするグラフを選択します。 歯車（![&#x200B; 歯車アイコン &#x200B;](../../assets/gear-icon.png)）アイコンをクリックし、「**[!UICONTROL Save As]**」をクリックします。
+共有ダッシュボードで、自分のアカウントにコピーするグラフを選択します。 歯車（![ 歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、「**[!UICONTROL Save As]**」をクリックします。
 
-グラフのコピーに名前を付け、既存のダッシュボードに追加するよう求められます。 ダッシュボードを選択しない場合、既存のグラフのリストに追加され、[&#x200B; 後で追加 &#x200B;](../../data-user/dashboards/add-charts-dashboard.md) できます。
+グラフのコピーに名前を付け、既存のダッシュボードに追加するよう求められます。 ダッシュボードを選択しない場合、既存のグラフのリストに追加され、[ 後で追加 ](../../data-user/dashboards/add-charts-dashboard.md) できます。
 
-![&#x200B; 合計顧客数 &#x200B;](../../assets/total-customers.png)
+![ 合計顧客数 ](../../assets/total-customers.png)

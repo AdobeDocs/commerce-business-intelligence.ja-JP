@@ -2,9 +2,9 @@
 title: ダッシュボードを他のユーザーと共有
 description: 他のユーザーとダッシュボードを共有する方法を説明します。
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # ダッシュボードを他のユーザーと共有
 
-ダッシュボードの共有は、チームのメンバーが常に同じ状況に置かれ、共同作業によるディスカッションを促進するのに最適な方法です。 中央のダッシュボードを作成して共有することで、コントロールを維持しながらチームに必要な情報を提供できます。 [[!DNL Adobe]  では、誤って変更することを最小限に抑えるために &#x200B;](../../best-practices/share-dashboard-best-practice.md){: target="_blank"} 一部のに `Edit` の権限を付与することをお勧めします。
+ダッシュボードの共有は、チームのメンバーが常に同じ状況に置かれ、共同作業によるディスカッションを促進するのに最適な方法です。 中央のダッシュボードを作成して共有することで、コントロールを維持しながらチームに必要な情報を提供できます。 [[!DNL Adobe]  では、誤って変更することを最小限に抑えるために ](../../best-practices/share-dashboard-best-practice.md){: target="_blank"} 一部のに `Edit` の権限を付与することをお勧めします。
 
 >[!NOTE]
 >
->共有しているダッシュボードに、特定のユーザーがアクセスできない指標で作成されたレポートが含まれている場合、レポートには `Error Loading Data` のメッセージが表示されます。 特定のユーザーにデータを表示する場合は、[&#x200B; 管理者ユーザー &#x200B;](../../administrator/user-management/user-management.md) が、それらのレポートで使用されるすべての指標へのアクセス権を付与する必要があります。
+>共有しているダッシュボードに、特定のユーザーがアクセスできない指標で作成されたレポートが含まれている場合、レポートには `Error Loading Data` のメッセージが表示されます。 特定のユーザーにデータを表示する場合は、[ 管理者ユーザー ](../../administrator/user-management/user-management.md) が、それらのレポートで使用されるすべての指標へのアクセス権を付与する必要があります。
 
 ## ダッシュボードの共有
 
@@ -43,4 +43,4 @@ ht-degree: 0%
 
 例：
 
-![&#x200B; ダッシュボードを共有 &#x200B;](../../assets/Share_Dashboards.gif)
+![ ダッシュボードを共有 ](../../assets/Share_Dashboards.gif)

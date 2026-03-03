@@ -2,9 +2,9 @@
 title: 非日付ベース コホートのコホートReport Builder
 description: 類似のアクティビティまたは属性でユーザーをグループ化する方法を説明します。
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 76c5329c3f55570fa4e46601e902dc5a09e319e7
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ### `Metric View` を `Cohort` に切り替えます。
 
-![1 – 指標ビューをコホートに切り替え &#x200B;](../../assets/1-toggle-metric-view-to-cohort.png)
+![1 – 指標ビューをコホートに切り替え ](../../assets/1-toggle-metric-view-to-cohort.png)
 
 これにより新しいウィンドウが開き、コホートレポートの詳細を設定できます。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 1. コホートの初回アクションの時間範囲
 1. コホート発生後の時間範囲
 
-![&#x200B; コホートグループ &#x200B;](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
+![ コホートグループ ](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
 
 
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 指定した特性のすべての結果を表示できます。 これにより多くの `cohorts` が生じる可能性があるので、必要な特定の `cohorts` （`Customer's first order GA source` で使用可能な様々な値に対応）を選択できます。
 
-![&#x200B; コホートグループ &#x200B;](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
+![ コホートグループ ](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
 
 #### 3.`Action timestamp`
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 `cohorts` の推移を月別、週別または年別に表示しますか？ ここで、選択を行います。 そのセクションの下で、`time range` が発生した後の `cohort action timestamp` を選択します。 例えば、アクションの時間範囲内に最初の注文を行った顧客の 12 か月のデータが表示されます。
 
-![&#x200B; コホート – first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
+![ コホート – first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 >[!NOTE]
 >
