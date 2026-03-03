@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # SQL 計算列の作成
 
-ここでは、`Calculation`Data Warehouse Manager[ でテーブルに追加できる ](../data-warehouse-mgr/tour-dwm.md) 列タイプの目的と使用方法の概要を説明します。 次に、SQL 計算の機能、使用する理由、SQL 計算を作成するプロセスを説明し、2 つの例を示します。
+ここでは、`Calculation`Data Warehouse Manager[&#x200B; でテーブルに追加できる &#x200B;](../data-warehouse-mgr/tour-dwm.md) 列タイプの目的と使用方法の概要を説明します。 次に、SQL 計算の機能、使用する理由、SQL 計算を作成するプロセスを説明し、2 つの例を示します。
 
 **説明**
 
 以前は、`advanced` でカスタマーサクセスチームのアナリストのみが、[!DNL Adobe Commerce Intelligence] と見なされた列を実行できました。 これで、すべての機能がエンドユーザーの手に委ねられ、新しい `SQL Calculation` アーキテクチャ上に [!DNL Commerce Intelligence] 列の形式で高度な列を作成できます。
 
-Data Warehouse Manager のオプションとして使用できるようになった `Calculation` 列タイプは、PostgreSQL ロジックを使用してテーブル上の列を変換できる同じテーブル操作です。 `Calculation` 列タイプで使用できる関数と演算子に関するドキュメントは、PostgreSQL の web サイト [ こちら ](https://www.postgresql.org/docs/9.6/functions.html) にあります。
+Data Warehouse Manager のオプションとして使用できるようになった `Calculation` 列タイプは、PostgreSQL ロジックを使用してテーブル上の列を変換できる同じテーブル操作です。 `Calculation` 列タイプで使用できる関数と演算子に関するドキュメントは、PostgreSQL の web サイト [&#x200B; こちら &#x200B;](https://www.postgresql.org/docs/9.6/functions.html) にあります。
 
 `Calculation` 列を使用して作成できる列にはほとんど制限はありませんが、ほとんどの列は、以下の例で使用される IF-THEN 文と基本算術式を使用して作成できます。
 
@@ -27,7 +27,7 @@ Data Warehouse Manager のオプションとして使用できるようになっ
 
 ほとんどのアカウントには、`Is customer's last order?` テーブルに `orders` という列があり、リピート購入率とチャーンされた顧客に関する分析を実行します。 アカウントが新しいアーキテクチャ上にある場合、この列は `Calculation` の列を使用して作成され、次のスクリーンショットで確認できます。
 
-![ 顧客の最後の注文を識別するための SQL 計算列の定義 ](../../assets/Is_customer_s_last_order.png)
+![&#x200B; 顧客の最後の注文を識別するための SQL 計算列の定義 &#x200B;](../../assets/Is_customer_s_last_order.png)
 
 `Is customer's last order?` の列では、入力 `Customer's lifetime number of orders` と `Customer's order number` のエイリアスをそれぞれ `A` と `B` として使用します。
 
@@ -47,7 +47,7 @@ Data Warehouse Manager のオプションとして使用できるようになっ
 
 製品の売上高分析を有効にするために、ほとんどのアカウントの `Order item total value (quantity * price)` テーブルには `Orders Items` という列があります。 アカウントが新しいアーキテクチャ上にある場合、この列も `Calculation` の列を使用して作成され、次のスクリーンショットで確認できます。
 
-![ 注文品目の合計値の SQL 計算列の定義 ](../../assets/Order_item_total_value.png)
+![&#x200B; 注文品目の合計値の SQL 計算列の定義 &#x200B;](../../assets/Order_item_total_value.png)
 
 Commerce スキーマの `Order item total value (quantity * price)` 列では、入力 `qty ordered` とエイリアス `base price` をそれぞれ `A` と `B` として使用します。
 
@@ -57,7 +57,7 @@ Commerce スキーマの `Order item total value (quantity * price)` 列では�
 
 次に示すように `Calculation` に移動して、新しい **[!DNL Manage Data > Data Warehouse]** 列をテーブルに追加できます。
 
-![ 計算列の結果を表示するテーブル表示 ](../../assets/blobid2.png)
+![&#x200B; 計算列の結果を表示するテーブル表示 &#x200B;](../../assets/blobid2.png)
 
 ここから、次の手順に従って `Calculation` しい列を作成できます。
 

@@ -16,7 +16,7 @@ ht-degree: 2%
 [!DNL Adobe Commerce] プラットフォームは、数百のテーブルにわたる様々な貴重なコマースデータを記録および整理します。 このトピックでは、以下について説明します。
 
 * そのデータの生成方法
-* [ コア Commerce テーブル ](../data-warehouse-mgr/common-mage-tables.md) の 1 つに新しい行が挿入される理由
+* [&#x200B; コア Commerce テーブル &#x200B;](../data-warehouse-mgr/common-mage-tables.md) の 1 つに新しい行が挿入される理由
 * 購入やアカウントの作成などのアクションを [!DNL Adobe Commerce] データベースに記録する方法
 
 これらの概念については、次の例を参照してください。
@@ -61,7 +61,7 @@ ht-degree: 2%
 
 ## `sales\_flat\_order (or Sales\_order` がある場合は [!DNL Adobe Commerce 2.x]
 
-アカウントの作成が完了 `Sammy Customer` たら、購入を開始する準備が整います。 Web サイトでは、顧客は 2 組の `Throwback Bellbottoms` と 1 組の `V-Neck T-Shirt` を買い物かごに追加します。 選択が完了すると、顧客はチェックアウトに移動し、受注を発行します。[ 受注フラット表 ](../data-warehouse-mgr/sales-flat-order-table.md) に次のエントリが作成されます。
+アカウントの作成が完了 `Sammy Customer` たら、購入を開始する準備が整います。 Web サイトでは、顧客は 2 組の `Throwback Bellbottoms` と 1 組の `V-Neck T-Shirt` を買い物かごに追加します。 選択が完了すると、顧客はチェックアウトに移動し、受注を発行します。[&#x200B; 受注フラット表 &#x200B;](../data-warehouse-mgr/sales-flat-order-table.md) に次のエントリが作成されます。
 
 | **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
@@ -79,7 +79,7 @@ ht-degree: 2%
 
 （Commerce 2.0 以降の場合）
 
-`Sales\_flat\_order` テーブルの 1 つの行に加えて、注文を送信 `Sammy Customer` ると、注文の一意の各項目の行が [`sales\_flat\_order\_item` テーブルに挿入され ](../data-warehouse-mgr/sales-flat-order-item-table.md) す。
+`Sales\_flat\_order` テーブルの 1 つの行に加えて、注文を送信 `Sammy Customer` ると、注文の一意の各項目の行が [`sales\_flat\_order\_item` テーブルに挿入され &#x200B;](../data-warehouse-mgr/sales-flat-order-item-table.md) す。
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|

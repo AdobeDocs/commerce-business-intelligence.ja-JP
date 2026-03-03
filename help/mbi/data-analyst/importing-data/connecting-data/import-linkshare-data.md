@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Linkshare] データを [!DNL Adobe Commerce Intelligence] に取り込むには、次の 2 つの操作が必要です。
 
-1. [でのリンク共有データのエクスポート ](#export)
+1. [でのリンク共有データのエクスポート &#x200B;](#export)
 1. [スプレッドシートをにアップロードします  [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Linkshare からのデータのエクスポート {#export}
@@ -40,4 +40,4 @@ ht-degree: 0%
 
    この時点で、`.csv` ファイルがダウンロードされました。
 
-ファイルをダウンロードしたら、[!DNL Commerce Intelligence] 機能を使用して [`File Upload` にアップロードでき ](../connecting-data/using-file-uploader.md) す。
+ファイルをダウンロードしたら、[!DNL Commerce Intelligence] 機能を使用して [`File Upload` にアップロードでき &#x200B;](../connecting-data/using-file-uploader.md) す。

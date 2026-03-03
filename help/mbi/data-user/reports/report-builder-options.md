@@ -14,7 +14,7 @@ ht-degree: 0%
 # Report Builder の選択
 
 >[!NOTE]
->>[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
+>&#x200B;>[&#x200B; 管理者権限 &#x200B;](../../administrator/user-management/user-management.md) が必要です。
 
 分析を作成するオプションが増えたので、ニーズに合った Report Builder のフレーバーを正確に把握することが困難な場合があります。 このトピックでは、分析を構築するための最適な方法を選択する手順を説明します。
 
@@ -28,14 +28,14 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder] は、以前は使用できなかった [`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html) や [`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html) などの関数をサポートしています。 [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) にアクセスできますが、その他の SQL 固有の関数には次のものがあります。
 
-* [`Bitwise aggregate` 関数 ](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
+* [`Bitwise aggregate` 関数 &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
 * [`CASE expression`](https://docs.aws.amazon.com/redshift/latest/dg/r_CASE_function.html)
 * [`JSON_EXTRACT_PATH_TEXT`](https://docs.aws.amazon.com/redshift/latest/dg/JSON_EXTRACT_PATH_TEXT.html)
 * [`LOG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LOG.html)
 * [`MONTHS_BETWEEN`](https://docs.aws.amazon.com/redshift/latest/dg/r_MONTHS_BETWEEN_function.html)
 * [`REPLACE`](https://docs.aws.amazon.com/redshift/latest/dg/r_REPLACE.html)
 * [`SQRT`](https://docs.aws.amazon.com/redshift/latest/dg/r_SQRT.html)
-* [`concatenation` 演算子 ](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
+* [`concatenation` 演算子 &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
 
 ### 何らかのテストを行う場合
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 例えば、1 つの製品が複数の製品カテゴリの一部と見なされ、各製品の各カテゴリに関連付けられた売上高を表示するとします。 DWM を使用してこの関係を作成しようとすることは、面倒で難しい場合がありますが、[!DNL SQL] クエリを作成する方が少し簡単な場合があります。
 
-![1 対多の関係を持つ製品カテゴリ別の売上高を示す SQL クエリ ](../../assets/When_should_I_use_the_RB_2.png)
+![1 対多の関係を持つ製品カテゴリ別の売上高を示す SQL クエリ &#x200B;](../../assets/When_should_I_use_the_RB_2.png)
 
 ## 従来のReport Builderは、どのような場合に使用すればよいですか？ {#whentraditionalrb}
 

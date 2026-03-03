@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ダッシュボードの検索
 
-このトピックでは、[[!DNL Global Search] feature](#global) を使用してダッシュボードを検索する方法と、[ 他のユーザーが所有するダッシュボード ](#other) を検索する方法について説明します。
+このトピックでは、[[!DNL Global Search] feature](#global) を使用してダッシュボードを検索する方法と、[&#x200B; 他のユーザーが所有するダッシュボード &#x200B;](#other) を検索する方法について説明します。
 
 ## グローバル検索 {#global}
 
@@ -25,10 +25,10 @@ ht-degree: 0%
 
 例：
 
-![ ダッシュボードグローバル検索 ](../../assets/dboard-global-search.gif)
+![&#x200B; ダッシュボードグローバル検索 &#x200B;](../../assets/dboard-global-search.gif)
 
 ## 他のユーザーが所有するダッシュボードの検索 {#other}
 
 別のユーザーが所有するダッシュボードを探している場合は、 他のユーザーがダッシュボードを表示できる場合は、ダッシュボードのドロップダウンで「**[!UICONTROL Find]**」をクリックして `Dashboard Options` 索できます。
 
-![ ダッシュボードの検索 ](../../assets/find-dboards-other-owners.png)
+![&#x200B; ダッシュボードの検索 &#x200B;](../../assets/find-dboards-other-owners.png)

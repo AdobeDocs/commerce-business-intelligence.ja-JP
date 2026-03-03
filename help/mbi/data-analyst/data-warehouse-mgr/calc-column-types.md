@@ -19,9 +19,9 @@ ht-degree: 0%
 * [便利な参照マップ](#map)
 * [高度な計算列](#advanced)
 
-[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) 内には、分析用にデータを拡張および最適化する列を作成できます。 [ この機能 ](../data-warehouse-mgr/creating-calculated-columns.md) にアクセスするには、Data Warehouse Manager で任意のテーブルを選択し、「**[!UICONTROL Create New Column]**」をクリックします。
+[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) 内には、分析用にデータを拡張および最適化する列を作成できます。 [&#x200B; この機能 &#x200B;](../data-warehouse-mgr/creating-calculated-columns.md) にアクセスするには、Data Warehouse Manager で任意のテーブルを選択し、「**[!UICONTROL Create New Column]**」をクリックします。
 
-ここでは、Data Warehouse Manager で作成できる列のタイプについて説明します。 また、列の説明、その列の視覚的なウォークスルー、列の作成に必要なすべての入力の [ 参照マップ ](#map) についても説明します。 計算列を作成する方法は 3 つあります。
+ここでは、Data Warehouse Manager で作成できる列のタイプについて説明します。 また、列の説明、その列の視覚的なウォークスルー、列の作成に必要なすべての入力の [&#x200B; 参照マップ &#x200B;](#map) についても説明します。 計算列を作成する方法は 3 つあります。
 
 1. [同じテーブルの計算列](#sametable)
 1. [1 対多の計算列](#onetomany)
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 次の例では、`Seconds since customer's most recent order` テーブルに `customers` を作成します。 これを使用して、`X days` 内で購入を行っていない顧客（チャーンと呼ばれることもあります）のユーザーリストを作成できます。
 
-![ 年齢計算列の作成に関するアニメーション デモ ](../../assets/age.gif)
+![&#x200B; 年齢計算列の作成に関するアニメーション デモ &#x200B;](../../assets/age.gif)
 
 ### 通貨換算
 
@@ -47,11 +47,11 @@ ht-degree: 0%
 
 Commerce クライアントの場合、通常、「`base\_currency\_code`」フィールドには現地通貨が格納されます。 `Spot Time` フィールドは、指標で使用される日付と一致する必要があります。
 
-![ 通貨コンバーターの計算列の設定 ](../../assets/currency_converter.png)
+![&#x200B; 通貨コンバーターの計算列の設定 &#x200B;](../../assets/currency_converter.png)
 
 ## 1 対多の計算列 {#onetomany}
 
-`One-to-Many` 列 [2 つのテーブル間のパスを使用 ](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)。 このパスは、常に、属性が存在する 1 つのテーブルと、その属性が「再配置」される多数のテーブルを意味します。 パスは、`foreign key--primary key` しい関係と言うことができます。
+`One-to-Many` 列 [2 つのテーブル間のパスを使用 &#x200B;](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)。 このパスは、常に、属性が存在する 1 つのテーブルと、その属性が「再配置」される多数のテーブルを意味します。 パスは、`foreign key--primary key` しい関係と言うことができます。
 
 ### 結合された列 {#joined}
 
@@ -59,7 +59,7 @@ Commerce クライアントの場合、通常、「`base\_currency\_code`」フ�
 
 次の例では、`Customer's group\_id` ディメンションを `orders` テーブルに結合します。
 
-![ 結合列リンクテーブルの作成に関するアニメーションによるデモ ](../../assets/joined_column.gif)
+![&#x200B; 結合列リンクテーブルの作成に関するアニメーションによるデモ &#x200B;](../../assets/joined_column.gif)
 
 ## 多対 1 の計算列 {#manytoone}
 
@@ -71,7 +71,7 @@ Commerce クライアントの場合、通常、「`base\_currency\_code`」フ�
 
 次の例では、（`Customer's lifetime number of canceled orders` のフィルターを使用して） ディメンション `customers` を `orders.status` テーブルに作成します。
 
-![ 多対 1 の列集計のアニメーションデモ ](../../assets/many_to_one.gif){: width="699" height="351"}
+![&#x200B; 多対 1 の列集計のアニメーションデモ &#x200B;](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### 合計 {#sum}
 
@@ -95,13 +95,13 @@ Commerce クライアントの場合、通常、「`base\_currency\_code`」フ�
 
 計算列を作成するときにすべての入力が何であるかを思い出すのに苦労している場合は、以下を作成するときにこの参照マップを手元に置いておいてください。
 
-![ 結合された計算列の設定を示す参照マップ ](../../assets/merged_reference_map.png)
+![&#x200B; 結合された計算列の設定を示す参照マップ &#x200B;](../../assets/merged_reference_map.png)
 
 ## 高度な計算列 {#advanced}
 
 ビジネスに関する質問を分析し、回答しようとすると、必要な正確な列を作成できない状況が発生する場合があります。
 
-迅速なターンアラウンドを確保するために、Adobeでは [ 高度な計算列の種類 ](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) ガイドを参照して、Adobe サポートチームが作成できる列の種類を確認することをお勧めします。 このトピックでは、列を作成するために必要な情報も扱います。これをリクエストに含めます。
+迅速なターンアラウンドを確保するために、Adobeでは [&#x200B; 高度な計算列の種類 &#x200B;](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) ガイドを参照して、Adobe サポートチームが作成できる列の種類を確認することをお勧めします。 このトピックでは、列を作成するために必要な情報も扱います。これをリクエストに含めます。
 
 ## 関連ドキュメント
 

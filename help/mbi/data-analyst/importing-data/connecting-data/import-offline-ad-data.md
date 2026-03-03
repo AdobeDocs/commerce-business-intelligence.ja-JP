@@ -19,7 +19,7 @@ ht-degree: 0%
 
 広告費用データを分析する最初の手順は、データを取得することです。 ほとんどの広告プラットフォームではレポートを書き出すことができるので、Adobeでは、生データを広告プラットフォームから書き出し、操作せずに直接 [!DNL Commerce Intelligence] にアップロードすることをお勧めします。 Data Warehouse内のデータに対して操作を実行できるので、作業を 2 倍にする必要はありません。
 
-広告費用データを書き出したら、[`File Upload` 機能を使用して ](../connecting-data/using-file-uploader.md) データをData Warehouseに取り込みます。 同じ [!DNL Commerce Intelligence] テーブルに新しいデータを経時的にアップロードできます。
+広告費用データを書き出したら、[`File Upload` 機能を使用して &#x200B;](../connecting-data/using-file-uploader.md) データをData Warehouseに取り込みます。 同じ [!DNL Commerce Intelligence] テーブルに新しいデータを経時的にアップロードできます。
 
 ## オフラインソース
 

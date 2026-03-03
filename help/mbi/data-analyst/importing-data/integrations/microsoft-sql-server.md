@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
+>[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
 
-![Microsoft SQL Server ロゴ ](../../../assets/MicrosoftSQLServer-logo.png)
+![Microsoft SQL Server ロゴ &#x200B;](../../../assets/MicrosoftSQLServer-logo.png)
 
 このトピックでは、[!DNL Microsoft SQL] データベースを [!DNL Commerce Intelligence] に接続する方法を 4 段階で説明します。 このプロセスには、サーバー接続と SQL に関連する技術的な専門知識が必要であり、チームの開発者のサポートが必要になる場合があります。
 
-[!DNL Commerce Intelligence] は、[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure] およびその他のほとんどのクラウドサーバープロバイダーをサポートしています。 特定のホストに関するご質問については、[ サポートチケットを送信 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)、この情報の提供をアドビに依頼してください。
+[!DNL Commerce Intelligence] は、[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure] およびその他のほとんどのクラウドサーバープロバイダーをサポートしています。 特定のホストに関するご質問については、[&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)、この情報の提供をアドビに依頼してください。
 
 システムは、データベースに対して SELECT クエリを実行する必要があります。 この処理は、最初はデータベース構造のスナップショットを取得するために行われ、その後、定期的に残業してデータを最新の状態に保ちます。 更新は増分更新なので、Adobeでは、更新の頻度と時間を制限して、サーバーに不要な負荷がかかるのを防ぎます。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 1. [!DNL Commerce Intelligence] の下の **[!UICONTROL Manage Data** > **Connections]** に、サーバーの IP アドレス、ユーザー名およびパスワードを入力します。
 
-   ![ データベース統合を示すデータ接続の管理ページ ](../../../assets/manage-data-connections.png)
+   ![&#x200B; データベース統合を示すデータ接続の管理ページ &#x200B;](../../../assets/manage-data-connections.png)
 
 1. 「**[!UICONTROL Add a Data Source]**」をクリックします。
 

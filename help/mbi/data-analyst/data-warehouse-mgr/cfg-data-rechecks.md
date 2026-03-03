@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # データチェックの設定
 
-データベーステーブルには、変更可能な値を持つデータ列を使用できます。 例えば、`orders` テーブルには `status` という列があるとします。 注文が最初にデータベースに書き込まれると、ステータス列には値 _保留中_ が含まれる場合があります。 注文は [0}Data Warehouse} でこの ](../data-warehouse-mgr/tour-dwm.md) 値でレプリケートされます。`pending`
+データベーステーブルには、変更可能な値を持つデータ列を使用できます。 例えば、`orders` テーブルには `status` という列があるとします。 注文が最初にデータベースに書き込まれると、ステータス列には値 _保留中_ が含まれる場合があります。 注文は [0&rbrace;Data Warehouse&rbrace; でこの &#x200B;](../data-warehouse-mgr/tour-dwm.md) 値でレプリケートされます。`pending`
 
 注文ステータスは変更できますが、常に `pending` しいステータスであるとは限りません。 最終的には `complete` や `cancelled` になる可能性があります。 Data Warehouseでこの変更内容を確実に同期させるには、新しい値について列を再確認する必要があります。
 
-これは、前述の [ レプリケーション方法 ](../data-warehouse-mgr/cfg-replication-methods.md) とどのように適合しますか。 再チェックの処理は、選択したレプリケーション方法によって異なります。 再チェックを設定する必要がないので、`Modified\_At` レプリケーション方法は変更する値を処理する場合に最適です。 `Auto-Incrementing Primary Key` メソッドと `Primary Key Batch Monitoring` メソッドでは、構成の再確認が必要です。
+これは、前述の [&#x200B; レプリケーション方法 &#x200B;](../data-warehouse-mgr/cfg-replication-methods.md) とどのように適合しますか。 再チェックの処理は、選択したレプリケーション方法によって異なります。 再チェックを設定する必要がないので、`Modified\_At` レプリケーション方法は変更する値を処理する場合に最適です。 `Auto-Incrementing Primary Key` メソッドと `Primary Key Batch Monitoring` メソッドでは、構成の再確認が必要です。
 
 これらのメソッドのいずれかを使用する場合、再チェックのために変更可能な列にフラグを付ける必要があります。 これを行う方法は 3 つあります。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 **ご存じでしたか？**
 `primary key` 列で再チェックを設定しても、列の値が変更されたかはチェックされません。 テーブルで削除された行の有無が確認され、削除がData Warehouseからパージされます。
 
-再チェックのフラグが設定されているカラムでは、再チェックの頻度も設定できます。 特定の列が頻繁に変更されない場合、頻繁でない再確認を選択すると [ 更新サイクルを最適化 ](../../best-practices/reduce-update-cycle-time.md) できます。
+再チェックのフラグが設定されているカラムでは、再チェックの頻度も設定できます。 特定の列が頻繁に変更されない場合、頻繁でない再確認を選択すると [&#x200B; 更新サイクルを最適化 &#x200B;](../../best-practices/reduce-update-cycle-time.md) できます。
 
 頻度オプションは次のとおりです。
 
@@ -54,9 +54,9 @@ ht-degree: 0%
 
 再チェックの頻度を変更するには、変更する列の横にあるチェックボックスをクリックします。 次に、「**[!UICONTROL Set Recheck Frequency]**」ドロップダウンをクリックし、目的の頻度を設定します。
 
-![ 設定オプションの再確認を表示しているData Warehouse Manager](../../assets/dwm-recheck.png)
+![&#x200B; 設定オプションの再確認を表示しているData Warehouse Manager](../../assets/dwm-recheck.png)
 
-`Paused` の列に `Changes?` が表示される場合があります。 この値は、テーブルの [ レプリケーションメソッド ](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) が `Paused` に設定されている場合に表示されます。
+`Paused` の列に `Changes?` が表示される場合があります。 この値は、テーブルの [&#x200B; レプリケーションメソッド &#x200B;](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) が `Paused` に設定されている場合に表示されます。
 
 [!DNL Adobe] では、これらの列を確認して、更新を最適化し、変更可能な列が再チェックされていることを確認することをお勧めします。 Adobe データの変更頻度を考慮して列の再チェック頻度が高い場合は、更新内容を最適化するために頻度を低くすることをお勧めします。
 

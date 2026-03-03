@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ### 新しいアーキテクチャ
 
-`Cohort Report Builder` 新しいアーキテクチャ [ の ](../../administrator/account-management/new-architecture.md) を使用する手順を以下に示します。
+`Cohort Report Builder` 新しいアーキテクチャ [&#x200B; の &#x200B;](../../administrator/account-management/new-architecture.md) を使用する手順を以下に示します。
 
 1. 左側のタブの「**[!UICONTROL Report Builder]**」または任意のダッシュボードの「**[!UICONTROL Add Report** > **Create Report]**」をクリックします。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 **指標ビューを`Cohort`** に切り替える
 
-![ コホート分析の切り替えオプションを表示するビジュアルReport Builder](../../assets/visual-report-builder-cohort-toggle.png)
+![&#x200B; コホート分析の切り替えオプションを表示するビジュアルReport Builder](../../assets/visual-report-builder-cohort-toggle.png)
 
 これにより、`Cohort` レポートの詳細を設定するための新しいウィンドウが開きます。
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 この値の間隔は、`cohort time period` で選択した値によって変わり、デフォルトでは値は `12` に設定されています。カレンダーアイコンをクリックして編集しない限り、値は変更されません。
 
-![ 日付オプションを表示するコホート時間範囲セレクター ](../../assets/cohort-time-range.png)
+![&#x200B; 日付オプションを表示するコホート時間範囲セレクター &#x200B;](../../assets/cohort-time-range.png)
 
 #### その他のメモ
 
@@ -93,21 +93,21 @@ ht-degree: 0%
 
 これをすべて集める例を次に示します。 この例では、`cohort` ーザーの最初の購入後の注文行動を確認して、そのコホートが今後 6 か月以内にリピート購入を行うために戻ってきているかどうかを確認します。
 
-![ 注文コホート ](../../assets/crb_example.gif)
+![&#x200B; 注文コホート &#x200B;](../../assets/crb_example.gif)
 
 ### レガシーアーキテクチャ
 
 #### レガシーアーキテクチャ {#personalinfo}
 
-`Cohort Report Builder` のレガシーバージョンに固有の手順を以下に示します。 新しいバージョンの使用に関心がある場合、新しいアーキテクチャアカウントへの移行について詳しくは [ 新しいアーキテクチャ ](../../administrator/account-management/new-architecture.md) を参照し [!DNL Commerce Intelligence] ください。
+`Cohort Report Builder` のレガシーバージョンに固有の手順を以下に示します。 新しいバージョンの使用に関心がある場合、新しいアーキテクチャアカウントへの移行について詳しくは [&#x200B; 新しいアーキテクチャ &#x200B;](../../administrator/account-management/new-architecture.md) を参照し [!DNL Commerce Intelligence] ください。
 
 #### 独自の `cohort` 分析を作成するにはどうすればよいですか？ {#create}
 
-![ 設定オプションを含むコホート分析を作成ダイアログ ](../../assets/create-cohort-analysis.png)
+![&#x200B; 設定オプションを含むコホート分析を作成ダイアログ &#x200B;](../../assets/create-cohort-analysis.png)
 
 実行中の `Cohort` 分析 ここでは、時間の経過と共に売上高が累積およびユーザー単位で増加していることがわかります。
 
-この節では、独自の `cohort` 分析を作成する手順について説明します。 例（およびプロセスを示すアニメーション GIF）については、このトピックの [ 例セクション ](#examples) を参照してください。
+この節では、独自の `cohort` 分析を作成する手順について説明します。 例（およびプロセスを示すアニメーション GIF）については、このトピックの [&#x200B; 例セクション &#x200B;](#examples) を参照してください。
 
 1. 左側のタブの「**[!UICONTROL Report Builder]**」または任意のダッシュボードの「**[!UICONTROL Add Report** > **Create Report]**」をクリックします。
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
 別のテーブルから結合された `cohort date` でユーザーをグループ化することを選択した場合は、`counting members in the … table` のオプションが表示される場合があります。
 
-![ 独立モードと累積モードを示すコホートカウントメンバーオプション ](../../assets/Cohort_Counting_Members_option.png)
+![&#x200B; 独立モードと累積モードを示すコホートカウントメンバーオプション &#x200B;](../../assets/Cohort_Counting_Members_option.png)
 
 この設定を理解するには、例を参照してください。 `Revenue` 別の `Customer's registration date` しい指標を示すレポートを作成したとします。 また、パースペクティブ `Average value per cohort member` を使用して、買い手ごとの売上高を経時的に確認する必要がありました。 買い手ごとの平均値を見つけるには、で割る買い手の数を決定する必要があります。 `customers` テーブルに登録されている顧客の数ですか、それとも同じ期間における `orders table` 内の個別の購入者の数ですか。
 
@@ -165,9 +165,9 @@ ht-degree: 0%
 
 レポートビジュアライゼーションの真上に、設定のドロップダウン `perspective` あります。
 
-[ パースペクティブ ](#perspectives) を参照してください。
+[&#x200B; パースペクティブ &#x200B;](#perspectives) を参照してください。
 
-![ 様々な表示オプションを表示するコホートパースビューメニュー ](../../assets/Cohort_Perspective_Menu.png)
+![&#x200B; 様々な表示オプションを表示するコホートパースビューメニュー &#x200B;](../../assets/Cohort_Perspective_Menu.png)
 
 ## コホート分析の例 {#examples}
 
@@ -175,7 +175,7 @@ ht-degree: 0%
 
 ### ユーザー `cohorts` が時間の経過と共にどのように成長しているかを知りたい。
 
-![ 時間の経過に伴うユーザー `cohorts` の増加 ](../../assets/cohort1.gif)
+![&#x200B; 時間の経過に伴うユーザー `cohorts` の増加 &#x200B;](../../assets/cohort1.gif)
 
 この例では、`Revenue` 指標を分析し、コホートを `customer's first order date` 別にグループ化して、分析に含める最新の 8 つの `cohorts` （`Time Period` メニューで定義）を選択しました。 コホートが時間の経過と共にどのように成長するかを確認するには、`Cumulative Average Value per Cohort Member` `perspective` を使用しました。
 
@@ -187,7 +187,7 @@ ht-degree: 0%
 
 ### ユーザーの今後の購買活動と、ビジネスでの最初の月の活動との比較を理解したいと思います。
 
-![ ユーザーの将来の購買活動と活動の最初の月の比較 ](../../assets/cohort3.gif)
+![&#x200B; ユーザーの将来の購買活動と活動の最初の月の比較 &#x200B;](../../assets/cohort3.gif)
 
 ## `Perspectives` {#perspectives}
 
@@ -211,4 +211,4 @@ ht-degree: 0%
 
 ## まとめ {#finish}
 
-`Cohort Report Builder` は、共通の `cohort date` でユーザーをグループ化するために最適化されています。 類似のアクティビティや属性でユーザーをグループ化したい場合があります。 Adobeでは、開始するには、[ 定性コホートに関するこのチュートリアル ](../dev-reports/create-qual-cohort-analysis.md) を確認することをお勧めします。
+`Cohort Report Builder` は、共通の `cohort date` でユーザーをグループ化するために最適化されています。 類似のアクティビティや属性でユーザーをグループ化したい場合があります。 Adobeでは、開始するには、[&#x200B; 定性コホートに関するこのチュートリアル &#x200B;](../dev-reports/create-qual-cohort-analysis.md) を確認することをお勧めします。

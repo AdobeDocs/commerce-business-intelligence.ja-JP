@@ -15,13 +15,13 @@ ht-degree: 0%
 
 このトピックでは、合計売上高が顧客ベース間でどのように分配されるかを測定するのに役立つダッシュボードの設定方法を説明します。 顧客の何 % が売上高の何 % を貢献しているかを理解し、セグメント化されたリストを作成して最適なマーケットに送り、貢献の高い顧客を維持します。
 
-この分析には [ 高度な計算列 ](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
+この分析には [&#x200B; 高度な計算列 &#x200B;](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
 ## はじめに
 
 まず、値が 1 のプライマリキーのみを含むファイルをアップロードする必要があります。 これにより、分析に必要な計算列を作成できます。
 
-[ ファイルアップローダ ](../importing-data/connecting-data/using-file-uploader.md) と以下の画像を使用して、ファイルをフォーマットできます。
+[&#x200B; ファイルアップローダ &#x200B;](../importing-data/connecting-data/using-file-uploader.md) と以下の画像を使用して、ファイルをフォーマットできます。
 
 ## 計算される列
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 * 顧客の売上高のパーセンタイル
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`、`Number of customers`
-* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end **
+* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order` テーブル
@@ -76,7 +76,7 @@ ht-degree: 0%
 * 顧客の売上高のパーセンタイル
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`、`Number of customers`
-* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end **
+* [!UICONTROL Calculation]: - **A が null の場合は null、それ以外の場合は（A/B）* 100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -100,16 +100,16 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Independent`
 * 指標 `A`: `Total customer lifetime revenue by percentile`
 * 指標 `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * 上/下を表示：`100% of Customer's revenue percentile Name`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 * **上位 10% の濃度**
@@ -117,12 +117,12 @@ ht-degree: 0%
 
 * 指標 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * グラフを非表示
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **1 回の購入で下位 50 % の集中**
@@ -133,12 +133,12 @@ ht-degree: 0%
 * [!UICONTROL Filter]:
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * グラフを非表示
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **下位 10% の濃度**
@@ -146,14 +146,14 @@ ht-degree: 0%
 
 * 指標 `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * グラフを非表示
-* 
+* &#x200B;
   [!UICONTROL Group by]: `Email`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 
-分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[ サポートにお問い合わせください ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+分析中に質問が発生した場合や、プロフェッショナルサービスチームに依頼したい場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

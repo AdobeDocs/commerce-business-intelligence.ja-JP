@@ -15,17 +15,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
+>[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
 
 >[!NOTE]
 >
 >[[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics) 時に友達から許可を得て情報を使用しました。
 
-[!DNL Google Analytics Warehoused] の統合 [!DNL Commerce Intelligence]、[!DNL Google Analytics] [ コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用します。
+[!DNL Google Analytics Warehoused] の統合 [!DNL Commerce Intelligence]、[!DNL Google Analytics] [&#x200B; コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用します。
 
 >[!NOTE]
 >
->予期しない結果や感覚的でない結果を避けるために、使用するディメンションが [ で使用する ](https://ga-dev-tools.google/dimensions-metrics-explorer/)1 つ以上の指標と互換性がある `Report Builder` ことを確認します。
+>予期しない結果や感覚的でない結果を避けるために、使用するディメンションが [&#x200B; で使用する &#x200B;](https://ga-dev-tools.google/dimensions-metrics-explorer/)1 つ以上の指標と互換性がある `Report Builder` ことを確認します。
 
 Data Warehouseに `report` という 1 つのテーブルが作成されます。
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です。
+>[&#x200B; 管理者権限 &#x200B;](../../administrator/user-management/user-management.md) が必要です。
 
 **[!DNL Manage Data** > **Dashboards]** では、所有しているダッシュボードのユーザー権限の管理、不要になったダッシュボードの削除、デフォルトのダッシュボードの設定を行うことができます。 このトピックの内容は次のとおりです。
 

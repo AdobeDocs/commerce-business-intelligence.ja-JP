@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Connect [!DNL Salesforce]
 
-![Salesforce ロゴ ](../../../assets/Salesforce_Logo.png)
+![Salesforce ロゴ &#x200B;](../../../assets/Salesforce_Logo.png)
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
+>[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
 
 [!DNL Salesforce] データを結び付けることで、リードのスコアリングと最適化から、コンバージョンされた機会の目標を達成するものまで、様々な分析を可能にします。
 
 >[!IMPORTANT]
 >
->[!DNL Salesforce] コネクタを使用するには、[[!DNL Salesforce]  サブスクリプションの一部として ](../integrations/salesforce.md)API アクセス [!DNL Salesforce] が必要です。 開始する前に、これが有効になっていることを確認してください。
+>[!DNL Salesforce] コネクタを使用するには、[[!DNL Salesforce]  サブスクリプションの一部として &#x200B;](../integrations/salesforce.md)API アクセス [!DNL Salesforce] が必要です。 開始する前に、これが有効になっていることを確認してください。
 
 1. [!DNL Salesforce] 統合をアカウントに追加するには、「`Connections`」の下の **[!UICONTROL Manage Data** > **Connections]** ページに移動します。
 1. 「データソース」テーブルの上にある画面右側の「**[!UICONTROL Add a Data Source]**」をクリックします。
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 関連：
 
-もう少し技術に詳しい場合は、[[!DNL Salesforce] API ドキュメント ](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) を参照して、Salesforceと [!DNL Commerce Intelligence] の統合方法を詳しく学ぶことができます。
+もう少し技術に詳しい場合は、[[!DNL Salesforce] API ドキュメント &#x200B;](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) を参照して、Salesforceと [!DNL Commerce Intelligence] の統合方法を詳しく学ぶことができます。
 
 * [Expected [!DNL Salesforce] data](../integrations/salesforce-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

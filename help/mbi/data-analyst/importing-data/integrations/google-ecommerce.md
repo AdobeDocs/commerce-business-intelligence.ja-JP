@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
+>[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
 
-![Google e コマースロゴ ](../../../assets/google-ecommerce-logo.png)
+![Google e コマースロゴ &#x200B;](../../../assets/google-ecommerce-logo.png)
 
-トラフィックと注文の着実な流れがあります。つまり、顧客に効果的に到達し、獲得しています。 しかし、最も価値のある紹介チャネルは何ですか？ あるソースから取得した顧客の平均生涯価値は、別のソースから取得した顧客の平均生涯価値はどれくらいですか？ 注文参照ソースデータを [!DNL Google ECommerce] から [!DNL Commerce Intelligence] に接続することで、[ 最も価値のあるマーケティングチャネル ](../../../data-analyst/analysis/most-value-source-channel.md) を特定するのに役立つ分析を構築できます。
+トラフィックと注文の着実な流れがあります。つまり、顧客に効果的に到達し、獲得しています。 しかし、最も価値のある紹介チャネルは何ですか？ あるソースから取得した顧客の平均生涯価値は、別のソースから取得した顧客の平均生涯価値はどれくらいですか？ 注文参照ソースデータを [!DNL Google ECommerce] から [!DNL Commerce Intelligence] に接続することで、[&#x200B; 最も価値のあるマーケティングチャネル &#x200B;](../../../data-analyst/analysis/most-value-source-channel.md) を特定するのに役立つ分析を構築できます。
 
 まず、[!DNL Google ECommerce] の資格情報を [!DNL Commerce Intelligence] に入力します。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    複数のプロファイルがあり、どれを識別するのかについてのヘルプが必要な場合は、以下の**複数の [!DNL Google Analytics] プロファイルの接続」の節を参照してください。
 
-   ![ 複数のGoogle Analytics プロファイルを接続するためのオプションを示すフォーム ](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
+   ![&#x200B; 複数のGoogle Analytics プロファイルを接続するためのオプションを示すフォーム &#x200B;](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
 
 1. 変更は自動的に保存されるので、完了したら「**[!UICONTROL Back to Connections]**」をクリックします。
 
@@ -53,14 +53,14 @@ ht-degree: 0%
 
 ## [!DNL Google ECommerce] を [!DNL Commerce Intelligence] から切断しています {#disconnect}
 
-1. [!DNL Google Analytics] の [ アカウント設定 ](https://www.google.com/account/about/?hl=en) ページにアクセスします。
-1. [`Security`] セクションで、[ アプリケーションとサイト **[!UICONTROL edit]** 横にある [`Authorizing`] をクリックします。
+1. [!DNL Google Analytics] の [&#x200B; アカウント設定 &#x200B;](https://www.google.com/account/about/?hl=en) ページにアクセスします。
+1. [`Security`] セクションで、&lbrack; アプリケーションとサイト **[!UICONTROL edit]** 横にある [`Authorizing`] をクリックします。
 1. 「**[!UICONTROL revoke access]**」の横にある「[!DNL Commerce Intelligence]」をクリックします。
 
 ## 関連：
 
 * [Expected [!DNL Google ECommerce] data](../integrations/google-ecommerce-data.md)
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
-* [ 設定  [!DNL Google ECommerce]  トラッキング ](https://support.google.com/analytics/answer/1009612?hl=en)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [&#x200B; 設定  [!DNL Google ECommerce]  トラッキング &#x200B;](https://support.google.com/analytics/answer/1009612?hl=en)
 * [最も価値のある獲得ソースとチャネルを見つける](../../analysis/most-value-source-channel.md)
 * [広告キャンペーンの ROI の向上](../../analysis/roi-ad-camp.md)

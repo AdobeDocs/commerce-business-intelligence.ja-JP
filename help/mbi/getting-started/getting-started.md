@@ -26,4 +26,4 @@ ht-degree: 0%
 
 標準ダッシュボードには、マーケティング ROI、顧客生涯価値、顧客セグメント化、エグゼクティブおよび投資家 KPI、コホート分析、マーチャンダイジング分析が含まれます。
 
-[ アカウントを ](../getting-started/onpremise-activation.md) アクティブ化 [!DNL Commerce Intelligence] すると、[!DNL Adobe Commerce] データベースが [!DNL Commerce Intelligence] に接続され、直ちに約 100 件のレポートを含む 5 つのダッシュボードにアクセスできるようになります。 これらのレポートは、データに関するインサイトを提供し、*前月比で注文はどのように増加していますか？*, *常連客は誰ですか？*、および *クーポン戦略は機能していますか？*。
+[&#x200B; アカウントを &#x200B;](../getting-started/onpremise-activation.md) アクティブ化 [!DNL Commerce Intelligence] すると、[!DNL Adobe Commerce] データベースが [!DNL Commerce Intelligence] に接続され、直ちに約 100 件のレポートを含む 5 つのダッシュボードにアクセスできるようになります。 これらのレポートは、データに関するインサイトを提供し、*前月比で注文はどのように増加していますか？*, *常連客は誰ですか？*、および *クーポン戦略は機能していますか？*。

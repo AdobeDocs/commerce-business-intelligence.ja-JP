@@ -25,4 +25,4 @@ ht-degree: 0%
 
 例：
 
-![ デフォルトのダッシュボード ](../../assets/default_dashboard.gif)
+![&#x200B; デフォルトのダッシュボード &#x200B;](../../assets/default_dashboard.gif)

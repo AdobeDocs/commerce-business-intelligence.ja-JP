@@ -15,11 +15,11 @@ ht-degree: 0%
 
 一括編集機能を使用すると、ダッシュボードのグラフの名前と日付を簡単に変更できます。 例えば、特定のダッシュボード上のすべてのグラフで、四半期ごとではなく月次ベースで 1 つのストアとレポートを参照するとします。 すべてを手動で変更するのではなく、`bulk-editing` 機能で作業を行います。 このトピックでは、以下の使用方法を学びます。
 
-* [ [!DNL Find/Replace]  機能](#findreplace)
+* [&#x200B; [!DNL Find/Replace]  機能](#findreplace)
 
-* [ [!DNL Prepend Name]  機能](#prepend)
+* [&#x200B; [!DNL Prepend Name]  機能](#prepend)
 
-* [ [!DNL Change Dates]  機能](#dates)
+* [&#x200B; [!DNL Change Dates]  機能](#dates)
 
 ただし、次の点を考慮してください。*これらの変更は永続的である必要がありますか？* そうでない場合は、ダッシュボードを複製してから、新しいダッシュボードで日付を変更することを検討してください。 これにより、必要な変更を加えながら、元のダッシュボードを保持できます。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## [!DNL Find/Replace] の使用 {#findreplace}
 
-1. ダッシュボード名の横にある歯車（![ 歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
+1. ダッシュボード名の横にある歯車（![&#x200B; 歯車アイコン &#x200B;](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
 
 1. ポップアップの **[!UICONTROL Chart Title Find and Replace]** をクリックします。
 
@@ -41,11 +41,11 @@ ht-degree: 0%
 
 例：
 
-![ 一括編集 ](../../assets/bulk_edit.gif)
+![&#x200B; 一括編集 &#x200B;](../../assets/bulk_edit.gif)
 
 ## 先行 `Chart Names` {#prepend}
 
-1. ダッシュボード名の横にある歯車（![ 歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
+1. ダッシュボード名の横にある歯車（![&#x200B; 歯車アイコン &#x200B;](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
 
 1. ポップアップの **[!UICONTROL Prepend Report Names]** をクリックします。
 
@@ -55,11 +55,11 @@ ht-degree: 0%
 
 例：
 
-![ 先頭に付加 ](../../assets/prepend.gif)
+![&#x200B; 先頭に付加 &#x200B;](../../assets/prepend.gif)
 
 ## `Dates` の変更 {#dates}
 
-1. ダッシュボード名の横にある歯車（![ 歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウを選択します。
+1. ダッシュボード名の横にある歯車（![&#x200B; 歯車アイコン &#x200B;](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウを選択します。
 
 1. ポップアップウィンドウで「**[!UICONTROL Change Dates]**」をクリックします。
 
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 例：
 
-![ 日付変更 ](../../assets/dates.gif)
+![&#x200B; 日付変更 &#x200B;](../../assets/dates.gif)

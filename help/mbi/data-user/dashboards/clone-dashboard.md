@@ -33,4 +33,4 @@ ht-degree: 0%
 
 例：
 
-![ ダッシュボードの複製 ](../../assets/datgif.gif)
+![&#x200B; ダッシュボードの複製 &#x200B;](../../assets/datgif.gif)

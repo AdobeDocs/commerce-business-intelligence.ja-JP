@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
+>[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
 
-![Google AdWords ロゴ ](../../../assets/Google_Adwords_logo.png)
+![Google AdWords ロゴ &#x200B;](../../../assets/Google_Adwords_logo.png)
 
-調査を行い、広告を作成し、[!DNL Google] キャンペーンを開始しました。 次に、広告費用データを分析し、お金が効果的に費やされているかどうかを確認します。 広告費用データを使用すると、広告コストとキャンペーンから取得したユーザーの顧客生涯価値（CLV）を組み合わせて [ キャンペーン ROI を測定 ](../../analysis/roi-ad-camp.md) できます。
+調査を行い、広告を作成し、[!DNL Google] キャンペーンを開始しました。 次に、広告費用データを分析し、お金が効果的に費やされているかどうかを確認します。 広告費用データを使用すると、広告コストとキャンペーンから取得したユーザーの顧客生涯価値（CLV）を組み合わせて [&#x200B; キャンペーン ROI を測定 &#x200B;](../../analysis/roi-ad-camp.md) できます。
 
 まず、[!DNL Google Adwords] 資格情報を [!DNL Commerce Intelligence] に入力します。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 1. [!DNL Google Analytics] 資格情報を入力します。 認証プロセスが完了すると、[!DNL Commerce Intelligence] にリダイレクトされます。
 1. プロファイル ID のリストが表示されます。 [!DNL Commerce Intelligence] に接続するプロファイルを確認します。
 
-   ![ プロファイルの選択を示すGoogle AdWords 接続ダイアログ ](../../../assets/cnnct-profile.png)
+   ![&#x200B; プロファイルの選択を示すGoogle AdWords 接続ダイアログ &#x200B;](../../../assets/cnnct-profile.png)
 
 1. 変更は自動的に保存されるので、完了したら「**[!UICONTROL Back to Connections]**」をクリックします。
 
@@ -49,15 +49,15 @@ ht-degree: 0%
 
 ## [!DNL Google Adwords] の切断
 
-1. [!DNL Google] の [ アカウント設定 ](https://www.google.com/account/about/?hl=en) ページにアクセスします。
-1. [`Security`] セクションで、[ アプリケーションとサイト **[!UICONTROL edit]** 横にある [`Authorizing`] をクリックします。
+1. [!DNL Google] の [&#x200B; アカウント設定 &#x200B;](https://www.google.com/account/about/?hl=en) ページにアクセスします。
+1. [`Security`] セクションで、&lbrack; アプリケーションとサイト **[!UICONTROL edit]** 横にある [`Authorizing`] をクリックします。
 1. 「**[!UICONTROL revoke access]**」をクリックします。
 
 ## 関連
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
-* [ [!DNL Google ECommerce] を介した注文リファラルソースの追跡](../integrations/google-ecommerce.md)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [&#x200B; [!DNL Google ECommerce] を介した注文リファラルソースの追跡](../integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースを追跡](../../analysis/google-track-user-acq.md)
 * [最も価値のある獲得ソースとチャネルを見つける](../../analysis/most-value-source-channel.md)
 * [広告キャンペーンの ROI の向上](../../analysis/roi-ad-camp.md)
-* [ [!DNL Google Analytics] UTM アトリビューションの仕組み](../../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics] UTM アトリビューションの仕組み](../../analysis/utm-attributes.md)

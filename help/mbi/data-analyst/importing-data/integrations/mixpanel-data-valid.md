@@ -19,14 +19,14 @@ ht-degree: 0%
 
 1. `Segmentation` のセクションにアクセスして、`Your Top Events` を表示します。
 
-   ![ 上位のイベントを表示する Mixpanel ダッシュボード ](../../../assets/your-top-events.png)
+   ![&#x200B; 上位のイベントを表示する Mixpanel ダッシュボード &#x200B;](../../../assets/your-top-events.png)
 
 1. 時間範囲の `Past 96 Hours` を選択
 
-   ![ 過去 96 時間のオプションを表示する Mixpanel の時間範囲セレクター ](../../../assets/past-96-hours.png)
+   ![&#x200B; 過去 96 時間のオプションを表示する Mixpanel の時間範囲セレクター &#x200B;](../../../assets/past-96-hours.png)
 
 1. レポートの右下部分までスクロールし、`.csv` ファイルを書き出します。
 
-   ![ メニューの「CSV に Mixpanel を書き出し」オプション ](../../../assets/export-csv-mixpanel.png)
+   ![&#x200B; メニューの「CSV に Mixpanel を書き出し」オプション &#x200B;](../../../assets/export-csv-mixpanel.png)
 
 1. `.csv` ファイルを、この検証プロセスで使用しているアカウントマネージャーまたはアナリストに送信します。

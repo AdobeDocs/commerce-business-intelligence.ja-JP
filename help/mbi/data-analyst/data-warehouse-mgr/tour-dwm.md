@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../administrator/user-management/user-management.md) が必要です
+>[&#x200B; 管理者権限 &#x200B;](../../administrator/user-management/user-management.md) が必要です
 
 Data Warehouse Manager は、「**[!UICONTROL Manage Data > Data Warehouse]**」をクリックしてアクセスする [!DNL Adobe Commerce Intelligence] Data Warehouseのポータルです。 Data Warehouse Manager を使用すると、テーブルと列の同期設定の管理、テーブルのスキーマへのドリルダウンおよびレポートで使用する計算列の作成を行うことができます。
 
@@ -63,11 +63,11 @@ Data Warehouse Manager を使用すると、データソースを簡単に表示
    データベースから直接取得したテーブルを同期している場合は、`Primary Keys` が示されない可能性があります。 この場合は、データベース管理者に連絡して、プライマリキー（1 つまたは複数）をテーブルに追加するように依頼します。
 1. 終了したら「![button](../../assets/button.png)」ボタンをクリックします。
 
-A *成功！メッセ* ジが表示され、選択した列のステータスが `Pending` に変わります。 次回の完全更新が完了すると、新しく同期されたテーブルと列をレポートで使用できるようになります。 初期同期後に、新しい [ レプリケーションメソッド ](./cfg-replication-methods.md) を設定することもできます。
+A *成功！メッセ* ジが表示され、選択した列のステータスが `Pending` に変わります。 次回の完全更新が完了すると、新しく同期されたテーブルと列をレポートで使用できるようになります。 初期同期後に、新しい [&#x200B; レプリケーションメソッド &#x200B;](./cfg-replication-methods.md) を設定することもできます。
 
 プロセス全体の概要を次に示します。
 
-![ データウェアハウスへの列の追加 ](../../assets/DW_sync.gif)
+![&#x200B; データウェアハウスへの列の追加 &#x200B;](../../assets/DW_sync.gif)
 
 ### 新しいテーブルをバックグラウンドで同期する {#syncnew}
 
@@ -87,7 +87,7 @@ Data Warehouseは、新しいソース、テーブルまたは列が追加され
 
 `user's lifetime revenue` テーブルに `users` を追加して、価値の高いユーザーを見つけたいとします。 また、売上高を男女別にセグメント化する場合は、`customer's gender` テーブルに `orders` を追加できます。
 
-詳しくは、この [ チュートリアル ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) を参照してください。
+詳しくは、この [&#x200B; チュートリアル &#x200B;](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) を参照してください。
 
 ## 表の削除と列の削除 {#delete}
 
@@ -101,7 +101,7 @@ Data Warehouseに同期するテーブルと列を選択できるのと同じよ
 
 列を削除するには、列が属するテーブルをクリックします。 削除する列を確認し、「![button\_1.png](../../assets/button_1.png)」ボタンをクリックします。
 
-同期されたテーブルを削除するには、テーブル内のすべての列を選択し、「![ ボタン ](../../assets/button_1.png)」ボタンを再度クリックします。 これにより、このテーブルを使用するすべてのネイティブ列と計算列がData Warehouseから削除されます。
+同期されたテーブルを削除するには、テーブル内のすべての列を選択し、「![&#x200B; ボタン &#x200B;](../../assets/button_1.png)」ボタンを再度クリックします。 これにより、このテーブルを使用するすべてのネイティブ列と計算列がData Warehouseから削除されます。
 
 ### 変更の確認
 
@@ -111,16 +111,16 @@ Data Warehouseに同期するテーブルと列を選択できるのと同じよ
 
 列の削除の概要を次に示します。
 
-![ データウェアハウスからの列の削除 ](../../assets/DW_delete.gif)
+![&#x200B; データウェアハウスからの列の削除 &#x200B;](../../assets/DW_delete.gif)
 
 ## では、新しい列はいつ使用できますか？ {#when}
 
 新しい同期列と新しい計算列または更新された計算列は、次回の完全更新が完了した後で使用できるようになります。 更新がまだ進行中でない場合は、**[!UICONTROL Force update]** ージまたは `Data Warehouse` のページの上部に表示されている `Integrations` をクリックして、更新を強制できます。 「**[!UICONTROL Email me when complete]**」をクリックして、更新の完了時にメール通知をスケジュールすることもできます。
 
-レポートで新しい列を使用する準備が整ったら、[ 最初に指標に追加する必要があります ](../data-warehouse-mgr/manage-data-dimensions-metrics.md)。 更新が完了するまではデータを使用できませんが、レポートでは新しい列を使用できます。 レポート内のデータは、更新が完了すると表示されます。
+レポートで新しい列を使用する準備が整ったら、[&#x200B; 最初に指標に追加する必要があります &#x200B;](../data-warehouse-mgr/manage-data-dimensions-metrics.md)。 更新が完了するまではデータを使用できませんが、レポートでは新しい列を使用できます。 レポート内のデータは、更新が完了すると表示されます。
 
 ## まとめ
 
 この記事は多くの資料をカバーしている。 これで、データベースの概要、データの編成方法、テーブル同士の関係、Data Warehouse Manager で実行できる操作について、明確に理解できました。
 
-[ 計算列を作成する ](../data-warehouse-mgr/creating-calculated-columns.md) または [ 面白いレポートを作成する ](../../tutorials/using-visual-report-builder.md) で知識をテストしてください。
+[&#x200B; 計算列を作成する &#x200B;](../data-warehouse-mgr/creating-calculated-columns.md) または [&#x200B; 面白いレポートを作成する &#x200B;](../../tutorials/using-visual-report-builder.md) で知識をテストしてください。

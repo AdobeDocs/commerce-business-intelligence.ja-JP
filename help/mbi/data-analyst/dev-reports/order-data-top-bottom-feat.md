@@ -17,7 +17,7 @@ ht-degree: 0%
 
 このようなデータの並べ替えと並べ替えは、`Group By` と `Time Interval of None` の両方を使用するレポートで実行できます。 これらの要素の両方がレポート内にある場合、`Show Top/Bottom` 機能はグラフのプレビューの上に表示されます。 この機能を使用すると、設定したパラメーターに基づいて、上（最大から最小）および下（最小から最大）のデータポイントを表示できます。
 
-![ ビジュアルReport Builderで上/下機能を表示します。](../../assets/Show_Top_Bottom.png)
+![&#x200B; ビジュアルReport Builderで上/下機能を表示します。](../../assets/Show_Top_Bottom.png)
 
 ## これはどうやって使うのですか。 {#how}
 
@@ -47,11 +47,11 @@ ht-degree: 0%
 
 以下は、グループ化ではなく `Revenue` 指標そのものを並べ替えたグラフの例です。 ご覧のように、指標をグループ化で並べ替えると、奇妙な（そして最終的には役に立たない）レポートが作成されます。
 
-![ 不審で役に立たないレポートの結果 ](../../assets/strange-report-results.png)
+![&#x200B; 不審で役に立たないレポートの結果 &#x200B;](../../assets/strange-report-results.png)
 
 両方の指標をグループ化で並べ替えた場合、グラフは次のようになります。
 
-![ グループ化による両方の指標の並べ替え ](../../assets/sort-metrics-by-grouping.png)
+![&#x200B; グループ化による両方の指標の並べ替え &#x200B;](../../assets/sort-metrics-by-grouping.png)
 
 ## デフォルトでは、値はどのように並べ替えられていますか？ {#defaultsorting}
 
@@ -59,11 +59,11 @@ ht-degree: 0%
 
 この例では、営業担当者がクローズしたオポチュニティの数を確認します。 このテーブルは、指標（この場合は `Won Opportunities`）に基づいて高い順に自動的に並べ替えられます。
 
-![ 指標による並べ替え ](../../assets/Ordered_by_metric.png)
+![&#x200B; 指標による並べ替え &#x200B;](../../assets/Ordered_by_metric.png)
 
 ただし、2 番目の指標を追加した場合、デフォルトでは、グループ化に基づいて上位のが並べ替えられます。 指標とグループ化を追加すると、デフォルトの並べ替えは最初のグループ化に基づいて、次に 2 番目のグループ化に基づいて、というように行われます。
 
-![ グループ化による順序付け ](../../assets/Ordered_by_grouping.png)
+![&#x200B; グループ化による順序付け &#x200B;](../../assets/Ordered_by_grouping.png)
 
 ## まとめ {#wrapup}
 

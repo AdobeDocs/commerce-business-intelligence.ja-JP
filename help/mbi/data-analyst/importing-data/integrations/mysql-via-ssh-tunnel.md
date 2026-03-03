@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # [!DNL MySQL] 経由で [!DNL SSH Tunnel] に接続
 
-* [ [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
-* [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+* [&#x200B; [!DNL Commerce Intelligence]  公開鍵の取得](#retrieve)
+* [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
 * [Linux ユーザーを作成する  [!DNL Commerce Intelligence]](#linux)
-* [ [!DNL MySQL]  のユ  [!DNL Commerce Intelligence] ザーを作成](#mysql)
+* [&#x200B; [!DNL MySQL]  のユ  [!DNL Commerce Intelligence] ザーを作成](#mysql)
 * [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
 
 ## ジャンプ
 
-* [[!DNL MySQL] via ](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] via &#x200B;](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] via [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 [!DNL MySQL] を使用して [!DNL Commerce Intelligence] データベースを `SSH tunnel` に接続するには、次の操作を行う必要があります。
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence] 内を移動してキーを取得する方法を次に示します。
 
-![SSH トンネルを介した MySQL 接続のアニメーションによるデモ ](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
+![SSH トンネルを介した MySQL 接続のアニメーションによるデモ &#x200B;](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
 
 ## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可します {#allowlist}
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## [!DNL Linux] 用の [!DNL Commerce Intelligence] ユーザーの作成 {#linux}
 
-リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [ サーバーへの接続権が保持されている限り、好きなように ](../../../administrator/account-management/restrict-db-access.md) このユーザーを制限 `MySQL` することができます。
+リアルタイム（または頻繁に更新される）のデータが含まれている限り、実稼動マシンまたはセカンダリマシンを使用できます。 [&#x200B; サーバーへの接続権が保持されている限り、好きなように &#x200B;](../../../administrator/account-management/restrict-db-access.md) このユーザーを制限 `MySQL` することができます。
 
 1. 新しいユーザーを追加するには、[!DNL Linux] サーバーで次のコマンドを root として実行します。
 
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ## 関連：
 
-* [ 統合の再認証 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # レプリケーションメソッドの設定
 
-`Replication` メソッドと [ 再チェック ](../data-warehouse-mgr/cfg-data-rechecks.md) を使用して、データベーステーブル内の新しいデータや更新されたデータを識別します。 これらを正しく設定することは、データの精度と最適な更新時間の両方を確保するために重要です。 このトピックでは、レプリケーション方法に焦点を当てます。
+`Replication` メソッドと [&#x200B; 再チェック &#x200B;](../data-warehouse-mgr/cfg-data-rechecks.md) を使用して、データベーステーブル内の新しいデータや更新されたデータを識別します。 これらを正しく設定することは、データの精度と最適な更新時間の両方を確保するために重要です。 このトピックでは、レプリケーション方法に焦点を当てます。
 
 [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) で新しいテーブルが同期されると、テーブルに対してレプリケーション方法が自動的に選択されます。 様々なレプリケーション方法、テーブルの編成方法、テーブルデータの動作について理解しておくと、テーブルに最適なレプリケーション方法を選択できます。
 
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 `Replication` のメソッドは、`Incremental`、`Full Table`、`Paused` の 3 つのグループに分類されます。
 
-つまり、[**[!UICONTROL Incremental Replication]**](#incremental)[!DNL Commerce Intelligence] レプリケーションを試行するたびに、新しいデータまたは更新されたデータのみをレプリケートします。 これらの方法で待ち時間が大幅に短縮されるので、Adobeでは可能な限りこれを使用することをお勧めします。
+つまり、[**[!UICONTROL Incremental Replication]**](#incremental) [!DNL Commerce Intelligence] レプリケーションを試行するたびに、新しいデータまたは更新されたデータのみをレプリケートします。 これらの方法で待ち時間が大幅に短縮されるので、Adobeでは可能な限りこれを使用することをお勧めします。
 
-つまり、[**[!UICONTROL Full Table Replication]**](#fulltable)[!DNL Commerce Intelligence] レプリケーションを試行するたびに、テーブルのコンテンツ全体をレプリケートします。 レプリケートされるデータは大量になる可能性があるので、これらの方法によって待ち時間と更新時間が長くなる場合があります。 テーブルにタイムスタンプ付きまたは日時の列が含まれる場合、Adobeでは、代わりに増分処理メソッドを使用することをお勧めします。
+つまり、[**[!UICONTROL Full Table Replication]**](#fulltable) [!DNL Commerce Intelligence] レプリケーションを試行するたびに、テーブルのコンテンツ全体をレプリケートします。 レプリケートされるデータは大量になる可能性があるので、これらの方法によって待ち時間と更新時間が長くなる場合があります。 テーブルにタイムスタンプ付きまたは日時の列が含まれる場合、Adobeでは、代わりに増分処理メソッドを使用することをお勧めします。
 
 **[!UICONTROL Paused]** は、テーブルのレプリケーションが停止または一時停止されていることを示します。 [!DNL Commerce Intelligence] は、更新サイクル中に新しいデータまたは更新されたデータをチェックしません。つまり、レプリケーション方法としてこれを持つテーブルからデータがレプリケートされることはありません。
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 例えば、テーブルには、データが最後に変更されたことを示す `modified\_at` という列がある場合があります。 最新の更新が正午に火曜日に実行された場合、更新では正午に火曜日より `modified\_at` い値を持つすべての行が検索されます。 火曜日の正午から作成または変更された検出された行はすべて、Data Warehouseにレプリケートされます。
 
 **ご存じでしたか？**
-現在データベースが `Incremental` レプリケーション方式をサポートしていない場合でも、[ または ](../../best-practices/mod-db-inc-replication.md) を使用できるように `Modified At` データベースに変更を加える `Single Auto Incrementing PK` ことができます。
+現在データベースが `Incremental` レプリケーション方式をサポートしていない場合でも、[&#x200B; または &#x200B;](../../best-practices/mod-db-inc-replication.md) を使用できるように `Modified At` データベースに変更を加える `Single Auto Incrementing PK` ことができます。
 
 `Modified At` れは、最も理想的なレプリケーション方法であるだけでなく、最速のレプリケーション方法でもあります。 この方法は、大きなデータセットで顕著な速度の増加を引き起こすだけでなく、再チェックオプションを設定する必要もありません。 他のメソッドは、データの小さなサブセットが変更された場合でも、変更を特定するためにテーブル全体を反復処理する必要があります。 `Modified At` は、その小さなサブセットのみを反復処理します。
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 プロセス全体を見てみましょう。
 
-![ データベース・テーブルのレプリケーション方法の構成に関するアニメーションによるデモ ](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
+![&#x200B; データベース・テーブルのレプリケーション方法の構成に関するアニメーションによるデモ &#x200B;](../../assets/replication_method.gif)<!--{: width="801" height="341"}-->
 
 ## まとめ
 
@@ -135,6 +135,6 @@ ht-degree: 0%
 ## 関連ドキュメント
 
 * [データの再チェックについて](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [サポートするようにデータベースを変更する ](../../best-practices/mod-db-inc-replication.md)
+* [サポートするようにデータベースを変更する &#x200B;](../../best-practices/mod-db-inc-replication.md)
 * [分析のためのデータベースの最適化](../../best-practices/opt-db-analysis.md)
 * [更新時間の短縮](../../best-practices/reduce-update-cycle-time.md)

@@ -15,9 +15,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ 管理者権限 ](../../../administrator/user-management/user-management.md) が必要です。
+>[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
 
-![Adobe Analytics ロゴ ](../../../assets/adobe-analytic-slogo.png)
+![Adobe Analytics ロゴ &#x200B;](../../../assets/adobe-analytic-slogo.png)
 
 [!DNL Adobe Analytics] の [!DNL Adobe Commerce Intelligence] 統合により、[!DNL Adobe Analytics] のエンドツーエンドのカスタマージャーニーの焦点と、[!DNL Commerce Intelligence] から依存している e コマースの焦点を統合できます。 これにより、ストアの全体的なパフォーマンスの全体像を把握できます。
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 1. 選択したレポートスイートがテーブルに表示されます。 「**[!UICONTROL Save]**」をクリックして選択を確定します。
 
-1. [!DNL Commerce Intelligence] サポートチーム [ に統合が許可されていることを通知し、最初の接続プロセスを実行します ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+1. [!DNL Commerce Intelligence] サポートチーム [&#x200B; に統合が許可されていることを通知し、最初の接続プロセスを実行します &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 最初の接続プロセスが実行されると、テーブルは、「Data Warehouse」ページの「`All Tables`」タブで使用できるようになります。 レプリケートする列を選択すると、次回の完全更新後にデータが表示されます。

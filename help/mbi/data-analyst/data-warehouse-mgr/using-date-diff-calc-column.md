@@ -50,4 +50,4 @@ ht-degree: 0%
 
 例えば、次の例は、`Seconds between order date and customer's creation date` を計算するように設定されています。
 
-![datetime 列の選択を示す日付差異の計算の設定 ](../../assets/date_diff.png)
+![datetime 列の選択を示す日付差異の計算の設定 &#x200B;](../../assets/date_diff.png)

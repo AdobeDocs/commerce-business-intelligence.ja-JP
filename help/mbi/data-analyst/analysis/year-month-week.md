@@ -15,15 +15,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このトピックには、元のアーキテクチャと新しいアーキテクチャを使用しているクライアント向けの手順が含まれています。 メインツールバーから「{2[Data Warehouse表示 ](../../administrator/account-management/new-architecture.md)」セクションを選択できる場合は、「[!DNL _新しいアーキテクチャ_] を使用しています。[!DNL Manage Data]
+>このトピックには、元のアーキテクチャと新しいアーキテクチャを使用しているクライアント向けの手順が含まれています。 メインツールバーから「&lbrace;2[Data Warehouse表示 &#x200B;](../../administrator/account-management/new-architecture.md)」セクションを選択できる場合は、「[!DNL _新しいアーキテクチャ_] を使用しています。[!DNL Manage Data]
 
 Report Builder を使用すると、経時的なトレンドを簡単に確認し、比較したい期間の視点を変更できます。 このトピックでは、より深いレベルに到達するためのダッシュボードを設定する方法を説明します。これにより、週別、月別、年別分析のレポートを作成できます。
 
-![ 前週比、前月比、前年比の比較を表示するダッシュボード ](../../assets/Wow__mom__yoy.png)
+![&#x200B; 前週比、前月比、前年比の比較を表示するダッシュボード &#x200B;](../../assets/Wow__mom__yoy.png)
 
-始める前に、より詳細な視点を探索する [ こちら ](../../tutorials/using-visual-report-builder.md) および独立した時間オプション [ こちら ](../../tutorials/time-options-visual-rpt-bldr.md) を確認する必要があります。
+始める前に、より詳細な視点を探索する [&#x200B; こちら &#x200B;](../../tutorials/using-visual-report-builder.md) および独立した時間オプション [&#x200B; こちら &#x200B;](../../tutorials/time-options-visual-rpt-bldr.md) を確認する必要があります。
 
-この分析には [ 高度な計算列 ](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
+この分析には [&#x200B; 高度な計算列 &#x200B;](../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
 ## 計算される列
 
@@ -40,8 +40,8 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
    * `created_at (month)` [!UICONTROL Calculation]: **to_char （A, &#39;mm-month&#39;）**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char （A, &#39;dd&#39;）**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char （A, &#39;d-Day&#39;）**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char （A, &#39;hh24&#39;）**
-     ![Data Warehouse Manager での計算列の作成インターフェイス ](../../assets/new-arch-create-calc.png)
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char （A, &#39;hh24&#39;）**
+     ![Data Warehouse Manager での計算列の作成インターフェイス &#x200B;](../../assets/new-arch-create-calc.png)
 
 ## 指標
 
@@ -49,7 +49,7 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 
 >[!NOTE]
 >
->新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
+>新しいレポートを作成する前に、必ず [&#x200B; すべての新しい列をディメンションとして指標に追加する &#x200B;](../data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ## レポート
 
@@ -64,10 +64,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`: `This year`
 * 指標 `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **MoM グラフ**
@@ -81,10 +81,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`：今月*
 * 指標 `B`：先月*
 * [!UICONTROL Time period]:1 か月前から 0 か月前
-* 
+* &#x200B;
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: Line
 
 * **WoW グラフ**
@@ -98,10 +98,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`: `This week`
 * 指標 `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **DoD グラフ**
@@ -115,10 +115,10 @@ Report Builder を使用すると、経時的なトレンドを簡単に確認�
 * 指標 `A`: `Today`
 * 指標 B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 すべてのレポートをコンパイルした後、必要に応じてダッシュボード上で整理できます。 結果は、このページの上部の画像のようになります。

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [!DNL Zendesk] データをトランザクションデータベースと統合することは、顧客がセールスチームやカスタマーサクセスチームとどのようにやり取りしているかを深く理解するための優れた方法です。 また、サポートプラットフォームを使用している顧客のタイプを把握するのにも役立ちます。 このトピックでは、ダッシュボードを設定して、[!DNL Zendesk] のパフォーマンスに関する詳細なレポートを取得し、トランザクション顧客と結び付ける方法を示します。
 
-開始する前に、[[!DNL Zendesk]](../integrations/zendesk.md) を接続します。 この分析には [ 高度な計算列 ](../../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
+開始する前に、[[!DNL Zendesk]](../integrations/zendesk.md) を接続します。 この分析には [&#x200B; 高度な計算列 &#x200B;](../../data-warehouse-mgr/adv-calc-columns.md) が含まれています。
 
 <!-- Getting Started -->
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 * **`[!DNL Zendesk] user's`** テーブル
    * `User is agent? (Yes/No) `
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`、`email`
@@ -161,19 +161,19 @@ ht-degree: 0%
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Date Difference`
 
       * `Ticket's latest solved date` マイナス `created_at`
 
 * **`Seconds to first response`**
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Date Difference`
 
       * `First agent response date` マイナス `created_at`
 
 * **`Requester's ticket number`**
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Event Number`
 
       * `Event Owner` - `requester_id`
@@ -181,7 +181,7 @@ ht-degree: 0%
       * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-   * 
+   * &#x200B;
       * `Column type` – 「同じテーブル/計算」
 
       * `Input columns` - `created_at`
@@ -191,7 +191,7 @@ ht-degree: 0%
       * `Datatype` – 整数
 
 * **`Ticket created_at (day of week)`**
-   * 
+   * &#x200B;
       * `Column type` – 「同じテーブル/計算」
 
       * `Input columns` - `created_at`
@@ -204,7 +204,7 @@ ht-degree: 0%
    * 定義を選択：`Count`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
-   * 
+   * &#x200B;
      [!UICONTROL One]: `customer_entity.email`
 
    * [!UICONTROL table] を選択：`[!DNL Zendesk] tickets`
@@ -214,7 +214,7 @@ ht-degree: 0%
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-   * 
+   * &#x200B;
       * `Column type` – 「同じテーブル/計算」
 
       * `Input columns` - `User's lifetime number of support tickets requested`
@@ -283,7 +283,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->新しいレポートを作成する前に、必ず [ すべての新しい列をディメンションとして指標に追加する ](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
+>新しいレポートを作成する前に、必ず [&#x200B; すべての新しい列をディメンションとして指標に追加する &#x200B;](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) ようにしてください。
 
 ### レポート
 
@@ -401,7 +401,7 @@ ht-degree: 0%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-   * 
+   * &#x200B;
      [!UICONTROL 指標]: Users
 
 * 指標 `A`: `New users`
