@@ -2,9 +2,9 @@
 title: 年次、月次および週次レポート
 description: 時間の経過に伴うトレンドを簡単に確認する方法と、比較したい期間の視点を変更する方法を説明します。
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Reports, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%

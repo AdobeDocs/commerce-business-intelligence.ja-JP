@@ -2,9 +2,9 @@
 title: ファイルアップローダの使用
 description: すべてのデータを 1 つのData Warehouseに配置する方法を説明します。
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: レポートの使用
 description: レポートデータの使用方法を説明します。
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: Google Analyticsをウェアハウジングに接続
 description: 訪問者によるサイトの使用方法、魅力的なコンテンツ、訪問者が離脱する場所などをトラッキングする方法を説明します。
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: SQL Report Builderの使用
 description: SQL Report Builderを使用することの概要を説明します。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 0%

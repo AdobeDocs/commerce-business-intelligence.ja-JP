@@ -2,9 +2,9 @@
 title: 最も価値の高いマーケティングソースおよびチャネルの特定
 description: 最も価値の高いマーケティングチャネルを明らかにするために使用できる、いくつかのレポートについて説明します。
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%

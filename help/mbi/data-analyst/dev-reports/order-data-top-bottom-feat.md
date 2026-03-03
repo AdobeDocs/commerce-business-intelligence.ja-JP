@@ -2,9 +2,9 @@
 title: 「上/下を表示」機能を使用したデータの順序付け
 description: 上と下を表示機能を使用してデータを並べ替える方法を説明します。
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%

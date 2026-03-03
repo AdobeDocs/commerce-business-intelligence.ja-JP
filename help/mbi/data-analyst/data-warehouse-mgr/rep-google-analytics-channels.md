@@ -2,9 +2,9 @@
 title: 獲得ソースを使用したGoogle Analytics チャネルのレプリケーション
 description: 獲得ソースを使用してGoogle Analytics チャネルをレプリケートする方法を説明します。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
@@ -32,11 +32,11 @@ ht-degree: 0%
 | ダイレクト | サイトに直接入ったユーザー。 | Source = `Direct`<br> およびMedium = `(not set); OR Medium = (none)` |
 | オーガニック検索 | 無給検索エンジンで有機的にランク付けされたトラフィック。 | Medium= `organic` |
 | リファラル | オーガニック検索以外の外部リンクや、ソーシャルネットワーク以外の web サイトから受信したトラフィック。 | Medium= `referral` |
-| ペイド検索 | メディアが「cpc」、「ppc」、または「paidsearch」のいずれかであり、「コンテンツ」に一致しない広告配信ネットワークである UTM トラッキングコードを持つトラフィック。 | Medium = `^(cpc|ppc|paidsearch)$`<br> および Ad Distribution Network ≠ `Content` |
-| ソーシャル | 約 400 のソーシャルネットワークのいずれかから発生し、広告としてタグ付けされていないリファラルトラフィック。 | ソーシャルSource参照元= `Yes`<br> またはMedium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| ペイド検索 | メディアが「cpc」、「ppc」、または「paidsearch」のいずれかであり、「コンテンツ」に一致しない広告配信ネットワークである UTM トラッキングコードを持つトラフィック。 | Medium = `^(cpc`\|`ppc`\|`paidsearch)$`<br> および Ad Distribution Network ≠ `Content` |
+| ソーシャル | 約 400 のソーシャルネットワークのいずれかから得られ、広告としてタグ付けされていないリファラルトラフィック。 | ソーシャルSource参照元= `Yes`<br> またはMedium = `^(social`\|`social-network`\|`social-media`\|`sm`\|`social network`\|`social media)$` |
 | 電子メール | 「メール」というメディアでタグ付けされたセッションからのトラフィック。 | Mediumの UTM トラッキングコード = `email` |
-| 表示 | メディアがディスプレイまたは cpm である UTM トラッキングコードを持つトラフィック。 また、広告配信ネットワークが「コンテンツ」と一致する AdWords インタラクションも含まれます | Medium = `^(display|cpm|banner)$`<br> または Ad Distribution Network = `Content`<br> および Ad Format ≠ `Text` |
-| その他 | 「cpc」、「ppc」、「cpm」、「cpv」、「cpa」、「cpp」、「アフィリエイト」という媒体でタグ付けされた他の広告チャネル（有料検索を除く）からのセッション。 | Medium= `^(cpv|cpa|cpp|content-text)$` |
+| 表示 | メディアがディスプレイまたは cpm である UTM トラッキングコードを持つトラフィック。 また、広告配信ネットワークが「コンテンツ」と一致する AdWords インタラクションも含まれます | Medium = `^(display`\|`cpm`\|`banner)$`<br> または Ad Distribution Network = `Content`<br> および Ad Format ≠ `Text` |
+| その他 | 「cpc」、「ppc」、「cpm」、「cpv」、「cpa」、「cpp」、「アフィリエイト」という媒体でタグ付けされた他の広告チャネル（有料検索を除く）からのセッション。 | Medium = `^(cpv`\|`cpa`\|`cpp`\|`content-text)$` |
 
 {style="table-layout:auto"}
 

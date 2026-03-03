@@ -2,9 +2,9 @@
 title: 含まれるダッシュボード
 description: ユーザーの生涯売上高、リピート購入数などの重要な指標の正常性を確認し、将来の探索のための強固な基盤を作成する方法を説明します。
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
