@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## 関連
 
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
 * [アカウント  [!DNL Google Adwords]  接続](../integrations/google-ecommerce.md)
 * [&#x200B; [!DNL Google eCommerce] を介した注文リファラルソースの追跡](../integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースを追跡](../../analysis/google-track-user-acq.md)

@@ -46,8 +46,8 @@ ht-degree: 0%
 
 ## データがデ [!DNL Google ECommerce] タベースと異なる理由 {#ecommdatabase}
 
-[!DNL Google Analytics] とデータベースの間で不一致が発生する場合は、様々な理由があります。 トラッキングが適切に有効になっていない場合や、匿名ユーザーがアクセスしている場合、クリックイベントが正しく機能していない場合などは、ほんの一例です。 売上高と注文が適切に表示されない場合は、問題を診断するために [&#x200B; このトピックを参照 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)。
+[!DNL Google Analytics] とデータベースの間で不一致が発生する場合は、様々な理由があります。 トラッキングが適切に有効になっていない場合や、匿名ユーザーがアクセスしている場合、クリックイベントが正しく機能していない場合などは、ほんの一例です。 売上高と注文が適切に表示されない場合は、問題を診断するために [&#x200B; このトピックを参照 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=ja)。
 
 ## データの不一致をトラブルシューティングするにはどうすればよいですか？ {#datadiscrepancy}
 
-Adobeは、一貫性のないデータを見ることがフラストレーションにつながる可能性があることを認識しています。 [&#x200B; データの相違チェックリスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) または [&#x200B; データの書き出しチュートリアル &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) を使用して、問題を診断してみてください。 まだ問題が解決しない場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+Adobeは、一貫性のないデータを見ることがフラストレーションにつながる可能性があることを認識しています。 [&#x200B; データの相違チェックリスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=ja) または [&#x200B; データの書き出しチュートリアル &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=ja) を使用して、問題を診断してみてください。 まだ問題が解決しない場合は、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。

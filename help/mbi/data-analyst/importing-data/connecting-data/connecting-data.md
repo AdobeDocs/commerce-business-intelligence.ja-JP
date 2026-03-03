@@ -70,7 +70,7 @@ ht-degree: 0%
 * [テーブルの統合](../../../best-practices/consolidating-your-tables.md)
 * [データベースへのアクセスの制限](../../../administrator/account-management/restrict-db-access.md)
 
-**必要な統合が表示されない場合は、** アカウントに表示されるようにするには、いくつかの統合をアクティベートする必要があります。 [!DNL Facebook] のようなものを探しているがリストに表示されない場合は、[&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) してください。
+**必要な統合が表示されない場合は、** アカウントに表示されるようにするには、いくつかの統合をアクティベートする必要があります。 [!DNL Facebook] のようなものを探しているがリストに表示されない場合は、[&#x200B; サポートチケットを送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) してください。
 
 **統合のエラーステータスが表示された場合**、[&#x200B; トラブルシューティングの節 &#x200B;](https://support.magento.com/hc/en-us/sections/360003078151) のヘルプを参照してください。
 
