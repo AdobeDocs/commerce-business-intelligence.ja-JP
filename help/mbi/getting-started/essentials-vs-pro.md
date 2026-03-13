@@ -1,10 +1,10 @@
 ---
-title: Commerce Intelligence Essentials と Pro の比較
-description: Commerce Intelligence Essentials とCommerce Intelligence Pro の違いについて説明します。
+title: Commerce Intelligence EssentialsとProの比較
+description: Commerce Intelligence EssentialsとCommerce Intelligence Proの相違点について説明します。
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+source-git-commit: ba64de148ad5b3fc44591a10531244cfe670a728
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 5%
@@ -17,28 +17,28 @@ ht-degree: 5%
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
-| `Pre-Defined Reports` | 最大 100 | カスタム |
+| `Pre-Defined Reports` | 最大100 | カスタム |
 | `Pre-Defined Dashboards` | 5-6 | カスタム |
 | `New Custom Report Creation` | はい | はい |
-| `Commerce Tables` | 4-6 | 制限なし |
+| `Commerce Tables` | 4-6 | 無制限 |
 | `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | はい | はい |
-| `Data Warehouse Manager` | 利用不可 | 利用可能 |
+| `Data Warehouse Manager` | 利用不可 | 使用可能 |
 | `Email Reports` | はい | はい |
 | `Cohort Report Builder` | はい | はい |
-| `Google Analytics Live Integration` | はい | 制限なし |
+| `Google Analytics Live Integration` | はい | 無制限 |
 | `3rd Party Integrations` | 利用不可 | 利用可能 |
-| `Full API Access` | 不可 | はい |
-| `Access to CS, AM, or Analysts` | 不可 | はい |
-| `Professional Services` | 利用可能 | 利用可能 |
+| `Full API Access` | いいえ | はい |
+| `Access to CS, AM, or Analysts` | いいえ | はい |
+| `Professional Services` | 使用可能 | 使用可能 |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->テーブルの数は、ゲストのチェックアウトによって異なります。
+>テーブルの数はゲストのチェックアウトによって異なります。
 
-**含まれるテーブル**
+**追加されたテーブル**
 
 * `sales\_order`
 * `sales\_order\_item`
@@ -47,7 +47,7 @@ ht-degree: 5%
 * `customer\_group`
 * `store`
 
-<!---
+<!--
 ## Columns Included in Essentials
 
 Items in _italics_ are calculated fields.
