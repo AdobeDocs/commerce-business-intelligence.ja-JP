@@ -1,41 +1,47 @@
 ---
-title: 期待される QuickBooks データ
-description: 分析に関連するデータフィールドを簡単にトラッキングする方法を説明します。
+title: QuickBooks データの期待値
+description: 分析のための関連データフィールドを簡単に追跡する方法を説明します。
 exl-id: a60996bd-e3d1-497d-abce-f02ef1444f1a
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/aMWa4wHUfzDfBSSRKAkqqnYBEp481pfULZjJJpbe-oI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: 796
 ht-degree: 0%
 
 ---
 
-# 予期される [!DNL QuickBooks] データ
+# [!DNL QuickBooks] データが必要です
 
-[&#x200B; アカウントに接続  [!DNL QuickBooks]  た &#x200B;](../../../data-analyst/importing-data/integrations/quickbooks.md) 後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) を使用して、関連するデータフィールドを簡単に追跡して分析できます。 Data Warehouseでは、次のテーブルが作成されます。
+[ アカウント  [!DNL QuickBooks] を接続した後、](../../../data-analyst/importing-data/integrations/quickbooks.md)Data Warehouse Manager[を使用して、分析用の関連データフィールドを簡単に追跡できます。 ](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)次の表は、Data Warehouseで作成されます。
 
-トラッキングに使用できるすべてのフィールドを表示するには、テーブル名列のリンクをクリックします。
+トラッキングに使用できるすべてのフィールドを表示するには、テーブル名の列のリンクをクリックします。
 
 ## トランザクションエンティティ {#transactionentities}
 
 | **テーブル名** | **説明** |
 |-----|-----|
-| [`bill`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Bill) | `bills` の表には、AP 取引に関する情報、または第三者からの支払い要求が含まれています。 属性には、通貨タイプ、為替レート、合計金額、期限、残高などが含まれます。 |
-| [`billpayments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/BillPayment) | `BillPayment` のエンティティは、仕入先から受け取った請求書の支払の最終トランザクションです。 この表には、仕入先情報、支払タイプ、合計金額、取引日などが含まれます。 |
-| [`creditmemos`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/CreditMemo) | `creditmemos` の表には、全額支払と一部支払の両方の払戻または貸方である取引が記録されます。 一部の属性には、顧客の名前、顧客の請求および配送情報、金額、日付が含まれます。 |
-| [`deposits`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Deposit) | `Deposits` の中には、直接預金と顧客支払が `Undeposited Funds` の口座に保持された後に資産口座に移動された場合が含まれます。 属性には、金額、預金 ID、日付が含まれます。 |
-| [`estimates`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Estimate) | 商品やサービスの価格の提案を含む、顧客に付与されるトランザクションが `Estimates` ります。 このテーブルには、金額、割引情報、顧客情報および日付が記録されます。 |
-| [`invoices`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Invoice) | 顧客が後で支払う販売フォームが `Invoices` ります。 請求書テーブルには、入金情報、日付、明細項目、税金情報および顧客情報が記録されます。 |
-| [`journalentries`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/JournalEntry) | `journalentries` の表には、仕訳 ID、取引日、明細品目情報など、AR および AP 勘定科目情報が記録されます。 |
-| [`payments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Payment) | `payment` レコードには、支払 ID、適用済み金額と未適用金額、取引日、取引タイプ、処理ステータスなどの属性が含まれます。 |
-| [`purchases`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Purchase) | `purchases` の表は費用を表し、購入 ID、支払いタイプ、金額、行項目情報が含まれます。 |
-| [`purchaseorders`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/PurchaseOrder) | `purchaseorders` テーブルには、仕入先に送信される商品の要求が保持されます。 この表には、仕入先情報、発注 ID、取引日、明細品目情報、合計金額および AP 勘定情報が含まれます。 |
-| [`refundreceipts`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/RefundReceipt) | `refundreceipts` テーブルには、顧客に与えられた払い戻しが記録されます。 属性には、返品受入 ID、明細品目情報、合計金額、顧客情報および残高が含まれます。 |
-| [`salesreceipts`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/SalesReceipt) | `salesreceipts` の表には、顧客に付与された営業入金の情報が記録されます。営業入金 ID、明細品目情報、合計金額、顧客情報、取引日および預金が含まれます。 |
-| [`timeactivities`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TimeActivity) | `timeactivities` テーブルには、仕入先または従業員（あるいはその両方）の時間レコードが保持され、時間アクティビティ ID、従業員/仕入先情報、記録された時間、アクティビティの説明および記録された日付が含まれます。 |
-| [`transfers`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Transfer) | `transfers` テーブルには、勘定間で移動された資金に関する情報が記録されます。 属性には、転送 ID、金額、口座情報、日付が含まれます。 |
-| [`vendorcredits`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/VendorCredit) | 仕入先貸方とは、仕入先に払い戻しまたは貸方が付与される AP 取引です。 `vendorcredits` テーブルには、仕入先貸方 ID、明細行品目情報、仕入先情報、AP 勘定、合計金額および日付が含まれます。 |
+| [`bill`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Bill) | `bills` テーブルには、AP トランザクション、またはサードパーティからの支払い要求に関する情報が含まれています。 属性には、通貨タイプ、為替レート、合計金額、期日、残高などが含まれます。 |
+| [`billpayments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/BillPayment) | `BillPayment` エンティティは、ベンダーから受け取った請求書の支払いの最終取引です。 この表には、ベンダー情報、支払いタイプ、合計金額、取引日などが含まれます。 |
+| [`creditmemos`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/CreditMemo) | `creditmemos` テーブルには、全額支払いと一部支払いの両方の返金またはクレジットであるトランザクションが記録されます。 属性には、顧客の名前、顧客の請求情報と配送情報、金額、日付などが含まれます。 |
+| [`deposits`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Deposit) | `Deposits`には、`Undeposited Funds` アカウントに保持された後にアセット アカウントに移動した直接預金と顧客支払いが含まれます。 属性には、金額、入金ID、日付が含まれます。 |
+| [`estimates`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Estimate) | `Estimates`は、商品またはサービスの価格の提案を含む顧客に与えられたトランザクションです。 このテーブルには、金額、割引情報、顧客情報、日付が記録されます。 |
+| [`invoices`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Invoice) | `Invoices`は、顧客が後で支払う販売フォームです。 請求書テーブルには、入金情報、日付、行項目、税情報、顧客情報が記録されます。 |
+| [`journalentries`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/JournalEntry) | `journalentries` テーブルには、ジャーナルエントリ ID、トランザクション日、行項目情報を含むARおよびAP アカウント情報が記録されます。 |
+| [`payments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Payment) | `payment` レコードには、支払ID、適用済みおよび未適用の金額、取引日、トランザクションタイプ、処理ステータスなどの属性が含まれます。 |
+| [`purchases`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Purchase) | `purchases` テーブルは経費を表し、購入ID、支払いタイプ、金額、および任意の行項目情報が含まれます。 |
+| [`purchaseorders`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/PurchaseOrder) | `purchaseorders` テーブルには、ベンダーに送信された商品のリクエストが保持されます。 この表には、仕入先情報、発注書ID、取引日、明細項目情報、合計金額およびAP アカウント情報が含まれます。 |
+| [`refundreceipts`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/RefundReceipt) | `refundreceipts` テーブルには、顧客に対する返金が記録されています。 属性には、返金ID、行項目情報、合計金額、顧客情報、残高が含まれます。 |
+| [`salesreceipts`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/SalesReceipt) | `salesreceipts` テーブルには、販売伝票ID、行項目情報、合計金額、顧客情報、取引日、および任意の預金など、顧客に与えられた販売伝票の情報が記録されます。 |
+| [`timeactivities`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TimeActivity) | `timeactivities` テーブルには、ベンダーや従業員の時間レコードが保持され、時間アクティビティ ID、従業員/ベンダー情報、時間ログ、アクティビティの説明、記録された日付が含まれます。 |
+| [`transfers`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Transfer) | `transfers` テーブルには、アカウント間で移動された資金に関する情報が記録されます。 属性には、転送ID、金額、アカウント情報、日付が含まれます。 |
+| [`vendorcredits`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/VendorCredit) | ベンダークレジットとは、ベンダーに提供される返金またはクレジットであるAP トランザクションのことです。 `vendorcredits` テーブルには、仕入先クレジット ID、行項目情報、仕入先情報、AP アカウント、合計金額、日付が含まれています。 |
 
 {style="table-layout:auto"}
 
@@ -44,22 +50,22 @@ ht-degree: 0%
 | **テーブル名** | **説明** |
 |-----|-----|
 | [`accounts`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Account) | このテーブルには、アカウント ID、名前、ステータス、タイプ、残高、通貨、作成時間が含まれます。 |
-| [`budgets`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Budget) | このテーブルには、予算 ID、名前、開始日と終了日、タイプ、ステータス、詳細など、会社の予算に関するすべての情報が記録されます。 |
-| [`classes`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Class) | トランザクションの詳細行に適用されるクラスを使用すると、クライアントまたはプロジェクトに結び付けられていないセグメントを追跡できます。 このテーブルには、クラス ID、名前、サブクラス、およびステータスが記録されます。 |
-| [`customers`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Customer) | `customers` テーブルには、顧客 ID、名前、請求先住所、発送先住所、電話番号、メールアドレスなど、顧客に関するすべての情報が保持されます。 |
-| [`departments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Department) | `departments` テーブルには、部門 ID、名前、タイプ（サブ部門とトップレベル部門）が含まれます。 |
-| [`employees`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Employee) | `employees` テーブルには、会社で働く人々に関する情報が記録されます。 属性には、従業員 ID、名前、住所、電話番号、請求可能な情報（会社が給与に対応している場合）が含まれます。 |
-| [`items`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Item) | `items` の表には、会社が販売する製品またはサービスの詳細が含まれています。 この表には、品目 ID、名称、摘要、単価、タイプ、購買情報、手持数量および収益と資産の勘定科目情報が含まれます。 |
-| [`paymentmethods`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/PaymentMethod) | `paymentmethods` の表には、商品およびサービスに対して受け取った支払い方法が記録されます。 支払い ID、タイプおよび名前が含まれます。 |
-| [`taxagencies`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxAgency) | このテーブルには、税務代理店 ID を含む税務代理店に関する情報と、購入および販売に対する税金に関するトラッキング情報が記録されます。 |
-| [`taxcodes`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxCode) | 税金コードは、製品、サービスおよび顧客の税金ステータス（課税対象と非課税対象）を追跡するために使用されます。 `taxcodes` の表には、税金コード ID、名称、摘要、ステータス、課税対象ステータス、税率および税金グループが含まれます。 |
-| [`taxrates`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxRate) | 税率は、納税義務の計算に使用されます。 このテーブルには、税率 ID、名前、説明、税率、税務エージェンシーなどが含まれます。 |
-| [`terms`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Term) | このエンティティは、販売が行われる条件を表します。 用語テーブルには、用語 ID、名前、タイプ、割引率、期限が含まれます。 |
-| [`vendors`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Vendor) | 仕入先テーブルには、購入元の仕入先に関する情報が含まれています。 テーブル属性には、ベンダー ID、会社名、口座番号、口座残高、1099 ステータス、請求先住所、電話番号、メールアドレス、web アドレスが含まれます。 |
+| [`budgets`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Budget) | この表には、予算ID、名前、開始日と終了日、タイプ、ステータスおよび詳細など、会社予算に関連するすべての情報が記録されます。 |
+| [`classes`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Class) | トランザクションの詳細行に適用されるクラスを使用すると、クライアントまたはプロジェクトに関連付けられていないセグメントを追跡できます。 このテーブルには、クラス ID、名前、サブクラス、およびステータスが記録されます。 |
+| [`customers`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Customer) | `customers` テーブルには、お客様のID、名前、請求先住所と配送先住所、電話番号、電子メールアドレスなど、お客様に関連するすべての情報が格納されます。 |
+| [`departments`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Department) | `departments` テーブルには、部署ID、名前、種類（下位部署と最上位の部署の比較）が含まれています。 |
+| [`employees`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Employee) | `employees` テーブルには、会社で働くユーザーに関する情報が記録されます。 属性には、会社が給与計算に対応している場合の従業員ID、名前、住所、電話番号、請求可能な情報が含まれます。 |
+| [`items`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Item) | `items` テーブルには、会社が販売する製品またはサービスの詳細が含まれています。 この表には、品目ID、名称、説明、単価、タイプ、購入情報、手持数量、収益および資産勘定情報が含まれます。 |
+| [`paymentmethods`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/PaymentMethod) | `paymentmethods` テーブルには、商品とサービスに対して受け取った支払い方法が記録されます。 支払いID、タイプ、名前が含まれます。 |
+| [`taxagencies`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxAgency) | この表は、税務機関IDを含む税務機関に関する情報と、購買および販売の税金に関する追跡情報を示しています。 |
+| [`taxcodes`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxCode) | 税コードは、製品、サービス、および顧客の税金ステータス（課税対象と非課税対象）を追跡するために使用されます。 `taxcodes` テーブルには、税コード ID、名前、説明、ステータス、課税状態、税率、および税グループが含まれています。 |
+| [`taxrates`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/TaxRate) | 税率は、税負担を計算するために使用されます。 この表には、税率ID、名前、説明、税率、税務エージェントなどが含まれます。 |
+| [`terms`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Term) | このエンティティは、販売が行われる条件を表します。 用語テーブルには、用語「ID」、「名前」、「タイプ」、「割引率」および「期限日」が含まれます。 |
+| [`vendors`](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/Vendor) | 「ベンダー」テーブルには、購入するベンダーに関する情報が含まれます。 テーブル属性には、ベンダーID、会社名、アカウント番号、アカウント残高、1099 ステータス、請求先住所、電話番号、メールアドレス、web アドレスが含まれます。 |
 
 {style="table-layout:auto"}
 
 ## 関連：
 
-* [接続  [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [接続中 [!DNL QuickBooks]](../integrations/quickbooks.md)
+* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

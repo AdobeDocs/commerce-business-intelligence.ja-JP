@@ -1,26 +1,32 @@
 ---
 title: データユーザー
-description: データを使用して、より十分な情報に基づいたビジネス上の意思決定を行い、レポートやダッシュボードを作成する方法を説明します。
+description: データを活用して、より多くの情報にもとづいたビジネス上の意思決定を行い、レポートやダッシュボードを作成する方法を紹介します。
 exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/-sqS1qaDbWwGY2Hy13sSqw4sdnxZYGQqiEn5wVcF5lo
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: 86
 ht-degree: 0%
 
 ---
 
 # データユーザー
 
-データを使用すると、ビジネス上の意思決定に役立ちます。 チームのデータアナリストからレポートやダッシュボードを受け取る場合もありますが、これらのレポートやダッシュボードの作成方法の詳細も必要になります。
+データはビジネス上の意思決定に役立てることができます。 チームのデータアナリストからレポートやダッシュボードを受け取る可能性がありますが、それらのレポートやダッシュボードの作成方法も知る必要があります。
 
-この節では、次の方法を説明します。
-* レポートとダッシュボードを使用した [!DNL Commerce Intelligence] でのデータの取得と表示
-* メールや `.csv` ファイルを通じて関係者とデータを共有
+この節では、次の方法を示します。
+* レポートとダッシュボードを使用して[!DNL Commerce Intelligence]のデータを取得し、表示します
+* 電子メールと`.csv` ファイルを通じて関係者とデータを共有する
 
 ## 関連
 
 * [レポートの作成](../mbi/data-user/reports/rpt-fundamentals.md)
-* [ダッシュボードの作成](../mbi/data-user/dashboards/ess-dashboards.md)
-* [データの共有](../mbi/data-user/export-data/share-data.md)
+* [ダッシュボードの構築](../mbi/data-user/dashboards/ess-dashboards.md)
+* [データ共有](../mbi/data-user/export-data/share-data.md)

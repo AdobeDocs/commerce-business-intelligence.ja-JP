@@ -1,35 +1,39 @@
 ---
-title: 指標へのアクセスの制限
-description: 指標へのアクセスと制限の操作方法を説明します。
+title: 指標のアクセス制限
+description: 指標へのアクセスと制限の操作方法について説明します。
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+TQID: https://experienceleague.adobe.com/e87ix3NAqY6xZQbNbQkXuCnvvH2B-8H3APYpKtshs9w
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: 238
 ht-degree: 0%
 
 ---
 
 # 指標ユーザーの管理
 
-ユーザー権限レベルの設定に加えて、指標へのアクセスをユーザーごとに制限することもできます。 例えば、会計部門から売上高に関連する指標へのアクセスを許可しても、ユーザー獲得指標へのアクセスを許可しない場合は、それらの指標へのアクセスを制限できます。
+ユーザー権限レベルを設定するだけでなく、ユーザーごとに指標へのアクセスを制限することもできます。 たとえば、経理部門に収益関連の指標へのアクセス権を付与し、ユーザー獲得指標へのアクセス権を付与しない場合は、これらの指標へのアクセスを制限できます。
 
-このような場合、Adobeでは、そのユーザーのアカウントを **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)** に設定することをお勧めします。 指標、計算列、統合またはユーザーを作成または変更する必要はないが、Data Warehouseのデータにアクセスする必要があるユーザーには、**[!UICONTROL Standard]** の権限を付与する必要があります。 データへのアクセスを完全に制限する場合は、**[!UICONTROL Read Only]** の権限を使用します。
+このような場合、Adobeでは、そのユーザーのアカウントを&#x200B;**[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**&#x200B;に設定することをお勧めします。 **[!UICONTROL Standard]**&#x200B;権限は、指標、計算列、統合、またはユーザーを作成または変更する必要はないが、Data Warehouseのデータにアクセスする必要があるユーザーに付与する必要があります。 データへのアクセスを完全に制限する場合は、代わりに&#x200B;**[!UICONTROL Read Only]**&#x200B;権限を使用してください。
 
-権限レベルを設定した後、**[!UICONTROL Standard]** ユーザーがアクセスできる指標を選択するには、次の操作を行います。
+権限レベルを設定したら、次の操作を行うことで、**[!UICONTROL Standard]** ユーザーがアクセスできる指標を選択できます。
 
-1. **[!UICONTROL Account Settings]**/**[!UICONTROL Manage Users]** に移動します。
+1. **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**&#x200B;に移動します。
 1. 目的のユーザーアカウントを選択します。
-1. 「**[!UICONTROL Metrics]**」タブには、使用可能な指標のリストが表示されます。 ユーザーがアクセスできる指標を確認し、ユーザーがアクセス権を持たない指標の選択を解除します。
-1. 変更 [!DNL Adobe Commerce Intelligence] 自動的に保存されます。 変更に成功すると、ページ [!DNL Commerce Intelligence] 上部に **[!UICONTROL Saved!]** が表示されます。
+1. 「**[!UICONTROL Metrics]**」タブには、使用可能な指標のリストが表示されます。 ユーザーにアクセス権を付与する指標を確認し、ユーザーにアクセス権を付与しない指標の選択を解除します。
+1. [!DNL Adobe Commerce Intelligence]は変更を自動的に保存します。 変更が成功した場合、[!DNL Commerce Intelligence]はページの上部に&#x200B;**[!UICONTROL Saved!]**&#x200B;と表示されます。
 
 >[!NOTE]
 >
->**[!UICONTROL Standard]** 権限を持つすべてのユーザーは、[!DNL Google Analytics] のすべての指標に加え、Data Warehouseのすべてのデータにデータ書き出しを介してアクセスできます。
+>**[!UICONTROL Standard]**&#x200B;権限を持つすべてのユーザーは、[!DNL Google Analytics]のすべての指標に加えて、Data Exportを介してData Warehouseのすべてのデータにアクセスできます。
 
-また、指標を編集し、「**[!UICONTROL Standard]**」セクションでユーザーを選択すること **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)**、指標へのアクセスを制限できます。
+また、**[!UICONTROL Standard]** セクションで指標を編集し、**[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)** ユーザーを選択することで、指標へのアクセスを制限することもできます。
 
 >[!NOTE]
 >
->指標を複製すると、[!DNL Commerce Intelligence] は元の指標に設定されたユーザー権限をコピーします。
+>指標を複製すると、[!DNL Commerce Intelligence]は元の指標に設定されたユーザー権限をコピーします。

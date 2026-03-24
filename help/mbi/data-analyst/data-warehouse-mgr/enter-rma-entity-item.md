@@ -1,36 +1,42 @@
 ---
-title: Enterprise_Rma_Item_Entity 表
-description: 要求された返品から特定の品目に関する情報を分析する方法を説明します。
+title: Enterprise_Rma_Item_Entity テーブル
+description: 特定の項目に関する情報を、リクエストされた返品から分析する方法を説明します。
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/jBMtEluq3XNIzItebuvDQ43PAuW6mAsyG7RkHn8URJ4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: 269
 ht-degree: 0%
 
 ---
 
-# enterprise_rma_item_entity 表
+# enterprise_rma_item_entity テーブル
 
-`enterprise_rma_item_entity` テーブルの各行（Commerce 2.x では `magento_rma_item_entity` と呼ばれることが多いですが、名前はカスタマイズできます）には、要求されたリターンからの特定のアイテムに関する情報が含まれます。
+`enterprise_rma_item_entity` テーブルの各行（Commerce 2.xでは`magento_rma_item_entity`と呼ばれることが多いですが、名前はカスタマイズできます）には、リクエストされたリターンの特定の項目に関する情報が含まれています。
 
 >[!NOTE]
 >
->この表は、`Enterprise Edition` またはお客様の場合、お使いのCommerce アカウントに標準で付属して `Enterprise Cloud Edition` ます。
+>このテーブルは、`Enterprise Edition`または`Enterprise Cloud Edition`のお客様の場合にのみ、Commerce アカウントに標準で用意されています。
 
-## 共通ネイティブ列
+## 共通のネイティブ列
 
 | **列名** | **説明** |
 |---|---|
-| `entity\_id` | テーブルの一意の識別子。 各 `entity\_id` は、返品を要求された品目を表します。 |
+| `entity\_id` | テーブルの一意のID。 各`entity\_id`は、返品をリクエストされたアイテムを表します。 |
 | `rma\_entity\_id` | `enterprise\_rma` テーブルに関連付けられている外部キー。 |
-| `status` | 項目の返品状態。 値には「received」、「pending」、「authorized」などがあります。 このステータスの値は、リターン全体のステータスの値と一致しない場合があります。 |
+| `status` | アイテムの返品のステータス。 値には、「received」、「pending」、「authorized」などがあります。 このステータスの値は、全体的なリターンのステータスの値と一致しない場合があります。 |
 | `qty\_requested` | 顧客が返品を要求する数量。 |
-| `qty\_approved` | 返品が承認された数量。 |
-| `qty\_returned` | 返される数量。 |
+| `qty\_approved` | 返品用に承認された数量。 |
+| `qty\_returned` | 返された数量。 |
 | `order\_item\_id` | `sales\_flat\_order\_item` テーブルに関連付けられている外部キー。 |
-| `product\_sku` | 返される SKU。 |
+| `product\_sku` | 返されるSKU。 |
 
 {style="table-layout:auto"}
 
@@ -38,32 +44,32 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |---|---|
-| `Return date\_requested` | これは、顧客が返品を要求した日付です。 |
+| `Return date\_requested` | これは、お客様が返品をリクエストした日付です。 |
 | `Item price` | 商品の価格。 |
-| `Return item's total value (qty\_returned * price)` | これは、返される項目の合計金額です。 これは、`enterprise\_rma` テーブルの合計返品金額の計算に使用されます。 |
+| `Return item's total value (qty\_returned * price)` | これは、返されるアイテムの合計金額です。 これは、`enterprise\_rma` テーブルの合計返品額を計算するために使用されます。 |
 
 {style="table-layout:auto"}
 
-## 一般的な指標
+## 共通指標
 
-| **指標名** | **説明** | **建設** |
+| **指標の名前** | **説明** | **建設** |
 |---|---|---|
-| `Number of items returned` | 返される項目の数。 | 操作列：戻された数量 <br> 操作：合計 <br> タイムスタンプ列：戻り日が要求されました |
-| `Returned items' total value` | 返される金額。 | 操作列：返品品目の合計値（戻された数量*価格） <br> 操作：合計 <br> タイムスタンプ列：要求された返品日 |
+| `Number of items returned` | 返されるアイテムの数。 | 操作列：返された数量<br>操作：合計<br> タイムスタンプ列：要求日 |
+| `Returned items' total value` | 返済金額です。 | 操作列：返品品目の合計値（返品数*価格） <br>操作：合計<br> タイムスタンプ列：返品日がリクエストされました |
 
 {style="table-layout:auto"}
 
-## その他のテーブルへの接続
+## 他のテーブルへの接続
 
 `enterprise_rma`
 
-* 次の結合を使用して、`Return date\_requested` テーブルに `enterprise_rma_item_entity` などの結合された列を作成します。
-* Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id ` （多） => `enterprise_rma.entity_id` （1）
-* Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` （多） => `magento_rma.entity_id` （1）
+* 次の結合を使用して、`Return date\_requested` テーブルの`enterprise_rma_item_entity`などの結合された列を作成します。
+* Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id ` （多数） => `enterprise_rma.entity_id` （1つ）
+* Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` （多数） => `magento_rma.entity_id` （1つ）
 
 `sales_flat_order_item`
 
-* で結合された列を作成  次 `enterprise_rma_item_entity` 結合を使用してテーブルを作成します。
+* 上に結合列を作成  次の結合を使用した`enterprise_rma_item_entity` テーブル：
 
-* Commerce 1.x: `enterprise_rma_item_entity.order_item_id ` （多） => `sales_flat_order_item.item_id` （1）
-* Commerce 2.x: `magento_rma_item_entity.order_item_id ` （多） => `sales_order_item.item_id` （1）
+* Commerce 1.x: `enterprise_rma_item_entity.order_item_id ` （多数） => `sales_flat_order_item.item_id` （1つ）
+* Commerce 2.x: `magento_rma_item_entity.order_item_id ` （多数） => `sales_order_item.item_id` （1つ）

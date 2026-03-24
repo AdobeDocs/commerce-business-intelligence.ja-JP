@@ -1,74 +1,80 @@
 ---
-title: Report Builder の選択
-description: Report Builder の選択方法を説明します。
+title: レポートビルダーの選択
+description: レポートビルダーの選び方。
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/xXSDN9dKTWp8SdeZHBmDYZhnNbxn8F-D6UvKa4qJlCI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: 644
 ht-degree: 0%
 
 ---
 
-# Report Builder の選択
+# レポートビルダーの選択
 
 >[!NOTE]
->&#x200B;>[&#x200B; 管理者権限 &#x200B;](../../administrator/user-management/user-management.md) が必要です。
+>>[管理者権限](../../administrator/user-management/user-management.md)が必要です。
 
-分析を作成するオプションが増えたので、ニーズに合った Report Builder のフレーバーを正確に把握することが困難な場合があります。 このトピックでは、分析を構築するための最適な方法を選択する手順を説明します。
+分析の作成方法が増えたことで、レポートビルダーのどの機能が自社のニーズに適しているのかを正確に把握することが難しい場合もあります。 このトピックでは、分析を構築するための最適な方法を選択する方法を説明します。
 
-## いつその [!DNL SQL Report Builder] を使えばいいですか。 {#whensql}
+## [!DNL SQL Report Builder]を使用するタイミング {#whensql}
 
-[!DNL SQL Report Builder] 上で [!DNL traditional Report Builder] を使用する一般的な理由をいくつか見てみましょう。
+[!DNL SQL Report Builder]よりも[!DNL traditional Report Builder]を使用する一般的な理由をいくつか確認してください。
 
-### [!DNL SQL] 固有の関数を使用する場合
+### [!DNL SQL]固有の関数を使用する場合…
 
-この [!DNL SQL Report Builder] の美しさの一つは、Data Warehouse Manager では現在利用できない機能を使用できることです。 これまでは、アナリストがユーザーのビジョンを完全に実現するために介入する必要があった可能性があります。
+[!DNL SQL Report Builder]の利点の1つは、現在Data Warehouse Managerで使用できない関数を使用できることです。 過去には、アナリストの支援を受けて、ビジョンを完全に実現する必要があったかもしれません。
 
-[!DNL SQL Report Builder] は、以前は使用できなかった [`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html) や [`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html) などの関数をサポートしています。 [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) にアクセスできますが、その他の SQL 固有の関数には次のものがあります。
+[!DNL SQL Report Builder]は、以前は使用できなかった[`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html)や[`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html)などの関数をサポートしています。 [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)にアクセスできますが、その他のSQL固有の関数には次のものが含まれます。
 
-* [`Bitwise aggregate` 関数 &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
+* [`Bitwise aggregate`個の関数](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
 * [`CASE expression`](https://docs.aws.amazon.com/redshift/latest/dg/r_CASE_function.html)
 * [`JSON_EXTRACT_PATH_TEXT`](https://docs.aws.amazon.com/redshift/latest/dg/JSON_EXTRACT_PATH_TEXT.html)
 * [`LOG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LOG.html)
 * [`MONTHS_BETWEEN`](https://docs.aws.amazon.com/redshift/latest/dg/r_MONTHS_BETWEEN_function.html)
 * [`REPLACE`](https://docs.aws.amazon.com/redshift/latest/dg/r_REPLACE.html)
 * [`SQRT`](https://docs.aws.amazon.com/redshift/latest/dg/r_SQRT.html)
-* [`concatenation` 演算子 &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
+* [`concatenation`演算子](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
 
-### 何らかのテストを行う場合
+### テストをしたい場合。
 
-分析に最適な方法を見つけるために、様々な手法や戦略を試す場合は、[!DNL SQL Report Builder] を使用できます。 Data Warehouse Manager で列を構築するには、DWM を使用して作成する時間と列は、更新サイクルに依存します。
+分析に最適な方法を見つけるためのさまざまな手法や戦略を試す場合は、[!DNL SQL Report Builder]を使用することをお勧めします。 Data Warehouse Managerで列を作成するには時間がかかり、DWMを使用して作成する列は更新サイクルによって異なります。
 
-せいぜい、列を使用するには 1 回の更新サイクルを待つ必要があります。 列の作成を誤ったことに気付いた場合は、*2* サイクルを経る必要があります。1 つのサイクルで最初に列に入力し、もう 1 つのサイクルで変更が反映されます。
+カラムを使用するには、1回の更新サイクルを待つ必要があります。 列の作成で間違いがあることに気づいたら、*2* サイクルを待つ必要があります。1つは最初に列に入力するサイクル、もう1つはリビジョンを反映するサイクルです。
 
-### 新しい列を 1 回だけ使用する場合
+### 新しい列を1回だけ使用する場合…
 
-前述のように、Data Warehouse Manager で列を作成するには時間がかかります。 Adobe 1 つのレポートで作成した列のみを使用する予定がある場合は、[!DNL SQL Report Builder] の使用をお勧めします。 これにより、更新サイクルが完了するまで待つ必要がなくなり、作業をより迅速に再開できます。
+上記のセクションで説明したように、Data Warehouse Managerで列を作成するには時間がかかります。 1つのレポートで作成した列のみを使用する場合は、[!DNL SQL Report Builder]を使用することをAdobeが提案します。 これにより、更新サイクルが完了するのを待つ必要がなくなり、より迅速に作業に戻ることができます。
 
-### 1 対多の関係を持つデータを操作する場合
+### 多対多の関係を持つデータを使用している場合。
 
-データの構造によっては、分析を構築するための [!DNL SQL Report Builder] ータの方が効率的で論理的な選択になる場合があります。 Data Warehouse Manager では、1 対 1 の関係を表す列を作成するのは簡単ですが、1 対多の関係を扱う場合は、少し混乱する可能性があります。
+データ構造によっては、[!DNL SQL Report Builder]をより効率的で論理的な選択で分析を構築できる場合があります。 1対1のリレーションシップ用の列の作成はData Warehouse Managerでは簡単ですが、1対多のリレーションシップを扱う場合は、少し混乱する可能性があります。
 
-例えば、1 つの製品が複数の製品カテゴリの一部と見なされ、各製品の各カテゴリに関連付けられた売上高を表示するとします。 DWM を使用してこの関係を作成しようとすることは、面倒で難しい場合がありますが、[!DNL SQL] クエリを作成する方が少し簡単な場合があります。
+1つの製品が複数の製品カテゴリの一部と見なされ、各製品の各カテゴリに関連する収益を表示する場合を考えてみましょう。 DWMを使用してこの関係を作成しようとすると、面倒で困難になる可能性がありますが、[!DNL SQL] クエリを記述する方が少し簡単です。
 
-![1 対多の関係を持つ製品カテゴリ別の売上高を示す SQL クエリ &#x200B;](../../assets/When_should_I_use_the_RB_2.png)
+1対多の関係を持つ製品カテゴリ別の収益を表示する![SQL クエリ ](../../assets/When_should_I_use_the_RB_2.png)
 
-## 従来のReport Builderは、どのような場合に使用すればよいですか？ {#whentraditionalrb}
+## 従来のReport Builderをいつ使用すればよいですか？ {#whentraditionalrb}
 
-[!DNL SQL Report Builder] を使用すると、以前は使用できなかった機能をより詳細に制御してアクセスできますが、常に正しい選択とは限りません。 Adobeでは、使用する report builder のフレーバーを決定する際に、次の点も考慮することをお勧めします。
+[!DNL SQL Report Builder]を使用すると、以前は利用できなかった機能をより詳細に制御してアクセスできるようになりますが、必ずしも適切な選択とは限りません。 Adobeでは、使用するレポートビルダーのフレーバーを決定する際に、次のことも検討することをお勧めします。
 
-### 単純なレポートを作成する場合
+### 簡単なレポートを作成する場合。
 
-単純に作成したい場合は、従来のReport Builderを使用すると、完全な [!DNL SQL] クエリを記述するよりもはるかに高速です。 分析の作成が必要な列が既にData Warehouse Manager に存在している場合に役立ちます。
+作成する内容が簡単な場合は、従来のReport Builderを使用すると、完全な[!DNL SQL] クエリを記述するよりもはるかに高速になります。 分析を作成するために必要な列が既にData Warehouse Managerに存在する場合に役立ちます。
 
-### 作業を他のユーザーと共有している場合…
+### 作品を他のユーザーと共有している場合…
 
-組織全体のユーザーがこの分析を使用または表示していますか。 誰と作業を共有しているかによって、ビジュアルReport Builderにこだわる方が良い場合もあります。 ユーザーは、[!DNL Visual Report Builder] の定義を素早く確認できるのに対し、長 [!DNL SQL] クエリを読み取る可能性もあります。
+組織全体のユーザーがこの分析を使用/表示していますか？ 誰と共有するかに応じて、ビジュアルReport Builderを使用し続けることが良い場合があります。 ユーザーは、潜在的に長い[!DNL Visual Report Builder] クエリを読み取るのではなく、[!DNL SQL]の定義をすばやく確認できます。
 
-レポートを必要としているものの、[!DNL SQL] に詳しくない人がいれば、AdobeはReport Builderのオリジナルの味を使用することをお勧めします。 これにより、作業が容易になります。
+レポートが必要だが[!DNL SQL]についてよく知らない人がいる場合は、AdobeはReport Builderのオリジナルのフレーバーを使用することを提案します。 指標を向上できます。
 
 ## まとめ {#wrapup}
 
-[!DNL SQL Report Builder] と [!DNL Visual Report Builder] はどちらも、様々なユースケースに適しています。 これは、通常、分析のニーズと、誰が分析を使用しているかによって異なります。
+[!DNL SQL Report Builder]と[!DNL Visual Report Builder]の両方は、様々なユースケースに適しています。 通常、自社の分析ニーズと、分析の対象者に応じて異なります。

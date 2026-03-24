@@ -1,65 +1,71 @@
 ---
-title: Google Analyticsが格納する必要があるデータ
-description: Google Analyticsに保管されたデータとのやり取りを説明します。
+title: Google Analytics Warehoused Dataの想定
+description: Google Analyticsウェアハウスデータの使用方法を説明します。
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/-Pulnv7J-TmXxL0msB6nhuMKIWbCpS0163rewp9BOvc
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: 355
 ht-degree: 0%
 
 ---
 
-# 予期される [!DNL Google Analytics Warehoused] データ
+# [!DNL Google Analytics Warehoused] データが必要です
 
 >[!NOTE]
 >
->[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
+>[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
 >[!NOTE]
 >
->[[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics) 時に友達から許可を得て情報を使用しました。
+>一部の情報は[[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics)に友達から許可を得て使用されました。
 
-[!DNL Google Analytics Warehoused] の統合 [!DNL Commerce Intelligence]、[!DNL Google Analytics] [&#x200B; コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用します。
+[!DNL Google Analytics Warehoused]の[!DNL Commerce Intelligence]統合では、[!DNL Google Analytics] [Core Reporting API](https://developers.google.com/analytics/devguides/reporting/core/v3/)を使用しています。
 
 >[!NOTE]
 >
->予期しない結果や感覚的でない結果を避けるために、使用するディメンションが [&#x200B; で使用する &#x200B;](https://ga-dev-tools.google/dimensions-metrics-explorer/)1 つ以上の指標と互換性がある `Report Builder` ことを確認します。
+>予期しない結果や意味のない結果を回避するには、使用するディメンションが[で](https://ga-dev-tools.google/dimensions-metrics-explorer/)で使用する1つ以上の指標`Report Builder`と互換性があることを確認します。
 
-Data Warehouseに `report` という 1 つのテーブルが作成されます。
+1つのテーブル `report`がData Warehouseに作成されます。
 
-このテーブルのスキーマは、設定プロセス中に選択した指標およびディメンションと、他の 2 つの列（`start-date` および `end-date`）で構成されています。
+このテーブルのスキーマは、設定プロセス中に選択した指標とディメンションと、その他2つの列（`start-date`と`end-date`）で構成されています。
 
-例えば、セットアップ時に次の指標とディメンションを選択した場合：
+例えば、設定中に次の指標とディメンションを選択した場合：
 
 * `Metrics`: `ga:users`
 * `Dimensions`: `ga:month`
 
-テーブルは次の例のようになります。
+この表は、次の例のようになります。
 
 | **列名** | **説明** |
 |-----|-----|
-| `\_id` | この列は `primary key` です。 |
-| `\_rjm\_record\_hash` | 一意 [!DNL Commerce Intelligence]ID。 この列は [!DNL Commerce Intelligence] が作成しました。 |
-| `\_updated\_at` | この列には、データ行が最後に更新された時刻が含まれています。 この列は [!DNL Commerce Intelligence] が作成しました。 |
-| `start-date` | 行の日付を示す ID。 |
-| `end-date` | 行の日付を示す ID。 |
-| `month` | 選択したディメンション : セッションの月。01 ～ 12 の 2 桁の整数。 |
-| `users` | 選択した指標：リクエストされた期間のユーザーの合計数。 |
+| `\_id` | この列は`primary key`です。 |
+| `\_rjm\_record\_hash` | [!DNL Commerce Intelligence]の一意のID。 この列は[!DNL Commerce Intelligence]によって作成されました。 |
+| `\_updated\_at` | この列には、データ行が最後に更新された時刻が含まれます。 この列は[!DNL Commerce Intelligence]によって作成されました。 |
+| `start-date` | 行の日付を識別します。 |
+| `end-date` | 行の日付を識別します。 |
+| `month` | 選択したディメンション：セッションの月、01から12までの2桁の整数。 |
+| `users` | 選択した指標：要求された期間のユーザーの合計数。 |
 
 {style="table-layout:auto"}
 
-## [!DNL Google Analytics Warehoused] と [!DNL Live Integration] の違い
+## [!DNL Google Analytics Warehoused]と[!DNL Live Integration]の違い
 
-主な違いは、1 つの統合が保存され（[!DNL Google Analytics Warehoused]）、もう 1 つは保存されない（[!DNL Google Analytics Live]）ことです。 [!DNL Google Analytics Warehoused] の場合は、[!DNL Google Analytics] データを操作でき、[!DNL Google Analytics] と他のデータソースを組み合わせて、インサイトに満ちたレポートを作成できます。
+主な差別化要因は、1つの統合が保存され（[!DNL Google Analytics Warehoused]）、もう1つは保存されず（[!DNL Google Analytics Live]）、です。 [!DNL Google Analytics Warehoused]の場合、これにより[!DNL Google Analytics] データの操作が可能になり、[!DNL Google Analytics]とその他のデータソースを組み合わせて、インサイトに満ちたレポートを作成できるようになります。
 
-操作の観点から実行できる操作の例については、[!DNL Google Analytics] の広告キャンペーンを参照してください。 異なる名前の Q4 に複数の広告キャンペーンがあるとします。 キャンペーンは、特定のマーケティング施策の成果でした。 ウェアハウスに格納されたデータを使用すると、問題のキャンペーン名を見つけて、Q4 イニシアチブ名 `Operation Dumbo` を返す列を作成できます。
+操作の観点から何ができるかの例については、[!DNL Google Analytics]件の広告キャンペーンを参照してください。 例えば、Q4に複数の広告キャンペーンと異なる名前があったとします。 このキャンペーンは、特定のマーケティング施策を通じて実施されました。 ウェアハウスデータを使用すると、該当するキャンペーン名を検索し、Q4 イニシアチブ名`Operation Dumbo`を返す列を作成できます。
 
-組み合わせ側面 [!DNL Google Analytics] 使用すると、分析を行うためにデータを他のデータに結合できます。 例えば、`Total Time On Site By Ad Campaign` のデータ [!DNL Google Analytics] 取り、`Total Spent Per Campaign` の [!DNL Facebook Ads] データと結合して、エンゲージメントにかかる費用の全体像を把握できます。
+組み合わせアスペクトでは、[!DNL Google Analytics] データを他のデータと結合して分析を行うことができます。 例えば、`Total Time On Site By Ad Campaign`から[!DNL Google Analytics]個のデータを取得し、`Total Spent Per Campaign`から[!DNL Facebook Ads]個のデータに結合して、エンゲージメントにかかるコストを包括的に把握できます。
 
-一方、[!DNL Google Analytics Live] の統合では、すべての [!DNL Google Analytics] グラフは [!DNL Commerce Intelligence] Data Warehouseには保存されない小さなサイロのようになります。
+一方、[!DNL Google Analytics Live]統合では、[!DNL Google Analytics]個のグラフはすべて、[!DNL Commerce Intelligence] Data Warehouseに保存されていない小さなサイロのようなものです。
 
 ## 関連：
 
-* [接続  [!DNL Google Analytics Warehoused]](../integrations/google-analytics-warehoused.md)
+* [接続中 [!DNL Google Analytics Warehoused]](../integrations/google-analytics-warehoused.md)

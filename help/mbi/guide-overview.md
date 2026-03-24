@@ -5,58 +5,63 @@ breadcrumb-title: ガイドの概要
 seo-title: Commerce Intelligence User Guide
 seo-description: Describes how to use Adobe Commerce Intelligence features used to gain insights from Adobe Commerce or Magento Open Source data, along with other third-party data sources.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: bb836eaa0407057ad34bc13f1a74d34acbc6cc67
+TQID: https://experienceleague.adobe.com/VOTO62g3Z13NyaT1T-QK98eHc9EVuIBt7OsW8ssEaNI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: 424
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Commerce Intelligence] ユーザーガイド
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Intelligence] は以前は [!DNL Magento Business Intelligence] と呼ばれていました。 このガイドで変更内容を取り込むために、現在、一連のアップデートが進行中です。
+>[!DNL Adobe Commerce Intelligence]は以前[!DNL Magento Business Intelligence]と呼ばれていました。 現在、このガイドで変更をキャプチャするための一連の更新が進行中です。
 
-データ管理者には、次の 2 つの領域があります。
+データ管理者には、次の2つの領域があります。
 
-- 管理者：この領域を使用して、設定 UI およびレポートにアクセスします。
+- 管理者：この領域を使用して、設定UIとレポートにアクセスします。
 - コマンドラインインターフェイス（CLI）：このツールを使用して、インストールタスクとバックエンド設定タスクを実行します。
 
-## 使用方法
+## このガイドの使用方法
 
-このガイドには、組織内でどのような役割を担っているかに基づいて、以下の節が編成されています。
+このガイドでは、組織内でどのような役割を担っているかに基づいて、次のセクションを整理しています。
 
-- [&#x200B; データユーザー &#x200B;](data-user.md)：ビジネス上の意思決定に役立つデータを使用します。 チームのデータアナリストからレポートやダッシュボードを受け取る場合もありますが、これらのレポートやダッシュボードの作成方法の詳細も必要になります。
-- [&#x200B; データアナリスト &#x200B;](data-analyst.md)：クエリを適切に設計し、データ分析の頼りになる人物です。 データに関する質問に対する特定の回答を見つける方法を理解しており、同僚のセルフサービスエクスペリエンスを促進したいと考えています。
+- [ データ ユーザー](data-user.md): データを使用してビジネス上の意思決定を支援しています。 チームのデータアナリストからレポートやダッシュボードを受け取る可能性がありますが、それらのレポートやダッシュボードの作成方法も知る必要があります。
+- [ データ アナリスト ](data-analyst.md): クエリを設計し、データ分析の頼りになる人物であることに慣れています。 データに関する質問に対する具体的な回答を見つけ出し、同僚へのセルフサービス体験を促進する方法を身に付けています。
 - 管理者：ライセンス、ユーザーの追加と削除、重要な管理タスクの処理など、[!DNL Commerce Intelligence] アカウントを管理します。
 
-上記の役割ベースのワークフローに加えて、このガイドには次の内容も含まれます。
+このガイドには、上記の役割ベースのワークフローに加えて、次の内容も含まれています。
 
-- ベストプラクティス：[!UICONTROL Commerce Intelligence] は堅牢で柔軟なプラットフォームであり、同様のタスクを実行する方法は多数あります。 このセクションでは、データのキャプチャ、分析、表示に [!DNL Commerce Intelligence] に推奨される方法をまとめます。
-- チュートリアル：これらのセルフガイドのチュートリアルに従って、[!DNL Commerce Intelligence] の機能を学習します。
+- ベストプラクティス：[!UICONTROL Commerce Intelligence]は堅牢で柔軟なプラットフォームです。つまり、類似したタスクを実行する方法は様々です。 このセクションでは、[!DNL Commerce Intelligence]がデータのキャプチャ、分析、表示に推奨する方法をまとめています。
+- チュートリアル：次のセルフガイド付きチュートリアルに従って、[!DNL Commerce Intelligence]の力を学びましょう。
 
-## お問い合わせ
+## ヘルプの利用方法
 
-ご不明な点やプロフェッショナルサービスを利用したい場合、またはアカウントで問題が発生した場合は、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) にお問い合わせください。
+ご不明な点がある場合や、お客様のアカウントで問題が発生した場合は、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)にお問い合わせください。
 
 ### サービスポリシー
 
-[&#x200B; カスタマーサポートチームが提供するサービスのリスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) を参照してください。
+カスタマーサポートチームが提供するサービスの[ リストを参照してください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
-### サポートチケットの送信
+### サポートチケットの提出
 
-高度な計算列の作成に関するサポートが必要な場合は、 欠陥または接続の問題が発生しましたか？ サポートチームに連絡する必要がある場合は、Adobeから [&#x200B; サポートチケットガイドライン &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) を使用するよう求められます。 これらのガイドラインでは、Adobeでこの問題を解決するために必要な情報の概要を説明します。
+高度な計算列の作成に関するサポートが必要ですか？ 欠陥または接続の問題が発生しましたか？ サポートチームに連絡する必要がある場合は、Adobeから[ サポートチケットガイドライン ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)を使用するよう求められます。 このガイドラインは、Adobeがこの問題を解決するために必要な情報の概要を示しています。
 
 ## 使用可能なドキュメント
 
-| ドキュメントリソース | 説明 |
+| 関連文書 | 説明 |
 |----------------------- | ----------- |
-| [Adobe Commerce 2.4 マーチャントドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャントフォーカスのドキュメント |
-| [Adobe Commerce向けサービスのドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home) | マーチャントがビジネスの主要なコンポーネントをストアと統合するのに役立つ、サービスのコレクションをサポートするドキュメント。 |
-| [Adobe Commerce 2.4 運用ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/operational-guides/home) | Adobe CommerceおよびMagento Open Source プラットフォームにデプロイされたプロジェクトを開発、デプロイ、管理するためのコンセプト、プロセス、ツールおよびベストプラクティスに関するシステムドキュメント。 |
-| [Adobe Commerce 2.4 開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用される、開発者向けドキュメント |
+| [Adobe Commerce 2.4 Merchant Documentation](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Adobe CommerceとMagento Open Sourceの両方のマーチャントに焦点を当てたドキュメント |
+| [Adobe Commerce ドキュメント向けサービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) | マーチャントがストアとビジネスの主要コンポーネントを統合するのに役立つサービスのコレクションをサポートするドキュメント。 |
+| [Adobe Commerce 2.4運用ガイド ](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) | Adobe CommerceおよびMagento Open Source プラットフォームにデプロイされたプロジェクトを開発、デプロイ、保守するためのコンセプト、プロセス、ツール、ベストプラクティスに関するシステムドキュメント。 |
+| [Adobe Commerce 2.4開発者向けドキュメント ](https://developer.adobe.com/commerce/) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けのドキュメント |
 
 {{$include /help/_includes/templated/whats-new.md}}
 

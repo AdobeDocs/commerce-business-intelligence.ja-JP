@@ -1,44 +1,50 @@
 ---
-title: Google Analyticsでの UTM トラッキング
-description: Google Analyticsでの UTM トラッキング（タグ付け）のベストプラクティスについて説明します。
+title: GOOGLE ANALYTICSでのUTM トラッキング
+description: Google AnalyticsでのUTM トラッキング（タグ付け）のベストプラクティスについて説明します。
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/IX5oaIr8tbUUeA3ZrIQNUMnG8ApXMBS1hcpecqFW8kg
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: beb7a3c1-66ab-4786-b879-7621375b3c40id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: 450
 ht-degree: 0%
 
 ---
 
 # UTM トラッキング
 
-`UTM` トラッキングは、ユーザーの送信元を分析できる、URL のタグ付け規則です。 ほとんどのマーケティングメールまたはバナー広告からクリックした URL に UTM タグ付けが表示されます。 `utm\_source` や `utm\_medium` のような物で終わるのは、それらの長いリンクです。
+`UTM` トラッキングは、ユーザーがどこから来たのかを分析できるURLのタグ付け規則です。 ほとんどのマーケティングメールまたはバナー広告からクリックしたURLを見ると、UTM タグが表示されます。 `utm\_source`や`utm\_medium`などで終わる長いリンクです。
 
-[!DNL Google Analytics] は `UTM` タグ付けを使用して、トラフィックの発信元を把握します。 この情報の一部は [HTTP リファラー &#x200B;](https://en.wikipedia.org/wiki/HTTP_referer) から得られますが、残りの部分は `UTM` のパラメーターを自分で指定する必要があります。 `google adwords` または `email marketing` が表示される場合、元のリンククリックから記録され、ユーザーの Cookie に保存されるこれらの `UTM` パラメーターを意味します。 そこから、[!DNL Google Analytics] はそのデータを使用して、サイト上の [&#x200B; 興味深い行動の属性 &#x200B;](../data-analyst/analysis/google-track-user-acq.md) を決定します。 これらのパラメーターの目的を理解すると、UTM タグ付けの最適な設定方法と使用方法を理解するのに役立ちます。
+[!DNL Google Analytics]では、`UTM`のタグ付けを使用して、トラフィックの送信元を把握しています。 この情報の一部は[HTTP リファラー](https://en.wikipedia.org/wiki/HTTP_referer)から取得されますが、残りの部分は`UTM`個のパラメーターを入力する必要があります。 `google adwords`または`email marketing`が表示された場合、元のリンクから記録された`UTM` パラメーターがクリックされ、ユーザーのCookieに保存されることを意味します。 そこから、[!DNL Google Analytics]はそのデータを使用して、サイトで[興味深い行動](../data-analyst/analysis/google-track-user-acq.md)を特定します。 これらのパラメーターの目的を理解すると、UTM タグを設定して使用する最適な方法を理解できます。
 
 ## UTM タグ付けのベストプラクティス
 
-次のリストは、`UTM` タグを使用して URL を設定する際に覚えておくべき 5 つの最も重要な事項です。
+次に、`UTM` タグ付きでURLを設定する際に覚えておくべき5つの最も重要な点を示します。
 
-### &#x200B;1. サイトに到達するのを制限できるすべての URL にタグを付けることを目指します
+### &#x200B;1. サイトへのアクセスを制御できるURLをすべてタグ付けすること
 
-リンクのクリックをユーザーに求めるたびに、`UTM` のタグ付けを設定する必要があります。 これには、すべてのメールリンク（メールサービスプロバイダーが URL を自動的にタグ付けする方法を備えている場合があります）、広告リンク、報道記事、ブログ投稿が含まれます。
+リンクをクリックするようにユーザーに依頼するたびに、`UTM` タグ付けを設定する必要があります。 これには、すべてのメールリンク（メールサービスプロバイダーがURLを自動的にタグ付けする方法を持っている可能性があります）、広告リンク、プレス記事、ブログ記事が含まれます。
 
-### &#x200B;2. ツールを使用して URL を作成する
+### &#x200B;2. ツールを使用したURLの作成
 
-タグ付け `UTM`URL は面倒な場合があります。 長い間それらを入力しようとする代わりに、[&#x200B; このような &#x200B;](https://support.google.com/analytics/answer/1033867?hl=en) ツールを使用して支援します。 これにより、賢明なパラメーターをすべて URL に追加し、そこからコピー&amp;ペーストする URL を取得することができます。 [!DNL Hootsuite] などのツールには、ソーシャルリンクを管理するために、すべてのリンクにカスタム URL パラメーターを追加するオプションが含まれています。
+タグ付けされた`UTM`個のURLは面倒になる可能性があります。 長く入力する代わりに、[のような](https://support.google.com/analytics/answer/1033867?hl=en) ツールを使ってください。 これにより、URLに適切なパラメーターを追加し、URLを取得してコピー&amp;ペーストできます。 ソーシャルリンクを管理するには、[!DNL Hootsuite]などのツールに、すべてのリンクにカスタム URL パラメーターを追加するオプションが含まれています。
 
-### &#x200B;3. パラメーター値で大文字と小文字が区別されることを確認します
+### &#x200B;3. パラメーター値で大文字と小文字を区別するようにしてください
 
-タグ `utm\_source=adwords` は `utm\_source=Adwords` とは異なるタグであることを覚えておくことが重要です。 すべてを小文字にすることを検討してください。
+タグ `utm\_source=adwords`が`utm\_source=Adwords`とは異なるタグであることを覚えておくことが重要です。 すべてを小文字にすることを検討してください。
 
-### &#x200B;4. UTM パラメーター値をデータベースに保存する
+### &#x200B;4. UTM パラメータ値をデータベースに格納する
 
-トランザクションまたはイベントが発生するたびに、マーケティングアクティビティのパフォーマンスを評価する必要があります。 これを行うには、UTM パラメーター値の値を [[!DNL Google Analytics] cookie からデータベース &#x200B;](../data-analyst/analysis/google-track-user-acq.md) に読み取ります。
+トランザクションやイベントが発生するたびに、マーケティング活動のパフォーマンスを評価します。 これは、[[!DNL Google Analytics] cookieからUTM パラメーター値をデータベース ](../data-analyst/analysis/google-track-user-acq.md)に読み込むことで実現できます。
 
-### &#x200B;5. キャンペーンの命名方法を考える
+### &#x200B;5. キャンペーンの名前を考える
 
-マーケティング活動が時間の経過と共にどのように改善されているかを追跡するには、命名規則に関する知識が必要です。 シンプルにし、可能な限り最小限に抑えます。 複雑な命名システムは保守が困難です。
+マーケティング活動が時間の経過とともにどのように改善しているかを追跡するには、命名規則について賢明である必要があります。 できるだけシンプルにして、最小限に抑えましょう。 複雑な命名システムは、維持が困難です。
 
-このデータをデータベースに取り込むと、[&#x200B; 顧客のライフタイム値 &#x200B;](../data-analyst/analysis/ess-expected-ltv.md)、[&#x200B; リピート購入率 &#x200B;](../data-analyst/analysis/repurchase-behavior.md)、[&#x200B; 平均注文額 &#x200B;](../data-analyst/analysis/basic-analytics.md) などのより高度な分析によって、マーケティングや広告のパフォーマンスを評価できます。
+このデータをデータベースに取り込むと、[顧客生涯価値](../data-analyst/analysis/ess-expected-ltv.md)、[再購入率](../data-analyst/analysis/repurchase-behavior.md)、[平均注文額](../data-analyst/analysis/basic-analytics.md)など、より高度な分析によって、マーケティングと広告のパフォーマンスを評価できます。

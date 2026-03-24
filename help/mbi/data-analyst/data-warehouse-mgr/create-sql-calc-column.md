@@ -1,79 +1,85 @@
 ---
-title: SQL 計算列の作成および使用
-description: 新しいAdobe Commerce Intelligence アーキテクチャで SQL 計算列の形式で詳細列を作成する方法を説明します。
+title: SQL計算列の作成と使用
+description: 新しいAdobe Commerce Intelligence アーキテクチャで、SQL計算列の形式で高度な列を作成する方法について説明します。
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/DePK-zuSTUhzOSCc121Yev7BXUhjEkwEGYtAgdSaguM
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: 839
 ht-degree: 0%
 
 ---
 
-# SQL 計算列の作成
+# SQL計算列の作成
 
-ここでは、`Calculation`Data Warehouse Manager[&#x200B; でテーブルに追加できる &#x200B;](../data-warehouse-mgr/tour-dwm.md) 列タイプの目的と使用方法の概要を説明します。 次に、SQL 計算の機能、使用する理由、SQL 計算を作成するプロセスを説明し、2 つの例を示します。
+このトピックでは、`Calculation`Data Warehouse Manager[を使用してテーブルに追加できる](../data-warehouse-mgr/tour-dwm.md)列タイプの目的と用途について説明します。 以下では、SQL計算の概要、SQL計算の作成手順、および2つの例を示します。
 
 **説明**
 
-以前は、`advanced` でカスタマーサクセスチームのアナリストのみが、[!DNL Adobe Commerce Intelligence] と見なされた列を実行できました。 これで、すべての機能がエンドユーザーの手に委ねられ、新しい `SQL Calculation` アーキテクチャ上に [!DNL Commerce Intelligence] 列の形式で高度な列を作成できます。
+以前は、`advanced`と見なされた列は、ここ[!DNL Adobe Commerce Intelligence]のカスタマーサクセスチームのアナリストによってのみ実行できました。 これで、すべての機能はエンドユーザーの手に委ねられ、新しい`SQL Calculation` アーキテクチャでは、高度な列を[!DNL Commerce Intelligence]列の形式で作成できます。
 
-Data Warehouse Manager のオプションとして使用できるようになった `Calculation` 列タイプは、PostgreSQL ロジックを使用してテーブル上の列を変換できる同じテーブル操作です。 `Calculation` 列タイプで使用できる関数と演算子に関するドキュメントは、PostgreSQL の web サイト [&#x200B; こちら &#x200B;](https://www.postgresql.org/docs/9.6/functions.html) にあります。
+Data Warehouse Managerのオプションとして使用できるようになった`Calculation`列タイプは、PostgreSQL ロジックを使用してテーブル上の列を変換できる同じテーブル操作です。 `Calculation`列タイプで使用できる関数と演算子に関するドキュメントは、PostgreSQL web サイト [ここ](https://www.postgresql.org/docs/9.6/functions.html)にあります。
 
-`Calculation` 列を使用して作成できる列にはほとんど制限はありませんが、ほとんどの列は、以下の例で使用される IF-THEN 文と基本算術式を使用して作成できます。
+`Calculation`列で作成できるさまざまな列はほぼ無制限ですが、ほとんどの列は、IF-THEN ステートメントと基本算術を使用して作成できます。この算術は、次の例で使用されています。
 
-**例 1：顧客の最後の注文か？**
+**例1：お客様の最後の注文ですか？**
 
-ほとんどのアカウントには、`Is customer's last order?` テーブルに `orders` という列があり、リピート購入率とチャーンされた顧客に関する分析を実行します。 アカウントが新しいアーキテクチャ上にある場合、この列は `Calculation` の列を使用して作成され、次のスクリーンショットで確認できます。
+ほとんどのアカウントでは、`Is customer's last order?` テーブルに`orders`という列があり、繰り返し購入率と解約顧客に関する分析を実行しています。 アカウントが新しいアーキテクチャを利用している場合、この列は`Calculation`列を使用して作成され、以下のスクリーンショットに表示されます。
 
-![&#x200B; 顧客の最後の注文を識別するための SQL 計算列の定義 &#x200B;](../../assets/Is_customer_s_last_order.png)
+![顧客の最後の注文を識別するためのSQL計算列定義](../../assets/Is_customer_s_last_order.png)
 
-`Is customer's last order?` の列では、入力 `Customer's lifetime number of orders` と `Customer's order number` のエイリアスをそれぞれ `A` と `B` として使用します。
+`Is customer's last order?`列では、入力`Customer's lifetime number of orders`と`Customer's order number`がそれぞれ`A`と`B`としてエイリアスされます。
 
-1 行ずつ、PostgreSQL の意味は次のとおりです。
+行ごとに、PostgreSQLの意味は次のとおりです。
 
-* ケース：一連の If - Then ステートメントを開始します
-* `A` が null または `B` が null の場合は null：いずれかの入力が空の場合、出力も空にする必要があります。 これは SQL エラーを防ぐためです
-* `A=B` の場合 `Yes`:`Customer's lifetime number of orders` がこの行の `Customer's order number` と等しい場合は、`Yes` を返します。 したがって、顧客が 4 件の注文を行った場合、4 番目の注文の行は `Yes` の `Is customer's last order?` を返します
-* else `No`：ステートメントが満たされた場合に他のどれも返されない場合は、`No` を返します
-* end: If - Then ステートメントが終了します
+* ケース：これは、一連のIf - Then文を開始します
+* `A`がnullまたは`B`がnullの場合：いずれかの入力が空の場合、出力も空にする必要があります。 これはSQL エラーを防ぐためです
+* `A=B`の場合、`Yes`: `Customer's lifetime number of orders`がこの行の`Customer's order number`に等しい場合は、`Yes`を返します。 顧客が4回注文した場合、4回目の注文の行には`Yes`に対して`Is customer's last order?`が返されます
+* else `No`: ステートメントが満たされたときに他のいずれも満たさない場合、`No`を返します
+* end：これにより、If - Then ステートメントが終了します
 
-この列から返される可能性のある値（`NULL`、`Yes`、`No`）には数字以外の文字が含まれているので、ここでのデータタイプは文字列です。
+この列（`NULL`、`Yes`、`No`）で返される可能性のある値には数字以外の文字が含まれているため、このデータ型は文字列です。
 
-**例 2：受注品目合計値（数量*価格）**
+**例2：注文品目の合計値（数量*価格）**
 
-多くの顧客は、`product name` や `category` などのフィールドでスライスして、品目レベルで売上高を分析したいと考えています。 ほとんどのデータベースでは、実際には製品の売上高は注文で提供されるのではなく、注文で販売された数量と品目の価格が提供されます。
+多くの顧客は、アイテムレベルで収益を分析し、`product name`や`category`などのフィールドで収益を分割することを好みます。 ほとんどのデータベースは、注文で製品の売上を実際に提供するのではなく、注文で販売された数量と商品の価格を提供します。
 
-製品の売上高分析を有効にするために、ほとんどのアカウントの `Order item total value (quantity * price)` テーブルには `Orders Items` という列があります。 アカウントが新しいアーキテクチャ上にある場合、この列も `Calculation` の列を使用して作成され、次のスクリーンショットで確認できます。
+製品収益分析を有効にするには、ほとんどのアカウントの`Order item total value (quantity * price)` テーブルに`Orders Items`という列があります。 アカウントが新しいアーキテクチャを利用している場合、この列も`Calculation`列を使用して構築されており、以下のスクリーンショットに示されています。
 
-![&#x200B; 注文品目の合計値の SQL 計算列の定義 &#x200B;](../../assets/Order_item_total_value.png)
+![注文品目の合計値](../../assets/Order_item_total_value.png)のSQL計算列定義
 
-Commerce スキーマの `Order item total value (quantity * price)` 列では、入力 `qty ordered` とエイリアス `base price` をそれぞれ `A` と `B` として使用します。
+Commerce スキーマでは、`Order item total value (quantity * price)`列はそれぞれ`qty ordered`および`base price`としてエイリアスされた入力`A`および`B`を使用します。
 
-この新しい列から返される値はドルとセント単位なので、正しいデータ型は `Decimal(10,2)` です。
+この新しい列によって返される値はドルとセントで表されるため、正しいデータ型は`Decimal(10,2)`です。
 
 **力学**
 
-次に示すように `Calculation` に移動して、新しい **[!DNL Manage Data > Data Warehouse]** 列をテーブルに追加できます。
+次に示すように`Calculation`に移動すると、新しい&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;列をテーブルに追加できます。
 
-![&#x200B; 計算列の結果を表示するテーブル表示 &#x200B;](../../assets/blobid2.png)
+計算列の結果を表示する![ テーブルビュー](../../assets/blobid2.png)
 
-ここから、次の手順に従って `Calculation` しい列を作成できます。
+ここから、次の手順に従って`Calculation`列を作成できます。
 
-1. `Calculation` 列を追加するテーブルを選択します。
-1. 正しいテーブルで、画面の右上にある **[!UICONTROL Create New Column]** をクリックします。
-1. `Select a definition` ドロップダウンから「`Same Table`」を選択します。
-1. `Calculation` として `column definition equation` を選択します。
+1. `Calculation`列を追加するテーブルを選択します。
+1. 正しいテーブルで、画面の右上にある&#x200B;**[!UICONTROL Create New Column]**&#x200B;をクリックします。
+1. `Select a definition` ドロップダウンから、`Same Table`を選択します。
+1. `Calculation`を`column definition equation`として選択します。
 1. 列名を入力します。
-1. 新しい列のロジックで使用されているテーブルから `input` 列を選択します。 追加する各列には文字のエイリアスが割り当てられ、最初の列は `A`、2 番目の列は `B` というようになります。
-1. ウィンドウで、入力の文字エイリアスを使用して、新しい列に対する PostgreSQL ロジックを入力します。 SQL 計算は、SQL 問合せの SELECT 文と FROM 文の間のすべてのロジックを含む、単一の列の定義に限定する必要があります。 SQL キーワードで任意の入力文字を使用する場合は、小文字にする必要があります。 例えば、`CASE` ステートメントを使用する場合は、小文字 – `case` で記述する必要があります。 システムでは、大文字の `A` が入力の 1 つを指すと想定します。
-1. 適切なデータタイプを選択します。
+1. 新しい列のロジックで使用されるテーブルから`input`列を選択します。 追加した各列にはレターエイリアスが割り当てられるので、最初の列は`A`、2番目の列は`B`などになります。
+1. ウィンドウで、入力のレターエイリアスを使用して、新しい列のPostgreSQL ロジックを入力します。 SQL計算は、SQL クエリのSELECT文とFROM文の間のすべてのロジックを含む、1つの列定義に制限する必要があります。 入力文字を使用するSQL キーワードは、小文字にする必要があります。 例えば、`CASE` ステートメントを使用する場合は、小文字 – `case`で記述する必要があります。 システムは、大文字の`A`が入力の1つを参照していることを前提としています。
+1. 適切なデータタイプを選択する。
    * `Integer` – 整数
-   * `Decimal(10,2)` – 小数点の右側に 2 が表示される、合計 10 桁の 10 進数
-   * `String` – 数値以外を使用する任意のタイプのテキストまたは一連の文字
-   * `Datetime` - `yyyy-MM-dd hh:mm:ss` 形式
+   * `Decimal(10,2)` – 合計10桁の10進数。そのうち2は小数点の右側にあります
+   * `String` – 数字を使用しない任意の種類のテキストまたは一連の文字
+   * `Datetime` - `yyyy-MM-dd hh:mm:ss`形式
 
-1. 「**[!UICONTROL test column]**」をクリックします。 これにより、各入力に対して 5 つのテスト値のリストが生成され、各テスト値セットに対する手順 6 のロジックの結果が表示されます。 SQL のいずれかの部分でエラーが発生した場合は、適切なエラーメッセージが返されます。 サンプル結果は、すべての入力列がネイティブフィールドの場合にのみ生成できます。 入力列のいずれかが計算列の場合は、列を指標に追加し、ビジュアルReport Builderに表示して結果を検証する必要があります
+1. **[!UICONTROL test column]**&#x200B;をクリックします。 これにより、各入力に対して5つのテスト値のリストが生成され、テスト値の各セットに対する手順6のロジックの結果が表示されます。 SQLのいずれかの部分でエラーが発生した場合は、適切なエラーメッセージが返されます。 サンプル結果は、すべての入力列がネイティブフィールドである場合にのみ生成できます。 いずれかの入力列が計算列である場合は、その列を指標に追加し、ビジュアルReport Builderで表示して、結果を検証する必要があります
 
-1. 結果に満足したら、「**[!UICONTROL Save]**」をクリックします。 この列は使用できます。
+1. 結果に満足したら、**[!UICONTROL Save]**&#x200B;をクリックします。 この列は使用できます。

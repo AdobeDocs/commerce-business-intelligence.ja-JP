@@ -1,28 +1,33 @@
 ---
 title: 複数の画面でのダッシュボードの表示
-description: オフィス内でダッシュボードを表示する方法を説明します。
+description: オフィスの周りにダッシュボードを表示する方法について説明します。
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
 role: Admin, User
 feature: Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+TQID: https://experienceleague.adobe.com/lYvsw4ljmHhnRPmlUBJS03TiFWAEIRd9FpVQnUkY-vI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: 220
 ht-degree: 0%
 
 ---
 
-# オフィスのダッシュボードを表示
+# オフィスの周囲にダッシュボードを表示
 
-オフィス全体でダッシュボードやレポートを画面に表示することに関心がある [!DNL Commerce Intelligence] ユーザーのために、この設定を簡単に有効にできる様々なハードウェアオプションがあります。
+ダッシュボードとレポートをオフィス全体の画面に表示することに関心のある[!DNL Commerce Intelligence] ユーザーの場合、この設定を簡単に有効にできる様々なハードウェアオプションがあります。
 
-このオプションに必要な推奨リストを以下に示します。
+このオプションに必要な項目の推奨リストを次に示します。
 
-1. **HDMI 入力を備えたテレビまたはモニター** に放送します。
+1. **HDMI入力**&#x200B;を使用してブロードキャストするテレビまたはモニター。
 
-1. **[!DNL Chrome] OS や Raspberry Pi などの軽量 OS を搭載した Wi-Fi 対応ドングル。** ドングルには、画面に接続し、選択したダッシュボードを常に表示する HDMI 出力が必要です。 専用のマシンが独自の OS を実行している場合は、接続されているすべての画面に同じダッシュボードを表示する [!DNL Chromecast] のようなセットアップよりも優れています。 ドングルは画面の後ろに装着するのが最適です。
+1. **[!DNL Chrome] OSやRaspberry Piなどの軽量OSを実行しているWi-Fi対応ドングル。** ドングルには、画面に接続し、選択したダッシュボードを常に表示するHDMI出力が必要です。 独自のOSを実行している専用マシンは、[!DNL Chromecast]のようなセットアップよりも優れています。この設定では、同じダッシュボードをすべての接続された画面にビーミングすることに制限されます。 ドングルは、画面の後ろにマウントするのが最適です。
 
-1. **USB キーボードとマウス** でドングルを制御します。
+1. **ドングルを制御するためのUSB キーボードとマウス**。
 
-1. **複数のタブ間を一度に回転するためのブラウザー拡張機能。** 選択したダッシュボードを一意のタブで表示するように設定できます。 [&#x200B; を使用している場合、Adobeでは &#x200B;](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) 回転タブ [!DNL Chrome] 拡張機能をお勧めします。
+1. **複数のタブ間を一度に回転するブラウザー拡張機能。**&#x200B;これにより、一意のタブに表示する選択したダッシュボードを設定できます。 Adobeでは、[を使用している場合は、](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)Revolver Tabs[!DNL Chrome]拡張機能をお勧めします。
 
-上記のハードウェアがあれば、各タブに表示する特定のダッシュボードを含むブラウザーウィンドウを画面に開くことができます。 最後に、各ダッシュボードを目的の頻度で回転するようにブラウザーを設定します。
+上記のハードウェアを使用したら、各タブに表示する特定のダッシュボードを使用して、画面上のブラウザーウィンドウを開くことができます。 最後に、ブラウザーを設定して、各ダッシュボードを目的の頻度で回転させます。

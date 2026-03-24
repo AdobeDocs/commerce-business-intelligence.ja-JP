@@ -1,99 +1,105 @@
 ---
 title: Adobe Commerceへのデータの保存
-description: データの生成方法、新しい行が挿入される原因およびAdobe Commerce データベースにアクションが記録される方法について説明します。
+description: データの生成方法、新しい行の挿入の原因、Adobe Commerce データベースにアクションを記録する方法について説明します。
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/IUTQdZYcHkue-29jNZOxONAK4u5plphslzqtUXJ5JAs
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: 964
 ht-degree: 2%
 
 ---
 
-# [!DNL Adobe Commerce] へのデータの保存
+# [!DNL Adobe Commerce]にデータを保存しています
 
-[!DNL Adobe Commerce] プラットフォームは、数百のテーブルにわたる様々な貴重なコマースデータを記録および整理します。 このトピックでは、以下について説明します。
+[!DNL Adobe Commerce] プラットフォームは、数百のテーブルにまたがる様々な価値あるコマースデータを記録して整理します。 このトピックでは、以下について説明します。
 
-* そのデータの生成方法
-* [&#x200B; コア Commerce テーブル &#x200B;](../data-warehouse-mgr/common-mage-tables.md) の 1 つに新しい行が挿入される理由
-* 購入やアカウントの作成などのアクションを [!DNL Adobe Commerce] データベースに記録する方法
+* データの生成方法
+* 新しい行を[ コア Commerce テーブル ](../data-warehouse-mgr/common-mage-tables.md)のいずれかに挿入する原因
+* 購入やアカウントの作成などのアクションを[!DNL Adobe Commerce] データベースに記録する方法
 
-これらの概念については、次の例を参照してください。
+これらの概念について説明するには、次の例を参照してください。
 
-`Clothes4U` はオンラインと実店舗の両方のプレゼンテーションを備えた衣料品retailerです。 Web サイトの背後にある [!DNL Magento Open Source] を使用して、データを収集および整理します。
+`Clothes4U`は、オンラインと実店舗の両方を利用した衣料品のretailerです。 Web サイトの背後にある[!DNL Magento Open Source]を使用してデータを収集および整理します。
 
 ## `catalog\_product\_entity`
 
-9 月 22 日（PT）に、秋のライ `Clothes4U` に `Throwback Bellbottoms`、`Straight Leg Jeans`、`V-Neck T-Shirts` の 3 つの新しいアイテムをロールアウトします。 ある社 `Clothes4U` の社員がCommerce管理者を開き、**[!UICONTROL Add Product]** をクリックして、`Throwback Bellbottoms` のすべての情報を入力します。
+9月22日です。`Clothes4U`は、秋のラインに3つの新しいアイテムをロールアウトしています：`Throwback Bellbottoms`、`Straight Leg Jeans`、`V-Neck T-Shirts`。 `Clothes4U`人の従業員がCommerce管理者を開き、**[!UICONTROL Add Product]**&#x200B;をクリックし、`Throwback Bellbottoms`のすべての情報を入力します。
 
-`Throwback Bellbottoms` のすべての設定に満足したら、従業員は **[!UICONTROL Save]** をクリックし、下の最初の行を `catalog_product_entity` テーブルに挿入します。 従業員はプロセスを繰り返し、`Straight Leg Jeans` に別のCommerce製品を作成し、次に `V-Neck T-Shirt` に 3 つ目の製品を作成して、`catalog_product_entity` の表に次の 2 行目と 3 行目を挿入します。
+`Throwback Bellbottoms`のすべての設定に満足した従業員は、**[!UICONTROL Save]**&#x200B;をクリックし、下の最初の行を`catalog_product_entity` テーブルに挿入します。 このプロセスを繰り返し、別のCommerce製品を`Straight Leg Jeans`用に作成し、次に`V-Neck T-Shirt`用に3行目を作成し、下の2行目と3行目を`catalog_product_entity` テーブルに挿入します。
 
 | **`entity\_id`** | **`entity\_type\_id`** | **`attribute\_set\_id`** | **`sku`** | **`created\_at`** |
 |---|---|---|---|---|
-| 205 | 4 | 8 | ズボン 10 | 2016/09/22 09:15:43 |
-| 206 | 4 | 8 | ズボン 11 | 2016/09/22 09:18:17 |
-| 207 | 4 | 12 | シャツ 6 | 2016/09/22 09:24:02 |
+| 205 | 4 | 8 | Pants10 | 2016/09/22 09:15:43 |
+| 206 | 4 | 8 | パンツ 11 | 2016/09/22 09:18:17 |
+| 207 | 4 | 12 | Shirts6 | 2016/09/22 09:24:02 |
 
-* `entity_id` – これは `catalog_product_entity` テーブルのプライマリ・キーです。つまり、テーブルのローごとに異なる `entity_id` が必要です。 このテーブルの各 `entity_id` は 1 つの製品にのみ関連付けることができ、各製品は 1 つの製 `entity_id` にのみ関連付けることができます
-   * 前述の表の一番上の行 `entity_id`= 205 は、「Throwback Bellbottoms」用に作成された新しい行です。 Commerce プラットフォームで `entity_id` = 205 が表示される場合は、製品「Throwback Bellbottoms」を参照しています
-* `entity_type_id` - Commerceには複数のカテゴリのオブジェクト（顧客、住所、商品など）があり、この列は、この特定の行が分類されるカテゴリを示すために使用されます。
-   * これは `catalog_product_entity` テーブルであり、各行のエンティティタイプは product と同じです。 Adobe Commerceでは商品の `entity_type_id` は 4 なので、作成された新製品 3 つはこの列に 4 を返します。
+* `entity_id` – これは`catalog_product_entity` テーブルのプライマリキーです。つまり、テーブルのすべての行に異なる`entity_id`が必要です。 このテーブルの各`entity_id`は1つの製品にのみ関連付けることができ、各製品は1つの`entity_id`にのみ関連付けることができます
+   * 上のテーブルの一番上の行、`entity_id` = 205は、「Throwback Bellbottoms」用に作成された新しい行です。 Commerce プラットフォームに`entity_id` = 205が表示される場合は、「Throwback Bellbottoms」という商品を指しています
+* `entity_type_id` - Commerceには複数のカテゴリのオブジェクト （顧客、住所、商品など）があり、この列はこの特定の行が属するカテゴリを示すために使用されます。
+   * これは`catalog_product_entity` テーブルです。各行のエンティティの種類はproductと同じです。 Adobe Commerceでは、商品の`entity_type_id`は4です。そのため、作成された3つの新商品すべてがこの列に4を返します。
 * `attribute_set_id` – 属性セットは、同じ記述子を持つ製品を識別するために使用されます。
-   * テーブルの上の 2 列は `Throwback Bellbottoms` と `Straight Leg Jeans` の商品で、どちらもパンツです。 これらの製品には同じ記述子（名前、継ぎ目、ウエストラインなど）が使用されるので、`attribute_set_id` が同じになります。 3 番目のアイテムは、ズボン `V-Neck T-Shirt` 同じ記述子を持たないので異なる `attribute_set_id` を持っています。シャツにはウエストラインや縫い目がありません。
-* `sku` - Adobe Commerceで商品を作成する際にユーザーが各商品に割り当てる一意の値です。
-* `created_at` – この列は、各製品が作成された際のタイムスタンプを返します
+   * テーブルの上位2行は`Throwback Bellbottoms`および`Straight Leg Jeans`製品で、どちらもパンツです。 これらの製品には同じ記述子（名前、inseam、waistlineなど）が含まれているため、同じ`attribute_set_id`が使用されます。 3つ目のアイテム `V-Neck T-Shirt`は、パンツと同じ記述子を持たないため、異なる`attribute_set_id`を持っています。シャツにはウエスト線や縫い目がありません。
+* `sku` – これらは、Adobe Commerceで商品を作成する際にユーザーが各商品に割り当てた一意の値です。
+* `created_at` – この列は、各製品が作成されたときのタイムスタンプを返します
 
 ## `customer\_entity`
 
-3 つの新製品が追加された直後、新規顧客の `Sammy Customer` が初めて `Clothes4U` の Web サイトを訪問します。 `Clothes4U` はゲストによる注文を許可しないので、`Sammy Customer` ず web サイト上でアカウントを作成する必要があります。 顧客が必要な資格情報を入力して「送信」をクリックすると、[`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md) に次の新しいエントリが表示されます。
+3つの新製品が追加された直後、新規顧客`Sammy Customer`が`Clothes4U`のweb サイトに初めてアクセスしました。 `Clothes4U`はゲスト注文を許可していないため、`Sammy Customer`は最初にweb サイトでアカウントを作成する必要があります。 お客様が必要な資格情報を入力し、「送信」をクリックすると、[`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md)に次の新しいエントリが表示されます。
 
 | **`entity id`** | **`entity type id`** | **`email`** | **`created at`** |
 |---|---|---|---|
 | `214` | `1` | `sammy.customer@gmail.com` | `2016/09/23 15:27:12` |
 
-* `entity_id` – 前のテーブルと同様に、`entity_id` は `customer_entity` のテーブルのプライマリキーです。
-   * `Sammy Customer` がアカウントを作成し、上記の行が `customer_entity` テーブルに書き込まれると、顧客は `entity_id` = 214 に割り当てられました。 すべてのテーブルで、`entity_id` = 214 と識別される顧客は、常にユーザー Sammy Customer を指します
-* `entity_type_id` – この列は、このテーブルにリストされるエンティティのタイプを識別し、`catalog_product_entity` テーブルと同じように機能します
-   * `customer_entity` テーブルの行はすべて顧客であり、Commerceでは、顧客をデフォルトで `entity_type_id`1 として定義しています
-* `email` – このフィールドには、新規顧客がアカウントの作成時に入力するメールが入力されます
-* `created_at` – この列は、各ユーザーが参加した際のタイムスタンプを返します
+* `entity_id` – 前のテーブルと同様に、`entity_id`は`customer_entity` テーブルの主キーです。
+   * `Sammy Customer`がアカウントを作成し、上記の行が`customer_entity` テーブルに書き込まれると、顧客に`entity_id` = 214が割り当てられました。 すべてのテーブルで、`entity_id` = 214として識別された顧客は、常にユーザーSammy Customerを参照します
+* `entity_type_id` – この列は、このテーブルにリストされているエンティティのタイプを特定し、`catalog_product_entity` テーブルと同じように機能します
+   * `customer_entity` テーブルのすべての行は顧客であり、Commerceはデフォルトで`entity_type_id` 1として顧客を定義します
+* `email` – このフィールドには、新規顧客がアカウントを作成するときに入力する電子メールが入力されます
+* `created_at` – この列は、各ユーザーが参加した時点のタイムスタンプを返します
 
-## `sales\_flat\_order (or Sales\_order` がある場合は [!DNL Adobe Commerce 2.x]
+## `sales\_flat\_order (or Sales\_order`をお持ちの場合は[!DNL Adobe Commerce 2.x]
 
-アカウントの作成が完了 `Sammy Customer` たら、購入を開始する準備が整います。 Web サイトでは、顧客は 2 組の `Throwback Bellbottoms` と 1 組の `V-Neck T-Shirt` を買い物かごに追加します。 選択が完了すると、顧客はチェックアウトに移動し、受注を発行します。[&#x200B; 受注フラット表 &#x200B;](../data-warehouse-mgr/sales-flat-order-table.md) に次のエントリが作成されます。
+アカウントの作成が完了したら、`Sammy Customer`様が購入を開始する準備ができました。 Web サイトで、お客様は`Throwback Bellbottoms`の2組と`V-Neck T-Shirt`の1組をカートに追加します。 選択に満足した後、お客様はチェックアウトに移動し、注文を送信します。[販売注文テーブル ](../data-warehouse-mgr/sales-flat-order-table.md)に次のエントリを作成します。
 
 | **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 
-* `entity_id` - `sales_flat_order` テーブルのプライマリキーです。
-   * Sammy Customer がこの注文を行い、上記の行が `sales_flat_order` テーブルに書き込まれると、注文は `entity_id` = 227 に割り当てられました。
-* `customer_id` – この列は、この特定の注文を行った顧客の一意の識別子です
-   * この注文に関連付けられている `customer_id` は 214 です。これは、Sammy Customer の `entity_id` テーブルの `customer_entity` です。
-* `subtotal` – この列は、受注に対して顧客に請求される合計金額です
-   * 「Throwback Bellbottons」と「V-Neck T シャツ」の 2 組は合計 94.85 ドルでした
-* `created_at` – この列は、各注文が作成された際のタイムスタンプを返します
+* `entity_id` – これは`sales_flat_order` テーブルのプライマリキーです。
+   * Sammy Customerがこの注文を行い、上の行が`sales_flat_order` テーブルに書き込まれると、注文は`entity_id` = 227に割り当てられました。
+* `customer_id` – この列は、この特定の注文を行った顧客の一意のIDです
+   * この注文に関連付けられている`customer_id`は214です。これは、`entity_id` テーブルのSammy Customerの`customer_entity`です。
+* `subtotal` – この列は、注文の顧客に請求された合計金額です
+   * 「Throwback Bellbottoms」と「V-Neck T-Shirt」の2組の価格は合計で94.85 ドルでした
+* `created_at` – この列は、各注文が作成されたときのタイムスタンプを返します
 
 ## `sales\_flat\_order\_item ( or Sales\_order\_item`
 
-（Commerce 2.0 以降の場合）
+（Commerce 2.0以降をお持ちの場合）
 
-`Sales\_flat\_order` テーブルの 1 つの行に加えて、注文を送信 `Sammy Customer` ると、注文の一意の各項目の行が [`sales\_flat\_order\_item` テーブルに挿入され &#x200B;](../data-warehouse-mgr/sales-flat-order-item-table.md) す。
+`Sales\_flat\_order` テーブルの1行に加えて、`Sammy Customer`が注文を送信すると、その注文の各一意の項目の行が[`sales\_flat\_order\_item` テーブル ](../data-warehouse-mgr/sales-flat-order-item-table.md)に挿入されます。
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|
 | 822 | `Throwback Bellbottoms` | 205 | 227 | 2 | 39.95 |
 | 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14.95 |
 
-* `item_id` – この列は `sales_flat_order_item` テーブルの主キーです
-   * 注文に 2 つの異なる製品が含まれていたため、`Sammy Customer` の注文によってこのテーブルに 2 行が作成されました
-* `name` – この列は製品名です
-* `product_id` – この列は、この行が参照している製品の一意の ID です
-   * 上記の最初の行には `product_id` = 205 があります `Throwback Bellbottoms` これは、`entity_id` テーブルの `catalog_product_entity` が 205 であるためです
-* `order_id` – この列は、これらの特定の注文項目を含む注文の `entity_id` です
-   * 上記の行は、両方とも `order_id` から注文された注文の一部なので、`Sammy Customer` = 227 です。`entity_id` テーブルの場合、`sales_flat_order` = 227 です
+* `item_id` – この列は`sales_flat_order_item` テーブルのプライマリキーです
+   * `Sammy Customer`の注文では、このテーブルに2行の行が作成されました。注文には2つの異なる商品が含まれています
+* `name` – この列は製品の名前です
+* `product_id` – この列は、この行が参照している製品の一意の識別子です
+   * 上の最初の行には`product_id` = 205があります。`Throwback Bellbottoms`には`entity_id` テーブルに205の`catalog_product_entity`があるためです
+* `order_id` – この列は、これらの特定の注文項目を含む注文の`entity_id`です
+   * 上の行は両方とも`order_id` = 227です。これは、両方とも`Sammy Customer`によって配置された注文の一部であり、`entity_id` テーブルに`sales_flat_order` = 227が含まれているためです
 * `qty_ordered` – この列は、この特定の順序に含まれる製品の単位数です
-   * `Sammy Customer` の注文には 2 組の `Throwback Bellbottoms` が含まれていた
-* `price` – この列は、受注品目の 1 単位の価格です
-   * `subtotal` 表の `Sammy Customer` の注文からの `sales_flat_order` は 94.85 で、これは `Throwback Bellbottoms` の 2 組の合計をそれぞれ 39.95 ドル、1`V-Neck T-Shirt` を 14.95 ドルとした。
+   * `Sammy Customer`の注文には、2組の`Throwback Bellbottoms`が含まれています
+* `price` – この列は、注文項目の1単位の価格です
+   * `subtotal` テーブルの`Sammy Customer`の注文からの`sales_flat_order`は94.85で、これは、各$39.95の`Throwback Bellbottoms`と$14.95の`V-Neck T-Shirt`の2つのペアの合計です。

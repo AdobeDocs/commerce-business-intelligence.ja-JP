@@ -1,72 +1,76 @@
 ---
-title: Google Analyticsと UTM の属性
-description: Google Analytics ソースアトリビューションプロセスについて説明します。
+title: Google AnalyticsとUTM アトリビューション
+description: Google Analyticsのソースアトリビューションプロセスについてご確認ください。
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Developer, User
 feature: Reports
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/DIg4HPkxaY4eCXZvTS8j4eO8C-d-yqPgBkrvFD5L0ms
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: 760
 ht-degree: 0%
 
 ---
 
-# [!DNL Google Analytics] と UTM の属性
+# [!DNL Google Analytics]とUTM アトリビューション
 
-[&#x200B; 最もパフォーマンスの高い広告キャンペーンを特定 &#x200B;](../../data-analyst/analysis/google-track-user-acq.md) するために、[&#x200B; ユーザー獲得ソースを追跡 &#x200B;](../../data-analyst/analysis/most-value-source-channel.md) することが重要です。 このトピックでは、[!DNL Google Analytics] ソースアトリビューションプロセスについて説明します。 つまり、どの情報がいつ記録されるか。
+ユーザー獲得ソースを[追跡](../../data-analyst/analysis/google-track-user-acq.md)して[最もパフォーマンスの高い広告キャンペーンを特定](../../data-analyst/analysis/most-value-source-channel.md)することが重要です。 このトピックでは、[!DNL Google Analytics] ソースのアトリビューションプロセスについて説明します。 つまり、どの時点で情報が記録されるのか。
 
-## アトリビューションとは
+## アトリビューションとは？
 
-`Attribution` れは、特定のアクティビティのリファラルソースを指定することです。 これらのアクティビティは通常、マクロコンバージョンまたはマイクロコンバージョン、マクロは **購入**、マイクロは **登録、メールのサインアップ、ブログコメント** などです。
+`Attribution`は、特定のアクティビティのリファラルソースを指定することです。 これらのアクティビティは、通常、マクロコンバージョンまたはマイクロコンバージョンです。マクロには、**購入**&#x200B;や、**登録、電子メール登録、ブログコメント、**&#x200B;などがあります。
 
-理想的には、コンバージョンイベントが発生するたびに、リファラルソースが記録されます。 しかし、ソースはどのように決定されますか？
+コンバージョンイベントが発生するたびに、参照元が記録されることが望ましいです。 しかし、その源泉はどのように決まるのでしょうか。
 
-実際には、ユーザーは、マイクロコンバージョンやマクロコンバージョンをヒット/コミットする前に、多くのソースから来ることがよくあります。 例えば、オーガニック経由でサイトにアクセスしてから出発し、有料検索を使用して来て、出発してから、サイト自体に直接来る場合があります。 このソーストラッキング情報は、多くの場合、UTM パラメーターを介してサイトに提供されますが、より高度なシステムも存在します。 ここでは、[UTM](https://support.google.com/analytics/answer/1033867?hl=en&ref_topic=1032998) を重点的に説明します。
+実際には、多くのユーザーは、マイクロコンバージョンやマクロコンバージョンに達する前に、多くのソースからもたらされます。 例えば、オーディエンスはオーガニック広告を通じてサイトにアクセスし、そのままサイトを離れたあと、有料検索を通じてサイトを離れたあと、サイト自体に直接移動しました。 このソース追跡情報は、UTM パラメーターを介してサイトに提供されることが多いものの、より高度なシステムも存在します。 目的に応じて、[UTM](https://support.google.com/analytics/answer/1033867?hl=en&ref_topic=1032998)に焦点を当てます。
 
-## UTM パラメーター [!DNL Google Analytics] 使用したリファラルソースの属性方法
+## [!DNL Google Analytics]は、UTM パラメーターを使用してリファラルソースをどのように属性しますか？
 
-UTM パラメーターが URL で指定されると、これらは解析されて、[!DNL Google Analytics] [cookie](https://en.wikipedia.org/wiki/HTTP_cookie) に配置されます。 Web サイトに [!DNL Google Analytics] がない場合、UTM を使用しても意味はありません。 [!DNL Google Analytics] には、有効期間において UTM で複数の URL にヒットしたユーザーを処理する方法のルールがあります（詳しくは後で説明します）。 Web サイトが UTM パラメーターを外部データベースに取り込むように設定されている場合、ミクロまたはマクロの変換が発生すると、変換時の [!DNL Google Analytics] cookie 内の情報がデータベースにレプリケートされます。
+UTM パラメーターをURLで指定すると、これらは解析され、[!DNL Google Analytics] [cookie](https://en.wikipedia.org/wiki/HTTP_cookie)に配置されます。 Web サイトに[!DNL Google Analytics]がない場合、UTMを使用しても意味がありません。 [!DNL Google Analytics]には、有効期間の間にUTMで複数のURLをヒットしたユーザーを扱うルールがあります（後で詳しく説明します）。 Web サイトがUTM パラメーターを外部データベースに取り込むように設定されていると仮定すると、マイクロ変換またはマクロ変換が発生すると、変換時に[!DNL Google Analytics] Cookie内にあるものは何でもデータベースにレプリケートされます。
 
-## 最初のクリックと最後のクリック
+## ファーストクリックとラストクリックの比較
 
-### 最終クリック属性
+### ラストクリックアトリビューション
 
-ラストクリックアトリビューションは、[!DNL Google Analytics] で使用される最も一般的なアトリビューションモデルです。 この場合、[!DNL Google Analytics] Cookie は変換イベント前の最新のソースに対する UTM パラメーターを表し、これが [&#x200B; データベースに記録 &#x200B;](../../data-analyst/analysis/google-track-user-acq.md) されます。 [!DNL Google Analytics] cookie は、ユーザーが新しい UTM パラメーターのセットを含む新しい URL をクリックした場合にのみ、以前の UTM パラメーターを上書きします。
+ラストクリックアトリビューションは、[!DNL Google Analytics]が使用する最も一般的なアトリビューションモデルです。 この場合、[!DNL Google Analytics] Cookieは、コンバージョンイベントの前の最新のソースのUTM パラメーターを表し、これは[ データベース ](../../data-analyst/analysis/google-track-user-acq.md)に記録されます。 ユーザーが新しいUTM パラメーターのセットを含む新しいURLをクリックした場合にのみ、[!DNL Google Analytics] Cookieは以前のUTM パラメーターを上書きします。
 
-例えば、コンバージョンイベントの前に、最初に [!DNL Google Analytics]*有料検索* を使用して web サイトを訪問し、次に *オーガニック検索* を使用して戻り、最後に *web サイト* 直接または *メールリンク&#x200B;***UTM パラメーターなし** を使用して戻ってきたユーザーについて考えてみます。 この例では、[!DNL Google Analytics] Cookie はユーザーのソースがオーガニックであることを示しています。これは、変換前の最後のソースを表すからです。 その最終コンバージョンイベントの前のユーザーの *パス* は無視されます。 代わりに、ユーザーが UTM を使用したメールリンクから web サイトにアクセスした場合、[!DNL Google Analytics] Cookie はソースが「メール」であると言います。 そのため、Cookie に既存の UTM パラメーターがあり、ユーザーが direct を介して入ってきた場合、[!DNL Google Analytics] Cookie は「direct」ではなく UTM パラメーターを表示します。
+例えば、コンバージョンイベントの前に[!DNL Google Analytics] *有料検索*&#x200B;を介して初めてweb サイトにアクセスし、*オーガニック検索*&#x200B;を介して戻り、最終的に&#x200B;*web サイトに直接*&#x200B;または&#x200B;*電子メールリンク***経由で戻り、UTM パラメーターを使用せずに**&#x200B;というユーザーを考えてみましょう。 この例では、[!DNL Google Analytics] Cookieは、ユーザーのソースがオーガニックであると示します。これは、コンバージョンの前の最後のソースを表すためです。 最終変換イベントの前のユーザーの&#x200B;*パス*&#x200B;は無視されます。 代わりに、ユーザーがUTMを使用した電子メールリンクからweb サイトにアクセスした場合、[!DNL Google Analytics] Cookieは、ソースが「電子メール」であると示します。 したがって、cookieに既存のUTM パラメーターがあり、ユーザーが直接経由でアクセスした場合、[!DNL Google Analytics] cookieには「direct」ではなくUTM パラメーターが表示されます。
 
 >[!NOTE]
 >
->特定のユーザーの [!DNL Google Analytics] 定の cookie パラメーターは、その cookie が [&#x200B; 期限切れ &#x200B;](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) になったとき、またはユーザーがブラウザーで cookie をクリアしたときに消去されます。*
+>特定のユーザーの[!DNL Google Analytics] cookie パラメーターは、cookie [の有効期限](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)が切れるか、ユーザーがブラウザーでCookieをクリアすると消去されます*。
 
-### ファーストクリック属性
+### ファーストクリックアトリビューション
 
-一部の有料アトリビューションツールでは、ユーザーのパス内のソースの「パンケーキスタック」をキャプチャできます。 この場合、上記の例では、最初のクリック属性は有料検索を示します。 また、一部の web サイトでは、パンケーキスタックをキャプチャして最初のソースをデータベースに保存する独自の Cookie を実装しています。
+一部の有料アトリビューションツールでは、ユーザーのパス内のソースの「パンケーキスタック」をキャプチャできます。 上記の例では、ファーストクリックアトリビューションで有料検索が可能です。 あるいは、一部のweb サイトでは、パンケーキスタックをキャプチャし、最初のソースをデータベースに保存する独自のCookieを実装しています。
 
-## アトリビューションの分析方法
+## アトリビューションの分析方法？
 
-[!DNL Google Analytics] の web インターフェイスには、4 つの異なるアトリビューションモデルを実行できる堅牢な機能がいくつかあります。
+[!DNL Google Analytics]には、4つの異なるアトリビューションモデルを実行できる堅牢な機能がweb インターフェイスにあります。
 
-1. 最初のクリック
-1. 前回のクリック
-1. 線形（パス内のすべてのソースにわたって売上高を均等に分割）
+1. ファーストクリック
+1. 最後のクリック
+1. 線形（経路のすべてのソースにわたって収益を均等に分割）
 1. 重み付け（カスタマイズされた属性）
 
-マイクロコンバージョンまたはマクロコンバージョンごとのアトリビューションモデルを理解できたので、「ユーザーのコンバージョン全体はどうしますか？」という質問になります。  例えば、GA のラストクリックロジックに基づいて記録された UTM を見てみましょう。
+マイクロコンバージョンやマクロコンバージョンごとのアトリビューションモデルを理解したところで、「ユーザーのコンバージョンの全体をどうするか」という質問になります。  例えば、GAのラストクリックロジックに基づいて記録されたUTMを確認します。
 
-* ユーザーはオーガニックに登録
+* オーガニックでユーザー登録
 * 有料検索でのユーザーの最初の購入$5.00
-* ユーザーの 2 回目の電子メール購入$50.00
-* オーガニック$10.00 未満でのユーザーの 3 回目の購入
+* ユーザーの電子メールでの2回目の購入$50.00
+* オーガニック $10.00の下でのユーザーの3回目の購入
 
-「有料検索でどのくらいの売上高を得られましたか？ メールから？  オーガニックから？」 答えは 5、50、10 （最後のソースが何であれ）と言えます。または、すべての売上高を最初のソースに関連付ける（65 のすべてがオーガニックに分類される）と言うこともできます。 また、一部の重み付け解析を適用したり、線形モデル（つまり、それぞれ約 22 個）を適用することもできます。
+ここでは、「検索連動型広告からどの程度の収益を得たか？」という質問があります。 メールから？  オーガニックから？」 答えは5、50、10 （最後のソースが何であれ）と言うこともできますし、すべての売上を最初のソースに帰することもできます（65はすべてオーガニックに行きます）。 重み付け分析を適用したり、線形モデル（各約22）を適用したりすることもできます。
 
 ## 関連ドキュメント
 
-* [E-Commerce経由  [!DNL Google Analytics]  注文リファラルソースを追跡](../importing-data/integrations/google-ecommerce.md)
-* [データベース内のユーザー紹介ソースを追跡](../analysis/google-track-user-acq.md)
+* [ [!DNL Google Analytics] E-Commerce経由で注文の紹介ソースを追跡](../importing-data/integrations/google-ecommerce.md)
+* [データベース内のユーザー紹介ソースの追跡](../analysis/google-track-user-acq.md)
 * [データベース内のユーザーデバイス、ブラウザー、OS データの追跡](../analysis/google-track-user-acq.md)
-* [最も価値のある獲得ソースとチャネルを見つける](../analysis/most-value-source-channel.md)
-* [アカウント  [!DNL Google Adwords]  接続](../importing-data/integrations/google-adwords.md)
-* [広告キャンペーンの ROI の向上](../analysis/roi-ad-camp.md)
-* [での UTM タグ付けの 5 つのベストプラクティス  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [最も価値のある獲得ソースとチャネルの発見](../analysis/most-value-source-channel.md)
+* [ [!DNL Google Adwords]  アカウントを接続](../importing-data/integrations/google-adwords.md)
+* [広告キャンペーンのROIを高める](../analysis/roi-ad-camp.md)
+* [ [!DNL Google Analytics]でのUTM タグ付けに関する5つのベストプラクティス](../../best-practices/utm-tagging-google.md)

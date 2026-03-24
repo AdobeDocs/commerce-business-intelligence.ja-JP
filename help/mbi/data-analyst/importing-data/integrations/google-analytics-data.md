@@ -1,37 +1,43 @@
 ---
 title: 予想されるGoogle Analytics データ
-description: Google Analytics指標の操作方法を説明します。
+description: Google Analytics指標の活用方法を学びましょう。
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/tUS-KM-3gcLLLeCY4tqS6pUDMeCvLkrFSKp-U-JT61E
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: 269
 ht-degree: 0%
 
 ---
 
-# 予期される [!DNL Google Analytics] データ
+# [!DNL Google Analytics] データが必要です
 
-[!DNL Google Analytics] 統合に接続すると、[!DNL Google Analytics] の指標を *`Visual Report Builder`* で即座に）操作できます。 `Visual Report Builder` を入力するときに「**[!UICONTROL Add a Metric]**」をクリックすると、[!DNL Google Analytics] プロファイルの一連の指標がData Warehouseの指標のすぐ下のドロップダウンに表示されます。
+[!DNL Google Analytics]統合を接続した後、[!DNL Google Analytics]ですぐに&#x200B;*指標`Visual Report Builder`*&#x200B;を操作できます。 `Visual Report Builder`を入力すると、**[!UICONTROL Add a Metric]**&#x200B;をクリックすると、[!DNL Google Analytics] プロファイルの一連の指標が、Data Warehouseの指標の直下のドロップダウンに表示されます。
 
-[!DNL Google Analytics] 統合は *ライブ* です。つまり、レポートに指標を追加すると、`Report Builder` ーザー [!DNL Google Analytics]*即時* からデータをリクエストします。 また、アクセス可能な指標は [!DNL Google Analytics] の場合と同じように定義され、これらの値は *アカウントには* 格納 [!DNL Commerce Intelligence] されず、レポートに視覚的にのみ表示されます。
+[!DNL Google Analytics]統合は&#x200B;*live*&#x200B;です。これは、`Report Builder`がレポートに指標を追加する際に[!DNL Google Analytics] *immediately*&#x200B;からデータを要求することを意味します。 また、アクセスできる指標は[!DNL Google Analytics]と同じように定義され、これらの値は&#x200B;*アカウントの* ウェアハウス [!DNL Commerce Intelligence]ではなく、レポートに表示されるだけです。
 
-+++サポートされる指標およびディメンション（Google Analytics 3 または Universal Analytics）
-
->[!NOTE]
->
->2023 年 7 月 1 日（PT）をもって、標準の Universal Analytics （[!DNL Google Analytics] 3）プロパティでデータが処理されなくなります。 2023 年 7 月 1 日（PT）以降の期間、ユニバーサルアナリティクスレポートを表示できるようになります。 ただし、新しいデータは [!DNL Google Analytics]4 つのプロパティにのみ送られます。
-
-[!DNL Google Analytics] の [!DNL Commerce Intelligence] 統合では、[!DNL Google Analytics] [&#x200B; コアレポート API](https://developers.google.com/analytics/devguides/reporting/core/v3/) を使用し、次の指標とディメンションをサポートしています。
++++サポートされる指標とディメンション（Google Analytics 3またはユニバーサル Analytics）
 
 >[!NOTE]
 >
->予期しない結果や感覚的でない結果を避けるために、使用するディメンションが、`Report Builder` で使用する 1 つ以上の指標と互換性があることを確認します。 [&#x200B; こちら &#x200B;](https://ga-dev-tools.google/dimensions-metrics-explorer/) をご確認ください。
+>2023年7月1日（PT）に、標準のUniversal Analytics （[!DNL Google Analytics] 3）プロパティでデータが処理されなくなります。 2023年7月1日以降の一定期間、ユニバーサル分析レポートを表示できるようになります。 ただし、新しいデータは[!DNL Google Analytics] 4つのプロパティにのみ流れます。
+
+[!DNL Google Analytics]の[!DNL Commerce Intelligence]統合では、[!DNL Google Analytics] [Core Reporting API](https://developers.google.com/analytics/devguides/reporting/core/v3/)を使用し、次の指標とディメンションをサポートしています。
+
+>[!NOTE]
+>
+>予期しない結果や意味のない結果を回避するには、使用するディメンションが、`Report Builder`で使用する1つ以上の指標と互換性があることを確認してください。 ここで[を確認できます](https://ga-dev-tools.google/dimensions-metrics-explorer/)。
 
 ## サポートされる指標
 
-| [!DNL Commerce Intelligence] 表示名 | [!DNL Google Analytics] 名/式 |
+| [!DNL Commerce Intelligence]表示名 | [!DNL Google Analytics]名/数式 |
 | --- | --- |
 | `Page Views` | `ga:pageviews` |
 | `Total Time Spent On Page` | `ga:timeOnPage` |
@@ -83,9 +89,9 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-## サポートされるディメンション
+## サポートされているディメンション
 
-| [!DNL Commerce Intelligence] 表示名 | [!DNL Google Analytics] 名/式 | グループ化可能？ |
+| [!DNL Commerce Intelligence]表示名 | [!DNL Google Analytics]名/数式 | グループ化できますか？ |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -154,14 +160,14 @@ ht-degree: 0%
 
 +++
 
-+++サポートされる指標およびディメンション（Google Analytics 4）
++++サポートされる指標とディメンション（Google Analytics 4）
 
-[!DNL Google Analytics] の [!DNL Commerce Intelligence] 統合では、[!DNL Google Analytics] [Data API v1 （GA4） &#x200B;](https://developers.google.com/analytics/devguides/reporting/data/v1) を使用します。
+[!DNL Google Analytics]の[!DNL Commerce Intelligence]統合では、[!DNL Google Analytics] [Data API v1 （GA4） ](https://developers.google.com/analytics/devguides/reporting/data/v1)を使用しています。
 
 >[!NOTE]
 >
-> Commerce Intelligenceでは、`cohort`、`cohortNthDay`、`cohortNthMonth`、`cohortNthWeek` のディメンションはサポートされていません。
+> Commerce Intelligenceは、次のディメンションをサポートしていません：`cohort`、`cohortNthDay`、`cohortNthMonth`、および`cohortNthWeek`。
 >
->予期しない結果や感覚的でない結果を避けるために、使用するディメンションが、`Visual Report Builder` で使用する 1 つ以上の指標と互換性があることを確認します。 [GA4 ディメンションおよび指標エクスプローラー &#x200B;](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/) を確認できます。
+>予期しない結果や意味のない結果を回避するには、使用するディメンションが、`Visual Report Builder`で使用する1つ以上の指標と互換性があることを確認してください。 [GA4 ディメンションと指標のエクスプローラー](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/)を確認できます。
 
 +++
