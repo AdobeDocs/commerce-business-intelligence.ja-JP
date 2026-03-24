@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ![返品率と理由を表示する詳細な返品ダッシュボード &#x200B;](../../assets/detailed-returns-dboard.png)
 
-開始する前に、お客様は[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)のお客様である必要があり、返品に`enterprise\_rma` テーブルを使用していることを確認する必要があります。
+開始する前に、お客様は[Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html)のお客様である必要があり、返品に`enterprise\_rma` テーブルを使用していることを確認する必要があります。
 
 この分析には、[高度な計算列](../data-warehouse-mgr/adv-calc-columns.md)が含まれています。
 
@@ -257,4 +257,4 @@ ht-degree: 0%
 
 すべてのレポートをまとめた後、必要に応じてダッシュボード上でレポートを整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 
-この分析の構築中に質問が発生した場合、またはプロフェッショナルサービスチームに連絡する場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+この分析の構築中に質問が発生した場合、またはプロフェッショナルサービスチームに連絡する場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。

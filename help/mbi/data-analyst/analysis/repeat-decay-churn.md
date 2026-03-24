@@ -94,7 +94,7 @@ Adobeでは、リピート注文の可能性を把握するために、自社デ
 
 複数の商品を提供している場合、特定の商品を購入する顧客は、時間の経過とともにどのように他の顧客と異なる行動をとるのか疑問に思うかもしれません。 Adobe Experience Platform Data Governanceについて詳しくは、 このチュートリアルでは、顧客が購入した特定の製品に基づいて、顧客コホートの生涯購入行動を調べることができます。
 
-このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されています。 詳細については、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)にお問い合わせください。
+このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されています。 詳細については、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)にお問い合わせください。
 
 ### 関連
 

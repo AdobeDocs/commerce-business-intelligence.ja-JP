@@ -59,11 +59,11 @@ ht-degree: 0%
 
 ## フィルターを保存
 
-特定のストアのパフォーマンスを分析するには、右上隅のストアアイコン（![&#x200B; ストアフィルター](../../assets/store-filter.png)）をクリックします。 デフォルトでは、`Store Filter`は`All Stores`に設定されており、Commerce サイトで利用可能なすべての[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html)のデータが表示されます。
+特定のストアのパフォーマンスを分析するには、右上隅のストアアイコン（![&#x200B; ストアフィルター](../../assets/store-filter.png)）をクリックします。 デフォルトでは、`Store Filter`は`All Stores`に設定されており、Commerce サイトで利用可能なすべての[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=ja)のデータが表示されます。
 
 >[!NOTE]
 >
->[!DNL Commerce Intelligence] アカウント全体でストアフィルターが有効または無効になっています。 ダッシュボードに、フィルターの影響を受けないレポート （どの[!DNL Adobe Commerce] データにも組み込まれていないレポートなど）が含まれている場合、ストアフィルターが適用されたときに、これらのレポートは更新されません。 ストアの選択に基づいてレポートを更新する必要があると思われる場合、またはアカウント ストア フィルターが誤って無効になっていると思われる場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)にお問い合わせください。
+>[!DNL Commerce Intelligence] アカウント全体でストアフィルターが有効または無効になっています。 ダッシュボードに、フィルターの影響を受けないレポート （どの[!DNL Adobe Commerce] データにも組み込まれていないレポートなど）が含まれている場合、ストアフィルターが適用されたときに、これらのレポートは更新されません。 ストアの選択に基づいてレポートを更新する必要があると思われる場合、またはアカウント ストア フィルターが誤って無効になっていると思われる場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)にお問い合わせください。
 
 `Store Filter`からストアを選択すると、ダッシュボード間を移動する際に、フィルターは選択内容を保持します。 選択範囲を保持すると、`All Stores`を選択するまで、選択したストアのデータをどこにでも表示できます。
 

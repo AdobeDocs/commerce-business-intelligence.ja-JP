@@ -31,7 +31,7 @@ ht-degree: 0%
 
 # 在庫レベルの分析
 
-このトピックでは、現在のインベントリに関するインサイトを提供し、従来のアーキテクチャと新しいアーキテクチャの両方に関するクライアントの手順を含むダッシュボードを設定する方法を説明します。 **[!UICONTROL Data Warehouse Views]** メニューの&#x200B;**[!UICONTROL Manage Data]** オプションがない場合は、レガシーアーキテクチャを使用しています。 従来のアーキテクチャを使用している場合は、以下の[計算列](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)の手順で指定されたセクションに到達したら、件名&#x200B;**[!UICONTROL INVENTORY ANALYSIS]**&#x200B;を付けて&#x200B;_新しいサポートリクエスト_&#x200B;を送信します。
+このトピックでは、現在のインベントリに関するインサイトを提供し、従来のアーキテクチャと新しいアーキテクチャの両方に関するクライアントの手順を含むダッシュボードを設定する方法を説明します。 **[!UICONTROL Data Warehouse Views]** メニューの&#x200B;**[!UICONTROL Manage Data]** オプションがない場合は、レガシーアーキテクチャを使用しています。 従来のアーキテクチャを使用している場合は、以下の[計算列](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)の手順で指定されたセクションに到達したら、件名&#x200B;**[!UICONTROL INVENTORY ANALYSIS]**&#x200B;を付けて&#x200B;_新しいサポートリクエスト_&#x200B;を送信します。
 
 ## 追跡する列：
 
@@ -260,4 +260,4 @@ ht-degree: 0%
    * &#x200B;
      [!UICONTROL Chart type]: `Table`
 
-この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームに連絡したい場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームに連絡したい場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。

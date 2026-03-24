@@ -51,4 +51,4 @@ ht-degree: 0%
 もう少しテクノロジーに詳しい方は、[[!DNL Salesforce] API ドキュメント &#x200B;](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm)を使用して、Salesforceと[!DNL Commerce Intelligence]の統合方法について詳しく学ぶことができます。
 
 * [期待される [!DNL Salesforce]  データ](../integrations/salesforce-data.md)
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

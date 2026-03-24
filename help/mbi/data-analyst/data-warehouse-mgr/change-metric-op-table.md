@@ -41,6 +41,6 @@ ht-degree: 0%
 
    ![使用可能なテーブルを表示するテーブル選択ドロップダウン &#x200B;](../../assets/change-metrics-2.png)
 
-1. 新しいテーブルに一致する列がない場合は、**データテーブルに作成するか、**&#x200B;によって作成された計算列またはディメンションである[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)にお問い合わせください。 [!DNL Commerce Intelligence]指標&#x200B;**からディメンションを**&#x200B;削除することもできます。 不要になったディメンションを削除するには、指標のエディターに戻り、`Dimensions`で削除するディメンションを選択するだけです。
+1. 新しいテーブルに一致する列がない場合は、**データテーブルに作成するか、**&#x200B;によって作成された計算列またはディメンションである[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)にお問い合わせください。 [!DNL Commerce Intelligence]指標&#x200B;**からディメンションを**&#x200B;削除することもできます。 不要になったディメンションを削除するには、指標のエディターに戻り、`Dimensions`で削除するディメンションを選択するだけです。
 
    ![業務列選択ドロップダウンメニュー](../../assets/change-metrics-3.png)

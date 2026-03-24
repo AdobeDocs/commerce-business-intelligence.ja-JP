@@ -179,7 +179,7 @@ ht-degree: 2%
 
 心配する必要はありません。 ここに記載されていないからといって、それが不可能であるとは限りません。 Data Warehouse AnalystsのAdobeチームがお手伝いします。
 
-新しい計算列を定義するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)を送信し、作成する内容の詳細を入力します。
+新しい計算列を定義するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)を送信し、作成する内容の詳細を入力します。
 
 ## 関連ドキュメント
 

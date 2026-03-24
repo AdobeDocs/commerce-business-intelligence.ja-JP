@@ -82,4 +82,4 @@ ht-degree: 0%
 
 上記の例で、数式の`timestamp`、`groupings`、`perspectives`、`filters`がその入力指標から継承されていることに気づきましたか？ 数式は、指標と同様に、`perspectives`および[独立した時間オプション &#x200B;](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}を使用するために使用できます。
 
-`Report Builder`での数式の使用に関して追加の質問がある場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+`Report Builder`での数式の使用に関して追加の質問がある場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。

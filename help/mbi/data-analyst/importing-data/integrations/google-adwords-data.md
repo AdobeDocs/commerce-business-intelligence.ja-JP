@@ -107,4 +107,4 @@ ht-degree: 0%
 
 統合テーブルがなく、`adwords` テーブル上に美しいダッシュボードを作成する場合は、レポートをレプリケートするか、重複する指標を作成して、そのデータを[!DNL Facebook Ads] データと比較する必要があります。 統合テーブルを使用すると、[!DNL Facebook Ads] データを既存の[!DNL Adwords] レポートにシームレスに組み込むことができます。 広告プラットフォーム別にもセグメンテーションすることができます。
 
-既に上記のフィールドを同期している場合は、[お問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。広告費を統合します。
+既に上記のフィールドを同期している場合は、[お問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。広告費を統合します。

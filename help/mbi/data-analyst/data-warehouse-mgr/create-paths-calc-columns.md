@@ -37,7 +37,7 @@ Data Warehouseで[計算列を作成する](../data-warehouse-mgr/creating-calcu
 1. データベース内のテーブルの相互関係
 1. この関係を定義するプライマリキーと外部キー
 
-この情報を知っている場合は、このトピックの手順に従ってパスを簡単に作成できます。 組織のテクニカルエキスパートに質問するか、[&#x200B; プロフェッショナルサービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)にお問い合わせください。
+この情報を知っている場合は、このトピックの手順に従ってパスを簡単に作成できます。 組織のテクニカルエキスパートに質問するか、[&#x200B; プロフェッショナルサービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)にお問い合わせください。
 
 ## テーブルの関係とキータイプのリフレッシュ {#refresher}
 
@@ -96,7 +96,7 @@ Data Warehouseで列を作成する場合は、あるテーブルから別のテ
 
 * **[!DNL Commerce Intelligence]は、プライマリ キーと外部キーの関係を推測できません**。 アカウントに誤ったデータを導入しないようにする必要があるため、パスの作成は手動で行う必要があります。
 
-* **現在、パスは2つの異なるテーブル間でのみ指定できます**。 再作成しようとしているロジックには、2つ以上のテーブルが含まれていますか？ その後、（1）最初に列を中間テーブルに結合してから「最終宛先」テーブルに結合するか、（2）目標に対する最適なアプローチを見つけるために[&#x200B; プロフェッショナルサービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)と相談することは理にかなっています。
+* **現在、パスは2つの異なるテーブル間でのみ指定できます**。 再作成しようとしているロジックには、2つ以上のテーブルが含まれていますか？ その後、（1）最初に列を中間テーブルに結合してから「最終宛先」テーブルに結合するか、（2）目標に対する最適なアプローチを見つけるために[&#x200B; プロフェッショナルサービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)と相談することは理にかなっています。
 
 * **列は、一度に1つのパスに対する外部キー参照のみにできます**。 例えば、`order_items.order_id`が`orders.id`を指している場合、`order_items.order_id`は他を指すことはできません。
 

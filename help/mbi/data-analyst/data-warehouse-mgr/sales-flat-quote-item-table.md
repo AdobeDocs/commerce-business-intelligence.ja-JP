@@ -42,13 +42,13 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |---|---|
-| `base_price` | 商品がカートに追加された時点での商品の個々の単位の価格で、[&#x200B; カタログ価格ルール、階層割引、特別価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)が適用され、税金、送料、カートの割引が適用される前に適用されます。 これは、ストアの基本通貨で表されます。 |
+| `base_price` | 商品がカートに追加された時点での商品の個々の単位の価格で、[&#x200B; カタログ価格ルール、階層割引、特別価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja)が適用され、税金、送料、カートの割引が適用される前に適用されます。 これは、ストアの基本通貨で表されます。 |
 | `created_at` | 買い物かごアイテムの作成タイムスタンプ。ローカルでUTCに保存されます。 [!DNL Commerce Intelligence]の設定に応じて、このタイムスタンプは、データベースのタイムゾーンとは異なる[!DNL Commerce Intelligence]のレポートタイムゾーンに変換される場合があります |
 | `item_id` （PK） | テーブルの一意のID |
 | `name` | 注文項目のテキスト名 |
 | `parent_item_id` | 単純な製品を親バンドルまたは設定可能な製品に関連付ける`Foreign key`。 `quote_item.item_id`に参加して、単純な製品に関連付けられている親製品属性を決定します。 親カート項目（バンドルまたは設定可能な製品タイプ）の場合、`parent_item_id`は`NULL`です |
 | `product_id` | `Foreign key`が`catalog_product_entity` テーブルに関連付けられています。 `catalog_product_entity.entity_id`に結合して、注文項目に関連付けられている製品属性を決定します |
-| `product_type` | カートに追加された商品のタイプ。 潜在的な[製品タイプ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types)には、シンプル、設定可能、グループ化、仮想、バンドル、ダウンロード可能などがあります |
+| `product_type` | カートに追加された商品のタイプ。 潜在的な[製品タイプ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html?lang=ja#product-types)には、シンプル、設定可能、グループ化、仮想、バンドル、ダウンロード可能などがあります |
 | `qty` | 特定の買い物かご品目の買い物かごに含まれる単位の数量 |
 | `quote_id` | `Foreign key`が`quote` テーブルに関連付けられています。 `quote.entity_id`に参加して、買い物かごアイテムに関連付けられている買い物かご属性を決定します |
 | `sku` | カート項目の一意のID |
@@ -62,7 +62,7 @@ ht-degree: 0%
 |---|---|
 | `Cart creation date` | カート作成日に関連付けられたタイムスタンプ。 `quote_item.quote_id`を`quote.entity_id`に結合し、`created_at` タイムスタンプを返すことによって計算されます |
 | `Cart is active? (1/0)` | 買い物かごが顧客によって作成され、注文に変換されていない場合に「1」を返すブール型フィールド。 変換されたカート、または管理者を通じて作成されたカートの場合は「0」を返します。 `quote_item.quote_id`を`quote.entity_id`に結合し、`is_active` フィールドを返すことによって計算されます |
-| `Cart item total value (qty * base_price)` | 商品がカートに追加された時点での商品の合計金額は、[&#x200B; カタログ価格ルール、階層割引、特別価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)が適用された後、税金、送料、カートの割引が適用される前に計算されます。 `qty`に`base_price`を掛けて計算しました |
+| `Cart item total value (qty * base_price)` | 商品がカートに追加された時点での商品の合計金額は、[&#x200B; カタログ価格ルール、階層割引、特別価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja)が適用された後、税金、送料、カートの割引が適用される前に計算されます。 `qty`に`base_price`を掛けて計算しました |
 | `Seconds since cart creation` | カートの作成日から現在までの経過時間。 `quote_item.quote_id`を`quote.entity_id`に結合し、`Seconds since cart creation` フィールドを返すことによって計算されます |
 | `Store name` | 注文項目に関連付けられているCommerce ストアの名前。 `sales_order_item.store_id`を`store.store_id`に結合し、`name` フィールドを返すことによって計算されます |
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 `quote_item`
 
-* `quote_item`に結合して、親の設定可能なSKUまたはバンドル SKUの詳細をシンプルな製品に関連付ける列を作成します。 Data Warehouse Managerでビルドする場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)に連絡して、これらの計算の設定についてサポートを受けてください。
+* `quote_item`に結合して、親の設定可能なSKUまたはバンドル SKUの詳細をシンプルな製品に関連付ける列を作成します。 Data Warehouse Managerでビルドする場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)に連絡して、これらの計算の設定についてサポートを受けてください。
    * パス：`quote_item.parent_item_id` （多数） => `quote_item.item_id` （1つ）
 
 `store`

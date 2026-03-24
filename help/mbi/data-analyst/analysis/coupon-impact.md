@@ -166,4 +166,4 @@ MAの価値を最大限に引き出すためには、次の点に注目してく
 
 ## まとめ {#wrapup}
 
-顧客がクーポンをどのように利用するのかを把握するために、さまざまな分析を実施できます。 顧客がクーポンをどのように使用するか、クーポンの使用にかかる時間を分析することについて考えたことがありますか？ 最適な割引額を見つけるにはどうすればよいでしょうか。どのような額がリピート購入者を促し、平均注文額を高め、生涯売上を高めるのでしょうか？ これらの質問に関するヘルプについては、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+顧客がクーポンをどのように利用するのかを把握するために、さまざまな分析を実施できます。 顧客がクーポンをどのように使用するか、クーポンの使用にかかる時間を分析することについて考えたことがありますか？ 最適な割引額を見つけるにはどうすればよいでしょうか。どのような額がリピート購入者を促し、平均注文額を高め、生涯売上を高めるのでしょうか？ これらの質問に関するヘルプについては、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。

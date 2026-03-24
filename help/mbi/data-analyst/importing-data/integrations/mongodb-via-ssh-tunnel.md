@@ -161,4 +161,4 @@ SSH トンネルを介して[!DNL MongoDB] データベースを[!DNL Commerce I
 
 ### 関連
 
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

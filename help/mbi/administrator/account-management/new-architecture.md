@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ### ヘルプの取得
 
-[!DNL Adobe Commerce Intelligence] [&#x200B; サービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)は、追加費用で再実装を実行できます。 [Adobe アカウントチーム &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket)に連絡し、新しいアカウントでの作成を優先するダッシュボード/レポートのリストを提供する準備をしてください
+[!DNL Adobe Commerce Intelligence] [&#x200B; サービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)は、追加費用で再実装を実行できます。 [Adobe アカウントチーム &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket)に連絡し、新しいアカウントでの作成を優先するダッシュボード/レポートのリストを提供する準備をしてください
 
 ### 既存のアーキテクチャを維持
 

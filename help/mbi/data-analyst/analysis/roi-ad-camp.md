@@ -115,7 +115,7 @@ ht-degree: 0%
 >
 >この例では、すべてのキャンペーンコストが特定の製品の購入にのみ使用されたと仮定します。 すべてのコストが購入の創出に費やされたと仮定することで、生じるROIは最悪のケースのシナリオ（購入あたりの最も高いコスト）を考慮します。 実際のROIがこの計算よりも高いことを確認できます。 例：10人の新規ユーザーと10人の購入を生み出したキャンペーンに20 ドルを費やした場合、実際の購入単価は1 ドルとなります。 すべてのコストが新規ユーザーの獲得に費やされたことを前提にすると、購入単価は2 ドルになります。
 
-開始する前に、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)を送信して、次のディメンションを行項目テーブル （`sales\_flat\_order\_item, order\_item`）に結合します。
+開始する前に、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)を送信して、次のディメンションを行項目テーブル （`sales\_flat\_order\_item, order\_item`）に結合します。
 
 * 注文のソース（ユーザーレベルで紹介ソースのみを追跡する場合は、ユーザーのソースを結合します）
 * 注文のキャンペーン（ユーザーレベルで紹介ソースのみを追跡する場合は、ユーザーのキャンペーンに参加します）

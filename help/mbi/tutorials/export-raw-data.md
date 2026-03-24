@@ -29,7 +29,7 @@ ht-degree: 0%
 
 # 生データの書き出し
 
-生データの書き出しを使用すると、Data Warehouseからレコードを書き出し、ダッシュボードの機能を強化している内容を詳しく確認できます。 また、生データの書き出しは、[&#x200B; データの不一致を特定するのに役立ちます](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)。
+生データの書き出しを使用すると、Data Warehouseからレコードを書き出し、ダッシュボードの機能を強化している内容を詳しく確認できます。 また、生データの書き出しは、[&#x200B; データの不一致を特定するのに役立ちます](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=ja)。
 
 生データの書き出しにより、関連する指標の非正規化と事前集計によって生成された追加の列とディメンションにアクセスできます。 例えば、`User's first order date`は、[!DNL Commerce Intelligence]のユーザーごとに書き出すことができるディメンションですが、データベースでは使用できない場合があります。
 

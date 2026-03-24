@@ -33,13 +33,13 @@ ht-degree: 0%
 >
 >SQL チャートを作成および編集するには、[管理者権限](../../administrator/user-management/user-management.md)が必要です。 `Standard`人のユーザーがダッシュボードでこれらのグラフを並べ替えることができ、`Read-only`人のユーザーが従来のグラフと同じエクスペリエンスを使用できます。 さらに、`Read-only`人のユーザーはクエリのテキストにアクセスできません。
 
-詳細については、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)を参照してください。
+詳細については、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=ja)を参照してください。
 
 [!DNL SQL] （構造化問い合わせ言語）は、データベースとの通信に使用されるプログラミング言語です。 [!DNL Commerce Intelligence]では、[!DNL SQL]を使用して、Data Warehouseからデータを照会または取得します。 ダッシュボードのレポートを見てください。バックグラウンドでは、各レポートに[!DNL SQL] クエリが利用されています。
 
 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)を使用して、Data Warehouseに直接クエリを実行し、結果を表示して、グラフに変換できます。 [!DNL SQL Report Builder]をクリックすると、**[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**&#x200B;を使用したレポートの作成を開始できます。
 
-詳細については、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)を参照してください。
+詳細については、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=ja)を参照してください。
 
 [!DNL SQL Report Builder]を使用すると、Data Warehouseに直接クエリを実行して結果を表示し、すばやくグラフに変換できます。 [!DNL SQL]を使用してレポートを作成する際の最も優れた点は、作成した列を繰り返し更新するために更新サイクルを待つ必要がないことです。 結果が正しく表示されない場合は、期待に合うまで、クエリをすばやく編集して再実行できます。
 
@@ -149,7 +149,7 @@ ht-degree: 0%
 
 多くの場合、結果の違いは更新サイクルに起因します。 [!DNL Commerce Intelligence]がデータベースからData Warehouseにデータをレプリケートする処理中の場合、同じクエリを使用しても結果が異なる場合があります。
 
-接続の問題により、不一致が生じる場合もあります。 「`Connections`」をクリックして&#x200B;**[!DNL Manage Data** > **Connections]** ページに移動し、チェックアウトします。問題のあるデータベース統合にエラーがありますか？ その場合は、[統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)が必要になる場合があります。
+接続の問題により、不一致が生じる場合もあります。 「`Connections`」をクリックして&#x200B;**[!DNL Manage Data** > **Connections]** ページに移動し、チェックアウトします。問題のあるデータベース統合にエラーがありますか？ その場合は、[統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)が必要になる場合があります。
 
 すべての統合が正常に接続されていて、更新サイクルの途中にない場合は、別の問題が発生する可能性があります。
 

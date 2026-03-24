@@ -63,4 +63,4 @@ ht-degree: 0%
 [[!DNL Stripe] API ドキュメント &#x200B;](https://stripe.com/docs/api)は、[!DNL Stripe]と[!DNL Commerce Intelligence]の統合方法の詳細を学ぶのに役立つリソースです。
 
 * [期待される [!DNL Stripe]  データ](../integrations/stripe-data.md)
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

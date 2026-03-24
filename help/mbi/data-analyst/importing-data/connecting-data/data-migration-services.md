@@ -31,7 +31,7 @@ ht-degree: 0%
 
 # データ移行
 
-新しいデータベーススキーマ、サーバー、またはレポートデータベースへの移行にストレスを感じる必要はありません。 [[!DNL Adobe]  サービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)は、移行支援を提供しています。
+新しいデータベーススキーマ、サーバー、またはレポートデータベースへの移行にストレスを感じる必要はありません。 [[!DNL Adobe]  サービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)は、移行支援を提供しています。
 
 移行を可能な限りスムーズに行うために、移行リクエストを送信する際は、できるだけ詳細に説明する必要があります。 このトピックには、リクエストを送信して移行を開始するために必要なすべての情報が含まれています。 ニーズを包括的に把握することで、プロジェクトが適切に範囲を絞られ、見積もりが正確であることを保証できます。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ## 質問がある場合に？ {#submitreq}
 
-[&#x200B; サポートリクエストを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)することにより、当社に連絡できます。
+[&#x200B; サポートリクエストを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)することにより、当社に連絡できます。
 
 前のセクションの手順に従って列に一致するスプレッドシートを作成する場合は、必ず添付してください。
 

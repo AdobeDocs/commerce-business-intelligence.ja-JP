@@ -65,6 +65,6 @@ ht-degree: 0%
 | 制限 | 説明 |
 | --- | --- |
 | `Historical data period` | 他のサードパーティ統合と同様に、[!DNL Adobe Analytics]統合では限られた量の履歴データが引き出され、その後データを最新の状態に保つことができます。 過去の期間は2週間に設定されています。 |
-| `Empty component combinations` | 指標とディメンションの一部の組み合わせには、データが含まれていません。 このような組み合わせがレプリケーション用に選択されている場合、[!DNL Commerce Intelligence]はレプリケートされたテーブルからその列を除外します。 このような組み合わせを選択しないようにするには、まず[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)でレポートを作成して、想定したデータが得られることを確認します。 |
+| `Empty component combinations` | 指標とディメンションの一部の組み合わせには、データが含まれていません。 このような組み合わせがレプリケーション用に選択されている場合、[!DNL Commerce Intelligence]はレプリケートされたテーブルからその列を除外します。 このような組み合わせを選択しないようにするには、まず[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=ja)でレポートを作成して、想定したデータが得られることを確認します。 |
 | `Re-authorization cadence` | [!DNL Adobe Analytics]統合の再認証は2週間ごとに必要です。 再認証するには、統合の編集ページに移動し、**[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**&#x200B;をクリックします。 |
 | `One dimension per row` | [!DNL Adobe Analytics]は、一度に1つのディメンションの指標データを提供します。 設定中に複数のディメンションを選択した場合、[!DNL Commerce Intelligence] テーブルの各行には、1つのディメンション値と各他のディメンションのnullが含まれます。 |

@@ -97,4 +97,4 @@ ht-degree: 0%
 
 解約が発生している理由を特定したら、分析を使用して`reactivation` キャンペーンを作成できます。 このデータを活用すれば、非アクティブになった利用者、最後にアクセスしてからの時間、最後に購入したものなどを特定することができます。 これにより、顧客を惹きつける実用的な意思決定を下すことができます。
 
-分析のヘルプについては、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+分析のヘルプについては、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。

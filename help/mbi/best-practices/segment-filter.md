@@ -89,7 +89,7 @@ ht-degree: 0%
 
 上記のディメンションで指標をセグメント化する最初の手順は、このデータをデータベースで追跡することです。 追跡されていない場合は、技術部門に相談し、データの追跡を開始する方法を見つけましょう。
 
-データがデータベースで追跡されていることを確認したら、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)に連絡して、ディメンションを[!DNL Commerce Intelligence]指標とグラフにプッシュします。 *フィールド管理* ツールを使用して、[!DNL Commerce Intelligence]でこれらのフィールドを追跡することもできます。
+データがデータベースで追跡されていることを確認したら、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)に連絡して、ディメンションを[!DNL Commerce Intelligence]指標とグラフにプッシュします。 *フィールド管理* ツールを使用して、[!DNL Commerce Intelligence]でこれらのフィールドを追跡することもできます。
 
 ## 関連
 

@@ -64,7 +64,7 @@ ht-degree: 0%
 
 **ゲスト注文を受け付けていますか？**
 
-*その場合、このテーブルにはすべての顧客が含まれていない可能性があります。 [&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)に連絡して、顧客分析にすべての顧客が含まれていることを確認してください。*
+*その場合、このテーブルにはすべての顧客が含まれていない可能性があります。 [&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)に連絡して、顧客分析にすべての顧客が含まれていることを確認してください。*
 
 *ゲスト注文を受け入れるかどうかわからない場合は、 詳細については、[このトピック &#x200B;](../data-warehouse-mgr/guest-orders.md)を参照してください。*
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**：注文が作成または配置された日付。
 * **[!UICONTROL Customer_email]**：注文を行った顧客の電子メールアドレス。 これは顧客の一意のIDである可能性もあります。
 * **[!UICONTROL Customer's lifetime number of orders]**: `Customers` テーブル上の同じ名前の列のコピー。
-* **[!UICONTROL Customer's order number]**：注文に関連付けられている顧客の順序注文番号。 例えば、お客様の最初の注文の行の場合、この列は「1」ですが、お客様の15番目の注文の場合、この列にはこの注文の「15」が表示されます。 このディメンションが`Customers` テーブルに存在しない場合は、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)に作成を依頼してください。
+* **[!UICONTROL Customer's order number]**：注文に関連付けられている顧客の順序注文番号。 例えば、お客様の最初の注文の行の場合、この列は「1」ですが、お客様の15番目の注文の場合、この列にはこの注文の「15」が表示されます。 このディメンションが`Customers` テーブルに存在しない場合は、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)に作成を依頼してください。
 * **[!UICONTROL Customer's order number (previous-current)]**: **[!UICONTROL Customer's order number]**&#x200B;列の2つの値の連結。 以下のサンプルレポートで、2つの注文の間の経過時間を表示するために使用します。 例えば、顧客の最初の注文日から2番目の注文日までの時間は、この計算で「1-2」と表されます。
 * **[!UICONTROL Coupon_code]**：各注文で使用されたクーポンを表示します。
 * **[!UICONTROL Seconds since previous order]**：顧客の注文間の時間（秒単位）。
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 ## マーケティング支出表
 
-マーケティング費用を分析する際に、[!DNL Facebook]、[!DNL Google AdWords]またはその他のソースを分析に含めることができます。 複数のマーケティング費用ソースがある場合は、[Managed Services チーム &#x200B;](https://business.adobe.com/products/magento/fully-managed-service.html)に連絡して、マーケティング施策の統合テーブルの設定に関するサポートを受けてください。
+マーケティング費用を分析する際に、[!DNL Facebook]、[!DNL Google AdWords]またはその他のソースを分析に含めることができます。 複数のマーケティング費用ソースがある場合は、[Managed Services チーム &#x200B;](https://business.adobe.com/jp/products/magento/fully-managed-service.html)に連絡して、マーケティング施策の統合テーブルの設定に関するサポートを受けてください。
 
 **ディメンション**
 
