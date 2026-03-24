@@ -1,72 +1,87 @@
 ---
-title: cPanel を介した MySQL の接続
-description: cPanel を使用して MySQL に接続する方法を説明します。
+title: cPanelを介したMySQLの接続
+description: cPanelを介してMySQLを接続する方法を説明します。
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/Ou9gOlYKFuoYQHTi7zhyecvfGlKEKF2eRSr5vctsW1s
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: 366
 ht-degree: 0%
 
 ---
 
-# [!DNL MySQL] 経由で [!DNL cPanel] に接続
+# [!DNL MySQL]経由で[!DNL cPanel]に接続
 
-* [&#x200B; [!DNL Commerce Intelligence] [!DNL MySQL] での  [!DNL cPanel] ユーザーの作成](#cpanel)
-* [接続およびユーザー情報の入力先  [!DNL Commerce Intelligence]](#finish)
+* [&#x200B; [!DNL Commerce Intelligence] [!DNL MySQL]で [!DNL cPanel] ユーザーを作成](#cpanel)
+* [&#x200B; [!DNL Commerce Intelligence]への接続とユーザー情報の入力](#finish)
 
-## 移動先
+## に移動
 
-* [SSH トンネル経由の [!DNL MySQL]](../integrations/mysql-via-ssh-tunnel.md)
-* [直接接続を介した [!DNL MySQL]](../integrations/mysql-via-a-direct-connection.md)
+* [SSH トンネル経由で[!DNL MySQL]](../integrations/mysql-via-ssh-tunnel.md)
+* [直接接続による[!DNL MySQL]](../integrations/mysql-via-a-direct-connection.md)
 
 >[!IMPORTANT]
 >
->[!DNL Adobe] では、データを保護するために SSH またはその他の形式の暗号化を使用することをお勧めします。 これがオプションでない場合でも、このトピックの手順を使用して、[!DNL Commerce Intelligence] をデータベースに直接接続できます。
+>[!DNL Adobe]では、データを保護するためにSSHまたはその他の形式の暗号化を使用することをお勧めします。 このオプションを使用しない場合でも、このトピックの手順を使用して、[!DNL Commerce Intelligence]をデータベースに直接接続できます。
 
-このトピックでは、[!DNL MySQL] を使用して [!DNL Commerce Intelligence] データベースを [!DNL cPanel] に直接接続する手順について説明します。 このプロセスは、[!DNL Adobe Commerce] やその他の MySQL ベースの e コマースデータベースを [!DNL Commerce Intelligence] に接続する場合にも使用できます。
+このトピックでは、[!DNL MySQL]を使用して[!DNL Commerce Intelligence] データベースを[!DNL cPanel]に直接接続する方法について説明します。 このプロセスは、[!DNL Adobe Commerce]やその他のMySQL ベースのe コマースデータベースを[!DNL Commerce Intelligence]に接続するためにも使用できます。
 
-1. [!DNL Commerce Intelligence] での [!DNL MySQL] [!DNL cPanel] ユーザーの作成
-1. [!DNL Commerce Intelligence] に接続およびユーザー情報を入力
+1. [!DNL Commerce Intelligence] [!DNL MySQL] ユーザーを[!DNL cPanel]に作成します
+1. 接続とユーザー情報を[!DNL Commerce Intelligence]に入力してください
 
-今すぐ始めましょう。
+今すぐ始める。
 
-## [!DNL Commerce Intelligence] での [!DNL MySQL] [!DNL cPanel] ユーザーの作成 {#cpanel}
+## [!DNL Commerce Intelligence]で[!DNL MySQL] [!DNL cPanel] ユーザーを作成しています {#cpanel}
 
-1. ホスティングプロバイダーを通じて [!DNL cPanel] にログインします。
-1. 「**[!UICONTROL [!DNL MySQL] Databases]**」セクションの「`Database`」をクリックします。
-1. `Add New User` のセクションまでスクロールし、[!DNL Commerce Intelligence] のユーザーを作成します。
+1. ホスティングプロバイダーを介して[!DNL cPanel]にログインします。
+1. 「**[!UICONTROL [!DNL MySQL] Databases]**」セクションにある「`Database`」をクリックします。
+1. `Add New User` セクションまでスクロールして、[!DNL Commerce Intelligence]のユーザーを作成します。
 
-   ![&#x200B; 作成ユーザーフォームを示す cPanel MySQL データベースインターフェイス &#x200B;](../../../assets/create-mbi-mysql-user-cpanel.png)
+   ユーザーフォームの作成を示す![cPanel MySQL データベースインターフェイス &#x200B;](../../../assets/create-mbi-mysql-user-cpanel.png)
 
-1. 「**[!UICONTROL Create User]**」をクリックします。
-1. ユーザーを作成したので、次はデータベースに関連付ける必要があります。 `Add New User` のセクションに戻ります – `Add User to Database?` の設定を参照してくださいそれが必要なものです。
-1. このセクションの `User` ドロップダウンで、作成したユーザーを選択します。
-1. このセクションの `Database` ドロップダウンで、[!DNL Commerce Intelligence] に接続するデータベースを選択します。
-1. 「**[!UICONTROL Add]**」をクリックします。
-1. 権限のチェックリストが表示されたら、「`SELECT`」の横にあるチェックボックスをオンにします。これだけで、データベースに接続 [!DNL Commerce Intelligence] る必要があります。
+1. **[!UICONTROL Create User]**&#x200B;をクリックします。
+1. ユーザーを作成したら、そのユーザーをデータベースに関連付ける必要があります。 「`Add New User`」セクションに戻ります。「`Add User to Database?`」の設定を参照してください。
+1. このセクションの`User` ドロップダウンで、作成したユーザーを選択します。
+1. このセクションの`Database` ドロップダウンで、[!DNL Commerce Intelligence]に接続するデータベースを選択します。
+1. **[!UICONTROL Add]**&#x200B;をクリックします。
+1. 権限のチェックリストが表示されたら、`SELECT`の横にあるチェックボックスをオンにします。これは、[!DNL Commerce Intelligence]がデータベースに接続する必要があるすべてです。
 
-## [!DNL Commerce Intelligence] への接続およびユーザー情報の入力 {#finish}
+## 接続とユーザー情報を[!DNL Commerce Intelligence]に入力しています {#finish}
 
-まとめるには、接続とユーザー情報を [!DNL Commerce Intelligence] に入力する必要があります。 [!DNL MySQL] 資格情報ページを開いたままにしましたか？ そうでない場合は、**[!UICONTROL Manage Data** > **Connections]** に移動して「**[!UICONTROL Add New Data Source]**」をクリックし、次に「[!DNL MySQL]」アイコンをクリックします。
+最後に、接続とユーザー情報を[!DNL Commerce Intelligence]に入力する必要があります。 [!DNL MySQL]資格情報ページを開いたままにしましたか？ そうでない場合は、**[!UICONTROL Manage Data** > **Connections]**&#x200B;に移動して&#x200B;**[!UICONTROL Add New Data Source]**&#x200B;をクリックし、[!DNL MySQL] アイコンをクリックします。
 
-このページの「`Database Connection`」セクションに、次の情報を入力します。
+このページの`Database Connection` セクションに次の情報を入力します。
 
-* `Username`:[!DNL Commerce Intelligence] [!DNL MySQL] ユーザーのユーザー名
-* `Password`:[!DNL Commerce Intelligence] [!DNL MySQL] ユーザーのパスワード
-* `Port`: サーバー上の MySQL のポート （デフォルトでは `3306`）
-* `Host`：接続先の `MySQL` サーバーのパブリック アドレス [!DNL Commerce Intelligence] す。 これは、通常、`[!DNL cPanel]` へのログインに使用する URL です。
+* `Username`: [!DNL Commerce Intelligence] [!DNL MySQL] ユーザーのユーザー名
+* `Password`: [!DNL Commerce Intelligence] [!DNL MySQL] ユーザーのパスワード
+* `Port`: サーバー上のMySQLのポート （`3306` デフォルト）
+* `Host`: `MySQL` サーバー[!DNL Commerce Intelligence]の公開アドレスが接続しています。 これは通常、`[!DNL cPanel]`へのログインに使用するURLです。
 
-[`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md) を使用している場合は、暗号化情報を入力する必要があります。 フォームを表示するには、「`Encrypted`」切替スイッチを「`Yes`」に設定します。
+[`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)を使用している場合、暗号化情報を入力する必要があります。 `Encrypted` トグルを`Yes`に設定して、フォームを表示します。
 
-* `Connection Type`：これを `SSH Tunnel` に設定
-* `Remote Address`: トンネル先のサーバー [!DNL Commerce Intelligence] の IP アドレスまたはホスト名
-* `Username`:[!DNL Commerce Intelligence] `SSH (Linux)` ユーザーのユーザー名。[&#x200B; 手順 &#x200B;](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) まだの場合は、その方法）を参照してください
-* `SSH Port`：サーバーの SSH ポート（デフォルトでは `22`）
+* `Connection Type`：これを`SSH Tunnel`に設定
+* `Remote Address`: サーバー[!DNL Commerce Intelligence]のIP アドレスまたはホスト名は、にトンネルされます
+* `Username`: [!DNL Commerce Intelligence] `SSH (Linux)` ユーザーのユーザー名。まだ使用していない場合は、[手順](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)を参照してください）
+* `SSH Port`: サーバー上のSSH ポート （`22` デフォルト）
 
-完了したら、「**[!UICONTROL Save & Test]**」をクリックして設定を完了します。
+完了したら、**[!UICONTROL Save & Test]**&#x200B;をクリックして設定を完了します。
 
 ## 関連：
 
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

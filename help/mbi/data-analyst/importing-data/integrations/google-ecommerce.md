@@ -1,66 +1,84 @@
 ---
-title: Google E コマースに接続
-description: 最も価値の高いリファラルチャネルについて説明します。
+title: Google ECommerceに接続
+description: 最も価値のある紹介チャネルの詳細。
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/iBVf-dkbm1NbELZUYjLp1TzypO7Cu55tIzd93lQ1zo0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: 305
 ht-degree: 0%
 
 ---
 
-# Connect [!DNL Google ECommerce]
+# [!DNL Google ECommerce]を接続
 
 >[!NOTE]
 >
->[&#x200B; 管理者権限 &#x200B;](../../../administrator/user-management/user-management.md) が必要です。
+>[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
-![Google e コマースロゴ &#x200B;](../../../assets/google-ecommerce-logo.png)
+![Google e コマース ロゴ &#x200B;](../../../assets/google-ecommerce-logo.png)
 
-トラフィックと注文の着実な流れがあります。つまり、顧客に効果的に到達し、獲得しています。 しかし、最も価値のある紹介チャネルは何ですか？ あるソースから取得した顧客の平均生涯価値は、別のソースから取得した顧客の平均生涯価値はどれくらいですか？ 注文参照ソースデータを [!DNL Google ECommerce] から [!DNL Commerce Intelligence] に接続することで、[&#x200B; 最も価値のあるマーケティングチャネル &#x200B;](../../../data-analyst/analysis/most-value-source-channel.md) を特定するのに役立つ分析を構築できます。
+トラフィックと注文が常に発生しているため、顧客に効果的にリーチし、獲得することができます。 しかし、最も価値のある紹介チャネルは何でしょうか？ あるソースから取得した顧客と別のソースから取得した顧客の平均生涯価値は何ですか？ [!DNL Google ECommerce]から[!DNL Commerce Intelligence]までの注文紹介ソースデータを接続することで、[最も価値のあるマーケティングチャネル &#x200B;](../../../data-analyst/analysis/most-value-source-channel.md)を特定するのに役立つ分析を作成できます。
 
-まず、[!DNL Google ECommerce] の資格情報を [!DNL Commerce Intelligence] に入力します。
+[!DNL Google ECommerce]資格情報を[!DNL Commerce Intelligence]に入力して開始します。
 
-1. `Connections` の下の **[!UICONTROL Admin** > **Connections]** ページに移動します。
+1. `Connections`の下の&#x200B;**[!UICONTROL Admin** > **Connections]** ページに移動します。
 
-1. **[!UICONTROL Add a New Source]** テーブルの上の画面の右側にある [`Data Sources`] をクリックします。
+1. **[!UICONTROL Add a New Source]** テーブルの上の画面の右側にある「`Data Sources`」をクリックします。
 
-1. [!DNL Google ECommerce] アイコンをクリックします。 これにより、[!DNL Google ECommerce] 資格情報ページが開きます。
+1. [!DNL Google ECommerce] アイコンをクリックします。 これにより、[!DNL Google ECommerce]資格情報ページが開きます。
 
-1. [!DNL Google Analytics] 資格情報を入力します。 認証プロセスが完了すると、[!DNL Commerce Intelligence] にリダイレクトされます。
+1. [!DNL Google Analytics]資格情報を入力してください。 認証プロセスが完了すると、次の場所にリダイレクトされます：[!DNL Commerce Intelligence]。
 
-1. プロファイル ID のリストが表示されます。 [!DNL Commerce Intelligence] に接続するプロファイルを確認します。
+1. プロファイル IDのリストが表示されます。 [!DNL Commerce Intelligence]に接続するプロファイルを確認してください。
 
-   複数のプロファイルがあり、どれを識別するのかについてのヘルプが必要な場合は、以下の**複数の [!DNL Google Analytics] プロファイルの接続」の節を参照してください。
+   複数のプロファイルがあり、そのプロファイルを特定するヘルプが必要な場合は、以下の「[!DNL Google Analytics] プロファイルを複数**接続」セクションを参照してください。
 
-   ![&#x200B; 複数のGoogle Analytics プロファイルを接続するためのオプションを示すフォーム &#x200B;](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
+   ![複数のGoogle Analytics プロファイルを接続するオプションを示すフォーム &#x200B;](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
 
-1. 変更は自動的に保存されるので、完了したら「**[!UICONTROL Back to Connections]**」をクリックします。
+1. 変更は自動的に保存されるので、完了したら&#x200B;**[!UICONTROL Back to Connections]**&#x200B;をクリックします。
 
-## [!DNL Google Analytics] への複数の [!DNL Commerce Intelligence] プロファイルの接続
+## 複数の[!DNL Google Analytics] プロファイルを[!DNL Commerce Intelligence]に接続しています
 
-1 つの [!DNL Google Analytics] アカウントに接続された複数の web サイトがあり、独自の [!DNL Google Analytics] プロファイル ID で識別されている場合があります。 この場合、すべてのプロファイル ID を [!DNL Commerce Intelligence] に含めるオプションがあります。 プロファイル選択手順に含めるプロファイル ID を確認します。
+1つの[!DNL Google Analytics] アカウントに複数のWeb サイトを接続している可能性があります。各Web サイトは、独自の[!DNL Google Analytics] プロファイル IDで識別されます。 この場合、すべてのプロファイル IDを[!DNL Commerce Intelligence]に含めるオプションがあります。 プロファイル選択手順に含めるプロファイル IDを確認します。
 
-特定の web サイトの [!DNL Google Analytics] プロファイル ID を識別するには：
+特定のweb サイトの[!DNL Google Analytics] プロファイル IDを識別するには：
 
-1. [!DNL Google Analytics] にログインします。
-1. 特定の web サイトの [!DNL Google Analytics] ダッシュボードに移動します。
-1. URL を見ます。プロファイル ID は、行の最後の `p` に続く 8 つの数値に対応しています。
+1. [!DNL Google Analytics]にログインします。
+1. 特定のweb サイトの[!DNL Google Analytics] ダッシュボードに移動します。
+1. URLを見てください – プロファイル IDは、行の末尾にある`p`に続く8つの数字に対応しています。
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
-## [!DNL Google ECommerce] を [!DNL Commerce Intelligence] から切断しています {#disconnect}
+## [!DNL Google ECommerce]を[!DNL Commerce Intelligence]から切断しています {#disconnect}
 
-1. [!DNL Google Analytics] の [&#x200B; アカウント設定 &#x200B;](https://www.google.com/account/about/?hl=en) ページにアクセスします。
-1. [`Security`] セクションで、&lbrack; アプリケーションとサイト **[!UICONTROL edit]** 横にある [`Authorizing`] をクリックします。
-1. 「**[!UICONTROL revoke access]**」の横にある「[!DNL Commerce Intelligence]」をクリックします。
+1. [!DNL Google Analytics] [&#x200B; アカウント設定](https://www.google.com/account/about/?hl=en) ページにアクセスします。
+1. `Security` セクションで、**[!UICONTROL edit]**&#x200B;個のアプリケーションとサイトの横にある`Authorizing`をクリックします。
+1. **[!UICONTROL revoke access]**&#x200B;の横にある[!DNL Commerce Intelligence]をクリックします。
 
 ## 関連：
 
-* [Expected [!DNL Google ECommerce] data](../integrations/google-ecommerce-data.md)
-* [&#x200B; 統合の再認証 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
-* [&#x200B; 設定  [!DNL Google ECommerce]  トラッキング &#x200B;](https://support.google.com/analytics/answer/1009612?hl=en)
-* [最も価値のある獲得ソースとチャネルを見つける](../../analysis/most-value-source-channel.md)
-* [広告キャンペーンの ROI の向上](../../analysis/roi-ad-camp.md)
+* [期待される [!DNL Google ECommerce]  データ](../integrations/google-ecommerce-data.md)
+* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [&#x200B; セットアップ  [!DNL Google ECommerce]  トラッキング &#x200B;](https://support.google.com/analytics/answer/1009612?hl=en)
+* [最も価値のある獲得ソースとチャネルの発見](../../analysis/most-value-source-channel.md)
+* [広告キャンペーンのROIを高める](../../analysis/roi-ad-camp.md)

@@ -1,12 +1,28 @@
 ---
 title: データディメンションの管理
-description: ディメンションとは何かを説明し、指標に基づいてグラフをフィルタリングしたりセグメント化したりするために使用できます。
+description: ディメンションの概要と、指標にもとづいてチャートをフィルタリングしたりセグメント化したりするためにディメンションを使用する方法について説明します。
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/0q2fVRWwNd21eyyO7WyYKlENLArkw325oq4YLNIRfLg
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: 419
 ht-degree: 0%
 
 ---
@@ -15,71 +31,71 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[&#x200B; 管理者権限 &#x200B;](../../administrator/user-management/user-management.md) が必要です。
+>[管理者権限](../../administrator/user-management/user-management.md)が必要です。
 
-ディメンションとは、指標と同じテーブル内のフィールドであり、その指標に基づいてグラフをフィルタリングまたはセグメント化するために使用できます。 例えば、売上高指標には、市区町村、都道府県、国、注文ステータス、クーポンコード、その他のタイプのディメンションが含まれることがあります。
+ディメンションとは、指標と同じテーブル内のフィールドで、その指標に基づいてチャートをフィルタリングまたはセグメント化するために使用できます。 たとえば、収益指標には、都市、州、国、注文ステータス、クーポンコードなどのディメンションを含めることができます。
 
 ## 複数の指標へのディメンションの追加
 
-一度に 1 つ以上のディメンションを複数の指標に追加するには：
+複数の指標に1つ以上のディメンションを一度に追加するには：
 
-1. **[!UICONTROL Manage Data > Metrics]** に移動します。
+1. **[!UICONTROL Manage Data > Metrics]**&#x200B;に移動します。
 
-1. 「**[!UICONTROL Add Dimensions To Metric(s)]**」をクリックします。
+1. **[!UICONTROL Add Dimensions To Metric(s)]**&#x200B;をクリックします。
 
 1. ディメンションを含むテーブルを選択します。
 
-1. `Choose Metric(s) to Add Dimensions` 列で、ディメンションを追加する指標を選択します。 選択すると、右側に `Choose Dimensions to Add` 列が表示されます。 選択した指標に追加するディメンションを確認します。
+1. `Choose Metric(s) to Add Dimensions`列で、ディメンションを追加する指標を選択します。 選択すると、`Choose Dimensions to Add`列が右側に表示されます。 選択した指標に追加するディメンションを確認します。
 
-   ![&#x200B; 使用可能なディメンションオプションを表示するディメンションを追加ダイアログ &#x200B;](../../assets/Add_Dimensions.png)
+   ![使用可能なディメンションのオプションを表示するディメンションを追加ダイアログ &#x200B;](../../assets/Add_Dimensions.png)
 
-1. レポートのいずれかのデータディメンションでセグメント化またはグループ化する場合は、それらが _グループ化可能_ であることを確認します。
+1. レポート上のデータディメンションのいずれかをセグメント化またはグループ化する場合は、それらが&#x200B;_グループ化できる_&#x200B;であることを必ず示してください。
 
-1. 「**[!UICONTROL Add]**」をクリックします。
+1. **[!UICONTROL Add]**&#x200B;をクリックします。
 
 ## 複数の指標からのディメンションの削除
 
-複数の指標から 1 つ以上のディメンションを削除するには：
+複数の指標から1つ以上のディメンションを削除するには：
 
-1. **[!UICONTROL Data > Metrics]** に移動します。
+1. **[!UICONTROL Data > Metrics]**&#x200B;に移動します。
 
-1. 「**[!UICONTROL Remove Dimensions From Metric(s)]**」をクリックします。
+1. **[!UICONTROL Remove Dimensions From Metric(s)]**&#x200B;をクリックします。
 
 1. ディメンションを含むテーブルを選択します。
 
-1. ディメンションを削除する指標を左側で、ディメンションを削除する指標を右側で選択します。
+1. 左側からディメンションを削除する指標と、右側から削除するディメンションを選択します。
 
-1. 「**[!UICONTROL Remove]**」をクリックします。
+1. **[!UICONTROL Remove]**&#x200B;をクリックします。
 
-1. ディメンションがレポートで使用されている場合、そのディメンションを使用しているグラフのリストを示す警告が表示されます。 「**[!UICONTROL Delete]**」をクリックすると、チェックされたディメンションとそのすべての依存（レポートを含む）が削除されます。
+1. ディメンションがレポートで使用されている場合、ディメンションを使用しているチャートのリストに警告が表示されます。 「**[!UICONTROL Delete]**」をクリックして、チェックしたディメンションと、レポートを含むすべての依存関係を削除します。
 
 ## 指標でのディメンションの管理
 
 **指標にディメンションを追加するには：**
 
-1. **[!UICONTROL Data > Metrics]** に移動します。
+1. **[!UICONTROL Data > Metrics]**&#x200B;に移動します。
 
-1. 新し **[!UICONTROL Edit]** ディメンションを追加する指標をクリックします。
+1. 新しいディメンションを作成する指標の&#x200B;**[!UICONTROL Edit]**&#x200B;をクリックします。
 
-1. 「`Dimensions`」セクションで、「`Add a dimension`」ドロップダウンを使用して、追加するディメンションを選択します。
+1. `Dimensions` セクションで、`Add a dimension` ドロップダウンを使用して、追加するディメンションを選択します。
 
 >[!NOTE]
 >
->フィルターまたはグループ化の基準にするディメンションは、既に [!DNL Commerce Intelligence] で追跡されている必要があります。 目的のディメンションが見つからない場合は、[Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページからデータベース内の新しいデータ列のトラッキングを開始する必要がある場合があります。
+>フィルターまたはグループ化するディメンションは、既に[!DNL Commerce Intelligence]で追跡されている必要があります。 目的のディメンションが見つからない場合は、[Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページを使用して、データベース内の新しいデータ列のトラッキングを開始する必要がある場合があります。
 
 
 **指標からディメンションを削除するには：**
 
-1. **[!UICONTROL Manage Data > Metrics]** に移動します。
+1. **[!UICONTROL Manage Data > Metrics]**&#x200B;に移動します。
 
-1. 新し **[!UICONTROL Edit]** ディメンションを追加する指標をクリックします。
+1. 新しいディメンションを作成する指標の&#x200B;**[!UICONTROL Edit]**&#x200B;をクリックします。
 
-1. 「`Dimensions`」セクションで、削除するディメンションの横にある削除列のチェックボックスを選択します。
+1. 「`Dimensions`」セクションで、削除するディメンションの横にある「削除」列のチェックボックスを選択します。
 
 >[!NOTE]
 >
->ディメンションを削除した後も、そのディメンションはData Warehouseのテーブルの列として存在します。 任意の指標に追加し直して、これらのディメンションを使用して新しい指標を作成できます。 ディメンションが対応するデータ列を [!DNL Commerce Intelligence] から削除するには、[Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページでデータ列のトラックを解除します。
+>ディメンションを削除した後でも、Data Warehouseのテーブルには列として存在します。 任意の指標に追加し直して、これらのディメンションを使用して新しい指標を構築できます。 ディメンションが対応するデータ列を[!DNL Commerce Intelligence]から削除するには、[Data Warehouse](../data-warehouse-mgr/tour-dwm.md) ページからデータ列のトラッキングを解除するだけです。
 
 ## 関連ドキュメント
 
-* [セグメント化とフィルタリングのベストプラクティス](../../best-practices/segment-filter.md)
+* [セグメンテーションとフィルタリングのベストプラクティス](../../best-practices/segment-filter.md)

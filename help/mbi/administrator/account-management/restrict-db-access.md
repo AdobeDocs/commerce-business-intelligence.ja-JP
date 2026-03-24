@@ -1,29 +1,41 @@
 ---
 title: データベースへのアクセスの制限
-description: アクセスを制限し、データベースを格納するサーバーへのアクセスを制限する方法を説明します。
+description: アクセスを制限し、データベースを格納するサーバーへのアクセスを制限する方法について説明します。
 exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
 role: Admin, User
 feature: Accounts, User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+TQID: https://experienceleague.adobe.com/O2cS-hbhjqktc4LpJD6agxgIwabrypgCY9fnJTCR2XM
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: 204
 ht-degree: 0%
 
 ---
 
-# アクセスの制限
+# アクセスを制限
 
-サーバーへの SSH トンネルを作成する場合、データベース以外にアクセス [!DNL Adobe Commerce Intelligence] る必要はありません。 データベースを格納するサーバーへのフルアクセスを [!DNL Commerce Intelligence] に許可しない場合は、[!DNL Commerce Intelligence Linux] ユーザーを [&#x200B; 制限付き bash シェル &#x200B;](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html) に強制してアクセスを制限できます。
+サーバーへのSSH トンネルを作成する場合、[!DNL Adobe Commerce Intelligence]がデータベース以外にアクセスする必要はありません。 データベースを格納するサーバーに[!DNL Commerce Intelligence]が完全にアクセスすることを望まない場合は、[!DNL Commerce Intelligence Linux] ユーザーを[制限付きbash shell](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html)に強制的に割り当てることで、アクセスを制限できます。
 
-名前から推測したかもしれませんが、標準のシェルよりも制御が強化された環境を設定するために、制限された bash シェルが使用されています。 このタイプのシェルに関する重要な点は、制限されたシェルのユーザはシステムの関数にアクセスできず、何らかの変更を加えられないことです。
+名前から推測したかもしれませんが、制限されたbash シェルは、標準シェルよりも制御された環境を設定するために使用されます。 このタイプのシェルについて重要なことは、制限付きシェルユーザーはシステム機能にアクセスしたり、何らかの変更を加えたりすることができないということです。
 
-[!DNL Commerce Intelligence Linux] ユーザーを制限するには、次の 2 つの手順を実行する必要があります。
+[!DNL Commerce Intelligence Linux] ユーザーを制限するには、次の2つの操作を行う必要があります。
 
-1. PATH 環境変数を空の文字列に変更します。 つまり、ユーザーはシステムの実行可能ファイルにアクセスできません。
+1. PATH環境変数を空の文字列に変更します。 つまり、ユーザーはシステム実行可能ファイルにアクセスできません。
 
-1. 実行したシェルが `bash -r` であることを確認します
+1. 実行されたシェルが`bash -r`であることを確認してください
 
-これらはどちらも、ユーザーがログインしたときに実行されるコマンドの一部として、ユーザーのホーム `authorized_keys` ールディレクトリにある `dir/.ssh` ファイル内で実行できます。 次のようになります。
+これらはすべて、ユーザーがログインしたときに実行されるコマンドの一部として、ユーザーのホーム `authorized_keys` ディレクトリの`dir/.ssh` ファイル内で実行できます。 次のようになります。
 
 ```bash
 ... other keys ...
@@ -31,4 +43,4 @@ command="env PATH="" /bin/bash -r" <rjmetrics public key goes here>
 ... other keys ...
 ```
 
-これが完了すると、[!DNL Commerce Intelligence] 用に作成したユーザーはシステムに変更を加えることができません。
+この操作が完了すると、[!DNL Commerce Intelligence]用に作成したユーザーはシステムに変更を加えることができません。

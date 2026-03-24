@@ -1,84 +1,99 @@
 ---
-title: マッピングテーブルを使用したデータの標準化
+title: マッピングテーブルによるデータの標準化
 description: マッピングテーブルの操作方法を説明します。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/ScOu9-YwG9T8nTMEow3QehHL8GcYeuNtUS0MHTf4GFU
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: 775
 ht-degree: 0%
 
 ---
 
-# マッピングテーブルを使用したデータの標準化
+# マッピングテーブルによるデータの標準化
 
-`Report Builder` しいレポートを作成する `Revenue by State` にいると仮定します。 レポートに `billing state` しいグループ化を追加しようとすると、次の情報が表示されるまで、すべてが正常に動作します。
+`Report Builder`さんが`Revenue by State` レポートを作成しているとします。 レポートに`billing state` グループを追加し、次の項目が表示されるまで、すべてが正常に処理されます。
 
-![&#x200B; 名前が一貫していない乱雑な状態セグメントを示すグラフ &#x200B;](../../assets/Messy_State_Segments.png)
+![一貫性のない命名規則を持つ状態セグメントが乱雑であるグラフ &#x200B;](../../assets/Messy_State_Segments.png)
 
-## どうしてこんな事が起こったの？
+## どうすればこれが起こりますか？
 
-残念ながら、標準化されていないと、レポートを作成する際にデータの混乱や頭痛の種になる場合があります。 この例では、顧客が請求状態情報を入力するためのドロップダウンメニューや標準化された方法がなかった可能性があります。 これにより、同じ状態に対して様々な値（`pa`、`PA`、`penna`、`pennsylvania`、`Pennsylvania`）が導き出され、`Report Builder` でいくつかの奇妙な結果につながります。
+残念ながら、標準化が不十分な場合、レポートを作成する際に、データが乱雑になったり、頭痛の種になることがあります。 この例では、顧客が請求ステータス情報を入力するためのドロップダウンメニューや標準化された方法がない可能性があります。 この結果、様々な値（`pa`、`PA`、`penna`、`pennsylvania`、および`Pennsylvania`）が同じ状態で作成され、`Report Builder`で奇妙な結果が生じます。
 
-データのクリーンアップや、必要な列のデータベースへの直接挿入に役立つテクニカルリソースが存在する場合があります。 そうでない場合は、別の解決策 **マッピングテーブル** があります。 マッピングテーブルを使用すると、データを単一の出力にマッピングすることで、散らかったデータをすばやく簡単にクレンジングして標準化できます。
+データのクリーンアップや、必要な列のデータベースへの直接挿入に役立つ技術リソースがある可能性があります。 そうでない場合は、別の解決策があります – **マッピング テーブル**。 マッピングテーブルを使用すると、単一の出力にデータをマッピングすることで、乱雑なデータを迅速かつ簡単にクレンジングおよび標準化できます。
 
 >[!NOTE]
 >
->統合テーブルのマッピングテーブルを作成するには、Adobe サポートチームのサポートが必要です。
+>Adobe サポートチームの助けを借りずに、統合テーブルのマッピングテーブルを作成することはできません。
 
-## 作成方法 {#how}
+## どうすれば作成できますか？ {#how}
 
-**データ形式設定の更新：**
+**データ形式の更新：**
 
 * スプレッドシートにヘッダー行があることを確認します。
-* コンマの使用は避けます。 これにより、ファイルをアップロードする際に問題が発生します。
-* 日付には、標準の日付形式 `(YYYY-MM-DD HH:MM:SS)` を使用します。
-* 割合は小数で入力する必要があります。
-* 先頭または末尾のゼロが正しく保持されていることを確認します。
+* コンマの使用は避けます。 ファイルをアップロードすると問題が発生します。
+* 日付には、標準の日付形式`(YYYY-MM-DD HH:MM:SS)`を使用します。
+* パーセントは小数で入力してください。
+* 先頭または末尾のゼロが適切に保持されていることを確認します。
 
-取り組む前に、Adobeでは [&#x200B; 生のテーブルデータを書き出す &#x200B;](../../tutorials/export-raw-data.md) ことをお勧めします。 最初に生データを調べると、クリーンアップする必要があるデータのすべての組み合わせを調べることができ、マッピングテーブルがすべてをカバーしていることを確認できます。
+詳しく説明する前に、Adobeでは[生のテーブルデータを書き出すことをお勧めします](../../tutorials/export-raw-data.md)。 まず生データを見ると、クリーンアップする必要があるデータについて、可能なすべての組み合わせを調べることができるため、マッピングテーブルがすべてをカバーしていることを確認できます。
 
-マッピングテーブルを作成するには、[&#x200B; ファイルアップロードのフォーマットルール &#x200B;](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) に従う 2 列のスプレッドシートを作成する必要があります。
+マッピングテーブルを作成するには、ファイルのアップロードに関する[形式ルール &#x200B;](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)に従う2列のスプレッドシートを作成する必要があります。
 
-最初の列に、データベースに格納されている値を **各行に 1 つの値のみ** と入力します。 例えば、`pa` と `PA` を同じ行に配置することはできません。各入力には、それぞれ独自の行が必要です。 以下に例を示します。
+最初の列に、データベースに保存されている値を&#x200B;**各行に1つだけ**&#x200B;入力します。 例えば、`pa`と`PA`は同じ行にすることはできません。各入力には独自の行が必要です。 例については、以下を参照してください。
 
-2 番目の列に、これらの値 **あるべき** を入力します。 請求状態の例を続けて、`pa`、`PA`、`Pennsylvania`、`pennsylvania` を単純に `PA` にする場合は、入力値ごとにこの列に `PA` を入力します。
+2番目の列に、これらの値&#x200B;**が**&#x200B;であるべき値を入力します。 請求状態の例を続けて、`pa`、`PA`、`Pennsylvania`、`pennsylvania`を単に`PA`にしたい場合は、この列に入力値ごとに`PA`と入力します。
 
-![&#x200B; 元の値と標準化された値を示すマッピングテーブルの例 &#x200B;](../../assets/Mapping_table_examples.jpg)
+![元の値と標準化された値を示すマッピングテーブルの例](../../assets/Mapping_table_examples.jpg)
 
-## 使用するた [!DNL Commerce Intelligence] に必要な操作 {#use}
+## [!DNL Commerce Intelligence]でこれを使用するには何が必要ですか？ {#use}
 
-マッピングテーブルの作成が完了したら、[&#x200B; に &#x200B;](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) ファイルをアップロード [!DNL Commerce Intelligence] し、新しいフィールドを目的のテーブルに再配置する [&#x200B; 結合列を作成 &#x200B;](../../data-analyst/data-warehouse-mgr/calc-column-types.md) する必要があります。 これは、ファイルがData Warehouseに同期された後で実行できます。
+マッピングテーブルの作成が完了したら、[&#x200B; ファイル &#x200B;](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)を[!DNL Commerce Intelligence]にアップロードし、[新しいフィールドを目的のテーブルに再配置する結合列](../../data-analyst/data-warehouse-mgr/calc-column-types.md)を作成する必要があります。 これは、ファイルがData Warehouseに同期された後に実行できます。
 
-次の使用例は、`mapping_state` テーブル （`state_input`）に作成した列を、結合された列を使用して `customer_address` テーブルに移動します。 これにより、`state_input` 列ではなく、レポートのクリーンな `state` 列でグループ化できるようになります。
+次の使用例は、結合列を使用して、`mapping_state` テーブル （`state_input`）で作成した列を`customer_address` テーブルに移動します。 これにより、`state_input`列ではなく、レポートのクリーン `state`列でグループ化できます。
 
-`joined` 列を作成するには、Data Warehouse Manager でフィールドの移動先となるテーブルに移動します。 この例では、これが `customer_address` テーブルになります。
+`joined`列を作成するには、Data Warehouse Managerでフィールドを再配置するテーブルに移動します。 この例では、これは`customer_address` テーブルです。
 
-1. 「**[!UICONTROL Create a Column]**」をクリックします。
-1. `Joined Column` ドロップダウンから「`Definition`」を選択します。
-1. 列に、データベースの `state` 列と区別する名前を付けます。 Report Builder でセグメント化する際に使用する列を指定できるように、列 `billing state (mapped)` に名前を付けます。
-1. テーブルの接続に必要なパスが存在しないので、パスを作成する必要があります。 **[!UICONTROL Create new path]** ドロップダウンで「`Select a table and column`」をクリックします。
+1. **[!UICONTROL Create a Column]**&#x200B;をクリックします。
+1. 「`Joined Column`」ドロップダウンから「`Definition`」を選択します。
+1. データベースの`state`列と区別する名前を列に付けます。 レポートビルダーでセグメント化するときに使用する列を指定できるように、列に`billing state (mapped)`という名前を付けます。
+1. テーブルを接続するために必要なパスが存在しないので、テーブルを作成する必要があります。 **[!UICONTROL Create new path]** ドロップダウンで「`Select a table and column`」をクリックします。
 
-   テーブルの関係が何か、またはプライマリキーと外部キーを適切に定義する方法が不明な場合は、[&#x200B; チュートリアル &#x200B;](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) でヘルプを確認してください。
+   テーブルの関係がわからない場合や、プライマリキーと外部キーを適切に定義する方法がわからない場合は、[&#x200B; チュートリアル &#x200B;](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)を参照してヘルプを確認してください。
 
-   * `Many` 側で、フィールドの移動先のテーブル（ここでは `customer_address`）と、`Foreign Key` 列（この例では `state` 列）を選択します。
-   * `One` 側で、`mapping` テーブルと `Primary key` 列を選択します。 この場合は、`state_input` のテーブルから `mapping_state` の列を選択します。
-   * パスは次のようになります。
+   * `Many`側で、フィールドを再配置するテーブル（繰り返しますが、`customer_address`です）と、例の`Foreign Key`列または`state`列を選択します。
+   * `One`側で、`mapping` テーブルと`Primary key`列を選択します。 この場合、`state_input` テーブルから`mapping_state`列を選択します。
+   * ここでは、どのような経路であるのかを確認します。
 
-     ![&#x200B; 状態マッピングの計算パスを表示しているData Warehouse Manager](../../assets/State_Mapping_Path.png)
+     ![&#x200B; ステート マッピングの計算パスを表示するData Warehouse Manager](../../assets/State_Mapping_Path.png)
 
-1. 終了したら、「**[!UICONTROL Save]**」をクリックしてパスを作成します。
-1. 保存後すぐにパスが入力されない場合があります。この場合は、「`Path`」ボックスをクリックし、作成したパスを選択します。
-1. 「**[!UICONTROL Save]**」をクリックして、列を作成します。
+1. 終了したら、**[!UICONTROL Save]**&#x200B;をクリックしてパスを作成します。
+1. 保存直後にパスが入力されない可能性があります。これが発生した場合は、`Path` ボックスをクリックし、作成したパスを選択してください。
+1. **[!UICONTROL Save]**&#x200B;をクリックして列を作成します。
 
-## 私は今何をしますか？ {#wrapup}
+## どうすればいいですか？」と尋ねます {#wrapup}
 
-更新サイクルが完了すると、データベースの乱雑な列ではなく、新しく結合された列を使用して、データを適切にセグメント化できるようになります。 グループ化オプションを今すぐ見てみましょう。ストレスの混乱をなくします。
+更新サイクルが完了すると、データベースの乱雑な列ではなく、新しい結合列を使用してデータを適切にセグメント化できるようになります。 今すぐグループ化オプションを見てください – もうストレスの混乱はありません：
 
-![&#x200B; 標準化後のクリーン状態セグメントを示すグラフ &#x200B;](../../assets/Clean_State_Segments.png)
+![標準化後のクリーン状態セグメントを示すグラフ &#x200B;](../../assets/Clean_State_Segments.png)
 
-マッピングテーブルは、Data Warehouse内の散らかっている可能性のあるデータをクリーンアップする場合にいつでも便利です。 ただし、マッピングテーブルは、[&#x200B; 内のレプリケーション  [!DNL Google Analytics channels]  など、その他の優れたユースケースにも使用  [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md) きます。
+マッピングテーブルは、Data Warehouseの一部のデータをクリーンアップする場合に便利です。 ただし、マッピングテーブルは、[で [!DNL Google Analytics channels] をレプリケートするなど、その他のクールなユースケースにも使用できます。 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)
 
 ### 関連
 

@@ -1,40 +1,55 @@
 ---
-title: その他の広告費用データのインポート
-description: オフラインまたはその他の広告費用データの  [!DNL Commerce Intelligence] へのインポートについて説明します。
+title: その他の広告費データのインポート
+description: オフラインまたはその他の広告費データを [!DNL Commerce Intelligence]にインポートする方法について説明します。
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/jx-MMry1-XGeM4htPkH6GC1Et5nYjyD7aWn3p-nmcC8
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: 369
 ht-degree: 0%
 
 ---
 
-# その他の広告費用データのインポート
+# その他の広告費データのインポート
 
-広告費用データをアップロードすると、広告コストとキャンペーンから獲得したユーザー `customer lifetime value (CLV)` を組み合わせることで、キャンペーンの ROI を測定できます。
+広告費データをアップロードすると、広告コストとキャンペーンから獲得したユーザー`customer lifetime value (CLV)`を組み合わせて、キャンペーンのROIを測定できます。
 
 ## 広告コストデータのアップロード
 
-広告費用データを分析する最初の手順は、データを取得することです。 ほとんどの広告プラットフォームではレポートを書き出すことができるので、Adobeでは、生データを広告プラットフォームから書き出し、操作せずに直接 [!DNL Commerce Intelligence] にアップロードすることをお勧めします。 Data Warehouse内のデータに対して操作を実行できるので、作業を 2 倍にする必要はありません。
+広告費データを分析する最初のステップは、データを取得することです。 ほとんどの広告プラットフォームではレポートを書き出すことができるため、Adobeでは、広告プラットフォームから生データを書き出し、操作なしで[!DNL Commerce Intelligence]に直接アップロードすることをお勧めします。 Data Warehouseのデータに対して操作を実行できるので、作業を2倍にする必要はありません。
 
-広告費用データを書き出したら、[`File Upload` 機能を使用して &#x200B;](../connecting-data/using-file-uploader.md) データをData Warehouseに取り込みます。 同じ [!DNL Commerce Intelligence] テーブルに新しいデータを経時的にアップロードできます。
+広告費データを書き出したら、[`File Upload`機能](../connecting-data/using-file-uploader.md)を使用してデータをData Warehouseに取り込みます。 同じ[!DNL Commerce Intelligence] テーブルに新しいデータを時間をかけてアップロードできます。
 
 ## オフラインソース
 
-オンラインキャンペーンに加えて、ラジオやビルボードなどの広告をオフラインで使用することもできます。 このような場合は、コストデータを含むスプレッドシートを [!DNL Commerce Intelligence] に手動でアップロードできます。
+オンラインキャンペーンに加えて、ラジオや看板などのオフラインの広告を利用することもできます。 これらのケースを考慮して、コスト データを含むスプレッドシートを[!DNL Commerce Intelligence]に手動でアップロードできます。
 
-以下に説明するテーブル構造は、`.csv` ファイルを作成して広告費用データを記録する際に推奨されます。 このトピックの下部には、例としてテンプレートファイルも添付されています。 推奨される列は次のとおりです。
+広告費データを記録する`.csv` ファイルを作成する場合は、以下で説明するテーブル構造をお勧めします。 このトピックの下部には、例としてテンプレートファイルも添付されています。 推奨される列は次のとおりです。
 
-* `ID` - データベースでプライマリキーとして使用される各データ行の一意の ID です。 これは、行ごとに異なる必要があります。
-* `Date` - キャンペーンが実行された日付（yyyy-mm-dd 形式）。
+* `ID` – これは、データベースがプライマリキーとして使用するデータ行ごとに一意の識別子です。 これは行ごとに異なる必要があります。
+* `Date` - yyyy-mm-dd形式でキャンペーンを実行した日付です。
 * `Amount` - キャンペーンに費やした金額です。
-* `campaign` - キャンペーン名です。 [!DNL Google Analytics] を使用して他の広告費用データを追跡する場合は、utm\_campaign 名と一致する必要があります。
-* `source` - ソース名。 [!DNL Google Analytics] を使用している場合は、`utm_source` 名と一致する必要があります。
-* `other` （任意） – キャンペーンとコストのセグメント化に役立つ追加の列を組み込むこともできます。 また、トラッキング目的で、複数の異なる UTM キャンペーン名を単一の一貫性のあるキャンペーンにまとめる方法にもなります。 これを手動で設定するのではなく、V-Lookup を 2 番目のシートに使用して、各キャンペーン名をその他の名前と一致させ、動的にここにレポートすることをお勧めします。
+* `campaign` – これはキャンペーン名です。 [!DNL Google Analytics]を使用して他の広告費データを追跡している場合は、utm\_campaign名と一致する必要があります。
+* `source` – これはソース名です。 [!DNL Google Analytics]を使用している場合は、`utm_source`の名前と一致する必要があります。
+* `other` （オプション） – キャンペーンとコストのセグメンテーションに役立つ列を追加することもできます。 また、複数の異なるUTM キャンペーン名を、トラッキング目的で単一の一貫性のあるキャンペーンに要約することもできます。 これを手動で設定するのではなく、V-Lookup to a second sheetを使用して、各キャンペーン名を他の名前に一致させ、ここで動的に報告することをお勧めします。
 
 ## 関連
 
-* [Connect [!DNL AdWords] data](../integrations/google-adwords.md)
-* [広告キャンペーンの ROI の向上](../../analysis/roi-ad-camp.md)
+* [&#x200B; [!DNL AdWords]  データを接続](../integrations/google-adwords.md)
+* [広告キャンペーンのROIを高める](../../analysis/roi-ad-camp.md)

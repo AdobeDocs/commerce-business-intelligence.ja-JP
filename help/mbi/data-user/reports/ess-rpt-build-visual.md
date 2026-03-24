@@ -1,127 +1,142 @@
 ---
-title: ビジュアルReport Builder
+title: Visual Report Builder
 description: Visual Report Builderの使用方法を説明します。
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/GtOv-zjLrzhzmIiYOq-IPn2SY7hkf167FtES5iN1qtI
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: 700
 ht-degree: 0%
 
 ---
 
 # [!DNL Visual Report Builder]
 
-[!DNL Visual Report Builder] を使用すると、事前定義済みの指標に基づいてクイックレポートを簡単に作成できます。 各指標には、レポートのデータセットを定義するクエリが含まれます。
+[!DNL Visual Report Builder]を使用すると、事前に定義された指標に基づいて簡単にレポートを作成できます。 各指標には、レポートのデータセットを定義するクエリが含まれます。
 
-次の例では、単純なレポートを作成し、追加のディメンションでデータをグループ化し、日時の間隔を設定し、グラフの種類を変更して、レポートをダッシュボードに保存する方法を示します。
+次の例は、簡単なレポートを作成し、データを追加のディメンションでグループ化し、日付と時間間隔を設定し、グラフの種類を変更し、レポートをダッシュボードに保存する方法を示しています。
 
 ## シンプルなレポートを作成するには：
 
-1. [!DNL Commerce Intelligence] メニューで、「**[!UICONTROL Report Builder]**」をクリックします。
+1. [!DNL Commerce Intelligence] メニューで、**[!UICONTROL Report Builder]**&#x200B;をクリックします。
 
-1. [[!UICONTROL Visual Report Builder]] で [**[!UICONTROL Create Report]**] をクリックし、次の操作を行います。
+1. [!UICONTROL Visual Report Builder]で「**[!UICONTROL Create Report]**」をクリックし、次の操作を行います。
 
-   * 「**[!UICONTROL Add Metric]**」をクリックします。
+   * **[!UICONTROL Add Metric]**&#x200B;をクリックします。
 
-     使用可能な指標は、アルファベット順またはテーブル順に表示されます。
+     使用可能な指標は、アルファベット順またはテーブル別に一覧表示できます。
 
-     ![&#x200B; ビジュアルReport Builder](../../assets/magento-bi-visual-report-builder-add-metric.png)
+     ![Visual Report Builder](../../assets/magento-bi-visual-report-builder-add-metric.png)
 
-   * レポートに使用するデータセットを表す [&#x200B; 指標 &#x200B;](../../data-user/reports/ess-manage-data-metrics.md) を選択します。
+   * レポートに使用するデータ セットを表す[指標](../../data-user/reports/ess-manage-data-metrics.md)を選択します。
 
-     この例で使用される `New Customers` 指標は、すべての顧客をカウントし、顧客がアカウントに登録した日付でリストを並べ替えます。 最初のレポートには、単純な折れ線グラフと、データのテーブルが続きます。
+     この例で使用されている`New Customers`指標は、すべての顧客をカウントし、顧客がアカウントにサインアップした日付でリストを並べ替えます。 最初のレポートには、単純な折れ線グラフとデータのテーブルが含まれています。
 
-     左側の概要には、現在の指標の名前が表示され、その後、指標で指定された列データに対する計算の結果が表示されます。 この例では、概要に合計顧客数が表示されます。
+     左側のサマリーには、現在の指標の名前が表示され、その後、指標で指定された列データの計算の結果が表示されます。 この例では、概要に合計顧客数が表示されます。
 
-     ![&#x200B; ビジュアルReport Builder](../../assets/magento-bi-report-builder-untitled.png)
+     ![Visual Report Builder](../../assets/magento-bi-report-builder-untitled.png)
 
-1. グラフでは、線上の各データ ポイントにポインタを合わせます。 各データポイントには、その月に新規登録した顧客の合計数が表示されます。
+1. グラフで、行の各データポイントにカーソルを合わせます。 各データポイントは、その月にサインアップした新規顧客の合計数を示します。
 
-1. データのグループ化、日付範囲の変更、グラフのタイプの変更を行うには、次の手順に従います。
+1. データのグループ化、日付範囲の変更、グラフの種類については、次の手順に従ってください。
 
    **`Group By`**
 
-   `Group By` コントロールを使用すると、グループまたはセグメントごとに複数の寸法を追加できます。 ディメンションは、データのグループ化に使用できるテーブルの列です。
+   `Group By` コントロールを使用すると、グループまたはセグメントごとに複数のディメンションを追加できます。 ディメンションは、データのグループ化に使用できるテーブル内の列です。
 
-   * オプションのリストから、使用可能なディメンションの 1 つ `Group By` 選択します。
+   * `Group By` オプションのリストから、使用可能なディメンションのいずれかを選択します。
 
-     この例では、システムは顧客が最初の注文時に使用した 5 つのクーポンコードを見つけました。
+     この例では、顧客が最初の注文を行う際に使用した5つのクーポンコードが見つかりました。
 
-     ![&#x200B; グループ化 &#x200B;](../../assets/magento-bi-report-builder-group-by-dimensions.png)
+     ![&#x200B; グループ化：](../../assets/magento-bi-report-builder-group-by-dimensions.png)
 
-     `Group By` の詳細には、顧客が使用する各クーポンが一覧表示されます。 最初の注文に使用したクーポンには、チェックボックスが付きます。 グラフには、最初の注文で使用された各クーポンを表す複数の色付きの線が追加されました。 凡例は、データの各行に対応するように色分けされます。
+     `Group By`の詳細には、顧客が使用する各クーポンが一覧表示されます。 最初の注文に使用されたクーポンには、チェックボックスが付いています。 グラフには、最初の注文に使用された各クーポンを表す複数の色付きの線が追加されました。 凡例は、データの各行に対応するように色分けされています。
 
-   * **[!UICONTROL Apply]** をクリックして、Group By の詳細を閉じます。
+   * 「**[!UICONTROL Apply]**」をクリックして、グループ別の詳細を閉じます。
 
-     ![&#x200B; 複数ディメンション &#x200B;](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
+     ![複数ディメンション &#x200B;](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
-   * 各行にいくつかのデータポイントを合わせると、最初の注文時にそのクーポンを使用した 1 か月の顧客数が表示されます。
+   * 各行のデータポイントにカーソルを合わせると、最初の注文を行う際にクーポンを使用した月の顧客数が表示されます。
 
-   * データのテーブルに追加ディメンションが追加され、各月の列とクーポンコードごとの行が含まれるようになりました。
+   * データのテーブルには、毎月の列と各クーポンコードの行を含む追加ディメンションが追加されました。
 
-     ![&#x200B; テーブルデータでグループ化 &#x200B;](../../assets/magento-bi-report-builder-group-by-table-data.png)
+     ![&#x200B; テーブルデータでグループ化](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * テーブルの右上隅にある転置（![&#x200B; 転置アイコン &#x200B;](../../assets/magento-bi-btn-transpose.png)）コントロールをクリックして、データの方向を変更します。
+   * テーブルの右上隅にある転置（![転置アイコン &#x200B;](../../assets/magento-bi-btn-transpose.png)）コントロールをクリックして、データの向きを変更します。
 
-     データの軸が反転され、テーブルにはクーポンコードごとに列があり、月ごとに行があります。 この向きは、読みやすいかもしれません。
+     データの軸は反転され、テーブルには各クーポンコードの列と各月の行があります。 この方向を読みやすくすることができます。
 
-     ![&#x200B; 転置データ &#x200B;](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
+     ![転置データ &#x200B;](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
 
    **`Date Range`**
 
-   `Date Range` コントロールは、現在の日付範囲と時間間隔の設定を表示し、グラフのすぐ上の右側にあります。
+   `Date Range` コントロールには、現在の日付範囲と時間間隔の設定が表示され、右側のグラフのすぐ上にあります。
 
-   * `Date Range` コントロールをクリックします。この例では、`All-Time by Month` に設定されています。
+   * この例では`Date Range`に設定されている`All-Time by Month` コントロールをクリックします。
 
-     ![&#x200B; 日付範囲 &#x200B;](../../assets/magento-bi-report-builder-date-range.png)
+     ![日付範囲](../../assets/magento-bi-report-builder-date-range.png)
 
    * 次の変更を行います。
 
-      * 拡大表示するには、日付範囲を `Last Full Quarter` に変更します。
-      * 「`Select Time Interval`」で、「`Week`」を選択します。
-      * 完了したら、「**[!UICONTROL Save]**」をクリックします。
+      * 拡大表示するには、日付範囲を`Last Full Quarter`に変更します。
+      * `Select Time Interval`で、`Week`を選択します。
+      * 完了したら、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-     レポートには、前四半期のデータのみが週別に含まれるようになりました。
+     現在、レポートには前四半期のデータのみが週別に含まれています。
 
-     ![&#x200B; 前四半期の週別レポート &#x200B;](../../assets/magento-bi-report-builder-date-range-quarter-by-week-chart.png)
+     ![週ごとの前四半期のレポート &#x200B;](../../assets/magento-bi-report-builder-date-range-quarter-by-week-chart.png)
 
-   **グラフのタイプ**
+   **グラフの種類**
 
-   * 右上隅のコントロールをクリックして、データに最適なグラフを見つけます。
+   * 右上隅にあるコントロールをクリックして、データに最適なチャートを見つけます。
 
-     一部のグラフの種類は、多次元データと互換性がありません。
+     チャートの種類によっては、多次元データと互換性がないものもあります。
 
      | | |
      |-----|-----|
-     | ![&#x200B; 折れ線グラフアイコン &#x200B;](../../assets/magento-bi-btn-chart-line.png) | 折れ線グラフ |
-     | ![&#x200B; 横棒グラフのアイコン &#x200B;](../../assets/magento-bi-btn-chart-horz-bar.png) | 横棒グラフ |
-     | ![&#x200B; 積み重ね横棒グラフのアイコン &#x200B;](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 横積み重ね棒グラフ |
-     | ![&#x200B; 縦棒アイコン &#x200B;](../../assets/magento-bi-btn-chart-vert-bar.png) | 縦棒グラフ |
-     | ![&#x200B; 垂直積み重ね棒アイコン &#x200B;](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 縦積み横棒グラフ |
-     | ![&#x200B; 円グラフアイコン &#x200B;](../../assets/magento-bi-btn-chart-pie.png) | 円グラフ |
-     | ![&#x200B; 面グラフ アイコン &#x200B;](../../assets/magento-bi-btn-chart-area.png) | 面グラフ |
-     | ![Funnel グラフ アイコン &#x200B;](../../assets/magento-bi-btn-chart-funnel.png) | ファネル |
+     | ![折れ線グラフアイコン &#x200B;](../../assets/magento-bi-btn-chart-line.png) | 折れ線グラフ |
+     | ![横棒アイコン &#x200B;](../../assets/magento-bi-btn-chart-horz-bar.png) | 横棒グラフ |
+     | ![横積み上げ横棒アイコン &#x200B;](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 横向き積み上げ棒グラフ |
+     | ![縦棒アイコン &#x200B;](../../assets/magento-bi-btn-chart-vert-bar.png) | 縦棒グラフ |
+     | ![横向き積み上げ棒アイコン &#x200B;](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 縦組み横向き積み上げ棒 |
+     | ![円グラフアイコン &#x200B;](../../assets/magento-bi-btn-chart-pie.png) | 円 |
+     | ![階層チャートアイコン &#x200B;](../../assets/magento-bi-btn-chart-area.png) | 面グラフ |
+     | ![Funnel チャート アイコン &#x200B;](../../assets/magento-bi-btn-chart-funnel.png) | ファネル |
 
      {style="table-layout:auto"}
 
-1. レポートに `title` を付けるには、ページ上部の `Untitled Report` のテキストを説明的なタイトルに置き換えます。
+1. レポートに`title`を付けるには、ページ上部の`Untitled Report` テキストをわかりやすいタイトルに置き換えます。
 
-1. 右上隅の「**[!UICONTROL Save]**」をクリックして、次の操作を行います。
+1. 右上隅の「**[!UICONTROL Save]**」をクリックし、次の操作を行います。
 
-   * `Type` の場合は、デフォルト設定 `Chart` を使用します。
+   * `Type`の場合、デフォルト設定である`Chart`を受け入れます。
 
-   * レポートを使用できる `Dashboard` を選択します。
+   * レポートを利用できる`Dashboard`を選択します。
 
-   * 「**[!UICONTROL Save to Dashboard]**」をクリックします。
+   * **[!UICONTROL Save to Dashboard]**&#x200B;をクリックします。
 
-     ![&#x200B; ダッシュボードに保存 &#x200B;](../../assets/magento-bi-report-builder-save-to-dashboard.png)
+     ![&#x200B; ダッシュボードに保存](../../assets/magento-bi-report-builder-save-to-dashboard.png)
 
-1. ダッシュボードにグラフを表示するには、次のいずれかの操作を行います。
+1. ダッシュボードでグラフを表示するには、次のいずれかの操作を行います。
 
    * ページ上部のメッセージで「**[!UICONTROL Go to Dashboard]**」をクリックします。
 
    * メニューで「`Dashboards`」を選択し、現在のダッシュボードの名前をクリックしてリストを表示します。 次に、レポートが保存されたダッシュボードの名前をクリックします。
 
-     ![&#x200B; ダッシュボードのレポート &#x200B;](../../assets/magento-bi-report-builder-my-dashboard.png)
+     ダッシュボードの![&#x200B; レポート &#x200B;](../../assets/magento-bi-report-builder-my-dashboard.png)

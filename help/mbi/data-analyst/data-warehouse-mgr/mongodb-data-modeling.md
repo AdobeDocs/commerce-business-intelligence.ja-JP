@@ -1,27 +1,43 @@
 ---
 title: MongoDB データモデリング
-description: 問題の原因となるデータパターンを回避する方法を説明します。
+description: 課題となるデータパターンを回避する方法を学ぶ。
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/L9xlGE4hAQssTHJzzxQD9EGUVaIZFY-2-ALOLM9vym4
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: 129
 ht-degree: 1%
 
 ---
 
 # [!DNL MongoDB] データモデリング
 
-データを取 [!DNL Adobe Commerce Intelligence] 込む [!DNL MongoDB]、そのデータはリレーショナルモデルに変換されます。
+[!DNL Adobe Commerce Intelligence]が[!DNL MongoDB] データを取り込むと、そのデータはリレーショナルモデルに変換されます。
 
-悪いニュース：ほとんどのデータパターンは問題になりませんが、リレーショナルモデルへの翻訳が原因で、[!DNL Commerce Intelligence] でサポートされていないものがいくつかあります。
+悪いニュース：ほとんどのデータパターンは問題を引き起こしませんが、関係モデルへの翻訳のため、[!DNL Commerce Intelligence]でサポートされていないデータがいくつかあります。
 
 良いニュース：これらすべてのパターンは回避できます。
 
 ## サブネストされた配列 {#subnested}
 
-コレクションが次の例のような場合、[!DNL Commerce Intelligence] は items 配列のデータのみをレプリケートします。 サブ項目配列のデータは取り込まれません。
+コレクションが次の例のように見える場合、[!DNL Commerce Intelligence]はitems配列内のデータのみをレプリケートします。 subitems配列のデータは引き出されません。
 
 ```bash
     {
@@ -43,7 +59,7 @@ ht-degree: 1%
 
 ## 可変オブジェクトキー {#varobjectkeys}
 
-可変オブジェクトキーを持つオブジェクトを含むコレクションは、[!DNL Commerce Intelligence] でレプリケートされません。 例：
+変数オブジェクトキーを持つオブジェクトを含むコレクションは、[!DNL Commerce Intelligence]にレプリケートされません。 例：
 
 ```bash
     {
@@ -56,7 +72,7 @@ ht-degree: 1%
     }
 ```
 
-これは通常、オブジェクトが使用されていて、配列の方が適切な場合に発生します。 次に、上記の例を再作成します。
+これは通常、オブジェクトが使用され、配列がより適切な場合に発生します。 次に、上記の例を再作業します。
 
 ```bash
     {

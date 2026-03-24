@@ -1,44 +1,62 @@
 ---
-title: Commerce Intelligence Essentials と Pro の比較
-description: Commerce Intelligence Essentials とCommerce Intelligence Pro の違いについて説明します。
+title: Commerce Intelligence EssentialsとProの比較
+description: Commerce Intelligence EssentialsとCommerce Intelligence Proの違いを説明します。
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: ba64de148ad5b3fc44591a10531244cfe670a728
+TQID: https://experienceleague.adobe.com/5MTFaBTLbZyjDFtMSG0lISoXV8cbMGjSpDvcQ7Syj3o
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: 77
 ht-degree: 5%
 
 ---
 
-# [!DNL Commerce Intelligence Essentials] と [!DNL Commerce Intelligence Pro]
+# [!DNL Commerce Intelligence Essentials]対[!DNL Commerce Intelligence Pro]
 
-次の表に、従来のCommerce Intelligence アカウントと現在の `Essentials` アカウントの比較に含まれる要素を示します。 Adobeでは、`Essentials` を提供しなくなりました。
+次の表に、従来の`Essentials` アカウントと現在のCommerce Intelligence アカウントに含まれる要素を示します。 Adobeは`Essentials`の提供を終了しました。
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
-| `Pre-Defined Reports` | 最大 100 | カスタム |
+| `Pre-Defined Reports` | 最大100 | カスタム |
 | `Pre-Defined Dashboards` | 5-6 | カスタム |
 | `New Custom Report Creation` | はい | はい |
-| `Commerce Tables` | 4-6 | 制限なし |
+| `Commerce Tables` | 4-6 | 無制限 |
 | `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | はい | はい |
 | `Data Warehouse Manager` | 利用不可 | 利用可能 |
 | `Email Reports` | はい | はい |
 | `Cohort Report Builder` | はい | はい |
-| `Google Analytics Live Integration` | はい | 制限なし |
+| `Google Analytics Live Integration` | はい | 無制限 |
 | `3rd Party Integrations` | 利用不可 | 利用可能 |
-| `Full API Access` | 不可 | はい |
-| `Access to CS, AM, or Analysts` | 不可 | はい |
+| `Full API Access` | いいえ | はい |
+| `Access to CS, AM, or Analysts` | いいえ | はい |
 | `Professional Services` | 利用可能 | 利用可能 |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->テーブルの数は、ゲストのチェックアウトによって異なります。
+>テーブルの数は、ゲストチェックアウトによって異なります。
 
-**含まれるテーブル**
+**テーブルを含む**
 
 * `sales\_order`
 * `sales\_order\_item`

@@ -1,68 +1,85 @@
 ---
 title: Report Builderの数式
-description: Report Builderでの数式の使用方法を説明します。
+description: Report Builderで数式を使用する方法を説明します。
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/XxqMoKRPIKcRgh8HKa6z2IMp6WkiCVp2jhIbXFqcraU
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: 544
 ht-degree: 0%
 
 ---
 
-# `Report Builder` の数式
+# `Report Builder`の数式
 
-[`Report Builder`](../../tutorials/using-visual-report-builder.md) では、アカウントで [&#x200B; 定義済み指標 &#x200B;](../../data-user/reports/ess-manage-data-metrics.md) を使用して強力なビジュアライゼーションを作成できます。 これらの指標を式で組み合わせることで、データから追加のインサイトを得ることができます。 このトピックでは、`Report Builder` で数式を使用する方法を詳しく説明します。ここでは、ジャンプしましょう。
+[`Report Builder`](../../tutorials/using-visual-report-builder.md)では、アカウントで[定義された指標](../../data-user/reports/ess-manage-data-metrics.md)を使用して、強力なビジュアライゼーションを作成できます。 これらの指標を数式でつなぎ合わせることで、データからさらにインサイトを得ることができます。 このトピックでは、`Report Builder`で数式を使用する方法について詳しく説明します。すぐに始めることができます。
 
-## `formula` とは {#what}
+## `formula`とは {#what}
 
-`Report Builder` では、`formula` は、何らかの数学的ロジックに基づいて 1 つ以上の指標を組み合わせたものです。 典型的な例を次に示します。
+`Report Builder`では、`formula`は数学的論理に基づく1つ以上の指標の組み合わせに過ぎません。 典型的な例は次のようになります。
 
-![Report Builderでの計算を示す式の例 &#x200B;](../../assets/formula-example.png)
+![Report Builderでの計算式の例](../../assets/formula-example.png)
 
-この例では、`Number of orders metric (A)` と `Distinct buyers metric (B)` を使用します。購入者が月に作成した注文の平均数はどれくらいですか？という質問に答えることを目標にします。 式のパラメーターは次のとおりです。
+この例では、`Number of orders metric (A)`と`Distinct buyers metric (B)`を使用します。目標は、「購入者が毎月行っている平均注文数は？」という質問に答えることです。 式のパラメーターは次のとおりです。
 
-* `Definition`：ここでは、入力指標に数学を適用します。 この例では、注文数を個別の購入者の数で割ると、注文数の平均がわかります。 したがって、の定義は（A/B）になります。
+* `Definition`：ここでは、入力指標に計算を適用します。 この例では、注文数を個別の購入者の数で割ると、平均注文数が表示されます。 つまり、定義は（A/B）です。
 
-* `Format`：数式は数値、期間、または通貨金額を返しますか？ 数式の定義の横にはドロップダウンがあり、これを使用して戻り値の形式を指定できます。 この場合、数値です。
+* `Format`：数式で数値、期間、または通貨金額が返されますか？ 数式の定義の横にはドロップダウンがあり、これを使用して戻り値の形式を指定できます。 この場合は、数値です。
 
-* `Miscellaneous`：数式のタイムスタンプ、グループ化、パースペクティブ、フィルターはすべて、入力指標に継承されます。 何もすることがない！
+* `Miscellaneous`：数式のタイムスタンプ、グループ化、遠近法、フィルターはすべて、入力指標によって継承されます。 ここには何もすることがありません！
 
-## レポートで `formulas` を使用するにはどうすればよいですか？ {#how}
+## レポートで`formulas`を使用するにはどうすればよいですか？ {#how}
 
-基本について説明したので、いくつかの例を見てみましょう。
+さて、基本について説明したので、いくつかの例を見てみましょう。
 
-### 例：初回注文に起因する売上高の割合を確認したい。
+### 例：売上の何割が初回注文に起因するかを調べたい。
 
-![&#x200B; 数式を使用して初回注文に起因する収益の割合を見つける &#x200B;](../../assets/first_time_orders.gif)
+![数式を使用して、初回注文に起因する売上の割合を見つける](../../assets/first_time_orders.gif)
 
-この例では、`Revenue` と `Revenue (first time orders)` の指標を使用しました。 `Revenue (first time orders)(B)` 指標を `Revenue metric (A)` で割り、戻り値の形式を `Percent` に設定すると、初回注文に起因する可能性がある売上高の割合を見つけることができます。
+この例では、`Revenue`および`Revenue (first time orders)`指標を使用しました。 `Revenue (first time orders)(B)`指標を`Revenue metric (A)`で割り、返品形式を`Percent`に設定すると、初回注文に起因する売上の割合を見つけることができます。
 
-### 例：注文あたりの平均売上高を知りたいのですが、`promo code` をオファーする場合とオファーしない場合。
+### 例：`promo code`を提供していない場合の注文あたりの平均売上を知りたい。
 
-![&#x200B; 数式を使用して、プロモーションコードの有無にかかわらず、注文あたりの平均売上高を見つける &#x200B;](../../assets/promo_code.gif)
+![数式を使用して、プロモーションコードの有無にかかわらず、注文あたりの平均売上を検索する](../../assets/promo_code.gif)
 
-この例では、`Revenue` と `Number of orders` の指標を使用しました。 この質問に対する答えは、`Revenue (A)` を `Number of orders (B)` で割り、戻り値の形式を `Currency` に設定するという 2 つの手順で構成されます。 次に、数式の結果（`Avg. Revenue per order`）のみを表示し、結果を `Promo code` でグループ化しました。
+この例では、`Revenue`および`Number of orders`指標を使用しました。 この質問に対する回答には、2つのステップが含まれます。`Revenue (A)`を`Number of orders (B)`で割り、戻り値の形式を`Currency`に設定します。 次に、数式結果（`Avg. Revenue per order`）のみを表示できるようにし、結果を`Promo code`でグループ化しました。
 
-### 例：新規顧客の UTM ソースの配布を知りたいとします。
+### 例：新規顧客のUTM ソースの分布を知りたい。
 
-![&#x200B; 数式を使用して新規顧客の UTM ソースの分布を見つける &#x200B;](../../assets/distro.gif)
+![数式を使用して新規顧客のUTM ソースの配布を検索する](../../assets/distro.gif)
 
-この質問に対する答えを見つけるには、次の手順が必要です。
+この質問に対する回答を見つけるには、いくつかのステップを踏む必要があります。
 
-1. 最初に `New Customers` の指標を追加し、次に `utm_source - all` でグループ化しました。 これは、指標 `A` または `New Customers (grouped)` です。
+1. 最初に`New Customers`指標を追加し、次に`utm_source - all`でグループ化しました。 これは指標`A`または`New Customers (grouped)`です。
 
-1. 次に、`New Customers (grouped)` 指標を複製し、独立したディメンションを使用するように設定しました。 指標 `B` - `New customers (ungrouped)` – 新規顧客の合計数を示します。
+1. 次に、`New Customers (grouped)`指標を複製し、独立したディメンションを使用するように設定します。 指標`B` - `New customers (ungrouped)` – 新規顧客の合計数を示します。
 
-1. 両方の指標を非表示にした後、数式の定義を `A/B` に設定します。 これにより、`New customers (grouped)` が `New Customers (ungrouped)` で除算されます。
+1. 両方の指標を非表示にした後、数式定義を`A/B`に設定します。 これにより、`New customers (grouped)`が`New Customers (ungrouped)`で割られます。
 
-1. 次に、結果の形式を `Percent` に設定します。
+1. 次に、結果の形式を`Percent`に設定します。
 
-この例では、`Stacked Columns` パースペクティブを使用して結果を月ごとに表示しました。 これにより、新規顧客の配分を月単位で比較できます。
+この例では、`Stacked Columns` パースペクティブを使用して、月ごとに結果を表示しました。 これにより、新規顧客の分布を月々ベースで比較することができます。
 
 ## まとめ {#wrapup}
 
-上記の例で、数式の `timestamp`、`groupings`、`perspectives`、`filters` が入力指標から継承されていることに気がつきましたか？ 指標と同様に、数式を使用して `perspectives` および [&#x200B; 独立した時間オプション &#x200B;](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"} を使用できることに注意してください。
+上記の例で、数式の`timestamp`、`groupings`、`perspectives`、`filters`がその入力指標から継承されていることに気づきましたか？ 数式は、指標と同様に、`perspectives`および[独立した時間オプション &#x200B;](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}を使用するために使用できます。
 
-`Report Builder` での数式の使用に関するその他の質問については、[&#x200B; サポートにお問い合わせください &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+`Report Builder`での数式の使用に関して追加の質問がある場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
