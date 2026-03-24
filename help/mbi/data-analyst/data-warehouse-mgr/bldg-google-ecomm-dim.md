@@ -5,11 +5,21 @@ exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Developer, User
 feature: Data Integration, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/K5PKexwI5oIb0WFtT47gQ2wEuF-TYUQrntRq1yJ4Vlc
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1023
@@ -23,9 +33,9 @@ ht-degree: 0%
 >
 >[管理者権限](../../administrator/user-management/user-management.md)が必要です。
 
-[ アカウント [!DNL Google ECommerce]の](../../data-analyst/importing-data/integrations/google-ecommerce.md)接続が完了したので、[!DNL Commerce Intelligence]のデータで何ができますか？ このトピックでは、コマースデータと注文や顧客データをリンクさせるディメンションの構築について説明します。
+[&#x200B; アカウント [!DNL Google ECommerce]の](../../data-analyst/importing-data/integrations/google-ecommerce.md)接続が完了したので、[!DNL Commerce Intelligence]のデータで何ができますか？ このトピックでは、コマースデータと注文や顧客データをリンクさせるディメンションの構築について説明します。
 
-対象となるディメンションは、[ マーケティングチャネルとキャンペーンに関する重要な質問に回答する](../../data-analyst/analysis/most-value-source-channel.md)分析を構築する機能を提供します。 ・ 売上の何%を各ソースから得ているか？ 獲得した[!DNL Facebook]人の顧客生涯価値と[!DNL Google]人の顧客生涯価値との比較はどうですか？
+対象となるディメンションは、[&#x200B; マーケティングチャネルとキャンペーンに関する重要な質問に回答する](../../data-analyst/analysis/most-value-source-channel.md)分析を構築する機能を提供します。 ・ 売上の何%を各ソースから得ているか？ 獲得した[!DNL Facebook]人の顧客生涯価値と[!DNL Google]人の顧客生涯価値との比較はどうですか？
 
 ## 前提条件と概要
 
@@ -33,7 +43,7 @@ ht-degree: 0%
 
 ここでは、再読み込みが必要な場合のテーブルと列の同期に関する簡単な説明を示します。
 
-![Data Warehouseで新しい列を同期するアニメーションのデモ ](../../assets/Syncing_New_Columns.gif)
+![Data Warehouseで新しい列を同期するアニメーションのデモ &#x200B;](../../assets/Syncing_New_Columns.gif)
 
 `orders` テーブルから[!DNL Google eCommerce] テーブルへの結合を作成した後、以下のリストの最初の3つのディメンションを作成します。 次に、これらのディメンションを使用して、`customers` テーブルに3つのユーザー/顧客ディメンションを作成します。 最後に、これらの列を`orders` テーブルに結合します。
 
@@ -56,7 +66,7 @@ ht-degree: 0%
 
 ## ディメンションの作成
 
-ディメンションを作成するには、[ > ](../data-warehouse-mgr/tour-dwm.md)をクリックして&#x200B;**[!UICONTROL Data]** Data Warehouse Manager **[!UICONTROL Data Warehouse]**&#x200B;を開きます。
+ディメンションを作成するには、[&#x200B; > &#x200B;](../data-warehouse-mgr/tour-dwm.md)をクリックして&#x200B;**[!UICONTROL Data]** Data Warehouse Manager **[!UICONTROL Data Warehouse]**&#x200B;を開きます。
 
 ### 受注テーブル、ラウンド 1
 
@@ -80,7 +90,7 @@ ht-degree: 0%
 
 ここでは、そのプロセス全体を紹介します。
 
-![Google Analytics ソースディメンションを作成するアニメーションのデモ ](../../assets/help_center.gif)
+![Google Analytics ソースディメンションを作成するアニメーションのデモ &#x200B;](../../assets/help_center.gif)
 
 次に、**注文の[!DNL Google Analytics] メディア**&#x200B;と`campaign`を作成してみてください。 これらのディメンションにはあまり変更がないので、試してください。 しかし、行き詰まった場合は、[この記事の最後](#stuck)を参照して、何が違うのかを確認してください。
 
@@ -107,7 +117,7 @@ ht-degree: 0%
 
 ### ボーナス：注文テーブル、ラウンド 2
 
-必要に応じてここで停止できますが、このセクションでは、**最後のセクション [!DNL Google Analytics]で作成した**&#x200B;お客様の最初の注文の[ ディメンション ](#customers)を`orders` テーブルに取り込むことで、さらに分析を行うことができます。 このセクションでディメンションを作成すると、顧客の最初の注文の`orders`属性を使用して、`Revenue` テーブル `Number of orders`、`Distinct buyers`、[!DNL Google Analytics]などで構築されているすべての指標を分析できます。
+必要に応じてここで停止できますが、このセクションでは、**最後のセクション [!DNL Google Analytics]で作成した**&#x200B;お客様の最初の注文の[&#x200B; ディメンション &#x200B;](#customers)を`orders` テーブルに取り込むことで、さらに分析を行うことができます。 このセクションでディメンションを作成すると、顧客の最初の注文の`orders`属性を使用して、`Revenue` テーブル `Number of orders`、`Distinct buyers`、[!DNL Google Analytics]などで構築されているすべての指標を分析できます。
 
 次の使用例は、`Customer's first order's [!DNL Google Analytics] source` ディメンションを`orders` テーブルに結合します。
 
@@ -121,7 +131,7 @@ ht-degree: 0%
 
 ここでは、そのプロセス全体を紹介します。
 
-![顧客獲得ディメンションの作成デモ ](../../assets/help_center2.gif)
+![顧客獲得ディメンションの作成デモ &#x200B;](../../assets/help_center2.gif)
 
 最後に、`Customer's first order's` ミディアムと`campaign` ディメンションを`orders` テーブルに結合します。 ディメンションに参加し、問題がある場合は、ヘルプが必要な場合は、記事[の最後の](#stuck)を確認してください。
 

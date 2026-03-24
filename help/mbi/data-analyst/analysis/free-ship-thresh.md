@@ -5,10 +5,19 @@ exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
 role: Admin,  User
 feature: Data Warehouse Manager, Dashboards, Reports
 TQID: https://experienceleague.adobe.com/dh7Ep6xzBaaeO5LAnsUogg0jSCIXMjv-faBsPyGXpcg
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 507
@@ -26,7 +35,7 @@ ht-degree: 0%
 
 開始する前に、ストアの送料無料しきい値が異なる2つの期間を特定する必要があります。
 
-![送料無料のしきい値分析と注文金額の分布を示すグラフ ](../../assets/free_shipping_threshold.png)
+![送料無料のしきい値分析と注文金額の分布を示すグラフ &#x200B;](../../assets/free_shipping_threshold.png)
 
 この分析には、[高度な計算列](../data-warehouse-mgr/adv-calc-columns.md)が含まれています。
 
@@ -71,9 +80,9 @@ else &#39;over 450&#39;
 
 * 指標`A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **配送ルール A**&#x200B;を持つ小計バケット別の注文数
@@ -85,53 +94,53 @@ else &#39;over 450&#39;
 
 * 指標`A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Column`
 
 * **配送ルール A**&#x200B;を持つ小計による注文の割合
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL グループ化：]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * 指標`A`: `Number of orders by subtotal (hide)`
 * 指標`B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **小計が発送ルール A**&#x200B;を超える注文の割合
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL グループ化：]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * 指標`A`: `Number of orders by subtotal`
 * 指標`B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 

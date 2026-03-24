@@ -5,11 +5,21 @@ exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/e6PatGqkzOXmxOYhzvDEkNrXCktjz3rIVWkxhleG4mI
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 604
@@ -45,7 +55,7 @@ ht-degree: 0%
    * **個別レポートの選択** - ダッシュボードから特定のレポートを選択します
    * **ダッシュボード全体を選択** - ダッシュボードのレイアウトに表示されるダッシュボードのすべてのレポートを含める
 
-   所有しているレポートは最大10個まで選択できます。 レポートを選択したら、表示されるアイコンを使用して、そのレポートを表またはグラフとして送信するかどうかを選択します。 レポートを数値として保存した場合は、数値としてのみ送信できます。 古いデータを含むレポートを含むメール概要の送信について詳しくは、[ アカウント設定の管理](../../administrator/account-management/managing-account-settings.md)を参照してください。
+   所有しているレポートは最大10個まで選択できます。 レポートを選択したら、表示されるアイコンを使用して、そのレポートを表またはグラフとして送信するかどうかを選択します。 レポートを数値として保存した場合は、数値としてのみ送信できます。 古いデータを含むレポートを含むメール概要の送信について詳しくは、[&#x200B; アカウント設定の管理](../../administrator/account-management/managing-account-settings.md)を参照してください。
 
    ダッシュボード全体を追加するには、次の形式および削除オプションがあります。
 
@@ -116,7 +126,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->古いデータを含むレポートを含むメール概要の送信について詳しくは、[ アカウント設定の管理](../../administrator/account-management/managing-account-settings.md)を参照してください。
+>古いデータを含むレポートを含むメール概要の送信について詳しくは、[&#x200B; アカウント設定の管理](../../administrator/account-management/managing-account-settings.md)を参照してください。
 
 各行の右側にある歯車アイコンをクリックして、次の操作を行います。
 

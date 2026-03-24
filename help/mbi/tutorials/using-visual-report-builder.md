@@ -5,11 +5,22 @@ exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/w30ouDFleQkasfx4OZ4mt-HqJALx3VoQUTa8s07gRTo
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1274
@@ -23,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ダッシュボードにレポートを追加するには、`Standard` [ ユーザー権限](../administrator/user-management/user-management.md)と`Edit` ダッシュボードへのアクセス権が必要です。
+>ダッシュボードにレポートを追加するには、`Standard` [&#x200B; ユーザー権限](../administrator/user-management/user-management.md)と`Edit` ダッシュボードへのアクセス権が必要です。
 
 ## 手順1：レポートの作成
 
@@ -43,13 +54,13 @@ ht-degree: 0%
 
 注文あたりの平均売上を示すレポートを作成するとします。 この場合、`Revenue`指標を`Number of orders`指標で割ります。
 
-![ ビジュアル Report Builderを使用](../assets/ave-rev-per-order.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/ave-rev-per-order.png)
 
 ## 手順4: `Time Period`と`Interval of Analysis`の設定 {#time}
 
 特定の期間に焦点を当てるには、分析の期間を設定します。 期間を選択して、データをセグメント化することもできます（例：年、四半期、月など）。 グラフの右上隅にあるメニューを使用して、期間と間隔を設定します。
 
-![ ビジュアル Report Builderを使用](../assets/Time_Options_Report_Builder.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/Time_Options_Report_Builder.png)
 
 期間に特定の日付範囲を設定する場合は、開始日が間隔の先頭にあり、終了日が間隔の最後にあることを確認します。
 
@@ -57,23 +68,23 @@ ht-degree: 0%
 
 ## ステップ 5: `Group by` / `Segmenting the Analysis` {#groupby}
 
-[指標をデータディメンション ](../best-practices/segment-filter.md)でセグメント化するには、グラフの左上にある&#x200B;**[!UICONTROL Group by]** メニューをクリックします。 これにより、リストに含まれる最初の指標の利用可能なすべてのディメンションを含むドロップダウンが表示されます。
+[指標をデータディメンション &#x200B;](../best-practices/segment-filter.md)でセグメント化するには、グラフの左上にある&#x200B;**[!UICONTROL Group by]** メニューをクリックします。 これにより、リストに含まれる最初の指標の利用可能なすべてのディメンションを含むドロップダウンが表示されます。
 
 指標がセグメント化されないようにするには、`None`を選択できます。 例えば、セグメント化されずに総売上を返す指標と、別の収益指標を地域別にセグメント化する指標を組み合わせることができます。
 
 注文あたりの平均売上の例に戻り、Group byをプロモーションコードに設定します。 これは、プロモーションコードの有無にかかわらず、注文あたりの平均売上を示しています。
 
-![ ビジュアル Report Builderを使用](../assets/Group_By_Report_Builder.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/Group_By_Report_Builder.png)
 
 分析に含まれる指標が異なるデータテーブル上に構築されている場合、ポップアップを使用して、各テーブルで一致するデータディメンションを選択できます。 ここでの目的は、セグメント化の値タイプを共有するディメンションを見つけることです。
 
-![ ビジュアル Report Builderを使用](../assets/Dimension_Editor.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/Dimension_Editor.png)
 
 ## 手順6: `Metric Filters`、`Perspective`、`Time Interval`の設定 {#metric-specific}
 
 分析に追加された各指標について、フィルターを追加し、関連するデータの遠近法を選択して、`time interval` オプションを設定できます。 これらの機能にアクセスするには、レポートに含まれる指標の横にあるfunnel （`Filter`）、目（`Perspective`）、時計（`Time`）のアイコンをクリックします。
 
-![ ビジュアル Report Builderを使用](../assets/Filters_Perspective_Interval_Report_builder.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/Filters_Perspective_Interval_Report_builder.png)
 
 ### `Filters`
 
@@ -89,7 +100,7 @@ ht-degree: 0%
 
 複数のフィルターを追加すると、チャートのデータを厳密に制御できます。 デフォルトでは、データを含めるすべてのフィルター条件はtrueである必要がありますが、「フィルタールール」テキストボックスを編集してOR関係を作成できます。
 
-![ ビジュアル Report Builderを使用](../assets/edit-filter-rules.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/edit-filter-rules.png)
 
 ### `Perspectives`
 
@@ -97,23 +108,23 @@ ht-degree: 0%
 
 - `Standard perspective`：標準の遠近法では、X軸の一致する日付（1月の収益など）の結果が表示されます。 これは、注文あたりの平均売上の例で使用する視点です。
 
-![ ビジュアル Report Builderを使用](../assets/Standard.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/Standard.png)
 
 - `Amount`または`Percent Change`と`Previous Period`の視点の比較：この視点は、ある間隔から次の間隔への変化量または変化率を示し、急速に変化する指標の変化率を測定するのに役立ちます。 また、前年と同じ時期と比較して、前年比で成長を示す視点もあります。
 
-![ ビジュアル Report Builderを使用](../assets/Amt_or_Percent_Change.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/Amt_or_Percent_Change.png)
 
 - `Cumulative perspective`: `cumulative perspective`には、期間中の指標の継続的または累積合計金額が表示されます。 これは、多くの場合、総顧客を分析し、将来のキャパシティを計画するために使用されます。
 
-![ ビジュアル Report Builderを使用](../assets/Cumulative_Perspective.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/Cumulative_Perspective.png)
 
 - `Percent of First Value perspective`：この遠近法では、分析に含まれる初回間隔に対する割合でデータが表示されます。 これは、最初の期間のパフォーマンスに対する特定のアクションの有効性を測定するのに役立ちます。
 
-![ ビジュアル Report Builderを使用](../assets/Percent_of_First_Value.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/Percent_of_First_Value.png)
 
 - `Rolling averages window perspective`：移動平均ウィンドウの遠近法は、指定された時間範囲における指標の移動平均値を示します。 間隔は、レポートレベルで設定された間隔と同じである必要があります。 例えば、レポートに収益の最後の四半期が週別に表示されている場合、ウィンドウのローリング平均期間の範囲を4週間に設定できます。 これにより、最初の3つの値がnullになり、4番目の値は収益の最初の4週間の平均を表します。 明確にするために、次の例のように、同じ指標をローリング平均で表示している場合は、`Multiple Y-Axes` チェックボックスをオフにしてください。
 
-![ ビジュアル Report Builderを使用](../assets/rolling_avg_window.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/rolling_avg_window.png)
 
 ### 指標に特化した時間オプション
 
@@ -127,7 +138,7 @@ ht-degree: 0%
 >
 >`group by` ディメンションを追加する場合は、新しいビジュアライゼーションを選択するか、時間間隔を調整してから、数値（`scalar`）だけを保存します。 これらの調整は、次回ダッシュボードからそのレポートを開いたときに保持されません。時間範囲のみが保持されます。
 
-レポートでの時間オプションの使用について詳しくは、この[ チュートリアル ](../tutorials/time-options-visual-rpt-bldr.md)を参照してください。
+レポートでの時間オプションの使用について詳しくは、この[&#x200B; チュートリアル &#x200B;](../tutorials/time-options-visual-rpt-bldr.md)を参照してください。
 
 ## 手順7：レポートの保存
 
@@ -137,7 +148,7 @@ ht-degree: 0%
 
 次に、**[!UICONTROL Save to Dashboard]**&#x200B;をクリックしてレポートを保存できます。
 
-![ ビジュアル Report Builderを使用](../assets/save-to-dashboard.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/save-to-dashboard.png)
 
 ## レポート出力
 
@@ -145,14 +156,14 @@ ht-degree: 0%
 
 ### グラフ
 
-![ ビジュアル Report Builderを使用](../assets/RB_Chart.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/RB_Chart.png)
 
 ### テーブル
 
-![ ビジュアル Report Builderを使用](../assets/RB_Table.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/RB_Table.png)
 
 ### 数値（`scalar`）
 
-![ ビジュアル Report Builderを使用](../assets/RB_Scalar.png)
+![&#x200B; ビジュアル Report Builderを使用](../assets/RB_Scalar.png)
 
 おめでとうございます。 君のおしまいです。

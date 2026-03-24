@@ -5,10 +5,21 @@ exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/SJ-Wbd0AU-cmliKRZgK4g60KuhVRIP9LfAEJ--IyugY
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1597
@@ -50,7 +61,7 @@ ht-degree: 0%
 
 **指標ビューを`Cohort`**&#x200B;に切り替え
 
-![ コホート分析の切り替えオプションを表示するVisual Report Builder](../../assets/visual-report-builder-cohort-toggle.png)
+![&#x200B; コホート分析の切り替えオプションを表示するVisual Report Builder](../../assets/visual-report-builder-cohort-toggle.png)
 
 新しいウィンドウが開き、`Cohort` レポートの詳細を設定できます。
 
@@ -86,7 +97,7 @@ ht-degree: 0%
 
 この値の間隔は`cohort time period`で選択した値と同じように変更され、デフォルトでは値は`12`に設定されます。カレンダーアイコンをクリックして編集しない限り、値は変更されません。
 
-日付オプションを表示する![ コホート時間範囲セレクター](../../assets/cohort-time-range.png)
+日付オプションを表示する![&#x200B; コホート時間範囲セレクター](../../assets/cohort-time-range.png)
 
 #### その他のメモ
 
@@ -98,7 +109,7 @@ ht-degree: 0%
 
 次に、それらをすべてまとめる例を示します。 この例では、`cohort`の初回購入後の注文行動を確認して、そのコホートが今後6か月以内にリピート購入に戻るかどうかを確認します。
 
-![注文コホート ](../../assets/crb_example.gif)
+![注文コホート &#x200B;](../../assets/crb_example.gif)
 
 ### レガシーアーキテクチャ
 
@@ -112,7 +123,7 @@ ht-degree: 0%
 
 `Cohort`分析を実行しています！ ここでは、売上が時間の経過とともに累積およびユーザーごとに増加していることを確認できます。
 
-このセクションでは、独自の`cohort`分析の作成について説明します。 例（およびプロセスを示すアニメーション GIF）については、このトピックの[例セクション ](#examples)を参照してください。
+このセクションでは、独自の`cohort`分析の作成について説明します。 例（およびプロセスを示すアニメーション GIF）については、このトピックの[例セクション &#x200B;](#examples)を参照してください。
 
 1. 左側のタブの&#x200B;**[!UICONTROL Report Builder]**&#x200B;または任意のダッシュボードの&#x200B;**[!UICONTROL Add Report** > **Create Report]**&#x200B;をクリックします。
 
@@ -158,7 +169,7 @@ ht-degree: 0%
 
 別のテーブルから結合された`cohort date`によってユーザーをグループ化することを選択した場合、`counting members in the … table` オプションが表示される場合があります。
 
-![独立モードと累積モードを示すコホート数メンバーオプション ](../../assets/Cohort_Counting_Members_option.png)
+![独立モードと累積モードを示すコホート数メンバーオプション &#x200B;](../../assets/Cohort_Counting_Members_option.png)
 
 この設定を理解する例を見てください。 `Revenue`指標を`Customer's registration date`でコホートするレポートを作成したとします。 また、視点`Average value per cohort member`を使用して、購入者あたりの売上高を経時的に確認する必要もあります。 購入者一人あたりの平均価値を見つけるには、分割する購入者の数を決める必要があります。 `customers` テーブルの登録済み顧客の数か、または同じ期間の`orders table`の個別の購入者の数か？
 
@@ -172,7 +183,7 @@ ht-degree: 0%
 
 [視点](#perspectives)を参照してください。
 
-異なる表示オプションを表示する![ コホート遠近メニュー](../../assets/Cohort_Perspective_Menu.png)
+異なる表示オプションを表示する![&#x200B; コホート遠近メニュー](../../assets/Cohort_Perspective_Menu.png)
 
 ## コホート分析の例 {#examples}
 
@@ -180,7 +191,7 @@ ht-degree: 0%
 
 ### ユーザー`cohorts`が時間の経過とともにどのように増加しているのかを知りたい。
 
-![ ユーザー`cohorts`が時間の経過とともに増加](../../assets/cohort1.gif)
+![&#x200B; ユーザー`cohorts`が時間の経過とともに増加](../../assets/cohort1.gif)
 
 この例では、`Revenue`指標を分析し、`customer's first order date`でコホートをグループ化し、分析に含める8つの最新の`cohorts` （`Time Period` メニューで定義）を選択しました。 コホートが時間の経過とともにどのように成長するかを確認するには、`Cumulative Average Value per Cohort Member` `perspective`を使用しました。
 
@@ -192,7 +203,7 @@ ht-degree: 0%
 
 ### ユーザーの今後の購買活動と、最初の月のビジネス活動との比較を理解したい。
 
-![ ユーザーの今後の購買活動と最初の活動月の比較](../../assets/cohort3.gif)
+![&#x200B; ユーザーの今後の購買活動と最初の活動月の比較](../../assets/cohort3.gif)
 
 ## `Perspectives` {#perspectives}
 
@@ -216,4 +227,4 @@ ht-degree: 0%
 
 ## まとめ {#finish}
 
-`Cohort Report Builder`は、共通の`cohort date`によってユーザーをグループ化するように最適化されています。 類似のアクティビティや属性によってユーザーをグループ化することもできます。 Adobeでは、[定性コホートに関するこのチュートリアル ](../dev-reports/create-qual-cohort-analysis.md)を参照して開始することをお勧めします。
+`Cohort Report Builder`は、共通の`cohort date`によってユーザーをグループ化するように最適化されています。 類似のアクティビティや属性によってユーザーをグループ化することもできます。 Adobeでは、[定性コホートに関するこのチュートリアル &#x200B;](../dev-reports/create-qual-cohort-analysis.md)を参照して開始することをお勧めします。

@@ -5,11 +5,22 @@ exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/wYrIvoh63fWYcfJZ-JyesyNzaYNExbBnHE3-JnvJ0FQ
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 826
@@ -31,7 +42,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| SELECT アスタリスク ![を使用した](../../mbi/assets/Select_all_1.png)SQL クエリ | ![特定の列を選択するSQL クエリ ](../../mbi/assets/Select_all_2.png) |
+| SELECT アスタリスク ![を使用した](../../mbi/assets/Select_all_1.png)SQL クエリ | ![特定の列を選択するSQL クエリ &#x200B;](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -45,7 +56,7 @@ FULL OUTER JOIN クエリの書き換え方法を確認します。
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| ![完全な外部結合を含むSQL クエリ ](../../mbi/assets/Full_Outer_Join_1.png) | 最適化された結合![を含む](../../mbi/assets/Full_Outer_Join_2.png)SQL クエリ |
+| ![完全な外部結合を含むSQL クエリ &#x200B;](../../mbi/assets/Full_Outer_Join_1.png) | 最適化された結合![を含む](../../mbi/assets/Full_Outer_Join_2.png)SQL クエリ |
 
 {style="table-layout:auto"}
 
@@ -65,7 +76,7 @@ FULL OUTER JOIN クエリの書き換え方法を確認します。
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| ![WHERE句フィルター付きSQL クエリ ](../../mbi/assets/Join_filters_1.png) | ![ON句フィルターを含むSQL クエリ ](../../mbi/assets/Join_filters_2.png) |
+| ![WHERE句フィルター付きSQL クエリ &#x200B;](../../mbi/assets/Join_filters_1.png) | ![ON句フィルターを含むSQL クエリ &#x200B;](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -85,7 +96,7 @@ FULL OUTER JOIN クエリの書き換え方法を確認します。
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| ![NULL チェック付きのLEFT JOINを使用したSQL クエリ ](../../mbi/assets/Exists_1.png) | EXISTS句![を使用する](../../mbi/assets/Exists_2.png)SQL クエリ |
+| ![NULL チェック付きのLEFT JOINを使用したSQL クエリ &#x200B;](../../mbi/assets/Exists_1.png) | EXISTS句![を使用する](../../mbi/assets/Exists_2.png)SQL クエリ |
 
 {style="table-layout:auto"}
 

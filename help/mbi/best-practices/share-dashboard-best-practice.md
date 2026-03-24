@@ -5,10 +5,17 @@ exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
 TQID: https://experienceleague.adobe.com/krvwzmyk7zJ8Wk-XFKxi2iISq7DfVIN6dzPMjaTxmkU
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 377
@@ -26,12 +33,12 @@ ht-degree: 0%
 
 ダッシュボードの所有者を確認するには、左上隅にあるダッシュボードドロップダウンをクリックします。 名前が付いていないダッシュボードは、すべて自分が所有しています。
 
-作成者と権限を示す![ ダッシュボードの所有権インジケーター](../../mbi/assets/Dash_ownership.png)
+作成者と権限を示す![&#x200B; ダッシュボードの所有権インジケーター](../../mbi/assets/Dash_ownership.png)
 
 重複するダッシュボードをすべて削除するには：
 
 1. チームで同期し、ダッシュボードを管理する必要があるユーザーを特定します。
-1. [ メインユーザーが共有しているダッシュボードを除く、類似するすべてのダッシュボードから自分の共有を解除する](../data-user/dashboards/leave-dashboard.md)。
+1. [&#x200B; メインユーザーが共有しているダッシュボードを除く、類似するすべてのダッシュボードから自分の共有を解除する](../data-user/dashboards/leave-dashboard.md)。
 1. ダッシュボードのコピーがある場合は、[削除します](../data-user/dashboards/deleting-dashboard.md)。
 1. 他のユーザーにダッシュボードのバージョンの削除を依頼します。
 
@@ -41,7 +48,7 @@ ht-degree: 0%
 
 ## 新規ユーザーとダッシュボードを共有する
 
-新規ユーザーは、組織全体で共有されていない一部のダッシュボードにアクセスできるメリットを享受できます。 このような場合、Adobeでは、アカウントの作成時に、ダッシュボードの所有者[が関連するダッシュボード ](../data-user/dashboards/share-dashboard-with-users.md)を新しいユーザーと共有することをお勧めします。
+新規ユーザーは、組織全体で共有されていない一部のダッシュボードにアクセスできるメリットを享受できます。 このような場合、Adobeでは、アカウントの作成時に、ダッシュボードの所有者[が関連するダッシュボード &#x200B;](../data-user/dashboards/share-dashboard-with-users.md)を新しいユーザーと共有することをお勧めします。
 
 ## 編集権限で選択的に設定
 

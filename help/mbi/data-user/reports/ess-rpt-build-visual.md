@@ -5,11 +5,20 @@ exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/GtOv-zjLrzhzmIiYOq-IPn2SY7hkf167FtES5iN1qtI
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 700
@@ -55,25 +64,25 @@ ht-degree: 0%
 
      この例では、顧客が最初の注文を行う際に使用した5つのクーポンコードが見つかりました。
 
-     ![ グループ化：](../../assets/magento-bi-report-builder-group-by-dimensions.png)
+     ![&#x200B; グループ化：](../../assets/magento-bi-report-builder-group-by-dimensions.png)
 
      `Group By`の詳細には、顧客が使用する各クーポンが一覧表示されます。 最初の注文に使用されたクーポンには、チェックボックスが付いています。 グラフには、最初の注文に使用された各クーポンを表す複数の色付きの線が追加されました。 凡例は、データの各行に対応するように色分けされています。
 
    * 「**[!UICONTROL Apply]**」をクリックして、グループ別の詳細を閉じます。
 
-     ![複数ディメンション ](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
+     ![複数ディメンション &#x200B;](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
    * 各行のデータポイントにカーソルを合わせると、最初の注文を行う際にクーポンを使用した月の顧客数が表示されます。
 
    * データのテーブルには、毎月の列と各クーポンコードの行を含む追加ディメンションが追加されました。
 
-     ![ テーブルデータでグループ化](../../assets/magento-bi-report-builder-group-by-table-data.png)
+     ![&#x200B; テーブルデータでグループ化](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * テーブルの右上隅にある転置（![転置アイコン ](../../assets/magento-bi-btn-transpose.png)）コントロールをクリックして、データの向きを変更します。
+   * テーブルの右上隅にある転置（![転置アイコン &#x200B;](../../assets/magento-bi-btn-transpose.png)）コントロールをクリックして、データの向きを変更します。
 
      データの軸は反転され、テーブルには各クーポンコードの列と各月の行があります。 この方向を読みやすくすることができます。
 
-     ![転置データ ](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
+     ![転置データ &#x200B;](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
 
    **`Date Range`**
 
@@ -91,7 +100,7 @@ ht-degree: 0%
 
      現在、レポートには前四半期のデータのみが週別に含まれています。
 
-     ![週ごとの前四半期のレポート ](../../assets/magento-bi-report-builder-date-range-quarter-by-week-chart.png)
+     ![週ごとの前四半期のレポート &#x200B;](../../assets/magento-bi-report-builder-date-range-quarter-by-week-chart.png)
 
    **グラフの種類**
 
@@ -101,14 +110,14 @@ ht-degree: 0%
 
      | | |
      |-----|-----|
-     | ![折れ線グラフアイコン ](../../assets/magento-bi-btn-chart-line.png) | 折れ線グラフ |
-     | ![横棒アイコン ](../../assets/magento-bi-btn-chart-horz-bar.png) | 横棒グラフ |
-     | ![横積み上げ横棒アイコン ](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 横向き積み上げ棒グラフ |
-     | ![縦棒アイコン ](../../assets/magento-bi-btn-chart-vert-bar.png) | 縦棒グラフ |
-     | ![横向き積み上げ棒アイコン ](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 縦組み横向き積み上げ棒 |
-     | ![円グラフアイコン ](../../assets/magento-bi-btn-chart-pie.png) | 円 |
-     | ![階層チャートアイコン ](../../assets/magento-bi-btn-chart-area.png) | 面グラフ |
-     | ![Funnel チャート アイコン ](../../assets/magento-bi-btn-chart-funnel.png) | ファネル |
+     | ![折れ線グラフアイコン &#x200B;](../../assets/magento-bi-btn-chart-line.png) | 折れ線グラフ |
+     | ![横棒アイコン &#x200B;](../../assets/magento-bi-btn-chart-horz-bar.png) | 横棒グラフ |
+     | ![横積み上げ横棒アイコン &#x200B;](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 横向き積み上げ棒グラフ |
+     | ![縦棒アイコン &#x200B;](../../assets/magento-bi-btn-chart-vert-bar.png) | 縦棒グラフ |
+     | ![横向き積み上げ棒アイコン &#x200B;](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 縦組み横向き積み上げ棒 |
+     | ![円グラフアイコン &#x200B;](../../assets/magento-bi-btn-chart-pie.png) | 円 |
+     | ![階層チャートアイコン &#x200B;](../../assets/magento-bi-btn-chart-area.png) | 面グラフ |
+     | ![Funnel チャート アイコン &#x200B;](../../assets/magento-bi-btn-chart-funnel.png) | ファネル |
 
      {style="table-layout:auto"}
 
@@ -122,7 +131,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Save to Dashboard]**&#x200B;をクリックします。
 
-     ![ ダッシュボードに保存](../../assets/magento-bi-report-builder-save-to-dashboard.png)
+     ![&#x200B; ダッシュボードに保存](../../assets/magento-bi-report-builder-save-to-dashboard.png)
 
 1. ダッシュボードでグラフを表示するには、次のいずれかの操作を行います。
 
@@ -130,4 +139,4 @@ ht-degree: 0%
 
    * メニューで「`Dashboards`」を選択し、現在のダッシュボードの名前をクリックしてリストを表示します。 次に、レポートが保存されたダッシュボードの名前をクリックします。
 
-     ダッシュボードの![ レポート ](../../assets/magento-bi-report-builder-my-dashboard.png)
+     ダッシュボードの![&#x200B; レポート &#x200B;](../../assets/magento-bi-report-builder-my-dashboard.png)

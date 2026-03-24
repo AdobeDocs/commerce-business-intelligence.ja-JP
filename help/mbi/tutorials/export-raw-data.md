@@ -5,11 +5,21 @@ exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
 TQID: https://experienceleague.adobe.com/8n0DUwkiI1BVF5612vCd4jFWx7jwWlfOHg2K3hgWkco
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 491
@@ -19,7 +29,7 @@ ht-degree: 0%
 
 # 生データの書き出し
 
-生データの書き出しを使用すると、Data Warehouseからレコードを書き出し、ダッシュボードの機能を強化している内容を詳しく確認できます。 また、生データの書き出しは、[ データの不一致を特定するのに役立ちます](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)。
+生データの書き出しを使用すると、Data Warehouseからレコードを書き出し、ダッシュボードの機能を強化している内容を詳しく確認できます。 また、生データの書き出しは、[&#x200B; データの不一致を特定するのに役立ちます](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)。
 
 生データの書き出しにより、関連する指標の非正規化と事前集計によって生成された追加の列とディメンションにアクセスできます。 例えば、`User's first order date`は、[!DNL Commerce Intelligence]のユーザーごとに書き出すことができるディメンションですが、データベースでは使用できない場合があります。
 
@@ -40,7 +50,7 @@ ht-degree: 0%
 
 テーブルを[!UICONTROL Manage Data] タブからエクスポートする場合は、[管理者](../administrator/user-management/user-management.md)権限が必要です。
 
-1. **[!UICONTROL Manage Data** > ** データの書き出し&#x200B;**> **Raw データの書き出し]**&#x200B;をクリックします。
+1. **[!UICONTROL Manage Data** > **&#x200B; データの書き出し&#x200B;**> **Raw データの書き出し]**&#x200B;をクリックします。
 1. 最近作成したデータ書き出しの`Export List`が存在する場合は、表示されます。 **[!UICONTROL Add Export]**&#x200B;をクリックして書き出しを作成します。
 1. `New Raw Data Export` ダイアログが表示されます。 ここでは、列とフィルターを選択または選択解除して、書き出しをカスタマイズできます。
 
@@ -67,7 +77,7 @@ ht-degree: 0%
 
 プロセス全体をチャートレベルで確認できます。
 
-![ チャートから生データを書き出すアニメーションのデモ ](../assets/Chart-level_export.gif)
+![&#x200B; チャートから生データを書き出すアニメーションのデモ &#x200B;](../assets/Chart-level_export.gif)
 
 ## 手順2：書き出しのダウンロード {#download}
 
@@ -75,7 +85,7 @@ ht-degree: 0%
 
 書き出しの準備ができているかどうかを確認するには、画面の右上隅にある「**[!UICONTROL Raw Data Exports]**」をクリックします。 「**[!UICONTROL Download]**」をクリックして、書き出しの圧縮された`.csv` ファイルをダウンロードします。
 
-![書き出されたCSV ファイルのダウンロードをアニメーション化したデモ ](../assets/Downloading_export.gif)
+![書き出されたCSV ファイルのダウンロードをアニメーション化したデモ &#x200B;](../assets/Downloading_export.gif)
 
 ## 手順3：履歴エクスポートへのアクセス {#historical}
 

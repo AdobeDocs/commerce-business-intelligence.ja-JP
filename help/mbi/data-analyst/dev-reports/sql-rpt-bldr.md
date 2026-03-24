@@ -5,11 +5,21 @@ exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 TQID: https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1397
@@ -23,13 +33,13 @@ ht-degree: 0%
 >
 >SQL チャートを作成および編集するには、[管理者権限](../../administrator/user-management/user-management.md)が必要です。 `Standard`人のユーザーがダッシュボードでこれらのグラフを並べ替えることができ、`Read-only`人のユーザーが従来のグラフと同じエクスペリエンスを使用できます。 さらに、`Read-only`人のユーザーはクエリのテキストにアクセスできません。
 
-詳細については、[ トレーニング ビデオ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)を参照してください。
+詳細については、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)を参照してください。
 
 [!DNL SQL] （構造化問い合わせ言語）は、データベースとの通信に使用されるプログラミング言語です。 [!DNL Commerce Intelligence]では、[!DNL SQL]を使用して、Data Warehouseからデータを照会または取得します。 ダッシュボードのレポートを見てください。バックグラウンドでは、各レポートに[!DNL SQL] クエリが利用されています。
 
 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)を使用して、Data Warehouseに直接クエリを実行し、結果を表示して、グラフに変換できます。 [!DNL SQL Report Builder]をクリックすると、**[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**&#x200B;を使用したレポートの作成を開始できます。
 
-詳細については、[ トレーニング ビデオ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)を参照してください。
+詳細については、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)を参照してください。
 
 [!DNL SQL Report Builder]を使用すると、Data Warehouseに直接クエリを実行して結果を表示し、すばやくグラフに変換できます。 [!DNL SQL]を使用してレポートを作成する際の最も優れた点は、作成した列を繰り返し更新するために更新サイクルを待つ必要がないことです。 結果が正しく表示されない場合は、期待に合うまで、クエリをすばやく編集して再実行できます。
 
@@ -53,7 +63,7 @@ ht-degree: 0%
 
 ## 詳細を見る
 
-レポートを編集するには、![ ベースのグラフの右上隅にある歯車（](../../assets/gear-icon.png)歯車アイコン [!DNL SQL]）アイコンをクリックし、**[!UICONTROL Edit]**&#x200B;をクリックします。
+レポートを編集するには、![&#x200B; ベースのグラフの右上隅にある歯車（](../../assets/gear-icon.png)歯車アイコン [!DNL SQL]）アイコンをクリックし、**[!UICONTROL Edit]**&#x200B;をクリックします。
 
 ## クエリの記述 {#writing}
 
@@ -73,7 +83,7 @@ ht-degree: 0%
 
 [!DNL SQL] エディターのサイドバーを使用して、指標、テーブル、列をクエリに直接挿入することもできます。クエリにカーソルを合わせて「**[!UICONTROL Insert]**」をクリックします。
 
-![ テーブルを[!DNL SQL] エディターに挿入しています。](../../assets/SQL_RB_Insert_Table.png)
+![&#x200B; テーブルを[!DNL SQL] エディターに挿入しています。](../../assets/SQL_RB_Insert_Table.png)
 
 >[!NOTE]
 >
@@ -85,7 +95,7 @@ ht-degree: 0%
 
 クエリの書き込みが完了したら、**[!UICONTROL Run Query]**&#x200B;をクリックします。 結果は、SQL エディターの下のテーブルに表示されます。
 
-![ クエリを実行して結果を表示しています。](../../assets/SQL_Run_Query.gif)
+![&#x200B; クエリを実行して結果を表示しています。](../../assets/SQL_Run_Query.gif)
 
 結果に問題がある場合は、クエリを編集して、問題が解決するまで再実行できます。
 
@@ -103,9 +113,9 @@ ht-degree: 0%
 
 ここでは、そのプロセスの概要を解説します。
 
-![SQL Report Builder ビジュアライゼーションの概要のアニメーション デモ ](../../assets/SQL_RB_viz_overview.gif)
+![SQL Report Builder ビジュアライゼーションの概要のアニメーション デモ &#x200B;](../../assets/SQL_RB_viz_overview.gif)
 
-ビジュアライゼーションの作成方法について詳しくは、[SQL クエリからのビジュアライゼーションの作成チュートリアル ](../../tutorials/create-visuals-from-sql.md){: target="_blank"}を参照してください。
+ビジュアライゼーションの作成方法について詳しくは、[SQL クエリからのビジュアライゼーションの作成チュートリアル &#x200B;](../../tutorials/create-visuals-from-sql.md){: target="_blank"}を参照してください。
 
 ## レポートの保存 {#save}
 
@@ -154,7 +164,7 @@ ht-degree: 0%
 
 #### `Report Builder`対`SQL Report Builder`
 
-[!DNL SQL Report Builder]を使用すると、グラフを作成および構造化する際に柔軟性が向上します。例えば、`X`軸と`Y`軸に表示する値を選択できます。 [!DNL SQL Report Builder]でのグラフの作成について詳しくは、[ クエリからのビジュアライゼーションの作成 [!DNL SQL]  チュートリアルを参照してください。](../../tutorials/create-visuals-from-sql.md)
+[!DNL SQL Report Builder]を使用すると、グラフを作成および構造化する際に柔軟性が向上します。例えば、`X`軸と`Y`軸に表示する値を選択できます。 [!DNL SQL Report Builder]でのグラフの作成について詳しくは、[&#x200B; クエリからのビジュアライゼーションの作成 [!DNL SQL]  チュートリアルを参照してください。](../../tutorials/create-visuals-from-sql.md)
 
 #### `Cohort Report Builder` {#cohortrb}
 
@@ -179,4 +189,4 @@ ht-degree: 0%
 
 ## まとめ {#wrapup}
 
-もう少し難しいことをしたい場合は、視覚化のために最適化されたクエリを書いてみましょう。 開始するには、[ クエリからのビジュアライゼーションの作成 [!DNL SQL]  チュートリアル ](../../tutorials/create-visuals-from-sql.md){: target="_blank"}を参照してください。
+もう少し難しいことをしたい場合は、視覚化のために最適化されたクエリを書いてみましょう。 開始するには、[&#x200B; クエリからのビジュアライゼーションの作成 [!DNL SQL]  チュートリアル &#x200B;](../../tutorials/create-visuals-from-sql.md){: target="_blank"}を参照してください。

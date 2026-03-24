@@ -5,11 +5,20 @@ exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 TQID: https://experienceleague.adobe.com/IsDW3nNBF840BAd4zIhCDmHvFAFJv-1oQmrJw5MKh0Q
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 541
@@ -21,10 +30,10 @@ ht-degree: 0%
 
 [!DNL PostgreSQL] データベースを[!DNL Commerce Intelligence]経由で`SSH tunnel`に接続するには、次の操作を行う必要があります。
 
-1. [ [!DNL Commerce Intelligence] 公開鍵を取得](#retrieve)
-1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
-1. [ [!DNL Linux] の [!DNL Commerce Intelligence] ユーザーを作成](#linux)
-1. [ [!DNL PostgreSQL] の [!DNL Commerce Intelligence] ユーザーを作成](#postgres)
+1. [&#x200B; [!DNL Commerce Intelligence] 公開鍵を取得](#retrieve)
+1. [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+1. [&#x200B; [!DNL Linux] の [!DNL Commerce Intelligence] ユーザーを作成](#linux)
+1. [&#x200B; [!DNL PostgreSQL] の [!DNL Commerce Intelligence] ユーザーを作成](#postgres)
 1. [接続とユーザー情報を [!DNL Commerce Intelligence]に入力します](#finish)
 
 ## [!DNL Commerce Intelligence] [!DNL public key]を取得しています {#retrieve}
@@ -48,7 +57,7 @@ ht-degree: 0%
 
 ## [!DNL Linux]の[!DNL Commerce Intelligence] ユーザーを作成しています {#linux}
 
-これは、リアルタイム（または頻繁に更新される）データを含む限り、実稼動マシンまたはセカンダリマシンにすることができます。 [ サーバーに接続する権利を保持している限り、このユーザー](../../../administrator/account-management/restrict-db-access.md)を任意の方法で[!DNL PostgreSQL]制限できます。
+これは、リアルタイム（または頻繁に更新される）データを含む限り、実稼動マシンまたはセカンダリマシンにすることができます。 [&#x200B; サーバーに接続する権利を保持している限り、このユーザー](../../../administrator/account-management/restrict-db-access.md)を任意の方法で[!DNL PostgreSQL]制限できます。
 
 1. 新しいユーザーを追加するには、次のコマンドを[!DNL Linux] サーバー上のルートとして実行します。
 

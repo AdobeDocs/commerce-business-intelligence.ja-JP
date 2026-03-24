@@ -5,10 +5,19 @@ exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/j6-YcGwVWr3-ZmGEBtOCCL8YgDmXM81b5uHC310fxwQ
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 937
@@ -48,6 +57,6 @@ ht-degree: 0%
 
 ## このグラフのバリエーションは何ですか？
 
-便利な`cohort`分析には様々な種類があります。 最も一般的なバリエーションは、[ ユーザー獲得ソースによるフィルタリング ](../analysis/most-value-source-channel.md)です。 例えば、`organic`検索、`paid`検索、またはアフィリエイトプログラムから来た顧客については、このグラフを見ることができます。 これにより、ある顧客獲得ソースの顧客が、他の顧客よりもロイヤルティが高く、価値があるかどうかを把握できます。 デモグラフィックやその他のユーザー属性でフィルタリングすることもできます。
+便利な`cohort`分析には様々な種類があります。 最も一般的なバリエーションは、[&#x200B; ユーザー獲得ソースによるフィルタリング &#x200B;](../analysis/most-value-source-channel.md)です。 例えば、`organic`検索、`paid`検索、またはアフィリエイトプログラムから来た顧客については、このグラフを見ることができます。 これにより、ある顧客獲得ソースの顧客が、他の顧客よりもロイヤルティが高く、価値があるかどうかを把握できます。 デモグラフィックやその他のユーザー属性でフィルタリングすることもできます。
 
 データを分析するもうひとつの方法は、累積データではなく段階的なデータの視点です。 これは、平均ユーザーが取得した後の各月に費やした増分額を示しています。 これは、既存ユーザーから得られるリピート購入数を予測するのに役立ちます。 この点は、収益以外にも確認できます。 例えば、招待状、投票、メッセージなどの利益率や非財務指標などがあります。

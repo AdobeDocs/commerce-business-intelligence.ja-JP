@@ -5,11 +5,24 @@ exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/pdmp5wyeWdjrebZlZ9j4u3OJBb-LpADk6Uib-bWy1Vc
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1293
@@ -75,7 +88,7 @@ ht-degree: 0%
 
 ### 先頭および末尾のゼロを含む値 {#zeroes}
 
-ファイル内の一部の値（郵便番号やIDなど）は、ゼロで始まるか、ゼロで終わることがあります。 ゼロが適切に保持され、アップロードされるようにするには、書式設定の種類（[からテキスト ](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us)など）を変更するか、数値の書式設定を適用します。
+ファイル内の一部の値（郵便番号やIDなど）は、ゼロで始まるか、ゼロで終わることがあります。 ゼロが適切に保持され、アップロードされるようにするには、書式設定の種類（[からテキスト &#x200B;](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us)など）を変更するか、数値の書式設定を適用します。
 
 数値の書式設定を変更する方法の例として、`US ZIP codes`を使用してください。 [!DNL Excel]で、`ZIP codes`と[を含む列を強調表示し、数値形式](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us)を`ZIP code`に変更します。 カスタム数値形式を選択し、`Type` ウィンドウに`00000`と入力します。 この方法では、一部のコードが`00000`形式で、他のコードが`00000-0000`形式の場合に問題が発生する可能性があることに注意してください。
 
@@ -111,11 +124,11 @@ ht-degree: 0%
 
 ビジュアルが必要な場合は、プロセス全体を確認しましょう。
 
-![追加されるデータを示すファイルアップロードプロセスのアニメーションデモ ](../../../assets/fileupload.gif)
+![追加されるデータを示すファイルアップロードプロセスのアニメーションデモ &#x200B;](../../../assets/fileupload.gif)
 
 アップロードされたテーブルは、Data Warehouse Managerのテーブルリストの「**ファイルアップロード**」セクション（すべてのテーブルおよび同期済みテーブルの両方）に表示されます。
 
-![ データ読み込み用に使用可能なテーブルを表示するテーブルインターフェイスのアップロード ](../../../assets/upload-tables.png)
+![&#x200B; データ読み込み用に使用可能なテーブルを表示するテーブルインターフェイスのアップロード &#x200B;](../../../assets/upload-tables.png)
 
 ## 既存のテーブルへのデータの更新または追加 {#appending}
 
@@ -159,4 +172,4 @@ ht-degree: 0%
 
 ## サードパーティリソース
 
-* [[!DNL Google Docs]  データ形式ガイド ](https://support.google.com/docs/answer/56470?hl=en)
+* [[!DNL Google Docs]  データ形式ガイド &#x200B;](https://support.google.com/docs/answer/56470?hl=en)

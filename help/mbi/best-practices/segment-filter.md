@@ -5,11 +5,23 @@ exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/bfu4JUbmC5QrHIgnTbZ-AW1fLsrGj-TKd-BpEvpjJRk
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 911
@@ -25,7 +37,7 @@ ht-degree: 0%
 
 ここでは、顧客に推奨されることが多い重要なセグメントについて取り上げます。 また、これらのセグメントがどのような質問に答えるのに役立つかについても詳しく説明します。 技術的には、セグメントはデータベース内のデータ列です。 [!DNL Adobe Commerce Intelligence]では、ディメンションと呼ばれます。
 
-重要な顧客セグメントとフィルターを表示する![ ダッシュボード ](../../mbi/assets/mbi-critical-segments.png)
+重要な顧客セグメントとフィルターを表示する![&#x200B; ダッシュボード &#x200B;](../../mbi/assets/mbi-critical-segments.png)
 
 
 ## ユーザーセグメント
@@ -35,8 +47,8 @@ ht-degree: 0%
 * **年齢/誕生年**：ユーザーの年齢は？ 最もアクティブなユーザーは何歳か？ 通常、より効果的な分析をおこなうために、値を範囲にバケット化することは理にかなっています。
 * **性別**：異なる性別が異なる方法でweb サイトを利用しますか？
 * **住所**: ユーザーの出身地 マーケティング施策を特定の地域に集中させるべきか？ 最近の広告キャンペーンは、ターゲット地域で期待どおりに実行されていますか？
-* **顧客獲得ソース**\: ユーザーの出身地のマーケティングチャネルを知っていますか？ 広告をクリックしたのか、検索で見つけたのか？ [ ユーザー獲得ソース別にデータをセグメント化](../data-analyst/analysis/google-track-user-acq.md)することは、新規顧客獲得を最適化するための最初のステップです。 ステップ 2は、より多くのお金を使うことです。
-* **登録デバイス**：ユーザーはモバイルアプリまたはweb サイトを通じて登録しましたか？ iOSとAndroid™? モバイルユーザー基盤は、モバイル製品を開発するためにより多くのリソースを割り当てるのに十分な規模を備えていますか？ これをまだ追跡していない場合は、このトピック [ ユーザーデバイスの追跡について](../data-analyst/analysis/track-usr-dev-browser.md)を参照してください。
+* **顧客獲得ソース**\: ユーザーの出身地のマーケティングチャネルを知っていますか？ 広告をクリックしたのか、検索で見つけたのか？ [&#x200B; ユーザー獲得ソース別にデータをセグメント化](../data-analyst/analysis/google-track-user-acq.md)することは、新規顧客獲得を最適化するための最初のステップです。 ステップ 2は、より多くのお金を使うことです。
+* **登録デバイス**：ユーザーはモバイルアプリまたはweb サイトを通じて登録しましたか？ iOSとAndroid™? モバイルユーザー基盤は、モバイル製品を開発するためにより多くのリソースを割り当てるのに十分な規模を備えていますか？ これをまだ追跡していない場合は、このトピック [&#x200B; ユーザーデバイスの追跡について](../data-analyst/analysis/track-usr-dev-browser.md)を参照してください。
 * **参照元**：上位のインフルエンサーは誰ですか？ 他のユーザーから直接紹介されたユーザー数は？
 * **業界**:B2B企業の場合、ユーザーが働く業界はどれですか？ どの貿易機関が参加する価値がありますか？
 * **アンケート回答**：顧客アンケートを実施する場合は、回答をセグメントとして使用して、より詳細なプロファイリングを行います。 利用者について既に把握している情報を補完する質問をしたり、推測を裏付けたりすることができます。
@@ -77,7 +89,7 @@ ht-degree: 0%
 
 上記のディメンションで指標をセグメント化する最初の手順は、このデータをデータベースで追跡することです。 追跡されていない場合は、技術部門に相談し、データの追跡を開始する方法を見つけましょう。
 
-データがデータベースで追跡されていることを確認したら、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)に連絡して、ディメンションを[!DNL Commerce Intelligence]指標とグラフにプッシュします。 *フィールド管理* ツールを使用して、[!DNL Commerce Intelligence]でこれらのフィールドを追跡することもできます。
+データがデータベースで追跡されていることを確認したら、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)に連絡して、ディメンションを[!DNL Commerce Intelligence]指標とグラフにプッシュします。 *フィールド管理* ツールを使用して、[!DNL Commerce Intelligence]でこれらのフィールドを追跡することもできます。
 
 ## 関連
 

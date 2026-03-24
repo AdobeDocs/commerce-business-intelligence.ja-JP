@@ -5,11 +5,22 @@ exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/aw43nDwCdBOJ-9D2BKJGV7PV-7c3jGXxhUEgE2utY5A
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 569
@@ -23,7 +34,7 @@ ht-degree: 0%
 
 注文ステータスは変更される可能性がありますが、常に`pending`状態であるとは限りません。 最終的には`complete`または`cancelled`になる可能性があります。 Data Warehouseがこの変更を確実に同期させるには、列で新しい値を再確認する必要があります。
 
-これは、説明した[ レプリケーション方法](../data-warehouse-mgr/cfg-replication-methods.md)とどのように適合しますか？ 再チェックの処理は、選択したレプリケーション方法によって異なります。 再確認を設定する必要がないため、`Modified\_At` レプリケーション メソッドは、値の変更を処理するための最適な選択肢です。 `Auto-Incrementing Primary Key`および`Primary Key Batch Monitoring`のメソッドでは、構成を再確認する必要があります。
+これは、説明した[&#x200B; レプリケーション方法](../data-warehouse-mgr/cfg-replication-methods.md)とどのように適合しますか？ 再チェックの処理は、選択したレプリケーション方法によって異なります。 再確認を設定する必要がないため、`Modified\_At` レプリケーション メソッドは、値の変更を処理するための最適な選択肢です。 `Auto-Incrementing Primary Key`および`Primary Key Batch Monitoring`のメソッドでは、構成を再確認する必要があります。
 
 これらの方法のいずれかを使用する場合、変更可能な列に再チェック用のフラグを付ける必要があります。 方法は3つあります。
 
@@ -62,7 +73,7 @@ Data Warehouseでは、テーブル名をクリックして個々の列を確認
 
 ![Data Warehouse Managerで設定オプションの再確認が表示される](../../assets/dwm-recheck.png)
 
-`Paused`列に`Changes?`が表示されることがあります。 この値は、テーブルの[ レプリケーション メソッド ](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)が`Paused`に設定されている場合に表示されます。
+`Paused`列に`Changes?`が表示されることがあります。 この値は、テーブルの[&#x200B; レプリケーション メソッド &#x200B;](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)が`Paused`に設定されている場合に表示されます。
 
 [!DNL Adobe]では、更新を最適化し、変更可能な列が再確認されていることを確認するために、これらの列を確認することをお勧めします。 データの変更頻度を考慮して、列の再チェック頻度が高い場合は、更新を最適化するために列を減らすことをお勧めします。
 

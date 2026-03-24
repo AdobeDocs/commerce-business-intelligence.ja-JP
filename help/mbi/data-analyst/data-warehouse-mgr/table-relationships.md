@@ -5,11 +5,21 @@ exl-id: e7256f46-879a-41da-9919-b700f2691013
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/5McSfB1jtpVbDci4wIqtMS4iUPqm2bOH2V6ciroFelU
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1041
@@ -21,7 +31,7 @@ ht-degree: 0%
 
 2つの与えられたテーブル間の関係を評価する場合、あるテーブル内で発生する可能性のある事象が別のテーブル内のエンティティに属する可能性がある回数と、その逆の場合を理解する必要があります。 例えば、`users` テーブルと`orders` テーブルを使用します。 この場合、特定の&#x200B;**ユーザー**&#x200B;が配置した&#x200B;**注文**&#x200B;の数と、可能な&#x200B;**ユーザー**&#x200B;と&#x200B;**注文**&#x200B;の数を把握する必要があります。
 
-関係を理解することは、[計算列](../data-warehouse-mgr/creating-calculated-columns.md)と[ ディメンション ](../data-warehouse-mgr/manage-data-dimensions-metrics.md)の精度に影響を与えるため、データの整合性を維持するために不可欠です。 詳しくは、[関係タイプ ](#types)および[Data Warehouseのテーブルの評価方法を参照してください。](#eval)
+関係を理解することは、[計算列](../data-warehouse-mgr/creating-calculated-columns.md)と[&#x200B; ディメンション &#x200B;](../data-warehouse-mgr/manage-data-dimensions-metrics.md)の精度に影響を与えるため、データの整合性を維持するために不可欠です。 詳しくは、[関係タイプ &#x200B;](#types)および[Data Warehouseのテーブルの評価方法を参照してください。](#eval)
 
 ## 関係タイプ {#types}
 
@@ -57,7 +67,7 @@ ht-degree: 0%
 
 テーブル間に存在するリレーションシップの種類を考えると、Data Warehouseでテーブルを評価する方法を学習できます。 これらの関係は、複数のテーブルの計算列の定義方法を形成するので、テーブルの関係を識別する方法と、テーブルが属する側（`one`または`many`）を理解することが重要です。
 
-Data Warehouse内の特定のテーブルのペアの関係を評価するために使用できる方法は2つあります。 最初の方法では、テーブルのエンティティ同士の相互作用を考慮する[概念フレームワーク ](#concept)を使用します。 2番目のメソッドは、[ テーブルのスキーマ ](#schema)を使用します。
+Data Warehouse内の特定のテーブルのペアの関係を評価するために使用できる方法は2つあります。 最初の方法では、テーブルのエンティティ同士の相互作用を考慮する[概念フレームワーク &#x200B;](#concept)を使用します。 2番目のメソッドは、[&#x200B; テーブルのスキーマ &#x200B;](#schema)を使用します。
 
 ### 概念フレームワークの使用 {#concept}
 
@@ -111,27 +121,27 @@ Data Warehouse内の特定のテーブルのペアの関係を評価するため
 
 例えば、`users` テーブルは、ほとんどのユーザー属性（名前など）をキャプチャし、補足の`user_source` テーブルはユーザー登録ソースをキャプチャします。 各テーブルでは、行は1人のユーザーを表します。
 
-プライマリキーを使用した1対1の関係を示す![ スキーマ図](../../assets/one-to-one1.png)
+プライマリキーを使用した1対1の関係を示す![&#x200B; スキーマ図](../../assets/one-to-one1.png)
 
 ### `One-to-many`
 
 >[!NOTE]
 >
->ゲストの注文を受け付けていますか？ ゲスト注文がテーブルの関係にどのような影響を与えるかについては、[ ゲスト注文](../data-warehouse-mgr/guest-orders.md)を参照してください。
+>ゲストの注文を受け付けていますか？ ゲスト注文がテーブルの関係にどのような影響を与えるかについては、[&#x200B; ゲスト注文](../data-warehouse-mgr/guest-orders.md)を参照してください。
 
 テーブルが`Foreign key`を指す`primary key`を使用してリンクされている場合、この設定は`one-to-many`関係を表します。 片側は`primary key`を含むテーブルで、多くの側は`foreign key`を含むテーブルです。
 
-外部キーを使用した1対多の関係を示す![ スキーマ図](../../assets/one-to-many1.png)
+外部キーを使用した1対多の関係を示す![&#x200B; スキーマ図](../../assets/one-to-many1.png)
 
 ### `Many-to-many`
 
 次のいずれかがtrueの場合、関係は`many-to-many`です。
 
 * `Non-primary key`列は2つのテーブルをリンクするために使用されています
-  プライマリキー以外を使用した多対多の関係を示す![ スキーマ図](../../assets/many-to-many1.png)
+  プライマリキー以外を使用した多対多の関係を示す![&#x200B; スキーマ図](../../assets/many-to-many1.png)
 * 複合`primary key`の一部は、2つのテーブルをリンクするために使用されます
 
-複合プライマリキーを使用した多対多の関係を示す![ スキーマ図](../../assets/many-to-mnay2.png)
+複合プライマリキーを使用した多対多の関係を示す![&#x200B; スキーマ図](../../assets/many-to-mnay2.png)
 
 ## 次のステップ
 

@@ -5,10 +5,17 @@ exl-id: c662cedd-c779-4254-b04b-f3092a538c85
 role: Admin, User
 feature: Reports
 TQID: https://experienceleague.adobe.com/qa6daoMCZ4amPkvXatm77q-wwLpzweOQS5aGVYccqLU
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 725
@@ -67,7 +74,7 @@ ht-degree: 0%
 
 ## グラフ {#charts}
 
-[ グラフ ](../tutorials/using-visual-report-builder.md)を命名する場合、次の式に従うと最も便利です：**（データパースペクティブ） + （指標） + （期間） + （時間間隔）**
+[&#x200B; グラフ &#x200B;](../tutorials/using-visual-report-builder.md)を命名する場合、次の式に従うと最も便利です：**（データパースペクティブ） + （指標） + （期間） + （時間間隔）**
 
 **不正な例：**
 収益
@@ -87,7 +94,7 @@ ht-degree: 0%
 
 ## ディメンション（計算列） {#dimensions}
 
-新しい[ ディメンション ](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)を命名する場合、次の式に従うと最も便利です：**（エンティティ） + （N） + （時間枠） + （計算） + （コメント）**。 例：
+新しい[&#x200B; ディメンション &#x200B;](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)を命名する場合、次の式に従うと最も便利です：**（エンティティ） + （N） + （時間枠） + （計算） + （コメント）**。 例：
 
 ユーザーの最初の30日間の収益
 * ユーザーの注文番号
@@ -95,7 +102,7 @@ ht-degree: 0%
 
 ## フィルターセット {#filterset}
 
-[ フィルターセット ](../data-user/reports/ess-manage-data-filters.md)は、通常、含める情報または除外する情報を説明する方法で名前が付けられます。 例えば、フィルターセットに名前を付ける&#x200B;**注文品目**&#x200B;を使用すると、任意のユーザーがフィルターセットのロジックを表示し、ビジネス全体でカウントされる注文情報を決定する注文情報を把握できます。 フィルターセットは、計算列と指標の両方に適用でき、理解しやすくする必要があることを忘れないでください。
+[&#x200B; フィルターセット &#x200B;](../data-user/reports/ess-manage-data-filters.md)は、通常、含める情報または除外する情報を説明する方法で名前が付けられます。 例えば、フィルターセットに名前を付ける&#x200B;**注文品目**&#x200B;を使用すると、任意のユーザーがフィルターセットのロジックを表示し、ビジネス全体でカウントされる注文情報を決定する注文情報を把握できます。 フィルターセットは、計算列と指標の両方に適用でき、理解しやすくする必要があることを忘れないでください。
 
 ## 指標 {#metrics}
 

@@ -5,11 +5,24 @@ exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 TQID: https://experienceleague.adobe.com/WwUCbK9dC39RSVL8Nf0PdL10wAdxje-9deR20JScqj0
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 567
@@ -49,11 +62,11 @@ ht-degree: 0%
 
 ## `SaaS`統合
 
-![ サポートされている様々なプラットフォームを示すSaaS統合アイコン ](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
+![&#x200B; サポートされている様々なプラットフォームを示すSaaS統合アイコン &#x200B;](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
 
 `SaaS`統合は、[[!DNL Google Adwords]](../integrations/google-adwords.md)、[[!DNL Salesforce]](../integrations/salesforce.md)、[[!DNL Zendesk]](../integrations/zendesk.md)などのサービスです。 サードパーティデータはベンダーのサーバー上に存在するため、データベースのデータから直接アクセスすることはできません。
 
-通常、[!DNL Commerce Intelligence]で統合を設定するのは、アカウントの資格情報を入力するだけと同じくらい簡単です。 一部のサービスでは、認証を完了するためにAPI キーが必要になる場合があります。 必要な資格情報を生成する手順については、[統合セクション ](../integrations/integrations.md)を参照してください。
+通常、[!DNL Commerce Intelligence]で統合を設定するのは、アカウントの資格情報を入力するだけと同じくらい簡単です。 一部のサービスでは、認証を完了するためにAPI キーが必要になる場合があります。 必要な資格情報を生成する手順については、[統合セクション &#x200B;](../integrations/integrations.md)を参照してください。
 
 ## ファイルのアップロード
 
@@ -65,20 +78,20 @@ ht-degree: 0%
 
 APIを使用するには、少し技術的な専門知識が必要です。小さなRubyまたはPHP スクリプトの作成とメンテナンスに慣れている人は、資格を持っているだけではありません。
 
-`Import API`の使用を開始する方法について詳しくは、[開発者サイト ](https://developer.adobe.com/commerce/services/reporting/)および[API キーの生成方法](https://developer.adobe.com/commerce/services/reporting/import-api/)を参照してください。
+`Import API`の使用を開始する方法について詳しくは、[開発者サイト &#x200B;](https://developer.adobe.com/commerce/services/reporting/)および[API キーの生成方法](https://developer.adobe.com/commerce/services/reporting/import-api/)を参照してください。
 
 ## 統合の追加
 
 統合を追加するには、**[!UICONTROL Manage Data** > **Connections]**&#x200B;をクリックし、**[!UICONTROL Add a New Data Source]**&#x200B;をクリックします。 追加する統合のアイコンをクリックし、ヘルプトピックの手順に従って設定します。
 
 * [統合に関するFAQ](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [利用可能 ](../integrations/integrations.md)
+* [利用可能 &#x200B;](../integrations/integrations.md)
 * [テーブルの統合](../../../best-practices/consolidating-your-tables.md)
 * [データベースへのアクセスの制限](../../../administrator/account-management/restrict-db-access.md)
 
-**必要な統合が表示されませんか？**&#x200B;一部の統合をアカウントに表示するには、アクティブ化する必要があります。 [!DNL Facebook]のようなものを探しているが、リストに記載されていない場合は、[ サポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)してください。
+**必要な統合が表示されませんか？**&#x200B;一部の統合をアカウントに表示するには、アクティブ化する必要があります。 [!DNL Facebook]のようなものを探しているが、リストに記載されていない場合は、[&#x200B; サポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)してください。
 
-**統合のエラーステータスが表示される場合**、[ トラブルシューティングの節](https://support.magento.com/hc/en-us/sections/360003078151)を参照してヘルプを確認してください。
+**統合のエラーステータスが表示される場合**、[&#x200B; トラブルシューティングの節](https://support.magento.com/hc/en-us/sections/360003078151)を参照してヘルプを確認してください。
 
 ## 更新の正常性を監視する（オプション）
 

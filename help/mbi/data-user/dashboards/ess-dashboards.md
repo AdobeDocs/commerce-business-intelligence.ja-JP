@@ -5,11 +5,20 @@ exl-id: a872344b-ac66-41eb-a471-5a69f8802527
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 TQID: https://experienceleague.adobe.com/Gtb2JIULI8lFIu5uqgN2NlCg-p9Djfy6swWtCkzClUc
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 628
@@ -23,7 +32,7 @@ ht-degree: 0%
 
 レポートを作成し、ダッシュボードに追加し、データをExcelにエクスポートするのは簡単です。 チャートやレポートは、ダッシュボード上の位置にサイズ変更したりドラッグしたりできます。
 
-![ ダッシュボード ](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
+![&#x200B; ダッシュボード &#x200B;](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## ダッシュボードの作成 {#createdash}
 
@@ -33,15 +42,15 @@ ht-degree: 0%
 
 作成するダッシュボードの外観は完全に自分で決めることができます。 ダッシュボードの要素は、ニーズやワークフローに合わせて、任意の方法で配置したりサイズを変更したりできます。
 
-![ サイズ変更ダッシュボード要素を配置](../../assets/arrange_resize_dashboard_element.gif)
+![&#x200B; サイズ変更ダッシュボード要素を配置](../../assets/arrange_resize_dashboard_element.gif)
 
 ### ダッシュボードの作成
 
 1. メニューで、**[!UICONTROL Dashboards]**&#x200B;をクリックします。
 
-1. デフォルトのダッシュボードの名前は、ダッシュボードヘッダーの左上隅に表示されます。 下向き矢印（![下向き矢印アイコン ](../../assets/magento-bi-btn-down.png)）をクリックして、使用可能なオプションを表示します。
+1. デフォルトのダッシュボードの名前は、ダッシュボードヘッダーの左上隅に表示されます。 下向き矢印（![下向き矢印アイコン &#x200B;](../../assets/magento-bi-btn-down.png)）をクリックして、使用可能なオプションを表示します。
 
-   ![ ダッシュボードの作成](../../assets/magento-bi-dashboard-create.png)
+   ![&#x200B; ダッシュボードの作成](../../assets/magento-bi-dashboard-create.png)
 
 1. **[!UICONTROL Create Dashboard]**&#x200B;をクリックします。 次に、次の操作を行います。
 
@@ -53,9 +62,9 @@ ht-degree: 0%
 
    * **[!UICONTROL Create]**&#x200B;をクリックします。
 
-   ![ ダッシュボード名](../../assets/magento-bi-dashboard-create-name.png)
+   ![&#x200B; ダッシュボード名](../../assets/magento-bi-dashboard-create-name.png)
 
-   * 新しいダッシュボードの名前が左上隅に表示されます。 下向き矢印（![下向き矢印アイコン ](../../assets/magento-bi-btn-down.png)）をクリックして、オプションを表示します。 グループを作成した場合、新しいダッシュボードがリストのグループの下に表示されます。
+   * 新しいダッシュボードの名前が左上隅に表示されます。 下向き矢印（![下向き矢印アイコン &#x200B;](../../assets/magento-bi-btn-down.png)）をクリックして、オプションを表示します。 グループを作成した場合、新しいダッシュボードがリストのグループの下に表示されます。
 
 ### レポートを追加
 
@@ -65,11 +74,11 @@ ht-degree: 0%
 
    * ダッシュボードヘッダーで、**[!UICONTROL Add Report]**&#x200B;をクリックします。
 
-     ![ レポートを追加](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![&#x200B; レポートを追加](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. **[!UICONTROL Create Report]**&#x200B;をクリックして&#x200B;**[!UICONTROL Report Builder Options]**&#x200B;を表示します。
 
-   ![Report Builder オプション ](../../assets/magento-bi-report-builder.png)
+   ![Report Builder オプション &#x200B;](../../assets/magento-bi-report-builder.png)
 
 ## ダッシュボード上のアイテムの配置
 
@@ -95,7 +104,7 @@ ht-degree: 0%
 
 *管理者または標準ユーザー*&#x200B;で、アカウントに共有ダッシュボードを追加する場合は、**[!UICONTROL Dashboard Options]**&#x200B;をクリックし、ドロップダウンで&#x200B;**[!UICONTROL Find]**&#x200B;をクリックします。
 
-![ ダッシュボードを検索](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
+![&#x200B; ダッシュボードを検索](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
 
 ### ダッシュボード設定の管理
 

@@ -5,11 +5,22 @@ exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Developer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/xWv7O8UJ6gXxysl6oG1t24ygF-PE4LTanwyrrvoJzQ4
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 665
@@ -64,7 +75,7 @@ ht-degree: 0%
 
 このクエリは、次の結果のテーブルを返します。
 
-![製品、年、月別に販売されたアイテムを含むSQL クエリ結果を示すテーブル ](../assets/SQL_results_table.png)
+![製品、年、月別に販売されたアイテムを含むSQL クエリ結果を示すテーブル &#x200B;](../assets/SQL_results_table.png)
 
 ## 手順2：ビジュアライゼーションの作成
 
@@ -72,7 +83,7 @@ ht-degree: 0%
 
 クエリが最初に実行されると、クエリ内のすべての列が系列としてプロットされるため、レポートが不可解に見える場合があります。
 
-![すべての列が系列としてプロットされた初期SQL レポート ](../assets/SQL_initial_report_results.png)
+![すべての列が系列としてプロットされた初期SQL レポート &#x200B;](../assets/SQL_initial_report_results.png)
 
 この例では、時間の経過に伴って変化する折れ線グラフにする必要があります。 作成するには、次の設定を使用します。
 
@@ -88,13 +99,13 @@ ht-degree: 0%
 
 次に、クエリの実行からレポートの設定まで、このビジュアライゼーションをどのように作成したかを簡単に説明します。
 
-![SQL レポートのビジュアライゼーション設定のアニメーション デモ ](../assets/SQL_report_settings.gif)
+![SQL レポートのビジュアライゼーション設定のアニメーション デモ &#x200B;](../assets/SQL_report_settings.gif)
 
 ## 手順3: `Chart Type`を選択
 
 この例では、`Line` グラフの種類を使用しています。 別の`chart type`を使用するには、「グラフのオプション」セクションの上にあるアイコンをクリックして変更します。
 
-![折れ線、棒、領域、その他のビジュアライゼーションオプションを含む使用可能なチャートタイプアイコン ](../assets/Chart_types.png)
+![折れ線、棒、領域、その他のビジュアライゼーションオプションを含む使用可能なチャートタイプアイコン &#x200B;](../assets/Chart_types.png)
 
 ## 手順4：ビジュアライゼーションの保存
 
@@ -104,4 +115,4 @@ ht-degree: 0%
 
 ## まとめ
 
-さらに一歩進めたいですか？ [ クエリ最適化のベストプラクティス ](../best-practices/optimizing-your-sql-queries.md)をご覧ください。
+さらに一歩進めたいですか？ [&#x200B; クエリ最適化のベストプラクティス &#x200B;](../best-practices/optimizing-your-sql-queries.md)をご覧ください。

@@ -5,11 +5,20 @@ exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/vEHbYcJUPlGk2eZsKvak9nSYBqOVvnKNSYDEutHMt3g
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 434
@@ -21,7 +30,7 @@ ht-degree: 0%
 
 このトピックでは、ストアのリターンの詳細な分析を提供するダッシュボードを設定する方法を示します。
 
-![返品率と理由を表示する詳細な返品ダッシュボード ](../../assets/detailed-returns-dboard.png)
+![返品率と理由を表示する詳細な返品ダッシュボード &#x200B;](../../assets/detailed-returns-dboard.png)
 
 開始する前に、お客様は[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)のお客様である必要があり、返品に`enterprise\_rma` テーブルを使用していることを確認する必要があります。
 
@@ -67,9 +76,9 @@ ht-degree: 0%
 * **`Order's created at`**
 * 定義を選択：`Joined Column`
 * [!UICONTROL Create Path]:
-* 
+* &#x200B;
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* 
+* &#x200B;
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * [!UICONTROL table]を選択：`sales_flat_order`
@@ -88,9 +97,9 @@ ht-degree: 0%
 * **`return_date_requested`**
 * 定義を選択：`Joined Column`
 * [!UICONTROL Create Path]:
-   * 
+   * &#x200B;
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * 
+   * &#x200B;
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * [!UICONTROL table]を選択：`enterprise_rma`
@@ -163,14 +172,14 @@ ht-degree: 0%
 
 * 数式：再発注確率
 * [!UICONTROL Formula]: `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL間隔]: `None`
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
-* 
+* &#x200B;
   [!UICONTROL チャートタイプ]: `Bar`
 
 * **平均返品時間（常に）**
@@ -178,9 +187,9 @@ ht-degree: 0%
 * [!UICONTROL Metric]: `Avg time between order and return`
 
 * [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL間隔]: `None`
-* 
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
+* &#x200B;
   [!UICONTROL チャートタイプ]: `Number`
 
 * 返品率&#x200B;**返品率**
@@ -194,12 +203,12 @@ ht-degree: 0%
 
 * 計算式：返品付き注文の%
 * [!UICONTROL Formula]: `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL間隔]: `None`
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
 * **月までに返された収益**
@@ -208,7 +217,7 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
-* 
+* &#x200B;
   [!UICONTROL チャートタイプ]: `Line`
 
 * **リターンを行い、再購入しなかった顧客**
@@ -219,11 +228,11 @@ ht-degree: 0%
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL間隔]: `None`
-* 
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
+* &#x200B;
   [!UICONTROL グループ化：]: `Customer_email`
-* 
+* &#x200B;
   [!UICONTROL チャートタイプ]: `Table`
 
 * **項目別の返品率**
@@ -236,16 +245,16 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL間隔]: `None`
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
-* 
+* &#x200B;
   [!UICONTROL チャートタイプ]: `Table`
 
 すべてのレポートをまとめた後、必要に応じてダッシュボード上でレポートを整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 
-この分析の構築中に質問が発生した場合、またはプロフェッショナルサービスチームに連絡する場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+この分析の構築中に質問が発生した場合、またはプロフェッショナルサービスチームに連絡する場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
