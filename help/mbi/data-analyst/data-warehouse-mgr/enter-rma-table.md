@@ -5,21 +5,12 @@ exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/ofPlk5xNr8aspjFlpzEtDtjcOPm9DrQFYX9-vPDfK6w
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: ad4dda927f0b1b2eba9596d7adfd1419676cf03d
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -38,11 +29,11 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |---|---|
-| `entity\_id` | テーブルの一意のID。 各`entity\_id`は返品要求を表します。 |
-| `date\_requested` | 返品がリクエストされた日付。 |
+| `entity_id` | テーブルの一意のID。 各`entity_id`は返品要求を表します。 |
+| `date_requested` | 返品がリクエストされた日付。 |
 | `status` | 返品のステータス。 値には、「received」、「pending」、「authorized」などがあります。 |
-| `order\_id` | `sales\_flat\_order` テーブルに関連付けられている外部キー。 |
-| `customer\_id` | `customer\_entity` テーブルに関連付けられている外部キー。 |
+| `order_id` | `sales_flat_order` テーブルに関連付けられている外部キー。 |
+| `customer_id` | `customer_entity` テーブルに関連付けられている外部キー。 |
 
 {style="table-layout:auto"}
 
@@ -50,9 +41,9 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |---|---|
-| `Order's created\_at` | これは元の注文の日付です。 これは、注文と返品要求の間の時間を取得するために使用できます。 |
+| `Order's created_at` | これは元の注文の日付です。 これは、注文と返品要求の間の時間を取得するために使用できます。 |
 | `Customer's order number` | これは、元の注文に関連付けられている顧客の注文番号です。 |
-| `Seconds between order's created\_at and return's date\_requested` | 注文日から返品要求までの秒数。 |
+| `Seconds between order's created_at and return's date_requested` | 注文日から返品要求までの秒数。 |
 | `Return's total value` | これは、返される金額の合計です。 これは、各返品項目の個々の返品額の合計です。 |
 
 {style="table-layout:auto"}
@@ -61,9 +52,9 @@ ht-degree: 0%
 
 | **指標の名前** | **説明** | **建設** |
 |---|---|---|
-| `Number of returns` | リクエストされた返品数。 | `Operation`列：`entity id`<br>`Operation`: `Count`<br>`Timestamp`列：`date requested` |
+| `Number of returns` | リクエストされた返品数。 | `Operation`列：`entity_id`<br>`Operation`: `Count`<br>`Timestamp`列：`date requested` |
 | `Total returned amount` | 返された金額の合計。 | `Operation `列：`Return's total value`<br>`Operation`：合計<br>`Timestamp`列：要求日 |
-| `Average returned amount` | 返された金額の平均。 | `Operation` ` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp`列：`date requested` |
+| `Average returned amount` | 返された金額の平均。 | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp`列：`date requested` |
 | `Average time to return` | 注文から返品までの平均時間。 | `Operation`列：注文の作成日から返品日までの秒数が要求された日<br>`Operation`: `Average`<br>`Timestamp`列：`date requested` |
 
 {style="table-layout:auto"}
