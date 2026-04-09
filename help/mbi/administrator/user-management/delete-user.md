@@ -1,30 +1,45 @@
 ---
 title: Adobe Commerce Intelligence ユーザーの削除または再アクティブ化
-description: ユーザーを削除する方法  [!DNL Commerce Intelligence]  説明します。
+description: ' [!DNL Commerce Intelligence]  ユーザーを削除する方法を説明します。'
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b6935462-7263-4ced-a703-60de6a5aeb2d
+subfeature_v2:
+  - id: d971c7be-3e54-4af9-807c-8d1f9f7b22df
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: 190
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Commerce Intelligence] ユーザーの削除
 
-ユーザーを削除するには、右上隅のアカウントドロップダウンに移動します。 「**[!UICONTROL Manage Users]**」をクリックし、削除するアカウントを選択して「**[!UICONTROL Deactivate User]**」をクリックします。
+ユーザーは、右上隅のアカウントドロップダウンに移動して削除できます。 **[!UICONTROL Manage Users]**&#x200B;をクリックし、削除するアカウントを選択して、**[!UICONTROL Deactivate User]**&#x200B;をクリックします。
 
 >[!NOTE]
 >
->ユーザーを削除する前に、保持するグラフがあるかどうかを確認できます。 [!DNL Adobe Commerce Intelligence] サポートは、ユーザーのダッシュボードを共有できるので、必要なもののみを保存できます。 サポートは、すべてのダッシュボードを自分のアカウントにプッシュして、所有権を自分に転送することもできます。 [&#x200B; お問い合わせ &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket) ください。
+>ユーザーを削除する前に、保持するチャートがあるかどうかを確認する必要があります。 [!DNL Adobe Commerce Intelligence] サポートは、ユーザーのダッシュボードを共有できます。これにより、必要なものだけを保存できます。 サポートは、すべてのダッシュボードをアカウントにプッシュして、所有権を自分に転送することもできます。 [&#x200B; サポートが必要な場合は、](../../guide-overview.md#Submitting-a-Support-Ticket)までお問い合わせください。
 
-## 削除した [!DNL Commerce Intelligence] ユーザーの再アクティブ化
+## 削除した[!DNL Commerce Intelligence] ユーザーを再アクティブ化する
 
-同じメールアドレスでユーザーを作成することで、ユーザーを再アクティブ化できます。 新しいパスワードを作成するためのメールが届き、ログイン時にダッシュボードと設定が復元されます。
+同じメールアドレスを持つユーザーを作成することで、ユーザーを再アクティブ化できます。 その場合、新しいパスワードを作成するための電子メールを受け取り、ログイン時にダッシュボードと設定が復元されます。
 
-そのユーザーのダッシュボードを別のユーザーのアカウントにプッシュするだけでよい場合は、次の操作を行います。
+そのユーザーのダッシュボードを別のユーザーのアカウントにプッシュするだけで済む場合は、次の操作を行います。
 
-1. 削除されたユーザーのメールアドレスを使用して、新しい [!DNL Commerce Intelligence] ユーザーを作成します。
-1. ユーザーを作成したら [&#x200B; サポートに通知 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja) します。 サポートにより、ダッシュボードがお使いのアカウントに転送されます。
-1. Adobe サポートから転送の通知が届いたら、そのユーザーを再度削除できます。
+1. 削除されたユーザーの電子メールアドレスを使用して、新しい[!DNL Commerce Intelligence] ユーザーを作成します。
+1. ユーザーを作成した後、[&#x200B; サポートに通知](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)します。 サポートは、ダッシュボードをアカウントに転送します。
+1. Adobe サポートから転送が通知されたら、ユーザーを再度削除できます。
