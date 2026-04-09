@@ -1,12 +1,18 @@
 ---
 title: アカウント設定の管理
-description: Data Warehouse用にアカウント設定をカスタマイズする方法を説明します。
+description: Data Warehouseのアカウント設定をカスタマイズする方法について説明します。
 exl-id: 847d51b1-287e-4c14-b64e-0bd9bfcccedc
 role: Admin, User
 feature: Accounts
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b6935462-7263-4ced-a703-60de6a5aeb2did: bd989d82-1e15-4534-88db-f1f51dd77ffa
+subfeature_v2: id: a763c1a2-1d0a-40d7-9617-8139636fd12e
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: 349
 ht-degree: 0%
 
 ---
@@ -15,22 +21,22 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[&#x200B; 管理者権限 &#x200B;](../../administrator/user-management/user-management.md) が必要です。
+>[管理者権限が必要です。](../../administrator/user-management/user-management.md)
 
-[!DNL Commerce Intelligence] アカウントでは、Data Warehouse用にアカウント設定をカスタマイズできます。 これらのフィールドにアクセスするには、画面の右上隅にある組織名を選択し、ドロップダウンから「**[!UICONTROL Account Settings]**」を選択します。
+[!DNL Commerce Intelligence] アカウントでは、Data Warehouseのアカウント設定をカスタマイズできます。 これらは、任意の画面の右上隅にある組織名を選択し、ドロップダウンから「**[!UICONTROL Account Settings]**」を選択することでアクセスできます。
 
-* **[!UICONTROL Client Name:]** この設定は、アカウント全体のすべてのダッシュボードおよび他の場所の右上隅に表示されます。 **[!UICONTROL "Vandelay Industries Co., Ltd]** を **[!UICONTROL "Vandelay]** のみに変更する場合は、ここで行います。
+* **[!UICONTROL Client Name:]**&#x200B;この設定は、アカウント内のすべてのダッシュボードの右上隅および他の場所に表示されます。 **[!UICONTROL "Vandelay Industries Co., Ltd]**&#x200B;を&#x200B;**[!UICONTROL "Vandelay]**&#x200B;に変更する場合は、ここで行います。
 
-* **[!UICONTROL Currency:]** これは、アカウント内のすべての金額の *デフォルト通貨* です。 10 進数の値または通貨の値がData Warehouseに同期されるたびに、この設定によってレポート内のその値の前に配置される記号が決まります。
+* **[!UICONTROL Currency:]**&#x200B;これは、アカウント内のすべての金銭的価値に対する&#x200B;*デフォルト通貨*&#x200B;です。 小数点以下桁または通貨単位の値がData Warehouseに同期されるたびに、この設定によって、レポート内でその値の前に配置される記号が決まります。
 
-* **[!UICONTROL Blackout Hours:]** この設定により、選択した時間帯は、Data Warehouseが接続されたデータベースにアクセスしなくなります。 すべての時間は 0 時間で東部標準時（EST）で表されます。 例えば、EST の午前 9 時から午後 1 時の間に実稼動データベースにアクセスし :00 い場合は :00&#x200B;**9、10、11、12** という数字の配列を入力する必要があります。
+* **[!UICONTROL Blackout Hours:]**&#x200B;この設定により、選択した時間内に、Data Warehouseが接続されたデータベースにアクセスできなくなります。 すべての時間は、ゼロ時間および東部標準時（EST）で表されます。 例えば、ESTの午前9:00時から午後1:00時の間に実稼動データベースにアクセスしない場合は、次の数字の配列を入力する必要があります。**9、10、11、12**。
 
-* **[!UICONTROL Forced update hours:]** この設定により、Data Warehouseの更新が指定したアカウント *時間* で自動的に開始されます。 ブラックアウト時と同様に、これらは ET にも含まれます。 たとえば、Data Warehouseの更新を **午前 0 時** と **正午** EST に自動的に開始するには、**0, 12** という数字の配列を入力します。
+* **[!UICONTROL Forced update hours:]**&#x200B;この設定により、指定した時間&#x200B;*の間に、アカウント*&#x200B;でData Warehouseの更新が自動的に開始されます。 ブラックアウト時間と同様に、これらはETにも含まれています。 例えば、**午前0時**&#x200B;および&#x200B;**正午** ESTにData Warehouseの更新を自動的に開始する場合は、次の数字の配列&#x200B;**0、12**&#x200B;を入力する必要があります。
 
-* **[!UICONTROL Send email summaries if the data has not updated yet:]** このオプションは、メールの概要の送信がスケジュールされている *いずれかのレポートのデータが更新される前* 状況を管理します。 「**いいえ** を選択した場合、アカウントはスケジュールされた時刻にメールを送信しません。 代わりに、データが更新されると、アカウントによって送信されます。 **[!UICONTROL Yes]** を選択した場合、アカウントはメールを送信し、データが古いことを説明するメッセージを含め、データが更新されると別のメールを送信します。
+* **[!UICONTROL Send email summaries if the data has not updated yet:]**&#x200B;このオプションは、メールの概要が&#x200B;*を送信するようにスケジュールされている場合に、レポート*&#x200B;のデータが更新されるまでの状況を管理します。 **No**&#x200B;を選択した場合、アカウントはスケジュールされた時間に電子メールの送信をスキップします。 データが更新されると、代わりにアカウントから送信されます。 **[!UICONTROL Yes]**&#x200B;を選択すると、アカウントは電子メールを送信し、データが古いことを説明するメッセージを含め、データが更新されると別の電子メールを送信します。
 
-* **[!UICONTROL Enable data updates:]** このオプションを選択すると、データ更新がアカウント上で実行されます。 設定を **[!UICONTROL No]** に変更すると、アカウントでデータ同期と列の計算が停止します。
+* **[!UICONTROL Enable data updates:]**&#x200B;このオプションを使用すると、アカウントでデータ更新が実行されます。 設定を&#x200B;**[!UICONTROL No]**&#x200B;に変更すると、データの同期と列の計算がアカウントで停止します。
 
 >[!NOTE]
 >
->変更を加えた後は、必ず **[!UICONTROL Save Customizations]** を選択してください。
+>変更を加えた後は、必ず&#x200B;**[!UICONTROL Save Customizations]**&#x200B;を選択してください。
