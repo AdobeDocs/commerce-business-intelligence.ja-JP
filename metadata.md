@@ -9,13 +9,13 @@ product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.en
+git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.ja-JP
 role: User
 feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: 121bfdb4e07eadaac09f6fda74f4fd4f582180c9
 workflow-type: tm+mt
 source-wordcount: 173
