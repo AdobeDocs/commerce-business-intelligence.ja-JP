@@ -1,47 +1,48 @@
 ---
 solution: Commerce, Commerce Intelligence
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cc9c1b69-d771-4a04-84d3-df2e3989418f
 landing-page-name: commerce
 landing-page-breadcrumb-title: Commerce
 product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.ja-JP
+git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.en
 role: User
 feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
-source-git-commit: 75aa9f4212e48280c6e1cc96fca3b7f1d203c444
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+source-git-commit: 121bfdb4e07eadaac09f6fda74f4fd4f582180c9
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: 173
 ht-degree: 0%
 
 ---
 
 
-# 内部使用のメタデータ
+# 内部使用のためのメタデータ
 
-`metadata.md` ファイルには、リポジトリ内のファイルに関するユーザーガイドを通じて渡される、リポジトリレベル `TOC.md` メタデータが含まれています。 任意のユーザーガイドの metadata.md コンテンツを変更するには、任意の `TOC.md` ファイルで行います。
+`metadata.md` ファイルには、リポジトリ内のユーザーガイド `TOC.md` ファイルに渡されるリポジトレベルのメタデータが含まれています。 任意のユーザーガイドのmetadata.md コンテンツを変更する場合は、任意の`TOC.md` ファイルで変更します。
 
-| メタデータ | 機能 |
+| metadata | 機能 |
 |--- |--- |
-| solution-title | 記事ヘッダーでリンクとして使用されます |
-| solution-hub-url | helpx ハブページを開きます。 |
+| solution-title | 記事ヘッダーにリンクとして使用 |
+| solution-hub-url | helpx ハブページを開きます |
 | solution-icon | ソリューションタイトルの横にソリューションアイコンを表示します。 まだ実装されていません |
-| getting-started-url | helpx の「はじめに」のページへのリンク |
-| tutorials-url | ビデオチュートリアル（helpx チュートリアルまたは KT チュートリアル）へのリンク |
-| mini-toc-levels | 右側のパネルに表示される見出しレベルの数を決定します。 デフォルトは 2 です |
+| getting-started-url | Helpx入門ページへのリンク |
+| tutorials-url | ビデオチュートリアルへのリンク - helpx チュートリアルまたはKT チュートリアル |
+| ミニ目次レベル | 右側のパネルに表示される見出しレベルの数を指定します。 デフォルトは2です |
 | git-repo | 内部使用のマスターリポジトリの場所を指定します |
 
 {style="table-layout:auto"}
 
-TOC.md ファイル内
+TOC.md ファイル
 
-| メタデータ | 機能 |
+| metadata | 機能 |
 |--- |--- |
-| user-guide-title | 記事ヘッダーでリンクとして使用されます |
-| user-guide-url | helpx ハブページを開きます。 |
+| user-guide-title | 記事ヘッダーにリンクとして使用 |
+| user-guide-url | helpx ハブページを開きます |
 
 {style="table-layout:auto"}
