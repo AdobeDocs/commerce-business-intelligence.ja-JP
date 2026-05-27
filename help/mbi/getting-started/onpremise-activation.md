@@ -24,7 +24,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
 workflow-type: tm+mt
-source-wordcount: 732
+source-wordcount: 748
 ht-degree: 0%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 0%
 
 ![電子メールアドレスと権限レベルのフィールドを含むユーザーフォームを追加](../assets/create-account-5.png)
 
-## [!DNL Commerce Intelligence]管理者に専用の[!DNL Commerce] ユーザーを作成します
+## [!DNL Commerce]管理者に専用の[!DNL Commerce Intelligence] ユーザーを作成します
 
-[!DNL Commerce Intelligence]を使用するには、[!DNL Commerce] プロジェクトに永続的かつ専用のユーザーを追加する必要があります。 この専用ユーザーは、アカウントの[!DNL Commerce] Data Warehouseへの新しいデータの取得と転送を可能にする[!DNL Commerce Intelligence]への永続的な接続として機能します。
+[!DNL Commerce Intelligence]を使用するには、[!DNL Commerce] プロジェクトに永続的かつ専用のユーザーを追加する必要があります。 この専用ユーザーは、アカウントの[!DNL Commerce Intelligence] Data Warehouseへの新しいデータの取得と転送を可能にする[!DNL Commerce]への永続的な接続として機能します。
 
 専用の[!DNL Commerce Intelligence] ユーザーを設定すると、アカウントが非アクティブ化または削除されないことが保証されるので、[!DNL Commerce Intelligence]接続が停止されます。
 
@@ -68,13 +68,13 @@ ht-degree: 0%
 >
 >Adobeでは、永続ステータス（ACI-dedicated、ACI-database-connectorなど）を示すアカウント名を使用することをお勧めします。
 
-管理者で[!DNL Commerce Intelligence]の専用ユーザーを作成した後、[!DNL Commerce]設定が&#x200B;**[!UICONTROL Master]**&#x200B;の`Contributor` プロジェクトのプライマリ環境に同じユーザーを追加します。
+管理者で[!DNL Commerce Intelligence]の専用ユーザーを作成した後、**[!UICONTROL Master]**&#x200B;設定が`Contributor`の[!DNL Commerce] プロジェクトのプライマリ環境に同じユーザーを追加します。
 
 ![Commerceは、役割がコントリビューター](../assets/commerce-add-user-settings.png)に設定されたユーザーインターフェイスを追加します
 
 ## Commerce IntelligenceのSSH キーを取得する
 
-1. [!UICONTROL Connect your database]設定の[!DNL Commerce Intelligence] ページで、下にスクロールして「**[!UICONTROL Encryption settings]**」を選択します。
+1. [!DNL Commerce Intelligence]設定の[!UICONTROL Connect your database] ページで、下にスクロールして「**[!UICONTROL Encryption settings]**」を選択します。
 
 1. **暗号化タイプ**&#x200B;で、`SSH Tunnel`を選択します。
 
@@ -122,9 +122,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobeでは、[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) トンネルを使用してデータベース接続を行うことを強くお勧めします。 ただし、このメソッドがオプションでない場合でも、[!DNL Commerce Intelligence]を使用して[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)をデータベースにリンクできます。
+>Adobeでは、[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) トンネルを使用してデータベース接続を行うことを強くお勧めします。 ただし、このメソッドがオプションでない場合でも、[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)を使用して[!DNL Commerce Intelligence]をデータベースにリンクできます。
 
-[!DNL Commerce Intelligence]画面に[!UICONTROL Connect your Magento Database]情報を入力します。
+[!UICONTROL Connect your Magento Database]画面に[!DNL Commerce Intelligence]情報を入力します。
 
 ![統合名、ホスト、ポート、ユーザー名、パスワード、データベース名のフィールドを使用してデータベース フォームを接続します](../assets/connect-magento-db.png)
 
@@ -184,7 +184,7 @@ ht-degree: 0%
 >
 >[!DNL Adobe Commerce Intelligence Pro]のお客様の場合は、カスタマーサクセスマネージャーまたはカスタマーテクニカルアドバイザーに連絡して、次の手順を調整してください。
 
-設定が完了したら、[あなたの](../getting-started/sign-in.md) アカウントに[!DNL Commerce Intelligence] ログインしてください。
+設定が完了したら、[あなたの[!DNL Commerce Intelligence] アカウントに](../getting-started/sign-in.md) ログインしてください。
 
 <!--
 # Activate your [!DNL Commerce Intelligence] Account

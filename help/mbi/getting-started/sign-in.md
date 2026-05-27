@@ -21,14 +21,14 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 144
+source-wordcount: 147
 ht-degree: 0%
 
 ---
 
 # アクティブな[!DNL Adobe Commerce Intelligence] アカウントにアクセス
 
-[!DNL Commerce Intelligence] オンプレミスまたはクラウド [の](../getting-started/onpremise-activation.md) アカウントをアクティベートし、Adobe アカウントチームと協力して設定手順を完了した後、アカウントにサインインできるようになりました。
+[&#x200B; オンプレミスまたはクラウド &#x200B;](../getting-started/onpremise-activation.md)の[!DNL Commerce Intelligence] アカウントをアクティベートし、Adobe アカウントチームと協力して設定手順を完了した後、アカウントにサインインできるようになりました。
 
 ## [!DNL Adobe ID]でログイン
 
