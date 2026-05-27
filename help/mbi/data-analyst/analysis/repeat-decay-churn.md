@@ -5,11 +5,21 @@ exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/p0WjloeysJZRLnR9F4CoYLXcNP9AGmfW-D56T0N3jjU
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 968
@@ -29,7 +39,7 @@ ht-degree: 0%
 
 ## 推奨される指標
 
-繰り返し確率減衰と解約を分析する場合は、次の指標（[またはビルド ](../../data-user/reports/ess-manage-data-metrics.md)）を使用することを検討してください。
+繰り返し確率減衰と解約を分析する場合は、次の指標（[またはビルド &#x200B;](../../data-user/reports/ess-manage-data-metrics.md)）を使用することを検討してください。
 
 ### 初回リピート注文の可能性
 
@@ -84,7 +94,7 @@ Adobeでは、リピート注文の可能性を把握するために、自社デ
 
 複数の商品を提供している場合、特定の商品を購入する顧客は、時間の経過とともにどのように他の顧客と異なる行動をとるのか疑問に思うかもしれません。 Adobe Experience Platform Data Governanceについて詳しくは、 このチュートリアルでは、顧客が購入した特定の製品に基づいて、顧客コホートの生涯購入行動を調べることができます。
 
-このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されています。 詳細については、[ サポート ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)にお問い合わせください。
+このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されています。 詳細については、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)にお問い合わせください。
 
 ### 関連
 
