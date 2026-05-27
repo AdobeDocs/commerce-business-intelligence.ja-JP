@@ -1,22 +1,21 @@
 ---
 solution: Commerce, Commerce Intelligence
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+usetq: true
 landing-page-name: commerce
 landing-page-breadcrumb-title: Commerce
 product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.ja-JP
+git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.en
 role: User
 feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
-source-git-commit: 121bfdb4e07eadaac09f6fda74f4fd4f582180c9
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+source-git-commit: f229139f3710766875e6778ea3d04221ffc2d2bf
 workflow-type: tm+mt
 source-wordcount: 173
 ht-degree: 0%
