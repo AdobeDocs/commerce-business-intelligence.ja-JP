@@ -24,7 +24,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: 613
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 | `is_active` | 買い物かごが顧客によって作成され、注文に変換されていない場合に「1」を返すブール型フィールド。 変換されたカート、または管理者を通じて作成されたカートの「0」を返します |
 | `items_qty` | 買い物かごに含まれるすべての品目の合計数量の合計 |
 | `reserved_order_id` | `Foreign key`が`sales_order` テーブルに関連付けられています。 `sales_order.increment_id`に参加して、変換済みのカートに関連付けられている注文の詳細を確認します。 変換済み注文に関連付けられていないカートの場合、`reserved_order_id`は`NULL`のままです |
-| `store_id` | `Foreign key`が`store` テーブルに関連付けられています。 `store`に参加しましょう。`store_id`は、どのCommerce ストアビューがカートに関連付けられているかを判断します |
+| `store_id` | `Foreign key`が`store` テーブルに関連付けられています。 `store`に参加しましょう。`store_id` どのCommerce ストアビューがカートに関連付けられているかを判断するには |
 
 {style="table-layout:auto"}
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 | **列名** | **説明** |
 |---|---|
 | `Order date` | コンバージョンしたカートの注文作成日を反映したタイムスタンプ。 `quote.reserved_order_id`を`sales_order.increment_id`に結合し、`sales_order.created_at` フィールドを返すことによって計算されます |
-| `Seconds between cart creation and order` | カート作成から注文作成までの時間。 `created_at`から`Order date`を減算して計算し、秒数の整数値として返されます |
+| `Seconds between cart creation and order` | カート作成から注文作成までの時間。 `Order date`から`created_at`を減算して計算し、秒数の整数値として返されます |
 | `Seconds since cart creation` | カートの作成日から現在までの経過時間。 クエリの実行時にサーバーのタイムスタンプから`created_at`を減算して計算し、整数の秒数で返します。 買い物かごの年齢を特定するために最もよく使用される |
 | `Store name` | この注文に関連付けられているCommerce ストアの名前。 `quote.store_id`を`store.store_id`に結合し、`name` フィールドを返すことによって計算されます |
 

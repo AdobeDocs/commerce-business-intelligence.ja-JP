@@ -26,7 +26,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 811
+source-wordcount: 889
 ht-degree: 0%
 
 ---
@@ -39,13 +39,13 @@ ht-degree: 0%
 
 `sales_order_item`は、購入したすべての[製品タイプ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html?lang=ja#product-types)の詳細をキャプチャします。 [!DNL Adobe Commerce]の一般的な方法は、設定可能な製品、つまり、サイズ、色、その他の製品属性に応じてカスタマイズできる製品を提供することです。 設定可能な製品には独自の`sku`がありますが、複数の単純な製品に関連付けることができます。各単純な製品は一意の製品設定を表します。 詳しくは、[製品の設定](https://developer.adobe.com/commerce/webapi/rest/tutorials/configurable-product/)を参照してください。
 
-例えば、T シャツのような設定可能な商品を考えてみましょう。 顧客がチェックアウトすると、色やサイズを変更するオプションが選択されます。 お客様が`blue`の色と`small`のサイズを選択した場合、親製品`t-shirt-blue-small`に関連する`t-shirt`のような単純な製品が購入されます。
+例えば、T シャツのような設定可能な商品を考えてみましょう。 顧客がチェックアウトすると、色やサイズを変更するオプションが選択されます。 お客様が`blue`の色と`small`のサイズを選択した場合、親製品`t-shirt`に関連する`t-shirt-blue-small`のような単純な製品が購入されます。
 
 設定可能な製品が注文に含まれる場合、2つの行が`sales_order_item` テーブルに生成されます。[simple](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-simple.html?lang=ja) `sku`の1行と[設定可能](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=ja)の親の1行。 `sales_order_item` テーブル内のこれら2つのレコードは、次の結合を通じて相互に関連付けることができます。
 
 * （シンプル） `sales_order_item.parent_item_id` => （設定可能） `sales_order_item.item_id`
 
-したがって、製品の販売を簡単なレベルまたは設定可能なレベルで報告することができます。 デフォルトでは、`order-item-level`内のすべての標準[!DNL Commerce Intelligence]指標は、シンプルな製品を除外するように設定され、設定可能なバージョンについて&#x200B;*のみ*&#x200B;のレポートが表示されます。 これは、`Ordered products we count`が`parent_item_id`の条件でフィルターを実行する`NULL` フィルターセットを通じて実行されます。
+したがって、製品の販売を簡単なレベルまたは設定可能なレベルで報告することができます。 デフォルトでは、[!DNL Commerce Intelligence]内のすべての標準`order-item-level`指標は、シンプルな製品を除外するように設定され、設定可能なバージョンについて&#x200B;*のみ*&#x200B;のレポートが表示されます。 これは、`parent_item_id`が`NULL`の条件でフィルターを実行する`Ordered products we count` フィルターセットを通じて実行されます。
 
 ## 共通の列
 

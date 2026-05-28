@@ -21,14 +21,14 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 362
+source-wordcount: 432
 ht-degree: 0%
 
 ---
 
 # [!DNL Zendesk] データが必要です
 
-[&#x200B; アカウント  [!DNL Zendesk] を接続した後、](../integrations/zendesk.md)Data Warehouse Manager[を使用して、分析用の関連データフィールドを簡単に追跡できます。](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)
+[&#128279;](../integrations/zendesk.md)&#x200B; アカウント  [!DNL Zendesk] を接続した後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。
 
 このトピックでは、[!DNL Zendesk]から[!DNL Adobe Commerce Intelligence]に読み込むことができる主なデータテーブルについて説明します。これには、[!DNL Zendesk] データに関する追加ドキュメントへのリンクが含まれます。
 
@@ -50,4 +50,4 @@ ht-degree: 0%
 ## 関連
 
 * [Zendeskの接続](../integrations/zendesk.md)
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

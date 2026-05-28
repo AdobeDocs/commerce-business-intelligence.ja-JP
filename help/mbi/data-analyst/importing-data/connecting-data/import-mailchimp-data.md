@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ## 送信したデータの書き出し {#sent}
 
-1. `Campaigns`の[!DNL Mailchimp] タブに移動します。
+1. [!DNL Mailchimp]の`Campaigns` タブに移動します。
 
 1. キャンペーン名の横にある「**[!UICONTROL View Report]**」をクリックします。
 

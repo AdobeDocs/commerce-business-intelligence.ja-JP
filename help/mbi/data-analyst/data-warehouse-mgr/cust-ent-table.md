@@ -26,7 +26,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: 604
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 | `email` | アカウントに関連付けられている電子メールアドレス |
 | `entity_id` （PK） | テーブルの一意の識別子。インスタンス内の他のテーブルの`customer_id`への結合で一般的に使用されます |
 | `group_id` | `customer_group` テーブルに関連付けられている外部キー。 `customer_group.customer_group_id`に参加して、登録済みアカウントに関連付けられている顧客グループを決定します |
-| `store_id` | `store` テーブルに関連付けられている外部キー。 `store`に参加しましょう。登録されたアカウントに関連付けられているCommerce ストア ビューを判断する`store_id` |
+| `store_id` | `store` テーブルに関連付けられている外部キー。 `store`に参加しましょう。`store_id` 登録されたアカウントに関連付けられているCommerce ストアビューを判断するには |
 
 {style="table-layout:auto"}
 
@@ -53,11 +53,11 @@ ht-degree: 0%
 
 | **列名** | **説明** |
 |---|---|
-| `Customer's first 30 day revenue` | お客様が最初の注文日から30日以内に行ったすべての注文の収益の合計。 `customer_entity.entity_id`を`sales_order.customer_id`に結合し、`base_grand_total`が2592000い≤すべての注文の`sales_order.Seconds between customer's first order date and this order` フィールドを合計して計算します（30日間の秒数） |
-| `Customer's first order date` | この顧客が最初に行った注文のタイムスタンプ。 `customer_entity.entity_id`に`sales_order.customer_id`を結合し、最小`sales_order`を返すことによって計算されます。`created_at`値 |
+| `Customer's first 30 day revenue` | お客様が最初の注文日から30日以内に行ったすべての注文の収益の合計。 `customer_entity.entity_id`を`sales_order.customer_id`に結合し、`sales_order.Seconds between customer's first order date and this order`が2592000い≤すべての注文の`base_grand_total` フィールドを合計して計算します（30日間の秒数） |
+| `Customer's first order date` | この顧客が最初に行った注文のタイムスタンプ。 `customer_entity.entity_id`から`sales_order.customer_id`に参加し、最小`sales_order`を返すことによって計算されます。`created_at` 値 |
 | `Customer's first order's billing region` | 顧客の最初の注文に関連付けられている請求地域。 `customer_entity.entity_id`を`sales_order.customer_id`に結合し、`Billing address region`を返すことによって計算されます（`sales_order.Customer's order number` = 1） |
 | `Customer's first order's coupon_code` | 顧客の最初の注文に関連付けられたクーポンコード。 `customer_entity.entity_id`を`sales_order.customer_id`に結合し、`sales_order.coupon_code`を返すことによって計算されます（`sales_order.Customer's order number` = 1） |
-| `Customer's group code` | 登録済み顧客のグループ名。 `customer_entity.group_id`から`customer_group`への参加で計算されました。`customer_group_id`と`customer_group_code` フィールドの返し |
+| `Customer's group code` | 登録済み顧客のグループ名。 `customer_entity.group_id`から`customer_group`への参加で計算されました。`customer_group_id` `customer_group_code` フィールドを返しています |
 | `Customer's lifetime number of coupons` | この顧客が行ったすべての注文に適用されたクーポンの合計数。 `customer_entity.entity_id`から`sales_order.customer_id`に参加し、`sales_order.coupon_code`が`NULL`ではない注文数をカウントして計算します |
 | `Customer's lifetime number of orders` | この顧客による注文の合計数です。 `customer_entity.entity_id`を`sales_order.customer_id`に結合し、`sales_order` テーブルの行数をカウントして計算します |
 | `Customer's lifetime revenue` | この顧客が行ったすべての注文の収益の合計。 `customer_entity.entity_id`に`sales_order.customer_id`を結合し、この顧客が行ったすべての注文の`base_grand_total` フィールドを合計して計算します |

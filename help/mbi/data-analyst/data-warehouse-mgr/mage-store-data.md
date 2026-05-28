@@ -22,8 +22,8 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 964
-ht-degree: 2%
+source-wordcount: 962
+ht-degree: 3%
 
 ---
 
@@ -75,18 +75,18 @@ ht-degree: 2%
 * `email` – このフィールドには、新規顧客がアカウントを作成するときに入力する電子メールが入力されます
 * `created_at` – この列は、各ユーザーが参加した時点のタイムスタンプを返します
 
-## `sales\_flat\_order (or Sales\_order`をお持ちの場合は[!DNL Adobe Commerce 2.x]
+## [!DNL Adobe Commerce 2.x]をお持ちの場合は`sales\_flat\_order (or Sales\_order`
 
 アカウントの作成が完了したら、`Sammy Customer`様が購入を開始する準備ができました。 Web サイトで、お客様は`Throwback Bellbottoms`の2組と`V-Neck T-Shirt`の1組をカートに追加します。 選択に満足した後、お客様はチェックアウトに移動し、注文を送信します。[販売注文テーブル &#x200B;](../data-warehouse-mgr/sales-flat-order-table.md)に次のエントリを作成します。
 
-| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
+| **`entity id`** | **`customer id**` | &#x200B;**`subtotal`**&#x200B; | &#x200B;**`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 
 * `entity_id` – これは`sales_flat_order` テーブルのプライマリキーです。
    * Sammy Customerがこの注文を行い、上の行が`sales_flat_order` テーブルに書き込まれると、注文は`entity_id` = 227に割り当てられました。
 * `customer_id` – この列は、この特定の注文を行った顧客の一意のIDです
-   * この注文に関連付けられている`customer_id`は214です。これは、`entity_id` テーブルのSammy Customerの`customer_entity`です。
+   * この注文に関連付けられている`customer_id`は214です。これは、`customer_entity` テーブルのSammy Customerの`entity_id`です。
 * `subtotal` – この列は、注文の顧客に請求された合計金額です
    * 「Throwback Bellbottoms」と「V-Neck T-Shirt」の2組の価格は合計で94.85 ドルでした
 * `created_at` – この列は、各注文が作成されたときのタイムスタンプを返します
@@ -106,10 +106,10 @@ ht-degree: 2%
    * `Sammy Customer`の注文では、このテーブルに2行の行が作成されました。注文には2つの異なる商品が含まれています
 * `name` – この列は製品の名前です
 * `product_id` – この列は、この行が参照している製品の一意の識別子です
-   * 上の最初の行には`product_id` = 205があります。`Throwback Bellbottoms`には`entity_id` テーブルに205の`catalog_product_entity`があるためです
+   * 上の最初の行には`product_id` = 205があります。`Throwback Bellbottoms`には`catalog_product_entity` テーブルに205の`entity_id`があるためです
 * `order_id` – この列は、これらの特定の注文項目を含む注文の`entity_id`です
-   * 上の行は両方とも`order_id` = 227です。これは、両方とも`Sammy Customer`によって配置された注文の一部であり、`entity_id` テーブルに`sales_flat_order` = 227が含まれているためです
+   * 上の行は両方とも`order_id` = 227です。これは、両方とも`Sammy Customer`によって配置された注文の一部であり、`sales_flat_order` テーブルに`entity_id` = 227が含まれているためです
 * `qty_ordered` – この列は、この特定の順序に含まれる製品の単位数です
    * `Sammy Customer`の注文には、2組の`Throwback Bellbottoms`が含まれています
 * `price` – この列は、注文項目の1単位の価格です
-   * `subtotal` テーブルの`Sammy Customer`の注文からの`sales_flat_order`は94.85で、これは、各$39.95の`Throwback Bellbottoms`と$14.95の`V-Neck T-Shirt`の2つのペアの合計です。
+   * `sales_flat_order` テーブルの`Sammy Customer`の注文からの`subtotal`は94.85で、これは、各$39.95の`Throwback Bellbottoms`と$14.95の`V-Neck T-Shirt`の2つのペアの合計です。

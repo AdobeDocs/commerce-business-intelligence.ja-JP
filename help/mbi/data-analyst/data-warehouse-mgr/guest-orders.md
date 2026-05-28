@@ -23,7 +23,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 566
+source-wordcount: 567
 ht-degree: 0%
 
 ---
@@ -36,13 +36,13 @@ ht-degree: 0%
 
 ## ゲストオーダーがデータに与える影響
 
-通常のコマースデータベースには、`orders` テーブルに結合する`customers` テーブルがあります。 `orders` テーブルのすべての行には、`customer\_id` テーブルの1つの行に一意の`customers`列があります。
+通常のコマースデータベースには、`customers` テーブルに結合する`orders` テーブルがあります。 `orders` テーブルのすべての行には、`customers` テーブルの1つの行に一意の`customer\_id`列があります。
 
-* **すべての顧客が登録されていて、ゲスト注文が許可されていない場合、** テーブルのすべてのレコードが`orders`列に値を持っていることを意味します。 `customer\_id`その結果、すべての注文が`customers` テーブルに結合されます。
+* **すべての顧客が登録されていて、ゲスト注文が許可されていない場合、`orders` テーブルのすべてのレコードが`customer\_id`列に値を持っていることを意味します。**&#x200B;その結果、すべての注文が`customers` テーブルに結合されます。
 
   顧客情報を示す![&#x200B; ゲスト注文データテーブル &#x200B;](../../assets/guest-orders-4.png)
 
-* **ゲスト注文が許可されている場合**、これは、一部の注文が`customer\_id`列に値を持たないことを意味します。 `customer\_id` テーブルの`orders`列の値が与えられるのは、登録された顧客のみです。 登録されていないお客様には、この列の`NULL` （または空白）値が送信されます。 その結果、すべての注文レコードが`customers` テーブル内の一致するレコードを持つわけではありません。
+* **ゲスト注文が許可されている場合**、これは、一部の注文が`customer\_id`列に値を持たないことを意味します。 `orders` テーブルの`customer\_id`列の値が与えられるのは、登録された顧客のみです。 登録されていないお客様には、この列の`NULL` （または空白）値が送信されます。 その結果、すべての注文レコードが`customers` テーブル内の一致するレコードを持つわけではありません。
 
   >[!NOTE]
   >
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ゲスト注文の設定で、すべての顧客指標が`orders` テーブルに基づいて設定され、ゲスト注文を考慮する場合は、`not counting customers twice`であることを確認する必要があります。 注文テーブルのIDをカウントする場合、すべての注文をカウントします。 代わりに、`orders` テーブルのIDをカウントし、フィルター`Customer's order number = 1`を使用する場合は、一意の顧客`only one time`ごとにカウントします。 これは、`Customer's lifetime revenue`や`Customer's lifetime number of orders`などのすべての顧客レベルの指標に適用されます。
 
-`customer\_ids` テーブルにnull `orders`があることがわかります。 `customer\_email`を使用して一意の顧客を特定すると、`erin@test.com`が3件の注文を行っていることがわかります。 したがって、次の条件に基づいて`New customers` テーブルに`orders` メトリックを作成できます。
+`orders` テーブルにnull `customer\_ids`があることがわかります。 `customer\_email`を使用して一意の顧客を特定すると、`erin@test.com`が3件の注文を行っていることがわかります。 したがって、次の条件に基づいて`orders` テーブルに`New customers` メトリックを作成できます。
 
 * `Operation table = orders`
 * `Operation column = id`
