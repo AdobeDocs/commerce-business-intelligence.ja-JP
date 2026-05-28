@@ -5,26 +5,14 @@ exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/Q-46fusr2IS4ZQDrR8IjHEttueSBpT2-LQBtsejMEC4
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: 613
 ht-degree: 0%
 
 ---
@@ -51,7 +39,7 @@ ht-degree: 0%
 | `is_active` | 買い物かごが顧客によって作成され、注文に変換されていない場合に「1」を返すブール型フィールド。 変換されたカート、または管理者を通じて作成されたカートの「0」を返します |
 | `items_qty` | 買い物かごに含まれるすべての品目の合計数量の合計 |
 | `reserved_order_id` | `Foreign key`が`sales_order` テーブルに関連付けられています。 `sales_order.increment_id`に参加して、変換済みのカートに関連付けられている注文の詳細を確認します。 変換済み注文に関連付けられていないカートの場合、`reserved_order_id`は`NULL`のままです |
-| `store_id` | `Foreign key`が`store` テーブルに関連付けられています。 `store`に参加しましょう。`store_id`は、どのCommerce ストアビューがカートに関連付けられているかを判断します |
+| `store_id` | `Foreign key`が`store` テーブルに関連付けられています。 `store`に参加しましょう。`store_id` どのCommerce ストアビューがカートに関連付けられているかを判断するには |
 
 {style="table-layout:auto"}
 
@@ -60,7 +48,7 @@ ht-degree: 0%
 | **列名** | **説明** |
 |---|---|
 | `Order date` | コンバージョンしたカートの注文作成日を反映したタイムスタンプ。 `quote.reserved_order_id`を`sales_order.increment_id`に結合し、`sales_order.created_at` フィールドを返すことによって計算されます |
-| `Seconds between cart creation and order` | カート作成から注文作成までの時間。 `created_at`から`Order date`を減算して計算し、秒数の整数値として返されます |
+| `Seconds between cart creation and order` | カート作成から注文作成までの時間。 `Order date`から`created_at`を減算して計算し、秒数の整数値として返されます |
 | `Seconds since cart creation` | カートの作成日から現在までの経過時間。 クエリの実行時にサーバーのタイムスタンプから`created_at`を減算して計算し、整数の秒数で返します。 買い物かごの年齢を特定するために最もよく使用される |
 | `Store name` | この注文に関連付けられているCommerce ストアの名前。 `quote.store_id`を`store.store_id`に結合し、`name` フィールドを返すことによって計算されます |
 
