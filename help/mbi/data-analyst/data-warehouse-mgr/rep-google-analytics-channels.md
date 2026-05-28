@@ -5,25 +5,14 @@ exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/5UBZqrRg-eiDLvcGe93qEX5KQKWc63eTQOLQ9pnprkI
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 688
+source-wordcount: 699
 ht-degree: 0%
 
 ---
@@ -32,7 +21,7 @@ ht-degree: 0%
 
 ## チャネルとは？ {#channels}
 
-カスタムセグメントを作成して、様々なトラフィックのパフォーマンスを確認し、傾向を確認することは、[!DNL Google Analytics]の最も強力な用途のひとつです。 [!DNL Google Analytics]にデフォルトで存在するセグメントの1つのクラスは`Channels`です。 チャネルとは、顧客がサイトを訪問する一般的な方法のグループです。  [!DNL Google Analytics]は、ソーシャルメディア、クリック課金、電子メール、紹介リンクなど、ユーザーを獲得する様々な方法を自動的に並べ替え、バケットまたはチャネルにバンドルします。
+カスタムセグメントを作成して、様々なトラフィックのパフォーマンスを確認し、傾向を確認することは、[!DNL Google Analytics]の最も強力な用途のひとつです。 [!DNL Google Analytics]にデフォルトで存在するセグメントの1つのクラスは`Channels`です。 チャネルとは、顧客がサイトを訪問する一般的な方法のグループです。 [!DNL Google Analytics]は、ソーシャルメディア、クリック課金、電子メール、紹介リンクなど、ユーザーを獲得する様々な方法を自動的に並べ替え、バケットまたはチャネルにバンドルします。
 
 ## Commerce Intelligenceに`channels`が表示されないのはなぜですか？ {#nochannels}
 
@@ -63,25 +52,25 @@ ht-degree: 0%
 
 1. **統合[!DNL Google ECommerce]を有効にする**
 
-   [有効にした場合](../importing-data/integrations/google-ecommerce.md)、Data Warehouseの[medium](tour-dwm.md#syncing)および&#x200B;**source** フィールドを&#x200B;**同期**&#x200B;してください。 この操作が完了すると、メディアおよびソースの取得データがData Warehouseに取り込まれます。
+   [有効にした場合](../importing-data/integrations/google-ecommerce.md)、Data Warehouseの&#x200B;**medium**&#x200B;および&#x200B;**source** フィールドを[同期](tour-dwm.md#syncing)してください。 この操作が完了すると、メディアおよびソースの取得データがData Warehouseに取り込まれます。
 
 1. **Googleのチャネルグループ化のマッピングをアップロード**
 
-   Adobe Commerceは、デフォルトのグループ化がファイルとしてマッピングされたテーブルを作成し、[&#x200B; ダウンロード &#x200B;](../../assets/ga-channel-mapping.csv)できます。
+   Adobe Commerceは、デフォルトのグループ化がファイルとしてマッピングされたテーブルを作成し、[ ダウンロード ](../../assets/ga-channel-mapping.csv)できます。
 
    [!DNL Google Analytics] Proで独自のチャネルを作成している場合は、ファイルを[!DNL Commerce Intelligence]にアップロードする前に、特定のルールをマッピングテーブルに追加する必要があります。
 
-   [&#x200B; ファイルのアップロード &#x200B;](../importing-data/connecting-data/using-file-uploader.md)としてData Warehouseに取り込みます。
+   [ ファイルのアップロード ](../importing-data/connecting-data/using-file-uploader.md)としてData Warehouseに取り込みます。
 
-   ![&#x200B; プライマリキー設定を示すData Warehouse Manager インターフェイス &#x200B;](../../assets/Setting_Primary_Keys.png)
+   ![ プライマリキー設定を示すData Warehouse Manager インターフェイス ](../../assets/Setting_Primary_Keys.png)
 
 1. **[!DNL Google ECommerce]とマッピング ファイル アップロード**&#x200B;の関係を確立します
 
-   [!DNL Google ECommerce]とマッピングテーブルの関係を確立するには、[&#x200B; サポートリクエスト &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket)をData Analyst チームに送信し、このトピックを参照してください。 アナリストは、ECommerce テーブルに&#x200B;**Channel**&#x200B;という新しい計算列を作成します。 **完全な更新サイクル**&#x200B;の後、この列は`Filter`または`Group by`で使用できるようになります。
+   [!DNL Google ECommerce]とマッピングテーブルの関係を確立するには、[ サポートリクエスト ](../../guide-overview.md#Submitting-a-Support-Ticket)をData Analyst チームに送信し、このトピックを参照してください。 アナリストは、ECommerce テーブルに&#x200B;**Channel**&#x200B;という新しい計算列を作成します。 **完全な更新サイクル**&#x200B;の後、この列は`Filter`または`Group by`で使用できるようになります。
 
 これで[!DNL Google Analytics Channel]個のグループがData Warehouseに追加されました。つまり、新しい視点でデータを分析できます。
 
-![&#x200B; チャネル別の注文数指標のセグメント化](../../assets/GA_Channel_Gif.gif)
+![ チャネル別の注文数指標のセグメント化](../../assets/GA_Channel_Gif.gif)
 
 この例では、**注文数**&#x200B;指標を&#x200B;**チャネル**&#x200B;でセグメント化して簡単に始めました。 新しい列をテストして、[!DNL Google Analytics Channel] データでどのような傾向を特定できるかを確認します。
 

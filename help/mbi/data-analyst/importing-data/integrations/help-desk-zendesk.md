@@ -5,27 +5,14 @@ exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/2X87aaT7tJ-Rn6TK7g084p5OB-iML0vPaJlRUYAIesQ
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 392
+source-wordcount: 390
 ht-degree: 0%
 
 ---
@@ -34,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これは、`Pro` プランを使用しており、新しいアーキテクチャを使用しているクライアントでのみ使用できます。 メインツールバーから「`Data Warehouse Views`」を選択した後に「`Manage Data`」セクションを使用できる場合は、新しいアーキテクチャを使用しています。
+>これは、`Pro` プランを使用しており、新しいアーキテクチャを使用しているクライアントでのみ使用できます。 メインツールバーから「`Manage Data`」を選択した後に「`Data Warehouse Views`」セクションを使用できる場合は、新しいアーキテクチャを使用しています。
 
 [!DNL Zendesk] データをトランザクションデータベースと統合することは、顧客がセールス部門やカスタマーサクセス部門とどのように関わっているかを詳細に把握するための優れた方法です。 また、どのような顧客がサポートプラットフォームを利用しているのかを把握するのにも役立ちます。 このトピックでは、ダッシュボードを設定して、[!DNL Zendesk]のパフォーマンスに関する詳細なレポートを取得し、取引顧客と関連付ける方法を説明します。
 
@@ -96,12 +83,12 @@ ht-degree: 0%
 
 * **`[!DNL Zendesk] user's`** テーブル
    * `User is agent? (Yes/No) `
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Calculation`
 
-      * `Input columns` - `role`、`email`
+      * `Input columns` - `role`, `email`
 
-      * `SQL Calculation` `- case when `A` is not `null` and `A!`end-user`が`Yes`ではなく、`B`が`null`と同じでない場合=`B`、その後`%@magento.com`、`Yes`、その他`No`が終了
+      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user`次に`Yes` （`B`が`null`ではなく`B`と`%@magento.com`と同じ）、`Yes`その他`No`終了
 
       * `@magento.com`をドメインに置き換えます
 
@@ -180,19 +167,19 @@ ht-degree: 0%
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `Ticket's latest solved date` マイナス `created_at`
 
 * **`Seconds to first response`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `First agent response date` マイナス `created_at`
 
 * **`Requester's ticket number`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Event Number`
 
       * `Event Owner` - `requester_id`
@@ -200,7 +187,7 @@ ht-degree: 0%
       * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-   * &#x200B;
+   * 
       * `Column type` - 「同じテーブル >計算」
 
       * `Input columns` - `created_at`
@@ -210,7 +197,7 @@ ht-degree: 0%
       * `Datatype` – 整数
 
 * **`Ticket created_at (day of week)`**
-   * &#x200B;
+   * 
       * `Column type` - 「同じテーブル >計算」
 
       * `Input columns` - `created_at`
@@ -223,7 +210,7 @@ ht-degree: 0%
    * 定義を選択：`Count`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
-   * &#x200B;
+   * 
      [!UICONTROL One]: `customer_entity.email`
 
    * [!UICONTROL table]を選択：`[!DNL Zendesk] tickets`
@@ -233,7 +220,7 @@ ht-degree: 0%
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-   * &#x200B;
+   * 
       * `Column type` - 「同じテーブル >計算」
 
       * `Input columns` - `User's lifetime number of support tickets requested`
@@ -420,8 +407,8 @@ ht-degree: 0%
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-   * &#x200B;
-     [!UICONTROL 指標]: Users
+   * 
+     [!UICONTROL指標]: Users
 
 * 指標`A`: `New users`
 * `Time period`: `All time`
