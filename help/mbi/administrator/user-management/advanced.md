@@ -25,7 +25,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
 workflow-type: tm+mt
-source-wordcount: 948
+source-wordcount: 877
 ht-degree: 0%
 
 ---
@@ -183,7 +183,7 @@ ht-degree: 0%
     <td></td>
   </tr>
   <tr>
-    <td rowspan="4">ダッシュボード   – 共有</td>
+    <td rowspan="4">ダッシュボード – 共有</td>
     <td>役割をまたいでユーザーとダッシュボードを共有</td>
     <td></td>
     <td>✓</td>

@@ -21,7 +21,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 461
+source-wordcount: 464
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 | `quote` | [`quote`](../data-warehouse-mgr/sales-flat-quote-table.md) テーブルの各行は、チェックアウトプロセスで作成されたカートを表します。そのカートが最終的に注文に変換されたかどうかを確認します。 この表のサイズが大きくなる可能性があるため、Adobeでは、60日を超える未変換のカートがある場合など、特定の条件を満たす場合は、レコードを定期的に削除することをお勧めします。 |
 | `quote_item` | [`quote_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md) テーブルの各行は、買い物かごに追加されたアイテム（買い物かごが最終的に注文に変換されたかどうか）を表します。 この表のサイズが大きくなる可能性があるため、Adobeでは、60日を超える未変換のカートがある場合など、特定の条件を満たす場合は、レコードを定期的に削除することをお勧めします。 |
 | `sales_order` | [`sales_order`](../data-warehouse-mgr/sales-flat-order-table.md) テーブルの各行は、サイトに配置された注文を表します。 このテーブルには、注文の日付、注文した顧客、注文合計、割引とクーポンコードの使用状況などの注文レベルの情報が含まれています。 |
-| `sales_order_address` | `sales_order_address` テーブルの各行には、特定の注文の送料と請求情報が含まれています。 `sales_order` テーブルでは、特定の順序の`billing_address_id`と`shipping_address_id`は、`entity_id` テーブルの特定の行（`sales_order_address`で識別）を参照しています。 |
+| `sales_order_address` | `sales_order_address` テーブルの各行には、特定の注文の送料と請求情報が含まれています。 `sales_order` テーブルでは、特定の順序の`billing_address_id`と`shipping_address_id`は、`sales_order_address` テーブルの特定の行（`entity_id`で識別）を参照しています。 |
 | `sales_order_item` | [`sales_order_item`](../data-warehouse-mgr/sales-flat-quote-item-table.md) テーブルの各行は、特定の順序から特定の項目を識別します。 各行には、商品、購入数量、特定の商品が関連付けられている注文などの詳細が含まれます。 |
 
 {style="table-layout:auto"}

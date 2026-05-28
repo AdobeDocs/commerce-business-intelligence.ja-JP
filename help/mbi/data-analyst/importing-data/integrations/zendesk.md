@@ -23,7 +23,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 261
+source-wordcount: 270
 ht-degree: 0%
 
 ---
@@ -40,15 +40,15 @@ ht-degree: 0%
 
 [!DNL Zendesk] データの接続は、シンプルな3段階のプロセスです。
 
-1. [&#x200B; [!DNL Zendesk] で [!DNL Commerce Intelligence]資格情報ページを開きます](#stepone)
+1. [&#x200B; [!DNL Commerce Intelligence]で [!DNL Zendesk] 資格情報ページを開きます](#stepone)
 1. [&#x200B; [!DNL Zendesk] API トークンを取得](#steptwo)
-1. [&#x200B; [!DNL Zendesk] に [!DNL Commerce Intelligence] ログイン情報とトークンを入力してください](#stepthree)
+1. [&#x200B; [!DNL Commerce Intelligence]に [!DNL Zendesk]  ログイン情報とトークンを入力してください](#stepthree)
 
 このプロセスを完了するには、2つのブラウザーウィンドウまたはタブを開く必要があります（[!DNL Commerce Intelligence]用と[!DNL Zendesk] アカウント用のどちらか一方）。
 
-## [!DNL Zendesk]で[!DNL Commerce Intelligence]資格情報ページを開く {#stepone}
+## [!DNL Commerce Intelligence]で[!DNL Zendesk]資格情報ページを開く {#stepone}
 
-1. `Integrations` データソース **[!UICONTROL Manage Data** > **/**&#x200B;統合&#x200B;**の下の]** ページに移動します。
+1. **[!UICONTROL Manage Data** > **&#x200B; データソース &#x200B;**/**統合]**&#x200B;の下の`Integrations` ページに移動します。
 1. 画面の右側にある「**[!UICONTROL Add Integration]**」をクリックします。
 1. [!DNL Zendesk] アイコンをクリックします。 これにより、[!DNL Zendesk]資格情報ページが開きます。
 
@@ -64,11 +64,11 @@ ht-degree: 0%
 
 ## [!DNL Zendesk]のログイン情報とAPI トークンを[!DNL Commerce Intelligence]に入力します {#stepthree}
 
-1. [!DNL Zendesk]の[!DNL Zendesk]資格情報ページに[!DNL Commerce Intelligence] サイトのプレフィックスとログイン用メールを入力します。
+1. [!DNL Commerce Intelligence]の[!DNL Zendesk]資格情報ページに[!DNL Zendesk] サイトのプレフィックスとログイン用メールを入力します。
 1. API トークンを入力します。
-1. **[!UICONTROL Save & Connect]**&#x200B;をクリックします。 接続が成功した場合、*接続が成功しました。* メッセージが画面の上部に表示されます。
+1. **[!UICONTROL Save & Connect]**&#x200B;をクリックします。 接続が成功した場合、*接続が成功しました！* メッセージが画面の上部に表示されます。
 
 ## 関連：
 
 * [期待される [!DNL Zendesk]  データ](../integrations/exp-zendesk-data.md)
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

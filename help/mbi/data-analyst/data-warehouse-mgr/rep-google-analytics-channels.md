@@ -23,7 +23,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 688
+source-wordcount: 699
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## チャネルとは？ {#channels}
 
-カスタムセグメントを作成して、様々なトラフィックのパフォーマンスを確認し、傾向を確認することは、[!DNL Google Analytics]の最も強力な用途のひとつです。 [!DNL Google Analytics]にデフォルトで存在するセグメントの1つのクラスは`Channels`です。 チャネルとは、顧客がサイトを訪問する一般的な方法のグループです。  [!DNL Google Analytics]は、ソーシャルメディア、クリック課金、電子メール、紹介リンクなど、ユーザーを獲得する様々な方法を自動的に並べ替え、バケットまたはチャネルにバンドルします。
+カスタムセグメントを作成して、様々なトラフィックのパフォーマンスを確認し、傾向を確認することは、[!DNL Google Analytics]の最も強力な用途のひとつです。 [!DNL Google Analytics]にデフォルトで存在するセグメントの1つのクラスは`Channels`です。 チャネルとは、顧客がサイトを訪問する一般的な方法のグループです。 [!DNL Google Analytics]は、ソーシャルメディア、クリック課金、電子メール、紹介リンクなど、ユーザーを獲得する様々な方法を自動的に並べ替え、バケットまたはチャネルにバンドルします。
 
 ## Commerce Intelligenceに`channels`が表示されないのはなぜですか？ {#nochannels}
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 1. **統合[!DNL Google ECommerce]を有効にする**
 
-   [有効にした場合](../importing-data/integrations/google-ecommerce.md)、Data Warehouseの[medium](tour-dwm.md#syncing)および&#x200B;**source** フィールドを&#x200B;**同期**&#x200B;してください。 この操作が完了すると、メディアおよびソースの取得データがData Warehouseに取り込まれます。
+   [有効にした場合](../importing-data/integrations/google-ecommerce.md)、Data Warehouseの&#x200B;**medium**&#x200B;および&#x200B;**source** フィールドを[同期](tour-dwm.md#syncing)してください。 この操作が完了すると、メディアおよびソースの取得データがData Warehouseに取り込まれます。
 
 1. **Googleのチャネルグループ化のマッピングをアップロード**
 

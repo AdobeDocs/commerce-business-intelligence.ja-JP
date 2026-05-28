@@ -7,7 +7,7 @@ role: Admin, Developer, Leader, User
 feature: Business Performance
 source-git-commit: 994fd98dac3dd8693b79c7497bba7bb6df27edf6
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -137,10 +137,10 @@ ht-degree: 0%
       - [Adobe Commerceとの連携](data-analyst/importing-data/integrations/magento.md)
       - [予想されるCommerce データ](data-analyst/importing-data/integrations/magento-data.md)
       - [接続中 [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
-      - [&#x200B; [!DNL MongoDB] 経由で [!DNL SSH Tunnel]接続](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
-      - [a [!DNL MySQL] 経由で [!DNL direct connection]に接続しています](data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)
-      - [&#x200B; [!DNL MySQL] 経由で [!DNL cPanel]接続](data-analyst/importing-data/integrations/mysql-via-cpanel.md)
-      - [&#x200B; [!DNL MySQL] 経由で [!DNL SSH Tunnel]接続](data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)
+      - [&#x200B; [!DNL SSH Tunnel]経由で [!DNL MongoDB] 接続](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
+      - [a [!DNL direct connection]経由で [!DNL MySQL] に接続しています](data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)
+      - [&#x200B; [!DNL cPanel]経由で [!DNL MySQL] 接続](data-analyst/importing-data/integrations/mysql-via-cpanel.md)
+      - [&#x200B; [!DNL SSH Tunnel]経由で [!DNL MySQL] 接続](data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)
       - [接続中 [!DNL PostgreSQ]](data-analyst/importing-data/integrations/postgresql.md)
    - キャンペーンの分析 {#campaigns}
       - [クーポンコード分析（基本）](data-analyst/analysis/ess-coupon-code-analysis.md)

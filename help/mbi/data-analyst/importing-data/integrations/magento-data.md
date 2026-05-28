@@ -22,7 +22,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 239
+source-wordcount: 253
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 |-----|-----|
 | `Customers` | `customer\_entity`および関連テーブルには、データベース内の各&#x200B;*登録済み顧客*&#x200B;に関連付けられている情報（電子メールアドレスや登録日など）が記載されています。 この情報により、顧客レベルの属性やコホートによるセグメンテーションを開始できます。 |
 | `Orders` | `sales\_flat\_order` テーブルには、注文が行われた`created\_at` タイムスタンプと収益を合計する`base\_grand\_total` フィールドを含む、すべての注文が記録されます。 これらのフィールドは注文レベルの指標の基礎となります。 *登録済みの顧客*&#x200B;が注文を行った場合、`customer\_id` フィールドは`customer\_entity` テーブルにリンクして、顧客の購買行動に関する分析を許可します。 |
-| `Order items` | `sales\_flat\_order\_item` テーブルには、注文に属する各項目が記録されます。 これには、`price`および`qty\_ordered` フィールド、および`order\_id` テーブルに接続する`sales\_flat\_order` フィールドが含まれます。 このテーブルは`Item sold`のような指標の基盤となり、`product`と`product type`でセグメント化できます。 |
+| `Order items` | `sales\_flat\_order\_item` テーブルには、注文に属する各項目が記録されます。 これには、`price`および`qty\_ordered` フィールド、および`sales\_flat\_order` テーブルに接続する`order\_id` フィールドが含まれます。 このテーブルは`Item sold`のような指標の基盤となり、`product`と`product type`でセグメント化できます。 |
 | `Products` | `catalog\_product\_entity` テーブルには、カテゴリ、サイズ、カラーなど、製品レベルの属性に関する情報が格納されます。 |
 | `Categories` | 製品は、Commerce ビルドの設定方法に応じて、1つまたは複数の異なる`product categories`に属しています。 `catalog\_category\_entity` テーブルには、これらのカテゴリの階層が保存され（例えば、アパレル/トップス/T シャツ）、`catalog\_category\_product` テーブルには、製品とそれらのカテゴリ間の接続が記録されます。 |
 
@@ -46,4 +46,4 @@ ht-degree: 0%
 ## 関連
 
 * [接続中 [!DNL Adobe Commerce]](../integrations/magento.md)
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

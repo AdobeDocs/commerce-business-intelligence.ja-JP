@@ -25,7 +25,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 392
+source-wordcount: 390
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これは、`Pro` プランを使用しており、新しいアーキテクチャを使用しているクライアントでのみ使用できます。 メインツールバーから「`Data Warehouse Views`」を選択した後に「`Manage Data`」セクションを使用できる場合は、新しいアーキテクチャを使用しています。
+>これは、`Pro` プランを使用しており、新しいアーキテクチャを使用しているクライアントでのみ使用できます。 メインツールバーから「`Manage Data`」を選択した後に「`Data Warehouse Views`」セクションを使用できる場合は、新しいアーキテクチャを使用しています。
 
 [!DNL Zendesk] データをトランザクションデータベースと統合することは、顧客がセールス部門やカスタマーサクセス部門とどのように関わっているかを詳細に把握するための優れた方法です。 また、どのような顧客がサポートプラットフォームを利用しているのかを把握するのにも役立ちます。 このトピックでは、ダッシュボードを設定して、[!DNL Zendesk]のパフォーマンスに関する詳細なレポートを取得し、取引顧客と関連付ける方法を説明します。
 
@@ -99,9 +99,9 @@ ht-degree: 0%
    * &#x200B;
       * `Column type` - `Same Table > Calculation`
 
-      * `Input columns` - `role`、`email`
+      * `Input columns` - `role`, `email`
 
-      * `SQL Calculation` `- case when `A` is not `null` and `A!`end-user`が`Yes`ではなく、`B`が`null`と同じでない場合=`B`、その後`%@magento.com`、`Yes`、その他`No`が終了
+      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user`次に`Yes` （`B`が`null`ではなく`B`と`%@magento.com`と同じ）、`Yes`その他`No`終了
 
       * `@magento.com`をドメインに置き換えます
 

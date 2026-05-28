@@ -19,8 +19,8 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 751
-ht-degree: 1%
+source-wordcount: 791
+ht-degree: 3%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ### （オプション 1） [!DNL Google Analytics E-Commerce]経由で注文の参照元データを追跡する
 
-[!DNL Google Analytics E-Commerce]を使用して注文と販売データを追跡する場合は、[[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)を使用して、各注文の参照元データを同期できます。 これにより、収益と注文を参照元（`utm_source`または`utm_medium`など）別にセグメント化できます。 [!DNL Commerce Intelligence]などの`User's first order source`個のカスタムディメンションを使用して、顧客獲得ソースを確認することもできます。
+[!DNL Google Analytics E-Commerce]を使用して注文と販売データを追跡する場合は、[[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)を使用して、各注文の参照元データを同期できます。 これにより、収益と注文を参照元（`utm_source`または`utm_medium`など）別にセグメント化できます。 `User's first order source`などの[!DNL Commerce Intelligence]個のカスタムディメンションを使用して、顧客獲得ソースを確認することもできます。
 
 ### （オプション 2）取得ソースデータをデータベースに保存する[!DNL Google Analytics]
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 文字列にエンコードされた取得ソースデータがあることは明らかです。 このテストは、訪問者の最新の獲得ソースおよび関連するキャンペーンデータであることを確認するために実行されます。 データを抽出する方法を知る必要があります。
 
-このコードは、github[でホストされている](https://github.com/RJMetrics/referral-grabber-php)PHP ライブラリに変換されました。 ライブラリを使用するには、`include`が`ReferralGrabber.php`への参照を呼び出してから
+このコードは、github[&#128279;](https://github.com/RJMetrics/referral-grabber-php)でホストされているPHP ライブラリに変換されました。 ライブラリを使用するには、`include`が`ReferralGrabber.php`への参照を呼び出してから
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 

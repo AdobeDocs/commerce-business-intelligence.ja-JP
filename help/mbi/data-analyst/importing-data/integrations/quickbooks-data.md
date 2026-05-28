@@ -23,14 +23,14 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 796
+source-wordcount: 1090
 ht-degree: 0%
 
 ---
 
 # [!DNL QuickBooks] データが必要です
 
-[&#x200B; アカウント  [!DNL QuickBooks] を接続した後、](../../../data-analyst/importing-data/integrations/quickbooks.md)Data Warehouse Manager[を使用して、分析用の関連データフィールドを簡単に追跡できます。 &#x200B;](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)次の表は、Data Warehouseで作成されます。
+[&#128279;](../../../data-analyst/importing-data/integrations/quickbooks.md)&#x200B; アカウント  [!DNL QuickBooks] を接続した後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。 &#x200B;次の表は、Data Warehouseで作成されます。
 
 トラッキングに使用できるすべてのフィールドを表示するには、テーブル名の列のリンクをクリックします。
 
@@ -79,4 +79,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続中 [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

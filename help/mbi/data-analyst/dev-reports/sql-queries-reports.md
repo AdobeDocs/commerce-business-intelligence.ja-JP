@@ -30,9 +30,9 @@ ht-degree: 0%
 
 # Commerce IntelligenceでのSQL クエリの翻訳
 
-SQL クエリが、[で使用する](../data-warehouse-mgr/creating-calculated-columns.md)計算列[、](../../data-user/reports/ess-manage-data-metrics.md)指標[、](../../tutorials/using-visual-report-builder.md) レポート [!DNL Commerce Intelligence]にどのように変換されるのか、疑問に思ったことはありませんか？ SQLのヘビーユーザーであれば、[!DNL Commerce Intelligence]でのSQLの翻訳方法を理解することで、[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)でよりスマートに作業し、[!DNL Commerce Intelligence]基盤を最大限に活用することができます。
+SQL クエリが、[!DNL Commerce Intelligence]で使用する[計算列](../data-warehouse-mgr/creating-calculated-columns.md)、[指標](../../data-user/reports/ess-manage-data-metrics.md)、[&#x200B; レポート &#x200B;](../../tutorials/using-visual-report-builder.md)にどのように変換されるのか、疑問に思ったことはありませんか？ SQLのヘビーユーザーであれば、[!DNL Commerce Intelligence]でのSQLの翻訳方法を理解することで、[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)でよりスマートに作業し、[!DNL Commerce Intelligence]基盤を最大限に活用することができます。
 
-このトピックの最後に、SQL クエリ句と&#x200B;**要素に対する**&#x200B;翻訳行列[!DNL Commerce Intelligence]があります。
+このトピックの最後に、SQL クエリ句と[!DNL Commerce Intelligence]要素に対する&#x200B;**翻訳行列**&#x200B;があります。
 
 まず、一般的なクエリを確認します。
 
@@ -51,7 +51,7 @@ SQL クエリが、[で使用する](../data-warehouse-mgr/creating-calculated-c
 
 ## 集計関数
 
-クエリの集計関数（例：`count`、`sum`、`average`、`max`、`min`）は、**の**&#x200B;指標の集計&#x200B;**または**&#x200B;列の集計[!DNL Commerce Intelligence]の形式になります。 差別化要因は、集約を実行するために結合が必要かどうかです。
+クエリの集計関数（例：`count`、`sum`、`average`、`max`、`min`）は、[!DNL Commerce Intelligence]の&#x200B;**指標の集計**&#x200B;または&#x200B;**列の集計**&#x200B;の形式になります。 差別化要因は、集約を実行するために結合が必要かどうかです。
 
 上記のそれぞれの例を見てみましょう。
 
@@ -76,7 +76,7 @@ SQL クエリが、[で使用する](../data-warehouse-mgr/creating-calculated-c
 
 ## 列集計
 
-別のテーブルから結合された列を集計する場合は、計算列が必要です。 例えば、`customer`という名前の`Customer LTV` テーブルに列が組み込まれている場合、`orders` テーブル内のその顧客に関連付けられたすべての注文の合計値が合計されます。
+別のテーブルから結合された列を集計する場合は、計算列が必要です。 例えば、`Customer LTV`という名前の`customer` テーブルに列が組み込まれている場合、`orders` テーブル内のその顧客に関連付けられたすべての注文の合計値が合計されます。
 
 この集計のクエリは次のようになります。
 
@@ -98,7 +98,7 @@ SQL クエリが、[で使用する](../data-warehouse-mgr/creating-calculated-c
 
 ![新しいパスを作成](../../assets/Create_new_path.png)
 
-ここでは、結合しようとしている2つのテーブル間の関係を慎重に検討する必要があります。 この場合、`Many`のお客様に`One`件の注文が関連付けられている可能性があるため、`orders` テーブルは`Many`側に表示されますが、`customers` テーブルは`One`側に選択されています。
+ここでは、結合しようとしている2つのテーブル間の関係を慎重に検討する必要があります。 この場合、`One`のお客様に`Many`件の注文が関連付けられている可能性があるため、`orders` テーブルは`Many`側に表示されますが、`customers` テーブルは`One`側に選択されています。
 
 >[!NOTE]
 >
@@ -108,11 +108,11 @@ SQL クエリが、[で使用する](../data-warehouse-mgr/creating-calculated-c
 
 ![SQL](../../assets/Customer_LTV.gif)を使用した顧客生涯価値分析のアニメーション デモ
 
-`Customer LTV` テーブルに新しい`customers`列を作成したので、この列を使用して[指標の集計](#aggregate)を作成する準備が整いました（例えば、顧客あたりの平均LTVを見つけるために）。 `group by` テーブルに組み込まれている既存の指標を使用して、レポートの計算列で`filter`または`customers`を実行することもできます。
+`customers` テーブルに新しい`Customer LTV`列を作成したので、この列を使用して[指標の集計](#aggregate)を作成する準備が整いました（例えば、顧客あたりの平均LTVを見つけるために）。 `customers` テーブルに組み込まれている既存の指標を使用して、レポートの計算列で`group by`または`filter`を実行することもできます。
 
 >[!NOTE]
 >
->後者の場合、新しい計算列を作成するたびに、ディメンションを[または](../data-warehouse-mgr/manage-data-dimensions-metrics.md)として使用する前に、既存の指標`filter`に`group by`追加する必要があります。
+>後者の場合、新しい計算列を作成するたびに、ディメンションを`filter`または`group by`として使用する前に、既存の指標[&#128279;](../data-warehouse-mgr/manage-data-dimensions-metrics.md)に追加する必要があります。
 
 Data Warehouse Managerでの計算列の作成[を参照してください](../data-warehouse-mgr/creating-calculated-columns.md)。
 

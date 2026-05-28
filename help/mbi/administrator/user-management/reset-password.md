@@ -21,15 +21,15 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
 workflow-type: tm+mt
-source-wordcount: 75
+source-wordcount: 88
 ht-degree: 0%
 
 ---
 
 # パスワードのリセット
 
-パスワードをリセットするには、**[!UICONTROL Reset Password]** サインインページのパスワードフィールドの下にある[!DNL Adobe Commerce Intelligence]をクリックします。 ユーザーアカウントの電子メールアドレスを入力すると、パスワードリセットリンクを含む電子メールが送信されます。
+パスワードをリセットするには、[!DNL Adobe Commerce Intelligence] サインインページのパスワードフィールドの下にある&#x200B;**[!UICONTROL Reset Password]**&#x200B;をクリックします。 ユーザーアカウントの電子メールアドレスを入力すると、パスワードリセットリンクを含む電子メールが送信されます。
 
-また、[!DNL Commerce Intelligence] ページを使用して、**[!UICONTROL Personal Settings]**&#x200B;内のパスワードを変更することもできます。
+また、**[!UICONTROL Personal Settings]** ページを使用して、[!DNL Commerce Intelligence]内のパスワードを変更することもできます。
 
 パスワードをリセットしてアカウントからロックされたままの場合は、[これらのヒント &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=ja)に従って、問題を特定してください。

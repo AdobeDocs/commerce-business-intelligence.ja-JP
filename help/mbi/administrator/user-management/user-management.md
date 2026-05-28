@@ -62,7 +62,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_特定の指標&#x200B;**[!UICONTROL Standard]**&#x200B;に対する[&#x200B; ユーザーの](../../administrator/user-management/restrict-metric-access.md) アクセスを制限できます。_
+>_特定の指標[&#128279;](../../administrator/user-management/restrict-metric-access.md)に対する&#x200B;**[!UICONTROL Standard]**&#x200B;ユーザーの アクセスを制限できます。_
 >
 >**[!UICONTROL Standard] _ユーザーは、追加の権限設定を使用して請求にアクセスできます。_
 >

@@ -19,7 +19,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 904
+source-wordcount: 907
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]に6か月または6年間参加している場合でも、整頓されたアカウントを維持することは、組織がプラットフォームを最大限に活用するために最も重要なことです。 時間の経過とともに、不要になったユーザー、ダッシュボード、レポート、指標、列が自然に見えてきます。 1回限りのレポートを作成して忘れた場合や、アカウントを無効にしたことがない場合に、会社を辞めたユーザーがいるかもしれません。
 
-[&#x200B; アカウントのすべての要素](../best-practices/naming-elements.md)）に対して[!DNL Commerce Intelligence]標準化された明確な名前を付けることで、以下のアカウント監査手順を使用して、ユーザーの混乱や不要な分析を減らすことができます。 さらに、更新サイクルが[高速化される可能性があります](../best-practices/reduce-update-cycle-time.md)。
+[!DNL Commerce Intelligence] アカウントのすべての要素[&#128279;](../best-practices/naming-elements.md)）に対して標準化された明確な名前を付けることで、以下のアカウント監査手順を使用して、ユーザーの混乱や不要な分析を減らすことができます。 さらに、更新サイクルが[高速化される可能性があります](../best-practices/reduce-update-cycle-time.md)。
 
 ## 手順1：非アクティブユーザーの特定
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 
 選択した列を使用するレポートを表示する![&#x200B; レポート依存関係ダイアログ &#x200B;](../../mbi/assets/report_dependecies.png)
 
-指標が不要になった場合は、**[!UICONTROL Metrics]**&#x200B;をクリックして&#x200B;**[!UICONTROL Back to Metric List]** ページに戻り、削除する指標を見つけます。 **[!UICONTROL Delete]**&#x200B;をクリックします。
+指標が不要になった場合は、**[!UICONTROL Back to Metric List]**&#x200B;をクリックして&#x200B;**[!UICONTROL Metrics]** ページに戻り、削除する指標を見つけます。 **[!UICONTROL Delete]**&#x200B;をクリックします。
 
 ## 手順4：同期した列の評価
 

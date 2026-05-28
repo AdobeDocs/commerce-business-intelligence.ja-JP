@@ -23,7 +23,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 472
+source-wordcount: 483
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 予定列
 
-元のアーキテクチャを使用している場合（例えば、`Data Warehouse Views` メニューの下に`Manage Data` オプションがない場合）は、サポートチームに連絡して以下の列を作成する必要があります。 新しいアーキテクチャでは、これらの列は`Manage Data > Data Warehouse` ページから作成できます。 詳細な手順は以下のとおりです。
+元のアーキテクチャを使用している場合（例えば、`Manage Data` メニューの下に`Data Warehouse Views` オプションがない場合）は、サポートチームに連絡して以下の列を作成する必要があります。 新しいアーキテクチャでは、これらの列は`Manage Data > Data Warehouse` ページから作成できます。 詳細な手順は以下のとおりです。
 
 あなたのビジネスがゲストの注文を許可するならば、さらに区別されます。 その場合、`customer_entity` テーブルのすべての手順を無視できます。 ゲスト注文が許可されていない場合は、`sales_flat_order` テーブルのすべての手順を無視します。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 * 顧客の収益率
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`、`Number of customers`
-* [!UICONTROL Calculation]: - **Aがnullの場合、その後nullの場合（A/B）* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **&#x200B; Aがnullの場合、その後nullの場合（A/B） *100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order` テーブル
@@ -93,7 +93,7 @@ ht-degree: 0%
 * 顧客の収益率
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`、`Number of customers`
-* [!UICONTROL Calculation]: - **Aがnullの場合、その後nullの場合（A/B）* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **&#x200B; Aがnullの場合、その後nullの場合（A/B） *100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
