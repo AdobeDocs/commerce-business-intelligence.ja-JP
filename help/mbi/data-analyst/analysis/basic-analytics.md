@@ -5,11 +5,23 @@ exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
 TQID: https://experienceleague.adobe.com/5AOJMiHxtu-nt3cWP-lF5g4Zufa2MuZr7xA8pX3OgB8
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 3169
@@ -52,9 +64,9 @@ ht-degree: 0%
 
 **ゲスト注文を受け付けていますか？**
 
-*その場合、このテーブルにはすべての顧客が含まれていない可能性があります。 [ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)に連絡して、顧客分析にすべての顧客が含まれていることを確認してください。*
+*その場合、このテーブルにはすべての顧客が含まれていない可能性があります。 [&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)に連絡して、顧客分析にすべての顧客が含まれていることを確認してください。*
 
-*ゲスト注文を受け入れるかどうかわからない場合は、 詳細については、[このトピック ](../data-warehouse-mgr/guest-orders.md)を参照してください。*
+*ゲスト注文を受け入れるかどうかわからない場合は、 詳細については、[このトピック &#x200B;](../data-warehouse-mgr/guest-orders.md)を参照してください。*
 
 ## 注文テーブル
 
@@ -66,7 +78,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**：注文が作成または配置された日付。
 * **[!UICONTROL Customer_email]**：注文を行った顧客の電子メールアドレス。 これは顧客の一意のIDである可能性もあります。
 * **[!UICONTROL Customer's lifetime number of orders]**: `Customers` テーブル上の同じ名前の列のコピー。
-* **[!UICONTROL Customer's order number]**：注文に関連付けられている顧客の順序注文番号。 例えば、お客様の最初の注文の行の場合、この列は「1」ですが、お客様の15番目の注文の場合、この列にはこの注文の「15」が表示されます。 このディメンションが`Customers` テーブルに存在しない場合は、[ サポートチーム ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)に作成を依頼してください。
+* **[!UICONTROL Customer's order number]**：注文に関連付けられている顧客の順序注文番号。 例えば、お客様の最初の注文の行の場合、この列は「1」ですが、お客様の15番目の注文の場合、この列にはこの注文の「15」が表示されます。 このディメンションが`Customers` テーブルに存在しない場合は、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)に作成を依頼してください。
 * **[!UICONTROL Customer's order number (previous-current)]**: **[!UICONTROL Customer's order number]**&#x200B;列の2つの値の連結。 以下のサンプルレポートで、2つの注文の間の経過時間を表示するために使用します。 例えば、顧客の最初の注文日から2番目の注文日までの時間は、この計算で「1-2」と表されます。
 * **[!UICONTROL Coupon_code]**：各注文で使用されたクーポンを表示します。
 * **[!UICONTROL Seconds since previous order]**：顧客の注文間の時間（秒単位）。
@@ -94,7 +106,7 @@ ht-degree: 0%
 
 ## マーケティング支出表
 
-マーケティング費用を分析する際に、[!DNL Facebook]、[!DNL Google AdWords]またはその他のソースを分析に含めることができます。 複数のマーケティング費用ソースがある場合は、[Managed Services チーム ](https://business.adobe.com/products/magento/fully-managed-service.html)に連絡して、マーケティング施策の統合テーブルの設定に関するサポートを受けてください。
+マーケティング費用を分析する際に、[!DNL Facebook]、[!DNL Google AdWords]またはその他のソースを分析に含めることができます。 複数のマーケティング費用ソースがある場合は、[Managed Services チーム &#x200B;](https://business.adobe.com/products/magento/fully-managed-service.html)に連絡して、マーケティング施策の統合テーブルの設定に関するサポートを受けてください。
 
 **ディメンション**
 
@@ -138,7 +150,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Range]**: `Moving range > Last 90 Days`
    * **[!UICONTROL Time Interval]**: `By Day`
 
-![ ユニーク顧客。](../../assets/Unique_customers_last_7_days.png)<!--{: width="929"}-->
+![&#x200B; ユニーク顧客。](../../assets/Unique_customers_last_7_days.png)<!--{: width="929"}-->
 
 ### 新規登録者
 
@@ -161,7 +173,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Group By]**: `Customer's Order Number`を選択してから、`2`と`3`を選択してください
 
-  ![昨年の2回目と3回目の購入分析を示すグラフ ](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![昨年の2回目と3回目の購入分析を示すグラフ &#x200B;](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **レポート例2**：過去1年間のリピート顧客の数
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -199,7 +211,7 @@ ht-degree: 0%
 
 ### コホート別平均生涯売上
 
-* **説明**: ユーザーの個別コホート ](../dev-reports/lifetime-rev-cohort-analysis.md)の[平均生涯収益を経時的に追跡して、最もパフォーマンスの高いコホートを特定します。 コホートは、1回目の注文日や作成日など、共通の日付ごとにグループ化されています。
+* **説明**: ユーザーの個別コホート [&#128279;](../dev-reports/lifetime-rev-cohort-analysis.md)の平均生涯収益を経時的に追跡して、最もパフォーマンスの高いコホートを特定します。 コホートは、1回目の注文日や作成日など、共通の日付ごとにグループ化されています。
 * **指標が使用されました**: `Revenue`
 * **レポートの例**：コホート別の平均顧客生涯売上
    * **[!UICONTROL Metric]**: `Revenue`
@@ -226,7 +238,7 @@ ht-degree: 0%
    * **[!UICONTROL Time range]**: `All Time`
    * **[!UICONTROL Time interval]**: `By Month`
 
-  ![ クーポン使用状況別のお客様](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
+  ![&#x200B; クーポン使用状況別のお客様](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
 
 * **レポートの例2**：月ごとのクーポンおよびクーポン以外の顧客の割合
    * **[!UICONTROL Metric A]**: `Non coupon customers` （指標を非表示）
@@ -243,7 +255,7 @@ ht-degree: 0%
 >
 > **すべての指標を非表示**
 
-![ クーポン使用状況](../../assets/Customers_by_coupon_usage_formula.png)<!--{: width="929"}-->
+![&#x200B; クーポン使用状況](../../assets/Customers_by_coupon_usage_formula.png)<!--{: width="929"}-->
 
 ### 最初の30日間の平均収益
 
@@ -280,7 +292,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->収益指標の計算が、社内で議論している定義と一致していることを確認しましょう。 例えば、発送された注文の収益をカウントしたり、別の地域の通貨を変換したり、税金を除外したりすることができます。 また、[ フィルターセット ](../../data-user/reports/ess-manage-data-filters.md)を使用して、同じテーブル上に構築されたすべての指標の一貫性を確保することもできます。
+>収益指標の計算が、社内で議論している定義と一致していることを確認しましょう。 例えば、発送された注文の収益をカウントしたり、別の地域の通貨を変換したり、税金を除外したりすることができます。 また、[&#x200B; フィルターセット &#x200B;](../../data-user/reports/ess-manage-data-filters.md)を使用して、同じテーブル上に構築されたすべての指標の一貫性を確保することもできます。
 
 ![収益](../../assets/revenue.png)<!--{: width="929"}-->
 
@@ -295,7 +307,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->収益指標と同様に、不完全な注文、テスト注文、返品注文を除外するために、[ フィルターセット ](../../data-user/reports/ess-manage-data-filters.md)を配置する必要があります。
+>収益指標と同様に、不完全な注文、テスト注文、返品注文を除外するために、[&#x200B; フィルターセット &#x200B;](../../data-user/reports/ess-manage-data-filters.md)を配置する必要があります。
 
 ![注文](../../assets/orders_pic.png)<!--{: width="929"}-->
 
@@ -359,7 +371,7 @@ ht-degree: 0%
    * **[!UICONTROL Group By**]: `name` （または`SKU`、またはその他の製品識別子）
    * **[!UICONTROL Show top/bottom]**：上位25件の並べ替え（注文された製品による）
 
-  ![ クーポン付き商品](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
+  ![&#x200B; クーポン付き商品](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
 
 ### 注文間の時間
 
@@ -406,7 +418,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
    * **[!UICONTROL Time Interval]**: `By Day`
 
-  ![広告インプレッション ](../../assets/ad_impressions.png)<!--{: width="929"}-->
+  ![広告インプレッション &#x200B;](../../assets/ad_impressions.png)<!--{: width="929"}-->
 
 ### クリックスルー率（CTR）
 
@@ -524,7 +536,7 @@ ht-degree: 0%
 
 ### ROI （投資収益率）
 
-* **説明**: キャンペーン別のROIを計算する1つの方法は、キャンペーンを通じて行われたすべての注文を分析することです。 ただし、別の方法として、施策を通じて獲得した顧客の生涯価値を分析する方法もあります。 ROIを分析するには、キャンペーン名が、支出データとトランザクションデータ全体で一貫していることが重要です。 次のレポートを作成し、キャンペーン名が一致しないためにROI値が存在しない場合は、実装した[UTM タグ ](../../best-practices/utm-tagging-google.md)を調べる必要がある場合があります。
+* **説明**: キャンペーン別のROIを計算する1つの方法は、キャンペーンを通じて行われたすべての注文を分析することです。 ただし、別の方法として、施策を通じて獲得した顧客の生涯価値を分析する方法もあります。 ROIを分析するには、キャンペーン名が、支出データとトランザクションデータ全体で一貫していることが重要です。 次のレポートを作成し、キャンペーン名が一致しないためにROI値が存在しない場合は、実装した[UTM タグ &#x200B;](../../best-practices/utm-tagging-google.md)を調べる必要がある場合があります。
 * **レポート例**：施策ごとのROI
    * **[!UICONTROL Metric A]**: `New Customers`
    * **[!UICONTROL Filter A]**: `Customer's first order's source` （&#39;%google%&#39;など）
@@ -543,7 +555,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->式のタイトルを「ROI」とし、すべての指標を非表示にすることができます。 さらに、指標のフィルターを調整して、代替ソースや媒体を分析することもできます。 また、CAC、LTV、ROIの詳細については、[このトピック ](../analysis/roi-ad-camp.md)を参照してください。
+>式のタイトルを「ROI」とし、すべての指標を非表示にすることができます。 さらに、指標のフィルターを調整して、代替ソースや媒体を分析することもできます。 また、CAC、LTV、ROIの詳細については、[このトピック &#x200B;](../analysis/roi-ad-camp.md)を参照してください。
 
 ![ROI 1](../../assets/ROI_1.png)<!--{: width="929"}-->
 
