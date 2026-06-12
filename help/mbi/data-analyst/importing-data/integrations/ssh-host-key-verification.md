@@ -124,4 +124,4 @@ ht-degree: 0%
 * [SSH トンネル経由でMySQLを接続する](mysql-via-ssh-tunnel.md)
 * [SSH トンネルを介したMongoDBの接続](mongodb-via-ssh-tunnel.md)
 * [SSH トンネル経由でPostgreSQLを接続する](postgresql.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

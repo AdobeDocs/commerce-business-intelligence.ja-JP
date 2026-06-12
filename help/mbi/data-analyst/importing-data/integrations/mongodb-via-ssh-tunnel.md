@@ -166,4 +166,4 @@ SSH トンネルを介して[!DNL MongoDB] データベースを[!DNL Commerce I
 ## 関連 {#related}
 
 * [SSH ホスト キーの検証](ssh-host-key-verification.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
