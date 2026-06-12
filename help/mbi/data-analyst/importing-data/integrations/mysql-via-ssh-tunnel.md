@@ -5,46 +5,37 @@ exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 TQID: https://experienceleague.adobe.com/WhcwNz65oubtSKnVGeoHfbEVbPvo1fq-RvpAcP96NEc
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 615
+source-wordcount: 642
 ht-degree: 0%
 
 ---
 
-# [!DNL MySQL]経由で[!DNL SSH Tunnel]に接続
+# [!DNL SSH Tunnel]経由で[!DNL MySQL]に接続
 
-* [&#x200B; [!DNL Commerce Intelligence] 公開鍵を取得](#retrieve)
-* [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
-* [&#x200B; [!DNL Commerce Intelligence]のLinux ユーザーを作成](#linux)
-* [&#x200B; [!DNL MySQL] の [!DNL Commerce Intelligence] ユーザーを作成](#mysql)
+* [ [!DNL Commerce Intelligence] 公開鍵を取得](#retrieve)
+* [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+* [ [!DNL Commerce Intelligence]のLinux ユーザーを作成](#linux)
+* [ [!DNL Commerce Intelligence]の [!DNL MySQL]  ユーザーを作成](#mysql)
 * [接続とユーザー情報を [!DNL Commerce Intelligence]に入力します](#finish)
 
 ## に移動
 
-* [[!DNL MySQL]経由 &#x200B;](../integrations/mysql-via-a-direct-connection.md)
-* [[!DNL MySQL]経由で [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
+* [`direct connection`経由で[!DNL MySQL]](../integrations/mysql-via-a-direct-connection.md)
+* [ [!DNL cPanel]経由で[!DNL MySQL]](../integrations/mysql-via-cpanel.md)
 
-[!DNL MySQL] データベースを[!DNL Commerce Intelligence]経由で`SSH tunnel`に接続するには、次の操作を行う必要があります。
+[!DNL MySQL] データベースを`SSH tunnel`経由で[!DNL Commerce Intelligence]に接続するには、次の操作を行う必要があります。
 
 1. [!DNL Commerce Intelligence] `public key`を取得
 1. [!DNL Commerce Intelligence] `IP address`へのアクセスを許可
-1. `Linux`の[!DNL Commerce Intelligence] ユーザーを作成
-1. `MySQL`の[!DNL Commerce Intelligence] ユーザーを作成
+1. [!DNL Commerce Intelligence]の`Linux` ユーザーを作成
+1. [!DNL Commerce Intelligence]の`MySQL` ユーザーを作成
 1. 接続とユーザー情報を[!DNL Commerce Intelligence]に入力してください
 
 
@@ -61,15 +52,15 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]を移動してキーを取得する方法は次のとおりです。
 
-![SSH トンネルを介したMySQL接続のアニメーションデモ &#x200B;](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
+![SSH トンネルを介したMySQL接続のアニメーションデモ ](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
 
 ## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可 {#allowlist}
 
 接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 `54.88.76.97`と`34.250.211.151`ですが、`MySQL credentials` ページにもあります。 上のGIFの青いボックスを参照してください。
 
-## [!DNL Linux]の[!DNL Commerce Intelligence] ユーザーを作成しています {#linux}
+## [!DNL Commerce Intelligence]の[!DNL Linux] ユーザーを作成しています {#linux}
 
-これは、リアルタイム（または頻繁に更新される）データを含む限り、実稼動マシンまたはセカンダリマシンにすることができます。 [&#x200B; サーバーに接続する権利を保持している限り、このユーザー](../../../administrator/account-management/restrict-db-access.md)を任意の方法で`MySQL`制限できます。
+これは、リアルタイム（または頻繁に更新される）データを含む限り、実稼動マシンまたはセカンダリマシンにすることができます。 `MySQL` サーバーに接続する権利を保持している限り、このユーザー](../../../administrator/account-management/restrict-db-access.md)を任意の方法で[制限できます。
 
 1. 新しいユーザーを追加するには、次のコマンドを[!DNL Linux] サーバー上のルートとして実行します。
 
@@ -98,9 +89,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->サーバーに関連付けられている`sshd\_config` ファイルが既定のオプションに設定されていない場合、特定のユーザーのみがサーバーアクセスを持っています。これにより、[!DNL Commerce Intelligence]への接続が正常に行われなくなります。 このような場合、`AllowUsers` ユーザーがサーバーにアクセスできるようにするには、`rjmetric`のようなコマンドを実行する必要があります。
+>サーバーに関連付けられている`sshd\_config` ファイルが既定のオプションに設定されていない場合、特定のユーザーのみがサーバーアクセスを持っています。これにより、[!DNL Commerce Intelligence]への接続が正常に行われなくなります。 このような場合、`rjmetric` ユーザーがサーバーにアクセスできるようにするには、`AllowUsers`のようなコマンドを実行する必要があります。
 
-## [!DNL MySQL]の[!DNL Commerce Intelligence] ユーザーを作成しています {#mysql}
+## [!DNL Commerce Intelligence]の[!DNL MySQL] ユーザーを作成しています {#mysql}
 
 組織には別のプロセスが必要になる場合がありますが、このユーザーを作成する最も簡単な方法は、権限を付与する権限を持つユーザーとして[!DNL MySQL]にログインしたときに次のクエリを実行することです。
 
@@ -123,7 +114,7 @@ ht-degree: 0%
 * `Port`: サーバー上の[!DNL MySQL] ポート （既定では3306）
 * `Host` デフォルトでは、これはlocalhostです。 一般に、これは[!DNL MySQL] サーバーのバインド アドレス値です。デフォルトは`127.0.0.1 (localhost)`ですが、一部のローカル ネットワーク アドレス （例：`192.168.0.1`）またはサーバーのパブリック IP アドレスにすることもできます。
 
-  値は、`my.cnf`を読み込む行の下の`/etc/my.cnf` ファイル（`\[mysqld\]`にある）にあります。 そのファイルでバインドアドレス行がコメントアウトされると、サーバーは外部からの接続試行から保護されます。
+  値は、`\[mysqld\]`を読み込む行の下の`my.cnf` ファイル（`/etc/my.cnf`にある）にあります。 そのファイルでバインドアドレス行がコメントアウトされると、サーバーは外部からの接続試行から保護されます。
 
 `SSH Connection` セクション：
 
@@ -133,6 +124,11 @@ ht-degree: 0%
 
 完了したら、**[!UICONTROL Save & Test]**&#x200B;をクリックして設定を完了します。
 
-## 関連：
+>[!NOTE]
+>
+>SSH ホストキーの登録、更新、エラーメッセージ、およびトラブルシューティングについては、[SSH ホストキー検証](ssh-host-key-verification.md)を参照してください。
 
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+## 関連 {#related}
+
+* [SSH ホスト キーの検証](ssh-host-key-verification.md)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

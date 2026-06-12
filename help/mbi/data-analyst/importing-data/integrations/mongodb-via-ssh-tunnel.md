@@ -5,23 +5,14 @@ exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/fYXQ353R-dPB-rSeYCR2w0c8Lp5I0HoVYh1A3UAI6aI
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 661
+source-wordcount: 686
 ht-degree: 0%
 
 ---
@@ -30,8 +21,8 @@ ht-degree: 0%
 
 SSH トンネルを介して[!DNL MongoDB] データベースを[!DNL Commerce Intelligence]に接続するには、次の操作を行う必要があります。
 
-1. [&#x200B; [!DNL Commerce Intelligence] 公開鍵を取得](#retrieve)
-1. [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+1. [ [!DNL Commerce Intelligence] 公開鍵を取得](#retrieve)
+1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
 1. [Commerce IntelligenceのLinux ユーザーの作成](#linux)
 1. [Commerce Intelligence用に [!DNL MongoDB]  ユーザーを作成](#mongodb)
 1. [接続とユーザー情報を [!DNL Commerce Intelligence]に入力します](#finish)
@@ -61,11 +52,11 @@ SSH トンネルを介して[!DNL MongoDB] データベースを[!DNL Commerce I
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## `Linux`の[!DNL Commerce Intelligence] ユーザーを作成しています {#linux}
+## [!DNL Commerce Intelligence]の`Linux` ユーザーを作成しています {#linux}
 
 >[!IMPORTANT]
 >
->サーバーに関連付けられている`sshd_config` ファイルが既定のオプションに設定されていない場合、特定のユーザーのみがサーバーアクセスを持っています。これにより、[!DNL Commerce Intelligence]への接続が正常に行われなくなります。 このような場合、`AllowUsers` ユーザーがサーバーにアクセスできるようにするには、`rjmetric`のようなコマンドを実行する必要があります。
+>サーバーに関連付けられている`sshd_config` ファイルが既定のオプションに設定されていない場合、特定のユーザーのみがサーバーアクセスを持っています。これにより、[!DNL Commerce Intelligence]への接続が正常に行われなくなります。 このような場合、`rjmetric` ユーザーがサーバーにアクセスできるようにするには、`AllowUsers`のようなコマンドを実行する必要があります。
 
 これは、リアルタイム（または頻繁に更新される）データを含む限り、実稼動マシンまたはセカンダリマシンにすることができます。 このユーザーは、[!DNL MongoDB] サーバーに接続する権利を保持している限り、任意の方法で制限できます。
 
@@ -93,7 +84,7 @@ SSH トンネルを介して[!DNL MongoDB] データベースを[!DNL Commerce I
 
 ## [!DNL Commerce Intelligence] [!DNL MongoDB] ユーザーを作成しています {#mongodb}
 
-[!DNL MongoDB] サーバーには2つの実行モードがあります – [1つは「認証」オプション &#x200B;](#auth) `(mongod -- auth)`を持ち、もう1つは持たず、[はデフォルト &#x200B;](#default)です。 [!DNL MongoDB] ユーザーを作成する手順は、サーバーが使用しているモードによって異なります。 続行する前に、必ずモードを確認してください。
+[!DNL MongoDB] サーバーには2つの実行モードがあります – [1つは「認証」オプション ](#auth) `(mongod -- auth)`を持ち、もう1つは持たず、[はデフォルト ](#default)です。 [!DNL MongoDB] ユーザーを作成する手順は、サーバーが使用しているモードによって異なります。 続行する前に、必ずモードを確認してください。
 
 ### サーバーで`Auth` オプションを使用している場合： {#auth}
 
@@ -157,8 +148,13 @@ SSH トンネルを介して[!DNL MongoDB] データベースを[!DNL Commerce I
 * `Username`: [!DNL Commerce Intelligence] Linux （SSH） ユーザー名（rjmetricにする必要があります）
 * `SSH Port`: サーバー上のSSH ポート （既定では22）
 
-完了したら、**[!UICONTROL Save Test]**&#x200B;をクリックして設定を完了します。
+完了したら、**[!UICONTROL Save & Test]**&#x200B;をクリックして設定を完了します。
 
-### 関連
+>[!NOTE]
+>
+>SSH ホストキーの登録、更新、エラーメッセージ、およびトラブルシューティングについては、[SSH ホストキー検証](ssh-host-key-verification.md)を参照してください。
 
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+## 関連 {#related}
+
+* [SSH ホスト キーの検証](ssh-host-key-verification.md)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -5,23 +5,14 @@ exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/HkKVLKV9RpLIWN-YY5GggdnlHeBB2Xg9odAbSZklHGE
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 376
+source-wordcount: 399
 ht-degree: 0%
 
 ---
@@ -30,18 +21,19 @@ ht-degree: 0%
 
 ## このトピックでは
 
-* [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
-* [&#x200B; [!DNL MySQL] の [!DNL Commerce Intelligence] ユーザーを作成](#steptwo)
+* [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+* [ [!DNL Commerce Intelligence]の [!DNL MySQL]  ユーザーを作成](#steptwo)
 * [接続情報を [!DNL Commerce Intelligence]に入力](#stepthree)
 
 ## に移動
 
-* [[!DNL MySQL]経由 &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
-* [[!DNL MySQL]経由で [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
+* [`SSH tunnel`経由で[!DNL MySQL]](../integrations/mysql-via-ssh-tunnel.md)
+* [SSH ホスト キーの検証](../integrations/ssh-host-key-verification.md)
+* [ [!DNL cPanel]経由で[!DNL MySQL]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >
->[!DNL Adobe]では、[SSH](../integrations/mysql-via-ssh-tunnel.md)またはその他の形式の暗号化を使用してデータを保護することをお勧めします。 このオプションを使用しない場合でも、このトピックの手順を使用して、[!DNL Commerce Intelligence]をデータベースに直接接続できます。
+>[!DNL Adobe]では、[SSH](../integrations/mysql-via-ssh-tunnel.md)またはその他の形式の暗号化を使用してデータを保護することをお勧めします。 SSH ホスト キーの検証については、[SSH ホスト キーの検証](../integrations/ssh-host-key-verification.md)を参照してください。 このオプションを使用しない場合でも、このトピックの手順を使用して、[!DNL Commerce Intelligence]をデータベースに直接接続できます。
 
 このトピックでは、[!DNL MySQL] データベースを[!DNL Commerce Intelligence]に直接接続する方法について説明します。 これらの設定は、[!DNL Adobe Commerce]またはMySQLを使用するその他のe コマースデータベースでも使用できます。
 
@@ -51,9 +43,9 @@ ht-degree: 0%
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## [!DNL MySQL]の[!DNL Commerce Intelligence] ユーザーを作成
+## [!DNL Commerce Intelligence]の[!DNL MySQL] ユーザーを作成
 
-`MySQL`の[!DNL Commerce Intelligence] ユーザーを作成する最も簡単な方法は、`MySQL`権限で`GRANT`にログインしたときに次のクエリを実行することです。 `Commerce Intelligence IP Address`を[!DNL Commerce Intelligence] IP アドレスに置き換え、`secure password`を選択した安全なパスワードに置き換えます。
+[!DNL Commerce Intelligence]の`MySQL` ユーザーを作成する最も簡単な方法は、`GRANT`権限で`MySQL`にログインしたときに次のクエリを実行することです。 `Commerce Intelligence IP Address`を[!DNL Commerce Intelligence] IP アドレスに置き換え、`secure password`を選択した安全なパスワードに置き換えます。
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
@@ -75,10 +67,10 @@ ht-degree: 0%
 * `Port`: サーバー上のMySQLのポート （`3306` デフォルト）
 * `Host`: デフォルトでは、これはlocalhostです。 一般に、これは[!DNL MySQL] サーバーのバインド アドレス値です。デフォルトは`127.0.0.1 (localhost)`ですが、一部のローカル ネットワーク アドレス （例：`192.168.0.1`）またはサーバーのパブリック IP アドレスにすることもできます。
 
-  値は、`my.cnf`を読み込む行の下の`/etc/my.cnf` ファイル（`\[mysqld\]`にある）にあります。 そのファイルでバインドアドレス行がコメントアウトされると、サーバーは外部からの接続試行から保護されます。
+  値は、`\[mysqld\]`を読み込む行の下の`my.cnf` ファイル（`/etc/my.cnf`にある）にあります。 そのファイルでバインドアドレス行がコメントアウトされると、サーバーは外部からの接続試行から保護されます。
 
 完了したら、**[!UICONTROL Save & Test]**&#x200B;をクリックして設定を完了します。
 
 ## 関連ドキュメント
 
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
