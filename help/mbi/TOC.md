@@ -5,9 +5,9 @@ user-guide-title: Commerce Intelligence ユーザーガイド
 breadcrumb-title: Commerce Intelligence ユーザーガイド
 role: Admin, Developer, Leader, User
 feature: Business Performance
-source-git-commit: 994fd98dac3dd8693b79c7497bba7bb6df27edf6
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
@@ -137,6 +137,7 @@ ht-degree: 0%
       - [Adobe Commerceとの連携](data-analyst/importing-data/integrations/magento.md)
       - [予想されるCommerce データ](data-analyst/importing-data/integrations/magento-data.md)
       - [接続中 [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
+      - [SSH ホスト キーの検証](data-analyst/importing-data/integrations/ssh-host-key-verification.md)
       - [&#x200B; [!DNL SSH Tunnel]経由で [!DNL MongoDB] 接続](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
       - [a [!DNL direct connection]経由で [!DNL MySQL] に接続しています](data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)
       - [&#x200B; [!DNL cPanel]経由で [!DNL MySQL] 接続](data-analyst/importing-data/integrations/mysql-via-cpanel.md)

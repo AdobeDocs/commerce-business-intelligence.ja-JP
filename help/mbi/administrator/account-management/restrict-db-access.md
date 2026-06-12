@@ -16,16 +16,16 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 204
+source-wordcount: 225
 ht-degree: 0%
 
 ---
 
 # アクセスを制限
 
-サーバーへのSSH トンネルを作成する場合、[!DNL Adobe Commerce Intelligence]がデータベース以外にアクセスする必要はありません。 データベースを格納するサーバーに[!DNL Commerce Intelligence]が完全にアクセスすることを望まない場合は、[!DNL Commerce Intelligence Linux] ユーザーを[制限付きbash shell](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html)に強制的に割り当てることで、アクセスを制限できます。
+サーバーへのSSH トンネルを作成する場合、[!DNL Adobe Commerce Intelligence]がデータベース以外にアクセスする必要はありません。 SSH ホストキーの登録、エラー、およびトラブルシューティングについては、[SSH ホストキーの検証](../../data-analyst/importing-data/integrations/ssh-host-key-verification.md)を参照してください。 データベースを格納するサーバーに[!DNL Commerce Intelligence]が完全にアクセスすることを望まない場合は、[!DNL Commerce Intelligence Linux] ユーザーを[制限付きbash shell](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html)に強制的に割り当てることで、アクセスを制限できます。
 
 名前から推測したかもしれませんが、制限されたbash シェルは、標準シェルよりも制御された環境を設定するために使用されます。 このタイプのシェルについて重要なことは、制限付きシェルユーザーはシステム機能にアクセスしたり、何らかの変更を加えたりすることができないということです。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 実行されたシェルが`bash -r`であることを確認してください
 
-これらはすべて、ユーザーがログインしたときに実行されるコマンドの一部として、ユーザーのホーム `authorized_keys` ディレクトリの`dir/.ssh` ファイル内で実行できます。 次のようになります。
+これらはすべて、ユーザーがログインしたときに実行されるコマンドの一部として、ユーザーのホーム `dir/.ssh` ディレクトリの`authorized_keys` ファイル内で実行できます。 次のようになります。
 
 ```bash
 ... other keys ...

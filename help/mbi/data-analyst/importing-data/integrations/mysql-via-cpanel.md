@@ -19,16 +19,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: 400
 ht-degree: 0%
 
 ---
 
-# [!DNL MySQL]経由で[!DNL cPanel]に接続
+# [!DNL cPanel]経由で[!DNL MySQL]に接続
 
-* [&#x200B; [!DNL Commerce Intelligence] [!DNL MySQL]で [!DNL cPanel] ユーザーを作成](#cpanel)
+* [&#x200B; [!DNL cPanel]で [!DNL Commerce Intelligence] [!DNL MySQL] ユーザーを作成](#cpanel)
 * [&#x200B; [!DNL Commerce Intelligence]への接続とユーザー情報の入力](#finish)
 
 ## に移動
@@ -40,17 +40,17 @@ ht-degree: 0%
 >
 >[!DNL Adobe]では、データを保護するためにSSHまたはその他の形式の暗号化を使用することをお勧めします。 このオプションを使用しない場合でも、このトピックの手順を使用して、[!DNL Commerce Intelligence]をデータベースに直接接続できます。
 
-このトピックでは、[!DNL MySQL]を使用して[!DNL Commerce Intelligence] データベースを[!DNL cPanel]に直接接続する方法について説明します。 このプロセスは、[!DNL Adobe Commerce]やその他のMySQL ベースのe コマースデータベースを[!DNL Commerce Intelligence]に接続するためにも使用できます。
+このトピックでは、[!DNL cPanel]を使用して[!DNL MySQL] データベースを[!DNL Commerce Intelligence]に直接接続する方法について説明します。 このプロセスは、[!DNL Adobe Commerce]やその他のMySQL ベースのe コマースデータベースを[!DNL Commerce Intelligence]に接続するためにも使用できます。
 
 1. [!DNL Commerce Intelligence] [!DNL MySQL] ユーザーを[!DNL cPanel]に作成します
 1. 接続とユーザー情報を[!DNL Commerce Intelligence]に入力してください
 
 今すぐ始める。
 
-## [!DNL Commerce Intelligence]で[!DNL MySQL] [!DNL cPanel] ユーザーを作成しています {#cpanel}
+## [!DNL cPanel]で[!DNL Commerce Intelligence] [!DNL MySQL] ユーザーを作成しています {#cpanel}
 
 1. ホスティングプロバイダーを介して[!DNL cPanel]にログインします。
-1. 「**[!UICONTROL [!DNL MySQL] Databases]**」セクションにある「`Database`」をクリックします。
+1. 「`Database`」セクションにある「**[!UICONTROL [!DNL MySQL] Databases]**」をクリックします。
 1. `Add New User` セクションまでスクロールして、[!DNL Commerce Intelligence]のユーザーを作成します。
 
    ユーザーフォームの作成を示す![cPanel MySQL データベースインターフェイス &#x200B;](../../../assets/create-mbi-mysql-user-cpanel.png)
@@ -82,6 +82,11 @@ ht-degree: 0%
 
 完了したら、**[!UICONTROL Save & Test]**&#x200B;をクリックして設定を完了します。
 
-## 関連：
+>[!NOTE]
+>
+>SSH トンネルを使用する場合は、登録、更新、エラーメッセージ、およびトラブルシューティングについては、[SSH ホストキー検証](ssh-host-key-verification.md)を参照してください。
 
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+## 関連 {#related}
+
+* [SSH ホスト キーの検証](ssh-host-key-verification.md)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 661
+source-wordcount: 686
 ht-degree: 0%
 
 ---
@@ -61,11 +61,11 @@ SSH トンネルを介して[!DNL MongoDB] データベースを[!DNL Commerce I
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## `Linux`の[!DNL Commerce Intelligence] ユーザーを作成しています {#linux}
+## [!DNL Commerce Intelligence]の`Linux` ユーザーを作成しています {#linux}
 
 >[!IMPORTANT]
 >
->サーバーに関連付けられている`sshd_config` ファイルが既定のオプションに設定されていない場合、特定のユーザーのみがサーバーアクセスを持っています。これにより、[!DNL Commerce Intelligence]への接続が正常に行われなくなります。 このような場合、`AllowUsers` ユーザーがサーバーにアクセスできるようにするには、`rjmetric`のようなコマンドを実行する必要があります。
+>サーバーに関連付けられている`sshd_config` ファイルが既定のオプションに設定されていない場合、特定のユーザーのみがサーバーアクセスを持っています。これにより、[!DNL Commerce Intelligence]への接続が正常に行われなくなります。 このような場合、`rjmetric` ユーザーがサーバーにアクセスできるようにするには、`AllowUsers`のようなコマンドを実行する必要があります。
 
 これは、リアルタイム（または頻繁に更新される）データを含む限り、実稼動マシンまたはセカンダリマシンにすることができます。 このユーザーは、[!DNL MongoDB] サーバーに接続する権利を保持している限り、任意の方法で制限できます。
 
@@ -157,8 +157,13 @@ SSH トンネルを介して[!DNL MongoDB] データベースを[!DNL Commerce I
 * `Username`: [!DNL Commerce Intelligence] Linux （SSH） ユーザー名（rjmetricにする必要があります）
 * `SSH Port`: サーバー上のSSH ポート （既定では22）
 
-完了したら、**[!UICONTROL Save Test]**&#x200B;をクリックして設定を完了します。
+完了したら、**[!UICONTROL Save & Test]**&#x200B;をクリックして設定を完了します。
 
-### 関連
+>[!NOTE]
+>
+>SSH ホストキーの登録、更新、エラーメッセージ、およびトラブルシューティングについては、[SSH ホストキー検証](ssh-host-key-verification.md)を参照してください。
 
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+## 関連 {#related}
+
+* [SSH ホスト キーの検証](ssh-host-key-verification.md)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)

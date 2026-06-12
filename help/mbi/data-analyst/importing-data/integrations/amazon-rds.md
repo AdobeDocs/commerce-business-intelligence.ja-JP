@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 503
+source-wordcount: 516
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]が[!DNL RDS] インスタンスに正常に接続するには、これらのIP アドレスをAWS管理コンソールを使用して適切なデータベースセキュリティグループに追加する必要があります。 これらのIP アドレスは、既存のグループに追加することも、グループを作成することもできます。重要なことは、グループが[!DNL Commerce Intelligence]に接続するインスタンスへのアクセスを許可されていることです。
 
-[!DNL Commerce Intelligence]個のIP アドレスを追加する場合は、正確なIP アドレスであることを`/32`に示すために、アドレスの末尾に[!DNL Amazon]を追加してください。 心配しないでください。AWSのインターフェイスは、これが必要であることを明確にしています。
+[!DNL Commerce Intelligence]個のIP アドレスを追加する場合は、正確なIP アドレスであることを[!DNL Amazon]に示すために、アドレスの末尾に`/32`を追加してください。 心配しないでください。AWSのインターフェイスは、これが必要であることを明確にしています。
 
-## `Linux`の[!DNL Commerce Intelligence] ユーザーを作成 {#linux}
+## [!DNL Commerce Intelligence]の`Linux` ユーザーを作成 {#linux}
 
 >[!NOTE]
 >
->この手順は、暗号化された接続を使用している場合にのみ必要です。 この方法の手順については、使用しているデータベースのセットアップ トピック（例：MySQL）を参照してください。 `Linux` ユーザーは、インターネット経由でデータを送信する最も安全な方法である`SSH tunnel`を作成できます。
+>この手順は、暗号化された接続を使用している場合にのみ必要です。 この方法の手順については、使用しているデータベースのセットアップ トピック（例：MySQL）を参照してください。 `Linux` ユーザーは、インターネット経由でデータを送信する最も安全な方法である`SSH tunnel`を作成できます。 SSH ホストキーの登録、エラー、およびトラブルシューティングについては、[SSH ホストキーの検証](ssh-host-key-verification.md)を参照してください。
 
 ## [!DNL Commerce Intelligence]のデータベースユーザーを作成
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 インスタンスへの[!DNL Commerce Intelligence] アクセスを許可し、ユーザーを作成した後、最後に行う必要があるのは、接続情報を[!DNL Commerce Intelligence]に入力することです。
 
-`MySQL`、`Microsoft SQL`および`PostgreSQL`の資格情報ページには、`Integrations`をクリックして&#x200B;**[!UICONTROL Manage Data** > **Integrations]** ページ （**[!UICONTROL Add Integration]**）からアクセスできます。 統合のリストが表示されたら、使用しているデータベースのアイコンをクリックして、資格情報ページに移動します。 現在、必要な統合機能にアクセスできない場合は、Adobe アカウントチームにお問い合わせください。
+`MySQL`、`Microsoft SQL`および`PostgreSQL`の資格情報ページには、**[!UICONTROL Add Integration]**&#x200B;をクリックして`Integrations` ページ （**[!UICONTROL Manage Data** > **Integrations]**）からアクセスできます。 統合のリストが表示されたら、使用しているデータベースのアイコンをクリックして、資格情報ページに移動します。 現在、必要な統合機能にアクセスできない場合は、Adobe アカウントチームにお問い合わせください。
 
 接続の作成を完了するには、次の情報が必要です。
 

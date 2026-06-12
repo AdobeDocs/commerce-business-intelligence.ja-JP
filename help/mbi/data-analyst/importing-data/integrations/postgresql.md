@@ -19,21 +19,21 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 566
 ht-degree: 0%
 
 ---
 
-# [!DNL PostgreSQL]経由で[!DNL SSH Tunnel]に接続
+# [!DNL SSH Tunnel]経由で[!DNL PostgreSQL]に接続
 
-[!DNL PostgreSQL] データベースを[!DNL Commerce Intelligence]経由で`SSH tunnel`に接続するには、次の操作を行う必要があります。
+[!DNL PostgreSQL] データベースを`SSH tunnel`経由で[!DNL Commerce Intelligence]に接続するには、次の操作を行う必要があります。
 
 1. [&#x200B; [!DNL Commerce Intelligence] 公開鍵を取得](#retrieve)
 1. [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
-1. [&#x200B; [!DNL Linux] の [!DNL Commerce Intelligence] ユーザーを作成](#linux)
-1. [&#x200B; [!DNL PostgreSQL] の [!DNL Commerce Intelligence] ユーザーを作成](#postgres)
+1. [&#x200B; [!DNL Commerce Intelligence]の [!DNL Linux]  ユーザーを作成](#linux)
+1. [&#x200B; [!DNL Commerce Intelligence]の [!DNL PostgreSQL]  ユーザーを作成](#postgres)
 1. [接続とユーザー情報を [!DNL Commerce Intelligence]に入力します](#finish)
 
 ## [!DNL Commerce Intelligence] [!DNL public key]を取得しています {#retrieve}
@@ -55,9 +55,9 @@ ht-degree: 0%
 
 接続を成功させるには、IP アドレスからのアクセスを許可するようにファイアウォールを設定する必要があります。 `54.88.76.97/32`ですが、`PostgreSQL`資格情報ページにもあります。 上のGIFの青いボックスを参照してください。
 
-## [!DNL Linux]の[!DNL Commerce Intelligence] ユーザーを作成しています {#linux}
+## [!DNL Commerce Intelligence]の[!DNL Linux] ユーザーを作成しています {#linux}
 
-これは、リアルタイム（または頻繁に更新される）データを含む限り、実稼動マシンまたはセカンダリマシンにすることができます。 [&#x200B; サーバーに接続する権利を保持している限り、このユーザー](../../../administrator/account-management/restrict-db-access.md)を任意の方法で[!DNL PostgreSQL]制限できます。
+これは、リアルタイム（または頻繁に更新される）データを含む限り、実稼動マシンまたはセカンダリマシンにすることができます。 [!DNL PostgreSQL] サーバーに接続する権利を保持している限り、このユーザー[&#128279;](../../../administrator/account-management/restrict-db-access.md)を任意の方法で制限できます。
 
 1. 新しいユーザーを追加するには、次のコマンドを[!DNL Linux] サーバー上のルートとして実行します。
 
@@ -116,8 +116,13 @@ ht-degree: 0%
 * `Username`: SSH ログイン名（rjmetricにする必要があります）
 * `SSH Port`: サーバーのSSH ポート （既定では22）
 
-完了したら、**保存とテスト**&#x200B;をクリックして設定を完了します。
+完了したら、**[!UICONTROL Save & Test]**&#x200B;をクリックして設定を完了します。
 
-### 関連
+>[!NOTE]
+>
+>SSH ホストキーの登録、更新、エラーメッセージ、およびトラブルシューティングについては、[SSH ホストキー検証](ssh-host-key-verification.md)を参照してください。
 
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+## 関連 {#related}
+
+* [SSH ホスト キーの検証](ssh-host-key-verification.md)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
