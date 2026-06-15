@@ -1,14 +1,34 @@
 ---
-source-git-commit: 1d032e6adcc2034188ac0623a1da6a9bd61c4b5b
+source-git-commit: 93cbb095917b7c150295f7da32fc5aaed31db4b2
 workflow-type: tm+mt
-source-wordcount: '34'
-ht-degree: 5%
+source-wordcount: '84'
+ht-degree: 3%
 
 ---
 # 新しいテンプレート
 
 ## 最新情報
 
-このセクションには、過去 60 日間に加えられた変更が含まれています。 コピー編集などのマイナーアップデートはすべて、このリストから除外します。
+このセクションには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
 
-__現時点では、重要なドキュメントの更新はありません。__
+### 2026年6月12日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新しい<a href="https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">SSH ホストキー検証</a> トピック文書の保存とテスト、SSH ホストキーの更新、移行動作、エラーのトラブルシューティング、サポートへの問い合わせタイミングについて説明します。 SSH トンネル統合のトピックがこのガイドにリンクされるようになりました。</p>
+</td>
+      <td>
+        フィードバック
+      </td>
+      <td><a href="enterprise:Adobe-Enterprise-Docs/commerce-business-intelligence.en/pull/119">プルリクエスト</a></td>
+    </tr>
+  </tbody>
+</table>
