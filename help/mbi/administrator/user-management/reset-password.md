@@ -32,5 +32,5 @@ ht-degree: 0%
 
 また、**[!UICONTROL Personal Settings]** ページを使用して、[!DNL Commerce Intelligence]内のパスワードを変更することもできます。
 
-パスワードをリセットしてアカウントからロックされたままの場合は、[これらのヒント &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html)に従って、問題を特定してください。
+パスワードをリセットしてアカウントからロックされたままの場合は、[これらのヒント &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=ja)に従って、問題を特定してください。
 
