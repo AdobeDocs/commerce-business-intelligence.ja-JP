@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 238
+source-wordcount: 242
 ht-degree: 0%
 
 ---
@@ -42,8 +42,9 @@ ht-degree: 0%
 >
 >**[!UICONTROL Standard]**&#x200B;権限を持つすべてのユーザーは、[!DNL Google Analytics]のすべての指標に加えて、Data Exportを介してData Warehouseのすべてのデータにアクセスできます。
 
-また、**[!UICONTROL Standard]** セクションで指標を編集し、**[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)** ユーザーを選択することで、指標へのアクセスを制限することもできます。
+また、**[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)** セクションで指標を編集し、**[!UICONTROL Standard]** ユーザーを選択することで、指標へのアクセスを制限することもできます。
 
 >[!NOTE]
 >
 >指標を複製すると、[!DNL Commerce Intelligence]は元の指標に設定されたユーザー権限をコピーします。
+

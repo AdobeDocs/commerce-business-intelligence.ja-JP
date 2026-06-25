@@ -18,9 +18,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 220
+source-wordcount: 229
 ht-degree: 0%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 0%
 
 1. **ドングルを制御するためのUSB キーボードとマウス**。
 
-1. **複数のタブ間を一度に回転するブラウザー拡張機能。**&#x200B;これにより、一意のタブに表示する選択したダッシュボードを設定できます。 Adobeでは、[を使用している場合は、](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)Revolver Tabs[!DNL Chrome]拡張機能をお勧めします。
+1. **複数のタブ間を一度に回転するブラウザー拡張機能。** これにより、一意のタブに表示する選択したダッシュボードを設定できます。 Adobeでは、[!DNL Chrome]を使用している場合は、[Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)拡張機能をお勧めします。
 
 上記のハードウェアを使用したら、各タブに表示する特定のダッシュボードを使用して、画面上のブラウザーウィンドウを開くことができます。 最後に、ブラウザーを設定して、各ダッシュボードを目的の頻度で回転させます。
+
