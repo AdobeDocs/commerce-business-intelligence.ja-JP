@@ -20,7 +20,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 86
 ht-degree: 0%
@@ -40,4 +40,5 @@ ht-degree: 0%
 * [レポートの作成](../mbi/data-user/reports/rpt-fundamentals.md)
 * [ダッシュボードの構築](../mbi/data-user/dashboards/ess-dashboards.md)
 * [データ共有](../mbi/data-user/export-data/share-data.md)
+
 
