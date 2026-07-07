@@ -5,20 +5,12 @@ exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
 TQID: https://experienceleague.adobe.com/-cMJHvHlodd05-Np22qtxxS8lHMi4StXOz1iD83xWkU
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 245
 ht-degree: 0%
@@ -34,7 +26,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >アカウントの請求情報を表示、追加、変更するには、`Billing`権限が必要です。 [&#x200B; ユーザーアカウントの作成時に、ユーザーごとに](../../administrator/user-management/user-management.md)権限が設定されます。 `Billing`権限が必要な場合は、アカウントの管理者にお問い合わせください。
+   >アカウントの請求情報を表示、追加、変更するには、`Billing`権限が必要です。 [ ユーザーアカウントの作成時に、ユーザーごとに](../../administrator/user-management/user-management.md)権限が設定されます。 `Billing`権限が必要な場合は、アカウントの管理者にお問い合わせください。
 
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
 
@@ -50,9 +42,10 @@ ht-degree: 0%
 
 ## 招待状を再送信
 
-招待を再送信する必要がある場合は、[&#x200B; ログインページ &#x200B;](https://dashboard.rjmetrics.com/v2/session/create)で「**[!UICONTROL Forgot?]**」をクリックし、新規ユーザーのメールアドレスを入力して「**[!UICONTROL Reset Password]**」をクリックします。 これにより、招待が再送信され、ユーザーがログインできるようになります。
+招待を再送信する必要がある場合は、[ ログインページ ](https://dashboard.rjmetrics.com/v2/session/create)で「**[!UICONTROL Forgot?]**」をクリックし、新規ユーザーのメールアドレスを入力して「**[!UICONTROL Reset Password]**」をクリックします。 これにより、招待が再送信され、ユーザーがログインできるようになります。
 
 >[!IMPORTANT]
 >
->各アカウントには契約数のライセンス、つまりシートがあります。 上限に達した場合、または詳細を知りたい場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+>各アカウントには契約数のライセンス、つまりシートがあります。 上限に達した場合、または詳細を知りたい場合は、[ サポートチケットを送信してください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+
 
