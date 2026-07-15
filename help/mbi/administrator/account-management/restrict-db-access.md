@@ -1,7 +1,6 @@
 ---
 title: データベースへのアクセスの制限
 description: アクセスを制限し、データベースを格納するサーバーへのアクセスを制限する方法について説明します。
-exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
 role: Admin, User
 feature: Accounts, User Management
 TQID: https://experienceleague.adobe.com/O2cS-hbhjqktc4LpJD6agxgIwabrypgCY9fnJTCR2XM
@@ -16,12 +15,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 225
 ht-degree: 0%
 
 ---
+
 
 # アクセスを制限
 
@@ -32,7 +33,6 @@ ht-degree: 0%
 [!DNL Commerce Intelligence Linux] ユーザーを制限するには、次の2つの操作を行う必要があります。
 
 1. PATH環境変数を空の文字列に変更します。 つまり、ユーザーはシステム実行可能ファイルにアクセスできません。
-
 1. 実行されたシェルが`bash -r`であることを確認してください
 
 これらはすべて、ユーザーがログインしたときに実行されるコマンドの一部として、ユーザーのホーム `dir/.ssh` ディレクトリの`authorized_keys` ファイル内で実行できます。 次のようになります。
@@ -44,5 +44,3 @@ command="env PATH="" /bin/bash -r" <rjmetrics public key goes here>
 ```
 
 この操作が完了すると、[!DNL Commerce Intelligence]用に作成したユーザーはシステムに変更を加えることができません。
-
-

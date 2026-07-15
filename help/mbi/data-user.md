@@ -1,7 +1,6 @@
 ---
 title: データユーザー
 description: データを活用して、より多くの情報にもとづいたビジネス上の意思決定を行い、レポートやダッシュボードを作成する方法を紹介します。
-exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/-sqS1qaDbWwGY2Hy13sSqw4sdnxZYGQqiEn5wVcF5lo
@@ -20,18 +19,21 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
+source-git-commit: 1e8d1a7b6807eb23a7784133ca2d1aea219386b7
 workflow-type: tm+mt
 source-wordcount: 86
 ht-degree: 0%
 
 ---
 
+
 # データユーザー
 
 データはビジネス上の意思決定に役立てることができます。 チームのデータアナリストからレポートやダッシュボードを受け取る可能性がありますが、それらのレポートやダッシュボードの作成方法も知る必要があります。
 
 この節では、次の方法を示します。
+
 * レポートとダッシュボードを使用して[!DNL Commerce Intelligence]のデータを取得し、表示します
 * 電子メールと`.csv` ファイルを通じて関係者とデータを共有する
 
@@ -40,5 +42,3 @@ ht-degree: 0%
 * [レポートの作成](../mbi/data-user/reports/rpt-fundamentals.md)
 * [ダッシュボードの構築](../mbi/data-user/dashboards/ess-dashboards.md)
 * [データ共有](../mbi/data-user/export-data/share-data.md)
-
-

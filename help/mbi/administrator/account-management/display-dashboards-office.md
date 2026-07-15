@@ -1,7 +1,6 @@
 ---
 title: 複数の画面でのダッシュボードの表示
 description: オフィスの周りにダッシュボードを表示する方法について説明します。
-exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
 role: Admin, User
 feature: Dashboards
 product_v2:
@@ -18,12 +17,14 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 229
 ht-degree: 0%
 
 ---
+
 
 # オフィスの周囲にダッシュボードを表示
 
@@ -32,13 +33,8 @@ ht-degree: 0%
 このオプションに必要な項目の推奨リストを次に示します。
 
 1. **HDMI入力**&#x200B;を使用してブロードキャストするテレビまたはモニター。
-
 1. **[!DNL Chrome] OSやRaspberry Piなどの軽量OSを実行しているWi-Fi対応ドングル。** ドングルには、画面に接続し、選択したダッシュボードを常に表示するHDMI出力が必要です。 独自のOSを実行している専用マシンは、[!DNL Chromecast]のようなセットアップよりも優れています。この設定では、同じダッシュボードをすべての接続された画面にビーミングすることに制限されます。 ドングルは、画面の後ろにマウントするのが最適です。
-
 1. **ドングルを制御するためのUSB キーボードとマウス**。
-
 1. **複数のタブ間を一度に回転するブラウザー拡張機能。** これにより、一意のタブに表示する選択したダッシュボードを設定できます。 Adobeでは、[!DNL Chrome]を使用している場合は、[Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)拡張機能をお勧めします。
 
 上記のハードウェアを使用したら、各タブに表示する特定のダッシュボードを使用して、画面上のブラウザーウィンドウを開くことができます。 最後に、ブラウザーを設定して、各ダッシュボードを目的の頻度で回転させます。
-
-
