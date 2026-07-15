@@ -55,4 +55,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->各アカウントには契約数のライセンス、つまりシートがあります。 上限に達した場合、または詳細を知りたい場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+>各アカウントには契約数のライセンス、つまりシートがあります。 上限に達した場合、または詳細を知りたい場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。

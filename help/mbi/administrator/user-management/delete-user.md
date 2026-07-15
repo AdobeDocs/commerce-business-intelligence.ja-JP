@@ -42,5 +42,5 @@ ht-degree: 0%
 そのユーザーのダッシュボードを別のユーザーのアカウントにプッシュするだけで済む場合は、次の操作を行います。
 
 1. 削除されたユーザーの電子メールアドレスを使用して、新しい[!DNL Commerce Intelligence] ユーザーを作成します。
-1. ユーザーを作成した後、[&#x200B; サポートに通知](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)します。 サポートは、ダッシュボードをアカウントに転送します。
+1. ユーザーを作成した後、[&#x200B; サポートに通知](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)します。 サポートは、ダッシュボードをアカウントに転送します。
 1. Adobe サポートから転送が通知されたら、ユーザーを再度削除できます。
