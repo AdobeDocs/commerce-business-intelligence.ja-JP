@@ -20,16 +20,16 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: c8d7097b4f841a4fe8c5777f207ea0ea53202a0f
 workflow-type: tm+mt
-source-wordcount: 303
+source-wordcount: 342
 ht-degree: 0%
 
 ---
 
 # [!DNL Facebook Ads] データが必要です
 
-[&#x200B; アカウント  [!DNL Facebook Ads] を接続した後、](../integrations/facebook-ads.md)Data Warehouse Manager[を使用して、分析用の関連データフィールドを簡単に追跡できます。](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)
+[&#128279;](../integrations/facebook-ads.md)&#x200B; アカウント  [!DNL Facebook Ads] を接続した後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。
 
 このトピックでは、AdobeでData Warehouseに同期する際に推奨されるテーブルの概要について説明します。 これは、かなり多くのサブテーブルがあるので、コアテーブルのみをハイライト表示します。
 
@@ -37,19 +37,27 @@ ht-degree: 0%
 
 これらのテーブルには、コア広告キャンペーンコンポーネントに関するデータが含まれています。
 
-### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
+### `facebook _campaigns_ (account-id)`
+
+[`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
 このテーブルは、[!DNL Facebook Ads] アカウントのキャンペーンのコア テーブルです。 列には、`campaign id`、`name`、`status (active/paused)`、`objective`が含まれます。
 
-### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
+### `facebook _adsets_ (account-id)`
+
+[`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
 このテーブル レコードは、[!DNL Facebook Ads] アカウントの[!DNL Facebook Ads] セットのコア テーブルです。 列には、広告セットが属する広告`Campaign id/name`、予算編成、入札タイプ、スケジュール、オーディエンスのターゲティング情報が含まれます。
 
-### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
+### `facebook _ads_ (account-id)`
+
+[`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
 このテーブルには、[!DNL Facebook Ads] アカウントのすべての広告が記録されます。 列には、属する広告セットと広告キャンペーン、広告の入札、広告のターゲティング、広告が使用する特定のクリエイティブ（画像/テキスト）への参照などの広告情報が含まれます。
 
-### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
+### `facebook _adcreative_ (account-id)`
+
+[`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
 このテーブルには、[!DNL Facebook Ads]で使用されているクリエイターが記録されます。 クリエイティブ：クリエイティブ名、説明、画像のURLを適宜入力します
 
@@ -76,4 +84,4 @@ ht-degree: 0%
 ## 関連
 
 * [接続中 [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
