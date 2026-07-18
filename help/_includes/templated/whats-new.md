@@ -23,7 +23,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>新しい<a href="https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">SSH ホストキー検証</a> トピック文書の保存とテスト、SSH ホストキーの更新、移行動作、エラーのトラブルシューティング、サポートへの問い合わせタイミングについて説明します。 SSH トンネル統合のトピックがこのガイドにリンクされるようになりました。</p>
+      <td><p>新しい<a href="https://experienceleague.adobe.com/ja/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">SSH ホストキー検証</a> トピック文書の保存とテスト、SSH ホストキーの更新、移行動作、エラーのトラブルシューティング、サポートへの問い合わせタイミングについて説明します。 SSH トンネル統合のトピックがこのガイドにリンクされるようになりました。</p>
 </td>
       <td>
         フィードバック
