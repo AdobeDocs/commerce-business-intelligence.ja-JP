@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ### 軽微な変更
 
-マイナーアップデートを投稿する場合は、記事にアクセスし、記事の下部に表示されるフィードバック領域をクリックし、**詳細なフィードバックオプション**&#x200B;をクリックしてから、**編集を提案**&#x200B;をクリックして、GitHubのマークダウンソースファイルに移動します。 GitHub UIを使用して更新します。 詳しくは、[Adobe Docs コントリビューターガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
+マイナーアップデートを投稿する場合は、記事にアクセスし、記事の下部に表示されるフィードバック領域をクリックし、**詳細なフィードバックオプション**&#x200B;をクリックしてから、**編集を提案**&#x200B;をクリックして、GitHubのマークダウンソースファイルに移動します。 GitHub UIを使用して更新します。 詳しくは、[Adobe Docs コントリビューターガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
 
 このリポジトリのドキュメントやコード例に対して提出する軽微な修正や明確化は、Adobe利用条件の対象となります。
 
