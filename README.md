@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4557430537492370a52030b60750950db8b245da
+source-git-commit: aa7acd0d863a3cd48ff83675b72c2a96eae02b4d
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 6%
+source-wordcount: '692'
+ht-degree: 0%
 
 ---
 # Adobe Commerce Intelligenceのユーザーガイド
@@ -11,17 +11,17 @@ ht-degree: 6%
 
 ## AdobeオープンSource行動規範
 
-このプロジェクトでは、[アドビオープンソース行動規範](code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct)を採用しています。詳しくは、[投稿](contributing.md)の記事を参照してください。
+このプロジェクトでは、[Adobe Open Source Code of Conduct](code-of-conduct.md)または[.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)を採用しています。 詳しくは、[寄付](contributing.md)の記事を参照してください。
 
 ## Adobe コンテンツへのコントリビューションについて
 
-[Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
+[Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
 
 貢献の方法は、貢献するユーザーと変更の種類によって異なります。
 
 ### 軽微な変更
 
-マイナーアップデートを投稿する場合は、記事にアクセスし、記事の下部に表示されるフィードバック領域をクリックし、**詳細なフィードバックオプション**&#x200B;をクリックしてから、**編集を提案**&#x200B;をクリックして、GitHubのマークダウンソースファイルに移動します。 GitHub UIを使用して更新します。 詳しくは、[Adobe Docs コントリビューターガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
+マイナーアップデートを投稿する場合は、記事にアクセスし、記事の下部に表示されるフィードバック領域をクリックし、**詳細なフィードバックオプション**&#x200B;をクリックしてから、**編集を提案**&#x200B;をクリックして、GitHubのマークダウンソースファイルに移動します。 GitHub UIを使用して更新します。 詳しくは、[Adobe Docs コントリビューターガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
 
 このリポジトリのドキュメントやコード例に対して提出する軽微な修正や明確化は、Adobe利用条件の対象となります。
 
@@ -31,20 +31,20 @@ Adobe コミュニティに参加していて、新しい記事を作成した�
 
 ### Adobe社員の主な変化
 
-Adobe Experience Cloud ソリューションのテクニカルライター、プログラムマネージャー、またはプロダクトチームの開発者で、技術記事の執筆や執筆を担当する場合は、GHECのプライベートリポジトリを使用する必要があります。
+Adobe Experience Cloud ソリューションの製品チームのテクニカルライター、プログラムマネージャー、開発者であり、技術記事の投稿や作成を担当する仕事がある場合は、GHECのプライベートリポジトリを使用する必要があります。
 
 ## ツールと設定
 
 コミュニティのコントリビューターは、GitHub UIを使用して基本的な編集をおこなったり、リポジトリをフォークして主要なコントリビューションを作成したりできます。
 
-詳しくは、[Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
+詳しくは、[Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
 
 ## Markdownを使用してトピックを書式設定する方法
 
 このリポジトリ内のすべての記事では、GitHubのマークダウンを使用しています。 Markdownに詳しくない場合は、以下を参照してください。
 
-- [Markdown構文ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/markdown-syntax)
-- [Markdown構文のカンニングペーパー](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
+- [Markdown構文ガイド](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/markdown-syntax)
+- [Markdown構文チートシート](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
 
 ## 画像の最適化のためのプリコミットフック
 
@@ -60,10 +60,11 @@ Adobe Experience Cloud ソリューションのテクニカルライター、プ
 
 ### フックの機能
 
-- ステージングされた画像ファイルを自動検出（PNG、JPG、JPEG、GIF、SVG）
-- `image_optim`を実行して画像を圧縮および最適化
+- ステージングされた画像ファイルを自動的に検出（`.png`、`.jpeg`、`.jpg`、`.gif`、`.svg`）
+- `image_optim`を実行してラスター画像（`.png`、`.jpeg`、`.jpg`、`.gif`）を圧縮および最適化します
 - 最適化された画像を自動的にリステージ
-- コミットされたすべての画像が適切に最適化されていることを確認します
+- コミットされたすべてのラスター画像が適切に最適化されていることを確認します
+- ステージングされたSVGをサイズ制限に照らし合わせてチェックし、サイズが大きすぎるSVGが`help/`から参照されている場合はコミットを中止します（そうでない場合は警告するだけです）
 
 ### Adobe Workfrontの利点
 
@@ -78,21 +79,21 @@ Adobe Experience Cloud ソリューションのテクニカルライター、プ
 
 ### Adobe Experience Managerの導入方法
 
-- [はじめに](https://experienceleague.adobe.com/en/docs/authoring-guide/using/getting-started/getting-started)
-- [Git セットアップ &#x200B;](https://experienceleague.adobe.com/en/docs/authoring-guide/using/setup/tools/git-setup)
-- [GitおよびGitHub ドキュメントの基本事項](https://experienceleague.adobe.com/en/docs/authoring-guide/using/setup/tools/git-fundamentals)
-- [&#x200B; クイックスタートビデオ &#x200B;](https://experienceleague.adobe.com/en/docs/authoring-guide/using/getting-started/quick-start-guides/quick-start-overview)
+- [Adobe Experience Managerの概要](https://experienceleague.adobe.com/en/docs/authoring-guide/using/getting-started/getting-started)
+- [Git設定](https://experienceleague.adobe.com/en/docs/authoring-guide/using/setup/tools/git-setup)
+- [GitおよびGitHub documentation essentials](https://experienceleague.adobe.com/en/docs/authoring-guide/using/setup/tools/git-fundamentals)
+- [クイックスタートのビデオ](https://experienceleague.adobe.com/en/docs/authoring-guide/using/getting-started/quick-start-guides/quick-start-overview)
 
 ### ワークフロー
 
-- [使用頻度の低いユーザーのワークフロー](https://experienceleague.adobe.com/en/docs/authoring-guide/using/editing/git-workflow-infrequent-user)
-- [GitHub プルリクエスト &#x200B;](https://experienceleague.adobe.com/en/docs/authoring-guide/using/editing/public-github)
+- [利用頻度の低いコントリビューター向けのワークフロー](https://experienceleague.adobe.com/en/docs/authoring-guide/using/editing/git-workflow-infrequent-user)
+- [GitHub プルリクエスト](https://experienceleague.adobe.com/en/docs/authoring-guide/using/editing/public-github)
 
 ### 編集
 
-- [&#x200B; オーサリングのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/authoring-best-practices)
-- [Markdown構文ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/markdown-syntax)
-- [Markdown構文のカンニングペーパー](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
-- [&#x200B; テーブルの操作](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
-- [&#x200B; リンクの追加](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/linking)
-- [&#x200B; コンテンツの移動と再構築](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/restructure-new)
+- [オーサリングのベストプラクティス](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/authoring-best-practices)
+- [Markdown構文ガイド](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/markdown-syntax)
+- [Markdown構文チートシート](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
+- [テーブルの操作](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
+- [リンクの追加](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/linking)
+- [コンテンツの移行と再構築](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/restructure-new)
