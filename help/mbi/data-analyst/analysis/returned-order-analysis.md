@@ -5,11 +5,20 @@ exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/vEHbYcJUPlGk2eZsKvak9nSYBqOVvnKNSYDEutHMt3g
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
 source-wordcount: 601
@@ -21,7 +30,7 @@ ht-degree: 25%
 
 このトピックでは、ストアのリターンの詳細な分析を提供するダッシュボードを設定する方法を示します。
 
-![返品率と理由を表示する詳細な返品ダッシュボード ](../../assets/detailed-returns-dboard.png)
+![返品率と理由を表示する詳細な返品ダッシュボード &#x200B;](../../assets/detailed-returns-dboard.png)
 
 開始する前に、お客様は[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)のお客様である必要があり、返品に`enterprise\_rma` テーブルを使用していることを確認する必要があります。
 
@@ -67,10 +76,10 @@ ht-degree: 25%
 * **`Order's created at`**
 * 定義を選択：`Joined Column`
 * [!UICONTROL Create Path]:
-* 
-  [!UICONTROL Many]: `enterprise_rma.order_id`
-* 
-  [!UICONTROL One]: `sales_flat_order.entity_id`
+* &#x200B;
+  [!UICONTROL Many]&#x200B;: `enterprise_rma.order_id`
+* &#x200B;
+  [!UICONTROL One]&#x200B;: `sales_flat_order.entity_id`
 
 * [!UICONTROL table]を選択：`sales_flat_order`
 * [!UICONTROL column]を選択：`created_at`
@@ -88,10 +97,10 @@ ht-degree: 25%
 * **`return_date_requested`**
 * 定義を選択：`Joined Column`
 * [!UICONTROL Create Path]:
-  * 
-    [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-  * 
-    [!UICONTROL One]: `enterprise_rma.entity_id`
+  * &#x200B;
+    [!UICONTROL Many]&#x200B;: `enterprise_rma_item_entity.rma_entity_id`
+  * &#x200B;
+    [!UICONTROL One]&#x200B;: `enterprise_rma.entity_id`
 
 * [!UICONTROL table]を選択：`enterprise_rma`
 * [!UICONTROL column]を選択：`date_requested`
@@ -119,28 +128,28 @@ ht-degree: 25%
 * この指標は&#x200B;**カウント**&#x200B;を実行します
 * **`entity_id`**&#x200B;列
 * **`date_requested`**&#x200B;様から注文されました
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **返されたアイテム**
 * **`enterprise_rma_item_entity`** テーブル内
 * この指標は&#x200B;**合計**&#x200B;を実行します
 * **`qty_approved`**&#x200B;列
 * **`return date_requested`**&#x200B;様から注文されました
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **返されたアイテムの合計値**
 * **`enterprise_rma_item_entity`** テーブル内
 * この指標は&#x200B;**合計**&#x200B;を実行します
 * **`Returned item total value (qty_returned * price)`**&#x200B;列
 * **`return date_requested`**&#x200B;様から注文されました
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **注文から返品までの平均時間**
 * **`enterprise_rma`** テーブル内
 * この指標は、**平均**&#x200B;を実行します
 * **`Time between order's created_at and date_requested`**&#x200B;列
 * **`date_requested`**&#x200B;様から注文されました
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 >[!NOTE]
 >
@@ -150,102 +159,102 @@ ht-degree: 25%
 
 * **返品後に注文確率を繰り返す**
 * 指標`A`: `Number of orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
   * `Is in current month? = No`
 
 * 指標`B`: `Non-last orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Is customer's last order? (1=yes/0=no) = 0`
   * `Order contains a return? (1=yes/0=No) = 1`
 
 * 数式：再発注確率
-* [!UICONTROL Formula]: `B / A`
-* 
-  [!UICONTROL Format]: `Percentage`
+* [!UICONTROL Formula]&#x200B;: `B / A`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL間隔]: `None`
-* [!UICONTROL Group by]: `Customer's order number`
-* 
-  [!UICONTROL チャートタイプ]: `Bar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL 間隔]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Customer's order number`
+* &#x200B;
+  [!UICONTROL チャートタイプ]&#x200B;: `Bar`
 
 * **平均返品時間（常に）**
 * 指標`A`: `Avg time between order and return`
-* [!UICONTROL Metric]: `Avg time between order and return`
+* [!UICONTROL Metric]&#x200B;: `Avg time between order and return`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL間隔]: `None`
-* 
-  [!UICONTROL チャートタイプ]: `Number`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL 間隔]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL チャートタイプ]&#x200B;: `Number`
 
 * 返品率&#x200B;**返品率**
 * 指標`A`: `Number of orders`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 
 * 指標`B`: `Orders w/ return`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
 
 * 計算式：返品付き注文の%
-* [!UICONTROL Formula]: `B / A`
-* 
-  [!UICONTROL Format]: `Percentage`
+* [!UICONTROL Formula]&#x200B;: `B / A`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL間隔]: `None`
-* [!UICONTROL Chart Type]: `Number - % of orders with return`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL 間隔]&#x200B;: `None`
+* [!UICONTROL Chart Type]&#x200B;: `Number - % of orders with return`
 
 * **月までに返された収益**
 * 指標`A`: `Returned item total value`
-* [!UICONTROL Metric]: `Returned item total value`
+* [!UICONTROL Metric]&#x200B;: `Returned item total value`
 
-* [!UICONTROL Time period]: `All time`
-* [!UICONTROL Interval]: `By month`
-* 
-  [!UICONTROL チャートタイプ]: `Line`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* [!UICONTROL Interval]&#x200B;: `By month`
+* &#x200B;
+  [!UICONTROL チャートタイプ]&#x200B;: `Line`
 
 * **リターンを行い、再購入しなかった顧客**
 * 指標`A`: `Number of orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
   * `Is customer's last order? (1=yes/0=no) = 1`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL間隔]: `None`
-* 
-  [!UICONTROL グループ化：]: `Customer_email`
-* 
-  [!UICONTROL チャートタイプ]: `Table`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL 間隔]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL グループ化：]&#x200B;: `Customer_email`
+* &#x200B;
+  [!UICONTROL チャートタイプ]&#x200B;: `Table`
 
 * **項目別の返品率**
 * 指標`A`: `Returned items` （非表示）
 * [!UICONTROL Metric]：返されたアイテム
 
 * 指標`B`: `Items sold` （非表示）
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Formula]: `Return %`
-* [!UICONTROL Formula]: `B / A`
-* 
-  [!UICONTROL Format]: `Percentage`
+* [!UICONTROL Formula]&#x200B;: `Return %`
+* [!UICONTROL Formula]&#x200B;: `B / A`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL間隔]: `None`
-* [!UICONTROL Group by]: `product_sku AND/OR product_name`
-* 
-  [!UICONTROL チャートタイプ]: `Table`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL 間隔]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `product_sku AND/OR product_name`
+* &#x200B;
+  [!UICONTROL チャートタイプ]&#x200B;: `Table`
 
 すべてのレポートをまとめた後、必要に応じてダッシュボード上でレポートを整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 
-この分析の構築中に質問が発生した場合、またはプロフェッショナルサービスチームに連絡する場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+この分析の構築中に質問が発生した場合、またはプロフェッショナルサービスチームに連絡する場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
