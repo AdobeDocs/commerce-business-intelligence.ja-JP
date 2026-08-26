@@ -79,7 +79,7 @@ ht-degree: 0%
 * サイト訪問
 * コンバージョン率
 
-[Commerce Data Enrichment services](https://business.adobe.com/products/magento/magento-commerce.html)では、次のレポートを含めることができます。
+[Commerce Data Enrichment services](https://business.adobe.com/jp/products/magento/magento-commerce.html)では、次のレポートを含めることができます。
 
 * 州/地域、年齢、性別ごとのユニーク顧客。
 

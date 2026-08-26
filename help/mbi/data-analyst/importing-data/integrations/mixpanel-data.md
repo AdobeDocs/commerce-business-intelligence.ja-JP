@@ -47,4 +47,4 @@ ht-degree: 0%
 ## 関連ドキュメント
 
 * [接続中 [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

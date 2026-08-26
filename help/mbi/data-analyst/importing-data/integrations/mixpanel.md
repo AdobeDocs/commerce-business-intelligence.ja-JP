@@ -80,4 +80,4 @@ ht-degree: 0%
 ### 関連
 
 * [期待される [!DNL Mixpanel]  データ](../integrations/mixpanel-data.md)
-* [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

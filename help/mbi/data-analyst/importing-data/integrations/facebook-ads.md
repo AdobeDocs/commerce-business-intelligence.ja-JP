@@ -74,7 +74,7 @@ Commerce Intelligence![&#128279;](../../../assets/Facebook_Access_Popup.png)のF
 
 ## 関連
 
-* [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [&#x200B; [!DNL Google Adwords]  アカウントを接続](../integrations/google-ecommerce.md)
 * [&#x200B; [!DNL Google eCommerce]経由で注文の紹介ソースを追跡](../integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースの追跡](../../analysis/google-track-user-acq.md)

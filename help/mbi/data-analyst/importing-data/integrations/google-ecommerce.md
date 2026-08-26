@@ -78,7 +78,7 @@ ht-degree: 0%
 ## 関連：
 
 * [期待される [!DNL Google ECommerce]  データ](../integrations/google-ecommerce-data.md)
-* [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [&#x200B; [!DNL Google ECommerce]  トラッキングを設定しています](https://support.google.com/analytics/answer/1009612?hl=en)
 * [最も価値のある獲得ソースとチャネルの発見](../../analysis/most-value-source-channel.md)
 * [広告キャンペーンのROIを高める](../../analysis/roi-ad-camp.md)

@@ -51,4 +51,4 @@ ht-degree: 0%
 ## 関連：
 
 * [接続中 [!DNL Stripe]](../integrations/stripe.md)
-* [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

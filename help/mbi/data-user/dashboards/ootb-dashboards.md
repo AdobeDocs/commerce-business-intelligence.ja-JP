@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >一部のダッシュボードの利用可能性は、データセットによって異なります。
 
-ご質問がある場合、またはアカウントにパッケージを追加したい場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信してヘルプを得てください。
+ご質問がある場合、またはアカウントにパッケージを追加したい場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信してヘルプを得てください。
 
 ## 経営陣概要
 

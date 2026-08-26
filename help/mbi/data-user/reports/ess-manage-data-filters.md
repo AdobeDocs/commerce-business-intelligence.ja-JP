@@ -29,7 +29,7 @@ ht-degree: 0%
 
 同様の方法でフィルタリングする必要がある指標が[!DNL Commerce Intelligence]に複数ある場合（テスト注文のフィルタリングなど）、保存されたフィルターセットを作成して指標に適用できます。 これにより、指標を作成または編集する際に個々のフィルターを追加する必要がなくなるため、時間を節約できます。
 
-詳しくは、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/mbi/filter-sets)を参照してください。
+詳しくは、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/mbi/filter-sets)を参照してください。
 
 >[!NOTE]
 >

@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これらのダッシュボードへのアクセスは、アカウントの種類とアクセスレベルによって異なります。 これらのダッシュボードが表示されない場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
+>これらのダッシュボードへのアクセスは、アカウントの種類とアクセスレベルによって異なります。 これらのダッシュボードが表示されない場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
 
 ## レポートの可用性
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 ## 特定可能
 
-「製品」ダッシュボードには、注文した製品、その総販売額（GMV）、および購入および返金された上位の製品の一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、商品の成功と人気を判断するのに役立ちます。 これらのグラフを入力するには、返金を追跡するように[&#x200B; ストアを設定する必要があります](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure)。
+「製品」ダッシュボードには、注文した製品、その総販売額（GMV）、および購入および返金された上位の製品の一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、商品の成功と人気を判断するのに役立ちます。 これらのグラフを入力するには、返金を追跡するように[&#x200B; ストアを設定する必要があります](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure)。
 
 >[!NOTE]
 >
