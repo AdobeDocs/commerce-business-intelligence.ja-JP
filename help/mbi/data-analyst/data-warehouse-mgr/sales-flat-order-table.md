@@ -1,32 +1,18 @@
 ---
 title: sales_order テーブル
-description: sales_order テーブルの操作方法を説明します。
+description: Commerce Intelligence Data Warehouseのsales_order テーブル構造を調べます。 各行が順序をどのように表し、カスタム分割がどこで発生するかを理解します。
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/zdxIx9qHzEyoCbFzh0EBv1BKJEWiShtAt33-dtkEGNo
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 1201
+source-wordcount: 1215
 ht-degree: 0%
 
 ---
@@ -35,7 +21,7 @@ ht-degree: 0%
 
 `sales_order` テーブル （`sales_flat_order` on M1）は、各注文がキャプチャされる場所です。 通常、各行は1つの一意の順序を表しますが、Commerceのカスタム実装では、順序を別々の行に分割することになります。
 
-このテーブルには、その注文がゲストチェックアウトを通じて処理されたかどうかにかかわらず、すべての顧客の注文が含まれます。 お客様のストアがゲストチェックアウトを受け付けている場合は、この[&#x200B; ユースケース &#x200B;](../data-warehouse-mgr/guest-orders.md)に関する詳細情報を確認できます。
+このテーブルには、その注文がゲストチェックアウトを通じて処理されたかどうかにかかわらず、すべての顧客の注文が含まれます。 お客様のストアがゲストチェックアウトを受け付けている場合は、この[ ユースケース ](../data-warehouse-mgr/guest-orders.md)に関する詳細情報を確認できます。
 
 ## 共通の列
 
@@ -105,21 +91,21 @@ ht-degree: 0%
 `customer_entity`
 
 * `customer_entity` テーブルに結合して、注文した顧客に関連付けられた新しい顧客レベルの列を作成します。
-   * パス：`sales_order.customer_id` （多数） => `customer_entity.entity_id` （1つ）
+  * パス：`sales_order.customer_id` （多数） => `customer_entity.entity_id` （1つ）
 
 `customer_group`
 
 * `customer_group` テーブルに結合して、注文した顧客の顧客グループ名を返す列を作成します。
-   * パス：`sales_order.customer_group_id` （多数） => `customer_group.customer_group_id` （1つ）
+  * パス：`sales_order.customer_group_id` （多数） => `customer_group.customer_group_id` （1つ）
 
 `sales_order_address`
 
 * `sales_order_address` テーブルに結合して、注文に関連付けられた請求先と配送先を返す列を作成します。 請求または発送の詳細が必要かどうかに応じて、2つの参加パスが可能です。
-   * パス：
-      * 発送：`sales_order.shipping_address_id` （多数） => `sales_order_address.entity_id` （1件）
-      * 請求：`sales_order.billing_address_id` （多数） => `sales_order_address.entity_id` （1件）
+  * パス：
+    * 発送：`sales_order.shipping_address_id` （多数） => `sales_order_address.entity_id` （1件）
+    * 請求：`sales_order.billing_address_id` （多数） => `sales_order_address.entity_id` （1件）
 
 `store`
 
 * `store` テーブルに結合して、注文に関連付けられたCommerce ストアに関連する詳細を返す列を作成します。
-   * パス：`sales_order.store_id` （多数） => `store.store_id` （1つ）
+  * パス：`sales_order.store_id` （多数） => `store.store_id` （1つ）

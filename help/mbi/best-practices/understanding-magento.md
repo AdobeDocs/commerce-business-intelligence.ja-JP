@@ -5,32 +5,21 @@ exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
 role: Admin, Developer, User
 feature: Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/g40BP4Qu-bGgWRDbxWR9BVDY6MzGb5PNIQPdY3ZEFVs
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 749
+source-wordcount: 770
 ht-degree: 0%
 
 ---
 
 # お使いの[!DNL Adobe Commerce Intelligence]環境
 
-コマースデータを分析する際には、次の要素と一般的な誤解を考慮する必要があります。 Commerce スキーマを正しく使用するためのサポートが必要な場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+コマースデータを分析する際には、次の要素と一般的な誤解を考慮する必要があります。 Commerce スキーマを正しく使用するためのサポートが必要な場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ## [!DNL entity\_id]
 
@@ -42,9 +31,9 @@ ht-degree: 0%
 
 ## [!DNL Guest orders]
 
-アカウント（ゲスト注文）を持たずにサイトから注文することを顧客に許可している場合、それらの顧客は`customer\_entity` テーブルの行として入力されません。 また、ゲストが配置した各注文には、`customer\_id` テーブルにnull `sales\_order`値が含まれています。
+アカウント（ゲスト注文）を持たずにサイトから注文することを顧客に許可している場合、それらの顧客は`customer\_entity` テーブルの行として入力されません。 また、ゲストが配置した各注文には、`sales\_order` テーブルにnull `customer\_id`値が含まれています。
 
-したがって、ゲストの動作を経時的に追跡する場合は、`sales\_order`などの顧客識別子を使用して、すべての顧客レベルの列を`customer\_email` テーブルで計算する必要があります。
+したがって、ゲストの動作を経時的に追跡する場合は、`customer\_email`などの顧客識別子を使用して、すべての顧客レベルの列を`sales\_order` テーブルで計算する必要があります。
 
 `sales\_order` テーブルを顧客テーブルとして使用する場合は、顧客レベルの指標を作成する際に注意する必要があります。 例えば、平均生涯売上を考えてみましょう。 この指標は、顧客層全体の平均生涯売上を特定するために使用されます。 まず、各顧客に対して生涯売上を返す新しい列が必要です。 そして、この列を平均して、顧客の平均生涯売上を得る必要があります。
 

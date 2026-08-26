@@ -5,33 +5,21 @@ exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/X0eHrn1HpOnwDENUnnBphaBBJxfZCymDeySTznBipMU
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 2%
+source-wordcount: 962
+ht-degree: 11%
 
 ---
 
 # 高度な計算列タイプ
 
-作成する多くの分析では、**または**&#x200B;を作成する`group by`新しい列`filter by`を使用します。 [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルでは、ほとんどのユースケースの基本について説明していますが、Data Warehouse Managerで作成できる計算列よりも少し複雑な計算列が必要な場合があります。
+作成する多くの分析では、`group by`または`filter by`を作成する&#x200B;**新しい列**&#x200B;を使用します。 [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルでは、ほとんどのユースケースの基本について説明していますが、Data Warehouse Managerで作成できる計算列よりも少し複雑な計算列が必要な場合があります。
 {: #top}
 
 これらの列は、Data WarehouseのAdobeチームで作成できます。 新しい計算列を定義するには、次の情報を提供してください。
@@ -69,7 +57,7 @@ ht-degree: 2%
 
 顧客の注文番号の列を実際に確認する 画像をクリックすると、レポートでグループ別ディメンションとして使用されます。
 
-![&#x200B; イベント番号の計算列を使用して、顧客の注文番号でグループ化します。](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
+![ イベント番号の計算列を使用して、顧客の注文番号でグループ化します。](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
 
 このタイプの計算列を作成するには、次の点を把握する必要があります。
 
@@ -179,7 +167,7 @@ ht-degree: 2%
 
 心配する必要はありません。 ここに記載されていないからといって、それが不可能であるとは限りません。 Data Warehouse AnalystsのAdobeチームがお手伝いします。
 
-新しい計算列を定義するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)を送信し、作成する内容の詳細を入力します。
+新しい計算列を定義するには、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信し、作成する内容の詳細を入力します。
 
 ## 関連ドキュメント
 

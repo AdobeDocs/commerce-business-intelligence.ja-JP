@@ -1,27 +1,18 @@
 ---
 title: SSH トンネル経由で [!DNL MongoDB] 接続
-description: SSH トンネル経由で [!DNL MongoDB] 接続する方法を説明します。
+description: SSH トンネルを使用して、MongoDB データベースをCommerce Intelligenceに安全に接続する方法（キーの設定と接続設定手順を含む）について説明します。
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/fYXQ353R-dPB-rSeYCR2w0c8Lp5I0HoVYh1A3UAI6aI
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 686
+source-wordcount: 705
 ht-degree: 0%
 
 ---
@@ -30,8 +21,8 @@ ht-degree: 0%
 
 SSH トンネルを介して[!DNL MongoDB] データベースを[!DNL Commerce Intelligence]に接続するには、次の操作を行う必要があります。
 
-1. [&#x200B; [!DNL Commerce Intelligence] 公開鍵を取得](#retrieve)
-1. [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+1. [ [!DNL Commerce Intelligence] 公開鍵を取得](#retrieve)
+1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
 1. [Commerce IntelligenceのLinux ユーザーの作成](#linux)
 1. [Commerce Intelligence用に [!DNL MongoDB]  ユーザーを作成](#mongodb)
 1. [接続とユーザー情報を [!DNL Commerce Intelligence]に入力します](#finish)
@@ -93,7 +84,7 @@ SSH トンネルを介して[!DNL MongoDB] データベースを[!DNL Commerce I
 
 ## [!DNL Commerce Intelligence] [!DNL MongoDB] ユーザーを作成しています {#mongodb}
 
-[!DNL MongoDB] サーバーには2つの実行モードがあります – [1つは「認証」オプション &#x200B;](#auth) `(mongod -- auth)`を持ち、もう1つは持たず、[はデフォルト &#x200B;](#default)です。 [!DNL MongoDB] ユーザーを作成する手順は、サーバーが使用しているモードによって異なります。 続行する前に、必ずモードを確認してください。
+[!DNL MongoDB] サーバーには2つの実行モードがあります – [1つは「認証」オプション ](#auth) `(mongod -- auth)`を持ち、もう1つは持たず、[はデフォルト ](#default)です。 [!DNL MongoDB] ユーザーを作成する手順は、サーバーが使用しているモードによって異なります。 続行する前に、必ずモードを確認してください。
 
 ### サーバーで`Auth` オプションを使用している場合： {#auth}
 
@@ -166,4 +157,4 @@ SSH トンネルを介して[!DNL MongoDB] データベースを[!DNL Commerce I
 ## 関連 {#related}
 
 * [SSH ホスト キーの検証](ssh-host-key-verification.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
