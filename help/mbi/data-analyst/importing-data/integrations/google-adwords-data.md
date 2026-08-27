@@ -22,16 +22,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 436
+source-wordcount: 603
 ht-degree: 0%
 
 ---
 
 # [!DNL Google Adwords] データが必要です
 
-[&#x200B; アカウント  [!DNL Google Adwords] を接続した後、](../integrations/google-adwords.md)Data Warehouse Manager[を使用して、分析用の関連データフィールドを簡単に追跡できます。](../../data-warehouse-mgr/tour-dwm.md)
+[&#128279;](../integrations/google-adwords.md)&#x200B; アカウント  [!DNL Google Adwords] を接続した後、[Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。
 
 ここでは、Data Warehouseへのレプリケーションに使用できる2つのテーブルが表示されます。
 
@@ -107,4 +107,4 @@ ht-degree: 0%
 
 統合テーブルがなく、`adwords` テーブル上に美しいダッシュボードを作成する場合は、レポートをレプリケートするか、重複する指標を作成して、そのデータを[!DNL Facebook Ads] データと比較する必要があります。 統合テーブルを使用すると、[!DNL Facebook Ads] データを既存の[!DNL Adwords] レポートにシームレスに組み込むことができます。 広告プラットフォーム別にもセグメンテーションすることができます。
 
-既に上記のフィールドを同期している場合は、[お問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。広告費を統合します。
+既に上記のフィールドを同期している場合は、[お問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。広告費を統合します。

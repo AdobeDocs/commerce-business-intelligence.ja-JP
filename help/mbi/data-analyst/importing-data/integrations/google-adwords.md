@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 322
+source-wordcount: 339
 ht-degree: 0%
 
 ---
@@ -36,11 +36,11 @@ ht-degree: 0%
 
 ![Google AdWords ロゴ &#x200B;](../../../assets/Google_Adwords_logo.png)
 
-調査を行い、広告を作成し、[!DNL Google] キャンペーンを開始しました。 広告費のデータを分析し、そのお金が効果的に使われているかどうかを確認する必要があります。 広告費データを使用すると、キャンペーンから獲得したユーザーの広告コストと顧客生涯価値（CLV） [を組み合わせることで、](../../analysis/roi-ad-camp.md) キャンペーン ROIを測定できます。
+調査を行い、広告を作成し、[!DNL Google] キャンペーンを開始しました。 広告費のデータを分析し、そのお金が効果的に使われているかどうかを確認する必要があります。 広告費データを使用すると、キャンペーンから獲得したユーザーの広告コストと顧客生涯価値（CLV） [&#128279;](../../analysis/roi-ad-camp.md)を組み合わせることで、 キャンペーン ROIを測定できます。
 
 [!DNL Google Adwords]資格情報を[!DNL Commerce Intelligence]に入力して開始します。
 
-1. `Connections` データの管理/統合&#x200B;**の下の** ページに移動します。
+1. **データの管理/統合**&#x200B;の下の`Connections` ページに移動します。
 1. 画面の右上にある「**統合を追加**」をクリックします。
 1. **[!DNL Google Adwords]** アイコンをクリックします。 これにより、[!DNL Google Adwords]資格情報ページが開きます。
 1. [!DNL Google Analytics]資格情報を入力してください。 認証プロセスが完了すると、次の場所にリダイレクトされます：[!DNL Commerce Intelligence]。
@@ -67,12 +67,12 @@ ht-degree: 0%
 ## [!DNL Google Adwords]の接続を切断しています
 
 1. [!DNL Google] [&#x200B; アカウント設定](https://www.google.com/account/about/?hl=en) ページにアクセスします。
-1. `Security` セクションで、**[!UICONTROL edit]**&#x200B;個のアプリケーションとサイトの横にある`Authorizing`をクリックします。
+1. `Security` セクションで、`Authorizing`個のアプリケーションとサイトの横にある&#x200B;**[!UICONTROL edit]**&#x200B;をクリックします。
 1. **[!UICONTROL revoke access]**&#x200B;をクリックします。
 
 ## 関連
 
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [&#x200B; [!DNL Google ECommerce]経由で注文の紹介ソースを追跡](../integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースの追跡](../../analysis/google-track-user-acq.md)
 * [最も価値のある獲得ソースとチャネルの発見](../../analysis/most-value-source-channel.md)

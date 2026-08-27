@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 846
+source-wordcount: 861
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 一般に`Cohort`分析は、ライフサイクルにわたって類似した特性を共有するユーザーグループの分析として広く定義できます。 これにより、さまざまなユーザーグループをまたいで行動トレンドを特定できます。
 
-`cohort`のほとんどの[!DNL Commerce Intelligence]分析では、共通の日付でユーザーをグループ化しています（例えば、特定の月に最初の購入を行ったすべての顧客のセット）。 `qualitative cohort`は少し異なります。時間ベースではない特性によって定義されるユーザーグループです。 次に例を示します。
+[!DNL Commerce Intelligence]のほとんどの`cohort`分析では、共通の日付でユーザーをグループ化しています（例えば、特定の月に最初の購入を行ったすべての顧客のセット）。 `qualitative cohort`は少し異なります。時間ベースではない特性によって定義されるユーザーグループです。 次に例を示します。
 
 * 広告キャンペーンから取得されたすべてのユーザーのセット
 * 最初の購入にクーポンが含まれているか、含まれていないユーザーのセット
@@ -52,9 +52,9 @@ ht-degree: 0%
 
 ## 分析の設定のサポートにはどのような情報を送信すればよいですか？ {#support}
 
-`qualitative cohort`で`Report Builder` レポートを作成するには、Adobe アナリスト チームが必要なテーブルに[高度な計算列](../data-warehouse-mgr/creating-calculated-columns.md)を作成します。
+`Report Builder`で`qualitative cohort` レポートを作成するには、Adobe アナリスト チームが必要なテーブルに[高度な計算列](../data-warehouse-mgr/creating-calculated-columns.md)を作成します。
 
-これらを作成するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)を提出してください（この記事を参照してください）。 次の点に留意してください。
+これらを作成するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を提出してください（この記事を参照してください）。 次の点に留意してください。
 
 * コホート分析を実行する`metric`とその使用するテーブル （例：`Revenue`、`orders` テーブル上に構築）。
 
@@ -78,13 +78,13 @@ Adobeのアナリストチームが上記の質問に回答したら、レポー
 
 1. レポートでカバーする時間のウィンドウに`time range`を設定します。
 
-この例では、`all time`の`Revenue` ビューを見ています。 この後、一連のドットで終わる必要があります。
+この例では、`Revenue`の`all time` ビューを見ています。 この後、一連のドットで終わる必要があります。
 
 ![&#x200B; コホートのグループ化と分析オプションのデモのアニメーション &#x200B;](../../assets/qualcohort2.gif)
 
 第三に、`cohorts`を設定するように調整します。 Adobe アナリスト チームに指定した`cohort date`および`time interval`に基づいて、`cohort`の日付を実行するディメンションがアカウントに含まれています。 この例では、そのカスタムディメンションは`Months between this order and customer's first order date`と呼ばれます。 このディメンションを使用すると、次のことが可能になります。
 
-* `Group by` オプションを含むディメンション `group by`
+* `group by` オプションを含むディメンション `Group by`
 
 * 対象となる`dimension`のすべての値を選択してください
 

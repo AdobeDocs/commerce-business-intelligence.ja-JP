@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1397
+source-wordcount: 1448
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ ht-degree: 0%
 >
 >SQL チャートを作成および編集するには、[管理者権限](../../administrator/user-management/user-management.md)が必要です。 `Standard`人のユーザーがダッシュボードでこれらのグラフを並べ替えることができ、`Read-only`人のユーザーが従来のグラフと同じエクスペリエンスを使用できます。 さらに、`Read-only`人のユーザーはクエリのテキストにアクセスできません。
 
-詳細については、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=ja)を参照してください。
+詳細については、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/mbi/sql-report-builder)を参照してください。
 
 [!DNL SQL] （構造化問い合わせ言語）は、データベースとの通信に使用されるプログラミング言語です。 [!DNL Commerce Intelligence]では、[!DNL SQL]を使用して、Data Warehouseからデータを照会または取得します。 ダッシュボードのレポートを見てください。バックグラウンドでは、各レポートに[!DNL SQL] クエリが利用されています。
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)を使用して、Data Warehouseに直接クエリを実行し、結果を表示して、グラフに変換できます。 [!DNL SQL Report Builder]をクリックすると、**[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**&#x200B;を使用したレポートの作成を開始できます。
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)を使用して、Data Warehouseに直接クエリを実行し、結果を表示して、グラフに変換できます。 **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**&#x200B;をクリックすると、[!DNL SQL Report Builder]を使用したレポートの作成を開始できます。
 
-詳細については、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=ja)を参照してください。
+詳細については、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/mbi/sql-report-builder)を参照してください。
 
 [!DNL SQL Report Builder]を使用すると、Data Warehouseに直接クエリを実行して結果を表示し、すばやくグラフに変換できます。 [!DNL SQL]を使用してレポートを作成する際の最も優れた点は、作成した列を繰り返し更新するために更新サイクルを待つ必要がないことです。 結果が正しく表示されない場合は、期待に合うまで、クエリをすばやく編集して再実行できます。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## 詳細を見る
 
-レポートを編集するには、![&#x200B; ベースのグラフの右上隅にある歯車（](../../assets/gear-icon.png)歯車アイコン [!DNL SQL]）アイコンをクリックし、**[!UICONTROL Edit]**&#x200B;をクリックします。
+レポートを編集するには、[!DNL SQL] ベースのグラフの右上隅にある歯車（![歯車アイコン &#x200B;](../../assets/gear-icon.png)）アイコンをクリックし、**[!UICONTROL Edit]**&#x200B;をクリックします。
 
 ## クエリの記述 {#writing}
 
@@ -71,11 +71,11 @@ ht-degree: 0%
 >
 >[!DNL SQL Report Builder] クエリでは、大文字と小文字が区別されます。 クエリを作成する際は、正しいケースを使用しているか、予期しない結果やエラーが発生する可能性があることを確認してください。
 
-クエリ最適化[の](../../best-practices/optimizing-your-sql-queries.md) ガイドラインに従って、[!DNL SQL] エディターでクエリを記述します。
+クエリ最適化[&#128279;](../../best-practices/optimizing-your-sql-queries.md)の ガイドラインに従って、[!DNL SQL] エディターでクエリを記述します。
 
 >[!IMPORTANT]
 >
->**レポートの[!DNL SQL]指標** - SQL レポートに指標を挿入すると、指標の`current definition`が使用されます。
+>[!DNL SQL] レポートの&#x200B;**指標** - SQL レポートに指標を挿入すると、指標の`current definition`が使用されます。
 
 指標が将来更新された場合、SQL レポート *は変更を反映しません*。 変更を有効にするには、レポートを手動で編集する必要があります。
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 ## ビジュアライゼーションの作成 {#createviz}
 
-クエリ結果を使用してビジュアライゼーションを作成するには、**[!UICONTROL Chart]** ペインの「`Results`」タブをクリックします。 このタブでは、次を選択します。
+クエリ結果を使用してビジュアライゼーションを作成するには、`Results` ペインの「**[!UICONTROL Chart]**」タブをクリックします。 このタブでは、次を選択します。
 
 * `Series`、または&#x200B;**販売済みアイテム**&#x200B;など、測定する列。
 * `Category`、またはデータのセグメント化に使用する列（**獲得ソース**&#x200B;など）。
@@ -119,9 +119,9 @@ ht-degree: 0%
 
 ## レポートの保存 {#save}
 
-作業内容を保存する前に、レポートに名前を付ける必要があります。 [の命名に関する](../../best-practices/naming-elements.md){: target="_blank"} ベストプラクティスのガイドラインに従い、レポートの内容を明確に伝えるものを選択することを忘れないでください。
+作業内容を保存する前に、レポートに名前を付ける必要があります。 [&#128279;](../../best-practices/naming-elements.md){: target="_blank"}の命名に関する ベストプラクティスのガイドラインに従い、レポートの内容を明確に伝えるものを選択することを忘れないでください。
 
-**[!UICONTROL Save]** エディターの右上隅にある[!DNL SQL]をクリックし、レポート `Type` （`Chart`または`Table`）を選択します。 レポートを保存するダッシュボードを選択し、**[!UICONTROL Save to Dashboard]**&#x200B;をクリックします。
+[!DNL SQL] エディターの右上隅にある&#x200B;**[!UICONTROL Save]**&#x200B;をクリックし、レポート `Type` （`Chart`または`Table`）を選択します。 レポートを保存するダッシュボードを選択し、**[!UICONTROL Save to Dashboard]**&#x200B;をクリックします。
 
 ![SQL レポートをダッシュボードに保存するデモをアニメーション化](../../assets/SQL_Save_Report.gif)
 
@@ -129,7 +129,7 @@ ht-degree: 0%
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)を使用すると、Data Warehouseに直接クエリを実行して結果を表示し、レポートにすばやく変換できます。 [!DNL SQL]を使用すると、[または [!DNL SQL]  レポートビルダーで使用できない](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)関数`Visual`を`Cohort`使用できるので、データをより詳細に制御できます。
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)を使用すると、Data Warehouseに直接クエリを実行して結果を表示し、レポートにすばやく変換できます。 [!DNL SQL]を使用すると、`Visual`または`Cohort` レポートビルダーで使用できない [!DNL SQL] 関数[&#128279;](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)を使用できるので、データをより詳細に制御できます。
 
 [!DNL SQL]を使用して作成された計算列は、更新サイクルに依存しません。つまり、必要に応じて繰り返し処理し、すぐに結果を確認できます。
 
@@ -149,7 +149,7 @@ ht-degree: 0%
 
 多くの場合、結果の違いは更新サイクルに起因します。 [!DNL Commerce Intelligence]がデータベースからData Warehouseにデータをレプリケートする処理中の場合、同じクエリを使用しても結果が異なる場合があります。
 
-接続の問題により、不一致が生じる場合もあります。 「`Connections`」をクリックして&#x200B;**[!DNL Manage Data** > **Connections]** ページに移動し、チェックアウトします。問題のあるデータベース統合にエラーがありますか？ その場合は、[統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)が必要になる場合があります。
+接続の問題により、不一致が生じる場合もあります。 「**[!DNL Manage Data** > **Connections]**」をクリックして`Connections` ページに移動し、チェックアウトします。問題のあるデータベース統合にエラーがありますか？ その場合は、[統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)が必要になる場合があります。
 
 すべての統合が正常に接続されていて、更新サイクルの途中にない場合は、別の問題が発生する可能性があります。
 
@@ -189,4 +189,4 @@ ht-degree: 0%
 
 ## まとめ {#wrapup}
 
-もう少し難しいことをしたい場合は、視覚化のために最適化されたクエリを書いてみましょう。 開始するには、[&#x200B; クエリからのビジュアライゼーションの作成 [!DNL SQL]  チュートリアル &#x200B;](../../tutorials/create-visuals-from-sql.md){: target="_blank"}を参照してください。
+もう少し難しいことをしたい場合は、視覚化のために最適化されたクエリを書いてみましょう。 開始するには、 [!DNL SQL]  クエリからのビジュアライゼーションの作成[&#x200B; チュートリアル &#x200B;](../../tutorials/create-visuals-from-sql.md){: target="_blank"}を参照してください。

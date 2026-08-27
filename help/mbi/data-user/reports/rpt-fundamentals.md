@@ -1,6 +1,6 @@
 ---
 title: レポートの使用
-description: レポートデータの活用方法を学びましょう。
+description: Commerce Intelligenceのレポートを使用して、前年度に対する月間売上の追跡や、キャンペーン獲得コストの測定など、ビジネス上の疑問に対する回答を得られます。
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 995
+source-wordcount: 1012
 ht-degree: 0%
 
 ---
@@ -93,11 +93,11 @@ ht-degree: 0%
 
 _[合計/ `Time between a customer's registration date and first purchase date`] / [登録および購入した顧客の合計数]_
 
-顧客の登録日に応じて、この計算を時間の経過とともにプロットするか、トレンドとして表示します。 次に、[でこの指標](../../data-user/reports/ess-manage-data-metrics.md)を[!DNL Commerce Intelligence]作成する方法を示します。
+顧客の登録日に応じて、この計算を時間の経過とともにプロットするか、トレンドとして表示します。 次に、[!DNL Commerce Intelligence]でこの指標[&#128279;](../../data-user/reports/ess-manage-data-metrics.md)を作成する方法を示します。
 
 1. **[!UICONTROL Data]**&#x200B;に移動し、「`Metrics`」タブを選択します。
 1. **[!UICONTROL Add New Metric]**&#x200B;をクリックし、`user` テーブル （上記のディメンションを作成した場所）を選択します。
-1. ドロップダウンから、`Average`列が順序付けした`Time between a customer's registration date and first purchase date` テーブルの`user`列の`Customer's registration date`を選択します。
+1. ドロップダウンから、`Customer's registration date`列が順序付けした`user` テーブルの`Time between a customer's registration date and first purchase date`列の`Average`を選択します。
 1. 関連するフィルターまたはフィルターセットを追加します。
 
 これで、この指標の準備ができました。

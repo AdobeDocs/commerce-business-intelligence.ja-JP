@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 968
+source-wordcount: 969
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Adobeでは、リピート注文の可能性を把握するために、自社デ
 
 複数の商品を提供している場合、特定の商品を購入する顧客は、時間の経過とともにどのように他の顧客と異なる行動をとるのか疑問に思うかもしれません。 Adobe Experience Platform Data Governanceについて詳しくは、 このチュートリアルでは、顧客が購入した特定の製品に基づいて、顧客コホートの生涯購入行動を調べることができます。
 
-このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されています。 詳細については、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)にお問い合わせください。
+このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されています。 詳細については、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
 
 ### 関連
 

@@ -1,6 +1,6 @@
 ---
 title: ダッシュボードからチャートを削除
-description: ダッシュボードからグラフを削除する方法を説明します。
+description: アカウントからチャートを完全に削除することなく、チャートの歯車アイコンメニューを使用してCommerce Intelligence ダッシュボードからチャートを削除します。
 exl-id: 44116f15-92a5-43c9-8808-7902742508c9
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 65
+source-wordcount: 79
 ht-degree: 0%
 
 ---

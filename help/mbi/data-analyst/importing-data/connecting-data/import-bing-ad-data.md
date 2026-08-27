@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 131
+source-wordcount: 151
 ht-degree: 0%
 
 ---
@@ -37,9 +37,9 @@ ht-degree: 0%
 
 ## [!DNL Bing Ads] データのエクスポート
 
-1. `Browser`の[!DNL Bing Ads Editor] ペインで、書き出すキャンペーンまたは広告グループを右クリックし、**[!UICONTROL Export]**&#x200B;をクリックします。
+1. [!DNL Bing Ads Editor]の`Browser` ペインで、書き出すキャンペーンまたは広告グループを右クリックし、**[!UICONTROL Export]**&#x200B;をクリックします。
 1. `Export` ダイアログボックスで、**[!UICONTROL Export]**&#x200B;をクリックします。
 1. `Save As` ダイアログボックスで、書き出しファイルを保存するフォルダーをクリックします。
 1. `File name` ボックスで、ファイルの書き出し名を選択します。
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
-1. ファイルをダウンロードした後、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)に連絡して、お客様に代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。
+1. ファイルをダウンロードした後、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)に連絡して、お客様に代わって最初のアップロードを実行し、必要なバックエンドディメンションを設定します。

@@ -1,6 +1,6 @@
 ---
 title: 更新サイクルのステータスの確認
-description: 更新サイクルのステータスを確認する方法を説明します。
+description: ダッシュボードから直接、Commerce Intelligenceの最後の更新サイクルのステータスを確認できます。 アカウントの権限が表示内容にどのような影響を与えるかを確認できます。
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Developer, User
 feature: Dashboards
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 357
+source-wordcount: 373
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 更新サイクルのステータスを確認する必要があるのはなぜですか？
 
-ステータス更新サイクルの確認は、[!DNL Commerce Intelligence] アカウントのデータを監査する際に便利です。 例えば、[件の結果が期待に合わない](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)場合、[!DNL Commerce Intelligence]の日別売上がe コマースプラットフォームまたは[[!DNL Google] e コマース収益](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=ja)の日別売上と一致しない場合は、最後のデータポイントを確認して、更新が完了した後に問題が解決されるかどうかを確認できます。
+ステータス更新サイクルの確認は、[!DNL Commerce Intelligence] アカウントのデータを監査する際に便利です。 例えば、[件の結果が期待に合わない](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)場合、[!DNL Commerce Intelligence]の日別売上がe コマースプラットフォームまたは[[!DNL Google] e コマース収益](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)の日別売上と一致しない場合は、最後のデータポイントを確認して、更新が完了した後に問題が解決されるかどうかを確認できます。
 
 ## [!UICONTROL Read-Only]名と[!UICONTROL Standard]名のユーザー
 

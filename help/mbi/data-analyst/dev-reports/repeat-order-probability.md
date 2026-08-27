@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 343
+source-wordcount: 357
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 場合によっては、`order-specific` ディメンションを`user-specific` ディメンションに変換して、`Repeat Order Probability` チャートにフィルターとして追加できます。 この場合、ユーザーの最初の注文または最新の注文のorder属性（ユーザーの最初の注文地域名など）を返します。
 
-このような新しいディメンションを作成する場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+このような新しいディメンションを作成する場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ## 異なる属性を持つ注文の繰り返し確率の比較
 

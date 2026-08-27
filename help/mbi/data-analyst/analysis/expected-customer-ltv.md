@@ -17,10 +17,10 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 318
-ht-degree: 0%
+source-wordcount: 540
+ht-degree: 38%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ![顧客価値の予測を表示する期待生涯価値分析ダッシュボード &#x200B;](../../assets/exp-lifetim-value-anyalysis.png)
 
-この分析は、新しいアーキテクチャのPro アカウントのお客様のみが利用できます。 アカウントが`Persistent Views` サイドバーの下の`Manage Data`機能にアクセスできる場合、新しいアーキテクチャに属しており、ここに記載されている手順に従ってこの分析を自分で構築できます。
+この分析は、新しいアーキテクチャのPro アカウントのお客様のみが利用できます。 アカウントが`Manage Data` サイドバーの下の`Persistent Views`機能にアクセスできる場合、新しいアーキテクチャに属しており、ここに記載されている手順に従ってこの分析を自分で構築できます。
 
 開始する前に、[&#x200B; コホートレポートビルダーについて理解しておきましょう。](../dev-reports/cohort-rpt-bldr.md)
 
@@ -38,54 +38,54 @@ ht-degree: 0%
 
 **30日の月**&#x200B;を使用する場合に&#x200B;**orders** テーブルに作成する列：
 
-* [!UICONTROL Column name]: `Months between first order and this order`
-* [!UICONTROL Column type]: `Same Table`
+* [!UICONTROL Column name]&#x200B;: `Months between first order and this order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
 * &#x200B;
-  [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input]: A = `Seconds between customer's first order date and this order`
 * &#x200B;
-  [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * **定義：**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
-* [!UICONTROL Column name]: `Months since order`
-* [!UICONTROL Column type]: `Same Table`
+* [!UICONTROL Column name]&#x200B;: `Months since order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
 * &#x200B;
-  [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
 * &#x200B;
-  [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * 定義：`case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
-**`orders`** カレンダー&#x200B;**か月を使用する場合に** テーブルに作成する列：
+**カレンダー**&#x200B;か月を使用する場合に&#x200B;**`orders`** テーブルに作成する列：
 
-* [!UICONTROL Column name]: `Calendar months between first order and this order`
-* [!UICONTROL Column type]: `Same Table`
+* [!UICONTROL Column name]&#x200B;: `Calendar months between first order and this order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
 * &#x200B;
-  [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column inputs]:
-   * `A` = `created_at`
-   * `B` = `Customer's first order date`
+  * `A` = `created_at`
+  * `B` = `Customer's first order date`
 
 * &#x200B;
-  [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * 定義：`case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
-* [!UICONTROL Column name]: `Calendar months since order`
-* [!UICONTROL Column type]: `Same Table`
+* [!UICONTROL Column name]&#x200B;: `Calendar months since order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
 * &#x200B;
-  [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input]: `A` = `created_at`
 * &#x200B;
-  [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * **定義：**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
-* [!UICONTROL Column name]: `Is in current month? (Yes/No)`
-* [!UICONTROL Column type]: `Same Table`
+* [!UICONTROL Column name]&#x200B;: `Is in current month? (Yes/No)`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
 * &#x200B;
-  [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
 * &#x200B;
-  [!UICONTROL Datatype]: `String`
+  [!UICONTROL Datatype]&#x200B;: `String`
 * 定義：`case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
 ## 指標
@@ -95,7 +95,7 @@ ht-degree: 0%
 作成する指標
 
 * **最初の注文日別に顧客を区別**
-   * ゲスト注文を有効にする場合は、`customer_email`を使用します
+  * ゲスト注文を有効にする場合は、`customer_email`を使用します
 
 * **`orders`** テーブル内
 * この指標は、**個の個体数**&#x200B;を実行します
@@ -113,58 +113,58 @@ ht-degree: 0%
 **1か月の顧客当たりの予想売上**
 
 * 指標`A`: `Revenue (hide)`
-   * `Calendar months between first order and this order` `<= X` （Xの妥当な数値（例：24か月）を選択してください）
-   * `Is in current month?` = `No`
+  * `Calendar months between first order and this order` `<= X` （Xの妥当な数値（例：24か月）を選択してください）
+  * `Is in current month?` = `No`
 
 * &#x200B;
-  [!UICONTROL 指標]: `Revenue`
+  [!UICONTROL 指標]&#x200B;: `Revenue`
 * [!UICONTROL Filter]:
 
 * 指標`B`: `All time customers (hide)`
-   * `Is in current month?` = `No`
+  * `Is in current month?` = `No`
 
-* [!UICONTROL Metric]: `New customers by first order date`
+* [!UICONTROL Metric]&#x200B;: `New customers by first order date`
 * [!UICONTROL Filter]:
 
 * 指標`C`: `All time customers by month since first order (hide)`
-   * `Calendar months since order` `<= X`
-   * `Is in current month?` = `No`
+  * `Calendar months since order` `<= X`
+  * `Is in current month?` = `No`
 
-* [!UICONTROL Metric]: `New customers by first order date`
+* [!UICONTROL Metric]&#x200B;: `New customers by first order date`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Formula]: `Expected revenue`
-* [!UICONTROL Formula]: `A / (B - C)`
+* [!UICONTROL Formula]&#x200B;: `Expected revenue`
+* [!UICONTROL Formula]&#x200B;: `A / (B - C)`
 * &#x200B;
-  [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]&#x200B;: `Currency`
 
 その他のグラフの詳細
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * 時間間隔：`None`
 * [!UICONTROL Group by]: `Calendar months between first order and this order` – すべて表示
 * `group by`の横にある鉛筆アイコンを使用して、`All time customers`指標の`group by`を「独立」に変更します
 * `Show top/bottom` フィールドを次のように編集します。
-   * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
-   * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
-   * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
+  * [!UICONTROL Revenue]&#x200B;: `Top 24 sorted by Calendar months between first order and this order`
+  * [!UICONTROL All time customers]&#x200B;: `Top 24 sorted by All time customers`
+  * [!UICONTROL All time customers by month since first order]&#x200B;: `Top 24 sorted by All time customers by month since first order`
 
 **コホート別の月間平均売上**
 
 * 指標`A`: `Revenue`
 * &#x200B;
-  [!UICONTROL Metric view]: `Cohort`
-* [!UICONTROL Cohort date]: `Customer's first order date`
-* [!UICONTROL Perspective]: `Average value per cohort member`
+  [!UICONTROL Metric view]&#x200B;: `Cohort`
+* [!UICONTROL Cohort date]&#x200B;: `Customer's first order date`
+* [!UICONTROL Perspective]&#x200B;: `Average value per cohort member`
 
 **コホート別の月間累積平均売上高**
 
 * 指標`A`: `Revenue`
 * &#x200B;
-  [!UICONTROL Metric view]: `Cohort`
-* [!UICONTROL Cohort date]: `Customer's first order date`
-* [!UICONTROL Perspective]: `Cumulative average value per cohort member`
+  [!UICONTROL Metric view]&#x200B;: `Cohort`
+* [!UICONTROL Cohort date]&#x200B;: `Customer's first order date`
+* [!UICONTROL Perspective]&#x200B;: `Cumulative average value per cohort member`
 
 すべてのレポートをまとめた後、必要に応じてダッシュボード上でレポートを整理できます。 その結果、ページの上部に画像が表示されます。
 
-この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームに連絡したい場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームに連絡したい場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

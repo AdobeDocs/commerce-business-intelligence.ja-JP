@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 179
+source-wordcount: 190
 ht-degree: 0%
 
 ---
@@ -42,21 +42,21 @@ ht-degree: 0%
 
 ## [!DNL QuickBooks]を[!DNL Commerce Intelligence]のデータソースとして追加
 
-1. `Integrations`の下の&#x200B;**[!UICONTROL Manage Data** > **Data Sources]** ページに移動します。
-1. **[!UICONTROL Add Integration]** テーブルの上の画面の右側にある「`Data Sources`」をクリックします。
+1. **[!UICONTROL Manage Data** > **Data Sources]**&#x200B;の下の`Integrations` ページに移動します。
+1. `Data Sources` テーブルの上の画面の右側にある「**[!UICONTROL Add Integration]**」をクリックします。
 1. [!DNL QuickBooks] アイコンをクリックします。
 1. **[!UICONTROL Connect to Quickbooks]**&#x200B;をクリックします。
 
-## [!DNL Commerce Intelligence] データへの[!DNL QuickBooks] アクセス権の付与
+## [!DNL QuickBooks] データへの[!DNL Commerce Intelligence] アクセス権の付与
 
 **[!UICONTROL Connect to Quickbooks]**&#x200B;をクリックしたら、[!DNL Intuit] アカウントにログインし、接続を承認します。
 
 ![QuickBooks App Store統合ページ &#x200B;](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. `Search for a company` ドロップダウンで、会社を選択します。
-1. **[!UICONTROL Next]**&#x200B;をクリックします。 [!DNL Commerce Intelligence]にリダイレクトされ、*接続が成功しました。* メッセージが画面の上部に表示されます。
+1. **[!UICONTROL Next]**&#x200B;をクリックします。 [!DNL Commerce Intelligence]にリダイレクトされ、*接続が成功しました！* メッセージが画面の上部に表示されます。
 
 ## 関連
 
 * [期待される [!DNL QuickBooks]  データ](../integrations/quickbooks-data.md)
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

@@ -1,6 +1,6 @@
 ---
 title: レポートビルダーの選択
-description: レポートビルダーの選び方。
+description: Commerce Intelligenceのレポートビルダーを比較し、ビジュアルビルダーからSQL ベースのオプションまで、どのレポートビルダーが自社のニーズに適しているかを確認できます。
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 644
+source-wordcount: 724
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## [!DNL SQL Report Builder]を使用するタイミング {#whensql}
 
-[!DNL SQL Report Builder]よりも[!DNL traditional Report Builder]を使用する一般的な理由をいくつか確認してください。
+[!DNL traditional Report Builder]よりも[!DNL SQL Report Builder]を使用する一般的な理由をいくつか確認してください。
 
 ### [!DNL SQL]固有の関数を使用する場合…
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]は、以前は使用できなかった[`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html)や[`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html)などの関数をサポートしています。 [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)にアクセスできますが、その他のSQL固有の関数には次のものが含まれます。
 
-* [`Bitwise aggregate`個の関数](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
+* [`Bitwise aggregate`関数](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
 * [`CASE expression`](https://docs.aws.amazon.com/redshift/latest/dg/r_CASE_function.html)
 * [`JSON_EXTRACT_PATH_TEXT`](https://docs.aws.amazon.com/redshift/latest/dg/JSON_EXTRACT_PATH_TEXT.html)
 * [`LOG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LOG.html)
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 ### 作品を他のユーザーと共有している場合…
 
-組織全体のユーザーがこの分析を使用/表示していますか？ 誰と共有するかに応じて、ビジュアルReport Builderを使用し続けることが良い場合があります。 ユーザーは、潜在的に長い[!DNL Visual Report Builder] クエリを読み取るのではなく、[!DNL SQL]の定義をすばやく確認できます。
+組織全体のユーザーがこの分析を使用/表示していますか？ 誰と共有するかに応じて、ビジュアルReport Builderを使用し続けることが良い場合があります。 ユーザーは、潜在的に長い[!DNL SQL] クエリを読み取るのではなく、[!DNL Visual Report Builder]の定義をすばやく確認できます。
 
 レポートが必要だが[!DNL SQL]についてよく知らない人がいる場合は、AdobeはReport Builderのオリジナルのフレーバーを使用することを提案します。 指標を向上できます。
 

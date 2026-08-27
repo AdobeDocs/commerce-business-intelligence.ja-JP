@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 628
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ APIを使用するには、少し技術的な専門知識が必要です。小�
 * [テーブルの統合](../../../best-practices/consolidating-your-tables.md)
 * [データベースへのアクセスの制限](../../../administrator/account-management/restrict-db-access.md)
 
-**必要な統合が表示されませんか？** 一部の統合をアカウントに表示するには、アクティブ化する必要があります。 [!DNL Facebook]のようなものを探しているが、リストに記載されていない場合は、[&#x200B; サポートチケットを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)してください。
+**必要な統合が表示されませんか？** 一部の統合をアカウントに表示するには、アクティブ化する必要があります。 [!DNL Facebook]のようなものを探しているが、リストに記載されていない場合は、[&#x200B; サポートチケットを送信](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)してください。
 
 **統合のエラーステータスが表示される場合**、[&#x200B; トラブルシューティングの節](https://support.magento.com/hc/en-us/sections/360003078151)を参照してヘルプを確認してください。
 
 ## 更新の正常性を監視する（オプション）
 
-ソースを接続した後は、基本的なヘルスチェックを自動化して、完全な更新が完了していることを確認します。 開発者ドキュメントの[更新サイクルステータス API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/)を使用して、クライアントの最新の完了済み更新サイクルを取得し、内部ダッシュボードまたはアラートに表示します。
+ソースを接続した後は、基本的なヘルスチェックを自動化して、完全な更新が完了していることを確認します。 開発者ドキュメントの[更新サイクルステータス API](https://developer.adobe.com/commerce/services/reporting/update-cycle/)を使用して、クライアントの最新の完了済み更新サイクルを取得し、内部ダッシュボードまたはアラートに表示します。
 

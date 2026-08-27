@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
 workflow-type: tm+mt
-source-wordcount: 1293
+source-wordcount: 1370
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 ## 制限と要件 {#require}
 
 1. **ファイルのアップロードでサポートされている形式は`CSV`または`comma separated values`**&#x200B;のみです。 Excelで作業している場合は、「別名で保存」関数を使用して、ファイルを`.csv`形式で保存できます。
-1. **`CSV`ファイルでは`UTF-8 encoding`**&#x200B;を使用する必要があります。 多くの場合、これは問題ではありません。 ファイルのアップロード中にこのエラーが発生した場合は、[このサポート記事](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=ja)を参照してください。
+1. **`CSV`ファイルでは`UTF-8 encoding`**&#x200B;を使用する必要があります。 多くの場合、これは問題ではありません。
 1. **ファイルは100 MB**&#x200B;を超えることはできません。 ファイルがこれより大きい場合は、テーブルをチャンクに分割し、個別のファイルとして保存します。 最初のファイルを読み込んだ後でデータを追加できます。
 1. **すべてのテーブルには`primary key`**&#x200B;が必要です。 テーブルには、`primary key`として使用できる列、またはテーブルの各行に一意の識別子が少なくとも1つ必要です。 `primary key`として指定されたすべての列は、*決して*&#x200B;をnullにすることはできません。 `primary key`は、各行に番号を付ける列を追加するのと同じくらい簡単です。または、2つの列を連結して一意の値の列を作成することもできます（例：`campaign name`と`date`）。
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 数値の書式設定を変更する方法の例として、`US ZIP codes`を使用してください。 [!DNL Excel]で、`ZIP codes`と[を含む列を強調表示し、数値形式](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us)を`ZIP code`に変更します。 カスタム数値形式を選択し、`Type` ウィンドウに`00000`と入力します。 この方法では、一部のコードが`00000`形式で、他のコードが`00000-0000`形式の場合に問題が発生する可能性があることに注意してください。
 
-`Type`は、IDなどの他のデータタイプ [に対応するために、](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us)異なる形式にすることができます。 例えば、`ID`が9桁の場合、`Type`は`000000000`または`000-000-000`になります。 これにより、`123456`が`000-123-456`に変更されます。
+`Type`は、IDなどの他のデータタイプ [&#128279;](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us)に対応するために、異なる形式にすることができます。 例えば、`ID`が9桁の場合、`Type`は`000000000`または`000-000-000`になります。 これにより、`123456`が`000-123-456`に変更されます。
 
 [!DNL Google Docs]および[!DNL Apple Numbers]のリソースについては、このページの下部にある[関連](#related)のリストを参照してください。
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Save Table]**&#x200B;をクリックします。
 
-*成功です！テーブルを保存すると、画面の上部に* メッセージが表示されます。
+*成功！* テーブルを保存すると、メッセージが画面の上部に表示されます。
 
 ビジュアルが必要な場合は、プロセス全体を確認しましょう。
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Open]**&#x200B;をクリックしてアップロードを開始します。
 
-   アップロードが完了すると、[!DNL Commerce Intelligence]はファイル内のデータ構造を検証します。 *成功です！テーブルを保存すると、画面の上部に* メッセージが表示されます。
+   アップロードが完了すると、[!DNL Commerce Intelligence]はファイル内のデータ構造を検証します。 *成功！* テーブルを保存すると、メッセージが画面の上部に表示されます。
 
 ## データの可用性 {#availability}
 
@@ -172,4 +172,4 @@ ht-degree: 0%
 
 ## サードパーティリソース
 
-* [[!DNL Google Docs]  データ形式ガイド &#x200B;](https://support.google.com/docs/answer/56470?hl=en)
+* [[!DNL Google Docs] データ形式ガイド](https://support.google.com/docs/answer/56470?hl=en)

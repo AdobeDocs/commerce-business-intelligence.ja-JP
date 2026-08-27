@@ -1,6 +1,6 @@
 ---
 title: マッピングテーブルによるデータの標準化
-description: マッピングテーブルの操作方法を説明します。
+description: Commerce IntelligenceのData Warehouse Managerでマッピングテーブルを使用して、請求ステート形式などの一貫性のない値を標準化し、レポートを正確に保ちます。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: 788
 ht-degree: 0%
 
 ---
@@ -66,19 +66,19 @@ ht-degree: 0%
 
 マッピングテーブルの作成が完了したら、[&#x200B; ファイル &#x200B;](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)を[!DNL Commerce Intelligence]にアップロードし、[新しいフィールドを目的のテーブルに再配置する結合列](../../data-analyst/data-warehouse-mgr/calc-column-types.md)を作成する必要があります。 これは、ファイルがData Warehouseに同期された後に実行できます。
 
-次の使用例は、結合列を使用して、`mapping_state` テーブル （`state_input`）で作成した列を`customer_address` テーブルに移動します。 これにより、`state_input`列ではなく、レポートのクリーン `state`列でグループ化できます。
+次の使用例は、結合列を使用して、`mapping_state` テーブル （`state_input`）で作成した列を`customer_address` テーブルに移動します。 これにより、`state`列ではなく、レポートのクリーン `state_input`列でグループ化できます。
 
 `joined`列を作成するには、Data Warehouse Managerでフィールドを再配置するテーブルに移動します。 この例では、これは`customer_address` テーブルです。
 
 1. **[!UICONTROL Create a Column]**&#x200B;をクリックします。
-1. 「`Joined Column`」ドロップダウンから「`Definition`」を選択します。
+1. 「`Definition`」ドロップダウンから「`Joined Column`」を選択します。
 1. データベースの`state`列と区別する名前を列に付けます。 レポートビルダーでセグメント化するときに使用する列を指定できるように、列に`billing state (mapped)`という名前を付けます。
-1. テーブルを接続するために必要なパスが存在しないので、テーブルを作成する必要があります。 **[!UICONTROL Create new path]** ドロップダウンで「`Select a table and column`」をクリックします。
+1. テーブルを接続するために必要なパスが存在しないので、テーブルを作成する必要があります。 `Select a table and column` ドロップダウンで「**[!UICONTROL Create new path]**」をクリックします。
 
    テーブルの関係がわからない場合や、プライマリキーと外部キーを適切に定義する方法がわからない場合は、[&#x200B; チュートリアル &#x200B;](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)を参照してヘルプを確認してください。
 
    * `Many`側で、フィールドを再配置するテーブル（繰り返しますが、`customer_address`です）と、例の`Foreign Key`列または`state`列を選択します。
-   * `One`側で、`mapping` テーブルと`Primary key`列を選択します。 この場合、`state_input` テーブルから`mapping_state`列を選択します。
+   * `One`側で、`mapping` テーブルと`Primary key`列を選択します。 この場合、`mapping_state` テーブルから`state_input`列を選択します。
    * ここでは、どのような経路であるのかを確認します。
 
      ![&#x200B; ステート マッピングの計算パスを表示するData Warehouse Manager](../../assets/State_Mapping_Path.png)

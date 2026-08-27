@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 0%
+source-wordcount: 866
+ht-degree: 1%
 
 ---
 
@@ -97,4 +97,4 @@ ht-degree: 0%
 
 解約が発生している理由を特定したら、分析を使用して`reactivation` キャンペーンを作成できます。 このデータを活用すれば、非アクティブになった利用者、最後にアクセスしてからの時間、最後に購入したものなどを特定することができます。 これにより、顧客を惹きつける実用的な意思決定を下すことができます。
 
-分析のヘルプについては、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+分析のヘルプについては、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

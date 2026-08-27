@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 135
+source-wordcount: 160
 ht-degree: 0%
 
 ---
@@ -34,12 +34,12 @@ ht-degree: 0%
 
 1. 無料の[[!DNL Google Adwords] Editor](https://ads.google.com/home/tools/ads-editor/) アプリケーションをダウンロードしてインストールします。
 
-1. インストールが完了したら、`Add Count` パネルで`Add/manage accounts`を選択します。
+1. インストールが完了したら、`Add/manage accounts` パネルで`Add Count`を選択します。
 
 1. [!DNL Google Adwords] アカウント情報を入力してください。
 
 1. アカウントが[!DNL Google Adwords] エディターに追加されたら、**[!UICONTROL File** > **&#x200B; スプレッドシートの書き出し（CSV） &#x200B;**> **アカウント全体の書き出し]**&#x200B;を選択します
 
-これにより、現在の`.csv` アカウントに保存されているすべての情報を含む[!DNL Google Adwords] ファイルが作成されます。 この時点で、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)を送信します（必ずこのファイルを添付してください）。そうすると、データを詳細に確認できます。 ファイルが大きすぎる場合は、[!DNL Commerce Intelligence]または[!DNL Dropbox]を介して[!DNL Google Drive] チームと共有します。
+これにより、現在の[!DNL Google Adwords] アカウントに保存されているすべての情報を含む`.csv` ファイルが作成されます。 この時点で、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信します（必ずこのファイルを添付してください）。 そのため、データを詳しく見てみましょう。 ファイルが大きすぎる場合は、[!DNL Dropbox]または[!DNL Google Drive]を介して[!DNL Commerce Intelligence] チームと共有します。
 
 [!DNL Google Adwords] `.csv` ファイルの書き出しについて詳しくは、公式[[!DNL Google Adwords]  ドキュメント &#x200B;](https://support.google.com/google-ads/editor/answer/38657?hl=en)を参照してください。

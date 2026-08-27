@@ -18,9 +18,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 245
+source-wordcount: 246
 ht-degree: 0%
 
 ---
@@ -55,4 +55,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->各アカウントには契約数のライセンス、つまりシートがあります。 上限に達した場合、または詳細を知りたい場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+>各アカウントには契約数のライセンス、つまりシートがあります。 上限に達した場合、または詳細を知りたい場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

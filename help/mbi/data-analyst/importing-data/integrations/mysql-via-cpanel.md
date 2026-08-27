@@ -1,6 +1,6 @@
 ---
 title: cPanelを介したMySQLの接続
-description: cPanelを介してMySQLを接続する方法を説明します。
+description: cPanelでホストされているMySQL データベースをCommerce Intelligenceに接続します。 専用ユーザーを作成し、接続の詳細を入力して、データの同期を開始します。
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: 417
 ht-degree: 0%
 
 ---
@@ -89,4 +89,4 @@ ht-degree: 0%
 ## 関連 {#related}
 
 * [SSH ホスト キーの検証](ssh-host-key-verification.md)
-* [統合の再認証](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

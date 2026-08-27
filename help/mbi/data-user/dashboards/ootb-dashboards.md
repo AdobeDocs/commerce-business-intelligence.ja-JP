@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 973
+source-wordcount: 974
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >一部のダッシュボードの利用可能性は、データセットによって異なります。
 
-ご質問がある場合、またはアカウントにパッケージを追加したい場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)を送信してヘルプを得てください。
+ご質問がある場合、またはアカウントにパッケージを追加したい場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信してヘルプを得てください。
 
 ## 経営陣概要
 

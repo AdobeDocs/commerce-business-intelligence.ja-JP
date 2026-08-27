@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce Intelligenceの概要
-description: Adobe Commerce Intelligenceについてさらに詳しく。
+description: Adobe Commerce Intelligence（旧Magento Business Intelligence）を導入しましょう。 Adobe Experience Platformの機能と、データを分析する方法をご紹介します。
 exl-id: 0c960d8c-9bb7-429e-a88e-21678a77b710
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -25,9 +25,9 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 252
+source-wordcount: 275
 ht-degree: 0%
 
 ---
@@ -40,10 +40,10 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Intelligence] （旧称[!DNL Magento Business Intelligence]）は、クラウドベースのデータ管理および分析プラットフォームです。 [!DNL Commerce Intelligence]は、データ ソースを簡単に統合および管理し、データをモデル化し、グラフとレポートを作成し、信頼できる唯一の情報源を維持する機能を提供します。
 
-[!DNL Commerce Intelligence]のコア機能である[!DNL Adobe Commerce]は、複数のデータソースにまたがるベストプラクティスのインサイトを提供し、マーチャントが科学的なデータ主導の意思決定をおこない、明確で情報に基づいたアクションを実行できるようにします。 レポートプロセスを自動化し、ビジネス上の意思決定やチーム間のコラボレーションの方法を変革できます。 [!DNL Commerce Intelligence]を使って、憶測による判断から脱却しましょう。
+[!DNL Adobe Commerce]のコア機能である[!DNL Commerce Intelligence]は、複数のデータソースにまたがるベストプラクティスのインサイトを提供し、マーチャントが科学的なデータ主導の意思決定をおこない、明確で情報に基づいたアクションを実行できるようにします。 レポートプロセスを自動化し、ビジネス上の意思決定やチーム間のコラボレーションの方法を変革できます。 [!DNL Commerce Intelligence]を使って、憶測による判断から脱却しましょう。
 
 データを接続、統合、変換します。 データを視覚化、分析し、詳細かつ実用的なインサイトを獲得できます。 Commerce Intelligenceの正式なトレーニングなしで、カスタム指標とレポートを作成。 これにより、日常的な技術的な課題に悩まされることなく、チーム全体がデータ主導で業務を進めることができます。 また、付属のダッシュボードを使用して、ビジネスパフォーマンスを詳細に把握することもできます。
 
 標準的なダッシュボードには、マーケティング ROI、顧客生涯価値、顧客セグメンテーション、エグゼクティブおよび投資家KPI、コホート分析、マーチャンダイジング分析などがあります。
 
-[&#x200B; アカウントを](../getting-started/onpremise-activation.md) アクティブ化[!DNL Commerce Intelligence]すると、[!DNL Adobe Commerce] データベースを[!DNL Commerce Intelligence]に接続し、約100件のレポートを含む5つのダッシュボードにすぐにアクセスできるようになります。 これらのレポートは、お客様のデータに関するインサイトを提供し、*注文が前月比でどのように増加しているか？*、*最も忠実な顧客は誰ですか？*、および&#x200B;*クーポン戦略は機能していますか？*
+[!DNL Commerce Intelligence] アカウントを[&#x200B; アクティブ化](../getting-started/onpremise-activation.md)すると、[!DNL Adobe Commerce] データベースを[!DNL Commerce Intelligence]に接続し、約100件のレポートを含む5つのダッシュボードにすぐにアクセスできるようになります。 これらのレポートは、データに関するインサイトを提供し、*注文の前月比の増加率はどうですか？*、*最もロイヤルティの高い顧客は誰ですか？*、*クーポン戦略は機能していますか？*&#x200B;などの質問に答えるように設計されています。

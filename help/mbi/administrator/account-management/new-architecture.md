@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 390
+source-wordcount: 409
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ### ヘルプの取得
 
-[!DNL Adobe Commerce Intelligence] [&#x200B; サービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)は、追加費用で再実装を実行できます。 [Adobe アカウントチーム &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket)に連絡し、新しいアカウントでの作成を優先するダッシュボード/レポートのリストを提供する準備をしてください
+[!DNL Adobe Commerce Intelligence] [&#x200B; サービスチーム &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)は、追加費用で再実装を実行できます。 [Adobe アカウントチーム &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket)に連絡し、新しいアカウントでの作成を優先するダッシュボード/レポートのリストを提供する準備をしてください
 
 ### 既存のアーキテクチャを維持
 

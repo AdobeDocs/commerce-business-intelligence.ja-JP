@@ -18,9 +18,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 277
+source-wordcount: 286
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 同様の方法でフィルタリングする必要がある指標が[!DNL Commerce Intelligence]に複数ある場合（テスト注文のフィルタリングなど）、保存されたフィルターセットを作成して指標に適用できます。 これにより、指標を作成または編集する際に個々のフィルターを追加する必要がなくなるため、時間を節約できます。
 
-詳しくは、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=ja)を参照してください。
+詳しくは、[&#x200B; トレーニング ビデオ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/mbi/filter-sets)を参照してください。
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 1. `Filter Set`を保存します。
 
-フィルターセットを保存した後、同じテーブルを使用している任意の指標に適用できます。 例えば、`Filter Set` テーブルで`orders`を作成した場合、このテーブル上に構築されている&#x200B;*などの*&#x200B;すべての指標`Revenue`に適用できます。
+フィルターセットを保存した後、同じテーブルを使用している任意の指標に適用できます。 例えば、`orders` テーブルで`Filter Set`を作成した場合、このテーブル上に構築されている`Revenue`などの&#x200B;*すべての指標*&#x200B;に適用できます。
 
 >[!NOTE]
 >

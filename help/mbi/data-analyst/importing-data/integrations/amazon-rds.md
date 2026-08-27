@@ -1,6 +1,6 @@
 ---
 title: Amazon RDSの連携
-description: RDS インスタンスを接続する手順を説明します。
+description: Amazon RDS データベースをCommerce Intelligenceに接続します。 設定手順に従って、サポートされているRDS データベースエンジンからData Warehouseにデータを同期します。
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 532
 ht-degree: 0%
 
 ---

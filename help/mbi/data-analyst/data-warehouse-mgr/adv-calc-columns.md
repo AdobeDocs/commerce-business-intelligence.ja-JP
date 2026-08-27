@@ -22,16 +22,16 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 2%
+source-wordcount: 962
+ht-degree: 11%
 
 ---
 
 # 高度な計算列タイプ
 
-作成する多くの分析では、**または**&#x200B;を作成する`group by`新しい列`filter by`を使用します。 [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルでは、ほとんどのユースケースの基本について説明していますが、Data Warehouse Managerで作成できる計算列よりも少し複雑な計算列が必要な場合があります。
+作成する多くの分析では、`group by`または`filter by`を作成する&#x200B;**新しい列**&#x200B;を使用します。 [計算列の作成](../data-warehouse-mgr/creating-calculated-columns.md) チュートリアルでは、ほとんどのユースケースの基本について説明していますが、Data Warehouse Managerで作成できる計算列よりも少し複雑な計算列が必要な場合があります。
 {: #top}
 
 これらの列は、Data WarehouseのAdobeチームで作成できます。 新しい計算列を定義するには、次の情報を提供してください。
@@ -179,7 +179,7 @@ ht-degree: 2%
 
 心配する必要はありません。 ここに記載されていないからといって、それが不可能であるとは限りません。 Data Warehouse AnalystsのAdobeチームがお手伝いします。
 
-新しい計算列を定義するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)を送信し、作成する内容の詳細を入力します。
+新しい計算列を定義するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信し、作成する内容の詳細を入力します。
 
 ## 関連ドキュメント
 

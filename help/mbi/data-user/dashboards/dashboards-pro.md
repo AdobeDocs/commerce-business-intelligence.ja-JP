@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1950
+source-wordcount: 1989
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->これらのダッシュボードへのアクセスは、アカウントの種類とアクセスレベルによって異なります。 これらのダッシュボードが表示されない場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)にお問い合わせください。
+>これらのダッシュボードへのアクセスは、アカウントの種類とアクセスレベルによって異なります。 これらのダッシュボードが表示されない場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
 
 ## レポートの可用性
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 ## 特定可能
 
-「製品」ダッシュボードには、注文した製品、その総販売額（GMV）、および購入および返金された上位の製品の一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、商品の成功と人気を判断するのに役立ちます。 これらのグラフを入力するには、返金を追跡するように[&#x200B; ストアを設定する必要があります](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=ja)。
+「製品」ダッシュボードには、注文した製品、その総販売額（GMV）、および購入および返金された上位の製品の一般的な製品パフォーマンスが表示されます。 購入と返品のバランスを取り、商品の成功と人気を判断するのに役立ちます。 これらのグラフを入力するには、返金を追跡するように[&#x200B; ストアを設定する必要があります](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure)。
 
 >[!NOTE]
 >

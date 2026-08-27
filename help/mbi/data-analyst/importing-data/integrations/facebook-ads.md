@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 313
+source-wordcount: 321
 ht-degree: 0%
 
 ---
@@ -35,26 +35,26 @@ ht-degree: 0%
 
 ![Facebook広告のロゴ &#x200B;](../../../assets/facebook-ads-logo.png)
 
-調査を行い、広告を作成し、[!DNL Facebook]にキャンペーンを開始しました。 広告費のデータを分析し、そのお金が効果的に使われているかどうかを確認する必要があります。 広告費データを使用すると、キャンペーンから獲得したユーザーの広告コストと顧客生涯価値（CLV） [を組み合わせることで、](../../../data-analyst/analysis/roi-ad-camp.md) キャンペーン ROIを測定できます。
+調査を行い、広告を作成し、[!DNL Facebook]にキャンペーンを開始しました。 広告費のデータを分析し、そのお金が効果的に使われているかどうかを確認する必要があります。 広告費データを使用すると、キャンペーンから獲得したユーザーの広告コストと顧客生涯価値（CLV） [&#128279;](../../../data-analyst/analysis/roi-ad-camp.md)を組み合わせることで、 キャンペーン ROIを測定できます。
 
 [!DNL Facebook Ad] データを[!DNL Commerce Intelligence]に接続するには、次の簡単な3 ステップの手順を実行します。
 
 1. [&#x200B; [!DNL Facebook] を [!DNL Commerce Intelligence]のデータソースとして追加](#stepone)
-1. [&#x200B; [!DNL Commerce Intelligence]  データへの [!DNL Facebook Ads]  アクセスを許可する](#steptwo)
+1. [&#x200B; [!DNL Facebook Ads]  データへの [!DNL Commerce Intelligence]  アクセスを許可する](#steptwo)
 1. [データを引き出す [!DNL Facebook Ads]  アカウントを選択](#stepthree)
 
 ## [!DNL Facebook]を[!DNL Commerce Intelligence]のデータソースとして追加 {#stepone}
 
-1. [!DNL Facebook]統合を[!DNL Commerce Intelligence] アカウントに追加するには、`Connections`の下の&#x200B;**[!UICONTROL Manage Data** > **Integrations]** ページに移動します。
+1. [!DNL Facebook]統合を[!DNL Commerce Intelligence] アカウントに追加するには、**[!UICONTROL Manage Data** > **Integrations]**&#x200B;の下の`Connections` ページに移動します。
 1. 右側にある「**[!UICONTROL Add Integration]**」をクリックします。
 1. [!DNL Facebook] アイコンをクリックします。 これにより、[!DNL Facebook]認証ページが表示されます。
 1. **[!UICONTROL Authorize]**&#x200B;をクリックします。
 
-## [!DNL Commerce Intelligence] データへの[!DNL Facebook Ads] アクセスを許可する {#steptwo}
+## [!DNL Facebook Ads] データへの[!DNL Commerce Intelligence] アクセスを許可する {#steptwo}
 
 **[!DNL Facebook Authorize]**&#x200B;をクリックすると、小さなポップアップウィンドウが表示されます。
 
-Commerce Intelligence![の](../../../assets/Facebook_Access_Popup.png)Facebook アクセス権限ダイアログ
+Commerce Intelligence![&#128279;](../../../assets/Facebook_Access_Popup.png)のFacebook アクセス権限ダイアログ
 
 次の一連の手順に従って、[!DNL Commerce Intelligence]がパブリック プロファイル、[!DNL Facebook Ads]および関連する統計からデータにアクセスできるようにします。 続行するには、次の手順で&#x200B;**[!UICONTROL OK]**&#x200B;をクリックします。
 
@@ -66,15 +66,15 @@ Commerce Intelligence![の](../../../assets/Facebook_Access_Popup.png)Facebook �
 
 1. **[!UICONTROL Save Connections]**&#x200B;をクリックします。
 
-   接続が成功した場合、*接続が成功しました。* メッセージがページの上部に表示されます。
+   接続が成功した場合、*接続が成功しました！* メッセージがページの上部に表示されます。
 
 ## 次のステップ？ {#next}
 
-[!DNL Facebook]で[!DNL Google Analytics]件のキャンペーンを追跡していることを確認してください。 これにより、`utm\_campaign`の[!DNL Google Analytics] フィールドが[!DNL Facebook] キャンペーン用に正しく入力されます。
+[!DNL Google Analytics]で[!DNL Facebook]件のキャンペーンを追跡していることを確認してください。 これにより、[!DNL Google Analytics]の`utm\_campaign` フィールドが[!DNL Facebook] キャンペーン用に正しく入力されます。
 
 ## 関連
 
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [&#x200B; [!DNL Google Adwords]  アカウントを接続](../integrations/google-ecommerce.md)
 * [&#x200B; [!DNL Google eCommerce]経由で注文の紹介ソースを追跡](../integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースの追跡](../../analysis/google-track-user-acq.md)

@@ -1,6 +1,6 @@
 ---
 title: SQL クエリの最適化
-description: SQL クエリを最適化する方法について説明します。
+description: Commerce Intelligence SQL Report BuilderでSQL クエリを最適化します。 クエリのコストを削減し、サイズが大きすぎる結果による失敗を回避するためのベストプラクティスを説明します。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: 847
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]を使用すると、必要なときにいつでもクエリを実行および変更できます。 この機能は、列やレポートを修正する前に更新サイクルが終了するのを待つのではなく、クエリをすぐに更新する必要がある場合に役立ちます。
 
-クエリを実行する前に、[[!DNL Commerce Intelligence] はそのコストを見積もります](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=ja)。 コスト：クエリの実行に必要な時間とリソース数を考慮します。 そのコストが高すぎると見なされた場合、または返される行の数が[!DNL Commerce Intelligence]個の制限を超えた場合、クエリは失敗します。 [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)に対してクエリを実行する場合は、最も効率的なクエリを作成するために、Adobeでは次をお勧めします。
+クエリを実行する前に、[!DNL Commerce Intelligence]はそのコストを見積もります。 コスト：クエリの実行に必要な時間とリソース数を考慮します。 そのコストが高すぎると見なされた場合、または返される行の数が[!DNL Commerce Intelligence]個の制限を超えた場合、クエリは失敗します。 [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)に対してクエリを実行する場合は、最も効率的なクエリを作成するために、Adobeでは次をお勧めします。
 
 ## SELECTの使用または全列の選択
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| SELECT アスタリスク ![を使用した](../../mbi/assets/Select_all_1.png)SQL クエリ | ![特定の列を選択するSQL クエリ &#x200B;](../../mbi/assets/Select_all_2.png) |
+| SELECT アスタリスク ![&#128279;](../../mbi/assets/Select_all_1.png)を使用したSQL クエリ | ![特定の列を選択するSQL クエリ &#x200B;](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -56,7 +56,7 @@ FULL OUTER JOIN クエリの書き換え方法を確認します。
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| ![完全な外部結合を含むSQL クエリ &#x200B;](../../mbi/assets/Full_Outer_Join_1.png) | 最適化された結合![を含む](../../mbi/assets/Full_Outer_Join_2.png)SQL クエリ |
+| ![完全な外部結合を含むSQL クエリ &#x200B;](../../mbi/assets/Full_Outer_Join_1.png) | 最適化された結合![&#128279;](../../mbi/assets/Full_Outer_Join_2.png)を含むSQL クエリ |
 
 {style="table-layout:auto"}
 
@@ -84,11 +84,11 @@ FULL OUTER JOIN クエリの書き換え方法を確認します。
 
 クエリを作成する際には、可能な限り「安価」な演算子を使用することを検討してください。 各クエリには計算コストがあり、クエリを構成する関数、演算子、フィルターによって決まります。 一部のオペレーターは計算作業が少ないため、他のオペレーターよりもコストが低くなります。
 
-比較演算子（>、&lt;、=など）は最も安価で、次に[LIKEが続きます。 最も高額な演算子であるTO演算子とPOSIX演算子](https://www.postgresql.org/docs/9.5/functions-matching.html)に似ています。
+比較演算子（>、&lt;、=など）は最もコストが低く、その後に[LIKEが続きます。 最も高額な演算子であるTO演算子とPOSIX演算子](https://www.postgresql.org/docs/9.5/functions-matching.html)に似ています。
 
 ## EXISTSとINの使用
 
-`EXISTS`と`IN`の比較は、返す結果の種類によって異なります。 1つの値のみに関心がある場合は、`EXISTS`の代わりに`IN`句を使用します。 `IN`は、コンマ区切りの値のリストと共に使用されます。これにより、クエリの計算コストが増加します。
+`EXISTS`と`IN`の比較は、返す結果の種類によって異なります。 1つの値のみに関心がある場合は、`IN`の代わりに`EXISTS`句を使用します。 `IN`は、コンマ区切りの値のリストと共に使用されます。これにより、クエリの計算コストが増加します。
 
 `IN` クエリを実行する場合、システムは最初にサブクエリ（`IN` ステートメント）を処理し、次に`IN` ステートメントで指定された関係に基づいてクエリ全体を処理する必要があります。 クエリを複数回実行する必要がないため、`EXISTS` クエリの方がはるかに効率的です。クエリで指定された関係を確認する際に、true/false値が返されます。
 
@@ -96,7 +96,7 @@ FULL OUTER JOIN クエリの書き換え方法を確認します。
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| ![NULL チェック付きのLEFT JOINを使用したSQL クエリ &#x200B;](../../mbi/assets/Exists_1.png) | EXISTS句![を使用する](../../mbi/assets/Exists_2.png)SQL クエリ |
+| ![NULL チェック付きのLEFT JOINを使用したSQL クエリ &#x200B;](../../mbi/assets/Exists_1.png) | EXISTS句![&#128279;](../../mbi/assets/Exists_2.png)を使用するSQL クエリ |
 
 {style="table-layout:auto"}
 
@@ -112,7 +112,7 @@ FULL OUTER JOIN クエリの書き換え方法を確認します。
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| フィルター![の前にGROUP BYを含む](../../mbi/assets/Group_by_2.png)SQL クエリ | ![GROUP BY](../../mbi/assets/Group_by_1.png)の前にフィルターを含むSQL クエリ |
+| フィルター![&#128279;](../../mbi/assets/Group_by_2.png)の前にGROUP BYを含むSQL クエリ | ![GROUP BY](../../mbi/assets/Group_by_1.png)の前にフィルターを含むSQL クエリ |
 
 {style="table-layout:auto"}
 

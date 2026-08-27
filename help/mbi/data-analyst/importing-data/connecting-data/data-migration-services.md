@@ -22,16 +22,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 685
+source-wordcount: 711
 ht-degree: 0%
 
 ---
 
 # データ移行
 
-新しいデータベーススキーマ、サーバー、またはレポートデータベースへの移行にストレスを感じる必要はありません。 [[!DNL Adobe]  サービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)は、移行支援を提供しています。
+新しいデータベーススキーマ、サーバー、またはレポートデータベースへの移行にストレスを感じる必要はありません。 [[!DNL Adobe]  サービスチーム &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)は、移行支援を提供しています。
 
 移行を可能な限りスムーズに行うために、移行リクエストを送信する際は、できるだけ詳細に説明する必要があります。 このトピックには、リクエストを送信して移行を開始するために必要なすべての情報が含まれています。 ニーズを包括的に把握することで、プロジェクトが適切に範囲を絞られ、見積もりが正確であることを保証できます。
 
@@ -39,9 +39,9 @@ ht-degree: 0%
 
 まず、次の質問に対する回答を確認する必要があります。
 
-* **新しいデータベースは新しいサーバー上にありますか？** リクエストを送信する前に、**[!UICONTROL Manage Data** > **Connections]**&#x200B;でデータ接続の設定を更新してください。 この方法に関するリフレッシュが必要な場合は、[`Integrations`](../integrations/integrations.md) セクションに移動し、使用しているデータベースの種類の手順を確認してください。
+* **新しいデータベースは新しいサーバーにありますか？** リクエストを送信する前に、**[!UICONTROL Manage Data** > **Connections]**&#x200B;でデータ接続の設定を更新してください。 この方法に関するリフレッシュが必要な場合は、[`Integrations`](../integrations/integrations.md) セクションに移動し、使用しているデータベースの種類の手順を確認してください。
 
-* **すべての履歴データは新しいデータベースに存在しますか？それとも移行する必要がありますか？**&#x200B;移行プロセス中に、履歴データと新しいデータを統合できます。 統合が必要ない場合でも、ご希望の方はお知らせください。
+* **すべての履歴データは新しいデータベースに存在しますか？それとも移行する必要がありますか？** 移行プロセス中に、履歴データと新しいデータを統合できます。 統合が必要ない場合でも、ご希望の方はお知らせください。
 
 上記に対する回答を得たら、移行の種類を知る必要があります。 新しいデータベースには[`same`](#sameschema) スキーマがありますか、それとも[`different`](#newschema) スキーマがありますか？ 以下の説明では、各移行タイプの詳細な手順について説明します。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ## 質問がある場合に？ {#submitreq}
 
-[&#x200B; サポートリクエストを送信](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)することにより、当社に連絡できます。
+[&#x200B; サポートリクエストを送信](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)することにより、当社に連絡できます。
 
 前のセクションの手順に従って列に一致するスプレッドシートを作成する場合は、必ず添付してください。
 

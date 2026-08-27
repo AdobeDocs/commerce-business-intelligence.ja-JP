@@ -1,6 +1,6 @@
 ---
 title: Google ECommerceに接続
-description: 最も価値のある紹介チャネルの詳細。
+description: Adobe Googleのe コマースデータをCommerce Intelligenceに接続することで、最も価値のある紹介チャネルを追跡し、他のデータソースとともに売上を分析できます。
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 305
+source-wordcount: 341
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ ht-degree: 0%
 
 [!DNL Google ECommerce]資格情報を[!DNL Commerce Intelligence]に入力して開始します。
 
-1. `Connections`の下の&#x200B;**[!UICONTROL Admin** > **Connections]** ページに移動します。
+1. **[!UICONTROL Admin** > **Connections]**&#x200B;の下の`Connections` ページに移動します。
 
-1. **[!UICONTROL Add a New Source]** テーブルの上の画面の右側にある「`Data Sources`」をクリックします。
+1. `Data Sources` テーブルの上の画面の右側にある「**[!UICONTROL Add a New Source]**」をクリックします。
 
 1. [!DNL Google ECommerce] アイコンをクリックします。 これにより、[!DNL Google ECommerce]資格情報ページが開きます。
 
@@ -72,13 +72,13 @@ ht-degree: 0%
 ## [!DNL Google ECommerce]を[!DNL Commerce Intelligence]から切断しています {#disconnect}
 
 1. [!DNL Google Analytics] [&#x200B; アカウント設定](https://www.google.com/account/about/?hl=en) ページにアクセスします。
-1. `Security` セクションで、**[!UICONTROL edit]**&#x200B;個のアプリケーションとサイトの横にある`Authorizing`をクリックします。
-1. **[!UICONTROL revoke access]**&#x200B;の横にある[!DNL Commerce Intelligence]をクリックします。
+1. `Security` セクションで、`Authorizing`個のアプリケーションとサイトの横にある&#x200B;**[!UICONTROL edit]**&#x200B;をクリックします。
+1. [!DNL Commerce Intelligence]の横にある&#x200B;**[!UICONTROL revoke access]**&#x200B;をクリックします。
 
 ## 関連：
 
 * [期待される [!DNL Google ECommerce]  データ](../integrations/google-ecommerce-data.md)
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
-* [&#x200B; セットアップ  [!DNL Google ECommerce]  トラッキング &#x200B;](https://support.google.com/analytics/answer/1009612?hl=en)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [&#x200B; [!DNL Google ECommerce]  トラッキングを設定しています](https://support.google.com/analytics/answer/1009612?hl=en)
 * [最も価値のある獲得ソースとチャネルの発見](../../analysis/most-value-source-channel.md)
 * [広告キャンペーンのROIを高める](../../analysis/roi-ad-camp.md)

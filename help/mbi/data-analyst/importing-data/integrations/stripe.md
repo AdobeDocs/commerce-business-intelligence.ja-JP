@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 151
+source-wordcount: 163
 ht-degree: 0%
 
 ---
@@ -37,16 +37,16 @@ ht-degree: 0%
 [!DNL Stripe]を使用すると、ビジネスの支払いと請求書のデータを管理および追跡できます。 [!DNL Stripe] アカウントを[!DNL Commerce Intelligence]に接続するには、次の簡単な2 ステップの手順を実行します。
 
 1. [&#x200B; [!DNL Stripe] を [!DNL Commerce Intelligence]のデータソースとして追加](#stepone)
-1. [&#x200B; [!DNL Commerce Intelligence]  データへの [!DNL Stripe]  アクセスを許可](#steptwo)
+1. [&#x200B; [!DNL Stripe]  データへの [!DNL Commerce Intelligence]  アクセスを許可](#steptwo)
 
 ## [!DNL Stripe]をデータソースとして追加 {#stepone}
 
-1. `Connections`の下の&#x200B;**[!UICONTROL Admin** > **Connections]** ページに移動します。
-1. **[!UICONTROL Add a Data Source]** テーブルの上の画面の右側にある「`Data Sources`」をクリックします。
+1. **[!UICONTROL Admin** > **Connections]**&#x200B;の下の`Connections` ページに移動します。
+1. `Data Sources` テーブルの上の画面の右側にある「**[!UICONTROL Add a Data Source]**」をクリックします。
 1. [!DNL Stripe] アイコンをクリックします。 `[!DNL Stripe] authorization` ページが表示されます。
 1. **[!UICONTROL Connect with Stripe]**&#x200B;をクリックします。
 
-## [!DNL Commerce Intelligence] データへの[!DNL Stripe] アクセスを許可する {#steptwo}
+## [!DNL Stripe] データへの[!DNL Commerce Intelligence] アクセスを許可する {#steptwo}
 
 **[!UICONTROL Connect with Stripe]**&#x200B;をクリックすると、アクセス要求ページが表示されます。
 
@@ -56,11 +56,11 @@ ht-degree: 0%
 
 1. 資格情報が検証され、[!DNL Commerce Intelligence]に戻されます。
 
-1. 接続が成功した場合、*接続が成功しました。* メッセージが画面の上部に表示されます。
+1. 接続が成功した場合、*接続が成功しました！* メッセージが画面の上部に表示されます。
 
 ## 関連：
 
 [[!DNL Stripe] API ドキュメント &#x200B;](https://stripe.com/docs/api)は、[!DNL Stripe]と[!DNL Commerce Intelligence]の統合方法の詳細を学ぶのに役立つリソースです。
 
 * [期待される [!DNL Stripe]  データ](../integrations/stripe-data.md)
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

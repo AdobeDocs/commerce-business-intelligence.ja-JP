@@ -1,6 +1,6 @@
 ---
 title: クエリ結果のエクスポート
-description: データ結果の書き出し方法について説明します。
+description: Commerce IntelligenceのSQL クエリの結果をダウンロード可能なCSV ファイルにエクスポートし、プラットフォーム外でデータを分析して共有できます。
 exl-id: 7c5672af-ca60-47c5-9054-ff36e2887497
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
@@ -17,13 +17,13 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 26
+source-wordcount: 45
 ht-degree: 0%
 
 ---
 
 # クエリ結果のエクスポート
 
-**[!UICONTROL Export Data]** ペインの`Results`をクリックして、結果を`.csv` ファイルに書き出します。
+`Results` ペインの&#x200B;**[!UICONTROL Export Data]**&#x200B;をクリックして、結果を`.csv` ファイルに書き出します。

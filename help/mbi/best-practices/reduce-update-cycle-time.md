@@ -1,6 +1,6 @@
 ---
 title: 更新サイクルを短縮
-description: 更新サイクル時間を短縮する方法を説明します。
+description: Commerce Intelligenceの更新サイクルを短縮し、ダッシュボードに最新のデータをより迅速に反映。 同期速度に影響する内容と改善方法について説明します。
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
 role: Admin, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager, Dashboards
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 427
 ht-degree: 0%
 
 ---
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 ## リチェック頻度を減らす
 
-データベーステーブルには、変更可能な値を持つデータ列を含めることができます。 例えば、**orders** テーブルには、**status**&#x200B;という列がある場合があります。 注文が最初にデータベースに書き込まれると、ステータス列に値`pending`が含まれる場合があります。 注文は、この[値で](../data-analyst/data-warehouse-mgr/tour-dwm.md)Data Warehouse`pending`にレプリケートされます。
+データベーステーブルには、変更可能な値を持つデータ列を含めることができます。 例えば、**orders** テーブルには、**status**&#x200B;という列がある場合があります。 注文が最初にデータベースに書き込まれると、ステータス列に値`pending`が含まれる場合があります。 注文は、この`pending`値で[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)にレプリケートされます。
 
-変更可能な列は、更新された値[に対して時間の経過とともに](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)再チェックする必要があります。 デフォルトでは、[!DNL Commerce Intelligence]は更新のたびに列を再チェックしますが、再チェックしてレプリケートするデータの量が多い場合、更新時間に悪影響を与える可能性があります。 Adobeでは、更新のたびにリチェックを実行するのではなく、リチェック頻度を日単位、週単位、月単位に設定することをお勧めします。
+変更可能な列は、更新された値[&#128279;](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)に対して時間の経過とともに再チェックする必要があります。 デフォルトでは、[!DNL Commerce Intelligence]は更新のたびに列を再チェックしますが、再チェックしてレプリケートするデータの量が多い場合、更新時間に悪影響を与える可能性があります。 Adobeでは、更新のたびにリチェックを実行するのではなく、リチェック頻度を日単位、週単位、月単位に設定することをお勧めします。
 
 ## 増分レプリケーション方法の使用
 
@@ -59,4 +59,4 @@ ht-degree: 0%
 
 ## まとめ
 
-これらの推奨事項を実装しても更新時間が遅いと思われる場合は、[&#x200B; サポートチームにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+これらの推奨事項を実装しても更新時間が遅いと思われる場合は、[&#x200B; サポートチームにお問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

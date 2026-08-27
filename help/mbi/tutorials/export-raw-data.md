@@ -20,23 +20,23 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 491
+source-wordcount: 511
 ht-degree: 0%
 
 ---
 
 # 生データの書き出し
 
-生データの書き出しを使用すると、Data Warehouseからレコードを書き出し、ダッシュボードの機能を強化している内容を詳しく確認できます。 また、生データの書き出しは、[&#x200B; データの不一致を特定するのに役立ちます](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=ja)。
+生データの書き出しを使用すると、Data Warehouseからレコードを書き出し、ダッシュボードの機能を強化している内容を詳しく確認できます。 また、生データの書き出しは、[&#x200B; データの不一致を特定するのに役立ちます](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)。
 
 生データの書き出しにより、関連する指標の非正規化と事前集計によって生成された追加の列とディメンションにアクセスできます。 例えば、`User's first order date`は、[!DNL Commerce Intelligence]のユーザーごとに書き出すことができるディメンションですが、データベースでは使用できない場合があります。
 
 このチュートリアルでは、次の項目について説明します。
 
 * [書き出すデータの選択](#select)
-* [書き出し（](#download)
+* [書き出し（`.csv` ファイル）のダウンロード](#download)
 * [履歴エクスポートへのアクセス](#historical)
 
 ## 手順1：書き出すデータの選択 {#select}

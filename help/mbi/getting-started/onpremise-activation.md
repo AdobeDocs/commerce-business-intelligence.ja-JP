@@ -22,9 +22,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 761
+source-wordcount: 767
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 アカウントが作成されたら、メールで[!DNL The Magento BI Team@rjmetrics.com]からのアカウント通知メールを確認します。 電子メールに記載されているリンクを使用して、[!DNL Commerce Intelligence] アカウントにアクセスし、パスワードを作成してください。 受信トレイに移動し、電子メールアドレスを確認します。
 
-電子メールが届かない場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+電子メールが届かない場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ![新しいCommerce Intelligence アカウントのパスワード画面を作成](../assets/create-account-4.png)
 
@@ -132,15 +132,15 @@ ht-degree: 0%
 
 [!UICONTROL Integration Name]: [自分の[!DNL Commerce Intelligence] インスタンスの名前を選択]
 
-[!UICONTROL Host]: `mbi.internal`
+[!UICONTROL Host]&#x200B;: `mbi.internal`
 
-[!UICONTROL Port]: `3306`
+[!UICONTROL Port]&#x200B;: `3306`
 
-[!UICONTROL ユーザー名]: `mbi`
+[!UICONTROL ユーザー名]&#x200B;: `mbi`
 
 [!UICONTROL Password]: [前のセクションに表示された入力パスワード ]
 
-[!UICONTROL Database Name]: `main`
+[!UICONTROL Database Name]&#x200B;: `main`
 
 [!UICONTROL Table Prefixes]: [ テーブルの接頭辞がない場合は空白のままにします]
 
@@ -150,7 +150,7 @@ ht-degree: 0%
 
 **入力：**
 
-[!UICONTROL Database Timezone]: `UTC`
+[!UICONTROL Database Timezone]&#x200B;: `UTC`
 
 [!UICONTROL Desired Timezone]: [ データを表示するタイムゾーンを選択]
 
@@ -166,13 +166,13 @@ ht-degree: 0%
 
 **入力：**
 
-[!UICONTROL Encryption Type]: `SSH Tunnel`
+[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
 
 [!UICONTROL Remote Address]: `ssh.us-3.magento.cloud` [前の手順]から
 
 [!UICONTROL Username]: `vfbfui4vmfez6-master-7rqtwti—mymagento` [前の手順]から
 
-[!UICONTROL Port]: `22`
+[!UICONTROL Port]&#x200B;: `22`
 
 ## 統合を保存します。
 
@@ -189,7 +189,7 @@ ht-degree: 0%
 <!--
 # Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 >[!NOTE]
 >

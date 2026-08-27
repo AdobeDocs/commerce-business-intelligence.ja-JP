@@ -20,10 +20,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 482
-ht-degree: 0%
+source-wordcount: 593
+ht-degree: 16%
 
 ---
 
@@ -53,8 +53,8 @@ ht-degree: 0%
 * 定義を選択：結合された列
 * [!UICONTROL table]を選択：`customer_entity`
 * [!UICONTROL column]を選択：`Customer's lifetime number of orders`
-* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]: `Orders we count`
+* [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * `Seconds since created_at`
 * 定義を選択：`Age`
@@ -78,65 +78,65 @@ ht-degree: 0%
 
 * **最初のリピート注文確率**
 * 指標A：オールタイムのリピート注文
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * 指標B：オールタイム注文
 * [!UICONTROL Metric]：注文数
 
 * [!UICONTROL Formula]：最初のリピート注文確率
 * &#x200B;
-  [!UICONTROL 数式]: `A/B`
+  [!UICONTROL 数式]&#x200B;: `A/B`
 * &#x200B;
-  [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]&#x200B;: `None`
 * &#x200B;
-  [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]&#x200B;: `Scalar`
 
 * **注文から数か月が経過した場合に指定された注文確率を繰り返します**
 * 指標A：前回の注文から数か月単位で注文を繰り返す（非表示）
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * &#x200B;
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * 指標B：最後の注文（注文から数か月単位）（非表示）
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * &#x200B;
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * 指標C：常に繰り返し注文（非表示）
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * &#x200B;
-  [!UICONTROL グループ化：]: `Independent`
+  [!UICONTROL グループ化：]&#x200B;: `Independent`
 
 * 指標D：すべての時間の最終注文（非表示）
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * &#x200B;
-  [!UICONTROL グループ化：]: `Independent`
+  [!UICONTROL グループ化：]&#x200B;: `Independent`
 
 * [!UICONTROL Formula]：最初のリピート注文確率
 * &#x200B;
-  [!UICONTROL 数式]: `(C-A)/(C+D-A-B)`
+  [!UICONTROL 数式]&#x200B;: `(C-A)/(C+D-A-B)`
 * &#x200B;
-  [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Months since previous order`
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Months since previous order`
 * Show top.bottom: カテゴリ名で並べ替えられた上位24のカテゴリ
 
 * &#x200B;
-  [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 最初のリピート注文確率レポートは、リピート注文合計/注文の合計を表します。 あらゆる注文は、リピート注文を行う機会です。リピート注文の数は、実際に行う注文のサブセットです。
 
@@ -144,8 +144,8 @@ ht-degree: 0%
 
 ダッシュボードを構築したら、最も一般的な質問は、「これを使用して解約しきい値を決定するにはどうすればよいですか？」です。
 
-**これに対する「正解」はありません。**&#x200B;ただし、Adobeでは、線が最初の再現率の半分の値を横切る点を見つけることをお勧めします。 ここからがポイントで、「ユーザーがリピート注文を行う場合、今までにそれをおこなったでしょう」と言えます。 最終的な目標は、「リテンション」から「再アクティブ化」の取り組みに切り替えることが理にかなったしきい値を選択することです。
+**これに対する「正解」はありません。** ただし、Adobeでは、線が最初の繰り返し確率率の半分の値と交差する点を見つけることをお勧めします。 ここからがポイントで、「ユーザーがリピート注文を行う場合、今までにそれをおこなったでしょう」と言えます。 最終的な目標は、「リテンション」から「再アクティブ化」の取り組みに切り替えることが理にかなったしきい値を選択することです。
 
 すべてのレポートをまとめた後、必要に応じてダッシュボード上でレポートを整理できます。 その結果、ページの上部に画像が表示されます
 
-この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームに連絡したい場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームに連絡したい場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

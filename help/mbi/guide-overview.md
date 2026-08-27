@@ -25,9 +25,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 last-update: 2026-08-14
-source-git-commit: a02a389e329acf9bf10b85687e5f877cab992337
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 492
 ht-degree: 2%
 
 ---
@@ -58,15 +58,15 @@ ht-degree: 2%
 
 ## ヘルプの利用方法
 
-ご不明な点がある場合や、お客様のアカウントで問題が発生した場合は、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)にお問い合わせください。
+ご不明な点がある場合や、お客様のアカウントで問題が発生した場合は、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
 
 ### サービスポリシー
 
-カスタマーサポートチームが提供するサービスの[&#x200B; リストを参照してください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+カスタマーサポートチームが提供するサービスの[&#x200B; リストを参照してください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ### サポートチケットの提出
 
-高度な計算列の作成に関するサポートが必要ですか？ 欠陥または接続の問題が発生しましたか？ サポートチームに連絡する必要がある場合は、Adobeから[&#x200B; サポートチケットガイドライン &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)を使用するよう求められます。 このガイドラインは、Adobeがこの問題を解決するために必要な情報の概要を示しています。
+高度な計算列の作成に関するサポートが必要ですか？ 欠陥または接続の問題が発生しましたか？ サポートチームに連絡する必要がある場合は、Adobeから[&#x200B; サポートチケットガイドライン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を使用するよう求められます。 このガイドラインは、Adobeがこの問題を解決するために必要な情報の概要を示しています。
 
 ## 使用可能なドキュメント
 

@@ -1,6 +1,6 @@
 ---
 title: 投資家向けダッシュボードの構築
-description: 投資家向けのダッシュボードの構築方法を学びましょう。
+description: Commerce Intelligenceで投資家向けダッシュボードを構築する。 日々の運用ダッシュボードとは異なる、明確で包括的なビューを実現するためのベストプラクティスを解説します。
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Developer, User
 feature: Dashboards, Data Integration
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 302
+source-wordcount: 315
 ht-degree: 0%
 
 ---
@@ -43,34 +43,34 @@ ht-degree: 0%
 ## ビジュアルレポート
 
 * **[!UICONTROL Revenue by quarter]**
-   * 指標 – 収益
+  * 指標 – 収益
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * 指標 – 初回注文収益
-      * フィルター – ユーザーの注文番号が1に等しい
-   * 指標2 - リピート注文収益
-      * フィルター – ユーザーの注文番号が1より大きい
-   * 複数のY軸のチェックボックスをオフにします
-   * 積み上げ棒グラフに変更
+  * 指標 – 初回注文収益
+    * フィルター – ユーザーの注文番号が1に等しい
+  * 指標2 - リピート注文収益
+    * フィルター – ユーザーの注文番号が1より大きい
+  * 複数のY軸のチェックボックスをオフにします
+  * 積み上げ棒グラフに変更
 * **[!UICONTROL AOV by quarter]**
-   * 指標1 – 収益
-      * この指標を非表示
-   * 指標2 – 注文数
-      * この指標を非表示
-   * 数式 – AOV
-      * A/B
+  * 指標1 – 収益
+    * この指標を非表示
+  * 指標2 – 注文数
+    * この指標を非表示
+  * 数式 – AOV
+    * A/B
 * **[!UICONTROL All-time revenue by source]**
-   * 指標 – 収益
-   * 顧客の`utm_source`でグループ化
+  * 指標 – 収益
+  * 顧客の`utm_source`でグループ化
 * **[!UICONTROL Revenue from top 10 products]**
-   * 指標 – 製品売上
-      * グラフを非表示にする
-      * 製品の名前でグループ化します。 すべての製品を選択してください。
-      * 時間範囲をAll-Timeに設定
-      * 時間間隔を「なし」に設定します
-      * 「トップ/ボトムを表示」で、製品利益でソートされたトップ 10のみを表示します
+  * 指標 – 製品売上
+    * グラフを非表示にする
+    * 製品の名前でグループ化します。 すべての製品を選択してください。
+    * 時間範囲をAll-Timeに設定
+    * 時間間隔を「なし」に設定します
+    * 「トップ/ボトムを表示」で、製品利益でソートされたトップ 10のみを表示します
 * **[!UICONTROL Cumulative distinct buyers by quarter]**
-   * 指標 – 購入者の分類
-      * 遠近感 – 累積
+  * 指標 – 購入者の分類
+    * 遠近感 – 累積
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * セッション
 

@@ -1,6 +1,6 @@
 ---
 title: ダッシュボードの共有
-description: ダッシュボードを操作して共有する方法について説明します。
+description: Commerce Intelligenceダッシュボードを共有するためのベストプラクティスに従ってください。 アカウントを整理整頓しながら、共同作業を効果的に進めることができます。
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
@@ -16,9 +16,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 377
+source-wordcount: 391
 ht-degree: 0%
 
 ---

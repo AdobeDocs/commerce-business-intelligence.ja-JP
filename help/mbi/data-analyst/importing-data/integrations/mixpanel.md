@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 246
+source-wordcount: 256
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ ht-degree: 0%
 
 簡単な3 ステップのプロセスで[!DNL Mixpanel] データを[!DNL Commerce Intelligence]に接続します：
 
-1. [&#x200B; [!DNL Mixpanel] で [!DNL Commerce Intelligence]資格情報ページを開きます](#stepone)
+1. [&#x200B; [!DNL Commerce Intelligence]で [!DNL Mixpanel] 資格情報ページを開きます](#stepone)
 1. [&#x200B; [!DNL Mixpanel] API資格情報の取得](#steptwo)
-1. [&#x200B; [!DNL Mixpanel] に [!DNL Commerce Intelligence]API資格情報を入力してください](#stepthree)
+1. [&#x200B; [!DNL Commerce Intelligence]に [!DNL Mixpanel] API資格情報を入力してください](#stepthree)
 
 このプロセスを完了するには、[!DNL Commerce Intelligence]用と[!DNL Mixpanel] アカウント用の2つのブラウザーウィンドウまたはタブを開く必要があります。
 
@@ -48,9 +48,9 @@ ht-degree: 0%
 
 今すぐはじめる：
 
-1. `Connections`の下の&#x200B;**[!DNL Manage Data** > **Connections]** ページに移動します。
+1. **[!DNL Manage Data** > **Connections]**&#x200B;の下の`Connections` ページに移動します。
 
-1. **[!UICONTROL Add a New Source]** テーブルの上の画面の右側にある「`Data Sources`」をクリックします。
+1. `Data Sources` テーブルの上の画面の右側にある「**[!UICONTROL Add a New Source]**」をクリックします。
 
 1. [!DNL Mixpanel] アイコンをクリックし、資格情報ページを開きます。
 
@@ -70,14 +70,14 @@ ht-degree: 0%
 
 このプレゼンテーションを開いたままにしておきます。
 
-## [!DNL Mixpanel]に[!DNL Commerce Intelligence] API資格情報を入力しています {#stepthree}
+## [!DNL Commerce Intelligence]に[!DNL Mixpanel] API資格情報を入力しています {#stepthree}
 
-1. `API Key`と`Secret`を[!DNL Mixpanel]の[!DNL Commerce Intelligence]資格情報ページにコピーします。
+1. `API Key`と`Secret`を[!DNL Commerce Intelligence]の[!DNL Mixpanel]資格情報ページにコピーします。
 1. **[!UICONTROL Connect to Mixpanel]**&#x200B;をクリックして設定を完了します。
 
-接続が成功した場合、_成功です。_ メッセージがページの上部に表示されます。
+接続が成功した場合、_成功しました！_ メッセージがページの上部に表示されます。
 
 ### 関連
 
 * [期待される [!DNL Mixpanel]  データ](../integrations/mixpanel-data.md)
-* [統合を再認証しています](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=ja)
+* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

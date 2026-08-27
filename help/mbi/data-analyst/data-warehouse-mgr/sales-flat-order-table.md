@@ -1,6 +1,6 @@
 ---
 title: sales_order テーブル
-description: sales_order テーブルの操作方法を説明します。
+description: Commerce Intelligence Data Warehouseのsales_order テーブル構造を調べます。 各行が順序をどのように表し、カスタム分割がどこで発生するかを理解します。
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -24,9 +24,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 1201
+source-wordcount: 1215
 ht-degree: 0%
 
 ---
@@ -105,21 +105,21 @@ ht-degree: 0%
 `customer_entity`
 
 * `customer_entity` テーブルに結合して、注文した顧客に関連付けられた新しい顧客レベルの列を作成します。
-   * パス：`sales_order.customer_id` （多数） => `customer_entity.entity_id` （1つ）
+  * パス：`sales_order.customer_id` （多数） => `customer_entity.entity_id` （1つ）
 
 `customer_group`
 
 * `customer_group` テーブルに結合して、注文した顧客の顧客グループ名を返す列を作成します。
-   * パス：`sales_order.customer_group_id` （多数） => `customer_group.customer_group_id` （1つ）
+  * パス：`sales_order.customer_group_id` （多数） => `customer_group.customer_group_id` （1つ）
 
 `sales_order_address`
 
 * `sales_order_address` テーブルに結合して、注文に関連付けられた請求先と配送先を返す列を作成します。 請求または発送の詳細が必要かどうかに応じて、2つの参加パスが可能です。
-   * パス：
-      * 発送：`sales_order.shipping_address_id` （多数） => `sales_order_address.entity_id` （1件）
-      * 請求：`sales_order.billing_address_id` （多数） => `sales_order_address.entity_id` （1件）
+  * パス：
+    * 発送：`sales_order.shipping_address_id` （多数） => `sales_order_address.entity_id` （1件）
+    * 請求：`sales_order.billing_address_id` （多数） => `sales_order_address.entity_id` （1件）
 
 `store`
 
 * `store` テーブルに結合して、注文に関連付けられたCommerce ストアに関連する詳細を返す列を作成します。
-   * パス：`sales_order.store_id` （多数） => `store.store_id` （1つ）
+  * パス：`sales_order.store_id` （多数） => `store.store_id` （1つ）

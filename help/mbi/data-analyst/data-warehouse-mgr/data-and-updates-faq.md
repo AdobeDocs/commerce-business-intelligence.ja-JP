@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
 workflow-type: tm+mt
-source-wordcount: 529
+source-wordcount: 515
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ ht-degree: 0%
 
 ## [!DNL Google ECommerce] データがデータベースと異なるのはなぜですか？ {#ecommdatabase}
 
-[!DNL Google Analytics]とお客様のデータベースとの間には、様々な理由で不一致が発生する可能性があります。 トラッキングが適切に有効になっていない、シークレットにアクセスしているユーザー、正しく機能していないクリックイベントなどはその一例です。 収益と注文が正しく表示されない場合は、[このトピック &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=ja)を参照して問題を診断してください。
+[!DNL Google Analytics]とお客様のデータベースとの間には、様々な理由で不一致が発生する可能性があります。 トラッキングが適切に有効になっていない、シークレットにアクセスしているユーザー、正しく機能していないクリックイベントなどはその一例です。 収益と注文が正しく表示されない場合は、[このトピック &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)を参照して問題を診断してください。
 
 ## データの不一致のトラブルシューティング方法を教えてください。 {#datadiscrepancy}
 
-Adobeでは、一貫性のないデータを確認することは、顧客のフラストレーションを招く恐れがあることを認識しています。 [&#x200B; データの不一致チェックリスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=ja)または[&#x200B; データ書き出しチュートリアル &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=ja)を使用して、問題を診断してください。 まだ行き詰まっている場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+Adobeでは、一貫性のないデータを確認することは、顧客のフラストレーションを招く恐れがあることを認識しています。 [&#x200B; データ書き出しチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)を使用して、問題を診断してください。 まだ行き詰まっている場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

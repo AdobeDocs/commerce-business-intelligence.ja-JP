@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 306
+source-wordcount: 319
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 このトピックでは、4段階のプロセスで[!DNL Microsoft SQL] データベースを[!DNL Commerce Intelligence]に接続する方法について説明します。 このプロセスには、サーバー接続とSQLに関する技術的な専門知識が必要であり、チームの開発者のサポートが必要になる場合があります。
 
-[!DNL Commerce Intelligence]は、[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure]およびその他のほとんどのクラウドサーバープロバイダーをサポートしています。 特定のホストに関する質問がある場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)を送信して、この情報の提供を依頼してください。
+[!DNL Commerce Intelligence]は、[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure]およびその他のほとんどのクラウドサーバープロバイダーをサポートしています。 特定のホストに関する質問がある場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信して、この情報の提供を依頼してください。
 
 システムは、データベースでSELECT クエリを実行する必要があります。 これは最初にデータベース構造のスナップショットを取得するために行われ、次にデータを最新の状態に保つために定期的に超過時間が発生します。 アップデートは段階的に行われ、Adobeはアップデートの頻度と時間を制限して、サーバーへの不要な負荷を防ぎます。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
    * `UI`
    * `Query`
 
-1. [!DNL Commerce Intelligence]の&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;にサーバーのIP アドレス、ユーザー名、パスワードを入力します。
+1. **[!UICONTROL Manage Data** > **Connections]**&#x200B;の[!DNL Commerce Intelligence]にサーバーのIP アドレス、ユーザー名、パスワードを入力します。
 
    ![&#x200B; データベース統合を表示するデータ接続の管理ページ &#x200B;](../../../assets/manage-data-connections.png)
 

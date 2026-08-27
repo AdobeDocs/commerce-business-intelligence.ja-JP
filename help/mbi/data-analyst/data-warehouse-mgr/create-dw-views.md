@@ -24,16 +24,16 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1120
-ht-degree: 6%
+source-wordcount: 1156
+ht-degree: 13%
 
 ---
 
 # Data Warehouse ビューの操作
 
-このドキュメントでは、`Data Warehouse Views` > **[!UICONTROL Manage Data]**&#x200B;に移動してアクセスできる&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;の目的と用途について説明します。 次に、その機能とビューの作成方法の説明と、`Data Warehouse Views`を使用して[!DNL Facebook]と[!DNL AdWords]支出データを統合する方法の例を示します。
+このドキュメントでは、**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**&#x200B;に移動してアクセスできる`Data Warehouse Views`の目的と用途について説明します。 次に、その機能とビューの作成方法の説明と、`Data Warehouse Views`を使用して[!DNL Facebook]と[!DNL AdWords]支出データを統合する方法の例を示します。
 
 ## 汎用
 
@@ -49,7 +49,7 @@ SQLに精通している場合、これらの統合例では両方とも`UNION`�
 
 ## Data Warehouse ビューの作成と管理
 
-次に示すように、`Data Warehouse Views` > **[!UICONTROL Manage Data]**&#x200B;に移動して、新しい&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;を作成し、既存のビューを削除できます。
+次に示すように、**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**&#x200B;に移動して、新しい`Data Warehouse Views`を作成し、既存のビューを削除できます。
 
 カスタムビュー設定を示す![Data Warehouse ビューセクション &#x200B;](../../assets/Data_Warehouse_Views.png)
 
@@ -101,7 +101,7 @@ SQLに精通している場合、これらの統合例では両方とも`UNION`�
 
 [!DNL Facebook]と[!DNL Google AdWords]の両方のキャンペーンを含む単一の広告費テーブルを作成するには、SQL クエリを記述し、`UNION ALL`関数を使用する必要があります。 `UNION ALL` ステートメントは、多くの場合、各クエリの結果を単一の出力に追加しながら、複数の異なるSQL クエリを組み合わせるために使用されます。
 
-PostgreSQL `UNION` ドキュメント [に記載されているように、](https://www.postgresql.org/docs/8.3/queries-union.html) ステートメントには言及する価値があるいくつかの要件があります。
+PostgreSQL [&#x200B; ドキュメント &#x200B;](https://www.postgresql.org/docs/8.3/queries-union.html)に記載されているように、`UNION` ステートメントには言及する価値があるいくつかの要件があります。
 
 * すべてのクエリは同じ数の列を返す必要があります
 * 対応する列のデータ型は同じである必要があります
@@ -156,7 +156,7 @@ PostgreSQL `UNION` ドキュメント [に記載されているように、](htt
 
 **追加のヘルプをお探しですか？**
 
-SQLの書き込みと`Data Warehouse Views`の作成は、テクニカルサポートには含まれていません。 ただし、[&#x200B; サービスチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)は、ビューの作成に関するサポートを提供しています。 新しいデータベースを使用して従来のデータベースを移行し、特定の分析のために単一のData Warehouse ビューを作成するなど、あらゆる面でサポート チームがサポートします。
+SQLの書き込みと`Data Warehouse Views`の作成は、テクニカルサポートには含まれていません。 ただし、[&#x200B; サービスチーム &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)は、ビューの作成に関するサポートを提供しています。 新しいデータベースを使用して従来のデータベースを移行し、特定の分析のために単一のData Warehouse ビューを作成するなど、あらゆる面でサポート チームがサポートします。
 
 通常、同様に構造化された2 ～ 3個のテーブルを統合する目的で新しい`Data Warehouse View`を作成するには、5時間のサービス時間が必要です。これは、約1,250 ドルの作業に相当します。 しかし、以下は、必要な投資を増やす可能性のあるいくつかの一般的な要因です。
 

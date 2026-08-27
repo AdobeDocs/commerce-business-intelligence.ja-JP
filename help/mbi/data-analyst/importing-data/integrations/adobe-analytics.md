@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 312
+source-wordcount: 327
 ht-degree: 0%
 
 ---
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 ![Adobe Analyticsのロゴ &#x200B;](../../../assets/adobe-analytic-slogo.png)
 
-[!DNL Adobe Analytics]の[!DNL Adobe Commerce Intelligence]統合により、[!DNL Adobe Analytics]のエンドツーエンドのカスタマージャーニーの焦点と、[!DNL Commerce Intelligence]から利用するe コマースの焦点を合わせることができます。 これにより、ストアの全体的なパフォーマンスを把握できます。
+[!DNL Adobe Commerce Intelligence]の[!DNL Adobe Analytics]統合により、[!DNL Adobe Analytics]のエンドツーエンドのカスタマージャーニーの焦点と、[!DNL Commerce Intelligence]から利用するe コマースの焦点を合わせることができます。 これにより、ストアの全体的なパフォーマンスを把握できます。
 
-具体的には、[!DNL Adobe Analytics]の[!DNL Commerce Intelligence]統合は、マーチャントが[!DNL Adobe Commerce]と[!DNL Adobe Analytics]のデータセットの組み合わせを開始するための機能を提供します。
+具体的には、[!DNL Commerce Intelligence]の[!DNL Adobe Analytics]統合は、マーチャントが[!DNL Adobe Commerce]と[!DNL Adobe Analytics]のデータセットの組み合わせを開始するための機能を提供します。
 
 - 既存の[!DNL Adobe Analytics] アカウントから[!DNL Commerce Intelligence]への接続を作成します。
 
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 - [!DNL Adobe Analytics]個のログイン資格情報
 
-- `Name`個のレポートスイートのうち`ID`個および/または[!DNL Adobe Analytics]個からデータをレプリケートする
+- [!DNL Adobe Analytics]個のレポートスイートのうち`Name`個および/または`ID`個からデータをレプリケートする
 
 - [!DNL Commerce Intelligence]にレプリケートする指標とディメンションのリスト
 
-## [!DNL Adobe Analytics]の[!DNL Commerce Intelligence]統合を接続しています
+## [!DNL Commerce Intelligence]の[!DNL Adobe Analytics]統合を接続しています
 
-1. `Integrations`の下の&#x200B;**[!DNL Manage Data** > **Integrations]** ページに移動します。
+1. **[!DNL Manage Data** > **Integrations]**&#x200B;の下の`Integrations` ページに移動します。
 
 1. **[!UICONTROL Add an Integration]**&#x200B;をクリックします。
 
@@ -73,6 +73,6 @@ ht-degree: 0%
 
 1. 選択したレポートスイートがテーブルに表示されます。 **[!UICONTROL Save]**&#x200B;をクリックして選択を確定します。
 
-1. [!DNL Commerce Intelligence] [&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)に、統合が承認され、最初の接続プロセスが実行されていることを通知します。
+1. [!DNL Commerce Intelligence] [&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)に、統合が承認され、最初の接続プロセスが実行されていることを通知します。
 
 最初の接続プロセスが実行されると、テーブルはData Warehouse ページの「`All Tables`」タブで利用できるようになります。 複製する列を選択すると、データは次の完全な更新後に表示されます。

@@ -22,10 +22,10 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 3169
-ht-degree: 0%
+source-wordcount: 3891
+ht-degree: 18%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 **ゲスト注文を受け付けていますか？**
 
-*その場合、このテーブルにはすべての顧客が含まれていない可能性があります。 [&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)に連絡して、顧客分析にすべての顧客が含まれていることを確認してください。*
+*その場合、このテーブルにはすべての顧客が含まれていない可能性があります。 [&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)に連絡して、顧客分析にすべての顧客が含まれていることを確認してください。*
 
 *ゲスト注文を受け入れるかどうかわからない場合は、 詳細については、[このトピック &#x200B;](../data-warehouse-mgr/guest-orders.md)を参照してください。*
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**：注文が作成または配置された日付。
 * **[!UICONTROL Customer_email]**：注文を行った顧客の電子メールアドレス。 これは顧客の一意のIDである可能性もあります。
 * **[!UICONTROL Customer's lifetime number of orders]**: `Customers` テーブル上の同じ名前の列のコピー。
-* **[!UICONTROL Customer's order number]**：注文に関連付けられている顧客の順序注文番号。 例えば、お客様の最初の注文の行の場合、この列は「1」ですが、お客様の15番目の注文の場合、この列にはこの注文の「15」が表示されます。 このディメンションが`Customers` テーブルに存在しない場合は、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)に作成を依頼してください。
+* **[!UICONTROL Customer's order number]**：注文に関連付けられている顧客の順序注文番号。 例えば、お客様の最初の注文の行の場合、この列は「1」ですが、お客様の15番目の注文の場合、この列にはこの注文の「15」が表示されます。 このディメンションが`Customers` テーブルに存在しない場合は、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)に作成を依頼してください。
 * **[!UICONTROL Customer's order number (previous-current)]**: **[!UICONTROL Customer's order number]**&#x200B;列の2つの値の連結。 以下のサンプルレポートで、2つの注文の間の経過時間を表示するために使用します。 例えば、顧客の最初の注文日から2番目の注文日までの時間は、この計算で「1-2」と表されます。
 * **[!UICONTROL Coupon_code]**：各注文で使用されたクーポンを表示します。
 * **[!UICONTROL Seconds since previous order]**：顧客の注文間の時間（秒単位）。
@@ -135,9 +135,9 @@ ht-degree: 0%
 * **説明**：特定の期間に新たに獲得したユーザーの合計数。 `New Users`は`Unique Customers`とは異なります。なぜなら、`New Users`には、アカウントがサービスで作成されたタイムスタンプがあります（これは、必ずしも注文されたとは限りません）。一方、`Unique Customers`は少なくとも1つの注文を行っています。
 * **指標の定義**：この指標は、`created_at`によって注文された`customer_entity` テーブルから`entity_id`件中&#x200B;**件の**&#x200B;件を実行します。
 * **レポート例**：先月作成された新規ユーザーの数
-   * **[!UICONTROL Metric]**: `New Users`
-   * **[!UICONTROL Time Range]**: `Last Month`
-   * **[!UICONTROL Time Interval]**: `By Day`
+  * **[!UICONTROL Metric]**: `New Users`
+  * **[!UICONTROL Time Range]**: `Last Month`
+  * **[!UICONTROL Time Interval]**: `By Day`
 
 ![新規ユーザー](../../assets/New_Users_Last_Month.png)<!--{: width="929"}-->
 
@@ -146,9 +146,9 @@ ht-degree: 0%
 * **説明**：特定の期間における個別の顧客の合計数。 これは、`New Users`とは異なります。少なくとも1つの注文を行った顧客のみを追跡するためです。 明確な顧客レポートは、特定の時間間隔で顧客を1回しか追跡しません。 時間間隔を`By Day`に設定し、顧客がその日に複数の購入を行った場合、顧客は1回のみカウントされます。 一般的に購入の合計数を確認する場合は、`Number of Orders`を参照してください。
 * **指標の定義**：この指標は、`created_at`によって注文された`sales_flat_order` テーブルから`customer_id`の&#x200B;**個目の個数**&#x200B;を実行します。
 * **レポートの例**：過去90日間の週ごとの個別の顧客
-   * **[!UICONTROL Metric]**: `Distinct Customers`
-   * **[!UICONTROL Time Range]**: `Moving range > Last 90 Days`
-   * **[!UICONTROL Time Interval]**: `By Day`
+  * **[!UICONTROL Metric]**: `Distinct Customers`
+  * **[!UICONTROL Time Range]**: `Moving range > Last 90 Days`
+  * **[!UICONTROL Time Interval]**: `By Day`
 
 ![&#x200B; ユニーク顧客。](../../assets/Unique_customers_last_7_days.png)<!--{: width="929"}-->
 
@@ -157,9 +157,9 @@ ht-degree: 0%
 * **説明**：特定の期間に獲得した新規購読者の合計数。
 * **指標の定義**：この指標は、`start_date`によって注文された`subscriptions` テーブルから`customer_id`の&#x200B;**個目の個数**&#x200B;を実行します。
 * **レポートの例**：今月の新規登録者（月別）
-   * **[!UICONTROL Metric]**: `New Subscribers`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 0 Days Ago`
-   * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Metric]**: `New Subscribers`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 0 Days Ago`
+  * **[!UICONTROL Time Interval]**: `By Month`
 
 ![登録者](../../assets/New_Subscribers_This_Year_by_Month.png)<!--{: width="929"}-->
 
@@ -168,18 +168,18 @@ ht-degree: 0%
 * **説明**：一定期間に複数の注文を行った顧客の合計数。 リピート顧客レポートでは、`Distinct Customers`指標と`orders` テーブルの`Customer's Order Number` ディメンションを使用できます。
 * **指標が使用されました**: `Distinct Customers`
 * **レポートの例**：昨年の2回目および3回目の購入回数
-   * **[!UICONTROL Metric]**: `Distinct Customers`
-   * **[!UICONTROL Time Range]**: `Moving Range > Last Year`
-   * **[!UICONTROL Time Interval]**: `By Month`
-   * **[!UICONTROL Group By]**: `Customer's Order Number`を選択してから、`2`と`3`を選択してください
+  * **[!UICONTROL Metric]**: `Distinct Customers`
+  * **[!UICONTROL Time Range]**: `Moving Range > Last Year`
+  * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Group By]**: `Customer's Order Number`を選択してから、`2`と`3`を選択してください
 
   ![昨年の2回目と3回目の購入分析を示すグラフ &#x200B;](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **レポート例2**：過去1年間のリピート顧客の数
-   * **[!UICONTROL Metric]**: `Distinct Customers`
-   * **[!UICONTROL Filters]**: `Customer's Order Number Greater Than 1`
-   * **[!UICONTROL Time Range]**: `Moving range > Last Year`
-   * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Metric]**: `Distinct Customers`
+  * **[!UICONTROL Filters]**: `Customer's Order Number Greater Than 1`
+  * **[!UICONTROL Time Range]**: `Moving range > Last Year`
+  * **[!UICONTROL Time Interval]**: `By Month`
 
   ![昨年のリピート顧客](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
 
@@ -188,11 +188,11 @@ ht-degree: 0%
 * **説明**：合計注文数に基づく上位のお客様のリスト。 これにより、最も頻繁に購入する顧客のリストを表示できます。
 * **指標が使用されました**: `Orders`
 * **レポートの例**：注文生涯数で見た上位25人の顧客
-   * **[!UICONTROL Metric]**: `Orders`
-   * **[!UICONTROL Time Range]**: `All Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**: `customer_email`
-   * **[!UICONTROL Show Top/Bottom]**：上位25件の並べ替え順
+  * **[!UICONTROL Metric]**: `Orders`
+  * **[!UICONTROL Time Range]**: `All Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**: `customer_email`
+  * **[!UICONTROL Show Top/Bottom]**：上位25件の並べ替え順
 
   ![注文別の上位25人のお客様](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
 
@@ -201,11 +201,11 @@ ht-degree: 0%
 * **説明**：ライフタイム収益に基づく上位の顧客のリスト。
 * **指標が使用されました**: `Average Lifetime Revenue`
 * **レポートの例**：生涯売上別の上位25人の顧客
-   * **[!UICONTROL Metric]**: `Average Lifetime Revenue`
-   * **[!UICONTROL Time Range]**: `All time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**: `customer_email`
-   * **[!UICONTROL Show Top Bottom]**: トップ 25は生涯収入で並べ替えられました
+  * **[!UICONTROL Metric]**: `Average Lifetime Revenue`
+  * **[!UICONTROL Time Range]**: `All time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**: `customer_email`
+  * **[!UICONTROL Show Top Bottom]**: トップ 25は生涯収入で並べ替えられました
 
   ![売上別の上位25人の顧客](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
 
@@ -214,13 +214,13 @@ ht-degree: 0%
 * **説明**: ユーザーの個別コホート [&#128279;](../dev-reports/lifetime-rev-cohort-analysis.md)の平均生涯収益を経時的に追跡して、最もパフォーマンスの高いコホートを特定します。 コホートは、1回目の注文日や作成日など、共通の日付ごとにグループ化されています。
 * **指標が使用されました**: `Revenue`
 * **レポートの例**：コホート別の平均顧客生涯売上
-   * **[!UICONTROL Metric]**: `Revenue`
-   * **[!UICONTROL Cohort Date]**: `Customer's first order date`
-   * **[!UICONTROL Time Interval]**: `Month`
-   * **[!UICONTROL Time Period]**：少なくとも4か月間のデータを持つ最新の8つのコホートの移動セット
-   * **[!UICONTROL Duration]**: `12 Month(s)`
-   * **[!UICONTROL Table]**: `Customer_entity`
-   * **[!UICONTROL Perspective]**: コホートメンバーごとの累積平均値
+  * **[!UICONTROL Metric]**: `Revenue`
+  * **[!UICONTROL Cohort Date]**: `Customer's first order date`
+  * **[!UICONTROL Time Interval]**: `Month`
+  * **[!UICONTROL Time Period]**：少なくとも4か月間のデータを持つ最新の8つのコホートの移動セット
+  * **[!UICONTROL Duration]**: `12 Month(s)`
+  * **[!UICONTROL Table]**: `Customer_entity`
+  * **[!UICONTROL Perspective]**: コホートメンバーごとの累積平均値
 
   コホート別![顧客生涯売上](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
 
@@ -229,27 +229,27 @@ ht-degree: 0%
 * **説明**: クーポン/割引コードを使用して獲得した顧客の数。 これにより、割引希望者とフルプライス購入者を明確に把握することができます。
 * **指標が使用されました**: `New Users`
 * **レポートの例**：月ごとのクーポンおよびクーポン以外のお客様
-   * **[!UICONTROL Metric A]**: `Non coupon customers`
-   * **[!UICONTROL Metric]**: `New Users`
-   * **[!UICONTROL Filters]**：顧客の生涯注文数が0を超え、顧客の生涯注文数が0に等しい
-   * **[!UICONTROL Metric B]**: `Coupon customers`
-   * **[!UICONTROL Metric]**: `New Users`
-   * **[!UICONTROL Filters]**：顧客生涯注文数が0より大きく、顧客の生涯注文数が0より大きい
-   * **[!UICONTROL Time range]**: `All Time`
-   * **[!UICONTROL Time interval]**: `By Month`
+  * **[!UICONTROL Metric A]**: `Non coupon customers`
+  * **[!UICONTROL Metric]**: `New Users`
+  * **[!UICONTROL Filters]**：顧客の生涯注文数が0を超え、顧客の生涯注文数が0に等しい
+  * **[!UICONTROL Metric B]**: `Coupon customers`
+  * **[!UICONTROL Metric]**: `New Users`
+  * **[!UICONTROL Filters]**：顧客生涯注文数が0より大きく、顧客の生涯注文数が0より大きい
+  * **[!UICONTROL Time range]**: `All Time`
+  * **[!UICONTROL Time interval]**: `By Month`
 
   ![&#x200B; クーポン使用状況別のお客様](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
 
 * **レポートの例2**：月ごとのクーポンおよびクーポン以外の顧客の割合
-   * **[!UICONTROL Metric A]**: `Non coupon customers` （指標を非表示）
-      * **[!UICONTROL Metric]**: `New Users`
-      * **[!UICONTROL Filters]**: `Customer's Lifetime Number of Orders Greater Than 0`および`Customer's Lifetime Number of Coupons Equal to 0`
-   * **[!UICONTROL Metric B]**: `Coupon customers`
-      * **[!UICONTROL Metric]**: `New Users`
-      * **[!UICONTROL Filters]**: `Customers Lifetime Number of Orders Greater Than 0`および`Customer's Lifetime Number of Coupons Greater Than 0`
-   * **[!UICONTROL Time Range]**: `All Time`
-   * **[!UICONTROL Time Interval]**: `By Month`
-   * **[!UICONTROL Formula]**: `B/(A+B)`
+  * **[!UICONTROL Metric A]**: `Non coupon customers` （指標を非表示）
+    * **[!UICONTROL Metric]**: `New Users`
+    * **[!UICONTROL Filters]**: `Customer's Lifetime Number of Orders Greater Than 0`および`Customer's Lifetime Number of Coupons Equal to 0`
+  * **[!UICONTROL Metric B]**: `Coupon customers`
+    * **[!UICONTROL Metric]**: `New Users`
+    * **[!UICONTROL Filters]**: `Customers Lifetime Number of Orders Greater Than 0`および`Customer's Lifetime Number of Coupons Greater Than 0`
+  * **[!UICONTROL Time Range]**: `All Time`
+  * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Formula]**: `B/(A+B)`
 
 >[!NOTE]
 >
@@ -262,9 +262,9 @@ ht-degree: 0%
 * **説明**：顧客として最初の30日以内に顧客が生成した収益額の平均。
 * **指標の説明**：この指標は、`created_at`によって注文された`customer_entity` テーブルから`Customer's First 30 Day Revenue`の&#x200B;**平均**&#x200B;を実行します。
 * **レポートの説明**：お客様の最初の30日間の収益の全期間平均
-   * **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
-   * **[!UICONTROL Time Range]**: `All Time`
-   * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
+  * **[!UICONTROL Time Range]**: `All Time`
+  * **[!UICONTROL Time Interval]**: `None`
 
 ![最初の30日間の平均収益](../../assets/Avg_first_30_day_revenue.png)<!--{: width="929"}-->
 
@@ -273,9 +273,9 @@ ht-degree: 0%
 * **説明**：顧客が生涯にわたって生成した平均収益額。
 * **指標の説明**：この指標は、`created_at`に基づいて、`customer_entity` テーブルの`Customer's Lifetime Revenue`列のうち&#x200B;**平均**&#x200B;を実行します。
 * **レポートの説明**：顧客のライフタイムレベニューの全期間平均
-   * **[!UICONTROL Metric]**: `Average Customer Lifetime Revenue`
-   * **[!UICONTROL Time Range]**: `All Time`
-   * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Metric]**: `Average Customer Lifetime Revenue`
+  * **[!UICONTROL Time Range]**: `All Time`
+  * **[!UICONTROL Time Interval]**: `None`
 
 ![顧客生涯売上](../../assets/Avd_customer_lifetime_revenue_.png)<!--{: width="929"}-->
 
@@ -286,9 +286,9 @@ ht-degree: 0%
 * **説明**：収益指標には、選択した期間に獲得した合計収益が表示されます。
 * この指標は、`created_at`によって注文された`sales_flat_order` テーブルから`grand_total`の&#x200B;**合計**&#x200B;を実行します。
 * **レポートの例**：月別、年別
-   * **[!UICONTROL Metric]**: `Revenue`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
-   * **時間間隔**: `By Month`
+  * **[!UICONTROL Metric]**: `Revenue`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
+  * **時間間隔**: `By Month`
 
 >[!TIP]
 >
@@ -301,9 +301,9 @@ ht-degree: 0%
 * **説明**：特定の期間における合計注文数のカウント。 注文レポートは、新製品のオファーやプロモーションなど、取引量が増加（または減少）する可能性のある要因による注文量の変化を追跡します。 多くの場合、質問の回答を得るために、この指標をいくつかの変数でセグメント化する必要があります。
 * **指標の定義**：この指標は、`created_at`によって注文された`sales_flat_order` テーブルから`entity_id`件中&#x200B;**件の**&#x200B;件を実行します。
 * **レポートの例**：月別、年別の注文
-   * **[!UICONTROL Metric]**: `number of orders`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
-   * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Metric]**: `number of orders`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
+  * **[!UICONTROL Time Interval]**: `By Month`
 
 >[!TIP]
 >
@@ -316,30 +316,30 @@ ht-degree: 0%
 * **説明**：注文された製品指標は、特定の期間に販売された品目の数量を示します。
 * **指標の定義**：この指標は、`created_at`によって注文された`sales_flat_order_item` テーブルから`qty_ordered`の&#x200B;**合計**&#x200B;を実行します。
 * **レポートの例**：月別、年別の販売品目
-   * **[!UICONTROL Metric]**: `Products ordered`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
-   * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Metric]**: `Products ordered`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
+  * **[!UICONTROL Time Interval]**: `By Month`
 
   ![注文済み製品](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
 
 * この指標を注文数指標と組み合わせて、注文あたりのアイテム数を計算します。 次に、レポートにクーポンコードを追加して、プロモーションがカートのサイズにどのような影響を与えるかを決定するか、新規注文とリピート注文でセグメンテーションして、顧客行動をより詳細に把握します。
 * **レポートの例**：注文ごとの商品：初回注文とリピート注文
-   * **[!UICONTROL Metric A]**：注文された製品：最初の注文
-      * **[!UICONTROL Metric]**: `Products ordered`
-      * **[!UICONTROL Filter]**: `Customer's order number = 1`
-   * **[!UICONTROL Metric B]**：注文：最初の注文
-      * **[!UICONTROL Metric]**: `Orders`
-      * **[!UICONTROL Filter]**: `Customer's order number = 1`
-   * **[!UICONTROL Metric C]**：注文された製品：リピート注文
-      * **[!UICONTROL Metric]**: `Products ordered`
-      * **[!UICONTROL Filter]**: `Customer's order number > 1`
-   * **[!UICONTROL Metric D]**：注文：リピート注文
-      * **[!UICONTROL Metric]**: `Orders`
-      * **[!UICONTROL Filter]**: `Customer's order number > 1`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
-   * **[!UICONTROL Time Interval]**: `By Week`
-   * **[!UICONTROL Formula 1]**: `A/B`
-   * **[!UICONTROL Formula 2]**: `C/D`
+  * **[!UICONTROL Metric A]**：注文された製品：最初の注文
+    * **[!UICONTROL Metric]**: `Products ordered`
+    * **[!UICONTROL Filter]**: `Customer's order number = 1`
+  * **[!UICONTROL Metric B]**：注文：最初の注文
+    * **[!UICONTROL Metric]**: `Orders`
+    * **[!UICONTROL Filter]**: `Customer's order number = 1`
+  * **[!UICONTROL Metric C]**：注文された製品：リピート注文
+    * **[!UICONTROL Metric]**: `Products ordered`
+    * **[!UICONTROL Filter]**: `Customer's order number > 1`
+  * **[!UICONTROL Metric D]**：注文：リピート注文
+    * **[!UICONTROL Metric]**: `Orders`
+    * **[!UICONTROL Filter]**: `Customer's order number > 1`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
+  * **[!UICONTROL Time Interval]**: `By Week`
+  * **[!UICONTROL Formula 1]**: `A/B`
+  * **[!UICONTROL Formula 2]**: `C/D`
 
 >[!NOTE]
 >
@@ -352,10 +352,10 @@ ht-degree: 0%
 * **説明**：一定期間の注文の平均値を追跡します。 この指標は、マーケティング施策、製品オファー、ビジネス内のその他の変化の結果、平均注文額（AOV）がどのように変動したのかを迅速に判断するために使用できます。
 * **指標の定義**：この指標は、`created_at`によって注文された`sales_flat_order` テーブルから`grand_total`の&#x200B;**平均**&#x200B;を実行します。
 * **レポートの例**:AOVと前年、YTD
-   * **[!UICONTROL Metric]**: `Average order value`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
-   * **[!UICONTROL Time Interval]**: `By Month`
-   * **[!UICONTROL Perspective]**: `Amount Change vs Previous Year`
+  * **[!UICONTROL Metric]**: `Average order value`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
+  * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Perspective]**: `Amount Change vs Previous Year`
 
   ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
 
@@ -364,12 +364,12 @@ ht-degree: 0%
 * **説明**：このレポートでは、プロモーションやクーポンを提供する際に、どの商品が販売されているかをinsightで確認できます。
 * **指標が使用されました**：製品が注文されました
 * **レポートの例**：クーポンで最も購入された製品
-   * **[!UICONTROL Metric]**: `Products ordered`
-   * **[!UICONTROL Filter]**: `Order's coupon_code Is Not \[NULL\]`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By**]: `name` （または`SKU`、またはその他の製品識別子）
-   * **[!UICONTROL Show top/bottom]**：上位25件の並べ替え（注文された製品による）
+  * **[!UICONTROL Metric]**: `Products ordered`
+  * **[!UICONTROL Filter]**: `Order's coupon_code Is Not \[NULL\]`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By**]: `name` （または`SKU`、またはその他の製品識別子）
+  * **[!UICONTROL Show top/bottom]**：上位25件の並べ替え（注文された製品による）
 
   ![&#x200B; クーポン付き商品](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
 
@@ -378,15 +378,15 @@ ht-degree: 0%
 * **説明**：平均（または中央値）を調べる&#x200B;**注文間の時間**&#x200B;分析で、顧客の購入サイクルに関する仮定と期待をテストします。 購入から購入までの時間。 下のグラフでは、最高のお客様（注文が3つ以上の顧客）が6か月以内に2回目の購入を行っていることがわかります。 4回目の注文をしていない顧客は、14 ヶ月待ってから2回目の購入をおこないます。
 * **指標の定義**：この指標は、`created_at`様が注文した`sales_flat_order`から`Time since previous order`件中&#x200B;**平均**&#x200B;件を実行します。
 * **レポートの例**:
-   * **指標1**: ≤ 3件の注文
-      * **[!UICONTROL Metric]**: `Average time between orders`
-      * **[!UICONTROL Filter]**: `Customer's lifetime number of orders ≤ 3`
-   * **指標2**: > 3件の注文
-      * **[!UICONTROL Metric]**: `Average time between orders`
-      * **[!UICONTROL Filter]**: `Customer's lifetime number of orders > 3`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**:` Customer's order number (previous-current)`
+  * **指標1**: ≤ 3件の注文
+    * **[!UICONTROL Metric]**: `Average time between orders`
+    * **[!UICONTROL Filter]**: `Customer's lifetime number of orders ≤ 3`
+  * **指標2**: > 3件の注文
+    * **[!UICONTROL Metric]**: `Average time between orders`
+    * **[!UICONTROL Filter]**: `Customer's lifetime number of orders > 3`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**:` Customer's order number (previous-current)`
 
 >[!NOTE]
 >
@@ -401,10 +401,10 @@ ht-degree: 0%
 * **説明**：様々な期間と期間、キャンペーンや広告セット、またはその他のセグメントによって、マーケティング費用を分析できます。
 * **指標の定義**：この指標は、`date`列が順序付けした`Marketing Spend` テーブルの支出列に対して合計を実行します。
 * **レポート例**：キャンペーン別の広告費
-   * **[!UICONTROL Metric]**: `Ad spend`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**: `campaign`
+  * **[!UICONTROL Metric]**: `Ad spend`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**: `campaign`
 
 ![広告費](../../assets/ad_spend.png)<!--{: width="929"}-->
 
@@ -413,10 +413,10 @@ ht-degree: 0%
 * **説明**：広告費の分析に加えて、広告インプレッション数と広告クリック数を分析できます。
 * **指標の定義**：この指標は、日付列で並べ替えられた`Marketing Spend` テーブルのインプレッション数（またはクリック数）列に対して合計を実行します。
 * **レポート例**：日別のインプレッション数と広告クリック数を追加する
-   * **[!UICONTROL Metric A]**: `Ad impressions`
-   * **[!UICONTROL Metric B]**: `Ad clicks`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
-   * **[!UICONTROL Time Interval]**: `By Day`
+  * **[!UICONTROL Metric A]**: `Ad impressions`
+  * **[!UICONTROL Metric B]**: `Ad clicks`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
+  * **[!UICONTROL Time Interval]**: `By Day`
 
   ![広告インプレッション &#x200B;](../../assets/ad_impressions.png)<!--{: width="929"}-->
 
@@ -424,13 +424,13 @@ ht-degree: 0%
 
 * **説明**：上記で作成した広告インプレッション数と広告クリック数の指標を使用すると、時間の経過に伴う様々なキャンペーンによるクリック率を分析できます。
 * **レポート例**：キャンペーン別CTR
-   * **[!UICONTROL Metric A]**: `Ad impressions`
-   * **[!UICONTROL Metric B]**: `Ad clicks`
-   * **[!UICONTROL Time Range]**:`All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Formula]**: `B/A`
-   * 「`%`」オプションを選択します。
-   * **[!UICONTROL Group By]**: `campaign`
+  * **[!UICONTROL Metric A]**: `Ad impressions`
+  * **[!UICONTROL Metric B]**: `Ad clicks`
+  * **[!UICONTROL Time Range]**:`All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Formula]**: `B/A`
+  * 「`%`」オプションを選択します。
+  * **[!UICONTROL Group By]**: `campaign`
 
 >[!NOTE]
 >
@@ -442,13 +442,13 @@ ht-degree: 0%
 
 * **説明**：上記で作成した広告費と広告クリック数の指標を使用すると、時間の経過に伴い、様々なキャンペーンでクリック単価を分析できます。
 * **レポート例**：キャンペーン別CPC
-   * **[!UICONTROL Metric A]**: `Ad spend`
-   * **[!UICONTROL Metric B]**: `Ad clicks`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Formula]**: `A/B`
-   * `currency` オプションを選択
-   * **[!UICONTROL Group By]**: `campaign`
+  * **[!UICONTROL Metric A]**: `Ad spend`
+  * **[!UICONTROL Metric B]**: `Ad clicks`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Formula]**: `A/B`
+  * `currency` オプションを選択
+  * **[!UICONTROL Group By]**: `campaign`
 
 >[!NOTE]
 >
@@ -460,10 +460,10 @@ ht-degree: 0%
 
 * **説明**: [!DNL Google eCommerce]を使用して注文のソース、メディア、およびキャンペーンを追跡する場合、顧客を獲得ソースで分析できます。 これにより、顧客を獲得しているマーケティングソースを特定し、「ほとんどの顧客は[!DNL Google]、[!DNL Facebook]またはその他のソースを通じて最初の注文を行っていますか？」などの質問に答えることができます。
 * **レポート例**：獲得ソース別の顧客
-   * **[!UICONTROL Metric Used]**: `New Customers`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `By Month`
-   * **[!UICONTROL Group By]**: `Customer's first order's source`
+  * **[!UICONTROL Metric Used]**: `New Customers`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Group By]**: `Customer's first order's source`
 
 >[!NOTE]
 >
@@ -475,11 +475,11 @@ ht-degree: 0%
 
 * **説明**：獲得ソース別に顧客を分析するのと同様に、最初の注文のメディアとキャンペーン別に顧客を分析することもできます。 これは、「新規顧客を惹きつけている施策はどれか」といった質問に対する回答に役立ちます。
 * **レポートの例**：有料メディアを使用した獲得キャンペーン別の顧客
-   * **[!UICONTROL Metric Used]**: `New customers`
-   * **[!UICONTROL Filter]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**: `Customer's first order's campaign`
+  * **[!UICONTROL Metric Used]**: `New customers`
+  * **[!UICONTROL Filter]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**: `Customer's first order's campaign`
 
 >[!NOTE]
 >
@@ -491,16 +491,16 @@ ht-degree: 0%
 
 * **説明**: キャンペーンのコストを分析する方法の1つは、すべてのコストを、キャンペーンを通じて獲得した顧客のみに関連付けることです。
 * **レポート例**：キャンペーン別のCAC
-   * **[!UICONTROL Metric A]**: `New customers`
-   * **[!UICONTROL Filter]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Metric B]**: `Ad Spend`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Formula]**: `B/A`
-   * `currency` オプションを選択
-   * **[!UICONTROL Group By]**:
-      * 指標`A`で、`Customer's first order's campaign`を選択します
-      * 指標`B`で、`campaign`を選択します
+  * **[!UICONTROL Metric A]**: `New customers`
+  * **[!UICONTROL Filter]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Metric B]**: `Ad Spend`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Formula]**: `B/A`
+  * `currency` オプションを選択
+  * **[!UICONTROL Group By]**:
+    * 指標`A`で、`Customer's first order's campaign`を選択します
+    * 指標`B`で、`campaign`を選択します
 
   ![新規ユーザー。](../../assets/New_Users_Last_Month.png)
 
@@ -515,18 +515,18 @@ ht-degree: 0%
 ### 獲得ソース、メディア、キャンペーンごとの生涯価値
 
 * **説明**：各キャンペーンで獲得した顧客数を分析すると同時に、これらの顧客の平均生涯売上を分析できます。 これにより、次のことを特定できます。
-   * 特定の施策が大量の顧客を惹きつけ、その顧客の生涯価値が低い場合。
-   * 特定の施策が少量の顧客を惹きつけ、その顧客の生涯価値が高い場合。
+  * 特定の施策が大量の顧客を惹きつけ、その顧客の生涯価値が低い場合。
+  * 特定の施策が少量の顧客を惹きつけ、その顧客の生涯価値が高い場合。
 * **レポートの例**：まず`New customers`指標を追加します。 次に、`Average lifetime revenue`指標を追加します。 目的の時間枠を選択し、`interval`を`None`として選択します。 最後に、`group by` オプションを`Customer's first order's campaign`として選択します。
-   * **[!UICONTROL Metric A]**: `New Customers`
-   * **[!UICONTROL Filter A]**: `Customer's first order's source` （&#39;%google%&#39;など）
-   * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Metric B]**: `Average lifetime revenue`
-   * **[!UICONTROL Filter A]**: `Customer's first order's source` （&#39;%google%&#39;など）
-   * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**: `Customer's first order's campaign`
+  * **[!UICONTROL Metric A]**: `New Customers`
+  * **[!UICONTROL Filter A]**: `Customer's first order's source` （&#39;%google%&#39;など）
+  * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Metric B]**: `Average lifetime revenue`
+  * **[!UICONTROL Filter A]**: `Customer's first order's source` （&#39;%google%&#39;など）
+  * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**: `Customer's first order's campaign`
 
 >[!NOTE]
 >
@@ -538,20 +538,20 @@ ht-degree: 0%
 
 * **説明**: キャンペーン別のROIを計算する1つの方法は、キャンペーンを通じて行われたすべての注文を分析することです。 ただし、別の方法として、施策を通じて獲得した顧客の生涯価値を分析する方法もあります。 ROIを分析するには、キャンペーン名が、支出データとトランザクションデータ全体で一貫していることが重要です。 次のレポートを作成し、キャンペーン名が一致しないためにROI値が存在しない場合は、実装した[UTM タグ &#x200B;](../../best-practices/utm-tagging-google.md)を調べる必要がある場合があります。
 * **レポート例**：施策ごとのROI
-   * **[!UICONTROL Metric A]**: `New Customers`
-   * **[!UICONTROL Filter A]**: `Customer's first order's source` （&#39;%google%&#39;など）
-   * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Metric B]**: `Average lifetime revenue`
-   * **[!UICONTROL Filter A]**: `Customer's first order's source` （&#39;%google%&#39;など）
-   * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Metric C]**: `Ad spend`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Formula]**: `(B-(C/A))/(C/A)`
-   * `% ` オプションを選択
-   * **[!UICONTROL Group By]**:
-      * 指標`A`および`B`の場合、`Customer's first order's campaign`を選択します
-      * 指標`C`で、`campaign`を選択します
+  * **[!UICONTROL Metric A]**: `New Customers`
+  * **[!UICONTROL Filter A]**: `Customer's first order's source` （&#39;%google%&#39;など）
+  * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Metric B]**: `Average lifetime revenue`
+  * **[!UICONTROL Filter A]**: `Customer's first order's source` （&#39;%google%&#39;など）
+  * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Metric C]**: `Ad spend`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Formula]**: `(B-(C/A))/(C/A)`
+  * `% ` オプションを選択
+  * **[!UICONTROL Group By]**:
+    * 指標`A`および`B`の場合、`Customer's first order's campaign`を選択します
+    * 指標`C`で、`campaign`を選択します
 
 >[!NOTE]
 >

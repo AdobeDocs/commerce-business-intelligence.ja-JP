@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 560
 ht-degree: 0%
 
 ---
@@ -82,4 +82,4 @@ ht-degree: 0%
 
 上記の例で、数式の`timestamp`、`groupings`、`perspectives`、`filters`がその入力指標から継承されていることに気づきましたか？ 数式は、指標と同様に、`perspectives`および[独立した時間オプション &#x200B;](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}を使用するために使用できます。
 
-`Report Builder`での数式の使用に関して追加の質問がある場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=ja)。
+`Report Builder`での数式の使用に関して追加の質問がある場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
