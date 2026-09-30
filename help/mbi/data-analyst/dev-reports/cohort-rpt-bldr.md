@@ -7,26 +7,35 @@ feature: Commerce Tables, Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/SJ-Wbd0AU-cmliKRZgK4g60KuhVRIP9LfAEJ--IyugY
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: 5f3efe67f45baea20445cc78e12cf6d0d2b59563
 workflow-type: tm+mt
-source-wordcount: 1597
+source-wordcount: '1604'
 ht-degree: 0%
-
 ---
-
 # コホートReport Builder
 
 ユーザーのさまざまなサブセットが時間とともにどのように動作するかを調べたいと思ったことがありますか？ 例えば、プロモ – ション期間中に登録したオーディエンスの平均生涯売上が、そうでないオーディエンスよりも高くなったとします。 回答が`Yes`の場合、`Cohort Report Builder`は最適なツールです。 [!DNL Adobe Commerce Intelligence]は、この分析を実行し、ビジネスに関連するように最適化されています。
@@ -35,7 +44,7 @@ ht-degree: 0%
 
 `Cohort`分析は、ライフサイクルにわたって類似した特性を共有するユーザーグループの分析として広く定義できます。 これにより、さまざまなユーザーグループをまたいで行動トレンドを特定できます。
 
-[!DNL Commerce Intelligence] ダッシュボードでは、アカウントの`cohorts`日付と指標に基づいてユーザー`cohort`を簡単に作成できます。
+[!DNL Commerce Intelligence] ダッシュボードでは、アカウントの`cohort`日付と指標に基づいてユーザー`cohorts`を簡単に作成できます。
 
 ## コホート分析が重要である理由？ {#important}
 
@@ -45,11 +54,11 @@ ht-degree: 0%
 
 ### 新しいアーキテクチャ
 
-`Cohort Report Builder`新しいアーキテクチャ [で](../../administrator/account-management/new-architecture.md)を使用する手順は次のとおりです。
+[新しいアーキテクチャ &#x200B;](../../administrator/account-management/new-architecture.md)で`Cohort Report Builder`を使用する手順は次のとおりです。
 
 1. 左側のタブの&#x200B;**[!UICONTROL Report Builder]**&#x200B;または任意のダッシュボードの&#x200B;**[!UICONTROL Add Report** > **Create Report]**&#x200B;をクリックします。
 
-1. `Report Builder`選択画面で、**[!UICONTROL Create Report]** オプションの横にある`Visual Report Builder`をクリックします。
+1. `Report Builder`選択画面で、`Visual Report Builder` オプションの横にある&#x200B;**[!UICONTROL Create Report]**&#x200B;をクリックします。
 
 **指標の追加**
 
@@ -85,15 +94,15 @@ ht-degree: 0%
 
 `cohorts`をグループ化する期間を選択してください。 言い換えれば、上記で選択したタイムスタンプのどの部分が最も重要なのでしょうか（`week`、`month`、`quarter`、または`year`）。 レポートには、ここで選択した間隔でデータが表示されます
 
-#### 3と4です。 表示する`cohorts`の数と、各`cohort`に必要なデータの量を設定します
+#### &#x200B;3. 4つ目。 表示する`cohorts`の数と、各`cohort`に必要なデータの量を設定します
 
 これらのパラメーターは、興味のある`cohorts`のみを表示するのに役立ちます。ウィンドウの下部にある便利な`Preview` ボックスには、レポートに表示されるコホートが正確に表示されます。
 
-デフォルトでは、各`cohort`に必要なデータの最小量を`cohort`に変更しない限り、現在の`0`は含まれません。 この場合、現在の期間の`cohort`には部分的なデータのみが含まれます。
+デフォルトでは、各`cohort`に必要なデータの最小量を`0`に変更しない限り、現在の`cohort`は含まれません。 この場合、現在の期間の`cohort`には部分的なデータのみが含まれます。
 
-#### &#x200B;5. `Cohort`以降の時間範囲
+#### &#x200B;5. `Cohort`回以降の時間範囲
 
-この機能を使用すると、選択した`cohorts`に対して表示するデータの時間範囲を設定できます。 例えば、`cohorts`に基づいて24か月の`customer's first order date`を表示する場合、各`cohort`のデータの最初の3か月にのみ関心がある場合、`number of cohorts to view`を`24`に、および`time range after cohort occurrence`を`3`に設定できます。
+この機能を使用すると、選択した`cohorts`に対して表示するデータの時間範囲を設定できます。 例えば、`customer's first order date`に基づいて24か月の`cohorts`を表示する場合、各`cohort`のデータの最初の3か月にのみ関心がある場合、`number of cohorts to view`を`24`に、および`time range after cohort occurrence`を`3`に設定できます。
 
 この値の間隔は`cohort time period`で選択した値と同じように変更され、デフォルトでは値は`12`に設定されます。カレンダーアイコンをクリックして編集しない限り、値は変更されません。
 
@@ -101,7 +110,7 @@ ht-degree: 0%
 
 #### その他のメモ
 
-* [!UICONTROL Filters]: `Standard`と`Cohort`のビューを切り替えても、指標に適用された状態は維持されます。
+* [!UICONTROL Filters]&#x200B;: `Standard`と`Cohort`のビューを切り替えても、指標に適用された状態は維持されます。
 
 * [`Perspectives`](#perspectives)を参照してください。
 
@@ -115,7 +124,7 @@ ht-degree: 0%
 
 #### レガシーアーキテクチャ {#personalinfo}
 
-以下は、`Cohort Report Builder`のレガシーバージョンに固有の手順です。 新しいバージョンを使用する場合は、[新しいアーキテクチャアカウントへの移行について詳しくは、](../../administrator/account-management/new-architecture.md)新しいアーキテクチャ [!DNL Commerce Intelligence]を参照してください。
+以下は、`Cohort Report Builder`のレガシーバージョンに固有の手順です。 新しいバージョンを使用する場合は、[!DNL Commerce Intelligence]新しいアーキテクチャアカウントへの移行について詳しくは、[新しいアーキテクチャ &#x200B;](../../administrator/account-management/new-architecture.md)を参照してください。
 
 #### 独自の`cohort`分析を作成するにはどうすればよいですか？ {#create}
 
@@ -127,7 +136,7 @@ ht-degree: 0%
 
 1. 左側のタブの&#x200B;**[!UICONTROL Report Builder]**&#x200B;または任意のダッシュボードの&#x200B;**[!UICONTROL Add Report** > **Create Report]**&#x200B;をクリックします。
 
-1. `Report Builder Selection`画面で、**[!UICONTROL Create Report]** オプションの横にある`Cohort Analysis`をクリックします。
+1. `Report Builder Selection`画面で、`Cohort Analysis` オプションの横にある&#x200B;**[!UICONTROL Create Report]**&#x200B;をクリックします。
 
 #### 指標の追加
 
@@ -150,7 +159,7 @@ ht-degree: 0%
 次に、`Interval`と`Time Period`を設定します。
 
 `Interval`
-`Interval` オプションを使用すると、`length`の`cohorts`を設定できます。 例えば、これが`Month`に設定されている場合、レポートは月単位で測定されます。
+`Interval` オプションを使用すると、`cohorts`の`length`を設定できます。 例えば、これが`Month`に設定されている場合、レポートは月単位で測定されます。
 
 これらの間隔のx軸での表示方法は、**期間** メニューを使用して変更できます。
 
@@ -217,10 +226,10 @@ ht-degree: 0%
 この`perspective`は、従来の`cohort`分析を`cumulative` ベースで表示しています。 つまり、ライフサイクルの任意の時点における、あるコホートのこれまでの貢献度の合計を示します。 たとえば、特定のコホートの利用者が6週間経過した後の累積売上などです。
 
 `Cumulative Average Value per Cohort Member`
-これにより、（3）の`Cumulative`分析が、各`cohort` グループのユーザー数で割られます。 これは、`cohort` ライフの各期間における`cohort's` メンバーあたりの平均生涯貢献度（多くの場合、平均生涯売上）を示します。 例えば、6月に参加したユーザーの6か月後の平均生涯売上を求めます。
+これにより、（3）の`Cumulative`分析が、各`cohort` グループのユーザー数で割られます。 これは、`cohort's` ライフの各期間における`cohort` メンバーあたりの平均生涯貢献度（多くの場合、平均生涯売上）を示します。 例えば、6月に参加したユーザーの6か月後の平均生涯売上を求めます。
 
 `Percent of First Value (show first value)`
-これは、`cohort` ライフサイクルの特定の時点における集計`cohort's`の貢献度を、最初の期間における貢献度の割合として分析します。 例えば、6か月の収益を、6月に参加したユーザーの1か月の収益で割った場合です。
+これは、`cohort's` ライフサイクルの特定の時点における集計`cohort`の貢献度を、最初の期間における貢献度の割合として分析します。 例えば、6か月の収益を、6月に参加したユーザーの1か月の収益で割った場合です。
 
 `Percent of First Value (hide first value)`
 これは上記の`perspective`と同じですが、最初の期間の値である100%が非表示になっていることを除きます。
