@@ -46,7 +46,7 @@ ht-degree: 17%
 
 開始する前に、ストアの送料無料しきい値が異なる2つの期間を特定する必要があります。
 
-![送料無料のしきい値分析と注文金額の分布を示すグラフ ](../../assets/free_shipping_threshold.png)
+![送料無料のしきい値分析と注文金額の分布を示すグラフ &#x200B;](../../assets/free_shipping_threshold.png)
 
 この分析には、[高度な計算列](../data-warehouse-mgr/adv-calc-columns.md)が含まれています。
 
@@ -66,7 +66,7 @@ ht-degree: 17%
   >「バケット」のサイズは、クライアントとして適切なものによって異なります。 `average order value`から始めて、その金額より少ないバケットと大きいバケットを作成できます。 以下の計算を見ると、クエリの一部を簡単にコピーし、編集し、追加のグループを作成する方法が表示されます。 この例は、50単位で実行します。
 
   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`、または`calculated column`、`Datatype`: `Integer`
-  * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
+  * [!UICONTROL Calculation]&#x200B;: `case when A >= 0 and A<=200 then 0 - 200`
     `A< 200`と`A <= 250`のとき `201 - 250`
     `A<251`と`A<= 300`のとき `251 - 300`
     `A<301`と`A<= 350`のとき `301 - 350`
@@ -87,72 +87,72 @@ ht-degree: 17%
 ## レポート
 
 * **配送ルール A**&#x200B;の平均注文額
-  * [!UICONTROL Metric]: `Average order value`
+  * [!UICONTROL Metric]&#x200B;: `Average order value`
 
 * 指標`A`: `Average Order Value`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 
 * **配送ルール A**&#x200B;を持つ小計バケット別の注文数
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
   >[!NOTE]
   >
   >`Show top/bottom`にトップ `X` `sorted by` `Order subtotal` （バケット）を表示すると、テールエンドを切り取ることができます。
 
 * 指標`A`: `Number of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Column`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Column`
 
 * **配送ルール A**&#x200B;を持つ小計による注文の割合
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [!UICONTROL グループ化：]: `Independent`
-  * [!UICONTROL Formula]: `(A / B)`
-  * 
-    [!UICONTROL Format]: `%`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL グループ化：]&#x200B;: `Independent`
+  * [!UICONTROL Formula]&#x200B;: `(A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `%`
 
 * 指標`A`: `Number of orders by subtotal (hide)`
 * 指標`B`: `Total number of orders (hide)`
-* [!UICONTROL Formula]: `% of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Formula]&#x200B;: `% of orders`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * **小計が発送ルール A**&#x200B;を超える注文の割合
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [!UICONTROL Perspective]: `Cumulative`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: `Cumulative`
 
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [!UICONTROL グループ化：]: `Independent`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL グループ化：]&#x200B;: `Independent`
 
-  * [!UICONTROL Formula]: `1- (A / B)`
-  * 
-    [!UICONTROL Format]: `%`
+  * [!UICONTROL Formula]&#x200B;: `1- (A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `%`
 
 * 指標`A`: `Number of orders by subtotal`
 * 指標`B`: `Total number of orders (hide)`
-* [!UICONTROL Formula]: `% of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Formula]&#x200B;: `% of orders`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 
 上記の手順とレポートを繰り返して、配送Bと配送ルール Bの期間を確認します。

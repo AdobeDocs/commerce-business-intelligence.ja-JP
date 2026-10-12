@@ -45,9 +45,9 @@ ht-degree: 1%
 
 Adobeでは、`SSH tunnel`を使用してデータベースを接続することをお勧めしますが、暗号化された`VPN`接続を使用してセキュリティを維持することもできます。 SSH ホスト キーの登録、エラー、SSH トンネル接続に関するトラブルシューティングについては、[SSH ホスト キーの検証](ssh-host-key-verification.md)を参照してください。 `VPN`は、任意のデータベース統合に使用できます。また、物事をシンプルに保つために、プロセスは`SSH tunnel`を設定するのとほぼ同じです。
 
-1. [ [!DNL Commerce Intelligence]  データベースユーザーの作成](#database)
-1. [ [!DNL Commerce Intelligence] VPN ユーザーの作成](#vpn)
-1. [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+1. [&#x200B; [!DNL Commerce Intelligence]  データベースユーザーの作成](#database)
+1. [&#x200B; [!DNL Commerce Intelligence] VPN ユーザーの作成](#vpn)
+1. [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
 1. [Commerce Intelligenceに接続とVPN ユーザー情報を入力します](#finish)
 
 データベースの資格情報に加えて、VPN ユーザーの資格情報を入力して処理を終了する必要があります。 どのVPN ユーザーでも機能しますが、Adobeでは、アカウントのユーザーを簡単に追跡できるため、[!DNL Commerce Intelligence] ユーザーを作成することをお勧めします。

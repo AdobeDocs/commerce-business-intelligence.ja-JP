@@ -41,7 +41,7 @@ ht-degree: 0%
 ---
 # [!DNL Mixpanel] データが必要です
 
-[ アカウント  [!DNL Mixpanel] を接続した後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。](../integrations/mixpanel.md)
+[&#128279;](../integrations/mixpanel.md)&#x200B; アカウント  [!DNL Mixpanel] を接続した後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。
 
 このトピックでは、[!DNL Mixpanel]から[!DNL Commerce Intelligence] アカウントにインポートできる主なデータ テーブルについて説明します。 [!DNL Mixpanel]を接続すると、次のテーブルがData Warehouseに作成されます。 トラッキングに使用できるすべてのフィールドを表示するには、テーブル名の列のリンクをクリックします。
 

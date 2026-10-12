@@ -95,7 +95,7 @@ Commerce スキーマでは、`Order item total value (quantity * price)`列は�
 
 次に示すように&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;に移動すると、新しい`Calculation`列をテーブルに追加できます。
 
-計算列の結果を表示する![ テーブルビュー](../../assets/blobid2.png)
+計算列の結果を表示する![&#x200B; テーブルビュー](../../assets/blobid2.png)
 
 ここから、次の手順に従って`Calculation`列を作成できます。
 

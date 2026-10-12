@@ -60,4 +60,4 @@ ht-degree: 0%
 
 ## まとめ
 
-テーブルを少し変更することで、より高速で効率的な増分レプリケーション方法を活用できます。 ただし、これができない場合でも、[更新時間の短縮](../best-practices/reduce-update-cycle-time.md)および[ データベースの最適化](../best-practices/opt-db-analysis.md)に他の手順を実行できます。
+テーブルを少し変更することで、より高速で効率的な増分レプリケーション方法を活用できます。 ただし、これができない場合でも、[更新時間の短縮](../best-practices/reduce-update-cycle-time.md)および[&#x200B; データベースの最適化](../best-practices/opt-db-analysis.md)に他の手順を実行できます。

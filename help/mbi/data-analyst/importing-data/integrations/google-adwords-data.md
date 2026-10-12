@@ -47,7 +47,7 @@ ht-degree: 0%
 ---
 # [!DNL Google Adwords] データが必要です
 
-[ アカウント  [!DNL Google Adwords] を接続した後、[Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。](../integrations/google-adwords.md)
+[&#128279;](../integrations/google-adwords.md)&#x200B; アカウント  [!DNL Google Adwords] を接続した後、[Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。
 
 ここでは、Data Warehouseへのレプリケーションに使用できる2つのテーブルが表示されます。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-このデータを使用すると、支出データに基づいて[指標](../../../data-user/reports/ess-manage-data-metrics.md)と[ レポート ](../../../tutorials/using-visual-report-builder.md)の作成を開始し、それを生涯収益と[組み合わせてROI](../../analysis/roi-ad-camp.md)を計算できます。
+このデータを使用すると、支出データに基づいて[指標](../../../data-user/reports/ess-manage-data-metrics.md)と[&#x200B; レポート &#x200B;](../../../tutorials/using-visual-report-builder.md)の作成を開始し、それを生涯収益と[組み合わせてROI](../../analysis/roi-ad-camp.md)を計算できます。
 
 ## 統合テーブル
 

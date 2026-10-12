@@ -43,7 +43,7 @@ ht-degree: 21%
 
 このトピックでは、この分析を作成するために必要な手順を文書化し、クーポン取得済みの顧客のパフォーマンスを理解し、トレンドを参照し、個々のクーポンコードの使用状況を追跡します。
 
-使用状況とパフォーマンス指標を表示する![ クーポンコード分析ダッシュボード ](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
+使用状況とパフォーマンス指標を表示する![&#x200B; クーポンコード分析ダッシュボード &#x200B;](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
 ## はじめに
 
@@ -88,64 +88,64 @@ Commerce 2.4.7以降、お客様は複数のクーポンコードを注文に適
 >各レポートの[!UICONTROL Time Period]**は`All-time`として表示されます。 分析ニーズに合わせて変更してください。 Adobeでは、`All time`、`Year-to-date`、`Last 365 days`など、このダッシュボードのすべてのレポートが同じ期間をカバーすることをお勧めします。
 
 * **クーポン付きの注文**
-  * 
-    [!UICONTROL指標]: `Orders`
+  * &#x200B;
+    [!UICONTROL 指標]&#x200B;: `Orders`
     * フィルターを追加：
       * [`A`] `coupon_code` **は** `[NULL]`ではありません
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * [!UICONTROL Chart type]:`Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;:`Number (scalar)`
 
 * **クーポンなしの注文**
-  * 
-    [!UICONTROL指標]: `Orders`
+  * &#x200B;
+    [!UICONTROL 指標]&#x200B;: `Orders`
     * フィルターを追加：
       * [`A`] `coupon_code` **は** `[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * [!UICONTROL Chart type]:`Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;:`Number (scalar)`
 
 * **クーポンを使用した注文の純収益**
-  * 
-    [!UICONTROL指標]: `Revenue`
+  * &#x200B;
+    [!UICONTROL 指標]&#x200B;: `Revenue`
     * フィルターを追加：
       * [`A`] `coupon_code` **は** `[NULL]`ではありません
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **クーポンの割引**
-  * [!UICONTROL Metric]: `Coupon discount amount`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Metric]&#x200B;: `Coupon discount amount`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **平均生涯売上：獲得したクーポン顧客**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * フィルターを追加：
       * [`A`] `Customer's first order's coupon_code` **は** `[NULL]`ではありません
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **平均生涯売上：非クーポン獲得顧客**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * フィルターを追加：
       * [A] `Customer's first order's coupon_code` **は**`[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **クーポン使用状況の詳細（初回注文）**
   * 指標`1`: `Orders`
@@ -166,64 +166,64 @@ Commerce 2.4.7以降、お客様は複数のクーポンコードを注文に適
       * [`B`] `Customer's order number` **次と等しい** `1`
 
   * 数式の作成：`Gross revenue`
-    * [!UICONTROL Formula]: `(B – C)`
-    * 
-      [!UICONTROL Format]: `Currency`
+    * [!UICONTROL Formula]&#x200B;: `(B – C)`
+    * &#x200B;
+      [!UICONTROL Format]&#x200B;: `Currency`
 
   * 数式を作成：**%割引**
     * 数式：`(C / (B - C))`
-    * 
-      [!UICONTROL Format]: `Percentage`
+    * &#x200B;
+      [!UICONTROL Format]&#x200B;: `Percentage`
 
   * 数式の作成：`Average order discount`
-    * [!UICONTROL Formula]: `(C / A)`
-    * 
-      [!UICONTROL Format]: `Percentage`
+    * [!UICONTROL Formula]&#x200B;: `(C / A)`
+    * &#x200B;
+      [!UICONTROL Format]&#x200B;: `Percentage`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * 
-    [!UICONTROL チャートタイプ]: `Table`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * &#x200B;
+    [!UICONTROL チャートタイプ]&#x200B;: `Table`
 
 * **初回注文クーポンによる平均生涯売上**
-  * [!UICONTROL Metric]:**平均生涯売上**
+  * [!UICONTROL Metric]&#x200B;:**平均生涯売上**
     * フィルターを追加：
       * [`A`] `coupon_code` **は**`[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **クーポン使用状況の詳細（初回注文）**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * フィルターを追加：
       * [`A`] `Customer's first order's coupon_code` **は** `[NULL]`ではありません
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * [!UICONTROL Group by]: `Customer's first order's coupon_code`
-  * 
-    [!UICONTROL チャートタイプ]: **Column**
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Group by]&#x200B;: `Customer's first order's coupon_code`
+  * &#x200B;
+    [!UICONTROL チャートタイプ]&#x200B;: **Column**
 
 * **クーポンによる新規顧客/クーポン以外の獲得**
   * 指標`1`: `New customers`
     * フィルターを追加：
       * [`A`] `Customer's first order's coupon_code` **は** `[NULL]`ではありません
 
-    * [!UICONTROL Rename]: `Coupon acquisition customer`
+    * [!UICONTROL Rename]&#x200B;: `Coupon acquisition customer`
 
   * 指標`2`: `New customers`
     * フィルターを追加：
       * [`A`] `coupon_code` **は**`[NULL]`
 
-    * [!UICONTROL Rename]: `Non-coupon acquisition customer`
+    * [!UICONTROL Rename]&#x200B;: `Non-coupon acquisition customer`
 
-  * [!UICONTROL Time period]: `All time`
-  * [!UICONTROL Interval]: `By Month`
-  * [!UICONTROL Chart type]: `Stacked Column`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * [!UICONTROL Interval]&#x200B;: `By Month`
+  * [!UICONTROL Chart type]&#x200B;: `Stacked Column`
 
 レポートを作成した後、ダッシュボードでレポートを整理する方法については、このトピックの上部にある画像を参照してください。
 
@@ -231,4 +231,4 @@ Commerce 2.4.7以降、お客様は複数のクーポンコードを注文に適
 >
 >Adobe Commerce 2.4.7以降、お客様は&#x200B;**quote_coupons**&#x200B;および&#x200B;**sales_order_coupons**&#x200B;のテーブルを使用して、お客様が複数のクーポンをどのように使用しているかについてのインサイトを取得できます。
 
-![ マルチクーポン分析のテーブル関係図](../../assets/multicoupon_relationship_tables.png)
+![&#x200B; マルチクーポン分析のテーブル関係図](../../assets/multicoupon_relationship_tables.png)

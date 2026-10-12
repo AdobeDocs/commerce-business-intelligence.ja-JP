@@ -43,9 +43,9 @@ ht-degree: 0%
 ---
 # [!DNL Spree] データが必要です
 
-[ ストア  [!DNL Spree] を接続した後、[Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md)を使用して、分析のために[!DNL Spree] プラットフォームから関連するデータ フィールドを簡単に追跡できます。](../../../data-analyst/importing-data/integrations/spree.md)
+[&#128279;](../../../data-analyst/importing-data/integrations/spree.md)&#x200B; ストア  [!DNL Spree] を接続した後、[Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md)を使用して、分析のために[!DNL Spree] プラットフォームから関連するデータ フィールドを簡単に追跡できます。
 
-このトピックでは、[!DNL Spree]から[!DNL Commerce Intelligence] アカウントに読み込むことができる主なデータテーブルについて説明します。これには、[!DNL Spree] データに関する[追加ドキュメント ](https://guides.spreecommerce.org/developer/addresses.html#address)へのリンクが含まれます。
+このトピックでは、[!DNL Spree]から[!DNL Commerce Intelligence] アカウントに読み込むことができる主なデータテーブルについて説明します。これには、[!DNL Spree] データに関する[追加ドキュメント &#x200B;](https://guides.spreecommerce.org/developer/addresses.html#address)へのリンクが含まれます。
 
 | **テーブル名** | **説明** |
 |-----|-----|

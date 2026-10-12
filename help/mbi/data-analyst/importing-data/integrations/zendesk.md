@@ -49,21 +49,21 @@ ht-degree: 0%
 >
 >[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
-![Zendesk ロゴ ](../../../assets/Zendesk_logo.png)
+![Zendesk ロゴ &#x200B;](../../../assets/Zendesk_logo.png)
 
 [!DNL Zendesk] データを接続すると、[!DNL Commerce Intelligence]でヘルプデスクのレポートを統合できます。 これにより、カスタマーサポートを最適化し、売上とともにヘルプデスクのパフォーマンスを監視することができます。
 
 [!DNL Zendesk] データの接続は、シンプルな3段階のプロセスです。
 
-1. [ [!DNL Commerce Intelligence]で [!DNL Zendesk] 資格情報ページを開きます](#stepone)
-1. [ [!DNL Zendesk] API トークンを取得](#steptwo)
-1. [ [!DNL Commerce Intelligence]に [!DNL Zendesk]  ログイン情報とトークンを入力してください](#stepthree)
+1. [&#x200B; [!DNL Commerce Intelligence]で [!DNL Zendesk] 資格情報ページを開きます](#stepone)
+1. [&#x200B; [!DNL Zendesk] API トークンを取得](#steptwo)
+1. [&#x200B; [!DNL Commerce Intelligence]に [!DNL Zendesk]  ログイン情報とトークンを入力してください](#stepthree)
 
 このプロセスを完了するには、2つのブラウザーウィンドウまたはタブを開く必要があります（[!DNL Commerce Intelligence]用と[!DNL Zendesk] アカウント用のどちらか一方）。
 
 ## [!DNL Commerce Intelligence]で[!DNL Zendesk]資格情報ページを開く {#stepone}
 
-1. **[!UICONTROL Manage Data** > ** データソース **/**統合]**&#x200B;の下の`Integrations` ページに移動します。
+1. **[!UICONTROL Manage Data** > **&#x200B; データソース &#x200B;**/**統合]**&#x200B;の下の`Integrations` ページに移動します。
 1. 画面の右側にある「**[!UICONTROL Add Integration]**」をクリックします。
 1. [!DNL Zendesk] アイコンをクリックします。 これにより、[!DNL Zendesk]資格情報ページが開きます。
 

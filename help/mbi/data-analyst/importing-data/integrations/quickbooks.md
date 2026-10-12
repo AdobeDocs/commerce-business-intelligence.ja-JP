@@ -45,7 +45,7 @@ ht-degree: 0%
 >
 >[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
-![QuickBooks ロゴ ](../../../assets/Quickbooks.png)
+![QuickBooks ロゴ &#x200B;](../../../assets/Quickbooks.png)
 
 [!DNL QuickBooks]との統合により、ビジネスの財務情報をセールスおよびマーケティングのデータと共に活用できるようになりました。これにより、経費の管理や過剰支出の特定などを迅速かつ簡単に行うことができます。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 **[!UICONTROL Connect to Quickbooks]**&#x200B;をクリックしたら、[!DNL Intuit] アカウントにログインし、接続を承認します。
 
-![QuickBooks App Store統合ページ ](../../../assets/QuickBooks_App_Store_1.jpg)
+![QuickBooks App Store統合ページ &#x200B;](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. `Search for a company` ドロップダウンで、会社を選択します。
 1. **[!UICONTROL Next]**&#x200B;をクリックします。 [!DNL Commerce Intelligence]にリダイレクトされ、*接続が成功しました！* メッセージが画面の上部に表示されます。

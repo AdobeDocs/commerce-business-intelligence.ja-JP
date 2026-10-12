@@ -190,7 +190,7 @@ ht-degree: 0%
 
 +++サポートされる指標とディメンション（Google Analytics 4）
 
-[!DNL Commerce Intelligence]の[!DNL Google Analytics]統合では、[!DNL Google Analytics] [Data API v1 （GA4） ](https://developers.google.com/analytics/devguides/reporting/data/v1)を使用しています。
+[!DNL Commerce Intelligence]の[!DNL Google Analytics]統合では、[!DNL Google Analytics] [Data API v1 （GA4） &#x200B;](https://developers.google.com/analytics/devguides/reporting/data/v1)を使用しています。
 
 >[!NOTE]
 >

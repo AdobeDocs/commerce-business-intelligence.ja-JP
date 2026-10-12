@@ -47,7 +47,7 @@ ht-degree: 0%
 
 優れたパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを特定したりするために、 [!DNL Adobe Commerce] データを[!DNL Commerce Intelligence]に接続すると、これらの質問に答えることができます。
 
-[!DNL Adobe Commerce] データベースはMySQLに基づいているため、[直接接続](../integrations/mysql-via-a-direct-connection.md)、[[!DNL cPanel]](../integrations/mysql-via-cpanel.md)または[を介してSSH トンネル ](../integrations/mysql-via-ssh-tunnel.md)経由で[!DNL Commerce Intelligence]に接続できます。 最も安全なSSH方式をお勧めします。 SSH ホスト キーの検証については、[SSH ホスト キーの検証](../integrations/ssh-host-key-verification.md)を参照してください。
+[!DNL Adobe Commerce] データベースはMySQLに基づいているため、[直接接続](../integrations/mysql-via-a-direct-connection.md)、[[!DNL cPanel]](../integrations/mysql-via-cpanel.md)または[を介してSSH トンネル &#x200B;](../integrations/mysql-via-ssh-tunnel.md)経由で[!DNL Commerce Intelligence]に接続できます。 最も安全なSSH方式をお勧めします。 SSH ホスト キーの検証については、[SSH ホスト キーの検証](../integrations/ssh-host-key-verification.md)を参照してください。
 
 ## 関連情報
 

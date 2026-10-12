@@ -50,9 +50,9 @@ UTM パラメーターをURLで指定すると、これらは解析され、[!DN
 
 ### ラストクリックアトリビューション
 
-ラストクリックアトリビューションは、[!DNL Google Analytics]が使用する最も一般的なアトリビューションモデルです。 この場合、[!DNL Google Analytics] Cookieは、コンバージョンイベントの前の最新のソースのUTM パラメーターを表し、これは[ データベース ](../../data-analyst/analysis/google-track-user-acq.md)に記録されます。 ユーザーが新しいUTM パラメーターのセットを含む新しいURLをクリックした場合にのみ、[!DNL Google Analytics] Cookieは以前のUTM パラメーターを上書きします。
+ラストクリックアトリビューションは、[!DNL Google Analytics]が使用する最も一般的なアトリビューションモデルです。 この場合、[!DNL Google Analytics] Cookieは、コンバージョンイベントの前の最新のソースのUTM パラメーターを表し、これは[&#x200B; データベース &#x200B;](../../data-analyst/analysis/google-track-user-acq.md)に記録されます。 ユーザーが新しいUTM パラメーターのセットを含む新しいURLをクリックした場合にのみ、[!DNL Google Analytics] Cookieは以前のUTM パラメーターを上書きします。
 
-例えば、コンバージョンイベントの前に[!DNL Google Analytics] *有料検索*&#x200B;を介して初めてweb サイトにアクセスし、*オーガニック検索*&#x200B;を介して戻り、最終的に&#x200B;*web サイトに直接*&#x200B;または&#x200B;*電子メールリンク***経由で戻り、UTM パラメーターを使用せずに**&#x200B;というユーザーを考えてみましょう。 この例では、[!DNL Google Analytics] Cookieは、ユーザーのソースがオーガニックであると示します。これは、コンバージョンの前の最後のソースを表すためです。 最終変換イベントの前のユーザーの&#x200B;*パス*&#x200B;は無視されます。 代わりに、ユーザーがUTMを使用した電子メールリンクからweb サイトにアクセスした場合、[!DNL Google Analytics] Cookieは、ソースが「電子メール」であると示します。 したがって、cookieに既存のUTM パラメーターがあり、ユーザーが直接経由でアクセスした場合、[!DNL Google Analytics] cookieには「direct」ではなくUTM パラメーターが表示されます。
+例えば、コンバージョンイベントの前に[!DNL Google Analytics] *有料検索*&#x200B;を介して初めてweb サイトにアクセスし、*オーガニック検索*&#x200B;を介して戻り、最終的に&#x200B;*web サイトに直接*&#x200B;または&#x200B;*電子メールリンク&#x200B;***経由で戻り、UTM パラメーターを使用せずに**&#x200B;というユーザーを考えてみましょう。 この例では、[!DNL Google Analytics] Cookieは、ユーザーのソースがオーガニックであると示します。これは、コンバージョンの前の最後のソースを表すためです。 最終変換イベントの前のユーザーの&#x200B;*パス*&#x200B;は無視されます。 代わりに、ユーザーがUTMを使用した電子メールリンクからweb サイトにアクセスした場合、[!DNL Google Analytics] Cookieは、ソースが「電子メール」であると示します。 したがって、cookieに既存のUTM パラメーターがあり、ユーザーが直接経由でアクセスした場合、[!DNL Google Analytics] cookieには「direct」ではなくUTM パラメーターが表示されます。
 
 >[!NOTE]
 >
@@ -82,10 +82,10 @@ UTM パラメーターをURLで指定すると、これらは解析され、[!DN
 
 ## 関連ドキュメント
 
-* [ [!DNL Google Analytics] E-Commerce経由で注文の紹介ソースを追跡](../importing-data/integrations/google-ecommerce.md)
+* [&#x200B; [!DNL Google Analytics] E-Commerce経由で注文の紹介ソースを追跡](../importing-data/integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースの追跡](../analysis/google-track-user-acq.md)
 * [データベース内のユーザーデバイス、ブラウザー、OS データの追跡](../analysis/google-track-user-acq.md)
 * [最も価値のある獲得ソースとチャネルの発見](../analysis/most-value-source-channel.md)
-* [ [!DNL Google Adwords]  アカウントを接続](../importing-data/integrations/google-adwords.md)
+* [&#x200B; [!DNL Google Adwords]  アカウントを接続](../importing-data/integrations/google-adwords.md)
 * [広告キャンペーンのROIを高める](../analysis/roi-ad-camp.md)
-* [ [!DNL Google Analytics]でのUTM タグ付けに関する5つのベストプラクティス](../../best-practices/utm-tagging-google.md)
+* [&#x200B; [!DNL Google Analytics]でのUTM タグ付けに関する5つのベストプラクティス](../../best-practices/utm-tagging-google.md)

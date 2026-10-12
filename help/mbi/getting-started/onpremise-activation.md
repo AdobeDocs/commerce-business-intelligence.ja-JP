@@ -57,7 +57,7 @@ ht-degree: 0%
 
 アカウントが作成されたら、メールで[!DNL The Magento BI Team@rjmetrics.com]からのアカウント通知メールを確認します。 電子メールに記載されているリンクを使用して、[!DNL Commerce Intelligence] アカウントにアクセスし、パスワードを作成してください。 受信トレイに移動し、電子メールアドレスを確認します。
 
-電子メールが届かない場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+電子メールが届かない場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ![新しいCommerce Intelligence アカウントのパスワード画面を作成](../assets/create-account-4.png)
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 データベース接続を設定する前に、ストア情報フォームに入力します。 この情報は、**[!UICONTROL Connect your Database]**&#x200B;の設定を完了するために必要です。
 
-![ ビジネス名、通貨、タイムゾーンのフィールドを含む情報フォームを保存する](../assets/create-account-6.png)
+![&#x200B; ビジネス名、通貨、タイムゾーンのフィールドを含む情報フォームを保存する](../assets/create-account-6.png)
 
 ## [!DNL Commerce Intelligence] ユーザーを追加
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 1. ドロップダウンから、指定された公開鍵をコピーします。
 
-   ![SSH トンネルの種類と公開鍵フィールドを表示する暗号化設定ページ ](../assets/encryption-setting-new-account.png)
+   ![SSH トンネルの種類と公開鍵フィールドを表示する暗号化設定ページ &#x200B;](../assets/encryption-setting-new-account.png)
 
 ## 公開鍵を[!DNL Commerce Intelligence]に追加
 
@@ -106,21 +106,21 @@ ht-degree: 0%
 
 1. 下にスクロールして、**[!UICONTROL SSH Keys]** ドロップダウンを展開します。 次に、**[!UICONTROL Add a public key]**&#x200B;を選択します。
 
-   ![SSH キーを使用したアカウント設定ページの節と「公開鍵を追加」ボタン ](../assets/add-public-key.png)
+   ![SSH キーを使用したアカウント設定ページの節と「公開鍵を追加」ボタン &#x200B;](../assets/add-public-key.png)
 
 1. 上記の[!DNL Encryption Type] ステップでコピーした公開鍵を貼り付けます。
 
-   ![ キーテキストフィールドと送信ボタンを含む公開鍵フォームを追加](../assets/paste-public-key.png)
+   ![&#x200B; キーテキストフィールドと送信ボタンを含む公開鍵フォームを追加](../assets/paste-public-key.png)
 
 ## [!DNL Commerce Intelligence] Essentials `MySQL`資格情報を指定してください
 
 1. `.magento/services.yaml`を更新します。
 
-   ![services.yaml ファイル内のMySQL サービス設定を示すコード ](../assets/update-magento-services-yaml.png)
+   ![services.yaml ファイル内のMySQL サービス設定を示すコード &#x200B;](../assets/update-magento-services-yaml.png)
 
 1. `.magento.app.yaml`を更新します。
 
-   ![app.yaml ファイル内のデータベース関係の設定を示すコード ](../assets/magento-app-yaml-relationships.png)
+   ![app.yaml ファイル内のデータベース関係の設定を示すコード &#x200B;](../assets/magento-app-yaml-relationships.png)
 
 ## データベース接続情報の取得
 
@@ -148,25 +148,25 @@ ht-degree: 0%
 
 [!UICONTROL Integration Name]: [自分の[!DNL Commerce Intelligence] インスタンスの名前を選択]
 
-[!UICONTROL Host]: `mbi.internal`
+[!UICONTROL Host]&#x200B;: `mbi.internal`
 
-[!UICONTROL Port]: `3306`
+[!UICONTROL Port]&#x200B;: `3306`
 
-[!UICONTROL ユーザー名]: `mbi`
+[!UICONTROL ユーザー名]&#x200B;: `mbi`
 
 [!UICONTROL Password]: [前のセクションに表示された入力パスワード ]
 
-[!UICONTROL Database Name]: `main`
+[!UICONTROL Database Name]&#x200B;: `main`
 
 [!UICONTROL Table Prefixes]: [ テーブルの接頭辞がない場合は空白のままにします]
 
 ## [!UICONTROL **タイムゾーン**]&#x200B;の設定
 
-![ データベースのタイムゾーンと目的のタイムゾーンドロップダウンフィールドを含むタイムゾーン設定フォーム ](../assets/time-zone-settings.png)
+![&#x200B; データベースのタイムゾーンと目的のタイムゾーンドロップダウンフィールドを含むタイムゾーン設定フォーム &#x200B;](../assets/time-zone-settings.png)
 
 **入力：**
 
-[!UICONTROL Database Timezone]: `UTC`
+[!UICONTROL Database Timezone]&#x200B;: `UTC`
 
 [!UICONTROL Desired Timezone]: [ データを表示するタイムゾーンを選択]
 
@@ -174,21 +174,21 @@ ht-degree: 0%
 
 プロジェクト UIには、SSH アクセス文字列が表示されます。 この文字列は、[!UICONTROL **リモートアドレス**]&#x200B;および&#x200B;[!UICONTROL **ユーザー名**]&#x200B;に必要な情報を収集するために使用できます。 プロジェクト UIのマスターブランチにある「サイトにアクセス」ボタンを選択して、SSH アクセス文字列を使用します。 次に、次に示すように、[!UICONTROL User Name]と[!UICONTROL Remote Address]を見つけます。
 
-ユーザー名とリモート アドレスを含むSSH アクセス情報を表示する![ プロジェクト UI](../assets/master-branch-settings.png)
+ユーザー名とリモート アドレスを含むSSH アクセス情報を表示する![&#x200B; プロジェクト UI](../assets/master-branch-settings.png)
 
 ## [!DNL Encryption]の設定を入力
 
-![暗号化タイプ、リモート アドレス、ユーザー名、およびポートのフィールドを含む暗号化設定フォーム ](../assets/encryption-settings-2.png)
+![暗号化タイプ、リモート アドレス、ユーザー名、およびポートのフィールドを含む暗号化設定フォーム &#x200B;](../assets/encryption-settings-2.png)
 
 **入力：**
 
-[!UICONTROL Encryption Type]: `SSH Tunnel`
+[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
 
 [!UICONTROL Remote Address]: `ssh.us-3.magento.cloud` [前の手順]から
 
 [!UICONTROL Username]: `vfbfui4vmfez6-master-7rqtwti—mymagento` [前の手順]から
 
-[!UICONTROL Port]: `22`
+[!UICONTROL Port]&#x200B;: `22`
 
 ## 統合を保存します。
 

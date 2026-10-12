@@ -81,7 +81,7 @@ ht-degree: 11%
 
 顧客の注文番号の列を実際に確認する 画像をクリックすると、レポートでグループ別ディメンションとして使用されます。
 
-![ イベント番号の計算列を使用して、顧客の注文番号でグループ化します。](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
+![&#x200B; イベント番号の計算列を使用して、顧客の注文番号でグループ化します。](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
 
 このタイプの計算列を作成するには、次の点を把握する必要があります。
 
@@ -191,7 +191,7 @@ ht-degree: 11%
 
 心配する必要はありません。 ここに記載されていないからといって、それが不可能であるとは限りません。 Data Warehouse AnalystsのAdobeチームがお手伝いします。
 
-新しい計算列を定義するには、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信し、作成する内容の詳細を入力します。
+新しい計算列を定義するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信し、作成する内容の詳細を入力します。
 
 ## 関連ドキュメント
 

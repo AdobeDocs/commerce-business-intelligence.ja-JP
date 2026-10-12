@@ -38,11 +38,11 @@ ht-degree: 0%
 
 一括編集機能を使用すると、ダッシュボードでグラフの名前と日付を簡単に変更できます。 たとえば、特定のダッシュボードのすべてのチャートで、四半期ではなく月単位で、単一のストアとレポートを参照するように設定します。 すべてを手動で変更するのではなく、`bulk-editing`機能で作業します。 このトピックでは、次の使用方法について説明します。
 
-* [ [!DNL Find/Replace] 機能](#findreplace)
+* [&#x200B; [!DNL Find/Replace] 機能](#findreplace)
 
-* [ [!DNL Prepend Name] 機能](#prepend)
+* [&#x200B; [!DNL Prepend Name] 機能](#prepend)
 
-* [ [!DNL Change Dates] 機能](#dates)
+* [&#x200B; [!DNL Change Dates] 機能](#dates)
 
 ただし、このことを考慮してください – *これらの変更は永続的である必要がありますか？* そうでない場合は、ダッシュボードを複製してから、新しいダッシュボードで日付を変更することを検討してください。 これにより、必要な変更を行いながら、元のダッシュボードを保持できます。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ## [!DNL Find/Replace]の使用中 {#findreplace}
 
-1. ダッシュボード名の横にある歯車（![歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
+1. ダッシュボード名の横にある歯車（![歯車アイコン &#x200B;](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
 
 1. ポップアップで「**[!UICONTROL Chart Title Find and Replace]**」をクリックします。
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ## `Chart Names`が保留中です {#prepend}
 
-1. ダッシュボード名の横にある歯車（![歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
+1. ダッシュボード名の横にある歯車（![歯車アイコン &#x200B;](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウをクリックします。
 
 1. ポップアップで「**[!UICONTROL Prepend Report Names]**」をクリックします。
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 ## `Dates`を変更中 {#dates}
 
-1. ダッシュボード名の横にある歯車（![歯車アイコン ](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウを選択します。
+1. ダッシュボード名の横にある歯車（![歯車アイコン &#x200B;](../../assets/gear-icon.png)）アイコンをクリックし、[!UICONTROL Bulk Edit Reports] ウィンドウを選択します。
 
 1. ポップアップウィンドウで「**[!UICONTROL Change Dates]**」をクリックします。
 

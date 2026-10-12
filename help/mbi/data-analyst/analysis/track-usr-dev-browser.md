@@ -60,15 +60,15 @@ web サイトにリクエストが送信されるたびに、ユーザーのブ�
 
 ### 有益なセグメントを解析するにはどうすればよいですか？
 
-`User-Agent`文字列を解析して、オペレーティングシステムやデバイスなどのコンポーネントにするのに役立つライブラリがいくつかあります。 詳しくは、[ua-parser プロジェクト ](https://github.com/tobie/ua-parser)を参照してください。
+`User-Agent`文字列を解析して、オペレーティングシステムやデバイスなどのコンポーネントにするのに役立つライブラリがいくつかあります。 詳しくは、[ua-parser プロジェクト &#x200B;](https://github.com/tobie/ua-parser)を参照してください。
 
 この新しい情報を使用すると、ユーザーがサイトにアクセスする方法をより深く理解できます。 その後、エクスペリエンスを調整したり、特定のグループに合わせたマーケティング施策を構築したりできます。
 
 ## 関連
 
-* [ [!DNL Google Anaytics] E-Commerce経由で注文の紹介ソースを追跡](../importing-data/integrations/google-ecommerce.md)
+* [&#x200B; [!DNL Google Anaytics] E-Commerce経由で注文の紹介ソースを追跡](../importing-data/integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースの追跡](../analysis/google-track-user-acq.md)
 * [最も価値のある獲得ソースとチャネルの発見](../analysis/most-value-source-channel.md)
-* [ [!DNL Google Adwords]  アカウントを接続](../importing-data/integrations/google-adwords.md)
+* [&#x200B; [!DNL Google Adwords]  アカウントを接続](../importing-data/integrations/google-adwords.md)
 * [広告キャンペーンのROIを高める](../analysis/roi-ad-camp.md)
-* [ [!DNL Google Analytics] UTM アトリビューションの仕組み](../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics] UTM アトリビューションの仕組み](../analysis/utm-attributes.md)

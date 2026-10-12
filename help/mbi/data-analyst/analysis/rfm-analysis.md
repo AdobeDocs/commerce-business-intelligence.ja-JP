@@ -46,7 +46,7 @@ ht-degree: 54%
 1. 購入頻度
 1. 顧客が費やす金額
 
-![最新性、頻度、金銭的価値セグメントを示すRFM分析ダッシュボード ](../../assets/blobid0.png)
+![最新性、頻度、金銭的価値セグメントを示すRFM分析ダッシュボード &#x200B;](../../assets/blobid0.png)
 
 RFM分析は、新しいアーキテクチャで[!DNL Adobe Commerce Intelligence] Pro プランを使用している場合（たとえば、`Manage Data` メニューの下に`Data Warehouse Views` オプションがある場合）にのみ設定できます。 これらの列は&#x200B;**[!DNL Manage Data > Data Warehouse]** ページから作成できます。 詳細な手順は以下のとおりです。
 
@@ -64,132 +64,132 @@ RFM分析は、新しいアーキテクチャで[!DNL Adobe Commerce Intelligenc
 
 * **`Sales_flat_order/customer_entity`** テーブル
 * `Customer's last order date`
-* [!UICONTROL Column type]: `Many to one > Max`
-* [!UICONTROL Pat]: `sales_flat_order.customer_id > customer_entity.entity_id`
+* [!UICONTROL Column type]&#x200B;: `Many to one > Max`
+* [!UICONTROL Pat]&#x200B;: `sales_flat_order.customer_id > customer_entity.entity_id`
 * 選択済み[!UICONTROL column]: `created_at`
-* [!UICONTROL Filter]: `Orders we count`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
-* 
+* &#x200B;
       お客様の最終注文日からの秒数
   * [!UICONTROL Column type]: - 「同じテーブル >年齢
 * 選択済み[!UICONTROL column]: `Customer's last order date`
 
 * （入力） カウント参照
-* [!UICONTROL Column type]: `Same table > Calculation`
-* 
-  [!UICONTROL入力]: `entity_id`
-* [!UICONTROL Calculation]: `**case when A is null then null else 1 end**`
-* 
-  [!UICONTROL データタイプ]: `Integer`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
+* &#x200B;
+  [!UICONTROL 入力]&#x200B;: `entity_id`
+* [!UICONTROL Calculation]&#x200B;: `**case when A is null then null else 1 end**`
+* &#x200B;
+  [!UICONTROL データタイプ]&#x200B;: `Integer`
 
 * **参照** テーブルをカウントします（これは、「1」という数字でアップロードしたファイルです）
 * 顧客数
-* [!UICONTROL Column type]: `Many to One > Count Distinct`
-* [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key`または`customer_entity.(input)reference > Count Reference`。`Primary Key`
+* [!UICONTROL Column type]&#x200B;: `Many to One > Count Distinct`
+* [!UICONTROL Path]&#x200B;: `ales_flat_order.(input) reference > Count reference.Primary Key`または`customer_entity.(input)reference > Count Reference`。`Primary Key`
 * 選択された[!UICONTROL column]: `sales_flat_order.customer_email`または`customer_entity.entity_id`
 
 * **Customer_entity** テーブル
 * 顧客数
-* [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
-* [!UICONTROL Path]: `customer_entity`.（入力）参照>顧客集中度。`Primary Key`
+* [!UICONTROL Column type]&#x200B;: `One to Many > JOINED_COLUMN`
+* [!UICONTROL Path]&#x200B;: `customer_entity`.（入力）参照>顧客集中度。`Primary Key`
 * 選択済み[!UICONTROL column]: `Number of customers`
 
 * （入力） `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Customer's lifetime revenue`
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Customer's lifetime revenue`
 
 * 顧客生涯収益別ランキング
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* 
-  [!UICONTROL データタイプ]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `case when A is null then null else (B-(A-1)) end`
+* &#x200B;
+  [!UICONTROL データタイプ]&#x200B;: `Integer`
 
 * 顧客の金銭的スコア（百分率）
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
-  [!UICONTROL データタイプ]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
+* &#x200B;
+  [!UICONTROL データタイプ]&#x200B;: `Integer`
 
 * （input）顧客生涯注文数別ランキング
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Customer's lifetime number of orders`
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Customer's lifetime number of orders`
 
 * 顧客のライフタイムオーダー数によるランキング
-* 
-  [!UICONTROL列タイプ]: – "同じ表/計算"
+* &#x200B;
+  [!UICONTROL 列タイプ]&#x200B;: – "同じ表/計算"
 * [!UICONTROL Inputs]: - **（入力）顧客生涯注文数**、**顧客数**&#x200B;によるランキング
 * [!UICONTROL Calculation]: - **Aがnullの場合、その後nullの場合（B – （A-1）） end**
 * [!UICONTROL Datatype]: – 整数
 
 * 顧客の頻度スコア（百分率）
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
-  [!UICONTROL データタイプ]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
+* &#x200B;
+  [!UICONTROL データタイプ]&#x200B;: `Integer`
 
 * 顧客の最後の注文日からの秒単位のランキング
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Seconds since customer's last order date`
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Seconds since customer's last order date`
 
 * 顧客の最新性スコア（百分率による）
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
-* 
-  [!UICONTROL データタイプ]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
+* &#x200B;
+  [!UICONTROL データタイプ]&#x200B;: `Integer`
 
 * 顧客の最新性スコア（百分率による）
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
-* [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
-* 
-  [!UICONTROL データタイプ]: String
+* [!UICONTROL Calculation]&#x200B;: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
+* &#x200B;
+  [!UICONTROL データタイプ]&#x200B;: String
 
 * **参照** テーブルをカウント
-* [!UICONTROL Number of customers]: `(RFM > 0)`
-* [!UICONTROL Column type]: `Many to One > Count Distinct`
-* [!UICONTROL Path]: `sales_flat_order.(input) reference > Customer Concentration. Primary Key`または`customer_entity.(input)reference > Customer Concentration.Primary Key`
+* [!UICONTROL Number of customers]&#x200B;: `(RFM > 0)`
+* [!UICONTROL Column type]&#x200B;: `Many to One > Count Distinct`
+* [!UICONTROL Path]&#x200B;: `sales_flat_order.(input) reference > Customer Concentration. Primary Key`または`customer_entity.(input)reference > Customer Concentration.Primary Key`
 * 選択された[!UICONTROL column]: `sales_flat_order.customer_email`または`customer_entity.entity_id`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)`は000に等しくありません
+* [!UICONTROL Filter]&#x200B;: `Customer's RFM score (by percentile)`は000に等しくありません
 
 * **Customer_entity** テーブル
-* [!UICONTROL Number of customers]: `(RFM > 0)`
-* [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
-* [!UICONTROL Path]: `customer_entity.(input) reference > Customer Concentration.Primary Key`
+* [!UICONTROL Number of customers]&#x200B;: `(RFM > 0)`
+* [!UICONTROL Column type]&#x200B;: `One to Many > JOINED_COLUMN`
+* [!UICONTROL Path]&#x200B;: `customer_entity.(input) reference > Customer Concentration.Primary Key`
 * 選択された[!UICONTROL column]: - `Number of customers`
 
 * お客様の最新性スコア `(R+F+M)`
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: - `Customer's recency score (by percentiles)`、`Customer's frequency score (by percentiles)`、`Customer's monetary score (by percentiles)`
-* [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
-* 
-  [!UICONTROL データタイプ]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
+* &#x200B;
+  [!UICONTROL データタイプ]&#x200B;: `Integer`
 
 * （入力）お客様のRFM全体のスコアによるランキング
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Customer's recency score (R+F+M)`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)`は000に等しくありません
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Customer's recency score (R+F+M)`
+* [!UICONTROL Filter]&#x200B;: `Customer's RFM score (by percentile)`は000に等しくありません
 
 * お客様のRFM全体のスコアによるランキング
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer's overall RFM score`, `Number of customers (RFM > 0)`
-* [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* 
-  [!UICONTROL データタイプ]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `case when A is null then null else (B-(A-1)) end`
+* &#x200B;
+  [!UICONTROL データタイプ]&#x200B;: `Integer`
 
 * 顧客のRFM グループ
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
-* 
-  [!UICONTROL データタイプ]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
+* &#x200B;
+  [!UICONTROL データタイプ]&#x200B;: `Integer`
 
 >[!NOTE]
 >
@@ -207,51 +207,51 @@ RFM分析は、新しいアーキテクチャで[!DNL Adobe Commerce Intelligenc
 
 * **RFM グループ化による顧客**
 * 指標`A`: `New customers`
-* [!UICONTROL Metric]: `New customers`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentiles) Not Equal to 000`
+* [!UICONTROL Metric]&#x200B;: `New customers`
+* [!UICONTROL Filter]&#x200B;: `Customer's RFM score (by percentiles) Not Equal to 000`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
 * グラフを隠す
-* [!UICONTROL Group by]: `Customer's RFM group`
-* 
-  [!UICONTROL グループ化：]: `Email`
-* 
-  [!UICONTROL Chart type]: `Table`
+* [!UICONTROL Group by]&#x200B;: `Customer's RFM group`
+* &#x200B;
+  [!UICONTROL グループ化：]&#x200B;: `Email`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **5つの最新性スコアを持つ顧客**
 * 指標`A`: `New customers`
-* [!UICONTROL Metric]: `New customers`
-* [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
+* [!UICONTROL Metric]&#x200B;: `New customers`
+* [!UICONTROL Filter]&#x200B;: `Customer's recency score (by percentiles) Equal to 5`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 * グラフを隠す
-* 
-  [!UICONTROL グループ化：]: `Email`
-* [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL グループ化：]&#x200B;: `Email`
+* [!UICONTROL Group by]&#x200B;: `Customer's RFM score (R+F+M)`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **1つの最新性スコアを持つ顧客**
 * 指標`A`: `New customers`
-* [!UICONTROL Metric]: `New customers`
-* [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
+* [!UICONTROL Metric]&#x200B;: `New customers`
+* [!UICONTROL Filter]&#x200B;: `Customer's recency score (by percentiles) Equal to 1`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 * グラフを隠す
-* 
-  [!UICONTROL グループ化：]: `Email`
-* [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL グループ化：]&#x200B;: `Email`
+* [!UICONTROL Group by]&#x200B;: `Customer's RFM score (R+F+M)`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 すべてのレポートをまとめた後、必要に応じてダッシュボード上でレポートを整理できます。 結果は上記のサンプルダッシュボードのように見えるかもしれませんが、生成された3つのテーブルは、実行できる顧客セグメンテーションの例にすぎません。

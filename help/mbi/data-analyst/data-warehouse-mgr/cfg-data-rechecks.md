@@ -47,7 +47,7 @@ ht-degree: 0%
 
 注文ステータスは変更される可能性がありますが、常に`pending`状態であるとは限りません。 最終的には`complete`または`cancelled`になる可能性があります。 Data Warehouseがこの変更を確実に同期させるには、列で新しい値を再確認する必要があります。
 
-これは、説明した[ レプリケーション方法](../data-warehouse-mgr/cfg-replication-methods.md)とどのように適合しますか？ 再チェックの処理は、選択したレプリケーション方法によって異なります。 再確認を設定する必要がないため、`Modified\_At` レプリケーション メソッドは、値の変更を処理するための最適な選択肢です。 `Auto-Incrementing Primary Key`および`Primary Key Batch Monitoring`のメソッドでは、構成を再確認する必要があります。
+これは、説明した[&#x200B; レプリケーション方法](../data-warehouse-mgr/cfg-replication-methods.md)とどのように適合しますか？ 再チェックの処理は、選択したレプリケーション方法によって異なります。 再確認を設定する必要がないため、`Modified\_At` レプリケーション メソッドは、値の変更を処理するための最適な選択肢です。 `Auto-Incrementing Primary Key`および`Primary Key Batch Monitoring`のメソッドでは、構成を再確認する必要があります。
 
 これらの方法のいずれかを使用する場合、変更可能な列に再チェック用のフラグを付ける必要があります。 方法は3つあります。
 
@@ -86,7 +86,7 @@ Data Warehouseでは、テーブル名をクリックして個々の列を確認
 
 ![Data Warehouse Managerで設定オプションの再確認が表示される](../../assets/dwm-recheck.png)
 
-`Changes?`列に`Paused`が表示されることがあります。 この値は、テーブルの[ レプリケーション メソッド ](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)が`Paused`に設定されている場合に表示されます。
+`Changes?`列に`Paused`が表示されることがあります。 この値は、テーブルの[&#x200B; レプリケーション メソッド &#x200B;](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)が`Paused`に設定されている場合に表示されます。
 
 [!DNL Adobe]では、更新を最適化し、変更可能な列が再確認されていることを確認するために、これらの列を確認することをお勧めします。 データの変更頻度を考慮して、列の再チェック頻度が高い場合は、更新を最適化するために列を減らすことをお勧めします。
 

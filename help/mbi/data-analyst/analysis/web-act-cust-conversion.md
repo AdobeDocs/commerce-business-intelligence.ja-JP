@@ -43,9 +43,9 @@ ht-degree: 0%
 
 ## 前提条件
 
-**広告コスト データを読み込む** - [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md)を[!DNL Adobe Commerce Intelligence]に接続すると、Commerce Intelligenceでの[!DNL AdWords]の費用が自動的に同期されます。
+**広告コスト データを読み込む** - [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md)を[!DNL Adobe Commerce Intelligence]に接続すると、Commerce Intelligenceでの[!DNL AdWords]の費用が自動的に同期されます。
 
-**ユーザー獲得チャネルデータの追跡** - [!DNL Google AdWords] データをデータベース内の特定の注文に結び付けるには、[!DNL Google Analytics E-commerce]経由で[ ユーザー獲得](../analysis/google-track-user-acq.md)を追跡する必要があります。 これにより、各注文をutm ソースとミディアムに接続できます。
+**ユーザー獲得チャネルデータの追跡** - [!DNL Google AdWords] データをデータベース内の特定の注文に結び付けるには、[!DNL Google Analytics E-commerce]経由で[&#x200B; ユーザー獲得](../analysis/google-track-user-acq.md)を追跡する必要があります。 これにより、各注文をutm ソースとミディアムに接続できます。
 
 ## ユーザー獲得キャンペーン
 

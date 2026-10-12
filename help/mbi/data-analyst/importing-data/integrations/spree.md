@@ -45,7 +45,7 @@ ht-degree: 0%
 
 優れたパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを特定したりするために、 [!DNL Spree] データを[!DNL Commerce Intelligence]に接続すると、これらの質問に答えることができます。
 
-[!DNL Spree] データベースは[!DNL PostgreSQL]に基づいています。通常の [!DNL Postgres] 接続](../integrations/postgresql.md)と同じ[手順で[!DNL Commerce Intelligence]に接続できます。
+[!DNL Spree] データベースは[!DNL PostgreSQL]に基づいています。通常の [!DNL Postgres] 接続[&#128279;](../integrations/postgresql.md)と同じ手順で[!DNL Commerce Intelligence]に接続できます。
 
 ## 関連ドキュメント
 

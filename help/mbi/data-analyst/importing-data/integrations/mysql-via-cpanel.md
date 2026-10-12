@@ -43,8 +43,8 @@ ht-degree: 0%
 ---
 # [!DNL cPanel]経由で[!DNL MySQL]に接続
 
-* [ [!DNL cPanel]で [!DNL Commerce Intelligence] [!DNL MySQL] ユーザーを作成](#cpanel)
-* [ [!DNL Commerce Intelligence]への接続とユーザー情報の入力](#finish)
+* [&#x200B; [!DNL cPanel]で [!DNL Commerce Intelligence] [!DNL MySQL] ユーザーを作成](#cpanel)
+* [&#x200B; [!DNL Commerce Intelligence]への接続とユーザー情報の入力](#finish)
 
 ## に移動
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 1. 「`Database`」セクションにある「**[!UICONTROL [!DNL MySQL] Databases]**」をクリックします。
 1. `Add New User` セクションまでスクロールして、[!DNL Commerce Intelligence]のユーザーを作成します。
 
-   ユーザーフォームの作成を示す![cPanel MySQL データベースインターフェイス ](../../../assets/create-mbi-mysql-user-cpanel.png)
+   ユーザーフォームの作成を示す![cPanel MySQL データベースインターフェイス &#x200B;](../../../assets/create-mbi-mysql-user-cpanel.png)
 
 1. **[!UICONTROL Create User]**&#x200B;をクリックします。
 1. ユーザーを作成したら、そのユーザーをデータベースに関連付ける必要があります。 「`Add New User`」セクションに戻ります。「`Add User to Database?`」の設定を参照してください。

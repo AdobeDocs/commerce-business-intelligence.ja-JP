@@ -51,7 +51,7 @@ ht-degree: 11%
 
 最初に、値が1のプライマリキーのみを含むファイルをアップロードする必要があります。 これにより、分析に必要な計算列を作成できます。
 
-[ ファイルアップローダー](../importing-data/connecting-data/using-file-uploader.md)と以下の画像を使用して、ファイルをフォーマットできます。
+[&#x200B; ファイルアップローダー](../importing-data/connecting-data/using-file-uploader.md)と以下の画像を使用して、ファイルをフォーマットできます。
 
 ## 予定列
 
@@ -88,7 +88,7 @@ ht-degree: 11%
 * 顧客の収益率
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`、`Number of customers`
-* [!UICONTROL Calculation]: - ** Aがnullの場合、その後nullの場合（A/B） *100 end **
+* [!UICONTROL Calculation]: - **&#x200B; Aがnullの場合、その後nullの場合（A/B） *100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order` テーブル
@@ -106,7 +106,7 @@ ht-degree: 11%
 * 顧客の収益率
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`、`Number of customers`
-* [!UICONTROL Calculation]: - ** Aがnullの場合、その後nullの場合（A/B） *100 end **
+* [!UICONTROL Calculation]: - **&#x200B; Aがnullの場合、その後nullの場合（A/B） *100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -124,36 +124,36 @@ ht-degree: 11%
 ## レポート
 
 * **顧客集中度**
-* [!UICONTROL Metric]: `Total customer lifetime value`
-* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]&#x200B;: `Total customer lifetime value`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile IS NOT NULL`
 
-* [!UICONTROL Metric]: `Total customer lifetime value`
-* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]&#x200B;: `Total customer lifetime value`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile IS NOT NULL`
 
-* 
-  [!UICONTROL グループ化：]: `Independent`
+* &#x200B;
+  [!UICONTROL グループ化：]&#x200B;: `Independent`
 * 指標`A`: `Total customer lifetime revenue by percentile`
 * 指標`B`: `Total customer lifetime revenue (ungrouped)`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Customer's revenue percentile`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Customer's revenue percentile`
 * 上/下を表示：`100% of Customer's revenue percentile Name`
-* 
-  [!UICONTROL Chart type]: `Line`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 * **上位10%濃度**
-* [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile <= 10`
 
 * 指標`A`: `Total customer lifetime revenue`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
 * グラフを隠す
-* 
-  [!UICONTROL グループ化：]: `Email`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL グループ化：]&#x200B;: `Email`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **購入が1回だけの場合の最下位50%の集中**
 
@@ -162,28 +162,28 @@ ht-degree: 11%
 * `Customer's lifetime number of orders = 1`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
 * グラフを隠す
-* 
-  [!UICONTROL グループ化：]: `Email`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL グループ化：]&#x200B;: `Email`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **下10%濃度**
-* [!UICONTROL Filter]: `Customer's revenue percentile > 90`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile > 90`
 
 * 指標`A`: `Total customer lifetime revenue`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
 * グラフを隠す
-* 
-  [!UICONTROL グループ化：]: `Email`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL グループ化：]&#x200B;: `Email`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 すべてのレポートをまとめた後、必要に応じてダッシュボード上でレポートを整理できます。 結果は、上記のサンプルダッシュボードのようになります。
 
-この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームに連絡したい場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームに連絡したい場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

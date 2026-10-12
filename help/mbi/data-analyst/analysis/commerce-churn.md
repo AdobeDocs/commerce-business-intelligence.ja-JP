@@ -38,7 +38,7 @@ ht-degree: 19%
 
 このトピックでは、**コマース顧客**&#x200B;の&#x200B;**解約率**&#x200B;を計算する方法を示します。 SaaSや従来のサブスクリプション企業とは異なり、コマース顧客は通常、アクティブ顧客にカウントされなくなったことを示す具体的な&#x200B;**「解約イベント」**&#x200B;を持っていません。 このため、以下の手順では、最後の注文から経過した一定の時間に基づいて、顧客を「解約」と定義できます。
 
-![顧客維持率を示す解約率のビジュアライゼーション ](../../assets/Churn_rate_image.png)
+![顧客維持率を示す解約率のビジュアライゼーション &#x200B;](../../assets/Churn_rate_image.png)
 
 多くの顧客は、データに基づいて使用すべき&#x200B;**期間**&#x200B;を概念化するために支援を求めています。 過去の顧客行動を使用して、この&#x200B;**解約期間**&#x200B;を定義する場合は、[解約](../analysis/define-cust-churn.md)の定義に関するトピックに慣れておくと良いでしょう。 次に、以下の手順で、解約率の計算式で結果を使用できます。
 
@@ -52,7 +52,7 @@ ht-degree: 19%
   * [!UICONTROL table]を選択：`sales_flat_order`
   * [!UICONTROL column]を選択：`created_at`
   * `sales_flat_order.customer_id = customer_entity.entity_id`
-  * [!UICONTROL Filter]: `Orders we count`
+  * [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * **`Seconds since customer's last order date`**
   * [!UICONTROL definition]を選択：`Age`
@@ -98,21 +98,21 @@ ht-degree: 19%
 
 * **解約率**
   * [!UICONTROL Metric]：新規顧客（初回注文日別）
-  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-  * 
-    [!UICONTROL Perspective]: `Cumulative`
-  * [!UICONTROL Metric]: `New customers (by last order date)`
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: `Cumulative`
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
   * [!UICONTROL Filter]:
-  * 顧客の最終注文日からの秒数>= [解約済み顧客の自己定義カットオフ ]**`^`**
+  * 顧客の最終注文日からの秒数>= [解約済み顧客の自己定義カットオフ ]&#x200B;**`^`**
   * `Lifetime number of orders Greater Than 0`
 
-  * [!UICONTROL Metric]: `New customers (by last order date)`
-  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-  * 
-    [!UICONTROL Perspective]: Cumulative
-  * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-  * 
-    [!UICONTROL Format]: Percentage
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: Cumulative
+  * [!UICONTROL Formula]&#x200B;: `(B / ((A + B) - C)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: Percentage
 
 * *指標`A`:`New customers cumulative`*
 * *指標`B`:`Churned customers by last order date`*

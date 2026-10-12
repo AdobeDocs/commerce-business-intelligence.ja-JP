@@ -38,9 +38,9 @@ ht-degree: 0%
 
 ダッシュボードのリストが乱雑になりすぎないようにしたい場合は、不要になったダッシュボードを削除することができます。 これは、次の2つの方法のいずれかで実現できます。
 
-1. [`Account Settings` ページ ](#account)経由 – この方法には[管理者権限](../../administrator/user-management/user-management.md)が必要です。
+1. [`Account Settings` ページ &#x200B;](#account)経由 – この方法には[管理者権限](../../administrator/user-management/user-management.md)が必要です。
 
-1. [ `Dashboard Options` メニュー](#do)を介して – この方法では、ダッシュボードを所有するか、`Edit`権限を持っている必要があります。
+1. [&#x200B; `Dashboard Options` メニュー](#do)を介して – この方法では、ダッシュボードを所有するか、`Edit`権限を持っている必要があります。
 
 ## `Account Settings` ページ経由でダッシュボードを削除 {#account}
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 例：
 
-![ ダッシュボードを削除](../../assets/deleting_dash.gif)<!--{: width="703" height="346"}-->
+![&#x200B; ダッシュボードを削除](../../assets/deleting_dash.gif)<!--{: width="703" height="346"}-->
 
 ## `Dashboard Options` メニューからダッシュボードを削除 {#do}
 
@@ -64,4 +64,4 @@ ht-degree: 0%
 
 例：
 
-![ ダッシュボードを削除](../../assets/deleting_dash_2.gif)<!--{: width="703" height="347"}-->
+![&#x200B; ダッシュボードを削除](../../assets/deleting_dash_2.gif)<!--{: width="703" height="347"}-->

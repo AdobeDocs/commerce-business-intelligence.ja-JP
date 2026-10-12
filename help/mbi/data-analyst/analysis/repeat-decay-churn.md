@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 推奨される指標
 
-繰り返し確率減衰と解約を分析する場合は、次の指標（[またはビルド ](../../data-user/reports/ess-manage-data-metrics.md)）を使用することを検討してください。
+繰り返し確率減衰と解約を分析する場合は、次の指標（[またはビルド &#x200B;](../../data-user/reports/ess-manage-data-metrics.md)）を使用することを検討してください。
 
 ### 初回リピート注文の可能性
 
@@ -106,7 +106,7 @@ Adobeでは、リピート注文の可能性を把握するために、自社デ
 
 複数の商品を提供している場合、特定の商品を購入する顧客は、時間の経過とともにどのように他の顧客と異なる行動をとるのか疑問に思うかもしれません。 Adobe Experience Platform Data Governanceについて詳しくは、 このチュートリアルでは、顧客が購入した特定の製品に基づいて、顧客コホートの生涯購入行動を調べることができます。
 
-このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されています。 詳細については、[ サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
+このベストプラクティスは、[!DNL Adobe Commerce Intelligence] Data Analysis Services （DAS）によって提供されています。 詳細については、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
 
 ### 関連
 

@@ -54,13 +54,13 @@ ht-degree: 0%
 
 クエリをより明確に表示するには、クエリフィールドでの表示方法を再形式できます。 準備ができたら、`Run Query`を選択します。 結果は、クエリの下のレポートパネルにテーブルとして入力されます。
 
-![SQL クエリの実行と結果の表示のアニメーション化されたデモ ](../../assets/run-query-results.gif)
+![SQL クエリの実行と結果の表示のアニメーション化されたデモ &#x200B;](../../assets/run-query-results.gif)
 
 ## クエリの制限
 
 特定の不一致またはデータのセットを特定する場合は、クエリを特定のサンプルに限定して、ローカルデータベースと照合する必要があります。 これを行うには、目的の制限に合わせてクエリを編集します。 次の例では、2013年1月1日以降の収益のみを含めるようにクエリを制限しています。 クエリを更新したら、もう一度&#x200B;**[!UICONTROL Run Query]**&#x200B;を選択して結果を更新します。
 
-![ フィルターを使用したクエリ制限のアニメーション化されたデモ ](../../assets/restricting-query.gif)
+![&#x200B; フィルターを使用したクエリ制限のアニメーション化されたデモ &#x200B;](../../assets/restricting-query.gif)
 
 ## 保存とエクスポート
 
@@ -68,12 +68,12 @@ ht-degree: 0%
 
 レポートが保存されたら、`Go to Dashboard`を選択して、そのダッシュボードに移動します。 そこから、レポートを見つけて、**[!UICONTROL Options gear > Full `.csv`Export]**&#x200B;または&#x200B;**[!UICONTROL Full Excel Export]**&#x200B;を選択してデータを書き出すことができます。
 
-![ ダッシュボードデータの書き出しのアニメーション化されたデモ ](../../assets/export-dboard-data.gif)
+![&#x200B; ダッシュボードデータの書き出しのアニメーション化されたデモ &#x200B;](../../assets/export-dboard-data.gif)
 
 ## カスタムクエリ
 
-また、カスタムクエリを作成し、結果を書き出して、ローカルデータベースと比較することもできます。 クエリ最適化](../../best-practices/optimizing-your-sql-queries.md)の[ ガイドラインに従って、SQL エディターにクエリを記述します。 サイドバーの上部にあるボタンを使用して、[!DNL SQL Report Builder]で使用できるテーブルと指標のリストを切り替え、クエリに追加できます。 カスタムクエリがニーズに合ったら、レポートを保存し、そのデータをダッシュボードから書き出すことができます。
+また、カスタムクエリを作成し、結果を書き出して、ローカルデータベースと比較することもできます。 クエリ最適化[&#128279;](../../best-practices/optimizing-your-sql-queries.md)の ガイドラインに従って、SQL エディターにクエリを記述します。 サイドバーの上部にあるボタンを使用して、[!DNL SQL Report Builder]で使用できるテーブルと指標のリストを切り替え、クエリに追加できます。 カスタムクエリがニーズに合ったら、レポートを保存し、そのデータをダッシュボードから書き出すことができます。
 
 >[!NOTE]
 >
->データを監査した後に不一致が見つかった場合は、[ サポートへの連絡：データの不一致](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) サポートのトピックで、次に行う処理について詳しく確認してください。
+>データを監査した後に不一致が見つかった場合は、[&#x200B; サポートへの連絡：データの不一致](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) サポートのトピックで、次に行う処理について詳しく確認してください。

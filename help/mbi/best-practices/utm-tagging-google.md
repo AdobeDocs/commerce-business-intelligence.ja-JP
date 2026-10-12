@@ -63,7 +63,7 @@ ht-degree: 1%
 
 ### &#x200B;4. UTM パラメーター値をデータベースに格納します
 
-トランザクションやイベントが発生するたびに、マーケティング活動のパフォーマンスを評価します。 これは、[[!DNL Google Analytics] cookieからUTM パラメーター値をデータベース ](../data-analyst/analysis/google-track-user-acq.md)に読み込むことで実現できます。
+トランザクションやイベントが発生するたびに、マーケティング活動のパフォーマンスを評価します。 これは、[[!DNL Google Analytics] cookieからUTM パラメーター値をデータベース &#x200B;](../data-analyst/analysis/google-track-user-acq.md)に読み込むことで実現できます。
 
 ### &#x200B;5. キャンペーンの名前を考えてみましょう
 

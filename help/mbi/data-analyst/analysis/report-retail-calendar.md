@@ -47,13 +47,13 @@ ht-degree: 30%
 
 多くの顧客がカレンダーを変更して小売または会計日を使用するため、次の手順では、データの使用方法と小売の日付を使用したレポートの作成方法を示します。 以下の手順では、4-5-4小売カレンダーを参照していますが、財務カレンダーであれ、カスタム時間枠であれ、チームが使用する特定のカレンダー用に変更することができます。
 
-開始する前に、[ ファイルアップローダー](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)を確認し、`.csv` ファイルが延長されていることを確認する必要があります。 これにより、日付がすべての履歴データをカバーし、日付を将来にプッシュできるようになります。
+開始する前に、[&#x200B; ファイルアップローダー](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)を確認し、`.csv` ファイルが延長されていることを確認する必要があります。 これにより、日付がすべての履歴データをカバーし、日付を将来にプッシュできるようになります。
 
 この分析には、[高度な計算列](../data-warehouse-mgr/adv-calc-columns.md)が含まれています。
 
 ## はじめに
 
-2014年から2017年の小売カレンダーの4-5-4の`.csv` バージョンを[ ダウンロード ](../../assets/454-calendar.csv)できます。 このファイルは、内部の小売カレンダーに従って調整し、日付範囲を拡張して過去と現在の時間枠をサポートする必要がある場合があります。 ファイルをダウンロードした後、ファイルアップローダーを使用して、[!DNL Commerce Intelligence] Data Warehouseに小売カレンダーテーブルを作成します。 4-5-4小売カレンダーの変更されていないバージョンを使用している場合は、このテーブルのフィールドの構造とデータタイプが次のように一致していることを確認します。
+2014年から2017年の小売カレンダーの4-5-4の`.csv` バージョンを[&#x200B; ダウンロード &#x200B;](../../assets/454-calendar.csv)できます。 このファイルは、内部の小売カレンダーに従って調整し、日付範囲を拡張して過去と現在の時間枠をサポートする必要がある場合があります。 ファイルをダウンロードした後、ファイルアップローダーを使用して、[!DNL Commerce Intelligence] Data Warehouseに小売カレンダーテーブルを作成します。 4-5-4小売カレンダーの変更されていないバージョンを使用している場合は、このテーブルのフィールドの構造とデータタイプが次のように一致していることを確認します。
 
 | 列名 | 列データタイプ | プライマリキー |
 | --- | --- | --- |
@@ -78,80 +78,80 @@ ht-degree: 30%
 
 * **小売カレンダー** ファイル アップロード テーブル
   * **現在の日付**
-    * [!UICONTROL Column type]: `Same table > Calculation`
-    * [!UICONTROL Inputs]: `Date Retail`
-    * 
-      [!UICONTROL データタイプ]: `Datetime`
-    * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
+    * [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
+    * [!UICONTROL Inputs]&#x200B;: `Date Retail`
+    * &#x200B;
+      [!UICONTROL データタイプ]&#x200B;: `Datetime`
+    * [!UICONTROL Calculation]&#x200B;: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
       >[!NOTE]
       >
       >上記の`now()`関数はPostgreSQLに固有です。 ほとんどの[!DNL Commerce Intelligence] データウェアハウスはPostgreSQLでホストされていますが、一部のデータウェアハウスはRedshiftでホストされている可能性があります。 上記の計算でエラーが返された場合は、`now()`ではなくRedshift関数`getdate()`を使用する必要がある場合があります。
 
   * **現在の小売年度** （サポートアナリストが作成する必要があります）
-    * [!UICONTROL Column type]: E`vent Counter`
-    * [!UICONTROL Local Key]: `Current date`
-    * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-    * 
-      [!UICONTROL Operation]: `Max`
-    * [!UICONTROL Operation value]: `Year Retail`
+    * [!UICONTROL Column type]&#x200B;: E`vent Counter`
+    * [!UICONTROL Local Key]&#x200B;: `Current date`
+    * [!UICONTROL Remote Key]&#x200B;: `Retail calendar.Date Retail`
+    * &#x200B;
+      [!UICONTROL Operation]&#x200B;: `Max`
+    * [!UICONTROL Operation value]&#x200B;: `Year Retail`
   * **現在の小売年度に含まれますか？ （はい/いいえ）**
-    * [!UICONTROL Column type]: `Same table > Calculation`
+    * [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
     * [!UICONTROL Inputs]:
       * `A` - `Year Retail`
       * `B` - `Current retail year`
-    * 
-      [!UICONTROL データタイプ]: `String`
-    * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
+    * &#x200B;
+      [!UICONTROL データタイプ]&#x200B;: `String`
+    * [!UICONTROL Calculation]&#x200B;: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
   * **前年度の小売に含まれますか？ （はい/いいえ）**
-    * [!UICONTROL Column type]: `Same table > Calculation`
+    * [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
     * [!UICONTROL Inputs]:
       * `A` - `Year Retail`
       * `B` - `Current retail year`
-    * 
-      [!UICONTROL データタイプ]: String
-    * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
+    * &#x200B;
+      [!UICONTROL データタイプ]&#x200B;: String
+    * [!UICONTROL Calculation]&#x200B;: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
 * **sales\_order** テーブル
   * **作成日時（小売り年）**
-    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * [!UICONTROL Column type]&#x200B;: `One to Many > JOINED\_COLUMN`
     * パス -
-      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-      * [!UICONTROL One]: `Retail Calendar.Date Retail`
+      * [!UICONTROL Many]&#x200B;: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL One]&#x200B;: `Retail Calendar.Date Retail`
     * [!UICONTROL table]を選択：`Retail Calendar`
     * [!UICONTROL column]を選択：`Year Retail`
   * **作成日時（小売り週）**
-    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * [!UICONTROL Column type]&#x200B;: `One to Many > JOINED\_COLUMN`
     * パス -
       * [!UICONTROL Many]: sales\_order.\[INPUT\]がcreated\_at （yyyy-mm-dd 000:00:00
       * [!UICONTROL One]：小売カレンダー。日付小売
     * [!UICONTROL table]を選択：`Retail Calendar`
     * [!UICONTROL column]を選択：`Week Retail`
   * **作成日\_at （小売り月）**
-    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * [!UICONTROL Column type]&#x200B;: `One to Many > JOINED\_COLUMN`
     * パス
-      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-      * [!UICONTROL One]: `Retail Calendar.Date Retail`
+      * [!UICONTROL Many]&#x200B;: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL One]&#x200B;: `Retail Calendar.Date Retail`
     * [!UICONTROL table]を選択：`Retail Calendar`
     * [!UICONTROL column]を選択：`Month Number Retail`
   * **前年度の小売に含めますか？ （はい/いいえ）**
-    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * [!UICONTROL Column type]&#x200B;: `One to Many > JOINED\_COLUMN`
     * パス -
-      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL Many]&#x200B;: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
       * [!UICONTROL One]：小売`Calendar.Date Retail`
     * [!UICONTROL table]を選択：`Retail Calendar`
     * [!UICONTROL column]を選択：`Include in previous retail year? (Yes/No)`
   * **現在の小売年度に含める場合 （はい/いいえ）**
-    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * [!UICONTROL Column type]&#x200B;: `One to Many > JOINED\_COLUMN`
     * パス -
-      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL Many]&#x200B;: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
       * [!UICONTROL One]：小売`Calendar.Date Retail`
     * [!UICONTROL table]を選択：`Retail Calendar`
     * [!UICONTROL column]を選択：`Include in current retail year? (Yes/No)`
 
 ## 指標
 
-注：この分析に新しい指標は必要ありません。 ただし、レポートに進む前に、sales\_order テーブルのすべての指標に対して、sales\_order テーブルで作成した新しい列をディメンション ](../data-warehouse-mgr/manage-data-dimensions-metrics.md)として[追加してください。
+注：この分析に新しい指標は必要ありません。 ただし、レポートに進む前に、sales\_order テーブルのすべての指標に対して、sales\_order テーブルで作成した新しい列をディメンション [&#128279;](../data-warehouse-mgr/manage-data-dimensions-metrics.md)として追加してください。
 
 ## レポート
 
@@ -165,67 +165,67 @@ ht-degree: 30%
     * [!UICONTROL Filter]:
       * 作成日\_at （小売り年） = 2016
   * 指標`C`: `2015`
-    * [!UICONTROL Metric]: `Number of orders`
+    * [!UICONTROL Metric]&#x200B;: `Number of orders`
     * [!UICONTROL Filter]:
       * `Created\_at (retail Year) = 2015`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL Interval]: `None`
-  * 
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Interval]&#x200B;: `None`
+  * &#x200B;
     [!UICONTROL Group by]: `Created\_at` (retail week)
-  * 
-    [!UICONTROL Chart type]: `Line`
+  * &#x200B;
+    [!UICONTROL Chart type]&#x200B;: `Line`
     * `multiple Y-axes`をオフにする
 
 * **小売カレンダーの概要（現在の小売カレンダーを月ごとに表示）**
   * 指標`A`: `Revenue`
-    * 
-      [!UICONTROL指標]: `Revenue`
+    * &#x200B;
+      [!UICONTROL 指標]&#x200B;: `Revenue`
     * [!UICONTROL Filter]:
-      * 
-        [!UICONTROL Include current retail year?]: `Yes`
+      * &#x200B;
+        [!UICONTROL Include current retail year?]&#x200B;: `Yes`
   * 指標`B`: `Orders`
-    * [!UICONTROL Metric]: `Number of orders`
+    * [!UICONTROL Metric]&#x200B;: `Number of orders`
     * [!UICONTROL Filter]:
-      * 
-        [!UICONTROL Include current retail year?]: `Yes`
+      * &#x200B;
+        [!UICONTROL Include current retail year?]&#x200B;: `Yes`
   * 指標`C`: `Avg order value`
-    * [!UICONTROL Metric]: `Avg order value`
+    * [!UICONTROL Metric]&#x200B;: `Avg order value`
     * [!UICONTROL Filter]:
-      * 
-        [!UICONTROL Include current retail year?]: `Yes`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL Interval]: `None`
-  * 
+      * &#x200B;
+        [!UICONTROL Include current retail year?]&#x200B;: `Yes`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Interval]&#x200B;: `None`
+  * &#x200B;
     [!UICONTROL Group by]: `Created\_at` (retail month)
-  * 
-    [!UICONTROL Chart type]: `Line`
+  * &#x200B;
+    [!UICONTROL Chart type]&#x200B;: `Line`
 
 * **小売カレンダーの概要（前年から月）**
   * 指標`A`: `Revenue`
-    * 
-      [!UICONTROL指標]: `Revenue`
+    * &#x200B;
+      [!UICONTROL 指標]&#x200B;: `Revenue`
     * [!UICONTROL Filter]:
-      * 
-        [!UICONTROL Include current retail year?]: `Yes`
+      * &#x200B;
+        [!UICONTROL Include current retail year?]&#x200B;: `Yes`
   * 指標`B`: `Orders`
     * [!UICONTROL Metric]：注文数
     * [!UICONTROL Filter]:
-      * 
-        [!UICONTROL Include current retail year?]: `Yes`
+      * &#x200B;
+        [!UICONTROL Include current retail year?]&#x200B;: `Yes`
   * 指標`C`: `Avg order value`
-    * [!UICONTROL Metric]: `Avg order value`
+    * [!UICONTROL Metric]&#x200B;: `Avg order value`
     * [!UICONTROL Filter]:
-      * 
-        [!UICONTROL Include current retail year?]: `Yes`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL Interval]: `None`
-  * 
+      * &#x200B;
+        [!UICONTROL Include current retail year?]&#x200B;: `Yes`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Interval]&#x200B;: `None`
+  * &#x200B;
     [!UICONTROL Group by]: `Created\_at` (retail month)
-  * 
-    [!UICONTROL Chart type]: `Line`
+  * &#x200B;
+    [!UICONTROL Chart type]&#x200B;: `Line`
 
 ## 次のステップ
 

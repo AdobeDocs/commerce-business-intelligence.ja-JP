@@ -41,7 +41,7 @@ ht-degree: 0%
 ---
 # [!DNL Zendesk] データが必要です
 
-[ アカウント  [!DNL Zendesk] を接続した後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。](../integrations/zendesk.md)
+[&#128279;](../integrations/zendesk.md)&#x200B; アカウント  [!DNL Zendesk] を接続した後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。
 
 このトピックでは、[!DNL Zendesk]から[!DNL Adobe Commerce Intelligence]に読み込むことができる主なデータテーブルについて説明します。これには、[!DNL Zendesk] データに関する追加ドキュメントへのリンクが含まれます。
 

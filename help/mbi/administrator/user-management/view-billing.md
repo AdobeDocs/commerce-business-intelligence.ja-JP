@@ -34,4 +34,4 @@ ht-degree: 0%
 ---
 # 請求情報
 
-アカウントの請求情報を表示、追加、変更するには、`Billing`権限が必要です。 [ ユーザーアカウントの作成時に、ユーザーごとに](../../administrator/user-management/user-management.md)権限が設定されます。 `Billing`権限が必要な場合は、アカウントの管理者にお問い合わせください。
+アカウントの請求情報を表示、追加、変更するには、`Billing`権限が必要です。 [&#x200B; ユーザーアカウントの作成時に、ユーザーごとに](../../administrator/user-management/user-management.md)権限が設定されます。 `Billing`権限が必要な場合は、アカウントの管理者にお問い合わせください。

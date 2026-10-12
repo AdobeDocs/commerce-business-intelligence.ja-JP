@@ -76,7 +76,7 @@ ht-degree: 0%
 |---|---|---|
 | `Number of returns` | リクエストされた返品数。 | `Operation`列：`entity_id`<br>`Operation`: `Count`<br>`Timestamp`列：`date requested` |
 | `Total returned amount` | 返された金額の合計。 | `Operation `列：`Return's total value`<br>`Operation`：合計<br>`Timestamp`列：要求日 |
-| `Average returned amount` | 返された金額の平均。 | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp`列：`date requested` |
+| `Average returned amount` | 返された金額の平均。 | `Operation`&#x200B;` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp`列：`date requested` |
 | `Average time to return` | 注文から返品までの平均時間。 | `Operation`列：注文の作成日から返品日までの秒数が要求された日<br>`Operation`: `Average`<br>`Timestamp`列：`date requested` |
 
 {style="table-layout:auto"}

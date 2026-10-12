@@ -51,7 +51,7 @@ ht-degree: 0%
 
 データベーステーブルには、変更可能な値を持つデータ列を含めることができます。 例えば、**orders** テーブルには、**status**&#x200B;という列がある場合があります。 注文が最初にデータベースに書き込まれると、ステータス列に値`pending`が含まれる場合があります。 注文は、この`pending`値で[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)にレプリケートされます。
 
-変更可能な列は、更新された値](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)に対して時間の経過とともに[再チェックする必要があります。 デフォルトでは、[!DNL Commerce Intelligence]は更新のたびに列を再チェックしますが、再チェックしてレプリケートするデータの量が多い場合、更新時間に悪影響を与える可能性があります。 Adobeでは、更新のたびにリチェックを実行するのではなく、リチェック頻度を日単位、週単位、月単位に設定することをお勧めします。
+変更可能な列は、更新された値[&#128279;](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)に対して時間の経過とともに再チェックする必要があります。 デフォルトでは、[!DNL Commerce Intelligence]は更新のたびに列を再チェックしますが、再チェックしてレプリケートするデータの量が多い場合、更新時間に悪影響を与える可能性があります。 Adobeでは、更新のたびにリチェックを実行するのではなく、リチェック頻度を日単位、週単位、月単位に設定することをお勧めします。
 
 ## 増分レプリケーション方法の使用
 
@@ -73,4 +73,4 @@ ht-degree: 0%
 
 ## まとめ
 
-これらの推奨事項を実装しても更新時間が遅いと思われる場合は、[ サポートチームにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+これらの推奨事項を実装しても更新時間が遅いと思われる場合は、[&#x200B; サポートチームにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

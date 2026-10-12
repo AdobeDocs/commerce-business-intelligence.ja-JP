@@ -43,7 +43,7 @@ ht-degree: 16%
 
 このトピックでは、取引顧客の解約を定義するのに役立つダッシュボードを設定する方法を示します。
 
-![解約率とリテンション指標を示す顧客解約ダッシュボード ](../../assets/churn-deashboard.png)
+![解約率とリテンション指標を示す顧客解約ダッシュボード &#x200B;](../../assets/churn-deashboard.png)
 
 この分析には、[高度な計算列](../data-warehouse-mgr/adv-calc-columns.md)が含まれています。
 
@@ -65,8 +65,8 @@ ht-degree: 16%
 * 定義を選択：結合された列
 * [!UICONTROL table]を選択：`customer_entity`
 * [!UICONTROL column]を選択：`Customer's lifetime number of orders`
-* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]: `Orders we count`
+* [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * `Seconds since created_at`
 * 定義を選択：`Age`
@@ -90,65 +90,65 @@ ht-degree: 16%
 
 * **最初のリピート注文確率**
 * 指標A：オールタイムのリピート注文
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * 指標B：オールタイム注文
 * [!UICONTROL Metric]：注文数
 
 * [!UICONTROL Formula]：最初のリピート注文確率
-* 
-  [!UICONTROL数式]: `A/B`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL 数式]&#x200B;: `A/B`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Scalar`
 
 * **注文から数か月が経過した場合に指定された注文確率を繰り返します**
 * 指標A：前回の注文から数か月単位で注文を繰り返す（非表示）
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * 指標B：最後の注文（注文から数か月単位）（非表示）
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * 指標C：常に繰り返し注文（非表示）
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
-* 
-  [!UICONTROL グループ化：]: `Independent`
+* &#x200B;
+  [!UICONTROL グループ化：]&#x200B;: `Independent`
 
 * 指標D：すべての時間の最終注文（非表示）
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
-* 
-  [!UICONTROL グループ化：]: `Independent`
+* &#x200B;
+  [!UICONTROL グループ化：]&#x200B;: `Independent`
 
 * [!UICONTROL Formula]：最初のリピート注文確率
-* 
-  [!UICONTROL数式]: `(C-A)/(C+D-A-B)`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL 数式]&#x200B;: `(C-A)/(C+D-A-B)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Months since previous order`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Months since previous order`
 * Show top.bottom: カテゴリ名で並べ替えられた上位24のカテゴリ
 
-* 
-  [!UICONTROL Chart type]: `Line`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 最初のリピート注文確率レポートは、リピート注文合計/注文の合計を表します。 あらゆる注文は、リピート注文を行う機会です。リピート注文の数は、実際に行う注文のサブセットです。
 
@@ -160,4 +160,4 @@ ht-degree: 16%
 
 すべてのレポートをまとめた後、必要に応じてダッシュボード上でレポートを整理できます。 その結果、ページの上部に画像が表示されます
 
-この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームに連絡したい場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+この分析の構築中に質問が発生した場合、または単にプロフェッショナルサービスチームに連絡したい場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

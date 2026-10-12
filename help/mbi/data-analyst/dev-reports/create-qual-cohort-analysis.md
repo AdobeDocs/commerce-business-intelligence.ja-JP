@@ -67,7 +67,7 @@ ht-degree: 0%
 
 `Report Builder`で`qualitative cohort` レポートを作成するには、Adobe アナリスト チームが必要なテーブルに[高度な計算列](../data-warehouse-mgr/creating-calculated-columns.md)を作成します。
 
-これらを作成するには、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を提出してください（この記事を参照してください）。 次の点に留意してください。
+これらを作成するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を提出してください（この記事を参照してください）。 次の点に留意してください。
 
 * コホート分析を実行する`metric`とその使用するテーブル （例：`Revenue`、`orders` テーブル上に構築）。
 
@@ -83,7 +83,7 @@ Adobeのアナリストチームが上記の質問に回答したら、レポー
 
 まず、分析する各`cohort`に対して、コホートに関心のある指標を追加します。 この例では、顧客の最初の注文から数か月後に行われた累積`Revenue`を`User's referral source`でセグメント化して表示します。 つまり、セグメントごとに1つの`Revenue`指標を追加し、特定のセグメントに対してフィルターを実行します。
 
-![定性コホート分析のアニメーション化デモ ](../../assets/qualcohort1.gif)
+![定性コホート分析のアニメーション化デモ &#x200B;](../../assets/qualcohort1.gif)
 
 次に、レポートの時間オプションを2つ変更する必要があります。
 
@@ -93,7 +93,7 @@ Adobeのアナリストチームが上記の質問に回答したら、レポー
 
 この例では、`Revenue`の`all time` ビューを見ています。 この後、一連のドットで終わる必要があります。
 
-![ コホートのグループ化と分析オプションのデモのアニメーション ](../../assets/qualcohort2.gif)
+![&#x200B; コホートのグループ化と分析オプションのデモのアニメーション &#x200B;](../../assets/qualcohort2.gif)
 
 第三に、`cohorts`を設定するように調整します。 Adobe アナリスト チームに指定した`cohort date`および`time interval`に基づいて、`cohort`の日付を実行するディメンションがアカウントに含まれています。 この例では、そのカスタムディメンションは`Months between this order and customer's first order date`と呼ばれます。 このディメンションを使用すると、次のことが可能になります。
 

@@ -41,7 +41,7 @@ ht-degree: 0%
 ---
 # [!DNL PrestaShop]を接続
 
-![PrestaShop ロゴ ](../../../assets/Prestashop-logo.png)
+![PrestaShop ロゴ &#x200B;](../../../assets/Prestashop-logo.png)
 
 優れたパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを特定したりするために、 [!DNL PrestaShop] データを[!DNL Commerce Intelligence]に接続すると、これらの質問に答えることができます。
 

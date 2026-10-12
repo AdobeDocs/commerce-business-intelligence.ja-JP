@@ -77,11 +77,11 @@ ht-degree: 0%
 
 ## `SaaS`統合
 
-![ サポートされている様々なプラットフォームを示すSaaS統合アイコン ](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
+![&#x200B; サポートされている様々なプラットフォームを示すSaaS統合アイコン &#x200B;](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
 
 `SaaS`統合は、[[!DNL Google Adwords]](../integrations/google-adwords.md)、[[!DNL Salesforce]](../integrations/salesforce.md)、[[!DNL Zendesk]](../integrations/zendesk.md)などのサービスです。 サードパーティデータはベンダーのサーバー上に存在するため、データベースのデータから直接アクセスすることはできません。
 
-通常、[!DNL Commerce Intelligence]で統合を設定するのは、アカウントの資格情報を入力するだけと同じくらい簡単です。 一部のサービスでは、認証を完了するためにAPI キーが必要になる場合があります。 必要な資格情報を生成する手順については、[統合セクション ](../integrations/integrations.md)を参照してください。
+通常、[!DNL Commerce Intelligence]で統合を設定するのは、アカウントの資格情報を入力するだけと同じくらい簡単です。 一部のサービスでは、認証を完了するためにAPI キーが必要になる場合があります。 必要な資格情報を生成する手順については、[統合セクション &#x200B;](../integrations/integrations.md)を参照してください。
 
 ## ファイルのアップロード
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 APIを使用するには、少し技術的な専門知識が必要です。小さなRubyまたはPHP スクリプトの作成とメンテナンスに慣れている人は、資格を持っているだけではありません。
 
-`Import API`の使用を開始する方法について詳しくは、[開発者サイト ](https://developer.adobe.com/commerce/services/reporting/)および[API キーの生成方法](https://developer.adobe.com/commerce/services/reporting/import-api/)を参照してください。
+`Import API`の使用を開始する方法について詳しくは、[開発者サイト &#x200B;](https://developer.adobe.com/commerce/services/reporting/)および[API キーの生成方法](https://developer.adobe.com/commerce/services/reporting/import-api/)を参照してください。
 
 ## 統合の追加
 
@@ -104,9 +104,9 @@ APIを使用するには、少し技術的な専門知識が必要です。小�
 * [テーブルの統合](../../../best-practices/consolidating-your-tables.md)
 * [データベースへのアクセスの制限](../../../administrator/account-management/restrict-db-access.md)
 
-**必要な統合が表示されませんか？** 一部の統合をアカウントに表示するには、アクティブ化する必要があります。 [!DNL Facebook]のようなものを探しているが、リストに記載されていない場合は、[ サポートチケットを送信](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)してください。
+**必要な統合が表示されませんか？** 一部の統合をアカウントに表示するには、アクティブ化する必要があります。 [!DNL Facebook]のようなものを探しているが、リストに記載されていない場合は、[&#x200B; サポートチケットを送信](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)してください。
 
-**統合のエラーステータスが表示される場合**、[ トラブルシューティングの節](https://support.magento.com/hc/en-us/sections/360003078151)を参照してヘルプを確認してください。
+**統合のエラーステータスが表示される場合**、[&#x200B; トラブルシューティングの節](https://support.magento.com/hc/en-us/sections/360003078151)を参照してヘルプを確認してください。
 
 ## 更新の正常性を監視する（オプション）
 

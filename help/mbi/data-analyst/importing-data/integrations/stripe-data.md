@@ -41,7 +41,7 @@ ht-degree: 0%
 ---
 # [!DNL Stripe] データが必要です
 
-[ アカウント  [!DNL Stripe] を接続した後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。](../integrations/stripe.md)
+[&#128279;](../integrations/stripe.md)&#x200B; アカウント  [!DNL Stripe] を接続した後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。
 
 このトピックでは、[!DNL Stripe]から[!DNL Commerce Intelligence]に読み込むことができる主なデータ テーブルについて説明します。 設定が完了すると、次の表がData Warehouseに作成されます。 各テーブルの属性について詳しくは、テーブル名の列のリンクをクリックします。
 

@@ -43,7 +43,7 @@ ht-degree: 0%
 ---
 # 生データの書き出し
 
-生データの書き出しを使用すると、Data Warehouseからレコードを書き出し、ダッシュボードの機能を強化している内容を詳しく確認できます。 また、生データの書き出しは、[ データの不一致を特定するのに役立ちます](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)。
+生データの書き出しを使用すると、Data Warehouseからレコードを書き出し、ダッシュボードの機能を強化している内容を詳しく確認できます。 また、生データの書き出しは、[&#x200B; データの不一致を特定するのに役立ちます](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)。
 
 生データの書き出しにより、関連する指標の非正規化と事前集計によって生成された追加の列とディメンションにアクセスできます。 例えば、`User's first order date`は、[!DNL Commerce Intelligence]のユーザーごとに書き出すことができるディメンションですが、データベースでは使用できない場合があります。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 テーブルを[!UICONTROL Manage Data] タブからエクスポートする場合は、[管理者](../administrator/user-management/user-management.md)権限が必要です。
 
-1. **[!UICONTROL Manage Data** > ** データの書き出し&#x200B;**> **Raw データの書き出し]**&#x200B;をクリックします。
+1. **[!UICONTROL Manage Data** > **&#x200B; データの書き出し&#x200B;**> **Raw データの書き出し]**&#x200B;をクリックします。
 1. 最近作成したデータ書き出しの`Export List`が存在する場合は、表示されます。 **[!UICONTROL Add Export]**&#x200B;をクリックして書き出しを作成します。
 1. `New Raw Data Export` ダイアログが表示されます。 ここでは、列とフィルターを選択または選択解除して、書き出しをカスタマイズできます。
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 プロセス全体をチャートレベルで確認できます。
 
-![ チャートから生データを書き出すアニメーションのデモ ](../assets/Chart-level_export.gif)
+![&#x200B; チャートから生データを書き出すアニメーションのデモ &#x200B;](../assets/Chart-level_export.gif)
 
 ## 手順2：書き出しのダウンロード {#download}
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 書き出しの準備ができているかどうかを確認するには、画面の右上隅にある「**[!UICONTROL Raw Data Exports]**」をクリックします。 「**[!UICONTROL Download]**」をクリックして、書き出しの圧縮された`.csv` ファイルをダウンロードします。
 
-![書き出されたCSV ファイルのダウンロードをアニメーション化したデモ ](../assets/Downloading_export.gif)
+![書き出されたCSV ファイルのダウンロードをアニメーション化したデモ &#x200B;](../assets/Downloading_export.gif)
 
 ## 手順3：履歴エクスポートへのアクセス {#historical}
 

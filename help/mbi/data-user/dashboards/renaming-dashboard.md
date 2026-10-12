@@ -52,4 +52,4 @@ ht-degree: 0%
 
 例：
 
-![ ダッシュボード名を変更](../../assets/renaming-dboard.gif)
+![&#x200B; ダッシュボード名を変更](../../assets/renaming-dboard.gif)

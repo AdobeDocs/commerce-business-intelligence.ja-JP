@@ -51,9 +51,9 @@ ht-degree: 0%
 >
 >[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
-![Google e コマース ロゴ ](../../../assets/google-ecommerce-logo.png)
+![Google e コマース ロゴ &#x200B;](../../../assets/google-ecommerce-logo.png)
 
-トラフィックと注文が常に発生しているため、顧客に効果的にリーチし、獲得することができます。 しかし、最も価値のある紹介チャネルは何でしょうか？ あるソースから取得した顧客と別のソースから取得した顧客の平均生涯価値は何ですか？ [!DNL Google ECommerce]から[!DNL Commerce Intelligence]までの注文紹介ソースデータを接続することで、[最も価値のあるマーケティングチャネル ](../../../data-analyst/analysis/most-value-source-channel.md)を特定するのに役立つ分析を作成できます。
+トラフィックと注文が常に発生しているため、顧客に効果的にリーチし、獲得することができます。 しかし、最も価値のある紹介チャネルは何でしょうか？ あるソースから取得した顧客と別のソースから取得した顧客の平均生涯価値は何ですか？ [!DNL Google ECommerce]から[!DNL Commerce Intelligence]までの注文紹介ソースデータを接続することで、[最も価値のあるマーケティングチャネル &#x200B;](../../../data-analyst/analysis/most-value-source-channel.md)を特定するのに役立つ分析を作成できます。
 
 [!DNL Google ECommerce]資格情報を[!DNL Commerce Intelligence]に入力して開始します。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
    複数のプロファイルがあり、そのプロファイルを特定するヘルプが必要な場合は、以下の「[!DNL Google Analytics] プロファイルを複数**接続」セクションを参照してください。
 
-   ![複数のGoogle Analytics プロファイルを接続するオプションを示すフォーム ](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
+   ![複数のGoogle Analytics プロファイルを接続するオプションを示すフォーム &#x200B;](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
 
 1. 変更は自動的に保存されるので、完了したら&#x200B;**[!UICONTROL Back to Connections]**&#x200B;をクリックします。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ## [!DNL Google ECommerce]を[!DNL Commerce Intelligence]から切断しています {#disconnect}
 
-1. [!DNL Google Analytics] [ アカウント設定](https://www.google.com/account/about/?hl=en) ページにアクセスします。
+1. [!DNL Google Analytics] [&#x200B; アカウント設定](https://www.google.com/account/about/?hl=en) ページにアクセスします。
 1. `Security` セクションで、`Authorizing`個のアプリケーションとサイトの横にある&#x200B;**[!UICONTROL edit]**&#x200B;をクリックします。
 1. [!DNL Commerce Intelligence]の横にある&#x200B;**[!UICONTROL revoke access]**&#x200B;をクリックします。
 
@@ -95,6 +95,6 @@ ht-degree: 0%
 
 * [期待される [!DNL Google ECommerce]  データ](../integrations/google-ecommerce-data.md)
 * [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
-* [ [!DNL Google ECommerce]  トラッキングを設定しています](https://support.google.com/analytics/answer/1009612?hl=en)
+* [&#x200B; [!DNL Google ECommerce]  トラッキングを設定しています](https://support.google.com/analytics/answer/1009612?hl=en)
 * [最も価値のある獲得ソースとチャネルの発見](../../analysis/most-value-source-channel.md)
 * [広告キャンペーンのROIを高める](../../analysis/roi-ad-camp.md)

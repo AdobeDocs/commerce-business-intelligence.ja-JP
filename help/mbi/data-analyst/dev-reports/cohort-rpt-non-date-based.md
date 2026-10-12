@@ -76,7 +76,7 @@ ht-degree: 1%
 1. コホートのファーストアクション時間範囲
 1. コホート発生後の時間範囲
 
-![ コホートグループ ](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
+![&#x200B; コホートグループ &#x200B;](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
 
 
 
@@ -88,7 +88,7 @@ ht-degree: 1%
 
 与えられた特性のすべての結果を表示できます。 この結果、多数の`cohorts`が発生する可能性があるため、必要な特定の`cohorts` （`Customer's first order GA source`で使用できるさまざまな値に対応）を選択できます。
 
-![ コホートグループ ](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
+![&#x200B; コホートグループ &#x200B;](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
 
 #### 3. `Action timestamp`
 

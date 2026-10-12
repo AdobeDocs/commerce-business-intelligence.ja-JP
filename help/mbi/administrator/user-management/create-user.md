@@ -46,7 +46,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >アカウントの請求情報を表示、追加、変更するには、`Billing`権限が必要です。 [ ユーザーアカウントの作成時に、ユーザーごとに](../../administrator/user-management/user-management.md)権限が設定されます。 `Billing`権限が必要な場合は、アカウントの管理者にお問い合わせください。
+   >アカウントの請求情報を表示、追加、変更するには、`Billing`権限が必要です。 [&#x200B; ユーザーアカウントの作成時に、ユーザーごとに](../../administrator/user-management/user-management.md)権限が設定されます。 `Billing`権限が必要な場合は、アカウントの管理者にお問い合わせください。
 
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
 
@@ -62,8 +62,8 @@ ht-degree: 0%
 
 ## 招待状を再送信
 
-招待を再送信する必要がある場合は、[ ログインページ ](https://dashboard.rjmetrics.com/v2/session/create)で「**[!UICONTROL Forgot?]**」をクリックし、新規ユーザーのメールアドレスを入力して「**[!UICONTROL Reset Password]**」をクリックします。 これにより、招待が再送信され、ユーザーがログインできるようになります。
+招待を再送信する必要がある場合は、[&#x200B; ログインページ &#x200B;](https://dashboard.rjmetrics.com/v2/session/create)で「**[!UICONTROL Forgot?]**」をクリックし、新規ユーザーのメールアドレスを入力して「**[!UICONTROL Reset Password]**」をクリックします。 これにより、招待が再送信され、ユーザーがログインできるようになります。
 
 >[!IMPORTANT]
 >
->各アカウントには契約数のライセンス、つまりシートがあります。 上限に達した場合、または詳細を知りたい場合は、[ サポートチケットを送信してください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+>各アカウントには契約数のライセンス、つまりシートがあります。 上限に達した場合、または詳細を知りたい場合は、[&#x200B; サポートチケットを送信してください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

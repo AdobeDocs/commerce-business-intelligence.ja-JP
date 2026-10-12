@@ -47,14 +47,14 @@ ht-degree: 0%
 >
 >[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
-![Facebook広告のロゴ ](../../../assets/facebook-ads-logo.png)
+![Facebook広告のロゴ &#x200B;](../../../assets/facebook-ads-logo.png)
 
-調査を行い、広告を作成し、[!DNL Facebook]にキャンペーンを開始しました。 広告費のデータを分析し、そのお金が効果的に使われているかどうかを確認する必要があります。 広告費データを使用すると、キャンペーンから獲得したユーザーの広告コストと顧客生涯価値（CLV） ](../../../data-analyst/analysis/roi-ad-camp.md)を組み合わせることで、[ キャンペーン ROIを測定できます。
+調査を行い、広告を作成し、[!DNL Facebook]にキャンペーンを開始しました。 広告費のデータを分析し、そのお金が効果的に使われているかどうかを確認する必要があります。 広告費データを使用すると、キャンペーンから獲得したユーザーの広告コストと顧客生涯価値（CLV） [&#128279;](../../../data-analyst/analysis/roi-ad-camp.md)を組み合わせることで、 キャンペーン ROIを測定できます。
 
 [!DNL Facebook Ad] データを[!DNL Commerce Intelligence]に接続するには、次の簡単な3 ステップの手順を実行します。
 
-1. [ [!DNL Facebook] を [!DNL Commerce Intelligence]のデータソースとして追加](#stepone)
-1. [ [!DNL Facebook Ads]  データへの [!DNL Commerce Intelligence]  アクセスを許可する](#steptwo)
+1. [&#x200B; [!DNL Facebook] を [!DNL Commerce Intelligence]のデータソースとして追加](#stepone)
+1. [&#x200B; [!DNL Facebook Ads]  データへの [!DNL Commerce Intelligence]  アクセスを許可する](#steptwo)
 1. [データを引き出す [!DNL Facebook Ads]  アカウントを選択](#stepthree)
 
 ## [!DNL Facebook]を[!DNL Commerce Intelligence]のデータソースとして追加 {#stepone}
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 **[!DNL Facebook Authorize]**&#x200B;をクリックすると、小さなポップアップウィンドウが表示されます。
 
-Commerce Intelligence](../../../assets/Facebook_Access_Popup.png)の![Facebook アクセス権限ダイアログ
+Commerce Intelligence![&#128279;](../../../assets/Facebook_Access_Popup.png)のFacebook アクセス権限ダイアログ
 
 次の一連の手順に従って、[!DNL Commerce Intelligence]がパブリック プロファイル、[!DNL Facebook Ads]および関連する統計からデータにアクセスできるようにします。 続行するには、次の手順で&#x200B;**[!UICONTROL OK]**&#x200B;をクリックします。
 
@@ -76,7 +76,7 @@ Commerce Intelligence](../../../assets/Facebook_Access_Popup.png)の![Facebook �
 
 1. 認証が完了すると、データを取得する[!DNL Facebook Ads] アカウントを選択するように求められます。 `Connect`列のチェックボックスをクリックして、目的のアカウントを選択します。
 
-   ![Facebook広告アカウント選択インターフェイス ](../../../assets/Facebook_Ad_Accounts.png)
+   ![Facebook広告アカウント選択インターフェイス &#x200B;](../../../assets/Facebook_Ad_Accounts.png)
 
 1. **[!UICONTROL Save Connections]**&#x200B;をクリックします。
 
@@ -89,10 +89,10 @@ Commerce Intelligence](../../../assets/Facebook_Access_Popup.png)の![Facebook �
 ## 関連
 
 * [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
-* [ [!DNL Google Adwords]  アカウントを接続](../integrations/google-ecommerce.md)
-* [ [!DNL Google eCommerce]経由で注文の紹介ソースを追跡](../integrations/google-ecommerce.md)
+* [&#x200B; [!DNL Google Adwords]  アカウントを接続](../integrations/google-ecommerce.md)
+* [&#x200B; [!DNL Google eCommerce]経由で注文の紹介ソースを追跡](../integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースの追跡](../../analysis/google-track-user-acq.md)
 * [データベース内のユーザーデバイス、ブラウザー、OS データの追跡](../../analysis/track-usr-dev-browser.md)
 * [最も価値のある獲得ソースとチャネルの発見](../../analysis/most-value-source-channel.md)
 * [広告キャンペーンのROIを高める](../../analysis/roi-ad-camp.md)
-* [ [!DNL Google Analytics] UTM アトリビューションの仕組み](../../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics] UTM アトリビューションの仕組み](../../analysis/utm-attributes.md)

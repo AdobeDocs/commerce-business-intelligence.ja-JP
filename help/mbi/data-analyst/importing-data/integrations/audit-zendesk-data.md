@@ -45,11 +45,11 @@ ht-degree: 0%
 ---
 # Zendesk データの監査
 
-[[!DNL Zendesk]  データ ](../integrations/exp-zendesk-data.md)で何か変なものを見つけましたか？ 課題を特定するには、データを分析する必要があります。 これは、[!DNL Zendesk] データをダウンロード可能なファイルに書き出すことによって実行できます。
+[[!DNL Zendesk]  データ &#x200B;](../integrations/exp-zendesk-data.md)で何か変なものを見つけましたか？ 課題を特定するには、データを分析する必要があります。 これは、[!DNL Zendesk] データをダウンロード可能なファイルに書き出すことによって実行できます。
 
 ## データ書き出しの有効化
 
-データの書き出しは、現在[!DNL Zendesk] アカウントすべてに対して有効になっていません。 この機能を有効にするには、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信し、[!DNL Zendesk] サブドメイン名を指定します。
+データの書き出しは、現在[!DNL Zendesk] アカウントすべてに対して有効になっていません。 この機能を有効にするには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信し、[!DNL Zendesk] サブドメイン名を指定します。
 
 >[!NOTE]
 >
@@ -70,6 +70,6 @@ ht-degree: 0%
 
    このダウンロードリンクは少なくとも3日間有効です。
 
-このプロセスでは、現在の[!DNL Zendesk] アカウントに保存されているすべての情報（コメント付き）、ユーザーデータ、アカウントデータを含むXML ファイルを作成します。 この時点で、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信できます（このファイルを添付してください）。 そのため、データを詳しく見てみましょう。 ファイルが大きすぎる場合は、[!DNL Dropbox]または[!DNL Google Drive]を介して[!DNL Commerce Intelligence] チームと共有します。
+このプロセスでは、現在の[!DNL Zendesk] アカウントに保存されているすべての情報（コメント付き）、ユーザーデータ、アカウントデータを含むXML ファイルを作成します。 この時点で、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信できます（このファイルを添付してください）。 そのため、データを詳しく見てみましょう。 ファイルが大きすぎる場合は、[!DNL Dropbox]または[!DNL Google Drive]を介して[!DNL Commerce Intelligence] チームと共有します。
 
-[!DNL Zendesk] ファイルの書き出しについて詳しくは、公式の[[!DNL Zendesk] 書き出しドキュメント ](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file)を参照してください。
+[!DNL Zendesk] ファイルの書き出しについて詳しくは、公式の[[!DNL Zendesk] 書き出しドキュメント &#x200B;](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file)を参照してください。

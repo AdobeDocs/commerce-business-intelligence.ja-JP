@@ -38,7 +38,7 @@ ht-degree: 0%
 
 （正規表現の構文ヘルプを使用）
 
-[[!DNL Google Analytics]  アカウント ](../../data-analyst/importing-data/integrations/google-analytics.md)を接続したら、[!DNL Google Analytics] データを使用してグラフを作成できます。
+[[!DNL Google Analytics]  アカウント &#x200B;](../../data-analyst/importing-data/integrations/google-analytics.md)を接続したら、[!DNL Google Analytics] データを使用してグラフを作成できます。
 
 ## [!DNL Google Analytics] グラフを作成
 

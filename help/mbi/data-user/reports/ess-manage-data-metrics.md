@@ -47,9 +47,9 @@ ht-degree: 0%
 
 指標は測定です。 SQL構造とデータベース構造では、指標は変数期間にわたるストアド・クエリに似ています。
 
-[!DNL Commerce Intelligence]では、指標を使用して[ グラフを作成](../../data-user/reports/ess-rpt-build-visual.md)できます。 例えば、指標`revenue`は注文の合計数です。 指標`average customer revenue per order`は、平均的な顧客が注文に費やした金額です。
+[!DNL Commerce Intelligence]では、指標を使用して[&#x200B; グラフを作成](../../data-user/reports/ess-rpt-build-visual.md)できます。 例えば、指標`revenue`は注文の合計数です。 指標`average customer revenue per order`は、平均的な顧客が注文に費やした金額です。
 
-レポートで使用する場合、指標は指定された期間にわたって分析され、異なるカテゴリによって[ フィルタリングまたはセグメント化](../../best-practices/segment-filter.md)されます。 性別でグループ化された平均顧客売上の分析を検討してください。この場合、`average customer revenue per order`が指標で、性別がグループ化されます。
+レポートで使用する場合、指標は指定された期間にわたって分析され、異なるカテゴリによって[&#x200B; フィルタリングまたはセグメント化](../../best-practices/segment-filter.md)されます。 性別でグループ化された平均顧客売上の分析を検討してください。この場合、`average customer revenue per order`が指標で、性別がグループ化されます。
 
 ## 指標の定義 {#define}
 
@@ -78,13 +78,13 @@ ht-degree: 0%
 
    * 操作を実行する列を選択します。 例えば、総収益を求める場合は、`order total`列に対して総計演算を実行します。
 
-     既存の指標を編集する場合は、このセクションで指標の操作テーブル ](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md)を[変更することもできます。
+     既存の指標を編集する場合は、このセクションで指標の操作テーブル [&#128279;](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md)を変更することもできます。
 
    * 指標のトレンド分析に使用できる日付ディメンションを選択します。 例：`order date`。
 
 ## フィルターの追加 {#filters}
 
-`Filter` セクションでは、フィルターを作成するか、[保存されたフィルターセット ](../../data-user/reports/ess-manage-data-filters.md)を指標に適用できます。
+`Filter` セクションでは、フィルターを作成するか、[保存されたフィルターセット &#x200B;](../../data-user/reports/ess-manage-data-filters.md)を指標に適用できます。
 
 `average order revenue`指標の場合、ストアの設定中に行われた可能性のあるテスト注文を含めたくありません。これにより、不正確な結果が得られます。 フィルターセットを適用して、これらの注文をデータセットから削除できます。 フィルターを作成すると、この指標を使用して作成されたすべてのチャートに適用されます。
 

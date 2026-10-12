@@ -55,7 +55,7 @@ ht-degree: 0%
 >
 >[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
-![Google Analyticsのロゴ ](../../../assets/google-analytics-logo.png)
+![Google Analyticsのロゴ &#x200B;](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics]は、インターネット上で最も広く使用されているWeb分析サービスです。 Web サイトに[!DNL Google Analytics]を実装すると、訪問者によるサイトの利用状況、魅力的なコンテンツ、訪問者の離脱などを追跡できます。 [!DNL Google Analytics Warehoused]は、既存の[!DNL Google Analytics]統合とは別の統合です。 既存の[!DNL Google Analytics]統合のライブフィードとは異なる[!DNL Google Analytics] データがData Warehouseに含まれているため、より良い分析が可能です。 [!DNL Commerce Intelligence]でこれらの指標を他のデータと一緒に分析することで、サイトの全体的な健全性と使いやすさが向上します。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused]は`Premium`統合です。 この統合をサブスクリプションに追加する場合は、[ サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
+>[!DNL Google Analytics Warehoused]は`Premium`統合です。 この統合をサブスクリプションに追加する場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
 
 1. **[!UICONTROL Admin** > **Integrations]**&#x200B;の下の`Connections` ページに移動します。
 1. 右側にある「**[!UICONTROL Add an Integration]**」をクリックします。
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ## [!DNL Google Analytics Warehoused]を[!DNL Commerce Intelligence]から切断しています {#disconnect}
 
-1. [!DNL Google Analytics] [ アカウント設定](https://myaccount.google.com/intro) ページにアクセスします。
+1. [!DNL Google Analytics] [&#x200B; アカウント設定](https://myaccount.google.com/intro) ページにアクセスします。
 1. 「`Security`」セクションで、`Authorizing` アプリケーションとサイトの横にある「**[!UICONTROL edit]**」をクリックします。
 1. [!DNL Commerce Intelligence]の横にある&#x200B;**[!UICONTROL revoke access]**&#x200B;をクリックします。
 
@@ -104,4 +104,4 @@ ht-degree: 0%
 * [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [接続中 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [web サイトのアクティビティと顧客のコンバージョン率の分析](../../analysis/web-act-cust-conversion.md)
-* [ [!DNL Google Analytics] Cookieを使用したユーザー獲得データの追跡](../../analysis/google-track-user-acq.md)
+* [&#x200B; [!DNL Google Analytics] Cookieを使用したユーザー獲得データの追跡](../../analysis/google-track-user-acq.md)

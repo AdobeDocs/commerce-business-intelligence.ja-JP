@@ -40,4 +40,4 @@ ht-degree: 0%
 
 例：
 
-![ ダッシュボードを終了](../../assets/Leave_Dashboard.gif)
+![&#x200B; ダッシュボードを終了](../../assets/Leave_Dashboard.gif)

@@ -43,15 +43,15 @@ ht-degree: 0%
 
 ## このトピックでは
 
-* [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
-* [ [!DNL Commerce Intelligence]の [!DNL MySQL]  ユーザーを作成](#steptwo)
+* [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+* [&#x200B; [!DNL Commerce Intelligence]の [!DNL MySQL]  ユーザーを作成](#steptwo)
 * [接続情報を [!DNL Commerce Intelligence]に入力](#stepthree)
 
 ## に移動
 
 * [`SSH tunnel`経由で[!DNL MySQL]](../integrations/mysql-via-ssh-tunnel.md)
 * [SSH ホスト キーの検証](../integrations/ssh-host-key-verification.md)
-* [ [!DNL cPanel]経由で[!DNL MySQL]](../integrations/mysql-via-cpanel.md)
+* [&#x200B; [!DNL cPanel]経由で[!DNL MySQL]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >

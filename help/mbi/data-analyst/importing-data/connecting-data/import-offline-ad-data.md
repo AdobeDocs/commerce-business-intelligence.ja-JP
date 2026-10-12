@@ -64,5 +64,5 @@ ht-degree: 0%
 
 ## 関連
 
-* [ [!DNL AdWords]  データを接続](../integrations/google-adwords.md)
+* [&#x200B; [!DNL AdWords]  データを接続](../integrations/google-adwords.md)
 * [広告キャンペーンのROIを高める](../../analysis/roi-ad-camp.md)

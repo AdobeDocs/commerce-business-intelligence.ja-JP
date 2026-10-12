@@ -82,21 +82,21 @@ ht-degree: 0%
 
 1. **Googleのチャネルグループ化のマッピングをアップロード**
 
-   Adobe Commerceは、デフォルトのグループ化がファイルとしてマッピングされたテーブルを作成し、[ ダウンロード ](../../assets/ga-channel-mapping.csv)できます。
+   Adobe Commerceは、デフォルトのグループ化がファイルとしてマッピングされたテーブルを作成し、[&#x200B; ダウンロード &#x200B;](../../assets/ga-channel-mapping.csv)できます。
 
    [!DNL Google Analytics] Proで独自のチャネルを作成している場合は、ファイルを[!DNL Commerce Intelligence]にアップロードする前に、特定のルールをマッピングテーブルに追加する必要があります。
 
-   [ ファイルのアップロード ](../importing-data/connecting-data/using-file-uploader.md)としてData Warehouseに取り込みます。
+   [&#x200B; ファイルのアップロード &#x200B;](../importing-data/connecting-data/using-file-uploader.md)としてData Warehouseに取り込みます。
 
-   ![ プライマリキー設定を示すData Warehouse Manager インターフェイス ](../../assets/Setting_Primary_Keys.png)
+   ![&#x200B; プライマリキー設定を示すData Warehouse Manager インターフェイス &#x200B;](../../assets/Setting_Primary_Keys.png)
 
 1. **[!DNL Google ECommerce]とマッピング ファイル アップロード**&#x200B;の関係を確立します
 
-   [!DNL Google ECommerce]とマッピングテーブルの関係を確立するには、[ サポートリクエスト ](../../guide-overview.md#Submitting-a-Support-Ticket)をData Analyst チームに送信し、このトピックを参照してください。 アナリストは、ECommerce テーブルに&#x200B;**Channel**&#x200B;という新しい計算列を作成します。 **完全な更新サイクル**&#x200B;の後、この列は`Filter`または`Group by`で使用できるようになります。
+   [!DNL Google ECommerce]とマッピングテーブルの関係を確立するには、[&#x200B; サポートリクエスト &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket)をData Analyst チームに送信し、このトピックを参照してください。 アナリストは、ECommerce テーブルに&#x200B;**Channel**&#x200B;という新しい計算列を作成します。 **完全な更新サイクル**&#x200B;の後、この列は`Filter`または`Group by`で使用できるようになります。
 
 これで[!DNL Google Analytics Channel]個のグループがData Warehouseに追加されました。つまり、新しい視点でデータを分析できます。
 
-![ チャネル別の注文数指標のセグメント化](../../assets/GA_Channel_Gif.gif)
+![&#x200B; チャネル別の注文数指標のセグメント化](../../assets/GA_Channel_Gif.gif)
 
 この例では、**注文数**&#x200B;指標を&#x200B;**チャネル**&#x200B;でセグメント化して簡単に始めました。 新しい列をテストして、[!DNL Google Analytics Channel] データでどのような傾向を特定できるかを確認します。
 

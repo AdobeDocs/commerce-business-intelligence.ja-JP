@@ -39,7 +39,7 @@ ht-degree: 0%
 ---
 # 更新サイクルの進捗状況
 
-[!DNL Adobe Commerce Intelligence] ダッシュボードにログインすると、前回の更新サイクルのステータスを確認する方法がいくつかあります。 それはすべて、お持ちの[ ユーザー権限](../administrator/user-management/user-management.md)の種類によって異なります。
+[!DNL Adobe Commerce Intelligence] ダッシュボードにログインすると、前回の更新サイクルのステータスを確認する方法がいくつかあります。 それはすべて、お持ちの[&#x200B; ユーザー権限](../administrator/user-management/user-management.md)の種類によって異なります。
 
 ## 更新サイクルのステータスを確認する必要があるのはなぜですか？
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 `Read-only`人のユーザーがダッシュボードにログインし、ページの右上にあるアイコンにカーソルを合わせると、データが最近更新された回数を確認できます。 これは、最後のデータポイントがいつプルされたかを示しています。
 
-![ インターフェイス ](../../mbi/assets/last-success-data.png)に表示されたデータ更新の最後の成功したタイムスタンプ
+![&#x200B; インターフェイス &#x200B;](../../mbi/assets/last-success-data.png)に表示されたデータ更新の最後の成功したタイムスタンプ
 
 ## [!UICONTROL Admin] ユーザー
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 詳細については、管理者ユーザーは&#x200B;**[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**&#x200B;をクリックできます。
 
-![接続の詳細と更新ステータスを表示するデータ統合の管理ページ ](../../mbi/assets/detail-manage-data-integrations.png)
+![接続の詳細と更新ステータスを表示するデータ統合の管理ページ &#x200B;](../../mbi/assets/detail-manage-data-integrations.png)
 
 このページには、現在の更新ステータスと、最後に完了した更新の時刻が表示されます。
 
@@ -98,4 +98,4 @@ curl -sS -H "X-RJM-API-Key: <EXPORT-API-KEY>" \
 }
 ```
 
-パラメーター、認証、エラー、レート制限については、開発者ドキュメントの[ サイクルステータス APIの更新](https://developer.adobe.com/commerce/services/reporting/update-cycle/)を参照してください。
+パラメーター、認証、エラー、レート制限については、開発者ドキュメントの[&#x200B; サイクルステータス APIの更新](https://developer.adobe.com/commerce/services/reporting/update-cycle/)を参照してください。

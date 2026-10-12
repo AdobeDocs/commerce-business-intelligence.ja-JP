@@ -45,7 +45,7 @@ ht-degree: 0%
 >
 >[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
-![WooCommerce ロゴ ](../../../assets/WooCommerce-Logo.jpg)
+![WooCommerce ロゴ &#x200B;](../../../assets/WooCommerce-Logo.jpg)
 
 優れたパフォーマンスを確認したり、最も価値のある獲得ソースやチャネルを特定したりするために、 [!DNL WooCommerce] データを[!DNL Commerce Intelligence]に接続すると、これらの質問に答えることができます。
 

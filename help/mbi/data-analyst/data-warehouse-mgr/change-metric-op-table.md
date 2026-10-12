@@ -49,12 +49,12 @@ ht-degree: 0%
 1. `operational` テーブルを切り替える指標の横にある&#x200B;**[!UICONTROL Edit]**&#x200B;をクリックします。
 1. エディターで、**[!UICONTROL Change]**&#x200B;をクリックします。
 
-   操作テーブルの設定を示す![指標の定義ページ ](../../assets/change-metrics-1.png)
+   操作テーブルの設定を示す![指標の定義ページ &#x200B;](../../assets/change-metrics-1.png)
 1. この指標のベースとなる新しいテーブルを選択します。
 1. 既存のデータディメンションを、新しいテーブル内の対応するデータディメンションに一致させます。 例えば、`User's registration date`という列がある場合は、新しいテーブルのどの列に同じ日付データが記録されているかを選択するだけです。 （新しいテーブルに一致する列がない場合は、次の手順を参照してください）
 
-   ![使用可能なテーブルを表示するテーブル選択ドロップダウン ](../../assets/change-metrics-2.png)
+   ![使用可能なテーブルを表示するテーブル選択ドロップダウン &#x200B;](../../assets/change-metrics-2.png)
 
-1. 新しいテーブルに一致する列がない場合は、**データテーブルに作成するか、[!DNL Commerce Intelligence]によって作成された計算列またはディメンションである[ サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。**&#x200B;指標&#x200B;**からディメンションを**&#x200B;削除することもできます。 不要になったディメンションを削除するには、指標のエディターに戻り、`Dimensions`で削除するディメンションを選択するだけです。
+1. 新しいテーブルに一致する列がない場合は、**データテーブルに作成するか、[!DNL Commerce Intelligence]によって作成された計算列またはディメンションである[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。**&#x200B;指標&#x200B;**からディメンションを**&#x200B;削除することもできます。 不要になったディメンションを削除するには、指標のエディターに戻り、`Dimensions`で削除するディメンションを選択するだけです。
 
    ![業務列選択ドロップダウンメニュー](../../assets/change-metrics-3.png)

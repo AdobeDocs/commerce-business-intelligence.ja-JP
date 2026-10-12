@@ -55,7 +55,7 @@ ht-degree: 13%
 
 `Data Warehouse Views`機能は、既存のテーブルを変更するか、SQLを使用して複数のテーブルを結合または統合することで、新しいウェアハウステーブルを作成する方法です。 `Data Warehouse View`が作成され、更新サイクルで処理されると、次に示すように、`Data Warehouse Views` ドロップダウンの下に新しいテーブルとしてData Warehouseに入力されます。
 
-テーブル管理オプションを表示する![Data Warehouse インターフェイス ](../../assets/Data_Warehouse.png)
+テーブル管理オプションを表示する![Data Warehouse インターフェイス &#x200B;](../../assets/Data_Warehouse.png)
 
 ここから、新しいビューは他のテーブルと同様に機能し、新しい計算列を作成したり、その上に指標やレポートを構築したりできます。
 
@@ -67,7 +67,7 @@ SQLに精通している場合、これらの統合例では両方とも`UNION`�
 
 次に示すように、**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**&#x200B;に移動して、新しい`Data Warehouse Views`を作成し、既存のビューを削除できます。
 
-カスタムビュー設定を示す![Data Warehouse ビューセクション ](../../assets/Data_Warehouse_Views.png)
+カスタムビュー設定を示す![Data Warehouse ビューセクション &#x200B;](../../assets/Data_Warehouse_Views.png)
 
 ここから、次のサンプル手順に従ってビューを作成できます。
 
@@ -117,7 +117,7 @@ SQLに精通している場合、これらの統合例では両方とも`UNION`�
 
 [!DNL Facebook]と[!DNL Google AdWords]の両方のキャンペーンを含む単一の広告費テーブルを作成するには、SQL クエリを記述し、`UNION ALL`関数を使用する必要があります。 `UNION ALL` ステートメントは、多くの場合、各クエリの結果を単一の出力に追加しながら、複数の異なるSQL クエリを組み合わせるために使用されます。
 
-PostgreSQL [ ドキュメント ](https://www.postgresql.org/docs/8.3/queries-union.html)に記載されているように、`UNION` ステートメントには言及する価値があるいくつかの要件があります。
+PostgreSQL [&#x200B; ドキュメント &#x200B;](https://www.postgresql.org/docs/8.3/queries-union.html)に記載されているように、`UNION` ステートメントには言及する価値があるいくつかの要件があります。
 
 * すべてのクエリは同じ数の列を返す必要があります
 * 対応する列のデータ型は同じである必要があります
@@ -172,7 +172,7 @@ PostgreSQL [ ドキュメント ](https://www.postgresql.org/docs/8.3/queries-un
 
 **追加のヘルプをお探しですか？**
 
-SQLの書き込みと`Data Warehouse Views`の作成は、テクニカルサポートには含まれていません。 ただし、[ サービスチーム ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)は、ビューの作成に関するサポートを提供しています。 新しいデータベースを使用して従来のデータベースを移行し、特定の分析のために単一のData Warehouse ビューを作成するなど、あらゆる面でサポート チームがサポートします。
+SQLの書き込みと`Data Warehouse Views`の作成は、テクニカルサポートには含まれていません。 ただし、[&#x200B; サービスチーム &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)は、ビューの作成に関するサポートを提供しています。 新しいデータベースを使用して従来のデータベースを移行し、特定の分析のために単一のData Warehouse ビューを作成するなど、あらゆる面でサポート チームがサポートします。
 
 通常、同様に構造化された2 ～ 3個のテーブルを統合する目的で新しい`Data Warehouse View`を作成するには、5時間のサービス時間が必要です。これは、約1,250 ドルの作業に相当します。 しかし、以下は、必要な投資を増やす可能性のあるいくつかの一般的な要因です。
 

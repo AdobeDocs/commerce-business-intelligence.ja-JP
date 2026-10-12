@@ -45,12 +45,12 @@ ht-degree: 0%
 >
 >[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
-![Stripeのロゴ ](../../../assets/stripe-logo.png)
+![Stripeのロゴ &#x200B;](../../../assets/stripe-logo.png)
 
 [!DNL Stripe]を使用すると、ビジネスの支払いと請求書のデータを管理および追跡できます。 [!DNL Stripe] アカウントを[!DNL Commerce Intelligence]に接続するには、次の簡単な2 ステップの手順を実行します。
 
-1. [ [!DNL Stripe] を [!DNL Commerce Intelligence]のデータソースとして追加](#stepone)
-1. [ [!DNL Stripe]  データへの [!DNL Commerce Intelligence]  アクセスを許可](#steptwo)
+1. [&#x200B; [!DNL Stripe] を [!DNL Commerce Intelligence]のデータソースとして追加](#stepone)
+1. [&#x200B; [!DNL Stripe]  データへの [!DNL Commerce Intelligence]  アクセスを許可](#steptwo)
 
 ## [!DNL Stripe]をデータソースとして追加 {#stepone}
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ## 関連：
 
-[[!DNL Stripe] API ドキュメント ](https://stripe.com/docs/api)は、[!DNL Stripe]と[!DNL Commerce Intelligence]の統合方法の詳細を学ぶのに役立つリソースです。
+[[!DNL Stripe] API ドキュメント &#x200B;](https://stripe.com/docs/api)は、[!DNL Stripe]と[!DNL Commerce Intelligence]の統合方法の詳細を学ぶのに役立つリソースです。
 
 * [期待される [!DNL Stripe]  データ](../integrations/stripe-data.md)
 * [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

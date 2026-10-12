@@ -43,7 +43,7 @@ ht-degree: 0%
 ---
 # [!DNL Adobe Commerce] データが必要です
 
-[ ストアを接続した [!DNL Adobe Commerce] 後](../../../data-analyst/importing-data/integrations/magento.md)、Data Warehouse Managerを使用して、Commerce データベースから関連するデータ フィールドを簡単に追跡し、分析できます。
+[&#x200B; ストアを接続した [!DNL Adobe Commerce] 後](../../../data-analyst/importing-data/integrations/magento.md)、Data Warehouse Managerを使用して、Commerce データベースから関連するデータ フィールドを簡単に追跡し、分析できます。
 
 ここでは、Commerce ユーザーが[!DNL Commerce Intelligence]に読み込む主なデータ テーブルについて説明します。
 

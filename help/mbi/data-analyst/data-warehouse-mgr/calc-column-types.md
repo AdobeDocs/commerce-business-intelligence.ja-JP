@@ -51,7 +51,7 @@ ht-degree: 0%
 
 [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)内で、分析用にデータを拡張および最適化するための列を作成できます。 [この機能](../data-warehouse-mgr/creating-calculated-columns.md)にアクセスするには、Data Warehouse Managerで任意のテーブルを選択し、**[!UICONTROL Create New Column]**&#x200B;をクリックします。
 
-ここでは、Data Warehouse Managerで作成できる列の種類について説明します。 また、説明、その列の視覚的なウォークスルー、列の作成に必要なすべての入力の[参照マップ ](#map)についても説明します。 計算列を作成するには、次の3つの方法があります。
+ここでは、Data Warehouse Managerで作成できる列の種類について説明します。 また、説明、その列の視覚的なウォークスルー、列の作成に必要なすべての入力の[参照マップ &#x200B;](#map)についても説明します。 計算列を作成するには、次の3つの方法があります。
 
 1. [同じテーブルの計算列](#sametable)
 1. [一対多の計算列](#onetomany)
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 次の例では、`customers` テーブルに`Seconds since customer's most recent order`を作成します。 これは、`X days`内で購入していない顧客のユーザーリスト（場合によってはチャーンと呼ばれます）を作成するために使用できます。
 
-![年齢計算列を作成するアニメーションのデモ ](../../assets/age.gif)
+![年齢計算列を作成するアニメーションのデモ &#x200B;](../../assets/age.gif)
 
 ### 通貨変換
 
@@ -89,7 +89,7 @@ Commerce クライアントの場合、`base\_currency\_code` フィールドに
 
 次の例では、`Customer's group\_id` ディメンションが`orders` テーブルに結合されます。
 
-![連結テーブルを作成するアニメーションのデモ ](../../assets/joined_column.gif)
+![連結テーブルを作成するアニメーションのデモ &#x200B;](../../assets/joined_column.gif)
 
 ## 多対一の計算列 {#manytoone}
 
@@ -101,7 +101,7 @@ Commerce クライアントの場合、`base\_currency\_code` フィールドに
 
 次の例では、ディメンション `Customer's lifetime number of canceled orders`が`customers` テーブルに作成されています（`orders.status`のフィルター付き）。
 
-![多対一の列集計のアニメーション デモ ](../../assets/many_to_one.gif){: width="699" height="351"}
+![多対一の列集計のアニメーション デモ &#x200B;](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### 合計 {#sum}
 
@@ -125,13 +125,13 @@ Commerce クライアントの場合、`base\_currency\_code` フィールドに
 
 計算列を作成する際にすべての入力が何であるかを思い出すのに問題がある場合は、構築する際にこの参照マップを便利に使用してください。
 
-![結合された計算列設定を示す参照マップ ](../../assets/merged_reference_map.png)
+![結合された計算列設定を示す参照マップ &#x200B;](../../assets/merged_reference_map.png)
 
 ## 高度な計算列 {#advanced}
 
 自社ビジネスに関する疑問を分析し、それに回答しようとすると、思うように列を作成できない場合があります。
 
-迅速な対応を可能にするために、Adobeでは、[高度な計算列タイプ ](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) ガイドを参照して、Adobe サポートチームが構築できる列の種類を確認することをお勧めします。 このトピックでは、列を作成するために必要な情報についても説明します。リクエストに含めてください。
+迅速な対応を可能にするために、Adobeでは、[高度な計算列タイプ &#x200B;](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) ガイドを参照して、Adobe サポートチームが構築できる列の種類を確認することをお勧めします。 このトピックでは、列を作成するために必要な情報についても説明します。リクエストに含めてください。
 
 ## 関連ドキュメント
 

@@ -43,9 +43,9 @@ ht-degree: 0%
 >
 >[管理者権限](../../administrator/user-management/user-management.md)が必要です。
 
-[!DNL Google ECommerce] アカウント ](../../data-analyst/importing-data/integrations/google-ecommerce.md)の[接続が完了したので、[!DNL Commerce Intelligence]のデータで何ができますか？ このトピックでは、コマースデータと注文や顧客データをリンクさせるディメンションの構築について説明します。
+[!DNL Google ECommerce] アカウント [&#128279;](../../data-analyst/importing-data/integrations/google-ecommerce.md)の接続が完了したので、[!DNL Commerce Intelligence]のデータで何ができますか？ このトピックでは、コマースデータと注文や顧客データをリンクさせるディメンションの構築について説明します。
 
-対象となるディメンションは、[ マーケティングチャネルとキャンペーンに関する重要な質問に回答する](../../data-analyst/analysis/most-value-source-channel.md)分析を構築する機能を提供します。 ・ 売上の何%を各ソースから得ているか？ 獲得した[!DNL Facebook]人の顧客生涯価値と[!DNL Google]人の顧客生涯価値との比較はどうですか？
+対象となるディメンションは、[&#x200B; マーケティングチャネルとキャンペーンに関する重要な質問に回答する](../../data-analyst/analysis/most-value-source-channel.md)分析を構築する機能を提供します。 ・ 売上の何%を各ソースから得ているか？ 獲得した[!DNL Facebook]人の顧客生涯価値と[!DNL Google]人の顧客生涯価値との比較はどうですか？
 
 ## 前提条件と概要
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ここでは、再読み込みが必要な場合のテーブルと列の同期に関する簡単な説明を示します。
 
-![Data Warehouseで新しい列を同期するアニメーションのデモ ](../../assets/Syncing_New_Columns.gif)
+![Data Warehouseで新しい列を同期するアニメーションのデモ &#x200B;](../../assets/Syncing_New_Columns.gif)
 
 `orders` テーブルから[!DNL Google eCommerce] テーブルへの結合を作成した後、以下のリストの最初の3つのディメンションを作成します。 次に、これらのディメンションを使用して、`customers` テーブルに3つのユーザー/顧客ディメンションを作成します。 最後に、これらの列を`orders` テーブルに結合します。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 1. Data Warehouseのテーブルのリストから、注文情報を含むテーブル （この場合は`orders`）をクリックします。
 1. **[!UICONTROL Create a Column]**&#x200B;をクリックします。
 1. 列に名前を付けます。
-1. [定義ドロップダウン ](../data-warehouse-mgr/calc-column-types.md)から`Joined Column`を選択します。 この例は、[1対1の関係](../data-warehouse-mgr/table-relationships.md)で機能し、`eCommerce.transactionID`列を`orders` テーブルの1行に正確に一致させます。
+1. [定義ドロップダウン &#x200B;](../data-warehouse-mgr/calc-column-types.md)から`Joined Column`を選択します。 この例は、[1対1の関係](../data-warehouse-mgr/table-relationships.md)で機能し、`eCommerce.transactionID`列を`orders` テーブルの1行に正確に一致させます。
 1. 次に、パスを定義するか、使用するテーブルと列の接続方法を定義する必要があります。 `Select a table and column` ドロップダウンをクリックします。
 1. 必要なパスは利用できないので、新しいパスを作成する必要があります。 **[!UICONTROL Create new Path]**&#x200B;をクリックします。
 1. 表示されるウィンドウで、`Many`側を`orders.order\_id`に設定するか、注文IDを含む`orders` テーブルの列に設定します。
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 ここでは、そのプロセス全体を紹介します。
 
-![Google Analytics ソースディメンションを作成するアニメーションのデモ ](../../assets/help_center.gif)
+![Google Analytics ソースディメンションを作成するアニメーションのデモ &#x200B;](../../assets/help_center.gif)
 
 次に、**注文の[!DNL Google Analytics] メディア**&#x200B;と`campaign`を作成してみてください。 これらのディメンションにはあまり変更がないので、試してください。 しかし、行き詰まった場合は、[この記事の最後](#stuck)を参照して、何が違うのかを確認してください。
 
@@ -111,7 +111,7 @@ ht-degree: 0%
 1. Data Warehouseのテーブルのリストから、お客様情報を含むテーブル （この場合は`customers`）をクリックします。
 1. **[!UICONTROL Create a Column]**&#x200B;をクリックします。
 1. 列に名前を付けます。
-1. この例では、[定義ドロップダウン ](../../data-analyst/data-warehouse-mgr/calc-column-types.md)から`is MAX`定義を選択します。 `is MIN`定義は、可能な値が1つだけのテキスト列に適用した場合にも機能する可能性があります。 重要なのは、後で行う適切なフィルターの設定です。
+1. この例では、[定義ドロップダウン &#x200B;](../../data-analyst/data-warehouse-mgr/calc-column-types.md)から`is MAX`定義を選択します。 `is MIN`定義は、可能な値が1つだけのテキスト列に適用した場合にも機能する可能性があります。 重要なのは、後で行う適切なフィルターの設定です。
 1. **[!UICONTROL Select a table and column]** ドロップダウンをクリックし、`orders` テーブルを選択してから`Order's [!DNL Google Analytics] source`列を選択します。
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
 1. テーブルスキーマに戻ったら、`Options` ドロップダウンをクリックしてから`Filters`をクリックします。
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 ### ボーナス：注文テーブル、ラウンド 2
 
-必要に応じてここで停止できますが、このセクションでは、[最後のセクション ](#customers)で作成した&#x200B;**お客様の最初の注文の[!DNL Google Analytics] ディメンション**&#x200B;を`orders` テーブルに取り込むことで、さらに分析を行うことができます。 このセクションでディメンションを作成すると、顧客の最初の注文の[!DNL Google Analytics]属性を使用して、`orders` テーブル `Revenue`、`Number of orders`、`Distinct buyers`などで構築されているすべての指標を分析できます。
+必要に応じてここで停止できますが、このセクションでは、[最後のセクション &#x200B;](#customers)で作成した&#x200B;**お客様の最初の注文の[!DNL Google Analytics] ディメンション**&#x200B;を`orders` テーブルに取り込むことで、さらに分析を行うことができます。 このセクションでディメンションを作成すると、顧客の最初の注文の[!DNL Google Analytics]属性を使用して、`orders` テーブル `Revenue`、`Number of orders`、`Distinct buyers`などで構築されているすべての指標を分析できます。
 
 次の使用例は、`Customer's first order's [!DNL Google Analytics] source` ディメンションを`orders` テーブルに結合します。
 
@@ -141,9 +141,9 @@ ht-degree: 0%
 
 ここでは、そのプロセス全体を紹介します。
 
-![顧客獲得ディメンションの作成デモ ](../../assets/help_center2.gif)
+![顧客獲得ディメンションの作成デモ &#x200B;](../../assets/help_center2.gif)
 
-最後に、`Customer's first order's` ミディアムと`campaign` ディメンションを`orders` テーブルに結合します。 ディメンションに参加し、問題がある場合は、ヘルプが必要な場合は、記事](#stuck)の最後の[を確認してください。
+最後に、`Customer's first order's` ミディアムと`campaign` ディメンションを`orders` テーブルに結合します。 ディメンションに参加し、問題がある場合は、ヘルプが必要な場合は、記事[&#128279;](#stuck)の最後のを確認してください。
 
 ### まとめ
 

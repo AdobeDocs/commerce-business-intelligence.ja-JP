@@ -36,7 +36,7 @@ ht-degree: 0%
 ---
 # フィルターオプション
 
-このトピックでは、[ レポートの作成時`filters`または[指標の作成時](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}に`operators`を使用した例をいくつか紹介します。](../../tutorials/using-visual-report-builder.md){: target="_blank"}
+このトピックでは、[&#128279;](../../tutorials/using-visual-report-builder.md)&#x200B; レポートの作成時`filters`または[指標の作成時](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}に`operators`を使用した例をいくつか紹介します。{: target="_blank"}
 
 ## `Filter Operators`
 

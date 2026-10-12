@@ -49,9 +49,9 @@ ht-degree: 0%
 >
 >[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
-![Google AdWords ロゴ ](../../../assets/Google_Adwords_logo.png)
+![Google AdWords ロゴ &#x200B;](../../../assets/Google_Adwords_logo.png)
 
-調査を行い、広告を作成し、[!DNL Google] キャンペーンを開始しました。 広告費のデータを分析し、そのお金が効果的に使われているかどうかを確認する必要があります。 広告費データを使用すると、キャンペーンから獲得したユーザーの広告コストと顧客生涯価値（CLV） ](../../analysis/roi-ad-camp.md)を組み合わせることで、[ キャンペーン ROIを測定できます。
+調査を行い、広告を作成し、[!DNL Google] キャンペーンを開始しました。 広告費のデータを分析し、そのお金が効果的に使われているかどうかを確認する必要があります。 広告費データを使用すると、キャンペーンから獲得したユーザーの広告コストと顧客生涯価値（CLV） [&#128279;](../../analysis/roi-ad-camp.md)を組み合わせることで、 キャンペーン ROIを測定できます。
 
 [!DNL Google Adwords]資格情報を[!DNL Commerce Intelligence]に入力して開始します。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 1. [!DNL Google Analytics]資格情報を入力してください。 認証プロセスが完了すると、次の場所にリダイレクトされます：[!DNL Commerce Intelligence]。
 1. プロファイル IDのリストが表示されます。 [!DNL Commerce Intelligence]に接続するプロファイルを確認してください。
 
-   プロファイルの選択内容を表示する![Google AdWords接続ダイアログ ](../../../assets/cnnct-profile.png)
+   プロファイルの選択内容を表示する![Google AdWords接続ダイアログ &#x200B;](../../../assets/cnnct-profile.png)
 
 1. 変更は自動的に保存されるので、完了したら&#x200B;**[!UICONTROL Back to Connections]**&#x200B;をクリックします。
 
@@ -81,15 +81,15 @@ ht-degree: 0%
 
 ## [!DNL Google Adwords]の接続を切断しています
 
-1. [!DNL Google] [ アカウント設定](https://www.google.com/account/about/?hl=en) ページにアクセスします。
+1. [!DNL Google] [&#x200B; アカウント設定](https://www.google.com/account/about/?hl=en) ページにアクセスします。
 1. `Security` セクションで、`Authorizing`個のアプリケーションとサイトの横にある&#x200B;**[!UICONTROL edit]**&#x200B;をクリックします。
 1. **[!UICONTROL revoke access]**&#x200B;をクリックします。
 
 ## 関連
 
 * [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
-* [ [!DNL Google ECommerce]経由で注文の紹介ソースを追跡](../integrations/google-ecommerce.md)
+* [&#x200B; [!DNL Google ECommerce]経由で注文の紹介ソースを追跡](../integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースの追跡](../../analysis/google-track-user-acq.md)
 * [最も価値のある獲得ソースとチャネルの発見](../../analysis/most-value-source-channel.md)
 * [広告キャンペーンのROIを高める](../../analysis/roi-ad-camp.md)
-* [ [!DNL Google Analytics] UTM アトリビューションの仕組み](../../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics] UTM アトリビューションの仕組み](../../analysis/utm-attributes.md)

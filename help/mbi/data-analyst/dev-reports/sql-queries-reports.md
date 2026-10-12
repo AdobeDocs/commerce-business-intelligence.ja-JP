@@ -45,7 +45,7 @@ ht-degree: 0%
 ---
 # Commerce IntelligenceでのSQL クエリの翻訳
 
-SQL クエリが、[!DNL Commerce Intelligence]で使用する[計算列](../data-warehouse-mgr/creating-calculated-columns.md)、[指標](../../data-user/reports/ess-manage-data-metrics.md)、[ レポート ](../../tutorials/using-visual-report-builder.md)にどのように変換されるのか、疑問に思ったことはありませんか？ SQLのヘビーユーザーであれば、[!DNL Commerce Intelligence]でのSQLの翻訳方法を理解することで、[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)でよりスマートに作業し、[!DNL Commerce Intelligence]基盤を最大限に活用することができます。
+SQL クエリが、[!DNL Commerce Intelligence]で使用する[計算列](../data-warehouse-mgr/creating-calculated-columns.md)、[指標](../../data-user/reports/ess-manage-data-metrics.md)、[&#x200B; レポート &#x200B;](../../tutorials/using-visual-report-builder.md)にどのように変換されるのか、疑問に思ったことはありませんか？ SQLのヘビーユーザーであれば、[!DNL Commerce Intelligence]でのSQLの翻訳方法を理解することで、[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)でよりスマートに作業し、[!DNL Commerce Intelligence]基盤を最大限に活用することができます。
 
 このトピックの最後に、SQL クエリ句と[!DNL Commerce Intelligence]要素に対する&#x200B;**翻訳行列**&#x200B;があります。
 
@@ -127,7 +127,7 @@ SQL クエリが、[!DNL Commerce Intelligence]で使用する[計算列](../dat
 
 >[!NOTE]
 >
->後者の場合、新しい計算列を作成するたびに、ディメンションを`filter`または`group by`として使用する前に、既存の指標](../data-warehouse-mgr/manage-data-dimensions-metrics.md)に[追加する必要があります。
+>後者の場合、新しい計算列を作成するたびに、ディメンションを`filter`または`group by`として使用する前に、既存の指標[&#128279;](../data-warehouse-mgr/manage-data-dimensions-metrics.md)に追加する必要があります。
 
 Data Warehouse Managerでの計算列の作成[を参照してください](../data-warehouse-mgr/creating-calculated-columns.md)。
 
@@ -153,7 +153,7 @@ Data Warehouse Managerでの計算列の作成[を参照してください](../d
 
 以前に作成したのと同じ`Total Revenue`指標を使用して、クーポンコードでセグメント化された収益レポートを作成する準備が整いました。 以下のGIFを見て、9月から11月のデータを見て、このビジュアルレポートを設定する方法を示します。
 
-![ クーポンコードによる収益](../../assets/Revenue_by_coupon_code.gif)
+![&#x200B; クーポンコードによる収益](../../assets/Revenue_by_coupon_code.gif)
 
 ## 数式
 

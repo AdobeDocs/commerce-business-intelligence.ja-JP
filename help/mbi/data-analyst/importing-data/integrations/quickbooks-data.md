@@ -45,7 +45,7 @@ ht-degree: 0%
 ---
 # [!DNL QuickBooks] データが必要です
 
-[ アカウント  [!DNL QuickBooks] を接続した後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。 ](../../../data-analyst/importing-data/integrations/quickbooks.md)次の表は、Data Warehouseで作成されます。
+[&#128279;](../../../data-analyst/importing-data/integrations/quickbooks.md)&#x200B; アカウント  [!DNL QuickBooks] を接続した後、[Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)を使用して、分析用の関連データフィールドを簡単に追跡できます。 &#x200B;次の表は、Data Warehouseで作成されます。
 
 トラッキングに使用できるすべてのフィールドを表示するには、テーブル名の列のリンクをクリックします。
 

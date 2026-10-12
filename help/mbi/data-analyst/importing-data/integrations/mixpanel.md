@@ -45,15 +45,15 @@ ht-degree: 0%
 >
 >[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
-![Mixpanel ロゴ ](../../../assets/Mixpanel_logo.png)
+![Mixpanel ロゴ &#x200B;](../../../assets/Mixpanel_logo.png)
 
 [!DNL Mixpanel]を使用すると、ユーザーがweb サイトとアプリをどのように移動して使用するかを分析できます。 利用者の行動データを詳細に分析することで、よりスマートな設計および開発の意思決定が可能になり、製品全体が向上します。 [!DNL Mixpanel]を[!DNL Commerce Intelligence]に接続すると、ユーザーの行動とその行動が収益にどのように変換されるかを分析できます。
 
 簡単な3 ステップのプロセスで[!DNL Mixpanel] データを[!DNL Commerce Intelligence]に接続します：
 
-1. [ [!DNL Commerce Intelligence]で [!DNL Mixpanel] 資格情報ページを開きます](#stepone)
-1. [ [!DNL Mixpanel] API資格情報の取得](#steptwo)
-1. [ [!DNL Commerce Intelligence]に [!DNL Mixpanel] API資格情報を入力してください](#stepthree)
+1. [&#x200B; [!DNL Commerce Intelligence]で [!DNL Mixpanel] 資格情報ページを開きます](#stepone)
+1. [&#x200B; [!DNL Mixpanel] API資格情報の取得](#steptwo)
+1. [&#x200B; [!DNL Commerce Intelligence]に [!DNL Mixpanel] API資格情報を入力してください](#stepthree)
 
 このプロセスを完了するには、[!DNL Commerce Intelligence]用と[!DNL Mixpanel] アカウント用の2つのブラウザーウィンドウまたはタブを開く必要があります。
 

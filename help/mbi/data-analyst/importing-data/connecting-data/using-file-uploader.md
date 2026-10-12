@@ -105,11 +105,11 @@ ht-degree: 0%
 
 ### 先頭および末尾のゼロを含む値 {#zeroes}
 
-ファイル内の一部の値（郵便番号やIDなど）は、ゼロで始まるか、ゼロで終わることがあります。 ゼロが適切に保持され、アップロードされるようにするには、書式設定の種類（[からテキスト ](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us)など）を変更するか、数値の書式設定を適用します。
+ファイル内の一部の値（郵便番号やIDなど）は、ゼロで始まるか、ゼロで終わることがあります。 ゼロが適切に保持され、アップロードされるようにするには、書式設定の種類（[からテキスト &#x200B;](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us)など）を変更するか、数値の書式設定を適用します。
 
 数値の書式設定を変更する方法の例として、`US ZIP codes`を使用してください。 [!DNL Excel]で、`ZIP codes`と[を含む列を強調表示し、数値形式](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us)を`ZIP code`に変更します。 カスタム数値形式を選択し、`Type` ウィンドウに`00000`と入力します。 この方法では、一部のコードが`00000`形式で、他のコードが`00000-0000`形式の場合に問題が発生する可能性があることに注意してください。
 
-`Type`は、IDなどの他のデータタイプ ](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us)に対応するために、[異なる形式にすることができます。 例えば、`ID`が9桁の場合、`Type`は`000000000`または`000-000-000`になります。 これにより、`123456`が`000-123-456`に変更されます。
+`Type`は、IDなどの他のデータタイプ [&#128279;](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us)に対応するために、異なる形式にすることができます。 例えば、`ID`が9桁の場合、`Type`は`000000000`または`000-000-000`になります。 これにより、`123456`が`000-123-456`に変更されます。
 
 [!DNL Google Docs]および[!DNL Apple Numbers]のリソースについては、このページの下部にある[関連](#related)のリストを参照してください。
 
@@ -141,11 +141,11 @@ ht-degree: 0%
 
 ビジュアルが必要な場合は、プロセス全体を確認しましょう。
 
-![追加されるデータを示すファイルアップロードプロセスのアニメーションデモ ](../../../assets/fileupload.gif)
+![追加されるデータを示すファイルアップロードプロセスのアニメーションデモ &#x200B;](../../../assets/fileupload.gif)
 
 アップロードされたテーブルは、Data Warehouse Managerのテーブルリストの「**ファイルアップロード**」セクション（すべてのテーブルおよび同期済みテーブルの両方）に表示されます。
 
-![ データ読み込み用に使用可能なテーブルを表示するテーブルインターフェイスのアップロード ](../../../assets/upload-tables.png)
+![&#x200B; データ読み込み用に使用可能なテーブルを表示するテーブルインターフェイスのアップロード &#x200B;](../../../assets/upload-tables.png)
 
 ## 既存のテーブルへのデータの更新または追加 {#appending}
 

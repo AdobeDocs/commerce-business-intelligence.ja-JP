@@ -50,6 +50,6 @@ ht-degree: 0%
 - `Full Excel Export`
 - `Raw Export`
 
-書き出しに含める[ テーブルと列を定義することもできます](../../tutorials/export-raw-data.md)。
+書き出しに含める[&#x200B; テーブルと列を定義することもできます](../../tutorials/export-raw-data.md)。
 
 プレゼンテーションまたはドキュメントにグラフを含める必要がある場合は、そのグラフをPNG、PDF、またはSVG形式で画像として書き出すことができます。 任意のグラフの右上隅にある歯車アイコンをクリックします。 ドロップダウンで「`Enlarge`」オプションを選択し、**[!UICONTROL Download]**」をクリックして書き出しを完了します。

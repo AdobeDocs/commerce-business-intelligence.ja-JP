@@ -47,7 +47,7 @@ ht-degree: 0%
 
 データを分析する際には、さまざまなソースから収集したデータを統合することが重要です。 `orders` テーブルと[!DNL Google Analytics] データのデータをリンクして、獲得ソースごとに収益をグループ化しますか？ 顧客の性別ごとに収益をグループ化したり、セグメント化のために顧客の属性をトランザクションデータに結合したりしたいとします。 ここでは、その方法を詳しく解説します。
 
-開始する前に、Adobeでは、Data Warehouse Managerで作成できる列の種類とその定義と例について、[計算列タイプ ガイド ](../../data-analyst/data-warehouse-mgr/calc-column-types.md)を確認することをお勧めします。
+開始する前に、Adobeでは、Data Warehouse Managerで作成できる列の種類とその定義と例について、[計算列タイプ ガイド &#x200B;](../../data-analyst/data-warehouse-mgr/calc-column-types.md)を確認することをお勧めします。
 
 1. 開始するには、**[!DNL Manage Data > Data Warehouse]**&#x200B;をクリックしてください。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 1. 列に名前を付けます。 例：`Customer Gender`。
 
-1. 列の定義を選択します。 ここでは、[計算列タイプ ガイド ](../data-warehouse-mgr/calc-column-types.md)が役立ちます。
+1. 列の定義を選択します。 ここでは、[計算列タイプ ガイド &#x200B;](../data-warehouse-mgr/calc-column-types.md)が役立ちます。
 
 1. 特定のタイプの列の場合、列を適切に作成するために、もう少し詳しい情報が必要です。
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 >
 >テーブルを正しく定義することを忘れないでください。
 
-* 必要に応じて、新しい列に[ フィルター](../../data-user/reports/ess-manage-data-filters.md)を適用できます。
+* 必要に応じて、新しい列に[&#x200B; フィルター](../../data-user/reports/ess-manage-data-filters.md)を適用できます。
 
 * 完了したら、**[!UICONTROL Save]**&#x200B;をクリックします。
 

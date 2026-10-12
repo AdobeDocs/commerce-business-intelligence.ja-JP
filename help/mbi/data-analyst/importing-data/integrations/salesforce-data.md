@@ -41,13 +41,13 @@ ht-degree: 0%
 ---
 # [!DNL Salesforce] データが必要です
 
-[[!DNL Salesforce] setup](../integrations/salesforce.md)が完了すると、クエリ可能な[ オブジェクト ](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) （`sf_/\{sobject-name}`という名前）ごとにテーブルがData Warehouseに作成されます。
+[[!DNL Salesforce] setup](../integrations/salesforce.md)が完了すると、クエリ可能な[&#x200B; オブジェクト &#x200B;](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) （`sf_/\{sobject-name}`という名前）ごとにテーブルがData Warehouseに作成されます。
 
 >[!NOTE]
 >
 >各テーブルの構造（列）は、オブジェクトに含まれるフィールドによって異なります。
 
-組織で使用可能なオブジェクトのリストを取得するには、[!DNL Salesforce] [ オブジェクトのリストの取得に関するドキュメント ](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm)を参照してください。 オブジェクトのリストを作成したら、[!DNL Salesforce] ドキュメントの[ エンティティ関係図（ERD）セクション ](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm)を参照して、エンティティ同士がどのように関連付けられているかを確認します。
+組織で使用可能なオブジェクトのリストを取得するには、[!DNL Salesforce] [&#x200B; オブジェクトのリストの取得に関するドキュメント &#x200B;](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm)を参照してください。 オブジェクトのリストを作成したら、[!DNL Salesforce] ドキュメントの[&#x200B; エンティティ関係図（ERD）セクション &#x200B;](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm)を参照して、エンティティ同士がどのように関連付けられているかを確認します。
 
 ## サポートされていないオブジェクト
 

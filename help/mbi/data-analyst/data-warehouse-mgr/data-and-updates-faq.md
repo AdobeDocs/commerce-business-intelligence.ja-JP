@@ -49,7 +49,7 @@ ht-degree: 0%
 * [定期アップデートと強制アップデートの違いは何ですか？](#regularforcedupdates)
 * [更新サイクルに時間がかかるのはなぜですか？](#updatecycletime)
 * [更新サイクルの完了時に通知を受け取ることはできますか？](#notifyupdate)
-* [ [!DNL Google ECommerce]  データがデータベースと異なるのはなぜですか？](#ecommdatabase)
+* [&#x200B; [!DNL Google ECommerce]  データがデータベースと異なるのはなぜですか？](#ecommdatabase)
 * [データの不一致のトラブルシューティング方法を教えてください。](#datadiscrepancy)
 
 ## データが変更された理由 {#datachange}
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ## 更新サイクルに時間がかかるのはなぜですか？ {#updatecycletime}
 
-更新時間がすでに長くなる要因が数多くあります。 特定の[ レプリケーション方法](../data-warehouse-mgr/cfg-replication-methods.md)、[より高いリチェック頻度](../data-warehouse-mgr/cfg-data-rechecks.md)、およびダッシュボードとグラフの数は、ほんの一部の貢献者です。 Adobeでは、更新時間を短縮するために、[一部の設定の再構成](../../best-practices/reduce-update-cycle-time.md)と[分析のためにデータベースを最適化](../../best-practices/opt-db-analysis.md)することをお勧めします。
+更新時間がすでに長くなる要因が数多くあります。 特定の[&#x200B; レプリケーション方法](../data-warehouse-mgr/cfg-replication-methods.md)、[より高いリチェック頻度](../data-warehouse-mgr/cfg-data-rechecks.md)、およびダッシュボードとグラフの数は、ほんの一部の貢献者です。 Adobeでは、更新時間を短縮するために、[一部の設定の再構成](../../best-practices/reduce-update-cycle-time.md)と[分析のためにデータベースを最適化](../../best-practices/opt-db-analysis.md)することをお勧めします。
 
 ## 更新サイクルの完了時に通知を受け取ることはできますか？ {#notifyupdate}
 
@@ -78,8 +78,8 @@ ht-degree: 0%
 
 ## [!DNL Google ECommerce] データがデータベースと異なるのはなぜですか？ {#ecommdatabase}
 
-[!DNL Google Analytics]とお客様のデータベースとの間には、様々な理由で不一致が発生する可能性があります。 トラッキングが適切に有効になっていない、シークレットにアクセスしているユーザー、正しく機能していないクリックイベントなどはその一例です。 収益と注文が正しく表示されない場合は、[このトピック ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)を参照して問題を診断してください。
+[!DNL Google Analytics]とお客様のデータベースとの間には、様々な理由で不一致が発生する可能性があります。 トラッキングが適切に有効になっていない、シークレットにアクセスしているユーザー、正しく機能していないクリックイベントなどはその一例です。 収益と注文が正しく表示されない場合は、[このトピック &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)を参照して問題を診断してください。
 
 ## データの不一致のトラブルシューティング方法を教えてください。 {#datadiscrepancy}
 
-Adobeでは、一貫性のないデータを確認することは、顧客のフラストレーションを招く恐れがあることを認識しています。 [ データ書き出しチュートリアル ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)を使用して、問題を診断してください。 まだ行き詰まっている場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+Adobeでは、一貫性のないデータを確認することは、顧客のフラストレーションを招く恐れがあることを認識しています。 [&#x200B; データ書き出しチュートリアル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)を使用して、問題を診断してください。 まだ行き詰まっている場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

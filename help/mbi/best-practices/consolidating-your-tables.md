@@ -71,7 +71,7 @@ Data Warehouseの他のすべてのテーブルと同様に、別の種類のグ
 
 ## 統合表の作成、表示または更新
 
-Data Warehouseに統合テーブルを追加する場合は、[!DNL Commerce Intelligence] [ サポート ](../guide-overview.md#Submitting-a-Support-Ticket)にお問い合わせください。
+Data Warehouseに統合テーブルを追加する場合は、[!DNL Commerce Intelligence] [&#x200B; サポート &#x200B;](../guide-overview.md#Submitting-a-Support-Ticket)にお問い合わせください。
 
 >[!NOTE]
 >

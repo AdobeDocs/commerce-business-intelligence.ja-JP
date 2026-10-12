@@ -107,7 +107,7 @@ ht-degree: 0%
 
 _[合計/ `Time between a customer's registration date and first purchase date`] / [登録および購入した顧客の合計数]_
 
-顧客の登録日に応じて、この計算を時間の経過とともにプロットするか、トレンドとして表示します。 次に、[!DNL Commerce Intelligence]でこの指標](../../data-user/reports/ess-manage-data-metrics.md)を[作成する方法を示します。
+顧客の登録日に応じて、この計算を時間の経過とともにプロットするか、トレンドとして表示します。 次に、[!DNL Commerce Intelligence]でこの指標[&#128279;](../../data-user/reports/ess-manage-data-metrics.md)を作成する方法を示します。
 
 1. **[!UICONTROL Data]**&#x200B;に移動し、「`Metrics`」タブを選択します。
 1. **[!UICONTROL Add New Metric]**&#x200B;をクリックし、`user` テーブル （上記のディメンションを作成した場所）を選択します。
@@ -120,7 +120,7 @@ _[合計/ `Time between a customer's registration date and first purchase date`]
 
 新しい指標を設定すると、登録から最初の購入日までの平均時間を登録日ごとにレポートできます。
 
-任意のダッシュボードに移動し、上記で作成した指標を使用して[ レポートを作成](../../data-user/reports/ess-manage-data-metrics.md)します。
+任意のダッシュボードに移動し、上記で作成した指標を使用して[&#x200B; レポートを作成](../../data-user/reports/ess-manage-data-metrics.md)します。
 
 ### `Visual Report Builder` {#visualrb}
 
@@ -145,7 +145,7 @@ _[合計/ `Time between a customer's registration date and first purchase date`]
 
 以下を参照してください。
 
-![ グラフの説明](../../assets/Chart_Description.gif)
+![&#x200B; グラフの説明](../../assets/Chart_Description.gif)
 
 #### レポートの画像としてのエクスポート
 
@@ -158,4 +158,4 @@ _[合計/ `Time between a customer's registration date and first purchase date`]
 
 以下を参照してください。
 
-![ レポートを画像ファイルとして書き出すアニメーションのデモ ](../../assets/exp-rep-as-image.gif)
+![&#x200B; レポートを画像ファイルとして書き出すアニメーションのデモ &#x200B;](../../assets/exp-rep-as-image.gif)

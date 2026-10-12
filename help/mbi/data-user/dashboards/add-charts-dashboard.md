@@ -52,4 +52,4 @@ ht-degree: 0%
 
 例：
 
-![ グラフを追加](../../assets/sql-integration-encrypted-yes.png)
+![&#x200B; グラフを追加](../../assets/sql-integration-encrypted-yes.png)

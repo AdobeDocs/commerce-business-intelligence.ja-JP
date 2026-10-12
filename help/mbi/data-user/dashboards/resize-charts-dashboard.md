@@ -40,8 +40,8 @@ ht-degree: 0%
 
 *グラフのサイズを変更するには、*&#x200B;をクリックして、任意のグラフの右下隅をドラッグします。
 
-![ グラフのサイズ変更](../../assets/Resize_Chart_in_Dashboard.gif)
+![&#x200B; グラフのサイズ変更](../../assets/Resize_Chart_in_Dashboard.gif)
 
 *グラフを移動するには、`Move` カーソルが表示されるまで、グラフの上部にカーソルを合わせます*。 クリック&amp;ホールドしてから、チャートを目的の場所にドラッグします。 クリックしてチャートを配置します。
 
-![ グラフを移動](../../assets/Move_Chart_in_Dashboard.gif)
+![&#x200B; グラフを移動](../../assets/Move_Chart_in_Dashboard.gif)

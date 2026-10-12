@@ -38,13 +38,13 @@ ht-degree: 0%
 ---
 # アクティブな[!DNL Adobe Commerce Intelligence] アカウントにアクセス
 
-[ オンプレミスまたはクラウド ](../getting-started/onpremise-activation.md)の[!DNL Commerce Intelligence] アカウントをアクティベートし、Adobe アカウントチームと協力して設定手順を完了した後、アカウントにサインインできるようになりました。
+[&#x200B; オンプレミスまたはクラウド &#x200B;](../getting-started/onpremise-activation.md)の[!DNL Commerce Intelligence] アカウントをアクティベートし、Adobe アカウントチームと協力して設定手順を完了した後、アカウントにサインインできるようになりました。
 
 ## [!DNL Adobe ID]でログイン
 
 1. **[!UICONTROL Sign in with Adobe ID]**&#x200B;をクリックします。
 
-   ![ アドビでログイン ](../assets/sign-in-adobe.png)
+   ![&#x200B; アドビでログイン &#x200B;](../assets/sign-in-adobe.png)
 
 1. [!DNL Commerce Intelligence] アカウントの作成時に使用した電子メールアドレスを入力してください。 まだAdobe アカウントをお持ちでない場合は、**[!UICONTROL Create an account]**&#x200B;をクリックして情報を入力してください。 [!DNL Commerce Intelligence] アカウントの作成時に使用した電子メールアドレスを忘れずに使用してください。 メールアドレスは、Adobe アカウントにアクセスするために必要なキーです。
 

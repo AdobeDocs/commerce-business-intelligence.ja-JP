@@ -52,7 +52,7 @@ ht-degree: 0%
 
 1. ダッシュボードの作成時：
 
-   ![ ダッシュボードグループの作成](../../assets/create-dashboard-groups-new-dashboard.png)
+   ![&#x200B; ダッシュボードグループの作成](../../assets/create-dashboard-groups-new-dashboard.png)
 
 1. 既存のダッシュボードのグループを`Manage Data > Dashboards` ページから変更する場合：
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
    1. グループを作成するには、新しいグループの名前を入力し、ボックスの外側をクリックします。
 
-      ![ ダッシュボードグループの作成](../../assets/create-dashboard-groups-existing-dashboard.png)
+      ![&#x200B; ダッシュボードグループの作成](../../assets/create-dashboard-groups-existing-dashboard.png)
 
 ## 既存のダッシュボードを既存のグループに追加
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 1. ダッシュボードのグループを変更するには、リストから別のグループを選択します（この場合は`PS`、`Campaigns`）。
 
-   ![ グループダッシュボードの変更](../../assets/add-existing-dashboard-existing-group.png)
+   ![&#x200B; グループダッシュボードの変更](../../assets/add-existing-dashboard-existing-group.png)
 
 ## ダッシュボードグループの削除
 

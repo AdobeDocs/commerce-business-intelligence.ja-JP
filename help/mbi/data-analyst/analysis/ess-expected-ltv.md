@@ -74,41 +74,41 @@ ht-degree: 13%
 >**[!UICONTROL Time Period:]**&#x200B;には、各レポートの期間が`All-time`として表示されます。 分析ニーズに合わせて変更してください。 Adobeでは、`All time`、`Year-to-date`、`Last 365 days`など、このダッシュボードのすべてのレポートが同じ期間をカバーすることをお勧めします。
 
 * **[!UICONTROL Average LTV (all)]**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * [!UICONTROL filters]を追加：
       * [`A`] `Customer's group code` **次と等しくない** `Not Logged In`
       * [`B`] `Customer's lifetime number of orders` **より大**`0`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
   * 指標`1`: `Avg lifetime revenue`
   * 指標`2`: `Median lifetime revenue`
-  * [!UICONTROL Time period]: `All time`
-  * [!UICONTROL Interval]: `By Month`
-  * 
-    [!UICONTROL チャートタイプ]: `Line`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * [!UICONTROL Interval]&#x200B;: `By Month`
+  * &#x200B;
+    [!UICONTROL チャートタイプ]&#x200B;: `Line`
   * `Multiple Y-Axes`のチェックを外す
 
 * 注文数のライフタイム数による&#x200B;**LTV**
   * 指標`1`: `Avg lifetime revenue`
   * 指標`2`: `New customers`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL間隔]: `None`
-  * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-  * 
-    [!UICONTROL チャートタイプ]: `Line`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Group by]&#x200B;: `Customer's lifetime number of orders`
+  * &#x200B;
+    [!UICONTROL チャートタイプ]&#x200B;: `Line`
 
   >[!NOTE]
   >

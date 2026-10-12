@@ -50,11 +50,11 @@ ht-degree: 3%
 
 ### （オプション 1） [!DNL Google Analytics E-Commerce]経由で注文の参照元データを追跡する
 
-[!DNL Google Analytics E-Commerce]を使用して注文と販売データを追跡する場合は、[!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md)を使用して、各注文の参照元データを同期できます。 これにより、収益と注文を参照元（`utm_source`または`utm_medium`など）別にセグメント化できます。 `User's first order source`などの[!DNL Commerce Intelligence]個のカスタムディメンションを使用して、顧客獲得ソースを確認することもできます。
+[!DNL Google Analytics E-Commerce]を使用して注文と販売データを追跡する場合は、[[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)を使用して、各注文の参照元データを同期できます。 これにより、収益と注文を参照元（`utm_source`または`utm_medium`など）別にセグメント化できます。 `User's first order source`などの[!DNL Commerce Intelligence]個のカスタムディメンションを使用して、顧客獲得ソースを確認することもできます。
 
 ### （オプション 2）取得ソースデータをデータベースに保存する[!DNL Google Analytics]
 
-このトピックでは、[!DNL Google Analytics]獲得チャネル情報を独自のデータベースに保存する方法について説明します。つまり、`source`、`medium`、`term`、`content`、`campaign`、および`gclid` パラメーターは、ユーザーのweb サイトへの初回訪問時に存在していました。 これらのパラメーターの説明については、[[!DNL Google Analytics]  ドキュメント ](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article)を参照してください。 次に、[!DNL Commerce Intelligence]でこの情報を使用して実行できる強力なマーケティング分析の一部について説明します。
+このトピックでは、[!DNL Google Analytics]獲得チャネル情報を独自のデータベースに保存する方法について説明します。つまり、`source`、`medium`、`term`、`content`、`campaign`、および`gclid` パラメーターは、ユーザーのweb サイトへの初回訪問時に存在していました。 これらのパラメーターの説明については、[[!DNL Google Analytics]  ドキュメント &#x200B;](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article)を参照してください。 次に、[!DNL Commerce Intelligence]でこの情報を使用して実行できる強力なマーケティング分析の一部について説明します。
 
 #### なぜでしょうか？
 
@@ -74,7 +74,7 @@ ht-degree: 3%
 
 文字列にエンコードされた取得ソースデータがあることは明らかです。 このテストは、訪問者の最新の獲得ソースおよび関連するキャンペーンデータであることを確認するために実行されます。 データを抽出する方法を知る必要があります。
 
-このコードは、github](https://github.com/RJMetrics/referral-grabber-php)でホストされている[PHP ライブラリに変換されました。 ライブラリを使用するには、`include`が`ReferralGrabber.php`への参照を呼び出してから
+このコードは、github[&#128279;](https://github.com/RJMetrics/referral-grabber-php)でホストされているPHP ライブラリに変換されました。 ライブラリを使用するには、`include`が`ReferralGrabber.php`への参照を呼び出してから
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 
@@ -114,7 +114,7 @@ SQL データベースを使用しており、次の構造を持つ`users` テ�
 
 * これらの数値の長期的な成長率
 * 各獲得ソースが生成した収益の量
-* 各ソースからのユーザーの[ コホート分析](https://en.wikipedia.org/wiki/Cohort_analysis)
+* 各ソースからのユーザーの[&#x200B; コホート分析](https://en.wikipedia.org/wiki/Cohort_analysis)
 * これらのチャネルのいずれかに属するユーザーが、将来顧客として戻る可能性があります
 
 これらの分析を行うために必要なクエリは複雑です。 この情報をもとに、最も収益性の高い獲得チャネルを特定し、それに応じてマーケティング時間と予算を投入できます。

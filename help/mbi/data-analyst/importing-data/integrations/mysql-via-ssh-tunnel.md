@@ -43,16 +43,16 @@ ht-degree: 0%
 ---
 # [!DNL SSH Tunnel]経由で[!DNL MySQL]に接続
 
-* [ [!DNL Commerce Intelligence] 公開鍵を取得](#retrieve)
-* [ [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
-* [ [!DNL Commerce Intelligence]のLinux ユーザーを作成](#linux)
-* [ [!DNL Commerce Intelligence]の [!DNL MySQL]  ユーザーを作成](#mysql)
+* [&#x200B; [!DNL Commerce Intelligence] 公開鍵を取得](#retrieve)
+* [&#x200B; [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可](#allowlist)
+* [&#x200B; [!DNL Commerce Intelligence]のLinux ユーザーを作成](#linux)
+* [&#x200B; [!DNL Commerce Intelligence]の [!DNL MySQL]  ユーザーを作成](#mysql)
 * [接続とユーザー情報を [!DNL Commerce Intelligence]に入力します](#finish)
 
 ## に移動
 
 * [`direct connection`経由で[!DNL MySQL]](../integrations/mysql-via-a-direct-connection.md)
-* [ [!DNL cPanel]経由で[!DNL MySQL]](../integrations/mysql-via-cpanel.md)
+* [&#x200B; [!DNL cPanel]経由で[!DNL MySQL]](../integrations/mysql-via-cpanel.md)
 
 [!DNL MySQL] データベースを`SSH tunnel`経由で[!DNL Commerce Intelligence]に接続するには、次の操作を行う必要があります。
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]を移動してキーを取得する方法は次のとおりです。
 
-![SSH トンネルを介したMySQL接続のアニメーションデモ ](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
+![SSH トンネルを介したMySQL接続のアニメーションデモ &#x200B;](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
 
 ## [!DNL Commerce Intelligence] IP アドレスへのアクセスを許可 {#allowlist}
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 ## [!DNL Commerce Intelligence]の[!DNL Linux] ユーザーを作成しています {#linux}
 
-これは、リアルタイム（または頻繁に更新される）データを含む限り、実稼動マシンまたはセカンダリマシンにすることができます。 `MySQL` サーバーに接続する権利を保持している限り、このユーザー](../../../administrator/account-management/restrict-db-access.md)を任意の方法で[制限できます。
+これは、リアルタイム（または頻繁に更新される）データを含む限り、実稼動マシンまたはセカンダリマシンにすることができます。 `MySQL` サーバーに接続する権利を保持している限り、このユーザー[&#128279;](../../../administrator/account-management/restrict-db-access.md)を任意の方法で制限できます。
 
 1. 新しいユーザーを追加するには、次のコマンドを[!DNL Linux] サーバー上のルートとして実行します。
 

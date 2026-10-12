@@ -53,4 +53,4 @@ ht-degree: 0%
 
 例：
 
-![ ダッシュボードを共有](../../assets/share.gif)<!--{: width="675" height="311"}-->
+![&#x200B; ダッシュボードを共有](../../assets/share.gif)<!--{: width="675" height="311"}-->

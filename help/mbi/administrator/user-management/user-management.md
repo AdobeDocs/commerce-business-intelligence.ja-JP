@@ -72,7 +72,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_特定の指標](../../administrator/user-management/restrict-metric-access.md)に対する&#x200B;**[!UICONTROL Standard]**ユーザーの[ アクセスを制限できます。_
+>_特定の指標[&#128279;](../../administrator/user-management/restrict-metric-access.md)に対する&#x200B;**[!UICONTROL Standard]**&#x200B;ユーザーの アクセスを制限できます。_
 >
 >**[!UICONTROL Standard] _ユーザーは、追加の権限設定を使用して請求にアクセスできます。_
 >
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 `Admin`人のユーザーはデフォルトで`Billing` タブにアクセスできますが、`Standard`人のユーザーは、プロファイルで`Billing` チェックボックスが選択されている場合もアクセスできます。
 
-![請求ページ ](../../assets/billing.png)<!--{: width="550" height="363"}-->
+![請求ページ &#x200B;](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### テクニカル
 

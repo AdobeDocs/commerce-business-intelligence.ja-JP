@@ -49,7 +49,7 @@ ht-degree: 0%
 >
 >一部のダッシュボードの利用可能性は、データセットによって異なります。
 
-ご質問がある場合、またはアカウントにパッケージを追加したい場合は、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信してヘルプを得てください。
+ご質問がある場合、またはアカウントにパッケージを追加したい場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信してヘルプを得てください。
 
 ## 経営陣概要
 
@@ -59,13 +59,13 @@ ht-degree: 0%
 
 ## コホート分析
 
-`cohort analysis` ダッシュボードには、登録コホート別にグループ化された、ユーザーの平均生涯売上増加と増分売上増加を示す一連のグラフが含まれています。 これにより、顧客のビジネスに対する価値である顧客生涯価値（LTV）が時間の経過とともに増加するかどうか確認し、LTVの成長に関するトレンドを特定することができます。 デフォルトでは、*すべての登録ユーザー（購入者および非購入者）は、平均LTV計算で*&#x200B;に計上されます。[ コホート分析トピック ](../../data-analyst/dev-reports/cohort-rpt-bldr.md)を参照してください。
+`cohort analysis` ダッシュボードには、登録コホート別にグループ化された、ユーザーの平均生涯売上増加と増分売上増加を示す一連のグラフが含まれています。 これにより、顧客のビジネスに対する価値である顧客生涯価値（LTV）が時間の経過とともに増加するかどうか確認し、LTVの成長に関するトレンドを特定することができます。 デフォルトでは、*すべての登録ユーザー（購入者および非購入者）は、平均LTV計算で*&#x200B;に計上されます。[&#x200B; コホート分析トピック &#x200B;](../../data-analyst/dev-reports/cohort-rpt-bldr.md)を参照してください。
 
 このダッシュボードには、特定の獲得ソース、チャネル、デモグラフィック（ニューヨークやカリフォルニアなど）の利用者の生涯売上を分析するコホートチャートも含まれます。 このステップでは、ユーザーベースの特定のセグメントのLTVを分析し、あるグループまたは別のグループが長期的に高いLTVを生み出すかどうかを確認する方法を示します。
 
-コホートについて詳しくは、[ コホート分析の実行](../../data-analyst/dev-reports/cohort-rpt-bldr.md)を参照してください。
+コホートについて詳しくは、[&#x200B; コホート分析の実行](../../data-analyst/dev-reports/cohort-rpt-bldr.md)を参照してください。
 
-現在ユーザー獲得ソースをトラッキングしていない場合は、[ ユーザー獲得Source データの概要](../../data-analyst/analysis/google-track-user-acq.md)を参照してください。
+現在ユーザー獲得ソースをトラッキングしていない場合は、[&#x200B; ユーザー獲得Source データの概要](../../data-analyst/analysis/google-track-user-acq.md)を参照してください。
 
 ## メールの要約
 
