@@ -4,42 +4,52 @@ description: e コマースデータを注文や顧客データにリンクす�
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Developer, User
 feature: Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/K5PKexwI5oIb0WFtT47gQ2wEuF-TYUQrntRq1yJ4Vlc
+TQID: 'https://experienceleague.adobe.com/K5PKexwI5oIb0WFtT47gQ2wEuF-TYUQrntRq1yJ4Vlc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1023
+source-wordcount: '1024'
 ht-degree: 0%
-
 ---
-
 # [!DNL Google ECommerce] ディメンションを作成
 
 >[!NOTE]
 >
 >[管理者権限](../../administrator/user-management/user-management.md)が必要です。
 
-[&#x200B; アカウント [!DNL Google ECommerce]の](../../data-analyst/importing-data/integrations/google-ecommerce.md)接続が完了したので、[!DNL Commerce Intelligence]のデータで何ができますか？ このトピックでは、コマースデータと注文や顧客データをリンクさせるディメンションの構築について説明します。
+[!DNL Google ECommerce] アカウント [&#128279;](../../data-analyst/importing-data/integrations/google-ecommerce.md)の接続が完了したので、[!DNL Commerce Intelligence]のデータで何ができますか？ このトピックでは、コマースデータと注文や顧客データをリンクさせるディメンションの構築について説明します。
 
 対象となるディメンションは、[&#x200B; マーケティングチャネルとキャンペーンに関する重要な質問に回答する](../../data-analyst/analysis/most-value-source-channel.md)分析を構築する機能を提供します。 ・ 売上の何%を各ソースから得ているか？ 獲得した[!DNL Facebook]人の顧客生涯価値と[!DNL Google]人の顧客生涯価値との比較はどうですか？
 
 ## 前提条件と概要
 
-このトピックでディメンションを作成するには、[!DNL Google ECommerce] テーブル、`orders` テーブル、および`customers` テーブルが必要です。 これらのテーブルは、ディメンションを構築する前に[Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md)と同期している必要があります。 同期されたテーブルは、`Synced Tables`の`Data Warehouse Manager` セクションに表示されます。
+このトピックでディメンションを作成するには、[!DNL Google ECommerce] テーブル、`orders` テーブル、および`customers` テーブルが必要です。 これらのテーブルは、ディメンションを構築する前に[Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md)と同期している必要があります。 同期されたテーブルは、`Data Warehouse Manager`の`Synced Tables` セクションに表示されます。
 
 ここでは、再読み込みが必要な場合のテーブルと列の同期に関する簡単な説明を示します。
 
@@ -66,7 +76,7 @@ ht-degree: 0%
 
 ## ディメンションの作成
 
-ディメンションを作成するには、[&#x200B; > &#x200B;](../data-warehouse-mgr/tour-dwm.md)をクリックして&#x200B;**[!UICONTROL Data]** Data Warehouse Manager **[!UICONTROL Data Warehouse]**&#x200B;を開きます。
+ディメンションを作成するには、**[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**&#x200B;をクリックして[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)を開きます。
 
 ### 受注テーブル、ラウンド 1
 
@@ -75,7 +85,7 @@ ht-degree: 0%
 1. Data Warehouseのテーブルのリストから、注文情報を含むテーブル （この場合は`orders`）をクリックします。
 1. **[!UICONTROL Create a Column]**&#x200B;をクリックします。
 1. 列に名前を付けます。
-1. `Joined Column`定義ドロップダウン [から](../data-warehouse-mgr/calc-column-types.md)を選択します。 この例は、[1対1の関係](../data-warehouse-mgr/table-relationships.md)で機能し、`eCommerce.transactionID`列を`orders` テーブルの1行に正確に一致させます。
+1. [定義ドロップダウン &#x200B;](../data-warehouse-mgr/calc-column-types.md)から`Joined Column`を選択します。 この例は、[1対1の関係](../data-warehouse-mgr/table-relationships.md)で機能し、`eCommerce.transactionID`列を`orders` テーブルの1行に正確に一致させます。
 1. 次に、パスを定義するか、使用するテーブルと列の接続方法を定義する必要があります。 `Select a table and column` ドロップダウンをクリックします。
 1. 必要なパスは利用できないので、新しいパスを作成する必要があります。 **[!UICONTROL Create new Path]**&#x200B;をクリックします。
 1. 表示されるウィンドウで、`Many`側を`orders.order\_id`に設定するか、注文IDを含む`orders` テーブルの列に設定します。
@@ -101,7 +111,7 @@ ht-degree: 0%
 1. Data Warehouseのテーブルのリストから、お客様情報を含むテーブル （この場合は`customers`）をクリックします。
 1. **[!UICONTROL Create a Column]**&#x200B;をクリックします。
 1. 列に名前を付けます。
-1. この例では、`is MAX`定義ドロップダウン [から](../../data-analyst/data-warehouse-mgr/calc-column-types.md)定義を選択します。 `is MIN`定義は、可能な値が1つだけのテキスト列に適用した場合にも機能する可能性があります。 重要なのは、後で行う適切なフィルターの設定です。
+1. この例では、[定義ドロップダウン &#x200B;](../../data-analyst/data-warehouse-mgr/calc-column-types.md)から`is MAX`定義を選択します。 `is MIN`定義は、可能な値が1つだけのテキスト列に適用した場合にも機能する可能性があります。 重要なのは、後で行う適切なフィルターの設定です。
 1. **[!UICONTROL Select a table and column]** ドロップダウンをクリックし、`orders` テーブルを選択してから`Order's [!DNL Google Analytics] source`列を選択します。
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
 1. テーブルスキーマに戻ったら、`Options` ドロップダウンをクリックしてから`Filters`をクリックします。
@@ -117,7 +127,7 @@ ht-degree: 0%
 
 ### ボーナス：注文テーブル、ラウンド 2
 
-必要に応じてここで停止できますが、このセクションでは、**最後のセクション [!DNL Google Analytics]で作成した**&#x200B;お客様の最初の注文の[&#x200B; ディメンション &#x200B;](#customers)を`orders` テーブルに取り込むことで、さらに分析を行うことができます。 このセクションでディメンションを作成すると、顧客の最初の注文の`orders`属性を使用して、`Revenue` テーブル `Number of orders`、`Distinct buyers`、[!DNL Google Analytics]などで構築されているすべての指標を分析できます。
+必要に応じてここで停止できますが、このセクションでは、[最後のセクション &#x200B;](#customers)で作成した&#x200B;**お客様の最初の注文の[!DNL Google Analytics] ディメンション**&#x200B;を`orders` テーブルに取り込むことで、さらに分析を行うことができます。 このセクションでディメンションを作成すると、顧客の最初の注文の[!DNL Google Analytics]属性を使用して、`orders` テーブル `Revenue`、`Number of orders`、`Distinct buyers`などで構築されているすべての指標を分析できます。
 
 次の使用例は、`Customer's first order's [!DNL Google Analytics] source` ディメンションを`orders` テーブルに結合します。
 
@@ -133,7 +143,7 @@ ht-degree: 0%
 
 ![顧客獲得ディメンションの作成デモ &#x200B;](../../assets/help_center2.gif)
 
-最後に、`Customer's first order's` ミディアムと`campaign` ディメンションを`orders` テーブルに結合します。 ディメンションに参加し、問題がある場合は、ヘルプが必要な場合は、記事[の最後の](#stuck)を確認してください。
+最後に、`Customer's first order's` ミディアムと`campaign` ディメンションを`orders` テーブルに結合します。 ディメンションに参加し、問題がある場合は、ヘルプが必要な場合は、記事[&#128279;](#stuck)の最後のを確認してください。
 
 ### まとめ
 

@@ -4,29 +4,41 @@ description: テーブルの構成方法と、テーブル データの動作に
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-TQID: https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE
+TQID: 'https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1442
+source-wordcount: '1464'
 ht-degree: 0%
-
 ---
-
 # レプリケーションメソッドの設定
 
 データベース テーブル内の新しいデータまたは更新されたデータを識別するために、`Replication`個のメソッドと[rechecks](../data-warehouse-mgr/cfg-data-rechecks.md)が使用されます。 データの正確性を確保し、更新にかかる時間を最適化するためには、正しく設定することが重要です。 このトピックでは、レプリケーション方法に焦点を当てます。
@@ -53,14 +65,14 @@ ht-degree: 0%
 * `datetime`列はnullではありません。
 * 行はテーブルから削除されません
 
-これらの条件に加えて、Adobeでは、**レプリケーションに使用される**&#x200B;列を`datetime` インデックス作成`Modified At`することをお勧めします。これは、レプリケーション速度の最適化に役立ちます。
+これらの条件に加えて、Adobeでは、`Modified At` レプリケーションに使用される`datetime`列を&#x200B;**インデックス作成**&#x200B;することをお勧めします。これは、レプリケーション速度の最適化に役立ちます。
 
 更新が実行されると、最新の更新後に発生した`datetime`列の値を持つ行を検索して、新しいデータまたは変更されたデータを特定します。 新しい行が検出されると、それらの行はData Warehouseにレプリケートされます。 [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)に行がある場合、現在のデータベース値で上書きされます。
 
 例えば、テーブルには、データが最後に変更されたことを示す`modified\_at`という列が含まれている場合があります。 最新の更新が火曜日の正午に実行された場合、更新は、火曜日の正午よりも`modified\_at`値が大きいすべての行を検索します。 火曜日の正午から作成または変更された検出された行は、Data Warehouseにレプリケートされます。
 
 **ご存知ですか？**
-お使いのデータベースが現在`Incremental` レプリケーション メソッドをサポートしていない場合でも、[または](../../best-practices/mod-db-inc-replication.md)を使用できるようにする`Modified At` データベース `Single Auto Incrementing PK`を変更できます。
+お使いのデータベースが現在`Incremental` レプリケーション メソッドをサポートしていない場合でも、`Modified At`または`Single Auto Incrementing PK`を使用できるようにする[&#x200B; データベース &#x200B;](../../best-practices/mod-db-inc-replication.md)を変更できます。
 
 `Modified At`は最も理想的なレプリケーション方法であるだけでなく、最速の方法でもあります。 この方法は、大規模なデータセットで顕著な速度の増加を生み出すだけでなく、再チェックオプションを設定する必要もありません。 その他の方法では、データの小さなサブセットが変更された場合でも、変更を特定するためにテーブル全体を繰り返し処理する必要があります。 `Modified At`は、その小さなサブセットのみを反復処理します。
 
@@ -94,7 +106,7 @@ ht-degree: 0%
 
 同期プロセスの開始時にデータベースに対してクエリを実行し、行数をカウントすることで、新しい行が検出されます。 ローカルデータベースに[!DNL Commerce Intelligence]を超える行が含まれている場合、テーブルは更新されます。 行数が同じである場合、または[!DNL Commerce Intelligence]にローカル データベースよりも&#x200B;*行多く*&#x200B;行が含まれている場合、テーブルはスキップされます。
 
-これにより、**`Full Table`の場合、**&#x200B;のレプリケーションが互換性がないという重要な点が発生します
+これにより、**の場合、**`Full Table`&#x200B;のレプリケーションが互換性がないという重要な点が発生します
 
 * 以降の更新サイクルの間に、ローカルデータベーステーブルで作成した行よりも多くの行が削除されます。または
 * カラム値は変更されますが、追加の行は作成されません
@@ -128,7 +140,7 @@ ht-degree: 0%
    >
    >**一部の増分メソッドでは、`Replication Key`**&#x200B;を設定する必要があります。 [!DNL Commerce Intelligence]はこのキーを使用して、次の更新サイクルを開始する場所を決定します。
    >
-   >例えば、`modified at` テーブルに`orders` メソッドを使用する場合は、`date column`をレプリケーションキーとして設定する必要があります。 レプリケーションキーのオプションがいくつか存在する可能性がありますが、`created at`または注文の作成日時を選択します。 前回の更新サイクルが2015/00/00/12/1:10:00で停止した場合、次のサイクルは、これより大きい`created at`日付のデータのレプリケートを開始します。
+   >例えば、`orders` テーブルに`modified at` メソッドを使用する場合は、`date column`をレプリケーションキーとして設定する必要があります。 レプリケーションキーのオプションがいくつか存在する可能性がありますが、`created at`または注文の作成日時を選択します。 前回の更新サイクルが2015/00/00/12/1:10:00で停止した場合、次のサイクルは、これより大きい`created at`日付のデータのレプリケートを開始します。
 
 1. 完了したら、**[!UICONTROL Save]**&#x200B;をクリックします。
 
@@ -151,6 +163,6 @@ ht-degree: 0%
 ## 関連ドキュメント
 
 * [データの再確認について](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [をサポートするためのデータベースの変更 &#x200B;](../../best-practices/mod-db-inc-replication.md)
+* [`Incremental` レプリケーションをサポートするようにデータベースを変更しています](../../best-practices/mod-db-inc-replication.md)
 * [分析のためのデータベースの最適化](../../best-practices/opt-db-analysis.md)
 * [更新時間の短縮](../../best-practices/reduce-update-cycle-time.md)

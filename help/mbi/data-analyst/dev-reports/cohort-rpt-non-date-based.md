@@ -4,27 +4,38 @@ description: 類似のアクティビティまたは属性でユーザーをグ�
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/2JOFQPEaz-wQd4Ml-9vc0ZkmSIDD10e6xX-XkodZtXc
+TQID: 'https://experienceleague.adobe.com/2JOFQPEaz-wQd4Ml-9vc0ZkmSIDD10e6xX-XkodZtXc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 462
-ht-degree: 0%
-
+source-wordcount: '474'
+ht-degree: 1%
 ---
-
 # 日付ベース以外のコホートの[!DNL Cohort Report Builder]
 
 [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md)は、時間の経過に伴い、異なるユーザーのサブセットがどのように動作するかをマーチャントが調べるのに役立ちます。 以前は、`Cohort Report Builder`は、共通`cohort date`でユーザーをグループ化するように最適化されていました（例えば、特定の月に最初の購入を行ったすべての顧客のセット）。 `Non-Date Based Cohort`機能で、類似のアクティビティまたは属性でユーザーをグループ化できるようになりました。 この機能のユースケースをいくつか見てみましょう。
@@ -41,7 +52,7 @@ ht-degree: 0%
 
 1. 左側のタブの&#x200B;**[!UICONTROL Report Builder]**&#x200B;または任意のダッシュボードの&#x200B;**[!UICONTROL Add Report** > **Create Report]**&#x200B;をクリックします。
 
-1. `Report Builder Selection`画面で、**[!UICONTROL Create Report]** オプションの横にある`Visual Report Builder`をクリックします。
+1. `Report Builder Selection`画面で、`Visual Report Builder` オプションの横にある&#x200B;**[!UICONTROL Create Report]**&#x200B;をクリックします。
 
 ### 指標の追加
 
@@ -89,13 +100,13 @@ ht-degree: 0%
 
 #### 5. `Time range after cohort occurrence`
 
-月、週、または年ごとに`cohorts`を表示しますか？ この画面で選択内容を確認します。 このセクションの下で、`time range`が発生した後に`cohort action timestamp`を選択します。 たとえば、アクションの期間に最初の注文をおこなった顧客について、12か月間のデータを表示します。
+月、週、または年ごとに`cohorts`を表示しますか？ この画面で選択内容を確認します。 このセクションの下で、`cohort action timestamp`が発生した後に`time range`を選択します。 たとえば、アクションの期間に最初の注文をおこなった顧客について、12か月間のデータを表示します。
 
 ![cohort-first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 >[!NOTE]
 >
->[!UICONTROL Filters]と`Standard`のビューを切り替えても、指標に適用された`Cohort`は変更されません。
+>`Standard`と`Cohort`のビューを切り替えても、指標に適用された[!UICONTROL Filters]は変更されません。
 
 ### 関連
 

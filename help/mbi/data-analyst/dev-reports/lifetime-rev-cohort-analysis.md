@@ -4,27 +4,38 @@ description: Commerce Intelligenceのコホート分析機能の詳細。
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/j6-YcGwVWr3-ZmGEBtOCCL8YgDmXM81b5uHC310fxwQ
+TQID: 'https://experienceleague.adobe.com/j6-YcGwVWr3-ZmGEBtOCCL8YgDmXM81b5uHC310fxwQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 937
+source-wordcount: '939'
 ht-degree: 0%
-
 ---
-
 # [!DNL Lifetime Revenue Cohort]分析
 
 [!DNL Adobe Commerce Intelligence]のデータを見る方法は数多くあり、解釈と理解は計算と視覚化と同じくらい重要であることをご存知でしょう。 このトピックでは、[!DNL Commerce Intelligence] `cohort`分析の機能について説明します。
@@ -47,7 +58,7 @@ ht-degree: 0%
 
 ほとんどのビジネスでは、`lifetime revenue cohort`分析グラフは、最初の期間に多額の支出を表示し、時間の経過とともにゆっくりと増加します。 この増加は、顧客が獲得した後、すぐに最初の購入を行う可能性が他のどの時点よりも高くなったためです。 獲得イベント自体が購入の場合、100%の顧客は最初の期間に購入します。 購入前に登録が発生する可能性がある場合、この効果はそれほど顕著ではありません。
 
-例えば、[!DNL Groupon]は、[!DNL Amazon]にサインアップする多くの人がすぐに購入しないため、[!DNL Groupon]よりも初期ジャンプ率が大幅に低くなる可能性があります。 払い戻し数が多くない限り、このグラフは最初のジャンプ後に上に傾き、右に傾きます。 顧客が最初にサインアップすると最もアクティブになるため、成長率は時間の経過とともに減少する傾向があります。 この場合、平均が下がるのは、より多くの商品を購入するために再訪問する人の数に関係なく、コホート内の人々の数が一定に保たれるからです。 サブスクリプションビジネスでは、1回限りの購入をおこなうビジネスと比べて、この傾きは徐々に解消されていくでしょう。
+例えば、[!DNL Groupon]は、[!DNL Groupon]にサインアップする多くの人がすぐに購入しないため、[!DNL Amazon]よりも初期ジャンプ率が大幅に低くなる可能性があります。 払い戻し数が多くない限り、このグラフは最初のジャンプ後に上に傾き、右に傾きます。 顧客が最初にサインアップすると最もアクティブになるため、成長率は時間の経過とともに減少する傾向があります。 この場合、平均が下がるのは、より多くの商品を購入するために再訪問する人の数に関係なく、コホート内の人々の数が一定に保たれるからです。 サブスクリプションビジネスでは、1回限りの購入をおこなうビジネスと比べて、この傾きは徐々に解消されていくでしょう。
 
 サブスクリプションビジネスでは、時間の経過とともに坂が増える場合もあります。 これを見ることは稀ですが、それが起こるとき、それはビジネスにとって大きなシグナルです。 これは、顧客の離脱率が0であるということではなく、顧客が離脱した場合に対応するよりも、その顧客を維持するためのアップグレードが必要であることを意味します。
 
