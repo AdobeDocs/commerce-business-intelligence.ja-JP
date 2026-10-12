@@ -4,37 +4,52 @@ description: 更新サイクルのステータスを確認する方法を説明�
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/qT3lojSuve8jHgNVKoJCUW82cN2QK497wFX8NVbptWI
+TQID: 'https://experienceleague.adobe.com/qT3lojSuve8jHgNVKoJCUW82cN2QK497wFX8NVbptWI'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 515
+source-wordcount: '515'
 ht-degree: 0%
-
 ---
-
 # データと更新情報
 
 * [データが変更された理由](#datachange)
 * [定期アップデートと強制アップデートの違いは何ですか？](#regularforcedupdates)
 * [更新サイクルに時間がかかるのはなぜですか？](#updatecycletime)
 * [更新サイクルの完了時に通知を受け取ることはできますか？](#notifyupdate)
-* [&#x200B; [!DNL Google ECommerce]  データがデータベースと異なるのはなぜですか？](#ecommdatabase)
+* [ [!DNL Google ECommerce]  データがデータベースと異なるのはなぜですか？](#ecommdatabase)
 * [データの不一致のトラブルシューティング方法を教えてください。](#datadiscrepancy)
 
 ## データが変更された理由 {#datachange}
@@ -55,7 +70,7 @@ ht-degree: 0%
 
 ## 更新サイクルに時間がかかるのはなぜですか？ {#updatecycletime}
 
-更新時間がすでに長くなる要因が数多くあります。 特定の[&#x200B; レプリケーション方法](../data-warehouse-mgr/cfg-replication-methods.md)、[より高いリチェック頻度](../data-warehouse-mgr/cfg-data-rechecks.md)、およびダッシュボードとグラフの数は、ほんの一部の貢献者です。 Adobeでは、更新時間を短縮するために、[一部の設定の再構成](../../best-practices/reduce-update-cycle-time.md)と[分析のためにデータベースを最適化](../../best-practices/opt-db-analysis.md)することをお勧めします。
+更新時間がすでに長くなる要因が数多くあります。 特定の[ レプリケーション方法](../data-warehouse-mgr/cfg-replication-methods.md)、[より高いリチェック頻度](../data-warehouse-mgr/cfg-data-rechecks.md)、およびダッシュボードとグラフの数は、ほんの一部の貢献者です。 Adobeでは、更新時間を短縮するために、[一部の設定の再構成](../../best-practices/reduce-update-cycle-time.md)と[分析のためにデータベースを最適化](../../best-practices/opt-db-analysis.md)することをお勧めします。
 
 ## 更新サイクルの完了時に通知を受け取ることはできますか？ {#notifyupdate}
 
@@ -63,8 +78,8 @@ ht-degree: 0%
 
 ## [!DNL Google ECommerce] データがデータベースと異なるのはなぜですか？ {#ecommdatabase}
 
-[!DNL Google Analytics]とお客様のデータベースとの間には、様々な理由で不一致が発生する可能性があります。 トラッキングが適切に有効になっていない、シークレットにアクセスしているユーザー、正しく機能していないクリックイベントなどはその一例です。 収益と注文が正しく表示されない場合は、[このトピック &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)を参照して問題を診断してください。
+[!DNL Google Analytics]とお客様のデータベースとの間には、様々な理由で不一致が発生する可能性があります。 トラッキングが適切に有効になっていない、シークレットにアクセスしているユーザー、正しく機能していないクリックイベントなどはその一例です。 収益と注文が正しく表示されない場合は、[このトピック ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)を参照して問題を診断してください。
 
 ## データの不一致のトラブルシューティング方法を教えてください。 {#datadiscrepancy}
 
-Adobeでは、一貫性のないデータを確認することは、顧客のフラストレーションを招く恐れがあることを認識しています。 [&#x200B; データ書き出しチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)を使用して、問題を診断してください。 まだ行き詰まっている場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+Adobeでは、一貫性のないデータを確認することは、顧客のフラストレーションを招く恐れがあることを認識しています。 [ データ書き出しチュートリアル ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)を使用して、問題を診断してください。 まだ行き詰まっている場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

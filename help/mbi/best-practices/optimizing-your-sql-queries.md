@@ -4,30 +4,43 @@ description: Commerce Intelligence SQL Report BuilderでSQL クエリを最適�
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/wYrIvoh63fWYcfJZ-JyesyNzaYNExbBnHE3-JnvJ0FQ
+TQID: 'https://experienceleague.adobe.com/wYrIvoh63fWYcfJZ-JyesyNzaYNExbBnHE3-JnvJ0FQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 847
+source-wordcount: '847'
 ht-degree: 0%
-
 ---
-
 # SQL クエリの最適化
 
 [!DNL SQL Report Builder]を使用すると、必要なときにいつでもクエリを実行および変更できます。 この機能は、列やレポートを修正する前に更新サイクルが終了するのを待つのではなく、クエリをすぐに更新する必要がある場合に役立ちます。
@@ -42,7 +55,7 @@ ht-degree: 0%
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| SELECT アスタリスク ![&#128279;](../../mbi/assets/Select_all_1.png)を使用したSQL クエリ | ![特定の列を選択するSQL クエリ &#x200B;](../../mbi/assets/Select_all_2.png) |
+| SELECT アスタリスク ](../../mbi/assets/Select_all_1.png)を使用した![SQL クエリ | ![特定の列を選択するSQL クエリ ](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -56,7 +69,7 @@ FULL OUTER JOIN クエリの書き換え方法を確認します。
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| ![完全な外部結合を含むSQL クエリ &#x200B;](../../mbi/assets/Full_Outer_Join_1.png) | 最適化された結合![&#128279;](../../mbi/assets/Full_Outer_Join_2.png)を含むSQL クエリ |
+| ![完全な外部結合を含むSQL クエリ ](../../mbi/assets/Full_Outer_Join_1.png) | 最適化された結合](../../mbi/assets/Full_Outer_Join_2.png)を含む![SQL クエリ |
 
 {style="table-layout:auto"}
 
@@ -76,7 +89,7 @@ FULL OUTER JOIN クエリの書き換え方法を確認します。
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| ![WHERE句フィルター付きSQL クエリ &#x200B;](../../mbi/assets/Join_filters_1.png) | ![ON句フィルターを含むSQL クエリ &#x200B;](../../mbi/assets/Join_filters_2.png) |
+| ![WHERE句フィルター付きSQL クエリ ](../../mbi/assets/Join_filters_1.png) | ![ON句フィルターを含むSQL クエリ ](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -96,7 +109,7 @@ FULL OUTER JOIN クエリの書き換え方法を確認します。
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| ![NULL チェック付きのLEFT JOINを使用したSQL クエリ &#x200B;](../../mbi/assets/Exists_1.png) | EXISTS句![&#128279;](../../mbi/assets/Exists_2.png)を使用するSQL クエリ |
+| ![NULL チェック付きのLEFT JOINを使用したSQL クエリ ](../../mbi/assets/Exists_1.png) | EXISTS句](../../mbi/assets/Exists_2.png)を使用する![SQL クエリ |
 
 {style="table-layout:auto"}
 
@@ -112,7 +125,7 @@ FULL OUTER JOIN クエリの書き換え方法を確認します。
 
 | **代わりに…** | **試してみる！** |
 |-----|-----|
-| フィルター![&#128279;](../../mbi/assets/Group_by_2.png)の前にGROUP BYを含むSQL クエリ | ![GROUP BY](../../mbi/assets/Group_by_1.png)の前にフィルターを含むSQL クエリ |
+| フィルター](../../mbi/assets/Group_by_2.png)の前にGROUP BYを含む![SQL クエリ | ![GROUP BY](../../mbi/assets/Group_by_1.png)の前にフィルターを含むSQL クエリ |
 
 {style="table-layout:auto"}
 

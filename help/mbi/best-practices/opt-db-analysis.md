@@ -4,30 +4,45 @@ description: Commerce Intelligenceで運用データベースを最適化しま�
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
 role: Admin, Developer, User
 feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/5UkWGr-YOIfCy-BSomo2HWexXd-oM9ONvXpJkzyTPT0
+TQID: 'https://experienceleague.adobe.com/5UkWGr-YOIfCy-BSomo2HWexXd-oM9ONvXpJkzyTPT0'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+  - id: 68925965-bef3-5efb-a16f-b9dab29a8476
+    internal-label: Business Performance
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 885
+source-wordcount: '885'
 ht-degree: 0%
-
 ---
-
 # データベースの最適化
 
 [!DNL Adobe Commerce Intelligence]の運用データベースを使用する主な利点は、データを収集するために構築または変更する必要がないことです。 貴重な情報は既にそこにあります – あなたはそれをロック解除する必要があります。
@@ -60,7 +75,7 @@ ht-degree: 0%
 
 ## Store User Acquisition Source
 
-最も一般的な間違いの1つは、[&#x200B; ユーザー獲得ソース &#x200B;](../data-analyst/analysis/google-track-user-acq.md) （UAS）が運用データベースに保存されていないことです。 この問題が発生するほとんどの場合、UASは[!DNL Google Analytics]またはその他のWeb分析ツールを通じてのみ追跡されます。 これらのツールは役に立ちますが、UASを専用に保存する場合には、いくつかの欠点があります。たとえば、これらのツールからユーザーレベルのデータを抽出することはできません。 可能であれば、それは通常、難しいプロセスです。 この情報を取得し、データベースに保存されている行動情報や取引情報など、他のソースからのデータと組み合わせることは簡単であるべきです。
+最も一般的な間違いの1つは、[ ユーザー獲得ソース ](../data-analyst/analysis/google-track-user-acq.md) （UAS）が運用データベースに保存されていないことです。 この問題が発生するほとんどの場合、UASは[!DNL Google Analytics]またはその他のWeb分析ツールを通じてのみ追跡されます。 これらのツールは役に立ちますが、UASを専用に保存する場合には、いくつかの欠点があります。たとえば、これらのツールからユーザーレベルのデータを抽出することはできません。 可能であれば、それは通常、難しいプロセスです。 この情報を取得し、データベースに保存されている行動情報や取引情報など、他のソースからのデータと組み合わせることは簡単であるべきです。
 
 自社のデータベースにUASを保存することは、多くの場合、オンラインビジネスの分析能力を向上させる最大の要因となります。 これにより、UASによって、売上、ユーザーエンゲージメント、返済期間、顧客の生涯価値、解約、その他の重要指標を分析することができます。 [このデータは、マーケティングリソースをどこに投資するかを決定する際に非常に重要です](../data-analyst/analysis/most-value-source-channel.md)。
 
@@ -70,7 +85,7 @@ ht-degree: 0%
 
 ### プライマリキーの設定
 
-[&#x200B; プライマリキー](https://en.wikipedia.org/wiki/Unique_key)は、テーブル内の一意の値を生成する変更されない列（または列のセット）です。 プライマリキーは、テーブルが[!DNL Commerce Intelligence]で正しくレプリケートされていることを確認するため、非常に重要です。
+[ プライマリキー](https://en.wikipedia.org/wiki/Unique_key)は、テーブル内の一意の値を生成する変更されない列（または列のセット）です。 プライマリキーは、テーブルが[!DNL Commerce Intelligence]で正しくレプリケートされていることを確認するため、非常に重要です。
 
 プライマリキーを構築する場合は、自動増加する列に整数データタイプを使用します。 Adobeでは、可能な限り複数の列のプライマリキーを使用することを避けることをお勧めします。
 
@@ -78,7 +93,7 @@ ht-degree: 0%
 
 ### データ列へのデータタイプの割り当て
 
-データ列に割り当てられた[&#x200B; データタイプ &#x200B;](https://en.wikipedia.org/wiki/Data_type)がない場合、[!DNL Commerce Intelligence]はどのデータタイプを使用するかを推測します。 Adobeサポート部門が適切なデータタイプに列を調整するまで、システムが誤って推測すると、関連する分析を実行できない可能性があります。 例えば、日付列が数値データタイプとして推測される場合、その日付ディメンションを使用して時間の経過とともにトレンドできます。
+データ列に割り当てられた[ データタイプ ](https://en.wikipedia.org/wiki/Data_type)がない場合、[!DNL Commerce Intelligence]はどのデータタイプを使用するかを推測します。 Adobeサポート部門が適切なデータタイプに列を調整するまで、システムが誤って推測すると、関連する分析を実行できない可能性があります。 例えば、日付列が数値データタイプとして推測される場合、その日付ディメンションを使用して時間の経過とともにトレンドできます。
 
 ### 複数のデータベースがある場合は、データテーブルにプレフィックスを追加します
 

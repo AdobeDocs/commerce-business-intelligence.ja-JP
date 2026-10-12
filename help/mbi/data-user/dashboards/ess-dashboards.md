@@ -4,35 +4,46 @@ description: ダッシュボードの作成方法と操作方法について説�
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-TQID: https://experienceleague.adobe.com/Gtb2JIULI8lFIu5uqgN2NlCg-p9Djfy6swWtCkzClUc
+TQID: 'https://experienceleague.adobe.com/Gtb2JIULI8lFIu5uqgN2NlCg-p9Djfy6swWtCkzClUc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 628
+source-wordcount: '631'
 ht-degree: 0%
-
 ---
-
 # ダッシュボード
 
 [!DNL Adobe Commerce Intelligence] ダッシュボードでは、ストアのパフォーマンスと販売活動を一目で素早く確認できます。 個々のダッシュボードは、ほかのユーザーと共有し、論理グループに整理することができます。 他のユーザーに対して異なるレベルの権限を設定することもできます。
 
 レポートを作成し、ダッシュボードに追加し、データをExcelにエクスポートするのは簡単です。 チャートやレポートは、ダッシュボード上の位置にサイズ変更したりドラッグしたりできます。
 
-![&#x200B; ダッシュボード &#x200B;](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
+![ ダッシュボード ](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## ダッシュボードの作成 {#createdash}
 
@@ -42,15 +53,15 @@ ht-degree: 0%
 
 作成するダッシュボードの外観は完全に自分で決めることができます。 ダッシュボードの要素は、ニーズやワークフローに合わせて、任意の方法で配置したりサイズを変更したりできます。
 
-![&#x200B; サイズ変更ダッシュボード要素を配置](../../assets/arrange_resize_dashboard_element.gif)
+![ サイズ変更ダッシュボード要素を配置](../../assets/arrange_resize_dashboard_element.gif)
 
 ### ダッシュボードの作成
 
 1. メニューで、**[!UICONTROL Dashboards]**&#x200B;をクリックします。
 
-1. デフォルトのダッシュボードの名前は、ダッシュボードヘッダーの左上隅に表示されます。 下向き矢印（![下向き矢印アイコン &#x200B;](../../assets/magento-bi-btn-down.png)）をクリックして、使用可能なオプションを表示します。
+1. デフォルトのダッシュボードの名前は、ダッシュボードヘッダーの左上隅に表示されます。 下向き矢印（![下向き矢印アイコン ](../../assets/magento-bi-btn-down.png)）をクリックして、使用可能なオプションを表示します。
 
-   ![&#x200B; ダッシュボードの作成](../../assets/magento-bi-dashboard-create.png)
+   ![ ダッシュボードの作成](../../assets/magento-bi-dashboard-create.png)
 
 1. **[!UICONTROL Create Dashboard]**&#x200B;をクリックします。 次に、次の操作を行います。
 
@@ -62,9 +73,9 @@ ht-degree: 0%
 
    * **[!UICONTROL Create]**&#x200B;をクリックします。
 
-   ![&#x200B; ダッシュボード名](../../assets/magento-bi-dashboard-create-name.png)
+   ![ ダッシュボード名](../../assets/magento-bi-dashboard-create-name.png)
 
-   * 新しいダッシュボードの名前が左上隅に表示されます。 下向き矢印（![下向き矢印アイコン &#x200B;](../../assets/magento-bi-btn-down.png)）をクリックして、オプションを表示します。 グループを作成した場合、新しいダッシュボードがリストのグループの下に表示されます。
+   * 新しいダッシュボードの名前が左上隅に表示されます。 下向き矢印（![下向き矢印アイコン ](../../assets/magento-bi-btn-down.png)）をクリックして、オプションを表示します。 グループを作成した場合、新しいダッシュボードがリストのグループの下に表示されます。
 
 ### レポートを追加
 
@@ -74,11 +85,11 @@ ht-degree: 0%
 
    * ダッシュボードヘッダーで、**[!UICONTROL Add Report]**&#x200B;をクリックします。
 
-     ![&#x200B; レポートを追加](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![ レポートを追加](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. **[!UICONTROL Create Report]**&#x200B;をクリックして&#x200B;**[!UICONTROL Report Builder Options]**&#x200B;を表示します。
 
-   ![Report Builder オプション &#x200B;](../../assets/magento-bi-report-builder.png)
+   ![Report Builder オプション ](../../assets/magento-bi-report-builder.png)
 
 ## ダッシュボード上のアイテムの配置
 
@@ -92,7 +103,7 @@ ht-degree: 0%
 
 ### ダッシュボードの共有 {#sharingdash}
 
-組織全体で[!DNL Commerce Intelligence]を真に拡大し、貴重なインサイトを提供するために、Adobeでは、作成したダッシュボードを他のチームメンバーと共有することを推奨しています。 *ページの上部にある「*」オプションをクリックすると、所有しているダッシュボードを`Share Dashboard`と共有できます。
+組織全体で[!DNL Commerce Intelligence]を真に拡大し、貴重なインサイトを提供するために、Adobeでは、作成したダッシュボードを他のチームメンバーと共有することを推奨しています。 *ページの上部にある「`Share Dashboard`」オプションをクリックすると、所有しているダッシュボードを*&#x200B;と共有できます。
 
 ダッシュボードを共有する場合、組織全体または個人ごとに権限を割り当てることができます。つまり、レポートを表示および編集できるユーザーを決定できます。
 
@@ -104,7 +115,7 @@ ht-degree: 0%
 
 *管理者または標準ユーザー*&#x200B;で、アカウントに共有ダッシュボードを追加する場合は、**[!UICONTROL Dashboard Options]**&#x200B;をクリックし、ドロップダウンで&#x200B;**[!UICONTROL Find]**&#x200B;をクリックします。
 
-![&#x200B; ダッシュボードを検索](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
+![ ダッシュボードを検索](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
 
 ### ダッシュボード設定の管理
 

@@ -4,29 +4,43 @@ description: Adobe Commerce Intelligenceで電子メールの要約を自動化�
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/e6PatGqkzOXmxOYhzvDEkNrXCktjz3rIVWkxhleG4mI
+TQID: 'https://experienceleague.adobe.com/e6PatGqkzOXmxOYhzvDEkNrXCktjz3rIVWkxhleG4mI'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 620
+source-wordcount: '620'
 ht-degree: 0%
-
 ---
-
 # 自動メール要約の作成
 
 メールによる要約は、ビジネスの状況と傾向を主要な関係者と共有するための強力なコミュニケーションツールです。 メール要約を活用すると、次のことが可能になります。
@@ -55,7 +69,7 @@ ht-degree: 0%
    * **個別レポートの選択** - ダッシュボードから特定のレポートを選択します
    * **ダッシュボード全体を選択** - ダッシュボードのレイアウトに表示されるダッシュボードのすべてのレポートを含める
 
-   所有しているレポートは最大10個まで選択できます。 レポートを選択したら、表示されるアイコンを使用して、そのレポートを表またはグラフとして送信するかどうかを選択します。 レポートを数値として保存した場合は、数値としてのみ送信できます。 古いデータを含むレポートを含むメール概要の送信について詳しくは、[&#x200B; アカウント設定の管理](../../administrator/account-management/managing-account-settings.md)を参照してください。
+   所有しているレポートは最大10個まで選択できます。 レポートを選択したら、表示されるアイコンを使用して、そのレポートを表またはグラフとして送信するかどうかを選択します。 レポートを数値として保存した場合は、数値としてのみ送信できます。 古いデータを含むレポートを含むメール概要の送信について詳しくは、[ アカウント設定の管理](../../administrator/account-management/managing-account-settings.md)を参照してください。
 
    ダッシュボード全体を追加するには、次の形式および削除オプションがあります。
 
@@ -126,7 +140,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->古いデータを含むレポートを含むメール概要の送信について詳しくは、[&#x200B; アカウント設定の管理](../../administrator/account-management/managing-account-settings.md)を参照してください。
+>古いデータを含むレポートを含むメール概要の送信について詳しくは、[ アカウント設定の管理](../../administrator/account-management/managing-account-settings.md)を参照してください。
 
 各行の右側にある歯車アイコンをクリックして、次の操作を行います。
 

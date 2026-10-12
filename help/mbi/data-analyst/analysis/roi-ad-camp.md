@@ -4,29 +4,41 @@ description: キャンペーンのパフォーマンスを評価するさまざ�
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
+TQID: 'https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 1cf9e104-5756-5a15-85a5-38be6a065d7f
+    internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1265
+source-wordcount: '1265'
 ht-degree: 0%
-
 ---
-
 # AdvertisingのキャンペーンとROI
 
 [!DNL Adobe Commerce Intelligence]を使用すると、簡単に[広告コスト データと収益データをデータベースから](../../data-analyst/importing-data/integrations/google-adwords.md)結合できます。 これにより、ROI （投資収益率）が最も高い施策を特定できます。 ここでは、キャンペーンのパフォーマンスを評価するいくつかの異なる方法について説明します。
@@ -35,8 +47,8 @@ ht-degree: 0%
 
 * 広告コストデータを読み込みます。
   * [お客様の [!DNL Google AdWords] から [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md)への接続：これにより、[!DNL Commerce Intelligence]での[!DNL Adwords]の支出が同期されます
-  * [その他の広告コスト データをアップロード &#x200B;](../importing-data/connecting-data/import-offline-ad-data.md)：これは、直接コネクタのないチャネルの[!DNL Commerce Intelligence]へのアップロードをお勧めします
-  * 複数のソースからコストデータをインポートする場合は、[&#x200B; データを](../../best-practices/consolidating-your-tables.md)統合[!DNL Commerce Intelligence]できます。 [&#x200B; サポートチケットを送信](../../guide-overview.md#Submitting-a-Support-Ticket)するだけです。
+  * [その他の広告コスト データをアップロード ](../importing-data/connecting-data/import-offline-ad-data.md)：これは、直接コネクタのないチャネルの[!DNL Commerce Intelligence]へのアップロードをお勧めします
+  * 複数のソースからコストデータをインポートする場合は、[ データを](../../best-practices/consolidating-your-tables.md)統合[!DNL Commerce Intelligence]できます。 [ サポートチケットを送信](../../guide-overview.md#Submitting-a-Support-Ticket)するだけです。
 * [ユーザー獲得チャネルデータの追跡](../analysis/google-track-user-acq.md)
 
 ## ユーザー獲得キャンペーン
@@ -61,8 +73,8 @@ ht-degree: 0%
 1. [!UICONTROL Data > Metrics]に移動
 1. `Add New Metric`を選択し、[!DNL AdWords] コスト データを記録している[!DNL `Adwords...`] テーブルを選択します。
 1. 指標エディターで、指標に名前を付けます（例：[!UICONTROL AdWord Cost]）
-1. ドロップダウンを使用して、`date`列が順序付けした[!DNL Adwords...] テーブル（変更）の`adCost`列で&#x200B;**合計**&#x200B;を実行します。
-   ![新しい指標を追加した後の成功メッセージ &#x200B;](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
+1. ドロップダウンを使用して、`date`列が順序付けした[!DNL Adwords...] テーブル（変更）の`adCost`列で&#x200B;**合計**を実行します。
+   ![新しい指標を追加した後の成功メッセージ ](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 上部の`Back to Metric List`をクリックして、任意のダッシュボードに移動します。
 
 1. キャンペーンごとの支出をセグメント化するレポートを作成します
@@ -115,7 +127,7 @@ ht-degree: 0%
 >
 >この例では、すべてのキャンペーンコストが特定の製品の購入にのみ使用されたと仮定します。 すべてのコストが購入の創出に費やされたと仮定することで、生じるROIは最悪のケースのシナリオ（購入あたりの最も高いコスト）を考慮します。 実際のROIがこの計算よりも高いことを確認できます。 例：10人の新規ユーザーと10人の購入を生み出したキャンペーンに20 ドルを費やした場合、実際の購入単価は1 ドルとなります。 すべてのコストが新規ユーザーの獲得に費やされたことを前提にすると、購入単価は2 ドルになります。
 
-開始する前に、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信して、次のディメンションを行項目テーブル （`sales\_flat\_order\_item, order\_item`）に結合します。
+開始する前に、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を送信して、次のディメンションを行項目テーブル （`sales\_flat\_order\_item, order\_item`）に結合します。
 
 * 注文のソース（ユーザーレベルで紹介ソースのみを追跡する場合は、ユーザーのソースを結合します）
 * 注文のキャンペーン（ユーザーレベルで紹介ソースのみを追跡する場合は、ユーザーのキャンペーンに参加します）
@@ -147,10 +159,10 @@ ht-degree: 0%
 
 ## 関連ドキュメント
 
-* [&#x200B; [!DNL Google Analytics] E-Commerce経由で注文の紹介ソースを追跡](../importing-data/integrations/google-ecommerce.md)
+* [ [!DNL Google Analytics] E-Commerce経由で注文の紹介ソースを追跡](../importing-data/integrations/google-ecommerce.md)
 * [データベース内のユーザー紹介ソースの追跡](../analysis/google-track-user-acq.md)
 * [データベース内のユーザーデバイス、ブラウザー、OS データの追跡](../analysis/track-usr-dev-browser.md)
 * [最も価値のある獲得ソースとチャネルの発見](../analysis/most-value-source-channel.md)
-* [&#x200B; [!DNL Google Adwords]  アカウントを接続](../importing-data/integrations/google-adwords.md)
-* [&#x200B; [!DNL Google Analytics] UTM アトリビューションの仕組み](../analysis/utm-attributes.md)
-* [&#x200B; [!DNL Google Analytics]でのUTM タグ付けに関する5つのベストプラクティス](../../best-practices/utm-tagging-google.md)
+* [ [!DNL Google Adwords]  アカウントを接続](../importing-data/integrations/google-adwords.md)
+* [ [!DNL Google Analytics] UTM アトリビューションの仕組み](../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics]でのUTM タグ付けに関する5つのベストプラクティス](../../best-practices/utm-tagging-google.md)

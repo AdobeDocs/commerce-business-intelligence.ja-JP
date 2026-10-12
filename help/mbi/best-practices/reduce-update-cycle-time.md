@@ -4,29 +4,43 @@ description: Commerce Intelligenceの更新サイクルを短縮し、ダッシ�
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
 role: Admin, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager, Dashboards
-TQID: https://experienceleague.adobe.com/DFlzL9E95teiWI31j7qWRU8Ab6GkbFX7iPPdaxGq48A
+TQID: 'https://experienceleague.adobe.com/DFlzL9E95teiWI31j7qWRU8Ab6GkbFX7iPPdaxGq48A'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 427
+source-wordcount: '427'
 ht-degree: 0%
-
 ---
-
 # 更新サイクルの処理時間を短縮
 
 [!DNL Adobe Commerce Intelligence]は、1日中データベースと同期して新しいデータをレプリケートし、ダッシュボードに常に最新の情報が表示されるようにします。
@@ -37,7 +51,7 @@ ht-degree: 0%
 
 データベーステーブルには、変更可能な値を持つデータ列を含めることができます。 例えば、**orders** テーブルには、**status**&#x200B;という列がある場合があります。 注文が最初にデータベースに書き込まれると、ステータス列に値`pending`が含まれる場合があります。 注文は、この`pending`値で[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md)にレプリケートされます。
 
-変更可能な列は、更新された値[&#128279;](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)に対して時間の経過とともに再チェックする必要があります。 デフォルトでは、[!DNL Commerce Intelligence]は更新のたびに列を再チェックしますが、再チェックしてレプリケートするデータの量が多い場合、更新時間に悪影響を与える可能性があります。 Adobeでは、更新のたびにリチェックを実行するのではなく、リチェック頻度を日単位、週単位、月単位に設定することをお勧めします。
+変更可能な列は、更新された値](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)に対して時間の経過とともに[再チェックする必要があります。 デフォルトでは、[!DNL Commerce Intelligence]は更新のたびに列を再チェックしますが、再チェックしてレプリケートするデータの量が多い場合、更新時間に悪影響を与える可能性があります。 Adobeでは、更新のたびにリチェックを実行するのではなく、リチェック頻度を日単位、週単位、月単位に設定することをお勧めします。
 
 ## 増分レプリケーション方法の使用
 
@@ -59,4 +73,4 @@ ht-degree: 0%
 
 ## まとめ
 
-これらの推奨事項を実装しても更新時間が遅いと思われる場合は、[&#x200B; サポートチームにお問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+これらの推奨事項を実装しても更新時間が遅いと思われる場合は、[ サポートチームにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

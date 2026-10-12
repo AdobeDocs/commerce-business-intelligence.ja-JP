@@ -4,35 +4,46 @@ description: データウェアハウスを正確かつ容易に分析できる�
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/O1WKa98rRVw1dcgNQPsORit2gmZNn1Wi7H-Q4J7KcA0
+TQID: 'https://experienceleague.adobe.com/O1WKa98rRVw1dcgNQPsORit2gmZNn1Wi7H-Q4J7KcA0'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 301
+source-wordcount: '301'
 ht-degree: 0%
-
 ---
-
 # 財務データのフォーマットとインポート
 
 このトピックでは、[!DNL Adobe Commerce Intelligence]で分析するために財務データをインポートする最適な方法について説明します。
 
 2次元のクロスタブデータテーブルは、一般的に財務データに使用される形式です。 値が列と行の両方のラベルで分類される場合、このタイプのレイアウトは、人間の目やスプレッドシートのツールでは見やすいかもしれませんが、データベースには適していません。
 
-![&#x200B; ピボットテーブルのレイアウトにデータを表示するクロスタブ形式](../../mbi/assets/crosstab.png)
+![ ピボットテーブルのレイアウトにデータを表示するクロスタブ形式](../../mbi/assets/crosstab.png)
 
 このデータを[!DNL Commerce Intelligence]に読み込んで分析するには、テーブルを1次元のリストに統合する必要があります。 統合すると、各データ値は、1行の複数のラベルによって分類されます。各行は一意であるか、一意の識別子（プライマリキー列など）を持ちます。
 
@@ -50,7 +61,7 @@ ht-degree: 0%
 1. 新しいシートにピボットテーブルを作成し、**[!UICONTROL Finish]**&#x200B;をクリックします。
 1. フィールドリストから列フィールドと行フィールドの選択を解除します。
 1. 結果の数値をダブルクリックして、統合されたソースデータを新しいシートに表示します。
-   ダブルクリックして展開することを示す![Excel ピボットテーブルのフィールドリスト &#x200B;](../../mbi/assets/pivot-table-double-click.png)
+   ダブルクリックして展開することを示す![Excel ピボットテーブルのフィールドリスト ](../../mbi/assets/pivot-table-double-click.png)
 1. `CSV` ファイルとして保存します。
 
 ## まとめ

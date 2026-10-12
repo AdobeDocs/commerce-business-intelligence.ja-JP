@@ -4,29 +4,41 @@ description: SQL Report Builderを使用してデータと指標を監査し、�
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Developer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-TQID: https://experienceleague.adobe.com/7Yx7Kpir-xjz5TPuajN7CFsLjWAbY0AT3bKtBabA5Wk
+TQID: 'https://experienceleague.adobe.com/7Yx7Kpir-xjz5TPuajN7CFsLjWAbY0AT3bKtBabA5Wk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Optimization
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 521
+source-wordcount: '521'
 ht-degree: 0%
-
 ---
-
 # [!DNL SQL Report Builder]
 
 [!DNL SQL Report Builder]は、主に新しいレポートを作成し、分析を繰り返すために使用されますが、データと指標を効果的に監査するためにも使用できます。 次の情報では、[!DNL SQL Report Builder]を使用してデータと指標を監査し、結果をローカルデータベースのデータと比較する方法について説明します。
@@ -42,13 +54,13 @@ ht-degree: 0%
 
 クエリをより明確に表示するには、クエリフィールドでの表示方法を再形式できます。 準備ができたら、`Run Query`を選択します。 結果は、クエリの下のレポートパネルにテーブルとして入力されます。
 
-![SQL クエリの実行と結果の表示のアニメーション化されたデモ &#x200B;](../../assets/run-query-results.gif)
+![SQL クエリの実行と結果の表示のアニメーション化されたデモ ](../../assets/run-query-results.gif)
 
 ## クエリの制限
 
 特定の不一致またはデータのセットを特定する場合は、クエリを特定のサンプルに限定して、ローカルデータベースと照合する必要があります。 これを行うには、目的の制限に合わせてクエリを編集します。 次の例では、2013年1月1日以降の収益のみを含めるようにクエリを制限しています。 クエリを更新したら、もう一度&#x200B;**[!UICONTROL Run Query]**&#x200B;を選択して結果を更新します。
 
-![&#x200B; フィルターを使用したクエリ制限のアニメーション化されたデモ &#x200B;](../../assets/restricting-query.gif)
+![ フィルターを使用したクエリ制限のアニメーション化されたデモ ](../../assets/restricting-query.gif)
 
 ## 保存とエクスポート
 
@@ -56,12 +68,12 @@ ht-degree: 0%
 
 レポートが保存されたら、`Go to Dashboard`を選択して、そのダッシュボードに移動します。 そこから、レポートを見つけて、**[!UICONTROL Options gear > Full `.csv`Export]**&#x200B;または&#x200B;**[!UICONTROL Full Excel Export]**&#x200B;を選択してデータを書き出すことができます。
 
-![&#x200B; ダッシュボードデータの書き出しのアニメーション化されたデモ &#x200B;](../../assets/export-dboard-data.gif)
+![ ダッシュボードデータの書き出しのアニメーション化されたデモ ](../../assets/export-dboard-data.gif)
 
 ## カスタムクエリ
 
-また、カスタムクエリを作成し、結果を書き出して、ローカルデータベースと比較することもできます。 クエリ最適化[&#128279;](../../best-practices/optimizing-your-sql-queries.md)の ガイドラインに従って、SQL エディターにクエリを記述します。 サイドバーの上部にあるボタンを使用して、[!DNL SQL Report Builder]で使用できるテーブルと指標のリストを切り替え、クエリに追加できます。 カスタムクエリがニーズに合ったら、レポートを保存し、そのデータをダッシュボードから書き出すことができます。
+また、カスタムクエリを作成し、結果を書き出して、ローカルデータベースと比較することもできます。 クエリ最適化](../../best-practices/optimizing-your-sql-queries.md)の[ ガイドラインに従って、SQL エディターにクエリを記述します。 サイドバーの上部にあるボタンを使用して、[!DNL SQL Report Builder]で使用できるテーブルと指標のリストを切り替え、クエリに追加できます。 カスタムクエリがニーズに合ったら、レポートを保存し、そのデータをダッシュボードから書き出すことができます。
 
 >[!NOTE]
 >
->データを監査した後に不一致が見つかった場合は、[&#x200B; サポートへの連絡：データの不一致](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) サポートのトピックで、次に行う処理について詳しく確認してください。
+>データを監査した後に不一致が見つかった場合は、[ サポートへの連絡：データの不一致](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) サポートのトピックで、次に行う処理について詳しく確認してください。

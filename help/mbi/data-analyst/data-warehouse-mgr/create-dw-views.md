@@ -4,33 +4,49 @@ description: 既存のテーブルを変更したり、SQLを使用して複数�
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/vYwWxyLRBA-ZG6IZv9Xw1nYqdYG2nfucHNB6rF8qAsM
+TQID: 'https://experienceleague.adobe.com/vYwWxyLRBA-ZG6IZv9Xw1nYqdYG2nfucHNB6rF8qAsM'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1156
+source-wordcount: '1156'
 ht-degree: 13%
-
 ---
-
 # Data Warehouse ビューの操作
 
 このドキュメントでは、**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**&#x200B;に移動してアクセスできる`Data Warehouse Views`の目的と用途について説明します。 次に、その機能とビューの作成方法の説明と、`Data Warehouse Views`を使用して[!DNL Facebook]と[!DNL AdWords]支出データを統合する方法の例を示します。
@@ -39,7 +55,7 @@ ht-degree: 13%
 
 `Data Warehouse Views`機能は、既存のテーブルを変更するか、SQLを使用して複数のテーブルを結合または統合することで、新しいウェアハウステーブルを作成する方法です。 `Data Warehouse View`が作成され、更新サイクルで処理されると、次に示すように、`Data Warehouse Views` ドロップダウンの下に新しいテーブルとしてData Warehouseに入力されます。
 
-テーブル管理オプションを表示する![Data Warehouse インターフェイス &#x200B;](../../assets/Data_Warehouse.png)
+テーブル管理オプションを表示する![Data Warehouse インターフェイス ](../../assets/Data_Warehouse.png)
 
 ここから、新しいビューは他のテーブルと同様に機能し、新しい計算列を作成したり、その上に指標やレポートを構築したりできます。
 
@@ -51,7 +67,7 @@ SQLに精通している場合、これらの統合例では両方とも`UNION`�
 
 次に示すように、**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**&#x200B;に移動して、新しい`Data Warehouse Views`を作成し、既存のビューを削除できます。
 
-カスタムビュー設定を示す![Data Warehouse ビューセクション &#x200B;](../../assets/Data_Warehouse_Views.png)
+カスタムビュー設定を示す![Data Warehouse ビューセクション ](../../assets/Data_Warehouse_Views.png)
 
 ここから、次のサンプル手順に従ってビューを作成できます。
 
@@ -101,7 +117,7 @@ SQLに精通している場合、これらの統合例では両方とも`UNION`�
 
 [!DNL Facebook]と[!DNL Google AdWords]の両方のキャンペーンを含む単一の広告費テーブルを作成するには、SQL クエリを記述し、`UNION ALL`関数を使用する必要があります。 `UNION ALL` ステートメントは、多くの場合、各クエリの結果を単一の出力に追加しながら、複数の異なるSQL クエリを組み合わせるために使用されます。
 
-PostgreSQL [&#x200B; ドキュメント &#x200B;](https://www.postgresql.org/docs/8.3/queries-union.html)に記載されているように、`UNION` ステートメントには言及する価値があるいくつかの要件があります。
+PostgreSQL [ ドキュメント ](https://www.postgresql.org/docs/8.3/queries-union.html)に記載されているように、`UNION` ステートメントには言及する価値があるいくつかの要件があります。
 
 * すべてのクエリは同じ数の列を返す必要があります
 * 対応する列のデータ型は同じである必要があります
@@ -156,7 +172,7 @@ PostgreSQL [&#x200B; ドキュメント &#x200B;](https://www.postgresql.org/doc
 
 **追加のヘルプをお探しですか？**
 
-SQLの書き込みと`Data Warehouse Views`の作成は、テクニカルサポートには含まれていません。 ただし、[&#x200B; サービスチーム &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)は、ビューの作成に関するサポートを提供しています。 新しいデータベースを使用して従来のデータベースを移行し、特定の分析のために単一のData Warehouse ビューを作成するなど、あらゆる面でサポート チームがサポートします。
+SQLの書き込みと`Data Warehouse Views`の作成は、テクニカルサポートには含まれていません。 ただし、[ サービスチーム ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)は、ビューの作成に関するサポートを提供しています。 新しいデータベースを使用して従来のデータベースを移行し、特定の分析のために単一のData Warehouse ビューを作成するなど、あらゆる面でサポート チームがサポートします。
 
 通常、同様に構造化された2 ～ 3個のテーブルを統合する目的で新しい`Data Warehouse View`を作成するには、5時間のサービス時間が必要です。これは、約1,250 ドルの作業に相当します。 しかし、以下は、必要な投資を増やす可能性のあるいくつかの一般的な要因です。
 

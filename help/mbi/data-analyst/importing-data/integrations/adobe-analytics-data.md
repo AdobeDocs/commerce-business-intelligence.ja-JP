@@ -1,33 +1,48 @@
 ---
-title: ' [!DNL Adobe Analytics] 件のデータが必要です'
+title: '[!DNL Adobe Analytics] データが必要です'
 description: Analytics 2.0 レポート APIを使用してAdobe AnalyticsからCommerce Intelligenceが読み込んだデータフィールドを確認することで、レポートで何が期待されるのかを把握できます。
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/vA-1cABpxQNwI8xTF4Elkgv2geudkp5tnBH1l6-PZiY
+TQID: 'https://experienceleague.adobe.com/vA-1cABpxQNwI8xTF4Elkgv2geudkp5tnBH1l6-PZiY'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 443
+source-wordcount: '444'
 ht-degree: 1%
-
 ---
-
 # [!DNL Adobe Analytics] データが必要です
 
 [!DNL Adobe Commerce Intelligence]の[!DNL Adobe Analytics]統合では、[Analytics 2.0 レポート API](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md)を使用しています。
@@ -65,6 +80,6 @@ ht-degree: 1%
 | 制限 | 説明 |
 | --- | --- |
 | `Historical data period` | 他のサードパーティ統合と同様に、[!DNL Adobe Analytics]統合では限られた量の履歴データが引き出され、その後データを最新の状態に保つことができます。 過去の期間は2週間に設定されています。 |
-| `Empty component combinations` | 指標とディメンションの一部の組み合わせには、データが含まれていません。 このような組み合わせがレプリケーション用に選択されている場合、[!DNL Commerce Intelligence]はレプリケートされたテーブルからその列を除外します。 このような組み合わせを選択しないようにするには、まず[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/home)でレポートを作成して、想定したデータが得られることを確認します。 |
+| `Empty component combinations` | 指標とディメンションの一部の組み合わせには、データが含まれていません。 このような組み合わせがレプリケーション用に選択されている場合、[!DNL Commerce Intelligence]はレプリケートされたテーブルからその列を除外します。 このような組み合わせを選択しないようにするには、まず[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/home)でレポートを作成して、想定したデータが得られることを確認します。 |
 | `Re-authorization cadence` | [!DNL Adobe Analytics]統合の再認証は2週間ごとに必要です。 再認証するには、統合の編集ページに移動し、**[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**&#x200B;をクリックします。 |
 | `One dimension per row` | [!DNL Adobe Analytics]は、一度に1つのディメンションの指標データを提供します。 設定中に複数のディメンションを選択した場合、[!DNL Commerce Intelligence] テーブルの各行には、1つのディメンション値と各他のディメンションのnullが含まれます。 |

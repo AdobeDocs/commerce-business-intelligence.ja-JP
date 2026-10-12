@@ -1,28 +1,35 @@
 ---
 title: Commerce Intelligenceのレポートとエレメントに名前を付ける
-description: ' [!DNL Commerce Intelligence]でのレポートと要素の命名に関するベストプラクティスについて説明します。'
+description: '[!DNL Commerce Intelligence]のレポートと要素に名前を付ける方法について説明します。'
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
 role: Admin, User
 feature: Reports
-TQID: https://experienceleague.adobe.com/qa6daoMCZ4amPkvXatm77q-wwLpzweOQS5aGVYccqLU
+TQID: 'https://experienceleague.adobe.com/qa6daoMCZ4amPkvXatm77q-wwLpzweOQS5aGVYccqLU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 725
+source-wordcount: '728'
 ht-degree: 0%
-
 ---
-
 # レポートと要素に名前を付ける
 
 [!DNL Adobe Commerce Intelligence]で構築を開始する前に、Adobeでは成功の秘訣をいくつか共有したいと考えています。 指標やフィルターなどを作成する方法を把握することは重要ですが、必要な情報が見つからない場合や、曖昧な場合、あらゆる作業に意味があるとは限りません。
@@ -74,7 +81,7 @@ ht-degree: 0%
 
 ## グラフ {#charts}
 
-[&#x200B; グラフ &#x200B;](../tutorials/using-visual-report-builder.md)を命名する場合、次の式に従うと最も便利です：**（データパースペクティブ） + （指標） + （期間） + （時間間隔）**
+[ グラフ ](../tutorials/using-visual-report-builder.md)を命名する場合、次の式に従うと最も便利です：**（データパースペクティブ） + （指標） + （期間） + （時間間隔）**
 
 **不正な例：**
 収益
@@ -94,7 +101,7 @@ ht-degree: 0%
 
 ## ディメンション（計算列） {#dimensions}
 
-新しい[&#x200B; ディメンション &#x200B;](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)を命名する場合、次の式に従うと最も便利です：**（エンティティ） + （N） + （時間枠） + （計算） + （コメント）**。 例：
+新しい[ ディメンション ](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)を命名する場合、次の式に従うと最も便利です：**（エンティティ） + （N） + （時間枠） + （計算） + （コメント）**。 例：
 
 ユーザーの最初の30日間の収益
 * ユーザーの注文番号
@@ -102,7 +109,7 @@ ht-degree: 0%
 
 ## フィルターセット {#filterset}
 
-[&#x200B; フィルターセット &#x200B;](../data-user/reports/ess-manage-data-filters.md)は、通常、含める情報または除外する情報を説明する方法で名前が付けられます。 例えば、フィルターセットに名前を付ける&#x200B;**注文品目**&#x200B;を使用すると、任意のユーザーがフィルターセットのロジックを表示し、ビジネス全体でカウントされる注文情報を決定する注文情報を把握できます。 フィルターセットは、計算列と指標の両方に適用でき、理解しやすくする必要があることを忘れないでください。
+[ フィルターセット ](../data-user/reports/ess-manage-data-filters.md)は、通常、含める情報または除外する情報を説明する方法で名前が付けられます。 例えば、フィルターセットに名前を付ける&#x200B;**注文品目**&#x200B;を使用すると、任意のユーザーがフィルターセットのロジックを表示し、ビジネス全体でカウントされる注文情報を決定する注文情報を把握できます。 フィルターセットは、計算列と指標の両方に適用でき、理解しやすくする必要があることを忘れないでください。
 
 ## 指標 {#metrics}
 

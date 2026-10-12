@@ -4,27 +4,37 @@ description: ページビュー、セッション、ユーザーなど、web サ
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
 role: Admin, User
 feature: Reports, Data Integration
-TQID: https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4
+TQID: 'https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: '756'
 ht-degree: 0%
-
 ---
-
 # Web サイトのアクティビティの分析
 
 [!DNL Adobe Commerce Intelligence]を使用すると、広告コスト データを他のデータと簡単に統合できます。 これにより、web サイトのアクティビティを把握できるだけでなく、登録ユーザーや購入したweb サイト訪問者の割合を把握できます。
@@ -33,9 +43,9 @@ ht-degree: 0%
 
 ## 前提条件
 
-**広告コスト データを読み込む** - [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md)を[!DNL Adobe Commerce Intelligence]に接続すると、Commerce Intelligenceでの[!DNL AdWords]の費用が自動的に同期されます。
+**広告コスト データを読み込む** - [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md)を[!DNL Adobe Commerce Intelligence]に接続すると、Commerce Intelligenceでの[!DNL AdWords]の費用が自動的に同期されます。
 
-**ユーザー獲得チャネルデータの追跡** - [!DNL Google AdWords] データをデータベース内の特定の注文に結び付けるには、[経由で](../analysis/google-track-user-acq.md) ユーザー獲得[!DNL Google Analytics E-commerce]を追跡する必要があります。 これにより、各注文をutm ソースとミディアムに接続できます。
+**ユーザー獲得チャネルデータの追跡** - [!DNL Google AdWords] データをデータベース内の特定の注文に結び付けるには、[!DNL Google Analytics E-commerce]経由で[ ユーザー獲得](../analysis/google-track-user-acq.md)を追跡する必要があります。 これにより、各注文をutm ソースとミディアムに接続できます。
 
 ## ユーザー獲得キャンペーン
 
@@ -51,8 +61,8 @@ ht-degree: 0%
 
 1. レポートを作成する。
 1. **[!UICONTROL Add Metric]**&#x200B;をクリックし、ドロップダウンの下部にある[!DNL Google Analytics] セクションにマウスを合わせて`Page Views`を選択します。
-1. 別の指標を追加し、今度は[!DNL Google Analytics]を選択して`Sessions` セクションにマウスを移動します。
-1. 3つ目の指標を追加します。今回は[!DNL Google Analytics]を選択し、`Users` セクションにマウスポインターを合わせます。
+1. 別の指標を追加し、今度は`Sessions`を選択して[!DNL Google Analytics] セクションにマウスを移動します。
+1. 3つ目の指標を追加します。今回は`Users`を選択し、[!DNL Google Analytics] セクションにマウスポインターを合わせます。
 1. 次に、期間を31日前から1日前の移動範囲に変更し、時間間隔を`by day`に調整します。
 1. レポートに名前を付け（`Page views, sessions and users by day`など）、**[!UICONTROL Save]**&#x200B;をクリックします。
 
@@ -93,25 +103,25 @@ ht-degree: 0%
 1. 次の指標を追加します。
 
 * `New users`
-   * メトリック名の下の&#x200B;**[!UICONTROL Hide]**&#x200B;をクリックします
+  * メトリック名の下の&#x200B;**[!UICONTROL Hide]**&#x200B;をクリックします
 
 * `Number of orders`
-   * `Customer's order number` = 1のフィルターを追加し、**[!UICONTROL Apply]**&#x200B;をクリックします
-   * メトリック名をクリックしてメトリック名を変更し、`Number of first orders`と呼び出してから、**[!UICONTROL Hide]**&#x200B;をクリックします
+  * `Customer's order number` = 1のフィルターを追加し、**[!UICONTROL Apply]**&#x200B;をクリックします
+  * メトリック名をクリックしてメトリック名を変更し、`Number of first orders`と呼び出してから、**[!UICONTROL Hide]**&#x200B;をクリックします
 
 * `Number of orders`
-   * 指標&#x200B;**[!UICONTROL Hide]**
+  * 指標&#x200B;**[!UICONTROL Hide]**
 
 * `Users`
-   * 指標&#x200B;**[!UICONTROL Hide]**
-   * 期間を`24 months ago to now`に変更し、期間を`by month`に調整します。
-   * **[!UICONTROL Formula]**&#x200B;をクリックして、次の数式を追加します。
-   * A/Dで、**[!UICONTROL Apply]**&#x200B;をクリックします
-   * 数式`Registration conversion`の名前を変更
-   * B/Dで「**[!UICONTROL Apply]**」をクリックします
-   * 数式`First order conversion`の名前を変更
-   * C/Dで「**[!UICONTROL Apply]**」をクリックします
-   * 数式`Any order conversion`の名前を変更
+  * 指標&#x200B;**[!UICONTROL Hide]**
+  * 期間を`24 months ago to now`に変更し、期間を`by month`に調整します。
+  * **[!UICONTROL Formula]**&#x200B;をクリックして、次の数式を追加します。
+  * A/Dで、**[!UICONTROL Apply]**&#x200B;をクリックします
+  * 数式`Registration conversion`の名前を変更
+  * B/Dで「**[!UICONTROL Apply]**」をクリックします
+  * 数式`First order conversion`の名前を変更
+  * C/Dで「**[!UICONTROL Apply]**」をクリックします
+  * 数式`Any order conversion`の名前を変更
 
 * 次に、`Conversion by month`などの名前をレポートに付けて、**[!UICONTROL Save]**&#x200B;をクリックします。
 

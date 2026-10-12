@@ -1,34 +1,50 @@
 ---
-title: ' [!DNL Adobe Commerce Intelligence]  アカウントを有効にする'
-description: お客様の [!DNL Commerce Intelligence]  アカウントをアクティベートするための連絡先情報をご覧ください。
+title: '[!DNL Adobe Commerce Intelligence] アカウントを有効にする'
+description: '[!DNL Commerce Intelligence] アカウントのライセンス認証に関するお問い合わせ先について説明します。'
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-TQID: https://experienceleague.adobe.com/V34xz5uwqrCn716FqG5byQ6wnLwkZUccBXgJMqiSdR4
+TQID: 'https://experienceleague.adobe.com/V34xz5uwqrCn716FqG5byQ6wnLwkZUccBXgJMqiSdR4'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 767
+source-wordcount: '769'
 ht-degree: 0%
-
 ---
-
 # オンプレミスおよびスターターサブスクリプション用に[!DNL Commerce Intelligence] アカウントをアクティブ化する
 
 オンプレミス サブスクリプション用に[!DNL Commerce Intelligence]をアクティブ化するには、まず[!DNL Commerce Intelligence] アカウントを作成し、設定情報を入力してから、[!DNL Commerce Intelligence]を[!DNL Commerce] データベースに接続します。<!-- For information about activation in `Cloud Starter` projects, see [Activating your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions](../getting-started/cloud-activation.md).-->
@@ -41,7 +57,7 @@ ht-degree: 0%
 
 アカウントが作成されたら、メールで[!DNL The Magento BI Team@rjmetrics.com]からのアカウント通知メールを確認します。 電子メールに記載されているリンクを使用して、[!DNL Commerce Intelligence] アカウントにアクセスし、パスワードを作成してください。 受信トレイに移動し、電子メールアドレスを確認します。
 
-電子メールが届かない場合は、[&#x200B; サポートにお問い合わせください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+電子メールが届かない場合は、[ サポートにお問い合わせください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ![新しいCommerce Intelligence アカウントのパスワード画面を作成](../assets/create-account-4.png)
 
@@ -49,7 +65,7 @@ ht-degree: 0%
 
 データベース接続を設定する前に、ストア情報フォームに入力します。 この情報は、**[!UICONTROL Connect your Database]**&#x200B;の設定を完了するために必要です。
 
-![&#x200B; ビジネス名、通貨、タイムゾーンのフィールドを含む情報フォームを保存する](../assets/create-account-6.png)
+![ ビジネス名、通貨、タイムゾーンのフィールドを含む情報フォームを保存する](../assets/create-account-6.png)
 
 ## [!DNL Commerce Intelligence] ユーザーを追加
 
@@ -80,7 +96,7 @@ ht-degree: 0%
 
 1. ドロップダウンから、指定された公開鍵をコピーします。
 
-   ![SSH トンネルの種類と公開鍵フィールドを表示する暗号化設定ページ &#x200B;](../assets/encryption-setting-new-account.png)
+   ![SSH トンネルの種類と公開鍵フィールドを表示する暗号化設定ページ ](../assets/encryption-setting-new-account.png)
 
 ## 公開鍵を[!DNL Commerce Intelligence]に追加
 
@@ -90,21 +106,21 @@ ht-degree: 0%
 
 1. 下にスクロールして、**[!UICONTROL SSH Keys]** ドロップダウンを展開します。 次に、**[!UICONTROL Add a public key]**&#x200B;を選択します。
 
-   ![SSH キーを使用したアカウント設定ページの節と「公開鍵を追加」ボタン &#x200B;](../assets/add-public-key.png)
+   ![SSH キーを使用したアカウント設定ページの節と「公開鍵を追加」ボタン ](../assets/add-public-key.png)
 
 1. 上記の[!DNL Encryption Type] ステップでコピーした公開鍵を貼り付けます。
 
-   ![&#x200B; キーテキストフィールドと送信ボタンを含む公開鍵フォームを追加](../assets/paste-public-key.png)
+   ![ キーテキストフィールドと送信ボタンを含む公開鍵フォームを追加](../assets/paste-public-key.png)
 
 ## [!DNL Commerce Intelligence] Essentials `MySQL`資格情報を指定してください
 
 1. `.magento/services.yaml`を更新します。
 
-   ![services.yaml ファイル内のMySQL サービス設定を示すコード &#x200B;](../assets/update-magento-services-yaml.png)
+   ![services.yaml ファイル内のMySQL サービス設定を示すコード ](../assets/update-magento-services-yaml.png)
 
 1. `.magento.app.yaml`を更新します。
 
-   ![app.yaml ファイル内のデータベース関係の設定を示すコード &#x200B;](../assets/magento-app-yaml-relationships.png)
+   ![app.yaml ファイル内のデータベース関係の設定を示すコード ](../assets/magento-app-yaml-relationships.png)
 
 ## データベース接続情報の取得
 
@@ -132,25 +148,25 @@ ht-degree: 0%
 
 [!UICONTROL Integration Name]: [自分の[!DNL Commerce Intelligence] インスタンスの名前を選択]
 
-[!UICONTROL Host]&#x200B;: `mbi.internal`
+[!UICONTROL Host]: `mbi.internal`
 
-[!UICONTROL Port]&#x200B;: `3306`
+[!UICONTROL Port]: `3306`
 
-[!UICONTROL ユーザー名]&#x200B;: `mbi`
+[!UICONTROL ユーザー名]: `mbi`
 
 [!UICONTROL Password]: [前のセクションに表示された入力パスワード ]
 
-[!UICONTROL Database Name]&#x200B;: `main`
+[!UICONTROL Database Name]: `main`
 
 [!UICONTROL Table Prefixes]: [ テーブルの接頭辞がない場合は空白のままにします]
 
 ## [!UICONTROL **タイムゾーン**]&#x200B;の設定
 
-![&#x200B; データベースのタイムゾーンと目的のタイムゾーンドロップダウンフィールドを含むタイムゾーン設定フォーム &#x200B;](../assets/time-zone-settings.png)
+![ データベースのタイムゾーンと目的のタイムゾーンドロップダウンフィールドを含むタイムゾーン設定フォーム ](../assets/time-zone-settings.png)
 
 **入力：**
 
-[!UICONTROL Database Timezone]&#x200B;: `UTC`
+[!UICONTROL Database Timezone]: `UTC`
 
 [!UICONTROL Desired Timezone]: [ データを表示するタイムゾーンを選択]
 
@@ -158,21 +174,21 @@ ht-degree: 0%
 
 プロジェクト UIには、SSH アクセス文字列が表示されます。 この文字列は、[!UICONTROL **リモートアドレス**]&#x200B;および&#x200B;[!UICONTROL **ユーザー名**]&#x200B;に必要な情報を収集するために使用できます。 プロジェクト UIのマスターブランチにある「サイトにアクセス」ボタンを選択して、SSH アクセス文字列を使用します。 次に、次に示すように、[!UICONTROL User Name]と[!UICONTROL Remote Address]を見つけます。
 
-ユーザー名とリモート アドレスを含むSSH アクセス情報を表示する![&#x200B; プロジェクト UI](../assets/master-branch-settings.png)
+ユーザー名とリモート アドレスを含むSSH アクセス情報を表示する![ プロジェクト UI](../assets/master-branch-settings.png)
 
 ## [!DNL Encryption]の設定を入力
 
-![暗号化タイプ、リモート アドレス、ユーザー名、およびポートのフィールドを含む暗号化設定フォーム &#x200B;](../assets/encryption-settings-2.png)
+![暗号化タイプ、リモート アドレス、ユーザー名、およびポートのフィールドを含む暗号化設定フォーム ](../assets/encryption-settings-2.png)
 
 **入力：**
 
-[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
+[!UICONTROL Encryption Type]: `SSH Tunnel`
 
 [!UICONTROL Remote Address]: `ssh.us-3.magento.cloud` [前の手順]から
 
 [!UICONTROL Username]: `vfbfui4vmfez6-master-7rqtwti—mymagento` [前の手順]から
 
-[!UICONTROL Port]&#x200B;: `22`
+[!UICONTROL Port]: `22`
 
 ## 統合を保存します。
 
@@ -189,7 +205,7 @@ ht-degree: 0%
 <!--
 # Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 >[!NOTE]
 >

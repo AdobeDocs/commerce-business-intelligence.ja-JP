@@ -4,29 +4,41 @@ description: 指標を使用してチャートを作成する方法を説明し�
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/xPbHndhmDdKugylEyPC3yXwMQHHF7FdMvJI7ZNDk-Yo
+TQID: 'https://experienceleague.adobe.com/xPbHndhmDdKugylEyPC3yXwMQHHF7FdMvJI7ZNDk-Yo'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Measurement
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: '612'
 ht-degree: 0%
-
 ---
-
 # 指標の作成
 
 >[!NOTE]
@@ -35,9 +47,9 @@ ht-degree: 0%
 
 指標は測定です。 SQL構造とデータベース構造では、指標は変数期間にわたるストアド・クエリに似ています。
 
-[!DNL Commerce Intelligence]では、指標を使用して[&#x200B; グラフを作成](../../data-user/reports/ess-rpt-build-visual.md)できます。 例えば、指標`revenue`は注文の合計数です。 指標`average customer revenue per order`は、平均的な顧客が注文に費やした金額です。
+[!DNL Commerce Intelligence]では、指標を使用して[ グラフを作成](../../data-user/reports/ess-rpt-build-visual.md)できます。 例えば、指標`revenue`は注文の合計数です。 指標`average customer revenue per order`は、平均的な顧客が注文に費やした金額です。
 
-レポートで使用する場合、指標は指定された期間にわたって分析され、異なるカテゴリによって[&#x200B; フィルタリングまたはセグメント化](../../best-practices/segment-filter.md)されます。 性別でグループ化された平均顧客売上の分析を検討してください。この場合、`average customer revenue per order`が指標で、性別がグループ化されます。
+レポートで使用する場合、指標は指定された期間にわたって分析され、異なるカテゴリによって[ フィルタリングまたはセグメント化](../../best-practices/segment-filter.md)されます。 性別でグループ化された平均顧客売上の分析を検討してください。この場合、`average customer revenue per order`が指標で、性別がグループ化されます。
 
 ## 指標の定義 {#define}
 
@@ -54,25 +66,25 @@ ht-degree: 0%
 1. 次のステップは、指標の機能を定義することです。 ドロップダウンメニューを使用して、指標の操作、`operation`列、`date` ディメンションを定義します。
 
    * 操作を選択：
-      * `Count` – この操作では、データ テーブルの行数をカウントします
-      * `Max` – 最大は、特定のデータ列の最大値を返します
-      * `Min` – 最小は、特定のデータ列の最小値を返します
-      * `Sum` – この操作は、特定のデータ列の値を合計します
-      * `Average` – この操作は、データ列の値の平均を計算します
-      * `Count Distinct Value` – 特定のデータ列の一意の値の数をカウントします
-      * `Median` – この操作は、データ列の値の中央値を計算します
-      * `First and Third Quartiles` – これらの操作では、データ列の値の25番目と75番目のパーセンタイルがそれぞれ計算されます
-      * `Tenth and Ninetieth Percentiles` – これらの操作では、データ列の値の10番目と90番目のパーセンタイルがそれぞれ計算されます
+     * `Count` – この操作では、データ テーブルの行数をカウントします
+     * `Max` – 最大は、特定のデータ列の最大値を返します
+     * `Min` – 最小は、特定のデータ列の最小値を返します
+     * `Sum` – この操作は、特定のデータ列の値を合計します
+     * `Average` – この操作は、データ列の値の平均を計算します
+     * `Count Distinct Value` – 特定のデータ列の一意の値の数をカウントします
+     * `Median` – この操作は、データ列の値の中央値を計算します
+     * `First and Third Quartiles` – これらの操作では、データ列の値の25番目と75番目のパーセンタイルがそれぞれ計算されます
+     * `Tenth and Ninetieth Percentiles` – これらの操作では、データ列の値の10番目と90番目のパーセンタイルがそれぞれ計算されます
 
    * 操作を実行する列を選択します。 例えば、総収益を求める場合は、`order total`列に対して総計演算を実行します。
 
-     既存の指標を編集する場合は、このセクションで指標の操作テーブル [を](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md)変更することもできます。
+     既存の指標を編集する場合は、このセクションで指標の操作テーブル ](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md)を[変更することもできます。
 
    * 指標のトレンド分析に使用できる日付ディメンションを選択します。 例：`order date`。
 
 ## フィルターの追加 {#filters}
 
-`Filter` セクションでは、フィルターを作成するか、[保存されたフィルターセット &#x200B;](../../data-user/reports/ess-manage-data-filters.md)を指標に適用できます。
+`Filter` セクションでは、フィルターを作成するか、[保存されたフィルターセット ](../../data-user/reports/ess-manage-data-filters.md)を指標に適用できます。
 
 `average order revenue`指標の場合、ストアの設定中に行われた可能性のあるテスト注文を含めたくありません。これにより、不正確な結果が得られます。 フィルターセットを適用して、これらの注文をデータセットから削除できます。 フィルターを作成すると、この指標を使用して作成されたすべてのチャートに適用されます。
 

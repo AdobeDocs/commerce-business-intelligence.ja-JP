@@ -4,32 +4,41 @@ description: 最も価値のあるマーケティングチャネルを明らか�
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/aV7qVf-LREVyXEtR2EMJqRSTo-rvfzLIwuulccXrqzE
+TQID: 'https://experienceleague.adobe.com/aV7qVf-LREVyXEtR2EMJqRSTo-rvfzLIwuulccXrqzE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 974
+source-wordcount: '978'
 ht-degree: 0%
-
 ---
-
 # 成功しているマーケティングソースの特定
 
 オーディエンスを調査し、キャンペーンを作成し、いくつかのマーケティングチャネルに投資しました。 時間が経ったので、これらのチャネルのパフォーマンスはどうでしょうか？ どのようなチャネルが最も多くの新規ユーザーを獲得したのか？ 総収入に最も貢献した情報源は何か？
 
-[!DNL Adobe Commerce Intelligence]を使用すると、[[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en)に対応する場合でも、カスタムデータフィールドに対応する場合でも、参照元によって収益とユーザーを簡単にセグメント化できます。 これにより、最もパフォーマンスの高いチャネルを特定して、マーケティング予算を適切に投資できます。
+[!DNL Adobe Commerce Intelligence]を使用すると、[!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en)に対応する場合でも、カスタムデータフィールドに対応する場合でも、参照元によって収益とユーザーを簡単にセグメント化できます。 これにより、最もパフォーマンスの高いチャネルを特定して、マーケティング予算を適切に投資できます。
 
 ここでは、最も価値のあるマーケティングチャネルを明らかにするために利用できるレポートをいくつか紹介します。
 
@@ -41,7 +50,7 @@ ht-degree: 0%
 
 ## 前提条件 {#prereqs}
 
-このトピックで分析を構築するには、マーケティング獲得/参照ソースデータにアクセスする必要があります。 まだ追跡していない場合は、続行する前に、[から [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)に[!DNL Adobe Commerce Intelligence]注文紹介ソースデータを取り込む必要があります。 また、分析にユーザーデバイス情報を追加することで、紹介でどのようなテクノロジーが使用されているのかを確認できます。
+このトピックで分析を構築するには、マーケティング獲得/参照ソースデータにアクセスする必要があります。 まだ追跡していない場合は、続行する前に、 [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)から[!DNL Adobe Commerce Intelligence]に[注文紹介ソースデータを取り込む必要があります。 また、分析にユーザーデバイス情報を追加することで、紹介でどのようなテクノロジーが使用されているのかを確認できます。
 
 ## ソース別の新規ユーザー {#newusersbysource}
 
@@ -71,7 +80,7 @@ ht-degree: 0%
 
 次に、視覚的なチュートリアルを示します。
 
-![&#x200B; ユーザーソース別の平均生涯売上の作成](../../assets/Lifetime_revenue_by_user_source.gif)。
+![ ユーザーソース別の平均生涯売上の作成](../../assets/Lifetime_revenue_by_user_source.gif)。
 
 この例では、ライフタイム収益のみを見ていますが、この分析を複製して、参照元で[!UICONTROL Number of orders]または[!UICONTROL Distinct buyers]を見ることもできます。
 
@@ -88,13 +97,13 @@ ht-degree: 0%
 
 次に、視覚的なチュートリアルを示します。
 
-![&#x200B; ユーザー別の平均注文額を作成するソースレポート。](../../assets/Average_order_value_by_source.gif)
+![ ユーザー別の平均注文額を作成するソースレポート。](../../assets/Average_order_value_by_source.gif)
 
 ## ユーザー登録日とソース別の総収益 {#revbyregdateandsource}
 
 先ほど取り上げた生涯収益分析では、様々なソースから取得したユーザーの平均生涯売上を見ることができますが、総生涯売上はどうでしょうか？ このレポートでは、特定の期間に登録された全体的な収益ユーザーの数と、特定のソースから生成されたユーザーの数を特定できます。
 
-このレポートをReport Builderで作成するには、`Revenue by user registration date`指標を追加します。 この指標[を既に](../../data-user/reports/ess-manage-data-metrics.md)作成していない場合は、`Revenue`指標をレプリケートし、`time stamp`をユーザーの`creation date`に変更することで、作成できます。 指標を追加したら、次の操作を行います。
+このレポートをReport Builderで作成するには、`Revenue by user registration date`指標を追加します。 この指標](../../data-user/reports/ess-manage-data-metrics.md)を既に[作成していない場合は、`Revenue`指標をレプリケートし、`time stamp`をユーザーの`creation date`に変更することで、作成できます。 指標を追加したら、次の操作を行います。
 
 1. [!UICONTROL Time Period]を分析する登録期間に設定します。
 1. [!UICONTROL Time Interval]を月単位に設定します。
@@ -103,7 +112,7 @@ ht-degree: 0%
 
 次に、視覚的なチュートリアルを示します。
 
-![&#x200B; ユーザー登録日とソースレポートによる合計収益の作成。](../../assets/Revenue_by_user_registration_date_and_source.gif)
+![ ユーザー登録日とソースレポートによる合計収益の作成。](../../assets/Revenue_by_user_registration_date_and_source.gif)
 
 ## ユーザーソース別のリピートオーダー {#repeatordersbysource}
 
@@ -122,7 +131,7 @@ ht-degree: 0%
 
 次に、視覚的なチュートリアルを示します。
 
-![&#x200B; ユーザーのソース レポートによるリピート注文を作成しています。](../../assets/Repeat_orders_by_user_source.gif)
+![ ユーザーのソース レポートによるリピート注文を作成しています。](../../assets/Repeat_orders_by_user_source.gif)
 
 
 ## まとめ {#wrapup}
@@ -131,7 +140,7 @@ ht-degree: 0%
 
 ## 関連 {#related}
 
-* [&#x200B; [!DNL Google ECommerce]経由で注文の紹介ソースをトラッキングしています](../importing-data/integrations/google-ecommerce.md)
-* [&#x200B; [!DNL Google Adwords]  アカウントを接続しています](../importing-data/integrations/google-adwords.md)
+* [ [!DNL Google ECommerce]経由で注文の紹介ソースをトラッキングしています](../importing-data/integrations/google-ecommerce.md)
+* [ [!DNL Google Adwords]  アカウントを接続しています](../importing-data/integrations/google-adwords.md)
 * [注文と顧客データを含む [!DNL Google ECommerce]  ディメンションの作成](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
-* [&#x200B; [!DNL Google Analytics]でのUTM タグ付けのベストプラクティス](../../best-practices/utm-tagging-google.md)
+* [ [!DNL Google Analytics]でのUTM タグ付けのベストプラクティス](../../best-practices/utm-tagging-google.md)

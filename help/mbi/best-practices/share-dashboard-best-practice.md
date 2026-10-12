@@ -4,25 +4,32 @@ description: Commerce Intelligenceダッシュボードを共有するための�
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-TQID: https://experienceleague.adobe.com/krvwzmyk7zJ8Wk-XFKxi2iISq7DfVIN6dzPMjaTxmkU
+TQID: 'https://experienceleague.adobe.com/krvwzmyk7zJ8Wk-XFKxi2iISq7DfVIN6dzPMjaTxmkU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 391
+source-wordcount: '391'
 ht-degree: 0%
-
 ---
-
 # ダッシュボードの共有
 
 ダッシュボードを共有することは、チームが常に同じ情報を共有することを意味し、コラボレーションとディスカッションを促進します。 ダッシュボードを共有し、[!DNL Adobe Commerce Intelligence] アカウントを整然とした状態に保つための推奨事項を以下に示します。
@@ -33,12 +40,12 @@ ht-degree: 0%
 
 ダッシュボードの所有者を確認するには、左上隅にあるダッシュボードドロップダウンをクリックします。 名前が付いていないダッシュボードは、すべて自分が所有しています。
 
-作成者と権限を示す![&#x200B; ダッシュボードの所有権インジケーター](../../mbi/assets/Dash_ownership.png)
+作成者と権限を示す![ ダッシュボードの所有権インジケーター](../../mbi/assets/Dash_ownership.png)
 
 重複するダッシュボードをすべて削除するには：
 
 1. チームで同期し、ダッシュボードを管理する必要があるユーザーを特定します。
-1. [&#x200B; メインユーザーが共有しているダッシュボードを除く、類似するすべてのダッシュボードから自分の共有を解除する](../data-user/dashboards/leave-dashboard.md)。
+1. [ メインユーザーが共有しているダッシュボードを除く、類似するすべてのダッシュボードから自分の共有を解除する](../data-user/dashboards/leave-dashboard.md)。
 1. ダッシュボードのコピーがある場合は、[削除します](../data-user/dashboards/deleting-dashboard.md)。
 1. 他のユーザーにダッシュボードのバージョンの削除を依頼します。
 
@@ -48,7 +55,7 @@ ht-degree: 0%
 
 ## 新規ユーザーとダッシュボードを共有する
 
-新規ユーザーは、組織全体で共有されていない一部のダッシュボードにアクセスできるメリットを享受できます。 このような場合、Adobeでは、アカウントの作成時に、ダッシュボードの所有者[が関連するダッシュボード &#x200B;](../data-user/dashboards/share-dashboard-with-users.md)を新しいユーザーと共有することをお勧めします。
+新規ユーザーは、組織全体で共有されていない一部のダッシュボードにアクセスできるメリットを享受できます。 このような場合、Adobeでは、アカウントの作成時に、ダッシュボードの所有者[が関連するダッシュボード ](../data-user/dashboards/share-dashboard-with-users.md)を新しいユーザーと共有することをお勧めします。
 
 ## 編集権限で選択的に設定
 

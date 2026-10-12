@@ -4,40 +4,58 @@ description: 訪問者によるサイトの利用状況、魅力的なコンテ�
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/fmI-RG3Ba7s--6-Qve8xzcBLAKcbAqfaMAb7hNiKciU
+TQID: 'https://experienceleague.adobe.com/fmI-RG3Ba7s--6-Qve8xzcBLAKcbAqfaMAb7hNiKciU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 514
+source-wordcount: '514'
 ht-degree: 0%
-
 ---
-
 # [!DNL Google Analytics Warehoused]を接続
 
 >[!NOTE]
 >
 >[管理者権限](../../../administrator/user-management/user-management.md)が必要です。
 
-![Google Analyticsのロゴ &#x200B;](../../../assets/google-analytics-logo.png)
+![Google Analyticsのロゴ ](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics]は、インターネット上で最も広く使用されているWeb分析サービスです。 Web サイトに[!DNL Google Analytics]を実装すると、訪問者によるサイトの利用状況、魅力的なコンテンツ、訪問者の離脱などを追跡できます。 [!DNL Google Analytics Warehoused]は、既存の[!DNL Google Analytics]統合とは別の統合です。 既存の[!DNL Google Analytics]統合のライブフィードとは異なる[!DNL Google Analytics] データがData Warehouseに含まれているため、より良い分析が可能です。 [!DNL Commerce Intelligence]でこれらの指標を他のデータと一緒に分析することで、サイトの全体的な健全性と使いやすさが向上します。
 
@@ -55,7 +73,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused]は`Premium`統合です。 この統合をサブスクリプションに追加する場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
+>[!DNL Google Analytics Warehoused]は`Premium`統合です。 この統合をサブスクリプションに追加する場合は、[ サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
 
 1. **[!UICONTROL Admin** > **Integrations]**&#x200B;の下の`Connections` ページに移動します。
 1. 右側にある「**[!UICONTROL Add an Integration]**」をクリックします。
@@ -77,13 +95,13 @@ ht-degree: 0%
 
 ## [!DNL Google Analytics Warehoused]を[!DNL Commerce Intelligence]から切断しています {#disconnect}
 
-1. [!DNL Google Analytics] [&#x200B; アカウント設定](https://myaccount.google.com/intro) ページにアクセスします。
+1. [!DNL Google Analytics] [ アカウント設定](https://myaccount.google.com/intro) ページにアクセスします。
 1. 「`Security`」セクションで、`Authorizing` アプリケーションとサイトの横にある「**[!UICONTROL edit]**」をクリックします。
 1. [!DNL Commerce Intelligence]の横にある&#x200B;**[!UICONTROL revoke access]**&#x200B;をクリックします。
 
 ## 関連ドキュメント
 
-* [統合の再認証](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [統合の再認証](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [接続中 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [web サイトのアクティビティと顧客のコンバージョン率の分析](../../analysis/web-act-cust-conversion.md)
-* [&#x200B; [!DNL Google Analytics] Cookieを使用したユーザー獲得データの追跡](../../analysis/google-track-user-acq.md)
+* [ [!DNL Google Analytics] Cookieを使用したユーザー獲得データの追跡](../../analysis/google-track-user-acq.md)

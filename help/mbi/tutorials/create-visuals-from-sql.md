@@ -4,30 +4,45 @@ description: SQL Report Builderで使用される用語について理解し、S
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Developer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-TQID: https://experienceleague.adobe.com/xWv7O8UJ6gXxysl6oG1t24ygF-PE4LTanwyrrvoJzQ4
+TQID: 'https://experienceleague.adobe.com/xWv7O8UJ6gXxysl6oG1t24ygF-PE4LTanwyrrvoJzQ4'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: '676'
 ht-degree: 0%
-
 ---
-
 # SQL クエリからのビジュアライゼーションの作成
 
 このチュートリアルの目的は、[!DNL SQL Report Builder]で使用されている用語を理解し、`SQL visualizations`を作成するための堅牢な基盤を提供することです。
@@ -40,7 +55,7 @@ ht-degree: 0%
 
 - `Series`：測定する列は、SQL Report Builderではシリーズと呼ばれます。 一般的な例は、`revenue`、`items sold`、`marketing spend`です。 ビジュアライゼーションを作成するには、少なくとも1つの列を`Series`として設定する必要があります。
 
-- `Category`: データのセグメント化に使用する列は`Category`と呼ばれます。これは、`Group By`の[`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md)機能と同じです。 例えば、顧客の生涯売上を獲得ソース別にセグメント化する場合、獲得ソースを含む列は`Category`として指定されます。 複数の列を`Category`として設定できます。
+- `Category`: データのセグメント化に使用する列は`Category`と呼ばれます。これは、[`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md)の`Group By`機能と同じです。 例えば、顧客の生涯売上を獲得ソース別にセグメント化する場合、獲得ソースを含む列は`Category`として指定されます。 複数の列を`Category`として設定できます。
 
 >[!NOTE]
 >
@@ -58,7 +73,7 @@ ht-degree: 0%
 
 - `EXTRACT`関数は、タイムスタンプの日、週、月、年を解析するのに最適です。 これは、レポートで使用する`time interval`が`daily`、`weekly`、`monthly`、または`yearly`の場合に便利です。
 
-開始するには、[!DNL SQL Report Builder]をクリックして&#x200B;**[!UICONTROL Report Builder** > **SQL Report Builder]**&#x200B;を開きます。
+開始するには、**[!UICONTROL Report Builder** > **SQL Report Builder]**&#x200B;をクリックして[!DNL SQL Report Builder]を開きます。
 
 例えば、各製品の月間販売総数を返すこのクエリを考えてみましょう。
 
@@ -75,15 +90,15 @@ ht-degree: 0%
 
 このクエリは、次の結果のテーブルを返します。
 
-![製品、年、月別に販売されたアイテムを含むSQL クエリ結果を示すテーブル &#x200B;](../assets/SQL_results_table.png)
+![製品、年、月別に販売されたアイテムを含むSQL クエリ結果を示すテーブル ](../assets/SQL_results_table.png)
 
 ## 手順2：ビジュアライゼーションの作成
 
-これらの結果を使用して、*どのようにビジュアライゼーションを作成しますか？*&#x200B;開始するには、**[!UICONTROL Chart]** ペインの「`Results`」タブをクリックします。 `Chart settings` タブが表示されます。
+これらの結果を使用して、*どのようにビジュアライゼーションを作成しますか？* 開始するには、`Results` ペインの「**[!UICONTROL Chart]**」タブをクリックします。 `Chart settings` タブが表示されます。
 
 クエリが最初に実行されると、クエリ内のすべての列が系列としてプロットされるため、レポートが不可解に見える場合があります。
 
-![すべての列が系列としてプロットされた初期SQL レポート &#x200B;](../assets/SQL_initial_report_results.png)
+![すべての列が系列としてプロットされた初期SQL レポート ](../assets/SQL_initial_report_results.png)
 
 この例では、時間の経過に伴って変化する折れ線グラフにする必要があります。 作成するには、次の設定を使用します。
 
@@ -95,24 +110,24 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->クエリに`ORDER BY`/`date`列の場合、ラベルに`time`句を含める必要があります。
+>クエリに`date`/`time`列の場合、ラベルに`ORDER BY`句を含める必要があります。
 
 次に、クエリの実行からレポートの設定まで、このビジュアライゼーションをどのように作成したかを簡単に説明します。
 
-![SQL レポートのビジュアライゼーション設定のアニメーション デモ &#x200B;](../assets/SQL_report_settings.gif)
+![SQL レポートのビジュアライゼーション設定のアニメーション デモ ](../assets/SQL_report_settings.gif)
 
 ## 手順3: `Chart Type`を選択
 
 この例では、`Line` グラフの種類を使用しています。 別の`chart type`を使用するには、「グラフのオプション」セクションの上にあるアイコンをクリックして変更します。
 
-![折れ線、棒、領域、その他のビジュアライゼーションオプションを含む使用可能なチャートタイプアイコン &#x200B;](../assets/Chart_types.png)
+![折れ線、棒、領域、その他のビジュアライゼーションオプションを含む使用可能なチャートタイプアイコン ](../assets/Chart_types.png)
 
 ## 手順4：ビジュアライゼーションの保存
 
 このレポートをもう一度使用する場合は、レポートに名前を付けて、右上隅の「**[!UICONTROL Save]**」をクリックします。
 
-ドロップダウンで、`Chart`として`Type`を選択し、レポートを保存するダッシュボードを選択します。
+ドロップダウンで、`Type`として`Chart`を選択し、レポートを保存するダッシュボードを選択します。
 
 ## まとめ
 
-さらに一歩進めたいですか？ [&#x200B; クエリ最適化のベストプラクティス &#x200B;](../best-practices/optimizing-your-sql-queries.md)をご覧ください。
+さらに一歩進めたいですか？ [ クエリ最適化のベストプラクティス ](../best-practices/optimizing-your-sql-queries.md)をご覧ください。

@@ -4,36 +4,50 @@ description: 特定のダッシュボードですべてのレポートを一括�
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/6wixrQXkvGMF9c36wrGJ4Qj23HqJ--Mr0XMYMBhujjo
+TQID: 'https://experienceleague.adobe.com/6wixrQXkvGMF9c36wrGJ4Qj23HqJ--Mr0XMYMBhujjo'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 481
+source-wordcount: '481'
 ht-degree: 0%
-
 ---
-
 # ダッシュボード全体のフィルタリング
 
 ダッシュボード全体のフィルタリングを使用すると、特定のダッシュボード上のすべてのレポートを一括編集できます。 異なる期間にわたって、または異なるストアに対して、同じ分析をすばやく表示できます。 店舗ごとの前年、月、週のパフォーマンスを簡単に比較できます。 新しく開始されたキャンペーンに対応するために、ダッシュボード全体を更新できます。
 
 ## 日付フィルター
 
-ダッシュボード上のレポートの日付範囲または間隔を変更するには、右上隅（![&#x200B; カレンダー](../../assets/calendar-button.png)）のカレンダーアイコンをクリックします。
+ダッシュボード上のレポートの日付範囲または間隔を変更するには、右上隅（![ カレンダー](../../assets/calendar-button.png)）のカレンダーアイコンをクリックします。
 
 `Fixed Date Range`または事前計算されたさまざまな`Moving Date Ranges`を使用してデータを表示できます。
 
@@ -43,9 +57,9 @@ ht-degree: 0%
 
 または、独自の`Custom Moving Range`\:
 
-![&#x200B; カスタム移動範囲](../../assets/custom-moving-range.png)
+![ カスタム移動範囲](../../assets/custom-moving-range.png)
 
-間隔も変更できます。 デフォルトのボタン（![時間間隔のデフォルト &#x200B;](../../assets/time_interval_default.png)）を選択すると、日付範囲のみが変更されます。
+間隔も変更できます。 デフォルトのボタン（![時間間隔のデフォルト ](../../assets/time_interval_default.png)）を選択すると、日付範囲のみが変更されます。
 
 ![時間間隔](../../assets/time_interval.png)
 
@@ -59,14 +73,14 @@ ht-degree: 0%
 
 ## フィルターを保存
 
-特定のストアのパフォーマンスを分析するには、右上隅のストアアイコン（![&#x200B; ストアフィルター](../../assets/store-filter.png)）をクリックします。 デフォルトでは、`Store Filter`は`All Stores`に設定されており、Commerce サイトで利用可能なすべての[&#x200B; ストアビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-views)のデータが表示されます。
+特定のストアのパフォーマンスを分析するには、右上隅のストアアイコン（![ ストアフィルター](../../assets/store-filter.png)）をクリックします。 デフォルトでは、`Store Filter`は`All Stores`に設定されており、Commerce サイトで利用可能なすべての[ ストアビュー](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views)のデータが表示されます。
 
 >[!NOTE]
 >
->[!DNL Commerce Intelligence] アカウント全体でストアフィルターが有効または無効になっています。 ダッシュボードに、フィルターの影響を受けないレポート （どの[!DNL Adobe Commerce] データにも組み込まれていないレポートなど）が含まれている場合、ストアフィルターが適用されたときに、これらのレポートは更新されません。 ストアの選択に基づいてレポートを更新する必要があると思われる場合、またはアカウント ストア フィルターが誤って無効になっていると思われる場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
+>[!DNL Commerce Intelligence] アカウント全体でストアフィルターが有効または無効になっています。 ダッシュボードに、フィルターの影響を受けないレポート （どの[!DNL Adobe Commerce] データにも組み込まれていないレポートなど）が含まれている場合、ストアフィルターが適用されたときに、これらのレポートは更新されません。 ストアの選択に基づいてレポートを更新する必要があると思われる場合、またはアカウント ストア フィルターが誤って無効になっていると思われる場合は、[ サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
 
 `Store Filter`からストアを選択すると、ダッシュボード間を移動する際に、フィルターは選択内容を保持します。 選択範囲を保持すると、`All Stores`を選択するまで、選択したストアのデータをどこにでも表示できます。
 
 ## 共有ダッシュボードのフィルター
 
-共有ダッシュボードの場合、1人のユーザーが日付フィルターを設定すると、ダッシュボードへのアクセス権を持つ他のユーザーに同じフィルターが適用されます。 ただし、この場合、ストアフィルターは適用されません。 ダッシュボードの所有者がストアフィルターを設定し、ダッシュボードを共有する場合、設定されたストアフィルターは別のユーザーに保持されません。 ダッシュボードフィルターを調整するには、ユーザーにダッシュボードへの[編集アクセス &#x200B;](../../data-user/dashboards/share-dashboard-with-users.md)が必要です。
+共有ダッシュボードの場合、1人のユーザーが日付フィルターを設定すると、ダッシュボードへのアクセス権を持つ他のユーザーに同じフィルターが適用されます。 ただし、この場合、ストアフィルターは適用されません。 ダッシュボードの所有者がストアフィルターを設定し、ダッシュボードを共有する場合、設定されたストアフィルターは別のユーザーに保持されません。 ダッシュボードフィルターを調整するには、ユーザーにダッシュボードへの[編集アクセス ](../../data-user/dashboards/share-dashboard-with-users.md)が必要です。

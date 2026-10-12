@@ -4,30 +4,43 @@ description: 定性コホートとは何か、なぜこの分析の構築に興�
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/XOdXVSRzCzVPNWv9N58Ddheo-h5kO-3UZFiAwGDzXzQ
+TQID: 'https://experienceleague.adobe.com/XOdXVSRzCzVPNWv9N58Ddheo-h5kO-3UZFiAwGDzXzQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 861
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
 # `Qualitative Cohort Analysis`を作成
 
 [!DNL Google Adwords]で獲得した顧客セグメントが、オーガニック検索で獲得した顧客セグメントと比較して、LTVをどのように成長させているかご存知ですか？ 同じレポートで、異なる顧客セグメントに対して`cohort`分析を並べて実行することを考えたことがありますか？ その場合は、`qualitative cohort analysis`を使用して質問に答えることができます。
@@ -54,7 +67,7 @@ ht-degree: 0%
 
 `Report Builder`で`qualitative cohort` レポートを作成するには、Adobe アナリスト チームが必要なテーブルに[高度な計算列](../data-warehouse-mgr/creating-calculated-columns.md)を作成します。
 
-これらを作成するには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を提出してください（この記事を参照してください）。 次の点に留意してください。
+これらを作成するには、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を提出してください（この記事を参照してください）。 次の点に留意してください。
 
 * コホート分析を実行する`metric`とその使用するテーブル （例：`Revenue`、`orders` テーブル上に構築）。
 
@@ -70,7 +83,7 @@ Adobeのアナリストチームが上記の質問に回答したら、レポー
 
 まず、分析する各`cohort`に対して、コホートに関心のある指標を追加します。 この例では、顧客の最初の注文から数か月後に行われた累積`Revenue`を`User's referral source`でセグメント化して表示します。 つまり、セグメントごとに1つの`Revenue`指標を追加し、特定のセグメントに対してフィルターを実行します。
 
-![定性コホート分析のアニメーション化デモ &#x200B;](../../assets/qualcohort1.gif)
+![定性コホート分析のアニメーション化デモ ](../../assets/qualcohort1.gif)
 
 次に、レポートの時間オプションを2つ変更する必要があります。
 
@@ -80,7 +93,7 @@ Adobeのアナリストチームが上記の質問に回答したら、レポー
 
 この例では、`Revenue`の`all time` ビューを見ています。 この後、一連のドットで終わる必要があります。
 
-![&#x200B; コホートのグループ化と分析オプションのデモのアニメーション &#x200B;](../../assets/qualcohort2.gif)
+![ コホートのグループ化と分析オプションのデモのアニメーション ](../../assets/qualcohort2.gif)
 
 第三に、`cohorts`を設定するように調整します。 Adobe アナリスト チームに指定した`cohort date`および`time interval`に基づいて、`cohort`の日付を実行するディメンションがアカウントに含まれています。 この例では、そのカスタムディメンションは`Months between this order and customer's first order date`と呼ばれます。 このディメンションを使用すると、次のことが可能になります。
 

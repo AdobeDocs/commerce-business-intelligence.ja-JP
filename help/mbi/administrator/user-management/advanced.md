@@ -3,33 +3,46 @@ title: 高度なユーザー管理
 description: データの可視性を強化し、レポートを合理化し、ユーザーグループごとのアクセスをカスタマイズし、ダッシュボードの共有を簡素化し、組織のセキュリティと拡張性を確保します。
 role: Admin, User
 feature: User Management
+exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b6935462-7263-4ced-a703-60de6a5aeb2d
+    internal-label: Administration
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 subfeature_v2:
   - id: d971c7be-3e54-4af9-807c-8d1f9f7b22df
+    internal-label: User management
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+    internal-label: Administration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 877
+source-wordcount: '877'
 ht-degree: 0%
-
 ---
-
 
 # 高度なユーザー管理
 
@@ -412,9 +425,9 @@ ht-degree: 0%
 
 ユーザーグループを設定するには：
 
-1. [!UICONTROL **ユーザーの管理**] > [!UICONTROL **User Groups]**&#x200B;に移動して、既存のユーザーグループを表示します。
+1. [!UICONTROL **ユーザーの管理**] > [!UICONTROL **User Groups]**に移動して、既存のユーザーグループを表示します。
 
-   ![&#x200B; ユーザーグループの設定](../../assets/configure-user-groups.png)
+   ![ ユーザーグループの設定](../../assets/configure-user-groups.png)
 
 1. [!UICONTROL **グループを追加**]&#x200B;すると、管理者は新しいユーザーグループを作成できます。
 
@@ -424,7 +437,7 @@ ht-degree: 0%
 
    - 設定を保存します。
 
-     ![&#x200B; ユーザーグループを追加](../../assets/add-group.png)
+     ![ ユーザーグループを追加](../../assets/add-group.png)
 
 1. 管理者は次のことが可能になります。
 
@@ -442,7 +455,7 @@ ht-degree: 0%
 
 管理者は、[!UICONTROL **ユーザーを招待**]&#x200B;を使用して、オンボーディング中に新規ユーザーを関連グループにマッピングできます。 ビジネス要件に基づいて、既存のユーザーをユーザーグループに再マッピングできます。
 
-![&#x200B; ユーザーグループへのユーザーの割り当て](../../assets/assign-users-to-groups.png)
+![ ユーザーグループへのユーザーの割り当て](../../assets/assign-users-to-groups.png)
 
 >[!TIP]
 >
@@ -458,29 +471,29 @@ ht-degree: 0%
 
 - 管理者は、ダッシュボードをユーザーグループや他の管理者ユーザーと共有して共同作業を行うことができます。 これにより、ダッシュボードを一元管理し、大規模企業の管理を簡素化することができます。
 
-  ![&#x200B; ダッシュボードの共有](../../assets/share-dashboards.png)
+  ![ ダッシュボードの共有](../../assets/share-dashboards.png)
 
 - ダッシュボード共有の権限には、次のものが含まれます。
 
-   - [!UICONTROL **編集**]：管理者ユーザーは、ダッシュボードの変更、データのフィルター、レポートの変更、データの書き出しのみを行うことができます。
+  - [!UICONTROL **編集**]：管理者ユーザーは、ダッシュボードの変更、データのフィルター、レポートの変更、データの書き出しのみを行うことができます。
 
-   - [!UICONTROL **表示**]：で役割を問わず、すべてのユーザーが利用できます（特定の制限）。
+  - [!UICONTROL **表示**]：で役割を問わず、すべてのユーザーが利用できます（特定の制限）。
 
-   - [!UICONTROL **なし**]：特定のユーザーグループまたは管理者のダッシュボードへのアクセス権を取り消します。
+  - [!UICONTROL **なし**]：特定のユーザーグループまたは管理者のダッシュボードへのアクセス権を取り消します。
 
   >[!NOTE]
   >
-  >ルールとダッシュボードの権限に基づく様々なCommerce Intelligence機能の使いやすさについては、[機能マトリックス &#x200B;](#feature-matrix)を参照して、様々な組み合わせを理解してください。
+  >ルールとダッシュボードの権限に基づく様々なCommerce Intelligence機能の使いやすさについては、[機能マトリックス ](#feature-matrix)を参照して、様々な組み合わせを理解してください。
 
 #### ダッシュボードビュー
 
 管理者ユーザーは、すべてのストアにアクセスできるダッシュボードデータを表示できます。
 
-![&#x200B; ダッシュボード管理者を表示](../../assets/view-dashboard-admin.png)
+![ ダッシュボード管理者を表示](../../assets/view-dashboard-admin.png)
 
 ただし、ユーザーは、ユーザー設定時にマッピングされたストアに基づいてフィルタリングされたダッシュボードデータを表示できます。
 
-![&#x200B; ダッシュボードを表示フィルター処理された管理者](../../assets/view-dashboard-user.png)
+![ ダッシュボードを表示フィルター処理された管理者](../../assets/view-dashboard-user.png)
 
 >[!TIP]
 >
@@ -490,4 +503,4 @@ ht-degree: 0%
 
 [!DNL Advanced User Management]は、データ フィルタリング機能をメールの要約に拡張します。 管理者ユーザーは、オーディエンスに応じて、選択したレポートをフィルタリングする必要があるユーザーグループを指定できます。
 
-![&#x200B; メールの概要をスケジュール &#x200B;](../../assets/schedule-email-summary.png)
+![ メールの概要をスケジュール ](../../assets/schedule-email-summary.png)

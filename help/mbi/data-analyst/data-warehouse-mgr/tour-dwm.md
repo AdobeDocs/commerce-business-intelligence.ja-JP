@@ -4,33 +4,51 @@ description: テーブルと列の同期設定を管理する方法、テーブ�
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/h1abSvMbiLAovsl4YtlBHmLTOW03Bk6WlMOwYvh4cIk
+TQID: 'https://experienceleague.adobe.com/h1abSvMbiLAovsl4YtlBHmLTOW03Bk6WlMOwYvh4cIk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1244
+source-wordcount: '1244'
 ht-degree: 0%
-
 ---
-
 # Data Warehouse Manager
 
 >[!NOTE]
@@ -81,13 +99,13 @@ Data Warehouse Managerでは、データソースを簡単に表示および管�
 1. `Primary Key`列を確認してください。これらの列には、列名の横にキー記号があります。 データをData Warehouseに正しく同期するには、`Primary Key`が必要です。
 
    データベースから直接取得したテーブルを同期している場合、`Primary Keys`が表示されない可能性があります。 この場合は、データベース管理者に連絡して、プライマリキーまたはキーをテーブルに追加するようにリクエストしてください。
-1. 完了したら、![&#x200B; ボタン &#x200B;](../../assets/button.png) ボタンをクリックします。
+1. 完了したら、![ ボタン ](../../assets/button.png) ボタンをクリックします。
 
-*成功！* メッセージが表示され、選択した列のステータスが`Pending`に変わります。 次の完全な更新が完了すると、新しく同期されたテーブルと列をレポートで使用できるようになります。 最初の同期後に新しい[&#x200B; レプリケーション方法](./cfg-replication-methods.md)を設定することもできます。
+*成功！* メッセージが表示され、選択した列のステータスが`Pending`に変わります。 次の完全な更新が完了すると、新しく同期されたテーブルと列をレポートで使用できるようになります。 最初の同期後に新しい[ レプリケーション方法](./cfg-replication-methods.md)を設定することもできます。
 
 ここでは、そのプロセス全体を簡単に紹介します。
 
-![&#x200B; データウェアハウスへの列の追加](../../assets/DW_sync.gif)
+![ データウェアハウスへの列の追加](../../assets/DW_sync.gif)
 
 ### バックグラウンドでの新しいテーブルの同期 {#syncnew}
 
@@ -107,7 +125,7 @@ Data Warehouseでは、新しいソース、テーブル、または列が追加
 
 `user's lifetime revenue`を`users` テーブルに追加して、価値の高いユーザーを見つけるとします。 または、性別で収益をセグメント化する場合は、`customer's gender`を`orders` テーブルに追加できます。
 
-詳細については、この[&#x200B; チュートリアル &#x200B;](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)を参照してください。
+詳細については、この[ チュートリアル ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)を参照してください。
 
 ## テーブルの削除と列の削除 {#delete}
 
@@ -121,7 +139,7 @@ Data Warehouseに同期するテーブルや列を選択できるのと同様に
 
 列を削除するには、列が属するテーブルをクリックします。 削除する列を確認し、![button\_1.png](../../assets/button_1.png) ボタンをクリックします。
 
-同期したテーブルを削除するには、テーブル内のすべての列を選択し、![&#x200B; ボタン &#x200B;](../../assets/button_1.png) ボタンを再度クリックします。 これにより、このテーブルを使用するすべてのネイティブ列と計算列がData Warehouseから削除されます。
+同期したテーブルを削除するには、テーブル内のすべての列を選択し、![ ボタン ](../../assets/button_1.png) ボタンを再度クリックします。 これにより、このテーブルを使用するすべてのネイティブ列と計算列がData Warehouseから削除されます。
 
 ### 変更の確認
 
@@ -131,7 +149,7 @@ Data Warehouseに同期するテーブルや列を選択できるのと同様に
 
 列を削除する方法を簡単に説明します。
 
-![&#x200B; データウェアハウスから列を削除しています](../../assets/DW_delete.gif)
+![ データウェアハウスから列を削除しています](../../assets/DW_delete.gif)
 
 ## 新しい列はいつ使用できますか？ {#when}
 

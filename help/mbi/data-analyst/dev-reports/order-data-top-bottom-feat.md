@@ -4,36 +4,50 @@ description: 「トップ/ボトムを表示」機能を使用してデータを
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-TQID: https://experienceleague.adobe.com/EbxcX2kLo3aKcj1KkCZLfkRlCbQ5q00m9zf-afGv1Ic
+TQID: 'https://experienceleague.adobe.com/EbxcX2kLo3aKcj1KkCZLfkRlCbQ5q00m9zf-afGv1Ic'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: '667'
 ht-degree: 0%
-
 ---
-
 # `Show Top/Bottom`機能を使用したデータの順序
 
 `Visual Report Builder`では、時間の経過に伴って傾向が変化する分析を作成するよりも多くのことができます。 例えば、獲得チャネルとマーケティングチャネルの価値を示すレポートを作成するだけでなく、パフォーマンスが最も高い上位5つを示すレポートを作成することもできます。 同様に、売上が最も多い州を示すレポートを作成することで、マーケティング活動に再フォーカスすることができます。
 
 このようなデータの並べ替えと順序付けは、`Group By`と`Time Interval of None`の両方を使用するレポートで行うことができます。 これらの要素が両方ともレポート内にある場合、`Show Top/Bottom`機能はグラフのプレビューの上に表示されます。 この機能を使用すると、設定したパラメーターに基づいて、上位（最高から最低）および下位（最低から最高）のデータポイントを表示できます。
 
-![&#x200B; ビジュアル Report Builderのトップ/ボトム機能を表示します。](../../assets/Show_Top_Bottom.png)
+![ ビジュアル Report Builderのトップ/ボトム機能を表示します。](../../assets/Show_Top_Bottom.png)
 
 ## 「どのように使うのか？」 {#how}
 
@@ -59,7 +73,7 @@ ht-degree: 0%
 
 例えば、リファラルソース別にグループ化された`Revenue`と`Number of orders`の両方の指標を使用してレポートを作成したとします。 `Revenue`は`Revenue`または参照元によってのみ並べ替えることができ、`Number of orders`は`Number of orders`または参照元によってのみ並べ替えることができます。
 
-つまり、収益を生み出す上位`Revenue`件の紹介ソースからのみ`5`を表示できますが、収益を生み出す上位`5`件の紹介ソースからも注文数を表示することはできません。 簡単に言えば、複数の指標がある場合、各指標をグループ化して並べ替えることが最善の策です。
+つまり、収益を生み出す上位`5`件の紹介ソースからのみ`Revenue`を表示できますが、収益を生み出す上位`5`件の紹介ソースからも注文数を表示することはできません。 簡単に言えば、複数の指標がある場合、各指標をグループ化して並べ替えることが最善の策です。
 
 以下は、グループ化ではなく`Revenue`指標を単独で並べ替えたグラフの例です。 ご覧のとおり、グループ化によって指標を並べ替えないと、奇妙な（そして最終的には役に立たない）レポートが作成されました。
 
@@ -67,11 +81,11 @@ ht-degree: 0%
 
 両方の指標をグループ化して並べ替えた場合、グラフは次のようになります。
 
-![&#x200B; グループ化によって両方の指標を並べ替えています。](../../assets/sort-metrics-by-grouping.png)
+![ グループ化によって両方の指標を並べ替えています。](../../assets/sort-metrics-by-grouping.png)
 
 ## デフォルトで値はどのように並べ替えられますか？ {#defaultsorting}
 
-`Group by`と`Time Interval`の`None`を含むレポートに1つの指標のみが含まれている場合、`Visual Report Builder`のデフォルトの順序は、指標に基づく上位の値を表示することです。 この場合、必要に応じて`Show Top/Bottom`機能が不要になる場合があります。
+`Group by`と`None`の`Time Interval`を含むレポートに1つの指標のみが含まれている場合、`Visual Report Builder`のデフォルトの順序は、指標に基づく上位の値を表示することです。 この場合、必要に応じて`Show Top/Bottom`機能が不要になる場合があります。
 
 この例は、営業担当者がクローズした商談の数を示しています。 このテーブルは、指標（この場合は`Won Opportunities`）に基づいて、最高から最低に自動的に並べ替えられます。
 
@@ -79,7 +93,7 @@ ht-degree: 0%
 
 ただし、2つ目の指標が追加された場合、デフォルトでは、グループ化に基づいて上位を順序付けします。 指標とグループ化が追加されると、デフォルトの並べ替えは、最初のグループ化、次に2番目のグループ化などに基づいて行われます。
 
-![&#x200B; グループ化で並べ替え。](../../assets/Ordered_by_grouping.png)
+![ グループ化で並べ替え。](../../assets/Ordered_by_grouping.png)
 
 ## まとめ {#wrapup}
 

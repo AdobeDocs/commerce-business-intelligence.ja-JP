@@ -4,27 +4,36 @@ description: 分析を作成して、現在の顧客の生涯価値を理解し�
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/bGbpknj6UfM8k995EnptIRfwZsvYTNo8-kzF9HrALQk
+TQID: 'https://experienceleague.adobe.com/bGbpknj6UfM8k995EnptIRfwZsvYTNo8-kzF9HrALQk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 338
-ht-degree: 0%
-
+source-wordcount: '392'
+ht-degree: 13%
 ---
-
 # 期待される生涯価値分析
 
 より多くの注文をおこなう顧客の生涯価値を予測することは、規模を問わず、あらゆる企業にとって最も重要な側面のひとつです。
@@ -37,18 +46,18 @@ ht-degree: 0%
 
 最初の手順は、次の手順で新しい指標を作成することです。
 * **[!UICONTROL Manage Data > Metrics]**&#x200B;に移動
-   * 既存の&#x200B;**[!UICONTROL Avg lifetime revenue]**&#x200B;を表示します。
+  * 既存の&#x200B;**[!UICONTROL Avg lifetime revenue]**&#x200B;を表示します。
 
   >[!NOTE]
   >
   >この指標が作成されるテーブル （おそらく`customer_entity`または`sales_order`は、お客様のストアのゲストチェックアウトの受け入れ機能によって異なります）。
 
-   * **[!UICONTROL Create New Metric]**&#x200B;をクリックし、上からテーブルを選択します。
-   * この指標は、**様が注文した**&#x200B;列に`Customer's lifetime revenue`中央値`created_at`を実行します。
-      * [!UICONTROL Filters]:
-         * `Customers we count (Saved Filter Set)` （または`Registered accounts we count`）を追加
+  * **[!UICONTROL Create New Metric]**&#x200B;をクリックし、上からテーブルを選択します。
+  * この指標は、`created_at`様が注文した`Customer's lifetime revenue`列に&#x200B;**中央値**&#x200B;を実行します。
+    * [!UICONTROL Filters]:
+      * `Customers we count (Saved Filter Set)` （または`Registered accounts we count`）を追加
 
-   * 指標に`Median lifetime revenue`などの名前を付けます。
+  * 指標に`Median lifetime revenue`などの名前を付けます。
 
 ## ダッシュボードの作成
 
@@ -65,41 +74,41 @@ ht-degree: 0%
 >**[!UICONTROL Time Period:]**&#x200B;には、各レポートの期間が`All-time`として表示されます。 分析ニーズに合わせて変更してください。 Adobeでは、`All time`、`Year-to-date`、`Last 365 days`など、このダッシュボードのすべてのレポートが同じ期間をカバーすることをお勧めします。
 
 * **[!UICONTROL Average LTV (all)]**
-   * [!UICONTROL Metric]: `Avg lifetime revenue`
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
-   * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [!UICONTROL間隔]: `None`
+  * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
-   * [!UICONTROL Metric]: `Avg lifetime revenue`
-      * [!UICONTROL filters]を追加：
-         * [`A`] `Customer's group code` **次と等しくない** `Not Logged In`
-         * [`B`] `Customer's lifetime number of orders` **より大**`0`
+  * [!UICONTROL Metric]: `Avg lifetime revenue`
+    * [!UICONTROL filters]を追加：
+      * [`A`] `Customer's group code` **次と等しくない** `Not Logged In`
+      * [`B`] `Customer's lifetime number of orders` **より大**`0`
 
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
-   * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [!UICONTROL間隔]: `None`
+  * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
-   * 指標`1`: `Avg lifetime revenue`
-   * 指標`2`: `Median lifetime revenue`
-   * [!UICONTROL Time period]: `All time`
-   * [!UICONTROL Interval]: `By Month`
-   * &#x200B;
-     [!UICONTROL チャートタイプ]: `Line`
-   * `Multiple Y-Axes`のチェックを外す
+  * 指標`1`: `Avg lifetime revenue`
+  * 指標`2`: `Median lifetime revenue`
+  * [!UICONTROL Time period]: `All time`
+  * [!UICONTROL Interval]: `By Month`
+  * 
+    [!UICONTROL チャートタイプ]: `Line`
+  * `Multiple Y-Axes`のチェックを外す
 
 * 注文数のライフタイム数による&#x200B;**LTV**
-   * 指標`1`: `Avg lifetime revenue`
-   * 指標`2`: `New customers`
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
-   * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * &#x200B;
-     [!UICONTROL チャートタイプ]: `Line`
+  * 指標`1`: `Avg lifetime revenue`
+  * 指標`2`: `New customers`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [!UICONTROL間隔]: `None`
+  * [!UICONTROL Group by]: `Customer's lifetime number of orders`
+  * 
+    [!UICONTROL チャートタイプ]: `Line`
 
   >[!NOTE]
   >
