@@ -2,7 +2,9 @@
 solution: Commerce, Commerce Intelligence
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: "Commerce"
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: "Commerce Intelligence"
 usetq: true
 landing-page-name: commerce
 landing-page-breadcrumb-title: Commerce
@@ -19,11 +21,9 @@ index: true
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: f229139f3710766875e6778ea3d04221ffc2d2bf
 workflow-type: tm+mt
-source-wordcount: 173
+source-wordcount: '167'
 ht-degree: 0%
-
 ---
-
 
 # 内部使用のためのメタデータ
 
