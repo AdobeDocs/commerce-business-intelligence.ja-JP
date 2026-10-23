@@ -425,9 +425,9 @@ ht-degree: 0%
 
 ユーザーグループを設定するには：
 
-1. [!UICONTROL **ユーザーの管理**] > [!UICONTROL **User Groups]**&#x200B;に移動して、既存のユーザーグループを表示します。
+1. [!UICONTROL **ユーザーの管理**] > [!UICONTROL **User Groups]**に移動して、既存のユーザーグループを表示します。
 
-   ![&#x200B; ユーザーグループの設定](../../assets/configure-user-groups.png)
+   ![ ユーザーグループの設定](../../assets/configure-user-groups.png)
 
 1. [!UICONTROL **グループを追加**]&#x200B;すると、管理者は新しいユーザーグループを作成できます。
 
@@ -437,7 +437,7 @@ ht-degree: 0%
 
    - 設定を保存します。
 
-     ![&#x200B; ユーザーグループを追加](../../assets/add-group.png)
+     ![ ユーザーグループを追加](../../assets/add-group.png)
 
 1. 管理者は次のことが可能になります。
 
@@ -455,7 +455,7 @@ ht-degree: 0%
 
 管理者は、[!UICONTROL **ユーザーを招待**]&#x200B;を使用して、オンボーディング中に新規ユーザーを関連グループにマッピングできます。 ビジネス要件に基づいて、既存のユーザーをユーザーグループに再マッピングできます。
 
-![&#x200B; ユーザーグループへのユーザーの割り当て](../../assets/assign-users-to-groups.png)
+![ ユーザーグループへのユーザーの割り当て](../../assets/assign-users-to-groups.png)
 
 >[!TIP]
 >
@@ -471,7 +471,7 @@ ht-degree: 0%
 
 - 管理者は、ダッシュボードをユーザーグループや他の管理者ユーザーと共有して共同作業を行うことができます。 これにより、ダッシュボードを一元管理し、大規模企業の管理を簡素化することができます。
 
-  ![&#x200B; ダッシュボードの共有](../../assets/share-dashboards.png)
+  ![ ダッシュボードの共有](../../assets/share-dashboards.png)
 
 - ダッシュボード共有の権限には、次のものが含まれます。
 
@@ -483,17 +483,17 @@ ht-degree: 0%
 
   >[!NOTE]
   >
-  >ルールとダッシュボードの権限に基づく様々なCommerce Intelligence機能の使いやすさについては、[機能マトリックス &#x200B;](#feature-matrix)を参照して、様々な組み合わせを理解してください。
+  >ルールとダッシュボードの権限に基づく様々なCommerce Intelligence機能の使いやすさについては、[機能マトリックス ](#feature-matrix)を参照して、様々な組み合わせを理解してください。
 
 #### ダッシュボードビュー
 
 管理者ユーザーは、すべてのストアにアクセスできるダッシュボードデータを表示できます。
 
-![&#x200B; ダッシュボード管理者を表示](../../assets/view-dashboard-admin.png)
+![ ダッシュボード管理者を表示](../../assets/view-dashboard-admin.png)
 
 ただし、ユーザーは、ユーザー設定時にマッピングされたストアに基づいてフィルタリングされたダッシュボードデータを表示できます。
 
-![&#x200B; ダッシュボードを表示フィルター処理された管理者](../../assets/view-dashboard-user.png)
+![ ダッシュボードを表示フィルター処理された管理者](../../assets/view-dashboard-user.png)
 
 >[!TIP]
 >
@@ -503,4 +503,4 @@ ht-degree: 0%
 
 [!DNL Advanced User Management]は、データ フィルタリング機能をメールの要約に拡張します。 管理者ユーザーは、オーディエンスに応じて、選択したレポートをフィルタリングする必要があるユーザーグループを指定できます。
 
-![&#x200B; メールの概要をスケジュール &#x200B;](../../assets/schedule-email-summary.png)
+![ メールの概要をスケジュール ](../../assets/schedule-email-summary.png)
