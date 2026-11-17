@@ -37,14 +37,12 @@ topic_v2:
     internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-last-update: 2026-08-26
-source-git-commit: 71a0a842742fed73aa749653ec0ef8c2834b7e60
+last-update: 2026-11-09
+source-git-commit: b9bb82c5896429e1669b0020efcb4ce103c581a6
 workflow-type: tm+mt
-source-wordcount: 492
+source-wordcount: '492'
 ht-degree: 2%
-
 ---
-
 # [!DNL Adobe Commerce Intelligence] ユーザーガイド
 
 >[!NOTE]
@@ -60,8 +58,8 @@ ht-degree: 2%
 
 このガイドでは、組織内でどのような役割を担っているかに基づいて、次のセクションを整理しています。
 
-- [&#x200B; データ ユーザー](data-user.md): データを使用してビジネス上の意思決定を支援しています。 チームのデータアナリストからレポートやダッシュボードを受け取る可能性がありますが、それらのレポートやダッシュボードの作成方法も知る必要があります。
-- [&#x200B; データ アナリスト &#x200B;](data-analyst.md): クエリを設計し、データ分析の頼りになる人物であることに慣れています。 データに関する質問に対する具体的な回答を見つけ出し、同僚へのセルフサービス体験を促進する方法を身に付けています。
+- [ データ ユーザー](data-user.md): データを使用してビジネス上の意思決定を支援しています。 チームのデータアナリストからレポートやダッシュボードを受け取る可能性がありますが、それらのレポートやダッシュボードの作成方法も知る必要があります。
+- [ データ アナリスト ](data-analyst.md): クエリを設計し、データ分析の頼りになる人物であることに慣れています。 データに関する質問に対する具体的な回答を見つけ出し、同僚へのセルフサービス体験を促進する方法を身に付けています。
 - 管理者：ライセンス、ユーザーの追加と削除、重要な管理タスクの処理など、[!DNL Commerce Intelligence] アカウントを管理します。
 
 このガイドには、上記の役割ベースのワークフローに加えて、次の内容も含まれています。
@@ -71,24 +69,24 @@ ht-degree: 2%
 
 ## ヘルプの利用方法
 
-ご不明な点がある場合や、お客様のアカウントで問題が発生した場合は、[&#x200B; サポートチーム &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
+ご不明な点がある場合や、お客様のアカウントで問題が発生した場合は、[ サポートチーム ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)にお問い合わせください。
 
 ### サービスポリシー
 
-カスタマーサポートチームが提供するサービスの[&#x200B; リストを参照してください](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+カスタマーサポートチームが提供するサービスの[ リストを参照してください](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ### サポートチケットの提出
 
-高度な計算列の作成に関するサポートが必要ですか？ 欠陥または接続の問題が発生しましたか？ サポートチームに連絡する必要がある場合は、Adobeから[&#x200B; サポートチケットガイドライン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を使用するよう求められます。 このガイドラインは、Adobeがこの問題を解決するために必要な情報の概要を示しています。
+高度な計算列の作成に関するサポートが必要ですか？ 欠陥または接続の問題が発生しましたか？ サポートチームに連絡する必要がある場合は、Adobeから[ サポートチケットガイドライン ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)を使用するよう求められます。 このガイドラインは、Adobeがこの問題を解決するために必要な情報の概要を示しています。
 
 ## 使用可能なドキュメント
 
 | 関連文書 | 説明 |
 |----------------------- | ----------- |
-| [Adobe Commerce 2.4 Merchant Documentation](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home) | Adobe CommerceとMagento Open Sourceの両方のマーチャントに焦点を当てたドキュメント |
-| [Adobe Commerce ドキュメント向けサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home) | マーチャントがストアとビジネスの主要コンポーネントを統合するのに役立つサービスのコレクションをサポートするドキュメント。 |
-| [Adobe Commerce 2.4運用ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/operational-guides/home) | Adobe CommerceおよびMagento Open Source プラットフォームにデプロイされたプロジェクトを開発、デプロイ、保守するためのコンセプト、プロセス、ツール、ベストプラクティスに関するシステムドキュメント。 |
-| [Adobe Commerce 2.4開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けのドキュメント |
+| [Adobe Commerce 2.4 Merchant Documentation](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Adobe CommerceとMagento Open Sourceの両方のマーチャントに焦点を当てたドキュメント |
+| [Adobe Commerce ドキュメント向けサービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) | マーチャントがストアとビジネスの主要コンポーネントを統合するのに役立つサービスのコレクションをサポートするドキュメント。 |
+| [Adobe Commerce 2.4運用ガイド ](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) | Adobe CommerceおよびMagento Open Source プラットフォームにデプロイされたプロジェクトを開発、デプロイ、保守するためのコンセプト、プロセス、ツール、ベストプラクティスに関するシステムドキュメント。 |
+| [Adobe Commerce 2.4開発者向けドキュメント ](https://developer.adobe.com/commerce/) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けのドキュメント |
 
 {{$include /help/_includes/templated/whats-new.md}}
 
